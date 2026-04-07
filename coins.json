@@ -3,7 +3,7 @@
   "id": 1,
   "title": "1/2 Real 1815",
   "country": "Argentina",
-  "metal": "Plata",
+  "metal": "Plata .896",
   "year": 1815,
   "price": "USD 120",
   "images": [
@@ -12,10 +12,9 @@
     "images/1C.jpg",
     "images/1D.jpg"
   ],
-  "description": "Moneda clásica argentina, ideal para catálogo inicial.",
-  "reference": "KM# 25",
+  "reference": "CJ# 17",
   "grade": "Muy buena",
-  "mintage": "NA"
+  "mintage": "N/A"
 },
   {
     "id": 2,
