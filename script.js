@@ -10,12 +10,15 @@ let allCoins = [];
 
 async function loadCoins() {
   try {
-    const response = await fetch("coins.json");
+    const response = await fetch("coins.json", { cache: "no-store" });
+
     if (!response.ok) {
       throw new Error("No se pudo cargar coins.json");
     }
 
-    allCoins = await response.json();
+    const data = await response.json();
+    allCoins = Array.isArray(data) ? data : [];
+
     populateFilters(allCoins);
     renderCoins(allCoins);
   } catch (error) {
@@ -28,22 +31,17 @@ async function loadCoins() {
 
 function uniqueSortedValues(array, key) {
   return [...new Set(array.map((item) => item[key]).filter(Boolean))].sort((a, b) =>
-    a.localeCompare(b, "es")
+    String(a).localeCompare(String(b), "es")
   );
 }
 
 function populateFilters(coins) {
-  fillSelect(countryFilter, uniqueSortedValues(coins, "country"));
-  fillSelect(metalFilter, uniqueSortedValues(coins, "metal"));
+  fillSelect(countryFilter, uniqueSortedValues(coins, "country"), "Todos los países");
+  fillSelect(metalFilter, uniqueSortedValues(coins, "metal"), "Todos los materiales");
 }
 
-function fillSelect(select, values) {
-  const currentFirstOption = select.querySelector('option[value=""]');
-  select.innerHTML = "";
-
-  if (currentFirstOption) {
-    select.appendChild(currentFirstOption);
-  }
+function fillSelect(select, values, defaultText) {
+  select.innerHTML = `<option value="">${defaultText}</option>`;
 
   values.forEach((value) => {
     const option = document.createElement("option");
@@ -87,7 +85,7 @@ function getFilteredCoins() {
 function createDetailLine(label, value) {
   const line = document.createElement("div");
   line.className = "detail-line";
-  line.innerHTML = `<strong>${label}:</strong> ${value}`;
+  line.innerHTML = `<strong>${label}:</strong> ${value || "NA"}`;
   return line;
 }
 
@@ -98,11 +96,7 @@ function getPrimaryImage(coin) {
       return fileName.includes("A.");
     });
 
-    if (imageA) {
-      return imageA;
-    }
-
-    return coin.images[0];
+    return imageA || coin.images[0];
   }
 
   if (coin.image) {
@@ -110,6 +104,10 @@ function getPrimaryImage(coin) {
   }
 
   return "https://via.placeholder.com/800x600?text=Sin+imagen";
+}
+
+function goToDetail(coinId) {
+  window.location.href = `detalle.html?id=${coinId}`;
 }
 
 function renderCoins(coins) {
@@ -138,19 +136,23 @@ function renderCoins(coins) {
     image.src = getPrimaryImage(coin);
     image.alt = coin.title || "Moneda";
     title.textContent = coin.title || "Sin título";
-
     meta.textContent = coin.country || "País no informado";
     description.textContent = coin.description || "";
     price.textContent = coin.price || "Consultar";
 
     details.innerHTML = "";
-    details.appendChild(createDetailLine("Referencia", coin.reference || "NA"));
-    details.appendChild(createDetailLine("Estado", coin.grade || "NA"));
-    details.appendChild(createDetailLine("Material", coin.metal || "NA"));
-    details.appendChild(createDetailLine("Acuñación", coin.mintage || "NA"));
+    details.appendChild(createDetailLine("Referencia", coin.reference));
+    details.appendChild(createDetailLine("Estado", coin.grade));
+    details.appendChild(createDetailLine("Material", coin.metal));
+    details.appendChild(createDetailLine("Acuñación", coin.mintage));
 
-    article.addEventListener("click", () => {
-      window.location.href = `detalle.html?id=${coin.id}`;
+    article.addEventListener("click", () => goToDetail(coin.id));
+
+    article.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        goToDetail(coin.id);
+      }
     });
 
     fragment.appendChild(card);
