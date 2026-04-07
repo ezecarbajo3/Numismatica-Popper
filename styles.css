@@ -198,8 +198,11 @@ select:focus {
 }
 
 .coin-image-wrap {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1; /* CUADRADO */
   background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   border-bottom: 1px solid rgba(201, 162, 85, 0.08);
 }
@@ -207,9 +210,8 @@ select:focus {
 .coin-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.35s ease, opacity 0.2s ease;
+  object-fit: contain; /* NO recorta */
+  background: #111;
 }
 
 .coin-card:hover .coin-image {
