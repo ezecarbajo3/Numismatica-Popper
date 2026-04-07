@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coins for Sale</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Coins for Sale</h1>
+      <p class="subtitle">Catálogo simple de monedas con filtros por país y metal.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="control-group">
+        <label for="searchInput">Buscar</label>
+        <input id="searchInput" type="text" placeholder="Ej: 8 reales, Argentina, 1895..." />
+      </div>
+
+      <div class="control-group">
+        <label for="countryFilter">País</label>
+        <select id="countryFilter">
+          <option value="">Todos</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="metalFilter">Metal</label>
+        <select id="metalFilter">
+          <option value="">Todos</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="statusFilter">Estado</label>
+        <select id="statusFilter">
+          <option value="">Todos</option>
+        </select>
+      </div>
+
+      <div class="control-group reset-wrap">
+        <button id="resetFilters" class="reset-button">Limpiar filtros</button>
+      </div>
+    </section>
+
+    <section class="results-bar">
+      <p id="resultsCount">Cargando monedas...</p>
+    </section>
+
+    <section id="coinsGrid" class="coins-grid"></section>
+  </main>
+
+  <template id="coinCardTemplate">
+    <article class="coin-card">
+      <div class="coin-image-wrap">
+        <img class="coin-image" src="" alt="" />
+      </div>
+      <div class="coin-content">
+        <div class="coin-top">
+          <h2 class="coin-title"></h2>
+          <span class="coin-status"></span>
+        </div>
+        <p class="coin-meta"></p>
+        <p class="coin-description"></p>
+        <div class="coin-details"></div>
+        <div class="coin-footer">
+          <strong class="coin-price"></strong>
+          <a class="whatsapp-button" href="#" target="_blank" rel="noopener noreferrer">Consultar</a>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
