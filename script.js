@@ -130,7 +130,7 @@ function renderCoins(coins) {
     image.alt = coin.title || "Moneda";
     title.textContent = coin.title || "Sin título";
 
-    meta.textContent = `${coin.country || "País no informado"} · ${coin.year || "Año no informado"}`;
+    meta.textContent = coin.country || "País no informado";
     description.textContent = coin.description || "";
     price.textContent = coin.price || "Consultar";
 
