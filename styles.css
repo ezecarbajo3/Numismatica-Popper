@@ -85,7 +85,7 @@ body {
 /* CONTROLS */
 .controls {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  grid-template-columns: 2fr 1fr 1fr auto;
   gap: 14px;
   margin-bottom: 18px;
   align-items: end;
@@ -187,6 +187,7 @@ select:focus {
   display: flex;
   flex-direction: column;
   transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+  cursor: pointer;
 }
 
 .coin-card:hover {
@@ -215,11 +216,11 @@ select:focus {
 }
 
 .coin-content {
-  padding: 20px 18px 18px;
+  padding: 20px 18px 16px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  height: 100%;
+  gap: 10px;
+  height: auto;
 }
 
 .coin-top {
@@ -255,7 +256,7 @@ select:focus {
 
 .coin-description {
   text-align: center;
-  margin-bottom: 2px;
+  margin-bottom: 0;
 }
 
 /* DETALLES EN 4 LINEAS */
@@ -263,7 +264,8 @@ select:focus {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 4px;
+  margin-top: 2px;
+  margin-bottom: 4px;
 }
 
 .detail-pill,
@@ -287,39 +289,25 @@ select:focus {
 
 /* FOOTER */
 .coin-footer {
-  margin-top: auto;
+  margin-top: 0;
   display: flex;
-  justify-content: space-between;
-  gap: 12px;
+  justify-content: center;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 2px;
 }
 
 .coin-price {
-  font-size: 1.1rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.22rem;
   color: var(--accent);
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .whatsapp-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 10px 14px;
-  border-radius: 12px;
-  background: linear-gradient(180deg, #1fae5b 0%, #168646 100%);
-  color: white;
-  font-weight: 700;
-  transition: 0.2s ease;
-  font-family: Arial, Helvetica, sans-serif;
-  border: none;
-}
-
-.whatsapp-button:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.04);
+  display: none;
 }
 
 /* EMPTY */
@@ -372,11 +360,6 @@ select:focus {
   }
 
   .coin-footer {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .whatsapp-button {
-    width: 100%;
+    justify-content: center;
   }
 }
