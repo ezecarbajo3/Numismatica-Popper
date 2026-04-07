@@ -1,146 +1,179 @@
-const detailContainer = document.getElementById("coinDetail");
-const WHATSAPP_NUMBER = "5492235429132";
+const searchInput = document.getElementById("searchInput");
+const countryFilter = document.getElementById("countryFilter");
+const metalFilter = document.getElementById("metalFilter");
+const resetFiltersButton = document.getElementById("resetFilters");
+const resultsCount = document.getElementById("resultsCount");
+const coinsGrid = document.getElementById("coinsGrid");
+const coinCardTemplate = document.getElementById("coinCardTemplate");
 
-function getQueryParam(name) {
-  const params = new URLSearchParams(window.location.search);
-  return params.get(name);
-}
+let allCoins = [];
 
-function getImagesArray(coin) {
-  if (Array.isArray(coin.images) && coin.images.length > 0) {
-    return coin.images;
-  }
-
-  if (coin.image) {
-    return [coin.image];
-  }
-
-  return ["https://via.placeholder.com/900x900?text=Sin+imagen"];
-}
-
-function buildWhatsAppLink(coin) {
-  const message = `Hola, me interesa la moneda ${coin.title}.`;
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-}
-
-function createThumbButton(src, alt, isActive, onClick) {
-  const button = document.createElement("button");
-  button.className = `detail-thumb${isActive ? " is-active" : ""}`;
-  button.type = "button";
-
-  const img = document.createElement("img");
-  img.src = src;
-  img.alt = alt;
-
-  button.appendChild(img);
-  button.addEventListener("click", onClick);
-
-  return button;
-}
-
-function createSpecRow(label, value) {
-  const row = document.createElement("div");
-  row.className = "detail-spec-row";
-
-  const labelEl = document.createElement("div");
-  labelEl.className = "detail-spec-label";
-  labelEl.textContent = label;
-
-  const valueEl = document.createElement("div");
-  valueEl.className = "detail-spec-value";
-  valueEl.textContent = value || "NA";
-
-  row.appendChild(labelEl);
-  row.appendChild(valueEl);
-
-  return row;
-}
-
-function renderCoinDetail(coin) {
-  const images = getImagesArray(coin);
-
-  detailContainer.innerHTML = `
-    <div class="detail-gallery">
-      <div class="detail-main-image-wrap">
-        <img class="detail-main-image" id="detailMainImage" src="${images[0]}" alt="${coin.title || "Moneda"}" />
-      </div>
-      <div class="detail-thumbs" id="detailThumbs"></div>
-    </div>
-
-    <div class="detail-info">
-      <p class="detail-country">${coin.country || "País no informado"}</p>
-      <h1 class="detail-title">${coin.title || "Sin título"}</h1>
-      <div class="detail-divider"></div>
-
-      <div class="detail-specs" id="detailSpecs"></div>
-
-      <p class="detail-price">${coin.price || "Consultar"}</p>
-      <p class="detail-description">${coin.description || ""}</p>
-
-      <a
-        class="detail-whatsapp"
-        href="${buildWhatsAppLink(coin)}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Consultar por WhatsApp
-      </a>
-    </div>
-  `;
-
-  const mainImage = document.getElementById("detailMainImage");
-  const thumbsContainer = document.getElementById("detailThumbs");
-  const specsContainer = document.getElementById("detailSpecs");
-
-  specsContainer.appendChild(createSpecRow("Estado", coin.grade || "NA"));
-  specsContainer.appendChild(createSpecRow("País", coin.country || "NA"));
-  specsContainer.appendChild(createSpecRow("Año", coin.year || "NA"));
-
-  images.forEach((src, index) => {
-    const thumb = createThumbButton(
-      src,
-      `${coin.title || "Moneda"} ${index + 1}`,
-      index === 0,
-      () => {
-        mainImage.src = src;
-
-        const allThumbs = thumbsContainer.querySelectorAll(".detail-thumb");
-        allThumbs.forEach((item) => item.classList.remove("is-active"));
-        thumb.classList.add("is-active");
-      }
-    );
-
-    thumbsContainer.appendChild(thumb);
-  });
-}
-
-async function loadCoinDetail() {
-  const coinId = Number(getQueryParam("id"));
-
-  if (!coinId) {
-    detailContainer.innerHTML = '<p class="detail-error">No se indicó ninguna moneda.</p>';
-    return;
-  }
-
+async function loadCoins() {
   try {
     const response = await fetch("coins.json");
     if (!response.ok) {
       throw new Error("No se pudo cargar coins.json");
     }
 
-    const coins = await response.json();
-    const coin = coins.find((item) => Number(item.id) === coinId);
-
-    if (!coin) {
-      detailContainer.innerHTML = '<p class="detail-error">No se encontró la moneda solicitada.</p>';
-      return;
-    }
-
-    renderCoinDetail(coin);
+    allCoins = await response.json();
+    populateFilters(allCoins);
+    renderCoins(allCoins);
   } catch (error) {
     console.error(error);
-    detailContainer.innerHTML = '<p class="detail-error">Hubo un error al cargar el detalle de la moneda.</p>';
+    coinsGrid.innerHTML =
+      '<div class="empty-state">No se pudieron cargar las monedas. Revisá que exista el archivo <strong>coins.json</strong> en la misma carpeta.</div>';
+    resultsCount.textContent = "Error al cargar monedas";
   }
 }
 
-loadCoinDetail();
+function uniqueSortedValues(array, key) {
+  return [...new Set(array.map((item) => item[key]).filter(Boolean))].sort((a, b) =>
+    a.localeCompare(b, "es")
+  );
+}
+
+function populateFilters(coins) {
+  fillSelect(countryFilter, uniqueSortedValues(coins, "country"));
+  fillSelect(metalFilter, uniqueSortedValues(coins, "metal"));
+}
+
+function fillSelect(select, values) {
+  const currentFirstOption = select.querySelector('option[value=""]');
+  select.innerHTML = "";
+
+  if (currentFirstOption) {
+    select.appendChild(currentFirstOption);
+  }
+
+  values.forEach((value) => {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = value;
+    select.appendChild(option);
+  });
+}
+
+function getFilteredCoins() {
+  const searchTerm = searchInput.value.trim().toLowerCase();
+  const selectedCountry = countryFilter.value;
+  const selectedMetal = metalFilter.value;
+
+  return allCoins.filter((coin) => {
+    const matchesSearch =
+      !searchTerm ||
+      [
+        coin.title,
+        coin.country,
+        coin.metal,
+        coin.year,
+        coin.price,
+        coin.description,
+        coin.reference,
+        coin.grade,
+        coin.mintage,
+      ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase()
+        .includes(searchTerm);
+
+    const matchesCountry = !selectedCountry || coin.country === selectedCountry;
+    const matchesMetal = !selectedMetal || coin.metal === selectedMetal;
+
+    return matchesSearch && matchesCountry && matchesMetal;
+  });
+}
+
+function createDetailLine(label, value) {
+  const line = document.createElement("div");
+  line.className = "detail-line";
+  line.innerHTML = `<strong>${label}:</strong> ${value}`;
+  return line;
+}
+
+function getPrimaryImage(coin) {
+  if (Array.isArray(coin.images) && coin.images.length > 0) {
+    const imageA = coin.images.find((img) => {
+      const fileName = img.split("/").pop()?.toUpperCase() || "";
+      return fileName.includes("A.");
+    });
+
+    if (imageA) {
+      return imageA;
+    }
+
+    return coin.images[0];
+  }
+
+  if (coin.image) {
+    return coin.image;
+  }
+
+  return "https://via.placeholder.com/800x600?text=Sin+imagen";
+}
+
+function renderCoins(coins) {
+  coinsGrid.innerHTML = "";
+
+  if (!coins.length) {
+    coinsGrid.innerHTML =
+      '<div class="empty-state">No hay monedas que coincidan con los filtros seleccionados.</div>';
+    resultsCount.textContent = "0 monedas encontradas";
+    return;
+  }
+
+  const fragment = document.createDocumentFragment();
+
+  coins.forEach((coin) => {
+    const card = coinCardTemplate.content.cloneNode(true);
+
+    const article = card.querySelector(".coin-card");
+    const image = card.querySelector(".coin-image");
+    const title = card.querySelector(".coin-title");
+    const meta = card.querySelector(".coin-meta");
+    const description = card.querySelector(".coin-description");
+    const details = card.querySelector(".coin-details");
+    const price = card.querySelector(".coin-price");
+
+    image.src = getPrimaryImage(coin);
+    image.alt = coin.title || "Moneda";
+    title.textContent = coin.title || "Sin título";
+
+    meta.textContent = coin.country || "País no informado";
+    description.textContent = coin.description || "";
+    price.textContent = coin.price || "Consultar";
+
+    details.innerHTML = "";
+    details.appendChild(createDetailLine("Referencia", coin.reference || "NA"));
+    details.appendChild(createDetailLine("Estado", coin.grade || "NA"));
+    details.appendChild(createDetailLine("Material", coin.metal || "NA"));
+    details.appendChild(createDetailLine("Acuñación", coin.mintage || "NA"));
+
+    article.addEventListener("click", () => {
+      window.location.href = `detalle.html?id=${coin.id}`;
+    });
+
+    fragment.appendChild(card);
+  });
+
+  coinsGrid.appendChild(fragment);
+  resultsCount.textContent = `${coins.length} moneda${coins.length === 1 ? "" : "s"} encontrada${coins.length === 1 ? "" : "s"}`;
+}
+
+function applyFilters() {
+  renderCoins(getFilteredCoins());
+}
+
+[searchInput, countryFilter, metalFilter].forEach((element) => {
+  element.addEventListener("input", applyFilters);
+  element.addEventListener("change", applyFilters);
+});
+
+resetFiltersButton.addEventListener("click", () => {
+  searchInput.value = "";
+  countryFilter.value = "";
+  metalFilter.value = "";
+  renderCoins(allCoins);
+});
+
+loadCoins();
