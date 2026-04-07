@@ -1,5 +1,3 @@
-const WHATSAPP_NUMBER = "5492236184003";
-
 const searchInput = document.getElementById("searchInput");
 const countryFilter = document.getElementById("countryFilter");
 const metalFilter = document.getElementById("metalFilter");
@@ -42,6 +40,7 @@ function populateFilters(coins) {
 function fillSelect(select, values) {
   const currentFirstOption = select.querySelector('option[value=""]');
   select.innerHTML = "";
+
   if (currentFirstOption) {
     select.appendChild(currentFirstOption);
   }
@@ -85,16 +84,23 @@ function getFilteredCoins() {
   });
 }
 
-function buildWhatsAppLink(coin) {
-  const message = `Hola, te consulto por esta moneda: ${coin.title} (${coin.country}, ${coin.year}).`;
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-}
-
 function createDetailLine(label, value) {
   const line = document.createElement("div");
   line.className = "detail-line";
   line.innerHTML = `<strong>${label}:</strong> ${value}`;
   return line;
+}
+
+function getPrimaryImage(coin) {
+  if (Array.isArray(coin.images) && coin.images.length > 0) {
+    return coin.images[0];
+  }
+
+  if (coin.image) {
+    return coin.image;
+  }
+
+  return "https://via.placeholder.com/800x600?text=Sin+imagen";
 }
 
 function renderCoins(coins) {
@@ -112,29 +118,31 @@ function renderCoins(coins) {
   coins.forEach((coin) => {
     const card = coinCardTemplate.content.cloneNode(true);
 
+    const article = card.querySelector(".coin-card");
     const image = card.querySelector(".coin-image");
     const title = card.querySelector(".coin-title");
     const meta = card.querySelector(".coin-meta");
     const description = card.querySelector(".coin-description");
     const details = card.querySelector(".coin-details");
     const price = card.querySelector(".coin-price");
-    const whatsappButton = card.querySelector(".whatsapp-button");
 
-    image.src = coin.image || "https://via.placeholder.com/800x600?text=Sin+imagen";
+    image.src = getPrimaryImage(coin);
     image.alt = coin.title || "Moneda";
     title.textContent = coin.title || "Sin título";
 
     meta.textContent = `${coin.country || "País no informado"} · ${coin.year || "Año no informado"}`;
     description.textContent = coin.description || "";
     price.textContent = coin.price || "Consultar";
-    whatsappButton.href = buildWhatsAppLink(coin);
 
     details.innerHTML = "";
-
     details.appendChild(createDetailLine("Referencia", coin.reference || "NA"));
     details.appendChild(createDetailLine("Estado", coin.grade || "NA"));
     details.appendChild(createDetailLine("Material", coin.metal || "NA"));
     details.appendChild(createDetailLine("Acuñación", coin.mintage || "NA"));
+
+    article.addEventListener("click", () => {
+      window.location.href = `detalle.html?id=${coin.id}`;
+    });
 
     fragment.appendChild(card);
   });
@@ -144,8 +152,7 @@ function renderCoins(coins) {
 }
 
 function applyFilters() {
-  const filteredCoins = getFilteredCoins();
-  renderCoins(filteredCoins);
+  renderCoins(getFilteredCoins());
 }
 
 [searchInput, countryFilter, metalFilter].forEach((element) => {
