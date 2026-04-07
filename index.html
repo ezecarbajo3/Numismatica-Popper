@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coins for Sale</title>
+  <title>Numismática Popper</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>Coins for Sale</h1>
-      <p class="subtitle">Catálogo simple de monedas con filtros por país y metal.</p>
+      <h1>Numismática Popper</h1>
+      <p class="subtitle">Piezas numismáticas de calidad</p>
     </div>
   </header>
 
@@ -18,27 +18,31 @@
     <section class="controls">
       <div class="control-group">
         <label for="searchInput">Buscar</label>
-        <input id="searchInput" type="text" placeholder="Ej: 8 reales, Argentina, 1895..." />
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Buscar por título, país o año..."
+        />
       </div>
 
       <div class="control-group">
         <label for="countryFilter">País</label>
         <select id="countryFilter">
-          <option value="">Todos</option>
+          <option value="">Todos los países</option>
         </select>
       </div>
 
       <div class="control-group">
         <label for="metalFilter">Metal</label>
         <select id="metalFilter">
-          <option value="">Todos</option>
+          <option value="">Todos los metales</option>
         </select>
       </div>
 
       <div class="control-group">
         <label for="statusFilter">Estado</label>
         <select id="statusFilter">
-          <option value="">Todos</option>
+          <option value="">Todos los estados</option>
         </select>
       </div>
 
@@ -59,17 +63,28 @@
       <div class="coin-image-wrap">
         <img class="coin-image" src="" alt="" />
       </div>
+
       <div class="coin-content">
         <div class="coin-top">
           <h2 class="coin-title"></h2>
           <span class="coin-status"></span>
         </div>
+
         <p class="coin-meta"></p>
         <p class="coin-description"></p>
+
         <div class="coin-details"></div>
+
         <div class="coin-footer">
           <strong class="coin-price"></strong>
-          <a class="whatsapp-button" href="#" target="_blank" rel="noopener noreferrer">Consultar</a>
+          <a
+            class="whatsapp-button"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Consultar
+          </a>
         </div>
       </div>
     </article>
