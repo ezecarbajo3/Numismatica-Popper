@@ -3,7 +3,6 @@ const WHATSAPP_NUMBER = "5492236184003";
 const searchInput = document.getElementById("searchInput");
 const countryFilter = document.getElementById("countryFilter");
 const metalFilter = document.getElementById("metalFilter");
-const statusFilter = document.getElementById("statusFilter");
 const resetFiltersButton = document.getElementById("resetFilters");
 const resultsCount = document.getElementById("resultsCount");
 const coinsGrid = document.getElementById("coinsGrid");
@@ -23,26 +22,29 @@ async function loadCoins() {
     renderCoins(allCoins);
   } catch (error) {
     console.error(error);
-    coinsGrid.innerHTML = '<div class="empty-state">No se pudieron cargar las monedas. Revisá que exista el archivo <strong>coins.json</strong> en la misma carpeta.</div>';
+    coinsGrid.innerHTML =
+      '<div class="empty-state">No se pudieron cargar las monedas. Revisá que exista el archivo <strong>coins.json</strong> en la misma carpeta.</div>';
     resultsCount.textContent = "Error al cargar monedas";
   }
 }
 
 function uniqueSortedValues(array, key) {
-  return [...new Set(array.map((item) => item[key]).filter(Boolean))]
-    .sort((a, b) => a.localeCompare(b, "es"));
+  return [...new Set(array.map((item) => item[key]).filter(Boolean))].sort((a, b) =>
+    a.localeCompare(b, "es")
+  );
 }
 
 function populateFilters(coins) {
-  fillSelect(countryFilter, uniqueSortedValues(coins, "country"), "Todos");
-  fillSelect(metalFilter, uniqueSortedValues(coins, "metal"), "Todos");
-  fillSelect(statusFilter, uniqueSortedValues(coins, "status"), "Todos");
+  fillSelect(countryFilter, uniqueSortedValues(coins, "country"));
+  fillSelect(metalFilter, uniqueSortedValues(coins, "metal"));
 }
 
 function fillSelect(select, values) {
   const currentFirstOption = select.querySelector('option[value=""]');
   select.innerHTML = "";
-  select.appendChild(currentFirstOption);
+  if (currentFirstOption) {
+    select.appendChild(currentFirstOption);
+  }
 
   values.forEach((value) => {
     const option = document.createElement("option");
@@ -56,7 +58,6 @@ function getFilteredCoins() {
   const searchTerm = searchInput.value.trim().toLowerCase();
   const selectedCountry = countryFilter.value;
   const selectedMetal = metalFilter.value;
-  const selectedStatus = statusFilter.value;
 
   return allCoins.filter((coin) => {
     const matchesSearch =
@@ -69,29 +70,39 @@ function getFilteredCoins() {
         coin.price,
         coin.description,
         coin.reference,
+        coin.grade,
+        coin.mintage,
       ]
+        .filter(Boolean)
         .join(" ")
         .toLowerCase()
         .includes(searchTerm);
 
     const matchesCountry = !selectedCountry || coin.country === selectedCountry;
     const matchesMetal = !selectedMetal || coin.metal === selectedMetal;
-    const matchesStatus = !selectedStatus || coin.status === selectedStatus;
 
-    return matchesSearch && matchesCountry && matchesMetal && matchesStatus;
+    return matchesSearch && matchesCountry && matchesMetal;
   });
 }
 
 function buildWhatsAppLink(coin) {
-  const message = `Hola, te consulto por esta moneda: ${coin.title} (${coin.country}, ${coin.year}). ¿Sigue disponible?`;
+  const message = `Hola, te consulto por esta moneda: ${coin.title} (${coin.country}, ${coin.year}).`;
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
+
+function createDetailLine(label, value) {
+  const line = document.createElement("div");
+  line.className = "detail-line";
+  line.innerHTML = `<strong>${label}:</strong> ${value}`;
+  return line;
 }
 
 function renderCoins(coins) {
   coinsGrid.innerHTML = "";
 
   if (!coins.length) {
-    coinsGrid.innerHTML = '<div class="empty-state">No hay monedas que coincidan con los filtros seleccionados.</div>';
+    coinsGrid.innerHTML =
+      '<div class="empty-state">No hay monedas que coincidan con los filtros seleccionados.</div>';
     resultsCount.textContent = "0 monedas encontradas";
     return;
   }
@@ -103,7 +114,6 @@ function renderCoins(coins) {
 
     const image = card.querySelector(".coin-image");
     const title = card.querySelector(".coin-title");
-    const status = card.querySelector(".coin-status");
     const meta = card.querySelector(".coin-meta");
     const description = card.querySelector(".coin-description");
     const details = card.querySelector(".coin-details");
@@ -113,25 +123,18 @@ function renderCoins(coins) {
     image.src = coin.image || "https://via.placeholder.com/800x600?text=Sin+imagen";
     image.alt = coin.title || "Moneda";
     title.textContent = coin.title || "Sin título";
-    status.textContent = coin.status || "Sin estado";
-    meta.textContent = `${coin.country || "País no informado"} · ${coin.year || "Año no informado"} · ${coin.metal || "Metal no informado"}`;
-    description.textContent = coin.description || "Sin descripción";
+
+    meta.textContent = `${coin.country || "País no informado"} · ${coin.year || "Año no informado"}`;
+    description.textContent = coin.description || "";
     price.textContent = coin.price || "Consultar";
     whatsappButton.href = buildWhatsAppLink(coin);
 
-    const detailItems = [
-      coin.reference ? `Referencia: ${coin.reference}` : null,
-      coin.grade ? `Estado: ${coin.grade}` : null,
-      coin.weight ? `Peso: ${coin.weight}` : null,
-      coin.diameter ? `Diámetro: ${coin.diameter}` : null,
-    ].filter(Boolean);
+    details.innerHTML = "";
 
-    detailItems.forEach((item) => {
-      const pill = document.createElement("span");
-      pill.className = "detail-pill";
-      pill.textContent = item;
-      details.appendChild(pill);
-    });
+    details.appendChild(createDetailLine("Referencia", coin.reference || "NA"));
+    details.appendChild(createDetailLine("Estado", coin.grade || "NA"));
+    details.appendChild(createDetailLine("Material", coin.metal || "NA"));
+    details.appendChild(createDetailLine("Acuñación", coin.mintage || "NA"));
 
     fragment.appendChild(card);
   });
@@ -145,7 +148,7 @@ function applyFilters() {
   renderCoins(filteredCoins);
 }
 
-[searchInput, countryFilter, metalFilter, statusFilter].forEach((element) => {
+[searchInput, countryFilter, metalFilter].forEach((element) => {
   element.addEventListener("input", applyFilters);
   element.addEventListener("change", applyFilters);
 });
@@ -154,7 +157,6 @@ resetFiltersButton.addEventListener("click", () => {
   searchInput.value = "";
   countryFilter.value = "";
   metalFilter.value = "";
-  statusFilter.value = "";
   renderCoins(allCoins);
 });
 
