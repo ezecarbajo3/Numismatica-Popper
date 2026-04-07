@@ -1,19 +1,22 @@
 [
-  {
-    "id": 1,
-    "title": "1/2 Real 1815",
-    "country": "Argentina",
-    "metal": "Plata",
-    "year": 1815,
-    "price": "USD 120",
-    "image": "https://via.placeholder.com/800x600?text=8+Reales+1895",
-    "description": "Moneda clásica argentina, ideal para catálogo inicial.",
-    "reference": "KM# 25",
-    "status": "Disponible",
-    "grade": "Muy buena",
-    "weight": "27 g",
-    "diameter": "38 mm"
-  },
+{
+  "id": 1,
+  "title": "1/2 Real 1815",
+  "country": "Argentina",
+  "metal": "Plata",
+  "year": 1815,
+  "price": "USD 120",
+  "images": [
+    "images/1A.jpg",
+    "images/1B.jpg",
+    "images/1C.jpg",
+    "images/1D.jpg"
+  ],
+  "description": "Moneda clásica argentina, ideal para catálogo inicial.",
+  "reference": "KM# 25",
+  "grade": "Muy buena",
+  "mintage": "NA"
+},
   {
     "id": 2,
     "title": "1 Peso 1882",
