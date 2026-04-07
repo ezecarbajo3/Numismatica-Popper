@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@500;600;700&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -26,7 +28,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Georgia", "Times New Roman", serif;
+  font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
   color: var(--text);
   background:
     radial-gradient(circle at top center, rgba(201, 162, 85, 0.08), transparent 22%),
@@ -80,7 +82,7 @@ body {
   font-size: 0.95rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 /* CONTROLS */
@@ -104,7 +106,7 @@ label {
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 input,
@@ -121,7 +123,7 @@ select {
   border-radius: 14px;
   padding: 14px 16px;
   color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
 }
 
@@ -149,7 +151,7 @@ select:focus {
   cursor: pointer;
   transition: 0.2s ease;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 .reset-button:hover {
@@ -167,7 +169,7 @@ select:focus {
 #resultsCount {
   margin: 0;
   color: var(--muted);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 /* GRID */
@@ -220,7 +222,7 @@ select:focus {
 }
 
 .coin-content {
-  padding: 20px 18px 16px;
+  padding: 18px 18px 16px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -236,9 +238,11 @@ select:focus {
   width: 100%;
   text-align: center;
   font-size: 1.22rem;
-  line-height: 1.3;
+  line-height: 1.15;
   color: #f1e7d6;
   font-weight: 600;
+  font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+  letter-spacing: 0.01em;
 }
 
 .coin-status {
@@ -250,17 +254,48 @@ select:focus {
   margin: 0;
   color: var(--muted);
   line-height: 1.55;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
 }
 
 .coin-meta {
   text-align: center;
+  font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+  font-weight: 300;
+  font-size: 0.96rem;
+  letter-spacing: 0.01em;
 }
 
 .coin-description {
   text-align: center;
   margin-bottom: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+/* CAPSULA DE GRADO EN INICIO */
+.coin-badge-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.coin-grade-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 62px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(201, 162, 85, 0.26);
+  background: linear-gradient(180deg, rgba(201, 162, 85, 0.1) 0%, rgba(201, 162, 85, 0.04) 100%);
+  color: var(--accent);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
 /* DETALLES EN 4 LINEAS */
@@ -281,7 +316,7 @@ select:focus {
   border-radius: 0;
   font-size: 0.95rem;
   line-height: 1.5;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   color: var(--muted);
 }
 
@@ -297,17 +332,18 @@ select:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2px;
+  padding-top: 0;
 }
 
 .coin-price {
   display: block;
   width: 100%;
   text-align: center;
-  font-size: 1.22rem;
+  font-size: 1.2rem;
   color: var(--accent);
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-family: "Cinzel", "Cormorant Garamond", "Georgia", serif;
+  letter-spacing: 0.02em;
 }
 
 .whatsapp-button {
@@ -323,7 +359,7 @@ select:focus {
   padding: 30px;
   text-align: center;
   color: var(--muted);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 /* =========================
@@ -341,7 +377,7 @@ select:focus {
   margin-bottom: 26px;
   color: var(--muted);
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -421,8 +457,9 @@ select:focus {
 .detail-country {
   margin: 0 0 16px;
   color: var(--muted);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
+  font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+  font-weight: 300;
+  font-size: 0.95rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
 }
@@ -433,6 +470,8 @@ select:focus {
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.08;
   font-weight: 500;
+  font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+  letter-spacing: 0.01em;
 }
 
 .detail-divider {
@@ -458,7 +497,7 @@ select:focus {
 
 .detail-spec-label {
   color: var(--muted);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -466,7 +505,7 @@ select:focus {
 
 .detail-spec-value {
   color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -477,12 +516,14 @@ select:focus {
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   font-weight: 600;
+  font-family: "Cinzel", "Cormorant Garamond", "Georgia", serif;
+  letter-spacing: 0.02em;
 }
 
 .detail-description {
   margin: 0 0 26px;
   color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 1.05rem;
   line-height: 1.7;
 }
@@ -499,7 +540,7 @@ select:focus {
   border: none;
   background: linear-gradient(180deg, var(--success) 0%, var(--success-dark) 100%);
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -515,7 +556,7 @@ select:focus {
 .detail-error {
   padding: 30px 0;
   color: var(--muted);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
 
