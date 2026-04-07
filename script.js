@@ -141,10 +141,6 @@ function renderCoins(coins) {
     price.textContent = coin.price || "Consultar";
 
     details.innerHTML = "";
-    details.appendChild(createDetailLine("Referencia", coin.reference));
-    details.appendChild(createDetailLine("Estado", coin.grade));
-    details.appendChild(createDetailLine("Material", coin.metal));
-    details.appendChild(createDetailLine("Acuñación", coin.mintage));
 
     article.addEventListener("click", () => goToDetail(coin.id));
 
