@@ -290,8 +290,8 @@ select:focus {
   line-height: 1.15;
   color: #f1e7d6;
   font-weight: 600;
-  font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
-  letter-spacing: 0.01em;
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.03em;
 }
 
 .coin-card:hover .coin-title {
