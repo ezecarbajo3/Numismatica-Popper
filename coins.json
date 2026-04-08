@@ -89,7 +89,7 @@
   {
     "id": 6,
     "title": "10 Décimos 1830",
-    "country": "Argentina - Buenos Aires",
+    "country": "Arg - Buenos Aires",
     "metal": "Cobre",
     "year": 1830,
     "price": "65 USD",
@@ -106,7 +106,7 @@
   {
     "id": 7,
     "title": "2 Reales 1860",
-    "country": "Argentina - Buenos Aires",
+    "country": "Arg - Buenos Aires",
     "metal": "Bronce",
     "year": 1860,
     "price": "9 USD",
@@ -123,7 +123,7 @@
   {
     "id": 8,
     "title": "2 Reales 1854",
-    "country": "Argentina - Buenos Aires",
+    "country": "Arg - Buenos Aires",
     "metal": "Cobre",
     "year": 1854,
     "price": "13 USD",
