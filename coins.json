@@ -151,5 +151,39 @@
     "grade_short": "SC",
     "mintage": "N/A",
     "description": "Corona de plata - Ideal inversión"
+  },
+   {
+    "id": 10,
+    "title": "1 Dólar 2015",
+    "country": "Estados Unidos",
+    "metal": "Plata .999",
+    "year": 2015,
+    "price": "100 USD",
+    "images": [
+      "images/10A.jpeg",
+      "images/10B.jpeg"
+    ],
+    "reference": "KM# 273",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "N/A",
+    "description": "Onza de plata fina - Ideal inversión"
+  },
+   {
+    "id": 13,
+    "title": "1/2 Dólar 1968",
+    "country": "Estados Unidos",
+    "metal": "Plata",
+    "year": 1968,
+    "price": "10 USD",
+    "images": [
+      "images/13A.jpeg",
+      "images/13B.jpeg"
+    ],
+    "reference": "KM# 202a",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "N/A",
+    "description": ""
   }
 ]
