@@ -28,7 +28,7 @@ function renderCoinDetail(coin) {
   const mainImage = images[0];
 
   detailContainer.innerHTML = `
-    <div class="detail-gallery">
+    <div class="detail-gallery reveal">
       <div class="detail-main-image-wrap">
         <img
           id="detailMainImage"
@@ -41,9 +41,11 @@ function renderCoinDetail(coin) {
       <div class="detail-thumbs" id="detailThumbs"></div>
     </div>
 
-    <div class="detail-info">
+    <div class="detail-info reveal">
       <p class="detail-country">${coin.country || "País no informado"}</p>
       <h1 class="detail-title">${coin.title || "Sin título"}</h1>
+
+      <div class="detail-divider"></div>
 
       <div class="detail-specs">
         <div class="detail-spec-row">
@@ -109,12 +111,36 @@ function renderCoinDetail(coin) {
   });
 }
 
+function initDetailRevealEffects() {
+  const revealItems = document.querySelectorAll(
+    ".detail-gallery, .detail-info, .detail-thumbs, .back-link"
+  );
+
+  revealItems.forEach((item) => item.classList.add("reveal"));
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.12,
+    }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
+}
+
 async function loadCoinDetail() {
   const coinId = Number(getQueryParam("id"));
 
   if (!coinId) {
-    detailContainer.innerHTML = "<p>No se indicó ninguna moneda.</p>";
-    return;
+    detailContainer.innerHTML = '<p class="detail-error">No se indicó ninguna moneda.</p>';
+    return false;
   }
 
   try {
@@ -129,13 +155,18 @@ async function loadCoinDetail() {
 
     if (coin) {
       renderCoinDetail(coin);
+      return true;
     } else {
-      detailContainer.innerHTML = "<p>No se encontró la moneda.</p>";
+      detailContainer.innerHTML = '<p class="detail-error">No se encontró la moneda.</p>';
+      return false;
     }
   } catch (error) {
     console.error(error);
-    detailContainer.innerHTML = "<p>Hubo un error al cargar la moneda.</p>";
+    detailContainer.innerHTML = '<p class="detail-error">Hubo un error al cargar la moneda.</p>';
+    return false;
   }
 }
 
-loadCoinDetail();
+loadCoinDetail().then(() => {
+  initDetailRevealEffects();
+});
