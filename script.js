@@ -224,8 +224,16 @@ function renderCoins(coins) {
     meta.textContent = coin.country || "País no informado";
     price.textContent = coin.price || "Consultar";
 
-    const badge = createGradeBadge(getGradeShort(coin));
-    badgeRow.replaceWith(badge);
+    badgeRow.innerHTML = "";
+
+const grade = getGradeShort(coin);
+
+if (grade) {
+  const badge = document.createElement("span");
+  badge.className = "coin-grade-badge";
+  badge.textContent = grade;
+  badgeRow.appendChild(badge);
+}
 
     article.addEventListener("click", () => goToDetail(coin.id));
 
