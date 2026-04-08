@@ -1,21 +1,21 @@
 [
   {
-  "id": 1,
-  "title": "1/2 Real 1815",
-  "country": "Argentina",
-  "metal": "Plata",
-  "year": 1815,
-  "price": "USD 120",
-  "images": [
-    "images/1A.jpeg",
-    "images/1B.jpeg",
-    "images/1C.jpeg",
-    "images/1D.jpeg"
-  ],
-  "reference": "CJ# 17",
-  "grade": "Muy Bueno - detalles",
-  "grade_short": "MB d",
-  "mintage": "N/A",
-  "description": ""
-}
- ]
+    "id": 1,
+    "title": "1/2 Real 1815",
+    "country": "Argentina",
+    "metal": "Plata",
+    "year": 1815,
+    "price": "USD 120",
+    "images": [
+      "images/1A.jpeg",
+      "images/1B.jpeg",
+      "images/1C.jpeg",
+      "images/1D.jpeg"
+    ],
+    "reference": "CJ# 17",
+    "grade": "Muy Bueno - detalles",
+    "grade_short": "MB d",
+    "mintage": "N/A",
+    "description": ""
+  }
+]
