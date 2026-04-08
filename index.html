@@ -27,14 +27,32 @@
 
       <div class="control-group">
         <label for="countryFilter">País</label>
-        <select id="countryFilter">
+
+        <div class="custom-select" data-target="countryFilter">
+          <button type="button" class="custom-select-trigger">
+            <span class="custom-select-value">Todos los países</span>
+            <span class="custom-select-arrow">⌄</span>
+          </button>
+          <div class="custom-select-menu" id="countryFilterMenu"></div>
+        </div>
+
+        <select id="countryFilter" class="native-select-hidden">
           <option value="">Todos los países</option>
         </select>
       </div>
 
       <div class="control-group">
         <label for="metalFilter">Material</label>
-        <select id="metalFilter">
+
+        <div class="custom-select" data-target="metalFilter">
+          <button type="button" class="custom-select-trigger">
+            <span class="custom-select-value">Todos los materiales</span>
+            <span class="custom-select-arrow">⌄</span>
+          </button>
+          <div class="custom-select-menu" id="metalFilterMenu"></div>
+        </div>
+
+        <select id="metalFilter" class="native-select-hidden">
           <option value="">Todos los materiales</option>
         </select>
       </div>
