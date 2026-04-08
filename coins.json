@@ -51,5 +51,39 @@
     "grade_short": "R",
     "mintage": "N/A",
     "description": ""
+  },
+  {
+    "id": 4,
+    "title": "2 Centavos 1854",
+    "country": "Argentina",
+    "metal": "Cobre",
+    "year": 1854,
+    "price": "USD 18",
+    "images": [
+      "images/4A.jpeg",
+      "images/4B.jpeg"
+    ],
+    "reference": "CJ# 2",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "mintage": "N/A",
+    "description": ""
+  },
+  {
+    "id": 5,
+    "title": "2 Centavos 1854",
+    "country": "Argentina",
+    "metal": "Cobre",
+    "year": 1854,
+    "price": "USD 14",
+    "images": [
+      "images/5A.jpeg",
+      "images/5B.jpeg"
+    ],
+    "reference": "CJ# 2",
+    "grade": "Regular +",
+    "grade_short": "R+",
+    "mintage": "N/A",
+    "description": ""
   }
 ]
