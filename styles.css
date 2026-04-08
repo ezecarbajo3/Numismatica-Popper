@@ -496,7 +496,7 @@ select:focus {
 }
 
 .detail-main-image {
-  width: 90%; /* antes 100% */
+  width: 80%; /* antes 100% */
   aspect-ratio: 1 / 1;
   object-fit: contain;
   display: block;
@@ -513,7 +513,7 @@ select:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  width: 70%;
+  padding-left: 14px; /* 👈 alinea con el padding del contenedor */
 }
 
 .detail-thumb {
