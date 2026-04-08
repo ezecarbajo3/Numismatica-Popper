@@ -120,12 +120,15 @@ input,
   gap: 14px;
   margin-bottom: 18px;
   align-items: end;
+  position: relative;
+  z-index: 5000;
 }
-
 .control-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
+  z-index: 5000;
 }
 
 label {
@@ -182,11 +185,11 @@ input:focus {
 .custom-select {
   position: relative;
   width: 100%;
-  z-index: 2000;
+  z-index: 5001;
 }
 
 .custom-select.open {
-  z-index: 3000;
+  z-index: 6000;
 }
 
 .custom-select-trigger {
@@ -238,7 +241,7 @@ input:focus {
   overflow: hidden;
   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.45);
   display: none;
-  z-index: 4000;
+  z-index: 7000;
 }
 
 .custom-select.open .custom-select-menu {
@@ -304,6 +307,8 @@ input:focus {
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 22px;
   padding-bottom: 50px;
+  position: relative;
+  z-index: 1;
 }
 
 /* CARD */
@@ -318,6 +323,7 @@ input:focus {
   flex-direction: column;
   cursor: pointer;
   will-change: transform;
+  z-index: 1;
 }
 
 .coin-card::after {
