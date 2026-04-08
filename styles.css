@@ -182,6 +182,11 @@ input:focus {
 .custom-select {
   position: relative;
   width: 100%;
+  z-index: 2000;
+}
+
+.custom-select.open {
+  z-index: 3000;
 }
 
 .custom-select-trigger {
@@ -221,6 +226,7 @@ input:focus {
   flex-shrink: 0;
 }
 
+/* 🔥 clave: menú siempre por delante */
 .custom-select-menu {
   position: absolute;
   top: calc(100% + 6px);
@@ -232,7 +238,7 @@ input:focus {
   overflow: hidden;
   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.45);
   display: none;
-  z-index: 1000;
+  z-index: 4000;
 }
 
 .custom-select.open .custom-select-menu {
@@ -256,7 +262,6 @@ input:focus {
   background: var(--accent);
   color: #0b0b0b;
 }
-
 .reset-wrap {
   justify-content: flex-end;
 }
