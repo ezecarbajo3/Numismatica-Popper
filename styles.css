@@ -679,10 +679,17 @@ select:focus {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .detail-layout {
-    grid-template-columns: 1fr;
-    gap: 22px;
-  }
+.detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
+  gap: 40px; /* antes 28px → esto separa más imagen del texto */
+  align-items: start;
+}
+
+.detail-gallery {
+  margin-left: 24px;
+  margin-right: 8px;
+}
 
   .detail-info {
     padding-top: 0;
