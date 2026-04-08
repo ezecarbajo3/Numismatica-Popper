@@ -8,7 +8,7 @@
     "price": "120 USD",
     "images": [
       "images/1A.jpeg",
-      "images/1B.jpeg",
+      "images/1B.jpeg"
     ],
     "reference": "CJ# 17",
     "grade": "Muy Bueno - detalles",
@@ -137,7 +137,7 @@
   },
   {
     "id": 9,
-    "title": "10 Francos 1965",
+    "title": "10 Francos 1865",
     "country": "Francia",
     "metal": "Plata .900",
     "year": 1865,
