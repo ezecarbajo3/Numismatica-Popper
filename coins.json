@@ -14,11 +14,11 @@
     ],
     "reference": "CJ# 17",
     "grade": "Muy Bueno - detalles",
-    "grade_short": "Mb*",
+    "grade_short": "MB*",
     "mintage": "N/A",
     "description": ""
-  }
-    {
+  },
+  {
     "id": 2,
     "title": "1 Centavo 1889",
     "country": "Argentina",
@@ -27,14 +27,14 @@
     "price": "USD 6",
     "images": [
       "images/2A.jpeg",
-      "images/2B.jpeg",
+      "images/2B.jpeg"
     ],
     "reference": "CJ# 44",
     "grade": "Regular+",
     "grade_short": "R+",
     "mintage": "567.500",
     "description": ""
-  }
+  },
   {
     "id": 3,
     "title": "2 Centavos 1854",
@@ -44,7 +44,7 @@
     "price": "USD 10",
     "images": [
       "images/3A.jpeg",
-      "images/3B.jpeg",
+      "images/3B.jpeg"
     ],
     "reference": "CJ# 2",
     "grade": "Regular",
