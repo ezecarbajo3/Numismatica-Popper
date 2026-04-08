@@ -40,6 +40,7 @@ function uniqueSortedValues(array, key) {
 function populateFilters(coins) {
   fillSelect(countryFilter, uniqueSortedValues(coins, "country"), "Todos los países");
   fillSelect(metalFilter, uniqueSortedValues(coins, "metal"), "Todos los materiales");
+  initCustomSelects();
 }
 
 function fillSelect(select, values, defaultText) {
@@ -52,6 +53,75 @@ function fillSelect(select, values, defaultText) {
     select.appendChild(option);
   });
 }
+
+function buildCustomSelect(selectId) {
+  const nativeSelect = document.getElementById(selectId);
+  const customSelect = document.querySelector(`.custom-select[data-target="${selectId}"]`);
+
+  if (!nativeSelect || !customSelect) return;
+
+  const trigger = customSelect.querySelector(".custom-select-trigger");
+  const value = customSelect.querySelector(".custom-select-value");
+  const menu = customSelect.querySelector(".custom-select-menu");
+
+  if (!trigger || !value || !menu) return;
+
+  menu.innerHTML = "";
+
+  Array.from(nativeSelect.options).forEach((option) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "custom-select-option";
+    button.textContent = option.textContent;
+    button.dataset.value = option.value;
+
+    if (option.value === nativeSelect.value) {
+      button.classList.add("is-selected");
+      value.textContent = option.textContent;
+    }
+
+    button.addEventListener("click", (event) => {
+      event.stopPropagation();
+
+      nativeSelect.value = option.value;
+      value.textContent = option.textContent;
+
+      menu.querySelectorAll(".custom-select-option").forEach((item) => {
+        item.classList.remove("is-selected");
+      });
+
+      button.classList.add("is-selected");
+      customSelect.classList.remove("open");
+
+      nativeSelect.dispatchEvent(new Event("change", { bubbles: true }));
+    });
+
+    menu.appendChild(button);
+  });
+
+  trigger.onclick = (event) => {
+    event.stopPropagation();
+
+    document.querySelectorAll(".custom-select").forEach((item) => {
+      if (item !== customSelect) {
+        item.classList.remove("open");
+      }
+    });
+
+    customSelect.classList.toggle("open");
+  };
+}
+
+function initCustomSelects() {
+  buildCustomSelect("countryFilter");
+  buildCustomSelect("metalFilter");
+}
+
+document.addEventListener("click", () => {
+  document.querySelectorAll(".custom-select").forEach((item) => {
+    item.classList.remove("open");
+  });
+});
 
 function getFilteredCoins() {
   const searchTerm = searchInput.value.trim().toLowerCase();
@@ -209,6 +279,24 @@ resetFiltersButton.addEventListener("click", () => {
   searchInput.value = "";
   countryFilter.value = "";
   metalFilter.value = "";
+
+  document.querySelectorAll(".custom-select").forEach((customSelect) => {
+    const selectId = customSelect.dataset.target;
+    const nativeSelect = document.getElementById(selectId);
+    const value = customSelect.querySelector(".custom-select-value");
+
+    if (!nativeSelect || !value) return;
+
+    nativeSelect.value = "";
+    value.textContent = nativeSelect.options[0]?.textContent || "";
+
+    customSelect.querySelectorAll(".custom-select-option").forEach((option, index) => {
+      option.classList.toggle("is-selected", index === 0);
+    });
+
+    customSelect.classList.remove("open");
+  });
+
   renderCoins(allCoins);
   initRevealEffects();
 });
