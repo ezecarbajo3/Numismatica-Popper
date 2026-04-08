@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "1/2 Real 1815",
-    "country": "Argentina-Patria",
+    "country": "Patria",
     "metal": "Plata .900",
     "year": 1815,
     "price": "120 USD",
@@ -36,7 +36,7 @@
   {
     "id": 3,
     "title": "2 Centavos 1854",
-    "country": "Argentina",
+    "country": "Confederación Arg",
     "metal": "Cobre",
     "year": 1854,
     "price": "10 USD",
@@ -53,7 +53,7 @@
   {
     "id": 4,
     "title": "2 Centavos 1854",
-    "country": "Argentina",
+    "country": "Confederación Arg",
     "metal": "Cobre",
     "year": 1854,
     "price": "18 USD",
@@ -70,7 +70,7 @@
   {
     "id": 5,
     "title": "2 Centavos 1854",
-    "country": "Argentina",
+    "country": "Confederación Arg",
     "metal": "Cobre",
     "year": 1854,
     "price": "14 USD",
@@ -87,7 +87,7 @@
   {
     "id": 6,
     "title": "10 Décimos 1830",
-    "country": "Argentina-Buenos Aires",
+    "country": "Buenos Aires",
     "metal": "Cobre",
     "year": 1830,
     "price": "65 USD",
@@ -104,7 +104,7 @@
   {
     "id": 7,
     "title": "2 Reales 1860",
-    "country": "Argentina-Buenos Aires",
+    "country": "Buenos Aires",
     "metal": "Bronce",
     "year": 1860,
     "price": "9 USD",
@@ -121,7 +121,7 @@
   {
     "id": 8,
     "title": "2 Reales 1854",
-    "country": "Argentina-Buenos Aires",
+    "country": "Buenos Aires",
     "metal": "Cobre",
     "year": 1854,
     "price": "13 USD",
