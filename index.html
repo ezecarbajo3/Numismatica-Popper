@@ -10,7 +10,7 @@
   <header class="site-header">
     <div class="container">
       <h1>Numismática Popper</h1>
-      <p class="subtitle">Aumentando colecciones desde 2020</p>
+      <p class="subtitle">Piezas numismáticas de calidad</p>
     </div>
   </header>
 
@@ -40,11 +40,13 @@
       </div>
 
       <div class="control-group reset-wrap">
-        <button id="resetFilters" class="reset-button" type="button">Limpiar filtros</button>
+        <button id="resetFilters" class="reset-button" type="button">
+          Limpiar filtros
+        </button>
       </div>
     </section>
 
-    <section class="results-bar">
+    <section class="results-bar reveal">
       <p id="resultsCount">Cargando monedas...</p>
     </section>
 
@@ -52,7 +54,7 @@
   </main>
 
   <template id="coinCardTemplate">
-    <article class="coin-card" tabindex="0" role="button">
+    <article class="coin-card reveal" tabindex="0" role="button">
       <div class="coin-image-wrap">
         <img class="coin-image" src="" alt="" />
       </div>
@@ -63,9 +65,8 @@
         </div>
 
         <p class="coin-meta"></p>
-        <p class="coin-description"></p>
 
-        <div class="coin-details"></div>
+        <div class="coin-badge-row"></div>
 
         <div class="coin-footer">
           <strong class="coin-price"></strong>
