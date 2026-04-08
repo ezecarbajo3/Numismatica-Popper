@@ -21,11 +21,13 @@ async function loadCoins() {
 
     populateFilters(allCoins);
     renderCoins(allCoins);
+    return true;
   } catch (error) {
     console.error(error);
     coinsGrid.innerHTML =
       '<div class="empty-state">No se pudieron cargar las monedas. Revisá que exista el archivo <strong>coins.json</strong> en la misma carpeta.</div>';
     resultsCount.textContent = "Error al cargar monedas";
+    return false;
   }
 }
 
@@ -68,6 +70,7 @@ function getFilteredCoins() {
         coin.description,
         coin.reference,
         coin.grade,
+        coin.grade_short,
         coin.mintage,
       ]
         .filter(Boolean)
@@ -80,13 +83,6 @@ function getFilteredCoins() {
 
     return matchesSearch && matchesCountry && matchesMetal;
   });
-}
-
-function createDetailLine(label, value) {
-  const line = document.createElement("div");
-  line.className = "detail-line";
-  line.innerHTML = `<strong>${label}:</strong> ${value || "NA"}`;
-  return line;
 }
 
 function getPrimaryImage(coin) {
@@ -104,6 +100,26 @@ function getPrimaryImage(coin) {
   }
 
   return "https://via.placeholder.com/800x600?text=Sin+imagen";
+}
+
+function getGradeShort(coin) {
+  return coin.grade_short || coin.gradeShort || coin.grade_short_label || "";
+}
+
+function createGradeBadge(value) {
+  const wrap = document.createElement("div");
+  wrap.className = "coin-badge-row";
+
+  if (!value) {
+    return wrap;
+  }
+
+  const badge = document.createElement("span");
+  badge.className = "coin-grade-badge";
+  badge.textContent = value;
+
+  wrap.appendChild(badge);
+  return wrap;
 }
 
 function goToDetail(coinId) {
@@ -129,18 +145,17 @@ function renderCoins(coins) {
     const image = card.querySelector(".coin-image");
     const title = card.querySelector(".coin-title");
     const meta = card.querySelector(".coin-meta");
-    const description = card.querySelector(".coin-description");
-    const details = card.querySelector(".coin-details");
+    const badgeRow = card.querySelector(".coin-badge-row");
     const price = card.querySelector(".coin-price");
 
     image.src = getPrimaryImage(coin);
     image.alt = coin.title || "Moneda";
     title.textContent = coin.title || "Sin título";
     meta.textContent = coin.country || "País no informado";
-    description.textContent = coin.description || "";
     price.textContent = coin.price || "Consultar";
 
-    details.innerHTML = "";
+    const badge = createGradeBadge(getGradeShort(coin));
+    badgeRow.replaceWith(badge);
 
     article.addEventListener("click", () => goToDetail(coin.id));
 
@@ -160,6 +175,29 @@ function renderCoins(coins) {
 
 function applyFilters() {
   renderCoins(getFilteredCoins());
+  initRevealEffects();
+}
+
+function initRevealEffects() {
+  const revealItems = document.querySelectorAll(".coin-card, .results-bar, .controls");
+
+  revealItems.forEach((item) => item.classList.add("reveal"));
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.12,
+    }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
 }
 
 [searchInput, countryFilter, metalFilter].forEach((element) => {
@@ -172,6 +210,9 @@ resetFiltersButton.addEventListener("click", () => {
   countryFilter.value = "";
   metalFilter.value = "";
   renderCoins(allCoins);
+  initRevealEffects();
 });
 
-loadCoins();
+loadCoins().then(() => {
+  initRevealEffects();
+});
