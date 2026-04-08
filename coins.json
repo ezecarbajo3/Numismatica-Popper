@@ -3,9 +3,9 @@
     "id": 1,
     "title": "1/2 Real 1815",
     "country": "Argentina",
-    "metal": "Plata",
+    "metal": "Plata .900",
     "year": 1815,
-    "price": "USD 120",
+    "price": "120 USD",
     "images": [
       "images/1A.jpeg",
       "images/1B.jpeg",
@@ -24,7 +24,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1889,
-    "price": "USD 6",
+    "price": "6 USD",
     "images": [
       "images/2A.jpeg",
       "images/2B.jpeg"
@@ -41,7 +41,7 @@
     "country": "Argentina",
     "metal": "Cobre",
     "year": 1854,
-    "price": "USD 10",
+    "price": "10 USD",
     "images": [
       "images/3A.jpeg",
       "images/3B.jpeg"
@@ -58,7 +58,7 @@
     "country": "Argentina",
     "metal": "Cobre",
     "year": 1854,
-    "price": "USD 18",
+    "price": "18 USD",
     "images": [
       "images/4A.jpeg",
       "images/4B.jpeg"
@@ -75,7 +75,7 @@
     "country": "Argentina",
     "metal": "Cobre",
     "year": 1854,
-    "price": "USD 14",
+    "price": "14 USD",
     "images": [
       "images/5A.jpeg",
       "images/5B.jpeg"
@@ -92,7 +92,7 @@
     "country": "Argentina - Buenos Aires",
     "metal": "Cobre",
     "year": 1830,
-    "price": "USD 65",
+    "price": "65 USD",
     "images": [
       "images/6A.jpeg",
       "images/6B.jpeg"
@@ -109,7 +109,7 @@
     "country": "Argentina - Buenos Aires",
     "metal": "Bronce",
     "year": 1860,
-    "price": "USD 9",
+    "price": "9 USD",
     "images": [
       "images/7A.jpeg",
       "images/7B.jpeg"
@@ -119,5 +119,39 @@
     "grade_short": "R+",
     "mintage": "N/A",
     "description": ""
+  },
+  {
+    "id": 8,
+    "title": "2 Reales 1854",
+    "country": "Argentina - Buenos Aires",
+    "metal": "Cobre",
+    "year": 1854,
+    "price": "13 USD",
+    "images": [
+      "images/8A.jpeg",
+      "images/8B.jpeg"
+    ],
+    "reference": "CJ# 19",
+    "grade": "Regular",
+    "grade_short": "R",
+    "mintage": "N/A",
+    "description": ""
+  },
+  {
+    "id": 9,
+    "title": "10 Francos 1965",
+    "country": "Francia",
+    "metal": "Plata .900",
+    "year": 1865,
+    "price": "70 USD",
+    "images": [
+      "images/9A.jpeg",
+      "images/9B.jpeg"
+    ],
+    "reference": "KM# 932",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "N/A",
+    "description": "Corona de plata - Ideal inversión"
   }
 ]
