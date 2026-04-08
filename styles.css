@@ -596,7 +596,7 @@ input:focus {
   display: block;
   border-radius: 12px;
   background: #101010;
-  max-height: 580px;
+  max-height: 450px;
 }
 
 .detail-main-image-wrap:hover .detail-main-image {
