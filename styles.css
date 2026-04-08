@@ -578,7 +578,8 @@ input:focus {
   background: linear-gradient(180deg, #141414 0%, #0d0d0d 100%);
   border: 1px solid rgba(201, 162, 85, 0.12);
   border-radius: 22px;
-  padding: 6px;
+
+  padding: 6px 2px; /* 🔥 menos padding horizontal */
   box-shadow: var(--shadow);
 }
 
@@ -590,15 +591,18 @@ input:focus {
 }
 
 .detail-main-image {
-  width: 95%;
+  width: 100%; /* 🔥 ocupa todo el ancho */
+  max-width: 100%;
+
   aspect-ratio: 1 / 1;
   object-fit: contain;
   display: block;
+
   border-radius: 12px;
   background: #101010;
+
   max-height: 450px;
 }
-
 .detail-main-image-wrap:hover .detail-main-image {
   transform: scale(1.01);
 }
