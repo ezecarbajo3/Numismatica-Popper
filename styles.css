@@ -401,60 +401,43 @@ input:focus {
   font-size: 0.95rem;
 }
 
+/* FILA: PAÍS (izq) + ESTADO (der) */
 .coin-meta-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
   width: 100%;
 }
 
+/* PAÍS */
 .coin-meta {
-  margin: 0;
   text-align: left;
   font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
   font-weight: 300;
   font-size: 0.96rem;
   letter-spacing: 0.01em;
-  flex: 1;
+  flex: 1; /* ocupa todo el espacio disponible */
 }
+
 .coin-card:hover .coin-meta {
   color: #c9b89e;
 }
 
+/* DESCRIPCIÓN */
 .coin-description {
   text-align: center;
   margin-bottom: 0;
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-/* CAPSULA DE GRADO EN INICIO */
+/* CAPSULA (ESTADO) */
 .coin-badge-row {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
-  align-items: center;
-  margin: 0;
-  min-height: auto;
   flex-shrink: 0;
+  margin-left: auto; /* la empuja totalmente a la derecha */
 }
-
-.coin-grade-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 44px;
-  padding: 5px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(201, 162, 85, 0.26);
-  background: linear-gradient(180deg, rgba(201, 162, 85, 0.1) 0%, rgba(201, 162, 85, 0.04) 100%);
-  color: var(--accent);
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
 .coin-card:hover .coin-grade-badge {
   transform: scale(1.05);
   border-color: rgba(201, 162, 85, 0.42);
