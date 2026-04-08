@@ -44,7 +44,6 @@ body {
 a,
 button,
 input,
-select,
 .coin-card,
 .coin-image,
 .coin-title,
@@ -56,7 +55,9 @@ select,
 .detail-thumb,
 .detail-whatsapp,
 .back-link,
-.reset-button {
+.reset-button,
+.custom-select-trigger,
+.custom-select-option {
   transition:
     transform 0.22s ease,
     opacity 0.22s ease,
@@ -128,7 +129,7 @@ select,
 }
 
 label {
-  font-size: 0.7rem; /* antes 0.8rem */
+  font-size: 0.7rem;
   font-weight: 700;
   color: var(--muted);
   text-transform: uppercase;
@@ -136,50 +137,126 @@ label {
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
+/* ocultar labels de país/material en home */
+label[for="countryFilter"],
+label[for="metalFilter"] {
+  display: none;
+}
+
 input,
-select,
 button {
   font: inherit;
 }
 
-input,
-select {
+input {
   width: 100%;
   border: 1px solid var(--border);
-  background: #0b0b0b; /* más sólido */
+  background: #0b0b0b;
   border-radius: 14px;
   padding: 10px 12px;
-  color: var(--accent); /* dorado */
+  color: var(--accent);
   font-family: "Inter", Arial, Helvetica, sans-serif;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
   font-size: 0.9rem;
-  appearance: none; /* clave */
+  appearance: none;
 }
 
-/* dropdown opciones */
-select option {
-  background: #0b0b0b;
-  color: var(--accent);
+input::placeholder {
+  color: #7f7465;
 }
 
-/* hover/focus */
-input:hover,
-select:hover {
+input:hover {
   border-color: rgba(201, 162, 85, 0.4);
 }
 
-input:focus,
-select:focus {
+input:focus {
   outline: none;
   border-color: rgba(201, 162, 85, 0.6);
   box-shadow: 0 0 0 2px rgba(201, 162, 85, 0.12);
 }
 
-/* placeholder */
-input::placeholder {
-  color: #7f7465;
+/* CUSTOM SELECT */
+.native-select-hidden {
+  display: none !important;
 }
 
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid var(--border);
+  background: #0b0b0b;
+  border-radius: 14px;
+  padding: 10px 12px;
+  color: var(--accent);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+
+.custom-select-trigger:hover {
+  border-color: rgba(201, 162, 85, 0.4);
+}
+
+.custom-select.open .custom-select-trigger {
+  border-color: rgba(201, 162, 85, 0.6);
+  box-shadow: 0 0 0 2px rgba(201, 162, 85, 0.12);
+}
+
+.custom-select-value {
+  color: var(--text);
+}
+
+.custom-select-arrow {
+  color: var(--accent);
+  font-size: 1rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.custom-select-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+  background: #0b0b0b;
+  border: 1px solid rgba(201, 162, 85, 0.22);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.45);
+  display: none;
+  z-index: 1000;
+}
+
+.custom-select.open .custom-select-menu {
+  display: block;
+}
+
+.custom-select-option {
+  width: 100%;
+  border: none;
+  background: #0b0b0b;
+  color: var(--accent);
+  text-align: left;
+  padding: 10px 12px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.custom-select-option:hover,
+.custom-select-option.is-selected {
+  background: var(--accent);
+  color: #0b0b0b;
+}
 
 .reset-wrap {
   justify-content: flex-end;
@@ -188,11 +265,10 @@ input::placeholder {
 .reset-button {
   border: 1px solid rgba(201, 162, 85, 0.25);
   border-radius: 12px;
-  padding: 9px 14px; /* antes 13px 18px */
+  padding: 9px 14px;
   background: linear-gradient(180deg, #c9a255 0%, #9f7c3f 100%);
   color: #0b0b0b;
   cursor: pointer;
-  transition: 0.2s ease;
   font-weight: 700;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
@@ -215,7 +291,7 @@ input::placeholder {
   margin: 0;
   color: var(--muted);
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 0.5rem; /* 50% más chico aprox */
+  font-size: 0.5rem;
 }
 
 /* GRID */
@@ -349,7 +425,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   margin-top: -4px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   min-height: 40px;
 }
 
@@ -357,14 +433,14 @@ input::placeholder {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 44px; /* antes 62px */
-  padding: 5px 12px; /* antes 8px 18px */
+  min-width: 44px;
+  padding: 5px 12px;
   border-radius: 999px;
   border: 1px solid rgba(201, 162, 85, 0.26);
   background: linear-gradient(180deg, rgba(201, 162, 85, 0.1) 0%, rgba(201, 162, 85, 0.04) 100%);
   color: var(--accent);
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 0.65rem; /* antes 0.92rem */
+  font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -487,15 +563,14 @@ input::placeholder {
 }
 
 .detail-main-image-wrap {
+  display: flex;
+  justify-content: center;
+  transform: translateX(40px);
   background: linear-gradient(180deg, #141414 0%, #0d0d0d 100%);
   border: 1px solid rgba(201, 162, 85, 0.12);
   border-radius: 22px;
   padding: 6px;
   box-shadow: var(--shadow);
-
-  display: flex;
-  justify-content: center;
-  transform: translateX(40px); /* mueve hacia el texto */
 }
 
 .detail-main-image-wrap:hover {
@@ -506,7 +581,7 @@ input::placeholder {
 }
 
 .detail-main-image {
-  width: 95%; /* antes 100% */
+  width: 95%;
   aspect-ratio: 1 / 1;
   object-fit: contain;
   display: block;
@@ -523,7 +598,7 @@ input::placeholder {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  padding-left: 14px; /* 👈 alinea con el padding del contenedor */
+  padding-left: 14px;
 }
 
 .detail-thumb {
@@ -571,7 +646,6 @@ input::placeholder {
   color: #f1e7d6;
   font-size: clamp(1.9rem, 3.4vw, 2.8rem);
   line-height: 1.02;
-
   font-family: "Cinzel", serif;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -696,17 +770,16 @@ input::placeholder {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-.detail-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
-  gap: 40px; /* antes 28px → esto separa más imagen del texto */
-  align-items: start;
-}
+  .detail-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
+    gap: 40px;
+    align-items: start;
+  }
 
-.detail-gallery {
-  margin-left: 24px;
-  margin-right: 8px;
-}
+  .detail-gallery {
+    margin-left: 24px;
+    margin-right: 8px;
+  }
 
   .detail-info {
     padding-top: 0;
@@ -751,10 +824,12 @@ input::placeholder {
   .detail-main-image-wrap {
     width: 100%;
     padding: 12px;
+    transform: none;
   }
 
   .detail-thumbs {
     width: 100%;
+    padding-left: 0;
   }
 
   .detail-thumb {
