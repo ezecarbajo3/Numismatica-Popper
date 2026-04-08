@@ -85,5 +85,39 @@
     "grade_short": "R+",
     "mintage": "N/A",
     "description": ""
+  },
+  {
+    "id": 6,
+    "title": "10 Décimos 1830",
+    "country": "Argentina - Buenos Aires",
+    "metal": "Cobre",
+    "year": 1830,
+    "price": "USD 65",
+    "images": [
+      "images/6A.jpeg",
+      "images/6B.jpeg"
+    ],
+    "reference": "CJ# 8.2",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "mintage": "N/A",
+    "description": ""
+  },
+  {
+    "id": 7,
+    "title": "2 Reales 1860",
+    "country": "Argentina - Buenos Aires",
+    "metal": "Bronce",
+    "year": 1860,
+    "price": "USD 9",
+    "images": [
+      "images/7A.jpeg",
+      "images/7B.jpeg"
+    ],
+    "reference": "CJ# 23",
+    "grade": "Regular +",
+    "grade_short": "R+",
+    "mintage": "N/A",
+    "description": ""
   }
 ]
