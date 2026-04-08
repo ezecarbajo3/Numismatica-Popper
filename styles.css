@@ -137,7 +137,6 @@ label {
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-/* ocultar labels de país/material en home */
 label[for="countryFilter"],
 label[for="metalFilter"] {
   display: none;
@@ -401,77 +400,66 @@ input:focus {
   font-size: 0.95rem;
 }
 
-/* FILA: PAÍS (izq) + ESTADO (der) */
 .coin-meta-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  justify-content: space-between;
+  column-gap: 10px;
   width: 100%;
 }
 
-/* PAÍS */
 .coin-meta {
+  margin: 0;
   text-align: left;
   font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
   font-weight: 300;
   font-size: 0.96rem;
   letter-spacing: 0.01em;
-  flex: 1; /* ocupa todo el espacio disponible */
+  min-width: 0;
 }
 
 .coin-card:hover .coin-meta {
   color: #c9b89e;
 }
 
-/* DESCRIPCIÓN */
 .coin-description {
   text-align: center;
   margin-bottom: 0;
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-/* CAPSULA (ESTADO) */
 .coin-badge-row {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex-shrink: 0;
-  margin-left: auto; /* la empuja totalmente a la derecha */
+  min-width: max-content;
+  margin: 0;
 }
+
+.coin-grade-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(201, 162, 85, 0.26);
+  background: linear-gradient(180deg, rgba(201, 162, 85, 0.1) 0%, rgba(201, 162, 85, 0.04) 100%);
+  color: var(--accent);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .coin-card:hover .coin-grade-badge {
   transform: scale(1.05);
   border-color: rgba(201, 162, 85, 0.42);
   box-shadow:
     0 8px 18px rgba(0, 0, 0, 0.22),
     0 0 12px rgba(201, 162, 85, 0.08);
-}
-
-/* DETALLES EN 4 LINEAS */
-.coin-details {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 2px;
-  margin-bottom: 4px;
-}
-
-.detail-pill,
-.detail-line {
-  display: block;
-  padding: 0;
-  border: none;
-  background: transparent;
-  border-radius: 0;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  color: var(--muted);
-}
-
-.detail-pill strong,
-.detail-line strong {
-  color: var(--text);
-  font-weight: 700;
 }
 
 /* FOOTER */
@@ -515,10 +503,7 @@ input:focus {
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-/* =========================
-   DETALLE DE MONEDA
-========================= */
-
+/* DETALLE */
 .detail-page {
   padding: 18px 0 42px;
 }
@@ -561,8 +546,7 @@ input:focus {
   background: linear-gradient(180deg, #141414 0%, #0d0d0d 100%);
   border: 1px solid rgba(201, 162, 85, 0.12);
   border-radius: 22px;
-
-  padding: 6px 2px; /* 🔥 menos padding horizontal */
+  padding: 6px 2px;
   box-shadow: var(--shadow);
 }
 
@@ -574,18 +558,16 @@ input:focus {
 }
 
 .detail-main-image {
-  width: 100%; /* 🔥 ocupa todo el ancho */
+  width: 100%;
   max-width: 100%;
-
   aspect-ratio: 1 / 1;
   object-fit: contain;
   display: block;
-
   border-radius: 12px;
   background: #101010;
-
   max-height: 450px;
 }
+
 .detail-main-image-wrap:hover .detail-main-image {
   transform: scale(1.01);
 }
@@ -622,7 +604,6 @@ input:focus {
   display: block;
 }
 
-/* COLUMNA DERECHA */
 .detail-info {
   padding-top: 6px;
 }
@@ -742,9 +723,7 @@ input:focus {
 .reveal {
   opacity: 0;
   transform: translateY(18px);
-  transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .reveal.is-visible {
@@ -769,7 +748,6 @@ input:focus {
   .detail-layout {
     grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
     gap: 40px;
-    align-items: start;
   }
 
   .detail-gallery {
@@ -807,6 +785,19 @@ input:focus {
 
   .coins-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .coin-meta-row {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+  }
+
+  .coin-meta {
+    text-align: center;
+  }
+
+  .coin-badge-row {
+    justify-content: center;
   }
 
   .coin-footer {
@@ -849,20 +840,6 @@ input:focus {
   .detail-price {
     font-size: clamp(1.9rem, 8vw, 2.4rem);
   }
-}
-
-.coin-meta-row {
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-
-.coin-meta {
-  text-align: center;
-}
-
-.coin-badge-row {
-  justify-content: center;
 }
 
 @media (prefers-reduced-motion: reduce) {
