@@ -803,8 +803,14 @@ input:focus {
   .controls {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
-    position: relative;
-    z-index: 1;
+    position: sticky;
+    top: 0;
+    z-index: 9000;
+    padding: 12px 0 10px;
+    background:
+      linear-gradient(180deg, rgba(5, 5, 5, 0.98) 0%, rgba(8, 8, 8, 0.96) 100%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
 
   .control-group {
@@ -868,6 +874,10 @@ input:focus {
 
   .coin-footer {
     justify-content: center;
+  }
+
+  .coin-title {
+    font-size: 0.98rem;
   }
 
   .detail-page {
@@ -936,7 +946,6 @@ input:focus {
     font-size: clamp(1.9rem, 8vw, 2.4rem);
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
