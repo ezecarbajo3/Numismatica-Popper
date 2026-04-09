@@ -15,7 +15,7 @@ const COUNTRY_GROUPS = {
     children: [
       { label: "Argentina", value: "Argentina" },
       { label: "Confed. Arg.", value: "Argentina - Confed. Arg." },
-      { label: "Buenos Aires", value: "Argentina - Buenos Aires" }
+      { label: "Buenos Aires", value: "Argentina - Buenos Aires" },
       { label: "Patria", value: "Argentina - Patria" }
     ]
   }
@@ -59,9 +59,15 @@ function fillSelect(select, values, defaultText) {
 
 function populateFilters(coins) {
   const hiddenInMainList = new Set([
+    "Argentina",
+    "Buenos Aires",
+    "Patria",
+    "Confed. Arg.",
+    "Confederación Argentina",
     "Argentina - Buenos Aires",
     "Argentina - Patria",
-    "Argentina"
+    "Argentina - Confed. Arg.",
+    "Argentina - Confederación Argentina"
   ]);
 
   const countryValues = uniqueSortedValues(coins, "country").filter(
@@ -307,6 +313,23 @@ function sortCoins(coins) {
     return yearA - yearB;
   });
 }
+function getDisplayCountry(country) {
+  if (!country) return "País no informado";
+
+  const argentinaSubsections = new Map([
+    ["Argentina", "Argentina"],
+    ["Argentina - Buenos Aires", "Buenos Aires"],
+    ["Argentina - Patria", "Patria"],
+    ["Argentina - Confed. Arg.", "Confed. Arg."],
+    ["Argentina - Confederación Argentina", "Confed. Arg."],
+    ["Buenos Aires", "Buenos Aires"],
+    ["Patria", "Patria"],
+    ["Confed. Arg.", "Confed. Arg."],
+    ["Confederación Argentina", "Confed. Arg."]
+  ]);
+
+  return argentinaSubsections.get(country) || country;
+}
 
 function renderCoins(coins) {
   coinsGrid.innerHTML = "";
@@ -333,7 +356,7 @@ sortCoins(coins).forEach((coin) => {
     image.src = getPrimaryImage(coin);
     image.alt = coin.title || "Moneda";
     title.textContent = coin.title || "Sin título";
-    meta.textContent = coin.country || "País no informado";
+meta.textContent = getDisplayCountry(coin.country);
     price.textContent = coin.price || "Consultar";
 
     const grade = getGradeShort(coin);
