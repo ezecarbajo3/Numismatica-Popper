@@ -940,6 +940,9 @@ input:focus {
   .detail-price {
     font-size: clamp(1.9rem, 8vw, 2.4rem);
   }
+  .reset-wrap {
+    display: none;
+  }
 }@media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
