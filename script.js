@@ -14,13 +14,12 @@ const COUNTRY_GROUPS = {
     label: "Argentina",
     children: [
       { label: "Argentina", value: "Argentina" },
-      { label: "Confed. Arg.", value: "Argentina - Confed. Arg." },
+      { label: "Confederación Argentina", value: "Argentina - Confederación Argentina" },
       { label: "Buenos Aires", value: "Argentina - Buenos Aires" },
       { label: "Patria", value: "Argentina - Patria" }
     ]
   }
 };
-
 async function loadCoins() {
   try {
     const response = await fetch("coins.json", { cache: "no-store" });
@@ -69,6 +68,15 @@ function populateFilters(coins) {
     "Argentina - Confed. Arg.",
     "Argentina - Confederación Argentina"
   ]);
+
+  const countryValues = uniqueSortedValues(coins, "country").filter(
+    (value) => !hiddenInMainList.has(value)
+  );
+
+  fillSelect(countryFilter, countryValues, "Todos los países");
+  fillSelect(metalFilter, uniqueSortedValues(coins, "metal"), "Todos los materiales");
+  initCustomSelects();
+}
 
   const countryValues = uniqueSortedValues(coins, "country").filter(
     (value) => !hiddenInMainList.has(value)
@@ -300,16 +308,35 @@ function goToDetail(coinId) {
   window.location.href = `detalle.html?id=${coinId}`;
 }
 function sortCoins(coins) {
+  const argentinaOrder = {
+    "Argentina": 0,
+    "Argentina - Confederación Argentina": 1,
+    "Argentina - Confed. Arg.": 1,
+    "Argentina - Buenos Aires": 2,
+    "Argentina - Patria": 3
+  };
+
   return [...coins].sort((a, b) => {
-    const countryA = String(a.country || "").toLowerCase();
-    const countryB = String(b.country || "").toLowerCase();
+    const countryA = String(a.country || "");
+    const countryB = String(b.country || "");
+
+    const isArgentinaA = countryA in argentinaOrder;
+    const isArgentinaB = countryB in argentinaOrder;
+
+    if (isArgentinaA && isArgentinaB) {
+      const bySubsection = argentinaOrder[countryA] - argentinaOrder[countryB];
+      if (bySubsection !== 0) return bySubsection;
+
+      const yearA = Number(a.year) || 0;
+      const yearB = Number(b.year) || 0;
+      return yearA - yearB;
+    }
 
     const byCountry = countryA.localeCompare(countryB, "es");
     if (byCountry !== 0) return byCountry;
 
     const yearA = Number(a.year) || 0;
     const yearB = Number(b.year) || 0;
-
     return yearA - yearB;
   });
 }
@@ -320,17 +347,16 @@ function getDisplayCountry(country) {
     ["Argentina", "Argentina"],
     ["Argentina - Buenos Aires", "Buenos Aires"],
     ["Argentina - Patria", "Patria"],
-    ["Argentina - Confed. Arg.", "Confed. Arg."],
-    ["Argentina - Confederación Argentina", "Confed. Arg."],
+    ["Argentina - Confed. Arg.", "Confederación Argentina"],
+    ["Argentina - Confederación Argentina", "Confederación Argentina"],
     ["Buenos Aires", "Buenos Aires"],
     ["Patria", "Patria"],
-    ["Confed. Arg.", "Confed. Arg."],
-    ["Confederación Argentina", "Confed. Arg."]
+    ["Confed. Arg.", "Confederación Argentina"],
+    ["Confederación Argentina", "Confederación Argentina"]
   ]);
 
   return argentinaSubsections.get(country) || country;
 }
-
 function renderCoins(coins) {
   coinsGrid.innerHTML = "";
 
