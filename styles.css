@@ -806,10 +806,14 @@ input:focus {
   .controls {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
+    position: relative;
+    z-index: 1;
   }
 
   .control-group {
     min-width: 0;
+    position: relative;
+    z-index: 1;
   }
 
   .control-group input,
@@ -818,8 +822,29 @@ input:focus {
     width: 100%;
   }
 
+  .custom-select {
+    position: relative;
+    z-index: 20;
+  }
+
+  .custom-select.open {
+    z-index: 9999;
+  }
+
+  .custom-select-menu {
+    position: absolute;
+    z-index: 10000;
+  }
+
   .reset-wrap {
     grid-column: 1 / -1;
+    position: relative;
+    z-index: 1;
+  }
+
+  .reset-button {
+    position: relative;
+    z-index: 1;
   }
 
   .coins-grid {
@@ -915,8 +940,7 @@ input:focus {
   .detail-price {
     font-size: clamp(1.9rem, 8vw, 2.4rem);
   }
-}
-@media (prefers-reduced-motion: reduce) {
+}@media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
