@@ -122,20 +122,17 @@ input,
   gap: 8px;
   position: relative;
   z-index: 5000;
+  min-width: 0;
 }
 
 label {
+  display: block;
   font-size: 0.7rem;
   font-weight: 700;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-family: "Inter", Arial, Helvetica, sans-serif;
-}
-
-label[for="countryFilter"],
-label[for="metalFilter"] {
-  display: none;
 }
 
 input,
@@ -821,12 +818,10 @@ input:focus {
     width: 100%;
   }
 
-  /* 🔥 BOTÓN ELIMINADO EN MOBILE */
   .reset-wrap {
     display: none;
   }
 
-  /* 🔥 DROPDOWN MODO MODAL */
   .custom-select {
     position: static;
   }
@@ -840,22 +835,17 @@ input:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
     width: 90%;
     max-height: 60vh;
     overflow-y: auto;
-
     z-index: 100000;
-
     border-radius: 16px;
   }
 
-  /* GRID */
   .coins-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  /* ANIMACIONES OFF */
   .coin-card.reveal,
   .results-bar.reveal,
   .controls.reveal {
@@ -880,12 +870,10 @@ input:focus {
     justify-content: center;
   }
 
-  /* 🔥 TITULO -20% */
   .coin-title {
     font-size: 0.98rem;
   }
 
-  /* DETAIL */
   .detail-page {
     padding: 14px 0 34px;
   }
@@ -952,7 +940,8 @@ input:focus {
     font-size: clamp(1.9rem, 8vw, 2.4rem);
   }
 }
-}@media (prefers-reduced-motion: reduce) {
+
+@media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
