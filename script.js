@@ -14,9 +14,9 @@ const COUNTRY_GROUPS = {
     label: "Argentina",
     children: [
       { label: "Argentina", value: "Argentina" },
-      { label: "Confederación Argentina", value: "Argentina - Confederación Argentina" },
+      { label: "Confed. Arg.", value: "Argentina - Confed. Arg." },
       { label: "Buenos Aires", value: "Argentina - Buenos Aires" },
-      { label: "Patria", value: "Argentina - Patria" }
+      { label: "Patria", value: "Argentina - Patia" }
     ]
   }
 };
@@ -338,12 +338,12 @@ function getDisplayCountry(country) {
     ["Argentina", "Argentina"],
     ["Argentina - Buenos Aires", "Buenos Aires"],
     ["Argentina - Patria", "Patria"],
-    ["Argentina - Confed. Arg.", "Confederación Argentina"],
-    ["Argentina - Confederación Argentina", "Confederación Argentina"],
+    ["Argentina - Confed. Arg.", "Confed. Arg."],
+    ["Argentina - Confederación Argentina", "Confed. Arg."],
     ["Buenos Aires", "Buenos Aires"],
     ["Patria", "Patria"],
-    ["Confed. Arg.", "Confederación Argentina"],
-    ["Confederación Argentina", "Confederación Argentina"]
+    ["Confed. Arg.", "Confed. Arg."],
+    ["Confederación Argentina", "Confed. Arg."]
   ]);
 
   return argentinaSubsections.get(country) || country;
