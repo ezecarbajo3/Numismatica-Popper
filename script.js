@@ -13,14 +13,13 @@ const COUNTRY_GROUPS = {
   argentina: {
     label: "Argentina",
     children: [
-      { label: "Argentina", value: "__ARGENTINA_ALL__" },
-      { label: "Confed. Arg.", value: "__CONFED_ARG__" },
-      { label: "Buenos Aires", value: "__BUENOS_AIRES__" },
-      { label: "Patria", value: "__PATRIA__" }
+      { label: "Argentina", value: "Argentina" },
+      { label: "Confed. Arg.", value: "Confed. Arg." },
+      { label: "Buenos Aires", value: "Buenos Aires" },
+      { label: "Patria", value: "Patria" }
     ]
   }
-};
-async function loadCoins() {
+};async function loadCoins() {
   try {
     const response = await fetch("coins.json", { cache: "no-store" });
     if (!response.ok) throw new Error("No se pudo cargar coins.json");
@@ -58,16 +57,11 @@ function fillSelect(select, values, defaultText) {
 
 function populateFilters(coins) {
   const hiddenInMainList = new Set([
-    "Argentina",
-    "Buenos Aires",
-    "Patria",
-    "Confed. Arg.",
-    "Confederación Argentina",
-    "Argentina - Buenos Aires",
-    "Argentina - Patria",
-    "Argentina - Confed. Arg.",
-    "Argentina - Confederación Argentina"
-  ]);
+  "Argentina",
+  "Confed. Arg.",
+  "Buenos Aires",
+  "Patria"
+]);
 
   const countryValues = uniqueSortedValues(coins, "country").filter(
     (value) => !hiddenInMainList.has(value)
@@ -252,8 +246,6 @@ function getFilteredCoins() {
   const selectedMetal = metalFilter.value;
 
   return allCoins.filter((coin) => {
-    const country = String(coin.country || "").trim();
-
     const matchesSearch =
       !searchTerm ||
       [
@@ -275,41 +267,19 @@ function getFilteredCoins() {
 
     let matchesCountry = true;
 
-    if (selectedCountry === "__ARGENTINA_ALL__") {
-      matchesCountry =
-        country === "Argentina" ||
-        country === "Argentina - Confed. Arg." ||
-        country === "Argentina - Confederación Argentina" ||
-        country === "Argentina - Buenos Aires" ||
-        country === "Argentina - Patria" ||
-        country === "Confed. Arg." ||
-        country === "Confederación Argentina" ||
-        country === "Buenos Aires" ||
-        country === "Patria";
-    } else if (selectedCountry === "__CONFED_ARG__") {
-      matchesCountry =
-        country === "Argentina - Confed. Arg." ||
-        country === "Argentina - Confederación Argentina" ||
-        country === "Confed. Arg." ||
-        country === "Confederación Argentina";
-    } else if (selectedCountry === "__BUENOS_AIRES__") {
-      matchesCountry =
-        country === "Argentina - Buenos Aires" ||
-        country === "Buenos Aires";
-    } else if (selectedCountry === "__PATRIA__") {
-      matchesCountry =
-        country === "Argentina - Patria" ||
-        country === "Patria";
-    } else if (selectedCountry) {
-      matchesCountry = country === selectedCountry;
+    if (selectedCountry) {
+      if (selectedCountry === "Argentina") {
+        matchesCountry = ["Argentina", "Confed. Arg.", "Buenos Aires", "Patria"].includes(coin.country);
+      } else {
+        matchesCountry = coin.country === selectedCountry;
+      }
     }
 
     const matchesMetal = !selectedMetal || coin.metal === selectedMetal;
 
     return matchesSearch && matchesCountry && matchesMetal;
   });
-}
-function getPrimaryImage(coin) {
+}function getPrimaryImage(coin) {
   if (Array.isArray(coin.images) && coin.images.length > 0) {
     const imageA = coin.images.find((img) => {
       const fileName = img.split("/").pop()?.toUpperCase() || "";
@@ -367,15 +337,13 @@ function getDisplayCountry(country) {
 
   const argentinaSubsections = new Map([
     ["Argentina", "Argentina"],
-    ["Argentina - Buenos Aires", "Buenos Aires"],
-    ["Argentina - Patria", "Patria"],
-    ["Argentina - Confed. Arg.", "Confed. Arg."],
-    ["Argentina - Confederación Argentina", "Confed. Arg."],
     ["Buenos Aires", "Buenos Aires"],
     ["Patria", "Patria"],
-    ["Confed. Arg.", "Confed. Arg."],
-    ["Confederación Argentina", "Confed. Arg."]
+    ["Confed. Arg.", "Confed. Arg."]
   ]);
+
+  return argentinaSubsections.get(country) || country;
+}
 
   return argentinaSubsections.get(country) || country;
 }
