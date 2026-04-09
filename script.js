@@ -57,18 +57,7 @@ function fillSelect(select, values, defaultText) {
 }
 
 function populateFilters(coins) {
-const hiddenInMainList = new Set([
-  "Argentina",
-  "Argentina - Confed. Arg.",
-  "Argentina - Buenos Aires",
-  "Argentina - Patria"
-]);
-
-  const countryValues = uniqueSortedValues(coins, "country").filter(
-    (value) => !hiddenInMainList.has(value)
-  );
-
-  fillSelect(countryFilter, countryValues, "Todos los países");
+  fillSelect(countryFilter, uniqueSortedValues(coins, "country"), "Todos los países");
   fillSelect(metalFilter, uniqueSortedValues(coins, "metal"), "Todos los materiales");
   initCustomSelects();
 }
@@ -182,7 +171,6 @@ function buildCountryCustomSelect(nativeSelect, customSelect, valueNode, menu) {
     valueNode.textContent = selectedInGroup.label;
   }
 }
-
 function buildDefaultCustomSelect(nativeSelect, customSelect, valueNode, menu) {
   Array.from(nativeSelect.options).forEach((option) => {
     menu.appendChild(
