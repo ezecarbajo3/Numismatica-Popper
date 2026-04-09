@@ -100,8 +100,8 @@ function fillSelect(select, values, defaultText) {
 }
 
 function populateFilters(coins) {
-  fillSelect(countryFilter, uniqueSortedValues(coins, "country"), "Todos los países");
-  fillSelect(metalFilter, uniqueSortedValues(coins, "metal"), "Todos los materiales");
+  fillSelect(countryFilter, uniqueSortedValues(coins, "country"), "Todos");
+  fillSelect(metalFilter, uniqueSortedValues(coins, "metal"), "Todos");
   initCustomSelects();
 }
 
