@@ -424,7 +424,7 @@ input:focus {
   text-align: left;
   font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
   font-weight: 300;
-  font-size: 0.96rem;
+  font-size: 1.15rem; /* 🔥 +20% aprox */
   letter-spacing: 0.01em;
   min-width: 0;
 }
