@@ -253,5 +253,39 @@
     "grade_short": "EX",
     "mintage": "N/A",
     "description": ""
+  },
+  {
+    "id": 18,
+    "title": "2 Centavos 1890",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1890,
+    "price": "3 USD",
+    "images": [
+      "images/18A.jpeg",
+      "images/18B.jpeg"
+    ],
+    "reference": "CJ# 31",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "mintage": "N/A",
+    "description": ""
+  },
+  {
+    "id": 19,
+    "title": "2 Centavos 1891",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1891,
+    "price": "3 USD",
+    "images": [
+      "images/19A.jpeg",
+      "images/19B.jpeg"
+    ],
+    "reference": "CJ# 32",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "mintage": "N/A",
+    "description": ""
   }
 ]
