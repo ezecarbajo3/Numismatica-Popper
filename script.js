@@ -14,12 +14,13 @@ const COUNTRY_GROUPS = {
     label: "Argentina",
     children: [
       { label: "Argentina", value: "Argentina" },
-      { label: "Confed. Arg.", value: "Confed. Arg." },
-      { label: "Buenos Aires", value: "Buenos Aires" },
-      { label: "Patria", value: "Patria" }
+      { label: "Confed. Arg.", value: "Argentina - Confed. Arg." },
+      { label: "Buenos Aires", value: "Argentina - Buenos Aires" },
+      { label: "Patria", value: "Argentina - Patria" }
     ]
   }
-};async function loadCoins() {
+};
+async function loadCoins() {
   try {
     const response = await fetch("coins.json", { cache: "no-store" });
     if (!response.ok) throw new Error("No se pudo cargar coins.json");
@@ -56,11 +57,11 @@ function fillSelect(select, values, defaultText) {
 }
 
 function populateFilters(coins) {
-  const hiddenInMainList = new Set([
+const hiddenInMainList = new Set([
   "Argentina",
-  "Confed. Arg.",
-  "Buenos Aires",
-  "Patria"
+  "Argentina - Confed. Arg.",
+  "Argentina - Buenos Aires",
+  "Argentina - Patria"
 ]);
 
   const countryValues = uniqueSortedValues(coins, "country").filter(
@@ -267,14 +268,18 @@ function getFilteredCoins() {
 
     let matchesCountry = true;
 
-    if (selectedCountry) {
-      if (selectedCountry === "Argentina") {
-        matchesCountry = ["Argentina", "Confed. Arg.", "Buenos Aires", "Patria"].includes(coin.country);
-      } else {
-        matchesCountry = coin.country === selectedCountry;
-      }
-    }
-
+if (selectedCountry) {
+  if (selectedCountry === "Argentina") {
+    matchesCountry = [
+      "Argentina",
+      "Argentina - Confed. Arg.",
+      "Argentina - Buenos Aires",
+      "Argentina - Patria"
+    ].includes(coin.country);
+  } else {
+    matchesCountry = coin.country === selectedCountry;
+  }
+}
     const matchesMetal = !selectedMetal || coin.metal === selectedMetal;
 
     return matchesSearch && matchesCountry && matchesMetal;
@@ -337,9 +342,9 @@ function getDisplayCountry(country) {
 
   const argentinaSubsections = new Map([
     ["Argentina", "Argentina"],
-    ["Buenos Aires", "Buenos Aires"],
-    ["Patria", "Patria"],
-    ["Confed. Arg.", "Confed. Arg."]
+    ["Argentina - Buenos Aires", "Buenos Aires"],
+    ["Argentina - Patria", "Patria"],
+    ["Argentina - Confed. Arg.", "Confed. Arg."]
   ]);
 
   return argentinaSubsections.get(country) || country;
