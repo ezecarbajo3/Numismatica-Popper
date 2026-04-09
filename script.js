@@ -323,7 +323,7 @@ function sortCoins(coins) {
     const groupA = normalizeCountryGroup(a.country);
     const groupB = normalizeCountryGroup(b.country);
 
-    const byCountry = countryA.localeCompare(countryB, "es");
+    const byCountry = groupA.localeCompare(groupB, "es");
     if (byCountry !== 0) return byCountry;
 
     const yearA = Number(a.year) || 0;
