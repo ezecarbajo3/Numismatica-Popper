@@ -344,9 +344,6 @@ function getDisplayCountry(country) {
 
   return argentinaSubsections.get(country) || country;
 }
-
-  return argentinaSubsections.get(country) || country;
-}
 function renderCoins(coins) {
   coinsGrid.innerHTML = "";
 
