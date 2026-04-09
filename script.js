@@ -13,10 +13,10 @@ const COUNTRY_GROUPS = {
   argentina: {
     label: "Argentina",
     children: [
-      { label: "Argentina", value: "Argentina" },
-      { label: "Confed. Arg.", value: "Argentina - Confed. Arg." },
-      { label: "Buenos Aires", value: "Argentina - Buenos Aires" },
-      { label: "Patria", value: "Argentina - Patria" }
+      { label: "Argentina", value: "__ARGENTINA_ALL__" },
+      { label: "Confed. Arg.", value: "__CONFED_ARG__" },
+      { label: "Buenos Aires", value: "__BUENOS_AIRES__" },
+      { label: "Patria", value: "__PATRIA__" }
     ]
   }
 };
@@ -252,6 +252,8 @@ function getFilteredCoins() {
   const selectedMetal = metalFilter.value;
 
   return allCoins.filter((coin) => {
+    const country = String(coin.country || "").trim();
+
     const matchesSearch =
       !searchTerm ||
       [
@@ -271,13 +273,42 @@ function getFilteredCoins() {
         .toLowerCase()
         .includes(searchTerm);
 
-    const matchesCountry = !selectedCountry || coin.country === selectedCountry;
+    let matchesCountry = true;
+
+    if (selectedCountry === "__ARGENTINA_ALL__") {
+      matchesCountry =
+        country === "Argentina" ||
+        country === "Argentina - Confed. Arg." ||
+        country === "Argentina - Confederación Argentina" ||
+        country === "Argentina - Buenos Aires" ||
+        country === "Argentina - Patria" ||
+        country === "Confed. Arg." ||
+        country === "Confederación Argentina" ||
+        country === "Buenos Aires" ||
+        country === "Patria";
+    } else if (selectedCountry === "__CONFED_ARG__") {
+      matchesCountry =
+        country === "Argentina - Confed. Arg." ||
+        country === "Argentina - Confederación Argentina" ||
+        country === "Confed. Arg." ||
+        country === "Confederación Argentina";
+    } else if (selectedCountry === "__BUENOS_AIRES__") {
+      matchesCountry =
+        country === "Argentina - Buenos Aires" ||
+        country === "Buenos Aires";
+    } else if (selectedCountry === "__PATRIA__") {
+      matchesCountry =
+        country === "Argentina - Patria" ||
+        country === "Patria";
+    } else if (selectedCountry) {
+      matchesCountry = country === selectedCountry;
+    }
+
     const matchesMetal = !selectedMetal || coin.metal === selectedMetal;
 
     return matchesSearch && matchesCountry && matchesMetal;
   });
 }
-
 function getPrimaryImage(coin) {
   if (Array.isArray(coin.images) && coin.images.length > 0) {
     const imageA = coin.images.find((img) => {
