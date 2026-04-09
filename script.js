@@ -16,7 +16,7 @@ const COUNTRY_GROUPS = {
       { label: "Argentina", value: "Argentina" },
       { label: "Confed. Arg.", value: "Argentina - Confed. Arg." },
       { label: "Buenos Aires", value: "Argentina - Buenos Aires" },
-      { label: "Patria", value: "Argentina - Patia" }
+      { label: "Patria", value: "Argentina - Patria" }
     ]
   }
 };
@@ -323,15 +323,6 @@ function sortCoins(coins) {
     const groupA = normalizeCountryGroup(a.country);
     const groupB = normalizeCountryGroup(b.country);
 
-    const byCountry = groupA.localeCompare(groupB, "es");
-    if (byCountry !== 0) return byCountry;
-
-    const yearA = Number(a.year) || 0;
-    const yearB = Number(b.year) || 0;
-
-    return yearA - yearB;
-  });
-}
     const byCountry = countryA.localeCompare(countryB, "es");
     if (byCountry !== 0) return byCountry;
 
