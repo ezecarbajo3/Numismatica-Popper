@@ -14,8 +14,9 @@ const COUNTRY_GROUPS = {
     label: "Argentina",
     children: [
       { label: "Argentina", value: "Argentina" },
-      { label: "Confed. Arg.", value: "Argentina - Patria" },
+      { label: "Confed. Arg.", value: "Argentina - Confed. Arg." },
       { label: "Buenos Aires", value: "Argentina - Buenos Aires" }
+      { label: "Patria", value: "Argentina - Patria" }
     ]
   }
 };
@@ -57,7 +58,17 @@ function fillSelect(select, values, defaultText) {
 }
 
 function populateFilters(coins) {
-  fillSelect(countryFilter, uniqueSortedValues(coins, "country"), "Todos los países");
+  const hiddenInMainList = new Set([
+    "Argentina - Buenos Aires",
+    "Argentina - Patria",
+    "Argentina"
+  ]);
+
+  const countryValues = uniqueSortedValues(coins, "country").filter(
+    (value) => !hiddenInMainList.has(value)
+  );
+
+  fillSelect(countryFilter, countryValues, "Todos los países");
   fillSelect(metalFilter, uniqueSortedValues(coins, "metal"), "Todos los materiales");
   initCustomSelects();
 }
