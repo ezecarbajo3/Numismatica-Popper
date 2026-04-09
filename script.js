@@ -245,11 +245,11 @@ function buildCustomSelect(selectId) {
 
   if (selectId === "countryFilter") {
     valueNode.textContent =
-      nativeSelect.value ? getCountryDisplayLabel(nativeSelect.value) : "Todos los países";
+      nativeSelect.value ? getCountryDisplayLabel(nativeSelect.value) : "Todos";
     buildCountryCustomSelect(nativeSelect, customSelect, valueNode, menu);
   } else {
     valueNode.textContent =
-      nativeSelect.options[nativeSelect.selectedIndex]?.textContent || "Todos los materiales";
+      nativeSelect.options[nativeSelect.selectedIndex]?.textContent || "Todos";
     buildDefaultCustomSelect(nativeSelect, customSelect, valueNode, menu);
   }
 
