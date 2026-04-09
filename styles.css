@@ -817,14 +817,18 @@ input:focus {
   }
 
   .control-group input,
-  .custom-select-trigger,
-  .reset-button {
+  .custom-select-trigger {
     width: 100%;
   }
 
+  /* 🔥 BOTÓN ELIMINADO EN MOBILE */
+  .reset-wrap {
+    display: none;
+  }
+
+  /* 🔥 DROPDOWN MODO MODAL */
   .custom-select {
-    position: relative;
-    z-index: 20;
+    position: static;
   }
 
   .custom-select.open {
@@ -832,25 +836,26 @@ input:focus {
   }
 
   .custom-select-menu {
-    position: absolute;
-    z-index: 10000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 90%;
+    max-height: 60vh;
+    overflow-y: auto;
+
+    z-index: 100000;
+
+    border-radius: 16px;
   }
 
-  .reset-wrap {
-    grid-column: 1 / -1;
-    position: relative;
-    z-index: 1;
-  }
-
-  .reset-button {
-    position: relative;
-    z-index: 1;
-  }
-
+  /* GRID */
   .coins-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* ANIMACIONES OFF */
   .coin-card.reveal,
   .results-bar.reveal,
   .controls.reveal {
@@ -875,6 +880,12 @@ input:focus {
     justify-content: center;
   }
 
+  /* 🔥 TITULO -20% */
+  .coin-title {
+    font-size: 0.98rem;
+  }
+
+  /* DETAIL */
   .detail-page {
     padding: 14px 0 34px;
   }
@@ -940,12 +951,7 @@ input:focus {
   .detail-price {
     font-size: clamp(1.9rem, 8vw, 2.4rem);
   }
-  .reset-wrap {
-    display: none;
-  }
-  .coin-title {
-    font-size: 0.98rem; /* aprox -20% */
-  }
+}
 }@media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
