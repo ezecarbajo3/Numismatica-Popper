@@ -804,45 +804,51 @@ input:focus {
   }
 
   .controls {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-}
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
 
-.control-group {
-  min-width: 0;
-}
+  .control-group {
+    min-width: 0;
+  }
 
-.control-group input,
-.custom-select-trigger,
-.reset-button {
-  width: 100%;
-}
+  .control-group input,
+  .custom-select-trigger,
+  .reset-button {
+    width: 100%;
+  }
 
-/* botón abajo ocupando todo */
-.reset-wrap {
-  grid-column: 1 / -1;
-}
+  .reset-wrap {
+    grid-column: 1 / -1;
+  }
 
-.coins-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
+  .coins-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-.coin-meta-row {
-  grid-template-columns: 1fr;
-  row-gap: 6px;
-}
+  .coin-card.reveal,
+  .results-bar.reveal,
+  .controls.reveal {
+    opacity: 1;
+    transform: none;
+  }
 
-.coin-meta {
-  text-align: center;
-}
+  .coin-meta-row {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+  }
 
-.coin-badge-row {
-  justify-content: center;
-}
+  .coin-meta {
+    text-align: center;
+  }
 
-.coin-footer {
-  justify-content: center;
-}
+  .coin-badge-row {
+    justify-content: center;
+  }
+
+  .coin-footer {
+    justify-content: center;
+  }
 
   .detail-page {
     padding: 14px 0 34px;
@@ -910,7 +916,6 @@ input:focus {
     font-size: clamp(1.9rem, 8vw, 2.4rem);
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
