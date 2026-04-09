@@ -943,6 +943,9 @@ input:focus {
   .reset-wrap {
     display: none;
   }
+  .coin-title {
+    font-size: 0.98rem; /* aprox -20% */
+  }
 }@media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
