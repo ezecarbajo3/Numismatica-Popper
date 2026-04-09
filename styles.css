@@ -527,11 +527,11 @@ input:focus {
 .detail-main-image-wrap {
   display: flex;
   justify-content: center;
-  transform: translateX(40px);
+  transform: none;
   background: linear-gradient(180deg, #141414 0%, #0d0d0d 100%);
   border: 1px solid rgba(201, 162, 85, 0.12);
   border-radius: 22px;
-  padding: 6px 2px;
+  padding: 6px;
   box-shadow: var(--shadow);
 }
 
