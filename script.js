@@ -78,15 +78,6 @@ function populateFilters(coins) {
   initCustomSelects();
 }
 
-  const countryValues = uniqueSortedValues(coins, "country").filter(
-    (value) => !hiddenInMainList.has(value)
-  );
-
-  fillSelect(countryFilter, countryValues, "Todos los países");
-  fillSelect(metalFilter, uniqueSortedValues(coins, "metal"), "Todos los materiales");
-  initCustomSelects();
-}
-
 function createCustomOption({ label, value, nativeSelect, valueNode, customSelect, menu }) {
   const button = document.createElement("button");
   button.type = "button";
