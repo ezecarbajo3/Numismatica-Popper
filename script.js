@@ -282,6 +282,20 @@ function getGradeShort(coin) {
 function goToDetail(coinId) {
   window.location.href = `detalle.html?id=${coinId}`;
 }
+function sortCoins(coins) {
+  return [...coins].sort((a, b) => {
+    const countryA = String(a.country || "").toLowerCase();
+    const countryB = String(b.country || "").toLowerCase();
+
+    const byCountry = countryA.localeCompare(countryB, "es");
+    if (byCountry !== 0) return byCountry;
+
+    const yearA = Number(a.year) || 0;
+    const yearB = Number(b.year) || 0;
+
+    return yearA - yearB;
+  });
+}
 
 function renderCoins(coins) {
   coinsGrid.innerHTML = "";
@@ -295,7 +309,7 @@ function renderCoins(coins) {
 
   const fragment = document.createDocumentFragment();
 
-  coins.forEach((coin) => {
+sortCoins(coins).forEach((coin) => {
     const card = coinCardTemplate.content.cloneNode(true);
 
     const article = card.querySelector(".coin-card");
