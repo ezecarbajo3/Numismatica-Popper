@@ -7,14 +7,23 @@ const coinsGrid = document.getElementById("coinsGrid");
 const coinCardTemplate = document.getElementById("coinCardTemplate");
 
 let allCoins = [];
+let revealObserver = null;
+
+const COUNTRY_GROUPS = {
+  argentina: {
+    label: "Argentina",
+    children: [
+      { label: "Argentina", value: "Argentina" },
+      { label: "Confed. Arg.", value: "Argentina - Patria" },
+      { label: "Buenos Aires", value: "Argentina - Buenos Aires" }
+    ]
+  }
+};
 
 async function loadCoins() {
   try {
     const response = await fetch("coins.json", { cache: "no-store" });
-
-    if (!response.ok) {
-      throw new Error("No se pudo cargar coins.json");
-    }
+    if (!response.ok) throw new Error("No se pudo cargar coins.json");
 
     const data = await response.json();
     allCoins = Array.isArray(data) ? data : [];
@@ -37,20 +46,144 @@ function uniqueSortedValues(array, key) {
   );
 }
 
+function fillSelect(select, values, defaultText) {
+  select.innerHTML = `<option value="">${defaultText}</option>`;
+  values.forEach((value) => {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = value;
+    select.appendChild(option);
+  });
+}
+
 function populateFilters(coins) {
   fillSelect(countryFilter, uniqueSortedValues(coins, "country"), "Todos los países");
   fillSelect(metalFilter, uniqueSortedValues(coins, "metal"), "Todos los materiales");
   initCustomSelects();
 }
 
-function fillSelect(select, values, defaultText) {
-  select.innerHTML = `<option value="">${defaultText}</option>`;
+function createCustomOption({ label, value, nativeSelect, valueNode, customSelect, menu }) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "custom-select-option";
+  button.textContent = label;
+  button.dataset.value = value;
 
-  values.forEach((value) => {
-    const option = document.createElement("option");
-    option.value = value;
-    option.textContent = value;
-    select.appendChild(option);
+  if (value === nativeSelect.value) {
+    button.classList.add("is-selected");
+    valueNode.textContent = label;
+  }
+
+  button.addEventListener("click", (event) => {
+    event.stopPropagation();
+
+    nativeSelect.value = value;
+    valueNode.textContent = label;
+
+    menu.querySelectorAll(".custom-select-option").forEach((item) => {
+      item.classList.remove("is-selected");
+    });
+
+    button.classList.add("is-selected");
+    customSelect.classList.remove("open");
+    nativeSelect.dispatchEvent(new Event("change", { bubbles: true }));
+  });
+
+  return button;
+}
+
+function buildCountryCustomSelect(nativeSelect, customSelect, valueNode, menu) {
+  const options = Array.from(nativeSelect.options).map((option) => ({
+    label: option.textContent,
+    value: option.value
+  }));
+
+  const defaultOption = options.find((opt) => opt.value === "");
+  if (defaultOption) {
+    menu.appendChild(
+      createCustomOption({
+        label: defaultOption.label,
+        value: defaultOption.value,
+        nativeSelect,
+        valueNode,
+        customSelect,
+        menu
+      })
+    );
+  }
+
+  const argentinaGroup = document.createElement("div");
+  argentinaGroup.className = "custom-select-group";
+
+  const argentinaHeader = document.createElement("button");
+  argentinaHeader.type = "button";
+  argentinaHeader.className = "custom-select-group-title";
+  argentinaHeader.innerHTML = `<span>${COUNTRY_GROUPS.argentina.label}</span><span class="custom-select-group-arrow">⌄</span>`;
+
+  const argentinaSubmenu = document.createElement("div");
+  argentinaSubmenu.className = "custom-select-submenu";
+
+  COUNTRY_GROUPS.argentina.children.forEach((item) => {
+    argentinaSubmenu.appendChild(
+      createCustomOption({
+        label: item.label,
+        value: item.value,
+        nativeSelect,
+        valueNode,
+        customSelect,
+        menu
+      })
+    );
+  });
+
+  argentinaHeader.addEventListener("click", (event) => {
+    event.stopPropagation();
+    argentinaGroup.classList.toggle("open");
+  });
+
+  argentinaGroup.appendChild(argentinaHeader);
+  argentinaGroup.appendChild(argentinaSubmenu);
+  menu.appendChild(argentinaGroup);
+
+  const groupedValues = new Set(COUNTRY_GROUPS.argentina.children.map((item) => item.value));
+
+  options
+    .filter((opt) => opt.value && !groupedValues.has(opt.value))
+    .forEach((opt) => {
+      menu.appendChild(
+        createCustomOption({
+          label: opt.label,
+          value: opt.value,
+          nativeSelect,
+          valueNode,
+          customSelect,
+          menu
+        })
+      );
+    });
+
+  const selectedInGroup = COUNTRY_GROUPS.argentina.children.find(
+    (item) => item.value === nativeSelect.value
+  );
+
+  if (selectedInGroup) {
+    argentinaGroup.classList.add("open");
+    valueNode.textContent = selectedInGroup.label;
+  }
+}
+
+function buildDefaultCustomSelect(nativeSelect, customSelect, valueNode, menu) {
+  Array.from(nativeSelect.options).forEach((option) => {
+    menu.appendChild(
+      createCustomOption({
+        label: option.textContent,
+        value: option.value,
+        nativeSelect,
+        valueNode,
+        customSelect,
+        menu
+      })
+    );
   });
 }
 
@@ -61,51 +194,25 @@ function buildCustomSelect(selectId) {
   if (!nativeSelect || !customSelect) return;
 
   const trigger = customSelect.querySelector(".custom-select-trigger");
-  const value = customSelect.querySelector(".custom-select-value");
+  const valueNode = customSelect.querySelector(".custom-select-value");
   const menu = customSelect.querySelector(".custom-select-menu");
 
-  if (!trigger || !value || !menu) return;
+  if (!trigger || !valueNode || !menu) return;
 
   menu.innerHTML = "";
+  valueNode.textContent = nativeSelect.options[nativeSelect.selectedIndex]?.textContent || "";
 
-  Array.from(nativeSelect.options).forEach((option) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "custom-select-option";
-    button.textContent = option.textContent;
-    button.dataset.value = option.value;
-
-    if (option.value === nativeSelect.value) {
-      button.classList.add("is-selected");
-      value.textContent = option.textContent;
-    }
-
-    button.addEventListener("click", (event) => {
-      event.stopPropagation();
-
-      nativeSelect.value = option.value;
-      value.textContent = option.textContent;
-
-      menu.querySelectorAll(".custom-select-option").forEach((item) => {
-        item.classList.remove("is-selected");
-      });
-
-      button.classList.add("is-selected");
-      customSelect.classList.remove("open");
-
-      nativeSelect.dispatchEvent(new Event("change", { bubbles: true }));
-    });
-
-    menu.appendChild(button);
-  });
+  if (selectId === "countryFilter") {
+    buildCountryCustomSelect(nativeSelect, customSelect, valueNode, menu);
+  } else {
+    buildDefaultCustomSelect(nativeSelect, customSelect, valueNode, menu);
+  }
 
   trigger.onclick = (event) => {
     event.stopPropagation();
 
     document.querySelectorAll(".custom-select").forEach((item) => {
-      if (item !== customSelect) {
-        item.classList.remove("open");
-      }
+      if (item !== customSelect) item.classList.remove("open");
     });
 
     customSelect.classList.toggle("open");
@@ -141,7 +248,7 @@ function getFilteredCoins() {
         coin.reference,
         coin.grade,
         coin.grade_short,
-        coin.mintage,
+        coin.mintage
       ]
         .filter(Boolean)
         .join(" ")
@@ -161,35 +268,15 @@ function getPrimaryImage(coin) {
       const fileName = img.split("/").pop()?.toUpperCase() || "";
       return fileName.includes("A.");
     });
-
     return imageA || coin.images[0];
   }
 
-  if (coin.image) {
-    return coin.image;
-  }
-
+  if (coin.image) return coin.image;
   return "https://via.placeholder.com/800x600?text=Sin+imagen";
 }
 
 function getGradeShort(coin) {
   return coin.grade_short || coin.gradeShort || coin.grade_short_label || "";
-}
-
-function createGradeBadge(value) {
-  const wrap = document.createElement("div");
-  wrap.className = "coin-badge-row";
-
-  if (!value) {
-    return wrap;
-  }
-
-  const badge = document.createElement("span");
-  badge.className = "coin-grade-badge";
-  badge.textContent = value;
-
-  wrap.appendChild(badge);
-  return wrap;
 }
 
 function goToDetail(coinId) {
@@ -224,19 +311,10 @@ function renderCoins(coins) {
     meta.textContent = coin.country || "País no informado";
     price.textContent = coin.price || "Consultar";
 
-    badgeRow.innerHTML = "";
-
-const grade = getGradeShort(coin);
-
-if (grade) {
-  const badge = document.createElement("span");
-  badge.className = "coin-grade-badge";
-  badge.textContent = grade;
-  badgeRow.appendChild(badge);
-}
+    const grade = getGradeShort(coin);
+    badgeRow.innerHTML = grade ? `<span class="coin-grade-badge">${grade}</span>` : "";
 
     article.addEventListener("click", () => goToDetail(coin.id));
-
     article.addEventListener("keydown", (event) => {
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
@@ -251,31 +329,45 @@ if (grade) {
   resultsCount.textContent = `${coins.length} moneda${coins.length === 1 ? "" : "s"} encontrada${coins.length === 1 ? "" : "s"}`;
 }
 
+function initRevealEffects() {
+  if (revealObserver) revealObserver.disconnect();
+
+  const revealItems = document.querySelectorAll(".coin-card, .results-bar, .controls");
+  revealItems.forEach((item) => item.classList.add("reveal"));
+
+  revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  revealItems.forEach((item) => revealObserver.observe(item));
+}
+
 function applyFilters() {
   renderCoins(getFilteredCoins());
   initRevealEffects();
 }
 
-function initRevealEffects() {
-  const revealItems = document.querySelectorAll(".coin-card, .results-bar, .controls");
+function resetCustomSelects() {
+  document.querySelectorAll(".custom-select").forEach((customSelect) => {
+    const selectId = customSelect.dataset.target;
+    const nativeSelect = document.getElementById(selectId);
+    const valueNode = customSelect.querySelector(".custom-select-value");
 
-  revealItems.forEach((item) => item.classList.add("reveal"));
+    if (!nativeSelect || !valueNode) return;
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.12,
-    }
-  );
+    nativeSelect.value = "";
+    valueNode.textContent = nativeSelect.options[0]?.textContent || "";
+    customSelect.classList.remove("open");
+  });
 
-  revealItems.forEach((item) => observer.observe(item));
+  initCustomSelects();
 }
 
 [searchInput, countryFilter, metalFilter].forEach((element) => {
@@ -287,24 +379,7 @@ resetFiltersButton.addEventListener("click", () => {
   searchInput.value = "";
   countryFilter.value = "";
   metalFilter.value = "";
-
-  document.querySelectorAll(".custom-select").forEach((customSelect) => {
-    const selectId = customSelect.dataset.target;
-    const nativeSelect = document.getElementById(selectId);
-    const value = customSelect.querySelector(".custom-select-value");
-
-    if (!nativeSelect || !value) return;
-
-    nativeSelect.value = "";
-    value.textContent = nativeSelect.options[0]?.textContent || "";
-
-    customSelect.querySelectorAll(".custom-select-option").forEach((option, index) => {
-      option.classList.toggle("is-selected", index === 0);
-    });
-
-    customSelect.classList.remove("open");
-  });
-
+  resetCustomSelects();
   renderCoins(allCoins);
   initRevealEffects();
 });
