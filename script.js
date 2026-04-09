@@ -20,6 +20,48 @@ const COUNTRY_GROUPS = {
     ]
   }
 };
+
+const ARGENTINA_EQUIVALENTS = {
+  "Argentina": "Argentina",
+  "Argentina - Patria": "Argentina - Patria",
+  "Patria": "Argentina - Patria",
+  "Argentina - Buenos Aires": "Argentina - Buenos Aires",
+  "Buenos Aires": "Argentina - Buenos Aires",
+  "Argentina - Confed. Arg.": "Argentina - Confed. Arg.",
+  "Confed. Arg.": "Argentina - Confed. Arg.",
+  "Argentina - Confederación Argentina": "Argentina - Confed. Arg.",
+  "Confederación Argentina": "Argentina - Confed. Arg."
+};
+
+const ARGENTINA_GROUP_VALUES = new Set([
+  "Argentina",
+  "Argentina - Patria",
+  "Argentina - Buenos Aires",
+  "Argentina - Confed. Arg."
+]);
+
+function normalizeCountryValue(country) {
+  const value = String(country || "").trim();
+  return ARGENTINA_EQUIVALENTS[value] || value;
+}
+
+function getCountryDisplayLabel(country) {
+  const normalized = normalizeCountryValue(country);
+
+  switch (normalized) {
+    case "Argentina - Patria":
+      return "Patria";
+    case "Argentina - Buenos Aires":
+      return "Buenos Aires";
+    case "Argentina - Confed. Arg.":
+      return "Confed. Arg.";
+    case "Argentina":
+      return "Argentina";
+    default:
+      return normalized || "País no informado";
+  }
+}
+
 async function loadCoins() {
   try {
     const response = await fetch("coins.json", { cache: "no-store" });
@@ -48,6 +90,7 @@ function uniqueSortedValues(array, key) {
 
 function fillSelect(select, values, defaultText) {
   select.innerHTML = `<option value="">${defaultText}</option>`;
+
   values.forEach((value) => {
     const option = document.createElement("option");
     option.value = value;
@@ -86,6 +129,7 @@ function createCustomOption({ label, value, nativeSelect, valueNode, customSelec
 
     button.classList.add("is-selected");
     customSelect.classList.remove("open");
+
     nativeSelect.dispatchEvent(new Event("change", { bubbles: true }));
   });
 
@@ -99,6 +143,7 @@ function buildCountryCustomSelect(nativeSelect, customSelect, valueNode, menu) {
   }));
 
   const defaultOption = options.find((opt) => opt.value === "");
+
   if (defaultOption) {
     menu.appendChild(
       createCustomOption({
@@ -118,7 +163,10 @@ function buildCountryCustomSelect(nativeSelect, customSelect, valueNode, menu) {
   const argentinaHeader = document.createElement("button");
   argentinaHeader.type = "button";
   argentinaHeader.className = "custom-select-group-title";
-  argentinaHeader.innerHTML = `<span>${COUNTRY_GROUPS.argentina.label}</span><span class="custom-select-group-arrow">⌄</span>`;
+  argentinaHeader.innerHTML = `
+    <span>${COUNTRY_GROUPS.argentina.label}</span>
+    <span class="custom-select-group-arrow">⌄</span>
+  `;
 
   const argentinaSubmenu = document.createElement("div");
   argentinaSubmenu.className = "custom-select-submenu";
@@ -145,14 +193,12 @@ function buildCountryCustomSelect(nativeSelect, customSelect, valueNode, menu) {
   argentinaGroup.appendChild(argentinaSubmenu);
   menu.appendChild(argentinaGroup);
 
-  const groupedValues = new Set(COUNTRY_GROUPS.argentina.children.map((item) => item.value));
-
   options
-    .filter((opt) => opt.value && !groupedValues.has(opt.value))
+    .filter((opt) => opt.value && !ARGENTINA_GROUP_VALUES.has(normalizeCountryValue(opt.value)))
     .forEach((opt) => {
       menu.appendChild(
         createCustomOption({
-          label: opt.label,
+          label: getCountryDisplayLabel(opt.value),
           value: opt.value,
           nativeSelect,
           valueNode,
@@ -162,15 +208,12 @@ function buildCountryCustomSelect(nativeSelect, customSelect, valueNode, menu) {
       );
     });
 
-  const selectedInGroup = COUNTRY_GROUPS.argentina.children.find(
-    (item) => item.value === nativeSelect.value
-  );
-
-  if (selectedInGroup) {
+  if (ARGENTINA_GROUP_VALUES.has(normalizeCountryValue(nativeSelect.value))) {
     argentinaGroup.classList.add("open");
-    valueNode.textContent = selectedInGroup.label;
+    valueNode.textContent = getCountryDisplayLabel(nativeSelect.value);
   }
 }
+
 function buildDefaultCustomSelect(nativeSelect, customSelect, valueNode, menu) {
   Array.from(nativeSelect.options).forEach((option) => {
     menu.appendChild(
@@ -199,11 +242,14 @@ function buildCustomSelect(selectId) {
   if (!trigger || !valueNode || !menu) return;
 
   menu.innerHTML = "";
-  valueNode.textContent = nativeSelect.options[nativeSelect.selectedIndex]?.textContent || "";
 
   if (selectId === "countryFilter") {
+    valueNode.textContent =
+      nativeSelect.value ? getCountryDisplayLabel(nativeSelect.value) : "Todos los países";
     buildCountryCustomSelect(nativeSelect, customSelect, valueNode, menu);
   } else {
+    valueNode.textContent =
+      nativeSelect.options[nativeSelect.selectedIndex]?.textContent || "Todos los materiales";
     buildDefaultCustomSelect(nativeSelect, customSelect, valueNode, menu);
   }
 
@@ -229,55 +275,57 @@ document.addEventListener("click", () => {
   });
 });
 
+function matchesSelectedCountry(coinCountry, selectedCountry) {
+  const normalizedCoinCountry = normalizeCountryValue(coinCountry);
+  const normalizedSelectedCountry = normalizeCountryValue(selectedCountry);
+
+  if (!normalizedSelectedCountry) return true;
+
+  if (normalizedSelectedCountry === "Argentina") {
+    return ARGENTINA_GROUP_VALUES.has(normalizedCoinCountry);
+  }
+
+  return normalizedCoinCountry === normalizedSelectedCountry;
+}
+
 function getFilteredCoins() {
   const searchTerm = searchInput.value.trim().toLowerCase();
   const selectedCountry = countryFilter.value;
   const selectedMetal = metalFilter.value;
 
   return allCoins.filter((coin) => {
-    const matchesSearch =
-      !searchTerm ||
-      [
-        coin.title,
-        coin.country,
-        coin.metal,
-        coin.year,
-        coin.price,
-        coin.description,
-        coin.reference,
-        coin.grade,
-        coin.grade_short,
-        coin.mintage
-      ]
-        .filter(Boolean)
-        .join(" ")
-        .toLowerCase()
-        .includes(searchTerm);
+    const searchableText = [
+      coin.title,
+      getCountryDisplayLabel(coin.country),
+      coin.country,
+      coin.metal,
+      coin.year,
+      coin.price,
+      coin.description,
+      coin.reference,
+      coin.grade,
+      coin.grade_short,
+      coin.mintage
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
 
-    let matchesCountry = true;
-
-if (selectedCountry) {
-  if (selectedCountry === "Argentina") {
-    matchesCountry = [
-      "Argentina",
-      "Argentina - Confed. Arg.",
-      "Argentina - Buenos Aires",
-      "Argentina - Patria"
-    ].includes(coin.country);
-  } else {
-    matchesCountry = coin.country === selectedCountry;
-  }
-}
+    const matchesSearch = !searchTerm || searchableText.includes(searchTerm);
+    const matchesCountry = matchesSelectedCountry(coin.country, selectedCountry);
     const matchesMetal = !selectedMetal || coin.metal === selectedMetal;
 
     return matchesSearch && matchesCountry && matchesMetal;
   });
-}function getPrimaryImage(coin) {
+}
+
+function getPrimaryImage(coin) {
   if (Array.isArray(coin.images) && coin.images.length > 0) {
     const imageA = coin.images.find((img) => {
       const fileName = img.split("/").pop()?.toUpperCase() || "";
       return fileName.includes("A.");
     });
+
     return imageA || coin.images[0];
   }
 
@@ -292,51 +340,32 @@ function getGradeShort(coin) {
 function goToDetail(coinId) {
   window.location.href = `detalle.html?id=${coinId}`;
 }
+
+function getCountrySortGroup(country) {
+  const normalized = normalizeCountryValue(country);
+  return ARGENTINA_GROUP_VALUES.has(normalized) ? "Argentina" : normalized;
+}
+
 function sortCoins(coins) {
-  const normalizeCountryGroup = (country) => {
-    const value = String(country || "").trim();
-
-    if (
-      value === "Argentina" ||
-      value === "Argentina - Patria" ||
-      value === "Patria" ||
-      value === "Argentina - Buenos Aires" ||
-      value === "Buenos Aires" ||
-      value === "Argentina - Confed. Arg." ||
-      value === "Confed. Arg." ||
-      value === "Argentina - Confederación Argentina" ||
-      value === "Confederación Argentina"
-    ) {
-      return "Argentina";
-    }
-
-    return value;
-  };
-
   return [...coins].sort((a, b) => {
-    const groupA = normalizeCountryGroup(a.country);
-    const groupB = normalizeCountryGroup(b.country);
+    const groupA = getCountrySortGroup(a.country);
+    const groupB = getCountrySortGroup(b.country);
 
     const byCountry = groupA.localeCompare(groupB, "es");
     if (byCountry !== 0) return byCountry;
 
     const yearA = Number(a.year) || 0;
     const yearB = Number(b.year) || 0;
-    return yearA - yearB;
+    if (yearA !== yearB) return yearA - yearB;
+
+    return String(a.title || "").localeCompare(String(b.title || ""), "es");
   });
 }
+
 function getDisplayCountry(country) {
-  if (!country) return "País no informado";
-
-  const argentinaSubsections = new Map([
-    ["Argentina", "Argentina"],
-    ["Argentina - Buenos Aires", "Buenos Aires"],
-    ["Argentina - Patria", "Patria"],
-    ["Argentina - Confed. Arg.", "Confed. Arg."]
-  ]);
-
-  return argentinaSubsections.get(country) || country;
+  return getCountryDisplayLabel(country);
 }
+
 function renderCoins(coins) {
   coinsGrid.innerHTML = "";
 
@@ -349,7 +378,7 @@ function renderCoins(coins) {
 
   const fragment = document.createDocumentFragment();
 
-sortCoins(coins).forEach((coin) => {
+  sortCoins(coins).forEach((coin) => {
     const card = coinCardTemplate.content.cloneNode(true);
 
     const article = card.querySelector(".coin-card");
@@ -362,7 +391,7 @@ sortCoins(coins).forEach((coin) => {
     image.src = getPrimaryImage(coin);
     image.alt = coin.title || "Moneda";
     title.textContent = coin.title || "Sin título";
-meta.textContent = getDisplayCountry(coin.country);
+    meta.textContent = getDisplayCountry(coin.country);
     price.textContent = coin.price || "Consultar";
 
     const grade = getGradeShort(coin);
