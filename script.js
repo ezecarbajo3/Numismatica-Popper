@@ -299,30 +299,39 @@ function goToDetail(coinId) {
   window.location.href = `detalle.html?id=${coinId}`;
 }
 function sortCoins(coins) {
-  const argentinaOrder = {
-    "Argentina": 0,
-    "Argentina - Confederación Argentina": 1,
-    "Argentina - Confed. Arg.": 1,
-    "Argentina - Buenos Aires": 2,
-    "Argentina - Patria": 3
+  const normalizeCountryGroup = (country) => {
+    const value = String(country || "").trim();
+
+    if (
+      value === "Argentina" ||
+      value === "Argentina - Patria" ||
+      value === "Patria" ||
+      value === "Argentina - Buenos Aires" ||
+      value === "Buenos Aires" ||
+      value === "Argentina - Confed. Arg." ||
+      value === "Confed. Arg." ||
+      value === "Argentina - Confederación Argentina" ||
+      value === "Confederación Argentina"
+    ) {
+      return "Argentina";
+    }
+
+    return value;
   };
 
   return [...coins].sort((a, b) => {
-    const countryA = String(a.country || "");
-    const countryB = String(b.country || "");
+    const groupA = normalizeCountryGroup(a.country);
+    const groupB = normalizeCountryGroup(b.country);
 
-    const isArgentinaA = countryA in argentinaOrder;
-    const isArgentinaB = countryB in argentinaOrder;
+    const byCountry = groupA.localeCompare(groupB, "es");
+    if (byCountry !== 0) return byCountry;
 
-    if (isArgentinaA && isArgentinaB) {
-      const bySubsection = argentinaOrder[countryA] - argentinaOrder[countryB];
-      if (bySubsection !== 0) return bySubsection;
+    const yearA = Number(a.year) || 0;
+    const yearB = Number(b.year) || 0;
 
-      const yearA = Number(a.year) || 0;
-      const yearB = Number(b.year) || 0;
-      return yearA - yearB;
-    }
-
+    return yearA - yearB;
+  });
+}
     const byCountry = countryA.localeCompare(countryB, "es");
     if (byCountry !== 0) return byCountry;
 
