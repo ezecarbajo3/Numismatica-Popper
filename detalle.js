@@ -18,8 +18,13 @@ function getImagesArray(coin) {
   return ["https://via.placeholder.com/900x900?text=Sin+imagen"];
 }
 
-function buildWhatsAppLink(title) {
-  const message = `Hola, me interesa la moneda ${title}.`;
+function buildWhatsAppLink(coin) {
+  const title = coin.title || "Sin título";
+  const year = coin.year || "Año no informado";
+  const country = coin.country || "País no informado";
+  const price = coin.price || "precio no informado";
+
+  const message = `Hola, estoy interesado en la moneda ${title}, ${year}, ${country}, publicada en la página web a un precio de ${price}.`;
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
@@ -75,7 +80,7 @@ function renderCoinDetail(coin) {
 
       <a
         class="detail-whatsapp"
-        href="${buildWhatsAppLink(coin.title || "Sin título")}"
+        href="${buildWhatsAppLink(coin)}"
         target="_blank"
         rel="noopener noreferrer"
       >
