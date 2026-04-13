@@ -140,20 +140,6 @@
     "description": "Onza de plata fina - Ideal inversión"
   },
   {
-    "id": 13,
-    "title": "1/2 Dólar 1968",
-    "country": "Estados Unidos",
-    "metal": "Plata",
-    "year": 1968,
-    "price": "10 USD",
-    "images": ["images/13A.jpeg", "images/13B.jpeg"],
-    "reference": "KM# 202a",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": "N/A",
-    "description": ""
-  },
-  {
     "id": 14,
     "title": "2 Centavos 1884",
     "country": "Argentina",
@@ -250,20 +236,6 @@
   "grade_short": "SC",
   "mintage": "83,390",
   "description": "Moneda conmemorativa por el 50° aniversario del Ballet Nacional de Canadá"
-},
-{
-  "id": 21,
-  "title": "Bls. 1 ECU 1995",
-  "country": "España",
-  "metal": "Plata .925",
-  "year": 1995,
-  "price": "25 USD",
-  "images": ["images/21A.jpeg", "images/21B.jpeg", "images/21C.jpeg"],
-  "reference": "N/A",
-  "grade": "Sin Circular",
-  "grade_short": "SC",
-  "mintage": "38,500",
-  "description": "Moneda conmemorativa dedicada a la Marina Española"
 },
 {
   "id": 22,
@@ -630,20 +602,6 @@
   "description": ""
 },
 {
-  "id": 48,
-  "title": "1 Peso 1962",
-  "country": "México",
-  "metal": "Plata",
-  "year": 1962,
-  "price": "5 USD",
-  "images": ["images/48A.jpeg", "images/48B.jpeg"],
-  "reference": "KM# 459",
-  "grade": "Muy Bueno+",
-  "grade_short": "MB+",
-  "mintage": "N/A",
-  "description": "Gran tamaño"
-},
-{
   "id": 49,
   "title": "5 Centavos 1916",
   "country": "Argentina",
@@ -686,17 +644,59 @@
   "description": ""
 },
 {
-  "id": 52,
-  "title": "20 Centavos 1879",
-  "country": "Chile",
+  "id": 53,
+  "title": "10 Öre 1919",
+  "country": "Suecia",
   "metal": "Plata",
-  "year": 1879,
-  "price": "7 USD",
-  "images": ["images/52A.jpeg", "images/52B.jpeg"],
-  "reference": "KM# 138",
+  "year": 1919,
+  "price": "3.5 USD",
+  "images": ["images/53A.jpeg", "images/53B.jpeg"],
+  "reference": "KM# 780",
   "grade": "Muy Bueno",
   "grade_short": "MB",
   "mintage": "N/A",
   "description": ""
+},
+{
+  "id": 54,
+  "title": "1 Dime 1941",
+  "country": "Estados Unidos",
+  "metal": "Plata .900",
+  "year": 1941,
+  "price": "7 USD",
+  "images": ["images/54A.jpeg", "images/54B.jpeg"],
+  "reference": "KM# 140",
+  "grade": "Excelente",
+  "grade_short": "EX",
+  "mintage": "N/A",
+  "description": ""
+},
+{
+  "id": 55,
+  "title": "1 Peso 1942",
+  "country": "Uruguay",
+  "metal": "Plata",
+  "year": 1942,
+  "price": "16 USD",
+  "images": ["images/55A.jpeg", "images/55B.jpeg"],
+  "reference": "KM# 30",
+  "grade": "Muy Bueno+",
+  "grade_short": "MB+",
+  "mintage": "N/A",
+  "description": ""
+},
+{
+  "id": 56,
+  "title": "5 Kroner 1966",
+  "country": "Suecia",
+  "metal": "Plata",
+  "year": 1966,
+  "price": "16 USD",
+  "images": ["images/56A.jpeg", "images/56B.jpeg"],
+  "reference": "KM# 839",
+  "grade": "N/A",
+  "grade_short": "-",
+  "mintage": "1.000.000",
+  "description": "100 aniversario de la reforma constitucional bicameral"
 }
 ]
