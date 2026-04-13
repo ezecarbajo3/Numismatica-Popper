@@ -960,8 +960,8 @@
   "price": "60 USD",
   "images": ["images/76A.jpeg", "images/76B.jpeg"],
   "reference": "KM# 1",
-  "grade": "Se aprecia en foto",
-  "grade_short": "-",
+  "grade": "Muy Bueno -",
+  "grade_short": "MB-",
   "mintage": "120.000",
   "description": "Las primeras monedas uruguayas fueron acuñadas en Montevideo de 1840 a 1855 de forma artesanal. Después de esa fecha, no se acuñaron más monedas en el país. Esto llevo a que la amonedación anterior a 1857, sea muy escasa."
 },
@@ -974,8 +974,8 @@
   "price": "16 USD",
   "images": ["images/77A.jpeg", "images/77B.jpeg"],
   "reference": "KM# 8",
-  "grade": "Se aprecia en foto",
-  "grade_short": "-",
+  "grade": "Bueno -",
+  "grade_short": "B-",
   "mintage": "570.000",
   "description": "Año único"
 },
@@ -988,8 +988,8 @@
   "price": "20 USD",
   "images": ["images/78A.jpeg", "images/78B.jpeg"],
   "reference": "KM# 10",
-  "grade": "Se aprecia en foto",
-  "grade_short": "-",
+  "grade": "Bueno detalles",
+  "grade_short": "B**",
   "mintage": "1.000.000",
   "description": "Año único"
 },
@@ -1002,8 +1002,8 @@
   "price": "25 USD",
   "images": ["images/79A.jpeg", "images/79B.jpeg"],
   "reference": "KM# 10",
-  "grade": "Se aprecia en foto",
-  "grade_short": "-",
+  "grade": "Muy Bueno -",
+  "grade_short": "MB-",
   "mintage": "1.000.000",
   "description": "Año único"
 },
@@ -1016,8 +1016,8 @@
   "price": "15 USD",
   "images": ["images/80A.jpeg", "images/80B.jpeg"],
   "reference": "KM# 11",
-  "grade": "Se aprecia en foto",
-  "grade_short": "-",
+  "grade": "Excelente -",
+  "grade_short": "EX-",
   "mintage": "N/A",
   "description": ""
 }
