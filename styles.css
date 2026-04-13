@@ -226,10 +226,13 @@ input:focus {
   background: #0b0b0b;
   border: 1px solid rgba(201, 162, 85, 0.22);
   border-radius: 14px;
-  overflow: hidden;
   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.45);
   display: none;
   z-index: 7000;
+  max-height: 520px;      
+  overflow-y: auto;       
+  overflow-x: hidden;
+  scroll-behavior: smooth;  
 }
 
 .custom-select.open .custom-select-menu {
@@ -842,7 +845,7 @@ input:focus {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    max-height: 60vh;
+    max-height: 520px;
     overflow-y: auto;
     z-index: 100000;
     border-radius: 16px;
