@@ -722,8 +722,8 @@
   "price": "2,5 USD",
   "images": ["images/58A.jpeg", "images/58B.jpeg"],
   "reference": "KM# 139",
-  "grade": "N/A",
-  "grade_short": "-",
+  "grade": "Excelente",
+  "grade_short": "EX",
   "mintage": "N/A",
   "description": "Bicentenario de la independencia - Año único"
 },
