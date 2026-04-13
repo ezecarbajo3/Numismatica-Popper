@@ -708,8 +708,8 @@
   "price": "4 USD",
   "images": ["images/57A.jpeg", "images/57B.jpeg"],
   "reference": "KM# 48",
-  "grade": "Muy Bueno +",
-  "grade_short": "MB+",
+  "grade": "Muy Bueno",
+  "grade_short": "MB",
   "mintage": "N/A",
   "description": "Año único"
 },
