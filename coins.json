@@ -694,8 +694,8 @@
   "price": "16 USD",
   "images": ["images/56A.jpeg", "images/56B.jpeg"],
   "reference": "KM# 839",
-  "grade": "N/A",
-  "grade_short": "-",
+  "grade": "Sin Circular menos",
+  "grade_short": "SC-",
   "mintage": "1.000.000",
   "description": "100 aniversario de la reforma constitucional bicameral"
 }
