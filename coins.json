@@ -1008,20 +1008,6 @@
   "description": "Agujero centrado"
 },
 {
-  "id": 82,
-  "title": "1 Groschen 1926",
-  "country": "Austria",
-  "metal": "Bronce",
-  "year": 1926,
-  "price": "4 USD",
-  "images": ["images/82A.jpeg", "images/82B.jpeg"],
-  "reference": "KM# 2836",
-  "grade": "Excelente +",
-  "grade_short": "EX+",
-  "mintage": "N/A",
-  "description": ""
-},
-{
   "id": 84,
   "title": "25 Cents 1939",
   "country": "Bélgica",
