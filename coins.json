@@ -1162,20 +1162,6 @@
   "description": ""
 },
 {
-  "id": 97,
-  "title": "1 Dinar 1925",
-  "country": "Yugoslavia",
-  "metal": "Cuproníquel",
-  "year": 1925,
-  "price": "2.5 USD",
-  "images": ["images/97A.jpeg", "images/97B.jpeg"],
-  "reference": "KM# 5",
-  "grade": "Bueno",
-  "grade_short": "B",
-  "mintage": "N/A",
-  "description": "Año único"
-},
-{
   "id": 98,
   "title": "2 Céntimos 1904",
   "country": "España",
