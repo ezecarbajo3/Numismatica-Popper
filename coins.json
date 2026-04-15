@@ -784,20 +784,6 @@
   "description": "250 aniversario de la fundación de Montevideo - ESCASA"
 },
 {
-  "id": 63,
-  "title": "5 Shillings 2005",
-  "country": "Somalilandia",
-  "metal": "Aluminio",
-  "year": 2005,
-  "price": "3 USD",
-  "images": ["images/63A.jpeg", "images/63B.jpeg"],
-  "reference": "KM# 19",
-  "grade": "Sin Circular",
-  "grade_short": "SC",
-  "mintage": "N/A",
-  "description": "Año único - Elefante"
-},
-{
   "id": 64,
   "title": "3 Pesos 1995",
   "country": "Cuba",
@@ -922,20 +908,6 @@
   "grade_short": "SC",
   "mintage": "N/A",
   "description": ""
-},
-{
-  "id": 73,
-  "title": "25 Cents 2014",
-  "country": "Zimbabue",
-  "metal": "Acero niquelado",
-  "year": 2014,
-  "price": "4 USD",
-  "images": ["images/73A.jpeg", "images/73B.jpeg"],
-  "reference": "KM# 19",
-  "grade": "Sin Circular",
-  "grade_short": "SC",
-  "mintage": "N/A",
-  "description": "Moneda del sistema Bond coin creada tras la hiperinflación para suplir falta de cambio, respaldada en USD"
 },
 {
   "id": 75,
@@ -1090,20 +1062,6 @@
   "grade_short": "SC",
   "mintage": "N/A",
   "description": ""
-},
-{
-  "id": 87,
-  "title": "2 Centésimos 1869",
-  "country": "Uruguay",
-  "metal": "Bronce",
-  "year": 1869,
-  "price": "12 USD",
-  "images": ["images/87A.jpeg", "images/87B.jpeg"],
-  "reference": "N/A",
-  "grade": "Muy Bueno",
-  "grade_short": "MB",
-  "mintage": "2.000.000",
-  "description": "Ceca H"
 },
 {
   "id": 88,
