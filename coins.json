@@ -1036,20 +1036,6 @@
   "description": "Texto en neerlandés"
 },
 {
-  "id": 86,
-  "title": "1/2 Penny 1967",
-  "country": "Reino Unido",
-  "metal": "Bronce",
-  "year": 1967,
-  "price": "2.5 USD",
-  "images": ["images/86A.jpeg", "images/86B.jpeg"],
-  "reference": "KM# 896",
-  "grade": "Sin Circular",
-  "grade_short": "SC",
-  "mintage": "N/A",
-  "description": ""
-},
-{
   "id": 88,
   "title": "6 Pence 1942",
   "country": "Reino Unido",
