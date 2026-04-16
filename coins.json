@@ -1274,20 +1274,6 @@
   "description": ""
 },
 {
-  "id": 106,
-  "title": "20 Centavos 1899",
-  "country": "Argentina",
-  "metal": "Cuproníquel",
-  "year": 1899,
-  "price": "10 USD",
-  "images": ["images/106A.jpeg", "images/106B.jpeg"],
-  "reference": "CJ# 55",
-  "grade": "Regular+",
-  "grade_short": "R+",
-  "mintage": "840.108",
-  "description": ""
-},
-{
   "id": 107,
   "title": "20 Centavos 1899",
   "country": "Argentina",
