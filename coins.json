@@ -1451,7 +1451,7 @@
     "images": [],
     "reference": "KM# 10",
     "grade": "Excelente",
-    "grade_short": "E",
+    "grade_short": "EX",
     "mintage": "",
     "description": "No magnética."
   },
@@ -1520,8 +1520,8 @@
     "price": "3 USD",
     "images": [],
     "reference": "KM# 46",
-    "grade": "Excelente+",
-    "grade_short": "E+",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
     "mintage": "",
     "description": ""
   }
