@@ -1134,20 +1134,6 @@
   "description": ""
 },
 {
-  "id": 95,
-  "title": "1 Ore 1946",
-  "country": "Suecia",
-  "metal": "Hierro",
-  "year": 1946,
-  "price": "5 USD",
-  "images": ["images/95A.jpeg", "images/95B.jpeg"],
-  "reference": "KM# 810",
-  "grade": "Muy Bueno",
-  "grade_short": "MB",
-  "mintage": "6.000.000",
-  "description": "Solo 6.000.000 acuñadas"
-},
-{
   "id": 96,
   "title": "2 Heller 1911",
   "country": "Austria",
