@@ -126,20 +126,6 @@
     "description": "Corona de plata - Ideal inversión"
   },
   {
-    "id": 10,
-    "title": "1 Dólar 2015",
-    "country": "Estados Unidos",
-    "metal": "Plata .999",
-    "year": 2015,
-    "price": "100 USD",
-    "images": ["images/10A.jpeg", "images/10B.jpeg"],
-    "reference": "KM# 273",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "N/A",
-    "description": "Onza de plata fina - Ideal inversión"
-  },
-  {
     "id": 14,
     "title": "2 Centavos 1884",
     "country": "Argentina",
