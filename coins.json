@@ -1594,33 +1594,5 @@
     "grade_short": "MB",
     "mintage": "",
     "description": "Empaste en el '1'."
-  },
-  {
-    "id": 132,
-    "title": "1 Franc 1943",
-    "country": "Bélgica",
-    "metal": "Zinc",
-    "year": 1943,
-    "price": "4.5 USD",
-    "images": ["images/132A.jpeg", "images/132B.jpeg"],
-    "reference": "KM# 128",
-    "grade": "Muy Bueno +",
-    "grade_short": "MB+",
-    "mintage": "",
-    "description": "Variante Belgique-Belgique."
-  },
-  {
-    "id": 133,
-    "title": "1 Cent 1942",
-    "country": "Países Bajos",
-    "metal": "Zinc",
-    "year": 1942,
-    "price": "4.5 USD",
-    "images": ["images/133A.jpeg", "images/133B.jpeg"],
-    "reference": "KM# 170",
-    "grade": "Excelente -",
-    "grade_short": "EX-",
-    "mintage": "",
-    "description": "Ocupación alemana."
   }
 ]
