@@ -1688,8 +1688,8 @@
   "price": "14 USD",
   "images": ["images/140A.jpeg", "images/140B.jpeg"],
   "reference": "KM# 30",
-  "grade": "Muy Bueno",
-  "grade_short": "MB",
+  "grade": "Bueno +",
+  "grade_short": "B+",
   "mintage": "",
   "description": ""
 },
