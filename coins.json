@@ -742,20 +742,6 @@
   "description": ""
 },
 {
-  "id": 61,
-  "title": "1/2 Penny 1960",
-  "country": "Reino Unido",
-  "metal": "Bronce",
-  "year": 1960,
-  "price": "2 USD",
-  "images": ["images/61A.jpeg", "images/61B.jpeg"],
-  "reference": "KM# 896",
-  "grade": "Excelente-",
-  "grade_short": "EX-",
-  "mintage": "N/A",
-  "description": "Elizabeth II, primer retrato"
-},
-{
   "id": 62,
   "title": "5 Pesos 1976",
   "country": "Uruguay",
@@ -1412,20 +1398,6 @@
     "grade_short": "SC",
     "mintage": "",
     "description": "Mercurio."
-  },
-  {
-    "id": 119,
-    "title": "5 Fils 2003",
-    "country": "Kuwait",
-    "metal": "Latón niquelado",
-    "year": 2003,
-    "price": "3 USD",
-    "images": ["images/119A.jpeg", "images/119B.jpeg"],
-    "reference": "KM# 10",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": "",
-    "description": "No magnética."
   },
   {
     "id": 120,
