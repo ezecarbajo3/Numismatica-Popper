@@ -252,20 +252,6 @@
   "description": "Centenario del Banco Central de Reserva del Perú"
 },
 {
-  "id": 24,
-  "title": "Bls. 1 Sol 2019",
-  "country": "Perú",
-  "metal": "Plata .925",
-  "year": 2019,
-  "price": "75 USD",
-  "images": ["images/24A.jpeg", "images/24B.jpeg", "images/24C.jpeg", "images/24D.jpeg"],
-  "reference": "KM# 418",
-  "grade": "Sin Circular",
-  "grade_short": "SC",
-  "mintage": "5,000",
-  "description": "100 años del fallecimiento de Ricardo Palma"
-},
-{
   "id": 25,
   "title": "Bls. 1 Sol 2021",
   "country": "Perú",
