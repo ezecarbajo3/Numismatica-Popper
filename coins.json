@@ -154,20 +154,6 @@
     "description": ""
   },
   {
-    "id": 16,
-    "title": "2 Centavos 1885",
-    "country": "Argentina",
-    "metal": "Bronce",
-    "year": 1885,
-    "price": "8 USD",
-    "images": ["images/16A.jpeg", "images/16B.jpeg"],
-    "reference": "CJ# 27",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": "N/A",
-    "description": ""
-  },
-  {
     "id": 17,
     "title": "2 Centavos 1885",
     "country": "Argentina",
@@ -1663,20 +1649,6 @@
   "grade": "Excelente",
   "grade_short": "EX",
   "mintage": "",
-  "description": ""
-},
-{
-  "id": 142,
-  "title": "20 Centavos 1882",
-  "country": "Argentina",
-  "metal": "Plata .900",
-  "year": 1882,
-  "price": "20 USD",
-  "images": ["images/142A.jpeg", "images/142B.jpeg"],
-  "reference": "CJ# 19",
-  "grade": "Muy Bueno",
-  "grade_short": "MB",
-  "mintage": "762.000",
   "description": ""
 },
 {
