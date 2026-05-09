@@ -1596,20 +1596,6 @@
   "description": "Variante con agujero."
 },
 {
-  "id": 139,
-  "title": "1/4 Dólar 1943 D",
-  "country": "Estados Unidos",
-  "metal": "Plata .900",
-  "year": 1943,
-  "price": "13 USD",
-  "images": ["images/139A.jpeg", "images/139B.jpeg"],
-  "reference": "KM# 164",
-  "grade": "Se puede apreciar en fotos",
-  "grade_short": "-",
-  "mintage": "",
-  "description": ""
-},
-{
   "id": 140,
   "title": "1 Peso 1942",
   "country": "Uruguay",
