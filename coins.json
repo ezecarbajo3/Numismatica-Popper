@@ -1667,7 +1667,7 @@
 },
 {
   "id": 146,
-  "title": "2 Centavos",
+  "title": "2 Centavos 1896",
   "country": "Argentina",
   "metal": "Bronce",
   "year": "1896",
@@ -1681,7 +1681,7 @@
 },
 {
   "id": 147,
-  "title": "2 Reales",
+  "title": "2 Reales 1860",
   "country": "Argentina - Buenos Aires",
   "metal": "Cobre",
   "year": "1860",
@@ -1695,7 +1695,7 @@
 },
 {
   "id": 148,
-  "title": "1/2 Dólar",
+  "title": "1/2 Dólar 1964",
   "country": "Estados Unidos",
   "metal": "Plata 900",
   "year": "1964",
@@ -1709,10 +1709,10 @@
 },
 {
   "id": 149,
-  "title": "1/2 Dólar",
+  "title": "1/2 Dólar 1986 S",
   "country": "Estados Unidos",
   "metal": "Cuproníquel Proof",
-  "year": "1986 S",
+  "year": "1986",
   "price": "16 USD",
   "images": ["images/149A.jpeg", "images/149B.jpeg"],
   "reference": "KM#212",
@@ -1723,7 +1723,7 @@
 },
 {
   "id": 150,
-  "title": "1/2 Dólar",
+  "title": "1/2 Dólar 1989 S",
   "country": "Estados Unidos",
   "metal": "Cuproníquel Proof",
   "year": "1989",
@@ -1737,7 +1737,7 @@
 },
 {
   "id": 151,
-  "title": "10 Centavos",
+  "title": "10 Centavos 1892",
   "country": "Bolivia",
   "metal": "Cuproníquel",
   "year": "1892",
@@ -1751,7 +1751,7 @@
 },
 {
   "id": 152,
-  "title": "1/2 Dinar",
+  "title": "1/2 Dinar 2011",
   "country": "Túnez",
   "metal": "Cuproníquel",
   "year": "2011",
@@ -1765,7 +1765,7 @@
 },
 {
   "id": 153,
-  "title": "3 Kreuzer",
+  "title": "3 Kreuzer 1818",
   "country": "Baden",
   "metal": "Plata",
   "year": "1818",
@@ -1779,7 +1779,7 @@
 },
 {
   "id": 154,
-  "title": "1 Pound",
+  "title": "1 Pound 2019",
   "country": "Egipto",
   "metal": "Bimetálica",
   "year": "2019",
@@ -1793,7 +1793,7 @@
 },
 {
   "id": 155,
-  "title": "2 Rupias",
+  "title": "2 Rupias 2006",
   "country": "Nepal",
   "metal": "Acero bañado en latón",
   "year": "2006",
@@ -1807,7 +1807,7 @@
 },
 {
   "id": 156,
-  "title": "10 Centavos",
+  "title": "10 Centavos 1903",
   "country": "Paraguay",
   "metal": "Cuproníquel",
   "year": "1903",
@@ -1821,7 +1821,7 @@
 },
 {
   "id": 157,
-  "title": "5 Centavos",
+  "title": "5 Centavos 1927",
   "country": "Portugal",
   "metal": "Bronce",
   "year": "1927",
@@ -1835,7 +1835,7 @@
 },
 {
   "id": 158,
-  "title": "1/2 Riyal",
+  "title": "1/2 Riyal 1972",
   "country": "Arabia Saudita",
   "metal": "Cuproníquel",
   "year": "1972",
@@ -1849,7 +1849,7 @@
 },
 {
   "id": 159,
-  "title": "1/4 Dólar",
+  "title": "1/4 Dólar 1947",
   "country": "Estados Unidos",
   "metal": "Plata 900",
   "year": "1947",
@@ -1863,7 +1863,7 @@
 },
 {
   "id": 160,
-  "title": "1 Franc",
+  "title": "1 Franc 1942",
   "country": "Bélgica",
   "metal": "Zinc",
   "year": "1942",
@@ -1877,7 +1877,7 @@
 },
 {
   "id": 161,
-  "title": "1/4 Dólar",
+  "title": "1/4 Dólar 1926",
   "country": "Estados Unidos",
   "metal": "Plata 900",
   "year": "1926",
@@ -1891,10 +1891,10 @@
 },
 {
   "id": 162,
-  "title": "1 Millim",
+  "title": "1 Millim 2000",
   "country": "Túnez",
   "metal": "Aluminio",
-  "year": "",
+  "year": "2000",
   "price": "2.5 USD",
   "images": ["images/162A.jpeg", "images/162B.jpeg"],
   "reference": "KM#349",
@@ -1905,7 +1905,7 @@
 },
 {
   "id": 163,
-  "title": "5 Cents",
+  "title": "5 Cents 2000",
   "country": "Islas Cook",
   "metal": "Acero niquelado",
   "year": "2000",
@@ -1919,7 +1919,7 @@
 },
 {
   "id": 164,
-  "title": "10 Rappen",
+  "title": "10 Rappen 1903",
   "country": "Suiza",
   "metal": "Cuproníquel",
   "year": "1903",
