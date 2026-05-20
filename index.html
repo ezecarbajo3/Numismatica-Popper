@@ -14,69 +14,43 @@
     </div>
   </header>
 
-  <!-- Category bar: full-width strip, nav content limited to container -->
   <div class="category-bar">
     <nav class="category-nav container" aria-label="Categorías">
+      <button type="button" class="cat-btn" data-category="inversion">Inversión</button>
       <button type="button" class="cat-btn" data-category="argentina">Monedas Argentinas</button>
       <button type="button" class="cat-btn" data-category="internacional">Monedas Internacionales</button>
-      <button type="button" class="cat-btn" data-category="medallas">Medallas / Tokens</button>
       <button type="button" class="cat-btn" data-category="blisters">Blisters</button>
+      <button type="button" class="cat-btn" data-category="medallas">Medallas / Tokens</button>
       <button type="button" class="cat-btn" data-category="libros">Libros</button>
-      <button type="button" class="cat-btn" data-category="inversion">Inversión</button>
     </nav>
+
+    <div class="sub-filter-bar" id="subFilterBar">
+      <div class="sub-filter-list container" id="subFilterList" role="group" aria-label="Sub-filtros"></div>
+    </div>
+  </div>
+
+  <div class="search-outer">
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="7"/><line x1="17" y1="17" x2="22" y2="22"/>
+      </svg>
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Buscar por título, país, año..."
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button type="button" id="clearSearch" class="search-clear" aria-label="Limpiar búsqueda">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <button type="button" id="resetFilters" class="reset-link">Limpiar filtros</button>
   </div>
 
   <main class="container">
-
-    <section class="controls">
-      <div class="control-group">
-        <label for="searchInput">Buscar</label>
-        <input
-          id="searchInput"
-          type="text"
-          placeholder="Buscar por título, país o año..."
-        />
-      </div>
-
-      <div class="control-group">
-        <label for="countryFilter">País</label>
-
-        <div class="custom-select" data-target="countryFilter">
-          <button type="button" class="custom-select-trigger">
-            <span class="custom-select-value"></span>
-            <span class="custom-select-arrow">⌄</span>
-          </button>
-          <div class="custom-select-menu" id="countryFilterMenu"></div>
-        </div>
-
-<select id="countryFilter" class="native-select-hidden">
-  <option value="">Todos</option>
-</select>
-      </div>
-
-      <div class="control-group">
-        <label for="metalFilter">Material</label>
-
-        <div class="custom-select" data-target="metalFilter">
-          <button type="button" class="custom-select-trigger">
-            <span class="custom-select-value">Material</span>
-            <span class="custom-select-arrow">⌄</span>
-          </button>
-          <div class="custom-select-menu" id="metalFilterMenu"></div>
-        </div>
-
-        <select id="metalFilter" class="native-select-hidden">
-  <option value="">Todos</option>
-</select>
-      </div>
-
-      <div class="control-group reset-wrap">
-        <button id="resetFilters" class="reset-button" type="button">
-          Limpiar filtros
-        </button>
-      </div>
-    </section>
-
     <section class="results-bar reveal">
       <p id="resultsCount">Cargando monedas...</p>
     </section>
@@ -95,10 +69,10 @@
           <h2 class="coin-title"></h2>
         </div>
 
-<div class="coin-meta-row">
-  <p class="coin-meta"></p>
-  <div class="coin-badge-row"></div>
-</div>
+        <div class="coin-meta-row">
+          <p class="coin-meta"></p>
+          <div class="coin-badge-row"></div>
+        </div>
 
         <div class="coin-footer">
           <strong class="coin-price"></strong>
