@@ -469,6 +469,7 @@ function renderCoins(coins, skipAnimation = false) {
     const imageWrap = card.querySelector('.coin-image-wrap');
     const image     = card.querySelector('.coin-image');
     const title     = card.querySelector('.coin-title');
+    const yearTag   = card.querySelector('.coin-year-tag');
     const meta      = card.querySelector('.coin-meta');
     const badgeRow  = card.querySelector('.coin-badge-row');
     const price     = card.querySelector('.coin-price');
@@ -477,9 +478,10 @@ function renderCoins(coins, skipAnimation = false) {
 
     image.src = getPrimaryImage(coin);
     image.alt = coin.title || 'Moneda';
-    title.textContent = coin.title || 'Sin título';
-    meta.textContent  = getCountryDisplayLabel(coin.country);
-    price.textContent = coin.price || 'Consultar';
+    title.textContent   = coin.title || 'Sin título';
+    yearTag.textContent = coin.year  || '';
+    meta.textContent    = getCountryDisplayLabel(coin.country);
+    price.textContent   = coin.price || 'Consultar';
 
     const grade = getGradeShort(coin);
     badgeRow.innerHTML = grade ? `<span class="coin-grade-badge">${grade}</span>` : '';
