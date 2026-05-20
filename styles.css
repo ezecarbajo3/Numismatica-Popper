@@ -1280,17 +1280,20 @@ button {
 
   .coin-top {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     gap: 0;
+    width: 100%;
   }
 
   .coin-title {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
     font-size: 0.82rem;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100%;
   }
 
   .coin-year-tag {
