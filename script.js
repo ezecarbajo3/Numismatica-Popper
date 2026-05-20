@@ -220,8 +220,8 @@ function buildSubFilterBar(category, restoredSubFilter = null) {
     return;
   }
 
-  // Internacional → vertical scrollable list
-  const isVertical = category === 'internacional';
+  // Argentina + Internacional → vertical scrollable list
+  const isVertical = category === 'internacional' || category === 'argentina';
   if (isVertical) {
     subFilterBar.classList.add('sub-filter-bar--vertical');
     subFilterList.classList.add('sub-filter-list--vertical');
@@ -243,7 +243,19 @@ function buildSubFilterBar(category, restoredSubFilter = null) {
 
     if (isVertical) btn.classList.add('sub-filter-btn--vertical');
 
-    btn.textContent = label;
+    if (subtitle) {
+      // Argentina: name on left, date on right — all inside the button
+      btn.classList.add('sub-filter-btn--row');
+      const labelEl = document.createElement('span');
+      labelEl.textContent = label;
+      const dateEl = document.createElement('span');
+      dateEl.className = 'sub-filter-btn-date';
+      dateEl.textContent = subtitle;
+      btn.appendChild(labelEl);
+      btn.appendChild(dateEl);
+    } else {
+      btn.textContent = label;
+    }
 
     if (value === restoredSubFilter) {
       btn.classList.add('is-active');
@@ -259,19 +271,7 @@ function buildSubFilterBar(category, restoredSubFilter = null) {
       applyFilters();
     });
 
-    if (subtitle) {
-      // Argentina: wrap button + external date label in a column flex container
-      const wrapper = document.createElement('div');
-      wrapper.className = 'sub-filter-item';
-      wrapper.appendChild(btn);
-      const subEl = document.createElement('div');
-      subEl.className = 'sub-filter-item-sub';
-      subEl.textContent = subtitle;
-      wrapper.appendChild(subEl);
-      subFilterList.appendChild(wrapper);
-    } else {
-      subFilterList.appendChild(btn);
-    }
+    subFilterList.appendChild(btn);
   });
 
   subFilterBar.classList.add('is-open');
@@ -522,6 +522,19 @@ function renderCoins(coins, skipAnimation = false) {
       imageWrap.appendChild(prevBtn);
       imageWrap.appendChild(nextBtn);
       imageWrap.appendChild(dotsWrap);
+
+      // Touch swipe (mobile) — swipe left → next, swipe right → prev
+      let touchStartX = 0;
+      imageWrap.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].clientX;
+      }, { passive: true });
+      imageWrap.addEventListener('touchend', (e) => {
+        const delta = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(delta) > 40) {
+          e.stopPropagation();
+          setIdx(delta < 0 ? currentIdx + 1 : currentIdx - 1);
+        }
+      }, { passive: false });
     }
 
     // ── Hover image preview — shows fixed-position overlay after 3 s ──────────
