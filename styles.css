@@ -597,6 +597,25 @@ button {
   gap: 10px;
 }
 
+.coin-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+  min-width: 0;
+}
+
+.coin-year-tag {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  opacity: 0.72;
+  line-height: 1;
+}
+
 .coin-title {
   margin: 0;
   width: 100%;
@@ -625,14 +644,6 @@ button {
   color: var(--muted);
   line-height: 1.55;
   font-size: 0.95rem;
-}
-
-.coin-meta-row {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  column-gap: 10px;
-  width: 100%;
 }
 
 .coin-meta {
@@ -1046,7 +1057,7 @@ button {
   color: var(--accent);
   font-weight: 300;
   font-family: "Cormorant Garamond", "Georgia", serif;
-  font-size: 0.88em;
+  font-size: 1.01em;           /* 0.88em × 1.15 */
   letter-spacing: 0.04em;
   opacity: 0.82;
   flex-shrink: 0;
@@ -1240,16 +1251,63 @@ button {
     transform: none;
   }
 
+  /* ── Card: compact inline layout ── */
+  .coin-content {
+    padding: 8px 10px 10px;
+    gap: 5px;
+  }
+
+  .coin-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 5px;
+    overflow: hidden;
+  }
+
+  .coin-title {
+    font-size: 0.82rem;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .coin-year-tag {
+    font-size: 0.72rem;
+    flex-shrink: 0;
+    opacity: 0.8;
+  }
+
   .coin-meta {
-    text-align: center;
+    font-size: clamp(0.58rem, 2.6vw, 0.95rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    width: 100%;
+    line-height: 1.2;
   }
 
   .coin-footer {
     justify-content: space-between;
+    gap: 5px;
+    width: 100%;
   }
 
-  .coin-title {
-    font-size: 0.98rem;
+  .coin-price {
+    font-size: clamp(0.82rem, 3vw, 1.1rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .coin-badge-row {
+    flex-shrink: 0;
   }
 
   .card-arrow {
