@@ -250,7 +250,7 @@ input,
   background: transparent;
   color: rgba(243, 234, 219, 0.62);
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 0.732rem;       /* 0.82rem × 0.80 × 0.80 × 1.15 × 1.20 */
+  font-size: 0.842rem;       /* 0.82rem × 0.80 × 0.80 × 1.15 × 1.20 × 1.15 desktop */
   font-weight: 500;
   letter-spacing: 0.04em;
   cursor: pointer;
@@ -1242,12 +1242,12 @@ button {
   }
 
   .cat-btn {
-    font-size: 0.800rem;       /* 0.696rem × 1.15 mobile boost */
+    font-size: 0.856rem;       /* 0.744rem × 1.15 mobile boost */
     padding: 8px 12px;
   }
 
   .sub-filter-btn {
-    font-size: 0.842rem;       /* 0.732rem × 1.15 mobile boost */
+    font-size: 0.968rem;       /* 0.842rem × 1.15 mobile boost */
   }
 
   .sub-filter-bar.is-open {
