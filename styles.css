@@ -1301,7 +1301,7 @@ button {
   }
 
   .coin-meta {
-    font-size: clamp(0.58rem, 2.6vw, 0.95rem);
+    font-size: clamp(0.754rem, 3.38vw, 1.235rem); /* 0.58→0.754 / 2.6vw→3.38vw / 0.95→1.235 × 1.3 */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
