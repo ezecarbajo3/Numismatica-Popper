@@ -1278,10 +1278,9 @@ button {
     gap: 5px;
   }
 
+  /* Title row: block layout forces h2 to fill 100% width without flex math */
   .coin-top {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
+    display: block;
     width: 100%;
   }
 
@@ -1310,26 +1309,33 @@ button {
     line-height: 1.2;
   }
 
+  /* Price/badge row: hard percentage widths, immune to content-size pressure */
   .coin-footer {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 5px;
     width: 100%;
+    gap: 0;
   }
 
   .coin-price {
+    flex: 0 0 66.666%;
+    max-width: 66.666%;
+    box-sizing: border-box;
+    display: block;
     font-size: clamp(0.82rem, 3vw, 1.1rem);
+    text-align: left;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100%;
-    min-width: 0;
   }
 
   .coin-badge-row {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    box-sizing: border-box;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
 
