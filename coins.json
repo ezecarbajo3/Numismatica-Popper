@@ -896,20 +896,6 @@
   "description": "Agujero centrado"
 },
 {
-  "id": 84,
-  "title": "25 Cents 1939",
-  "country": "Bélgica",
-  "metal": "Latón de níquel",
-  "year": 1939,
-  "price": "3 USD",
-  "images": ["images/84A.jpeg", "images/84B.jpeg"],
-  "reference": "KM# 114",
-  "grade": "Excelente",
-  "grade_short": "EX",
-  "mintage": "N/A",
-  "description": "Reverso moneda"
-},
-{
   "id": 85,
   "title": "25 Cents 1921",
   "country": "Bélgica",
@@ -1412,20 +1398,6 @@
     "grade_short": "SC",
     "mintage": "",
     "description": ""
-  },
-  {
-    "id": 127,
-    "title": "50 Centimes 1928",
-    "country": "Bélgica",
-    "metal": "Níquel",
-    "year": 1928,
-    "price": "3,5 USD",
-    "images": ["images/127A.jpeg", "images/127B.jpeg"],
-    "reference": "KM# 88",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": "",
-    "description": "Leyenda BELGIE."
   },
   {
     "id": 128,
