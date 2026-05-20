@@ -1288,7 +1288,8 @@ button {
     display: block;
     width: 100%;
     box-sizing: border-box;
-    font-size: 0.82rem;
+    /* 0.82rem × 1.2 = 0.984rem max; vw middle scales with card width → auto-shrinks long titles */
+    font-size: clamp(0.55rem, 3.5vw, 0.984rem);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -1309,21 +1310,21 @@ button {
     line-height: 1.2;
   }
 
-  /* Price/badge row: hard percentage widths, immune to content-size pressure */
+  /* Price/grade row: natural flex, no fixed columns, both items on same line */
   .coin-footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
-    gap: 0;
+    gap: 6px;
   }
 
   .coin-price {
-    flex: 0 0 66.666%;
-    max-width: 66.666%;
-    box-sizing: border-box;
+    flex: 1 1 auto;
+    min-width: 0;
     display: block;
-    font-size: clamp(0.82rem, 3vw, 1.1rem);
+    /* clamp(0.82rem, 3vw, 1.1rem) × 1.2 */
+    font-size: clamp(0.984rem, 3.6vw, 1.32rem);
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
@@ -1331,12 +1332,13 @@ button {
   }
 
   .coin-badge-row {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-    box-sizing: border-box;
+    flex: 0 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+  }
+
+  .coin-grade-badge {
+    font-size: 0.78rem; /* 0.65rem × 1.2 */
   }
 
   .card-arrow {
