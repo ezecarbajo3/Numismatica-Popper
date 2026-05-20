@@ -35,6 +35,7 @@ body {
   margin: 0 auto;
 }
 
+/* Global transitions — includes new interactive elements */
 a,
 button,
 input,
@@ -52,7 +53,9 @@ input,
 .reset-button,
 .custom-select-trigger,
 .custom-select-option,
-.cat-btn {
+.cat-btn,
+.card-arrow,
+.card-dot {
   transition:
     transform 0.22s ease,
     opacity 0.22s ease,
@@ -72,7 +75,6 @@ input,
     url("images/hero-bg.jpg") center center / cover no-repeat;
   border-bottom: 1px solid rgba(201, 162, 85, 0.14);
   padding: 55px 0 36px;
-  margin-bottom: 14px;
   text-align: center;
   overflow: hidden;
 }
@@ -109,39 +111,44 @@ input,
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-/* ─── Category navigation ────────────────────────────────────────────────── */
+/* ─── Category bar: full-width strip ─────────────────────────────────────── */
 
-.category-nav {
-  display: flex;
-  gap: 10px;
-  padding: 18px 0 6px;
-  margin-bottom: 20px;
-  overflow-x: auto;
-  overflow-y: visible;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  -webkit-overflow-scrolling: touch;
+.category-bar {
+  background: rgba(201, 162, 85, 0.018);
+  border-bottom: 1px solid rgba(201, 162, 85, 0.1);
+  margin-bottom: 24px;
 }
 
-.category-nav::-webkit-scrollbar {
-  display: none;
+/*
+ * .category-nav uses .container class (applied in HTML) for max-width centering.
+ * Buttons use flex:1 so they distribute evenly across the full container width.
+ */
+.category-nav {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  align-items: stretch;
 }
 
 .cat-btn {
-  flex-shrink: 0;
+  flex: 1;
+  min-width: 0;
   border: 1px solid rgba(201, 162, 85, 0.22);
   border-radius: 999px;
-  padding: 9px 22px;
+  padding: 10px 10px;
   background: rgba(201, 162, 85, 0.03);
   color: var(--muted);
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 0.74rem;
+  font-size: 0.96rem;        /* 0.74rem × 1.30 = 0.962rem ≈ 0.96rem */
   font-weight: 600;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   cursor: pointer;
-  white-space: nowrap;
-  line-height: 1;
+  line-height: 1.25;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cat-btn:hover {
@@ -457,7 +464,8 @@ input:focus {
   transition: box-shadow 0.22s ease;
 }
 
-.coin-card:hover {
+/* Normal hover: subtle lift. Suppressed when zoomed. */
+.coin-card:hover:not(.is-zoomed) {
   transform: translateY(-6px);
   border-color: rgba(201, 162, 85, 0.3);
   box-shadow:
@@ -465,11 +473,41 @@ input:focus {
     0 0 22px rgba(201, 162, 85, 0.05);
 }
 
-.coin-card:hover::after {
+.coin-card:hover:not(.is-zoomed)::after {
   box-shadow: inset 0 0 0 1px rgba(201, 162, 85, 0.1);
 }
 
+/* ─── Hover zoom (scale 1.5 after 3-second hold) ────────────────────────── */
+
+.coin-card.is-zoomed {
+  transform: scale(1.5);
+  z-index: 100;
+  overflow: hidden; /* keep rounded corners on scaled card */
+  border-color: rgba(201, 162, 85, 0.5);
+  box-shadow:
+    0 40px 80px rgba(0, 0, 0, 0.75),
+    0 0 40px rgba(201, 162, 85, 0.18);
+  /* Override the global 0.22s transition with a deliberate ease-in-out */
+  transition:
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.5s ease,
+    border-color 0.5s ease !important;
+}
+
+/* Suppress child hover micro-animations while the card is zoomed */
+.coin-card.is-zoomed .coin-image,
+.coin-card.is-zoomed .coin-title,
+.coin-card.is-zoomed .coin-meta,
+.coin-card.is-zoomed .coin-grade-badge,
+.coin-card.is-zoomed .coin-price {
+  transform: none !important;
+  filter: none !important;
+}
+
+/* ─── Coin image wrap (needs position:relative for arrow overlay) ─────────── */
+
 .coin-image-wrap {
+  position: relative;
   aspect-ratio: 1 / 1;
   background: #111;
   display: flex;
@@ -484,12 +522,96 @@ input:focus {
   height: 100%;
   object-fit: contain;
   background: #111;
+  display: block;
 }
 
-.coin-card:hover .coin-image {
+.coin-card:hover:not(.is-zoomed) .coin-image {
   transform: scale(1.025);
   filter: brightness(1.03);
 }
+
+/* ─── Carousel arrows ────────────────────────────────────────────────────── */
+
+.card-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid rgba(201, 162, 85, 0.35);
+  border-radius: 50%;
+  background: rgba(5, 5, 5, 0.62);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: var(--accent);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none; /* invisible by default — card hover reveals them */
+}
+
+.card-arrow svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.card-arrow--prev {
+  left: 7px;
+}
+
+.card-arrow--next {
+  right: 7px;
+}
+
+/* Show arrows when the card is hovered */
+.coin-card:hover .card-arrow {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card-arrow:hover {
+  background: rgba(201, 162, 85, 0.82);
+  border-color: var(--accent);
+  color: #050505;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* ─── Carousel dots ──────────────────────────────────────────────────────── */
+
+.card-dots {
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  z-index: 4;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.coin-card:hover .card-dots {
+  opacity: 1;
+}
+
+.card-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.card-dot.is-active {
+  background: var(--accent);
+  transform: scale(1.3);
+}
+
+/* ─── Coin content ───────────────────────────────────────────────────────── */
 
 .coin-content {
   padding: 18px 18px 16px;
@@ -510,7 +632,7 @@ input:focus {
   letter-spacing: 0.03em;
 }
 
-.coin-card:hover .coin-title {
+.coin-card:hover:not(.is-zoomed) .coin-title {
   color: #f7efdf;
   transform: translateY(-1px);
 }
@@ -545,7 +667,7 @@ input:focus {
   min-width: 0;
 }
 
-.coin-card:hover .coin-meta {
+.coin-card:hover:not(.is-zoomed) .coin-meta {
   color: #c9b89e;
 }
 
@@ -580,7 +702,7 @@ input:focus {
   white-space: nowrap;
 }
 
-.coin-card:hover .coin-grade-badge {
+.coin-card:hover:not(.is-zoomed) .coin-grade-badge {
   transform: scale(1.05);
   border-color: rgba(201, 162, 85, 0.42);
   box-shadow:
@@ -605,7 +727,7 @@ input:focus {
   letter-spacing: 0.02em;
 }
 
-.coin-card:hover .coin-price {
+.coin-card:hover:not(.is-zoomed) .coin-price {
   transform: scale(1.02);
   color: #d7b266;
 }
@@ -860,6 +982,25 @@ input:focus {
     padding: 44px 0 29px;
   }
 
+  /* On tablet the 6 buttons can't fit at 0.96rem — make nav scrollable */
+  .category-nav {
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 10px;
+  }
+
+  .category-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cat-btn {
+    flex: 0 0 auto;
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+
   .controls {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -904,15 +1045,18 @@ input:focus {
     font-size: 0.82rem;
   }
 
+  .category-bar {
+    margin-bottom: 16px;
+  }
+
   .category-nav {
-    padding: 14px 0 4px;
-    margin-bottom: 12px;
     gap: 8px;
+    padding: 12px 0;
   }
 
   .cat-btn {
-    font-size: 0.7rem;
-    padding: 8px 14px;
+    font-size: 0.91rem; /* 0.70rem × 1.30 */
+    padding: 8px 12px;
   }
 
   .controls {
@@ -967,7 +1111,7 @@ input:focus {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  /* On mobile, skip reveal animation for snap-instant rendering */
+  /* Skip reveal animations on mobile for snappy rendering */
   .coin-card.reveal,
   .results-bar.reveal,
   .controls.reveal {
@@ -994,6 +1138,14 @@ input:focus {
 
   .coin-title {
     font-size: 0.98rem;
+  }
+
+  /* Carousel arrows: slightly larger tap targets on mobile */
+  .card-arrow {
+    width: 34px;
+    height: 34px;
+    opacity: 0.75; /* always slightly visible on touch */
+    pointer-events: auto;
   }
 
   .detail-page {
@@ -1079,5 +1231,9 @@ input:focus {
   .reveal.is-visible {
     opacity: 1 !important;
     transform: none !important;
+  }
+
+  .coin-card.is-zoomed {
+    transition: none !important;
   }
 }
