@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@500;600;700&family=Orbitron:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -113,6 +113,42 @@ input,
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
+/* ─── Ticker banner ──────────────────────────────────────────────────────── */
+
+.ticker-bar {
+  background: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(201, 162, 85, 0.18);
+  padding: 9px 0;
+  position: relative;
+}
+
+.ticker-track {
+  display: inline-flex;
+  will-change: transform;
+  animation: ticker-scroll 28s linear infinite;
+}
+
+.ticker-text {
+  display: inline-block;
+  padding-right: 80px;
+  font-family: "Orbitron", monospace;
+  font-size: 0.713rem;          /* cat-btn base (0.62rem) × 1.15 */
+  font-weight: 400;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 8px rgba(201, 162, 85, 0.65),
+    0 0 22px rgba(201, 162, 85, 0.3);
+}
+
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* ─── Category bar: full-width strip ─────────────────────────────────────── */
 
 .category-bar {
@@ -188,7 +224,7 @@ input,
 }
 
 .sub-filter-bar.is-open {
-  max-height: 80px;
+  max-height: 100px;
   opacity: 1;
   border-top-color: rgba(201, 162, 85, 0.07);
 }
@@ -215,7 +251,7 @@ input,
   background: transparent;
   color: rgba(243, 234, 219, 0.62);
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 0.53rem;        /* 0.82rem × 0.80 × 0.80 */
+  font-size: 0.61rem;        /* 0.82rem × 0.80 × 0.80 × 1.15 */
   font-weight: 500;
   letter-spacing: 0.04em;
   cursor: pointer;
@@ -924,22 +960,20 @@ button {
   transform: scale(1);
 }
 
-/* ─── Sub-filter: Argentina subtitle buttons ─────────────────────────────── */
+/* ─── Sub-filter: Argentina item wrapper (button + external date) ────────── */
 
-.sub-filter-btn--with-subtitle {
+.sub-filter-item {
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 3px;
-  padding: 7px 18px;
+  flex-shrink: 0;
+  gap: 4px;
 }
 
-.sub-filter-btn-label {
+.sub-filter-item-sub {
   display: block;
-  line-height: 1;
-}
-
-.sub-filter-btn-sub {
-  display: block;
+  width: 100%;
+  text-align: center;
   font-size: 0.75em;
   color: var(--accent);
   font-weight: 300;
@@ -947,6 +981,7 @@ button {
   letter-spacing: 0.05em;
   opacity: 0.85;
   line-height: 1;
+  white-space: nowrap;
 }
 
 /* ─── Sub-filter: Internacional vertical list ────────────────────────────── */
@@ -1020,7 +1055,7 @@ button {
   }
 
   .sub-filter-bar.is-open {
-    max-height: 100px;
+    max-height: 120px;
   }
 
   .coins-grid {
@@ -1074,7 +1109,7 @@ button {
   }
 
   .sub-filter-bar.is-open {
-    max-height: 110px;
+    max-height: 130px;
   }
 
   .search-outer {
@@ -1190,9 +1225,17 @@ button {
   }
 }
 
+.ticker-bar:hover .ticker-track {
+  animation-play-state: paused;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .ticker-track {
+    animation: none !important;
   }
 
   *,
