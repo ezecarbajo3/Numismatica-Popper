@@ -51,7 +51,8 @@ input,
 .back-link,
 .reset-button,
 .custom-select-trigger,
-.custom-select-option {
+.custom-select-option,
+.cat-btn {
   transition:
     transform 0.22s ease,
     opacity 0.22s ease,
@@ -61,6 +62,8 @@ input,
     color 0.22s ease,
     filter 0.22s ease;
 }
+
+/* ─── Header ─────────────────────────────────────────────────────────────── */
 
 .site-header {
   position: relative;
@@ -99,12 +102,75 @@ input,
 
 .subtitle {
   margin: 0;
-  color: var(--muted);
+  color: var(--accent);
   font-size: 0.95rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
+
+/* ─── Category navigation ────────────────────────────────────────────────── */
+
+.category-nav {
+  display: flex;
+  gap: 10px;
+  padding: 18px 0 6px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  overflow-y: visible;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.category-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-btn {
+  flex-shrink: 0;
+  border: 1px solid rgba(201, 162, 85, 0.22);
+  border-radius: 999px;
+  padding: 9px 22px;
+  background: rgba(201, 162, 85, 0.03);
+  color: var(--muted);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.cat-btn:hover {
+  border-color: rgba(201, 162, 85, 0.5);
+  color: var(--accent);
+  background: rgba(201, 162, 85, 0.08);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(201, 162, 85, 0.08);
+}
+
+.cat-btn.is-active {
+  border-color: var(--accent);
+  background: linear-gradient(
+    180deg,
+    rgba(201, 162, 85, 0.22) 0%,
+    rgba(201, 162, 85, 0.09) 100%
+  );
+  color: var(--accent);
+  box-shadow:
+    0 0 20px rgba(201, 162, 85, 0.12),
+    inset 0 1px 0 rgba(201, 162, 85, 0.18);
+}
+
+.cat-btn.is-active:hover {
+  transform: none;
+  filter: brightness(1.06);
+}
+
+/* ─── Controls bar ───────────────────────────────────────────────────────── */
 
 .controls {
   display: grid;
@@ -167,6 +233,8 @@ input:focus {
   box-shadow: 0 0 0 2px rgba(201, 162, 85, 0.12);
 }
 
+/* ─── Custom select ──────────────────────────────────────────────────────── */
+
 .native-select-hidden {
   display: none !important;
 }
@@ -209,6 +277,9 @@ input:focus {
 
 .custom-select-value {
   color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .custom-select-arrow {
@@ -216,6 +287,11 @@ input:focus {
   font-size: 1rem;
   line-height: 1;
   flex-shrink: 0;
+  transition: transform 0.22s ease;
+}
+
+.custom-select.open .custom-select-arrow {
+  transform: rotate(180deg);
 }
 
 .custom-select-menu {
@@ -229,10 +305,10 @@ input:focus {
   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.45);
   display: none;
   z-index: 7000;
-  max-height: 520px;      
-  overflow-y: auto;       
+  max-height: 520px;
+  overflow-y: auto;
   overflow-x: hidden;
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth;
 }
 
 .custom-select.open .custom-select-menu {
@@ -283,6 +359,11 @@ input:focus {
 .custom-select-group-arrow {
   font-size: 1rem;
   line-height: 1;
+  transition: transform 0.22s ease;
+}
+
+.custom-select-group.open .custom-select-group-arrow {
+  transform: rotate(180deg);
 }
 
 .custom-select-submenu {
@@ -298,6 +379,8 @@ input:focus {
   padding-left: 28px;
 }
 
+/* ─── Reset button ───────────────────────────────────────────────────────── */
+
 .reset-wrap {
   justify-content: flex-end;
 }
@@ -312,6 +395,7 @@ input:focus {
   font-weight: 700;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .reset-button:hover {
@@ -319,6 +403,8 @@ input:focus {
   filter: brightness(1.07);
   box-shadow: 0 10px 24px rgba(201, 162, 85, 0.14);
 }
+
+/* ─── Results bar ────────────────────────────────────────────────────────── */
 
 .results-bar {
   margin: 10px 0 22px;
@@ -330,8 +416,11 @@ input:focus {
   margin: 0;
   color: var(--muted);
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
 }
+
+/* ─── Coins grid ─────────────────────────────────────────────────────────── */
 
 .coins-grid {
   display: grid;
@@ -341,6 +430,8 @@ input:focus {
   position: relative;
   z-index: 1;
 }
+
+/* ─── Coin card ──────────────────────────────────────────────────────────── */
 
 .coin-card {
   position: relative;
@@ -519,6 +610,8 @@ input:focus {
   color: #d7b266;
 }
 
+/* ─── Empty state ────────────────────────────────────────────────────────── */
+
 .empty-state {
   grid-column: 1 / -1;
   background: linear-gradient(180deg, #101010 0%, #0b0b0b 100%);
@@ -529,6 +622,8 @@ input:focus {
   color: var(--muted);
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
+
+/* ─── Detail page ────────────────────────────────────────────────────────── */
 
 .detail-page {
   padding: 18px 0 42px;
@@ -745,6 +840,8 @@ input:focus {
   font-size: 1rem;
 }
 
+/* ─── Reveal animation ───────────────────────────────────────────────────── */
+
 .reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -755,6 +852,8 @@ input:focus {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ─── Responsive: Tablet ─────────────────────────────────────────────────── */
 
 @media (max-width: 980px) {
   .site-header {
@@ -789,6 +888,8 @@ input:focus {
   }
 }
 
+/* ─── Responsive: Mobile ─────────────────────────────────────────────────── */
+
 @media (max-width: 640px) {
   .site-header {
     padding: 32px 0 22px;
@@ -801,6 +902,17 @@ input:focus {
   .subtitle {
     letter-spacing: 0.18em;
     font-size: 0.82rem;
+  }
+
+  .category-nav {
+    padding: 14px 0 4px;
+    margin-bottom: 12px;
+    gap: 8px;
+  }
+
+  .cat-btn {
+    font-size: 0.7rem;
+    padding: 8px 14px;
   }
 
   .controls {
@@ -845,7 +957,7 @@ input:focus {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    max-height: 520px;
+    max-height: 70vh;
     overflow-y: auto;
     z-index: 100000;
     border-radius: 16px;
@@ -855,6 +967,7 @@ input:focus {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* On mobile, skip reveal animation for snap-instant rendering */
   .coin-card.reveal,
   .results-bar.reveal,
   .controls.reveal {
@@ -949,6 +1062,7 @@ input:focus {
     font-size: clamp(1.9rem, 8vw, 2.4rem);
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
