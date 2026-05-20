@@ -15,6 +15,16 @@
   </header>
 
   <main class="container">
+
+    <nav class="category-nav" aria-label="Categorías">
+      <button type="button" class="cat-btn" data-category="argentina">Monedas Argentinas</button>
+      <button type="button" class="cat-btn" data-category="internacional">Monedas Internacionales</button>
+      <button type="button" class="cat-btn" data-category="medallas">Medallas / Tokens</button>
+      <button type="button" class="cat-btn" data-category="blisters">Blisters</button>
+      <button type="button" class="cat-btn" data-category="libros">Libros</button>
+      <button type="button" class="cat-btn" data-category="inversion">Inversión</button>
+    </nav>
+
     <section class="controls">
       <div class="control-group">
         <label for="searchInput">Buscar</label>
@@ -74,7 +84,7 @@
   <template id="coinCardTemplate">
     <article class="coin-card reveal" tabindex="0" role="button">
       <div class="coin-image-wrap">
-        <img class="coin-image" src="" alt="" />
+        <img class="coin-image" src="" alt="" loading="lazy" />
       </div>
 
       <div class="coin-content">
