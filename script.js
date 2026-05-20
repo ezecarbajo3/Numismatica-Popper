@@ -7,6 +7,7 @@ const coinsGrid = document.getElementById("coinsGrid");
 const coinCardTemplate = document.getElementById("coinCardTemplate");
 
 let allCoins = [];
+let activeCategory = null;
 let revealObserver = null;
 
 const COUNTRY_GROUPS = {
@@ -40,6 +41,59 @@ const ARGENTINA_GROUP_VALUES = new Set([
   "Argentina - Confed. Arg."
 ]);
 
+// ─── Category filter predicates ────────────────────────────────────────────
+
+function isArgentinaCoin(coin) {
+  return (coin.country || "").trim().startsWith("Argentina");
+}
+
+function isMedalOrToken(coin) {
+  const country = (coin.country || "").trim().toLowerCase();
+  const title = (coin.title || "").trim().toLowerCase();
+  return (
+    country === "token" ||
+    country === "medalla" ||
+    country.includes("token") ||
+    country.includes("medalla") ||
+    title.includes("medalla")
+  );
+}
+
+function isBlister(coin) {
+  const title = (coin.title || "").trim();
+  return /^bls[.\s]/i.test(title) || /blister/i.test(title);
+}
+
+function isBook(coin) {
+  const title = (coin.title || "").trim().toLowerCase();
+  return (
+    title.includes("libro") ||
+    title.includes("catálogo") ||
+    title.includes("catalogo")
+  );
+}
+
+function getSilverPurity(coin) {
+  const m = /[Pp]lata\s*\.?(\d{3,4})/.exec(coin.metal || "");
+  return m ? parseInt(m[1], 10) : 0;
+}
+
+function isInvestment(coin) {
+  return getSilverPurity(coin) >= 900;
+}
+
+const CATEGORY_PREDICATES = {
+  argentina: isArgentinaCoin,
+  internacional: (c) =>
+    !isArgentinaCoin(c) && !isMedalOrToken(c) && !isBlister(c) && !isBook(c),
+  medallas: isMedalOrToken,
+  blisters: isBlister,
+  libros: isBook,
+  inversion: isInvestment,
+};
+
+// ─── Country helpers ────────────────────────────────────────────────────────
+
 function normalizeCountryValue(country) {
   const value = String(country || "").trim();
   return ARGENTINA_EQUIVALENTS[value] || value;
@@ -62,6 +116,8 @@ function getCountryDisplayLabel(country) {
   }
 }
 
+// ─── Data loading ───────────────────────────────────────────────────────────
+
 async function loadCoins() {
   try {
     const response = await fetch("coins.json", { cache: "no-store" });
@@ -81,6 +137,8 @@ async function loadCoins() {
     return false;
   }
 }
+
+// ─── Filter select helpers ──────────────────────────────────────────────────
 
 function uniqueSortedValues(array, key) {
   return [...new Set(array.map((item) => item[key]).filter(Boolean))].sort((a, b) =>
@@ -104,6 +162,8 @@ function populateFilters(coins) {
   fillSelect(metalFilter, uniqueSortedValues(coins, "metal"), "Todos");
   initCustomSelects();
 }
+
+// ─── Custom select components ───────────────────────────────────────────────
 
 function createCustomOption({ label, value, nativeSelect, valueNode, customSelect, menu }) {
   const button = document.createElement("button");
@@ -269,11 +329,14 @@ function initCustomSelects() {
   buildCustomSelect("metalFilter");
 }
 
+// Close all dropdowns when clicking outside
 document.addEventListener("click", () => {
   document.querySelectorAll(".custom-select").forEach((item) => {
     item.classList.remove("open");
   });
 });
+
+// ─── Filtering ──────────────────────────────────────────────────────────────
 
 function matchesSelectedCountry(coinCountry, selectedCountry) {
   const normalizedCoinCountry = normalizeCountryValue(coinCountry);
@@ -294,6 +357,12 @@ function getFilteredCoins() {
   const selectedMetal = metalFilter.value;
 
   return allCoins.filter((coin) => {
+    // Category tab filter (applied first for performance)
+    if (activeCategory) {
+      const predicate = CATEGORY_PREDICATES[activeCategory];
+      if (predicate && !predicate(coin)) return false;
+    }
+
     const searchableText = [
       coin.title,
       getCountryDisplayLabel(coin.country),
@@ -318,6 +387,8 @@ function getFilteredCoins() {
     return matchesSearch && matchesCountry && matchesMetal;
   });
 }
+
+// ─── Rendering ──────────────────────────────────────────────────────────────
 
 function getPrimaryImage(coin) {
   if (Array.isArray(coin.images) && coin.images.length > 0) {
@@ -366,7 +437,7 @@ function getDisplayCountry(country) {
   return getCountryDisplayLabel(country);
 }
 
-function renderCoins(coins) {
+function renderCoins(coins, skipAnimation = false) {
   coinsGrid.innerHTML = "";
 
   if (!coins.length) {
@@ -387,6 +458,11 @@ function renderCoins(coins) {
     const meta = card.querySelector(".coin-meta");
     const badgeRow = card.querySelector(".coin-badge-row");
     const price = card.querySelector(".coin-price");
+
+    // Skip reveal animation on filter changes to avoid opacity flash
+    if (skipAnimation) {
+      article.classList.remove("reveal");
+    }
 
     image.src = getPrimaryImage(coin);
     image.alt = coin.title || "Moneda";
@@ -412,6 +488,8 @@ function renderCoins(coins) {
   resultsCount.textContent = `${coins.length} moneda${coins.length === 1 ? "" : "s"} encontrada${coins.length === 1 ? "" : "s"}`;
 }
 
+// ─── Reveal animations ──────────────────────────────────────────────────────
+
 function initRevealEffects() {
   if (revealObserver) revealObserver.disconnect();
 
@@ -432,10 +510,13 @@ function initRevealEffects() {
   revealItems.forEach((item) => revealObserver.observe(item));
 }
 
+// ─── Apply filters (no animation flash) ────────────────────────────────────
+
 function applyFilters() {
-  renderCoins(getFilteredCoins());
-  initRevealEffects();
+  renderCoins(getFilteredCoins(), true);
 }
+
+// ─── Reset selects ──────────────────────────────────────────────────────────
 
 function resetCustomSelects() {
   document.querySelectorAll(".custom-select").forEach((customSelect) => {
@@ -453,6 +534,8 @@ function resetCustomSelects() {
   initCustomSelects();
 }
 
+// ─── Event listeners ────────────────────────────────────────────────────────
+
 [searchInput, countryFilter, metalFilter].forEach((element) => {
   element.addEventListener("input", applyFilters);
   element.addEventListener("change", applyFilters);
@@ -462,10 +545,36 @@ resetFiltersButton.addEventListener("click", () => {
   searchInput.value = "";
   countryFilter.value = "";
   metalFilter.value = "";
+
+  // Clear active category
+  activeCategory = null;
+  document.querySelectorAll(".cat-btn").forEach((b) => b.classList.remove("is-active"));
+
   resetCustomSelects();
   renderCoins(allCoins);
   initRevealEffects();
 });
+
+// Category nav buttons
+document.querySelectorAll(".cat-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const category = btn.dataset.category;
+
+    if (activeCategory === category) {
+      // Clicking the active category deselects it
+      activeCategory = null;
+      btn.classList.remove("is-active");
+    } else {
+      activeCategory = category;
+      document.querySelectorAll(".cat-btn").forEach((b) => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+    }
+
+    applyFilters();
+  });
+});
+
+// ─── Bootstrap ──────────────────────────────────────────────────────────────
 
 loadCoins().then(() => {
   initRevealEffects();
