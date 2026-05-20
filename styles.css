@@ -134,7 +134,7 @@ input,
   background: rgba(201, 162, 85, 0.03);
   color: var(--muted);
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 0.96rem;
+  font-size: 0.77rem;        /* 0.96rem × 0.80 */
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -213,7 +213,7 @@ input,
   background: transparent;
   color: rgba(243, 234, 219, 0.62);
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.66rem;        /* 0.82rem × 0.80 */
   font-weight: 500;
   letter-spacing: 0.04em;
   cursor: pointer;
@@ -426,8 +426,10 @@ button {
 
 .coin-card.is-zoomed {
   transform: scale(1.5);
+  transform-origin: center center;
   z-index: 100;
-  overflow: hidden;
+  /* overflow stays hidden (from base .coin-card) — clipping scales with the
+     element so all content remains visible inside the enlarged boundary */
   border-color: rgba(201, 162, 85, 0.5);
   box-shadow:
     0 40px 80px rgba(0, 0, 0, 0.75),
@@ -438,7 +440,14 @@ button {
     border-color 0.5s ease !important;
 }
 
-.coin-card.is-zoomed .coin-image,
+/* Ensure the image is always shown fully contained — no cropping — when the
+   card is in the zoomed state. Square images + square wrap = perfect fit. */
+.coin-card.is-zoomed .coin-image {
+  object-fit: contain !important;
+  transform: none !important;
+  filter: none !important;
+}
+
 .coin-card.is-zoomed .coin-title,
 .coin-card.is-zoomed .coin-meta,
 .coin-card.is-zoomed .coin-grade-badge,
@@ -931,7 +940,7 @@ button {
 
   .cat-btn {
     flex: 0 0 auto;
-    font-size: 0.88rem;
+    font-size: 0.70rem;        /* 0.88rem × 0.80 */
     white-space: nowrap;
   }
 
@@ -985,7 +994,7 @@ button {
   }
 
   .cat-btn {
-    font-size: 0.91rem;
+    font-size: 0.73rem;        /* 0.91rem × 0.80 */
     padding: 8px 12px;
   }
 
