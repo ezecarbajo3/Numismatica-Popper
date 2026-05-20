@@ -5,7 +5,7 @@
 }
 
 :root {
-  --bg: #050505;
+  --bg: #1a1a1a;
   --text: #f3eadb;
   --muted: #b2a38d;
   --border: rgba(201, 162, 85, 0.16);
@@ -18,7 +18,7 @@
 }
 
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -26,8 +26,8 @@ body {
   font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top center, rgba(201, 162, 85, 0.08), transparent 22%),
-    linear-gradient(180deg, #050505 0%, #080808 100%);
+    radial-gradient(circle at top center, rgba(201, 162, 85, 0.07), transparent 22%),
+    linear-gradient(180deg, #1a1a1a 0%, #1f1f1f 100%);
 }
 
 .container {
@@ -96,7 +96,7 @@ input,
 
 .site-header h1 {
   margin: 0 0 18px;
-  font-size: clamp(2.7rem, 6vw, 5.2rem);
+  font-size: clamp(2.97rem, 6.6vw, 5.72rem);
   letter-spacing: 0.18em;
   font-weight: 500;
   text-transform: uppercase;
@@ -127,7 +127,7 @@ input,
 .ticker-track {
   display: inline-flex;
   will-change: transform;
-  animation: ticker-scroll 28s linear infinite;
+  animation: ticker-scroll 14s linear infinite;
 }
 
 .ticker-text {
@@ -331,7 +331,7 @@ input,
 #searchInput {
   width: 100%;
   padding: 13px 44px 13px 42px;
-  background: rgba(11, 11, 11, 0.92);
+  background: rgba(28, 28, 28, 0.95);
   border: 1px solid rgba(201, 162, 85, 0.22);
   border-radius: 999px;
   color: var(--accent);
@@ -353,7 +353,7 @@ input,
 #searchInput:focus {
   outline: none;
   border-color: rgba(201, 162, 85, 0.62);
-  background: rgba(14, 14, 14, 0.96);
+  background: rgba(32, 32, 32, 0.97);
   box-shadow:
     0 0 0 3px rgba(201, 162, 85, 0.09),
     inset 0 1px 0 rgba(255, 255, 255, 0.03);
@@ -450,7 +450,7 @@ button {
 .coin-card {
   position: relative;
   z-index: 1;
-  background: linear-gradient(180deg, #0f0f0f 0%, #090909 100%);
+  background: linear-gradient(180deg, #272727 0%, #222222 100%);
   border: 1px solid rgba(201, 162, 85, 0.12);
   border-radius: 18px;
   overflow: hidden;
@@ -498,7 +498,7 @@ button {
 .coin-image-wrap {
   position: relative;
   aspect-ratio: 1 / 1;
-  background: #111;
+  background: #2a2a2a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -510,7 +510,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background: #111;
+  background: #2a2a2a;
   display: block;
 }
 
@@ -531,7 +531,7 @@ button {
   padding: 0;
   border: 1px solid rgba(201, 162, 85, 0.35);
   border-radius: 50%;
-  background: rgba(5, 5, 5, 0.62);
+  background: rgba(20, 20, 20, 0.72);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   color: var(--accent);
@@ -717,7 +717,7 @@ button {
 
 .empty-state {
   grid-column: 1 / -1;
-  background: linear-gradient(180deg, #101010 0%, #0b0b0b 100%);
+  background: linear-gradient(180deg, #262626 0%, #222222 100%);
   border: 1px dashed rgba(201, 162, 85, 0.2);
   border-radius: var(--radius);
   padding: 30px;
@@ -767,7 +767,7 @@ button {
   display: flex;
   justify-content: center;
   transform: none;
-  background: linear-gradient(180deg, #141414 0%, #0d0d0d 100%);
+  background: linear-gradient(180deg, #2a2a2a 0%, #242424 100%);
   border: 1px solid rgba(201, 162, 85, 0.12);
   border-radius: 22px;
   padding: 6px;
@@ -788,7 +788,7 @@ button {
   object-fit: contain;
   display: block;
   border-radius: 12px;
-  background: #101010;
+  background: #2a2a2a;
   max-height: 450px;
 }
 
@@ -809,7 +809,7 @@ button {
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(201, 162, 85, 0.18);
-  background: #0f0f0f;
+  background: #2a2a2a;
   padding: 0;
   cursor: pointer;
 }
@@ -968,7 +968,7 @@ button {
   width: min(55vmin, 500px);
   height: min(55vmin, 500px);
   object-fit: contain;
-  background: #0d0d0d;
+  background: #2a2a2a;
   border: 1px solid rgba(201, 162, 85, 0.3);
   border-radius: 20px;
   box-shadow:
@@ -1037,6 +1037,79 @@ button {
   width: 100%;
   text-align: left;
   justify-content: flex-start;
+}
+
+/* ─── Placeholder section ────────────────────────────────────────────────── */
+
+.placeholder-section {
+  padding: 58px 0 70px;
+  border-top: 1px solid rgba(201, 162, 85, 0.1);
+  background: rgba(201, 162, 85, 0.012);
+}
+
+.placeholder-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.placeholder-title {
+  margin: 0 0 10px;
+  font-family: "Cinzel", serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.placeholder-subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.placeholder-card {
+  background: rgba(201, 162, 85, 0.025);
+  border: 1px dashed rgba(201, 162, 85, 0.18);
+  border-radius: var(--radius);
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(201, 162, 85, 0.25);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.placeholder-card::before {
+  content: "Próximamente";
+}
+
+@media (max-width: 980px) {
+  .placeholder-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .placeholder-grid {
+    grid-template-columns: 1fr;
+  }
+  .placeholder-section {
+    padding: 40px 0 50px;
+  }
 }
 
 /* ─── Reveal animation ───────────────────────────────────────────────────── */
