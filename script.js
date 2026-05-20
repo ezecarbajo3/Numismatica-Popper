@@ -235,20 +235,7 @@ function buildSubFilterBar(category, restoredSubFilter = null) {
 
     if (isVertical) btn.classList.add('sub-filter-btn--vertical');
 
-    if (subtitle) {
-      // Argentina buttons get a year-range subtitle
-      btn.classList.add('sub-filter-btn--with-subtitle');
-      const labelEl = document.createElement('span');
-      labelEl.className = 'sub-filter-btn-label';
-      labelEl.textContent = label;
-      const subEl = document.createElement('span');
-      subEl.className = 'sub-filter-btn-sub';
-      subEl.textContent = subtitle;
-      btn.appendChild(labelEl);
-      btn.appendChild(subEl);
-    } else {
-      btn.textContent = label;
-    }
+    btn.textContent = label;
 
     if (value === restoredSubFilter) {
       btn.classList.add('is-active');
@@ -264,7 +251,19 @@ function buildSubFilterBar(category, restoredSubFilter = null) {
       applyFilters();
     });
 
-    subFilterList.appendChild(btn);
+    if (subtitle) {
+      // Argentina: wrap button + external date label in a column flex container
+      const wrapper = document.createElement('div');
+      wrapper.className = 'sub-filter-item';
+      wrapper.appendChild(btn);
+      const subEl = document.createElement('div');
+      subEl.className = 'sub-filter-item-sub';
+      subEl.textContent = subtitle;
+      wrapper.appendChild(subEl);
+      subFilterList.appendChild(wrapper);
+    } else {
+      subFilterList.appendChild(btn);
+    }
   });
 
   subFilterBar.classList.add('is-open');
