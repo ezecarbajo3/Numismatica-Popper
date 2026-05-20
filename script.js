@@ -159,10 +159,10 @@ function getSubFilterOptions(category) {
     case 'inversion': {
       const pool = allCoins.filter(isInvestment);
       const specs = [
-        { label: '9999', value: '9999', match: c => getSilverPurity(c) === 9999 },
-        { label: '999',  value: '999',  match: c => getSilverPurity(c) === 999  },
-        { label: '925',  value: '925',  match: c => getSilverPurity(c) === 925  },
-        { label: '900',  value: '900',  match: c => getSilverPurity(c) === 900  },
+        { label: '.9999', value: '9999', match: c => getSilverPurity(c) === 9999 },
+        { label: '.999',  value: '999',  match: c => getSilverPurity(c) === 999  },
+        { label: '.925',  value: '925',  match: c => getSilverPurity(c) === 925  },
+        { label: '.900',  value: '900',  match: c => getSilverPurity(c) === 900  },
       ];
       return specs.filter(s => pool.some(s.match));
     }
@@ -225,6 +225,14 @@ function buildSubFilterBar(category, restoredSubFilter = null) {
   if (isVertical) {
     subFilterBar.classList.add('sub-filter-bar--vertical');
     subFilterList.classList.add('sub-filter-list--vertical');
+  }
+
+  // Inversión (plata) → prepend static "Pureza de la plata" label
+  if (category === 'plata' || category === 'inversion') {
+    const labelEl = document.createElement('span');
+    labelEl.className = 'sub-filter-purity-label';
+    labelEl.textContent = 'Pureza de la plata';
+    subFilterList.appendChild(labelEl);
   }
 
   options.forEach(({ label, value, subtitle }) => {
