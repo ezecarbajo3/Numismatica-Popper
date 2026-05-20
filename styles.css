@@ -134,7 +134,7 @@ input,
   display: inline-block;
   padding-right: 80px;
   font-family: "Orbitron", monospace;
-  font-size: 0.713rem;          /* cat-btn base (0.62rem) × 1.15 */
+  font-size: 0.856rem;          /* cat-btn base (0.62rem) × 1.15 × 1.20 */
   font-weight: 400;
   color: var(--accent);
   letter-spacing: 0.08em;
@@ -172,7 +172,7 @@ input,
   background: rgba(201, 162, 85, 0.03);
   color: var(--muted);
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 0.62rem;        /* 0.96rem × 0.80 × 0.80 */
+  font-size: 0.744rem;       /* 0.96rem × 0.80 × 0.80 × 1.20 */
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -251,7 +251,7 @@ input,
   background: transparent;
   color: rgba(243, 234, 219, 0.62);
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 0.61rem;        /* 0.82rem × 0.80 × 0.80 × 1.15 */
+  font-size: 0.732rem;       /* 0.82rem × 0.80 × 0.80 × 1.15 × 1.20 */
   font-weight: 500;
   letter-spacing: 0.04em;
   cursor: pointer;
@@ -274,6 +274,29 @@ input,
   box-shadow:
     0 0 14px rgba(201, 162, 85, 0.1),
     inset 0 1px 0 rgba(201, 162, 85, 0.12);
+}
+
+/* ─── Sub-filter: "Pureza de la plata" static label ─────────────────────── */
+
+.sub-filter-purity-label {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0 14px 0 2px;
+  margin-right: 4px;
+  border-right: 1px solid rgba(201, 162, 85, 0.22);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f5e642;
+  white-space: nowrap;
+  text-shadow:
+    0 0 8px rgba(245, 230, 66, 0.5),
+    0 0 18px rgba(245, 230, 66, 0.2);
+  pointer-events: none;
+  user-select: none;
 }
 
 /* ─── Centered search bar ────────────────────────────────────────────────── */
@@ -1050,7 +1073,7 @@ button {
 
   .cat-btn {
     flex: 0 0 auto;
-    font-size: 0.56rem;        /* 0.88rem × 0.80 × 0.80 */
+    font-size: 0.672rem;       /* 0.88rem × 0.80 × 0.80 × 1.20 */
     white-space: nowrap;
   }
 
@@ -1104,7 +1127,7 @@ button {
   }
 
   .cat-btn {
-    font-size: 0.58rem;        /* 0.91rem × 0.80 × 0.80 */
+    font-size: 0.696rem;       /* 0.91rem × 0.80 × 0.80 × 1.20 */
     padding: 8px 12px;
   }
 
@@ -1223,10 +1246,6 @@ button {
   .detail-price {
     font-size: clamp(1.9rem, 8vw, 2.4rem);
   }
-}
-
-.ticker-bar:hover .ticker-track {
-  animation-play-state: paused;
 }
 
 @media (prefers-reduced-motion: reduce) {
