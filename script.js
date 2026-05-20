@@ -357,7 +357,6 @@ function getFilteredCoins() {
   const selectedMetal = metalFilter.value;
 
   return allCoins.filter((coin) => {
-    // Category tab filter (applied first for performance)
     if (activeCategory) {
       const predicate = CATEGORY_PREDICATES[activeCategory];
       if (predicate && !predicate(coin)) return false;
@@ -448,18 +447,19 @@ function renderCoins(coins, skipAnimation = false) {
   }
 
   const fragment = document.createDocumentFragment();
+  const hasPointerFine = window.matchMedia("(pointer: fine)").matches;
 
   sortCoins(coins).forEach((coin) => {
     const card = coinCardTemplate.content.cloneNode(true);
 
     const article = card.querySelector(".coin-card");
+    const imageWrap = card.querySelector(".coin-image-wrap");
     const image = card.querySelector(".coin-image");
     const title = card.querySelector(".coin-title");
     const meta = card.querySelector(".coin-meta");
     const badgeRow = card.querySelector(".coin-badge-row");
     const price = card.querySelector(".coin-price");
 
-    // Skip reveal animation on filter changes to avoid opacity flash
     if (skipAnimation) {
       article.classList.remove("reveal");
     }
@@ -473,6 +473,61 @@ function renderCoins(coins, skipAnimation = false) {
     const grade = getGradeShort(coin);
     badgeRow.innerHTML = grade ? `<span class="coin-grade-badge">${grade}</span>` : "";
 
+    // ── Inline image carousel ──────────────────────────────────────────────
+    const images = Array.isArray(coin.images) ? coin.images : [];
+    if (images.length > 1) {
+      let currentIdx = 0;
+
+      const setIdx = (newIdx) => {
+        currentIdx = ((newIdx % images.length) + images.length) % images.length;
+        image.src = images[currentIdx];
+        imageWrap.querySelectorAll(".card-dot").forEach((dot, i) => {
+          dot.classList.toggle("is-active", i === currentIdx);
+        });
+      };
+
+      const prevBtn = document.createElement("button");
+      prevBtn.type = "button";
+      prevBtn.className = "card-arrow card-arrow--prev";
+      prevBtn.setAttribute("aria-label", "Imagen anterior");
+      prevBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>`;
+
+      const nextBtn = document.createElement("button");
+      nextBtn.type = "button";
+      nextBtn.className = "card-arrow card-arrow--next";
+      nextBtn.setAttribute("aria-label", "Imagen siguiente");
+      nextBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>`;
+
+      const dotsWrap = document.createElement("div");
+      dotsWrap.className = "card-dots";
+      images.forEach((_, i) => {
+        const dot = document.createElement("span");
+        dot.className = "card-dot" + (i === 0 ? " is-active" : "");
+        dotsWrap.appendChild(dot);
+      });
+
+      prevBtn.addEventListener("click", (e) => { e.stopPropagation(); setIdx(currentIdx - 1); });
+      nextBtn.addEventListener("click", (e) => { e.stopPropagation(); setIdx(currentIdx + 1); });
+
+      imageWrap.appendChild(prevBtn);
+      imageWrap.appendChild(nextBtn);
+      imageWrap.appendChild(dotsWrap);
+    }
+
+    // ── Hover zoom (3-second delay, pointer:fine only) ─────────────────────
+    if (hasPointerFine) {
+      let zoomTimer = null;
+      article.addEventListener("mouseenter", () => {
+        zoomTimer = setTimeout(() => article.classList.add("is-zoomed"), 3000);
+      });
+      article.addEventListener("mouseleave", () => {
+        clearTimeout(zoomTimer);
+        zoomTimer = null;
+        article.classList.remove("is-zoomed");
+      });
+    }
+
+    // ── Navigation ─────────────────────────────────────────────────────────
     article.addEventListener("click", () => goToDetail(coin.id));
     article.addEventListener("keydown", (event) => {
       if (event.key === "Enter" || event.key === " ") {
@@ -546,7 +601,6 @@ resetFiltersButton.addEventListener("click", () => {
   countryFilter.value = "";
   metalFilter.value = "";
 
-  // Clear active category
   activeCategory = null;
   document.querySelectorAll(".cat-btn").forEach((b) => b.classList.remove("is-active"));
 
@@ -555,13 +609,11 @@ resetFiltersButton.addEventListener("click", () => {
   initRevealEffects();
 });
 
-// Category nav buttons
 document.querySelectorAll(".cat-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     const category = btn.dataset.category;
 
     if (activeCategory === category) {
-      // Clicking the active category deselects it
       activeCategory = null;
       btn.classList.remove("is-active");
     } else {
@@ -579,3 +631,62 @@ document.querySelectorAll(".cat-btn").forEach((btn) => {
 loadCoins().then(() => {
   initRevealEffects();
 });
+
+// ─── Smooth scroll inertia (desktop/mouse only) ─────────────────────────────
+
+(function initSmoothScroll() {
+  if (window.matchMedia("(pointer: coarse)").matches) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const EASE = 0.1;
+  let scrollCurrent = window.scrollY;
+  let scrollTarget = window.scrollY;
+  let rafId = null;
+
+  function lerp(a, b, t) { return a + (b - a) * t; }
+  function getMaxScroll() { return document.documentElement.scrollHeight - window.innerHeight; }
+
+  function getNormalisedDelta(e) {
+    if (e.deltaMode === 1) return e.deltaY * 40;
+    if (e.deltaMode === 2) return e.deltaY * window.innerHeight;
+    return e.deltaY;
+  }
+
+  function isInsideScrollable(el) {
+    let node = el;
+    while (node && node !== document.documentElement) {
+      const style = window.getComputedStyle(node);
+      const oy = style.overflowY;
+      if ((oy === "scroll" || oy === "auto") && node.scrollHeight > node.clientHeight + 1) return true;
+      node = node.parentElement;
+    }
+    return false;
+  }
+
+  function loop() {
+    const diff = scrollTarget - scrollCurrent;
+    if (Math.abs(diff) < 0.5) {
+      scrollCurrent = scrollTarget;
+      window.scrollTo(0, scrollCurrent);
+      rafId = null;
+      return;
+    }
+    scrollCurrent = lerp(scrollCurrent, scrollTarget, EASE);
+    window.scrollTo(0, scrollCurrent);
+    rafId = requestAnimationFrame(loop);
+  }
+
+  window.addEventListener("wheel", (e) => {
+    if (isInsideScrollable(e.target)) return;
+    e.preventDefault();
+    scrollTarget = Math.max(0, Math.min(scrollTarget + getNormalisedDelta(e), getMaxScroll()));
+    if (!rafId) {
+      scrollCurrent = window.scrollY;
+      rafId = requestAnimationFrame(loop);
+    }
+  }, { passive: false });
+
+  window.addEventListener("scroll", () => {
+    if (!rafId) scrollCurrent = scrollTarget = window.scrollY;
+  }, { passive: true });
+})();
