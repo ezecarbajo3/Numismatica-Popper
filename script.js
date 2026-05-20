@@ -563,7 +563,7 @@ loadCoins().then((ok) => {
   if (window.matchMedia('(pointer: coarse)').matches) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  const EASE = 0.1;
+  const EASE = 0.22;
   let scrollCurrent = window.scrollY;
   let scrollTarget  = window.scrollY;
   let rafId         = null;
