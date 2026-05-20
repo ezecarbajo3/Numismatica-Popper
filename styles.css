@@ -28,6 +28,7 @@ body {
   background:
     radial-gradient(circle at top center, rgba(201, 162, 85, 0.07), transparent 22%),
     linear-gradient(180deg, #1a1a1a 0%, #1f1f1f 100%);
+  -webkit-overflow-scrolling: touch;
 }
 
 .container {
@@ -72,9 +73,7 @@ input,
 
 .site-header {
   position: relative;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.9)),
-    url("images/hero-bg.jpg") center center / cover no-repeat;
+  background: var(--bg);
   border-bottom: 1px solid rgba(201, 162, 85, 0.14);
   padding: 55px 0 36px;
   text-align: center;
@@ -290,11 +289,8 @@ input,
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #f5e642;
+  color: var(--accent);
   white-space: nowrap;
-  text-shadow:
-    0 0 8px rgba(245, 230, 66, 0.5),
-    0 0 18px rgba(245, 230, 66, 0.2);
   pointer-events: none;
   user-select: none;
 }
@@ -693,14 +689,13 @@ button {
 
 .coin-footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 8px;
 }
 
 .coin-price {
   display: block;
-  width: 100%;
-  text-align: center;
   font-size: 1.2rem;
   color: var(--accent);
   font-weight: 600;
@@ -1039,6 +1034,25 @@ button {
   justify-content: flex-start;
 }
 
+.sub-filter-btn--row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.sub-filter-btn-date {
+  color: var(--accent);
+  font-weight: 300;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-size: 0.88em;
+  letter-spacing: 0.04em;
+  opacity: 0.82;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
 /* ─── Placeholder section ────────────────────────────────────────────────── */
 
 .placeholder-section {
@@ -1226,21 +1240,12 @@ button {
     transform: none;
   }
 
-  .coin-meta-row {
-    grid-template-columns: 1fr;
-    row-gap: 6px;
-  }
-
   .coin-meta {
     text-align: center;
   }
 
-  .coin-badge-row {
-    justify-content: center;
-  }
-
   .coin-footer {
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .coin-title {
