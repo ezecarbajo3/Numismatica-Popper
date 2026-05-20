@@ -1,19 +1,19 @@
-// ─── Disable browser auto-scroll restoration ─────────────────────────────
+// ─── Disable browser auto-scroll restoration ─────────────────────────────────
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
 
-// ─── DOM refs ────────────────────────────────────────────────────────────────
-const searchInput       = document.getElementById('searchInput');
-const clearSearchBtn    = document.getElementById('clearSearch');
+// ─── DOM refs ─────────────────────────────────────────────────────────────────
+const searchInput        = document.getElementById('searchInput');
+const clearSearchBtn     = document.getElementById('clearSearch');
 const resetFiltersButton = document.getElementById('resetFilters');
-const resultsCount      = document.getElementById('resultsCount');
-const coinsGrid         = document.getElementById('coinsGrid');
-const coinCardTemplate  = document.getElementById('coinCardTemplate');
-const subFilterBar      = document.getElementById('subFilterBar');
-const subFilterList     = document.getElementById('subFilterList');
+const resultsCount       = document.getElementById('resultsCount');
+const coinsGrid          = document.getElementById('coinsGrid');
+const coinCardTemplate   = document.getElementById('coinCardTemplate');
+const subFilterBar       = document.getElementById('subFilterBar');
+const subFilterList      = document.getElementById('subFilterList');
 
-// ─── State ───────────────────────────────────────────────────────────────────
+// ─── State ────────────────────────────────────────────────────────────────────
 let allCoins        = [];
 let activeCategory  = null;
 let activeSubFilter = null;
@@ -21,18 +21,18 @@ let revealObserver  = null;
 
 const STATE_KEY = 'nump_filter_state';
 
-// ─── Country lookup helpers ──────────────────────────────────────────────────
+// ─── Country lookup helpers ───────────────────────────────────────────────────
 
 const ARGENTINA_EQUIVALENTS = {
-  'Argentina': 'Argentina',
-  'Argentina - Patria': 'Argentina - Patria',
-  'Patria': 'Argentina - Patria',
-  'Argentina - Buenos Aires': 'Argentina - Buenos Aires',
-  'Buenos Aires': 'Argentina - Buenos Aires',
-  'Argentina - Confed. Arg.': 'Argentina - Confed. Arg.',
-  'Confed. Arg.': 'Argentina - Confed. Arg.',
+  'Argentina':                        'Argentina',
+  'Argentina - Patria':               'Argentina - Patria',
+  'Patria':                           'Argentina - Patria',
+  'Argentina - Buenos Aires':         'Argentina - Buenos Aires',
+  'Buenos Aires':                     'Argentina - Buenos Aires',
+  'Argentina - Confed. Arg.':         'Argentina - Confed. Arg.',
+  'Confed. Arg.':                     'Argentina - Confed. Arg.',
   'Argentina - Confederación Argentina': 'Argentina - Confed. Arg.',
-  'Confederación Argentina': 'Argentina - Confed. Arg.',
+  'Confederación Argentina':          'Argentina - Confed. Arg.',
 };
 
 const ARGENTINA_GROUP_VALUES = new Set([
@@ -44,10 +44,10 @@ const ARGENTINA_GROUP_VALUES = new Set([
 
 // Maps Argentina sub-filter labels → normalized country values
 const ARGENTINA_SUB_MAP = {
-  'República':              'Argentina',
-  'Bs As':                  'Argentina - Buenos Aires',
-  'Confederación Argentina':'Argentina - Confed. Arg.',
-  'Patria':                 'Argentina - Patria',
+  'República':               'Argentina',
+  'Bs As':                   'Argentina - Buenos Aires',
+  'Confederación Argentina': 'Argentina - Confed. Arg.',
+  'Patria':                  'Argentina - Patria',
 };
 
 function normalizeCountryValue(country) {
@@ -66,7 +66,7 @@ function getCountryDisplayLabel(country) {
   }
 }
 
-// ─── Category predicates ─────────────────────────────────────────────────────
+// ─── Category predicates ──────────────────────────────────────────────────────
 
 function isArgentinaCoin(coin) {
   return (coin.country || '').trim().startsWith('Argentina');
@@ -76,12 +76,24 @@ function isMedalOrToken(coin) {
   const country = (coin.country || '').trim().toLowerCase();
   const title   = (coin.title   || '').trim().toLowerCase();
   return (
-    country === 'token'        ||
-    country === 'medalla'      ||
-    country.includes('token')  ||
-    country.includes('medalla')||
+    country === 'token'         ||
+    country === 'medalla'       ||
+    country.includes('token')   ||
+    country.includes('medalla') ||
     title.includes('medalla')
   );
+}
+
+// Granular helpers used for medallas sub-filtering
+function isMedal(coin) {
+  const country = (coin.country || '').trim().toLowerCase();
+  const title   = (coin.title   || '').trim().toLowerCase();
+  return country.includes('medalla') || title.includes('medalla');
+}
+
+function isToken(coin) {
+  const country = (coin.country || '').trim().toLowerCase();
+  return country === 'token' || country.includes('token');
 }
 
 function isBlister(coin) {
@@ -106,29 +118,31 @@ function isInvestment(coin) {
 }
 
 const CATEGORY_PREDICATES = {
+  plata:         isInvestment,      // primary key (button renamed to "Plata")
+  inversion:     isInvestment,      // kept for sessionStorage backwards compat
   argentina:     isArgentinaCoin,
   internacional: (c) => !isArgentinaCoin(c) && !isMedalOrToken(c) && !isBlister(c) && !isBook(c),
   medallas:      isMedalOrToken,
   blisters:      isBlister,
   libros:        isBook,
-  inversion:     isInvestment,
 };
 
-// ─── Sub-filter helpers ──────────────────────────────────────────────────────
+// ─── Sub-filter helpers ───────────────────────────────────────────────────────
 
 /**
- * Returns the array of {label, value} options for the contextual dropdown,
- * applying the critical data rule (omit options with 0 matching items).
+ * Returns an array of { label, value, subtitle?, match? } option specs for the
+ * contextual dropdown. Applies the critical data rule: options with 0 matching
+ * items are omitted so users never hit an empty result page.
  */
 function getSubFilterOptions(category) {
   switch (category) {
     case 'argentina': {
       const pool = allCoins.filter(isArgentinaCoin);
       const specs = [
-        { label: 'República',              value: 'República',               country: 'Argentina' },
-        { label: 'Bs As',                  value: 'Bs As',                   country: 'Argentina - Buenos Aires' },
-        { label: 'Confederación Argentina',value: 'Confederación Argentina',  country: 'Argentina - Confed. Arg.' },
-        { label: 'Patria',                 value: 'Patria',                  country: 'Argentina - Patria' },
+        { label: 'República',               value: 'República',               subtitle: '1881 – actualidad', country: 'Argentina' },
+        { label: 'Bs As',                   value: 'Bs As',                   subtitle: '1822 – 1861',       country: 'Argentina - Buenos Aires' },
+        { label: 'Confederación Argentina', value: 'Confederación Argentina',  subtitle: '1854',              country: 'Argentina - Confed. Arg.' },
+        { label: 'Patria',                  value: 'Patria',                  subtitle: '1813 – 1815',       country: 'Argentina - Patria' },
       ];
       return specs.filter(s => pool.some(c => normalizeCountryValue(c.country) === s.country));
     }
@@ -141,20 +155,29 @@ function getSubFilterOptions(category) {
       return countries.map(c => ({ label: c, value: c }));
     }
 
+    case 'plata':
     case 'inversion': {
       const pool = allCoins.filter(isInvestment);
       const specs = [
-        { label: 'Plata',  value: 'Plata', match: c => /^[Pp]lata$/i.test((c.metal || '').trim()) },
-        { label: '.900',   value: '900',   match: c => getSilverPurity(c) === 900 },
-        { label: '.925',   value: '925',   match: c => getSilverPurity(c) === 925 },
-        { label: '.999',   value: '999',   match: c => getSilverPurity(c) === 999 },
-        { label: '.9999',  value: '9999',  match: c => getSilverPurity(c) === 9999 },
+        { label: '9999', value: '9999', match: c => getSilverPurity(c) === 9999 },
+        { label: '999',  value: '999',  match: c => getSilverPurity(c) === 999  },
+        { label: '925',  value: '925',  match: c => getSilverPurity(c) === 925  },
+        { label: '900',  value: '900',  match: c => getSilverPurity(c) === 900  },
+      ];
+      return specs.filter(s => pool.some(s.match));
+    }
+
+    case 'medallas': {
+      const pool = allCoins.filter(isMedalOrToken);
+      const specs = [
+        { label: 'Medallas', value: 'Medallas', match: isMedal },
+        { label: 'Tokens',   value: 'Tokens',   match: isToken  },
       ];
       return specs.filter(s => pool.some(s.match));
     }
 
     default:
-      return null; // blisters, medallas, libros have no sub-filters
+      return null; // blisters, libros have no sub-filters
   }
 }
 
@@ -166,21 +189,29 @@ function matchesSubFilter(coin, category, subFilter) {
     }
     case 'internacional':
       return coin.country === subFilter;
+    case 'plata':
     case 'inversion':
-      if (subFilter === 'Plata') return /^[Pp]lata$/i.test((coin.metal || '').trim());
       return getSilverPurity(coin) === parseInt(subFilter, 10);
+    case 'medallas':
+      if (subFilter === 'Medallas') return isMedal(coin);
+      if (subFilter === 'Tokens')   return isToken(coin);
+      return true;
     default:
       return true;
   }
 }
 
 /**
- * Builds the contextual dropdown. Pass restoredSubFilter to re-activate a
- * previously-selected sub-filter (used during state restoration only).
+ * Builds (or rebuilds) the contextual dropdown beneath the active category
+ * button. Pass restoredSubFilter to re-activate a persisted selection.
  */
 function buildSubFilterBar(category, restoredSubFilter = null) {
   subFilterList.innerHTML = '';
   activeSubFilter = null;
+
+  // Clear layout modifier classes from previous category
+  subFilterBar.classList.remove('sub-filter-bar--vertical');
+  subFilterList.classList.remove('sub-filter-list--vertical');
 
   const options = getSubFilterOptions(category);
 
@@ -189,12 +220,35 @@ function buildSubFilterBar(category, restoredSubFilter = null) {
     return;
   }
 
-  options.forEach(({ label, value }) => {
+  // Internacional → vertical scrollable list
+  const isVertical = category === 'internacional';
+  if (isVertical) {
+    subFilterBar.classList.add('sub-filter-bar--vertical');
+    subFilterList.classList.add('sub-filter-list--vertical');
+  }
+
+  options.forEach(({ label, value, subtitle }) => {
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'sub-filter-btn';
-    btn.textContent = label;
     btn.dataset.value = value;
+
+    if (isVertical) btn.classList.add('sub-filter-btn--vertical');
+
+    if (subtitle) {
+      // Argentina buttons get a year-range subtitle
+      btn.classList.add('sub-filter-btn--with-subtitle');
+      const labelEl = document.createElement('span');
+      labelEl.className = 'sub-filter-btn-label';
+      labelEl.textContent = label;
+      const subEl = document.createElement('span');
+      subEl.className = 'sub-filter-btn-sub';
+      subEl.textContent = subtitle;
+      btn.appendChild(labelEl);
+      btn.appendChild(subEl);
+    } else {
+      btn.textContent = label;
+    }
 
     if (value === restoredSubFilter) {
       btn.classList.add('is-active');
@@ -217,12 +271,42 @@ function buildSubFilterBar(category, restoredSubFilter = null) {
 }
 
 function closeSubFilterBar() {
-  subFilterBar.classList.remove('is-open');
+  subFilterBar.classList.remove('is-open', 'sub-filter-bar--vertical');
+  subFilterList.classList.remove('sub-filter-list--vertical');
   subFilterList.innerHTML = '';
   activeSubFilter = null;
 }
 
-// ─── State persistence ───────────────────────────────────────────────────────
+// ─── Image preview overlay ────────────────────────────────────────────────────
+
+function showImagePreview(src, altText) {
+  hideImagePreview(true); // instant-remove any stale overlay
+
+  const overlay = document.createElement('div');
+  overlay.id = 'imgPreviewOverlay';
+  overlay.className = 'img-preview-overlay';
+
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = altText || '';
+  img.className = 'img-preview-img';
+  overlay.appendChild(img);
+  document.body.appendChild(overlay);
+
+  // Double rAF to ensure the browser paints once before adding the class
+  requestAnimationFrame(() => requestAnimationFrame(() => overlay.classList.add('is-visible')));
+}
+
+function hideImagePreview(instant = false) {
+  const overlay = document.getElementById('imgPreviewOverlay');
+  if (!overlay) return;
+  if (instant) { overlay.remove(); return; }
+  overlay.classList.remove('is-visible');
+  overlay.addEventListener('transitionend', () => overlay.remove(), { once: true });
+  setTimeout(() => overlay.remove(), 600); // failsafe
+}
+
+// ─── State persistence ────────────────────────────────────────────────────────
 
 function saveState(scrollY = null) {
   const state = {
@@ -252,6 +336,9 @@ function isBackForwardNavigation() {
 }
 
 function applyRestoredState(state) {
+  // Migrate old 'inversion' category key to 'plata'
+  if (state.category === 'inversion') state.category = 'plata';
+
   if (state.search) {
     searchInput.value = state.search;
     clearSearchBtn.classList.toggle('is-visible', state.search.length > 0);
@@ -268,7 +355,7 @@ function applyRestoredState(state) {
   renderCoins(getFilteredCoins(), true);
 }
 
-// ─── Data loading ────────────────────────────────────────────────────────────
+// ─── Data loading ─────────────────────────────────────────────────────────────
 
 async function loadCoins() {
   try {
@@ -286,7 +373,7 @@ async function loadCoins() {
   }
 }
 
-// ─── Filtering ───────────────────────────────────────────────────────────────
+// ─── Filtering ────────────────────────────────────────────────────────────────
 
 function getFilteredCoins() {
   const searchTerm = searchInput.value.trim().toLowerCase();
@@ -314,7 +401,7 @@ function getFilteredCoins() {
   });
 }
 
-// ─── Rendering ───────────────────────────────────────────────────────────────
+// ─── Rendering ────────────────────────────────────────────────────────────────
 
 function getPrimaryImage(coin) {
   if (Array.isArray(coin.images) && coin.images.length > 0) {
@@ -371,13 +458,13 @@ function renderCoins(coins, skipAnimation = false) {
   sortCoins(coins).forEach((coin) => {
     const card = coinCardTemplate.content.cloneNode(true);
 
-    const article  = card.querySelector('.coin-card');
+    const article   = card.querySelector('.coin-card');
     const imageWrap = card.querySelector('.coin-image-wrap');
-    const image    = card.querySelector('.coin-image');
-    const title    = card.querySelector('.coin-title');
-    const meta     = card.querySelector('.coin-meta');
-    const badgeRow = card.querySelector('.coin-badge-row');
-    const price    = card.querySelector('.coin-price');
+    const image     = card.querySelector('.coin-image');
+    const title     = card.querySelector('.coin-title');
+    const meta      = card.querySelector('.coin-meta');
+    const badgeRow  = card.querySelector('.coin-badge-row');
+    const price     = card.querySelector('.coin-price');
 
     if (skipAnimation) article.classList.remove('reveal');
 
@@ -390,7 +477,7 @@ function renderCoins(coins, skipAnimation = false) {
     const grade = getGradeShort(coin);
     badgeRow.innerHTML = grade ? `<span class="coin-grade-badge">${grade}</span>` : '';
 
-    // ── Inline image carousel ──────────────────────────────────────────────
+    // ── Inline image carousel ─────────────────────────────────────────────────
     const images = Array.isArray(coin.images) ? coin.images : [];
     if (images.length > 1) {
       let currentIdx = 0;
@@ -430,20 +517,28 @@ function renderCoins(coins, skipAnimation = false) {
       imageWrap.appendChild(dotsWrap);
     }
 
-    // ── Hover zoom (3-second delay, pointer:fine only) ─────────────────────
+    // ── Hover image preview — shows fixed-position overlay after 3 s ──────────
+    // Gated to pointer:fine so it never fires on touch screens.
     if (hasPointerFine) {
       let zoomTimer = null;
+
       article.addEventListener('mouseenter', () => {
-        zoomTimer = setTimeout(() => article.classList.add('is-zoomed'), 3000);
+        zoomTimer = setTimeout(() => {
+          article.classList.add('is-zoomed');
+          // Show current image (respects carousel position)
+          showImagePreview(image.src, coin.title);
+        }, 3000);
       });
+
       article.addEventListener('mouseleave', () => {
         clearTimeout(zoomTimer);
         zoomTimer = null;
         article.classList.remove('is-zoomed');
+        hideImagePreview();
       });
     }
 
-    // ── Navigation ─────────────────────────────────────────────────────────
+    // ── Card navigation ───────────────────────────────────────────────────────
     article.addEventListener('click', () => goToDetail(coin.id));
     article.addEventListener('keydown', (event) => {
       if (event.key === 'Enter' || event.key === ' ') {
@@ -459,7 +554,7 @@ function renderCoins(coins, skipAnimation = false) {
   resultsCount.textContent = `${coins.length} moneda${coins.length === 1 ? '' : 's'} encontrada${coins.length === 1 ? '' : 's'}`;
 }
 
-// ─── Reveal animations ───────────────────────────────────────────────────────
+// ─── Reveal animations ────────────────────────────────────────────────────────
 
 function initRevealEffects() {
   if (revealObserver) revealObserver.disconnect();
@@ -481,14 +576,14 @@ function initRevealEffects() {
   revealItems.forEach(item => revealObserver.observe(item));
 }
 
-// ─── Apply filters ───────────────────────────────────────────────────────────
+// ─── Apply filters ────────────────────────────────────────────────────────────
 
 function applyFilters() {
   renderCoins(getFilteredCoins(), true);
   saveState();
 }
 
-// ─── Event listeners ────────────────────────────────────────────────────────
+// ─── Event listeners ──────────────────────────────────────────────────────────
 
 searchInput.addEventListener('input', () => {
   clearSearchBtn.classList.toggle('is-visible', searchInput.value.length > 0);
@@ -509,6 +604,7 @@ resetFiltersButton.addEventListener('click', () => {
   activeSubFilter = null;
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('is-active'));
   closeSubFilterBar();
+  hideImagePreview(true);
   saveState();
   renderCoins(allCoins);
   initRevealEffects();
@@ -533,7 +629,7 @@ document.querySelectorAll('.cat-btn').forEach(btn => {
   });
 });
 
-// ─── Bootstrap ───────────────────────────────────────────────────────────────
+// ─── Bootstrap ────────────────────────────────────────────────────────────────
 
 loadCoins().then((ok) => {
   if (!ok) return;
@@ -557,13 +653,13 @@ loadCoins().then((ok) => {
   initRevealEffects();
 });
 
-// ─── Smooth scroll inertia (desktop/mouse only) ──────────────────────────────
+// ─── Smooth scroll inertia (desktop / mouse only) ─────────────────────────────
 
 (function initSmoothScroll() {
   if (window.matchMedia('(pointer: coarse)').matches) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  const EASE = 0.22;
+  const EASE = 0.5; // 0.5 → ~3 frames to settle: imperceptibly small tail
   let scrollCurrent = window.scrollY;
   let scrollTarget  = window.scrollY;
   let rafId         = null;
