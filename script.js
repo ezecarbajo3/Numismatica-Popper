@@ -382,10 +382,20 @@ async function loadCoins() {
 
 // ─── Filtering ────────────────────────────────────────────────────────────────
 
+const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
+
+function isSoldExpired(coin) {
+  return coin.status === 'sold' && coin.soldAt &&
+    (Date.now() - new Date(coin.soldAt).getTime() > SEVEN_DAYS_MS);
+}
+
 function getFilteredCoins() {
   const searchTerm = searchInput.value.trim().toLowerCase();
 
   return allCoins.filter((coin) => {
+    // Auto-hide sold items whose 7-day visibility window has closed
+    if (isSoldExpired(coin)) return false;
+
     if (activeCategory) {
       const predicate = CATEGORY_PREDICATES[activeCategory];
       if (predicate && !predicate(coin)) return false;
@@ -438,6 +448,11 @@ function getCountrySortGroup(country) {
 
 function sortCoins(coins) {
   return [...coins].sort((a, b) => {
+    // Sold items always sink to the bottom
+    const aSold = a.status === 'sold' ? 1 : 0;
+    const bSold = b.status === 'sold' ? 1 : 0;
+    if (aSold !== bSold) return aSold - bSold;
+
     const groupA = getCountrySortGroup(a.country);
     const groupB = getCountrySortGroup(b.country);
     const byCountry = groupA.localeCompare(groupB, 'es');
@@ -485,6 +500,21 @@ function renderCoins(coins, skipAnimation = false) {
 
     const grade = getGradeShort(coin);
     badgeRow.innerHTML = grade ? `<span class="coin-grade-badge">${grade}</span>` : '';
+
+    // ── Sold state ────────────────────────────────────────────────────────────
+    if (coin.status === 'sold') {
+      article.classList.add('is-sold');
+      article.removeAttribute('role');
+      article.tabIndex = -1;
+
+      const ribbon = document.createElement('div');
+      ribbon.className = 'sold-ribbon';
+      ribbon.textContent = 'VENDIDO';
+      imageWrap.appendChild(ribbon);
+
+      price.textContent = 'VENDIDO';
+      price.classList.add('is-sold-price');
+    }
 
     // ── Inline image carousel ─────────────────────────────────────────────────
     const images = Array.isArray(coin.images) ? coin.images : [];
@@ -541,7 +571,7 @@ function renderCoins(coins, skipAnimation = false) {
 
     // ── Hover image preview — shows fixed-position overlay after 3 s ──────────
     // Gated to pointer:fine so it never fires on touch screens.
-    if (hasPointerFine) {
+    if (hasPointerFine && coin.status !== 'sold') {
       let zoomTimer = null;
 
       article.addEventListener('mouseenter', () => {
@@ -561,13 +591,15 @@ function renderCoins(coins, skipAnimation = false) {
     }
 
     // ── Card navigation ───────────────────────────────────────────────────────
-    article.addEventListener('click', () => goToDetail(coin.id));
-    article.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        goToDetail(coin.id);
-      }
-    });
+    if (coin.status !== 'sold') {
+      article.addEventListener('click', () => goToDetail(coin.id));
+      article.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          goToDetail(coin.id);
+        }
+      });
+    }
 
     fragment.appendChild(card);
   });
