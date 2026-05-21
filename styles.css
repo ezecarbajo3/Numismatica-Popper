@@ -736,13 +736,13 @@ button {
 
 .coin-card.is-sold {
   filter: grayscale(88%) brightness(0.82);
-  cursor: default;
-  pointer-events: none;
   border-color: rgba(120, 100, 80, 0.15);
 }
 
-.coin-card.is-sold .coin-image-wrap {
-  pointer-events: auto;
+.coin-card.is-sold:hover:not(.is-zoomed) {
+  transform: none;
+  border-color: rgba(120, 100, 80, 0.15);
+  box-shadow: var(--shadow);
 }
 
 .sold-ribbon {
