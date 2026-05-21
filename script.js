@@ -448,11 +448,6 @@ function getCountrySortGroup(country) {
 
 function sortCoins(coins) {
   return [...coins].sort((a, b) => {
-    // Sold items always sink to the bottom
-    const aSold = a.status === 'sold' ? 1 : 0;
-    const bSold = b.status === 'sold' ? 1 : 0;
-    if (aSold !== bSold) return aSold - bSold;
-
     const groupA = getCountrySortGroup(a.country);
     const groupB = getCountrySortGroup(b.country);
     const byCountry = groupA.localeCompare(groupB, 'es');
@@ -504,8 +499,6 @@ function renderCoins(coins, skipAnimation = false) {
     // ── Sold state ────────────────────────────────────────────────────────────
     if (coin.status === 'sold') {
       article.classList.add('is-sold');
-      article.removeAttribute('role');
-      article.tabIndex = -1;
 
       const ribbon = document.createElement('div');
       ribbon.className = 'sold-ribbon';
@@ -571,7 +564,7 @@ function renderCoins(coins, skipAnimation = false) {
 
     // ── Hover image preview — shows fixed-position overlay after 3 s ──────────
     // Gated to pointer:fine so it never fires on touch screens.
-    if (hasPointerFine && coin.status !== 'sold') {
+    if (hasPointerFine) {
       let zoomTimer = null;
 
       article.addEventListener('mouseenter', () => {
@@ -591,15 +584,13 @@ function renderCoins(coins, skipAnimation = false) {
     }
 
     // ── Card navigation ───────────────────────────────────────────────────────
-    if (coin.status !== 'sold') {
-      article.addEventListener('click', () => goToDetail(coin.id));
-      article.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault();
-          goToDetail(coin.id);
-        }
-      });
-    }
+    article.addEventListener('click', () => goToDetail(coin.id));
+    article.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        goToDetail(coin.id);
+      }
+    });
 
     fragment.appendChild(card);
   });
