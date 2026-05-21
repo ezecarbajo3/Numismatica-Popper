@@ -2334,8 +2334,8 @@
   },
   {
     "id": 173,
-    "title": "Medalla Militar Uruguay",
-    "country": "Uruguay",
+    "title": "Militar Uruguay",
+    "country": "Medalla",
     "metal": "Plata",
     "year": "1957",
     "price": "20 USD",
@@ -2351,8 +2351,8 @@
   },
   {
     "id": 174,
-    "title": "Medalla Premio Automovilismo",
-    "country": "Argentina",
+    "title": "Premio Automovilismo",
+    "country": "Medalla",
     "metal": "Plata",
     "year": "1948",
     "price": "15 USD",
