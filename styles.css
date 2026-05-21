@@ -1191,6 +1191,10 @@ button {
     white-space: nowrap;
   }
 
+  .cat-br {
+    display: none;
+  }
+
   .sub-filter-bar.is-open {
     max-height: 120px;
   }
