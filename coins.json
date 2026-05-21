@@ -2331,5 +2331,39 @@
     "grade_short": "",
     "mintage": "",
     "description": ""
+  },
+  {
+    "id": 173,
+    "title": "Medalla Militar Uruguay",
+    "country": "Uruguay",
+    "metal": "Plata",
+    "year": "1957",
+    "price": "20 USD",
+    "images": [
+      "images/173A.jpeg",
+      "images/173B.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "description": "Reproducción de 1957 de una medalla militar original de 1814, entregada a las tropas que liberaron Montevideo del dominio español."
+  },
+  {
+    "id": 174,
+    "title": "Medalla Premio Automovilismo",
+    "country": "Argentina",
+    "metal": "Plata",
+    "year": "1948",
+    "price": "Consultar",
+    "images": [
+      "images/174A.jpeg",
+      "images/174B.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "description": "Premio deportivo local de automovilismo marplatense, otorgado el 21 de marzo de 1948 en una prueba donde compitió o participó alguien llamado Américo R. Canosa."
   }
 ]
