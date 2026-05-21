@@ -623,13 +623,7 @@ button {
 }
 
 .coin-year-tag {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 0.7rem;
-  color: var(--muted);
-  letter-spacing: 0.06em;
-  font-weight: 400;
-  opacity: 0.72;
-  line-height: 1;
+  display: none;
 }
 
 .coin-title {
