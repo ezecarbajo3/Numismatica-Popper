@@ -93,10 +93,15 @@ input,
   z-index: 1;
 }
 
-.site-logo-link {
+.site-logo-link,
+.site-logo-link:visited,
+.site-logo-link:hover,
+.site-logo-link:active,
+.site-logo-link:focus {
   display: block;
   text-decoration: none;
   color: inherit;
+  outline: none;
 }
 
 .site-header h1 {
