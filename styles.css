@@ -405,9 +405,9 @@ input,
   flex: 1 0 0%;
   min-width: 0;
   background: var(--accent);
-  border: none;
+  border: 1.5px solid var(--bg);
   border-radius: 999px;
-  color: #ffffff;
+  color: var(--bg);
   cursor: pointer;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 0.71rem;
@@ -425,7 +425,7 @@ input,
 
 .reset-link:hover {
   opacity: 0.85;
-  color: #ffffff;
+  color: var(--bg);
 }
 
 /* ─── Base input/button reset ────────────────────────────────────────────── */
