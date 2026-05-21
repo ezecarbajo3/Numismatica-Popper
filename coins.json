@@ -2201,7 +2201,11 @@
     "metal": "",
     "year": "1976",
     "price": "10 USD",
-    "images": [],
+    "images": [
+      "images/165A.jpeg",
+      "images/165B.jpeg",
+      "images/165C.jpeg"
+    ],
     "reference": "",
     "grade": "Sin Circular",
     "grade_short": "UNC",
@@ -2215,7 +2219,11 @@
     "metal": "",
     "year": "2009",
     "price": "10 USD",
-    "images": [],
+    "images": [
+      "images/166A.jpeg",
+      "images/166B.jpeg",
+      "images/166C.jpeg"
+    ],
     "reference": "",
     "grade": "Sin Circular",
     "grade_short": "UNC",
@@ -2229,7 +2237,11 @@
     "metal": "",
     "year": "2005",
     "price": "10 USD",
-    "images": [],
+    "images": [
+      "images/167A.jpeg",
+      "images/167B.jpeg",
+      "images/167C.jpeg"
+    ],
     "reference": "",
     "grade": "Sin Circular",
     "grade_short": "UNC",
@@ -2243,7 +2255,12 @@
     "metal": "",
     "year": "",
     "price": "35 USD",
-    "images": [],
+    "images": [
+      "images/168A.jpeg",
+      "images/168B.jpeg",
+      "images/168C.jpeg",
+      "images/168D.jpeg"
+    ],
     "reference": "",
     "grade": "Sin Circular",
     "grade_short": "UNC",
@@ -2257,7 +2274,10 @@
     "metal": "",
     "year": "2025",
     "price": "40 USD",
-    "images": [],
+    "images": [
+      "images/169A.jpeg",
+      "images/169B.jpeg"
+    ],
     "reference": "",
     "grade": "Sin Circular",
     "grade_short": "UNC",
@@ -2271,7 +2291,9 @@
     "metal": "",
     "year": "2001",
     "price": "18 USD",
-    "images": [],
+    "images": [
+      "images/170A.jpeg"
+    ],
     "reference": "",
     "grade": "",
     "grade_short": "",
@@ -2285,7 +2307,9 @@
     "metal": "",
     "year": "2004",
     "price": "20 USD",
-    "images": [],
+    "images": [
+      "images/171A.jpeg"
+    ],
     "reference": "",
     "grade": "",
     "grade_short": "",
@@ -2299,7 +2323,9 @@
     "metal": "",
     "year": "2009",
     "price": "22 USD",
-    "images": [],
+    "images": [
+      "images/172A.jpeg"
+    ],
     "reference": "",
     "grade": "",
     "grade_short": "",
