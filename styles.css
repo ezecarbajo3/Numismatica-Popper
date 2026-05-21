@@ -93,6 +93,12 @@ input,
   z-index: 1;
 }
 
+.site-logo-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .site-header h1 {
   margin: 0 0 18px;
   font-size: clamp(2.97rem, 6.6vw, 5.72rem);
@@ -126,7 +132,7 @@ input,
 .ticker-track {
   display: inline-flex;
   will-change: transform;
-  animation: ticker-scroll 14s linear infinite;
+  animation: ticker-scroll 12.6s linear infinite;
 }
 
 .ticker-text {
@@ -1294,6 +1300,10 @@ button {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .sub-filter-btn-date {
+    font-size: 1.162em; /* 1.01em × 1.15 — mobile only */
   }
 
   .coin-year-tag {
