@@ -51,23 +51,6 @@
     "description": ""
   },
   {
-    "id": 4,
-    "title": "2 Centavos 1854",
-    "country": "Argentina - Confed. Arg.",
-    "metal": "Cobre",
-    "year": 1854,
-    "price": "18 USD",
-    "images": [
-      "images/4A.jpeg",
-      "images/4B.jpeg"
-    ],
-    "reference": "CJ# 2",
-    "grade": "Bueno",
-    "grade_short": "B",
-    "mintage": "N/A",
-    "description": ""
-  },
-  {
     "id": 5,
     "title": "2 Centavos 1854",
     "country": "Argentina - Confed. Arg.",
@@ -1821,23 +1804,6 @@
     "description": ""
   },
   {
-    "id": 137,
-    "title": "2 Centésimos 1870",
-    "country": "Paraguay",
-    "metal": "Cobre",
-    "year": 1870,
-    "price": "5 USD",
-    "images": [
-      "images/137A.jpeg",
-      "images/137B.jpeg"
-    ],
-    "reference": "KM# 3",
-    "grade": "Bueno -",
-    "grade_short": "B-",
-    "mintage": "",
-    "description": ""
-  },
-  {
     "id": 138,
     "title": "10 Centavos 1883",
     "country": "Bolivia",
@@ -2108,23 +2074,6 @@
     "grade_short": "SC",
     "mintage": "",
     "description": ""
-  },
-  {
-    "id": 156,
-    "title": "10 Centavos 1903",
-    "country": "Paraguay",
-    "metal": "Cuproníquel",
-    "year": "1903",
-    "price": "4 USD",
-    "images": [
-      "images/156A.jpeg",
-      "images/156B.jpeg"
-    ],
-    "reference": "KM#7",
-    "grade": "",
-    "grade_short": "",
-    "mintage": "1.200.000",
-    "description": "Buen valor de catálogo."
   },
   {
     "id": 157,
