@@ -861,6 +861,7 @@ button {
   font-size: 0.82rem;
   letter-spacing: 0.26em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .detail-title {
@@ -871,6 +872,7 @@ button {
   font-family: "Cinzel", serif;
   font-weight: 600;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .detail-divider {
@@ -885,13 +887,16 @@ button {
   flex-direction: column;
   gap: 12px;
   margin-bottom: 18px;
+  align-items: center;
 }
 
 .detail-spec-row {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 6px 14px;
+  display: flex;
+  justify-content: center;
   align-items: baseline;
+  gap: 6px 10px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .detail-spec-label {
@@ -908,6 +913,7 @@ button {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 0.94rem;
   line-height: 1.35;
+  white-space: nowrap;
 }
 
 .detail-price {
@@ -932,6 +938,7 @@ button {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 0.98rem;
   line-height: 1.55;
+  text-align: center;
 }
 
 .detail-whatsapp {
@@ -1426,8 +1433,7 @@ button {
   }
 
   .detail-spec-row {
-    grid-template-columns: auto 1fr;
-    gap: 4px 10px;
+    gap: 4px 8px;
   }
 
   .detail-spec-label {
