@@ -20,11 +20,11 @@ function getImagesArray(coin) {
 
 function buildWhatsAppLink(coin) {
   const title = coin.title || "Sin título";
-  const year = coin.year || "Año no informado";
   const country = coin.country || "País no informado";
   const price = coin.price || "precio no informado";
+  const id = coin.id || "sin id";
 
-  const message = `Hola, estoy interesado en la moneda ${title}, ${year}, ${country}, publicada en la página web a un precio de ${price}.`;
+  const message = `Hola, estoy interesado en la moneda "${title}" de "${country}" publicada en la página web a un precio de "${price}", cuya referencia interna es Id "${id}". Muchas gracias!`;
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
@@ -73,6 +73,11 @@ function renderCoinDetail(coin) {
         <div class="detail-spec-row">
           <div class="detail-spec-label">Acuñación</div>
           <div class="detail-spec-value">${coin.mintage || "NA"}</div>
+        </div>
+
+        <div class="detail-spec-row">
+          <div class="detail-spec-label">id</div>
+          <div class="detail-spec-value">${coin.id || "NA"}</div>
         </div>
       </div>
 
