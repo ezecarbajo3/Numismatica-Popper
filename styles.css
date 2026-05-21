@@ -305,16 +305,16 @@ input,
 
 .search-outer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding: 22px 24px 14px;
-  gap: 10px;
+  gap: 12px;
 }
 
 .search-wrap {
   position: relative;
-  width: 100%;
-  max-width: 560px;
+  flex: 2 1 0%;
+  min-width: 0;
   display: flex;
   align-items: center;
 }
@@ -397,20 +397,30 @@ input,
 }
 
 .reset-link {
-  background: none;
+  flex: 1 0 0%;
+  min-width: 0;
+  background: var(--accent);
   border: none;
-  color: rgba(201, 162, 85, 0.42);
+  border-radius: 999px;
+  color: #ffffff;
   cursor: pointer;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 0.71rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  padding: 4px 10px;
+  padding: 13px 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: opacity 0.18s ease, background 0.18s ease;
 }
 
 .reset-link:hover {
-  color: var(--accent);
+  opacity: 0.85;
+  color: #ffffff;
 }
 
 /* ─── Base input/button reset ────────────────────────────────────────────── */
@@ -1261,11 +1271,8 @@ button {
   }
 
   .search-outer {
-    padding: 16px 20px 10px;
-  }
-
-  .search-wrap {
-    max-width: 100%;
+    padding: 12px 16px 8px;
+    gap: 8px;
   }
 
   .coins-grid {
