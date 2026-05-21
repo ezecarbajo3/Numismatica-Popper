@@ -1415,6 +1415,22 @@ button {
   }
 }
 
+/* ─── Desktop: section & subsection title size boost ────────────────────── */
+
+@media (min-width: 981px) {
+  .cat-btn {
+    font-size: 0.856rem;   /* 0.744rem × 1.15 */
+  }
+
+  .sub-filter-btn {
+    font-size: 0.968rem;   /* 0.842rem × 1.15 */
+  }
+
+  .sub-filter-purity-label {
+    font-size: 0.782rem;   /* 0.68rem × 1.15 */
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
