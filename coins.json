@@ -2365,5 +2365,124 @@
     "grade_short": "",
     "mintage": "",
     "description": "Premio deportivo local de automovilismo marplatense, otorgado el 21 de marzo de 1948 en una prueba donde compitió o participó alguien llamado Américo R. Canosa."
+  },
+  {
+    "id": 175,
+    "title": "Peso Mercosur 1998",
+    "country": "Argentina",
+    "metal": "Bimetálica",
+    "year": "1998",
+    "price": "5 USD",
+    "images": [
+      "images/175A.jpeg",
+      "images/175B.jpeg"
+    ],
+    "reference": "CJ# 6",
+    "grade": "Excelente -",
+    "grade_short": "E-",
+    "mintage": "496.000",
+    "description": "Escasa, solo 496k acuñadas."
+  },
+  {
+    "id": 176,
+    "title": "25 Centavos 1950",
+    "country": "México",
+    "metal": "Plata",
+    "year": "1950",
+    "price": "4.5 USD",
+    "images": [
+      "images/176A.jpeg",
+      "images/176B.jpeg"
+    ],
+    "reference": "KM# 443",
+    "grade": "Excelente -",
+    "grade_short": "E-",
+    "mintage": "",
+    "description": ""
+  },
+  {
+    "id": 177,
+    "title": "1/2 Skilling 1867",
+    "country": "Noruega",
+    "metal": "Cobre",
+    "year": "1867",
+    "price": "25 USD",
+    "images": [
+      "images/177A.jpeg",
+      "images/177B.jpeg"
+    ],
+    "reference": "KM# 329",
+    "grade": "Excelente ** (detalles)",
+    "grade_short": "E**",
+    "mintage": "",
+    "description": "Muy rara de ver."
+  },
+  {
+    "id": 178,
+    "title": "2 Centavos 1896",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": "1896",
+    "price": "15 USD",
+    "images": [
+      "images/178A.jpeg",
+      "images/178B.jpeg"
+    ],
+    "reference": "CJ# 37",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": "596.000",
+    "description": "596k acuñadas."
+  },
+  {
+    "id": 179,
+    "title": "20 Reis 1891",
+    "country": "Portugal",
+    "metal": "Bronce",
+    "year": "1891",
+    "price": "7 USD",
+    "images": [
+      "images/179A.jpeg",
+      "images/179B.jpeg"
+    ],
+    "reference": "KM# 533",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "mintage": "",
+    "description": "Carlos I."
+  },
+  {
+    "id": 180,
+    "title": "Cent 1853",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": "1853",
+    "price": "20 USD",
+    "images": [
+      "images/180A.jpeg",
+      "images/180B.jpeg"
+    ],
+    "reference": "KM# 76",
+    "grade": "Ver foto",
+    "grade_short": "",
+    "mintage": "",
+    "description": "Seated Liberty. Variante con flecha."
+  },
+  {
+    "id": 181,
+    "title": "Cent 1881",
+    "country": "Estados Unidos",
+    "metal": "Bronce",
+    "year": "1881",
+    "price": "15 USD",
+    "images": [
+      "images/181A.jpeg",
+      "images/181B.jpeg"
+    ],
+    "reference": "KM# 90a",
+    "grade": "Ver foto",
+    "grade_short": "",
+    "mintage": "",
+    "description": "Indian Head."
   }
 ]
