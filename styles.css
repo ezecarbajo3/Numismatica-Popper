@@ -1266,14 +1266,18 @@ button {
   }
 
   .category-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: visible;
     gap: 8px;
     padding: 12px 0;
   }
 
   .cat-btn {
-    font-size: 0.856rem;       /* 0.744rem × 1.15 mobile boost */
-    padding: 8px 12px;
+    font-size: 0.770rem;       /* 0.856rem × 0.90 — 10% mobile grid reduction */
+    padding: 6px 4px;
     white-space: normal;
+    letter-spacing: 0.04em;
   }
 
   .cat-br {
