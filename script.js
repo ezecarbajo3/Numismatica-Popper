@@ -103,7 +103,7 @@ function isBlister(coin) {
 
 function isBook(coin) {
   const title = (coin.title || '').trim().toLowerCase();
-  return title.includes('libro') || title.includes('catálogo') || title.includes('catalogo');
+  return title.includes('libro') || title.includes('catálogo') || title.includes('catalogo') || title.includes('album') || title.includes('red book');
 }
 
 function getSilverPurity(coin) {
