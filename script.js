@@ -140,8 +140,8 @@ function getSubFilterOptions(category) {
       const pool = allCoins.filter(isArgentinaCoin);
       const specs = [
         { label: 'República',               value: 'República',               subtitle: '1881 – actualidad', country: 'Argentina' },
-        { label: 'Bs As',                   value: 'Bs As',                   subtitle: '1822 – 1861',       country: 'Argentina - Buenos Aires' },
-        { label: 'Confederación Argentina', value: 'Confederación Argentina',  subtitle: '1854',              country: 'Argentina - Confed. Arg.' },
+        { label: 'Buenos Aires',             value: 'Bs As',                   subtitle: '1822 – 1861',       country: 'Argentina - Buenos Aires' },
+        { label: 'Confederación',           value: 'Confederación Argentina',  subtitle: '1854',              country: 'Argentina - Confed. Arg.' },
         { label: 'Patria',                  value: 'Patria',                  subtitle: '1813 – 1815',       country: 'Argentina - Patria' },
       ];
       return specs.filter(s => pool.some(c => normalizeCountryValue(c.country) === s.country));
