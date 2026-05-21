@@ -2467,5 +2467,64 @@
     "grade_short": "",
     "mintage": "",
     "description": "Indian Head."
+  },
+  {
+    "id": 182,
+    "title": "Blister 2 Pesos 2012",
+    "country": "Argentina",
+    "metal": "Bimetálica",
+    "year": 2012,
+    "price": "8 USD",
+    "images": [
+      "images/182A.jpeg",
+      "images/182B.jpeg",
+      "images/182C.jpeg",
+      "images/182D.jpeg",
+      "images/182E.jpeg",
+      "images/182F.jpeg"
+    ],
+    "reference": "CJ7 7.10.2",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "15.000",
+    "description": "Canto liso"
+  },
+  {
+    "id": 183,
+    "title": "Blister Bicentenario 2010",
+    "country": "Argentina",
+    "metal": "",
+    "year": 2010,
+    "price": "13 USD",
+    "images": [
+      "images/183A.jpeg",
+      "images/183B.jpeg",
+      "images/183C.jpeg",
+      "images/183D.jpeg",
+      "images/183E.jpeg",
+      "images/183F.jpeg"
+    ],
+    "reference": "CJ 6.18-6.22",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "N/A",
+    "description": ""
+  },
+  {
+    "id": 184,
+    "title": "20 Centavos 1892",
+    "country": "Chile",
+    "metal": "Plata",
+    "year": 1892,
+    "price": "20 USD",
+    "images": [
+      "images/184A.jpeg",
+      "images/184B.jpeg"
+    ],
+    "reference": "KM# 138",
+    "grade": "Bueno+",
+    "grade_short": "B+",
+    "mintage": "N/A",
+    "description": ""
   }
 ]
