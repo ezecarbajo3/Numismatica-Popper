@@ -662,7 +662,7 @@ button {
 }
 
 .coin-meta {
-  text-align: left;
+  text-align: center;
   font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
   font-weight: 300;
   font-size: 1.15rem;
@@ -1321,7 +1321,7 @@ button {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-align: left;
+    text-align: center;
     width: 100%;
     line-height: 1.2;
   }
