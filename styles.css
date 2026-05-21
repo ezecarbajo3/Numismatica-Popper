@@ -889,9 +889,9 @@ button {
 
 .detail-spec-row {
   display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 14px;
-  align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: 6px 14px;
+  align-items: baseline;
 }
 
 .detail-spec-label {
@@ -900,6 +900,7 @@ button {
   font-size: 0.8rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .detail-spec-value {
@@ -912,11 +913,12 @@ button {
 .detail-price {
   margin: 0 0 16px;
   color: var(--accent);
-  font-size: clamp(2rem, 3.4vw, 2.8rem);
+  font-size: clamp(1.7rem, 2.9vw, 2.38rem);
   line-height: 1;
   font-weight: 600;
   font-family: "Cinzel", "Cormorant Garamond", "Georgia", serif;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .detail-info:hover .detail-price {
@@ -1424,8 +1426,13 @@ button {
   }
 
   .detail-spec-row {
-    grid-template-columns: 1fr;
-    gap: 4px;
+    grid-template-columns: auto 1fr;
+    gap: 4px 10px;
+  }
+
+  .detail-spec-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
   }
 
   .detail-country {
@@ -1437,7 +1444,7 @@ button {
   }
 
   .detail-price {
-    font-size: clamp(1.9rem, 8vw, 2.4rem);
+    font-size: clamp(1.62rem, 6.8vw, 2.04rem);
   }
 }
 
