@@ -66,6 +66,11 @@ function renderCoinDetail(coin) {
         </div>
 
         <div class="detail-spec-row">
+          <div class="detail-spec-label">Material</div>
+          <div class="detail-spec-value">${coin.metal || "NA"}</div>
+        </div>
+
+        <div class="detail-spec-row">
           <div class="detail-spec-label">Acuñación</div>
           <div class="detail-spec-value">${coin.mintage || "NA"}</div>
         </div>
