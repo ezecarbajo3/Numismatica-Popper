@@ -24,7 +24,7 @@ function buildWhatsAppLink(coin) {
   const price = coin.price || "precio no informado";
   const id = coin.id || "sin id";
 
-  const message = `Hola Numismatica Popper!\nEstoy interesado en la moneda "${title}" de "${country}", publicada en la página web, a un precio de "${price}", cuya referencia interna es ID "${id}". Muchas gracias!`;
+  const message = `Hola Numismatica Popper!\nEstoy interesado en la moneda ${title} de ${country}, publicada en la página web, a un precio de ${price}, cuya referencia interna es ID ${id}. Muchas gracias!`;
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
