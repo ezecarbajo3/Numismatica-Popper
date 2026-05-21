@@ -2412,8 +2412,8 @@
       "images/177B.jpeg"
     ],
     "reference": "KM# 329",
-    "grade": "Excelente ** (detalles)",
-    "grade_short": "E**",
+    "grade": "Excelente -",
+    "grade_short": "E-",
     "mintage": "",
     "description": "Muy rara de ver."
   },
@@ -2453,7 +2453,7 @@
   },
   {
     "id": 180,
-    "title": "Cent 1853",
+    "title": "1/2 Dime 1853",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": "1853",
