@@ -1090,23 +1090,6 @@
     "description": "Texto en neerlandés"
   },
   {
-    "id": 88,
-    "title": "6 Pence 1942",
-    "country": "Reino Unido",
-    "metal": "Plata",
-    "year": 1942,
-    "price": "4.5 USD",
-    "images": [
-      "images/88A.jpeg",
-      "images/88B.jpeg"
-    ],
-    "reference": "KM# 852",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": "N/A",
-    "description": ""
-  },
-  {
     "id": 89,
     "title": "1000 Réis 1910",
     "country": "Brasil",
