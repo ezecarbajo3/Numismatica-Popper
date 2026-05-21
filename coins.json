@@ -2525,6 +2525,8 @@
     "grade": "Bueno+",
     "grade_short": "B+",
     "mintage": "N/A",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-05-21T22:16:37.000Z"
   }
 ]
