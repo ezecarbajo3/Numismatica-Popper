@@ -438,9 +438,7 @@ button {
 /* ─── Results bar ────────────────────────────────────────────────────────── */
 
 .results-bar {
-  margin: 6px 0 22px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid rgba(201, 162, 85, 0.1);
+  display: none;
 }
 
 #resultsCount {
@@ -1503,5 +1501,17 @@ button {
   .sub-filter-bar,
   .sub-filter-bar.is-open {
     transition: none !important;
+  }
+}
+
+/* ─── Mobile: ticker banner height −15% ──────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .ticker-bar {
+    padding: 7.65px 0;
+  }
+
+  .ticker-text {
+    font-size: 0.728rem; /* 0.856rem × 0.85 */
   }
 }
