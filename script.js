@@ -382,18 +382,18 @@ async function loadCoins() {
 
 // ─── Filtering ────────────────────────────────────────────────────────────────
 
-const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
+const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
 
 function isSoldExpired(coin) {
   return coin.status === 'sold' && coin.soldAt &&
-    (Date.now() - new Date(coin.soldAt).getTime() > SEVEN_DAYS_MS);
+    (Date.now() - new Date(coin.soldAt).getTime() > THIRTY_DAYS_MS);
 }
 
 function getFilteredCoins() {
   const searchTerm = searchInput.value.trim().toLowerCase();
 
   return allCoins.filter((coin) => {
-    // Auto-hide sold items whose 7-day visibility window has closed
+    // Auto-hide sold items whose 30-day visibility window has closed
     if (isSoldExpired(coin)) return false;
 
     if (activeCategory) {
