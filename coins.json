@@ -900,7 +900,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "N/A",
-    "description": "Tamandaré"
+    "description": "Tamandaré",
+    "status": "sold",
+    "soldAt": "2026-05-23T00:00:00.000Z"
   },
   {
     "id": 70,
