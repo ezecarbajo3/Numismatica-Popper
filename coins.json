@@ -2351,7 +2351,9 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
-    "description": "Premio deportivo local de automovilismo marplatense, otorgado el 21 de marzo de 1948 en una prueba donde compitió o participó alguien llamado Américo R. Canosa."
+    "description": "Premio deportivo local de automovilismo marplatense, otorgado el 21 de marzo de 1948 en una prueba donde compitió o participó alguien llamado Américo R. Canosa.",
+    "status": "sold",
+    "soldAt": "2026-05-23T00:00:00.000Z"
   },
   {
     "id": 175,
