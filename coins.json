@@ -970,7 +970,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "N/A",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-05-23T00:00:00.000Z"
   },
   {
     "id": 76,
