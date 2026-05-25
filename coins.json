@@ -577,7 +577,9 @@
     "grade": "Excelente-",
     "grade_short": "EX-",
     "mintage": "204.000",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-05-25T20:41:50.000Z"
   },
   {
     "id": 47,
