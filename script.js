@@ -96,9 +96,14 @@ function isToken(coin) {
   return country === 'token' || country.includes('token');
 }
 
+function isLotePlata(coin) {
+  return /^lote\s+plata/i.test((coin.title || '').trim());
+}
+
 function isBlister(coin) {
   const title = (coin.title || '').trim();
-  return /^bls[.\s]/i.test(title) || /blister/i.test(title);
+  return /^bls[.\s]/i.test(title) || /blister/i.test(title) ||
+    (/^lote\s/i.test(title) && !isLotePlata(coin));
 }
 
 function isBook(coin) {
@@ -112,6 +117,7 @@ function getSilverPurity(coin) {
 }
 
 function isInvestment(coin) {
+  if (isLotePlata(coin)) return true;
   const purity = getSilverPurity(coin);
   if (purity >= 900) return true;
   return /^[Pp]lata$/i.test((coin.metal || '').trim());
@@ -159,10 +165,11 @@ function getSubFilterOptions(category) {
     case 'inversion': {
       const pool = allCoins.filter(isInvestment);
       const specs = [
-        { label: '.9999', value: '9999', match: c => getSilverPurity(c) === 9999 },
-        { label: '.999',  value: '999',  match: c => getSilverPurity(c) === 999  },
-        { label: '.925',  value: '925',  match: c => getSilverPurity(c) === 925  },
-        { label: '.900',  value: '900',  match: c => getSilverPurity(c) === 900  },
+        { label: '.9999', value: '9999',  match: c => getSilverPurity(c) === 9999 },
+        { label: '.999',  value: '999',   match: c => getSilverPurity(c) === 999  },
+        { label: '.925',  value: '925',   match: c => getSilverPurity(c) === 925  },
+        { label: '.900',  value: '900',   match: c => getSilverPurity(c) === 900  },
+        { label: 'Lotes', value: 'lotes', match: isLotePlata                      },
       ];
       return specs.filter(s => pool.some(s.match));
     }
@@ -191,6 +198,7 @@ function matchesSubFilter(coin, category, subFilter) {
       return coin.country === subFilter;
     case 'plata':
     case 'inversion':
+      if (subFilter === 'lotes') return isLotePlata(coin);
       return getSilverPurity(coin) === parseInt(subFilter, 10);
     case 'medallas':
       if (subFilter === 'Medallas') return isMedal(coin);
@@ -475,6 +483,20 @@ function getFaceValue(title) {
 }
 
 function sortCoins(coins) {
+  // Inversión view: Lote Plata first, then by purity descending, then year
+  if (activeCategory === 'plata' || activeCategory === 'inversion') {
+    return [...coins].sort((a, b) => {
+      const lotA = isLotePlata(a) ? 0 : 1;
+      const lotB = isLotePlata(b) ? 0 : 1;
+      if (lotA !== lotB) return lotA - lotB;
+      const purA = getSilverPurity(a);
+      const purB = getSilverPurity(b);
+      if (purA !== purB) return purB - purA;
+      return (Number(a.year) || 0) - (Number(b.year) || 0);
+    });
+  }
+
+  // Default: country A→Z, Argentina subsections, face value, year
   return [...coins].sort((a, b) => {
     const normA = normalizeCountryValue(a.country);
     const normB = normalizeCountryValue(b.country);
