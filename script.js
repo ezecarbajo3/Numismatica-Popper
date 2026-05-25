@@ -389,8 +389,24 @@ function isSoldExpired(coin) {
     (Date.now() - new Date(coin.soldAt).getTime() > THIRTY_DAYS_MS);
 }
 
+const SEARCH_ALIASES = {
+  'usa':  'estados unidos',
+  'eeuu': 'estados unidos',
+  'uk':   'reino unido',
+  'urss': 'union sovietica',
+};
+
+function stripAccents(str) {
+  return str.normalize('NFD').replace(/\p{Diacritic}/gu, '');
+}
+
+function normalizeSearch(str) {
+  return stripAccents(String(str || '').trim().toLowerCase());
+}
+
 function getFilteredCoins() {
-  const searchTerm = searchInput.value.trim().toLowerCase();
+  const raw = normalizeSearch(searchInput.value);
+  const searchTerm = SEARCH_ALIASES[raw] || raw;
 
   return allCoins.filter((coin) => {
     // Auto-hide sold items whose 30-day visibility window has closed
@@ -406,11 +422,11 @@ function getFilteredCoins() {
     }
 
     if (searchTerm) {
-      const text = [
+      const text = normalizeSearch([
         coin.title, getCountryDisplayLabel(coin.country), coin.country,
         coin.metal, coin.year, coin.price, coin.description,
         coin.reference, coin.grade, coin.grade_short, coin.mintage,
-      ].filter(Boolean).join(' ').toLowerCase();
+      ].filter(Boolean).join(' '));
       if (!text.includes(searchTerm)) return false;
     }
 
@@ -584,13 +600,15 @@ function renderCoins(coins, skipAnimation = false) {
     }
 
     // ── Card navigation ───────────────────────────────────────────────────────
-    article.addEventListener('click', () => goToDetail(coin.id));
-    article.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        goToDetail(coin.id);
-      }
-    });
+    if (coin.status !== 'sold') {
+      article.addEventListener('click', () => goToDetail(coin.id));
+      article.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          goToDetail(coin.id);
+        }
+      });
+    }
 
     fragment.appendChild(card);
   });
