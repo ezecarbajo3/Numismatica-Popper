@@ -557,6 +557,9 @@ function renderCoins(coins, skipAnimation = false) {
     // ── Inline image carousel ─────────────────────────────────────────────────
     const images = Array.isArray(coin.images) ? coin.images : [];
     if (images.length > 1) {
+      // Preload every carousel image so switching is instant (no network delay on first click)
+      images.forEach((src, i) => { if (i > 0) { const p = new Image(); p.src = src; } });
+
       let currentIdx = 0;
 
       const setIdx = (newIdx) => {
