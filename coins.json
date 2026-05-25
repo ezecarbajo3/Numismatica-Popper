@@ -1842,23 +1842,6 @@
     "description": ""
   },
   {
-    "id": 143,
-    "title": "1/2 Dólar 1964",
-    "country": "Estados Unidos",
-    "metal": "Plata .900",
-    "year": 1964,
-    "price": "20 USD",
-    "images": [
-      "images/143A.jpeg",
-      "images/143B.jpeg"
-    ],
-    "reference": "KM# 202",
-    "grade": "Se puede apreciar en foto",
-    "grade_short": "-",
-    "mintage": "",
-    "description": ""
-  },
-  {
     "id": 144,
     "title": "25 Centavos 1960",
     "country": "Guatemala",
