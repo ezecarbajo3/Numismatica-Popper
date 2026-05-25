@@ -729,19 +729,25 @@ document.querySelectorAll('.cat-btn').forEach(btn => {
 loadCoins().then((ok) => {
   if (!ok) return;
 
-  if (isBackForwardNavigation()) {
-    const state = loadSavedState();
-    if (state) {
-      applyRestoredState(state);
-      if (state.scrollY) {
+  const isBackFwd = isBackForwardNavigation();
+  const state     = loadSavedState();
+
+  if (state) {
+    // Restore filters on any navigation type (refresh or back)
+    applyRestoredState(state);
+
+    if (isBackFwd && state.scrollY) {
+      // Back navigation: jump to saved scroll position, no fade-in animation
+      requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            window.scrollTo({ top: state.scrollY, behavior: 'instant' });
-          });
+          window.scrollTo({ top: state.scrollY, behavior: 'instant' });
         });
-      }
-      return;
+      });
+    } else {
+      // Refresh: start at top, animate cards in normally
+      initRevealEffects();
     }
+    return;
   }
 
   renderCoins(allCoins);
