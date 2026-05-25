@@ -2525,7 +2525,10 @@
     "metal": "Bimetálica",
     "year": 2015,
     "price": "4 USD",
-    "images": [],
+    "images": [
+      "images/185A.jpeg",
+      "images/185B.jpeg"
+    ],
     "reference": "KM# 141",
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -2539,7 +2542,10 @@
     "metal": "Acero Inoxidable",
     "year": 1994,
     "price": "3,5 USD",
-    "images": [],
+    "images": [
+      "images/186A.jpeg",
+      "images/186B.jpeg"
+    ],
     "reference": "KM# 102",
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -2553,7 +2559,10 @@
     "metal": "Plata",
     "year": "",
     "price": "65 USD",
-    "images": [],
+    "images": [
+      "images/187A.jpeg",
+      "images/187B.jpeg"
+    ],
     "reference": "KM# 31",
     "grade": "Muy Buena",
     "grade_short": "MB",
@@ -2567,7 +2576,12 @@
     "metal": "Plata",
     "year": 1981,
     "price": "10 USD",
-    "images": [],
+    "images": [
+      "images/188A.jpeg",
+      "images/188B.jpeg",
+      "images/188C.jpeg",
+      "images/188D.jpeg"
+    ],
     "reference": "N/A",
     "grade": "Excelente",
     "grade_short": "EX",
@@ -2581,7 +2595,10 @@
     "metal": "Bronce",
     "year": 1900,
     "price": "5 USD",
-    "images": [],
+    "images": [
+      "images/189A.jpeg",
+      "images/189B.jpeg"
+    ],
     "reference": "KM# 789",
     "grade": "Buena",
     "grade_short": "B",
@@ -2595,7 +2612,10 @@
     "metal": "Plata",
     "year": 1879,
     "price": "22 USD",
-    "images": [],
+    "images": [
+      "images/190A.jpeg",
+      "images/190B.jpeg"
+    ],
     "reference": "KM# 138.2",
     "grade": "Muy Buena",
     "grade_short": "MB",
@@ -2609,7 +2629,10 @@
     "metal": "Zinc",
     "year": 1943,
     "price": "5 USD",
-    "images": [],
+    "images": [
+      "images/191A.jpeg",
+      "images/191B.jpeg"
+    ],
     "reference": "KM# 132",
     "grade": "Muy Buena Más",
     "grade_short": "MB+",
@@ -2623,7 +2646,10 @@
     "metal": "Cuproníquel",
     "year": 1902,
     "price": "4 USD",
-    "images": [],
+    "images": [
+      "images/192A.jpeg",
+      "images/192B.jpeg"
+    ],
     "reference": "KM# 112",
     "grade": "Buena con Detalles",
     "grade_short": "B**",
@@ -2637,7 +2663,10 @@
     "metal": "Bronce",
     "year": 1894,
     "price": "4 USD",
-    "images": [],
+    "images": [
+      "images/193A.jpeg",
+      "images/193B.jpeg"
+    ],
     "reference": "KM# 481",
     "grade": "Muy Buena",
     "grade_short": "MB",
@@ -2651,7 +2680,10 @@
     "metal": "Aluminio",
     "year": 1975,
     "price": "2,5 USD",
-    "images": [],
+    "images": [
+      "images/194A.jpeg",
+      "images/194B.jpeg"
+    ],
     "reference": "CJ# 360",
     "grade": "Excelente con Detalles",
     "grade_short": "EX**",
@@ -2665,7 +2697,10 @@
     "metal": "Plata",
     "year": 1912,
     "price": "14 USD",
-    "images": [],
+    "images": [
+      "images/195A.jpeg",
+      "images/195B.jpeg"
+    ],
     "reference": "KM# 749",
     "grade": "Excelente Menos",
     "grade_short": "EX-",
@@ -2679,7 +2714,10 @@
     "metal": "",
     "year": 1978,
     "price": "5 USD",
-    "images": [],
+    "images": [
+      "images/196A.jpeg",
+      "images/196B.jpeg"
+    ],
     "reference": "N/A",
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -2693,7 +2731,10 @@
     "metal": "Latón de Níquel",
     "year": 1974,
     "price": "3,5 USD",
-    "images": [],
+    "images": [
+      "images/197A.jpeg",
+      "images/197B.jpeg"
+    ],
     "reference": "KM# 203",
     "grade": "Muy Buena Más",
     "grade_short": "MB+",
@@ -2707,7 +2748,10 @@
     "metal": "Acero Niquelado",
     "year": 2008,
     "price": "3,5 USD",
-    "images": [],
+    "images": [
+      "images/198A.jpeg",
+      "images/198B.jpeg"
+    ],
     "reference": "KM# 991",
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -2721,7 +2765,10 @@
     "metal": "Cuproníquel",
     "year": 1969,
     "price": "3,5 USD",
-    "images": [],
+    "images": [
+      "images/199A.jpeg",
+      "images/199B.jpeg"
+    ],
     "reference": "KM# A127",
     "grade": "Excelente Menos",
     "grade_short": "EX-",
