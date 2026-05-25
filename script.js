@@ -457,21 +457,50 @@ function goToDetail(coinId) {
   window.location.href = `detalle.html?id=${coinId}`;
 }
 
+const ARGENTINA_SUBSECTION_ORDER = {
+  'Argentina - Patria':       1,
+  'Argentina - Confed. Arg.': 2,
+  'Argentina - Buenos Aires': 3,
+  'Argentina':                4,
+};
+
 function getCountrySortGroup(country) {
   const normalized = normalizeCountryValue(country);
   return ARGENTINA_GROUP_VALUES.has(normalized) ? 'Argentina' : normalized;
 }
 
+function getFaceValue(title) {
+  const m = String(title || '').match(/^(\d+(?:\.\d+)?)\s/);
+  return m ? parseFloat(m[1]) : 1;
+}
+
 function sortCoins(coins) {
   return [...coins].sort((a, b) => {
-    const groupA = getCountrySortGroup(a.country);
-    const groupB = getCountrySortGroup(b.country);
+    const normA = normalizeCountryValue(a.country);
+    const normB = normalizeCountryValue(b.country);
+    const groupA = ARGENTINA_GROUP_VALUES.has(normA) ? 'Argentina' : normA;
+    const groupB = ARGENTINA_GROUP_VALUES.has(normB) ? 'Argentina' : normB;
+
+    // 1. Country alphabetically (A → Z)
     const byCountry = groupA.localeCompare(groupB, 'es');
     if (byCountry !== 0) return byCountry;
+
+    // 2. Argentina: subsection order (Patria → Confed. → Bs As → República)
+    if (groupA === 'Argentina') {
+      const subA = ARGENTINA_SUBSECTION_ORDER[normA] ?? 4;
+      const subB = ARGENTINA_SUBSECTION_ORDER[normB] ?? 4;
+      if (subA !== subB) return subA - subB;
+    }
+
+    // 3. Face value ascending (numeric prefix of title; 1 if none)
+    const valA = getFaceValue(a.title);
+    const valB = getFaceValue(b.title);
+    if (valA !== valB) return valA - valB;
+
+    // 4. Year ascending
     const yearA = Number(a.year) || 0;
     const yearB = Number(b.year) || 0;
-    if (yearA !== yearB) return yearA - yearB;
-    return String(a.title || '').localeCompare(String(b.title || ''), 'es');
+    return yearA - yearB;
   });
 }
 
