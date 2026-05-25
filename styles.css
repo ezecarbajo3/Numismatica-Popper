@@ -737,6 +737,7 @@ button {
 .coin-card.is-sold {
   filter: grayscale(88%) brightness(0.82);
   border-color: rgba(120, 100, 80, 0.15);
+  cursor: default;
 }
 
 .coin-card.is-sold:hover:not(.is-zoomed) {
