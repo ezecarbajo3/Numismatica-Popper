@@ -56,7 +56,7 @@ function renderCoinDetail(coin) {
 
       <div class="detail-specs">
         <div class="detail-spec-row">
-          <div class="detail-spec-label">KM</div>
+          <div class="detail-spec-label">Referencia</div>
           <div class="detail-spec-value">${coin.reference || "NA"}</div>
         </div>
 
