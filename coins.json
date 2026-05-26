@@ -667,23 +667,6 @@
     "description": ""
   },
   {
-    "id": 54,
-    "title": "Dime 1941",
-    "country": "Estados Unidos",
-    "metal": "Plata .900",
-    "year": 1941,
-    "price": "7 USD",
-    "images": [
-      "images/54A.jpeg",
-      "images/54B.jpeg"
-    ],
-    "reference": "KM# 140",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": "N/A",
-    "description": ""
-  },
-  {
     "id": 55,
     "title": "Peso 1942",
     "country": "Uruguay",
