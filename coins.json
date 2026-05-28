@@ -31,7 +31,9 @@
     "grade": "Regular+",
     "grade_short": "R+",
     "mintage": "567.500",
-    "description": ""
+    "description": "",
+    "estado": "vendida",
+    "fecha_venta": "2026-05-28"
   },
   {
     "id": 3,
