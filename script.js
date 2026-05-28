@@ -423,6 +423,9 @@ function getFilteredCoins() {
     if (activeCategory) {
       const predicate = CATEGORY_PREDICATES[activeCategory];
       if (predicate && !predicate(coin)) return false;
+    } else {
+      // Default view: hide books and medals/tokens (exclusive to their own filters)
+      if (isBook(coin) || isMedalOrToken(coin)) return false;
     }
 
     if (activeSubFilter && activeCategory) {
@@ -723,7 +726,7 @@ resetFiltersButton.addEventListener('click', () => {
   closeSubFilterBar();
   hideImagePreview(true);
   saveState();
-  renderCoins(allCoins);
+  renderCoins(getFilteredCoins());
   initRevealEffects();
 });
 
@@ -772,7 +775,7 @@ loadCoins().then((ok) => {
     return;
   }
 
-  renderCoins(allCoins);
+  renderCoins(getFilteredCoins());
   initRevealEffects();
 });
 
