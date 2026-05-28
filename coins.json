@@ -13,7 +13,7 @@
     "reference": "CJ# 17",
     "grade": "Muy Bueno - detalles",
     "grade_short": "MB**",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -47,7 +47,7 @@
     "reference": "CJ# 2",
     "grade": "Regular",
     "grade_short": "R",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -64,7 +64,7 @@
     "reference": "CJ# 2",
     "grade": "Regular +",
     "grade_short": "R+",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -81,7 +81,7 @@
     "reference": "CJ# 8.2",
     "grade": "Bueno",
     "grade_short": "B",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -98,7 +98,7 @@
     "reference": "CJ# 23",
     "grade": "Regular +",
     "grade_short": "R+",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -115,7 +115,7 @@
     "reference": "CJ# 19",
     "grade": "Regular",
     "grade_short": "R",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -132,7 +132,7 @@
     "reference": "KM# 932",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Corona de plata - Ideal inversión"
   },
   {
@@ -149,7 +149,7 @@
     "reference": "CJ# 26",
     "grade": "Bueno+",
     "grade_short": "B+",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -166,7 +166,7 @@
     "reference": "CJ# 27",
     "grade": "Excelente",
     "grade_short": "EX",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -183,7 +183,7 @@
     "reference": "CJ# 31",
     "grade": "Bueno",
     "grade_short": "B",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -200,7 +200,7 @@
     "reference": "CJ# 32",
     "grade": "Bueno",
     "grade_short": "B",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -236,7 +236,7 @@
     "reference": "N/A",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Ideal inversión"
   },
   {
@@ -253,7 +253,7 @@
     "reference": "KM# 2612",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "1/10 onza - Ideal inversión"
   },
   {
@@ -270,7 +270,7 @@
     "reference": "KM# 90",
     "grade": "Se aprecia en foto",
     "grade_short": "-",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -287,7 +287,7 @@
     "reference": "KM# 90",
     "grade": "Se aprecia en foto",
     "grade_short": "-",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -304,7 +304,7 @@
     "reference": "KM# 90",
     "grade": "Se aprecia en foto",
     "grade_short": "-",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -321,7 +321,7 @@
     "reference": "KM# 87",
     "grade": "Se aprecia en foto",
     "grade_short": "-",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Variante sin escudo"
   },
   {
@@ -338,7 +338,7 @@
     "reference": "KM# 90",
     "grade": "Se aprecia en foto",
     "grade_short": "-",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -406,7 +406,7 @@
     "reference": "KM# TN3",
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Bono posguerra"
   },
   {
@@ -423,7 +423,7 @@
     "reference": "KM# 327",
     "grade": "Regular+",
     "grade_short": "R+",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Reino dos Sicilias"
   },
   {
@@ -508,7 +508,7 @@
     "reference": "KM# 140",
     "grade": "Se aprecia en foto",
     "grade_short": "-",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -665,7 +665,7 @@
     "reference": "KM# 780",
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -682,7 +682,7 @@
     "reference": "KM# 30",
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -716,7 +716,7 @@
     "reference": "KM# 48",
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Año único"
   },
   {
@@ -733,7 +733,7 @@
     "reference": "KM# 139",
     "grade": "Excelente",
     "grade_short": "EX",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Bicentenario de la independencia - Año único"
   },
   {
@@ -750,7 +750,7 @@
     "reference": "N/A",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -767,7 +767,7 @@
     "reference": "KM# 70",
     "grade": "Excelente+",
     "grade_short": "EX+",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -801,7 +801,7 @@
     "reference": "KM# 346A",
     "grade": "Excelente",
     "grade_short": "EX",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Che Guevara"
   },
   {
@@ -818,7 +818,7 @@
     "reference": "N/A",
     "grade": "Excelente",
     "grade_short": "Ex",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Token salarial de la bodega Francisco Fratia, acuñado en la Matricería Cuyo (Mendoza)"
   },
   {
@@ -835,7 +835,7 @@
     "reference": "N/A",
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Token oficial del calendario Christophorus Porsche 2001 - Acuñado para acompañar los calendarios anuales numerados de la fábrica Porsche"
   },
   {
@@ -852,7 +852,7 @@
     "reference": "KM# 635",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Concientización sobre el cáncer de mama - Moneda coloreada"
   },
   {
@@ -869,7 +869,7 @@
     "reference": "KM# 2909.1",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "75° aniversario de la firma de la Carta de las Naciones Unidas"
   },
   {
@@ -886,7 +886,7 @@
     "reference": "KM# 536",
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Tamandaré",
     "status": "sold",
     "soldAt": "2026-05-23T00:00:00.000Z"
@@ -905,7 +905,7 @@
     "reference": "KM# 547",
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Getulio Vargas"
   },
   {
@@ -922,7 +922,7 @@
     "reference": "KM# 23",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Caballo"
   },
   {
@@ -939,7 +939,7 @@
     "reference": "KM# 29",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -956,7 +956,7 @@
     "reference": "KM# 20",
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "",
     "status": "sold",
     "soldAt": "2026-05-23T00:00:00.000Z"
@@ -1043,7 +1043,7 @@
     "reference": "KM# 11",
     "grade": "Excelente -",
     "grade_short": "EX-",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -1060,7 +1060,7 @@
     "reference": "KM# 822",
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Agujero centrado"
   },
   {
@@ -1077,7 +1077,7 @@
     "reference": "KM# 69",
     "grade": "Bueno+",
     "grade_short": "B+",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Texto en neerlandés"
   },
   {
@@ -1128,7 +1128,7 @@
     "reference": "KM# 1035",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Estación eléctrica - Año único"
   },
   {
@@ -1145,7 +1145,7 @@
     "reference": "KM# 1181",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Año único"
   },
   {
@@ -1162,7 +1162,7 @@
     "reference": "KM# 11",
     "grade": "Excelente",
     "grade_short": "EX",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "Ceca A"
   },
   {
@@ -1179,7 +1179,7 @@
     "reference": "KM# 777.2",
     "grade": "Excelente",
     "grade_short": "EX",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -1196,7 +1196,7 @@
     "reference": "KM# 2801",
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -1213,7 +1213,7 @@
     "reference": "KM# 722",
     "grade": "Excelente+",
     "grade_short": "EX+",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -1230,7 +1230,7 @@
     "reference": "KM# 749.2",
     "grade": "Bueno-",
     "grade_short": "B-",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -1247,7 +1247,7 @@
     "reference": "CJ# 34",
     "grade": "Regular+",
     "grade_short": "R+",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -2038,7 +2038,7 @@
     "country": "Portugal",
     "metal": "Bronce",
     "year": "1927",
-    "price": "3.5 USD",
+    "price": "4 USD",
     "images": [
       "images/157A.jpeg",
       "images/157B.jpeg"
@@ -2483,7 +2483,7 @@
     "reference": "CJ# 6.18-6.22",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "mintage": "N/A",
+    "mintage": "",
     "description": ""
   },
   {
@@ -2500,7 +2500,7 @@
     "reference": "KM# 138",
     "grade": "Bueno+",
     "grade_short": "B+",
-    "mintage": "N/A",
+    "mintage": "",
     "description": "",
     "status": "sold",
     "soldAt": "2026-05-21T22:16:37.000Z"
@@ -2776,7 +2776,8 @@
     "reference": "KM# 596",
     "grade": "Muy Bueno detalles",
     "grade_short": "MB**",
-    "description": ""
+    "description": "",
+    "mintage": ""
   },
   {
     "id": 201,
@@ -2792,7 +2793,8 @@
     "reference": "KM# 3",
     "grade": "Bueno -",
     "grade_short": "B-",
-    "description": "Año único"
+    "description": "Año único",
+    "mintage": ""
   },
   {
     "id": 202,
@@ -2808,7 +2810,8 @@
     "reference": "KM# 21a",
     "grade": "Excelente",
     "grade_short": "EX",
-    "description": "Pátina Rainbow (Arcoiris)"
+    "description": "Pátina Rainbow (Arcoiris)",
+    "mintage": ""
   },
   {
     "id": 203,
@@ -2824,7 +2827,8 @@
     "reference": "KM# 2837",
     "grade": "Excelente",
     "grade_short": "EX",
-    "description": ""
+    "description": "",
+    "mintage": ""
   },
   {
     "id": 204,
@@ -2840,7 +2844,8 @@
     "reference": "KM# 367",
     "grade": "Excelente",
     "grade_short": "EX",
-    "description": ""
+    "description": "",
+    "mintage": ""
   },
   {
     "id": 205,
@@ -2856,7 +2861,8 @@
     "reference": "KM# 574",
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
-    "description": ""
+    "description": "",
+    "mintage": ""
   },
   {
     "id": 206,
@@ -2871,6 +2877,7 @@
     ],
     "grade": "Regular",
     "grade_short": "R",
-    "description": "Monedas de necesidad oficiales. Barcelona, 1641-1652."
+    "description": "Monedas de necesidad oficiales. Barcelona, 1641-1652.",
+    "mintage": ""
   }
 ]
