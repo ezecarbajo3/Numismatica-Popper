@@ -496,7 +496,7 @@ function sortCoins(coins) {
     });
   }
 
-  // Default: country A→Z, Argentina subsections, face value, year
+  // Default: country A→Z, Argentina subsections, year ascending, face value ascending
   return [...coins].sort((a, b) => {
     const normA = normalizeCountryValue(a.country);
     const normB = normalizeCountryValue(b.country);
@@ -514,15 +514,15 @@ function sortCoins(coins) {
       if (subA !== subB) return subA - subB;
     }
 
-    // 3. Face value ascending (numeric prefix of title; 1 if none)
-    const valA = getFaceValue(a.title);
-    const valB = getFaceValue(b.title);
-    if (valA !== valB) return valA - valB;
-
-    // 4. Year ascending
+    // 3. Year ascending (oldest first)
     const yearA = Number(a.year) || 0;
     const yearB = Number(b.year) || 0;
-    return yearA - yearB;
+    if (yearA !== yearB) return yearA - yearB;
+
+    // 4. Face value ascending (numeric prefix of title; 1 if none)
+    const valA = getFaceValue(a.title);
+    const valB = getFaceValue(b.title);
+    return valA - valB;
   });
 }
 
