@@ -2761,5 +2761,116 @@
     "grade_short": "EX-",
     "mintage": "",
     "description": "Theodor Heuss"
+  },
+  {
+    "id": 200,
+    "title": "Yirmilik 1838",
+    "country": "Imperio Otomano",
+    "metal": "Plata",
+    "year": 1838,
+    "price": "12 USD",
+    "images": [
+      "images/200A.jpeg",
+      "images/200B.jpeg"
+    ],
+    "reference": "KM# 596",
+    "grade": "Muy Bueno detalles",
+    "grade_short": "MB**",
+    "description": ""
+  },
+  {
+    "id": 201,
+    "title": "2 Centesimos 1870",
+    "country": "Paraguay",
+    "metal": "Cobre",
+    "year": 1870,
+    "price": "6 USD",
+    "images": [
+      "images/201A.jpeg",
+      "images/201B.jpeg"
+    ],
+    "reference": "KM# 3",
+    "grade": "Bueno -",
+    "grade_short": "B-",
+    "description": "Año único"
+  },
+  {
+    "id": 202,
+    "title": "5 Centésimos 1948",
+    "country": "Uruguay",
+    "metal": "Bronce",
+    "year": 1948,
+    "price": "7 USD",
+    "images": [
+      "images/202A.jpeg",
+      "images/202B.jpeg"
+    ],
+    "reference": "KM# 21a",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "Pátina Rainbow (Arcoiris)"
+  },
+  {
+    "id": 203,
+    "title": "2 Groschen 1925",
+    "country": "Austria",
+    "metal": "Bronce",
+    "year": 1925,
+    "price": "4.5 USD",
+    "images": [
+      "images/203A.jpeg",
+      "images/203B.jpeg"
+    ],
+    "reference": "KM# 2837",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": ""
+  },
+  {
+    "id": 204,
+    "title": "Ore 1950",
+    "country": "Noruega",
+    "metal": "Bronce",
+    "year": 1950,
+    "price": "4 USD",
+    "images": [
+      "images/204A.jpeg",
+      "images/204B.jpeg"
+    ],
+    "reference": "KM# 367",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": ""
+  },
+  {
+    "id": 205,
+    "title": "20 Centavos 1924",
+    "country": "Portugal",
+    "metal": "Bronce",
+    "year": 1924,
+    "price": "3.5 USD",
+    "images": [
+      "images/205A.jpeg",
+      "images/205B.jpeg"
+    ],
+    "reference": "KM# 574",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "description": ""
+  },
+  {
+    "id": 206,
+    "title": "Seiseno 1641-1652",
+    "country": "España",
+    "metal": "Cobre",
+    "year": 1641,
+    "price": "8 USD",
+    "images": [
+      "images/206A.jpeg",
+      "images/206B.jpeg"
+    ],
+    "grade": "Regular",
+    "grade_short": "R",
+    "description": "Monedas de necesidad oficiales. Barcelona, 1641-1652."
   }
 ]
