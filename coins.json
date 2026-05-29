@@ -511,7 +511,9 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-05-29T00:00:00.000Z"
   },
   {
     "id": 43,
@@ -2359,7 +2361,9 @@
     "grade": "Excelente -",
     "grade_short": "E-",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-05-29T00:00:00.000Z"
   },
   {
     "id": 177,
