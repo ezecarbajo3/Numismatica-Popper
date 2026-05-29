@@ -2893,7 +2893,10 @@
     "metal": "Cuproníquel",
     "year": 1976,
     "price": "3 USD",
-    "images": [],
+    "images": [
+      "https://raw.githubusercontent.com/ezecarbajo3/Numismatica-Popper/main/images/207A.jpeg",
+      "https://raw.githubusercontent.com/ezecarbajo3/Numismatica-Popper/main/images/207B.jpeg"
+    ],
     "grade": "Muy Bueno Plus",
     "grade_short": "MB+",
     "description": "KM# 62.",
@@ -2906,7 +2909,10 @@
     "metal": "Plata",
     "year": 1953,
     "price": "4,5 USD",
-    "images": [],
+    "images": [
+      "https://raw.githubusercontent.com/ezecarbajo3/Numismatica-Popper/main/images/208A.jpeg",
+      "https://raw.githubusercontent.com/ezecarbajo3/Numismatica-Popper/main/images/208B.jpeg"
+    ],
     "grade": "Excelente Menos",
     "grade_short": "EX-",
     "description": "KM 823.",
@@ -2919,7 +2925,10 @@
     "metal": "Cuproníquel",
     "year": 1968,
     "price": "2,5 USD",
-    "images": [],
+    "images": [
+      "https://raw.githubusercontent.com/ezecarbajo3/Numismatica-Popper/main/images/209A.jpeg",
+      "https://raw.githubusercontent.com/ezecarbajo3/Numismatica-Popper/main/images/209B.jpeg"
+    ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "description": "Alto valor nominal. KM 21a.",
@@ -2932,7 +2941,10 @@
     "metal": "Monometálica",
     "year": 1995,
     "price": "4 USD",
-    "images": [],
+    "images": [
+      "https://raw.githubusercontent.com/ezecarbajo3/Numismatica-Popper/main/images/210A.jpeg",
+      "https://raw.githubusercontent.com/ezecarbajo3/Numismatica-Popper/main/images/210B.jpeg"
+    ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "description": "Moneda falsa. Era de la convertibilidad (paridad con el dólar).",
