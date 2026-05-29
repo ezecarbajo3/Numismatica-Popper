@@ -2885,5 +2885,57 @@
     "grade_short": "R",
     "description": "Monedas de necesidad oficiales. Barcelona, 1641-1652.",
     "mintage": ""
+  },
+  {
+    "id": 207,
+    "title": "10 Dinara 1976",
+    "country": "Yugoslavia",
+    "metal": "Cuproníquel",
+    "year": 1976,
+    "price": "3 USD",
+    "images": [],
+    "grade": "Muy Bueno Plus",
+    "grade_short": "MB+",
+    "description": "KM# 62.",
+    "mintage": ""
+  },
+  {
+    "id": 208,
+    "title": "10 Öre 1953",
+    "country": "Suecia",
+    "metal": "Plata",
+    "year": 1953,
+    "price": "4,5 USD",
+    "images": [],
+    "grade": "Excelente Menos",
+    "grade_short": "EX-",
+    "description": "KM 823.",
+    "mintage": ""
+  },
+  {
+    "id": 209,
+    "title": "2 Francos 1968",
+    "country": "Suiza",
+    "metal": "Cuproníquel",
+    "year": 1968,
+    "price": "2,5 USD",
+    "images": [],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "Alto valor nominal. KM 21a.",
+    "mintage": ""
+  },
+  {
+    "id": 210,
+    "title": "1 Peso 1995 FALSA",
+    "country": "Argentina",
+    "metal": "Bimetálica",
+    "year": 1995,
+    "price": "4 USD",
+    "images": [],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "Moneda falsa. Era de la convertibilidad (paridad con el dólar).",
+    "mintage": ""
   }
 ]
