@@ -733,11 +733,16 @@ button {
 }
 
 .price-original {
+  display: block;
   text-decoration: line-through;
-  opacity: 0.45;
-  font-size: 0.78em;
-  margin-right: 4px;
-  color: var(--muted);
+  text-decoration-color: #c0392b;
+  font-size: 0.85em;
+  color: #c0392b;
+  margin-bottom: 2px;
+}
+
+.price-current {
+  display: block;
 }
 
 /* ─── Sold state ─────────────────────────────────────────────────────────── */
