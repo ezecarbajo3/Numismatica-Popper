@@ -732,6 +732,14 @@ button {
   color: #d7b266;
 }
 
+.price-original {
+  text-decoration: line-through;
+  opacity: 0.45;
+  font-size: 0.78em;
+  margin-right: 4px;
+  color: var(--muted);
+}
+
 /* ─── Sold state ─────────────────────────────────────────────────────────── */
 
 .coin-card.is-sold {
