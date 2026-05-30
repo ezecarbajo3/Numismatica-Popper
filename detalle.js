@@ -81,7 +81,7 @@ function renderCoinDetail(coin) {
         </div>
       </div>
 
-      <p class="detail-price">${coin.price || "Consultar"}</p>
+      <p class="detail-price">${coin.original_price ? `<span class="price-original">${coin.original_price}</span> ` : ''}${coin.price || "Consultar"}</p>
 
       <a
         class="detail-whatsapp"
