@@ -561,7 +561,11 @@ function renderCoins(coins, skipAnimation = false) {
     title.textContent   = coin.title || 'Sin título';
     yearTag.textContent = coin.year  || '';
     meta.textContent    = getCountryDisplayLabel(coin.country);
-    price.textContent   = coin.price || 'Consultar';
+    if (coin.original_price) {
+      price.innerHTML = `<span class="price-original">${coin.original_price}</span> ${coin.price}`;
+    } else {
+      price.textContent = coin.price || 'Consultar';
+    }
 
     const grade = getGradeShort(coin);
     badgeRow.innerHTML = grade ? `<span class="coin-grade-badge">${grade}</span>` : '';
