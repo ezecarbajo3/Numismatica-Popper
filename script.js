@@ -562,7 +562,7 @@ function renderCoins(coins, skipAnimation = false) {
     yearTag.textContent = coin.year  || '';
     meta.textContent    = getCountryDisplayLabel(coin.country);
     if (coin.original_price) {
-      price.innerHTML = `<span class="price-original">${coin.original_price}</span> ${coin.price}`;
+      price.innerHTML = `<span class="price-original">${coin.original_price}</span><span class="price-current">${coin.price}</span>`;
     } else {
       price.textContent = coin.price || 'Consultar';
     }
