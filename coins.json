@@ -324,7 +324,9 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "mintage": "",
-    "description": "Variante sin escudo"
+    "description": "Variante sin escudo",
+    "status": "sold",
+    "soldAt": "2026-05-30T00:00:00.000Z"
   },
   {
     "id": 32,
