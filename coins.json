@@ -2955,5 +2955,85 @@
     "grade_short": "MB",
     "description": "Moneda falsa. Era de la convertibilidad (paridad con el dólar).",
     "mintage": ""
+  },
+  {
+    "id": 211,
+    "title": "2 Euro 2013",
+    "country": "España",
+    "metal": "Bimetálica",
+    "year": 2013,
+    "price": "9 USD",
+    "images": [
+      "images/211A.jpeg",
+      "images/211B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "Conmemorativa del Monasterio y Sitio del Escorial. KM 1305. 4.000.000 acuñadas.",
+    "mintage": "4000000"
+  },
+  {
+    "id": 212,
+    "title": "10 Cents 1991",
+    "country": "Eritrea",
+    "metal": "Acero Niquelado",
+    "year": 1991,
+    "price": "3 USD",
+    "images": [
+      "images/212A.jpeg",
+      "images/212B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "KM 45.",
+    "mintage": ""
+  },
+  {
+    "id": 213,
+    "title": "5 Cents 2000",
+    "country": "Liberia",
+    "metal": "",
+    "year": 2000,
+    "price": "3 USD",
+    "images": [
+      "images/213A.jpeg",
+      "images/213B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "KM 474.",
+    "mintage": ""
+  },
+  {
+    "id": 214,
+    "title": "1 Escudo 1994",
+    "country": "Cabo Verde",
+    "metal": "Acero Chapado en Latón",
+    "year": 1994,
+    "price": "2,5 USD",
+    "images": [
+      "images/214A.jpeg",
+      "images/214B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "KM 27.",
+    "mintage": ""
+  },
+  {
+    "id": 215,
+    "title": "20 Centavos 1974",
+    "country": "Mozambique",
+    "metal": "Bronce",
+    "year": 1974,
+    "price": "3,5 USD",
+    "images": [
+      "images/215A.jpeg",
+      "images/215B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "KM 88.",
+    "mintage": ""
   }
 ]
