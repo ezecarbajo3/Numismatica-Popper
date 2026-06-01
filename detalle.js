@@ -72,7 +72,7 @@ function renderCoinDetail(coin) {
 
         ${coin.mintage ? `<div class="detail-spec-row">
           <div class="detail-spec-label">Acuñación</div>
-          <div class="detail-spec-value">${coin.mintage}</div>
+          <div class="detail-spec-value">${Number(String(coin.mintage).replace(/[.,]/g, "")).toLocaleString("es-AR")}</div>
         </div>` : ''}
 
         <div class="detail-spec-row">
