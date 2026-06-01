@@ -50,8 +50,7 @@ function renderCoinDetail(coin) {
       <p class="detail-country">${coin.country || "País no informado"}</p>
       <h1 class="detail-title">${coin.title || "Sin título"}</h1>
 
-      ${coin.description ? `<p class="detail-description">${coin.description.replace(/
-/g, "<br>")}</p>` : ""}
+      ${coin.description ? `<p class="detail-description">${coin.description.replace(/\n/g, "<br>")}</p>` : ""}
 
       <div class="detail-divider"></div>
 
