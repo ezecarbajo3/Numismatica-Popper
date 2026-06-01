@@ -2890,7 +2890,8 @@
     "grade": "Regular",
     "grade_short": "R",
     "description": "Monedas de necesidad oficiales. Barcelona, 1641-1652.",
-    "mintage": ""
+    "mintage": "",
+    "reference": ""
   },
   {
     "id": 207,
@@ -2905,8 +2906,9 @@
     ],
     "grade": "Muy Bueno Plus",
     "grade_short": "MB+",
-    "description": "KM# 62.",
-    "mintage": ""
+    "description": "",
+    "mintage": "",
+    "reference": "KM# 62"
   },
   {
     "id": 208,
@@ -2921,8 +2923,9 @@
     ],
     "grade": "Excelente Menos",
     "grade_short": "EX-",
-    "description": "KM 823.",
-    "mintage": ""
+    "description": "",
+    "mintage": "",
+    "reference": "KM# 823"
   },
   {
     "id": 209,
@@ -2937,8 +2940,9 @@
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "description": "Alto valor nominal. KM 21a.",
-    "mintage": ""
+    "description": "Alto valor nominal.",
+    "mintage": "",
+    "reference": "KM# 21a"
   },
   {
     "id": 210,
@@ -2954,7 +2958,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "description": "Moneda falsa. Era de la convertibilidad (paridad con el dólar).",
-    "mintage": ""
+    "mintage": "",
+    "reference": ""
   },
   {
     "id": 211,
@@ -2969,8 +2974,9 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "description": "Conmemorativa del Monasterio y Sitio del Escorial. KM 1305. 4.000.000 acuñadas.",
-    "mintage": "4000000"
+    "description": "Conmemorativa del Monasterio y Sitio del Escorial.",
+    "mintage": "4000000",
+    "reference": "KM# 1305"
   },
   {
     "id": 212,
@@ -2985,8 +2991,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "KM 45.",
-    "mintage": ""
+    "description": "",
+    "mintage": "",
+    "reference": "KM# 45"
   },
   {
     "id": 213,
@@ -3001,8 +3008,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "KM 474.",
-    "mintage": ""
+    "description": "",
+    "mintage": "",
+    "reference": "KM# 474"
   },
   {
     "id": 214,
@@ -3017,8 +3025,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "KM 27.",
-    "mintage": ""
+    "description": "",
+    "mintage": "",
+    "reference": "KM# 27"
   },
   {
     "id": 215,
@@ -3033,7 +3042,8 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "KM 88.",
-    "mintage": ""
+    "description": "",
+    "mintage": "",
+    "reference": "KM# 88"
   }
 ]
