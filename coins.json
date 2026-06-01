@@ -985,7 +985,7 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "120.000",
-    "description": "Las primeras monedas uruguayas fueron acuñadas en Montevideo de 1840 a 1855 de forma artesanal. Después de esa fecha, no se acuñaron más monedas en el país. Esto llevo a que la amonedación anterior a 1857, sea muy escasa."
+    "description": "Las primeras monedas uruguayas fueron acuñadas en Montevideo de 1840 a 1855 de forma artesanal.\nDespués de esa fecha, no se acuñaron más monedas en el país.\nEsto llevo a que la amonedación anterior a 1857, sea muy escasa."
   },
   {
     "id": 77,
@@ -2022,7 +2022,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Conmemorativa: Nueva Capital de Egipto. Año único."
+    "description": "Conmemorativa: Nueva Capital de Egipto.\nAño único."
   },
   {
     "id": 155,
@@ -2436,7 +2436,7 @@
     "grade": "Ver foto",
     "grade_short": "",
     "mintage": "",
-    "description": "Seated Liberty. Variante con flecha."
+    "description": "Seated Liberty.\nVariante con flecha."
   },
   {
     "id": 181,
@@ -2602,7 +2602,7 @@
     "grade": "Buena",
     "grade_short": "B",
     "mintage": "",
-    "description": "Reina Victoria. Tercer retrato"
+    "description": "Reina Victoria.\nTercer retrato."
   },
   {
     "id": 190,
@@ -2957,7 +2957,7 @@
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "description": "Moneda falsa. Era de la convertibilidad (paridad con el dólar).",
+    "description": "Moneda falsa.\nEra de la convertibilidad (paridad con el dólar).",
     "mintage": "",
     "reference": ""
   },
