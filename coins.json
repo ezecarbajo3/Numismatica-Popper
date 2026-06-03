@@ -499,7 +499,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "291.000",
-    "description": "Muy escasa, sacada de blister"
+    "description": "Muy escasa, sacada de blister",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 42,
@@ -726,7 +728,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": "Año único"
+    "description": "Año único",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 58,
@@ -760,7 +764,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 60,
@@ -777,7 +783,9 @@
     "grade": "Excelente+",
     "grade_short": "EX+",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 62,
@@ -932,7 +940,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Caballo"
+    "description": "Caballo",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 72,
@@ -949,7 +959,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 75,
@@ -1155,7 +1167,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Año único"
+    "description": "Año único",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 93,
@@ -1172,7 +1186,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
-    "description": "Ceca A"
+    "description": "Ceca A",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 94,
@@ -1206,7 +1222,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 98,
@@ -1512,7 +1530,9 @@
     "grade": "Sin circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Año único."
+    "description": "Año único.",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 117,
@@ -1546,7 +1566,9 @@
     "grade": "Sin circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Mercurio."
+    "description": "Mercurio.",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 120,
@@ -1563,7 +1585,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "",
-    "description": "Mezquita de Mohamed Alí."
+    "description": "Mezquita de Mohamed Alí.",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 121,
@@ -1580,7 +1604,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 122,
@@ -1597,7 +1623,9 @@
     "grade": "Sin circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Magnética."
+    "description": "Magnética.",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 123,
@@ -1614,7 +1642,9 @@
     "grade": "Sin circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Canto ondulado."
+    "description": "Canto ondulado.",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 124,
@@ -1648,7 +1678,9 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "",
-    "description": "Año único."
+    "description": "Año único.",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 126,
@@ -1665,7 +1697,9 @@
     "grade": "Sin circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 128,
@@ -1682,7 +1716,9 @@
     "grade": "Sin circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 129,
@@ -1699,7 +1735,9 @@
     "grade": "Excelente +",
     "grade_short": "EX+",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 130,
@@ -1767,7 +1805,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": "Año único."
+    "description": "Año único.",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 136,
@@ -1784,7 +1824,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 138,
@@ -1988,7 +2030,9 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "mintage": "",
-    "description": "Conmemorativa."
+    "description": "Conmemorativa.",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 153,
@@ -2022,7 +2066,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Conmemorativa: Nueva Capital de Egipto.\nAño único."
+    "description": "Conmemorativa: Nueva Capital de Egipto.\nAño único.",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 155,
@@ -2039,7 +2085,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 157,
@@ -2073,7 +2121,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 160,
@@ -2124,7 +2174,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "FAO."
+    "description": "FAO.",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 163,
@@ -2141,7 +2193,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "FAO."
+    "description": "FAO.",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 164,
@@ -2670,7 +2724,9 @@
     "grade": "Muy Buena",
     "grade_short": "MB",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 194,
@@ -2738,7 +2794,9 @@
     "grade": "Muy Buena Más",
     "grade_short": "MB+",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 198,
@@ -2755,7 +2813,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 199,
@@ -2772,7 +2832,9 @@
     "grade": "Excelente Menos",
     "grade_short": "EX-",
     "mintage": "",
-    "description": "Theodor Heuss"
+    "description": "Theodor Heuss",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 200,
@@ -2840,7 +2902,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "description": "",
-    "mintage": ""
+    "mintage": "",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 204,
@@ -2908,7 +2972,9 @@
     "grade_short": "MB+",
     "description": "",
     "mintage": "",
-    "reference": "KM# 62"
+    "reference": "KM# 62",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 208,
@@ -2993,7 +3059,9 @@
     "grade_short": "SC",
     "description": "",
     "mintage": "",
-    "reference": "KM# 45"
+    "reference": "KM# 45",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 213,
@@ -3027,7 +3095,9 @@
     "grade_short": "SC",
     "description": "",
     "mintage": "",
-    "reference": "KM# 27"
+    "reference": "KM# 27",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 215,
@@ -3044,6 +3114,8 @@
     "grade_short": "SC",
     "description": "",
     "mintage": "",
-    "reference": "KM# 88"
+    "reference": "KM# 88",
+    "status": "sold",
+    "soldAt": "2026-06-03T00:00:00.000Z"
   }
 ]
