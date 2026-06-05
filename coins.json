@@ -870,7 +870,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Concientización sobre el cáncer de mama - Moneda coloreada"
+    "description": "Concientización sobre el cáncer de mama - Moneda coloreada",
+    "estado": "vendida",
+    "fecha_venta": "2026-06-05"
   },
   {
     "id": 68,
@@ -887,7 +889,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "75° aniversario de la firma de la Carta de las Naciones Unidas"
+    "description": "75° aniversario de la firma de la Carta de las Naciones Unidas",
+    "estado": "vendida",
+    "fecha_venta": "2026-06-05"
   },
   {
     "id": 69,
@@ -1099,7 +1103,9 @@
     "grade": "Bueno+",
     "grade_short": "B+",
     "mintage": "",
-    "description": "Texto en neerlandés"
+    "description": "Texto en neerlandés",
+    "estado": "vendida",
+    "fecha_venta": "2026-06-05"
   },
   {
     "id": 89,
@@ -2140,7 +2146,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": "Segunda Guerra Mundial."
+    "description": "Segunda Guerra Mundial.",
+    "estado": "vendida",
+    "fecha_venta": "2026-06-05"
   },
   {
     "id": 161,
@@ -3078,7 +3086,9 @@
     "grade_short": "SC",
     "description": "",
     "mintage": "",
-    "reference": "KM# 474"
+    "reference": "KM# 474",
+    "estado": "vendida",
+    "fecha_venta": "2026-06-05"
   },
   {
     "id": 214,
