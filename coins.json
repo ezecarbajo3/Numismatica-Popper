@@ -1536,9 +1536,7 @@
     "grade": "Sin circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Año único.",
-    "status": "sold",
-    "soldAt": "2026-06-03T00:00:00.000Z"
+    "description": "Año único."
   },
   {
     "id": 117,
@@ -1811,9 +1809,7 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": "Año único.",
-    "status": "sold",
-    "soldAt": "2026-06-03T00:00:00.000Z"
+    "description": "Año único."
   },
   {
     "id": 136,
@@ -1830,9 +1826,7 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": "",
-    "status": "sold",
-    "soldAt": "2026-06-03T00:00:00.000Z"
+    "description": ""
   },
   {
     "id": 138,
@@ -3086,9 +3080,7 @@
     "grade_short": "SC",
     "description": "",
     "mintage": "",
-    "reference": "KM# 474",
-    "status": "sold",
-    "soldAt": "2026-06-05T00:00:00.000Z"
+    "reference": "KM# 474"
   },
   {
     "id": 214,
