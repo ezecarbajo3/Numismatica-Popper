@@ -963,9 +963,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "",
-    "status": "sold",
-    "soldAt": "2026-06-03T00:00:00.000Z"
+    "description": ""
   },
   {
     "id": 75,
@@ -1720,9 +1718,7 @@
     "grade": "Sin circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "",
-    "status": "sold",
-    "soldAt": "2026-06-03T00:00:00.000Z"
+    "description": ""
   },
   {
     "id": 129,
