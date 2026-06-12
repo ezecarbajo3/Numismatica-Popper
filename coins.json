@@ -2222,25 +2222,6 @@
     "description": "Standing Liberty."
   },
   {
-    "id": 162,
-    "title": "Millim 2000",
-    "country": "Túnez",
-    "metal": "Aluminio",
-    "year": "2000",
-    "price": "2.5 USD",
-    "images": [
-      "images/162A.jpeg",
-      "images/162B.jpeg"
-    ],
-    "reference": "KM# 349",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "description": "FAO.",
-    "status": "sold",
-    "soldAt": "2026-06-03T00:00:00.000Z"
-  },
-  {
     "id": 163,
     "title": "5 Cents 2000",
     "country": "Islas Cook",
@@ -3529,5 +3510,226 @@
     "description": "",
     "mintage": "",
     "reference": ""
+  },
+  {
+    "id": 236,
+    "title": "Sen 1997",
+    "country": "Malasia",
+    "metal": "",
+    "year": 1997,
+    "price": "2 USD",
+    "images": [
+      "images/236A.jpeg",
+      "images/236B.jpeg"
+    ],
+    "grade": "",
+    "grade_short": "",
+    "description": "",
+    "mintage": "",
+    "reference": ""
+  },
+  {
+    "id": 237,
+    "title": "Medio Penny 1966",
+    "country": "Jamaica",
+    "metal": "Latón Niquelado",
+    "year": 1966,
+    "price": "3,5 USD",
+    "images": [
+      "images/237A.jpeg",
+      "images/237B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "",
+    "mintage": "1600000",
+    "reference": "KM# 38"
+  },
+  {
+    "id": 238,
+    "title": "5 Francos 1957",
+    "country": "Túnez",
+    "metal": "Cuproníquel",
+    "year": 1957,
+    "price": "5 USD",
+    "images": [
+      "images/238A.jpeg",
+      "images/238B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "",
+    "mintage": "4000000",
+    "reference": ""
+  },
+  {
+    "id": 239,
+    "title": "Rappen 1950",
+    "country": "Suiza",
+    "metal": "Bronce",
+    "year": 1950,
+    "price": "3 USD",
+    "images": [
+      "images/239A.jpeg",
+      "images/239B.jpeg"
+    ],
+    "grade": "Excelente+",
+    "grade_short": "EX+",
+    "description": "",
+    "mintage": "",
+    "reference": ""
+  },
+  {
+    "id": 240,
+    "title": "Cent 2002",
+    "country": "Estados del Caribe Oriental",
+    "metal": "Aluminio",
+    "year": 2002,
+    "price": "2,5 USD",
+    "images": [
+      "images/240A.jpeg",
+      "images/240B.jpeg"
+    ],
+    "grade": "Sin Circular menos",
+    "grade_short": "SC-",
+    "description": "",
+    "mintage": "",
+    "reference": ""
+  },
+  {
+    "id": 241,
+    "title": "Millim 2000",
+    "country": "Túnez",
+    "metal": "Aluminio",
+    "year": "2000",
+    "price": "2.5 USD",
+    "images": [
+      "images/162A.jpeg",
+      "images/162B.jpeg"
+    ],
+    "reference": "KM# 349",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "description": "FAO."
+  },
+  {
+    "id": 242,
+    "title": "2 Falus 1861-1863",
+    "country": "Marruecos",
+    "metal": "Bronce",
+    "year": 1861,
+    "price": "4,5 USD",
+    "images": [
+      "images/242A.jpeg",
+      "images/242B.jpeg"
+    ],
+    "grade": "Regular+",
+    "grade_short": "R+",
+    "description": "",
+    "mintage": "",
+    "reference": "C# 163.2"
+  },
+  {
+    "id": 243,
+    "title": "10 Rublos 2011",
+    "country": "Rusia",
+    "metal": "Acero Chapado en Latón",
+    "year": 2011,
+    "price": "4 USD",
+    "images": [
+      "images/243A.jpeg",
+      "images/243B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "50 Aniversario del Primer Vuelo Espacial Tripulado",
+    "mintage": "",
+    "reference": "Y# 1468"
+  },
+  {
+    "id": 244,
+    "title": "Centavo 1989",
+    "country": "El Salvador",
+    "metal": "Bronce",
+    "year": 1989,
+    "price": "2,5 USD",
+    "images": [
+      "images/244A.jpeg",
+      "images/244B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "",
+    "mintage": "",
+    "reference": ""
+  },
+  {
+    "id": 245,
+    "title": "Centavo 1974",
+    "country": "Honduras",
+    "metal": "Cobre Chapado en Acero",
+    "year": 1974,
+    "price": "3 USD",
+    "images": [
+      "images/245A.jpeg",
+      "images/245B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "",
+    "mintage": "",
+    "reference": "KM# 77a"
+  },
+  {
+    "id": 246,
+    "title": "5 Céntimos 1979",
+    "country": "Costa Rica",
+    "metal": "Latón",
+    "year": 1979,
+    "price": "3,5 USD",
+    "images": [
+      "images/246A.jpeg",
+      "images/246B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Año Único",
+    "mintage": "3000000",
+    "reference": "KM# 184.3a"
+  },
+  {
+    "id": 247,
+    "title": "5 Céntimos 1953",
+    "country": "Costa Rica",
+    "metal": "Inoxidable",
+    "year": 1953,
+    "price": "2,5 USD",
+    "images": [
+      "images/247A.jpeg",
+      "images/247B.jpeg"
+    ],
+    "grade": "",
+    "grade_short": "",
+    "description": "",
+    "mintage": "9000000",
+    "reference": "KM# 184.1a"
+  },
+  {
+    "id": 248,
+    "title": "Stotinka 1989",
+    "country": "Bulgaria",
+    "metal": "Latón",
+    "year": 1989,
+    "price": "2,5 USD",
+    "images": [
+      "images/248A.jpeg",
+      "images/248B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "",
+    "mintage": "",
+    "reference": "KM# 84"
   }
 ]
