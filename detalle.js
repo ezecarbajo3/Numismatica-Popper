@@ -317,3 +317,17 @@ async function loadCoinDetail() {
 loadCoinDetail().then(() => {
   initDetailRevealEffects();
 });
+
+// "← Volver" usa history.back() para que script.js restaure el catálogo
+// en la posición exacta donde estaba, en lugar de mostrar la pantalla de bienvenida.
+const backLink = document.querySelector('.back-link');
+if (backLink) {
+  backLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (history.length > 1) {
+      history.back();
+    } else {
+      window.location.href = backLink.getAttribute('href') || 'index.html';
+    }
+  });
+}
