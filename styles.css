@@ -1744,7 +1744,7 @@ body[data-view="catalog"] #catalog {
 }
 
 .variant-price {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--accent);
   white-space: nowrap;
   overflow: hidden;
