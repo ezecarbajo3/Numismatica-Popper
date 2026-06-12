@@ -1651,13 +1651,19 @@ body[data-view="catalog"] #catalog {
 
 .landing-btn--all {
   margin-top: 0.25rem;
+  font-size: 1.56rem;
+  background: var(--accent);
+  border-color: var(--accent);
   color: var(--muted);
-  font-size: 1rem;
-  border-style: dashed;
+  font-weight: 600;
+  text-align: center;
 }
 
-.landing-btn--all:hover {
-  color: var(--accent);
+.landing-btn--all:hover,
+.landing-btn--all:focus-visible {
+  background: #b8902f;
+  border-color: #b8902f;
+  color: var(--muted);
 }
 
 @media (max-width: 480px) {
