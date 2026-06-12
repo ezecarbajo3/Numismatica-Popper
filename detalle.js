@@ -226,12 +226,11 @@ function renderCoinDetail(coin, groupMembers) {
       const info = document.createElement("div");
       info.className = "variant-info";
 
-      const yearMatch = (member.title || "").match(/\b(1[5-9]\d{2}|20\d{2})\b/);
-      const yearLabel = yearMatch ? yearMatch[1] : (member.title || "").slice(0, 10);
+      const gradeLabel = String(member.grade_short || member.gradeShort || member.grade_short_label || "").trim() || "–";
 
       const yearEl = document.createElement("span");
       yearEl.className   = "variant-year";
-      yearEl.textContent = yearLabel;
+      yearEl.textContent = gradeLabel;
 
       const priceEl = document.createElement("span");
       priceEl.className   = "variant-price";
