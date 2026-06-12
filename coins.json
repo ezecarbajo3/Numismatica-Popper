@@ -280,7 +280,7 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "mintage": "",
-    "description": "",
+    "description": "Indian Head.",
     "group_id": "group_b_indian_cent",
     "group_label": "Indian Head Cent"
   },
@@ -299,7 +299,7 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "mintage": "",
-    "description": "",
+    "description": "Indian Head.",
     "original_price": "45 USD",
     "group_id": "group_b_indian_cent",
     "group_label": "Indian Head Cent"
@@ -319,7 +319,7 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "mintage": "",
-    "description": "",
+    "description": "Indian Head.",
     "group_id": "group_b_indian_cent",
     "group_label": "Indian Head Cent"
   },
@@ -357,7 +357,7 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "mintage": "",
-    "description": "",
+    "description": "Indian Head.",
     "original_price": "22 USD",
     "group_id": "group_b_indian_cent",
     "group_label": "Indian Head Cent"
@@ -570,7 +570,7 @@
     "grade": "Bueno+",
     "grade_short": "B+",
     "mintage": "719.128",
-    "description": "",
+    "description": "Escasa.",
     "group_id": "ar-20centavos-1908",
     "group_label": "20 Centavos 1908"
   },
@@ -589,7 +589,7 @@
     "grade": "Bueno+",
     "grade_short": "B+",
     "mintage": "719.128",
-    "description": "",
+    "description": "Escasa.",
     "group_id": "ar-20centavos-1908",
     "group_label": "20 Centavos 1908"
   },
@@ -663,7 +663,7 @@
     "grade": "Regular+",
     "grade_short": "R+",
     "mintage": "423.300",
-    "description": "",
+    "description": "Escasa.",
     "group_id": "ar-centavo-1895",
     "group_label": "Centavo 1895"
   },
@@ -682,7 +682,7 @@
     "grade": "Regular+",
     "grade_short": "R+",
     "mintage": "423.300",
-    "description": "",
+    "description": "Escasa.",
     "group_id": "ar-centavo-1895",
     "group_label": "Centavo 1895"
   },
@@ -1025,7 +1025,7 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "120.000",
-    "description": "Las primeras monedas uruguayas fueron acuñadas en Montevideo de 1840 a 1855 de forma artesanal.\nDespués de esa fecha, no se acuñaron más monedas en el país.\nEsto llevo a que la amonedación anterior a 1857, sea muy escasa.",
+    "description": "Año único.",
     "group_id": "group_b_5centes_uy",
     "group_label": "5 Centésimos Uruguay (1854-1857)"
   },
@@ -1044,7 +1044,7 @@
     "grade": "Bueno -",
     "grade_short": "B-",
     "mintage": "570.000",
-    "description": "Año único",
+    "description": "Año único.",
     "group_id": "group_b_5centes_uy",
     "group_label": "5 Centésimos Uruguay (1854-1857)"
   },
@@ -1400,7 +1400,7 @@
     "grade": "Regular",
     "grade_short": "R",
     "mintage": "840.108",
-    "description": "",
+    "description": "Escasa.",
     "group_id": "ar-20centavos-1899",
     "group_label": "20 Centavos 1899"
   },
@@ -1419,7 +1419,7 @@
     "grade": "Bueno+",
     "grade_short": "B+",
     "mintage": "840.108",
-    "description": "",
+    "description": "Escasa.",
     "group_id": "ar-20centavos-1899",
     "group_label": "20 Centavos 1899"
   },
@@ -1438,7 +1438,7 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "719.128",
-    "description": "",
+    "description": "Escasa.",
     "group_id": "ar-20centavos-1908",
     "group_label": "20 Centavos 1908"
   },
@@ -1457,7 +1457,7 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "719.128",
-    "description": "",
+    "description": "Escasa.",
     "group_id": "ar-20centavos-1908",
     "group_label": "20 Centavos 1908"
   },
@@ -1476,7 +1476,7 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "719.128",
-    "description": "",
+    "description": "Escasa.",
     "group_id": "ar-20centavos-1908",
     "group_label": "20 Centavos 1908"
   },
@@ -1495,7 +1495,7 @@
     "grade": "Excelente-",
     "grade_short": "EX-",
     "mintage": "855.101",
-    "description": "",
+    "description": "Escasa.",
     "group_id": "ar-20centavos-1936",
     "group_label": "20 Centavos 1936"
   },
@@ -1514,7 +1514,7 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "855.101",
-    "description": "",
+    "description": "Escasa.",
     "group_id": "ar-20centavos-1936",
     "group_label": "20 Centavos 1936"
   },
@@ -1893,7 +1893,7 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "",
-    "description": "Variante con agujero.",
+    "description": "Agujero centrado.",
     "group_id": "group_b_10ctvs_bolivia",
     "group_label": "10 Centavos Bolivia (1883-1892)"
   },
@@ -2071,7 +2071,7 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "1.000.000",
-    "description": "Rara de ver.",
+    "description": "Agujero centrado.",
     "group_id": "group_b_10ctvs_bolivia",
     "group_label": "10 Centavos Bolivia (1883-1892)"
   },
