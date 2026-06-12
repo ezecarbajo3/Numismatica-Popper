@@ -1694,25 +1694,25 @@ body[data-view="catalog"] #catalog {
 .variants-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.9rem;
 }
 
 .variant-thumb {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.3rem;
-  padding: 0.45rem;
+  gap: 0.45rem;
+  padding: 0.65rem;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border);
   border-radius: 10px;
   cursor: pointer;
-  width: 82px;
+  width: 123px;
 }
 
 .variant-thumb img {
-  width: 64px;
-  height: 64px;
+  width: 96px;
+  height: 96px;
   object-fit: cover;
   border-radius: 6px;
 }
@@ -1737,19 +1737,19 @@ body[data-view="catalog"] #catalog {
 }
 
 .variant-year {
-  font-size: 0.82rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--text);
   line-height: 1;
 }
 
 .variant-price {
-  font-size: 0.68rem;
+  font-size: 1rem;
   color: var(--muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 74px;
+  max-width: 111px;
   text-align: center;
   line-height: 1.2;
 }
