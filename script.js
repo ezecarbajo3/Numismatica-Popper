@@ -111,6 +111,30 @@ function isBook(coin) {
   return title.includes('libro') || title.includes('catálogo') || title.includes('catalogo') || title.includes('album') || title.includes('red book');
 }
 
+function isBlisterOnly(coin) {
+  const title = (coin.title || '').trim();
+  return /^bls[.\s]/i.test(title) || /blister/i.test(title);
+}
+
+function isLoteOnly(coin) {
+  const title = (coin.title || '').trim();
+  return /^lote\s/i.test(title) && !isLotePlata(coin);
+}
+
+function parsePriceUSD(priceStr) {
+  if (!priceStr) return Infinity;
+  const n = parseFloat(String(priceStr).replace(',', '.').replace(/[^\d.]/g, ''));
+  return isNaN(n) ? Infinity : n;
+}
+
+function isEconomica(coin) {
+  return parsePriceUSD(coin.price) < 5;
+}
+
+function isExonumia(coin) {
+  return isMedalOrToken(coin) || isBook(coin);
+}
+
 function getSilverPurity(coin) {
   const m = /[Pp]lata\s*\.?(\d{3,4})/.exec(coin.metal || '');
   return m ? parseInt(m[1], 10) : 0;
@@ -124,13 +148,17 @@ function isInvestment(coin) {
 }
 
 const CATEGORY_PREDICATES = {
-  plata:         isInvestment,      // primary key (button renamed to "Plata")
+  plata:         isInvestment,
   inversion:     isInvestment,      // kept for sessionStorage backwards compat
   argentina:     isArgentinaCoin,
   internacional: (c) => !isArgentinaCoin(c) && !isMedalOrToken(c) && !isBlister(c) && !isBook(c),
   medallas:      isMedalOrToken,
   blisters:      isBlister,
   libros:        isBook,
+  blister_only:  isBlisterOnly,
+  lotes:         isLoteOnly,
+  economicas:    isEconomica,
+  exonumia:      isExonumia,
 };
 
 // ─── Sub-filter helpers ───────────────────────────────────────────────────────
@@ -321,10 +349,51 @@ function hideImagePreview(instant = false) {
   setTimeout(() => overlay.remove(), 600); // failsafe
 }
 
+// ─── Landing / Catalog view ───────────────────────────────────────────────────
+
+function showLanding() {
+  document.body.dataset.view = 'landing';
+}
+
+function showCatalog() {
+  document.body.dataset.view = 'catalog';
+}
+
+function goToLanding() {
+  searchInput.value = '';
+  clearSearchBtn.classList.remove('is-visible');
+  activeCategory  = null;
+  activeSubFilter = null;
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('is-active'));
+  closeSubFilterBar();
+  hideImagePreview(true);
+  try { sessionStorage.removeItem(STATE_KEY); } catch (_) {}
+  showLanding();
+}
+
+function enterCatalog(categoryKey) {
+  showCatalog();
+  activeCategory  = categoryKey || null;
+  activeSubFilter = null;
+  document.querySelectorAll('.cat-btn').forEach(b =>
+    b.classList.toggle('is-active', b.dataset.category === activeCategory)
+  );
+  if (activeCategory) {
+    buildSubFilterBar(activeCategory);
+  } else {
+    closeSubFilterBar();
+  }
+  saveState();
+  renderCoins(getFilteredCoins());
+  initRevealEffects();
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+
 // ─── State persistence ────────────────────────────────────────────────────────
 
 function saveState(scrollY = null) {
   const state = {
+    view:      document.body.dataset.view || 'landing',
     category:  activeCategory,
     subFilter: activeSubFilter,
     search:    searchInput.value,
@@ -753,6 +822,25 @@ document.querySelectorAll('.cat-btn').forEach(btn => {
   });
 });
 
+// Landing button event listeners
+document.querySelectorAll('.landing-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const cat = btn.dataset.landingCategory;
+    enterCatalog(cat === 'todas' ? null : cat);
+  });
+});
+
+// Logo link: go back to landing when in catalog
+const logoLink = document.querySelector('.site-logo-link');
+if (logoLink) {
+  logoLink.addEventListener('click', (e) => {
+    if (document.body.dataset.view === 'catalog') {
+      e.preventDefault();
+      goToLanding();
+    }
+  });
+}
+
 // ─── Bootstrap ────────────────────────────────────────────────────────────────
 
 loadCoins().then((ok) => {
@@ -761,25 +849,21 @@ loadCoins().then((ok) => {
   const isBackFwd = isBackForwardNavigation();
   const state     = loadSavedState();
 
-  if (state) {
-    // Restore filters on any navigation type (refresh or back)
+  // Only restore catalog on back/forward navigation
+  if (isBackFwd && state && state.view === 'catalog') {
+    showCatalog();
     applyRestoredState(state);
-
-    if (isBackFwd && state.scrollY) {
-      // Back navigation: jump to saved scroll position, no fade-in animation
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          window.scrollTo({ top: state.scrollY, behavior: 'instant' });
-        });
-      });
+    if (state.scrollY) {
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        window.scrollTo({ top: state.scrollY, behavior: 'instant' });
+      }));
     } else {
-      // Refresh: start at top, animate cards in normally
       initRevealEffects();
     }
     return;
   }
 
-  renderCoins(getFilteredCoins());
-  initRevealEffects();
+  // Fresh load or reload → always show landing
+  showLanding();
 });
 
