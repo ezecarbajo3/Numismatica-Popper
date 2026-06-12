@@ -150,6 +150,34 @@ function isInvestment(coin) {
 
 // ─── Group helpers ────────────────────────────────────────────────────────────
 
+const GRADE_RANK_MAP = {
+  'R-':4,'R':5,'R+':6,
+  'B-':7,'B':8,'B+':9,
+  'MB-':10,'MB':11,'MB+':12,
+  'EX-':13,'EBC-':13,
+  'EX':14,'EBC':14,
+  'EX+':15,'EBC+':15,
+  'SC':16,'UNC':16,'FDC':16,'MS':16,
+};
+
+function gradeRank(coin) {
+  // Try grade_short first (most reliable)
+  let raw = String(coin.grade_short || '').trim().replace(/\s+/g, '').toUpperCase().replace(/\*+$/, '');
+  if (raw && raw !== '-' && GRADE_RANK_MAP[raw] !== undefined) return GRADE_RANK_MAP[raw];
+
+  // Fall back: parse full grade text
+  const g = String(coin.grade || '').toUpperCase();
+  const hasMinus = /[-]\s*$| -/.test(g);
+  const hasPlus  = /[+]\s*$| \+/.test(g);
+  const mod = hasMinus ? '-' : hasPlus ? '+' : '';
+  if (/^SIN\s*CIRC|^SC\b|^UNC\b|^FDC\b/i.test(g))   return GRADE_RANK_MAP['SC'];
+  if (/^EXCEL/i.test(g))  return GRADE_RANK_MAP['EX'  + mod] ?? GRADE_RANK_MAP['EX'];
+  if (/^MUY\s*B/i.test(g)) return GRADE_RANK_MAP['MB' + mod] ?? GRADE_RANK_MAP['MB'];
+  if (/^BUENO/i.test(g))  return GRADE_RANK_MAP['B'   + mod] ?? GRADE_RANK_MAP['B'];
+  if (/^REGULAR/i.test(g)) return GRADE_RANK_MAP['R'  + mod] ?? GRADE_RANK_MAP['R'];
+  return 0; // unknown
+}
+
 function buildGroupMinPrices() {
   groupMinPriceMap = new Map();
   for (const coin of allCoins) {
@@ -163,7 +191,7 @@ function buildGroupMinPrices() {
 }
 
 function collapseGroups(coins) {
-  // Find representative (prefer active, then lowest id) for each group_id
+  // Representative = best-grade active coin; tie-break by lowest id
   const repById = new Map();
   for (const coin of coins) {
     if (!coin.group_id) continue;
@@ -171,7 +199,13 @@ function collapseGroups(coins) {
     if (!ex) { repById.set(coin.group_id, coin); continue; }
     const exSold = ex.status === 'sold';
     const cSold  = coin.status === 'sold';
-    if ((exSold && !cSold) || (exSold === cSold && coin.id < ex.id)) {
+    // Active beats sold
+    if (exSold && !cSold) { repById.set(coin.group_id, coin); continue; }
+    if (!exSold && cSold) continue;
+    // Among active: higher grade wins; tie → lower id
+    const rankEx = gradeRank(ex);
+    const rankC  = gradeRank(coin);
+    if (rankC > rankEx || (rankC === rankEx && coin.id < ex.id)) {
       repById.set(coin.group_id, coin);
     }
   }
