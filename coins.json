@@ -51,7 +51,9 @@
     "grade": "Regular",
     "grade_short": "R",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj2",
+    "group_label": "2 Centavos (CJ# 2)"
   },
   {
     "id": 5,
@@ -68,7 +70,9 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj2",
+    "group_label": "2 Centavos (CJ# 2)"
   },
   {
     "id": 6,
@@ -102,7 +106,9 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj23",
+    "group_label": "2 Reales (CJ# 23)"
   },
   {
     "id": 8,
@@ -274,7 +280,9 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_km90_us",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 29,
@@ -292,7 +300,9 @@
     "grade_short": "-",
     "mintage": "",
     "description": "",
-    "original_price": "45 USD"
+    "original_price": "45 USD",
+    "group_id": "group_a_km90_us",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 30,
@@ -309,7 +319,9 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_km90_us",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 31,
@@ -346,7 +358,9 @@
     "grade_short": "-",
     "mintage": "",
     "description": "",
-    "original_price": "22 USD"
+    "original_price": "22 USD",
+    "group_id": "group_a_km90_us",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 33,
@@ -363,7 +377,9 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "mintage": "596.000",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj37",
+    "group_label": "2 Centavos (CJ# 37)"
   },
   {
     "id": 34,
@@ -554,7 +570,9 @@
     "grade": "Bueno+",
     "grade_short": "B+",
     "mintage": "719.128",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj59",
+    "group_label": "20 Centavos (CJ# 59)"
   },
   {
     "id": 45,
@@ -571,7 +589,9 @@
     "grade": "Bueno+",
     "grade_short": "B+",
     "mintage": "719.128",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj59",
+    "group_label": "20 Centavos (CJ# 59)"
   },
   {
     "id": 46,
@@ -643,7 +663,9 @@
     "grade": "Regular+",
     "grade_short": "R+",
     "mintage": "423.300",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj50",
+    "group_label": "Centavo (CJ# 50)"
   },
   {
     "id": 51,
@@ -660,7 +682,9 @@
     "grade": "Regular+",
     "grade_short": "R+",
     "mintage": "423.300",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj50",
+    "group_label": "Centavo (CJ# 50)"
   },
   {
     "id": 53,
@@ -694,7 +718,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_km30_uy",
+    "group_label": "Peso (KM# 30)"
   },
   {
     "id": 56,
@@ -1033,7 +1059,9 @@
     "grade": "Bueno detalles",
     "grade_short": "B**",
     "mintage": "1.000.000",
-    "description": "Año único"
+    "description": "Año único",
+    "group_id": "group_a_km10_uy",
+    "group_label": "40 Centésimos (KM# 10)"
   },
   {
     "id": 79,
@@ -1050,7 +1078,9 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "1.000.000",
-    "description": "Año único"
+    "description": "Año único",
+    "group_id": "group_a_km10_uy",
+    "group_label": "40 Centésimos (KM# 10)"
   },
   {
     "id": 80,
@@ -1313,7 +1343,9 @@
     "grade": "Regular+",
     "grade_short": "R+",
     "mintage": "596.000",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj37",
+    "group_label": "2 Centavos (CJ# 37)"
   },
   {
     "id": 103,
@@ -1364,7 +1396,9 @@
     "grade": "Regular",
     "grade_short": "R",
     "mintage": "840.108",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj55",
+    "group_label": "20 Centavos (CJ# 55)"
   },
   {
     "id": 107,
@@ -1381,7 +1415,9 @@
     "grade": "Bueno+",
     "grade_short": "B+",
     "mintage": "840.108",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj55",
+    "group_label": "20 Centavos (CJ# 55)"
   },
   {
     "id": 108,
@@ -1398,7 +1434,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "719.128",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj59",
+    "group_label": "20 Centavos (CJ# 59)"
   },
   {
     "id": 109,
@@ -1415,7 +1453,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "719.128",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj59",
+    "group_label": "20 Centavos (CJ# 59)"
   },
   {
     "id": 110,
@@ -1432,7 +1472,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "719.128",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj59",
+    "group_label": "20 Centavos (CJ# 59)"
   },
   {
     "id": 111,
@@ -1449,7 +1491,9 @@
     "grade": "Excelente-",
     "grade_short": "EX-",
     "mintage": "855.101",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj83",
+    "group_label": "20 Centavos (CJ# 83)"
   },
   {
     "id": 112,
@@ -1466,7 +1510,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "855.101",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj83",
+    "group_label": "20 Centavos (CJ# 83)"
   },
   {
     "id": 113,
@@ -1500,7 +1546,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "903.070",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj185",
+    "group_label": "2 Centavos (CJ# 185)"
   },
   {
     "id": 115,
@@ -1517,7 +1565,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "903.070",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj185",
+    "group_label": "2 Centavos (CJ# 185)"
   },
   {
     "id": 116,
@@ -1856,7 +1906,9 @@
     "grade": "Bueno +",
     "grade_short": "B+",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_km30_uy",
+    "group_label": "Peso (KM# 30)"
   },
   {
     "id": 141,
@@ -1924,7 +1976,9 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "596.000",
-    "description": "Escasa."
+    "description": "Escasa.",
+    "group_id": "group_a_cj37",
+    "group_label": "2 Centavos (CJ# 37)"
   },
   {
     "id": 147,
@@ -1941,7 +1995,9 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "group_a_cj23",
+    "group_label": "2 Reales (CJ# 23)"
   },
   {
     "id": 148,
@@ -2454,7 +2510,9 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "596.000",
-    "description": "596k acuñadas."
+    "description": "596k acuñadas.",
+    "group_id": "group_a_cj37",
+    "group_label": "2 Centavos (CJ# 37)"
   },
   {
     "id": 179,
