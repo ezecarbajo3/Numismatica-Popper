@@ -3189,5 +3189,73 @@
     "reference": "KM# 88",
     "status": "sold",
     "soldAt": "2026-06-03T00:00:00.000Z"
+  },
+  {
+    "id": 216,
+    "title": "Ngwee 1983",
+    "country": "Zambia",
+    "metal": "Bronce",
+    "year": 1983,
+    "price": "2,5 USD",
+    "images": [
+      "images/216A.jpeg",
+      "images/216B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "",
+    "mintage": "",
+    "reference": ""
+  },
+  {
+    "id": 217,
+    "title": "5 Shillings 2002",
+    "country": "Somalia",
+    "metal": "Acero Inoxidable",
+    "year": 2002,
+    "price": "3,5 USD",
+    "images": [
+      "images/217A.jpeg",
+      "images/217B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Elefante",
+    "mintage": "",
+    "reference": ""
+  },
+  {
+    "id": 218,
+    "title": "Cent 2003",
+    "country": "Islas Cook",
+    "metal": "Aluminio",
+    "year": 2003,
+    "price": "3 USD",
+    "images": [
+      "images/218A.jpeg",
+      "images/218B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Captain James Cook",
+    "mintage": "",
+    "reference": ""
+  },
+  {
+    "id": 219,
+    "title": "Cent 2003",
+    "country": "Islas Cook",
+    "metal": "Aluminio",
+    "year": 2003,
+    "price": "3,5 USD",
+    "images": [
+      "images/219A.jpeg",
+      "images/219B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Águila",
+    "mintage": "",
+    "reference": ""
   }
 ]
