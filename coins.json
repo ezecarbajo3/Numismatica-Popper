@@ -3254,7 +3254,279 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Águila",
+    "description": "Gallo",
+    "mintage": "",
+    "reference": "KM# 422"
+  },
+  {
+    "id": 220,
+    "title": "Cent 2003",
+    "country": "Islas Cook",
+    "metal": "Aluminio",
+    "year": 2003,
+    "price": "3,5 USD",
+    "images": [
+      "images/220A.jpeg",
+      "images/220B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Collie",
+    "mintage": "",
+    "reference": "KM# 420"
+  },
+  {
+    "id": 221,
+    "title": "2 Francos 1948",
+    "country": "Africa Occidental Francesa",
+    "metal": "Aluminio",
+    "year": 1948,
+    "price": "4 USD",
+    "images": [
+      "images/221A.jpeg",
+      "images/221B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "",
+    "mintage": "",
+    "reference": "KM# 4"
+  },
+  {
+    "id": 222,
+    "title": "20 Cents 1992",
+    "country": "Chipre",
+    "metal": "Latón de Níquel",
+    "year": 1992,
+    "price": "3 USD",
+    "images": [
+      "images/222A.jpeg",
+      "images/222B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "",
+    "mintage": "",
+    "reference": "KM# 62.2"
+  },
+  {
+    "id": 223,
+    "title": "Penny 1990",
+    "country": "Jersey",
+    "metal": "",
+    "year": 1990,
+    "price": "2,5 USD",
+    "images": [
+      "images/223A.jpeg",
+      "images/223B.jpeg"
+    ],
+    "grade": "",
+    "grade_short": "",
+    "description": "",
+    "mintage": "2000000",
+    "reference": "KM# 54"
+  },
+  {
+    "id": 224,
+    "title": "Franco 1946",
+    "country": "Bélgica",
+    "metal": "Zinc",
+    "year": 1946,
+    "price": "4 USD",
+    "images": [
+      "images/224A.jpeg",
+      "images/224B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "Segunda Guerra Mundial",
+    "mintage": "",
+    "reference": "KM# 128"
+  },
+  {
+    "id": 225,
+    "title": "Franco 1944",
+    "country": "Bélgica",
+    "metal": "Zinc",
+    "year": 1944,
+    "price": "4 USD",
+    "images": [
+      "images/225A.jpeg",
+      "images/225B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "Segunda Guerra Mundial",
+    "mintage": "",
+    "reference": "KM# 128"
+  },
+  {
+    "id": 226,
+    "title": "25 Cents 1942",
+    "country": "Bélgica",
+    "metal": "Zinc",
+    "year": 1942,
+    "price": "5 USD",
+    "images": [
+      "images/226A.jpeg",
+      "images/226B.jpeg"
+    ],
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "description": "Variante (BELGIQUE-BELGIE)\nSegunda Guerra Mundial",
+    "mintage": "",
+    "reference": "KM# 131"
+  },
+  {
+    "id": 227,
+    "title": "25 Cents 1943",
+    "country": "Bélgica",
+    "metal": "Zinc",
+    "year": 1943,
+    "price": "4 USD",
+    "images": [
+      "images/227A.jpeg",
+      "images/227B.jpeg"
+    ],
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "description": "Variante (BELGIE-BELGIQUE)\nSegunda Guerra Mundial",
+    "mintage": "",
+    "reference": "KM# 132"
+  },
+  {
+    "id": 228,
+    "title": "5 Paisa 1989",
+    "country": "Pakistán",
+    "metal": "Aluminio",
+    "year": 1989,
+    "price": "3,5 USD",
+    "images": [
+      "images/228A.jpeg",
+      "images/228B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "",
+    "mintage": "",
+    "reference": "KM# 52"
+  },
+  {
+    "id": 229,
+    "title": "10 Cents 1942",
+    "country": "Países Bajos",
+    "metal": "Zinc",
+    "year": 1942,
+    "price": "4 USD",
+    "images": [
+      "images/229A.jpeg",
+      "images/229B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "Segunda Guerra Mundial",
+    "mintage": "",
+    "reference": "KM# 174"
+  },
+  {
+    "id": 230,
+    "title": "2 Francos 1977",
+    "country": "Polinesia Francesa",
+    "metal": "Aluminio",
+    "year": 1977,
+    "price": "3,5 USD",
+    "images": [
+      "images/230A.jpeg",
+      "images/230B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "Escasa",
+    "mintage": "1000000",
+    "reference": "KM# 10"
+  },
+  {
+    "id": 231,
+    "title": "Ore 1942",
+    "country": "Noruega",
+    "metal": "Hierro",
+    "year": 1942,
+    "price": "4,5 USD",
+    "images": [
+      "images/231A.jpeg",
+      "images/231B.jpeg"
+    ],
+    "grade": "",
+    "grade_short": "",
+    "description": "Segunda Guerra Mundial",
+    "mintage": "",
+    "reference": "KM# 387"
+  },
+  {
+    "id": 232,
+    "title": "2 Cents 1982",
+    "country": "Swazilandia",
+    "metal": "Bronce",
+    "year": 1982,
+    "price": "5 USD",
+    "images": [
+      "images/232A.jpeg",
+      "images/232B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "Cuadrada",
+    "mintage": "500000",
+    "reference": "KM# 8"
+  },
+  {
+    "id": 233,
+    "title": "5 Bututs 1998",
+    "country": "Gambia",
+    "metal": "Bronce",
+    "year": 1998,
+    "price": "3 USD",
+    "images": [
+      "images/233A.jpeg",
+      "images/233B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "",
+    "mintage": "",
+    "reference": ""
+  },
+  {
+    "id": 234,
+    "title": "Cent 1991",
+    "country": "Malta",
+    "metal": "",
+    "year": 1991,
+    "price": "2,5 USD",
+    "images": [
+      "images/234A.jpeg",
+      "images/234B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "",
+    "mintage": "",
+    "reference": ""
+  },
+  {
+    "id": 235,
+    "title": "10 Att 1980",
+    "country": "Laos",
+    "metal": "Aluminio",
+    "year": 1980,
+    "price": "2,5 USD",
+    "images": [
+      "images/235A.jpeg",
+      "images/235B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "",
     "mintage": "",
     "reference": ""
   }
