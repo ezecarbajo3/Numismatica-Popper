@@ -15,6 +15,7 @@ const subFilterList      = document.getElementById('subFilterList');
 
 // ─── State ────────────────────────────────────────────────────────────────────
 let allCoins        = [];
+let groupMinPriceMap = new Map(); // group_id → { val: number, str: string }
 let activeCategory  = null;
 let activeSubFilter = null;
 let revealObserver  = null;
@@ -145,6 +146,47 @@ function isInvestment(coin) {
   const purity = getSilverPurity(coin);
   if (purity >= 900) return true;
   return /^[Pp]lata$/i.test((coin.metal || '').trim());
+}
+
+// ─── Group helpers ────────────────────────────────────────────────────────────
+
+function buildGroupMinPrices() {
+  groupMinPriceMap = new Map();
+  for (const coin of allCoins) {
+    if (!coin.group_id || coin.status === 'sold') continue;
+    const p = parsePriceUSD(coin.price);
+    const existing = groupMinPriceMap.get(coin.group_id);
+    if (!existing || p < existing.val) {
+      groupMinPriceMap.set(coin.group_id, { val: p, str: coin.price });
+    }
+  }
+}
+
+function collapseGroups(coins) {
+  // Find representative (prefer active, then lowest id) for each group_id
+  const repById = new Map();
+  for (const coin of coins) {
+    if (!coin.group_id) continue;
+    const ex = repById.get(coin.group_id);
+    if (!ex) { repById.set(coin.group_id, coin); continue; }
+    const exSold = ex.status === 'sold';
+    const cSold  = coin.status === 'sold';
+    if ((exSold && !cSold) || (exSold === cSold && coin.id < ex.id)) {
+      repById.set(coin.group_id, coin);
+    }
+  }
+  const seen = new Set();
+  return coins.filter(coin => {
+    if (!coin.group_id) return true;
+    if (repById.get(coin.group_id) !== coin) return false;
+    if (seen.has(coin.group_id)) return false;
+    seen.add(coin.group_id);
+    return true;
+  });
+}
+
+function getGroupMemberCount(groupId) {
+  return allCoins.filter(c => c.group_id === groupId && c.status !== 'sold').length;
 }
 
 const CATEGORY_PREDICATES = {
@@ -447,6 +489,7 @@ async function loadCoins() {
     if (!response.ok) throw new Error('No se pudo cargar coins.json');
     const data = await response.json();
     allCoins = Array.isArray(data) ? data : [];
+    buildGroupMinPrices();
     return true;
   } catch (error) {
     console.error(error);
@@ -611,7 +654,7 @@ function renderCoins(coins, skipAnimation = false) {
   const fragment = document.createDocumentFragment();
   const hasPointerFine = window.matchMedia('(pointer: fine)').matches;
 
-  sortCoins(coins).forEach((coin) => {
+  collapseGroups(sortCoins(coins)).forEach((coin) => {
     const card = coinCardTemplate.content.cloneNode(true);
 
     const article   = card.querySelector('.coin-card');
@@ -627,17 +670,31 @@ function renderCoins(coins, skipAnimation = false) {
 
     image.src = getPrimaryImage(coin);
     image.alt = coin.title || 'Moneda';
-    title.textContent   = coin.title || 'Sin título';
-    yearTag.textContent = coin.year  || '';
-    meta.textContent    = getCountryDisplayLabel(coin.country);
-    if (coin.original_price) {
-      price.innerHTML = `<span class="price-original">${coin.original_price}</span><span class="price-current">${coin.price}</span>`;
+
+    if (coin.group_id) {
+      title.textContent = coin.group_label || coin.title;
+      yearTag.textContent = '';
+      const minInfo = groupMinPriceMap.get(coin.group_id);
+      price.textContent = (minInfo && minInfo.val !== Infinity)
+        ? `desde ${minInfo.str}`
+        : (coin.price || 'Consultar');
+      const count = getGroupMemberCount(coin.group_id);
+      badgeRow.innerHTML = count > 1
+        ? `<span class="coin-grade-badge">${count} variantes</span>`
+        : '';
     } else {
-      price.textContent = coin.price || 'Consultar';
+      title.textContent   = coin.title || 'Sin título';
+      yearTag.textContent = coin.year  || '';
+      if (coin.original_price) {
+        price.innerHTML = `<span class="price-original">${coin.original_price}</span><span class="price-current">${coin.price}</span>`;
+      } else {
+        price.textContent = coin.price || 'Consultar';
+      }
+      const grade = getGradeShort(coin);
+      badgeRow.innerHTML = grade ? `<span class="coin-grade-badge">${grade}</span>` : '';
     }
 
-    const grade = getGradeShort(coin);
-    badgeRow.innerHTML = grade ? `<span class="coin-grade-badge">${grade}</span>` : '';
+    meta.textContent = getCountryDisplayLabel(coin.country);
 
     // ── Sold state ────────────────────────────────────────────────────────────
     if (coin.status === 'sold') {
@@ -744,7 +801,8 @@ function renderCoins(coins, skipAnimation = false) {
   });
 
   coinsGrid.appendChild(fragment);
-  resultsCount.textContent = `${coins.length} moneda${coins.length === 1 ? '' : 's'} encontrada${coins.length === 1 ? '' : 's'}`;
+  const displayCount = collapseGroups(coins).length;
+  resultsCount.textContent = `${displayCount} ${displayCount === 1 ? 'ítem encontrado' : 'ítems encontrados'}`;
 }
 
 // ─── Reveal animations ────────────────────────────────────────────────────────
