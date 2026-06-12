@@ -709,9 +709,11 @@ function renderCoins(coins, skipAnimation = false) {
       title.textContent = coin.group_label || coin.title;
       yearTag.textContent = '';
       const minInfo = groupMinPriceMap.get(coin.group_id);
-      price.textContent = (minInfo && minInfo.val !== Infinity)
-        ? `desde ${minInfo.str}`
-        : (coin.price || 'Consultar');
+      if (minInfo && minInfo.val !== Infinity) {
+        price.innerHTML = `desde<br>${minInfo.str}`;
+      } else {
+        price.textContent = coin.price || 'Consultar';
+      }
       const count = getGroupMemberCount(coin.group_id);
       badgeRow.innerHTML = count > 1
         ? `<span class="coin-grade-badge">${count} variantes</span>`
