@@ -1616,14 +1616,17 @@ body[data-view="catalog"] #catalog {
 }
 
 .landing-nav {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.65rem;
 }
 
 .landing-btn {
-  width: 100%;
-  padding: 1rem 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  padding: 0.75rem;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -1631,7 +1634,7 @@ body[data-view="catalog"] #catalog {
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1.2rem;
   font-weight: 500;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   letter-spacing: 0.02em;
   line-height: 1.3;
@@ -1650,20 +1653,22 @@ body[data-view="catalog"] #catalog {
 }
 
 .landing-btn--all {
-  margin-top: 0.25rem;
+  grid-column: 1 / -1;
+  order: -1;
+  aspect-ratio: auto;
+  padding: 1rem 1.4rem;
   font-size: 1.56rem;
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--muted);
-  font-weight: 600;
-  text-align: center;
+  background: #9b7420;
+  border-color: #9b7420;
+  color: #2a2a2a;
+  font-weight: 700;
 }
 
 .landing-btn--all:hover,
 .landing-btn--all:focus-visible {
-  background: #b8902f;
-  border-color: #b8902f;
-  color: var(--muted);
+  background: #7d5e18;
+  border-color: #7d5e18;
+  color: #2a2a2a;
 }
 
 @media (max-width: 480px) {
@@ -1674,8 +1679,13 @@ body[data-view="catalog"] #catalog {
   }
 
   .landing-btn {
-    font-size: 1.1rem;
-    padding: 0.9rem 1.1rem;
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .landing-btn--all {
+    font-size: 1.3rem;
+    padding: 0.9rem 1rem;
   }
 }
 
