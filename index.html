@@ -6,7 +6,7 @@
   <title>Numismática Popper</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-view="landing">
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="site-logo-link"><h1><span class="h1-numismatica">Numismática</span><span class="h1-popper">Popper</span></h1></a>
@@ -21,49 +21,69 @@
     </div>
   </div>
 
-  <div class="category-bar">
-    <nav class="category-nav container" aria-label="Categorías">
-      <button type="button" class="cat-btn" data-category="plata">Inversión</button>
-      <button type="button" class="cat-btn" data-category="argentina">Monedas<br class="cat-br">Argentinas</button>
-      <button type="button" class="cat-btn" data-category="internacional">Monedas<br class="cat-br">Mundo</button>
-      <button type="button" class="cat-btn" data-category="blisters">Blisters/<br>Lotes</button>
-      <button type="button" class="cat-btn" data-category="medallas">Medallas/<br class="cat-br">Tokens</button>
-      <button type="button" class="cat-btn" data-category="libros">Libros</button>
-    </nav>
-
-    <div class="sub-filter-bar" id="subFilterBar">
-      <div class="sub-filter-list container" id="subFilterList" role="group" aria-label="Sub-filtros"></div>
+  <!-- ─── Landing screen ──────────────────────────────────────────────────── -->
+  <section id="landing" class="landing-screen">
+    <div class="landing-inner">
+      <h2 class="landing-heading">¿Qué estás buscando?</h2>
+      <nav class="landing-nav" aria-label="Categorías principales">
+        <button type="button" class="landing-btn" data-landing-category="plata">Plata</button>
+        <button type="button" class="landing-btn" data-landing-category="argentina">Monedas Argentinas</button>
+        <button type="button" class="landing-btn" data-landing-category="internacional">Monedas del Mundo</button>
+        <button type="button" class="landing-btn" data-landing-category="blister_only">Blister</button>
+        <button type="button" class="landing-btn" data-landing-category="lotes">Lotes</button>
+        <button type="button" class="landing-btn" data-landing-category="economicas">Económicas &mdash; menos de U$S 5</button>
+        <button type="button" class="landing-btn" data-landing-category="exonumia">Exonumia / Libros</button>
+        <button type="button" class="landing-btn landing-btn--all" data-landing-category="todas">Ver todas las monedas</button>
+      </nav>
     </div>
-  </div>
+  </section>
 
-  <div class="search-outer">
-    <div class="search-wrap">
-      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <circle cx="11" cy="11" r="7"/><line x1="17" y1="17" x2="22" y2="22"/>
-      </svg>
-      <input
-        id="searchInput"
-        type="text"
-        placeholder="Buscar por título, país, año..."
-        autocomplete="off"
-        spellcheck="false"
-      />
-      <button type="button" id="clearSearch" class="search-clear" aria-label="Limpiar búsqueda">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+  <!-- ─── Catalog (hidden until landing button is clicked) ────────────────── -->
+  <div id="catalog">
+    <div class="category-bar">
+      <nav class="category-nav container" aria-label="Categorías">
+        <button type="button" class="cat-btn" data-category="plata">Inversión</button>
+        <button type="button" class="cat-btn" data-category="argentina">Monedas<br class="cat-br">Argentinas</button>
+        <button type="button" class="cat-btn" data-category="internacional">Monedas<br class="cat-br">Mundo</button>
+        <button type="button" class="cat-btn" data-category="blisters">Blisters/<br>Lotes</button>
+        <button type="button" class="cat-btn" data-category="medallas">Medallas/<br class="cat-br">Tokens</button>
+        <button type="button" class="cat-btn" data-category="libros">Libros</button>
+      </nav>
+
+      <div class="sub-filter-bar" id="subFilterBar">
+        <div class="sub-filter-list container" id="subFilterList" role="group" aria-label="Sub-filtros"></div>
+      </div>
+    </div>
+
+    <div class="search-outer">
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"/><line x1="17" y1="17" x2="22" y2="22"/>
         </svg>
-      </button>
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Buscar por título, país, año..."
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button type="button" id="clearSearch" class="search-clear" aria-label="Limpiar búsqueda">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <button type="button" id="resetFilters" class="reset-link">Limpiar filtros</button>
     </div>
-    <button type="button" id="resetFilters" class="reset-link">Limpiar filtros</button>
+
+    <main class="container">
+      <section class="results-bar reveal">
+        <p id="resultsCount">Cargando monedas...</p>
+      </section>
+
+      <section id="coinsGrid" class="coins-grid"></section>
+    </main>
   </div>
-
-  <main class="container">
-    <section class="results-bar reveal">
-      <p id="resultsCount">Cargando monedas...</p>
-    </section>
-
-    <section id="coinsGrid" class="coins-grid"></section>
-  </main>
 
   <template id="coinCardTemplate">
     <article class="coin-card reveal" tabindex="0" role="button">
