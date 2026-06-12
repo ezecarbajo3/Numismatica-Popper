@@ -1672,3 +1672,84 @@ body[data-view="catalog"] #catalog {
     padding: 0.9rem 1.1rem;
   }
 }
+
+/* ─── Variant switcher (detail page) ────────────────────────────────────── */
+
+.variants-section {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.variants-heading {
+  font-family: "Cinzel", serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+}
+
+.variants-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.variant-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.45rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 82px;
+}
+
+.variant-thumb img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.variant-thumb.is-active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.variant-thumb.is-sold {
+  opacity: 0.42;
+  filter: grayscale(0.75);
+  cursor: default;
+}
+
+.variant-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  width: 100%;
+}
+
+.variant-year {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1;
+}
+
+.variant-price {
+  font-size: 0.68rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 74px;
+  text-align: center;
+  line-height: 1.2;
+}
