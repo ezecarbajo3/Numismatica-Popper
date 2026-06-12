@@ -3731,5 +3731,215 @@
     "description": "",
     "mintage": "",
     "reference": "KM# 84"
+  },
+  {
+    "id": 249,
+    "title": "5 Fils 1974",
+    "country": "Emiratos Árabes Unidos",
+    "metal": "Bronce",
+    "year": 1974,
+    "price": "3 USD",
+    "images": [
+      "images/249A.jpeg",
+      "images/249B.jpeg"
+    ],
+    "reference": "KM# 2.1",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "description": ""
+  },
+  {
+    "id": 250,
+    "title": "1 Dirham 1973",
+    "country": "Emiratos Árabes Unidos",
+    "metal": "Cuproníquel",
+    "year": 1973,
+    "price": "3 USD",
+    "images": [
+      "images/250A.jpeg",
+      "images/250B.jpeg"
+    ],
+    "reference": "KM# 6.1",
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "mintage": "",
+    "description": ""
+  },
+  {
+    "id": 251,
+    "title": "1 Centavo 1974",
+    "country": "Colombia",
+    "metal": "Acero chapado en cobre",
+    "year": 1974,
+    "price": "3.5 USD",
+    "images": [
+      "images/251A.jpeg",
+      "images/251B.jpeg"
+    ],
+    "reference": "KM# 205a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "2.000.000",
+    "description": "Escasa."
+  },
+  {
+    "id": 252,
+    "title": "1 Centavo 1976",
+    "country": "Colombia",
+    "metal": "Acero chapado en cobre",
+    "year": 1976,
+    "price": "4 USD",
+    "images": [
+      "images/252A.jpeg",
+      "images/252B.jpeg"
+    ],
+    "reference": "KM# 205a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "1.000.000",
+    "description": "Escasa."
+  },
+  {
+    "id": 253,
+    "title": "5 Centavos 1978",
+    "country": "Colombia",
+    "metal": "Acero chapado en cobre",
+    "year": 1978,
+    "price": "3 USD",
+    "images": [
+      "images/253A.jpeg",
+      "images/253B.jpeg"
+    ],
+    "reference": "KM# 206a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "8.500.000",
+    "description": ""
+  },
+  {
+    "id": 254,
+    "title": "20 Centavos 1936",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1936,
+    "price": "6 USD",
+    "images": [
+      "images/254A.jpeg",
+      "images/254B.jpeg"
+    ],
+    "reference": "CJ# 83",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "855.101",
+    "description": "Escasa.",
+    "group_id": "ar-20centavos-1936",
+    "group_label": "20 Centavos 1936"
+  },
+  {
+    "id": 255,
+    "title": "1 Cent 1925",
+    "country": "Países Bajos",
+    "metal": "Bronce",
+    "year": 1925,
+    "price": "3.5 USD",
+    "images": [
+      "images/255A.jpeg",
+      "images/255B.jpeg"
+    ],
+    "reference": "KM# 152",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": "",
+    "description": "Guillermina I."
+  },
+  {
+    "id": 256,
+    "title": "10 Para 1910",
+    "country": "Imperio Otomano",
+    "metal": "Cuproníquel",
+    "year": 1910,
+    "price": "8 USD",
+    "images": [
+      "images/256A.jpeg",
+      "images/256B.jpeg"
+    ],
+    "reference": "KM# 760",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "2.576.000",
+    "description": "Escasa."
+  },
+  {
+    "id": 257,
+    "title": "50 Pfennig 1921",
+    "country": "Alemania",
+    "metal": "Aluminio",
+    "year": 1921,
+    "price": "3.5 USD",
+    "images": [
+      "images/257A.jpeg",
+      "images/257B.jpeg"
+    ],
+    "reference": "KM# 27",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "description": "Ceca J."
+  },
+  {
+    "id": 258,
+    "title": "50 Cents 1980",
+    "country": "Singapur",
+    "metal": "Cuproníquel",
+    "year": 1980,
+    "price": "2.5 USD",
+    "images": [
+      "images/258A.jpeg",
+      "images/258B.jpeg"
+    ],
+    "reference": "KM# 5",
+    "grade": "Excelente+",
+    "grade_short": "EX+",
+    "mintage": "",
+    "description": ""
+  },
+  {
+    "id": 259,
+    "title": "10 Milliemes 1973",
+    "country": "Egipto",
+    "metal": "Bronce-aluminio",
+    "year": 1973,
+    "price": "3.5 USD",
+    "images": [
+      "images/259A.jpeg",
+      "images/259B.jpeg"
+    ],
+    "reference": "KM# 435",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "description": "",
+    "group_id": "eg-10milliemes-1973",
+    "group_label": "10 Milliemes 1973"
+  },
+  {
+    "id": 260,
+    "title": "10 Milliemes 1973",
+    "country": "Egipto",
+    "metal": "Bronce-aluminio",
+    "year": 1973,
+    "price": "3 USD",
+    "images": [
+      "images/260A.jpeg",
+      "images/260B.jpeg"
+    ],
+    "reference": "KM# 435",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "description": "",
+    "group_id": "eg-10milliemes-1973",
+    "group_label": "10 Milliemes 1973"
   }
 ]
