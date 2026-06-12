@@ -52,8 +52,8 @@
     "grade_short": "R",
     "mintage": "",
     "description": "",
-    "group_id": "group_a_cj2",
-    "group_label": "2 Centavos (CJ# 2)"
+    "group_id": "ar-2centavos-1854-confed",
+    "group_label": "2 Centavos 1854"
   },
   {
     "id": 5,
@@ -71,8 +71,8 @@
     "grade_short": "R+",
     "mintage": "",
     "description": "",
-    "group_id": "group_a_cj2",
-    "group_label": "2 Centavos (CJ# 2)"
+    "group_id": "ar-2centavos-1854-confed",
+    "group_label": "2 Centavos 1854"
   },
   {
     "id": 6,
@@ -107,8 +107,8 @@
     "grade_short": "R+",
     "mintage": "",
     "description": "",
-    "group_id": "group_a_cj23",
-    "group_label": "2 Reales (CJ# 23)"
+    "group_id": "ar-2reales-1860-ba",
+    "group_label": "2 Reales 1860"
   },
   {
     "id": 8,
@@ -159,9 +159,7 @@
     "grade": "Bueno+",
     "grade_short": "B+",
     "mintage": "",
-    "description": "",
-    "group_id": "group_arg_2ctvs_1882_1896",
-    "group_label": "2 Centavos (1882-1896)"
+    "description": ""
   },
   {
     "id": 17,
@@ -178,9 +176,7 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
-    "description": "",
-    "group_id": "group_arg_2ctvs_1882_1896",
-    "group_label": "2 Centavos (1882-1896)"
+    "description": ""
   },
   {
     "id": 18,
@@ -197,9 +193,7 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "",
-    "description": "",
-    "group_id": "group_arg_2ctvs_1882_1896",
-    "group_label": "2 Centavos (1882-1896)"
+    "description": ""
   },
   {
     "id": 19,
@@ -216,9 +210,7 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "",
-    "description": "",
-    "group_id": "group_arg_2ctvs_1882_1896",
-    "group_label": "2 Centavos (1882-1896)"
+    "description": ""
   },
   {
     "id": 20,
@@ -386,8 +378,8 @@
     "grade_short": "R+",
     "mintage": "596.000",
     "description": "",
-    "group_id": "group_arg_2ctvs_1882_1896",
-    "group_label": "2 Centavos (1882-1896)"
+    "group_id": "ar-2centavos-1896",
+    "group_label": "2 Centavos 1896"
   },
   {
     "id": 34,
@@ -404,9 +396,7 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "341.873",
-    "description": "",
-    "group_id": "group_arg_20ctvs_1896_1942",
-    "group_label": "20 Centavos (1896-1942)"
+    "description": ""
   },
   {
     "id": 35,
@@ -423,9 +413,7 @@
     "grade": "Muy Bueno - detalles",
     "grade_short": "MB**",
     "mintage": "2.100.000",
-    "description": "",
-    "group_id": "group_arg_centavo_1882_1896",
-    "group_label": "Centavo (1882-1896)"
+    "description": ""
   },
   {
     "id": 36,
@@ -476,9 +464,7 @@
     "grade": "Regular",
     "grade_short": "R",
     "mintage": "1.300.000",
-    "description": "",
-    "group_id": "group_arg_centavo_1882_1896",
-    "group_label": "Centavo (1882-1896)"
+    "description": ""
   },
   {
     "id": 39,
@@ -495,9 +481,7 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "1.477.000",
-    "description": "La cuarta más difícil",
-    "group_id": "group_arg_5ctvs_1896_1942",
-    "group_label": "5 Centavos (1896-1942)"
+    "description": "La cuarta más difícil"
   },
   {
     "id": 40,
@@ -569,9 +553,7 @@
     "grade": "Bueno - detalles",
     "grade_short": "B**",
     "mintage": "443.700",
-    "description": "Contramarca de la época",
-    "group_id": "group_arg_centavo_1882_1896",
-    "group_label": "Centavo (1882-1896)"
+    "description": "Contramarca de la época"
   },
   {
     "id": 44,
@@ -589,8 +571,8 @@
     "grade_short": "B+",
     "mintage": "719.128",
     "description": "",
-    "group_id": "group_arg_20ctvs_1896_1942",
-    "group_label": "20 Centavos (1896-1942)"
+    "group_id": "ar-20centavos-1908",
+    "group_label": "20 Centavos 1908"
   },
   {
     "id": 45,
@@ -608,8 +590,8 @@
     "grade_short": "B+",
     "mintage": "719.128",
     "description": "",
-    "group_id": "group_arg_20ctvs_1896_1942",
-    "group_label": "20 Centavos (1896-1942)"
+    "group_id": "ar-20centavos-1908",
+    "group_label": "20 Centavos 1908"
   },
   {
     "id": 46,
@@ -664,9 +646,7 @@
     "grade": "Muy Bueno-",
     "grade_short": "MB-",
     "mintage": "1.310.000",
-    "description": "",
-    "group_id": "group_arg_5ctvs_1896_1942",
-    "group_label": "5 Centavos (1896-1942)"
+    "description": ""
   },
   {
     "id": 50,
@@ -684,8 +664,8 @@
     "grade_short": "R+",
     "mintage": "423.300",
     "description": "",
-    "group_id": "group_arg_centavo_1882_1896",
-    "group_label": "Centavo (1882-1896)"
+    "group_id": "ar-centavo-1895",
+    "group_label": "Centavo 1895"
   },
   {
     "id": 51,
@@ -703,8 +683,8 @@
     "grade_short": "R+",
     "mintage": "423.300",
     "description": "",
-    "group_id": "group_arg_centavo_1882_1896",
-    "group_label": "Centavo (1882-1896)"
+    "group_id": "ar-centavo-1895",
+    "group_label": "Centavo 1895"
   },
   {
     "id": 53,
@@ -1333,9 +1313,7 @@
     "grade": "Regular+",
     "grade_short": "R+",
     "mintage": "",
-    "description": "",
-    "group_id": "group_arg_2ctvs_1882_1896",
-    "group_label": "2 Centavos (1882-1896)"
+    "description": ""
   },
   {
     "id": 101,
@@ -1352,9 +1330,7 @@
     "grade": "N/A",
     "grade_short": "-",
     "mintage": "592.000",
-    "description": "",
-    "group_id": "group_arg_2ctvs_1882_1896",
-    "group_label": "2 Centavos (1882-1896)"
+    "description": ""
   },
   {
     "id": 102,
@@ -1372,8 +1348,8 @@
     "grade_short": "R+",
     "mintage": "596.000",
     "description": "",
-    "group_id": "group_arg_2ctvs_1882_1896",
-    "group_label": "2 Centavos (1882-1896)"
+    "group_id": "ar-2centavos-1896",
+    "group_label": "2 Centavos 1896"
   },
   {
     "id": 103,
@@ -1390,9 +1366,7 @@
     "grade": "Muy Bueno-",
     "grade_short": "MB-",
     "mintage": "1.692.977",
-    "description": "",
-    "group_id": "group_arg_5ctvs_1896_1942",
-    "group_label": "5 Centavos (1896-1942)"
+    "description": ""
   },
   {
     "id": 104,
@@ -1409,9 +1383,7 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "1.288.265",
-    "description": "",
-    "group_id": "group_arg_5ctvs_1896_1942",
-    "group_label": "5 Centavos (1896-1942)"
+    "description": ""
   },
   {
     "id": 105,
@@ -1429,8 +1401,8 @@
     "grade_short": "R",
     "mintage": "840.108",
     "description": "",
-    "group_id": "group_arg_20ctvs_1896_1942",
-    "group_label": "20 Centavos (1896-1942)"
+    "group_id": "ar-20centavos-1899",
+    "group_label": "20 Centavos 1899"
   },
   {
     "id": 107,
@@ -1448,8 +1420,8 @@
     "grade_short": "B+",
     "mintage": "840.108",
     "description": "",
-    "group_id": "group_arg_20ctvs_1896_1942",
-    "group_label": "20 Centavos (1896-1942)"
+    "group_id": "ar-20centavos-1899",
+    "group_label": "20 Centavos 1899"
   },
   {
     "id": 108,
@@ -1467,8 +1439,8 @@
     "grade_short": "MB",
     "mintage": "719.128",
     "description": "",
-    "group_id": "group_arg_20ctvs_1896_1942",
-    "group_label": "20 Centavos (1896-1942)"
+    "group_id": "ar-20centavos-1908",
+    "group_label": "20 Centavos 1908"
   },
   {
     "id": 109,
@@ -1486,8 +1458,8 @@
     "grade_short": "MB+",
     "mintage": "719.128",
     "description": "",
-    "group_id": "group_arg_20ctvs_1896_1942",
-    "group_label": "20 Centavos (1896-1942)"
+    "group_id": "ar-20centavos-1908",
+    "group_label": "20 Centavos 1908"
   },
   {
     "id": 110,
@@ -1505,8 +1477,8 @@
     "grade_short": "EX",
     "mintage": "719.128",
     "description": "",
-    "group_id": "group_arg_20ctvs_1896_1942",
-    "group_label": "20 Centavos (1896-1942)"
+    "group_id": "ar-20centavos-1908",
+    "group_label": "20 Centavos 1908"
   },
   {
     "id": 111,
@@ -1524,8 +1496,8 @@
     "grade_short": "EX-",
     "mintage": "855.101",
     "description": "",
-    "group_id": "group_arg_20ctvs_1896_1942",
-    "group_label": "20 Centavos (1896-1942)"
+    "group_id": "ar-20centavos-1936",
+    "group_label": "20 Centavos 1936"
   },
   {
     "id": 112,
@@ -1543,8 +1515,8 @@
     "grade_short": "MB",
     "mintage": "855.101",
     "description": "",
-    "group_id": "group_arg_20ctvs_1896_1942",
-    "group_label": "20 Centavos (1896-1942)"
+    "group_id": "ar-20centavos-1936",
+    "group_label": "20 Centavos 1936"
   },
   {
     "id": 113,
@@ -1579,8 +1551,8 @@
     "grade_short": "MB+",
     "mintage": "903.070",
     "description": "",
-    "group_id": "group_a_cj185",
-    "group_label": "2 Centavos (CJ# 185)"
+    "group_id": "ar-2centavos-1950",
+    "group_label": "2 Centavos 1950"
   },
   {
     "id": 115,
@@ -1598,8 +1570,8 @@
     "grade_short": "MB",
     "mintage": "903.070",
     "description": "",
-    "group_id": "group_a_cj185",
-    "group_label": "2 Centavos (CJ# 185)"
+    "group_id": "ar-2centavos-1950",
+    "group_label": "2 Centavos 1950"
   },
   {
     "id": 116,
@@ -2011,8 +1983,8 @@
     "grade_short": "B",
     "mintage": "596.000",
     "description": "Escasa.",
-    "group_id": "group_arg_2ctvs_1882_1896",
-    "group_label": "2 Centavos (1882-1896)"
+    "group_id": "ar-2centavos-1896",
+    "group_label": "2 Centavos 1896"
   },
   {
     "id": 147,
@@ -2030,8 +2002,8 @@
     "grade_short": "MB-",
     "mintage": "",
     "description": "",
-    "group_id": "group_a_cj23",
-    "group_label": "2 Reales (CJ# 23)"
+    "group_id": "ar-2reales-1860-ba",
+    "group_label": "2 Reales 1860"
   },
   {
     "id": 148,
@@ -2553,8 +2525,8 @@
     "grade_short": "MB+",
     "mintage": "596.000",
     "description": "596k acuñadas.",
-    "group_id": "group_arg_2ctvs_1882_1896",
-    "group_label": "2 Centavos (1882-1896)"
+    "group_id": "ar-2centavos-1896",
+    "group_label": "2 Centavos 1896"
   },
   {
     "id": 179,
