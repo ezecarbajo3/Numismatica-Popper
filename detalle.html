@@ -7,6 +7,26 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header site-header--compact">
+    <div class="container">
+      <a href="index.html" class="site-logo-link">
+        <svg class="np-monogram np-monogram--small" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="np-gold-det" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#efd9a2"/>
+              <stop offset="48%" stop-color="#cfac6b"/>
+              <stop offset="100%" stop-color="#a8844a"/>
+            </linearGradient>
+          </defs>
+          <circle cx="40" cy="40" r="37" fill="none" stroke="url(#np-gold-det)" stroke-width="1.2"/>
+          <circle cx="40" cy="40" r="31" fill="none" stroke="url(#np-gold-det)" stroke-width="0.5" stroke-dasharray="2.5 3.5" opacity="0.6"/>
+          <text x="40" y="48" text-anchor="middle" fill="url(#np-gold-det)" font-family="Cinzel, Georgia, serif" font-size="24" font-weight="600" letter-spacing="3">NP</text>
+        </svg>
+        <h1><span class="h1-numismatica">Numismática</span><span class="h1-popper">Popper</span></h1>
+      </a>
+    </div>
+  </header>
+
   <main class="container detail-page">
     <a href="index.html" class="back-link reveal">← Volver</a>
 
@@ -16,5 +36,24 @@
   </main>
 
   <script src="detalle.js"></script>
+
+  <footer class="site-footer" aria-label="Pie de página">
+    <div class="footer-inner">
+      <svg class="np-monogram np-monogram--small" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="np-gold-det-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#efd9a2"/>
+            <stop offset="48%" stop-color="#cfac6b"/>
+            <stop offset="100%" stop-color="#a8844a"/>
+          </linearGradient>
+        </defs>
+        <circle cx="40" cy="40" r="37" fill="none" stroke="url(#np-gold-det-footer)" stroke-width="1.2"/>
+        <circle cx="40" cy="40" r="31" fill="none" stroke="url(#np-gold-det-footer)" stroke-width="0.5" stroke-dasharray="2.5 3.5" opacity="0.6"/>
+        <text x="40" y="48" text-anchor="middle" fill="url(#np-gold-det-footer)" font-family="Cinzel, Georgia, serif" font-size="24" font-weight="600" letter-spacing="3">NP</text>
+      </svg>
+      <p class="footer-est">Est. MMXX</p>
+      <p class="footer-tagline">Monedas de Colección e Inversión</p>
+    </div>
+  </footer>
 </body>
 </html>
