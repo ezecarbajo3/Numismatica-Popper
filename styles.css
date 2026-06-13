@@ -1620,6 +1620,34 @@ button {
   .sub-filter-purity-label {
     font-size: 0.68rem;
   }
+
+  /* ── 1. Título principal −30% en desktop ── */
+  .site-header h1 {
+    font-size: clamp(2.08rem, 4.62vw, 4rem); /* clamp original × 0.70 */
+  }
+
+  /* ── 2 & 3. Landing: 6 recuadros en una sola fila ── */
+  .landing-inner {
+    width: min(100%, 1140px); /* expandir contenedor para ocupar el ancho */
+  }
+
+  .landing-nav {
+    grid-template-columns: repeat(6, 1fr); /* una fila de 6 columnas */
+    gap: 1rem;
+  }
+
+  /* "Ver todas" ya tiene grid-column:1/-1 → ocupa los 6 slots */
+
+  /* ── 2. Font-size +50% en los 6 recuadros de categoría ── */
+  .landing-btn:not(.landing-btn--all) {
+    font-size: 1.425rem; /* 0.95rem × 1.50 */
+    aspect-ratio: auto;  /* sin ratio forzado → altura definida por contenido */
+    min-height: 7rem;    /* altura mínima elegante para todos los recuadros */
+    padding: 1.25rem 0.75rem;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
