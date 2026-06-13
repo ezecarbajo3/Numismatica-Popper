@@ -3,6 +3,10 @@ if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
 
+// ─── SVG constants ────────────────────────────────────────────────────────────
+const SVG_CHEVRON_LEFT  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>`;
+const SVG_CHEVRON_RIGHT = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>`;
+
 // ─── DOM refs ─────────────────────────────────────────────────────────────────
 const searchInput        = document.getElementById('searchInput');
 const clearSearchBtn     = document.getElementById('clearSearch');
@@ -687,8 +691,9 @@ function renderCoins(coins, skipAnimation = false) {
 
   const fragment = document.createDocumentFragment();
   const hasPointerFine = window.matchMedia('(pointer: fine)').matches;
+  const displayCoins = collapseGroups(sortCoins(coins));
 
-  collapseGroups(sortCoins(coins)).forEach((coin) => {
+  displayCoins.forEach((coin, idx) => {
     const card = coinCardTemplate.content.cloneNode(true);
 
     const article   = card.querySelector('.coin-card');
@@ -701,6 +706,15 @@ function renderCoins(coins, skipAnimation = false) {
     const price     = card.querySelector('.coin-price');
 
     if (skipAnimation) article.classList.remove('reveal');
+
+    // First 10 cards: eager + high priority (covers viewport on any screen size).
+    // The rest: lazy — user must scroll to reach them.
+    if (idx < 10) {
+      image.loading = 'eager';
+      image.fetchPriority = 'high';
+    } else {
+      image.loading = 'lazy';
+    }
 
     image.src = getPrimaryImage(coin);
     image.alt = coin.title || 'Moneda';
@@ -748,10 +762,8 @@ function renderCoins(coins, skipAnimation = false) {
     // ── Inline image carousel ─────────────────────────────────────────────────
     const images = Array.isArray(coin.images) ? coin.images : [];
     if (images.length > 1) {
-      // Preload every carousel image so switching is instant (no network delay on first click)
-      images.forEach((src, i) => { if (i > 0) { const p = new Image(); p.src = src; } });
-
       let currentIdx = 0;
+      let carouselPreloaded = false;
 
       const setIdx = (newIdx) => {
         currentIdx = ((newIdx % images.length) + images.length) % images.length;
@@ -761,17 +773,25 @@ function renderCoins(coins, skipAnimation = false) {
         );
       };
 
+      // Preload secondary images only on first hover/touch — avoids ~100 eager
+      // network requests at render time for off-screen cards.
+      const preloadCarousel = () => {
+        if (carouselPreloaded) return;
+        carouselPreloaded = true;
+        images.forEach((src, i) => { if (i > 0) { const p = new Image(); p.src = src; } });
+      };
+
       const prevBtn = document.createElement('button');
       prevBtn.type = 'button';
       prevBtn.className = 'card-arrow card-arrow--prev';
       prevBtn.setAttribute('aria-label', 'Imagen anterior');
-      prevBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>`;
+      prevBtn.innerHTML = SVG_CHEVRON_LEFT;
 
       const nextBtn = document.createElement('button');
       nextBtn.type = 'button';
       nextBtn.className = 'card-arrow card-arrow--next';
       nextBtn.setAttribute('aria-label', 'Imagen siguiente');
-      nextBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>`;
+      nextBtn.innerHTML = SVG_CHEVRON_RIGHT;
 
       const dotsWrap = document.createElement('div');
       dotsWrap.className = 'card-dots';
@@ -787,9 +807,12 @@ function renderCoins(coins, skipAnimation = false) {
       imageWrap.appendChild(nextBtn);
       imageWrap.appendChild(dotsWrap);
 
+      article.addEventListener('mouseenter', preloadCarousel);
+
       // Touch swipe (mobile) — swipe left → next, swipe right → prev
       let touchStartX = 0;
       imageWrap.addEventListener('touchstart', (e) => {
+        preloadCarousel();
         touchStartX = e.changedTouches[0].clientX;
       }, { passive: true });
       imageWrap.addEventListener('touchend', (e) => {
@@ -837,7 +860,7 @@ function renderCoins(coins, skipAnimation = false) {
   });
 
   coinsGrid.appendChild(fragment);
-  const displayCount = collapseGroups(coins).length;
+  const displayCount = displayCoins.length;
   resultsCount.textContent = `${displayCount} ${displayCount === 1 ? 'ítem encontrado' : 'ítems encontrados'}`;
 }
 
