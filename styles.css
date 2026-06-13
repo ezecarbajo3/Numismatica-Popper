@@ -1567,9 +1567,42 @@ button {
     font-size: clamp(1.62rem, 6.8vw, 2.04rem);
   }
 
-  /* ── Item 3: +20% font-size en los 6 recuadros de categorías ── */
+  /* ── Item 3: +20% font-size + fix layout 2 columnas ── */
+
+  /* 1. Sin scroll horizontal en toda la página */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  /* 2. Grid 2 columnas → 3 filas de 2 recuadros */
+  .landing-nav {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+
+  /* 3. Botones: box-sizing, texto fluido, sin aspect-ratio forzado */
+  .landing-btn {
+    aspect-ratio: auto;
+    min-height: 5.5rem;
+    padding: 1rem 0.65rem;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  /* 4. Font-size +20% solo en los 6 recuadros de categoría */
   .landing-btn:not(.landing-btn--all) {
     font-size: 1.14rem; /* 0.95rem × 1.20 */
+  }
+
+  /* 5. "Ver todas" sigue en fila completa, sin cambiar su altura */
+  .landing-btn--all {
+    min-height: auto;
+    padding: 1rem 1.4rem;
+    aspect-ratio: auto;
   }
 }
 
