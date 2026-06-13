@@ -845,7 +845,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
-    "description": "Che Guevara"
+    "description": "Che Guevara",
+    "status": "sold",
+    "soldAt": "2026-06-13T00:00:00.000Z"
   },
   {
     "id": 65,
@@ -2801,7 +2803,9 @@
     "grade": "Excelente Menos",
     "grade_short": "EX-",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-13T00:00:00.000Z"
   },
   {
     "id": 196,
@@ -2892,7 +2896,9 @@
     "grade": "Muy Bueno detalles",
     "grade_short": "MB**",
     "description": "",
-    "mintage": ""
+    "mintage": "",
+    "status": "sold",
+    "soldAt": "2026-06-13T00:00:00.000Z"
   },
   {
     "id": 201,
@@ -3435,7 +3441,9 @@
     "grade_short": "",
     "description": "Segunda Guerra Mundial",
     "mintage": "",
-    "reference": "KM# 387"
+    "reference": "KM# 387",
+    "status": "sold",
+    "soldAt": "2026-06-13T00:00:00.000Z"
   },
   {
     "id": 232,
