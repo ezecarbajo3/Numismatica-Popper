@@ -281,8 +281,8 @@
     "grade_short": "-",
     "mintage": "",
     "description": "Indian Head.",
-    "group_id": "group_b_indian_cent",
-    "group_label": "Indian Head Cent"
+    "group_id": "us-cent-km90",
+    "group_label": "Cent"
   },
   {
     "id": 29,
@@ -301,8 +301,8 @@
     "mintage": "",
     "description": "Indian Head.",
     "original_price": "45 USD",
-    "group_id": "group_b_indian_cent",
-    "group_label": "Indian Head Cent"
+    "group_id": "us-cent-km90",
+    "group_label": "Cent"
   },
   {
     "id": 30,
@@ -320,8 +320,8 @@
     "grade_short": "-",
     "mintage": "",
     "description": "Indian Head.",
-    "group_id": "group_b_indian_cent",
-    "group_label": "Indian Head Cent"
+    "group_id": "us-cent-km90",
+    "group_label": "Cent"
   },
   {
     "id": 31,
@@ -359,8 +359,8 @@
     "mintage": "",
     "description": "Indian Head.",
     "original_price": "22 USD",
-    "group_id": "group_b_indian_cent",
-    "group_label": "Indian Head Cent"
+    "group_id": "us-cent-km90",
+    "group_label": "Cent"
   },
   {
     "id": 33,
@@ -1025,9 +1025,7 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "120.000",
-    "description": "Año único.",
-    "group_id": "group_b_5centes_uy",
-    "group_label": "5 Centésimos Uruguay (1854-1857)"
+    "description": "Año único."
   },
   {
     "id": 77,
@@ -1044,9 +1042,7 @@
     "grade": "Bueno -",
     "grade_short": "B-",
     "mintage": "570.000",
-    "description": "Año único.",
-    "group_id": "group_b_5centes_uy",
-    "group_label": "5 Centésimos Uruguay (1854-1857)"
+    "description": "Año único."
   },
   {
     "id": 78,
@@ -1893,9 +1889,7 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "",
-    "description": "Agujero centrado.",
-    "group_id": "group_b_10ctvs_bolivia",
-    "group_label": "10 Centavos Bolivia (1883-1892)"
+    "description": "Agujero centrado."
   },
   {
     "id": 140,
@@ -2071,9 +2065,7 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "1.000.000",
-    "description": "Agujero centrado.",
-    "group_id": "group_b_10ctvs_bolivia",
-    "group_label": "10 Centavos Bolivia (1883-1892)"
+    "description": "Agujero centrado."
   },
   {
     "id": 152,
@@ -2255,7 +2247,9 @@
     "grade": "Excelente -",
     "grade_short": "E-",
     "mintage": "1.000.000",
-    "description": ""
+    "description": "",
+    "group_id": "ch-10rappen-km27",
+    "group_label": "10 Rappen"
   },
   {
     "id": 165,
@@ -2361,9 +2355,7 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
-    "description": "",
-    "group_id": "group_b_janson",
-    "group_label": "Catálogo Carlos Janson"
+    "description": ""
   },
   {
     "id": 171,
@@ -2379,9 +2371,7 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
-    "description": "",
-    "group_id": "group_b_janson",
-    "group_label": "Catálogo Carlos Janson"
+    "description": ""
   },
   {
     "id": 172,
@@ -2397,9 +2387,7 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
-    "description": "",
-    "group_id": "group_b_janson",
-    "group_label": "Catálogo Carlos Janson"
+    "description": ""
   },
   {
     "id": 173,
@@ -2559,9 +2547,7 @@
     "grade_short": "",
     "mintage": "",
     "description": "Indian Head.",
-    "original_price": "15 USD",
-    "group_id": "group_b_indian_cent",
-    "group_label": "Indian Head Cent"
+    "original_price": "15 USD"
   },
   {
     "id": 182,
@@ -2743,7 +2729,9 @@
     "grade": "Muy Buena Más",
     "grade_short": "MB+",
     "mintage": "",
-    "description": "Segunda Guerra Mundial"
+    "description": "Segunda Guerra Mundial",
+    "group_id": "be-25cents-km132",
+    "group_label": "25 Cents 1943"
   },
   {
     "id": 192,
@@ -3322,7 +3310,9 @@
     "grade_short": "MB",
     "description": "Segunda Guerra Mundial",
     "mintage": "",
-    "reference": "KM# 128"
+    "reference": "KM# 128",
+    "group_id": "be-franco-km128",
+    "group_label": "Franco"
   },
   {
     "id": 225,
@@ -3339,7 +3329,9 @@
     "grade_short": "MB",
     "description": "Segunda Guerra Mundial",
     "mintage": "",
-    "reference": "KM# 128"
+    "reference": "KM# 128",
+    "group_id": "be-franco-km128",
+    "group_label": "Franco"
   },
   {
     "id": 226,
@@ -3373,7 +3365,9 @@
     "grade_short": "EX-",
     "description": "Variante (BELGIE-BELGIQUE)\nSegunda Guerra Mundial",
     "mintage": "",
-    "reference": "KM# 132"
+    "reference": "KM# 132",
+    "group_id": "be-25cents-km132",
+    "group_label": "25 Cents 1943"
   },
   {
     "id": 228,
@@ -3781,7 +3775,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "2.000.000",
-    "description": "Escasa."
+    "description": "Escasa.",
+    "group_id": "co-1centavo-km205a",
+    "group_label": "1 Centavo"
   },
   {
     "id": 252,
@@ -3798,7 +3794,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "1.000.000",
-    "description": "Escasa."
+    "description": "Escasa.",
+    "group_id": "co-1centavo-km205a",
+    "group_label": "1 Centavo"
   },
   {
     "id": 253,
@@ -3957,7 +3955,9 @@
     "grade": "Excelente+",
     "grade_short": "EX+",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "ch-10rappen-km27",
+    "group_label": "10 Rappen"
   },
   {
     "id": 262,
@@ -3974,7 +3974,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "2.000.000",
-    "description": ""
+    "description": "",
+    "group_id": "ch-10rappen-km27",
+    "group_label": "10 Rappen"
   },
   {
     "id": 263,
@@ -3991,7 +3993,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "3.000.000",
-    "description": ""
+    "description": "",
+    "group_id": "ch-10rappen-km27",
+    "group_label": "10 Rappen"
   },
   {
     "id": 264,
@@ -4008,7 +4012,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "1.000.000",
-    "description": ""
+    "description": "",
+    "group_id": "ch-10rappen-km27",
+    "group_label": "10 Rappen"
   },
   {
     "id": 265,
@@ -4025,7 +4031,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "2.500.000",
-    "description": ""
+    "description": "",
+    "group_id": "ch-20rappen-km29",
+    "group_label": "20 Rappen"
   },
   {
     "id": 266,
@@ -4042,7 +4050,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "3.000.000",
-    "description": ""
+    "description": "",
+    "group_id": "ch-20rappen-km29",
+    "group_label": "20 Rappen"
   },
   {
     "id": 267,
@@ -4059,7 +4069,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "3.100.000",
-    "description": ""
+    "description": "",
+    "group_id": "ch-20rappen-km29",
+    "group_label": "20 Rappen"
   },
   {
     "id": 268,
@@ -4076,7 +4088,9 @@
     "grade": "Excelente-",
     "grade_short": "EX-",
     "mintage": "1.000.000",
-    "description": ""
+    "description": "",
+    "group_id": "ch-20rappen-km29",
+    "group_label": "20 Rappen"
   },
   {
     "id": 269,
