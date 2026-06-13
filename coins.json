@@ -3941,5 +3941,226 @@
     "description": "",
     "group_id": "eg-10milliemes-1973",
     "group_label": "10 Milliemes 1973"
+  },
+  {
+    "id": 261,
+    "title": "10 Rappen 1967",
+    "country": "Suiza",
+    "metal": "Cuproníquel",
+    "year": 1967,
+    "price": "2 USD",
+    "images": [
+      "images/261A.jpeg",
+      "images/261B.jpeg"
+    ],
+    "reference": "KM# 27",
+    "grade": "Excelente+",
+    "grade_short": "EX+",
+    "mintage": "",
+    "description": ""
+  },
+  {
+    "id": 262,
+    "title": "10 Rappen 1883",
+    "country": "Suiza",
+    "metal": "Cuproníquel",
+    "year": 1883,
+    "price": "6 USD",
+    "images": [
+      "images/262A.jpeg",
+      "images/262B.jpeg"
+    ],
+    "reference": "KM# 27",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": "2.000.000",
+    "description": ""
+  },
+  {
+    "id": 263,
+    "title": "10 Rappen 1884",
+    "country": "Suiza",
+    "metal": "Cuproníquel",
+    "year": 1884,
+    "price": "5 USD",
+    "images": [
+      "images/263A.jpeg",
+      "images/263B.jpeg"
+    ],
+    "reference": "KM# 27",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": "3.000.000",
+    "description": ""
+  },
+  {
+    "id": 264,
+    "title": "10 Rappen 1901",
+    "country": "Suiza",
+    "metal": "Cuproníquel",
+    "year": 1901,
+    "price": "6 USD",
+    "images": [
+      "images/264A.jpeg",
+      "images/264B.jpeg"
+    ],
+    "reference": "KM# 27",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": "1.000.000",
+    "description": ""
+  },
+  {
+    "id": 265,
+    "title": "20 Rappen 1883",
+    "country": "Suiza",
+    "metal": "Cuproníquel",
+    "year": 1883,
+    "price": "15 USD",
+    "images": [
+      "images/265A.jpeg",
+      "images/265B.jpeg"
+    ],
+    "reference": "KM# 29",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "2.500.000",
+    "description": ""
+  },
+  {
+    "id": 266,
+    "title": "20 Rappen 1885",
+    "country": "Suiza",
+    "metal": "Cuproníquel",
+    "year": 1885,
+    "price": "8 USD",
+    "images": [
+      "images/266A.jpeg",
+      "images/266B.jpeg"
+    ],
+    "reference": "KM# 29",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "3.000.000",
+    "description": ""
+  },
+  {
+    "id": 267,
+    "title": "20 Rappen 1920",
+    "country": "Suiza",
+    "metal": "Cuproníquel",
+    "year": 1920,
+    "price": "2.5 USD",
+    "images": [
+      "images/267A.jpeg",
+      "images/267B.jpeg"
+    ],
+    "reference": "KM# 29",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "3.100.000",
+    "description": ""
+  },
+  {
+    "id": 268,
+    "title": "20 Rappen 1896",
+    "country": "Suiza",
+    "metal": "Cuproníquel",
+    "year": 1896,
+    "price": "8 USD",
+    "images": [
+      "images/268A.jpeg",
+      "images/268B.jpeg"
+    ],
+    "reference": "KM# 29",
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "mintage": "1.000.000",
+    "description": ""
+  },
+  {
+    "id": 269,
+    "title": "5 Rappen 1889",
+    "country": "Suiza",
+    "metal": "Cobre",
+    "year": 1889,
+    "price": "35 USD",
+    "images": [
+      "images/269A.jpeg",
+      "images/269B.jpeg"
+    ],
+    "reference": "KM# 26",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": "500.000",
+    "description": "Muy escasa."
+  },
+  {
+    "id": 270,
+    "title": "10 Centavos 1921",
+    "country": "Perú",
+    "metal": "Cuproníquel",
+    "year": 1921,
+    "price": "2 USD",
+    "images": [
+      "images/270A.jpeg",
+      "images/270B.jpeg"
+    ],
+    "reference": "KM# 214.1",
+    "grade": "Bueno-",
+    "grade_short": "B-",
+    "mintage": "6.900.000",
+    "description": ""
+  },
+  {
+    "id": 271,
+    "title": "10 Centavos 1940",
+    "country": "Perú",
+    "metal": "Cuproníquel",
+    "year": 1940,
+    "price": "3 USD",
+    "images": [
+      "images/271A.jpeg",
+      "images/271B.jpeg"
+    ],
+    "reference": "KM# 214.2",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "2.000.000",
+    "description": ""
+  },
+  {
+    "id": 272,
+    "title": "1 Kuruş 2022",
+    "country": "Turquía",
+    "metal": "Aluminio",
+    "year": 2022,
+    "price": "3.5 USD",
+    "images": [
+      "images/272A.jpeg",
+      "images/272B.jpeg"
+    ],
+    "reference": "KM# 1542",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "description": ""
+  },
+  {
+    "id": 273,
+    "title": "10 Krónur 1980",
+    "country": "Islandia",
+    "metal": "Cuproníquel",
+    "year": 1980,
+    "price": "3 USD",
+    "images": [
+      "images/273A.jpeg",
+      "images/273B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "description": ""
   }
 ]
