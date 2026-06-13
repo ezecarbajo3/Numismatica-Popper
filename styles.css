@@ -1648,6 +1648,27 @@ button {
     overflow-wrap: break-word;
     word-break: break-word;
   }
+
+  /* ── 3a. "¿Qué estás buscando?" +20% ── */
+  .landing-heading {
+    font-size: 0.936rem; /* 0.78rem × 1.20 */
+  }
+
+  /* ── 3b. Ticker: contenedor +10% y fuente +10% ── */
+  .ticker-bar {
+    padding: 9.9px 0; /* 9px × 1.10 */
+  }
+
+  .ticker-text {
+    font-size: 0.792rem; /* 0.72rem × 1.10 */
+  }
+
+  /* ── 3c. Reducir espacio vertical entre ticker y heading ── */
+  .landing-screen {
+    align-items: flex-start; /* contenido arriba, sin centrado vertical */
+    padding-top: 1.25rem;    /* mucho menos que el 2rem por defecto */
+    min-height: auto;        /* quitar el alto mínimo que generaba el gap */
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
