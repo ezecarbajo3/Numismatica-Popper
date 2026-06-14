@@ -1612,7 +1612,7 @@ button {
 
 @media (min-width: 981px) {
   .cat-btn {
-    font-size: 0.76rem;
+    font-size: 0.874rem; /* 0.76rem × 1.15 */
     white-space: nowrap;
   }
 
