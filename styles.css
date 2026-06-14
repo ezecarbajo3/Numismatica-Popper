@@ -447,6 +447,52 @@ input,
   color: #1a1000;
 }
 
+/* ─── Toggle "Ver monedas económicas" button ─────────────────────────────── */
+
+.toggle-economicas-btn {
+  display: none; /* hidden on mobile by default */
+}
+
+@media (min-width: 981px) {
+  .toggle-economicas-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1.4 0 0%;
+    min-width: 0;
+    white-space: nowrap;
+    padding: 13px 14px;
+    background: #9b7420;
+    border: 1px solid #9b7420;
+    border-radius: 999px;
+    color: #2a2a2a;
+    font-family: "Cinzel", serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.22s ease, border-color 0.22s ease, color 0.22s ease, box-shadow 0.22s ease;
+  }
+
+  .toggle-economicas-btn:hover {
+    background: #7d5e18;
+    border-color: #7d5e18;
+    color: #1a1000;
+  }
+
+  .toggle-economicas-btn.is-active {
+    background: linear-gradient(135deg, #efd9a2 0%, #cfac6b 50%, #a8844a 100%);
+    border-color: var(--accent);
+    color: #1a1000;
+    box-shadow: 0 0 18px rgba(207, 172, 107, 0.25);
+  }
+
+  .toggle-economicas-btn.is-active:hover {
+    filter: brightness(1.07);
+  }
+}
+
 /* ─── Base input/button reset ────────────────────────────────────────────── */
 
 input,

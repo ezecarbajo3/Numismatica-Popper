@@ -8,9 +8,10 @@ const SVG_CHEVRON_LEFT  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentC
 const SVG_CHEVRON_RIGHT = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>`;
 
 // ─── DOM refs ─────────────────────────────────────────────────────────────────
-const searchInput        = document.getElementById('searchInput');
-const clearSearchBtn     = document.getElementById('clearSearch');
-const resetFiltersButton = document.getElementById('resetFilters');
+const searchInput          = document.getElementById('searchInput');
+const clearSearchBtn       = document.getElementById('clearSearch');
+const resetFiltersButton   = document.getElementById('resetFilters');
+const toggleEconomicasBtn  = document.getElementById('toggleEconomicas');
 const resultsCount       = document.getElementById('resultsCount');
 const coinsGrid          = document.getElementById('coinsGrid');
 const coinCardTemplate   = document.getElementById('coinCardTemplate');
@@ -23,6 +24,7 @@ let groupMinPriceMap = new Map(); // group_id → { val: number, str: string }
 let activeCategory  = null;
 let activeSubFilter = null;
 let revealObserver  = null;
+let showEconomicas  = false;
 
 const STATE_KEY = 'nump_filter_state';
 
@@ -444,6 +446,8 @@ function goToLanding() {
   clearSearchBtn.classList.remove('is-visible');
   activeCategory  = null;
   activeSubFilter = null;
+  showEconomicas  = false;
+  syncEconomicasBtn();
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('is-active'));
   closeSubFilterBar();
   hideImagePreview(true);
@@ -577,6 +581,9 @@ function getFilteredCoins() {
       // Default view: hide books and medals/tokens (exclusive to their own filters)
       if (isBook(coin) || isMedalOrToken(coin)) return false;
     }
+
+    // Hide coins under $5 USD unless the user explicitly toggled them on
+    if (!showEconomicas && parsePriceUSD(coin.price) < 5) return false;
 
     if (activeSubFilter && activeCategory) {
       if (!matchesSubFilter(coin, activeCategory, activeSubFilter)) return false;
@@ -907,11 +914,25 @@ clearSearchBtn.addEventListener('click', () => {
   searchInput.focus();
 });
 
+function syncEconomicasBtn() {
+  if (!toggleEconomicasBtn) return;
+  toggleEconomicasBtn.classList.toggle('is-active', showEconomicas);
+}
+
+toggleEconomicasBtn?.addEventListener('click', () => {
+  showEconomicas = !showEconomicas;
+  syncEconomicasBtn();
+  renderCoins(getFilteredCoins());
+  initRevealEffects();
+});
+
 resetFiltersButton.addEventListener('click', () => {
   searchInput.value = '';
   clearSearchBtn.classList.remove('is-visible');
   activeCategory  = null;
   activeSubFilter = null;
+  showEconomicas  = false;
+  syncEconomicasBtn();
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('is-active'));
   closeSubFilterBar();
   hideImagePreview(true);
