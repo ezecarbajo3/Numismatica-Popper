@@ -1378,6 +1378,7 @@ button {
   .category-nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
     overflow: visible;
     gap: 8px;
     padding: 12px 0;
@@ -1388,6 +1389,7 @@ button {
     padding: 6px 4px;
     white-space: normal;
     letter-spacing: 0.04em;
+    height: 100%;
   }
 
   .cat-br {
