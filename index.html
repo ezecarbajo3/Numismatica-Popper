@@ -42,13 +42,13 @@
     <div class="landing-inner">
       <h2 class="landing-heading">¿Qué estás buscando?</h2>
       <nav class="landing-nav" aria-label="Categorías principales">
-        <button type="button" class="landing-btn" data-landing-category="plata">Plata</button>
-        <button type="button" class="landing-btn" data-landing-category="argentina">Argentina</button>
-        <button type="button" class="landing-btn" data-landing-category="internacional">Mundiales</button>
-        <button type="button" class="landing-btn" data-landing-category="economicas">Económicas (&lt;5 USD)</button>
-        <button type="button" class="landing-btn" data-landing-category="blisters">Blisters / Lotes</button>
-        <button type="button" class="landing-btn" data-landing-category="exonumia">Exonumia / Libros</button>
         <button type="button" class="landing-btn landing-btn--all" data-landing-category="todas">Ver todas las monedas</button>
+        <button type="button" class="landing-btn" data-landing-category="plata">Inversión</button>
+        <button type="button" class="landing-btn" data-landing-category="argentina">Monedas Argentinas</button>
+        <button type="button" class="landing-btn" data-landing-category="internacional">Monedas Mundo</button>
+        <button type="button" class="landing-btn landing-btn--economicas" data-landing-category="economicas">Económicas</button>
+        <button type="button" class="landing-btn" data-landing-category="blisters">Blisters / Lotes</button>
+        <button type="button" class="landing-btn" data-landing-category="medallas-libros">Medallas / Libros</button>
       </nav>
     </div>
   </section>
@@ -58,11 +58,11 @@
     <div class="category-bar">
       <nav class="category-nav container" aria-label="Categorías">
         <button type="button" class="cat-btn" data-category="plata">Inversión</button>
-        <button type="button" class="cat-btn" data-category="argentina">Monedas<br class="cat-br">Argentinas</button>
-        <button type="button" class="cat-btn" data-category="internacional">Monedas<br class="cat-br">Mundo</button>
-        <button type="button" class="cat-btn" data-category="blisters">Blisters/<br>Lotes</button>
-        <button type="button" class="cat-btn" data-category="medallas">Medallas/<br class="cat-br">Tokens</button>
-        <button type="button" class="cat-btn" data-category="libros">Libros</button>
+        <button type="button" class="cat-btn" data-category="argentina">Argentinas</button>
+        <button type="button" class="cat-btn" data-category="internacional">Mundiales</button>
+        <button type="button" class="cat-btn cat-btn--economicas" data-category="economicas">Económicas</button>
+        <button type="button" class="cat-btn" data-category="blisters">Blisters / Lotes</button>
+        <button type="button" class="cat-btn" data-category="medallas-libros">Medallas / Libros</button>
       </nav>
 
       <div class="sub-filter-bar" id="subFilterBar">
@@ -88,7 +88,6 @@
           </svg>
         </button>
       </div>
-      <button type="button" id="toggleEconomicas" class="toggle-economicas-btn">Ver monedas económicas</button>
       <button type="button" id="resetFilters" class="reset-link">Limpiar filtros</button>
     </div>
 
