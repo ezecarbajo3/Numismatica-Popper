@@ -1833,6 +1833,30 @@ body[data-view="catalog"] #catalog {
   }
 }
 
+/* ─── Desktop: landing layout adjustments ───────────────────────────────── */
+
+@media (min-width: 481px) {
+  /* 1. Bring content closer to the ticker (reduce top space) */
+  .landing-screen {
+    min-height: calc(100svh - 220px);
+    align-items: flex-start;
+    padding-top: 1.25rem;
+  }
+
+  /* 2. Widen the button grid so long labels fit on one line */
+  .landing-inner {
+    width: min(100%, 660px);
+  }
+
+  .landing-btn {
+    aspect-ratio: auto;
+    padding: 1.1rem 0.75rem;
+    min-height: 80px;
+    font-size: 1.15rem;
+    white-space: nowrap;
+  }
+}
+
 /* ─── Variant switcher (detail page) ────────────────────────────────────── */
 
 .variants-section {
