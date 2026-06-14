@@ -1861,22 +1861,24 @@ body[data-view="catalog"] #catalog {
 /* ─── Económicas: golden accent for cat-btn and landing-btn ─────────────── */
 
 .cat-btn--economicas {
-  background: #9b7420;
-  border-color: #9b7420;
-  color: #2a2a2a;
+  background: linear-gradient(135deg, #efd9a2 0%, #cfac6b 50%, #a8844a 100%);
+  border-color: transparent;
+  color: #1a1000;
   font-weight: 700;
+  letter-spacing: 0.14em;
 }
 
 .cat-btn--economicas:hover {
-  background: #7d5e18;
-  border-color: #7d5e18;
+  filter: brightness(1.08);
+  border-color: transparent;
   color: #1a1000;
-  transform: translateY(-1px);
+  transform: none;
+  box-shadow: 0 8px 28px rgba(207, 172, 107, 0.28);
 }
 
 .cat-btn--economicas.is-active {
   background: linear-gradient(135deg, #efd9a2 0%, #cfac6b 50%, #a8844a 100%);
-  border-color: var(--accent);
+  border-color: transparent;
   color: #1a1000;
   font-weight: 700;
   box-shadow:
@@ -1886,22 +1888,24 @@ body[data-view="catalog"] #catalog {
 
 .cat-btn--economicas.is-active:hover {
   transform: none;
-  filter: brightness(1.07);
+  filter: brightness(1.08);
 }
 
 .landing-btn--economicas {
-  background: #9b7420;
-  border-color: #9b7420;
-  color: #2a2a2a;
+  background: linear-gradient(135deg, #efd9a2 0%, #cfac6b 50%, #a8844a 100%);
+  border-color: transparent;
+  color: #1a1000;
   font-weight: 700;
+  letter-spacing: 0.14em;
 }
 
 .landing-btn--economicas:hover,
 .landing-btn--economicas:focus-visible {
-  background: #7d5e18;
-  border-color: #7d5e18;
+  filter: brightness(1.08);
+  border-color: transparent;
   color: #1a1000;
   outline: none;
+  box-shadow: 0 8px 28px rgba(207, 172, 107, 0.28);
 }
 
 /* ─── Variant switcher (detail page) ────────────────────────────────────── */
