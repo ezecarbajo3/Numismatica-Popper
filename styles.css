@@ -1581,7 +1581,7 @@ button {
   /* 2. Grid 2 columnas → 3 filas de 2 recuadros */
   .landing-nav {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.6rem;
+    gap: 0.25rem;
   }
 
   /* 3. Botones: misma altura, sin guiones ni cortes de sílaba */
@@ -1597,8 +1597,8 @@ button {
 
   /* 4. Font-size de las 6 categorías */
   .landing-btn:not(.landing-btn--all) {
-    font-size: 1rem;
-    letter-spacing: 0.05em;
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
   }
 
   /* 5. "Ver todas" sigue en fila completa, sin altura forzada */
@@ -2073,9 +2073,8 @@ body[data-view="catalog"] #catalog {
 /* ─── Mobile refinements ──────────────────────────────────────────────────── */
 
 @media (max-width: 480px) {
-  /* Item 3: +20% en pantallas pequeñas (0.8rem × 1.20 = 0.96rem) */
   .landing-btn:not(.landing-btn--all) {
-    font-size: 0.96rem;
+    font-size: 0.78rem;
   }
 
   .landing-btn--all {
