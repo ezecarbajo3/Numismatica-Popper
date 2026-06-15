@@ -133,7 +133,13 @@ function parsePriceUSD(priceStr) {
 }
 
 function isEconomica(coin) {
-  return parsePriceUSD(coin.price) < 5;
+  return (
+    parsePriceUSD(coin.price) < 5 &&
+    !isArgentinaCoin(coin) &&
+    !isMedalOrToken(coin) &&
+    !isBlister(coin) &&
+    !isBook(coin)
+  );
 }
 
 function isExonumia(coin) {
