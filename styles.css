@@ -1581,8 +1581,8 @@ button {
   /* 2. Grid 2 columnas → 3 filas de 2 recuadros */
   .landing-nav {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.25rem;
-    padding: 0 0.25rem;
+    gap: 0.15rem;
+    padding: 0 0.15rem;
   }
 
   /* 3. Botones: misma altura, sin guiones ni cortes de sílaba */
