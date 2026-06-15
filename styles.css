@@ -1377,7 +1377,7 @@ button {
 
   .category-nav {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: stretch;
     overflow: visible;
     gap: 8px;
@@ -1385,16 +1385,15 @@ button {
   }
 
   .cat-btn {
-    font-size: 0.64rem;
-    letter-spacing: 0.02em;
-    padding: 10px 6px;
-    min-height: 44px;
-    white-space: nowrap;
+    font-size: 0.770rem;       /* 0.856rem × 0.90 — 10% mobile grid reduction */
+    padding: 6px 4px;
+    white-space: normal;
+    letter-spacing: 0.04em;
     height: 100%;
   }
 
   .cat-br {
-    display: none;
+    display: block;
   }
 
   .sub-filter-btn {
@@ -1584,21 +1583,19 @@ button {
     gap: 0.6rem;
   }
 
-  /* 3. Botones: altura fija igual para todos los recuadros */
+  /* 3. Botones: texto en una sola línea, sin cortes ni guiones */
   .landing-btn {
     aspect-ratio: auto;
     height: 5.5rem;
-    padding: 1rem 0.65rem;
+    padding: 10px 6px;
     box-sizing: border-box;
-    white-space: normal;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    hyphens: auto;
+    white-space: nowrap;
   }
 
-  /* 4. Font-size +20% solo en los 6 recuadros de categoría */
+  /* 4. Font-size ajustado para que el texto entre sin saltos */
   .landing-btn:not(.landing-btn--all) {
-    font-size: 1.14rem; /* 0.95rem × 1.20 */
+    font-size: 0.88rem;
+    letter-spacing: 0.03em;
   }
 
   /* 5. "Ver todas" sigue en fila completa, sin altura forzada */
