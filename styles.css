@@ -1378,6 +1378,7 @@ button {
   .category-nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 3rem;
     align-items: stretch;
     overflow: visible;
     gap: 8px;
@@ -1583,19 +1584,21 @@ button {
     gap: 0.6rem;
   }
 
-  /* 3. Botones: texto en una sola línea, sin cortes ni guiones */
+  /* 3. Botones: misma altura, sin guiones ni cortes de sílaba */
   .landing-btn {
     aspect-ratio: auto;
     height: 5.5rem;
-    padding: 10px 6px;
+    padding: 10px 0.65rem;
     box-sizing: border-box;
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
   }
 
-  /* 4. Font-size ajustado para que el texto entre sin saltos */
+  /* 4. Font-size de las 6 categorías */
   .landing-btn:not(.landing-btn--all) {
-    font-size: 0.88rem;
-    letter-spacing: 0.03em;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
   }
 
   /* 5. "Ver todas" sigue en fila completa, sin altura forzada */
