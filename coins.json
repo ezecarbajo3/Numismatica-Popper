@@ -3503,7 +3503,7 @@
     "country": "Malta",
     "metal": "",
     "year": 1991,
-    "price": "2,5 USD",
+    "price": "3 USD",
     "images": [
       "images/234A.jpeg",
       "images/234B.jpeg"
@@ -4563,5 +4563,372 @@
     "grade_short": "SC",
     "mintage": "",
     "description": ""
+  },
+  {
+    "id": 293,
+    "title": "5 Stotinki 2000",
+    "country": "Bulgaria",
+    "metal": "Acero, chapado en bronce",
+    "year": 2000,
+    "price": "3 USD",
+    "images": [
+      "images/293A.jpeg",
+      "images/293B.jpeg"
+    ],
+    "reference": "KM. 239a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Magnética"
+  },
+  {
+    "id": 294,
+    "title": "1 Stotinka 2000",
+    "country": "Bulgaria",
+    "metal": "Acero chapado en bronce",
+    "year": 2000,
+    "price": "2.5 USD",
+    "images": [
+      "images/294A.jpeg",
+      "images/294B.jpeg"
+    ],
+    "reference": "KM 237a",
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 295,
+    "title": "1 Inti 1988",
+    "country": "Perú",
+    "metal": "Cuproníquel",
+    "year": 1988,
+    "price": "3 USD",
+    "images": [
+      "images/295A.jpeg",
+      "images/295B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 296,
+    "title": "1/2 Sol 1965",
+    "country": "Perú",
+    "metal": "Latón",
+    "year": 1965,
+    "price": "2.5 USD",
+    "images": [
+      "images/296A.jpeg",
+      "images/296B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 297,
+    "title": "2 Shillings 1949",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1949,
+    "price": "3 USD",
+    "images": [
+      "images/297A.jpeg",
+      "images/297B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Jorge VI"
+  },
+  {
+    "id": 298,
+    "title": "1 Dragma 1957",
+    "country": "Grecia",
+    "metal": "Cuproníquel",
+    "year": 1957,
+    "price": "3.5 USD",
+    "images": [
+      "images/298A.jpeg",
+      "images/298B.jpeg"
+    ],
+    "reference": "KM. 81",
+    "mintage": "8.000.000",
+    "grade": "Muy Bueno-",
+    "grade_short": "MB-"
+  },
+  {
+    "id": 299,
+    "title": "1 Sol 1961",
+    "country": "Perú",
+    "metal": "Latón",
+    "year": 1961,
+    "price": "3 USD",
+    "images": [
+      "images/299A.jpeg",
+      "images/299B.jpeg"
+    ],
+    "reference": "KM 222",
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "description": "Gran tamaño"
+  },
+  {
+    "id": 300,
+    "title": "1 Peso 1933",
+    "country": "Chile",
+    "metal": "Cuproníquel",
+    "year": 1933,
+    "price": "3 USD",
+    "images": [
+      "images/300A.jpeg",
+      "images/300B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 301,
+    "title": "10 Cents 1979",
+    "country": "Barbados",
+    "metal": "Cuproníquel",
+    "year": 1979,
+    "price": "3 USD",
+    "images": [
+      "images/301A.jpeg",
+      "images/301B.jpeg"
+    ],
+    "reference": "KM 12",
+    "mintage": "2.500.000",
+    "grade": "Excelente+",
+    "grade_short": "EX+"
+  },
+  {
+    "id": 302,
+    "title": "2 Centavos 1956",
+    "country": "Honduras",
+    "metal": "Bronce",
+    "year": 1956,
+    "price": "3 USD",
+    "images": [
+      "images/302A.jpeg",
+      "images/302B.jpeg"
+    ],
+    "reference": "KM 78",
+    "grade": "Sin Circular-",
+    "grade_short": "SC-"
+  },
+  {
+    "id": 303,
+    "title": "5 Dolares 2017",
+    "country": "Jamaica",
+    "metal": "Acero niquelado",
+    "year": 2017,
+    "price": "2.5 USD",
+    "images": [
+      "images/303A.jpeg",
+      "images/303B.jpeg"
+    ],
+    "reference": "KM. 163",
+    "grade": "Excelente+",
+    "grade_short": "EX+"
+  },
+  {
+    "id": 304,
+    "title": "25 Ore 1979",
+    "country": "Suecia",
+    "metal": "Cuproníquel",
+    "year": 1979,
+    "price": "2 USD",
+    "images": [
+      "images/304A.jpeg",
+      "images/304B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 305,
+    "title": "50 Kurus 2014",
+    "country": "Turquía",
+    "metal": "Metálica",
+    "year": 2014,
+    "price": "3 USD",
+    "images": [
+      "images/305A.jpeg",
+      "images/305B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 306,
+    "title": "10 Centavos 1976",
+    "country": "Colombia",
+    "metal": "Acero niquelado",
+    "year": 1976,
+    "price": "2.5 USD",
+    "images": [
+      "images/306A.jpeg",
+      "images/306B.jpeg"
+    ],
+    "reference": "KM. 253",
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 307,
+    "title": "1 Baht Rama X",
+    "country": "Tailandia",
+    "metal": "Acero niquelado",
+    "price": "3 USD",
+    "images": [
+      "images/307A.jpeg",
+      "images/307B.jpeg"
+    ],
+    "reference": "Y# 574",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Rama X"
+  },
+  {
+    "id": 308,
+    "title": "2 Dolares 1997",
+    "country": "Hong Kong",
+    "metal": "Cuproníquel",
+    "year": 1997,
+    "price": "2 USD",
+    "images": [
+      "images/308A.jpeg",
+      "images/308B.jpeg"
+    ],
+    "description": "Canto ondulado"
+  },
+  {
+    "id": 309,
+    "title": "10 Rappen 1970",
+    "country": "Suiza",
+    "metal": "Cuproníquel",
+    "year": 1970,
+    "price": "2 USD",
+    "images": [
+      "images/309A.jpeg",
+      "images/309B.jpeg"
+    ],
+    "grade": "Excelente+",
+    "grade_short": "EX+"
+  },
+  {
+    "id": 310,
+    "title": "10 Poisha 1994",
+    "country": "Bangladesh",
+    "metal": "Aluminio",
+    "year": 1994,
+    "price": "3.5 USD",
+    "images": [
+      "images/310A.jpeg",
+      "images/310B.jpeg"
+    ],
+    "reference": "KM 11.2",
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 311,
+    "title": "1 Agora 1965",
+    "country": "Israel",
+    "metal": "Aluminio",
+    "year": 1965,
+    "price": "3 USD",
+    "images": [
+      "images/311A.jpeg",
+      "images/311B.jpeg"
+    ],
+    "grade": "Sin Circular-",
+    "grade_short": "SC-"
+  },
+  {
+    "id": 312,
+    "title": "20 Pennia 1972",
+    "country": "Finlandia",
+    "metal": "Bronce aluminio",
+    "year": 1972,
+    "price": "3 USD",
+    "images": [
+      "images/312A.jpeg",
+      "images/312B.jpeg"
+    ],
+    "reference": "KM 47",
+    "grade": "Excelente+",
+    "grade_short": "EX+"
+  },
+  {
+    "id": 313,
+    "title": "1/2 Penny 1982",
+    "country": "Irlanda",
+    "metal": "Bronce aluminio",
+    "year": 1982,
+    "price": "3 USD",
+    "images": [
+      "images/313A.jpeg",
+      "images/313B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 314,
+    "title": "1 Cent 1992",
+    "country": "Kiribati",
+    "metal": "Bronce aluminio",
+    "year": 1992,
+    "price": "3.5 USD",
+    "images": [
+      "images/314A.jpeg",
+      "images/314B.jpeg"
+    ],
+    "grade": "Sin Circular-",
+    "grade_short": "SC-"
+  },
+  {
+    "id": 315,
+    "title": "5 Pfennig 1968",
+    "country": "Alemania",
+    "metal": "Aluminio",
+    "year": 1968,
+    "price": "3 USD",
+    "images": [
+      "images/315A.jpeg",
+      "images/315B.jpeg"
+    ],
+    "reference": "KM 9",
+    "description": "República Democrática"
+  },
+  {
+    "id": 316,
+    "title": "10 Groschen 1949",
+    "country": "Austria",
+    "metal": "Zinc",
+    "year": 1949,
+    "price": "3.5 USD",
+    "images": [
+      "images/316A.jpeg",
+      "images/316B.jpeg"
+    ],
+    "reference": "KM 2874",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "Post Guerra"
+  },
+  {
+    "id": 317,
+    "title": "10 Francos 1955",
+    "country": "Francia",
+    "metal": "Bronce aluminio",
+    "year": 1955,
+    "price": "2.5 USD",
+    "images": [
+      "images/317A.jpeg",
+      "images/317B.jpeg"
+    ],
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+"
   }
 ]
