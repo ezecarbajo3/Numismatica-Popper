@@ -2572,7 +2572,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "15.000",
-    "description": "Canto liso"
+    "description": "Canto liso",
+    "status": "sold",
+    "soldAt": "2026-06-15T00:31:13.387386Z"
   },
   {
     "id": 183,
