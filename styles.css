@@ -1377,7 +1377,7 @@ button {
 
   .category-nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: stretch;
     overflow: visible;
     gap: 8px;
@@ -1385,15 +1385,16 @@ button {
   }
 
   .cat-btn {
-    font-size: 0.770rem;       /* 0.856rem × 0.90 — 10% mobile grid reduction */
-    padding: 6px 4px;
-    white-space: normal;
-    letter-spacing: 0.04em;
+    font-size: 0.64rem;
+    letter-spacing: 0.02em;
+    padding: 10px 6px;
+    min-height: 44px;
+    white-space: nowrap;
     height: 100%;
   }
 
   .cat-br {
-    display: block;
+    display: none;
   }
 
   .sub-filter-btn {
