@@ -1582,6 +1582,7 @@ button {
   .landing-nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.25rem;
+    padding: 0 0.25rem;
   }
 
   /* 3. Botones: misma altura, sin guiones ni cortes de sílaba */
