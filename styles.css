@@ -1806,7 +1806,7 @@ body[data-view="catalog"] #catalog {
   order: -1;
   aspect-ratio: auto;
   padding: 1rem 1.4rem;
-  font-size: 1.1rem;
+  font-size: 1.32rem;
   background: linear-gradient(135deg, #efd9a2 0%, #cfac6b 50%, #a8844a 100%);
   border-color: transparent;
   color: #1a1000;
@@ -1835,7 +1835,7 @@ body[data-view="catalog"] #catalog {
   }
 
   .landing-btn--all {
-    font-size: 1.3rem;
+    font-size: 1.56rem;
     padding: 0.9rem 1rem;
   }
 }
@@ -2080,7 +2080,7 @@ body[data-view="catalog"] #catalog {
   }
 
   .landing-btn--all {
-    font-size: 0.9rem;
+    font-size: 1.08rem;
     letter-spacing: 0.1em;
   }
 }
