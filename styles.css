@@ -1583,10 +1583,10 @@ button {
     gap: 0.6rem;
   }
 
-  /* 3. Botones: box-sizing, texto fluido, sin aspect-ratio forzado */
+  /* 3. Botones: altura fija igual para todos los recuadros */
   .landing-btn {
     aspect-ratio: auto;
-    min-height: 5.5rem;
+    height: 5.5rem;
     padding: 1rem 0.65rem;
     box-sizing: border-box;
     white-space: normal;
@@ -1600,8 +1600,9 @@ button {
     font-size: 1.14rem; /* 0.95rem × 1.20 */
   }
 
-  /* 5. "Ver todas" sigue en fila completa, sin cambiar su altura */
+  /* 5. "Ver todas" sigue en fila completa, sin altura forzada */
   .landing-btn--all {
+    height: auto;
     min-height: auto;
     padding: 1rem 1.4rem;
     aspect-ratio: auto;
