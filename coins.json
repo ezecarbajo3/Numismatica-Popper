@@ -6179,5 +6179,17 @@
     ],
     "group_id": "pe-sol-fauna",
     "group_label": "Serie Fauna"
+  },
+  {
+    "id": 400,
+    "title": "1 Sol 2015",
+    "country": "Perú",
+    "year": 2015,
+    "price": "2 USD",
+    "description": "Casa de moneda",
+    "images": [
+      "images/400A.jpeg",
+      "images/400B.jpeg"
+    ]
   }
 ]
