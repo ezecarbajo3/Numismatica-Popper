@@ -5726,7 +5726,8 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "group_id": "us-cent-km90",
-    "group_label": "Cent"
+    "group_label": "Cent",
+    "description": "Indian Head"
   },
   {
     "id": 369,
@@ -5743,7 +5744,8 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "group_id": "us-cent-km90",
-    "group_label": "Cent"
+    "group_label": "Cent",
+    "description": "Indian Head"
   },
   {
     "id": 370,
@@ -5760,7 +5762,8 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "group_id": "us-cent-km90",
-    "group_label": "Cent"
+    "group_label": "Cent",
+    "description": "Indian Head"
   },
   {
     "id": 371,
@@ -5777,6 +5780,7 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "group_id": "us-cent-km90",
-    "group_label": "Cent"
+    "group_label": "Cent",
+    "description": "Indian Head"
   }
 ]
