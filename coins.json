@@ -6037,5 +6037,147 @@
     ],
     "group_id": "us-half-dollar-variants",
     "group_label": "1/2 Dólar"
+  },
+  {
+    "id": 390,
+    "title": "1 Sol 2018",
+    "country": "Perú",
+    "year": 2018,
+    "price": "2.5 USD",
+    "description": "Pava",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "images": [
+      "images/390A.jpeg",
+      "images/390B.jpeg"
+    ],
+    "group_id": "pe-sol-fauna",
+    "group_label": "Serie Fauna"
+  },
+  {
+    "id": 391,
+    "title": "1 Sol 2017",
+    "country": "Perú",
+    "year": 2017,
+    "price": "2.5 USD",
+    "description": "Cocodrilo",
+    "images": [
+      "images/391A.jpeg",
+      "images/391B.jpeg"
+    ],
+    "group_id": "pe-sol-fauna",
+    "group_label": "Serie Fauna"
+  },
+  {
+    "id": 392,
+    "title": "1 Sol 2019",
+    "country": "Perú",
+    "year": 2019,
+    "price": "2.5 USD",
+    "description": "Mono",
+    "images": [
+      "images/392A.jpeg",
+      "images/392B.jpeg"
+    ],
+    "group_id": "pe-sol-fauna",
+    "group_label": "Serie Fauna"
+  },
+  {
+    "id": 393,
+    "title": "1 Sol 2017",
+    "country": "Perú",
+    "year": 2017,
+    "price": "2.5 USD",
+    "description": "Oso",
+    "images": [
+      "images/393A.jpeg",
+      "images/393B.jpeg"
+    ],
+    "group_id": "pe-sol-fauna",
+    "group_label": "Serie Fauna"
+  },
+  {
+    "id": 394,
+    "title": "1 Sol 2019",
+    "country": "Perú",
+    "year": 2019,
+    "price": "2.5 USD",
+    "description": "Rana",
+    "images": [
+      "images/394A.jpeg",
+      "images/394B.jpeg"
+    ],
+    "group_id": "pe-sol-fauna",
+    "group_label": "Serie Fauna"
+  },
+  {
+    "id": 395,
+    "title": "1 Sol 2018",
+    "country": "Perú",
+    "year": 2018,
+    "price": "2.5 USD",
+    "description": "Tapir",
+    "images": [
+      "images/395A.jpeg",
+      "images/395B.jpeg"
+    ],
+    "group_id": "pe-sol-fauna",
+    "group_label": "Serie Fauna"
+  },
+  {
+    "id": 396,
+    "title": "1 Sol 2018",
+    "country": "Perú",
+    "year": 2018,
+    "price": "2.5 USD",
+    "description": "Suri",
+    "images": [
+      "images/396A.jpeg",
+      "images/396B.jpeg"
+    ],
+    "group_id": "pe-sol-fauna",
+    "group_label": "Serie Fauna"
+  },
+  {
+    "id": 397,
+    "title": "1 Sol 2017",
+    "country": "Perú",
+    "year": 2017,
+    "price": "2.5 USD",
+    "description": "Cóndor",
+    "images": [
+      "images/397A.jpeg",
+      "images/397B.jpeg"
+    ],
+    "group_id": "pe-sol-fauna",
+    "group_label": "Serie Fauna"
+  },
+  {
+    "id": 398,
+    "title": "1 Sol 2018",
+    "country": "Perú",
+    "year": 2018,
+    "price": "2.5 USD",
+    "description": "Jaguar",
+    "images": [
+      "images/398A.jpeg",
+      "images/398B.jpeg"
+    ],
+    "group_id": "pe-sol-fauna",
+    "group_label": "Serie Fauna"
+  },
+  {
+    "id": 399,
+    "title": "1 Sol 2019",
+    "country": "Perú",
+    "year": 2019,
+    "price": "2.5 USD",
+    "description": "Gato",
+    "images": [
+      "images/399A.jpeg",
+      "images/399B.jpeg"
+    ],
+    "group_id": "pe-sol-fauna",
+    "group_label": "Serie Fauna"
   }
 ]
