@@ -5797,7 +5797,9 @@
     "images": [
       "images/372A.jpeg",
       "images/372B.jpeg"
-    ]
+    ],
+    "group_id": "us-dollar-variants",
+    "group_label": "1 Dollar USA"
   },
   {
     "id": 373,
@@ -5811,7 +5813,9 @@
     "images": [
       "images/373A.jpeg",
       "images/373B.jpeg"
-    ]
+    ],
+    "group_id": "us-dollar-variants",
+    "group_label": "1 Dollar USA"
   },
   {
     "id": 374,
@@ -5823,7 +5827,9 @@
     "images": [
       "images/374A.jpeg",
       "images/374B.jpeg"
-    ]
+    ],
+    "group_id": "us-dollar-variants",
+    "group_label": "1 Dollar USA"
   },
   {
     "id": 375,
@@ -5835,7 +5841,9 @@
     "images": [
       "images/375A.jpeg",
       "images/375B.jpeg"
-    ]
+    ],
+    "group_id": "us-dollar-variants",
+    "group_label": "1 Dollar USA"
   },
   {
     "id": 376,
@@ -5847,7 +5855,9 @@
     "images": [
       "images/376A.jpeg",
       "images/376B.jpeg"
-    ]
+    ],
+    "group_id": "us-dollar-variants",
+    "group_label": "1 Dollar USA"
   },
   {
     "id": 377,
@@ -5859,7 +5869,9 @@
     "images": [
       "images/377A.jpeg",
       "images/377B.jpeg"
-    ]
+    ],
+    "group_id": "us-dollar-variants",
+    "group_label": "1 Dollar USA"
   },
   {
     "id": 378,
@@ -5871,7 +5883,9 @@
     "images": [
       "images/378A.jpeg",
       "images/378B.jpeg"
-    ]
+    ],
+    "group_id": "us-dollar-variants",
+    "group_label": "1 Dollar USA"
   },
   {
     "id": 379,
@@ -5883,7 +5897,9 @@
     "images": [
       "images/379A.jpeg",
       "images/379B.jpeg"
-    ]
+    ],
+    "group_id": "us-dollar-variants",
+    "group_label": "1 Dollar USA"
   },
   {
     "id": 380,
@@ -5895,7 +5911,9 @@
     "images": [
       "images/380A.jpeg",
       "images/380B.jpeg"
-    ]
+    ],
+    "group_id": "us-dollar-variants",
+    "group_label": "1 Dollar USA"
   },
   {
     "id": 381,
@@ -5907,7 +5925,9 @@
     "images": [
       "images/381A.jpeg",
       "images/381B.jpeg"
-    ]
+    ],
+    "group_id": "us-dollar-variants",
+    "group_label": "1 Dollar USA"
   },
   {
     "id": 382,
@@ -5919,7 +5939,9 @@
     "images": [
       "images/382A.jpeg",
       "images/382B.jpeg"
-    ]
+    ],
+    "group_id": "us-half-dollar-variants",
+    "group_label": "1/2 Dollar USA"
   },
   {
     "id": 383,
@@ -5930,7 +5952,9 @@
     "images": [
       "images/383A.jpeg",
       "images/383B.jpeg"
-    ]
+    ],
+    "group_id": "us-half-dollar-variants",
+    "group_label": "1/2 Dollar USA"
   },
   {
     "id": 384,
@@ -5941,7 +5965,9 @@
     "images": [
       "images/384A.jpeg",
       "images/384B.jpeg"
-    ]
+    ],
+    "group_id": "us-half-dollar-variants",
+    "group_label": "1/2 Dollar USA"
   },
   {
     "id": 385,
@@ -5952,7 +5978,9 @@
     "images": [
       "images/385A.jpeg",
       "images/385B.jpeg"
-    ]
+    ],
+    "group_id": "us-half-dollar-variants",
+    "group_label": "1/2 Dollar USA"
   },
   {
     "id": 386,
@@ -5963,7 +5991,9 @@
     "images": [
       "images/386A.jpeg",
       "images/386B.jpeg"
-    ]
+    ],
+    "group_id": "us-half-dollar-variants",
+    "group_label": "1/2 Dollar USA"
   },
   {
     "id": 387,
@@ -5974,7 +6004,9 @@
     "images": [
       "images/387A.jpeg",
       "images/387B.jpeg"
-    ]
+    ],
+    "group_id": "us-half-dollar-variants",
+    "group_label": "1/2 Dollar USA"
   },
   {
     "id": 388,
@@ -5987,7 +6019,9 @@
     "images": [
       "images/388A.jpeg",
       "images/388B.jpeg"
-    ]
+    ],
+    "group_id": "us-half-dollar-variants",
+    "group_label": "1/2 Dollar USA"
   },
   {
     "id": 389,
@@ -6000,6 +6034,8 @@
     "images": [
       "images/389A.jpeg",
       "images/389B.jpeg"
-    ]
+    ],
+    "group_id": "us-half-dollar-variants",
+    "group_label": "1/2 Dollar USA"
   }
 ]
