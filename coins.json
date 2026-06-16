@@ -5784,5 +5784,222 @@
     "group_id": "us-cent-km90",
     "group_label": "Cent",
     "description": "Indian Head"
+  },
+  {
+    "id": 372,
+    "title": "1 Dollar 2026 D",
+    "country": "Estados Unidos",
+    "year": 2026,
+    "price": "2.5 USD",
+    "description": "Iowa",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "images": [
+      "images/372A.jpeg",
+      "images/372B.jpeg"
+    ]
+  },
+  {
+    "id": 373,
+    "title": "1 Dollar 2024 P",
+    "country": "Estados Unidos",
+    "year": 2024,
+    "price": "2.5 USD",
+    "description": "Illinois",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "images": [
+      "images/373A.jpeg",
+      "images/373B.jpeg"
+    ]
+  },
+  {
+    "id": 374,
+    "title": "1 Dollar 2011 P",
+    "country": "Estados Unidos",
+    "year": 2011,
+    "price": "2.5 USD",
+    "description": "Garfield",
+    "images": [
+      "images/374A.jpeg",
+      "images/374B.jpeg"
+    ]
+  },
+  {
+    "id": 375,
+    "title": "1 Dollar 2009 D",
+    "country": "Estados Unidos",
+    "year": 2009,
+    "price": "2.5 USD",
+    "description": "Tyler",
+    "images": [
+      "images/375A.jpeg",
+      "images/375B.jpeg"
+    ]
+  },
+  {
+    "id": 376,
+    "title": "1 Dollar 2007 P",
+    "country": "Estados Unidos",
+    "year": 2007,
+    "price": "2 USD",
+    "description": "Adams",
+    "images": [
+      "images/376A.jpeg",
+      "images/376B.jpeg"
+    ]
+  },
+  {
+    "id": 377,
+    "title": "1 Dollar 2000 P",
+    "country": "Estados Unidos",
+    "year": 2000,
+    "price": "2 USD",
+    "description": "Sacagawea",
+    "images": [
+      "images/377A.jpeg",
+      "images/377B.jpeg"
+    ]
+  },
+  {
+    "id": 378,
+    "title": "1 Dollar 2007 D",
+    "country": "Estados Unidos",
+    "year": 2007,
+    "price": "2 USD",
+    "description": "Washington",
+    "images": [
+      "images/378A.jpeg",
+      "images/378B.jpeg"
+    ]
+  },
+  {
+    "id": 379,
+    "title": "1 Dollar 2007 P",
+    "country": "Estados Unidos",
+    "year": 2007,
+    "price": "2 USD",
+    "description": "Washington",
+    "images": [
+      "images/379A.jpeg",
+      "images/379B.jpeg"
+    ]
+  },
+  {
+    "id": 380,
+    "title": "1 Dollar 2011 P",
+    "country": "Estados Unidos",
+    "year": 2011,
+    "price": "2.5 USD",
+    "description": "Hayes",
+    "images": [
+      "images/380A.jpeg",
+      "images/380B.jpeg"
+    ]
+  },
+  {
+    "id": 381,
+    "title": "1 Dollar 2011 D",
+    "country": "Estados Unidos",
+    "year": 2011,
+    "price": "2.5 USD",
+    "description": "Johnson",
+    "images": [
+      "images/381A.jpeg",
+      "images/381B.jpeg"
+    ]
+  },
+  {
+    "id": 382,
+    "title": "1/2 Dollar 1976 D",
+    "country": "Estados Unidos",
+    "year": 1976,
+    "price": "2.5 USD",
+    "description": "Bicentenario",
+    "images": [
+      "images/382A.jpeg",
+      "images/382B.jpeg"
+    ]
+  },
+  {
+    "id": 383,
+    "title": "1/2 Dollar 1974 D",
+    "country": "Estados Unidos",
+    "year": 1974,
+    "price": "2 USD",
+    "images": [
+      "images/383A.jpeg",
+      "images/383B.jpeg"
+    ]
+  },
+  {
+    "id": 384,
+    "title": "1/2 Dollar 1974",
+    "country": "Estados Unidos",
+    "year": 1974,
+    "price": "2 USD",
+    "images": [
+      "images/384A.jpeg",
+      "images/384B.jpeg"
+    ]
+  },
+  {
+    "id": 385,
+    "title": "1/2 Dollar 1995 D",
+    "country": "Estados Unidos",
+    "year": 1995,
+    "price": "2.5 USD",
+    "images": [
+      "images/385A.jpeg",
+      "images/385B.jpeg"
+    ]
+  },
+  {
+    "id": 386,
+    "title": "1/2 Dollar 1971",
+    "country": "Estados Unidos",
+    "year": 1971,
+    "price": "2 USD",
+    "images": [
+      "images/386A.jpeg",
+      "images/386B.jpeg"
+    ]
+  },
+  {
+    "id": 387,
+    "title": "1/2 Dollar 1972 D",
+    "country": "Estados Unidos",
+    "year": 1972,
+    "price": "2 USD",
+    "images": [
+      "images/387A.jpeg",
+      "images/387B.jpeg"
+    ]
+  },
+  {
+    "id": 388,
+    "title": "1/2 Dollar 2017 D",
+    "country": "Estados Unidos",
+    "year": 2017,
+    "price": "3.5 USD",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "images": [
+      "images/388A.jpeg",
+      "images/388B.jpeg"
+    ]
+  },
+  {
+    "id": 389,
+    "title": "1/2 Dollar 2022 D",
+    "country": "Estados Unidos",
+    "year": 2022,
+    "price": "3 USD",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "images": [
+      "images/389A.jpeg",
+      "images/389B.jpeg"
+    ]
   }
 ]
