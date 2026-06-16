@@ -1296,7 +1296,9 @@
     "grade": "Bueno-",
     "grade_short": "B-",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "uk-penny-bronze",
+    "group_label": "Penny"
   },
   {
     "id": 100,
@@ -3887,7 +3889,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "",
-    "description": "Guillermina I."
+    "description": "Guillermina I.",
+    "group_id": "nl-cent-km152",
+    "group_label": "Cent"
   },
   {
     "id": 256,
@@ -4170,7 +4174,9 @@
     "grade": "Bueno-",
     "grade_short": "B-",
     "mintage": "6.900.000",
-    "description": ""
+    "description": "",
+    "group_id": "pe-10centavos-km214",
+    "group_label": "10 Centavos"
   },
   {
     "id": 271,
@@ -4187,7 +4193,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "2.000.000",
-    "description": ""
+    "description": "",
+    "group_id": "pe-10centavos-km214",
+    "group_label": "10 Centavos"
   },
   {
     "id": 272,
@@ -4715,7 +4723,9 @@
     ],
     "reference": "KM 78",
     "grade": "Sin Circular-",
-    "grade_short": "SC-"
+    "grade_short": "SC-",
+    "group_id": "hn-2centavos-km78",
+    "group_label": "2 Centavos"
   },
   {
     "id": 303,
@@ -4815,7 +4825,9 @@
       "images/309B.jpeg"
     ],
     "grade": "Excelente+",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "group_id": "ch-10rappen-km27",
+    "group_label": "10 Rappen"
   },
   {
     "id": 310,
@@ -4990,7 +5002,9 @@
       "images/321B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "group_id": "nz-2cents-km32",
+    "group_label": "2 Cents"
   },
   {
     "id": 322,
@@ -5004,7 +5018,9 @@
       "images/322B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "group_id": "nz-2cents-km32",
+    "group_label": "2 Cents"
   },
   {
     "id": 323,
@@ -5107,7 +5123,9 @@
     "reference": "KM# 577",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Pátina exclusiva"
+    "description": "Pátina exclusiva",
+    "group_id": "pt-50centavos-1929",
+    "group_label": "50 Centavos 1929"
   },
   {
     "id": 330,
@@ -5121,7 +5139,9 @@
       "images/330B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B"
+    "grade_short": "B",
+    "group_id": "pt-50centavos-1929",
+    "group_label": "50 Centavos 1929"
   },
   {
     "id": 331,
@@ -5195,7 +5215,9 @@
     ],
     "reference": "KM# 214.1",
     "grade": "Bueno -",
-    "grade_short": "B-"
+    "grade_short": "B-",
+    "group_id": "pe-10centavos-km214",
+    "group_label": "10 Centavos"
   },
   {
     "id": 336,
@@ -5415,7 +5437,9 @@
       "images/350B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "group_id": "nl-cent-km152",
+    "group_label": "Cent"
   },
   {
     "id": 351,
@@ -5474,7 +5498,9 @@
       "images/354B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "group_id": "br-1real-olympics",
+    "group_label": "1 Real Olimpíadas"
   },
   {
     "id": 355,
@@ -5490,7 +5516,9 @@
       "images/355B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "group_id": "br-1real-olympics",
+    "group_label": "1 Real Olimpíadas"
   },
   {
     "id": 356,
@@ -5506,7 +5534,9 @@
       "images/356B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "group_id": "br-1real-olympics",
+    "group_label": "1 Real Olimpíadas"
   },
   {
     "id": 357,
@@ -5564,7 +5594,9 @@
       "images/360B.jpeg"
     ],
     "grade": "Muy Bueno -",
-    "grade_short": "MB-"
+    "grade_short": "MB-",
+    "group_id": "uk-penny-bronze",
+    "group_label": "Penny"
   },
   {
     "id": 361,
@@ -5626,6 +5658,8 @@
       "images/364B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "group_id": "hn-2centavos-km78",
+    "group_label": "2 Centavos"
   }
 ]
