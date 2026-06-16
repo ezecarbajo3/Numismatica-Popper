@@ -6191,5 +6191,53 @@
       "images/400A.jpeg",
       "images/400B.jpeg"
     ]
+  },
+  {
+    "id": 401,
+    "title": "1 Sol 2024",
+    "country": "Perú",
+    "year": 2024,
+    "price": "3 USD",
+    "description": "Periodo formativo",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "images": [
+      "images/401A.jpeg",
+      "images/401B.jpeg"
+    ],
+    "group_id": "pe-sol-ceramicos",
+    "group_label": "Cerámicos Precolombinos"
+  },
+  {
+    "id": 402,
+    "title": "1 Sol 2024",
+    "country": "Perú",
+    "year": 2024,
+    "price": "3 USD",
+    "description": "Cultura Mochica",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "images": [
+      "images/402A.jpeg",
+      "images/402B.jpeg"
+    ],
+    "group_id": "pe-sol-ceramicos",
+    "group_label": "Cerámicos Precolombinos"
+  },
+  {
+    "id": 403,
+    "title": "1 Sol 2025",
+    "country": "Perú",
+    "year": 2025,
+    "price": "3 USD",
+    "description": "Cultura Nasca",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "images": [
+      "images/403A.jpeg",
+      "images/403B.jpeg"
+    ],
+    "group_id": "pe-sol-ceramicos",
+    "group_label": "Cerámicos Precolombinos"
   }
 ]
