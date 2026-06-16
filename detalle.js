@@ -117,6 +117,12 @@ function renderCoinDetail(coin, groupMembers) {
 
   detailContainer.innerHTML = `
     <div class="detail-gallery reveal">
+      ${groupMembers && groupMembers.length > 1 ? `
+      <div class="variants-section" id="detailVariants">
+        <h3 class="variants-heading">Variantes</h3>
+        <div class="variants-list" id="variantsList"></div>
+      </div>
+      ` : ""}
       <div class="detail-main-image-wrap">
         <img
           id="detailMainImage"
@@ -175,13 +181,6 @@ function renderCoinDetail(coin, groupMembers) {
         </svg>
         Consultar por WhatsApp
       </a>
-
-      ${groupMembers && groupMembers.length > 1 ? `
-      <div class="variants-section" id="detailVariants">
-        <h3 class="variants-heading">Variantes</h3>
-        <div class="variants-list" id="variantsList"></div>
-      </div>
-      ` : ""}
     </div>
   `;
 
@@ -226,17 +225,19 @@ function renderCoinDetail(coin, groupMembers) {
       const info = document.createElement("div");
       info.className = "variant-info";
 
-      const gradeLabel = String(member.grade_short || member.gradeShort || member.grade_short_label || "").trim() || "–";
+      const isArgentina = (member.country || "").toLowerCase().includes("argentina");
+      const gradeLabel = String(member.grade_short || "").trim() || "–";
+      const yearLabel  = String(member.year || "").trim() || "–";
 
-      const yearEl = document.createElement("span");
-      yearEl.className   = "variant-year";
-      yearEl.textContent = gradeLabel;
+      const labelEl = document.createElement("span");
+      labelEl.className   = "variant-year"; // Reusing class for consistency
+      labelEl.textContent = isArgentina ? gradeLabel : yearLabel;
 
       const priceEl = document.createElement("span");
       priceEl.className   = "variant-price";
       priceEl.textContent = member.status === "sold" ? "Vendido" : (member.price || "?");
 
-      info.appendChild(yearEl);
+      info.appendChild(labelEl);
       info.appendChild(priceEl);
       btn.appendChild(img);
       btn.appendChild(info);
