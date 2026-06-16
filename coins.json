@@ -5661,5 +5661,122 @@
     "grade_short": "SC",
     "group_id": "hn-2centavos-km78",
     "group_label": "2 Centavos"
+  },
+  {
+    "id": 365,
+    "title": "20 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "40 USD",
+    "reference": "CJ# 19",
+    "mintage": "762.027",
+    "description": "Escasa",
+    "images": [
+      "images/365A.jpeg",
+      "images/365B.jpeg"
+    ],
+    "grade": "Sin Circular -",
+    "grade_short": "SC-"
+  },
+  {
+    "id": 366,
+    "title": "20 Centavos 1883",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1883,
+    "price": "25 USD",
+    "reference": "CJ# 20",
+    "mintage": "1.510.950",
+    "images": [
+      "images/366A.jpeg",
+      "images/366B.jpeg"
+    ],
+    "grade": "Excelente +",
+    "grade_short": "EX+"
+  },
+  {
+    "id": 367,
+    "title": "10 Centavos 1883",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1883,
+    "price": "14 USD",
+    "reference": "CJ# 23",
+    "mintage": "2.785.650",
+    "images": [
+      "images/367A.jpeg",
+      "images/367B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 368,
+    "title": "Cent 1904",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": 1904,
+    "price": "4 USD",
+    "reference": "KM# 90",
+    "images": [
+      "images/368A.jpeg",
+      "images/368B.jpeg"
+    ],
+    "grade": "Se aprecia en foto",
+    "grade_short": "-",
+    "group_id": "us-cent-km90",
+    "group_label": "Cent"
+  },
+  {
+    "id": 369,
+    "title": "Cent 1906",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": 1906,
+    "price": "5 USD",
+    "reference": "KM# 90",
+    "images": [
+      "images/369A.jpeg",
+      "images/369B.jpeg"
+    ],
+    "grade": "Se aprecia en foto",
+    "grade_short": "-",
+    "group_id": "us-cent-km90",
+    "group_label": "Cent"
+  },
+  {
+    "id": 370,
+    "title": "Cent 1907",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": 1907,
+    "price": "7 USD",
+    "reference": "KM# 90",
+    "images": [
+      "images/370A.jpeg",
+      "images/370B.jpeg"
+    ],
+    "grade": "Se aprecia en foto",
+    "grade_short": "-",
+    "group_id": "us-cent-km90",
+    "group_label": "Cent"
+  },
+  {
+    "id": 371,
+    "title": "Cent 1905",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": 1905,
+    "price": "4 USD",
+    "reference": "KM# 90",
+    "images": [
+      "images/371A.jpeg",
+      "images/371B.jpeg"
+    ],
+    "grade": "Se aprecia en foto",
+    "grade_short": "-",
+    "group_id": "us-cent-km90",
+    "group_label": "Cent"
   }
 ]
