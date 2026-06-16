@@ -984,7 +984,7 @@
     "country": "Zambia",
     "metal": "Acero niquelado",
     "year": 1992,
-    "price": "2.5 USD",
+    "price": "3.5 USD",
     "images": [
       "images/72A.jpeg",
       "images/72B.jpeg"
@@ -1020,7 +1020,7 @@
     "country": "Uruguay",
     "metal": "Cobre",
     "year": 1854,
-    "price": "60 USD",
+    "price": "65 USD",
     "images": [
       "images/76A.jpeg",
       "images/76B.jpeg"
@@ -1162,7 +1162,7 @@
     "country": "Rusia",
     "metal": "Bimetálica",
     "year": 2014,
-    "price": "3.5 USD",
+    "price": "4 USD",
     "images": [
       "images/90A.jpeg",
       "images/90B.jpeg"
@@ -1598,7 +1598,7 @@
     "country": "Arabia Saudita",
     "metal": "Acero niquelado",
     "year": 2016,
-    "price": "3 USD",
+    "price": "3.5 USD",
     "images": [
       "images/117A.jpeg",
       "images/117B.jpeg"
@@ -1634,7 +1634,7 @@
     "country": "Egipto",
     "metal": "Cupro-níquel",
     "year": 1984,
-    "price": "3,5 USD",
+    "price": "4.5 USD",
     "images": [
       "images/120A.jpeg",
       "images/120B.jpeg"
@@ -1710,7 +1710,7 @@
     "country": "Luxemburgo",
     "metal": "Cupro-níquel",
     "year": 1962,
-    "price": "3 USD",
+    "price": "3.5 USD",
     "images": [
       "images/124A.jpeg",
       "images/124B.jpeg"
@@ -1869,7 +1869,7 @@
     "country": "India",
     "metal": "Acero inoxidable",
     "year": 2008,
-    "price": "3 USD",
+    "price": "4 USD",
     "images": [
       "images/136A.jpeg",
       "images/136B.jpeg"
@@ -2641,7 +2641,7 @@
     "country": "Uruguay",
     "metal": "Acero Inoxidable",
     "year": 1994,
-    "price": "3,5 USD",
+    "price": "4 USD",
     "images": [
       "images/186A.jpeg",
       "images/186B.jpeg"
@@ -2738,8 +2738,8 @@
     "grade_short": "MB+",
     "mintage": "",
     "description": "Segunda Guerra Mundial",
-    "group_id": "be-25cents-km132",
-    "group_label": "25 Cents 1943"
+    "group_id": "be-25cents-wwii",
+    "group_label": "25 Cents WWII"
   },
   {
     "id": 192,
@@ -2929,7 +2929,7 @@
     "country": "Uruguay",
     "metal": "Bronce",
     "year": 1948,
-    "price": "7 USD",
+    "price": "6 USD",
     "images": [
       "images/202A.jpeg",
       "images/202B.jpeg"
@@ -3181,7 +3181,7 @@
     "country": "Zambia",
     "metal": "Bronce",
     "year": 1983,
-    "price": "2,5 USD",
+    "price": "3.5 USD",
     "images": [
       "images/216A.jpeg",
       "images/216B.jpeg"
@@ -3200,7 +3200,7 @@
     "country": "Somalia",
     "metal": "Acero Inoxidable",
     "year": 2002,
-    "price": "3,5 USD",
+    "price": "4 USD",
     "images": [
       "images/217A.jpeg",
       "images/217B.jpeg"
@@ -3374,7 +3374,9 @@
     "grade_short": "EX-",
     "description": "Variante (BELGIQUE-BELGIE)\nSegunda Guerra Mundial",
     "mintage": "",
-    "reference": "KM# 131"
+    "reference": "KM# 131",
+    "group_id": "be-25cents-wwii",
+    "group_label": "25 Cents WWII"
   },
   {
     "id": 227,
@@ -3392,8 +3394,8 @@
     "description": "Variante (BELGIE-BELGIQUE)\nSegunda Guerra Mundial",
     "mintage": "",
     "reference": "KM# 132",
-    "group_id": "be-25cents-km132",
-    "group_label": "25 Cents 1943"
+    "group_id": "be-25cents-wwii",
+    "group_label": "25 Cents WWII"
   },
   {
     "id": 228,
@@ -3524,7 +3526,7 @@
     "country": "Laos",
     "metal": "Aluminio",
     "year": 1980,
-    "price": "2,5 USD",
+    "price": "3 USD",
     "images": [
       "images/235A.jpeg",
       "images/235B.jpeg"
@@ -3755,7 +3757,7 @@
     "country": "Bulgaria",
     "metal": "Latón",
     "year": 1989,
-    "price": "2,5 USD",
+    "price": "3 USD",
     "images": [
       "images/248A.jpeg",
       "images/248B.jpeg"
@@ -4639,7 +4641,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 1949,
-    "price": "3 USD",
+    "price": "3.5 USD",
     "images": [
       "images/297A.jpeg",
       "images/297B.jpeg"
@@ -4654,7 +4656,7 @@
     "country": "Grecia",
     "metal": "Cuproníquel",
     "year": 1957,
-    "price": "3.5 USD",
+    "price": "3 USD",
     "images": [
       "images/298A.jpeg",
       "images/298B.jpeg"
@@ -4670,7 +4672,7 @@
     "country": "Perú",
     "metal": "Latón",
     "year": 1961,
-    "price": "3 USD",
+    "price": "2.5 USD",
     "images": [
       "images/299A.jpeg",
       "images/299B.jpeg"
@@ -4686,7 +4688,7 @@
     "country": "Chile",
     "metal": "Cuproníquel",
     "year": 1933,
-    "price": "3 USD",
+    "price": "2.5 USD",
     "images": [
       "images/300A.jpeg",
       "images/300B.jpeg"
@@ -5190,10 +5192,10 @@
   },
   {
     "id": 334,
-    "title": "Dinar 1963",
+    "title": "Dinar 1965",
     "country": "Yugoslavia",
     "metal": "Cuproníquel",
-    "year": 1963,
+    "year": 1965,
     "price": "3.5 USD",
     "images": [
       "images/334A.jpeg",
@@ -5282,7 +5284,7 @@
     "country": "Jamaica",
     "metal": "Acero niquelado",
     "year": 1996,
-    "price": "3 USD",
+    "price": "2.5 USD",
     "description": "heptagonal",
     "images": [
       "images/340A.jpeg",
@@ -5369,7 +5371,7 @@
     "country": "Francia",
     "metal": "Bronce",
     "year": 1916,
-    "price": "3 USD",
+    "price": "3.5 USD",
     "reference": "KM# 842",
     "images": [
       "images/346A.jpeg",
@@ -5635,7 +5637,7 @@
     "country": "Yugoslavia",
     "metal": "Latón de aluminio",
     "year": 1976,
-    "price": "3.5 USD",
+    "price": "3 USD",
     "reference": "KM# 45",
     "images": [
       "images/363A.jpeg",
