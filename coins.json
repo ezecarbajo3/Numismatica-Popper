@@ -4932,8 +4932,7 @@
     ],
     "grade": "Muy Bueno+",
     "grade_short": "MB+"
-  }
-  ,
+  },
   {
     "id": 318,
     "title": "10 Groszy 1923",
@@ -4941,7 +4940,10 @@
     "metal": "Níquel",
     "year": 1923,
     "price": "4 USD",
-    "images": ["images/318A.jpeg", "images/318B.jpeg"],
+    "images": [
+      "images/318A.jpeg",
+      "images/318B.jpeg"
+    ],
     "grade": "Muy Bueno +",
     "grade_short": "MB+"
   },
@@ -4952,7 +4954,10 @@
     "metal": "Bronce",
     "year": 1979,
     "price": "3 USD",
-    "images": ["images/319A.jpeg", "images/319B.jpeg"],
+    "images": [
+      "images/319A.jpeg",
+      "images/319B.jpeg"
+    ],
     "grade": "Excelente +",
     "grade_short": "EX+"
   },
@@ -4963,7 +4968,10 @@
     "metal": "Aluminio",
     "year": 1999,
     "price": "4 USD",
-    "images": ["images/320A.jpeg", "images/320B.jpeg"],
+    "images": [
+      "images/320A.jpeg",
+      "images/320B.jpeg"
+    ],
     "reference": "KM# 1103",
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -4977,7 +4985,10 @@
     "metal": "Bronce",
     "year": 1982,
     "price": "2.5 USD",
-    "images": ["images/321A.jpeg", "images/321B.jpeg"],
+    "images": [
+      "images/321A.jpeg",
+      "images/321B.jpeg"
+    ],
     "grade": "Excelente",
     "grade_short": "EX"
   },
@@ -4988,7 +4999,10 @@
     "metal": "Bronce",
     "year": 1987,
     "price": "2.5 USD",
-    "images": ["images/322A.jpeg", "images/322B.jpeg"],
+    "images": [
+      "images/322A.jpeg",
+      "images/322B.jpeg"
+    ],
     "grade": "Excelente",
     "grade_short": "EX"
   },
@@ -4999,7 +5013,10 @@
     "metal": "Cuproníquel",
     "year": 2015,
     "price": "2.5 USD",
-    "images": ["images/323A.jpeg", "images/323B.jpeg"],
+    "images": [
+      "images/323A.jpeg",
+      "images/323B.jpeg"
+    ],
     "grade": "Excelente",
     "grade_short": "EX"
   },
@@ -5010,7 +5027,10 @@
     "metal": "Cuproníquel",
     "year": 1979,
     "price": "3 USD",
-    "images": ["images/324A.jpeg", "images/324B.jpeg"],
+    "images": [
+      "images/324A.jpeg",
+      "images/324B.jpeg"
+    ],
     "grade": "Excelente",
     "grade_short": "EX"
   },
@@ -5021,7 +5041,10 @@
     "metal": "Bronce",
     "year": 1878,
     "price": "4.5 USD",
-    "images": ["images/325A.jpeg", "images/325B.jpeg"],
+    "images": [
+      "images/325A.jpeg",
+      "images/325B.jpeg"
+    ],
     "reference": "KM# 107.1",
     "grade": "Muy Bueno -",
     "grade_short": "MB-"
@@ -5033,7 +5056,10 @@
     "metal": "Bimetálica",
     "year": 1992,
     "price": "2.5 USD",
-    "images": ["images/326A.jpeg", "images/326B.jpeg"],
+    "images": [
+      "images/326A.jpeg",
+      "images/326B.jpeg"
+    ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
   },
@@ -5044,7 +5070,10 @@
     "metal": "Níquel",
     "year": 1923,
     "price": "4 USD",
-    "images": ["images/327A.jpeg", "images/327B.jpeg"],
+    "images": [
+      "images/327A.jpeg",
+      "images/327B.jpeg"
+    ],
     "reference": "Y# 12",
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -5056,7 +5085,10 @@
     "metal": "Acero inoxidable",
     "year": 1992,
     "price": "2.5 USD",
-    "images": ["images/328A.jpeg", "images/328B.jpeg"],
+    "images": [
+      "images/328A.jpeg",
+      "images/328B.jpeg"
+    ],
     "reference": "KM# 6",
     "grade": "Sin Circular",
     "grade_short": "SC"
@@ -5068,7 +5100,10 @@
     "metal": "Cuproníquel",
     "year": 1929,
     "price": "6 USD",
-    "images": ["images/329A.jpeg", "images/329B.jpeg"],
+    "images": [
+      "images/329A.jpeg",
+      "images/329B.jpeg"
+    ],
     "reference": "KM# 577",
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -5081,7 +5116,10 @@
     "metal": "Cuproníquel",
     "year": 1929,
     "price": "2.5 USD",
-    "images": ["images/330A.jpeg", "images/330B.jpeg"],
+    "images": [
+      "images/330A.jpeg",
+      "images/330B.jpeg"
+    ],
     "grade": "Bueno",
     "grade_short": "B"
   },
@@ -5092,7 +5130,10 @@
     "metal": "Bronce",
     "year": 1997,
     "price": "3 USD",
-    "images": ["images/331A.jpeg", "images/331B.jpeg"],
+    "images": [
+      "images/331A.jpeg",
+      "images/331B.jpeg"
+    ],
     "grade": "Sin Circular",
     "grade_short": "SC"
   },
@@ -5103,7 +5144,10 @@
     "metal": "Zinc chapado en cobre",
     "year": 2009,
     "price": "2 USD",
-    "images": ["images/332A.jpeg", "images/332B.jpeg"],
+    "images": [
+      "images/332A.jpeg",
+      "images/332B.jpeg"
+    ],
     "reference": "KM# 441",
     "grade": "Excelente",
     "grade_short": "EX",
@@ -5116,7 +5160,10 @@
     "metal": "Bronce-aluminio",
     "year": 1924,
     "price": "2.5 USD",
-    "images": ["images/333A.jpeg", "images/333B.jpeg"],
+    "images": [
+      "images/333A.jpeg",
+      "images/333B.jpeg"
+    ],
     "grade": "Excelente -",
     "grade_short": "EX-",
     "description": "Ceca A"
@@ -5128,7 +5175,10 @@
     "metal": "Cuproníquel",
     "year": 1963,
     "price": "3.5 USD",
-    "images": ["images/334A.jpeg", "images/334B.jpeg"],
+    "images": [
+      "images/334A.jpeg",
+      "images/334B.jpeg"
+    ],
     "grade": "Excelente +",
     "grade_short": "EX+"
   },
@@ -5139,7 +5189,10 @@
     "metal": "Cuproníquel",
     "year": 1919,
     "price": "2 USD",
-    "images": ["images/335A.jpeg", "images/335B.jpeg"],
+    "images": [
+      "images/335A.jpeg",
+      "images/335B.jpeg"
+    ],
     "reference": "KM# 214.1",
     "grade": "Bueno -",
     "grade_short": "B-"
@@ -5151,7 +5204,10 @@
     "metal": "Bronce",
     "year": 1992,
     "price": "2.5 USD",
-    "images": ["images/336A.jpeg", "images/336B.jpeg"],
+    "images": [
+      "images/336A.jpeg",
+      "images/336B.jpeg"
+    ],
     "grade": "Sin Circular -",
     "grade_short": "SC-"
   },
@@ -5162,7 +5218,10 @@
     "metal": "Cuproníquel",
     "year": 2013,
     "price": "2.5 USD",
-    "images": ["images/337A.jpeg", "images/337B.jpeg"],
+    "images": [
+      "images/337A.jpeg",
+      "images/337B.jpeg"
+    ],
     "grade": "Sin Circular",
     "grade_short": "SC"
   },
@@ -5173,9 +5232,400 @@
     "metal": "Bronce",
     "year": 1983,
     "price": "2.5 USD",
-    "images": ["images/338A.jpeg", "images/338B.jpeg"],
+    "images": [
+      "images/338A.jpeg",
+      "images/338B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 339,
+    "title": "5 Pence 2016",
+    "country": "Reino Unido",
+    "metal": "Acero niquelado",
+    "year": 2016,
+    "price": "2 USD",
+    "reference": "KM# 1334",
+    "images": [
+      "images/339A.jpeg",
+      "images/339B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 340,
+    "title": "1 Dólar 1996",
+    "country": "Jamaica",
+    "metal": "Acero niquelado",
+    "year": 1996,
+    "price": "3 USD",
+    "description": "heptagonal",
+    "images": [
+      "images/340A.jpeg",
+      "images/340B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 341,
+    "title": "5 Cent 2024",
+    "country": "Lituania",
+    "year": 2024,
+    "price": "2.5 USD",
+    "images": [
+      "images/341A.jpeg",
+      "images/341B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 342,
+    "title": "Centavos 1986",
+    "country": "República Dominicana",
+    "metal": "Bronce",
+    "year": 1986,
+    "price": "2.5 USD",
+    "images": [
+      "images/342A.jpeg",
+      "images/342B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 343,
+    "title": "Tambala 1995",
+    "country": "Malawi",
+    "metal": "Bronce",
+    "year": 1995,
+    "price": "3 USD",
+    "images": [
+      "images/343A.jpeg",
+      "images/343B.jpeg"
+    ],
+    "grade": "Excelente +",
+    "grade_short": "EX+"
+  },
+  {
+    "id": 344,
+    "title": "50 Satang 2018",
+    "country": "Tailandia",
+    "metal": "Acero chapado en cobre",
+    "year": 2018,
+    "price": "3 USD",
+    "reference": "Y# 573",
+    "images": [
+      "images/344A.jpeg",
+      "images/344B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 345,
+    "title": "5 Reichspfennig 1925",
+    "country": "Alemania",
+    "metal": "Bronce-aluminio",
+    "year": 1925,
+    "price": "2.5 USD",
+    "reference": "KM# 39",
+    "description": "Ceca A",
+    "images": [
+      "images/345A.jpeg",
+      "images/345B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 346,
+    "title": "5 Centimes 1916",
+    "country": "Francia",
+    "metal": "Bronce",
+    "year": 1916,
+    "price": "3 USD",
+    "reference": "KM# 842",
+    "images": [
+      "images/346A.jpeg",
+      "images/346B.jpeg"
+    ],
+    "grade": "Bueno -",
+    "grade_short": "B-"
+  },
+  {
+    "id": 347,
+    "title": "10 Francos 1949",
+    "country": "Francia",
+    "metal": "Cuproníquel",
+    "year": 1949,
+    "price": "3.5 USD",
+    "reference": "K. 1909",
+    "description": "cabeza chica",
+    "images": [
+      "images/347A.jpeg",
+      "images/347B.jpeg"
+    ],
+    "grade": "Excelente +",
+    "grade_short": "EX+"
+  },
+  {
+    "id": 348,
+    "title": "Balboa 2011",
+    "country": "Panamá",
+    "metal": "Bimetálica",
+    "year": 2011,
+    "price": "2.5 USD",
+    "images": [
+      "images/348A.jpeg",
+      "images/348B.jpeg"
+    ],
+    "grade": "Excelente +",
+    "grade_short": "EX+"
+  },
+  {
+    "id": 349,
+    "title": "Naya Paisa 1963",
+    "country": "India",
+    "metal": "Latón niquelado",
+    "year": 1963,
+    "price": "3 USD",
+    "reference": "KM# 8a",
+    "images": [
+      "images/349A.jpeg",
+      "images/349B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 350,
+    "title": "Cent 1928",
+    "country": "Países Bajos",
+    "metal": "Bronce",
+    "year": 1928,
+    "price": "4.5 USD",
+    "reference": "KM# 152",
+    "mintage": "10 millones",
+    "images": [
+      "images/350A.jpeg",
+      "images/350B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 351,
+    "title": "Qirsh 1984",
+    "country": "Egipto",
+    "metal": "Bronce-aluminio",
+    "year": 1984,
+    "price": "4 USD",
+    "reference": "KM# 553",
+    "images": [
+      "images/351A.jpeg",
+      "images/351B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 352,
+    "title": "20 Cents 1990",
+    "country": "Hong Kong",
+    "year": 1990,
+    "price": "3 USD",
+    "description": "canto ondulado",
+    "images": [
+      "images/352A.jpeg",
+      "images/352B.jpeg"
+    ],
+    "grade": "Excelente +",
+    "grade_short": "EX+"
+  },
+  {
+    "id": 353,
+    "title": "10 Centavos 1980",
+    "country": "Honduras",
+    "metal": "Cuproníquel",
+    "year": 1980,
+    "price": "3 USD",
+    "images": [
+      "images/353A.jpeg",
+      "images/353B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 354,
+    "title": "1 Real 2015",
+    "country": "Brasil",
+    "metal": "Bimetálica",
+    "year": 2015,
+    "price": "2.5 USD",
+    "reference": "KM# 710",
+    "description": "Atletismo paralímpico",
+    "images": [
+      "images/354A.jpeg",
+      "images/354B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 355,
+    "title": "1 Real 2014",
+    "country": "Brasil",
+    "metal": "Bimetálica",
+    "year": 2014,
+    "price": "2.5 USD",
+    "reference": "KM# 687",
+    "description": "salto",
+    "images": [
+      "images/355A.jpeg",
+      "images/355B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 356,
+    "title": "1 Real 2016",
+    "country": "Brasil",
+    "metal": "Bimetálica",
+    "year": 2016,
+    "price": "2.5 USD",
+    "reference": "KM# 726",
+    "description": "Mascota olímpica",
+    "images": [
+      "images/356A.jpeg",
+      "images/356B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 357,
+    "title": "1 Dollar 1979",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": 1979,
+    "price": "3 USD",
+    "reference": "KM# 207",
+    "description": "susan b antony",
+    "images": [
+      "images/357A.jpeg",
+      "images/357B.jpeg"
+    ]
+  },
+  {
+    "id": 358,
+    "title": "10 Korun",
+    "country": "República Checa",
+    "metal": "Acero chapado en cobre",
+    "price": "3 USD",
+    "reference": "KM# 4",
+    "images": [
+      "images/358A.jpeg",
+      "images/358B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 359,
+    "title": "25 Cents 2002",
+    "country": "Estados del Caribe Oriental",
+    "metal": "Cuproníquel",
+    "year": 2002,
+    "price": "3.5 USD",
+    "reference": "KM# 38",
+    "images": [
+      "images/359A.jpeg",
+      "images/359B.jpeg"
+    ],
+    "grade": "Excelente -",
+    "grade_short": "EX-"
+  },
+  {
+    "id": 360,
+    "title": "Penny 1919",
+    "country": "Reino Unido",
+    "metal": "Bronce",
+    "year": 1919,
+    "price": "4 USD",
+    "reference": "KM# 810",
+    "images": [
+      "images/360A.jpeg",
+      "images/360B.jpeg"
+    ],
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-"
+  },
+  {
+    "id": 361,
+    "title": "20 Centavos 1946",
+    "country": "México",
+    "metal": "Bronce",
+    "year": 1946,
+    "price": "2.5 USD",
+    "reference": "KM# 439",
+    "description": "patina hermosa",
+    "images": [
+      "images/361A.jpeg",
+      "images/361B.jpeg"
+    ],
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-"
+  },
+  {
+    "id": 362,
+    "title": "5 Céntimos 1870",
+    "country": "España",
+    "metal": "Bronce",
+    "year": 1870,
+    "price": "3.5 USD",
+    "reference": "KM# 662",
+    "images": [
+      "images/362A.jpeg",
+      "images/362B.jpeg"
+    ],
+    "grade": "Bueno +",
+    "grade_short": "B+"
+  },
+  {
+    "id": 363,
+    "title": "20 Para 1976",
+    "country": "Yugoslavia",
+    "metal": "Latón de aluminio",
+    "year": 1976,
+    "price": "3.5 USD",
+    "reference": "KM# 45",
+    "images": [
+      "images/363A.jpeg",
+      "images/363B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 364,
+    "title": "2 Centavos 1974",
+    "country": "Honduras",
+    "metal": "Acero recubierto de cobre",
+    "year": 1974,
+    "price": "3 USD",
+    "reference": "KM# 78a",
+    "description": "ano unico",
+    "images": [
+      "images/364A.jpeg",
+      "images/364B.jpeg"
+    ],
     "grade": "Sin Circular",
     "grade_short": "SC"
   }
-
 ]
