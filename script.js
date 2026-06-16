@@ -739,17 +739,19 @@ function renderCoins(coins, skipAnimation = false) {
     image.alt = coin.title || 'Moneda';
 
     if (coin.group_id) {
+      article.classList.add('is-group');
       title.textContent = coin.group_label || coin.title;
       yearTag.textContent = '';
-      const minInfo = groupMinPriceMap.get(coin.group_id);
       const count = getGroupMemberCount(coin.group_id);
-      price.textContent = coin.price || 'Consultar';
+      price.style.display = 'none'; // Hide price element to allow badgeRow to center
       badgeRow.innerHTML = count > 1
         ? `<span class="coin-grade-badge">${count} variantes</span>`
-        : '';
+        : (count === 1 ? `<span class="coin-grade-badge">1 variante</span>` : '');
     } else {
+      article.classList.remove('is-group');
       title.textContent   = coin.title || 'Sin título';
       yearTag.textContent = coin.year  || '';
+      price.style.display = 'block'; 
       if (coin.original_price) {
         price.innerHTML = `<span class="price-original">${coin.original_price}</span><span class="price-current">${coin.price}</span>`;
       } else {
@@ -772,6 +774,7 @@ function renderCoins(coins, skipAnimation = false) {
 
       price.textContent = 'VENDIDO';
       price.classList.add('is-sold-price');
+      price.style.display = 'block';
     }
 
     // ── Inline image carousel ─────────────────────────────────────────────────
