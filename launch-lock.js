@@ -16,8 +16,13 @@
      hacia el mismo momento sin importar su zona horaria. */
   var LAUNCH = new Date("2026-06-18T20:00:00-03:00").getTime();
 
-  /* Si ya pasó la hora de lanzamiento, no bloqueamos nada. */
+  /* Contraseña de acceso anticipado (para el administrador). */
+  var PASSWORD = "prime popper";
+  var UNLOCK_KEY = "np_early_access";
+
+  /* Si ya pasó la hora de lanzamiento, o ya se ingresó la clave, no bloqueamos. */
   if (Date.now() >= LAUNCH) return;
+  try { if (localStorage.getItem(UNLOCK_KEY) === "1") return; } catch (e) {}
 
   /* Contraseña de acceso anticipado (para administración/preview).
      Al ingresarla correctamente se abre una ventana de navegación libre de
@@ -94,6 +99,28 @@
 #launch-lock .ll-foot{font-family:"Cinzel",Georgia,serif;\
   font-size:clamp(.58rem,1.5vw,.7rem);letter-spacing:.3em;text-transform:uppercase;\
   color:#7a6f5d;margin:18px 0 0;}\
+#launch-lock .ll-gate{display:flex;align-items:center;justify-content:center;\
+  gap:8px;margin:clamp(22px,4vw,30px) auto 0;width:fit-content;\
+  padding:5px 5px 5px 14px;border-radius:999px;\
+  border:1px solid rgba(207,172,107,.28);background:rgba(255,255,255,.02);\
+  transition:border-color .25s ease,box-shadow .25s ease;}\
+#launch-lock .ll-gate:focus-within{border-color:rgba(207,172,107,.6);\
+  box-shadow:0 0 0 3px rgba(207,172,107,.10);}\
+#launch-lock .ll-gate.is-err{border-color:rgba(200,80,70,.7);\
+  animation:ll-shake .4s ease;}\
+@keyframes ll-shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}\
+  40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(2px)}}\
+#launch-lock .ll-key{width:14px;height:14px;flex:none;opacity:.7;}\
+#launch-lock .ll-input{background:transparent;border:0;outline:0;\
+  font-family:"Cinzel",Georgia,serif;font-size:.82rem;letter-spacing:.06em;\
+  color:#f5f0e6;width:clamp(120px,30vw,160px);}\
+#launch-lock .ll-input::placeholder{color:#7a6f5d;letter-spacing:.04em;}\
+#launch-lock .ll-go{flex:none;width:30px;height:30px;border:0;cursor:pointer;\
+  border-radius:50%;display:flex;align-items:center;justify-content:center;\
+  background:linear-gradient(180deg,#efd9a2,#cfac6b 55%,#a8844a);\
+  color:#0a0a0a;transition:transform .2s ease,filter .2s ease;}\
+#launch-lock .ll-go:hover{transform:scale(1.07);filter:brightness(1.08);}\
+#launch-lock .ll-go svg{width:14px;height:14px;}\
 @media (max-width:380px){#launch-lock .ll-sep{display:none}\
   #launch-lock .ll-countdown{gap:8px}}\
 #launch-lock .ll-gate{margin-top:clamp(28px,5vw,40px);display:flex;\
@@ -175,11 +202,21 @@
       '</div>' +
       '<div class="ll-rule"></div>' +
       '<p class="ll-foot">Aumentando tu colección desde 2020</p>' +
-    '</div>';
+      '<form class="ll-gate" novalidate autocomplete="off">' +
+        '<svg class="ll-key" viewBox="0 0 24 24" fill="none" stroke="#cfac6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+          '<circle cx="8" cy="15" r="4"/><path d="M10.8 12.2 20 3"/><path d="m17 6 2.5 2.5"/><path d="m14 9 2.5 2.5"/>' +
+        '</svg>' +
+        '<input class="ll-input" type="password" inputmode="text" ' +
+          'placeholder="Acceso anticipado" aria-label="Contraseña de acceso" />' +
+        '<button class="ll-go" type="submit" aria-label="Ingresar">' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 14 0"/><path d="m13 6 6 6-6 6"/></svg>' +
+        '</button>' +
+      '</form>';
 
   function mount() {
     lockBody();
     document.body.appendChild(overlay);
+    bindGate();
   }
   if (document.body) {
     mount();
@@ -202,6 +239,29 @@
     }
   }
   window.addEventListener("keydown", blockKeys, { passive: false });
+
+  /* ---- Acceso por contraseña (administrador) ---- */
+  function bindGate() {
+    var form = overlay.querySelector(".ll-gate");
+    var input = overlay.querySelector(".ll-input");
+    if (!form || !input) return;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var ok = input.value.trim().toLowerCase() === PASSWORD;
+      if (ok) {
+        try { localStorage.setItem(UNLOCK_KEY, "1"); } catch (err) {}
+        unlock();
+      } else {
+        form.classList.add("is-err");
+        input.value = "";
+        input.placeholder = "Contraseña incorrecta";
+        setTimeout(function () {
+          form.classList.remove("is-err");
+          input.placeholder = "Acceso anticipado";
+        }, 1400);
+      }
+    });
+  }
 
   /* ---- Cuenta regresiva ---- */
   var pad = function (n) { return n < 10 ? "0" + n : "" + n; };
