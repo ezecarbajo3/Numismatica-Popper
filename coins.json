@@ -6398,20 +6398,6 @@
     "grade_short": "EX"
   },
   {
-    "id": 424,
-    "title": "1 Centavo 1883",
-    "country": "Argentina",
-    "metal": "Cobre",
-    "year": 1883,
-    "price": "14 USD",
-    "images": [
-      "images/424A.jpeg",
-      "images/424B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
     "id": 425,
     "title": "8 Reales 1808",
     "country": "Bolivia",
@@ -6424,20 +6410,6 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX"
-  },
-  {
-    "id": 426,
-    "title": "Half dime 1854",
-    "country": "USA",
-    "metal": "Plata 0.900",
-    "year": 1854,
-    "price": "15 USD",
-    "images": [
-      "images/426A.jpeg",
-      "images/426B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R+"
   },
   {
     "id": 427,
@@ -6496,62 +6468,6 @@
     "grade_short": "B"
   },
   {
-    "id": 431,
-    "title": "5 Cents 1915",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 1915,
-    "price": "13 USD",
-    "images": [
-      "images/431A.jpeg",
-      "images/431B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 432,
-    "title": "5 Cents 1916",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 1916,
-    "price": "13 USD",
-    "images": [
-      "images/432A.jpeg",
-      "images/432B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 433,
-    "title": "5 Cents 1921",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 1921,
-    "price": "8 USD",
-    "images": [
-      "images/433A.jpeg",
-      "images/433B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 434,
-    "title": "5 Cents 1921",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 1921,
-    "price": "9 USD",
-    "images": [
-      "images/434A.jpeg",
-      "images/434B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
     "id": 435,
     "title": "5 Cents 1888",
     "country": "USA",
@@ -6566,20 +6482,6 @@
     "grade_short": "B"
   },
   {
-    "id": 436,
-    "title": "5 Cents 1894",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 1894,
-    "price": "12 USD",
-    "images": [
-      "images/436A.jpeg",
-      "images/436B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R+"
-  },
-  {
     "id": 437,
     "title": "1 Cent 1910",
     "country": "USA",
@@ -6592,20 +6494,6 @@
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
-  },
-  {
-    "id": 438,
-    "title": "1 Cent 1911",
-    "country": "USA",
-    "metal": "Cu",
-    "year": 1911,
-    "price": "15 USD",
-    "images": [
-      "images/438A.jpeg",
-      "images/438B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
   },
   {
     "id": 439,
@@ -6645,20 +6533,6 @@
     "images": [
       "images/441A.jpeg",
       "images/441B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 442,
-    "title": "1 Cent 1913",
-    "country": "USA",
-    "metal": "Cu",
-    "year": 1913,
-    "price": "15 USD",
-    "images": [
-      "images/442A.jpeg",
-      "images/442B.jpeg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -6890,20 +6764,6 @@
     "grade_short": "MB"
   },
   {
-    "id": 459,
-    "title": "50 Centésimos 1943",
-    "country": "Uruguay",
-    "metal": "Plata 0.720",
-    "year": 1943,
-    "price": "12 USD",
-    "images": [
-      "images/459A.jpeg",
-      "images/459B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
     "id": 460,
     "title": "1000 Pesos 2003",
     "country": "Uruguay",
@@ -6964,122 +6824,6 @@
     "description": "Moneda conmemorativa del mundial 1978 (Argentina)"
   },
   {
-    "id": 464,
-    "title": "10 Francs 1929",
-    "country": "Francia",
-    "metal": "Plata 0.680",
-    "year": 1929,
-    "price": "17 USD",
-    "images": [
-      "images/464A.jpeg",
-      "images/464B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX+"
-  },
-  {
-    "id": 465,
-    "title": "1 Peso 1942",
-    "country": "Uruguay",
-    "metal": "Plata 0.720",
-    "year": 1942,
-    "price": "16 USD",
-    "images": [
-      "images/465A.jpeg",
-      "images/465B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 466,
-    "title": "1 Centavo 1974",
-    "country": "Argentina",
-    "metal": "Aluminio",
-    "year": 1974,
-    "price": "5 USD",
-    "images": [
-      "images/466A.jpeg",
-      "images/466B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Escasa"
-  },
-  {
-    "id": 467,
-    "title": "1 Centavo 1975",
-    "country": "Argentina",
-    "metal": "Aluminio",
-    "year": 1975,
-    "price": "5 USD",
-    "images": [
-      "images/467A.jpeg",
-      "images/467B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Escasa"
-  },
-  {
-    "id": 468,
-    "title": "10 Centavos 1976",
-    "country": "Argentina",
-    "metal": "Bronce de aluminio",
-    "year": 1976,
-    "price": "8 USD",
-    "images": [
-      "images/468A.jpeg",
-      "images/468B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX+",
-    "description": "Escasa"
-  },
-  {
-    "id": 469,
-    "title": "20 Centavos 1961",
-    "country": "Argentina",
-    "metal": "Acero enchapado",
-    "year": 1961,
-    "price": "5 USD",
-    "images": [
-      "images/469A.jpeg",
-      "images/469B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Escasa"
-  },
-  {
-    "id": 470,
-    "title": "5/10 Real 1827",
-    "country": "Argentina",
-    "metal": "Cu",
-    "year": 1827,
-    "price": "15 USD",
-    "images": [
-      "images/470A.jpeg",
-      "images/470B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 471,
-    "title": "1/10 Real 1822",
-    "country": "Argentina",
-    "metal": "Cu",
-    "year": 1822,
-    "price": "10 USD",
-    "images": [
-      "images/471A.jpeg",
-      "images/471B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B-"
-  },
-  {
     "id": 472,
     "title": "5 Centésimos 1857",
     "country": "Uruguay",
@@ -7132,56 +6876,6 @@
     "grade_short": "SC"
   },
   {
-    "id": 476,
-    "title": "Commemorative Nickels 2004-2005 Album",
-    "country": "USA",
-    "price": "8 USD",
-    "images": [
-      "images/476A.jpeg",
-      "images/476B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 477,
-    "title": "Commemorative Cents 2009 Album",
-    "country": "USA",
-    "price": "8 USD",
-    "images": [
-      "images/477A.jpeg",
-      "images/477B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 478,
-    "title": "Bicentennial 1776-1976 Album",
-    "country": "USA",
-    "price": "8 USD",
-    "images": [
-      "images/478A.jpeg",
-      "images/478B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 479,
-    "title": "1 Real 1772",
-    "country": "Perú",
-    "metal": "Plata 0.903",
-    "year": 1772,
-    "price": "16 USD",
-    "images": [
-      "images/479A.jpeg",
-      "images/479B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R+"
-  },
-  {
     "id": 480,
     "title": "5 Centavos 1896",
     "country": "Argentina",
@@ -7194,116 +6888,6 @@
     ],
     "grade": "Bueno",
     "grade_short": "B"
-  },
-  {
-    "id": 481,
-    "title": "5 Centavos 1898",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1898,
-    "price": "4 USD",
-    "images": [
-      "images/481A.jpeg",
-      "images/481B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R+"
-  },
-  {
-    "id": 482,
-    "title": "5 Centavos 1898",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1898,
-    "price": "6 USD",
-    "images": [
-      "images/482A.jpeg",
-      "images/482B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R+"
-  },
-  {
-    "id": 483,
-    "title": "5 Centavos 1898",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1898,
-    "price": "6.5 USD",
-    "images": [
-      "images/483A.jpeg",
-      "images/483B.jpeg"
-    ]
-  },
-  {
-    "id": 484,
-    "title": "5 Centavos 1898",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1898,
-    "price": "8 USD",
-    "images": [
-      "images/484A.jpeg",
-      "images/484B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B-"
-  },
-  {
-    "id": 485,
-    "title": "5 Centavos 1898",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1898,
-    "price": "17 USD",
-    "images": [
-      "images/485A.jpeg",
-      "images/485B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 486,
-    "title": "5 Centavos 1909",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1909,
-    "price": "8 USD",
-    "images": [
-      "images/486A.jpeg",
-      "images/486B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 487,
-    "title": "5 Centavos 1924",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1924,
-    "price": "1.5 USD",
-    "images": [
-      "images/487A.jpeg",
-      "images/487B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 488,
-    "title": "5 Centavos 1931",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1931,
-    "price": "6 USD",
-    "images": [
-      "images/488A.jpeg",
-      "images/488B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
   },
   {
     "id": 489,
@@ -7320,20 +6904,6 @@
     "grade_short": "EX"
   },
   {
-    "id": 490,
-    "title": "5 Centavos 1936",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1936,
-    "price": "1 USD",
-    "images": [
-      "images/490A.jpeg",
-      "images/490B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
     "id": 491,
     "title": "10 Centavos 1907",
     "country": "Argentina",
@@ -7348,118 +6918,6 @@
     "grade_short": "B"
   },
   {
-    "id": 492,
-    "title": "10 Centavos 1907",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1907,
-    "price": "13 USD",
-    "images": [
-      "images/492A.jpeg",
-      "images/492B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R+"
-  },
-  {
-    "id": 493,
-    "title": "10 Centavos 1914",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1914,
-    "price": "14 USD",
-    "images": [
-      "images/493A.jpeg",
-      "images/493B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 494,
-    "title": "10 Centavos 1931",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1931,
-    "price": "13 USD",
-    "images": [
-      "images/494A.jpeg",
-      "images/494B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX-"
-  },
-  {
-    "id": 495,
-    "title": "10 Centavos 1931",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1931,
-    "price": "7 USD",
-    "images": [
-      "images/495A.jpeg",
-      "images/495B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 496,
-    "title": "10 Centavos 1931",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1931,
-    "price": "5 USD",
-    "images": [
-      "images/496A.jpeg",
-      "images/496B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B-"
-  },
-  {
-    "id": 497,
-    "title": "20 Centavos 1896",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1896,
-    "price": "18 USD",
-    "images": [
-      "images/497A.jpeg",
-      "images/497B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 498,
-    "title": "20 Centavos 1896",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1896,
-    "price": "6 USD",
-    "images": [
-      "images/498A.jpeg",
-      "images/498B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R"
-  },
-  {
-    "id": 499,
-    "title": "20 Centavos 1898",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1898,
-    "price": "15 USD",
-    "images": [
-      "images/499A.jpeg",
-      "images/499B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B-"
-  },
-  {
     "id": 500,
     "title": "20 Centavos 1899",
     "country": "Argentina",
@@ -7472,20 +6930,6 @@
     ],
     "grade": "Bueno",
     "grade_short": "B"
-  },
-  {
-    "id": 501,
-    "title": "20 Centavos 1899",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1899,
-    "price": "15 USD",
-    "images": [
-      "images/501A.jpeg",
-      "images/501B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R"
   },
   {
     "id": 502,
@@ -7614,62 +7058,6 @@
     "grade_short": "B"
   },
   {
-    "id": 511,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1908,
-    "price": "16 USD",
-    "images": [
-      "images/511A.jpeg",
-      "images/511B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R+"
-  },
-  {
-    "id": 512,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1908,
-    "price": "12 USD",
-    "images": [
-      "images/512A.jpeg",
-      "images/512B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R"
-  },
-  {
-    "id": 513,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1908,
-    "price": "14 USD",
-    "images": [
-      "images/513A.jpeg",
-      "images/513B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R"
-  },
-  {
-    "id": 514,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1908,
-    "price": "12 USD",
-    "images": [
-      "images/514A.jpeg",
-      "images/514B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R"
-  },
-  {
     "id": 515,
     "title": "20 Centavos 1908",
     "country": "Argentina",
@@ -7682,20 +7070,6 @@
     ],
     "grade": "Bueno",
     "grade_short": "B-"
-  },
-  {
-    "id": 516,
-    "title": "20 Centavos 1909",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1909,
-    "price": "7 USD",
-    "images": [
-      "images/516A.jpeg",
-      "images/516B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
   },
   {
     "id": 517,
@@ -7712,20 +7086,6 @@
     "grade_short": "MB"
   },
   {
-    "id": 518,
-    "title": "20 Centavos 1914",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1914,
-    "price": "18 USD",
-    "images": [
-      "images/518A.jpeg",
-      "images/518B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
     "id": 519,
     "title": "20 Centavos 1931",
     "country": "Argentina",
@@ -7740,48 +7100,6 @@
     "grade_short": "EX"
   },
   {
-    "id": 520,
-    "title": "20 Centavos 1931",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1931,
-    "price": "14 USD",
-    "images": [
-      "images/520A.jpeg",
-      "images/520B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB-"
-  },
-  {
-    "id": 521,
-    "title": "20 Centavos 1931",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1931,
-    "price": "8 USD",
-    "images": [
-      "images/521A.jpeg",
-      "images/521B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 522,
-    "title": "2 Pesos 2010",
-    "country": "Argentina",
-    "metal": "Cu Ni - Bronce de aluminio",
-    "year": 2010,
-    "price": "6 USD",
-    "images": [
-      "images/522A.jpeg",
-      "images/522B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX+"
-  },
-  {
     "id": 523,
     "title": "Half dollar 1964",
     "country": "USA",
@@ -7794,160 +7112,6 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX+"
-  },
-  {
-    "id": 524,
-    "title": "Quarter dollar 1917",
-    "country": "USA",
-    "metal": "Ag 0.900",
-    "year": 1917,
-    "price": "16 USD",
-    "images": [
-      "images/524A.jpeg",
-      "images/524B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R+"
-  },
-  {
-    "id": 525,
-    "title": "5/10 Qirsh 1885",
-    "country": "Egipto",
-    "metal": "Cu Ni",
-    "year": 1885,
-    "price": "4.5 USD",
-    "images": [
-      "images/525A.jpeg",
-      "images/525B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 526,
-    "title": "50 Centavos 1997",
-    "country": "Argentina",
-    "metal": "Bronce de aluminio",
-    "year": 1997,
-    "price": "3.5 USD",
-    "images": [
-      "images/526A.jpeg",
-      "images/526B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 527,
-    "title": "2 Pesos 2002",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 2002,
-    "price": "2.5 USD",
-    "images": [
-      "images/527A.jpeg",
-      "images/527B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 528,
-    "title": "2 Lire 1923",
-    "country": "Italia",
-    "metal": "Cu Ni",
-    "year": 1923,
-    "price": "6 USD",
-    "images": [
-      "images/528A.jpeg",
-      "images/528B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 529,
-    "title": "2 Centavos 1941",
-    "country": "Argentina",
-    "metal": "Cobre",
-    "year": 1941,
-    "price": "2.5 USD",
-    "images": [
-      "images/529A.jpeg",
-      "images/529B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 530,
-    "title": "2 Centavos 1945",
-    "country": "Argentina",
-    "metal": "Cobre",
-    "year": 1945,
-    "price": "2.5 USD",
-    "images": [
-      "images/530A.jpeg",
-      "images/530B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 531,
-    "title": "2 Centavos 1948",
-    "country": "Argentina",
-    "metal": "Cobre",
-    "year": 1948,
-    "price": "2 USD",
-    "images": [
-      "images/531A.jpeg",
-      "images/531B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 532,
-    "title": "5 Centavos 1942",
-    "country": "Argentina",
-    "metal": "Bronce de aluminio",
-    "year": 1942,
-    "price": "6 USD",
-    "images": [
-      "images/532A.jpeg",
-      "images/532B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 533,
-    "title": "5 Pesos 1977",
-    "country": "Argentina",
-    "metal": "Bronce de aluminio",
-    "year": 1977,
-    "price": "15 USD",
-    "images": [
-      "images/533A.jpeg",
-      "images/533B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 534,
-    "title": "1 Centavo 1946",
-    "country": "Argentina",
-    "metal": "Cobre",
-    "year": 1946,
-    "price": "4 USD",
-    "images": [
-      "images/534A.jpeg",
-      "images/534B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
   },
   {
     "id": 535,
@@ -8188,20 +7352,6 @@
     "grade_short": "MB"
   },
   {
-    "id": 552,
-    "title": "1 Cent 1880",
-    "country": "USA",
-    "metal": "Cu",
-    "year": 1880,
-    "price": "12 USD",
-    "images": [
-      "images/552A.jpeg",
-      "images/552B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
     "id": 553,
     "title": "1 Cent 1880",
     "country": "USA",
@@ -8214,397 +7364,5 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX"
-  },
-  {
-    "id": 554,
-    "title": "1 Cent 1882",
-    "country": "USA",
-    "metal": "Cu",
-    "year": 1882,
-    "price": "12 USD",
-    "images": [
-      "images/554A.jpeg",
-      "images/554B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 555,
-    "title": "1 Cent 1884",
-    "country": "USA",
-    "metal": "Cu",
-    "year": 1884,
-    "price": "12 USD",
-    "images": [
-      "images/555A.jpeg",
-      "images/555B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 556,
-    "title": "1 Cent 1885",
-    "country": "USA",
-    "metal": "Cu",
-    "year": 1885,
-    "price": "14 USD",
-    "images": [
-      "images/556A.jpeg",
-      "images/556B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B-"
-  },
-  {
-    "id": 557,
-    "title": "1 Cent 1886",
-    "country": "USA",
-    "metal": "Cu",
-    "year": 1886,
-    "price": "14 USD",
-    "images": [
-      "images/557A.jpeg",
-      "images/557B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R+"
-  },
-  {
-    "id": 558,
-    "title": "1 Cent 1887",
-    "country": "USA",
-    "metal": "Cu",
-    "year": 1887,
-    "price": "9 USD",
-    "images": [
-      "images/558A.jpeg",
-      "images/558B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 559,
-    "title": "1 Cent 1889",
-    "country": "USA",
-    "metal": "Cu",
-    "year": 1889,
-    "price": "5 USD",
-    "images": [
-      "images/559A.jpeg",
-      "images/559B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 560,
-    "title": "1 Cent 1891",
-    "country": "USA",
-    "metal": "Cu",
-    "year": 1891,
-    "price": "6 USD",
-    "images": [
-      "images/560A.jpeg",
-      "images/560B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 561,
-    "title": "1 Cent 1893",
-    "country": "USA",
-    "metal": "Cu",
-    "year": 1893,
-    "price": "5 USD",
-    "images": [
-      "images/561A.jpeg",
-      "images/561B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 562,
-    "title": "1 Cent 1902",
-    "country": "USA",
-    "metal": "Cu",
-    "year": 1902,
-    "price": "6.5 USD",
-    "images": [
-      "images/562A.jpeg",
-      "images/562B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 563,
-    "title": "1 Dollar 1979",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 1979,
-    "price": "3 USD",
-    "images": [
-      "images/563A.jpeg",
-      "images/563B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 564,
-    "title": "1 Dollar 1979",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 1979,
-    "price": "3 USD",
-    "images": [
-      "images/564A.jpeg",
-      "images/564B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 565,
-    "title": "1 Cent 2009",
-    "country": "USA",
-    "metal": "Cu",
-    "year": 2009,
-    "price": "1 USD",
-    "images": [
-      "images/565A.jpeg",
-      "images/565B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 566,
-    "title": "Half dollar 2021",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 2021,
-    "price": "3 USD",
-    "images": [
-      "images/566A.jpeg",
-      "images/566B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 567,
-    "title": "1 Dollar 2010",
-    "country": "USA",
-    "metal": "Brass",
-    "year": 2010,
-    "price": "3 USD",
-    "images": [
-      "images/567A.jpeg",
-      "images/567B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 568,
-    "title": "1 Dollar 2000",
-    "country": "USA",
-    "metal": "Brass",
-    "year": 2000,
-    "price": "2 USD",
-    "images": [
-      "images/568A.jpeg",
-      "images/568B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 569,
-    "title": "1 Dollar 2001",
-    "country": "USA",
-    "metal": "Brass",
-    "year": 2001,
-    "price": "3 USD",
-    "images": [
-      "images/569A.jpeg",
-      "images/569B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 570,
-    "title": "5 Cents 1965",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 1965,
-    "price": "3 USD",
-    "images": [
-      "images/570A.jpeg",
-      "images/570B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 571,
-    "title": "5 Cents 2004",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 2004,
-    "price": "0.5 USD",
-    "images": [
-      "images/571A.jpeg",
-      "images/571B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 572,
-    "title": "5 Cents 2005",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 2005,
-    "price": "0.5 USD",
-    "images": [
-      "images/572A.jpeg",
-      "images/572B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 573,
-    "title": "5 Cents 2005",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 2005,
-    "price": "0.5 USD",
-    "images": [
-      "images/573A.jpeg",
-      "images/573B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 574,
-    "title": "5 Cents 2005",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 2005,
-    "price": "0.5 USD",
-    "images": [
-      "images/574A.jpeg",
-      "images/574B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 575,
-    "title": "5 Cents 2005",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 2005,
-    "price": "0.5 USD",
-    "images": [
-      "images/575A.jpeg",
-      "images/575B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 576,
-    "title": "5 Cents 2004",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 2004,
-    "price": "0.5 USD",
-    "images": [
-      "images/576A.jpeg",
-      "images/576B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 577,
-    "title": "5 Cents 2004",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 2004,
-    "price": "0.5 USD",
-    "images": [
-      "images/577A.jpeg",
-      "images/577B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 578,
-    "title": "Quarter dollar 1908",
-    "country": "USA",
-    "metal": "Ag 0.900",
-    "year": 1908,
-    "price": "18 USD",
-    "images": [
-      "images/578A.jpeg",
-      "images/578B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B-"
-  },
-  {
-    "id": 579,
-    "title": "Quarter dollar 1976",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 1976,
-    "price": "1 USD",
-    "images": [
-      "images/579A.jpeg",
-      "images/579B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 580,
-    "title": "Quarter dollar 2021",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 2021,
-    "price": "1 USD",
-    "images": [
-      "images/580A.jpeg",
-      "images/580B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 581,
-    "title": "Quarter dollar 1976",
-    "country": "USA",
-    "metal": "Cu Ni",
-    "year": 1976,
-    "price": "1 USD",
-    "images": [
-      "images/581A.jpeg",
-      "images/581B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
   }
 ]
