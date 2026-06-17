@@ -76,7 +76,7 @@
   },
   {
     "id": 6,
-    "title": "10 Décimos 1830",
+    "title": "10 D\u00e9cimos 1830",
     "country": "Argentina - Buenos Aires",
     "metal": "Cobre",
     "year": 1830,
@@ -142,7 +142,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Corona de plata - Ideal inversión"
+    "description": "Corona de plata - Ideal inversi\u00f3n"
   },
   {
     "id": 14,
@@ -214,8 +214,8 @@
   },
   {
     "id": 20,
-    "title": "Bls. 1 Dólar 2001",
-    "country": "Canadá",
+    "title": "Bls. 1 D\u00f3lar 2001",
+    "country": "Canad\u00e1",
     "metal": "Plata .925",
     "year": 2001,
     "price": "65 USD",
@@ -229,12 +229,12 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "83,390",
-    "description": "Moneda conmemorativa por el 50° aniversario del Ballet Nacional de Canadá"
+    "description": "Moneda conmemorativa por el 50\u00b0 aniversario del Ballet Nacional de Canad\u00e1"
   },
   {
     "id": 26,
     "title": "Troy Ounce",
-    "country": "México",
+    "country": "M\u00e9xico",
     "metal": "Plata .999",
     "year": "S/F",
     "price": "100 USD",
@@ -246,7 +246,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Ideal inversión"
+    "description": "Ideal inversi\u00f3n"
   },
   {
     "id": 27,
@@ -263,13 +263,13 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "1/10 onza - Ideal inversión"
+    "description": "1/10 onza - Ideal inversi\u00f3n"
   },
   {
     "id": 28,
     "title": "Cent 1863",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1863,
     "price": "25 USD",
     "images": [
@@ -288,7 +288,7 @@
     "id": 29,
     "title": "Cent 1861",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1861,
     "price": "40 USD",
     "images": [
@@ -308,7 +308,7 @@
     "id": 30,
     "title": "Cent 1864",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1864,
     "price": "20 USD",
     "images": [
@@ -327,7 +327,7 @@
     "id": 31,
     "title": "Cent 1859",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1859,
     "price": "20 USD",
     "images": [
@@ -346,7 +346,7 @@
     "id": 32,
     "title": "Cent 1860",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1860,
     "price": "20 USD",
     "images": [
@@ -385,7 +385,7 @@
     "id": 34,
     "title": "20 Centavos 1931",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1931,
     "price": "15 USD",
     "images": [
@@ -470,7 +470,7 @@
     "id": 39,
     "title": "5 Centavos 1914",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1914,
     "price": "8 USD",
     "images": [
@@ -481,13 +481,13 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "1.477.000",
-    "description": "La cuarta más difícil"
+    "description": "La cuarta m\u00e1s dif\u00edcil"
   },
   {
     "id": 40,
     "title": "10 Centavos 1931",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1931,
     "price": "10 USD",
     "images": [
@@ -553,13 +553,13 @@
     "grade": "Bueno - detalles",
     "grade_short": "B**",
     "mintage": "443.700",
-    "description": "Contramarca de la época"
+    "description": "Contramarca de la \u00e9poca"
   },
   {
     "id": 44,
     "title": "20 Centavos 1908",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1908,
     "price": "30 USD",
     "images": [
@@ -578,7 +578,7 @@
     "id": 45,
     "title": "20 Centavos 1908",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1908,
     "price": "30 USD",
     "images": [
@@ -635,7 +635,7 @@
     "id": 49,
     "title": "5 Centavos 1916",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1916,
     "price": "6 USD",
     "images": [
@@ -688,7 +688,7 @@
   },
   {
     "id": 53,
-    "title": "10 Öre 1919",
+    "title": "10 \u00d6re 1919",
     "country": "Suecia",
     "metal": "Plata",
     "year": 1919,
@@ -745,7 +745,7 @@
     "id": 57,
     "title": "1/4 Riyal 1972",
     "country": "Arabia Saudita",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1972,
     "price": "4 USD",
     "images": [
@@ -756,7 +756,7 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": "Año único",
+    "description": "A\u00f1o \u00fanico",
     "status": "sold",
     "soldAt": "2026-06-03T00:00:00.000Z"
   },
@@ -775,7 +775,7 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
-    "description": "Bicentenario de la independencia - Año único"
+    "description": "Bicentenario de la independencia - A\u00f1o \u00fanico"
   },
   {
     "id": 59,
@@ -800,7 +800,7 @@
     "id": 60,
     "title": "10 Avos 2005",
     "country": "Macao",
-    "metal": "Latón",
+    "metal": "Lat\u00f3n",
     "year": 2005,
     "price": "3 USD",
     "images": [
@@ -830,7 +830,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "300.000",
-    "description": "250 aniversario de la fundación de Montevideo - ESCASA"
+    "description": "250 aniversario de la fundaci\u00f3n de Montevideo - ESCASA"
   },
   {
     "id": 64,
@@ -866,7 +866,7 @@
     "grade": "Excelente",
     "grade_short": "Ex",
     "mintage": "",
-    "description": "Token salarial de la bodega Francisco Fratia, acuñado en la Matricería Cuyo (Mendoza)"
+    "description": "Token salarial de la bodega Francisco Fratia, acu\u00f1ado en la Matricer\u00eda Cuyo (Mendoza)"
   },
   {
     "id": 66,
@@ -883,12 +883,12 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "",
-    "description": "Token oficial del calendario Christophorus Porsche 2001 - Acuñado para acompañar los calendarios anuales numerados de la fábrica Porsche"
+    "description": "Token oficial del calendario Christophorus Porsche 2001 - Acu\u00f1ado para acompa\u00f1ar los calendarios anuales numerados de la f\u00e1brica Porsche"
   },
   {
     "id": 67,
     "title": "25 Cents 2006",
-    "country": "Canadá",
+    "country": "Canad\u00e1",
     "metal": "Acero niquelado",
     "year": 2006,
     "price": "3 USD",
@@ -900,15 +900,15 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Concientización sobre el cáncer de mama - Moneda coloreada",
+    "description": "Concientizaci\u00f3n sobre el c\u00e1ncer de mama - Moneda coloreada",
     "status": "sold",
     "soldAt": "2026-06-05T00:00:00.000Z"
   },
   {
     "id": 68,
-    "title": "Dólar 2020",
-    "country": "Canadá",
-    "metal": "Acero chapado en latón",
+    "title": "D\u00f3lar 2020",
+    "country": "Canad\u00e1",
+    "metal": "Acero chapado en lat\u00f3n",
     "year": 2020,
     "price": "4 USD",
     "images": [
@@ -919,15 +919,15 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "75° aniversario de la firma de la Carta de las Naciones Unidas",
+    "description": "75\u00b0 aniversario de la firma de la Carta de las Naciones Unidas",
     "status": "sold",
     "soldAt": "2026-06-05T00:00:00.000Z"
   },
   {
     "id": 69,
-    "title": "100 Réis 1937",
+    "title": "100 R\u00e9is 1937",
     "country": "Brasil",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1937,
     "price": "3 USD",
     "images": [
@@ -938,15 +938,15 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "",
-    "description": "Tamandaré",
+    "description": "Tamandar\u00e9",
     "status": "sold",
     "soldAt": "2026-05-23T00:00:00.000Z"
   },
   {
     "id": 70,
-    "title": "400 Réis 1938",
+    "title": "400 R\u00e9is 1938",
     "country": "Brasil",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1938,
     "price": "2.5 USD",
     "images": [
@@ -998,8 +998,8 @@
   {
     "id": 75,
     "title": "100 Fils 1997",
-    "country": "Baréin",
-    "metal": "Bimetálica",
+    "country": "Bar\u00e9in",
+    "metal": "Bimet\u00e1lica",
     "year": 1997,
     "price": "4 USD",
     "images": [
@@ -1016,7 +1016,7 @@
   },
   {
     "id": 76,
-    "title": "5 Centésimos 1854/40 RARA",
+    "title": "5 Cent\u00e9simos 1854/40 RARA",
     "country": "Uruguay",
     "metal": "Cobre",
     "year": 1854,
@@ -1029,11 +1029,11 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "120.000",
-    "description": "Año único."
+    "description": "A\u00f1o \u00fanico."
   },
   {
     "id": 77,
-    "title": "5 Centésimos 1857",
+    "title": "5 Cent\u00e9simos 1857",
     "country": "Uruguay",
     "metal": "Cobre",
     "year": 1857,
@@ -1046,11 +1046,11 @@
     "grade": "Bueno -",
     "grade_short": "B-",
     "mintage": "570.000",
-    "description": "Año único."
+    "description": "A\u00f1o \u00fanico."
   },
   {
     "id": 78,
-    "title": "40 Centésimos 1857",
+    "title": "40 Cent\u00e9simos 1857",
     "country": "Uruguay",
     "metal": "Cobre",
     "year": 1857,
@@ -1063,13 +1063,13 @@
     "grade": "Bueno detalles",
     "grade_short": "B**",
     "mintage": "1.000.000",
-    "description": "Año único",
+    "description": "A\u00f1o \u00fanico",
     "group_id": "group_a_km10_uy",
-    "group_label": "40 Centésimos (KM# 10)"
+    "group_label": "40 Cent\u00e9simos (KM# 10)"
   },
   {
     "id": 79,
-    "title": "40 Centésimos 1857",
+    "title": "40 Cent\u00e9simos 1857",
     "country": "Uruguay",
     "metal": "Cobre",
     "year": 1857,
@@ -1082,13 +1082,13 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "1.000.000",
-    "description": "Año único",
+    "description": "A\u00f1o \u00fanico",
     "group_id": "group_a_km10_uy",
-    "group_label": "40 Centésimos (KM# 10)"
+    "group_label": "40 Cent\u00e9simos (KM# 10)"
   },
   {
     "id": 80,
-    "title": "Centésimo 1869",
+    "title": "Cent\u00e9simo 1869",
     "country": "Uruguay",
     "metal": "Bronce",
     "year": 1869,
@@ -1107,7 +1107,7 @@
     "id": 81,
     "title": "10 Ore 1925",
     "country": "Dinamarca",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1925,
     "price": "4 USD",
     "images": [
@@ -1123,8 +1123,8 @@
   {
     "id": 85,
     "title": "25 Cents 1921",
-    "country": "Bélgica",
-    "metal": "Cuproníquel",
+    "country": "B\u00e9lgica",
+    "metal": "Cupron\u00edquel",
     "year": 1921,
     "price": "3 USD",
     "images": [
@@ -1135,13 +1135,13 @@
     "grade": "Bueno+",
     "grade_short": "B+",
     "mintage": "",
-    "description": "Texto en neerlandés",
+    "description": "Texto en neerland\u00e9s",
     "status": "sold",
     "soldAt": "2026-06-05T00:00:00.000Z"
   },
   {
     "id": 89,
-    "title": "1000 Réis 1910",
+    "title": "1000 R\u00e9is 1910",
     "country": "Brasil",
     "metal": "Plata .900",
     "year": 1910,
@@ -1160,7 +1160,7 @@
     "id": 90,
     "title": "10 Rublos 2014",
     "country": "Rusia",
-    "metal": "Bimetálica",
+    "metal": "Bimet\u00e1lica",
     "year": 2014,
     "price": "4 USD",
     "images": [
@@ -1177,7 +1177,7 @@
     "id": 91,
     "title": "50 Piastres 2019",
     "country": "Egipto",
-    "metal": "Acero chapado en latón",
+    "metal": "Acero chapado en lat\u00f3n",
     "year": 2019,
     "price": "4 USD",
     "images": [
@@ -1188,13 +1188,13 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Estación eléctrica - Año único"
+    "description": "Estaci\u00f3n el\u00e9ctrica - A\u00f1o \u00fanico"
   },
   {
     "id": 92,
     "title": "Rupia 2005",
     "country": "Nepal",
-    "metal": "Acero chapado en latón",
+    "metal": "Acero chapado en lat\u00f3n",
     "year": 2005,
     "price": "4 USD",
     "images": [
@@ -1205,7 +1205,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Año único",
+    "description": "A\u00f1o \u00fanico",
     "status": "sold",
     "soldAt": "2026-06-03T00:00:00.000Z"
   },
@@ -1213,7 +1213,7 @@
     "id": 93,
     "title": "5 Pfennig 1899",
     "country": "Alemania",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1899,
     "price": "4 USD",
     "images": [
@@ -1266,8 +1266,8 @@
   },
   {
     "id": 98,
-    "title": "2 Céntimos 1904",
-    "country": "España",
+    "title": "2 C\u00e9ntimos 1904",
+    "country": "Espa\u00f1a",
     "metal": "Cobre",
     "year": 1904,
     "price": "8 USD",
@@ -1357,7 +1357,7 @@
     "id": 103,
     "title": "5 Centavos 1908",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1908,
     "price": "6 USD",
     "images": [
@@ -1374,7 +1374,7 @@
     "id": 104,
     "title": "5 Centavos 1934",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1934,
     "price": "3 USD",
     "images": [
@@ -1391,7 +1391,7 @@
     "id": 105,
     "title": "20 Centavos 1899",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1899,
     "price": "6 USD",
     "images": [
@@ -1410,7 +1410,7 @@
     "id": 107,
     "title": "20 Centavos 1899",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1899,
     "price": "30 USD",
     "images": [
@@ -1429,7 +1429,7 @@
     "id": 108,
     "title": "20 Centavos 1908",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1908,
     "price": "60 USD",
     "images": [
@@ -1448,7 +1448,7 @@
     "id": 109,
     "title": "20 Centavos 1908",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1908,
     "price": "90 USD",
     "images": [
@@ -1467,7 +1467,7 @@
     "id": 110,
     "title": "20 Centavos 1908",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1908,
     "price": "120 USD",
     "images": [
@@ -1486,7 +1486,7 @@
     "id": 111,
     "title": "20 Centavos 1936",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1936,
     "price": "12 USD",
     "images": [
@@ -1505,7 +1505,7 @@
     "id": 112,
     "title": "20 Centavos 1936",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1936,
     "price": "8 USD",
     "images": [
@@ -1590,7 +1590,9 @@
     "grade": "Sin circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Año único."
+    "description": "A\u00f1o \u00fanico.",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 117,
@@ -1607,12 +1609,12 @@
     "grade": "Sin circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Año único."
+    "description": "A\u00f1o \u00fanico."
   },
   {
     "id": 118,
-    "title": "Kuruş 2022",
-    "country": "Turquía",
+    "title": "Kuru\u015f 2022",
+    "country": "Turqu\u00eda",
     "metal": "Aluminio",
     "year": 2022,
     "price": "3 USD",
@@ -1632,7 +1634,7 @@
     "id": 120,
     "title": "10 Qirsh 1984",
     "country": "Egipto",
-    "metal": "Cupro-níquel",
+    "metal": "Cupro-n\u00edquel",
     "year": 1984,
     "price": "4.5 USD",
     "images": [
@@ -1643,7 +1645,7 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "",
-    "description": "Mezquita de Mohamed Alí.",
+    "description": "Mezquita de Mohamed Al\u00ed.",
     "status": "sold",
     "soldAt": "2026-06-03T00:00:00.000Z"
   },
@@ -1651,7 +1653,7 @@
     "id": 121,
     "title": "2 Rupees 2000",
     "country": "Nepal",
-    "metal": "Latón",
+    "metal": "Lat\u00f3n",
     "year": 2000,
     "price": "3 USD",
     "images": [
@@ -1681,7 +1683,7 @@
     "grade": "Sin circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Magnética.",
+    "description": "Magn\u00e9tica.",
     "status": "sold",
     "soldAt": "2026-06-03T00:00:00.000Z"
   },
@@ -1689,7 +1691,7 @@
     "id": 123,
     "title": "5 Cents 1999",
     "country": "Suazilandia",
-    "metal": "Cupro-níquel",
+    "metal": "Cupro-n\u00edquel",
     "year": 1999,
     "price": "3 USD",
     "images": [
@@ -1708,7 +1710,7 @@
     "id": 124,
     "title": "Franc 1962",
     "country": "Luxemburgo",
-    "metal": "Cupro-níquel",
+    "metal": "Cupro-n\u00edquel",
     "year": 1962,
     "price": "3.5 USD",
     "images": [
@@ -1736,15 +1738,15 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "",
-    "description": "Año único.",
+    "description": "A\u00f1o \u00fanico.",
     "status": "sold",
     "soldAt": "2026-06-03T00:00:00.000Z"
   },
   {
     "id": 126,
     "title": "50 Centimes 1991",
-    "country": "Haití",
-    "metal": "Cupro-níquel",
+    "country": "Hait\u00ed",
+    "metal": "Cupro-n\u00edquel",
     "year": 1991,
     "price": "2.5 USD",
     "images": [
@@ -1780,7 +1782,7 @@
     "id": 129,
     "title": "5 Markkaa 1949",
     "country": "Finlandia",
-    "metal": "Latón",
+    "metal": "Lat\u00f3n",
     "year": 1949,
     "price": "5 USD",
     "images": [
@@ -1849,7 +1851,7 @@
   {
     "id": 135,
     "title": "10 Francos 1956",
-    "country": "África Occidental Francesa",
+    "country": "\u00c1frica Occidental Francesa",
     "metal": "Bronce-aluminio",
     "year": 1956,
     "price": "4 USD",
@@ -1861,7 +1863,7 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": "Año único."
+    "description": "A\u00f1o \u00fanico."
   },
   {
     "id": 136,
@@ -1884,7 +1886,7 @@
     "id": 138,
     "title": "10 Centavos 1883",
     "country": "Bolivia",
-    "metal": "Cupro-níquel",
+    "metal": "Cupro-n\u00edquel",
     "year": 1883,
     "price": "8 USD",
     "images": [
@@ -1954,7 +1956,7 @@
     "id": 145,
     "title": "Dante Unali",
     "country": "Token",
-    "metal": "Cupro-níquel",
+    "metal": "Cupro-n\u00edquel",
     "year": "",
     "price": "8 USD",
     "images": [
@@ -2007,7 +2009,7 @@
   },
   {
     "id": 148,
-    "title": "1/2 Dólar 1964",
+    "title": "1/2 D\u00f3lar 1964",
     "country": "Estados Unidos",
     "metal": "Plata 900",
     "year": "1964",
@@ -2024,9 +2026,9 @@
   },
   {
     "id": 149,
-    "title": "1/2 Dólar 1986 S",
+    "title": "1/2 D\u00f3lar 1986 S",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel Proof",
+    "metal": "Cupron\u00edquel Proof",
     "year": "1986",
     "price": "16 USD",
     "images": [
@@ -2041,9 +2043,9 @@
   },
   {
     "id": 150,
-    "title": "1/2 Dólar 1989 S",
+    "title": "1/2 D\u00f3lar 1989 S",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel Proof",
+    "metal": "Cupron\u00edquel Proof",
     "year": "1989",
     "price": "18 USD",
     "images": [
@@ -2060,7 +2062,7 @@
     "id": 151,
     "title": "10 Centavos 1892",
     "country": "Bolivia",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "1892",
     "price": "6 USD",
     "images": [
@@ -2076,8 +2078,8 @@
   {
     "id": 152,
     "title": "1/2 Dinar 2011",
-    "country": "Túnez",
-    "metal": "Cuproníquel",
+    "country": "T\u00fanez",
+    "metal": "Cupron\u00edquel",
     "year": "2011",
     "price": "4.5 USD",
     "images": [
@@ -2107,13 +2109,15 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "592.000",
-    "description": "Estados alemanes."
+    "description": "Estados alemanes.",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 154,
     "title": "Pound 2019",
     "country": "Egipto",
-    "metal": "Bimetálica",
+    "metal": "Bimet\u00e1lica",
     "year": "2019",
     "price": "5 USD",
     "images": [
@@ -2124,7 +2128,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Conmemorativa: Nueva Capital de Egipto.\nAño único.",
+    "description": "Conmemorativa: Nueva Capital de Egipto.\nA\u00f1o \u00fanico.",
     "status": "sold",
     "soldAt": "2026-06-03T00:00:00.000Z"
   },
@@ -2132,7 +2136,7 @@
     "id": 155,
     "title": "2 Rupias 2006",
     "country": "Nepal",
-    "metal": "Acero bañado en latón",
+    "metal": "Acero ba\u00f1ado en lat\u00f3n",
     "year": "2006",
     "price": "4.5 USD",
     "images": [
@@ -2168,7 +2172,7 @@
     "id": 158,
     "title": "1/2 Riyal 1972",
     "country": "Arabia Saudita",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "1972",
     "price": "4 USD",
     "images": [
@@ -2186,7 +2190,7 @@
   {
     "id": 160,
     "title": "Franc 1942",
-    "country": "Bélgica",
+    "country": "B\u00e9lgica",
     "metal": "Zinc",
     "year": "1942",
     "price": "4,5 USD",
@@ -2204,7 +2208,7 @@
   },
   {
     "id": 161,
-    "title": "1/4 Dólar 1926",
+    "title": "1/4 D\u00f3lar 1926",
     "country": "Estados Unidos",
     "metal": "Plata 900",
     "year": "1926",
@@ -2242,7 +2246,7 @@
     "id": 164,
     "title": "10 Rappen 1903",
     "country": "Suiza",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "1903",
     "price": "4 USD",
     "images": [
@@ -2410,7 +2414,7 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
-    "description": "Reproducción de 1957 de una medalla militar original de 1814, entregada a las tropas que liberaron Montevideo del dominio español."
+    "description": "Reproducci\u00f3n de 1957 de una medalla militar original de 1814, entregada a las tropas que liberaron Montevideo del dominio espa\u00f1ol."
   },
   {
     "id": 174,
@@ -2427,7 +2431,7 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
-    "description": "Premio deportivo local de automovilismo marplatense, otorgado el 21 de marzo de 1948 en una prueba donde compitió o participó alguien llamado Américo R. Canosa.",
+    "description": "Premio deportivo local de automovilismo marplatense, otorgado el 21 de marzo de 1948 en una prueba donde compiti\u00f3 o particip\u00f3 alguien llamado Am\u00e9rico R. Canosa.",
     "status": "sold",
     "soldAt": "2026-05-23T00:00:00.000Z"
   },
@@ -2435,7 +2439,7 @@
     "id": 175,
     "title": "Peso Mercosur 1998",
     "country": "Argentina",
-    "metal": "Bimetálica",
+    "metal": "Bimet\u00e1lica",
     "year": "1998",
     "price": "5 USD",
     "images": [
@@ -2446,12 +2450,12 @@
     "grade": "Excelente -",
     "grade_short": "E-",
     "mintage": "496.000",
-    "description": "Escasa, solo 496k acuñadas."
+    "description": "Escasa, solo 496k acu\u00f1adas."
   },
   {
     "id": 176,
     "title": "25 Centavos 1950",
-    "country": "México",
+    "country": "M\u00e9xico",
     "metal": "Plata",
     "year": "1950",
     "price": "5 USD",
@@ -2499,7 +2503,7 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "596.000",
-    "description": "596k acuñadas.",
+    "description": "596k acu\u00f1adas.",
     "group_id": "ar-2centavos-1896",
     "group_label": "2 Centavos 1896"
   },
@@ -2559,7 +2563,7 @@
     "id": 182,
     "title": "Blister 2 Pesos 2012",
     "country": "Argentina",
-    "metal": "Bimetálica",
+    "metal": "Bimet\u00e1lica",
     "year": 2012,
     "price": "8 USD",
     "images": [
@@ -2622,7 +2626,7 @@
     "id": 185,
     "title": "10 Pesos 2015",
     "country": "Uruguay",
-    "metal": "Bimetálica",
+    "metal": "Bimet\u00e1lica",
     "year": 2015,
     "price": "4 USD",
     "images": [
@@ -2637,7 +2641,7 @@
   },
   {
     "id": 186,
-    "title": "10 Centésimos 1994",
+    "title": "10 Cent\u00e9simos 1994",
     "country": "Uruguay",
     "metal": "Acero Inoxidable",
     "year": 1994,
@@ -2650,7 +2654,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Difícil de ver"
+    "description": "Dif\u00edcil de ver"
   },
   {
     "id": 187,
@@ -2725,7 +2729,7 @@
   {
     "id": 191,
     "title": "25 Cents 1943",
-    "country": "Bélgica",
+    "country": "B\u00e9lgica",
     "metal": "Zinc",
     "year": 1943,
     "price": "5 USD",
@@ -2734,7 +2738,7 @@
       "images/191B.jpeg"
     ],
     "reference": "KM# 132",
-    "grade": "Muy Buena Más",
+    "grade": "Muy Buena M\u00e1s",
     "grade_short": "MB+",
     "mintage": "",
     "description": "Segunda Guerra Mundial",
@@ -2745,7 +2749,7 @@
     "id": 192,
     "title": "5 Cents 1902",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1902,
     "price": "4 USD",
     "images": [
@@ -2761,7 +2765,7 @@
   {
     "id": 193,
     "title": "2 Filler 1894",
-    "country": "Hungría",
+    "country": "Hungr\u00eda",
     "metal": "Bronce",
     "year": 1894,
     "price": "4 USD",
@@ -2834,7 +2838,7 @@
     "id": 197,
     "title": "Piso 1974",
     "country": "Filipinas",
-    "metal": "Latón de Níquel",
+    "metal": "Lat\u00f3n de N\u00edquel",
     "year": 1974,
     "price": "3,5 USD",
     "images": [
@@ -2842,7 +2846,7 @@
       "images/197B.jpeg"
     ],
     "reference": "KM# 203",
-    "grade": "Muy Buena Más",
+    "grade": "Muy Buena M\u00e1s",
     "grade_short": "MB+",
     "mintage": "",
     "description": "",
@@ -2872,7 +2876,7 @@
     "id": 199,
     "title": "2 Marcos 1969",
     "country": "Alemania",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1969,
     "price": "3,5 USD",
     "images": [
@@ -2920,12 +2924,12 @@
     "reference": "KM# 3",
     "grade": "Bueno -",
     "grade_short": "B-",
-    "description": "Año único",
+    "description": "A\u00f1o \u00fanico",
     "mintage": ""
   },
   {
     "id": 202,
-    "title": "5 Centésimos 1948",
+    "title": "5 Cent\u00e9simos 1948",
     "country": "Uruguay",
     "metal": "Bronce",
     "year": 1948,
@@ -2937,7 +2941,7 @@
     "reference": "KM# 21a",
     "grade": "Excelente",
     "grade_short": "EX",
-    "description": "Pátina Rainbow (Arcoiris)",
+    "description": "P\u00e1tina Rainbow (Arcoiris)",
     "mintage": ""
   },
   {
@@ -2996,7 +3000,7 @@
   {
     "id": 206,
     "title": "Seiseno 1641-1652",
-    "country": "España",
+    "country": "Espa\u00f1a",
     "metal": "Cobre",
     "year": 1641,
     "price": "12 USD",
@@ -3014,7 +3018,7 @@
     "id": 207,
     "title": "10 Dinara 1976",
     "country": "Yugoslavia",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1976,
     "price": "3 USD",
     "images": [
@@ -3031,7 +3035,7 @@
   },
   {
     "id": 208,
-    "title": "10 Öre 1953",
+    "title": "10 \u00d6re 1953",
     "country": "Suecia",
     "metal": "Plata",
     "year": 1953,
@@ -3052,7 +3056,7 @@
     "id": 209,
     "title": "2 Francos 1968",
     "country": "Suiza",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1968,
     "price": "2,5 USD",
     "images": [
@@ -3071,7 +3075,7 @@
     "id": 210,
     "title": "1 Peso 1995 FALSA",
     "country": "Argentina",
-    "metal": "Monometálica",
+    "metal": "Monomet\u00e1lica",
     "year": 1995,
     "price": "4 USD",
     "images": [
@@ -3080,15 +3084,15 @@
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "description": "Moneda falsa.\nEra de la convertibilidad (paridad con el dólar).",
+    "description": "Moneda falsa.\nEra de la convertibilidad (paridad con el d\u00f3lar).",
     "mintage": "",
     "reference": ""
   },
   {
     "id": 211,
     "title": "2 Euro 2013",
-    "country": "España",
-    "metal": "Bimetálica",
+    "country": "Espa\u00f1a",
+    "metal": "Bimet\u00e1lica",
     "year": 2013,
     "price": "9 USD",
     "images": [
@@ -3141,7 +3145,7 @@
     "id": 214,
     "title": "1 Escudo 1994",
     "country": "Cabo Verde",
-    "metal": "Acero Chapado en Latón",
+    "metal": "Acero Chapado en Lat\u00f3n",
     "year": 1994,
     "price": "2,5 USD",
     "images": [
@@ -3209,7 +3213,9 @@
     "grade_short": "SC",
     "description": "Elefante",
     "mintage": "",
-    "reference": ""
+    "reference": "",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 218,
@@ -3289,7 +3295,7 @@
     "id": 222,
     "title": "20 Cents 1992",
     "country": "Chipre",
-    "metal": "Latón de Níquel",
+    "metal": "Lat\u00f3n de N\u00edquel",
     "year": 1992,
     "price": "3 USD",
     "images": [
@@ -3324,7 +3330,7 @@
   {
     "id": 224,
     "title": "Franco 1946",
-    "country": "Bélgica",
+    "country": "B\u00e9lgica",
     "metal": "Zinc",
     "year": 1946,
     "price": "4 USD",
@@ -3343,7 +3349,7 @@
   {
     "id": 225,
     "title": "Franco 1944",
-    "country": "Bélgica",
+    "country": "B\u00e9lgica",
     "metal": "Zinc",
     "year": 1944,
     "price": "4 USD",
@@ -3362,7 +3368,7 @@
   {
     "id": 226,
     "title": "25 Cents 1942",
-    "country": "Bélgica",
+    "country": "B\u00e9lgica",
     "metal": "Zinc",
     "year": 1942,
     "price": "5 USD",
@@ -3381,7 +3387,7 @@
   {
     "id": 227,
     "title": "25 Cents 1943",
-    "country": "Bélgica",
+    "country": "B\u00e9lgica",
     "metal": "Zinc",
     "year": 1943,
     "price": "4 USD",
@@ -3400,7 +3406,7 @@
   {
     "id": 228,
     "title": "5 Paisa 1989",
-    "country": "Pakistán",
+    "country": "Pakist\u00e1n",
     "metal": "Aluminio",
     "year": 1989,
     "price": "3,5 USD",
@@ -3412,12 +3418,14 @@
     "grade_short": "SC",
     "description": "",
     "mintage": "",
-    "reference": "KM# 52"
+    "reference": "KM# 52",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 229,
     "title": "10 Cents 1942",
-    "country": "Países Bajos",
+    "country": "Pa\u00edses Bajos",
     "metal": "Zinc",
     "year": 1942,
     "price": "4 USD",
@@ -3429,7 +3437,9 @@
     "grade_short": "EX",
     "description": "Segunda Guerra Mundial",
     "mintage": "",
-    "reference": "KM# 174"
+    "reference": "KM# 174",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 230,
@@ -3446,7 +3456,9 @@
     "grade_short": "MB",
     "description": "Escasa",
     "mintage": "1000000",
-    "reference": "KM# 10"
+    "reference": "KM# 10",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 231,
@@ -3518,7 +3530,9 @@
     "grade_short": "SC",
     "description": "",
     "mintage": "",
-    "reference": ""
+    "reference": "",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 235,
@@ -3535,7 +3549,9 @@
     "grade_short": "SC",
     "description": "",
     "mintage": "",
-    "reference": ""
+    "reference": "",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 236,
@@ -3558,7 +3574,7 @@
     "id": 237,
     "title": "Medio Penny 1966",
     "country": "Jamaica",
-    "metal": "Latón Niquelado",
+    "metal": "Lat\u00f3n Niquelado",
     "year": 1966,
     "price": "3,5 USD",
     "images": [
@@ -3576,8 +3592,8 @@
   {
     "id": 238,
     "title": "5 Francos 1957",
-    "country": "Túnez",
-    "metal": "Cuproníquel",
+    "country": "T\u00fanez",
+    "metal": "Cupron\u00edquel",
     "year": 1957,
     "price": "5 USD",
     "images": [
@@ -3631,7 +3647,7 @@
   {
     "id": 241,
     "title": "Millim 2000",
-    "country": "Túnez",
+    "country": "T\u00fanez",
     "metal": "Aluminio",
     "year": "2000",
     "price": "2.5 USD",
@@ -3666,7 +3682,7 @@
     "id": 243,
     "title": "10 Rublos 2011",
     "country": "Rusia",
-    "metal": "Acero Chapado en Latón",
+    "metal": "Acero Chapado en Lat\u00f3n",
     "year": 2011,
     "price": "4 USD",
     "images": [
@@ -3717,9 +3733,9 @@
   },
   {
     "id": 246,
-    "title": "5 Céntimos 1979",
+    "title": "5 C\u00e9ntimos 1979",
     "country": "Costa Rica",
-    "metal": "Latón",
+    "metal": "Lat\u00f3n",
     "year": 1979,
     "price": "3,5 USD",
     "images": [
@@ -3728,7 +3744,7 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Año Único",
+    "description": "A\u00f1o \u00danico",
     "mintage": "3000000",
     "reference": "KM# 184.3a",
     "status": "sold",
@@ -3736,7 +3752,7 @@
   },
   {
     "id": 247,
-    "title": "5 Céntimos 1953",
+    "title": "5 C\u00e9ntimos 1953",
     "country": "Costa Rica",
     "metal": "Inoxidable",
     "year": 1958,
@@ -3755,7 +3771,7 @@
     "id": 248,
     "title": "Stotinka 1989",
     "country": "Bulgaria",
-    "metal": "Latón",
+    "metal": "Lat\u00f3n",
     "year": 1989,
     "price": "3 USD",
     "images": [
@@ -3771,7 +3787,7 @@
   {
     "id": 249,
     "title": "5 Fils 1974",
-    "country": "Emiratos Árabes Unidos",
+    "country": "Emiratos \u00c1rabes Unidos",
     "metal": "Bronce",
     "year": 1974,
     "price": "3 USD",
@@ -3788,8 +3804,8 @@
   {
     "id": 250,
     "title": "1 Dirham 1973",
-    "country": "Emiratos Árabes Unidos",
-    "metal": "Cuproníquel",
+    "country": "Emiratos \u00c1rabes Unidos",
+    "metal": "Cupron\u00edquel",
     "year": 1973,
     "price": "3 USD",
     "images": [
@@ -3861,7 +3877,7 @@
     "id": 254,
     "title": "20 Centavos 1936",
     "country": "Argentina",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1936,
     "price": "6 USD",
     "images": [
@@ -3879,7 +3895,7 @@
   {
     "id": 255,
     "title": "1 Cent 1925",
-    "country": "Países Bajos",
+    "country": "Pa\u00edses Bajos",
     "metal": "Bronce",
     "year": 1925,
     "price": "3.5 USD",
@@ -3893,13 +3909,15 @@
     "mintage": "",
     "description": "Guillermina I.",
     "group_id": "nl-cent-km152",
-    "group_label": "Cent"
+    "group_label": "Cent",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 256,
     "title": "10 Para 1910",
     "country": "Imperio Otomano",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1910,
     "price": "8 USD",
     "images": [
@@ -3933,7 +3951,7 @@
     "id": 258,
     "title": "50 Cents 1980",
     "country": "Singapur",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1980,
     "price": "2.5 USD",
     "images": [
@@ -3992,7 +4010,7 @@
     "id": 261,
     "title": "10 Rappen 1967",
     "country": "Suiza",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1967,
     "price": "2 USD",
     "images": [
@@ -4011,7 +4029,7 @@
     "id": 262,
     "title": "10 Rappen 1883",
     "country": "Suiza",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1883,
     "price": "6 USD",
     "images": [
@@ -4030,7 +4048,7 @@
     "id": 263,
     "title": "10 Rappen 1884",
     "country": "Suiza",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1884,
     "price": "5 USD",
     "images": [
@@ -4049,7 +4067,7 @@
     "id": 264,
     "title": "10 Rappen 1901",
     "country": "Suiza",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1901,
     "price": "6 USD",
     "images": [
@@ -4070,7 +4088,7 @@
     "id": 265,
     "title": "20 Rappen 1883",
     "country": "Suiza",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1883,
     "price": "15 USD",
     "images": [
@@ -4089,7 +4107,7 @@
     "id": 266,
     "title": "20 Rappen 1885",
     "country": "Suiza",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1885,
     "price": "8 USD",
     "images": [
@@ -4108,7 +4126,7 @@
     "id": 267,
     "title": "20 Rappen 1920",
     "country": "Suiza",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1920,
     "price": "2.5 USD",
     "images": [
@@ -4127,7 +4145,7 @@
     "id": 268,
     "title": "20 Rappen 1896",
     "country": "Suiza",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1896,
     "price": "8 USD",
     "images": [
@@ -4164,8 +4182,8 @@
   {
     "id": 270,
     "title": "10 Centavos 1921",
-    "country": "Perú",
-    "metal": "Cuproníquel",
+    "country": "Per\u00fa",
+    "metal": "Cupron\u00edquel",
     "year": 1921,
     "price": "2 USD",
     "images": [
@@ -4183,8 +4201,8 @@
   {
     "id": 271,
     "title": "10 Centavos 1940",
-    "country": "Perú",
-    "metal": "Cuproníquel",
+    "country": "Per\u00fa",
+    "metal": "Cupron\u00edquel",
     "year": 1940,
     "price": "3 USD",
     "images": [
@@ -4201,8 +4219,8 @@
   },
   {
     "id": 272,
-    "title": "1 Kuruş 2022",
-    "country": "Turquía",
+    "title": "1 Kuru\u015f 2022",
+    "country": "Turqu\u00eda",
     "metal": "Aluminio",
     "year": 2022,
     "price": "3.5 USD",
@@ -4220,9 +4238,9 @@
   },
   {
     "id": 273,
-    "title": "10 Krónur 1980",
+    "title": "10 Kr\u00f3nur 1980",
     "country": "Islandia",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1980,
     "price": "3 USD",
     "images": [
@@ -4239,7 +4257,7 @@
     "id": 274,
     "title": "10 Halalat 1972",
     "country": "Arabia Saudita",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1972,
     "price": "4.5 USD",
     "images": [
@@ -4250,13 +4268,13 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "",
-    "description": "Año único."
+    "description": "A\u00f1o \u00fanico."
   },
   {
     "id": 275,
     "title": "10 Qirsh 1972",
     "country": "Egipto",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1972,
     "price": "4 USD",
     "images": [
@@ -4267,7 +4285,7 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": "Año único.",
+    "description": "A\u00f1o \u00fanico.",
     "status": "sold",
     "soldAt": "2026-06-14T20:12:01.761589Z"
   },
@@ -4275,7 +4293,7 @@
     "id": 276,
     "title": "1 Pound 1968",
     "country": "Siria",
-    "metal": "Níquel",
+    "metal": "N\u00edquel",
     "year": 1968,
     "price": "4.5 USD",
     "images": [
@@ -4292,8 +4310,8 @@
   },
   {
     "id": 277,
-    "title": "5 Céntimos 2013",
-    "country": "Perú",
+    "title": "5 C\u00e9ntimos 2013",
+    "country": "Per\u00fa",
     "metal": "Aluminio",
     "year": 2013,
     "price": "2 USD",
@@ -4309,7 +4327,7 @@
   },
   {
     "id": 278,
-    "title": "25 Céntimos 1983",
+    "title": "25 C\u00e9ntimos 1983",
     "country": "Costa Rica",
     "metal": "Aluminio",
     "year": 1983,
@@ -4341,7 +4359,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Pátina hermosa.",
+    "description": "P\u00e1tina hermosa.",
     "status": "sold",
     "soldAt": "2026-06-14T20:12:01.761589Z"
   },
@@ -4366,7 +4384,7 @@
     "id": 281,
     "title": "10 Halalat 1980",
     "country": "Arabia Saudita",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1980,
     "price": "4.5 USD",
     "images": [
@@ -4400,7 +4418,7 @@
     "id": 283,
     "title": "5 Dracmas 1982",
     "country": "Grecia",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1982,
     "price": "2.5 USD",
     "images": [
@@ -4419,7 +4437,7 @@
     "id": 284,
     "title": "10 Dracmas 1980",
     "country": "Grecia",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1980,
     "price": "2.5 USD",
     "images": [
@@ -4438,7 +4456,7 @@
     "id": 285,
     "title": "10 Sen 1973",
     "country": "Malasia",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1973,
     "price": "2.5 USD",
     "images": [
@@ -4455,7 +4473,7 @@
     "id": 286,
     "title": "1 Rublo 1997",
     "country": "Rusia",
-    "metal": "Cuproníquel chapado en latón",
+    "metal": "Cupron\u00edquel chapado en lat\u00f3n",
     "year": 1997,
     "price": "2.5 USD",
     "images": [
@@ -4466,13 +4484,15 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 287,
     "title": "2 Euro 2016",
     "country": "Austria",
-    "metal": "Bimetálica",
+    "metal": "Bimet\u00e1lica",
     "year": 2016,
     "price": "5 USD",
     "images": [
@@ -4508,7 +4528,7 @@
     "id": 289,
     "title": "5 Kronor 1982",
     "country": "Suecia",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1982,
     "price": "2.5 USD",
     "images": [
@@ -4527,7 +4547,7 @@
     "id": 290,
     "title": "25 Qirsh 1979",
     "country": "Siria",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1979,
     "price": "4.5 USD",
     "images": [
@@ -4538,7 +4558,7 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
-    "description": "Año único.",
+    "description": "A\u00f1o \u00fanico.",
     "status": "sold",
     "soldAt": "2026-06-14T20:12:01.761589Z"
   },
@@ -4557,7 +4577,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 292,
@@ -4590,7 +4612,7 @@
     "reference": "KM. 239a",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Magnética"
+    "description": "Magn\u00e9tica"
   },
   {
     "id": 294,
@@ -4610,8 +4632,8 @@
   {
     "id": 295,
     "title": "1 Inti 1988",
-    "country": "Perú",
-    "metal": "Cuproníquel",
+    "country": "Per\u00fa",
+    "metal": "Cupron\u00edquel",
     "year": 1988,
     "price": "3 USD",
     "images": [
@@ -4624,8 +4646,8 @@
   {
     "id": 296,
     "title": "1/2 Sol 1965",
-    "country": "Perú",
-    "metal": "Latón",
+    "country": "Per\u00fa",
+    "metal": "Lat\u00f3n",
     "year": 1965,
     "price": "2.5 USD",
     "images": [
@@ -4639,7 +4661,7 @@
     "id": 297,
     "title": "2 Shillings 1949",
     "country": "Reino Unido",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1949,
     "price": "3.5 USD",
     "images": [
@@ -4654,7 +4676,7 @@
     "id": 298,
     "title": "1 Dragma 1957",
     "country": "Grecia",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1957,
     "price": "3 USD",
     "images": [
@@ -4669,8 +4691,8 @@
   {
     "id": 299,
     "title": "1 Sol 1961",
-    "country": "Perú",
-    "metal": "Latón",
+    "country": "Per\u00fa",
+    "metal": "Lat\u00f3n",
     "year": 1961,
     "price": "2.5 USD",
     "images": [
@@ -4680,13 +4702,13 @@
     "reference": "KM 222",
     "grade": "Excelente-",
     "grade_short": "EX-",
-    "description": "Gran tamaño"
+    "description": "Gran tama\u00f1o"
   },
   {
     "id": 300,
     "title": "1 Peso 1933",
     "country": "Chile",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1933,
     "price": "2.5 USD",
     "images": [
@@ -4700,7 +4722,7 @@
     "id": 301,
     "title": "10 Cents 1979",
     "country": "Barbados",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1979,
     "price": "3 USD",
     "images": [
@@ -4710,7 +4732,9 @@
     "reference": "KM 12",
     "mintage": "2.500.000",
     "grade": "Excelente+",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 302,
@@ -4748,7 +4772,7 @@
     "id": 304,
     "title": "25 Ore 1979",
     "country": "Suecia",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1979,
     "price": "2 USD",
     "images": [
@@ -4761,8 +4785,8 @@
   {
     "id": 305,
     "title": "50 Kurus 2014",
-    "country": "Turquía",
-    "metal": "Metálica",
+    "country": "Turqu\u00eda",
+    "metal": "Met\u00e1lica",
     "year": 2014,
     "price": "3 USD",
     "images": [
@@ -4806,7 +4830,7 @@
     "id": 308,
     "title": "2 Dolares 1997",
     "country": "Hong Kong",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1997,
     "price": "2 USD",
     "images": [
@@ -4819,7 +4843,7 @@
     "id": 309,
     "title": "10 Rappen 1970",
     "country": "Suiza",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1970,
     "price": "2 USD",
     "images": [
@@ -4844,7 +4868,9 @@
     ],
     "reference": "KM 11.2",
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 311,
@@ -4887,7 +4913,9 @@
       "images/313B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 314,
@@ -4901,7 +4929,9 @@
       "images/314B.jpeg"
     ],
     "grade": "Sin Circular-",
-    "grade_short": "SC-"
+    "grade_short": "SC-",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 315,
@@ -4915,7 +4945,7 @@
       "images/315B.jpeg"
     ],
     "reference": "KM 9",
-    "description": "República Democrática"
+    "description": "Rep\u00fablica Democr\u00e1tica"
   },
   {
     "id": 316,
@@ -4951,7 +4981,7 @@
     "id": 318,
     "title": "10 Groszy 1923",
     "country": "Polonia",
-    "metal": "Níquel",
+    "metal": "N\u00edquel",
     "year": 1923,
     "price": "4 USD",
     "images": [
@@ -4978,7 +5008,7 @@
   {
     "id": 320,
     "title": "50.000 Liras 1999",
-    "country": "Turquía",
+    "country": "Turqu\u00eda",
     "metal": "Aluminio",
     "year": 1999,
     "price": "4 USD",
@@ -5006,7 +5036,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "nz-2cents-km32",
-    "group_label": "2 Cents"
+    "group_label": "2 Cents",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 322,
@@ -5026,9 +5058,9 @@
   },
   {
     "id": 323,
-    "title": "Dólar 2015",
+    "title": "D\u00f3lar 2015",
     "country": "Hong Kong",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 2015,
     "price": "2.5 USD",
     "images": [
@@ -5040,9 +5072,9 @@
   },
   {
     "id": 324,
-    "title": "Dólar 1979",
+    "title": "D\u00f3lar 1979",
     "country": "Hong Kong",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1979,
     "price": "3 USD",
     "images": [
@@ -5055,7 +5087,7 @@
   {
     "id": 325,
     "title": "Cent 1878",
-    "country": "Países Bajos",
+    "country": "Pa\u00edses Bajos",
     "metal": "Bronce",
     "year": 1878,
     "price": "4.5 USD",
@@ -5071,7 +5103,7 @@
     "id": 326,
     "title": "200 Escudos 1992",
     "country": "Portugal",
-    "metal": "Bimetálica",
+    "metal": "Bimet\u00e1lica",
     "year": 1992,
     "price": "2.5 USD",
     "images": [
@@ -5079,13 +5111,15 @@
       "images/326B.jpeg"
     ],
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 327,
     "title": "20 Groszy 1923",
     "country": "Polonia",
-    "metal": "Níquel",
+    "metal": "N\u00edquel",
     "year": 1923,
     "price": "4 USD",
     "images": [
@@ -5109,13 +5143,15 @@
     ],
     "reference": "KM# 6",
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 329,
     "title": "50 Centavos 1929",
     "country": "Portugal",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1929,
     "price": "6 USD",
     "images": [
@@ -5125,7 +5161,7 @@
     "reference": "KM# 577",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Pátina exclusiva",
+    "description": "P\u00e1tina exclusiva",
     "group_id": "pt-50centavos-1929",
     "group_label": "50 Centavos 1929"
   },
@@ -5133,7 +5169,7 @@
     "id": 330,
     "title": "50 Centavos 1929",
     "country": "Portugal",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1929,
     "price": "2.5 USD",
     "images": [
@@ -5157,7 +5193,9 @@
       "images/331B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 332,
@@ -5194,7 +5232,7 @@
     "id": 334,
     "title": "Dinar 1965",
     "country": "Yugoslavia",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1965,
     "price": "3.5 USD",
     "images": [
@@ -5207,8 +5245,8 @@
   {
     "id": 335,
     "title": "10 Centavos 1919",
-    "country": "Perú",
-    "metal": "Cuproníquel",
+    "country": "Per\u00fa",
+    "metal": "Cupron\u00edquel",
     "year": 1919,
     "price": "2 USD",
     "images": [
@@ -5233,13 +5271,15 @@
       "images/336B.jpeg"
     ],
     "grade": "Sin Circular -",
-    "grade_short": "SC-"
+    "grade_short": "SC-",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 337,
     "title": "20 Cents 2013",
     "country": "Singapur",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 2013,
     "price": "2.5 USD",
     "images": [
@@ -5280,7 +5320,7 @@
   },
   {
     "id": 340,
-    "title": "1 Dólar 1996",
+    "title": "1 D\u00f3lar 1996",
     "country": "Jamaica",
     "metal": "Acero niquelado",
     "year": 1996,
@@ -5304,12 +5344,14 @@
       "images/341B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 342,
     "title": "Centavos 1986",
-    "country": "República Dominicana",
+    "country": "Rep\u00fablica Dominicana",
     "metal": "Bronce",
     "year": 1986,
     "price": "2.5 USD",
@@ -5332,7 +5374,9 @@
       "images/343B.jpeg"
     ],
     "grade": "Excelente +",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 344,
@@ -5384,7 +5428,7 @@
     "id": 347,
     "title": "10 Francos 1949",
     "country": "Francia",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1949,
     "price": "3.5 USD",
     "reference": "K. 1909",
@@ -5399,8 +5443,8 @@
   {
     "id": 348,
     "title": "Balboa 2011",
-    "country": "Panamá",
-    "metal": "Bimetálica",
+    "country": "Panam\u00e1",
+    "metal": "Bimet\u00e1lica",
     "year": 2011,
     "price": "2.5 USD",
     "images": [
@@ -5414,7 +5458,7 @@
     "id": 349,
     "title": "Naya Paisa 1963",
     "country": "India",
-    "metal": "Latón niquelado",
+    "metal": "Lat\u00f3n niquelado",
     "year": 1963,
     "price": "3 USD",
     "reference": "KM# 8a",
@@ -5428,7 +5472,7 @@
   {
     "id": 350,
     "title": "Cent 1928",
-    "country": "Países Bajos",
+    "country": "Pa\u00edses Bajos",
     "metal": "Bronce",
     "year": 1928,
     "price": "4.5 USD",
@@ -5476,7 +5520,7 @@
     "id": 353,
     "title": "10 Centavos 1980",
     "country": "Honduras",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1980,
     "price": "3 USD",
     "images": [
@@ -5490,11 +5534,11 @@
     "id": 354,
     "title": "1 Real 2015",
     "country": "Brasil",
-    "metal": "Bimetálica",
+    "metal": "Bimet\u00e1lica",
     "year": 2015,
     "price": "2.5 USD",
     "reference": "KM# 710",
-    "description": "Atletismo paralímpico",
+    "description": "Atletismo paral\u00edmpico",
     "images": [
       "images/354A.jpeg",
       "images/354B.jpeg"
@@ -5502,13 +5546,13 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "br-1real-olympics",
-    "group_label": "1 Real Olimpíadas"
+    "group_label": "1 Real Olimp\u00edadas"
   },
   {
     "id": 355,
     "title": "1 Real 2014",
     "country": "Brasil",
-    "metal": "Bimetálica",
+    "metal": "Bimet\u00e1lica",
     "year": 2014,
     "price": "2.5 USD",
     "reference": "KM# 687",
@@ -5520,17 +5564,17 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "br-1real-olympics",
-    "group_label": "1 Real Olimpíadas"
+    "group_label": "1 Real Olimp\u00edadas"
   },
   {
     "id": 356,
     "title": "1 Real 2016",
     "country": "Brasil",
-    "metal": "Bimetálica",
+    "metal": "Bimet\u00e1lica",
     "year": 2016,
     "price": "2.5 USD",
     "reference": "KM# 726",
-    "description": "Mascota olímpica",
+    "description": "Mascota ol\u00edmpica",
     "images": [
       "images/356A.jpeg",
       "images/356B.jpeg"
@@ -5538,13 +5582,13 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "br-1real-olympics",
-    "group_label": "1 Real Olimpíadas"
+    "group_label": "1 Real Olimp\u00edadas"
   },
   {
     "id": 357,
     "title": "1 Dollar 1979",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1979,
     "price": "3 USD",
     "reference": "KM# 207",
@@ -5557,7 +5601,7 @@
   {
     "id": 358,
     "title": "10 Korun",
-    "country": "República Checa",
+    "country": "Rep\u00fablica Checa",
     "metal": "Acero chapado en cobre",
     "price": "3 USD",
     "reference": "KM# 4",
@@ -5566,13 +5610,15 @@
       "images/358B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 359,
     "title": "25 Cents 2002",
     "country": "Estados del Caribe Oriental",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 2002,
     "price": "3.5 USD",
     "reference": "KM# 38",
@@ -5581,7 +5627,9 @@
       "images/359B.jpeg"
     ],
     "grade": "Excelente -",
-    "grade_short": "EX-"
+    "grade_short": "EX-",
+    "status": "sold",
+    "soldAt": "2026-06-17T01:10:18.708603Z"
   },
   {
     "id": 360,
@@ -5603,7 +5651,7 @@
   {
     "id": 361,
     "title": "20 Centavos 1946",
-    "country": "México",
+    "country": "M\u00e9xico",
     "metal": "Bronce",
     "year": 1946,
     "price": "2.5 USD",
@@ -5618,8 +5666,8 @@
   },
   {
     "id": 362,
-    "title": "5 Céntimos 1870",
-    "country": "España",
+    "title": "5 C\u00e9ntimos 1870",
+    "country": "Espa\u00f1a",
     "metal": "Bronce",
     "year": 1870,
     "price": "3.5 USD",
@@ -5635,7 +5683,7 @@
     "id": 363,
     "title": "20 Para 1976",
     "country": "Yugoslavia",
-    "metal": "Latón de aluminio",
+    "metal": "Lat\u00f3n de aluminio",
     "year": 1976,
     "price": "3 USD",
     "reference": "KM# 45",
@@ -5717,7 +5765,7 @@
     "id": 368,
     "title": "Cent 1904",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1904,
     "price": "4 USD",
     "reference": "KM# 90",
@@ -5735,7 +5783,7 @@
     "id": 369,
     "title": "Cent 1906",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1906,
     "price": "5 USD",
     "reference": "KM# 90",
@@ -5753,7 +5801,7 @@
     "id": 370,
     "title": "Cent 1907",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1907,
     "price": "7 USD",
     "reference": "KM# 90",
@@ -5771,7 +5819,7 @@
     "id": 371,
     "title": "Cent 1905",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": 1905,
     "price": "4 USD",
     "reference": "KM# 90",
@@ -5799,7 +5847,7 @@
       "images/372B.jpeg"
     ],
     "group_id": "us-dollar-innovation",
-    "group_label": "Dólar Innovación"
+    "group_label": "D\u00f3lar Innovaci\u00f3n"
   },
   {
     "id": 373,
@@ -5815,7 +5863,7 @@
       "images/373B.jpeg"
     ],
     "group_id": "us-dollar-innovation",
-    "group_label": "Dólar Innovación"
+    "group_label": "D\u00f3lar Innovaci\u00f3n"
   },
   {
     "id": 374,
@@ -5829,7 +5877,7 @@
       "images/374B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "D\u00f3lar Presidentes"
   },
   {
     "id": 375,
@@ -5843,7 +5891,7 @@
       "images/375B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "D\u00f3lar Presidentes"
   },
   {
     "id": 376,
@@ -5857,7 +5905,7 @@
       "images/376B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "D\u00f3lar Presidentes"
   },
   {
     "id": 377,
@@ -5871,7 +5919,7 @@
       "images/377B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "D\u00f3lar Presidentes"
   },
   {
     "id": 378,
@@ -5885,7 +5933,7 @@
       "images/378B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "D\u00f3lar Presidentes"
   },
   {
     "id": 379,
@@ -5899,7 +5947,7 @@
       "images/379B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "D\u00f3lar Presidentes"
   },
   {
     "id": 380,
@@ -5913,7 +5961,7 @@
       "images/380B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "D\u00f3lar Presidentes"
   },
   {
     "id": 381,
@@ -5927,7 +5975,7 @@
       "images/381B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "D\u00f3lar Presidentes"
   },
   {
     "id": 382,
@@ -5941,7 +5989,7 @@
       "images/382B.jpeg"
     ],
     "group_id": "us-half-dollar-variants",
-    "group_label": "1/2 Dólar Kennedy"
+    "group_label": "1/2 D\u00f3lar Kennedy"
   },
   {
     "id": 383,
@@ -5954,7 +6002,7 @@
       "images/383B.jpeg"
     ],
     "group_id": "us-half-dollar-variants",
-    "group_label": "1/2 Dólar Kennedy"
+    "group_label": "1/2 D\u00f3lar Kennedy"
   },
   {
     "id": 384,
@@ -5967,7 +6015,7 @@
       "images/384B.jpeg"
     ],
     "group_id": "us-half-dollar-variants",
-    "group_label": "1/2 Dólar Kennedy"
+    "group_label": "1/2 D\u00f3lar Kennedy"
   },
   {
     "id": 385,
@@ -5980,7 +6028,7 @@
       "images/385B.jpeg"
     ],
     "group_id": "us-half-dollar-variants",
-    "group_label": "1/2 Dólar Kennedy"
+    "group_label": "1/2 D\u00f3lar Kennedy"
   },
   {
     "id": 386,
@@ -5993,7 +6041,7 @@
       "images/386B.jpeg"
     ],
     "group_id": "us-half-dollar-variants",
-    "group_label": "1/2 Dólar Kennedy"
+    "group_label": "1/2 D\u00f3lar Kennedy"
   },
   {
     "id": 387,
@@ -6006,7 +6054,7 @@
       "images/387B.jpeg"
     ],
     "group_id": "us-half-dollar-variants",
-    "group_label": "1/2 Dólar Kennedy"
+    "group_label": "1/2 D\u00f3lar Kennedy"
   },
   {
     "id": 388,
@@ -6021,7 +6069,7 @@
       "images/388B.jpeg"
     ],
     "group_id": "us-half-dollar-variants",
-    "group_label": "1/2 Dólar Kennedy"
+    "group_label": "1/2 D\u00f3lar Kennedy"
   },
   {
     "id": 389,
@@ -6036,12 +6084,12 @@
       "images/389B.jpeg"
     ],
     "group_id": "us-half-dollar-variants",
-    "group_label": "1/2 Dólar Kennedy"
+    "group_label": "1/2 D\u00f3lar Kennedy"
   },
   {
     "id": 390,
     "title": "1 Sol 2018",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2018,
     "price": "2.5 USD",
     "description": "Pava",
@@ -6057,7 +6105,7 @@
   {
     "id": 391,
     "title": "1 Sol 2017",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2017,
     "price": "2.5 USD",
     "description": "Cocodrilo",
@@ -6071,7 +6119,7 @@
   {
     "id": 392,
     "title": "1 Sol 2019",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2019,
     "price": "2.5 USD",
     "description": "Mono",
@@ -6085,7 +6133,7 @@
   {
     "id": 393,
     "title": "1 Sol 2017",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2017,
     "price": "2.5 USD",
     "description": "Oso",
@@ -6099,7 +6147,7 @@
   {
     "id": 394,
     "title": "1 Sol 2019",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2019,
     "price": "2.5 USD",
     "description": "Rana",
@@ -6113,7 +6161,7 @@
   {
     "id": 395,
     "title": "1 Sol 2018",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2018,
     "price": "2.5 USD",
     "description": "Tapir",
@@ -6127,7 +6175,7 @@
   {
     "id": 396,
     "title": "1 Sol 2018",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2018,
     "price": "2.5 USD",
     "description": "Suri",
@@ -6141,10 +6189,10 @@
   {
     "id": 397,
     "title": "1 Sol 2017",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2017,
     "price": "2.5 USD",
-    "description": "Cóndor",
+    "description": "C\u00f3ndor",
     "images": [
       "images/397A.jpeg",
       "images/397B.jpeg"
@@ -6155,7 +6203,7 @@
   {
     "id": 398,
     "title": "1 Sol 2018",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2018,
     "price": "2.5 USD",
     "description": "Jaguar",
@@ -6169,7 +6217,7 @@
   {
     "id": 399,
     "title": "1 Sol 2019",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2019,
     "price": "2.5 USD",
     "description": "Gato",
@@ -6183,7 +6231,7 @@
   {
     "id": 400,
     "title": "1 Sol 2015",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2015,
     "price": "2 USD",
     "description": "Casa de moneda",
@@ -6195,7 +6243,7 @@
   {
     "id": 401,
     "title": "1 Sol 2024",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2024,
     "price": "3 USD",
     "description": "Periodo formativo",
@@ -6206,12 +6254,12 @@
       "images/401B.jpeg"
     ],
     "group_id": "pe-sol-ceramicos",
-    "group_label": "Cerámicos Precolombinos"
+    "group_label": "Cer\u00e1micos Precolombinos"
   },
   {
     "id": 402,
     "title": "1 Sol 2024",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2024,
     "price": "3 USD",
     "description": "Cultura Mochica",
@@ -6222,12 +6270,12 @@
       "images/402B.jpeg"
     ],
     "group_id": "pe-sol-ceramicos",
-    "group_label": "Cerámicos Precolombinos"
+    "group_label": "Cer\u00e1micos Precolombinos"
   },
   {
     "id": 403,
     "title": "1 Sol 2025",
-    "country": "Perú",
+    "country": "Per\u00fa",
     "year": 2025,
     "price": "3 USD",
     "description": "Cultura Nasca",
@@ -6238,13 +6286,13 @@
       "images/403B.jpeg"
     ],
     "group_id": "pe-sol-ceramicos",
-    "group_label": "Cerámicos Precolombinos"
+    "group_label": "Cer\u00e1micos Precolombinos"
   },
   {
     "id": 404,
-    "title": "1/4 Dólar 1999",
+    "title": "1/4 D\u00f3lar 1999",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "1999",
     "price": "1 USD",
     "images": [
@@ -6257,9 +6305,9 @@
   },
   {
     "id": 405,
-    "title": "1/4 Dólar 2001",
+    "title": "1/4 D\u00f3lar 2001",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "2001",
     "price": "1 USD",
     "images": [
@@ -6272,9 +6320,9 @@
   },
   {
     "id": 406,
-    "title": "1/4 Dólar 2000",
+    "title": "1/4 D\u00f3lar 2000",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "2000",
     "price": "1 USD",
     "images": [
@@ -6287,9 +6335,9 @@
   },
   {
     "id": 407,
-    "title": "1/4 Dólar 1999",
+    "title": "1/4 D\u00f3lar 1999",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "1999",
     "price": "1 USD",
     "images": [
@@ -6302,9 +6350,9 @@
   },
   {
     "id": 408,
-    "title": "1/4 Dólar 1999",
+    "title": "1/4 D\u00f3lar 1999",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "1999",
     "price": "1 USD",
     "images": [
@@ -6317,9 +6365,9 @@
   },
   {
     "id": 409,
-    "title": "1/4 Dólar 2008",
+    "title": "1/4 D\u00f3lar 2008",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "2008",
     "price": "1 USD",
     "images": [
@@ -6332,9 +6380,9 @@
   },
   {
     "id": 410,
-    "title": "1/4 Dólar 2003",
+    "title": "1/4 D\u00f3lar 2003",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "2003",
     "price": "1 USD",
     "images": [
@@ -6347,9 +6395,9 @@
   },
   {
     "id": 411,
-    "title": "1/4 Dólar 2001",
+    "title": "1/4 D\u00f3lar 2001",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "2001",
     "price": "1 USD",
     "images": [
@@ -6362,9 +6410,9 @@
   },
   {
     "id": 412,
-    "title": "1/4 Dólar 2000",
+    "title": "1/4 D\u00f3lar 2000",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "2000",
     "price": "1 USD",
     "images": [
@@ -6377,9 +6425,9 @@
   },
   {
     "id": 413,
-    "title": "1/4 Dólar 2001",
+    "title": "1/4 D\u00f3lar 2001",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "2001",
     "price": "1 USD",
     "images": [
@@ -6392,9 +6440,9 @@
   },
   {
     "id": 414,
-    "title": "1/4 Dólar 2000",
+    "title": "1/4 D\u00f3lar 2000",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "2000",
     "price": "1 USD",
     "images": [
@@ -6407,9 +6455,9 @@
   },
   {
     "id": 415,
-    "title": "1/4 Dólar 2005",
+    "title": "1/4 D\u00f3lar 2005",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "2005",
     "price": "1 USD",
     "images": [
@@ -6422,9 +6470,9 @@
   },
   {
     "id": 416,
-    "title": "1/4 Dólar 2001",
+    "title": "1/4 D\u00f3lar 2001",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "2001",
     "price": "1 USD",
     "images": [
@@ -6437,9 +6485,9 @@
   },
   {
     "id": 417,
-    "title": "1/4 Dólar 2006",
+    "title": "1/4 D\u00f3lar 2006",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "2006",
     "price": "1 USD",
     "images": [
@@ -6452,9 +6500,9 @@
   },
   {
     "id": 418,
-    "title": "1/4 Dólar 2001",
+    "title": "1/4 D\u00f3lar 2001",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "2001",
     "price": "1 USD",
     "images": [
@@ -6467,9 +6515,9 @@
   },
   {
     "id": 419,
-    "title": "1/4 Dólar 2000",
+    "title": "1/4 D\u00f3lar 2000",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Cupron\u00edquel",
     "year": "2000",
     "price": "1 USD",
     "images": [
