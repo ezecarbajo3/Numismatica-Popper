@@ -6984,5 +6984,153 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX"
+  },
+  {
+    "id": 492,
+    "title": "1/4 Dólar 2021",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2021",
+    "price": "1 USD",
+    "images": [
+      "images/492A.jpeg",
+      "images/492B.jpeg"
+    ],
+    "description": "Crossing the Delaware P",
+    "group_id": "us-crossing-delaware",
+    "group_label": "Crossing the Delaware"
+  },
+  {
+    "id": 493,
+    "title": "1/4 Dólar 2021",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2021",
+    "price": "1 USD",
+    "images": [
+      "images/493A.jpeg",
+      "images/493B.jpeg"
+    ],
+    "description": "Crossing the Delaware D",
+    "group_id": "us-crossing-delaware",
+    "group_label": "Crossing the Delaware"
+  },
+  {
+    "id": 494,
+    "title": "1/4 Dólar 1976",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "1976",
+    "price": "1.5 USD",
+    "images": [
+      "images/494A.jpeg",
+      "images/494B.jpeg"
+    ],
+    "description": "Bicentenario"
+  },
+  {
+    "id": 495,
+    "title": "1/4 Dólar 2016",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2016",
+    "price": "1 USD",
+    "images": [
+      "images/495A.jpeg",
+      "images/495B.jpeg"
+    ],
+    "description": "West Virginia P",
+    "group_id": "us-quarters-parques",
+    "group_label": "Quarters Parques"
+  },
+  {
+    "id": 496,
+    "title": "1/4 Dólar 2020",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2020",
+    "price": "1 USD",
+    "images": [
+      "images/496A.jpeg",
+      "images/496B.jpeg"
+    ],
+    "description": "US Virgin Island D",
+    "group_id": "us-quarters-parques",
+    "group_label": "Quarters Parques"
+  },
+  {
+    "id": 497,
+    "title": "1/4 Dólar 2017",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2017",
+    "price": "1 USD",
+    "images": [
+      "images/497A.jpeg",
+      "images/497B.jpeg"
+    ],
+    "description": "IOWA P",
+    "group_id": "us-quarters-parques",
+    "group_label": "Quarters Parques"
+  },
+  {
+    "id": 498,
+    "title": "1/4 Dólar 2011",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2011",
+    "price": "2.5 USD",
+    "images": [
+      "images/498A.jpeg",
+      "images/498B.jpeg"
+    ],
+    "description": "Oklahoma P",
+    "group_id": "us-quarters-parques",
+    "group_label": "Quarters Parques"
+  },
+  {
+    "id": 499,
+    "title": "1/4 Dólar 2015",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2015",
+    "price": "1 USD",
+    "images": [
+      "images/499A.jpeg",
+      "images/499B.jpeg"
+    ],
+    "description": "Louisiana D",
+    "group_id": "us-quarters-parques",
+    "group_label": "Quarters Parques"
+  },
+  {
+    "id": 500,
+    "title": "1/4 Dólar 2018",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2018",
+    "price": "1 USD",
+    "images": [
+      "images/500A.jpeg",
+      "images/500B.jpeg"
+    ],
+    "description": "Minnesota P",
+    "group_id": "us-quarters-parques",
+    "group_label": "Quarters Parques"
+  },
+  {
+    "id": 501,
+    "title": "1/4 Dólar 2016",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2016",
+    "price": "1 USD",
+    "images": [
+      "images/501A.jpeg",
+      "images/501B.jpeg"
+    ],
+    "description": "North Dakota D",
+    "group_id": "us-quarters-parques",
+    "group_label": "Quarters Parques"
   }
 ]
