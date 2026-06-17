@@ -5899,36 +5899,6 @@
     "group_label": "Quarters Estados"
   },
   {
-    "id": 405,
-    "title": "1/4 Dólar 2001",
-    "country": "Estados Unidos",
-    "metal": "Cuproníquel",
-    "year": "2001",
-    "price": "1 USD",
-    "images": [
-      "images/405A.jpeg",
-      "images/405B.jpeg"
-    ],
-    "description": "Vermont D",
-    "group_id": "us-quarters-estados",
-    "group_label": "Quarters Estados"
-  },
-  {
-    "id": 406,
-    "title": "1/4 Dólar 2000",
-    "country": "Estados Unidos",
-    "metal": "Cuproníquel",
-    "year": "2000",
-    "price": "1 USD",
-    "images": [
-      "images/406A.jpeg",
-      "images/406B.jpeg"
-    ],
-    "description": "Virginia D",
-    "group_id": "us-quarters-estados",
-    "group_label": "Quarters Estados"
-  },
-  {
     "id": 407,
     "title": "1/4 Dólar 1999",
     "country": "Estados Unidos",
@@ -5959,47 +5929,32 @@
     "group_label": "Quarters Estados"
   },
   {
-    "id": 409,
-    "title": "1/4 Dólar 2008",
+    "id": 483,
+    "title": "1/4 Dólar 1999",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2008",
+    "year": "1999",
     "price": "1 USD",
     "images": [
-      "images/409A.jpeg",
-      "images/409B.jpeg"
+      "images/483A.jpeg",
+      "images/483B.jpeg"
     ],
-    "description": "New Mexico D",
+    "description": "New Jersey D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados"
   },
   {
-    "id": 410,
-    "title": "1/4 Dólar 2003",
+    "id": 406,
+    "title": "1/4 Dólar 2000",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2003",
+    "year": "2000",
     "price": "1 USD",
     "images": [
-      "images/410A.jpeg",
-      "images/410B.jpeg"
+      "images/406A.jpeg",
+      "images/406B.jpeg"
     ],
-    "description": "Alabama D",
-    "group_id": "us-quarters-estados",
-    "group_label": "Quarters Estados"
-  },
-  {
-    "id": 411,
-    "title": "1/4 Dólar 2001",
-    "country": "Estados Unidos",
-    "metal": "Cuproníquel",
-    "year": "2001",
-    "price": "1 USD",
-    "images": [
-      "images/411A.jpeg",
-      "images/411B.jpeg"
-    ],
-    "description": "Rhode Island P",
+    "description": "Virginia D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados"
   },
@@ -6019,21 +5974,6 @@
     "group_label": "Quarters Estados"
   },
   {
-    "id": 413,
-    "title": "1/4 Dólar 2001",
-    "country": "Estados Unidos",
-    "metal": "Cuproníquel",
-    "year": "2001",
-    "price": "1 USD",
-    "images": [
-      "images/413A.jpeg",
-      "images/413B.jpeg"
-    ],
-    "description": "New York D",
-    "group_id": "us-quarters-estados",
-    "group_label": "Quarters Estados"
-  },
-  {
     "id": 414,
     "title": "1/4 Dólar 2000",
     "country": "Estados Unidos",
@@ -6049,17 +5989,77 @@
     "group_label": "Quarters Estados"
   },
   {
-    "id": 415,
-    "title": "1/4 Dólar 2005",
+    "id": 419,
+    "title": "1/4 Dólar 2000",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2005",
+    "year": "2000",
     "price": "1 USD",
     "images": [
-      "images/415A.jpeg",
-      "images/415B.jpeg"
+      "images/419A.jpeg",
+      "images/419B.jpeg"
     ],
-    "description": "Kansas D",
+    "description": "Massachusetts D",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 482,
+    "title": "1/4 Dólar 2000",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2000",
+    "price": "1 USD",
+    "images": [
+      "images/482A.jpeg",
+      "images/482B.jpeg"
+    ],
+    "description": "Massachusetts P",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 405,
+    "title": "1/4 Dólar 2001",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2001",
+    "price": "1 USD",
+    "images": [
+      "images/405A.jpeg",
+      "images/405B.jpeg"
+    ],
+    "description": "Vermont D",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 411,
+    "title": "1/4 Dólar 2001",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2001",
+    "price": "1 USD",
+    "images": [
+      "images/411A.jpeg",
+      "images/411B.jpeg"
+    ],
+    "description": "Rhode Island P",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 413,
+    "title": "1/4 Dólar 2001",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2001",
+    "price": "1 USD",
+    "images": [
+      "images/413A.jpeg",
+      "images/413B.jpeg"
+    ],
+    "description": "New York D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados"
   },
@@ -6079,21 +6079,6 @@
     "group_label": "Quarters Estados"
   },
   {
-    "id": 417,
-    "title": "1/4 Dólar 2006",
-    "country": "Estados Unidos",
-    "metal": "Cuproníquel",
-    "year": "2006",
-    "price": "1 USD",
-    "images": [
-      "images/417A.jpeg",
-      "images/417B.jpeg"
-    ],
-    "description": "Nebraska D",
-    "group_id": "us-quarters-estados",
-    "group_label": "Quarters Estados"
-  },
-  {
     "id": 418,
     "title": "1/4 Dólar 2001",
     "country": "Estados Unidos",
@@ -6109,17 +6094,182 @@
     "group_label": "Quarters Estados"
   },
   {
-    "id": 419,
-    "title": "1/4 Dólar 2000",
+    "id": 485,
+    "title": "1/4 Dólar 2001",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2000",
+    "year": "2001",
     "price": "1 USD",
     "images": [
-      "images/419A.jpeg",
-      "images/419B.jpeg"
+      "images/485A.jpeg",
+      "images/485B.jpeg"
     ],
-    "description": "Massachusetts D",
+    "description": "North Carolina D",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 490,
+    "title": "1/4 Dólar 2001",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2001",
+    "price": "1 USD",
+    "images": [
+      "images/490A.jpeg",
+      "images/490B.jpeg"
+    ],
+    "description": "New York P",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 410,
+    "title": "1/4 Dólar 2003",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2003",
+    "price": "1 USD",
+    "images": [
+      "images/410A.jpeg",
+      "images/410B.jpeg"
+    ],
+    "description": "Alabama D",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 491,
+    "title": "1/4 Dólar 2004",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2004",
+    "price": "1 USD",
+    "images": [
+      "images/491A.jpeg",
+      "images/491B.jpeg"
+    ],
+    "description": "Florida P",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 415,
+    "title": "1/4 Dólar 2005",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2005",
+    "price": "1 USD",
+    "images": [
+      "images/415A.jpeg",
+      "images/415B.jpeg"
+    ],
+    "description": "Kansas D",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 487,
+    "title": "1/4 Dólar 2005",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2005",
+    "price": "1 USD",
+    "images": [
+      "images/487A.jpeg",
+      "images/487B.jpeg"
+    ],
+    "description": "West Virginia P",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 488,
+    "title": "1/4 Dólar 2005",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2005",
+    "price": "1 USD",
+    "images": [
+      "images/488A.jpeg",
+      "images/488B.jpeg"
+    ],
+    "description": "West Virginia D",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 489,
+    "title": "1/4 Dólar 2005",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2005",
+    "price": "1 USD",
+    "images": [
+      "images/489A.jpeg",
+      "images/489B.jpeg"
+    ],
+    "description": "Oregon D",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 417,
+    "title": "1/4 Dólar 2006",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2006",
+    "price": "1 USD",
+    "images": [
+      "images/417A.jpeg",
+      "images/417B.jpeg"
+    ],
+    "description": "Nebraska D",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 486,
+    "title": "1/4 Dólar 2006",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2006",
+    "price": "1 USD",
+    "images": [
+      "images/486A.jpeg",
+      "images/486B.jpeg"
+    ],
+    "description": "South Dakota P",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 484,
+    "title": "1/4 Dólar 2007",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2007",
+    "price": "1 USD",
+    "images": [
+      "images/484A.jpeg",
+      "images/484B.jpeg"
+    ],
+    "description": "Washington D",
+    "group_id": "us-quarters-estados",
+    "group_label": "Quarters Estados"
+  },
+  {
+    "id": 409,
+    "title": "1/4 Dólar 2008",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": "2008",
+    "price": "1 USD",
+    "images": [
+      "images/409A.jpeg",
+      "images/409B.jpeg"
+    ],
+    "description": "New Mexico D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados"
   },
@@ -6145,7 +6295,7 @@
     "country": "Argentina",
     "metal": "Plata 0.900",
     "year": 1995,
-    "price": "220.0 USD",
+    "price": "220 USD",
     "images": [
       "images/421A.jpeg",
       "images/421B.jpeg"
@@ -6188,7 +6338,7 @@
     "country": "Bolivia",
     "metal": "Plata 0.896",
     "year": 1808,
-    "price": "187.0 USD",
+    "price": "187 USD",
     "images": [
       "images/425A.jpeg",
       "images/425B.jpeg"
@@ -6286,7 +6436,7 @@
     "country": "USA",
     "metal": "Cu",
     "year": 1911,
-    "price": "55.0 USD",
+    "price": "55 USD",
     "images": [
       "images/439A.jpeg",
       "images/439B.jpeg"
@@ -6512,7 +6662,7 @@
     "country": "Uruguay",
     "metal": "Plata 0.925",
     "year": 2003,
-    "price": "110.0 USD",
+    "price": "110 USD",
     "images": [
       "images/459A.jpeg",
       "images/459B.jpeg"
@@ -6527,7 +6677,7 @@
     "country": "Uruguay",
     "metal": "Plata 0.925",
     "year": 2004,
-    "price": "110.0 USD",
+    "price": "110 USD",
     "images": [
       "images/460A.jpeg",
       "images/460B.jpeg"
@@ -6542,7 +6692,7 @@
     "country": "Uruguay",
     "metal": "Plata 0.925",
     "year": 2005,
-    "price": "110.0 USD",
+    "price": "110 USD",
     "images": [
       "images/461A.jpeg",
       "images/461B.jpeg"
@@ -6586,7 +6736,7 @@
     "country": "Argentina",
     "metal": "Ag 0.900",
     "year": 2023,
-    "price": "220.0 USD",
+    "price": "220 USD",
     "images": [
       "images/464A.jpeg",
       "images/464B.jpeg",
@@ -6601,7 +6751,7 @@
     "country": "Argentina",
     "metal": "Ag 0.925",
     "year": 2013,
-    "price": "198.0 USD",
+    "price": "198 USD",
     "images": [
       "images/465A.jpeg",
       "images/465B.jpeg",
