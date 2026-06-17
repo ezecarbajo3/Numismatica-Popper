@@ -6131,8 +6131,8 @@
     "year": 1877,
     "price": "165 USD",
     "images": [
-      "images/420A.jpg",
-      "images/420B.jpg"
+      "images/420A.jpeg",
+      "images/420B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX-",
@@ -6147,8 +6147,8 @@
     "year": 1995,
     "price": "220.0 USD",
     "images": [
-      "images/421A.jpg",
-      "images/421B.jpg"
+      "images/421A.jpeg",
+      "images/421B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -6162,8 +6162,8 @@
     "year": 1829,
     "price": "71.5 USD",
     "images": [
-      "images/422A.jpg",
-      "images/422B.jpg"
+      "images/422A.jpeg",
+      "images/422B.jpeg"
     ],
     "grade": "Regular",
     "grade_short": "R+"
@@ -6176,8 +6176,8 @@
     "year": 1883,
     "price": "49.5 USD",
     "images": [
-      "images/423A.jpg",
-      "images/423B.jpg"
+      "images/423A.jpeg",
+      "images/423B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6190,8 +6190,8 @@
     "year": 1808,
     "price": "187.0 USD",
     "images": [
-      "images/425A.jpg",
-      "images/425B.jpg"
+      "images/425A.jpeg",
+      "images/425B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6204,8 +6204,8 @@
     "year": 1925,
     "price": "71.5 USD",
     "images": [
-      "images/427A.jpg",
-      "images/427B.jpg"
+      "images/427A.jpeg",
+      "images/427B.jpeg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -6218,8 +6218,8 @@
     "year": 1969,
     "price": "66 USD",
     "images": [
-      "images/428A.jpg",
-      "images/428B.jpg"
+      "images/428A.jpeg",
+      "images/428B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6232,8 +6232,8 @@
     "year": 1914,
     "price": "35.2 USD",
     "images": [
-      "images/429A.jpg",
-      "images/429B.jpg"
+      "images/429A.jpeg",
+      "images/429B.jpeg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -6246,8 +6246,8 @@
     "year": 1914,
     "price": "41.8 USD",
     "images": [
-      "images/430A.jpg",
-      "images/430B.jpg"
+      "images/430A.jpeg",
+      "images/430B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6260,8 +6260,8 @@
     "year": 1888,
     "price": "33 USD",
     "images": [
-      "images/435A.jpg",
-      "images/435B.jpg"
+      "images/435A.jpeg",
+      "images/435B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6274,8 +6274,8 @@
     "year": 1910,
     "price": "24.2 USD",
     "images": [
-      "images/437A.jpg",
-      "images/437B.jpg"
+      "images/437A.jpeg",
+      "images/437B.jpeg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -6288,8 +6288,8 @@
     "year": 1911,
     "price": "55.0 USD",
     "images": [
-      "images/439A.jpg",
-      "images/439B.jpg"
+      "images/439A.jpeg",
+      "images/439B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B-"
@@ -6302,8 +6302,8 @@
     "year": 1912,
     "price": "24.2 USD",
     "images": [
-      "images/440A.jpg",
-      "images/440B.jpg"
+      "images/440A.jpeg",
+      "images/440B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6316,8 +6316,8 @@
     "year": 1912,
     "price": "26.4 USD",
     "images": [
-      "images/441A.jpg",
-      "images/441B.jpg"
+      "images/441A.jpeg",
+      "images/441B.jpeg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -6330,8 +6330,8 @@
     "year": 1914,
     "price": "33 USD",
     "images": [
-      "images/443A.jpg",
-      "images/443B.jpg"
+      "images/443A.jpeg",
+      "images/443B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6344,8 +6344,8 @@
     "year": 1915,
     "price": "35.2 USD",
     "images": [
-      "images/444A.jpg",
-      "images/444B.jpg"
+      "images/444A.jpeg",
+      "images/444B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6358,8 +6358,8 @@
     "year": 1926,
     "price": "28.6 USD",
     "images": [
-      "images/445A.jpg",
-      "images/445B.jpg"
+      "images/445A.jpeg",
+      "images/445B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6372,8 +6372,8 @@
     "year": 1913,
     "price": "60.5 USD",
     "images": [
-      "images/446A.jpg",
-      "images/446B.jpg"
+      "images/446A.jpeg",
+      "images/446B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6386,8 +6386,8 @@
     "year": 1914,
     "price": "104.5 USD",
     "images": [
-      "images/447A.jpg",
-      "images/447B.jpg"
+      "images/447A.jpeg",
+      "images/447B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX+"
@@ -6400,8 +6400,8 @@
     "year": 1920,
     "price": "41.8 USD",
     "images": [
-      "images/448A.jpg",
-      "images/448B.jpg"
+      "images/448A.jpeg",
+      "images/448B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B-"
@@ -6414,8 +6414,8 @@
     "year": 1955,
     "price": "41.8 USD",
     "images": [
-      "images/449A.jpg",
-      "images/449B.jpg"
+      "images/449A.jpeg",
+      "images/449B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6428,8 +6428,8 @@
     "year": 1873,
     "price": "30.8 USD",
     "images": [
-      "images/450A.jpg",
-      "images/450B.jpg"
+      "images/450A.jpeg",
+      "images/450B.jpeg"
     ],
     "grade": "Regular",
     "grade_short": "R+"
@@ -6442,8 +6442,8 @@
     "year": 1875,
     "price": "44 USD",
     "images": [
-      "images/451A.jpg",
-      "images/451B.jpg"
+      "images/451A.jpeg",
+      "images/451B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B-"
@@ -6456,8 +6456,8 @@
     "year": 1876,
     "price": "38.5 USD",
     "images": [
-      "images/452A.jpg",
-      "images/452B.jpg"
+      "images/452A.jpeg",
+      "images/452B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6470,8 +6470,8 @@
     "year": 1854,
     "price": "33 USD",
     "images": [
-      "images/453A.jpg",
-      "images/453B.jpg"
+      "images/453A.jpeg",
+      "images/453B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6484,8 +6484,8 @@
     "year": 1854,
     "price": "132 USD",
     "images": [
-      "images/455A.jpg",
-      "images/455B.jpg"
+      "images/455A.jpeg",
+      "images/455B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B",
@@ -6499,8 +6499,8 @@
     "year": 1972,
     "price": "33 USD",
     "images": [
-      "images/456A.jpg",
-      "images/456B.jpg"
+      "images/456A.jpeg",
+      "images/456B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -6514,8 +6514,8 @@
     "year": 2003,
     "price": "110.0 USD",
     "images": [
-      "images/459A.jpg",
-      "images/459B.jpg"
+      "images/459A.jpeg",
+      "images/459B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -6529,8 +6529,8 @@
     "year": 2004,
     "price": "110.0 USD",
     "images": [
-      "images/460A.jpg",
-      "images/460B.jpg"
+      "images/460A.jpeg",
+      "images/460B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -6544,8 +6544,8 @@
     "year": 2005,
     "price": "110.0 USD",
     "images": [
-      "images/461A.jpg",
-      "images/461B.jpg"
+      "images/461A.jpeg",
+      "images/461B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -6559,8 +6559,8 @@
     "year": 1977,
     "price": "71.5 USD",
     "images": [
-      "images/462A.jpg",
-      "images/462B.jpg"
+      "images/462A.jpeg",
+      "images/462B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -6574,8 +6574,8 @@
     "year": 1857,
     "price": "26.4 USD",
     "images": [
-      "images/463A.jpg",
-      "images/463B.jpg"
+      "images/463A.jpeg",
+      "images/463B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6588,8 +6588,8 @@
     "year": 2023,
     "price": "220.0 USD",
     "images": [
-      "images/464A.jpg",
-      "images/464B.jpg"
+      "images/464A.jpeg",
+      "images/464B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
@@ -6602,8 +6602,8 @@
     "year": 2013,
     "price": "198.0 USD",
     "images": [
-      "images/465A.jpg",
-      "images/465B.jpg"
+      "images/465A.jpeg",
+      "images/465B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
@@ -6616,8 +6616,8 @@
     "year": 2021,
     "price": "275 USD",
     "images": [
-      "images/466A.jpg",
-      "images/466B.jpg"
+      "images/466A.jpeg",
+      "images/466B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
@@ -6630,8 +6630,8 @@
     "year": 1858,
     "price": "27.5 USD",
     "images": [
-      "images/467A.jpg",
-      "images/467B.jpg"
+      "images/467A.jpeg",
+      "images/467B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B-"
@@ -6644,8 +6644,8 @@
     "year": 1859,
     "price": "22 USD",
     "images": [
-      "images/468A.jpg",
-      "images/468B.jpg"
+      "images/468A.jpeg",
+      "images/468B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6658,8 +6658,8 @@
     "year": 1861,
     "price": "49.5 USD",
     "images": [
-      "images/469A.jpg",
-      "images/469B.jpg"
+      "images/469A.jpeg",
+      "images/469B.jpeg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -6672,8 +6672,8 @@
     "year": 1862,
     "price": "60.5 USD",
     "images": [
-      "images/470A.jpg",
-      "images/470B.jpg"
+      "images/470A.jpeg",
+      "images/470B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6686,8 +6686,8 @@
     "year": 1864,
     "price": "44 USD",
     "images": [
-      "images/471A.jpg",
-      "images/471B.jpg"
+      "images/471A.jpeg",
+      "images/471B.jpeg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -6700,8 +6700,8 @@
     "year": 1864,
     "price": "22 USD",
     "images": [
-      "images/472A.jpg",
-      "images/472B.jpg"
+      "images/472A.jpeg",
+      "images/472B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6714,8 +6714,8 @@
     "year": 1865,
     "price": "22 USD",
     "images": [
-      "images/473A.jpg",
-      "images/473B.jpg"
+      "images/473A.jpeg",
+      "images/473B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B-"
@@ -6728,8 +6728,8 @@
     "year": 1867,
     "price": "60.5 USD",
     "images": [
-      "images/474A.jpg",
-      "images/474B.jpg"
+      "images/474A.jpeg",
+      "images/474B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6742,8 +6742,8 @@
     "year": 1868,
     "price": "66 USD",
     "images": [
-      "images/475A.jpg",
-      "images/475B.jpg"
+      "images/475A.jpeg",
+      "images/475B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6756,8 +6756,8 @@
     "year": 1873,
     "price": "82.5 USD",
     "images": [
-      "images/476A.jpg",
-      "images/476B.jpg"
+      "images/476A.jpeg",
+      "images/476B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6770,8 +6770,8 @@
     "year": 1874,
     "price": "27.5 USD",
     "images": [
-      "images/477A.jpg",
-      "images/477B.jpg"
+      "images/477A.jpeg",
+      "images/477B.jpeg"
     ],
     "grade": "Regular",
     "grade_short": "R+"
@@ -6784,8 +6784,8 @@
     "year": 1875,
     "price": "46.2 USD",
     "images": [
-      "images/478A.jpg",
-      "images/478B.jpg"
+      "images/478A.jpeg",
+      "images/478B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B-"
@@ -6798,8 +6798,8 @@
     "year": 1876,
     "price": "77 USD",
     "images": [
-      "images/479A.jpg",
-      "images/479B.jpg"
+      "images/479A.jpeg",
+      "images/479B.jpeg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6812,8 +6812,8 @@
     "year": 1879,
     "price": "24.2 USD",
     "images": [
-      "images/480A.jpg",
-      "images/480B.jpg"
+      "images/480A.jpeg",
+      "images/480B.jpeg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -6826,8 +6826,8 @@
     "year": 1880,
     "price": "22 USD",
     "images": [
-      "images/481A.jpg",
-      "images/481B.jpg"
+      "images/481A.jpeg",
+      "images/481B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
