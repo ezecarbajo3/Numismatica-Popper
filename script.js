@@ -632,6 +632,19 @@ function getGradeShort(coin) {
   return coin.grade_short || coin.gradeShort || coin.grade_short_label || '';
 }
 
+// Re-fetches an <img> if its load fails (up to 2 times, with a cache-buster).
+// Fixes "broken image" thumbnails after back/forward navigation, where the
+// browser aborts in-flight requests when leaving the page.
+function attachImgRetry(img, maxTries = 2) {
+  let tries = 0;
+  img.addEventListener('error', () => {
+    if (tries >= maxTries) return;
+    tries += 1;
+    const base = img.src.split('?')[0];
+    setTimeout(() => { img.src = `${base}?r=${Date.now()}`; }, 250 * tries);
+  });
+}
+
 function goToDetail(coinId) {
   saveState(window.scrollY);
   window.location.href = `detalle.html?id=${coinId}`;
@@ -726,14 +739,21 @@ function renderCoins(coins, skipAnimation = false) {
 
     if (skipAnimation) article.classList.remove('reveal');
 
-    // First 10 cards: eager + high priority (covers viewport on any screen size).
-    // The rest: lazy — user must scroll to reach them.
-    if (idx < 10) {
+    // Above-fold cards: eager + high priority. The rest are lazy so the browser
+    // only fetches them as the user scrolls (native lazy-loading).
+    // Keep the eager set small — these are full-weight photos.
+    if (idx < 4) {
       image.loading = 'eager';
-      image.fetchPriority = 'high';
+      image.fetchPriority = idx < 2 ? 'high' : 'auto';
     } else {
       image.loading = 'lazy';
+      image.fetchPriority = 'low';
     }
+
+    // Auto-heal images that fail to load (aborted requests on navigation,
+    // transient network errors, etc.) — retries with a cache-buster so the
+    // user never has to hit F5 to recover broken thumbnails.
+    attachImgRetry(image);
 
     image.src = getPrimaryImage(coin);
     image.alt = coin.title || 'Moneda';
@@ -782,22 +802,45 @@ function renderCoins(coins, skipAnimation = false) {
     if (images.length > 1) {
       let currentIdx = 0;
       let carouselPreloaded = false;
+      let swapToken = 0;
 
-      const setIdx = (newIdx) => {
-        currentIdx = ((newIdx % images.length) + images.length) % images.length;
-        image.src = images[currentIdx];
+      const updateDots = () => {
         imageWrap.querySelectorAll('.card-dot').forEach((dot, i) =>
           dot.classList.toggle('is-active', i === currentIdx)
         );
       };
 
-      // Preload secondary images only on first hover/touch — avoids ~100 eager
-      // network requests at render time for off-screen cards.
+      // Decode the target off-screen before swapping the visible <img>, so the
+      // photo changes in a single click with no half-painted/blank flash. The
+      // dots update immediately to give instant feedback even while decoding.
+      // A token guards against out-of-order swaps when clicking quickly.
+      const setIdx = (newIdx) => {
+        currentIdx = ((newIdx % images.length) + images.length) % images.length;
+        updateDots();
+        const targetSrc = images[currentIdx];
+        const myToken = ++swapToken;
+        const pre = new Image();
+        pre.src = targetSrc;
+        const apply = () => { if (myToken === swapToken) image.src = targetSrc; };
+        if (pre.decode) {
+          pre.decode().then(apply).catch(apply);
+        } else if (pre.complete) {
+          apply();
+        } else {
+          pre.onload = apply;
+          pre.onerror = apply;
+        }
+      };
+
+      // Preload secondary images so the first arrow tap is instant. For the
+      // above-fold cards this runs at render; the rest wait until first
+      // hover/touch to avoid a burst of off-screen requests.
       const preloadCarousel = () => {
         if (carouselPreloaded) return;
         carouselPreloaded = true;
         images.forEach((src, i) => { if (i > 0) { const p = new Image(); p.src = src; } });
       };
+      if (idx < 4) preloadCarousel();
 
       const prevBtn = document.createElement('button');
       prevBtn.type = 'button';
@@ -1000,5 +1043,27 @@ loadCoins().then((ok) => {
 
   // Fresh load or reload → always show landing
   showLanding();
+});
+
+// ─── Back/forward cache restore ────────────────────────────────────────────────
+// When the page is restored from the bfcache (e.g. the browser/app "back"
+// button), the bootstrap above does NOT re-run. Re-assert the scroll position
+// and kick any thumbnails the browser left in a broken state back into loading.
+window.addEventListener('pageshow', (event) => {
+  if (!event.persisted) return;
+
+  const state = loadSavedState();
+  if (state && state.view === 'catalog' && state.scrollY) {
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      window.scrollTo({ top: state.scrollY, behavior: 'instant' });
+    }));
+  }
+
+  document.querySelectorAll('.coin-image').forEach((img) => {
+    if (!img.complete || img.naturalWidth === 0) {
+      const base = img.src.split('?')[0];
+      img.src = `${base}?r=${Date.now()}`;
+    }
+  });
 });
 
