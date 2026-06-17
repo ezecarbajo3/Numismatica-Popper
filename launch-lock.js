@@ -19,6 +19,14 @@
   /* Si ya pasó la hora de lanzamiento, no bloqueamos nada. */
   if (Date.now() >= LAUNCH) return;
 
+  /* Contraseña de acceso anticipado (para administración/preview).
+     Si ya se ingresó correctamente antes, el bloqueo no vuelve a aparecer
+     en ninguna página ni acción (persiste en localStorage). */
+  var ACCESS_PASS = "popper prime";
+  try {
+    if (localStorage.getItem("np_unlocked") === "1") return;
+  } catch (e) { /* localStorage no disponible: seguimos con el bloqueo */ }
+
   /* ---- Estilos (heredan la paleta y la tipografía globales del sitio) ---- */
   var css = '\
 #launch-lock{position:fixed;inset:0;z-index:2147483647;\
@@ -72,7 +80,28 @@
   font-size:clamp(.58rem,1.5vw,.7rem);letter-spacing:.3em;text-transform:uppercase;\
   color:#7a6f5d;margin:18px 0 0;}\
 @media (max-width:380px){#launch-lock .ll-sep{display:none}\
-  #launch-lock .ll-countdown{gap:8px}}';
+  #launch-lock .ll-countdown{gap:8px}}\
+#launch-lock .ll-gate{margin-top:clamp(28px,5vw,40px);display:flex;\
+  flex-direction:column;align-items:center;gap:12px;}\
+#launch-lock .ll-gate form{display:flex;gap:10px;flex-wrap:wrap;\
+  justify-content:center;}\
+#launch-lock .ll-pass{font-family:"Cinzel",Georgia,serif;font-size:.9rem;\
+  padding:11px 16px;width:min(70vw,230px);color:#f5f0e6;outline:none;\
+  background:rgba(255,255,255,.05);border:1px solid rgba(207,172,107,.35);\
+  border-radius:8px;transition:border-color .25s;}\
+#launch-lock .ll-pass:focus{border-color:#cfac6b;}\
+#launch-lock .ll-pass::placeholder{color:#7a6f5d;}\
+#launch-lock .ll-enter{font-family:"Cinzel",Georgia,serif;font-size:.82rem;\
+  letter-spacing:.08em;padding:11px 22px;cursor:pointer;border:none;\
+  border-radius:8px;color:#1a1407;font-weight:600;\
+  background:linear-gradient(180deg,#efd9a2 0%,#cfac6b 52%,#a8844a 100%);\
+  transition:filter .2s,transform .1s;}\
+#launch-lock .ll-enter:hover{filter:brightness(1.08);}\
+#launch-lock .ll-enter:active{transform:translateY(1px);}\
+#launch-lock .ll-err{min-height:1em;font-family:"Cinzel",Georgia,serif;\
+  font-size:.74rem;color:#e0564f;opacity:0;letter-spacing:.02em;\
+  transition:opacity .2s;}\
+#launch-lock .ll-err.show{opacity:1;}';
 
   var style = document.createElement("style");
   style.id = "launch-lock-style";
@@ -122,6 +151,13 @@
         '<span class="ll-sep">:</span>' +
         '<div class="ll-unit"><span class="ll-num" data-s>00</span><span class="ll-lab">Segundos</span></div>' +
       '</div>' +
+      '<div class="ll-gate">' +
+        '<form class="ll-gate-form" autocomplete="off" novalidate>' +
+          '<input type="password" class="ll-pass" placeholder="Contraseña" aria-label="Contraseña de acceso" autocomplete="off" />' +
+          '<button type="submit" class="ll-enter">Entrar</button>' +
+        '</form>' +
+        '<p class="ll-err" data-err></p>' +
+      '</div>' +
       '<div class="ll-rule"></div>' +
       '<p class="ll-foot">Aumentando tu colección desde 2020</p>' +
     '</div>';
@@ -139,6 +175,10 @@
   /* ---- Bloqueo defensivo de teclado de scroll ---- */
   function blockKeys(e) {
     if (!document.getElementById("launch-lock")) return;
+    /* No interferir mientras se escribe la contraseña (la barra espaciadora
+       forma parte de "popper prime"). */
+    var t = e.target;
+    if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA")) return;
     var k = e.key;
     if (k === " " || k === "PageDown" || k === "PageUp" ||
         k === "Home" || k === "End" ||
@@ -189,4 +229,31 @@
 
   tick();
   var timer = setInterval(tick, 1000);
+
+  /* ---- Acceso anticipado por contraseña ---- */
+  (function setupGate() {
+    var form = overlay.querySelector(".ll-gate-form");
+    var input = overlay.querySelector(".ll-pass");
+    var err = overlay.querySelector("[data-err]");
+    if (!form || !input || !err) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var val = (input.value || "").trim().toLowerCase();
+      if (val === ACCESS_PASS) {
+        try { localStorage.setItem("np_unlocked", "1"); } catch (_) {}
+        unlock();
+      } else {
+        err.textContent = "No seas Sensi, esperá hasta mañana";
+        err.classList.add("show");
+        input.value = "";
+        input.focus();
+      }
+    });
+
+    /* Al volver a escribir, ocultamos el mensaje de error. */
+    input.addEventListener("input", function () {
+      err.classList.remove("show");
+    });
+  })();
 })();
