@@ -244,7 +244,7 @@
         try { localStorage.setItem("np_unlocked", "1"); } catch (_) {}
         unlock();
       } else {
-        err.textContent = "No seas Sensi, esperá hasta mañana";
+        err.textContent = "No seas ansioso, esperá hasta mañana";
         err.classList.add("show");
         input.value = "";
         input.focus();
