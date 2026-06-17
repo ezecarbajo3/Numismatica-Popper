@@ -239,13 +239,13 @@ function renderCoinDetail(coin, groupMembers) {
       const info = document.createElement("div");
       info.className = "variant-info";
 
-      const isArgentina = (member.country || "").toLowerCase().includes("argentina");
+      const isArgentina = (member.country || "").toLowerCase().includes("argentina"); const isQuarters = member.group_id === "us-quarters-estados"; const descLabel = String(member.description || "").trim() || "–";
       const gradeLabel = String(member.grade_short || "").trim() || "–";
       const yearLabel  = String(member.year || "").trim() || "–";
 
       const labelEl = document.createElement("span");
       labelEl.className   = "variant-year"; // Reusing class for consistency
-      labelEl.textContent = isArgentina ? gradeLabel : yearLabel;
+      if (isQuarters) { labelEl.textContent = descLabel; } else { labelEl.textContent = isArgentina ? gradeLabel : yearLabel; }
 
       const priceEl = document.createElement("span");
       priceEl.className   = "variant-price";
