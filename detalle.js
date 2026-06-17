@@ -12,6 +12,17 @@ function getImagesArray(coin) {
   return ["https://via.placeholder.com/900x900?text=Sin+imagen"];
 }
 
+// Re-fetches an <img> if its load fails (up to 2 times, with a cache-buster).
+function attachImgRetry(img, maxTries = 2) {
+  let tries = 0;
+  img.addEventListener("error", () => {
+    if (tries >= maxTries) return;
+    tries += 1;
+    const base = img.src.split("?")[0];
+    setTimeout(() => { img.src = `${base}?r=${Date.now()}`; }, 250 * tries);
+  });
+}
+
 function buildWhatsAppLink(coin) {
   const title   = coin.title   || "Sin título";
   const country = coin.country || "País no informado";
@@ -187,6 +198,7 @@ function renderCoinDetail(coin, groupMembers) {
   // ── Build image gallery thumbs ────────────────────────────────────────────
   const thumbsContainer = document.getElementById("detailThumbs");
   const mainImageEl     = document.getElementById("detailMainImage");
+  if (mainImageEl) attachImgRetry(mainImageEl);
 
   images.forEach((src, index) => {
     const button  = document.createElement("button");
@@ -194,8 +206,10 @@ function renderCoinDetail(coin, groupMembers) {
     button.className = `detail-thumb${index === 0 ? " is-active" : ""}`;
     button.dataset.image = src;
     const img = document.createElement("img");
+    img.loading = index === 0 ? "eager" : "lazy";
     img.src = src;
     img.alt = `${coin.title || "Moneda"} ${index + 1}`;
+    attachImgRetry(img);
     button.appendChild(img);
     button.addEventListener("click", () => {
       mainImageEl.src = src;
