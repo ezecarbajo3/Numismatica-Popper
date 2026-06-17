@@ -20,11 +20,26 @@
   if (Date.now() >= LAUNCH) return;
 
   /* Contraseña de acceso anticipado (para administración/preview).
-     Si ya se ingresó correctamente antes, el bloqueo no vuelve a aparecer
-     en ninguna página ni acción (persiste en localStorage). */
+     Al ingresarla correctamente se abre una ventana de navegación libre de
+     5 minutos; al expirar, la página se recarga y vuelve a pedir la clave. */
   var ACCESS_PASS = "popper prime";
+  var ACCESS_WINDOW_MS = 5 * 60 * 1000; /* 5 minutos */
+
+  /* Programa la re-aparición del bloqueo recargando la página al expirar. */
+  function scheduleRelock(msLeft) {
+    setTimeout(function () { location.reload(); }, Math.max(0, msLeft));
+  }
+
+  /* Si hay una ventana de acceso vigente, no bloqueamos: solo dejamos
+     programado el re-bloqueo para cuando se agoten los 5 minutos. */
   try {
-    if (localStorage.getItem("np_unlocked") === "1") return;
+    var until = parseInt(localStorage.getItem("np_unlock_until") || "0", 10);
+    if (until && Date.now() < until) {
+      scheduleRelock(until - Date.now());
+      return;
+    }
+    /* Ventana vencida o inexistente: limpiamos y mostramos el bloqueo. */
+    localStorage.removeItem("np_unlock_until");
   } catch (e) { /* localStorage no disponible: seguimos con el bloqueo */ }
 
   /* ---- Estilos (heredan la paleta y la tipografía globales del sitio) ---- */
@@ -241,7 +256,10 @@
       e.preventDefault();
       var val = (input.value || "").trim().toLowerCase();
       if (val === ACCESS_PASS) {
-        try { localStorage.setItem("np_unlocked", "1"); } catch (_) {}
+        try {
+          localStorage.setItem("np_unlock_until", String(Date.now() + ACCESS_WINDOW_MS));
+        } catch (_) {}
+        scheduleRelock(ACCESS_WINDOW_MS);
         unlock();
       } else {
         err.textContent = "No seas ansioso, esperá hasta mañana";
