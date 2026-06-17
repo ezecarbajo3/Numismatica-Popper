@@ -7,8 +7,8 @@
     "year": 1815,
     "price": "100 USD",
     "images": [
-      "images/1A.jpeg",
-      "images/1B.jpeg"
+      "images/1A.jpg",
+      "images/1B.jpg"
     ],
     "reference": "CJ# 17",
     "grade": "Muy Bueno - detalles",
@@ -18,44 +18,6 @@
     "original_price": "130 USD"
   },
   {
-    "id": 3,
-    "title": "2 Centavos 1854",
-    "country": "Argentina - Confed. Arg.",
-    "metal": "Cobre",
-    "year": 1854,
-    "price": "10 USD",
-    "images": [
-      "images/3A.jpeg",
-      "images/3B.jpeg"
-    ],
-    "reference": "CJ# 2",
-    "grade": "Regular",
-    "grade_short": "R",
-    "mintage": "",
-    "description": "",
-    "group_id": "ar-2centavos-1854-confed",
-    "group_label": "2 Centavos 1854"
-  },
-  {
-    "id": 5,
-    "title": "2 Centavos 1854",
-    "country": "Argentina - Confed. Arg.",
-    "metal": "Cobre",
-    "year": 1854,
-    "price": "14 USD",
-    "images": [
-      "images/5A.jpeg",
-      "images/5B.jpeg"
-    ],
-    "reference": "CJ# 2",
-    "grade": "Regular +",
-    "grade_short": "R+",
-    "mintage": "",
-    "description": "",
-    "group_id": "ar-2centavos-1854-confed",
-    "group_label": "2 Centavos 1854"
-  },
-  {
     "id": 6,
     "title": "10 Décimos 1830",
     "country": "Argentina - Buenos Aires",
@@ -63,8 +25,8 @@
     "year": 1830,
     "price": "65 USD",
     "images": [
-      "images/6A.jpeg",
-      "images/6B.jpeg"
+      "images/6A.jpg",
+      "images/6B.jpg"
     ],
     "reference": "CJ# 8.2",
     "grade": "Bueno",
@@ -80,8 +42,8 @@
     "year": 1860,
     "price": "9 USD",
     "images": [
-      "images/7A.jpeg",
-      "images/7B.jpeg"
+      "images/7A.jpg",
+      "images/7B.jpg"
     ],
     "reference": "CJ# 23",
     "grade": "Regular +",
@@ -99,8 +61,8 @@
     "year": 1854,
     "price": "13 USD",
     "images": [
-      "images/8A.jpeg",
-      "images/8B.jpeg"
+      "images/8A.jpg",
+      "images/8B.jpg"
     ],
     "reference": "CJ# 19",
     "grade": "Regular",
@@ -116,8 +78,8 @@
     "year": 1865,
     "price": "70 USD",
     "images": [
-      "images/9A.jpeg",
-      "images/9B.jpeg"
+      "images/9A.jpg",
+      "images/9B.jpg"
     ],
     "reference": "KM# 932",
     "grade": "Sin Circular",
@@ -133,8 +95,8 @@
     "year": 1884,
     "price": "3 USD",
     "images": [
-      "images/14A.jpeg",
-      "images/14B.jpeg"
+      "images/14A.jpg",
+      "images/14B.jpg"
     ],
     "reference": "CJ# 26",
     "grade": "Bueno+",
@@ -150,8 +112,8 @@
     "year": 1885,
     "price": "18 USD",
     "images": [
-      "images/17A.jpeg",
-      "images/17B.jpeg"
+      "images/17A.jpg",
+      "images/17B.jpg"
     ],
     "reference": "CJ# 27",
     "grade": "Excelente",
@@ -167,8 +129,8 @@
     "year": 1890,
     "price": "2.5 USD",
     "images": [
-      "images/18A.jpeg",
-      "images/18B.jpeg"
+      "images/18A.jpg",
+      "images/18B.jpg"
     ],
     "reference": "CJ# 31",
     "grade": "Bueno",
@@ -184,8 +146,8 @@
     "year": 1891,
     "price": "3 USD",
     "images": [
-      "images/19A.jpeg",
-      "images/19B.jpeg"
+      "images/19A.jpg",
+      "images/19B.jpg"
     ],
     "reference": "CJ# 32",
     "grade": "Bueno",
@@ -201,10 +163,8 @@
     "year": 2001,
     "price": "65 USD",
     "images": [
-      "images/20A.jpeg",
-      "images/20B.jpeg",
-      "images/20C.jpeg",
-      "images/20D.jpeg"
+      "images/20A.jpg",
+      "images/20B.jpg"
     ],
     "reference": "KM# 414",
     "grade": "Sin Circular",
@@ -220,8 +180,8 @@
     "year": "S/F",
     "price": "100 USD",
     "images": [
-      "images/26A.jpeg",
-      "images/26B.jpeg"
+      "images/26A.jpg",
+      "images/26B.jpg"
     ],
     "reference": "N/A",
     "grade": "Sin Circular",
@@ -237,8 +197,8 @@
     "year": 2026,
     "price": "28 USD",
     "images": [
-      "images/27A.jpeg",
-      "images/27B.jpeg"
+      "images/27A.jpg",
+      "images/27B.jpg"
     ],
     "reference": "KM# 2612",
     "grade": "Sin Circular",
@@ -254,8 +214,8 @@
     "year": 1863,
     "price": "25 USD",
     "images": [
-      "images/28A.jpeg",
-      "images/28B.jpeg"
+      "images/28A.jpg",
+      "images/28B.jpg"
     ],
     "reference": "KM# 90",
     "grade": "Se aprecia en foto",
@@ -273,8 +233,8 @@
     "year": 1861,
     "price": "40 USD",
     "images": [
-      "images/29A.jpeg",
-      "images/29B.jpeg"
+      "images/29A.jpg",
+      "images/29B.jpg"
     ],
     "reference": "KM# 90",
     "grade": "Se aprecia en foto",
@@ -293,8 +253,8 @@
     "year": 1864,
     "price": "20 USD",
     "images": [
-      "images/30A.jpeg",
-      "images/30B.jpeg"
+      "images/30A.jpg",
+      "images/30B.jpg"
     ],
     "reference": "KM# 90",
     "grade": "Se aprecia en foto",
@@ -312,8 +272,8 @@
     "year": 1860,
     "price": "20 USD",
     "images": [
-      "images/32A.jpeg",
-      "images/32B.jpeg"
+      "images/32A.jpg",
+      "images/32B.jpg"
     ],
     "reference": "KM# 90",
     "grade": "Se aprecia en foto",
@@ -332,8 +292,8 @@
     "year": 1896,
     "price": "6 USD",
     "images": [
-      "images/33A.jpeg",
-      "images/33B.jpeg"
+      "images/33A.jpg",
+      "images/33B.jpg"
     ],
     "reference": "CJ# 37",
     "grade": "Regular +",
@@ -351,8 +311,8 @@
     "year": 1931,
     "price": "15 USD",
     "images": [
-      "images/34A.jpeg",
-      "images/34B.jpeg"
+      "images/34A.jpg",
+      "images/34B.jpg"
     ],
     "reference": "CJ# 81",
     "grade": "Muy Bueno+",
@@ -368,8 +328,8 @@
     "year": 1890,
     "price": "5 USD",
     "images": [
-      "images/35A.jpeg",
-      "images/35B.jpeg"
+      "images/35A.jpg",
+      "images/35B.jpg"
     ],
     "reference": "CJ# 45",
     "grade": "Muy Bueno - detalles",
@@ -385,8 +345,8 @@
     "year": 1814,
     "price": "50 USD",
     "images": [
-      "images/36A.jpeg",
-      "images/36B.jpeg"
+      "images/36A.jpg",
+      "images/36B.jpg"
     ],
     "reference": "KM# TN3",
     "grade": "Muy Bueno",
@@ -402,8 +362,8 @@
     "year": 1852,
     "price": "7 USD",
     "images": [
-      "images/37A.jpeg",
-      "images/37B.jpeg"
+      "images/37A.jpg",
+      "images/37B.jpg"
     ],
     "reference": "KM# 327",
     "grade": "Regular+",
@@ -419,8 +379,8 @@
     "year": 1885,
     "price": "6 USD",
     "images": [
-      "images/38A.jpeg",
-      "images/38B.jpeg"
+      "images/38A.jpg",
+      "images/38B.jpg"
     ],
     "reference": "CJ# 41",
     "grade": "Regular",
@@ -436,8 +396,8 @@
     "year": 1914,
     "price": "8 USD",
     "images": [
-      "images/39A.jpeg",
-      "images/39B.jpeg"
+      "images/39A.jpg",
+      "images/39B.jpg"
     ],
     "reference": "CJ# 145.2",
     "grade": "Muy Bueno",
@@ -453,8 +413,8 @@
     "year": 1931,
     "price": "10 USD",
     "images": [
-      "images/40A.jpeg",
-      "images/40B.jpeg"
+      "images/40A.jpg",
+      "images/40B.jpg"
     ],
     "reference": "N/A",
     "grade": "Muy Bueno+",
@@ -470,8 +430,8 @@
     "year": 1973,
     "price": "7 USD",
     "images": [
-      "images/41A.jpeg",
-      "images/41B.jpeg"
+      "images/41A.jpg",
+      "images/41B.jpg"
     ],
     "reference": "KM# 24",
     "grade": "Sin Circular",
@@ -489,52 +449,14 @@
     "year": 1886,
     "price": "9 USD",
     "images": [
-      "images/43A.jpeg",
-      "images/43B.jpeg"
+      "images/43A.jpg",
+      "images/43B.jpg"
     ],
     "reference": "CJ# 42",
     "grade": "Bueno - detalles",
     "grade_short": "B**",
     "mintage": "443.700",
     "description": "Contramarca de la época"
-  },
-  {
-    "id": 44,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cuproníquel",
-    "year": 1908,
-    "price": "30 USD",
-    "images": [
-      "images/44A.jpeg",
-      "images/44B.jpeg"
-    ],
-    "reference": "CJ# 59",
-    "grade": "Bueno+",
-    "grade_short": "B+",
-    "mintage": "719.128",
-    "description": "Escasa.",
-    "group_id": "ar-20centavos-1908",
-    "group_label": "20 Centavos 1908"
-  },
-  {
-    "id": 45,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cuproníquel",
-    "year": 1908,
-    "price": "30 USD",
-    "images": [
-      "images/45A.jpeg",
-      "images/45B.jpeg"
-    ],
-    "reference": "CJ# 59",
-    "grade": "Bueno+",
-    "grade_short": "B+",
-    "mintage": "719.128",
-    "description": "Escasa.",
-    "group_id": "ar-20centavos-1908",
-    "group_label": "20 Centavos 1908"
   },
   {
     "id": 49,
@@ -544,8 +466,8 @@
     "year": 1916,
     "price": "6 USD",
     "images": [
-      "images/49A.jpeg",
-      "images/49B.jpeg"
+      "images/49A.jpg",
+      "images/49B.jpg"
     ],
     "reference": "CJ# 147",
     "grade": "Muy Bueno-",
@@ -561,8 +483,8 @@
     "year": 1895,
     "price": "15 USD",
     "images": [
-      "images/50A.jpeg",
-      "images/50B.jpeg"
+      "images/50A.jpg",
+      "images/50B.jpg"
     ],
     "reference": "CJ# 50",
     "grade": "Regular+",
@@ -580,8 +502,8 @@
     "year": 1895,
     "price": "15 USD",
     "images": [
-      "images/51A.jpeg",
-      "images/51B.jpeg"
+      "images/51A.jpg",
+      "images/51B.jpg"
     ],
     "reference": "CJ# 50",
     "grade": "Regular+",
@@ -599,8 +521,8 @@
     "year": 1919,
     "price": "4 USD",
     "images": [
-      "images/53A.jpeg",
-      "images/53B.jpeg"
+      "images/53A.jpg",
+      "images/53B.jpg"
     ],
     "reference": "KM# 780",
     "grade": "Muy Bueno",
@@ -618,8 +540,8 @@
     "year": 1942,
     "price": "16 USD",
     "images": [
-      "images/55A.jpeg",
-      "images/55B.jpeg"
+      "images/55A.jpg",
+      "images/55B.jpg"
     ],
     "reference": "KM# 30",
     "grade": "Muy Bueno+",
@@ -637,8 +559,8 @@
     "year": 1966,
     "price": "16 USD",
     "images": [
-      "images/56A.jpeg",
-      "images/56B.jpeg"
+      "images/56A.jpg",
+      "images/56B.jpg"
     ],
     "reference": "KM# 839",
     "grade": "Sin Circular menos",
@@ -654,8 +576,8 @@
     "year": 1972,
     "price": "4 USD",
     "images": [
-      "images/57A.jpeg",
-      "images/57B.jpeg"
+      "images/57A.jpg",
+      "images/57B.jpg"
     ],
     "reference": "KM# 48",
     "grade": "Muy Bueno",
@@ -673,8 +595,8 @@
     "year": 2011,
     "price": "2,5 USD",
     "images": [
-      "images/58A.jpeg",
-      "images/58B.jpeg"
+      "images/58A.jpg",
+      "images/58B.jpg"
     ],
     "reference": "KM# 139",
     "grade": "Excelente",
@@ -690,8 +612,8 @@
     "year": 2016,
     "price": "3 USD",
     "images": [
-      "images/59A.jpeg",
-      "images/59B.jpeg"
+      "images/59A.jpg",
+      "images/59B.jpg"
     ],
     "reference": "N/A",
     "grade": "Sin Circular",
@@ -709,8 +631,8 @@
     "year": 2005,
     "price": "3 USD",
     "images": [
-      "images/60A.jpeg",
-      "images/60B.jpeg"
+      "images/60A.jpg",
+      "images/60B.jpg"
     ],
     "reference": "KM# 70",
     "grade": "Excelente+",
@@ -728,8 +650,8 @@
     "year": 1976,
     "price": "9 USD",
     "images": [
-      "images/62A.jpeg",
-      "images/62B.jpeg"
+      "images/62A.jpg",
+      "images/62B.jpg"
     ],
     "reference": "KM# 70",
     "grade": "Sin Circular",
@@ -745,8 +667,8 @@
     "year": 1995,
     "price": "3 USD",
     "images": [
-      "images/64A.jpeg",
-      "images/64B.jpeg"
+      "images/64A.jpg",
+      "images/64B.jpg"
     ],
     "reference": "KM# 346A",
     "grade": "Excelente",
@@ -764,8 +686,8 @@
     "year": "N/A",
     "price": "4 USD",
     "images": [
-      "images/65A.jpeg",
-      "images/65B.jpeg"
+      "images/65A.jpg",
+      "images/65B.jpg"
     ],
     "reference": "N/A",
     "grade": "Excelente",
@@ -781,8 +703,8 @@
     "year": 2001,
     "price": "10 USD",
     "images": [
-      "images/66A.jpeg",
-      "images/66B.jpeg"
+      "images/66A.jpg",
+      "images/66B.jpg"
     ],
     "reference": "N/A",
     "grade": "Muy Bueno +",
@@ -798,8 +720,8 @@
     "year": 2006,
     "price": "3 USD",
     "images": [
-      "images/67A.jpeg",
-      "images/67B.jpeg"
+      "images/67A.jpg",
+      "images/67B.jpg"
     ],
     "reference": "KM# 635",
     "grade": "Sin Circular",
@@ -817,8 +739,8 @@
     "year": 2020,
     "price": "4 USD",
     "images": [
-      "images/68A.jpeg",
-      "images/68B.jpeg"
+      "images/68A.jpg",
+      "images/68B.jpg"
     ],
     "reference": "KM# 2909.1",
     "grade": "Sin Circular",
@@ -836,8 +758,8 @@
     "year": 1938,
     "price": "2.5 USD",
     "images": [
-      "images/70A.jpeg",
-      "images/70B.jpeg"
+      "images/70A.jpg",
+      "images/70B.jpg"
     ],
     "reference": "KM# 547",
     "grade": "Muy Bueno",
@@ -853,8 +775,8 @@
     "year": 2004,
     "price": "3 USD",
     "images": [
-      "images/71A.jpeg",
-      "images/71B.jpeg"
+      "images/71A.jpg",
+      "images/71B.jpg"
     ],
     "reference": "KM# 23",
     "grade": "Sin Circular",
@@ -872,8 +794,8 @@
     "year": 1992,
     "price": "3.5 USD",
     "images": [
-      "images/72A.jpeg",
-      "images/72B.jpeg"
+      "images/72A.jpg",
+      "images/72B.jpg"
     ],
     "reference": "KM# 29",
     "grade": "Sin Circular",
@@ -889,30 +811,13 @@
     "year": 1854,
     "price": "65 USD",
     "images": [
-      "images/76A.jpeg",
-      "images/76B.jpeg"
+      "images/76A.jpg",
+      "images/76B.jpg"
     ],
     "reference": "KM# 1",
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "120.000",
-    "description": "Año único."
-  },
-  {
-    "id": 77,
-    "title": "5 Centésimos 1857",
-    "country": "Uruguay",
-    "metal": "Cobre",
-    "year": 1857,
-    "price": "16 USD",
-    "images": [
-      "images/77A.jpeg",
-      "images/77B.jpeg"
-    ],
-    "reference": "KM# 8",
-    "grade": "Bueno -",
-    "grade_short": "B-",
-    "mintage": "570.000",
     "description": "Año único."
   },
   {
@@ -923,8 +828,8 @@
     "year": 1857,
     "price": "20 USD",
     "images": [
-      "images/78A.jpeg",
-      "images/78B.jpeg"
+      "images/78A.jpg",
+      "images/78B.jpg"
     ],
     "reference": "KM# 10",
     "grade": "Bueno detalles",
@@ -942,8 +847,8 @@
     "year": 1857,
     "price": "25 USD",
     "images": [
-      "images/79A.jpeg",
-      "images/79B.jpeg"
+      "images/79A.jpg",
+      "images/79B.jpg"
     ],
     "reference": "KM# 10",
     "grade": "Muy Bueno -",
@@ -961,8 +866,8 @@
     "year": 1869,
     "price": "15 USD",
     "images": [
-      "images/80A.jpeg",
-      "images/80B.jpeg"
+      "images/80A.jpg",
+      "images/80B.jpg"
     ],
     "reference": "KM# 11",
     "grade": "Excelente -",
@@ -978,8 +883,8 @@
     "year": 1925,
     "price": "4 USD",
     "images": [
-      "images/81A.jpeg",
-      "images/81B.jpeg"
+      "images/81A.jpg",
+      "images/81B.jpg"
     ],
     "reference": "KM# 822",
     "grade": "Muy Bueno+",
@@ -995,8 +900,8 @@
     "year": 1921,
     "price": "3 USD",
     "images": [
-      "images/85A.jpeg",
-      "images/85B.jpeg"
+      "images/85A.jpg",
+      "images/85B.jpg"
     ],
     "reference": "KM# 69",
     "grade": "Bueno+",
@@ -1014,8 +919,8 @@
     "year": 1910,
     "price": "22 USD",
     "images": [
-      "images/89A.jpeg",
-      "images/89B.jpeg"
+      "images/89A.jpg",
+      "images/89B.jpg"
     ],
     "reference": "KM# 507",
     "grade": "Bueno+",
@@ -1031,8 +936,8 @@
     "year": 2014,
     "price": "4 USD",
     "images": [
-      "images/90A.jpeg",
-      "images/90B.jpeg"
+      "images/90A.jpg",
+      "images/90B.jpg"
     ],
     "reference": "KM# 156.6",
     "grade": "Sin Circular",
@@ -1048,8 +953,8 @@
     "year": 2019,
     "price": "4 USD",
     "images": [
-      "images/91A.jpeg",
-      "images/91B.jpeg"
+      "images/91A.jpg",
+      "images/91B.jpg"
     ],
     "reference": "KM# 1035",
     "grade": "Sin Circular",
@@ -1065,8 +970,8 @@
     "year": 2005,
     "price": "4 USD",
     "images": [
-      "images/92A.jpeg",
-      "images/92B.jpeg"
+      "images/92A.jpg",
+      "images/92B.jpg"
     ],
     "reference": "KM# 1181",
     "grade": "Sin Circular",
@@ -1084,8 +989,8 @@
     "year": 1899,
     "price": "4 USD",
     "images": [
-      "images/93A.jpeg",
-      "images/93B.jpeg"
+      "images/93A.jpg",
+      "images/93B.jpg"
     ],
     "reference": "KM# 11",
     "grade": "Excelente",
@@ -1103,8 +1008,8 @@
     "year": 1915,
     "price": "4 USD",
     "images": [
-      "images/94A.jpeg",
-      "images/94B.jpeg"
+      "images/94A.jpg",
+      "images/94B.jpg"
     ],
     "reference": "KM# 777.2",
     "grade": "Excelente",
@@ -1120,8 +1025,8 @@
     "year": 1911,
     "price": "3,5 USD",
     "images": [
-      "images/96A.jpeg",
-      "images/96B.jpeg"
+      "images/96A.jpg",
+      "images/96B.jpg"
     ],
     "reference": "KM# 2801",
     "grade": "Muy Bueno",
@@ -1139,8 +1044,8 @@
     "year": 1904,
     "price": "8 USD",
     "images": [
-      "images/98A.jpeg",
-      "images/98B.jpeg"
+      "images/98A.jpg",
+      "images/98B.jpg"
     ],
     "reference": "KM# 722",
     "grade": "Excelente+",
@@ -1156,8 +1061,8 @@
     "year": 1862,
     "price": "8 USD",
     "images": [
-      "images/99A.jpeg",
-      "images/99B.jpeg"
+      "images/99A.jpg",
+      "images/99B.jpg"
     ],
     "reference": "KM# 749.2",
     "grade": "Bueno-",
@@ -1175,8 +1080,8 @@
     "year": 1893,
     "price": "2 USD",
     "images": [
-      "images/100A.jpeg",
-      "images/100B.jpeg"
+      "images/100A.jpg",
+      "images/100B.jpg"
     ],
     "reference": "CJ# 34",
     "grade": "Regular+",
@@ -1192,8 +1097,8 @@
     "year": 1895,
     "price": "4 USD",
     "images": [
-      "images/101A.jpeg",
-      "images/101B.jpeg"
+      "images/101A.jpg",
+      "images/101B.jpg"
     ],
     "reference": "CJ# 33",
     "grade": "N/A",
@@ -1209,8 +1114,8 @@
     "year": 1896,
     "price": "6 USD",
     "images": [
-      "images/102A.jpeg",
-      "images/102B.jpeg"
+      "images/102A.jpg",
+      "images/102B.jpg"
     ],
     "reference": "CJ# 37",
     "grade": "Regular+",
@@ -1221,23 +1126,6 @@
     "group_label": "2 Centavos 1896"
   },
   {
-    "id": 103,
-    "title": "5 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cuproníquel",
-    "year": 1908,
-    "price": "6 USD",
-    "images": [
-      "images/103A.jpeg",
-      "images/103B.jpeg"
-    ],
-    "reference": "CJ# 139",
-    "grade": "Muy Bueno-",
-    "grade_short": "MB-",
-    "mintage": "1.692.977",
-    "description": ""
-  },
-  {
     "id": 104,
     "title": "5 Centavos 1934",
     "country": "Argentina",
@@ -1245,8 +1133,8 @@
     "year": 1934,
     "price": "3 USD",
     "images": [
-      "images/104A.jpeg",
-      "images/104B.jpeg"
+      "images/104A.jpg",
+      "images/104B.jpg"
     ],
     "reference": "CJ# 164",
     "grade": "Muy Bueno+",
@@ -1262,8 +1150,8 @@
     "year": 1899,
     "price": "6 USD",
     "images": [
-      "images/105A.jpeg",
-      "images/105B.jpeg"
+      "images/105A.jpg",
+      "images/105B.jpg"
     ],
     "reference": "CJ# 55",
     "grade": "Regular",
@@ -1281,8 +1169,8 @@
     "year": 1899,
     "price": "30 USD",
     "images": [
-      "images/107A.jpeg",
-      "images/107B.jpeg"
+      "images/107A.jpg",
+      "images/107B.jpg"
     ],
     "reference": "CJ# 55",
     "grade": "Bueno+",
@@ -1293,63 +1181,6 @@
     "group_label": "20 Centavos 1899"
   },
   {
-    "id": 108,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cuproníquel",
-    "year": 1908,
-    "price": "60 USD",
-    "images": [
-      "images/108A.jpeg",
-      "images/108B.jpeg"
-    ],
-    "reference": "CJ# 59",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": "719.128",
-    "description": "Escasa.",
-    "group_id": "ar-20centavos-1908",
-    "group_label": "20 Centavos 1908"
-  },
-  {
-    "id": 109,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cuproníquel",
-    "year": 1908,
-    "price": "90 USD",
-    "images": [
-      "images/109A.jpeg",
-      "images/109B.jpeg"
-    ],
-    "reference": "CJ# 59",
-    "grade": "Muy Bueno+",
-    "grade_short": "MB+",
-    "mintage": "719.128",
-    "description": "Escasa.",
-    "group_id": "ar-20centavos-1908",
-    "group_label": "20 Centavos 1908"
-  },
-  {
-    "id": 110,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cuproníquel",
-    "year": 1908,
-    "price": "120 USD",
-    "images": [
-      "images/110A.jpeg",
-      "images/110B.jpeg"
-    ],
-    "reference": "CJ# 59",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": "719.128",
-    "description": "Escasa.",
-    "group_id": "ar-20centavos-1908",
-    "group_label": "20 Centavos 1908"
-  },
-  {
     "id": 111,
     "title": "20 Centavos 1936",
     "country": "Argentina",
@@ -1357,8 +1188,8 @@
     "year": 1936,
     "price": "12 USD",
     "images": [
-      "images/111A.jpeg",
-      "images/111B.jpeg"
+      "images/111A.jpg",
+      "images/111B.jpg"
     ],
     "reference": "CJ# 83",
     "grade": "Excelente-",
@@ -1376,8 +1207,8 @@
     "year": 1936,
     "price": "8 USD",
     "images": [
-      "images/112A.jpeg",
-      "images/112B.jpeg"
+      "images/112A.jpg",
+      "images/112B.jpg"
     ],
     "reference": "CJ# 83",
     "grade": "Muy Bueno",
@@ -1395,8 +1226,8 @@
     "year": 1944,
     "price": "20 USD",
     "images": [
-      "images/113A.jpeg",
-      "images/113B.jpeg"
+      "images/113A.jpg",
+      "images/113B.jpg"
     ],
     "reference": "CJ# 178",
     "grade": "Excelente",
@@ -1412,8 +1243,8 @@
     "year": 1950,
     "price": "15 USD",
     "images": [
-      "images/114A.jpeg",
-      "images/114B.jpeg"
+      "images/114A.jpg",
+      "images/114B.jpg"
     ],
     "reference": "CJ# 185",
     "grade": "Muy Bueno+",
@@ -1431,8 +1262,8 @@
     "year": 1950,
     "price": "12 USD",
     "images": [
-      "images/115A.jpeg",
-      "images/115B.jpeg"
+      "images/115A.jpg",
+      "images/115B.jpg"
     ],
     "reference": "CJ# 185",
     "grade": "Muy Bueno",
@@ -1450,8 +1281,8 @@
     "year": 2025,
     "price": "3 USD",
     "images": [
-      "images/116A.jpeg",
-      "images/116B.jpeg"
+      "images/116A.jpg",
+      "images/116B.jpg"
     ],
     "reference": "",
     "grade": "Sin circular",
@@ -1469,8 +1300,8 @@
     "year": 2016,
     "price": "3.5 USD",
     "images": [
-      "images/117A.jpeg",
-      "images/117B.jpeg"
+      "images/117A.jpg",
+      "images/117B.jpg"
     ],
     "reference": "KM# 73",
     "grade": "Sin circular",
@@ -1486,8 +1317,8 @@
     "year": 2022,
     "price": "3 USD",
     "images": [
-      "images/118A.jpeg",
-      "images/118B.jpeg"
+      "images/118A.jpg",
+      "images/118B.jpg"
     ],
     "reference": "KM# 1538",
     "grade": "Sin circular",
@@ -1505,8 +1336,8 @@
     "year": 1984,
     "price": "4.5 USD",
     "images": [
-      "images/120A.jpeg",
-      "images/120B.jpeg"
+      "images/120A.jpg",
+      "images/120B.jpg"
     ],
     "reference": "KM# 556",
     "grade": "Muy Bueno+",
@@ -1524,8 +1355,8 @@
     "year": 2000,
     "price": "3 USD",
     "images": [
-      "images/121A.jpeg",
-      "images/121B.jpeg"
+      "images/121A.jpg",
+      "images/121B.jpg"
     ],
     "reference": "KM# 1074.2",
     "grade": "Muy Bueno",
@@ -1543,8 +1374,8 @@
     "year": 2023,
     "price": "2.5 USD",
     "images": [
-      "images/122A.jpeg",
-      "images/122B.jpeg"
+      "images/122A.jpg",
+      "images/122B.jpg"
     ],
     "reference": "KM# 54",
     "grade": "Sin circular",
@@ -1562,8 +1393,8 @@
     "year": 1999,
     "price": "3 USD",
     "images": [
-      "images/123A.jpeg",
-      "images/123B.jpeg"
+      "images/123A.jpg",
+      "images/123B.jpg"
     ],
     "reference": "KM# 48",
     "grade": "Sin circular",
@@ -1581,8 +1412,8 @@
     "year": 1962,
     "price": "3.5 USD",
     "images": [
-      "images/124A.jpeg",
-      "images/124B.jpeg"
+      "images/124A.jpg",
+      "images/124B.jpg"
     ],
     "reference": "KM# 46",
     "grade": "Excelente +",
@@ -1598,8 +1429,8 @@
     "year": 1992,
     "price": "3,5 USD",
     "images": [
-      "images/125A.jpeg",
-      "images/125B.jpeg"
+      "images/125A.jpg",
+      "images/125B.jpg"
     ],
     "reference": "KM# 732",
     "grade": "Muy Bueno +",
@@ -1617,8 +1448,8 @@
     "year": 1991,
     "price": "2.5 USD",
     "images": [
-      "images/126A.jpeg",
-      "images/126B.jpeg"
+      "images/126A.jpg",
+      "images/126B.jpg"
     ],
     "reference": "KM# 153",
     "grade": "Sin circular",
@@ -1636,8 +1467,8 @@
     "year": 1963,
     "price": "3,5 USD",
     "images": [
-      "images/128B.jpeg",
-      "images/128A.jpeg"
+      "images/128A.jpg",
+      "images/128B.jpg"
     ],
     "reference": "KM# 1",
     "grade": "Sin circular",
@@ -1653,8 +1484,8 @@
     "year": 1949,
     "price": "5 USD",
     "images": [
-      "images/129A.jpeg",
-      "images/129B.jpeg"
+      "images/129A.jpg",
+      "images/129B.jpg"
     ],
     "reference": "KM# 31A",
     "grade": "Excelente +",
@@ -1672,8 +1503,8 @@
     "year": 1911,
     "price": "5 USD",
     "images": [
-      "images/130A.jpeg",
-      "images/130B.jpeg"
+      "images/130A.jpg",
+      "images/130B.jpg"
     ],
     "reference": "Y# 9.2",
     "grade": "Muy Bueno -",
@@ -1689,8 +1520,8 @@
     "year": 1915,
     "price": "5 USD",
     "images": [
-      "images/131A.jpeg",
-      "images/131B.jpeg"
+      "images/131A.jpg",
+      "images/131B.jpg"
     ],
     "reference": "KM# 155.3",
     "grade": "Muy Bueno",
@@ -1706,8 +1537,8 @@
     "year": 1894,
     "price": "4 USD",
     "images": [
-      "images/134A.jpeg",
-      "images/134B.jpeg"
+      "images/134A.jpg",
+      "images/134B.jpg"
     ],
     "reference": "KM# 27",
     "grade": "Muy Bueno",
@@ -1723,8 +1554,8 @@
     "year": 1956,
     "price": "4 USD",
     "images": [
-      "images/135A.jpeg",
-      "images/135B.jpeg"
+      "images/135A.jpg",
+      "images/135B.jpg"
     ],
     "reference": "KM# 6",
     "grade": "Muy Bueno",
@@ -1740,8 +1571,8 @@
     "year": 2008,
     "price": "4 USD",
     "images": [
-      "images/136A.jpeg",
-      "images/136B.jpeg"
+      "images/136A.jpg",
+      "images/136B.jpg"
     ],
     "reference": "KM# 331",
     "grade": "Muy Bueno",
@@ -1757,8 +1588,8 @@
     "year": 1883,
     "price": "8 USD",
     "images": [
-      "images/138A.jpeg",
-      "images/138B.jpeg"
+      "images/138A.jpg",
+      "images/138B.jpg"
     ],
     "reference": "KM# 170.2",
     "grade": "Bueno",
@@ -1774,8 +1605,8 @@
     "year": 1942,
     "price": "14 USD",
     "images": [
-      "images/140A.jpeg",
-      "images/140B.jpeg"
+      "images/140A.jpg",
+      "images/140B.jpg"
     ],
     "reference": "KM# 30",
     "grade": "Bueno +",
@@ -1793,8 +1624,8 @@
     "year": 1929,
     "price": "15 USD",
     "images": [
-      "images/141A.jpeg",
-      "images/141B.jpeg"
+      "images/141A.jpg",
+      "images/141B.jpg"
     ],
     "reference": "KM# 67.1",
     "grade": "Excelente",
@@ -1810,8 +1641,8 @@
     "year": 1960,
     "price": "15 USD",
     "images": [
-      "images/144A.jpeg",
-      "images/144B.jpeg"
+      "images/144A.jpg",
+      "images/144B.jpg"
     ],
     "reference": "KM# 263",
     "grade": "Excelente -",
@@ -1827,8 +1658,8 @@
     "year": "",
     "price": "8 USD",
     "images": [
-      "images/145A.jpeg",
-      "images/145B.jpeg"
+      "images/145A.jpg",
+      "images/145B.jpg"
     ],
     "reference": "",
     "grade": "Sin Circular",
@@ -1844,8 +1675,8 @@
     "year": "1896",
     "price": "10 USD",
     "images": [
-      "images/146A.jpeg",
-      "images/146B.jpeg"
+      "images/146A.jpg",
+      "images/146B.jpg"
     ],
     "reference": "CJ# 37",
     "grade": "Bueno",
@@ -1863,8 +1694,8 @@
     "year": "1860",
     "price": "22 USD",
     "images": [
-      "images/147A.jpeg",
-      "images/147B.jpeg"
+      "images/147A.jpg",
+      "images/147B.jpg"
     ],
     "reference": "CJ# 23",
     "grade": "Muy Bueno -",
@@ -1882,8 +1713,8 @@
     "year": "1964",
     "price": "20 USD",
     "images": [
-      "images/148A.jpeg",
-      "images/148B.jpeg"
+      "images/148A.jpg",
+      "images/148B.jpg"
     ],
     "reference": "KM# 202",
     "grade": "Muy Bueno **",
@@ -1899,8 +1730,8 @@
     "year": "1986",
     "price": "16 USD",
     "images": [
-      "images/149A.jpeg",
-      "images/149B.jpeg"
+      "images/149A.jpg",
+      "images/149B.jpg"
     ],
     "reference": "KM# 212",
     "grade": "Sin Circular",
@@ -1916,8 +1747,8 @@
     "year": "1989",
     "price": "18 USD",
     "images": [
-      "images/150A.jpeg",
-      "images/150B.jpeg"
+      "images/150A.jpg",
+      "images/150B.jpg"
     ],
     "reference": "KM# 224",
     "grade": "Sin Circular",
@@ -1933,8 +1764,8 @@
     "year": "1892",
     "price": "6 USD",
     "images": [
-      "images/151A.jpeg",
-      "images/151B.jpeg"
+      "images/151A.jpg",
+      "images/151B.jpg"
     ],
     "reference": "KM# 172",
     "grade": "Bueno",
@@ -1950,8 +1781,8 @@
     "year": "2011",
     "price": "4.5 USD",
     "images": [
-      "images/152A.jpeg",
-      "images/152B.jpeg"
+      "images/152A.jpg",
+      "images/152B.jpg"
     ],
     "reference": "KM# 346",
     "grade": "Excelente -",
@@ -1969,8 +1800,8 @@
     "year": "1818",
     "price": "20 USD",
     "images": [
-      "images/153A.jpeg",
-      "images/153B.jpeg"
+      "images/153A.jpg",
+      "images/153B.jpg"
     ],
     "reference": "KM# 172",
     "grade": "Bueno",
@@ -1988,8 +1819,8 @@
     "year": "2019",
     "price": "5 USD",
     "images": [
-      "images/154A.jpeg",
-      "images/154B.jpeg"
+      "images/154A.jpg",
+      "images/154B.jpg"
     ],
     "reference": "KM# 1041",
     "grade": "Sin Circular",
@@ -2007,8 +1838,8 @@
     "year": "2006",
     "price": "4.5 USD",
     "images": [
-      "images/155A.jpeg",
-      "images/155B.jpeg"
+      "images/155A.jpg",
+      "images/155B.jpg"
     ],
     "reference": "KM# 1188",
     "grade": "Sin Circular",
@@ -2026,8 +1857,8 @@
     "year": "1927",
     "price": "4 USD",
     "images": [
-      "images/157A.jpeg",
-      "images/157B.jpeg"
+      "images/157A.jpg",
+      "images/157B.jpg"
     ],
     "reference": "KM# 572",
     "grade": "Muy Bueno",
@@ -2043,8 +1874,8 @@
     "year": "1972",
     "price": "4 USD",
     "images": [
-      "images/158A.jpeg",
-      "images/158B.jpeg"
+      "images/158A.jpg",
+      "images/158B.jpg"
     ],
     "reference": "KM# 51",
     "grade": "Muy Bueno",
@@ -2062,8 +1893,8 @@
     "year": "1942",
     "price": "4,5 USD",
     "images": [
-      "images/160A.jpeg",
-      "images/160B.jpeg"
+      "images/160A.jpg",
+      "images/160B.jpg"
     ],
     "reference": "KM# 128",
     "grade": "Muy Bueno",
@@ -2081,8 +1912,8 @@
     "year": "1926",
     "price": "20 USD",
     "images": [
-      "images/161A.jpeg",
-      "images/161B.jpeg"
+      "images/161A.jpg",
+      "images/161B.jpg"
     ],
     "reference": "KM# 145",
     "grade": "Se aprecia en foto",
@@ -2098,8 +1929,8 @@
     "year": "2000",
     "price": "2.5 USD",
     "images": [
-      "images/163A.jpeg",
-      "images/163B.jpeg"
+      "images/163A.jpg",
+      "images/163B.jpg"
     ],
     "reference": "KM# 369",
     "grade": "Sin Circular",
@@ -2117,8 +1948,8 @@
     "year": "1903",
     "price": "4 USD",
     "images": [
-      "images/164A.jpeg",
-      "images/164B.jpeg"
+      "images/164A.jpg",
+      "images/164B.jpg"
     ],
     "reference": "KM# 27",
     "grade": "Excelente -",
@@ -2136,9 +1967,8 @@
     "year": "1976",
     "price": "10 USD",
     "images": [
-      "images/165A.jpeg",
-      "images/165B.jpeg",
-      "images/165C.jpeg"
+      "images/165A.jpg",
+      "images/165B.jpg"
     ],
     "reference": "",
     "grade": "Sin Circular",
@@ -2154,9 +1984,8 @@
     "year": "2009",
     "price": "10 USD",
     "images": [
-      "images/166A.jpeg",
-      "images/166B.jpeg",
-      "images/166C.jpeg"
+      "images/166A.jpg",
+      "images/166B.jpg"
     ],
     "reference": "",
     "grade": "Sin Circular",
@@ -2172,51 +2001,14 @@
     "year": "2005",
     "price": "10 USD",
     "images": [
-      "images/167A.jpeg",
-      "images/167B.jpeg",
-      "images/167C.jpeg"
+      "images/167A.jpg",
+      "images/167B.jpg"
     ],
     "reference": "",
     "grade": "Sin Circular",
     "grade_short": "UNC",
     "mintage": "",
     "description": "Editorial: AlbumsCoins"
-  },
-  {
-    "id": 168,
-    "title": "Album Presidents Series",
-    "country": "Estados Unidos",
-    "metal": "",
-    "year": "",
-    "price": "35 USD",
-    "images": [
-      "images/168A.jpeg",
-      "images/168B.jpeg",
-      "images/168C.jpeg",
-      "images/168D.jpeg"
-    ],
-    "reference": "",
-    "grade": "Sin Circular",
-    "grade_short": "UNC",
-    "mintage": "",
-    "description": "Editorial: Pace Publishing"
-  },
-  {
-    "id": 169,
-    "title": "Catalogo Red Book 2025",
-    "country": "Estados Unidos",
-    "metal": "",
-    "year": "2025",
-    "price": "40 USD",
-    "images": [
-      "images/169A.jpeg",
-      "images/169B.jpeg"
-    ],
-    "reference": "",
-    "grade": "Sin Circular",
-    "grade_short": "UNC",
-    "mintage": "",
-    "description": "Editorial: Whitman Publishing"
   },
   {
     "id": 170,
@@ -2226,7 +2018,8 @@
     "year": "2001",
     "price": "18 USD",
     "images": [
-      "images/170A.jpeg"
+      "images/170A.jpg",
+      "images/170B.jpg"
     ],
     "reference": "",
     "grade": "",
@@ -2242,7 +2035,8 @@
     "year": "2004",
     "price": "20 USD",
     "images": [
-      "images/171A.jpeg"
+      "images/171A.jpg",
+      "images/171B.jpg"
     ],
     "reference": "",
     "grade": "",
@@ -2258,7 +2052,8 @@
     "year": "2009",
     "price": "22 USD",
     "images": [
-      "images/172A.jpeg"
+      "images/172A.jpg",
+      "images/172B.jpg"
     ],
     "reference": "",
     "grade": "",
@@ -2274,8 +2069,8 @@
     "year": "1957",
     "price": "20 USD",
     "images": [
-      "images/173A.jpeg",
-      "images/173B.jpeg"
+      "images/173A.jpg",
+      "images/173B.jpg"
     ],
     "reference": "",
     "grade": "",
@@ -2291,8 +2086,8 @@
     "year": "1998",
     "price": "5 USD",
     "images": [
-      "images/175A.jpeg",
-      "images/175B.jpeg"
+      "images/175A.jpg",
+      "images/175B.jpg"
     ],
     "reference": "CJ# 6",
     "grade": "Excelente -",
@@ -2308,8 +2103,8 @@
     "year": "1867",
     "price": "25 USD",
     "images": [
-      "images/177A.jpeg",
-      "images/177B.jpeg"
+      "images/177A.jpg",
+      "images/177B.jpg"
     ],
     "reference": "KM# 329",
     "grade": "Excelente -",
@@ -2325,8 +2120,8 @@
     "year": "1896",
     "price": "15 USD",
     "images": [
-      "images/178A.jpeg",
-      "images/178B.jpeg"
+      "images/178A.jpg",
+      "images/178B.jpg"
     ],
     "reference": "CJ# 37",
     "grade": "Muy Bueno +",
@@ -2344,8 +2139,8 @@
     "year": "1891",
     "price": "7 USD",
     "images": [
-      "images/179A.jpeg",
-      "images/179B.jpeg"
+      "images/179A.jpg",
+      "images/179B.jpg"
     ],
     "reference": "KM# 533",
     "grade": "Muy Bueno -",
@@ -2361,8 +2156,8 @@
     "year": "1853",
     "price": "20 USD",
     "images": [
-      "images/180A.jpeg",
-      "images/180B.jpeg"
+      "images/180A.jpg",
+      "images/180B.jpg"
     ],
     "reference": "KM# 76",
     "grade": "Ver foto",
@@ -2378,8 +2173,8 @@
     "year": "1881",
     "price": "10 USD",
     "images": [
-      "images/181A.jpeg",
-      "images/181B.jpeg"
+      "images/181A.jpg",
+      "images/181B.jpg"
     ],
     "reference": "KM# 90a",
     "grade": "Ver foto",
@@ -2396,12 +2191,8 @@
     "year": 2012,
     "price": "8 USD",
     "images": [
-      "images/182A.jpeg",
-      "images/182B.jpeg",
-      "images/182C.jpeg",
-      "images/182D.jpeg",
-      "images/182E.jpeg",
-      "images/182F.jpeg"
+      "images/182A.jpg",
+      "images/182B.jpg"
     ],
     "reference": "CJ# 7 7.10.2",
     "grade": "Sin Circular",
@@ -2419,12 +2210,8 @@
     "year": 2010,
     "price": "13 USD",
     "images": [
-      "images/183A.jpeg",
-      "images/183B.jpeg",
-      "images/183C.jpeg",
-      "images/183D.jpeg",
-      "images/183E.jpeg",
-      "images/183F.jpeg"
+      "images/183A.jpg",
+      "images/183B.jpg"
     ],
     "reference": "CJ# 6.18-6.22",
     "grade": "Sin Circular",
@@ -2440,8 +2227,8 @@
     "year": 2015,
     "price": "4 USD",
     "images": [
-      "images/185A.jpeg",
-      "images/185B.jpeg"
+      "images/185A.jpg",
+      "images/185B.jpg"
     ],
     "reference": "KM# 141",
     "grade": "Sin Circular",
@@ -2457,8 +2244,8 @@
     "year": 1994,
     "price": "4 USD",
     "images": [
-      "images/186A.jpeg",
-      "images/186B.jpeg"
+      "images/186A.jpg",
+      "images/186B.jpg"
     ],
     "reference": "KM# 102",
     "grade": "Sin Circular",
@@ -2474,8 +2261,8 @@
     "year": "",
     "price": "65 USD",
     "images": [
-      "images/187A.jpeg",
-      "images/187B.jpeg"
+      "images/187A.jpg",
+      "images/187B.jpg"
     ],
     "reference": "KM# 31",
     "grade": "Muy Buena",
@@ -2491,10 +2278,8 @@
     "year": 1981,
     "price": "10 USD",
     "images": [
-      "images/188A.jpeg",
-      "images/188B.jpeg",
-      "images/188C.jpeg",
-      "images/188D.jpeg"
+      "images/188A.jpg",
+      "images/188B.jpg"
     ],
     "reference": "N/A",
     "grade": "Excelente",
@@ -2510,8 +2295,8 @@
     "year": 1900,
     "price": "5 USD",
     "images": [
-      "images/189A.jpeg",
-      "images/189B.jpeg"
+      "images/189A.jpg",
+      "images/189B.jpg"
     ],
     "reference": "KM# 789",
     "grade": "Buena",
@@ -2527,8 +2312,8 @@
     "year": 1879,
     "price": "22 USD",
     "images": [
-      "images/190A.jpeg",
-      "images/190B.jpeg"
+      "images/190A.jpg",
+      "images/190B.jpg"
     ],
     "reference": "KM# 138.2",
     "grade": "Muy Buena",
@@ -2544,8 +2329,8 @@
     "year": 1943,
     "price": "5 USD",
     "images": [
-      "images/191A.jpeg",
-      "images/191B.jpeg"
+      "images/191A.jpg",
+      "images/191B.jpg"
     ],
     "reference": "KM# 132",
     "grade": "Muy Buena Más",
@@ -2563,8 +2348,8 @@
     "year": 1902,
     "price": "4 USD",
     "images": [
-      "images/192A.jpeg",
-      "images/192B.jpeg"
+      "images/192A.jpg",
+      "images/192B.jpg"
     ],
     "reference": "KM# 112",
     "grade": "Buena con Detalles",
@@ -2580,8 +2365,8 @@
     "year": 1894,
     "price": "4 USD",
     "images": [
-      "images/193A.jpeg",
-      "images/193B.jpeg"
+      "images/193A.jpg",
+      "images/193B.jpg"
     ],
     "reference": "KM# 481",
     "grade": "Muy Buena",
@@ -2599,8 +2384,8 @@
     "year": 1975,
     "price": "2,5 USD",
     "images": [
-      "images/194A.jpeg",
-      "images/194B.jpeg"
+      "images/194A.jpg",
+      "images/194B.jpg"
     ],
     "reference": "CJ# 360",
     "grade": "Excelente con Detalles",
@@ -2616,8 +2401,8 @@
     "year": 1912,
     "price": "14 USD",
     "images": [
-      "images/195A.jpeg",
-      "images/195B.jpeg"
+      "images/195A.jpg",
+      "images/195B.jpg"
     ],
     "reference": "KM# 749",
     "grade": "Excelente Menos",
@@ -2635,8 +2420,8 @@
     "year": 1978,
     "price": "5 USD",
     "images": [
-      "images/196A.jpeg",
-      "images/196B.jpeg"
+      "images/196A.jpg",
+      "images/196B.jpg"
     ],
     "reference": "N/A",
     "grade": "Sin Circular",
@@ -2652,8 +2437,8 @@
     "year": 1974,
     "price": "3,5 USD",
     "images": [
-      "images/197A.jpeg",
-      "images/197B.jpeg"
+      "images/197A.jpg",
+      "images/197B.jpg"
     ],
     "reference": "KM# 203",
     "grade": "Muy Buena Más",
@@ -2671,8 +2456,8 @@
     "year": 2008,
     "price": "3,5 USD",
     "images": [
-      "images/198A.jpeg",
-      "images/198B.jpeg"
+      "images/198A.jpg",
+      "images/198B.jpg"
     ],
     "reference": "KM# 991",
     "grade": "Sin Circular",
@@ -2690,8 +2475,8 @@
     "year": 1969,
     "price": "3,5 USD",
     "images": [
-      "images/199A.jpeg",
-      "images/199B.jpeg"
+      "images/199A.jpg",
+      "images/199B.jpg"
     ],
     "reference": "KM# A127",
     "grade": "Excelente Menos",
@@ -2709,8 +2494,8 @@
     "year": 1838,
     "price": "12 USD",
     "images": [
-      "images/200A.jpeg",
-      "images/200B.jpeg"
+      "images/200A.jpg",
+      "images/200B.jpg"
     ],
     "reference": "KM# 596",
     "grade": "Muy Bueno detalles",
@@ -2728,8 +2513,8 @@
     "year": 1870,
     "price": "6 USD",
     "images": [
-      "images/201A.jpeg",
-      "images/201B.jpeg"
+      "images/201A.jpg",
+      "images/201B.jpg"
     ],
     "reference": "KM# 3",
     "grade": "Bueno -",
@@ -2745,8 +2530,8 @@
     "year": 1948,
     "price": "6 USD",
     "images": [
-      "images/202A.jpeg",
-      "images/202B.jpeg"
+      "images/202A.jpg",
+      "images/202B.jpg"
     ],
     "reference": "KM# 21a",
     "grade": "Excelente",
@@ -2762,8 +2547,8 @@
     "year": 1925,
     "price": "4.5 USD",
     "images": [
-      "images/203A.jpeg",
-      "images/203B.jpeg"
+      "images/203A.jpg",
+      "images/203B.jpg"
     ],
     "reference": "KM# 2837",
     "grade": "Excelente",
@@ -2781,8 +2566,8 @@
     "year": 1950,
     "price": "4 USD",
     "images": [
-      "images/204A.jpeg",
-      "images/204B.jpeg"
+      "images/204A.jpg",
+      "images/204B.jpg"
     ],
     "reference": "KM# 367",
     "grade": "Excelente",
@@ -2798,8 +2583,8 @@
     "year": 1924,
     "price": "3.5 USD",
     "images": [
-      "images/205A.jpeg",
-      "images/205B.jpeg"
+      "images/205A.jpg",
+      "images/205B.jpg"
     ],
     "reference": "KM# 574",
     "grade": "Muy Bueno +",
@@ -2815,8 +2600,8 @@
     "year": 1641,
     "price": "12 USD",
     "images": [
-      "images/206A.jpeg",
-      "images/206B.jpeg"
+      "images/206A.jpg",
+      "images/206B.jpg"
     ],
     "grade": "Regular",
     "grade_short": "R",
@@ -2832,8 +2617,8 @@
     "year": 1976,
     "price": "3 USD",
     "images": [
-      "images/207A.jpeg",
-      "images/207B.jpeg"
+      "images/207A.jpg",
+      "images/207B.jpg"
     ],
     "grade": "Muy Bueno Plus",
     "grade_short": "MB+",
@@ -2851,8 +2636,8 @@
     "year": 1953,
     "price": "4,5 USD",
     "images": [
-      "images/208A.jpeg",
-      "images/208B.jpeg"
+      "images/208A.jpg",
+      "images/208B.jpg"
     ],
     "grade": "Excelente Menos",
     "grade_short": "EX-",
@@ -2870,8 +2655,8 @@
     "year": 1968,
     "price": "2,5 USD",
     "images": [
-      "images/209A.jpeg",
-      "images/209B.jpeg"
+      "images/209A.jpg",
+      "images/209B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
@@ -2889,8 +2674,8 @@
     "year": 1995,
     "price": "4 USD",
     "images": [
-      "images/210A.jpeg",
-      "images/210B.jpeg"
+      "images/210A.jpg",
+      "images/210B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
@@ -2906,8 +2691,8 @@
     "year": 2013,
     "price": "9 USD",
     "images": [
-      "images/211A.jpeg",
-      "images/211B.jpeg"
+      "images/211A.jpg",
+      "images/211B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -2923,8 +2708,8 @@
     "year": 1991,
     "price": "3 USD",
     "images": [
-      "images/212A.jpeg",
-      "images/212B.jpeg"
+      "images/212A.jpg",
+      "images/212B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -2942,8 +2727,8 @@
     "year": 2000,
     "price": "3 USD",
     "images": [
-      "images/213A.jpeg",
-      "images/213B.jpeg"
+      "images/213A.jpg",
+      "images/213B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -2959,8 +2744,8 @@
     "year": 1994,
     "price": "2,5 USD",
     "images": [
-      "images/214A.jpeg",
-      "images/214B.jpeg"
+      "images/214A.jpg",
+      "images/214B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -2978,8 +2763,8 @@
     "year": 1974,
     "price": "3,5 USD",
     "images": [
-      "images/215A.jpeg",
-      "images/215B.jpeg"
+      "images/215A.jpg",
+      "images/215B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -2997,8 +2782,8 @@
     "year": 1983,
     "price": "3.5 USD",
     "images": [
-      "images/216A.jpeg",
-      "images/216B.jpeg"
+      "images/216A.jpg",
+      "images/216B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3016,8 +2801,8 @@
     "year": 2002,
     "price": "4 USD",
     "images": [
-      "images/217A.jpeg",
-      "images/217B.jpeg"
+      "images/217A.jpg",
+      "images/217B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3035,8 +2820,8 @@
     "year": 2003,
     "price": "3 USD",
     "images": [
-      "images/218A.jpeg",
-      "images/218B.jpeg"
+      "images/218A.jpg",
+      "images/218B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3054,8 +2839,8 @@
     "year": 2003,
     "price": "3,5 USD",
     "images": [
-      "images/219A.jpeg",
-      "images/219B.jpeg"
+      "images/219A.jpg",
+      "images/219B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3073,8 +2858,8 @@
     "year": 2003,
     "price": "3,5 USD",
     "images": [
-      "images/220A.jpeg",
-      "images/220B.jpeg"
+      "images/220A.jpg",
+      "images/220B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3090,8 +2875,8 @@
     "year": 1948,
     "price": "4 USD",
     "images": [
-      "images/221A.jpeg",
-      "images/221B.jpeg"
+      "images/221A.jpg",
+      "images/221B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3109,8 +2894,8 @@
     "year": 1992,
     "price": "3 USD",
     "images": [
-      "images/222A.jpeg",
-      "images/222B.jpeg"
+      "images/222A.jpg",
+      "images/222B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -3126,8 +2911,8 @@
     "year": 1990,
     "price": "2,5 USD",
     "images": [
-      "images/223A.jpeg",
-      "images/223B.jpeg"
+      "images/223A.jpg",
+      "images/223B.jpg"
     ],
     "grade": "",
     "grade_short": "",
@@ -3145,8 +2930,8 @@
     "year": 1946,
     "price": "4 USD",
     "images": [
-      "images/224A.jpeg",
-      "images/224B.jpeg"
+      "images/224A.jpg",
+      "images/224B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
@@ -3164,8 +2949,8 @@
     "year": 1944,
     "price": "4 USD",
     "images": [
-      "images/225A.jpeg",
-      "images/225B.jpeg"
+      "images/225A.jpg",
+      "images/225B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
@@ -3183,8 +2968,8 @@
     "year": 1942,
     "price": "5 USD",
     "images": [
-      "images/226A.jpeg",
-      "images/226B.jpeg"
+      "images/226A.jpg",
+      "images/226B.jpg"
     ],
     "grade": "Excelente-",
     "grade_short": "EX-",
@@ -3202,8 +2987,8 @@
     "year": 1943,
     "price": "4 USD",
     "images": [
-      "images/227A.jpeg",
-      "images/227B.jpeg"
+      "images/227A.jpg",
+      "images/227B.jpg"
     ],
     "grade": "Excelente-",
     "grade_short": "EX-",
@@ -3221,8 +3006,8 @@
     "year": 1989,
     "price": "3,5 USD",
     "images": [
-      "images/228A.jpeg",
-      "images/228B.jpeg"
+      "images/228A.jpg",
+      "images/228B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3240,8 +3025,8 @@
     "year": 1942,
     "price": "4 USD",
     "images": [
-      "images/229A.jpeg",
-      "images/229B.jpeg"
+      "images/229A.jpg",
+      "images/229B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -3259,8 +3044,8 @@
     "year": 1977,
     "price": "3,5 USD",
     "images": [
-      "images/230A.jpeg",
-      "images/230B.jpeg"
+      "images/230A.jpg",
+      "images/230B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
@@ -3278,8 +3063,8 @@
     "year": 1942,
     "price": "4,5 USD",
     "images": [
-      "images/231A.jpeg",
-      "images/231B.jpeg"
+      "images/231A.jpg",
+      "images/231B.jpg"
     ],
     "grade": "",
     "grade_short": "",
@@ -3297,8 +3082,8 @@
     "year": 1982,
     "price": "5 USD",
     "images": [
-      "images/232A.jpeg",
-      "images/232B.jpeg"
+      "images/232A.jpg",
+      "images/232B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -3314,8 +3099,8 @@
     "year": 1998,
     "price": "3 USD",
     "images": [
-      "images/233A.jpeg",
-      "images/233B.jpeg"
+      "images/233A.jpg",
+      "images/233B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -3333,8 +3118,8 @@
     "year": 1991,
     "price": "3 USD",
     "images": [
-      "images/234A.jpeg",
-      "images/234B.jpeg"
+      "images/234A.jpg",
+      "images/234B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3352,8 +3137,8 @@
     "year": 1980,
     "price": "3 USD",
     "images": [
-      "images/235A.jpeg",
-      "images/235B.jpeg"
+      "images/235A.jpg",
+      "images/235B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3371,8 +3156,8 @@
     "year": 1997,
     "price": "2 USD",
     "images": [
-      "images/236A.jpeg",
-      "images/236B.jpeg"
+      "images/236A.jpg",
+      "images/236B.jpg"
     ],
     "grade": "",
     "grade_short": "",
@@ -3388,8 +3173,8 @@
     "year": 1966,
     "price": "3,5 USD",
     "images": [
-      "images/237A.jpeg",
-      "images/237B.jpeg"
+      "images/237A.jpg",
+      "images/237B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3407,8 +3192,8 @@
     "year": 1957,
     "price": "5 USD",
     "images": [
-      "images/238A.jpeg",
-      "images/238B.jpeg"
+      "images/238A.jpg",
+      "images/238B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3426,8 +3211,8 @@
     "year": 1950,
     "price": "3 USD",
     "images": [
-      "images/239A.jpeg",
-      "images/239B.jpeg"
+      "images/239A.jpg",
+      "images/239B.jpg"
     ],
     "grade": "Excelente+",
     "grade_short": "EX+",
@@ -3443,8 +3228,8 @@
     "year": 2002,
     "price": "2,5 USD",
     "images": [
-      "images/240A.jpeg",
-      "images/240B.jpeg"
+      "images/240A.jpg",
+      "images/240B.jpg"
     ],
     "grade": "Sin Circular menos",
     "grade_short": "SC-",
@@ -3462,8 +3247,8 @@
     "year": "2000",
     "price": "2.5 USD",
     "images": [
-      "images/162A.jpeg",
-      "images/162B.jpeg"
+      "images/241A.jpg",
+      "images/241B.jpg"
     ],
     "reference": "KM# 349",
     "grade": "Sin Circular",
@@ -3479,8 +3264,8 @@
     "year": 1861,
     "price": "4,5 USD",
     "images": [
-      "images/242A.jpeg",
-      "images/242B.jpeg"
+      "images/242A.jpg",
+      "images/242B.jpg"
     ],
     "grade": "Regular+",
     "grade_short": "R+",
@@ -3496,8 +3281,8 @@
     "year": 2011,
     "price": "4 USD",
     "images": [
-      "images/243A.jpeg",
-      "images/243B.jpeg"
+      "images/243A.jpg",
+      "images/243B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3513,8 +3298,8 @@
     "year": 1989,
     "price": "2,5 USD",
     "images": [
-      "images/244A.jpeg",
-      "images/244B.jpeg"
+      "images/244A.jpg",
+      "images/244B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3530,8 +3315,8 @@
     "year": 1974,
     "price": "3 USD",
     "images": [
-      "images/245A.jpeg",
-      "images/245B.jpeg"
+      "images/245A.jpg",
+      "images/245B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -3549,8 +3334,8 @@
     "year": 1979,
     "price": "3,5 USD",
     "images": [
-      "images/246A.jpeg",
-      "images/246B.jpeg"
+      "images/246A.jpg",
+      "images/246B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3568,8 +3353,8 @@
     "year": 1958,
     "price": "2,5 USD",
     "images": [
-      "images/247A.jpeg",
-      "images/247B.jpeg"
+      "images/247A.jpg",
+      "images/247B.jpg"
     ],
     "grade": "",
     "grade_short": "",
@@ -3585,8 +3370,8 @@
     "year": 1989,
     "price": "3 USD",
     "images": [
-      "images/248A.jpeg",
-      "images/248B.jpeg"
+      "images/248A.jpg",
+      "images/248B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3602,8 +3387,8 @@
     "year": 1974,
     "price": "3 USD",
     "images": [
-      "images/249A.jpeg",
-      "images/249B.jpeg"
+      "images/249A.jpg",
+      "images/249B.jpg"
     ],
     "reference": "KM# 2.1",
     "grade": "Sin Circular",
@@ -3619,8 +3404,8 @@
     "year": 1973,
     "price": "3 USD",
     "images": [
-      "images/250A.jpeg",
-      "images/250B.jpeg"
+      "images/250A.jpg",
+      "images/250B.jpg"
     ],
     "reference": "KM# 6.1",
     "grade": "Excelente-",
@@ -3636,8 +3421,8 @@
     "year": 1974,
     "price": "3.5 USD",
     "images": [
-      "images/251A.jpeg",
-      "images/251B.jpeg"
+      "images/251A.jpg",
+      "images/251B.jpg"
     ],
     "reference": "KM# 205a",
     "grade": "Sin Circular",
@@ -3655,8 +3440,8 @@
     "year": 1976,
     "price": "4 USD",
     "images": [
-      "images/252A.jpeg",
-      "images/252B.jpeg"
+      "images/252A.jpg",
+      "images/252B.jpg"
     ],
     "reference": "KM# 205a",
     "grade": "Sin Circular",
@@ -3674,8 +3459,8 @@
     "year": 1978,
     "price": "3 USD",
     "images": [
-      "images/253A.jpeg",
-      "images/253B.jpeg"
+      "images/253A.jpg",
+      "images/253B.jpg"
     ],
     "reference": "KM# 206a",
     "grade": "Sin Circular",
@@ -3691,8 +3476,8 @@
     "year": 1936,
     "price": "6 USD",
     "images": [
-      "images/254A.jpeg",
-      "images/254B.jpeg"
+      "images/254A.jpg",
+      "images/254B.jpg"
     ],
     "reference": "CJ# 83",
     "grade": "Muy Bueno",
@@ -3710,8 +3495,8 @@
     "year": 1925,
     "price": "3.5 USD",
     "images": [
-      "images/255A.jpeg",
-      "images/255B.jpeg"
+      "images/255A.jpg",
+      "images/255B.jpg"
     ],
     "reference": "KM# 152",
     "grade": "Muy Bueno+",
@@ -3731,8 +3516,8 @@
     "year": 1910,
     "price": "8 USD",
     "images": [
-      "images/256A.jpeg",
-      "images/256B.jpeg"
+      "images/256A.jpg",
+      "images/256B.jpg"
     ],
     "reference": "KM# 760",
     "grade": "Excelente",
@@ -3748,8 +3533,8 @@
     "year": 1921,
     "price": "3.5 USD",
     "images": [
-      "images/257A.jpeg",
-      "images/257B.jpeg"
+      "images/257A.jpg",
+      "images/257B.jpg"
     ],
     "reference": "KM# 27",
     "grade": "Sin Circular",
@@ -3765,8 +3550,8 @@
     "year": 1980,
     "price": "2.5 USD",
     "images": [
-      "images/258A.jpeg",
-      "images/258B.jpeg"
+      "images/258A.jpg",
+      "images/258B.jpg"
     ],
     "reference": "KM# 5",
     "grade": "Excelente+",
@@ -3784,8 +3569,8 @@
     "year": 1973,
     "price": "3.5 USD",
     "images": [
-      "images/259A.jpeg",
-      "images/259B.jpeg"
+      "images/259A.jpg",
+      "images/259B.jpg"
     ],
     "reference": "KM# 435",
     "grade": "Sin Circular",
@@ -3805,8 +3590,8 @@
     "year": 1973,
     "price": "3 USD",
     "images": [
-      "images/260A.jpeg",
-      "images/260B.jpeg"
+      "images/260A.jpg",
+      "images/260B.jpg"
     ],
     "reference": "KM# 435",
     "grade": "Muy Bueno",
@@ -3824,8 +3609,8 @@
     "year": 1967,
     "price": "2 USD",
     "images": [
-      "images/261A.jpeg",
-      "images/261B.jpeg"
+      "images/261A.jpg",
+      "images/261B.jpg"
     ],
     "reference": "KM# 27",
     "grade": "Excelente+",
@@ -3843,8 +3628,8 @@
     "year": 1883,
     "price": "6 USD",
     "images": [
-      "images/262A.jpeg",
-      "images/262B.jpeg"
+      "images/262A.jpg",
+      "images/262B.jpg"
     ],
     "reference": "KM# 27",
     "grade": "Muy Bueno+",
@@ -3862,8 +3647,8 @@
     "year": 1884,
     "price": "5 USD",
     "images": [
-      "images/263A.jpeg",
-      "images/263B.jpeg"
+      "images/263A.jpg",
+      "images/263B.jpg"
     ],
     "reference": "KM# 27",
     "grade": "Muy Bueno+",
@@ -3881,8 +3666,8 @@
     "year": 1901,
     "price": "6 USD",
     "images": [
-      "images/264A.jpeg",
-      "images/264B.jpeg"
+      "images/264A.jpg",
+      "images/264B.jpg"
     ],
     "reference": "KM# 27",
     "grade": "Muy Bueno+",
@@ -3902,8 +3687,8 @@
     "year": 1883,
     "price": "15 USD",
     "images": [
-      "images/265A.jpeg",
-      "images/265B.jpeg"
+      "images/265A.jpg",
+      "images/265B.jpg"
     ],
     "reference": "KM# 29",
     "grade": "Excelente",
@@ -3921,8 +3706,8 @@
     "year": 1885,
     "price": "8 USD",
     "images": [
-      "images/266A.jpeg",
-      "images/266B.jpeg"
+      "images/266A.jpg",
+      "images/266B.jpg"
     ],
     "reference": "KM# 29",
     "grade": "Muy Bueno+",
@@ -3940,8 +3725,8 @@
     "year": 1920,
     "price": "2.5 USD",
     "images": [
-      "images/267A.jpeg",
-      "images/267B.jpeg"
+      "images/267A.jpg",
+      "images/267B.jpg"
     ],
     "reference": "KM# 29",
     "grade": "Sin Circular",
@@ -3959,8 +3744,8 @@
     "year": 1896,
     "price": "8 USD",
     "images": [
-      "images/268A.jpeg",
-      "images/268B.jpeg"
+      "images/268A.jpg",
+      "images/268B.jpg"
     ],
     "reference": "KM# 29",
     "grade": "Excelente-",
@@ -3980,8 +3765,8 @@
     "year": 1889,
     "price": "35 USD",
     "images": [
-      "images/269A.jpeg",
-      "images/269B.jpeg"
+      "images/269A.jpg",
+      "images/269B.jpg"
     ],
     "reference": "KM# 26",
     "grade": "Muy Bueno+",
@@ -3997,8 +3782,8 @@
     "year": 1921,
     "price": "2 USD",
     "images": [
-      "images/270A.jpeg",
-      "images/270B.jpeg"
+      "images/270A.jpg",
+      "images/270B.jpg"
     ],
     "reference": "KM# 214.1",
     "grade": "Bueno-",
@@ -4016,8 +3801,8 @@
     "year": 1940,
     "price": "3 USD",
     "images": [
-      "images/271A.jpeg",
-      "images/271B.jpeg"
+      "images/271A.jpg",
+      "images/271B.jpg"
     ],
     "reference": "KM# 214.2",
     "grade": "Muy Bueno",
@@ -4035,8 +3820,8 @@
     "year": 2022,
     "price": "3.5 USD",
     "images": [
-      "images/272A.jpeg",
-      "images/272B.jpeg"
+      "images/272A.jpg",
+      "images/272B.jpg"
     ],
     "reference": "KM# 1542",
     "grade": "Sin Circular",
@@ -4054,8 +3839,8 @@
     "year": 1980,
     "price": "3 USD",
     "images": [
-      "images/273A.jpeg",
-      "images/273B.jpeg"
+      "images/273A.jpg",
+      "images/273B.jpg"
     ],
     "reference": "",
     "grade": "Sin Circular",
@@ -4071,8 +3856,8 @@
     "year": 1972,
     "price": "4.5 USD",
     "images": [
-      "images/274A.jpeg",
-      "images/274B.jpeg"
+      "images/274A.jpg",
+      "images/274B.jpg"
     ],
     "reference": "KM# 46",
     "grade": "Muy Bueno+",
@@ -4088,8 +3873,8 @@
     "year": 1972,
     "price": "4 USD",
     "images": [
-      "images/275A.jpeg",
-      "images/275B.jpeg"
+      "images/275A.jpg",
+      "images/275B.jpg"
     ],
     "reference": "KM# 430",
     "grade": "Muy Bueno",
@@ -4107,8 +3892,8 @@
     "year": 1968,
     "price": "4.5 USD",
     "images": [
-      "images/276A.jpeg",
-      "images/276B.jpeg"
+      "images/276A.jpg",
+      "images/276B.jpg"
     ],
     "reference": "KM# 98",
     "grade": "Excelente-",
@@ -4126,8 +3911,8 @@
     "year": 2013,
     "price": "2 USD",
     "images": [
-      "images/277A.jpeg",
-      "images/277B.jpeg"
+      "images/277A.jpg",
+      "images/277B.jpg"
     ],
     "reference": "",
     "grade": "Sin Circular menos",
@@ -4143,8 +3928,8 @@
     "year": 1983,
     "price": "2.5 USD",
     "images": [
-      "images/278A.jpeg",
-      "images/278B.jpeg"
+      "images/278A.jpg",
+      "images/278B.jpg"
     ],
     "reference": "",
     "grade": "Sin Circular",
@@ -4162,8 +3947,8 @@
     "year": 1969,
     "price": "3 USD",
     "images": [
-      "images/279A.jpeg",
-      "images/279B.jpeg"
+      "images/279A.jpg",
+      "images/279B.jpg"
     ],
     "reference": "",
     "grade": "Sin Circular",
@@ -4181,8 +3966,8 @@
     "year": 1951,
     "price": "3.5 USD",
     "images": [
-      "images/280A.jpeg",
-      "images/280B.jpeg"
+      "images/280A.jpg",
+      "images/280B.jpg"
     ],
     "reference": "Y# 49",
     "grade": "Sin Circular",
@@ -4198,8 +3983,8 @@
     "year": 1980,
     "price": "4.5 USD",
     "images": [
-      "images/281A.jpeg",
-      "images/281B.jpeg"
+      "images/281A.jpg",
+      "images/281B.jpg"
     ],
     "reference": "KM# 54",
     "grade": "Excelente",
@@ -4215,8 +4000,8 @@
     "year": 2015,
     "price": "3 USD",
     "images": [
-      "images/282A.jpeg",
-      "images/282B.jpeg"
+      "images/282A.jpg",
+      "images/282B.jpg"
     ],
     "reference": "Y# 445",
     "grade": "Excelente+",
@@ -4232,8 +4017,8 @@
     "year": 1982,
     "price": "2.5 USD",
     "images": [
-      "images/283A.jpeg",
-      "images/283B.jpeg"
+      "images/283A.jpg",
+      "images/283B.jpg"
     ],
     "reference": "",
     "grade": "Sin Circular",
@@ -4251,8 +4036,8 @@
     "year": 1980,
     "price": "2.5 USD",
     "images": [
-      "images/284A.jpeg",
-      "images/284B.jpeg"
+      "images/284A.jpg",
+      "images/284B.jpg"
     ],
     "reference": "",
     "grade": "Excelente",
@@ -4270,8 +4055,8 @@
     "year": 1973,
     "price": "2.5 USD",
     "images": [
-      "images/285A.jpeg",
-      "images/285B.jpeg"
+      "images/285A.jpg",
+      "images/285B.jpg"
     ],
     "reference": "",
     "grade": "Muy Bueno+",
@@ -4287,8 +4072,8 @@
     "year": 1997,
     "price": "2.5 USD",
     "images": [
-      "images/286A.jpeg",
-      "images/286B.jpeg"
+      "images/286A.jpg",
+      "images/286B.jpg"
     ],
     "reference": "",
     "grade": "Excelente",
@@ -4306,8 +4091,8 @@
     "year": 2016,
     "price": "5 USD",
     "images": [
-      "images/287A.jpeg",
-      "images/287B.jpeg"
+      "images/287A.jpg",
+      "images/287B.jpg"
     ],
     "reference": "KM# 3248",
     "grade": "Excelente+",
@@ -4323,8 +4108,8 @@
     "year": 1993,
     "price": "10 USD",
     "images": [
-      "images/288A.jpeg",
-      "images/288B.jpeg"
+      "images/288A.jpg",
+      "images/288B.jpg"
     ],
     "reference": "",
     "grade": "Sin Circular menos",
@@ -4342,8 +4127,8 @@
     "year": 1982,
     "price": "2.5 USD",
     "images": [
-      "images/289A.jpeg",
-      "images/289B.jpeg"
+      "images/289A.jpg",
+      "images/289B.jpg"
     ],
     "reference": "",
     "grade": "Excelente",
@@ -4361,8 +4146,8 @@
     "year": 1979,
     "price": "4.5 USD",
     "images": [
-      "images/290A.jpeg",
-      "images/290B.jpeg"
+      "images/290A.jpg",
+      "images/290B.jpg"
     ],
     "reference": "KM# 118",
     "grade": "Excelente",
@@ -4380,8 +4165,8 @@
     "year": 1979,
     "price": "2 USD",
     "images": [
-      "images/291A.jpeg",
-      "images/291B.jpeg"
+      "images/291A.jpg",
+      "images/291B.jpg"
     ],
     "reference": "",
     "grade": "Excelente",
@@ -4399,8 +4184,8 @@
     "year": 1981,
     "price": "3 USD",
     "images": [
-      "images/292A.jpeg",
-      "images/292B.jpeg"
+      "images/292A.jpg",
+      "images/292B.jpg"
     ],
     "reference": "",
     "grade": "Sin Circular",
@@ -4416,8 +4201,8 @@
     "year": 2000,
     "price": "3 USD",
     "images": [
-      "images/293A.jpeg",
-      "images/293B.jpeg"
+      "images/293A.jpg",
+      "images/293B.jpg"
     ],
     "reference": "KM. 239a",
     "grade": "Sin Circular",
@@ -4432,8 +4217,8 @@
     "year": 2000,
     "price": "2.5 USD",
     "images": [
-      "images/294A.jpeg",
-      "images/294B.jpeg"
+      "images/294A.jpg",
+      "images/294B.jpg"
     ],
     "reference": "KM 237a",
     "grade": "Sin Circular",
@@ -4447,8 +4232,8 @@
     "year": 1988,
     "price": "3 USD",
     "images": [
-      "images/295A.jpeg",
-      "images/295B.jpeg"
+      "images/295A.jpg",
+      "images/295B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
@@ -4461,8 +4246,8 @@
     "year": 1965,
     "price": "2.5 USD",
     "images": [
-      "images/296A.jpeg",
-      "images/296B.jpeg"
+      "images/296A.jpg",
+      "images/296B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
@@ -4475,8 +4260,8 @@
     "year": 1949,
     "price": "3.5 USD",
     "images": [
-      "images/297A.jpeg",
-      "images/297B.jpeg"
+      "images/297A.jpg",
+      "images/297B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -4490,8 +4275,8 @@
     "year": 1957,
     "price": "3 USD",
     "images": [
-      "images/298A.jpeg",
-      "images/298B.jpeg"
+      "images/298A.jpg",
+      "images/298B.jpg"
     ],
     "reference": "KM. 81",
     "mintage": "8.000.000",
@@ -4506,8 +4291,8 @@
     "year": 1961,
     "price": "2.5 USD",
     "images": [
-      "images/299A.jpeg",
-      "images/299B.jpeg"
+      "images/299A.jpg",
+      "images/299B.jpg"
     ],
     "reference": "KM 222",
     "grade": "Excelente-",
@@ -4522,8 +4307,8 @@
     "year": 1933,
     "price": "2.5 USD",
     "images": [
-      "images/300A.jpeg",
-      "images/300B.jpeg"
+      "images/300A.jpg",
+      "images/300B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -4536,8 +4321,8 @@
     "year": 1979,
     "price": "3 USD",
     "images": [
-      "images/301A.jpeg",
-      "images/301B.jpeg"
+      "images/301A.jpg",
+      "images/301B.jpg"
     ],
     "reference": "KM 12",
     "mintage": "2.500.000",
@@ -4554,8 +4339,8 @@
     "year": 1956,
     "price": "3 USD",
     "images": [
-      "images/302A.jpeg",
-      "images/302B.jpeg"
+      "images/302A.jpg",
+      "images/302B.jpg"
     ],
     "reference": "KM 78",
     "grade": "Sin Circular-",
@@ -4571,8 +4356,8 @@
     "year": 2017,
     "price": "2.5 USD",
     "images": [
-      "images/303A.jpeg",
-      "images/303B.jpeg"
+      "images/303A.jpg",
+      "images/303B.jpg"
     ],
     "reference": "KM. 163",
     "grade": "Excelente+",
@@ -4586,8 +4371,8 @@
     "year": 1979,
     "price": "2 USD",
     "images": [
-      "images/304A.jpeg",
-      "images/304B.jpeg"
+      "images/304A.jpg",
+      "images/304B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -4600,8 +4385,8 @@
     "year": 2014,
     "price": "3 USD",
     "images": [
-      "images/305A.jpeg",
-      "images/305B.jpeg"
+      "images/305A.jpg",
+      "images/305B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -4614,8 +4399,8 @@
     "year": 1976,
     "price": "2.5 USD",
     "images": [
-      "images/306A.jpeg",
-      "images/306B.jpeg"
+      "images/306A.jpg",
+      "images/306B.jpg"
     ],
     "reference": "KM. 253",
     "grade": "Sin Circular",
@@ -4628,8 +4413,8 @@
     "metal": "Acero niquelado",
     "price": "3 USD",
     "images": [
-      "images/307A.jpeg",
-      "images/307B.jpeg"
+      "images/307A.jpg",
+      "images/307B.jpg"
     ],
     "reference": "Y# 574",
     "grade": "Sin Circular",
@@ -4644,8 +4429,8 @@
     "year": 1997,
     "price": "2 USD",
     "images": [
-      "images/308A.jpeg",
-      "images/308B.jpeg"
+      "images/308A.jpg",
+      "images/308B.jpg"
     ],
     "description": "Canto ondulado"
   },
@@ -4657,8 +4442,8 @@
     "year": 1970,
     "price": "2 USD",
     "images": [
-      "images/309A.jpeg",
-      "images/309B.jpeg"
+      "images/309A.jpg",
+      "images/309B.jpg"
     ],
     "grade": "Excelente+",
     "grade_short": "EX+",
@@ -4673,8 +4458,8 @@
     "year": 1994,
     "price": "3.5 USD",
     "images": [
-      "images/310A.jpeg",
-      "images/310B.jpeg"
+      "images/310A.jpg",
+      "images/310B.jpg"
     ],
     "reference": "KM 11.2",
     "grade": "Sin Circular",
@@ -4690,8 +4475,8 @@
     "year": 1965,
     "price": "3 USD",
     "images": [
-      "images/311A.jpeg",
-      "images/311B.jpeg"
+      "images/311A.jpg",
+      "images/311B.jpg"
     ],
     "grade": "Sin Circular-",
     "grade_short": "SC-"
@@ -4704,8 +4489,8 @@
     "year": 1972,
     "price": "3 USD",
     "images": [
-      "images/312A.jpeg",
-      "images/312B.jpeg"
+      "images/312A.jpg",
+      "images/312B.jpg"
     ],
     "reference": "KM 47",
     "grade": "Excelente+",
@@ -4719,8 +4504,8 @@
     "year": 1982,
     "price": "3 USD",
     "images": [
-      "images/313A.jpeg",
-      "images/313B.jpeg"
+      "images/313A.jpg",
+      "images/313B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -4735,8 +4520,8 @@
     "year": 1992,
     "price": "3.5 USD",
     "images": [
-      "images/314A.jpeg",
-      "images/314B.jpeg"
+      "images/314A.jpg",
+      "images/314B.jpg"
     ],
     "grade": "Sin Circular-",
     "grade_short": "SC-",
@@ -4751,8 +4536,8 @@
     "year": 1968,
     "price": "3 USD",
     "images": [
-      "images/315A.jpeg",
-      "images/315B.jpeg"
+      "images/315A.jpg",
+      "images/315B.jpg"
     ],
     "reference": "KM 9",
     "description": "República Democrática"
@@ -4765,8 +4550,8 @@
     "year": 1949,
     "price": "3.5 USD",
     "images": [
-      "images/316A.jpeg",
-      "images/316B.jpeg"
+      "images/316A.jpg",
+      "images/316B.jpg"
     ],
     "reference": "KM 2874",
     "grade": "Excelente",
@@ -4781,8 +4566,8 @@
     "year": 1955,
     "price": "2.5 USD",
     "images": [
-      "images/317A.jpeg",
-      "images/317B.jpeg"
+      "images/317A.jpg",
+      "images/317B.jpg"
     ],
     "grade": "Muy Bueno+",
     "grade_short": "MB+"
@@ -4795,8 +4580,8 @@
     "year": 1923,
     "price": "4 USD",
     "images": [
-      "images/318A.jpeg",
-      "images/318B.jpeg"
+      "images/318A.jpg",
+      "images/318B.jpg"
     ],
     "grade": "Muy Bueno +",
     "grade_short": "MB+"
@@ -4809,8 +4594,8 @@
     "year": 1979,
     "price": "3 USD",
     "images": [
-      "images/319A.jpeg",
-      "images/319B.jpeg"
+      "images/319A.jpg",
+      "images/319B.jpg"
     ],
     "grade": "Excelente +",
     "grade_short": "EX+"
@@ -4823,8 +4608,8 @@
     "year": 1999,
     "price": "4 USD",
     "images": [
-      "images/320A.jpeg",
-      "images/320B.jpeg"
+      "images/320A.jpg",
+      "images/320B.jpg"
     ],
     "reference": "KM# 1103",
     "grade": "Sin Circular",
@@ -4840,8 +4625,8 @@
     "year": 1982,
     "price": "2.5 USD",
     "images": [
-      "images/321A.jpeg",
-      "images/321B.jpeg"
+      "images/321A.jpg",
+      "images/321B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -4858,8 +4643,8 @@
     "year": 1987,
     "price": "2.5 USD",
     "images": [
-      "images/322A.jpeg",
-      "images/322B.jpeg"
+      "images/322A.jpg",
+      "images/322B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -4874,8 +4659,8 @@
     "year": 2015,
     "price": "2.5 USD",
     "images": [
-      "images/323A.jpeg",
-      "images/323B.jpeg"
+      "images/323A.jpg",
+      "images/323B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -4888,8 +4673,8 @@
     "year": 1979,
     "price": "3 USD",
     "images": [
-      "images/324A.jpeg",
-      "images/324B.jpeg"
+      "images/324A.jpg",
+      "images/324B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -4902,8 +4687,8 @@
     "year": 1878,
     "price": "4.5 USD",
     "images": [
-      "images/325A.jpeg",
-      "images/325B.jpeg"
+      "images/325A.jpg",
+      "images/325B.jpg"
     ],
     "reference": "KM# 107.1",
     "grade": "Muy Bueno -",
@@ -4917,8 +4702,8 @@
     "year": 1992,
     "price": "2.5 USD",
     "images": [
-      "images/326A.jpeg",
-      "images/326B.jpeg"
+      "images/326A.jpg",
+      "images/326B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
@@ -4933,8 +4718,8 @@
     "year": 1923,
     "price": "4 USD",
     "images": [
-      "images/327A.jpeg",
-      "images/327B.jpeg"
+      "images/327A.jpg",
+      "images/327B.jpg"
     ],
     "reference": "Y# 12",
     "grade": "Muy Bueno",
@@ -4948,8 +4733,8 @@
     "year": 1992,
     "price": "2.5 USD",
     "images": [
-      "images/328A.jpeg",
-      "images/328B.jpeg"
+      "images/328A.jpg",
+      "images/328B.jpg"
     ],
     "reference": "KM# 6",
     "grade": "Sin Circular",
@@ -4965,8 +4750,8 @@
     "year": 1929,
     "price": "6 USD",
     "images": [
-      "images/329A.jpeg",
-      "images/329B.jpeg"
+      "images/329A.jpg",
+      "images/329B.jpg"
     ],
     "reference": "KM# 577",
     "grade": "Sin Circular",
@@ -4983,8 +4768,8 @@
     "year": 1929,
     "price": "2.5 USD",
     "images": [
-      "images/330A.jpeg",
-      "images/330B.jpeg"
+      "images/330A.jpg",
+      "images/330B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B",
@@ -4999,8 +4784,8 @@
     "year": 1997,
     "price": "3 USD",
     "images": [
-      "images/331A.jpeg",
-      "images/331B.jpeg"
+      "images/331A.jpg",
+      "images/331B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -5015,8 +4800,8 @@
     "year": 2009,
     "price": "2 USD",
     "images": [
-      "images/332A.jpeg",
-      "images/332B.jpeg"
+      "images/332A.jpg",
+      "images/332B.jpg"
     ],
     "reference": "KM# 441",
     "grade": "Excelente",
@@ -5031,8 +4816,8 @@
     "year": 1924,
     "price": "2.5 USD",
     "images": [
-      "images/333A.jpeg",
-      "images/333B.jpeg"
+      "images/333A.jpg",
+      "images/333B.jpg"
     ],
     "grade": "Excelente -",
     "grade_short": "EX-",
@@ -5046,8 +4831,8 @@
     "year": 1965,
     "price": "3.5 USD",
     "images": [
-      "images/334A.jpeg",
-      "images/334B.jpeg"
+      "images/334A.jpg",
+      "images/334B.jpg"
     ],
     "grade": "Excelente +",
     "grade_short": "EX+"
@@ -5060,8 +4845,8 @@
     "year": 1919,
     "price": "2 USD",
     "images": [
-      "images/335A.jpeg",
-      "images/335B.jpeg"
+      "images/335A.jpg",
+      "images/335B.jpg"
     ],
     "reference": "KM# 214.1",
     "grade": "Bueno -",
@@ -5077,8 +4862,8 @@
     "year": 1992,
     "price": "2.5 USD",
     "images": [
-      "images/336A.jpeg",
-      "images/336B.jpeg"
+      "images/336A.jpg",
+      "images/336B.jpg"
     ],
     "grade": "Sin Circular -",
     "grade_short": "SC-",
@@ -5093,8 +4878,8 @@
     "year": 2013,
     "price": "2.5 USD",
     "images": [
-      "images/337A.jpeg",
-      "images/337B.jpeg"
+      "images/337A.jpg",
+      "images/337B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
@@ -5107,8 +4892,8 @@
     "year": 1983,
     "price": "2.5 USD",
     "images": [
-      "images/338A.jpeg",
-      "images/338B.jpeg"
+      "images/338A.jpg",
+      "images/338B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
@@ -5122,8 +4907,8 @@
     "price": "2 USD",
     "reference": "KM# 1334",
     "images": [
-      "images/339A.jpeg",
-      "images/339B.jpeg"
+      "images/339A.jpg",
+      "images/339B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -5137,8 +4922,8 @@
     "price": "2.5 USD",
     "description": "heptagonal",
     "images": [
-      "images/340A.jpeg",
-      "images/340B.jpeg"
+      "images/340A.jpg",
+      "images/340B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -5150,8 +4935,8 @@
     "year": 2024,
     "price": "2.5 USD",
     "images": [
-      "images/341A.jpeg",
-      "images/341B.jpeg"
+      "images/341A.jpg",
+      "images/341B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -5166,8 +4951,8 @@
     "year": 1986,
     "price": "2.5 USD",
     "images": [
-      "images/342A.jpeg",
-      "images/342B.jpeg"
+      "images/342A.jpg",
+      "images/342B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -5180,8 +4965,8 @@
     "year": 1995,
     "price": "3 USD",
     "images": [
-      "images/343A.jpeg",
-      "images/343B.jpeg"
+      "images/343A.jpg",
+      "images/343B.jpg"
     ],
     "grade": "Excelente +",
     "grade_short": "EX+",
@@ -5197,8 +4982,8 @@
     "price": "3 USD",
     "reference": "Y# 573",
     "images": [
-      "images/344A.jpeg",
-      "images/344B.jpeg"
+      "images/344A.jpg",
+      "images/344B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
@@ -5213,8 +4998,8 @@
     "reference": "KM# 39",
     "description": "Ceca A",
     "images": [
-      "images/345A.jpeg",
-      "images/345B.jpeg"
+      "images/345A.jpg",
+      "images/345B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -5228,8 +5013,8 @@
     "price": "3.5 USD",
     "reference": "KM# 842",
     "images": [
-      "images/346A.jpeg",
-      "images/346B.jpeg"
+      "images/346A.jpg",
+      "images/346B.jpg"
     ],
     "grade": "Bueno -",
     "grade_short": "B-"
@@ -5244,8 +5029,8 @@
     "reference": "K. 1909",
     "description": "cabeza chica",
     "images": [
-      "images/347A.jpeg",
-      "images/347B.jpeg"
+      "images/347A.jpg",
+      "images/347B.jpg"
     ],
     "grade": "Excelente +",
     "grade_short": "EX+"
@@ -5258,8 +5043,8 @@
     "year": 2011,
     "price": "2.5 USD",
     "images": [
-      "images/348A.jpeg",
-      "images/348B.jpeg"
+      "images/348A.jpg",
+      "images/348B.jpg"
     ],
     "grade": "Excelente +",
     "grade_short": "EX+"
@@ -5273,8 +5058,8 @@
     "price": "3 USD",
     "reference": "KM# 8a",
     "images": [
-      "images/349A.jpeg",
-      "images/349B.jpeg"
+      "images/349A.jpg",
+      "images/349B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -5289,8 +5074,8 @@
     "reference": "KM# 152",
     "mintage": "10 millones",
     "images": [
-      "images/350A.jpeg",
-      "images/350B.jpeg"
+      "images/350A.jpg",
+      "images/350B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -5306,8 +5091,8 @@
     "price": "4 USD",
     "reference": "KM# 553",
     "images": [
-      "images/351A.jpeg",
-      "images/351B.jpeg"
+      "images/351A.jpg",
+      "images/351B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
@@ -5320,8 +5105,8 @@
     "price": "3 USD",
     "description": "canto ondulado",
     "images": [
-      "images/352A.jpeg",
-      "images/352B.jpeg"
+      "images/352A.jpg",
+      "images/352B.jpg"
     ],
     "grade": "Excelente +",
     "grade_short": "EX+"
@@ -5334,8 +5119,8 @@
     "year": 1980,
     "price": "3 USD",
     "images": [
-      "images/353A.jpeg",
-      "images/353B.jpeg"
+      "images/353A.jpg",
+      "images/353B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
@@ -5350,8 +5135,8 @@
     "reference": "KM# 710",
     "description": "Atletismo paralímpico",
     "images": [
-      "images/354A.jpeg",
-      "images/354B.jpeg"
+      "images/354A.jpg",
+      "images/354B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -5368,8 +5153,8 @@
     "reference": "KM# 687",
     "description": "salto",
     "images": [
-      "images/355A.jpeg",
-      "images/355B.jpeg"
+      "images/355A.jpg",
+      "images/355B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -5386,8 +5171,8 @@
     "reference": "KM# 726",
     "description": "Mascota olímpica",
     "images": [
-      "images/356A.jpeg",
-      "images/356B.jpeg"
+      "images/356A.jpg",
+      "images/356B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -5404,8 +5189,8 @@
     "reference": "KM# 207",
     "description": "susan b antony",
     "images": [
-      "images/357A.jpeg",
-      "images/357B.jpeg"
+      "images/357A.jpg",
+      "images/357B.jpg"
     ]
   },
   {
@@ -5416,8 +5201,8 @@
     "price": "3 USD",
     "reference": "KM# 4",
     "images": [
-      "images/358A.jpeg",
-      "images/358B.jpeg"
+      "images/358A.jpg",
+      "images/358B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -5433,8 +5218,8 @@
     "price": "3.5 USD",
     "reference": "KM# 38",
     "images": [
-      "images/359A.jpeg",
-      "images/359B.jpeg"
+      "images/359A.jpg",
+      "images/359B.jpg"
     ],
     "grade": "Excelente -",
     "grade_short": "EX-",
@@ -5450,8 +5235,8 @@
     "price": "4 USD",
     "reference": "KM# 810",
     "images": [
-      "images/360A.jpeg",
-      "images/360B.jpeg"
+      "images/360A.jpg",
+      "images/360B.jpg"
     ],
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
@@ -5468,8 +5253,8 @@
     "reference": "KM# 439",
     "description": "patina hermosa",
     "images": [
-      "images/361A.jpeg",
-      "images/361B.jpeg"
+      "images/361A.jpg",
+      "images/361B.jpg"
     ],
     "grade": "Muy Bueno -",
     "grade_short": "MB-"
@@ -5483,8 +5268,8 @@
     "price": "3.5 USD",
     "reference": "KM# 662",
     "images": [
-      "images/362A.jpeg",
-      "images/362B.jpeg"
+      "images/362A.jpg",
+      "images/362B.jpg"
     ],
     "grade": "Bueno +",
     "grade_short": "B+"
@@ -5498,8 +5283,8 @@
     "price": "3 USD",
     "reference": "KM# 45",
     "images": [
-      "images/363A.jpeg",
-      "images/363B.jpeg"
+      "images/363A.jpg",
+      "images/363B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -5514,8 +5299,8 @@
     "reference": "KM# 78a",
     "description": "ano unico",
     "images": [
-      "images/364A.jpeg",
-      "images/364B.jpeg"
+      "images/364A.jpg",
+      "images/364B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -5533,8 +5318,8 @@
     "mintage": "762.027",
     "description": "Escasa",
     "images": [
-      "images/365A.jpeg",
-      "images/365B.jpeg"
+      "images/365A.jpg",
+      "images/365B.jpg"
     ],
     "grade": "Sin Circular -",
     "grade_short": "SC-"
@@ -5549,8 +5334,8 @@
     "reference": "CJ# 20",
     "mintage": "1.510.950",
     "images": [
-      "images/366A.jpeg",
-      "images/366B.jpeg"
+      "images/366A.jpg",
+      "images/366B.jpg"
     ],
     "grade": "Excelente +",
     "grade_short": "EX+"
@@ -5565,8 +5350,8 @@
     "reference": "CJ# 23",
     "mintage": "2.785.650",
     "images": [
-      "images/367A.jpeg",
-      "images/367B.jpeg"
+      "images/367A.jpg",
+      "images/367B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -5580,8 +5365,8 @@
     "price": "4 USD",
     "reference": "KM# 90",
     "images": [
-      "images/368A.jpeg",
-      "images/368B.jpeg"
+      "images/368A.jpg",
+      "images/368B.jpg"
     ],
     "grade": "Se aprecia en foto",
     "grade_short": "-",
@@ -5598,8 +5383,8 @@
     "price": "5 USD",
     "reference": "KM# 90",
     "images": [
-      "images/369A.jpeg",
-      "images/369B.jpeg"
+      "images/369A.jpg",
+      "images/369B.jpg"
     ],
     "grade": "Se aprecia en foto",
     "grade_short": "-",
@@ -5616,8 +5401,8 @@
     "price": "7 USD",
     "reference": "KM# 90",
     "images": [
-      "images/370A.jpeg",
-      "images/370B.jpeg"
+      "images/370A.jpg",
+      "images/370B.jpg"
     ],
     "grade": "Se aprecia en foto",
     "grade_short": "-",
@@ -5634,8 +5419,8 @@
     "price": "4 USD",
     "reference": "KM# 90",
     "images": [
-      "images/371A.jpeg",
-      "images/371B.jpeg"
+      "images/371A.jpg",
+      "images/371B.jpg"
     ],
     "grade": "Se aprecia en foto",
     "grade_short": "-",
@@ -5653,8 +5438,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "images": [
-      "images/372A.jpeg",
-      "images/372B.jpeg"
+      "images/372A.jpg",
+      "images/372B.jpg"
     ],
     "group_id": "us-dollar-innovation",
     "group_label": "Dólar Innovación"
@@ -5669,8 +5454,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "images": [
-      "images/373A.jpeg",
-      "images/373B.jpeg"
+      "images/373A.jpg",
+      "images/373B.jpg"
     ],
     "group_id": "us-dollar-innovation",
     "group_label": "Dólar Innovación"
@@ -5683,8 +5468,8 @@
     "price": "2.5 USD",
     "description": "Garfield",
     "images": [
-      "images/374A.jpeg",
-      "images/374B.jpeg"
+      "images/374A.jpg",
+      "images/374B.jpg"
     ],
     "group_id": "us-dollar-presidents",
     "group_label": "Dólar Presidentes"
@@ -5697,8 +5482,8 @@
     "price": "2.5 USD",
     "description": "Tyler",
     "images": [
-      "images/375A.jpeg",
-      "images/375B.jpeg"
+      "images/375A.jpg",
+      "images/375B.jpg"
     ],
     "group_id": "us-dollar-presidents",
     "group_label": "Dólar Presidentes"
@@ -5711,8 +5496,8 @@
     "price": "2 USD",
     "description": "Adams",
     "images": [
-      "images/376A.jpeg",
-      "images/376B.jpeg"
+      "images/376A.jpg",
+      "images/376B.jpg"
     ],
     "group_id": "us-dollar-presidents",
     "group_label": "Dólar Presidentes"
@@ -5725,8 +5510,8 @@
     "price": "2 USD",
     "description": "Sacagawea",
     "images": [
-      "images/377A.jpeg",
-      "images/377B.jpeg"
+      "images/377A.jpg",
+      "images/377B.jpg"
     ],
     "group_id": "us-dollar-presidents",
     "group_label": "Dólar Presidentes"
@@ -5739,8 +5524,8 @@
     "price": "2 USD",
     "description": "Washington",
     "images": [
-      "images/378A.jpeg",
-      "images/378B.jpeg"
+      "images/378A.jpg",
+      "images/378B.jpg"
     ],
     "group_id": "us-dollar-presidents",
     "group_label": "Dólar Presidentes"
@@ -5753,8 +5538,8 @@
     "price": "2 USD",
     "description": "Washington",
     "images": [
-      "images/379A.jpeg",
-      "images/379B.jpeg"
+      "images/379A.jpg",
+      "images/379B.jpg"
     ],
     "group_id": "us-dollar-presidents",
     "group_label": "Dólar Presidentes"
@@ -5767,8 +5552,8 @@
     "price": "2.5 USD",
     "description": "Hayes",
     "images": [
-      "images/380A.jpeg",
-      "images/380B.jpeg"
+      "images/380A.jpg",
+      "images/380B.jpg"
     ],
     "group_id": "us-dollar-presidents",
     "group_label": "Dólar Presidentes"
@@ -5781,8 +5566,8 @@
     "price": "2.5 USD",
     "description": "Johnson",
     "images": [
-      "images/381A.jpeg",
-      "images/381B.jpeg"
+      "images/381A.jpg",
+      "images/381B.jpg"
     ],
     "group_id": "us-dollar-presidents",
     "group_label": "Dólar Presidentes"
@@ -5795,8 +5580,8 @@
     "price": "2.5 USD",
     "description": "Bicentenario",
     "images": [
-      "images/382A.jpeg",
-      "images/382B.jpeg"
+      "images/382A.jpg",
+      "images/382B.jpg"
     ],
     "group_id": "us-half-dollar-variants",
     "group_label": "1/2 Dólar Kennedy"
@@ -5808,8 +5593,8 @@
     "year": 1974,
     "price": "2 USD",
     "images": [
-      "images/383A.jpeg",
-      "images/383B.jpeg"
+      "images/383A.jpg",
+      "images/383B.jpg"
     ],
     "group_id": "us-half-dollar-variants",
     "group_label": "1/2 Dólar Kennedy"
@@ -5821,8 +5606,8 @@
     "year": 1974,
     "price": "2 USD",
     "images": [
-      "images/384A.jpeg",
-      "images/384B.jpeg"
+      "images/384A.jpg",
+      "images/384B.jpg"
     ],
     "group_id": "us-half-dollar-variants",
     "group_label": "1/2 Dólar Kennedy"
@@ -5834,8 +5619,8 @@
     "year": 1995,
     "price": "2.5 USD",
     "images": [
-      "images/385A.jpeg",
-      "images/385B.jpeg"
+      "images/385A.jpg",
+      "images/385B.jpg"
     ],
     "group_id": "us-half-dollar-variants",
     "group_label": "1/2 Dólar Kennedy"
@@ -5847,8 +5632,8 @@
     "year": 1971,
     "price": "2 USD",
     "images": [
-      "images/386A.jpeg",
-      "images/386B.jpeg"
+      "images/386A.jpg",
+      "images/386B.jpg"
     ],
     "group_id": "us-half-dollar-variants",
     "group_label": "1/2 Dólar Kennedy"
@@ -5860,8 +5645,8 @@
     "year": 1972,
     "price": "2 USD",
     "images": [
-      "images/387A.jpeg",
-      "images/387B.jpeg"
+      "images/387A.jpg",
+      "images/387B.jpg"
     ],
     "group_id": "us-half-dollar-variants",
     "group_label": "1/2 Dólar Kennedy"
@@ -5875,8 +5660,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "images": [
-      "images/388A.jpeg",
-      "images/388B.jpeg"
+      "images/388A.jpg",
+      "images/388B.jpg"
     ],
     "group_id": "us-half-dollar-variants",
     "group_label": "1/2 Dólar Kennedy"
@@ -5890,8 +5675,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "images": [
-      "images/389A.jpeg",
-      "images/389B.jpeg"
+      "images/389A.jpg",
+      "images/389B.jpg"
     ],
     "group_id": "us-half-dollar-variants",
     "group_label": "1/2 Dólar Kennedy"
@@ -5906,8 +5691,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "images": [
-      "images/390A.jpeg",
-      "images/390B.jpeg"
+      "images/390A.jpg",
+      "images/390B.jpg"
     ],
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna"
@@ -5920,8 +5705,8 @@
     "price": "2.5 USD",
     "description": "Cocodrilo",
     "images": [
-      "images/391A.jpeg",
-      "images/391B.jpeg"
+      "images/391A.jpg",
+      "images/391B.jpg"
     ],
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna"
@@ -5934,8 +5719,8 @@
     "price": "2.5 USD",
     "description": "Mono",
     "images": [
-      "images/392A.jpeg",
-      "images/392B.jpeg"
+      "images/392A.jpg",
+      "images/392B.jpg"
     ],
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna"
@@ -5948,8 +5733,8 @@
     "price": "2.5 USD",
     "description": "Oso",
     "images": [
-      "images/393A.jpeg",
-      "images/393B.jpeg"
+      "images/393A.jpg",
+      "images/393B.jpg"
     ],
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna"
@@ -5962,8 +5747,8 @@
     "price": "2.5 USD",
     "description": "Rana",
     "images": [
-      "images/394A.jpeg",
-      "images/394B.jpeg"
+      "images/394A.jpg",
+      "images/394B.jpg"
     ],
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna"
@@ -5976,8 +5761,8 @@
     "price": "2.5 USD",
     "description": "Tapir",
     "images": [
-      "images/395A.jpeg",
-      "images/395B.jpeg"
+      "images/395A.jpg",
+      "images/395B.jpg"
     ],
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna"
@@ -5990,8 +5775,8 @@
     "price": "2.5 USD",
     "description": "Suri",
     "images": [
-      "images/396A.jpeg",
-      "images/396B.jpeg"
+      "images/396A.jpg",
+      "images/396B.jpg"
     ],
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna"
@@ -6004,8 +5789,8 @@
     "price": "2.5 USD",
     "description": "Cóndor",
     "images": [
-      "images/397A.jpeg",
-      "images/397B.jpeg"
+      "images/397A.jpg",
+      "images/397B.jpg"
     ],
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna"
@@ -6018,8 +5803,8 @@
     "price": "2.5 USD",
     "description": "Jaguar",
     "images": [
-      "images/398A.jpeg",
-      "images/398B.jpeg"
+      "images/398A.jpg",
+      "images/398B.jpg"
     ],
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna"
@@ -6032,8 +5817,8 @@
     "price": "2.5 USD",
     "description": "Gato",
     "images": [
-      "images/399A.jpeg",
-      "images/399B.jpeg"
+      "images/399A.jpg",
+      "images/399B.jpg"
     ],
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna"
@@ -6046,8 +5831,8 @@
     "price": "2 USD",
     "description": "Casa de moneda",
     "images": [
-      "images/400A.jpeg",
-      "images/400B.jpeg"
+      "images/400A.jpg",
+      "images/400B.jpg"
     ]
   },
   {
@@ -6060,8 +5845,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "images": [
-      "images/401A.jpeg",
-      "images/401B.jpeg"
+      "images/401A.jpg",
+      "images/401B.jpg"
     ],
     "group_id": "pe-sol-ceramicos",
     "group_label": "Cerámicos Precolombinos"
@@ -6076,8 +5861,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "images": [
-      "images/402A.jpeg",
-      "images/402B.jpeg"
+      "images/402A.jpg",
+      "images/402B.jpg"
     ],
     "group_id": "pe-sol-ceramicos",
     "group_label": "Cerámicos Precolombinos"
@@ -6092,8 +5877,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "images": [
-      "images/403A.jpeg",
-      "images/403B.jpeg"
+      "images/403A.jpg",
+      "images/403B.jpg"
     ],
     "group_id": "pe-sol-ceramicos",
     "group_label": "Cerámicos Precolombinos"
@@ -6106,8 +5891,8 @@
     "year": "1999",
     "price": "1 USD",
     "images": [
-      "images/404A.jpeg",
-      "images/404B.jpeg"
+      "images/404A.jpg",
+      "images/404B.jpg"
     ],
     "description": "Connecticut D",
     "group_id": "us-quarters-estados",
@@ -6121,8 +5906,8 @@
     "year": "2001",
     "price": "1 USD",
     "images": [
-      "images/405A.jpeg",
-      "images/405B.jpeg"
+      "images/405A.jpg",
+      "images/405B.jpg"
     ],
     "description": "Vermont D",
     "group_id": "us-quarters-estados",
@@ -6136,8 +5921,8 @@
     "year": "2000",
     "price": "1 USD",
     "images": [
-      "images/406A.jpeg",
-      "images/406B.jpeg"
+      "images/406A.jpg",
+      "images/406B.jpg"
     ],
     "description": "Virginia D",
     "group_id": "us-quarters-estados",
@@ -6151,8 +5936,8 @@
     "year": "1999",
     "price": "1 USD",
     "images": [
-      "images/407A.jpeg",
-      "images/407B.jpeg"
+      "images/407A.jpg",
+      "images/407B.jpg"
     ],
     "description": "Delaware D",
     "group_id": "us-quarters-estados",
@@ -6166,8 +5951,8 @@
     "year": "1999",
     "price": "1 USD",
     "images": [
-      "images/408A.jpeg",
-      "images/408B.jpeg"
+      "images/408A.jpg",
+      "images/408B.jpg"
     ],
     "description": "Georgia D",
     "group_id": "us-quarters-estados",
@@ -6181,8 +5966,8 @@
     "year": "2008",
     "price": "1 USD",
     "images": [
-      "images/409A.jpeg",
-      "images/409B.jpeg"
+      "images/409A.jpg",
+      "images/409B.jpg"
     ],
     "description": "New Mexico D",
     "group_id": "us-quarters-estados",
@@ -6196,8 +5981,8 @@
     "year": "2003",
     "price": "1 USD",
     "images": [
-      "images/410A.jpeg",
-      "images/410B.jpeg"
+      "images/410A.jpg",
+      "images/410B.jpg"
     ],
     "description": "Alabama D",
     "group_id": "us-quarters-estados",
@@ -6211,8 +5996,8 @@
     "year": "2001",
     "price": "1 USD",
     "images": [
-      "images/411A.jpeg",
-      "images/411B.jpeg"
+      "images/411A.jpg",
+      "images/411B.jpg"
     ],
     "description": "Rhode Island P",
     "group_id": "us-quarters-estados",
@@ -6226,8 +6011,8 @@
     "year": "2000",
     "price": "1 USD",
     "images": [
-      "images/412A.jpeg",
-      "images/412B.jpeg"
+      "images/412A.jpg",
+      "images/412B.jpg"
     ],
     "description": "Maryland D",
     "group_id": "us-quarters-estados",
@@ -6241,8 +6026,8 @@
     "year": "2001",
     "price": "1 USD",
     "images": [
-      "images/413A.jpeg",
-      "images/413B.jpeg"
+      "images/413A.jpg",
+      "images/413B.jpg"
     ],
     "description": "New York D",
     "group_id": "us-quarters-estados",
@@ -6256,8 +6041,8 @@
     "year": "2000",
     "price": "1 USD",
     "images": [
-      "images/414A.jpeg",
-      "images/414B.jpeg"
+      "images/414A.jpg",
+      "images/414B.jpg"
     ],
     "description": "New Hampshire D",
     "group_id": "us-quarters-estados",
@@ -6271,8 +6056,8 @@
     "year": "2005",
     "price": "1 USD",
     "images": [
-      "images/415A.jpeg",
-      "images/415B.jpeg"
+      "images/415A.jpg",
+      "images/415B.jpg"
     ],
     "description": "Kansas D",
     "group_id": "us-quarters-estados",
@@ -6286,8 +6071,8 @@
     "year": "2001",
     "price": "1 USD",
     "images": [
-      "images/416A.jpeg",
-      "images/416B.jpeg"
+      "images/416A.jpg",
+      "images/416B.jpg"
     ],
     "description": "Vermont P",
     "group_id": "us-quarters-estados",
@@ -6301,8 +6086,8 @@
     "year": "2006",
     "price": "1 USD",
     "images": [
-      "images/417A.jpeg",
-      "images/417B.jpeg"
+      "images/417A.jpg",
+      "images/417B.jpg"
     ],
     "description": "Nebraska D",
     "group_id": "us-quarters-estados",
@@ -6316,8 +6101,8 @@
     "year": "2001",
     "price": "1 USD",
     "images": [
-      "images/418A.jpeg",
-      "images/418B.jpeg"
+      "images/418A.jpg",
+      "images/418B.jpg"
     ],
     "description": "Kentucky D",
     "group_id": "us-quarters-estados",
@@ -6331,8 +6116,8 @@
     "year": "2000",
     "price": "1 USD",
     "images": [
-      "images/419A.jpeg",
-      "images/419B.jpeg"
+      "images/419A.jpg",
+      "images/419B.jpg"
     ],
     "description": "Massachusetts D",
     "group_id": "us-quarters-estados",
@@ -6346,8 +6131,8 @@
     "year": 1877,
     "price": "150 USD",
     "images": [
-      "images/420A.jpeg",
-      "images/420B.jpeg"
+      "images/420A.jpg",
+      "images/420B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX-",
@@ -6362,8 +6147,8 @@
     "year": 1995,
     "price": "200 USD",
     "images": [
-      "images/421A.jpeg",
-      "images/421B.jpeg"
+      "images/421A.jpg",
+      "images/421B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -6377,8 +6162,8 @@
     "year": 1829,
     "price": "65 USD",
     "images": [
-      "images/422A.jpeg",
-      "images/422B.jpeg"
+      "images/422A.jpg",
+      "images/422B.jpg"
     ],
     "grade": "Regular",
     "grade_short": "R+"
@@ -6391,8 +6176,8 @@
     "year": 1883,
     "price": "45 USD",
     "images": [
-      "images/423A.jpeg",
-      "images/423B.jpeg"
+      "images/423A.jpg",
+      "images/423B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6405,8 +6190,8 @@
     "year": 1808,
     "price": "170 USD",
     "images": [
-      "images/425A.jpeg",
-      "images/425B.jpeg"
+      "images/425A.jpg",
+      "images/425B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6419,8 +6204,8 @@
     "year": 1925,
     "price": "65 USD",
     "images": [
-      "images/427A.jpeg",
-      "images/427B.jpeg"
+      "images/427A.jpg",
+      "images/427B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -6433,8 +6218,8 @@
     "year": 1969,
     "price": "60 USD",
     "images": [
-      "images/428A.jpeg",
-      "images/428B.jpeg"
+      "images/428A.jpg",
+      "images/428B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6447,8 +6232,8 @@
     "year": 1914,
     "price": "32 USD",
     "images": [
-      "images/429A.jpeg",
-      "images/429B.jpeg"
+      "images/429A.jpg",
+      "images/429B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -6461,8 +6246,8 @@
     "year": 1914,
     "price": "38 USD",
     "images": [
-      "images/430A.jpeg",
-      "images/430B.jpeg"
+      "images/430A.jpg",
+      "images/430B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6475,8 +6260,8 @@
     "year": 1888,
     "price": "30 USD",
     "images": [
-      "images/435A.jpeg",
-      "images/435B.jpeg"
+      "images/435A.jpg",
+      "images/435B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6489,8 +6274,8 @@
     "year": 1910,
     "price": "22 USD",
     "images": [
-      "images/437A.jpeg",
-      "images/437B.jpeg"
+      "images/437A.jpg",
+      "images/437B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -6503,8 +6288,8 @@
     "year": 1911,
     "price": "50 USD",
     "images": [
-      "images/439A.jpeg",
-      "images/439B.jpeg"
+      "images/439A.jpg",
+      "images/439B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B-"
@@ -6517,8 +6302,8 @@
     "year": 1912,
     "price": "22 USD",
     "images": [
-      "images/440A.jpeg",
-      "images/440B.jpeg"
+      "images/440A.jpg",
+      "images/440B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6531,8 +6316,8 @@
     "year": 1912,
     "price": "24 USD",
     "images": [
-      "images/441A.jpeg",
-      "images/441B.jpeg"
+      "images/441A.jpg",
+      "images/441B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
@@ -6545,8 +6330,8 @@
     "year": 1914,
     "price": "30 USD",
     "images": [
-      "images/443A.jpeg",
-      "images/443B.jpeg"
+      "images/443A.jpg",
+      "images/443B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6559,8 +6344,8 @@
     "year": 1915,
     "price": "32 USD",
     "images": [
-      "images/444A.jpeg",
-      "images/444B.jpeg"
+      "images/444A.jpg",
+      "images/444B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6573,8 +6358,8 @@
     "year": 1926,
     "price": "26 USD",
     "images": [
-      "images/445A.jpeg",
-      "images/445B.jpeg"
+      "images/445A.jpg",
+      "images/445B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6587,8 +6372,8 @@
     "year": 1913,
     "price": "55 USD",
     "images": [
-      "images/446A.jpeg",
-      "images/446B.jpeg"
+      "images/446A.jpg",
+      "images/446B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6601,8 +6386,8 @@
     "year": 1914,
     "price": "95 USD",
     "images": [
-      "images/447A.jpeg",
-      "images/447B.jpeg"
+      "images/447A.jpg",
+      "images/447B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX+"
@@ -6615,8 +6400,8 @@
     "year": 1920,
     "price": "38 USD",
     "images": [
-      "images/448A.jpeg",
-      "images/448B.jpeg"
+      "images/448A.jpg",
+      "images/448B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B-"
@@ -6629,8 +6414,8 @@
     "year": 1955,
     "price": "38 USD",
     "images": [
-      "images/449A.jpeg",
-      "images/449B.jpeg"
+      "images/449A.jpg",
+      "images/449B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
@@ -6643,8 +6428,8 @@
     "year": 1873,
     "price": "28 USD",
     "images": [
-      "images/450A.jpeg",
-      "images/450B.jpeg"
+      "images/450A.jpg",
+      "images/450B.jpg"
     ],
     "grade": "Regular",
     "grade_short": "R+"
@@ -6657,8 +6442,8 @@
     "year": 1875,
     "price": "40 USD",
     "images": [
-      "images/451A.jpeg",
-      "images/451B.jpeg"
+      "images/451A.jpg",
+      "images/451B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B-"
@@ -6671,8 +6456,8 @@
     "year": 1876,
     "price": "35 USD",
     "images": [
-      "images/452A.jpeg",
-      "images/452B.jpeg"
+      "images/452A.jpg",
+      "images/452B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
@@ -6685,25 +6470,11 @@
     "year": 1854,
     "price": "30 USD",
     "images": [
-      "images/453A.jpeg",
-      "images/453B.jpeg"
+      "images/453A.jpg",
+      "images/453B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
-  },
-  {
-    "id": 454,
-    "title": "2 Centavos 1854",
-    "country": "Argentina",
-    "metal": "Cu",
-    "year": 1854,
-    "price": "20 USD",
-    "images": [
-      "images/454A.jpeg",
-      "images/454B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
   },
   {
     "id": 455,
@@ -6713,8 +6484,8 @@
     "year": 1854,
     "price": "120 USD",
     "images": [
-      "images/455A.jpeg",
-      "images/455B.jpeg"
+      "images/455A.jpg",
+      "images/455B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B",
@@ -6728,51 +6499,38 @@
     "year": 1972,
     "price": "30 USD",
     "images": [
-      "images/456A.jpeg",
-      "images/456B.jpeg"
+      "images/456A.jpg",
+      "images/456B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Rara pieza"
   },
   {
-    "id": 457,
-    "title": "50 Centésimos 1917",
-    "country": "Uruguay",
-    "metal": "Plata 0.900",
-    "year": 1917,
-    "price": "27 USD",
-    "images": [
-      "images/457A.jpeg",
-      "images/457B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 458,
-    "title": "50 Centésimos 1917",
-    "country": "Uruguay",
-    "metal": "Plata 0.900",
-    "year": 1917,
-    "price": "30 USD",
-    "images": [
-      "images/458A.jpeg",
-      "images/458B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 460,
+    "id": 459,
     "title": "1000 Pesos 2003",
     "country": "Uruguay",
     "metal": "Plata 0.925",
     "year": 2003,
     "price": "100 USD",
     "images": [
-      "images/460A.jpeg",
-      "images/460B.jpeg"
+      "images/459A.jpg",
+      "images/459B.jpg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Moneda conmemorativa del mundial 2006 (Alemania)"
+  },
+  {
+    "id": 460,
+    "title": "1000 Pesos 2004",
+    "country": "Uruguay",
+    "metal": "Plata 0.925",
+    "year": 2004,
+    "price": "100 USD",
+    "images": [
+      "images/460A.jpg",
+      "images/460B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -6780,14 +6538,14 @@
   },
   {
     "id": 461,
-    "title": "1000 Pesos 2004",
+    "title": "1000 Pesos 2005",
     "country": "Uruguay",
     "metal": "Plata 0.925",
-    "year": 2004,
+    "year": 2005,
     "price": "100 USD",
     "images": [
-      "images/461A.jpeg",
-      "images/461B.jpeg"
+      "images/461A.jpg",
+      "images/461B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -6795,572 +6553,281 @@
   },
   {
     "id": 462,
-    "title": "1000 Pesos 2005",
-    "country": "Uruguay",
-    "metal": "Plata 0.925",
-    "year": 2005,
-    "price": "100 USD",
-    "images": [
-      "images/462A.jpeg",
-      "images/462B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Moneda conmemorativa del mundial 2006 (Alemania)"
-  },
-  {
-    "id": 463,
     "title": "3000 Pesos 1977",
     "country": "Argentina",
     "metal": "Plata 0.900",
     "year": 1977,
     "price": "65 USD",
     "images": [
-      "images/463A.jpeg",
-      "images/463B.jpeg"
+      "images/462A.jpg",
+      "images/462B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Moneda conmemorativa del mundial 1978 (Argentina)"
   },
   {
-    "id": 472,
-    "title": "5 Centésimos 1857",
-    "country": "Uruguay",
-    "metal": "Cu",
-    "year": 1857,
-    "price": "24 USD",
-    "images": [
-      "images/472A.jpeg",
-      "images/472B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 473,
+    "id": 463,
     "title": "40 Centésimos 1857",
     "country": "Uruguay",
     "metal": "Cu",
     "year": 1857,
     "price": "24 USD",
     "images": [
-      "images/473A.jpeg",
-      "images/473B.jpeg"
+      "images/463A.jpg",
+      "images/463B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
   },
   {
-    "id": 474,
-    "title": "Red Book 2025",
-    "country": "USA",
-    "price": "35 USD",
-    "images": [
-      "images/474A.jpeg",
-      "images/474B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 475,
-    "title": "Presidents Series Album",
-    "country": "USA",
-    "price": "30 USD",
-    "images": [
-      "images/475A.jpeg",
-      "images/475B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC"
-  },
-  {
-    "id": 480,
-    "title": "5 Centavos 1896",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1896,
-    "price": "20 USD",
-    "images": [
-      "images/480A.jpeg",
-      "images/480B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 489,
-    "title": "5 Centavos 1931",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1931,
-    "price": "20 USD",
-    "images": [
-      "images/489A.jpeg",
-      "images/489B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 491,
-    "title": "10 Centavos 1907",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1907,
-    "price": "30 USD",
-    "images": [
-      "images/491A.jpeg",
-      "images/491B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 500,
-    "title": "20 Centavos 1899",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1899,
-    "price": "60 USD",
-    "images": [
-      "images/500A.jpeg",
-      "images/500B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 502,
-    "title": "20 Centavos 1899",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1899,
-    "price": "20 USD",
-    "images": [
-      "images/502A.jpeg",
-      "images/502B.jpeg"
-    ],
-    "grade": "Regular",
-    "grade_short": "R+"
-  },
-  {
-    "id": 503,
-    "title": "20 Centavos 1899",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1899,
-    "price": "27 USD",
-    "images": [
-      "images/503A.jpeg",
-      "images/503B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B-"
-  },
-  {
-    "id": 504,
-    "title": "20 Centavos 1899",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1899,
-    "price": "28 USD",
-    "images": [
-      "images/504A.jpeg",
-      "images/504B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B-"
-  },
-  {
-    "id": 505,
-    "title": "20 Centavos 1899",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1899,
-    "price": "32 USD",
-    "images": [
-      "images/505A.jpeg",
-      "images/505B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 506,
-    "title": "20 Centavos 1899",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1899,
-    "price": "26 USD",
-    "images": [
-      "images/506A.jpeg",
-      "images/506B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B-"
-  },
-  {
-    "id": 507,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1908,
-    "price": "30 USD",
-    "images": [
-      "images/507A.jpeg",
-      "images/507B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 508,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1908,
-    "price": "70 USD",
-    "images": [
-      "images/508A.jpeg",
-      "images/508B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 509,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1908,
-    "price": "26 USD",
-    "images": [
-      "images/509A.jpeg",
-      "images/509B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 510,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1908,
-    "price": "28 USD",
-    "images": [
-      "images/510A.jpeg",
-      "images/510B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
-    "id": 515,
-    "title": "20 Centavos 1908",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1908,
-    "price": "22 USD",
-    "images": [
-      "images/515A.jpeg",
-      "images/515B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B-"
-  },
-  {
-    "id": 517,
-    "title": "20 Centavos 1914",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1914,
-    "price": "36 USD",
-    "images": [
-      "images/517A.jpeg",
-      "images/517B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB"
-  },
-  {
-    "id": 519,
-    "title": "20 Centavos 1931",
-    "country": "Argentina",
-    "metal": "Cu Ni",
-    "year": 1931,
-    "price": "40 USD",
-    "images": [
-      "images/519A.jpeg",
-      "images/519B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX"
-  },
-  {
-    "id": 523,
-    "title": "Half dollar 1964",
-    "country": "USA",
-    "metal": "Ag 0.900",
-    "year": 1964,
-    "price": "32 USD",
-    "images": [
-      "images/523A.jpeg",
-      "images/523B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX+"
-  },
-  {
-    "id": 535,
+    "id": 464,
     "title": "1 Peso 2023",
     "country": "Argentina",
     "metal": "Ag 0.900",
     "year": 2023,
     "price": "200 USD",
     "images": [
-      "images/535A.jpeg",
-      "images/535B.jpeg"
+      "images/464A.jpg",
+      "images/464B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
   },
   {
-    "id": 536,
+    "id": 465,
     "title": "5 Pesos 2013",
     "country": "Argentina",
     "metal": "Ag 0.925",
     "year": 2013,
     "price": "180 USD",
     "images": [
-      "images/536A.jpeg",
-      "images/536B.jpeg"
+      "images/465A.jpg",
+      "images/465B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
   },
   {
-    "id": 537,
+    "id": 466,
     "title": "1 Dollar 2021",
     "country": "USA",
     "metal": "Ag 0.999",
     "year": 2021,
     "price": "250 USD",
     "images": [
-      "images/537A.jpeg",
-      "images/537B.jpeg"
+      "images/466A.jpg",
+      "images/466B.jpg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
   },
   {
-    "id": 538,
+    "id": 467,
     "title": "1 Cent 1858",
     "country": "USA",
     "metal": "Cu Ni",
     "year": 1858,
     "price": "25 USD",
     "images": [
-      "images/538A.jpeg",
-      "images/538B.jpeg"
+      "images/467A.jpg",
+      "images/467B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B-"
   },
   {
-    "id": 539,
+    "id": 468,
     "title": "1 Cent 1859",
     "country": "USA",
     "metal": "Cu Ni",
     "year": 1859,
     "price": "20 USD",
     "images": [
-      "images/539A.jpeg",
-      "images/539B.jpeg"
+      "images/468A.jpg",
+      "images/468B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
   },
   {
-    "id": 540,
+    "id": 469,
     "title": "1 Cent 1861",
     "country": "USA",
     "metal": "Cu Ni",
     "year": 1861,
     "price": "45 USD",
     "images": [
-      "images/540A.jpeg",
-      "images/540B.jpeg"
+      "images/469A.jpg",
+      "images/469B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
   },
   {
-    "id": 541,
+    "id": 470,
     "title": "1 Cent 1862",
     "country": "USA",
     "metal": "Cu Ni",
     "year": 1862,
     "price": "55 USD",
     "images": [
-      "images/541A.jpeg",
-      "images/541B.jpeg"
+      "images/470A.jpg",
+      "images/470B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
   },
   {
-    "id": 542,
+    "id": 471,
     "title": "1 Cent 1864",
     "country": "USA",
     "metal": "Cu Ni",
     "year": 1864,
     "price": "40 USD",
     "images": [
-      "images/542A.jpeg",
-      "images/542B.jpeg"
+      "images/471A.jpg",
+      "images/471B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
   },
   {
-    "id": 543,
+    "id": 472,
     "title": "1 Cent 1864",
     "country": "USA",
     "metal": "Cu",
     "year": 1864,
     "price": "20 USD",
     "images": [
-      "images/543A.jpeg",
-      "images/543B.jpeg"
+      "images/472A.jpg",
+      "images/472B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
   },
   {
-    "id": 544,
+    "id": 473,
     "title": "1 Cent 1865",
     "country": "USA",
     "metal": "Cu",
     "year": 1865,
     "price": "20 USD",
     "images": [
-      "images/544A.jpeg",
-      "images/544B.jpeg"
+      "images/473A.jpg",
+      "images/473B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B-"
   },
   {
-    "id": 545,
+    "id": 474,
     "title": "1 Cent 1867",
     "country": "USA",
     "metal": "Cu",
     "year": 1867,
     "price": "55 USD",
     "images": [
-      "images/545A.jpeg",
-      "images/545B.jpeg"
+      "images/474A.jpg",
+      "images/474B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
   },
   {
-    "id": 546,
+    "id": 475,
     "title": "1 Cent 1868",
     "country": "USA",
     "metal": "Cu",
     "year": 1868,
     "price": "60 USD",
     "images": [
-      "images/546A.jpeg",
-      "images/546B.jpeg"
+      "images/475A.jpg",
+      "images/475B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
   },
   {
-    "id": 547,
+    "id": 476,
     "title": "1 Cent 1873",
     "country": "USA",
     "metal": "Cu",
     "year": 1873,
     "price": "75 USD",
     "images": [
-      "images/547A.jpeg",
-      "images/547B.jpeg"
+      "images/476A.jpg",
+      "images/476B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
   },
   {
-    "id": 548,
+    "id": 477,
     "title": "1 Cent 1874",
     "country": "USA",
     "metal": "Cu",
     "year": 1874,
     "price": "25 USD",
     "images": [
-      "images/548A.jpeg",
-      "images/548B.jpeg"
+      "images/477A.jpg",
+      "images/477B.jpg"
     ],
     "grade": "Regular",
     "grade_short": "R+"
   },
   {
-    "id": 549,
+    "id": 478,
     "title": "1 Cent 1875",
     "country": "USA",
     "metal": "Cu",
     "year": 1875,
     "price": "42 USD",
     "images": [
-      "images/549A.jpeg",
-      "images/549B.jpeg"
+      "images/478A.jpg",
+      "images/478B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B-"
   },
   {
-    "id": 550,
+    "id": 479,
     "title": "1 Cent 1876",
     "country": "USA",
     "metal": "Cu",
     "year": 1876,
     "price": "70 USD",
     "images": [
-      "images/550A.jpeg",
-      "images/550B.jpeg"
+      "images/479A.jpg",
+      "images/479B.jpg"
     ],
     "grade": "Bueno",
     "grade_short": "B"
   },
   {
-    "id": 551,
+    "id": 480,
     "title": "1 Cent 1879",
     "country": "USA",
     "metal": "Cu",
     "year": 1879,
     "price": "22 USD",
     "images": [
-      "images/551A.jpeg",
-      "images/551B.jpeg"
+      "images/480A.jpg",
+      "images/480B.jpg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
   },
   {
-    "id": 553,
+    "id": 481,
     "title": "1 Cent 1880",
     "country": "USA",
     "metal": "Cu",
     "year": 1880,
     "price": "20 USD",
     "images": [
-      "images/553A.jpeg",
-      "images/553B.jpeg"
+      "images/481A.jpg",
+      "images/481B.jpg"
     ],
     "grade": "Excelente",
     "grade_short": "EX"
