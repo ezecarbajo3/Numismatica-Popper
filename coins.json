@@ -2355,7 +2355,9 @@
     "grade": "Buena con Detalles",
     "grade_short": "B**",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "us-5c-liberty",
+    "group_label": "Liberty Nickel"
   },
   {
     "id": 193,
@@ -6388,7 +6390,9 @@
       "images/429B.jpeg"
     ],
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "group_id": "us-5c-buffalo",
+    "group_label": "Buffalo Nickel"
   },
   {
     "id": 430,
@@ -6402,7 +6406,9 @@
       "images/430B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B"
+    "grade_short": "B",
+    "group_id": "us-5c-buffalo",
+    "group_label": "Buffalo Nickel"
   },
   {
     "id": 435,
@@ -6416,7 +6422,9 @@
       "images/435B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B"
+    "grade_short": "B",
+    "group_id": "us-5c-liberty",
+    "group_label": "Liberty Nickel"
   },
   {
     "id": 437,
@@ -6430,7 +6438,9 @@
       "images/437B.jpeg"
     ],
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "group_id": "us-cent-lincoln",
+    "group_label": "Lincoln Cent"
   },
   {
     "id": 439,
@@ -6444,7 +6454,9 @@
       "images/439B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B-"
+    "grade_short": "B-",
+    "group_id": "us-cent-lincoln",
+    "group_label": "Lincoln Cent"
   },
   {
     "id": 440,
@@ -6458,7 +6470,9 @@
       "images/440B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B"
+    "grade_short": "B",
+    "group_id": "us-cent-lincoln",
+    "group_label": "Lincoln Cent"
   },
   {
     "id": 441,
@@ -6472,7 +6486,9 @@
       "images/441B.jpeg"
     ],
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "group_id": "us-cent-lincoln",
+    "group_label": "Lincoln Cent"
   },
   {
     "id": 443,
@@ -6486,7 +6502,9 @@
       "images/443B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "group_id": "us-cent-lincoln",
+    "group_label": "Lincoln Cent"
   },
   {
     "id": 444,
@@ -6500,7 +6518,9 @@
       "images/444B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B"
+    "grade_short": "B",
+    "group_id": "us-cent-lincoln",
+    "group_label": "Lincoln Cent"
   },
   {
     "id": 445,
@@ -6514,7 +6534,9 @@
       "images/445B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "group_id": "us-cent-lincoln",
+    "group_label": "Lincoln Cent"
   },
   {
     "id": 446,
@@ -6528,7 +6550,9 @@
       "images/446B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B"
+    "grade_short": "B",
+    "group_id": "us-5c-buffalo",
+    "group_label": "Buffalo Nickel"
   },
   {
     "id": 447,
@@ -6542,7 +6566,9 @@
       "images/447B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "group_id": "us-5c-buffalo",
+    "group_label": "Buffalo Nickel"
   },
   {
     "id": 448,
