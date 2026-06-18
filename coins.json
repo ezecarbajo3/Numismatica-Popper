@@ -223,7 +223,7 @@
     "mintage": "",
     "description": "Indian Head.",
     "group_id": "us-cent-km90",
-    "group_label": "Cent"
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 29,
@@ -243,7 +243,7 @@
     "description": "Indian Head.",
     "original_price": "45 USD",
     "group_id": "us-cent-km90",
-    "group_label": "Cent"
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 30,
@@ -262,7 +262,7 @@
     "mintage": "",
     "description": "Indian Head.",
     "group_id": "us-cent-km90",
-    "group_label": "Cent"
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 32,
@@ -282,7 +282,7 @@
     "description": "Indian Head.",
     "original_price": "22 USD",
     "group_id": "us-cent-km90",
-    "group_label": "Cent"
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 33,
@@ -5371,7 +5371,7 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "group_id": "us-cent-km90",
-    "group_label": "Cent",
+    "group_label": "Indian Head Cent",
     "description": "Indian Head"
   },
   {
@@ -5389,7 +5389,7 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "group_id": "us-cent-km90",
-    "group_label": "Cent",
+    "group_label": "Indian Head Cent",
     "description": "Indian Head"
   },
   {
@@ -5407,7 +5407,7 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "group_id": "us-cent-km90",
-    "group_label": "Cent",
+    "group_label": "Indian Head Cent",
     "description": "Indian Head"
   },
   {
@@ -5425,7 +5425,7 @@
     "grade": "Se aprecia en foto",
     "grade_short": "-",
     "group_id": "us-cent-km90",
-    "group_label": "Cent",
+    "group_label": "Indian Head Cent",
     "description": "Indian Head"
   },
   {
@@ -6582,7 +6582,9 @@
       "images/450B.jpeg"
     ],
     "grade": "Regular",
-    "grade_short": "R+"
+    "grade_short": "R+",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 451,
@@ -6596,7 +6598,9 @@
       "images/451B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B-"
+    "grade_short": "B-",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 452,
@@ -6610,7 +6614,9 @@
       "images/452B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B"
+    "grade_short": "B",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 453,
@@ -6773,7 +6779,9 @@
       "images/467B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B-"
+    "grade_short": "B-",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 468,
@@ -6787,7 +6795,9 @@
       "images/468B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B"
+    "grade_short": "B",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 469,
@@ -6801,7 +6811,9 @@
       "images/469B.jpeg"
     ],
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 470,
@@ -6815,7 +6827,9 @@
       "images/470B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 471,
@@ -6829,7 +6843,9 @@
       "images/471B.jpeg"
     ],
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 472,
@@ -6843,7 +6859,9 @@
       "images/472B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B"
+    "grade_short": "B",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 473,
@@ -6857,7 +6875,9 @@
       "images/473B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B-"
+    "grade_short": "B-",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 474,
@@ -6871,7 +6891,9 @@
       "images/474B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B"
+    "grade_short": "B",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 475,
@@ -6885,7 +6907,9 @@
       "images/475B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B"
+    "grade_short": "B",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 476,
@@ -6899,7 +6923,9 @@
       "images/476B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 477,
@@ -6913,7 +6939,9 @@
       "images/477B.jpeg"
     ],
     "grade": "Regular",
-    "grade_short": "R+"
+    "grade_short": "R+",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 478,
@@ -6927,7 +6955,9 @@
       "images/478B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B-"
+    "grade_short": "B-",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 479,
@@ -6941,7 +6971,9 @@
       "images/479B.jpeg"
     ],
     "grade": "Bueno",
-    "grade_short": "B"
+    "grade_short": "B",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 480,
@@ -6955,7 +6987,9 @@
       "images/480B.jpeg"
     ],
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 481,
@@ -6969,7 +7003,9 @@
       "images/481B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "group_id": "us-cent-km90",
+    "group_label": "Indian Head Cent"
   },
   {
     "id": 492,
