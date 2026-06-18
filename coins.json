@@ -6717,20 +6717,6 @@
     "description": "Moneda conmemorativa del mundial 1978 (Argentina)"
   },
   {
-    "id": 463,
-    "title": "40 Centésimos 1857",
-    "country": "Uruguay",
-    "metal": "Cu",
-    "year": 1857,
-    "price": "26.4 USD",
-    "images": [
-      "images/463A.jpeg",
-      "images/463B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B"
-  },
-  {
     "id": 464,
     "title": "1 Peso 2023",
     "country": "Argentina",
