@@ -1,7 +1,8 @@
 /* ============================================================================
    Numismática Popper · Pantalla de bloqueo previa al lanzamiento
    ----------------------------------------------------------------------------
-   Overlay "coming soon" infranqueable con cuenta regresiva.
+   Overlay "coming soon" infranqueable con cuenta regresiva y un único acceso
+   anticipado por contraseña (para administración/preview).
    Módulo autocontenido: inyecta sus propios estilos y DOM, y se elimina solo
    al alcanzar el momento de apertura.
 
@@ -17,35 +18,12 @@
   var LAUNCH = new Date("2026-06-18T20:00:00-03:00").getTime();
 
   /* Contraseña de acceso anticipado (para el administrador). */
-  var PASSWORD = "prime popper";
+  var PASSWORD = "popper prime";
   var UNLOCK_KEY = "np_early_access";
 
   /* Si ya pasó la hora de lanzamiento, o ya se ingresó la clave, no bloqueamos. */
   if (Date.now() >= LAUNCH) return;
   try { if (localStorage.getItem(UNLOCK_KEY) === "1") return; } catch (e) {}
-
-  /* Contraseña de acceso anticipado (para administración/preview).
-     Al ingresarla correctamente se abre una ventana de navegación libre de
-     5 minutos; al expirar, la página se recarga y vuelve a pedir la clave. */
-  var ACCESS_PASS = "popper prime";
-  var ACCESS_WINDOW_MS = 5 * 60 * 1000; /* 5 minutos */
-
-  /* Programa la re-aparición del bloqueo recargando la página al expirar. */
-  function scheduleRelock(msLeft) {
-    setTimeout(function () { location.reload(); }, Math.max(0, msLeft));
-  }
-
-  /* Si hay una ventana de acceso vigente, no bloqueamos: solo dejamos
-     programado el re-bloqueo para cuando se agoten los 5 minutos. */
-  try {
-    var until = parseInt(localStorage.getItem("np_unlock_until") || "0", 10);
-    if (until && Date.now() < until) {
-      scheduleRelock(until - Date.now());
-      return;
-    }
-    /* Ventana vencida o inexistente: limpiamos y mostramos el bloqueo. */
-    localStorage.removeItem("np_unlock_until");
-  } catch (e) { /* localStorage no disponible: seguimos con el bloqueo */ }
 
   /* ---- Estilos (heredan la paleta y la tipografía globales del sitio) ---- */
   var css = '\
@@ -56,34 +34,35 @@
     radial-gradient(120% 90% at 50% -10%, rgba(207,172,107,.10), transparent 60%),\
     radial-gradient(100% 80% at 50% 120%, rgba(168,132,74,.08), transparent 55%),\
     repeating-linear-gradient(135deg, rgba(255,255,255,.012) 0 2px, transparent 2px 5px);\
-  color:#f5f0e6;overflow:hidden;\
+  color:#f5f0e6;overflow-y:auto;\
   -webkit-user-select:none;user-select:none;\
   animation:ll-fade .9s ease both;}\
 @keyframes ll-fade{from{opacity:0}to{opacity:1}}\
-#launch-lock .ll-inner{width:min(92%,640px);text-align:center;\
-  padding:clamp(24px,6vw,56px);}\
-#launch-lock .ll-lock{width:clamp(88px,16vw,132px);height:auto;display:block;\
-  margin:0 auto clamp(22px,4vw,38px);\
+#launch-lock .ll-inner{width:min(92%,560px);margin:auto;\
+  display:flex;flex-direction:column;align-items:center;text-align:center;\
+  padding:clamp(28px,6vw,56px) clamp(20px,5vw,40px);box-sizing:border-box;}\
+#launch-lock .ll-lock{width:clamp(82px,15vw,124px);height:auto;display:block;\
+  margin:0 0 clamp(20px,4vw,34px);\
   filter:drop-shadow(0 6px 26px rgba(207,172,107,.32));\
   animation:ll-glow 3.4s ease-in-out infinite;}\
 @keyframes ll-glow{0%,100%{filter:drop-shadow(0 6px 22px rgba(207,172,107,.22))}\
   50%{filter:drop-shadow(0 6px 34px rgba(239,217,162,.45))}}\
 #launch-lock .ll-eyebrow{font-family:"Cinzel",Georgia,serif;\
   font-size:clamp(.62rem,1.6vw,.78rem);letter-spacing:.42em;\
-  text-transform:uppercase;color:#b2a38d;margin:0 0 18px;padding-left:.42em;}\
+  text-transform:uppercase;color:#b2a38d;margin:0 0 16px;padding-left:.42em;}\
 #launch-lock .ll-title{font-family:"Cinzel",Georgia,serif;font-weight:600;\
-  font-size:clamp(1.5rem,4.6vw,2.7rem);line-height:1.18;margin:0 0 16px;\
+  font-size:clamp(1.45rem,4.6vw,2.6rem);line-height:1.2;margin:0 0 14px;\
   background:linear-gradient(180deg,#efd9a2 0%,#cfac6b 52%,#a8844a 100%);\
   -webkit-background-clip:text;background-clip:text;\
   -webkit-text-fill-color:transparent;color:#cfac6b;}\
 #launch-lock .ll-copy{font-family:"Cinzel",Georgia,serif;font-weight:400;\
-  font-size:clamp(.86rem,2.3vw,1.06rem);line-height:1.6;color:#f5f0e6;\
-  max-width:30ch;margin:0 auto clamp(30px,6vw,46px);opacity:.92;}\
+  font-size:clamp(.86rem,2.3vw,1.04rem);line-height:1.6;color:#f5f0e6;\
+  max-width:32ch;margin:0 0 clamp(28px,6vw,42px);opacity:.92;}\
 #launch-lock .ll-copy b{color:#efd9a2;font-weight:600;white-space:nowrap;}\
-#launch-lock .ll-countdown{display:flex;justify-content:center;\
-  gap:clamp(10px,3vw,26px);}\
+#launch-lock .ll-countdown{display:flex;justify-content:center;align-items:flex-start;\
+  gap:clamp(8px,3vw,24px);width:100%;}\
 #launch-lock .ll-unit{display:flex;flex-direction:column;align-items:center;\
-  min-width:clamp(54px,15vw,74px);}\
+  min-width:clamp(50px,15vw,72px);}\
 #launch-lock .ll-num{font-family:"Cinzel",Georgia,serif;font-weight:700;\
   font-size:clamp(1.7rem,7vw,3rem);line-height:1;color:#efd9a2;\
   font-variant-numeric:tabular-nums;font-feature-settings:"tnum";\
@@ -92,58 +71,56 @@
   font-size:clamp(.54rem,1.5vw,.66rem);letter-spacing:.24em;\
   text-transform:uppercase;color:#b2a38d;margin-top:10px;}\
 #launch-lock .ll-sep{font-family:"Cinzel",Georgia,serif;font-weight:600;\
-  font-size:clamp(1.4rem,6vw,2.4rem);color:rgba(207,172,107,.4);\
-  align-self:flex-start;margin-top:clamp(2px,1vw,6px);}\
-#launch-lock .ll-rule{width:48px;height:1px;margin:clamp(30px,6vw,46px) auto 0;\
+  font-size:clamp(1.4rem,6vw,2.4rem);color:rgba(207,172,107,.4);line-height:1;\
+  margin-top:clamp(0px,1vw,4px);}\
+#launch-lock .ll-rule{width:48px;height:1px;margin:clamp(28px,6vw,44px) 0 0;\
   background:linear-gradient(90deg,transparent,#cfac6b,transparent);}\
 #launch-lock .ll-foot{font-family:"Cinzel",Georgia,serif;\
   font-size:clamp(.58rem,1.5vw,.7rem);letter-spacing:.3em;text-transform:uppercase;\
-  color:#7a6f5d;margin:18px 0 0;}\
-#launch-lock .ll-gate{display:flex;align-items:center;justify-content:center;\
-  gap:8px;margin:clamp(22px,4vw,30px) auto 0;width:fit-content;\
-  padding:5px 5px 5px 14px;border-radius:999px;\
-  border:1px solid rgba(207,172,107,.28);background:rgba(255,255,255,.02);\
-  transition:border-color .25s ease,box-shadow .25s ease;}\
-#launch-lock .ll-gate:focus-within{border-color:rgba(207,172,107,.6);\
-  box-shadow:0 0 0 3px rgba(207,172,107,.10);}\
-#launch-lock .ll-gate.is-err{border-color:rgba(200,80,70,.7);\
-  animation:ll-shake .4s ease;}\
-@keyframes ll-shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}\
-  40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(2px)}}\
-#launch-lock .ll-key{width:14px;height:14px;flex:none;opacity:.7;}\
-#launch-lock .ll-input{background:transparent;border:0;outline:0;\
-  font-family:"Cinzel",Georgia,serif;font-size:.82rem;letter-spacing:.06em;\
-  color:#f5f0e6;width:clamp(120px,30vw,160px);}\
-#launch-lock .ll-input::placeholder{color:#7a6f5d;letter-spacing:.04em;}\
-#launch-lock .ll-go{flex:none;width:30px;height:30px;border:0;cursor:pointer;\
-  border-radius:50%;display:flex;align-items:center;justify-content:center;\
-  background:linear-gradient(180deg,#efd9a2,#cfac6b 55%,#a8844a);\
-  color:#0a0a0a;transition:transform .2s ease,filter .2s ease;}\
-#launch-lock .ll-go:hover{transform:scale(1.07);filter:brightness(1.08);}\
-#launch-lock .ll-go svg{width:14px;height:14px;}\
-@media (max-width:380px){#launch-lock .ll-sep{display:none}\
-  #launch-lock .ll-countdown{gap:8px}}\
-#launch-lock .ll-gate{margin-top:clamp(28px,5vw,40px);display:flex;\
-  flex-direction:column;align-items:center;gap:12px;}\
-#launch-lock .ll-gate form{display:flex;gap:10px;flex-wrap:wrap;\
-  justify-content:center;}\
-#launch-lock .ll-pass{font-family:"Cinzel",Georgia,serif;font-size:.9rem;\
-  padding:11px 16px;width:min(70vw,230px);color:#f5f0e6;outline:none;\
+  color:#7a6f5d;margin:16px 0 0;}\
+\
+#launch-lock .ll-gate{display:flex;flex-direction:column;align-items:center;\
+  gap:12px;width:100%;margin:clamp(28px,5vw,40px) 0 0;}\
+#launch-lock .ll-gate form{display:flex;align-items:stretch;justify-content:center;\
+  gap:8px;width:100%;max-width:340px;}\
+#launch-lock .ll-pass{flex:1 1 auto;min-width:0;\
+  font-family:"Cinzel",Georgia,serif;font-size:.9rem;letter-spacing:.04em;\
+  padding:11px 16px;color:#f5f0e6;outline:none;\
   background:rgba(255,255,255,.05);border:1px solid rgba(207,172,107,.35);\
-  border-radius:8px;transition:border-color .25s;}\
-#launch-lock .ll-pass:focus{border-color:#cfac6b;}\
+  border-radius:10px;transition:border-color .25s,box-shadow .25s;box-sizing:border-box;}\
+#launch-lock .ll-pass:focus{border-color:#cfac6b;\
+  box-shadow:0 0 0 3px rgba(207,172,107,.12);}\
 #launch-lock .ll-pass::placeholder{color:#7a6f5d;}\
-#launch-lock .ll-enter{font-family:"Cinzel",Georgia,serif;font-size:.82rem;\
-  letter-spacing:.08em;padding:11px 22px;cursor:pointer;border:none;\
-  border-radius:8px;color:#1a1407;font-weight:600;\
+#launch-lock .ll-enter{flex:none;font-family:"Cinzel",Georgia,serif;\
+  font-size:.82rem;letter-spacing:.08em;padding:11px 22px;cursor:pointer;\
+  border:none;border-radius:10px;color:#1a1407;font-weight:600;\
   background:linear-gradient(180deg,#efd9a2 0%,#cfac6b 52%,#a8844a 100%);\
   transition:filter .2s,transform .1s;}\
 #launch-lock .ll-enter:hover{filter:brightness(1.08);}\
 #launch-lock .ll-enter:active{transform:translateY(1px);}\
-#launch-lock .ll-err{min-height:1em;font-family:"Cinzel",Georgia,serif;\
-  font-size:.74rem;color:#e0564f;opacity:0;letter-spacing:.02em;\
-  transition:opacity .2s;}\
-#launch-lock .ll-err.show{opacity:1;}';
+#launch-lock .ll-msg{min-height:1.1em;font-family:"Cinzel",Georgia,serif;\
+  font-size:.74rem;letter-spacing:.02em;opacity:0;transition:opacity .2s;\
+  margin:0;text-align:center;}\
+#launch-lock .ll-msg.show{opacity:1;}\
+\
+/* --- Estado: contraseña INCORRECTA (rojo) --- */\
+#launch-lock .ll-gate.is-err .ll-pass{border-color:rgba(200,80,70,.8);\
+  box-shadow:0 0 0 3px rgba(200,80,70,.12);animation:ll-shake .42s ease;}\
+#launch-lock .ll-gate.is-err .ll-msg{color:#e0564f;}\
+@keyframes ll-shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}\
+  40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(2px)}}\
+\
+/* --- Estado: contraseña CORRECTA (verde) --- */\
+#launch-lock .ll-gate.is-ok .ll-pass{border-color:rgba(120,190,120,.85);\
+  box-shadow:0 0 0 3px rgba(120,190,120,.16);animation:ll-pop .45s ease;}\
+#launch-lock .ll-gate.is-ok .ll-enter{\
+  background:linear-gradient(180deg,#8fe09a 0%,#5cb86b 55%,#3f9a52 100%);}\
+#launch-lock .ll-gate.is-ok .ll-msg{color:#7fd089;}\
+@keyframes ll-pop{0%{transform:scale(1)}45%{transform:scale(1.04)}100%{transform:scale(1)}}\
+\
+@media (max-width:380px){#launch-lock .ll-sep{display:none}\
+  #launch-lock .ll-countdown{gap:6px}\
+  #launch-lock .ll-gate form{flex-direction:column;align-items:stretch}}';
 
   var style = document.createElement("style");
   style.id = "launch-lock-style";
@@ -153,7 +130,6 @@
   /* ---- Bloqueo de scroll / interacción de fondo ---- */
   var root = document.documentElement;
   root.style.overflow = "hidden";
-  // Refuerzo aplicado en cuanto exista el <body>.
   function lockBody() {
     if (document.body) document.body.style.overflow = "hidden";
   }
@@ -194,24 +170,15 @@
         '<div class="ll-unit"><span class="ll-num" data-s>00</span><span class="ll-lab">Segundos</span></div>' +
       '</div>' +
       '<div class="ll-gate">' +
-        '<form class="ll-gate-form" autocomplete="off" novalidate>' +
-          '<input type="password" class="ll-pass" placeholder="Contraseña" aria-label="Contraseña de acceso" autocomplete="off" />' +
+        '<form autocomplete="off" novalidate>' +
+          '<input type="password" class="ll-pass" placeholder="Acceso anticipado" aria-label="Contraseña de acceso" autocomplete="off" />' +
           '<button type="submit" class="ll-enter">Entrar</button>' +
         '</form>' +
-        '<p class="ll-err" data-err></p>' +
+        '<p class="ll-msg" data-msg></p>' +
       '</div>' +
       '<div class="ll-rule"></div>' +
       '<p class="ll-foot">Aumentando tu colección desde 2020</p>' +
-      '<form class="ll-gate" novalidate autocomplete="off">' +
-        '<svg class="ll-key" viewBox="0 0 24 24" fill="none" stroke="#cfac6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
-          '<circle cx="8" cy="15" r="4"/><path d="M10.8 12.2 20 3"/><path d="m17 6 2.5 2.5"/><path d="m14 9 2.5 2.5"/>' +
-        '</svg>' +
-        '<input class="ll-input" type="password" inputmode="text" ' +
-          'placeholder="Acceso anticipado" aria-label="Contraseña de acceso" />' +
-        '<button class="ll-go" type="submit" aria-label="Ingresar">' +
-          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 14 0"/><path d="m13 6 6 6-6 6"/></svg>' +
-        '</button>' +
-      '</form>';
+    '</div>';
 
   function mount() {
     lockBody();
@@ -240,26 +207,46 @@
   }
   window.addEventListener("keydown", blockKeys, { passive: false });
 
-  /* ---- Acceso por contraseña (administrador) ---- */
+  /* ---- Acceso anticipado por contraseña ---- */
   function bindGate() {
-    var form = overlay.querySelector(".ll-gate");
-    var input = overlay.querySelector(".ll-input");
-    if (!form || !input) return;
+    var gate = overlay.querySelector(".ll-gate");
+    var form = gate && gate.querySelector("form");
+    var input = overlay.querySelector(".ll-pass");
+    var msg = overlay.querySelector("[data-msg]");
+    if (!gate || !form || !input || !msg) return;
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var ok = input.value.trim().toLowerCase() === PASSWORD;
+
       if (ok) {
+        /* Acierto: animación verde + persistencia, y desbloqueo. */
+        gate.classList.remove("is-err");
+        gate.classList.add("is-ok");
+        msg.textContent = "Acceso concedido";
+        msg.classList.add("show");
+        input.blur();
         try { localStorage.setItem(UNLOCK_KEY, "1"); } catch (err) {}
-        unlock();
+        setTimeout(unlock, 650);
       } else {
-        form.classList.add("is-err");
+        /* Error: animación roja. Reiniciamos la animación si se repite. */
+        gate.classList.remove("is-ok");
+        gate.classList.remove("is-err");
+        /* Forzar reflow para poder reanimar el shake en intentos seguidos. */
+        void gate.offsetWidth;
+        gate.classList.add("is-err");
+        msg.textContent = "No seas ansioso, esperá hasta mañana";
+        msg.classList.add("show");
         input.value = "";
-        input.placeholder = "Contraseña incorrecta";
-        setTimeout(function () {
-          form.classList.remove("is-err");
-          input.placeholder = "Acceso anticipado";
-        }, 1400);
+        input.focus();
       }
+    });
+
+    /* Al volver a escribir, limpiamos el estado de error. */
+    input.addEventListener("input", function () {
+      if (gate.classList.contains("is-ok")) return;
+      gate.classList.remove("is-err");
+      msg.classList.remove("show");
     });
   }
 
@@ -304,34 +291,4 @@
 
   tick();
   var timer = setInterval(tick, 1000);
-
-  /* ---- Acceso anticipado por contraseña ---- */
-  (function setupGate() {
-    var form = overlay.querySelector(".ll-gate-form");
-    var input = overlay.querySelector(".ll-pass");
-    var err = overlay.querySelector("[data-err]");
-    if (!form || !input || !err) return;
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var val = (input.value || "").trim().toLowerCase();
-      if (val === ACCESS_PASS) {
-        try {
-          localStorage.setItem("np_unlock_until", String(Date.now() + ACCESS_WINDOW_MS));
-        } catch (_) {}
-        scheduleRelock(ACCESS_WINDOW_MS);
-        unlock();
-      } else {
-        err.textContent = "No seas ansioso, esperá hasta mañana";
-        err.classList.add("show");
-        input.value = "";
-        input.focus();
-      }
-    });
-
-    /* Al volver a escribir, ocultamos el mensaje de error. */
-    input.addEventListener("input", function () {
-      err.classList.remove("show");
-    });
-  })();
 })();
