@@ -239,13 +239,23 @@ function renderCoinDetail(coin, groupMembers) {
       const info = document.createElement("div");
       info.className = "variant-info";
 
-      const isArgentina = (member.country || "").toLowerCase().includes("argentina"); const isQuarters = member.group_id === "us-quarters-estados"; const descLabel = String(member.description || "").trim() || "–";
+      const isArgentina = (member.country || "").toLowerCase().includes("argentina");
+      const isQuarters = member.group_id && member.group_id.includes("quarters");
+      const isMillennium = member.group_id === "ca-25cents-2000-millennium";
+      const isCommemorative = member.group_id && member.group_id.includes("conmemorativas");
+
+      const descLabel = String(member.description || "").trim() || "–";
       const gradeLabel = String(member.grade_short || "").trim() || "–";
       const yearLabel  = String(member.year || "").trim() || "–";
 
       const labelEl = document.createElement("span");
       labelEl.className   = "variant-year"; // Reusing class for consistency
-      if (isQuarters) { labelEl.textContent = descLabel; } else { labelEl.textContent = isArgentina ? gradeLabel : yearLabel; }
+
+      if ((isQuarters || isMillennium || isCommemorative) && descLabel !== "–") {
+        labelEl.textContent = descLabel;
+      } else {
+        labelEl.textContent = isArgentina ? gradeLabel : yearLabel;
+      }
 
       const priceEl = document.createElement("span");
       priceEl.className   = "variant-price";
