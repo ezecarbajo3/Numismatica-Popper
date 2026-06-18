@@ -586,6 +586,9 @@ function getFilteredCoins() {
   const searchTerm = SEARCH_ALIASES[raw] || raw;
 
   return allCoins.filter((coin) => {
+    // Manually hidden items (e.g. retired subsets) — kept in data, never shown
+    if (coin.hidden) return false;
+
     // Auto-hide sold items whose 30-day visibility window has closed
     if (isSoldExpired(coin)) return false;
 
