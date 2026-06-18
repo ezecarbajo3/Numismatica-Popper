@@ -3503,7 +3503,7 @@
     "grade_short": "MB+",
     "mintage": "",
     "description": "Guillermina I.",
-    "group_id": "nl-cent-km152",
+    "group_id": "nl-cent",
     "group_label": "Cent",
     "status": "sold",
     "soldAt": "2026-06-17T01:10:18.708603Z"
@@ -4692,7 +4692,9 @@
     ],
     "reference": "KM# 107.1",
     "grade": "Muy Bueno -",
-    "grade_short": "MB-"
+    "grade_short": "MB-",
+    "group_id": "nl-cent",
+    "group_label": "Cent"
   },
   {
     "id": 326,
@@ -5079,7 +5081,7 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "group_id": "nl-cent-km152",
+    "group_id": "nl-cent",
     "group_label": "Cent"
   },
   {
@@ -7541,7 +7543,9 @@
     ],
     "reference": "KM# 152",
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "group_id": "nl-cent",
+    "group_label": "Cent"
   },
   {
     "id": 525,
