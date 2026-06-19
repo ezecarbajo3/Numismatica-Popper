@@ -5466,7 +5466,9 @@
       "images/373B.jpeg"
     ],
     "group_id": "us-dollar-innovation",
-    "group_label": "Dólar Innovación"
+    "group_label": "Dólar Innovación",
+    "status": "sold",
+    "soldAt": "2026-06-19T17:11:00-03:00"
   },
   {
     "id": 374,
