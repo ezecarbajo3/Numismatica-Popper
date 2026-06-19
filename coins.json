@@ -204,7 +204,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "1/10 onza - Ideal inversión"
+    "description": "1/10 onza - Ideal inversión",
+    "status": "sold",
+    "soldAt": "2026-06-19T17:05:12-03:00"
   },
   {
     "id": 28,
@@ -5245,7 +5247,9 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "group_id": "uk-penny-bronze",
-    "group_label": "Penny"
+    "group_label": "Penny",
+    "status": "sold",
+    "soldAt": "2026-06-19T17:05:12-03:00"
   },
   {
     "id": 361,
@@ -5546,7 +5550,9 @@
       "images/379B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "Dólar Presidentes",
+    "status": "sold",
+    "soldAt": "2026-06-19T17:05:12-03:00"
   },
   {
     "id": 380,
@@ -5601,7 +5607,9 @@
       "images/383B.jpeg"
     ],
     "group_id": "us-half-dollar-variants",
-    "group_label": "1/2 Dólar Kennedy"
+    "group_label": "1/2 Dólar Kennedy",
+    "status": "sold",
+    "soldAt": "2026-06-19T17:05:12-03:00"
   },
   {
     "id": 384,
