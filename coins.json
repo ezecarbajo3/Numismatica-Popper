@@ -5837,9 +5837,7 @@
       "images/399B.jpeg"
     ],
     "group_id": "pe-sol-fauna",
-    "group_label": "Fauna",
-    "status": "sold",
-    "soldAt": "2026-06-20T20:50:49.102104Z"
+    "group_label": "Fauna"
   },
   {
     "id": 400,
@@ -5867,9 +5865,7 @@
       "images/401B.jpeg"
     ],
     "group_id": "pe-sol-ceramicos",
-    "group_label": "Cerámicos Precolombinos",
-    "status": "sold",
-    "soldAt": "2026-06-20T20:50:49.102104Z"
+    "group_label": "Cerámicos Precolombinos"
   },
   {
     "id": 402,
