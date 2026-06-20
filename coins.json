@@ -4544,7 +4544,9 @@
       "images/315B.jpeg"
     ],
     "reference": "KM 9",
-    "description": "República Democrática"
+    "description": "República Democrática",
+    "status": "sold",
+    "soldAt": "2026-06-20T20:50:49.102104Z"
   },
   {
     "id": 316,
@@ -5835,7 +5837,9 @@
       "images/399B.jpeg"
     ],
     "group_id": "pe-sol-fauna",
-    "group_label": "Fauna"
+    "group_label": "Fauna",
+    "status": "sold",
+    "soldAt": "2026-06-20T20:50:49.102104Z"
   },
   {
     "id": 400,
@@ -5863,7 +5867,9 @@
       "images/401B.jpeg"
     ],
     "group_id": "pe-sol-ceramicos",
-    "group_label": "Cerámicos Precolombinos"
+    "group_label": "Cerámicos Precolombinos",
+    "status": "sold",
+    "soldAt": "2026-06-20T20:50:49.102104Z"
   },
   {
     "id": 402,
