@@ -7701,7 +7701,9 @@
     "reference": "KM# 175",
     "grade": "Excelente",
     "grade_short": "EX",
-    "mintage": "690.000"
+    "mintage": "690.000",
+    "status": "sold",
+    "soldAt": "2026-06-21T20:43:59-03:00"
   },
   {
     "id": 532,
@@ -7719,7 +7721,9 @@
     "reference": "KM# 175",
     "grade": "Excelente +",
     "grade_short": "EX+",
-    "description": "PÁTINA ÚNICA 🌈"
+    "description": "PÁTINA ÚNICA 🌈",
+    "status": "sold",
+    "soldAt": "2026-06-21T20:43:59-03:00"
   },
   {
     "id": 533,
