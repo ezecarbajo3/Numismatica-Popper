@@ -7666,5 +7666,68 @@
     "reference": "KM# 150",
     "grade": "Excelente",
     "grade_short": "EX"
+  },
+  {
+    "id": 530,
+    "title": "10 Centavos 1883",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1883,
+    "price": "15 USD",
+    "images": [
+      "images/530A.jpeg",
+      "images/530B.jpeg"
+    ],
+    "reference": "CJ# 23",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "2.700.000"
+  },
+  {
+    "id": 531,
+    "title": "50 Centavos 1903",
+    "country": "Bolivia",
+    "metal": "Plata .900",
+    "year": 1903,
+    "price": "20 USD",
+    "images": [
+      "images/531A.jpeg",
+      "images/531B.jpeg"
+    ],
+    "reference": "KM# 175",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "690.000"
+  },
+  {
+    "id": 532,
+    "title": "50 Centavos 1903",
+    "country": "Bolivia",
+    "metal": "Plata .900",
+    "year": 1903,
+    "price": "23 USD",
+    "images": [
+      "images/532A.jpeg",
+      "images/532B.jpeg"
+    ],
+    "reference": "KM# 175",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "description": "PÁTINA ÚNICA 🌈"
+  },
+  {
+    "id": 533,
+    "title": "2 1/2 Gulden 1960",
+    "country": "Países Bajos",
+    "metal": "Plata .720",
+    "year": 1960,
+    "price": "20 USD",
+    "images": [
+      "images/533A.jpeg",
+      "images/533B.jpeg"
+    ],
+    "reference": "KM# 185",
+    "grade": "Excelente +",
+    "grade_short": "EX+"
   }
 ]
