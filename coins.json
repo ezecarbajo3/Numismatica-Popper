@@ -5364,7 +5364,9 @@
       "images/367B.jpeg"
     ],
     "grade": "Excelente -",
-    "grade_short": "EX-"
+    "grade_short": "EX-",
+    "group_id": "ar-10centavos-1883",
+    "group_label": "10 Centavos 1883"
   },
   {
     "id": 368,
@@ -7681,7 +7683,9 @@
     "reference": "CJ# 23",
     "grade": "Excelente",
     "grade_short": "EX",
-    "mintage": "2.700.000"
+    "mintage": "2.700.000",
+    "group_id": "ar-10centavos-1883",
+    "group_label": "10 Centavos 1883"
   },
   {
     "id": 531,
