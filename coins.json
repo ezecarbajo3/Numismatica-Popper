@@ -7701,14 +7701,16 @@
   },
   {
     "id": 532,
-    "title": "50 Centavos 1903",
+    "title": "50 Centavos 1901",
     "country": "Bolivia",
     "metal": "Plata .900",
-    "year": 1903,
+    "year": 1901,
     "price": "23 USD",
     "images": [
       "images/532A.jpeg",
-      "images/532B.jpeg"
+      "images/532B.jpeg",
+      "images/532C.jpeg",
+      "images/532D.jpeg"
     ],
     "reference": "KM# 175",
     "grade": "Excelente +",
