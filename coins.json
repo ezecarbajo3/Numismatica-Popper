@@ -5356,15 +5356,15 @@
     "country": "Argentina",
     "metal": "Plata .900",
     "year": 1883,
-    "price": "14 USD",
+    "price": "13 USD",
     "reference": "CJ# 23",
     "mintage": "2.785.650",
     "images": [
       "images/367A.jpeg",
       "images/367B.jpeg"
     ],
-    "grade": "Excelente",
-    "grade_short": "EX"
+    "grade": "Excelente -",
+    "grade_short": "EX-"
   },
   {
     "id": 368,
