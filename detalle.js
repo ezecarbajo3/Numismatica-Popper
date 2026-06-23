@@ -36,11 +36,19 @@ function buildWhatsAppLink(coin) {
 
 function updateCoinContent(coin) {
   const mainImg        = document.getElementById("detailMainImage");
+  const mainVideo      = document.getElementById("detailMainVideo");
   const thumbsContainer = document.getElementById("detailThumbs");
   const images         = getImagesArray(coin);
 
-  // Main image
-  if (mainImg) mainImg.src = images[0];
+  // Main media
+  const firstMediaIsVideo = images[0] && images[0].endsWith('.mp4');
+  if (firstMediaIsVideo) {
+    if (mainImg) { mainImg.src = ""; mainImg.style.display = "none"; }
+    if (mainVideo) { mainVideo.src = images[0]; mainVideo.style.display = ""; }
+  } else {
+    if (mainImg) { mainImg.src = images[0]; mainImg.style.display = ""; }
+    if (mainVideo) { mainVideo.src = ""; mainVideo.style.display = "none"; }
+  }
 
   // Rebuild image gallery thumbs
   if (thumbsContainer) {
@@ -50,12 +58,30 @@ function updateCoinContent(coin) {
         const btn = document.createElement("button");
         btn.type      = "button";
         btn.className = "detail-thumb" + (i === 0 ? " is-active" : "");
-        const img = document.createElement("img");
-        img.src = src;
-        img.alt = `${coin.title || "Moneda"} ${i + 1}`;
-        btn.appendChild(img);
+        
+        const isVideo = src.endsWith('.mp4');
+        if (isVideo) {
+          const video = document.createElement("video");
+          video.src = src;
+          video.preload = "metadata";
+          video.muted = true;
+          btn.appendChild(video);
+        } else {
+          const img = document.createElement("img");
+          img.src = src;
+          img.alt = `${coin.title || "Moneda"} ${i + 1}`;
+          btn.appendChild(img);
+        }
+        
         btn.addEventListener("click", () => {
-          if (mainImg) mainImg.src = src;
+          const clickSrcIsVideo = src.endsWith('.mp4');
+          if (clickSrcIsVideo) {
+            if (mainImg) { mainImg.src = ""; mainImg.style.display = "none"; }
+            if (mainVideo) { mainVideo.src = src; mainVideo.style.display = ""; mainVideo.play().catch(()=>{}); }
+          } else {
+            if (mainImg) { mainImg.src = src; mainImg.style.display = ""; }
+            if (mainVideo) { mainVideo.src = ""; mainVideo.style.display = "none"; }
+          }
           thumbsContainer.querySelectorAll(".detail-thumb")
             .forEach(t => t.classList.toggle("is-active", t === btn));
         });
@@ -125,6 +151,7 @@ function updateCoinContent(coin) {
 function renderCoinDetail(coin, groupMembers) {
   const images    = getImagesArray(coin);
   const mainImage = images[0];
+  const mainIsVideo = mainImage && mainImage.endsWith('.mp4');
 
   detailContainer.innerHTML = `
     <div class="detail-gallery reveal">
@@ -138,9 +165,17 @@ function renderCoinDetail(coin, groupMembers) {
         <img
           id="detailMainImage"
           class="detail-main-image"
-          src="${mainImage}"
+          src="${mainIsVideo ? '' : mainImage}"
           alt="${coin.title || "Moneda"}"
+          style="${mainIsVideo ? 'display:none' : ''}"
         />
+        <video
+          id="detailMainVideo"
+          class="detail-main-image"
+          src="${mainIsVideo ? mainImage : ''}"
+          controls
+          style="${mainIsVideo ? '' : 'display:none'}"
+        ></video>
       </div>
       <div class="detail-thumbs" id="detailThumbs"></div>
     </div>
@@ -198,6 +233,7 @@ function renderCoinDetail(coin, groupMembers) {
   // ── Build image gallery thumbs ────────────────────────────────────────────
   const thumbsContainer = document.getElementById("detailThumbs");
   const mainImageEl     = document.getElementById("detailMainImage");
+  const mainVideoEl     = document.getElementById("detailMainVideo");
   if (mainImageEl) attachImgRetry(mainImageEl);
 
   images.forEach((src, index) => {
@@ -205,14 +241,32 @@ function renderCoinDetail(coin, groupMembers) {
     button.type      = "button";
     button.className = `detail-thumb${index === 0 ? " is-active" : ""}`;
     button.dataset.image = src;
-    const img = document.createElement("img");
-    img.loading = index === 0 ? "eager" : "lazy";
-    img.src = src;
-    img.alt = `${coin.title || "Moneda"} ${index + 1}`;
-    attachImgRetry(img);
-    button.appendChild(img);
+    
+    const isVideo = src.endsWith('.mp4');
+    if (isVideo) {
+      const video = document.createElement("video");
+      video.src = src;
+      video.preload = "metadata";
+      video.muted = true;
+      button.appendChild(video);
+    } else {
+      const img = document.createElement("img");
+      img.loading = index === 0 ? "eager" : "lazy";
+      img.src = src;
+      img.alt = `${coin.title || "Moneda"} ${index + 1}`;
+      attachImgRetry(img);
+      button.appendChild(img);
+    }
+
     button.addEventListener("click", () => {
-      mainImageEl.src = src;
+      const clickSrcIsVideo = src.endsWith('.mp4');
+      if (clickSrcIsVideo) {
+        if (mainImageEl) { mainImageEl.src = ""; mainImageEl.style.display = "none"; }
+        if (mainVideoEl) { mainVideoEl.src = src; mainVideoEl.style.display = ""; mainVideoEl.play().catch(()=>{}); }
+      } else {
+        if (mainImageEl) { mainImageEl.src = src; mainImageEl.style.display = ""; }
+        if (mainVideoEl) { mainVideoEl.src = ""; mainVideoEl.style.display = "none"; }
+      }
       thumbsContainer.querySelectorAll(".detail-thumb")
         .forEach(t => t.classList.toggle("is-active", t === button));
     });

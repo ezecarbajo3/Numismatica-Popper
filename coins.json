@@ -7828,5 +7828,22 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "description": "Connecticut. Moneda descentrada."
+  },
+  {
+    "id": 539,
+    "title": "50 Centavos 1903 (GIRADA)",
+    "country": "Bolivia",
+    "metal": "Plata .900",
+    "year": 1903,
+    "price": "100 USD",
+    "images": [
+      "images/539A.jpeg",
+      "images/539B.jpeg",
+      "images/539C.mp4"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "690.000",
+    "description": "IMPORTANTE GIRO: unos -45 grados"
   }
 ]

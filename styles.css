@@ -947,7 +947,8 @@ button {
     0 0 10px rgba(207, 172, 107, 0.08);
 }
 
-.detail-thumb img {
+.detail-thumb img,
+.detail-thumb video {
   width: 100%;
   height: 100%;
   object-fit: cover;
