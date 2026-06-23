@@ -7765,5 +7765,68 @@
     "description": "3,38g. Rara de encontrar!",
     "status": "sold",
     "soldAt": "2026-06-23T00:41:59-03:00"
+  },
+  {
+    "id": 535,
+    "title": "25 Céntimos 1937",
+    "country": "España",
+    "metal": "Cuproníquel",
+    "year": 1937,
+    "price": "3,5 USD",
+    "images": [
+      "images/535A.jpeg",
+      "images/535B.jpeg"
+    ],
+    "reference": "KM# 753",
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 536,
+    "title": "25 Céntimos 1925",
+    "country": "España",
+    "metal": "Cuproníquel",
+    "year": 1925,
+    "price": "5 USD",
+    "images": [
+      "images/536A.jpeg",
+      "images/536B.jpeg"
+    ],
+    "reference": "KM# 740",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+"
+  },
+  {
+    "id": 537,
+    "title": "10 Centésimos 1877",
+    "country": "Uruguay",
+    "metal": "Plata .900",
+    "year": 1877,
+    "price": "10 USD",
+    "images": [
+      "images/537A.jpeg",
+      "images/537B.jpeg"
+    ],
+    "reference": "KM# 14",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": "3.000.000"
+  },
+  {
+    "id": 538,
+    "title": "1/4 Dólar 1999",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": 1999,
+    "price": "10 USD",
+    "images": [
+      "images/538A.jpeg",
+      "images/538B.jpeg",
+      "images/538C.jpeg",
+      "images/538D.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "Connecticut. Moneda descentrada."
   }
 ]
