@@ -7747,5 +7747,21 @@
     "reference": "KM# 185",
     "grade": "Excelente +",
     "grade_short": "EX+"
+  },
+  {
+    "id": 534,
+    "title": "Real 1776",
+    "country": "Bolivia",
+    "metal": "Plata .903",
+    "year": 1776,
+    "price": "10 USD",
+    "images": [
+      "images/534A.jpeg",
+      "images/534B.jpeg"
+    ],
+    "reference": "KM# 52",
+    "description": "3,38g. Rara de encontrar!",
+    "status": "sold",
+    "soldAt": "2026-06-23T00:41:59-03:00"
   }
 ]
