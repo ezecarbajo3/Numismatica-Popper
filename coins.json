@@ -32,7 +32,9 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-23T00:34:17-03:00"
   },
   {
     "id": 7,
@@ -1529,7 +1531,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": "Empaste en el '1'."
+    "description": "Empaste en el '1'.",
+    "status": "sold",
+    "soldAt": "2026-06-23T00:34:17-03:00"
   },
   {
     "id": 134,
@@ -2270,7 +2274,9 @@
     "grade": "Muy Buena",
     "grade_short": "MB",
     "mintage": "",
-    "description": "90 USD al peso en plata"
+    "description": "90 USD al peso en plata",
+    "status": "sold",
+    "soldAt": "2026-06-23T00:34:17-03:00"
   },
   {
     "id": 188,
@@ -4315,7 +4321,9 @@
       "images/300B.jpeg"
     ],
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "status": "sold",
+    "soldAt": "2026-06-23T00:34:17-03:00"
   },
   {
     "id": 301,
