@@ -380,9 +380,51 @@ async function loadCoinDetail() {
 
     let groupMembers = null;
     if (coin.group_id) {
+      const getGradeScore = (c) => {
+        const grade = (c.grade_short || "").toUpperCase().trim();
+        if (grade.startsWith("SC")) {
+          return grade.includes("-") ? 140 : 150;
+        }
+        if (grade.startsWith("EX")) {
+          let score = 110;
+          if (grade.includes("+")) score = 120;
+          if (grade.includes("-")) score = 100;
+          if (grade.includes("**")) score -= 15;
+          return score;
+        }
+        if (grade.startsWith("MB")) {
+          let score = 80;
+          if (grade.includes("+")) score = 90;
+          if (grade.includes("-")) score = 70;
+          if (grade.includes("**")) score -= 15;
+          return score;
+        }
+        if (grade.startsWith("B")) {
+          let score = 50;
+          if (grade.includes("+")) score = 60;
+          if (grade.includes("-")) score = 40;
+          if (grade.includes("**")) score -= 15;
+          return score;
+        }
+        if (grade.startsWith("R")) {
+          let score = 20;
+          if (grade.includes("+")) score = 30;
+          if (grade.includes("**")) score -= 15;
+          return score;
+        }
+        return 0;
+      };
+
       groupMembers = allCoins
         .filter(c => c.group_id === coin.group_id)
-        .sort((a, b) => a.id - b.id);
+        .sort((a, b) => {
+          const scoreA = getGradeScore(a);
+          const scoreB = getGradeScore(b);
+          if (scoreA !== scoreB) {
+            return scoreB - scoreA;
+          }
+          return a.id - b.id;
+        });
     }
 
     renderCoinDetail(coin, groupMembers);
