@@ -7845,5 +7845,22 @@
     "grade_short": "EX",
     "mintage": "690.000",
     "description": "IMPORTANTE GIRO: unos -45 grados"
+  },
+  {
+    "id": 540,
+    "title": "20 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "22 USD",
+    "images": [
+      "images/540A.jpeg",
+      "images/540B.jpeg"
+    ],
+    "reference": "CJ# 19",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "762.027",
+    "description": "Escasa."
   }
 ]
