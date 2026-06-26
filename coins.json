@@ -114,7 +114,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1885,
-    "price": "18 USD",
+    "price": "16 USD",
     "images": [
       "images/17A.jpeg",
       "images/17B.jpeg"
@@ -343,7 +343,9 @@
     "grade": "Muy Bueno - detalles",
     "grade_short": "MB**",
     "mintage": "2.100.000",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-26T20:21:25-03:00"
   },
   {
     "id": 36,
@@ -1095,7 +1097,9 @@
     "grade": "Regular+",
     "grade_short": "R+",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-26T20:21:25-03:00"
   },
   {
     "id": 101,
@@ -7701,9 +7705,7 @@
     "reference": "CJ# 23",
     "grade": "Excelente",
     "grade_short": "EX",
-    "mintage": "2.700.000",
-    "group_id": "ar-10centavos-1883",
-    "group_label": "10 Centavos 1883"
+    "mintage": "2.700.000"
   },
   {
     "id": 518,
@@ -7992,7 +7994,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1885,
-    "price": "8 USD",
+    "price": "10 USD",
     "images": [
       "images/547A.jpeg",
       "images/547B.jpeg"
@@ -8010,7 +8012,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1883,
-    "price": "10 USD",
+    "price": "8 USD",
     "images": [
       "images/548A.jpeg",
       "images/548B.jpeg"
@@ -8042,7 +8044,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1884,
-    "price": "5 USD",
+    "price": "4 USD",
     "images": [
       "images/550A.jpeg",
       "images/550B.jpeg"
@@ -8060,7 +8062,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1884,
-    "price": "5 USD",
+    "price": "4 USD",
     "images": [
       "images/551A.jpeg",
       "images/551B.jpeg"
