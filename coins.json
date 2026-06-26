@@ -8020,7 +8020,9 @@
     "reference": "CJ# 25",
     "grade": "Muy Bueno-",
     "grade_short": "MB-",
-    "mintage": "1.300.000"
+    "mintage": "1.300.000",
+    "group_id": "ar-2centavos-1883",
+    "group_label": "2 Centavos 1883"
   },
   {
     "id": 549,
@@ -8344,5 +8346,39 @@
     ],
     "reference": "KM# 742",
     "mintage": "12.000.000"
+  },
+  {
+    "id": 570,
+    "title": "2 Centavos 1883",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1883,
+    "price": "15 USD",
+    "images": [
+      "images/570A.jpeg",
+      "images/570B.jpeg"
+    ],
+    "reference": "CJ# 25",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "1.300.000",
+    "group_id": "ar-2centavos-1883",
+    "group_label": "2 Centavos 1883"
+  },
+  {
+    "id": 571,
+    "title": "20 Décimos 1830",
+    "country": "Argentina - Buenos Aires",
+    "metal": "Cobre",
+    "year": 1830,
+    "price": "120 USD",
+    "images": [
+      "images/571A.jpeg",
+      "images/571B.jpeg"
+    ],
+    "reference": "CJ# 4",
+    "grade": "Muy Bueno-",
+    "grade_short": "MB-",
+    "description": "Banco Nacional (1827-31)."
   }
 ]
