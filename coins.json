@@ -5053,7 +5053,9 @@
       "images/347B.jpeg"
     ],
     "grade": "Excelente +",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "group_id": "fr-10francos-head",
+    "group_label": "10 Francos"
   },
   {
     "id": 348,
@@ -8113,5 +8115,232 @@
     "mintage": "3.000.000",
     "group_id": "uy-10centesimos-1877",
     "group_label": "10 Centésimos 1877"
+  },
+  {
+    "id": 555,
+    "title": "20 Para 1913",
+    "country": "Imperio Otomano",
+    "metal": "Níquel",
+    "year": 1913,
+    "price": "4 USD",
+    "images": [
+      "images/555A.jpeg",
+      "images/555B.jpeg"
+    ],
+    "reference": "KM# 761",
+    "grade": "Excelente con Detalles",
+    "grade_short": "EX**"
+  },
+  {
+    "id": 556,
+    "title": "Penny 1921",
+    "country": "Reino Unido",
+    "metal": "Bronce",
+    "year": 1921,
+    "price": "3 USD",
+    "images": [
+      "images/556A.jpeg",
+      "images/556B.jpeg"
+    ],
+    "reference": "KM# 810",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "Jorge."
+  },
+  {
+    "id": 557,
+    "title": "1 Sol 2010",
+    "country": "Perú",
+    "year": 2010,
+    "price": "2.5 USD",
+    "images": [
+      "images/557A.jpeg",
+      "images/557B.jpeg"
+    ],
+    "description": "Estela de Raimondi."
+  },
+  {
+    "id": 558,
+    "title": "5 Céntimos 1938",
+    "country": "Venezuela",
+    "metal": "Cuproníquel",
+    "year": 1938,
+    "price": "4 USD",
+    "images": [
+      "images/558A.jpeg",
+      "images/558B.jpeg"
+    ],
+    "reference": "Y# 27",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "6.000.000"
+  },
+  {
+    "id": 559,
+    "title": "5 Céntimos 1945",
+    "country": "Venezuela",
+    "metal": "Cuproníquel",
+    "year": 1945,
+    "price": "2.5 USD",
+    "images": [
+      "images/559A.jpeg",
+      "images/559B.jpeg"
+    ],
+    "reference": "Y# 29a",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "12.000.000"
+  },
+  {
+    "id": 560,
+    "title": "10 Øre 1946",
+    "country": "Noruega",
+    "metal": "Cuproníquel",
+    "year": 1946,
+    "price": "4 USD",
+    "images": [
+      "images/560A.jpeg",
+      "images/560B.jpeg"
+    ],
+    "reference": "KM# 383",
+    "grade": "Sin Circular menos",
+    "grade_short": "SC-",
+    "mintage": "3.700.000"
+  },
+  {
+    "id": 561,
+    "title": "10 Øre 1957",
+    "country": "Noruega",
+    "metal": "Cuproníquel",
+    "year": 1957,
+    "price": "2.5 USD",
+    "images": [
+      "images/561A.jpeg",
+      "images/561B.jpeg"
+    ],
+    "reference": "KM# 396",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": "22.000.000"
+  },
+  {
+    "id": 562,
+    "title": "5 Paise 1978",
+    "country": "India",
+    "metal": "Aluminio",
+    "year": 1978,
+    "price": "3.5 USD",
+    "images": [
+      "images/562A.jpeg",
+      "images/562B.jpeg"
+    ],
+    "reference": "KM# 18",
+    "description": "Rombo."
+  },
+  {
+    "id": 563,
+    "title": "50 Centésimos 1917",
+    "country": "Uruguay",
+    "metal": "Plata .900",
+    "year": 1917,
+    "price": "18 USD",
+    "images": [
+      "images/563A.jpeg",
+      "images/563B.jpeg"
+    ],
+    "reference": "KM# 22",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "Canto parlante."
+  },
+  {
+    "id": 564,
+    "title": "5 Centavos",
+    "country": "Perú",
+    "metal": "Latón",
+    "year": "S/F",
+    "price": "2.5 USD",
+    "images": [
+      "images/564A.jpeg",
+      "images/564B.jpeg"
+    ],
+    "reference": "KM# 223.2",
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 565,
+    "title": "10 Soles 1978",
+    "country": "Perú",
+    "year": 1978,
+    "price": "2.5 USD",
+    "images": [
+      "images/565A.jpeg",
+      "images/565B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Túpac Amaru."
+  },
+  {
+    "id": 566,
+    "title": "20 Centesimi 1918",
+    "country": "Italia",
+    "metal": "Cuproníquel",
+    "year": 1918,
+    "price": "4 USD",
+    "images": [
+      "images/566A.jpeg",
+      "images/566B.jpeg"
+    ],
+    "reference": "KM# 58",
+    "grade": "Excelente Menos",
+    "grade_short": "EX-"
+  },
+  {
+    "id": 567,
+    "title": "25 Centimes 1927",
+    "country": "Francia",
+    "metal": "Cuproníquel",
+    "year": 1927,
+    "price": "3.5 USD",
+    "images": [
+      "images/567A.jpeg",
+      "images/567B.jpeg"
+    ],
+    "reference": "KM# 867a",
+    "mintage": "13.000.000"
+  },
+  {
+    "id": 568,
+    "title": "10 Francos 1948",
+    "country": "Francia",
+    "metal": "Cuproníquel",
+    "year": 1948,
+    "price": "3.5 USD",
+    "images": [
+      "images/568A.jpeg",
+      "images/568B.jpeg"
+    ],
+    "reference": "K. 1909",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "description": "cabeza chica",
+    "group_id": "fr-10francos-head",
+    "group_label": "10 Francos"
+  },
+  {
+    "id": 569,
+    "title": "25 Céntimos 1927",
+    "country": "España",
+    "metal": "Cuproníquel",
+    "year": 1927,
+    "price": "4 USD",
+    "images": [
+      "images/569A.jpeg",
+      "images/569B.jpeg"
+    ],
+    "reference": "KM# 742",
+    "mintage": "12.000.000"
   }
 ]
