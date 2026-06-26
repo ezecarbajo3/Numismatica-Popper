@@ -7861,6 +7861,103 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "762.027",
-    "description": "Escasa."
+    "description": "Escasa.",
+    "group_id": "ar-20centavos-1882",
+    "group_label": "20 Centavos 1882"
+  },
+  {
+    "id": 541,
+    "title": "20 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "15 USD",
+    "images": [
+      "images/541A.jpeg",
+      "images/541B.jpeg"
+    ],
+    "reference": "CJ# 19",
+    "grade": "Bueno - detalles",
+    "grade_short": "B**",
+    "mintage": "762.027",
+    "description": "Escasa.",
+    "group_id": "ar-20centavos-1882",
+    "group_label": "20 Centavos 1882"
+  },
+  {
+    "id": 542,
+    "title": "20 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "22 USD",
+    "images": [
+      "images/542A.jpeg",
+      "images/542B.jpeg"
+    ],
+    "reference": "CJ# 19",
+    "grade": "Excelente Menos - detalles",
+    "grade_short": "EX-**",
+    "mintage": "762.027",
+    "description": "Escasa.",
+    "group_id": "ar-20centavos-1882",
+    "group_label": "20 Centavos 1882"
+  },
+  {
+    "id": 543,
+    "title": "20 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "18 USD",
+    "images": [
+      "images/543A.jpeg",
+      "images/543B.jpeg"
+    ],
+    "reference": "CJ# 19",
+    "grade": "Muy Bueno-",
+    "grade_short": "MB-",
+    "mintage": "762.027",
+    "description": "Escasa.",
+    "group_id": "ar-20centavos-1882",
+    "group_label": "20 Centavos 1882"
+  },
+  {
+    "id": 544,
+    "title": "20 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "25 USD",
+    "images": [
+      "images/544A.jpeg",
+      "images/544B.jpeg"
+    ],
+    "reference": "CJ# 19",
+    "grade": "Excelente Menos",
+    "grade_short": "EX-",
+    "mintage": "762.027",
+    "description": "Escasa.",
+    "group_id": "ar-20centavos-1882",
+    "group_label": "20 Centavos 1882"
+  },
+  {
+    "id": 545,
+    "title": "20 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "20 USD",
+    "images": [
+      "images/545A.jpeg",
+      "images/545B.jpeg"
+    ],
+    "reference": "CJ# 19",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "762.027",
+    "description": "Escasa.",
+    "group_id": "ar-20centavos-1882",
+    "group_label": "20 Centavos 1882"
   }
 ]
