@@ -7816,7 +7816,9 @@
     "reference": "KM# 14",
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
-    "mintage": "3.000.000"
+    "mintage": "3.000.000",
+    "group_id": "uy-10centesimos-1877",
+    "group_label": "10 Centésimos 1877"
   },
   {
     "id": 525,
@@ -8067,5 +8069,49 @@
     "mintage": "5.600.000",
     "group_id": "ar-2centavos-1884",
     "group_label": "2 Centavos 1884"
+  },
+  {
+    "id": 552,
+    "title": "20 Centavos 1884",
+    "country": "Bolivia",
+    "metal": "Plata .900",
+    "year": 1884,
+    "price": "7 USD",
+    "images": [
+      "images/552A.jpeg",
+      "images/552B.jpeg"
+    ],
+    "reference": "KM# 159.1"
+  },
+  {
+    "id": 553,
+    "title": "1/4 Dólar 2016 (patina)",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": 2016,
+    "price": "3 USD",
+    "images": [
+      "images/553A.jpeg",
+      "images/553B.jpeg"
+    ],
+    "description": "Kentucky."
+  },
+  {
+    "id": 554,
+    "title": "10 Centésimos 1877",
+    "country": "Uruguay",
+    "metal": "Plata .900",
+    "year": 1877,
+    "price": "8 USD",
+    "images": [
+      "images/554A.jpeg",
+      "images/554B.jpeg"
+    ],
+    "reference": "KM# 14",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "3.000.000",
+    "group_id": "uy-10centesimos-1877",
+    "group_label": "10 Centésimos 1877"
   }
 ]
