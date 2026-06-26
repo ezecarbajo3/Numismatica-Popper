@@ -104,7 +104,9 @@
     "grade": "Bueno+",
     "grade_short": "B+",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "ar-2centavos-1884",
+    "group_label": "2 Centavos 1884"
   },
   {
     "id": 17,
@@ -121,7 +123,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "ar-2centavos-1885",
+    "group_label": "2 Centavos 1885"
   },
   {
     "id": 18,
@@ -7961,5 +7965,107 @@
     "description": "Escasa.",
     "group_id": "ar-20centavos-1882",
     "group_label": "20 Centavos 1882"
+  },
+  {
+    "id": 546,
+    "title": "2 Centavos 1892",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1892,
+    "price": "4 USD",
+    "images": [
+      "images/546A.jpeg",
+      "images/546B.jpeg"
+    ],
+    "reference": "CJ# 33",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "3.400.000"
+  },
+  {
+    "id": 547,
+    "title": "2 Centavos 1885",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1885,
+    "price": "8 USD",
+    "images": [
+      "images/547A.jpeg",
+      "images/547B.jpeg"
+    ],
+    "reference": "CJ# 27",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": "3.000.000",
+    "group_id": "ar-2centavos-1885",
+    "group_label": "2 Centavos 1885"
+  },
+  {
+    "id": 548,
+    "title": "2 Centavos 1883",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1883,
+    "price": "10 USD",
+    "images": [
+      "images/548A.jpeg",
+      "images/548B.jpeg"
+    ],
+    "reference": "CJ# 25",
+    "grade": "Muy Bueno-",
+    "grade_short": "MB-",
+    "mintage": "1.300.000"
+  },
+  {
+    "id": 549,
+    "title": "2 Centavos 1894",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1894,
+    "price": "15 USD",
+    "images": [
+      "images/549A.jpeg",
+      "images/549B.jpeg"
+    ],
+    "reference": "CJ# 35",
+    "grade": "Excelente Menos",
+    "grade_short": "EX-",
+    "mintage": "2.200.000"
+  },
+  {
+    "id": 550,
+    "title": "2 Centavos 1884",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1884,
+    "price": "5 USD",
+    "images": [
+      "images/550A.jpeg",
+      "images/550B.jpeg"
+    ],
+    "reference": "CJ# 26",
+    "grade": "Excelente Menos - detalles",
+    "grade_short": "EX-**",
+    "mintage": "5.600.000",
+    "group_id": "ar-2centavos-1884",
+    "group_label": "2 Centavos 1884"
+  },
+  {
+    "id": 551,
+    "title": "2 Centavos 1884",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1884,
+    "price": "5 USD",
+    "images": [
+      "images/551A.jpeg",
+      "images/551B.jpeg"
+    ],
+    "reference": "CJ# 26",
+    "grade": "Excelente Menos - detalles",
+    "grade_short": "EX-**",
+    "mintage": "5.600.000",
+    "group_id": "ar-2centavos-1884",
+    "group_label": "2 Centavos 1884"
   }
 ]
