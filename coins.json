@@ -4225,7 +4225,9 @@
     "reference": "KM. 239a",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Magnética"
+    "description": "Magnética",
+    "status": "sold",
+    "soldAt": "2026-06-19T11:08:00-03:00"
   },
   {
     "id": 294,
@@ -4240,7 +4242,9 @@
     ],
     "reference": "KM 237a",
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-06-19T11:08:00-03:00"
   },
   {
     "id": 295,
@@ -4366,7 +4370,9 @@
     "grade": "Sin Circular-",
     "grade_short": "SC-",
     "group_id": "hn-2centavos-km78",
-    "group_label": "2 Centavos"
+    "group_label": "2 Centavos",
+    "status": "sold",
+    "soldAt": "2026-06-19T11:08:00-03:00"
   },
   {
     "id": 303,
@@ -4452,7 +4458,9 @@
       "images/308A.jpeg",
       "images/308B.jpeg"
     ],
-    "description": "Canto ondulado"
+    "description": "Canto ondulado",
+    "status": "sold",
+    "soldAt": "2026-06-19T11:08:00-03:00"
   },
   {
     "id": 309,
@@ -4499,7 +4507,9 @@
       "images/311B.jpeg"
     ],
     "grade": "Sin Circular-",
-    "grade_short": "SC-"
+    "grade_short": "SC-",
+    "status": "sold",
+    "soldAt": "2026-06-19T11:08:00-03:00"
   },
   {
     "id": 312,
@@ -5073,7 +5083,9 @@
       "images/348B.jpeg"
     ],
     "grade": "Excelente +",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "status": "sold",
+    "soldAt": "2026-06-19T11:08:00-03:00"
   },
   {
     "id": 349,
@@ -5135,7 +5147,9 @@
       "images/352B.jpeg"
     ],
     "grade": "Excelente +",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "status": "sold",
+    "soldAt": "2026-06-19T11:08:00-03:00"
   },
   {
     "id": 353,
@@ -5149,7 +5163,9 @@
       "images/353B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-06-19T11:08:00-03:00"
   },
   {
     "id": 354,
@@ -5333,7 +5349,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "group_id": "hn-2centavos-km78",
-    "group_label": "2 Centavos"
+    "group_label": "2 Centavos",
+    "status": "sold",
+    "soldAt": "2026-06-19T11:08:00-03:00"
   },
   {
     "id": 365,
@@ -7597,7 +7615,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "60.000",
-    "description": "Rara"
+    "description": "Rara",
+    "status": "sold",
+    "soldAt": "2026-06-19T11:08:00-03:00"
   },
   {
     "id": 511,
@@ -7628,7 +7648,9 @@
       "images/525B.jpeg"
     ],
     "grade": "Excelente +",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "status": "sold",
+    "soldAt": "2026-06-19T11:08:00-03:00"
   },
   {
     "id": 513,
