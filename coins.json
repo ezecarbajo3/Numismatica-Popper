@@ -6425,5 +6425,171 @@
     "description": "Banco Nacional (1827-31).",
     "status": "sold",
     "soldAt": "2026-06-27T10:51:36-03:00"
+  },
+  {
+    "id": 572,
+    "title": "50 Centavos 1902",
+    "country": "Bolivia",
+    "year": 1902,
+    "price": "26 USD",
+    "images": [
+      "images/572A.jpeg",
+      "images/572B.jpeg"
+    ],
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "metal": "Plata .900",
+    "reference": "KM# 175.1",
+    "mintage": "1.530.000"
+  },
+  {
+    "id": 573,
+    "title": "50 Centavos 1902",
+    "country": "Bolivia",
+    "year": 1902,
+    "price": "23 USD",
+    "images": [
+      "images/573A.jpeg",
+      "images/573B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "metal": "Plata .900",
+    "reference": "KM# 175.1",
+    "mintage": "1.530.000"
+  },
+  {
+    "id": 574,
+    "title": "5 Escudos 1973",
+    "country": "Mozambique",
+    "year": 1973,
+    "price": "4.5 USD",
+    "images": [
+      "images/574A.jpeg",
+      "images/574B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "metal": "Cuproníquel",
+    "reference": "KM# 86",
+    "mintage": "3.300.000"
+  },
+  {
+    "id": 575,
+    "title": "10 Pruta 1949",
+    "country": "Israel",
+    "year": 1949,
+    "price": "3.5 USD",
+    "images": [
+      "images/575A.jpeg",
+      "images/575B.jpeg"
+    ],
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "metal": "Bronce",
+    "reference": "KM# 11"
+  },
+  {
+    "id": 576,
+    "title": "100 Pruta 1955",
+    "country": "Israel",
+    "year": 1955,
+    "price": "4 USD",
+    "images": [
+      "images/576A.jpeg",
+      "images/576B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "metal": "Cuproníquel",
+    "reference": "KM# 14",
+    "mintage": "5.867.000"
+  },
+  {
+    "id": 577,
+    "title": "10 Pfennig 1919",
+    "country": "Alemania",
+    "year": 1919,
+    "price": "2.5 USD",
+    "images": [
+      "images/577A.jpeg",
+      "images/577B.jpeg"
+    ],
+    "grade": "Bueno+",
+    "grade_short": "B+",
+    "metal": "Zinc"
+  },
+  {
+    "id": 578,
+    "title": "5 Centimes 1923",
+    "country": "Bélgica",
+    "year": 1923,
+    "price": "3.5 USD",
+    "images": [
+      "images/578A.jpeg",
+      "images/578B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "metal": "Cuproníquel",
+    "reference": "KM# 66",
+    "description": "Variante belgique"
+  },
+  {
+    "id": 579,
+    "title": "2 1/2 Cent 1984",
+    "country": "Antillas Holandesas",
+    "year": 1984,
+    "price": "3 USD",
+    "images": [
+      "images/579A.jpeg",
+      "images/579B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "metal": "Aluminio"
+  },
+  {
+    "id": 580,
+    "title": "5 Pfennig 1908",
+    "country": "Alemania",
+    "year": 1908,
+    "price": "2.5 USD",
+    "images": [
+      "images/580A.jpeg",
+      "images/580B.jpeg"
+    ],
+    "grade": "Muy Bueno con Detalles",
+    "grade_short": "MB**",
+    "metal": "Cuproníquel",
+    "reference": "KM# 11"
+  },
+  {
+    "id": 581,
+    "title": "5 Pfennig 1906",
+    "country": "Alemania",
+    "year": 1906,
+    "price": "3.5 USD",
+    "images": [
+      "images/581A.jpeg",
+      "images/581B.jpeg"
+    ],
+    "grade": "Excelente con Detalles",
+    "grade_short": "EX**",
+    "metal": "Cuproníquel",
+    "reference": "KM# 11"
+  },
+  {
+    "id": 582,
+    "title": "10 Cents 1999",
+    "country": "Trinidad y Tobago",
+    "year": 1999,
+    "price": "3 USD",
+    "images": [
+      "images/582A.jpeg",
+      "images/582B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
   }
 ]
