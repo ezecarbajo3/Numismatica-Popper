@@ -6440,7 +6440,9 @@
     "grade_short": "MB+",
     "metal": "Plata .900",
     "reference": "KM# 175.1",
-    "mintage": "1.530.000"
+    "mintage": "1.530.000",
+    "group_id": "bo-50centavos-1902",
+    "group_label": "50 Centavos 1902"
   },
   {
     "id": 573,
@@ -6456,7 +6458,9 @@
     "grade_short": "MB",
     "metal": "Plata .900",
     "reference": "KM# 175.1",
-    "mintage": "1.530.000"
+    "mintage": "1.530.000",
+    "group_id": "bo-50centavos-1902",
+    "group_label": "50 Centavos 1902"
   },
   {
     "id": 574,
@@ -6679,7 +6683,9 @@
     "grade": "Muy Bueno-",
     "grade_short": "MB-",
     "metal": "Bronce",
-    "reference": "KM# 107.1"
+    "reference": "KM# 107.1",
+    "group_id": "nl-cent",
+    "group_label": "Cent"
   },
   {
     "id": 589,
@@ -6695,7 +6701,9 @@
     "grade_short": "B-",
     "metal": "Cobre",
     "reference": "KM# 47",
-    "mintage": "5.202.040"
+    "mintage": "5.202.040",
+    "group_id": "nl-cent",
+    "group_label": "Cent"
   },
   {
     "id": 590,
