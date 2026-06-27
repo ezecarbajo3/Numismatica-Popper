@@ -7577,5 +7577,262 @@
     "description": "marron",
     "group_id": "ar-2centavos-1947-50-cobre",
     "group_label": "2 Centavos 1947-50 Cobre"
+  },
+  {
+    "id": 652,
+    "title": "Centavo 1948 (Descentrada)",
+    "country": "Argentina",
+    "year": 1948,
+    "price": "4 USD",
+    "images": [
+      "images/652A.jpeg",
+      "images/652B.jpeg"
+    ],
+    "reference": "CJ# 195",
+    "metal": "Cobre",
+    "grade": "Excelente-",
+    "grade_short": "EX-"
+  },
+  {
+    "id": 653,
+    "title": "Centavo 1944",
+    "country": "Perú",
+    "year": 1944,
+    "price": "4 USD",
+    "images": [
+      "images/653A.jpeg",
+      "images/653B.jpeg"
+    ],
+    "reference": "KM# 211a",
+    "metal": "Bronce",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": "2.490.000"
+  },
+  {
+    "id": 654,
+    "title": "2 Centavos 1942",
+    "country": "Perú",
+    "year": 1942,
+    "price": "4.5 USD",
+    "images": [
+      "images/654A.jpeg",
+      "images/654B.jpeg"
+    ],
+    "reference": "KM# 212.2",
+    "metal": "Bronce",
+    "grade": "Excelente-",
+    "grade_short": "EX-"
+  },
+  {
+    "id": 655,
+    "title": "5 Centavos 1934",
+    "country": "Perú",
+    "year": 1934,
+    "price": "4.5 USD",
+    "images": [
+      "images/655A.jpeg",
+      "images/655B.jpeg"
+    ],
+    "reference": "KM# 213.2",
+    "metal": "Cuproníquel",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "4.000.000"
+  },
+  {
+    "id": 656,
+    "title": "1 Sol 2016",
+    "country": "Perú",
+    "year": 2016,
+    "price": "2.5 USD",
+    "images": [
+      "images/656A.jpeg",
+      "images/656B.jpeg"
+    ],
+    "description": "Cabeza de vaca",
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 657,
+    "title": "10 Soles 1971",
+    "country": "Perú",
+    "year": 1971,
+    "price": "4 USD",
+    "images": [
+      "images/657A.jpeg",
+      "images/657B.jpeg"
+    ],
+    "reference": "KM# 255",
+    "metal": "Cuproníquel",
+    "description": "150 aniversario independencia",
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 658,
+    "title": "6 Pence 1962",
+    "country": "Reino Unido",
+    "year": 1962,
+    "price": "2 USD",
+    "images": [
+      "images/658A.jpeg",
+      "images/658B.jpeg"
+    ],
+    "reference": "KM# 903",
+    "metal": "Cuproníquel",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "gb-6pence-km903",
+    "group_label": "6 Pence"
+  },
+  {
+    "id": 659,
+    "title": "6 Pence 1961",
+    "country": "Reino Unido",
+    "year": 1961,
+    "price": "2 USD",
+    "images": [
+      "images/659A.jpeg",
+      "images/659B.jpeg"
+    ],
+    "reference": "KM# 903",
+    "metal": "Cuproníquel",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "gb-6pence-km903",
+    "group_label": "6 Pence"
+  },
+  {
+    "id": 660,
+    "title": "6 Pence 1966",
+    "country": "Reino Unido",
+    "year": 1966,
+    "price": "2 USD",
+    "images": [
+      "images/660A.jpeg",
+      "images/660B.jpeg"
+    ],
+    "reference": "KM# 903",
+    "metal": "Cuproníquel",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "gb-6pence-km903",
+    "group_label": "6 Pence"
+  },
+  {
+    "id": 661,
+    "title": "6 Pence 1958",
+    "country": "Reino Unido",
+    "year": 1958,
+    "price": "2 USD",
+    "images": [
+      "images/661A.jpeg",
+      "images/661B.jpeg"
+    ],
+    "reference": "KM# 903",
+    "metal": "Cuproníquel",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "gb-6pence-km903",
+    "group_label": "6 Pence"
+  },
+  {
+    "id": 662,
+    "title": "Shilling 1966",
+    "country": "Reino Unido",
+    "year": 1966,
+    "price": "2 USD",
+    "images": [
+      "images/662A.jpeg",
+      "images/662B.jpeg"
+    ],
+    "reference": "KM# 904",
+    "metal": "Cuproníquel",
+    "description": "Linda patina"
+  },
+  {
+    "id": 663,
+    "title": "Shilling 1948",
+    "country": "Reino Unido",
+    "year": 1948,
+    "price": "2.5 USD",
+    "images": [
+      "images/663A.jpeg",
+      "images/663B.jpeg"
+    ],
+    "reference": "KM# 864",
+    "metal": "Cuproníquel"
+  },
+  {
+    "id": 664,
+    "title": "2 Shillings 1967",
+    "country": "Reino Unido",
+    "year": 1967,
+    "price": "3 USD",
+    "images": [
+      "images/664A.jpeg",
+      "images/664B.jpeg"
+    ],
+    "reference": "KM# 906",
+    "metal": "Cuproníquel"
+  },
+  {
+    "id": 665,
+    "title": "Penny 1920",
+    "country": "Reino Unido",
+    "year": 1920,
+    "price": "3 USD",
+    "images": [
+      "images/665A.jpeg",
+      "images/665B.jpeg"
+    ],
+    "metal": "Bronce",
+    "description": "Bañada en plata",
+    "group_id": "uk-penny-bronze",
+    "group_label": "Penny"
+  },
+  {
+    "id": 666,
+    "title": "Penny 1913",
+    "country": "Reino Unido",
+    "year": 1913,
+    "price": "3.5 USD",
+    "images": [
+      "images/666A.jpeg",
+      "images/666B.jpeg"
+    ],
+    "metal": "Bronce",
+    "group_id": "uk-penny-bronze",
+    "group_label": "Penny"
+  },
+  {
+    "id": 667,
+    "title": "Penny 1921",
+    "country": "Reino Unido",
+    "year": 1921,
+    "price": "3 USD",
+    "images": [
+      "images/667A.jpeg",
+      "images/667B.jpeg"
+    ],
+    "metal": "Bronce",
+    "group_id": "uk-penny-bronze",
+    "group_label": "Penny"
+  },
+  {
+    "id": 668,
+    "title": "Penny 1906",
+    "country": "Reino Unido",
+    "year": 1906,
+    "price": "3 USD",
+    "images": [
+      "images/668A.jpeg",
+      "images/668B.jpeg"
+    ],
+    "metal": "Bronce",
+    "group_id": "uk-penny-bronze",
+    "group_label": "Penny"
   }
 ]
