@@ -7115,5 +7115,117 @@
     "description": "marron",
     "group_id": "ar-centavo-1939-44",
     "group_label": "Centavo 1939-44"
+  },
+  {
+    "id": 619,
+    "title": "Centavo 1946",
+    "country": "Argentina",
+    "year": 1946,
+    "price": "1 USD",
+    "images": [
+      "images/619A.jpeg",
+      "images/619B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-centavo-1945-48",
+    "group_label": "1945-48"
+  },
+  {
+    "id": 620,
+    "title": "Centavo 1946",
+    "country": "Argentina",
+    "year": 1946,
+    "price": "2 USD",
+    "images": [
+      "images/620A.jpeg",
+      "images/620B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-centavo-1945-48",
+    "group_label": "1945-48"
+  },
+  {
+    "id": 621,
+    "title": "Centavo 1947",
+    "country": "Argentina",
+    "year": 1947,
+    "price": "1 USD",
+    "images": [
+      "images/621A.jpeg",
+      "images/621B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-centavo-1945-48",
+    "group_label": "1945-48"
+  },
+  {
+    "id": 622,
+    "title": "Centavo 1947",
+    "country": "Argentina",
+    "year": 1947,
+    "price": "2 USD",
+    "images": [
+      "images/622A.jpeg",
+      "images/622B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-centavo-1945-48",
+    "group_label": "1945-48"
+  },
+  {
+    "id": 623,
+    "title": "Centavo 1947",
+    "country": "Argentina",
+    "year": 1947,
+    "price": "3 USD",
+    "images": [
+      "images/623A.jpeg",
+      "images/623B.jpeg"
+    ],
+    "description": "brillo original",
+    "group_id": "ar-centavo-1945-48",
+    "group_label": "1945-48"
+  },
+  {
+    "id": 624,
+    "title": "Centavo 1948",
+    "country": "Argentina",
+    "year": 1948,
+    "price": "1 USD",
+    "images": [
+      "images/624A.jpeg",
+      "images/624B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-centavo-1945-48",
+    "group_label": "1945-48"
+  },
+  {
+    "id": 625,
+    "title": "Centavo 1948",
+    "country": "Argentina",
+    "year": 1948,
+    "price": "2 USD",
+    "images": [
+      "images/625A.jpeg",
+      "images/625B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-centavo-1945-48",
+    "group_label": "1945-48"
+  },
+  {
+    "id": 626,
+    "title": "Centavo 1948",
+    "country": "Argentina",
+    "year": 1948,
+    "price": "3 USD",
+    "images": [
+      "images/626A.jpeg",
+      "images/626B.jpeg"
+    ],
+    "description": "brillo original",
+    "group_id": "ar-centavo-1945-48",
+    "group_label": "1945-48"
   }
 ]
