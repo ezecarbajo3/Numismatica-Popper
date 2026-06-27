@@ -6904,5 +6904,103 @@
     "grade": "MS70",
     "grade_short": "MS70",
     "description": "Máximo estado de conservación, asunción de Donald Trump"
+  },
+  {
+    "id": 604,
+    "title": "2 Zlote 2014",
+    "country": "Polonia",
+    "year": 2014,
+    "price": "3 USD",
+    "images": [
+      "images/604A.jpeg",
+      "images/604B.jpeg"
+    ],
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+"
+  },
+  {
+    "id": 605,
+    "title": "1 Zloty 1992",
+    "country": "Polonia",
+    "year": 1992,
+    "price": "2.5 USD",
+    "images": [
+      "images/605A.jpeg",
+      "images/605B.jpeg"
+    ],
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+"
+  },
+  {
+    "id": 606,
+    "title": "Ore 1929",
+    "country": "Noruega",
+    "metal": "Bronce",
+    "year": 1929,
+    "price": "4 USD",
+    "images": [
+      "images/606A.jpeg",
+      "images/606B.jpeg"
+    ],
+    "reference": "KM# 367",
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "mintage": "4.990.000"
+  },
+  {
+    "id": 607,
+    "title": "5 Milliemes 1973",
+    "country": "Egipto",
+    "metal": "Bronce-aluminio",
+    "year": 1973,
+    "price": "3.5 USD",
+    "images": [
+      "images/607A.jpeg",
+      "images/607B.jpeg"
+    ],
+    "reference": "KM# 432",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Año único"
+  },
+  {
+    "id": 608,
+    "title": "Cobre a clasificar",
+    "metal": "Cobre",
+    "price": "4 USD",
+    "images": [
+      "images/608A.jpeg",
+      "images/608B.jpeg"
+    ]
+  },
+  {
+    "id": 609,
+    "title": "1 Centime 1964",
+    "country": "Argelia",
+    "metal": "Aluminio",
+    "year": 1964,
+    "price": "4 USD",
+    "images": [
+      "images/609A.jpeg",
+      "images/609B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Año único"
+  },
+  {
+    "id": 610,
+    "title": "2 Centimes 1964",
+    "country": "Argelia",
+    "metal": "Aluminio",
+    "year": 1964,
+    "price": "4 USD",
+    "images": [
+      "images/610A.jpeg",
+      "images/610B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Año único"
   }
 ]
