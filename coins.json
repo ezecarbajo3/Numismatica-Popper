@@ -979,7 +979,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "387.072",
-    "description": "Casa"
+    "description": "Casa",
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 114,
@@ -997,8 +999,8 @@
     "grade_short": "MB+",
     "mintage": "903.070",
     "description": "",
-    "group_id": "ar-2centavos-1950",
-    "group_label": "2 Centavos 1950"
+    "group_id": "ar-2centavos-cobre",
+    "group_label": "2 Centavos Cobre"
   },
   {
     "id": 115,
@@ -1016,8 +1018,8 @@
     "grade_short": "MB",
     "mintage": "903.070",
     "description": "",
-    "group_id": "ar-2centavos-1950",
-    "group_label": "2 Centavos 1950"
+    "group_id": "ar-2centavos-cobre",
+    "group_label": "2 Centavos Cobre"
   },
   {
     "id": 117,
@@ -7014,8 +7016,8 @@
       "images/611B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-centavo-1939-44",
-    "group_label": "Centavo 1939-44"
+    "group_id": "ar-centavo-bronce",
+    "group_label": "Centavo Bronce"
   },
   {
     "id": 612,
@@ -7028,8 +7030,8 @@
       "images/612B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-centavo-1939-44",
-    "group_label": "Centavo 1939-44"
+    "group_id": "ar-centavo-bronce",
+    "group_label": "Centavo Bronce"
   },
   {
     "id": 613,
@@ -7042,8 +7044,8 @@
       "images/613B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-centavo-1939-44",
-    "group_label": "Centavo 1939-44"
+    "group_id": "ar-centavo-bronce",
+    "group_label": "Centavo Bronce"
   },
   {
     "id": 614,
@@ -7056,8 +7058,8 @@
       "images/614B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-centavo-1939-44",
-    "group_label": "Centavo 1939-44"
+    "group_id": "ar-centavo-bronce",
+    "group_label": "Centavo Bronce"
   },
   {
     "id": 615,
@@ -7070,8 +7072,8 @@
       "images/615B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-centavo-1939-44",
-    "group_label": "Centavo 1939-44"
+    "group_id": "ar-centavo-bronce",
+    "group_label": "Centavo Bronce"
   },
   {
     "id": 616,
@@ -7085,8 +7087,8 @@
     ],
     "mintage": "495.900",
     "description": "Escasa, marron",
-    "group_id": "ar-centavo-1939-44",
-    "group_label": "Centavo 1939-44"
+    "group_id": "ar-centavo-bronce",
+    "group_label": "Centavo Bronce"
   },
   {
     "id": 617,
@@ -7099,8 +7101,8 @@
       "images/617B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-centavo-1939-44",
-    "group_label": "Centavo 1939-44"
+    "group_id": "ar-centavo-bronce",
+    "group_label": "Centavo Bronce"
   },
   {
     "id": 618,
@@ -7113,8 +7115,8 @@
       "images/618B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-centavo-1939-44",
-    "group_label": "Centavo 1939-44"
+    "group_id": "ar-centavo-bronce",
+    "group_label": "Centavo Bronce"
   },
   {
     "id": 619,
@@ -7127,8 +7129,8 @@
       "images/619B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-centavo-1945-48",
-    "group_label": "1945-48"
+    "group_id": "ar-centavo-cobre",
+    "group_label": "Centavo Cobre"
   },
   {
     "id": 620,
@@ -7141,8 +7143,8 @@
       "images/620B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-centavo-1945-48",
-    "group_label": "1945-48"
+    "group_id": "ar-centavo-cobre",
+    "group_label": "Centavo Cobre"
   },
   {
     "id": 621,
@@ -7155,8 +7157,8 @@
       "images/621B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-centavo-1945-48",
-    "group_label": "1945-48"
+    "group_id": "ar-centavo-cobre",
+    "group_label": "Centavo Cobre"
   },
   {
     "id": 622,
@@ -7169,8 +7171,8 @@
       "images/622B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-centavo-1945-48",
-    "group_label": "1945-48"
+    "group_id": "ar-centavo-cobre",
+    "group_label": "Centavo Cobre"
   },
   {
     "id": 623,
@@ -7183,8 +7185,8 @@
       "images/623B.jpeg"
     ],
     "description": "brillo original",
-    "group_id": "ar-centavo-1945-48",
-    "group_label": "1945-48"
+    "group_id": "ar-centavo-cobre",
+    "group_label": "Centavo Cobre"
   },
   {
     "id": 624,
@@ -7197,8 +7199,8 @@
       "images/624B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-centavo-1945-48",
-    "group_label": "1945-48"
+    "group_id": "ar-centavo-cobre",
+    "group_label": "Centavo Cobre"
   },
   {
     "id": 625,
@@ -7211,8 +7213,8 @@
       "images/625B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-centavo-1945-48",
-    "group_label": "1945-48"
+    "group_id": "ar-centavo-cobre",
+    "group_label": "Centavo Cobre"
   },
   {
     "id": 626,
@@ -7225,8 +7227,8 @@
       "images/626B.jpeg"
     ],
     "description": "brillo original",
-    "group_id": "ar-centavo-1945-48",
-    "group_label": "1945-48"
+    "group_id": "ar-centavo-cobre",
+    "group_label": "Centavo Cobre"
   },
   {
     "id": 627,
@@ -7239,8 +7241,8 @@
       "images/627B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 628,
@@ -7253,8 +7255,8 @@
       "images/628B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 629,
@@ -7267,8 +7269,8 @@
       "images/629B.jpeg"
     ],
     "description": "brillo original",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 630,
@@ -7281,8 +7283,8 @@
       "images/630B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 631,
@@ -7295,8 +7297,8 @@
       "images/631B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 632,
@@ -7309,8 +7311,8 @@
       "images/632B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 633,
@@ -7323,8 +7325,8 @@
       "images/633B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 634,
@@ -7337,8 +7339,8 @@
       "images/634B.jpeg"
     ],
     "description": "brillo original",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 635,
@@ -7351,8 +7353,8 @@
       "images/635B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 636,
@@ -7365,8 +7367,8 @@
       "images/636B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 637,
@@ -7379,8 +7381,8 @@
       "images/637B.jpeg"
     ],
     "description": "brillo original",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 638,
@@ -7393,8 +7395,8 @@
       "images/638B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 639,
@@ -7407,8 +7409,8 @@
       "images/639B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 640,
@@ -7421,8 +7423,8 @@
       "images/640B.jpeg"
     ],
     "description": "brillo original",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 641,
@@ -7435,8 +7437,8 @@
       "images/641B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 642,
@@ -7449,8 +7451,8 @@
       "images/642B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 643,
@@ -7463,8 +7465,8 @@
       "images/643B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-2centavos-1942-47-bronce",
-    "group_label": "2 Centavos 1942-7 Bronce"
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce"
   },
   {
     "id": 644,
@@ -7477,8 +7479,8 @@
       "images/644B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-2centavos-1947-50-cobre",
-    "group_label": "2 Centavos 1947-50 Cobre"
+    "group_id": "ar-2centavos-cobre",
+    "group_label": "2 Centavos Cobre"
   },
   {
     "id": 645,
@@ -7491,8 +7493,8 @@
       "images/645B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-2centavos-1947-50-cobre",
-    "group_label": "2 Centavos 1947-50 Cobre"
+    "group_id": "ar-2centavos-cobre",
+    "group_label": "2 Centavos Cobre"
   },
   {
     "id": 646,
@@ -7505,8 +7507,8 @@
       "images/646B.jpeg"
     ],
     "description": "brillo original",
-    "group_id": "ar-2centavos-1947-50-cobre",
-    "group_label": "2 Centavos 1947-50 Cobre"
+    "group_id": "ar-2centavos-cobre",
+    "group_label": "2 Centavos Cobre"
   },
   {
     "id": 647,
@@ -7519,8 +7521,8 @@
       "images/647B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-2centavos-1947-50-cobre",
-    "group_label": "2 Centavos 1947-50 Cobre"
+    "group_id": "ar-2centavos-cobre",
+    "group_label": "2 Centavos Cobre"
   },
   {
     "id": 648,
@@ -7533,8 +7535,8 @@
       "images/648B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-2centavos-1947-50-cobre",
-    "group_label": "2 Centavos 1947-50 Cobre"
+    "group_id": "ar-2centavos-cobre",
+    "group_label": "2 Centavos Cobre"
   },
   {
     "id": 649,
@@ -7547,8 +7549,8 @@
       "images/649B.jpeg"
     ],
     "description": "brillo original",
-    "group_id": "ar-2centavos-1947-50-cobre",
-    "group_label": "2 Centavos 1947-50 Cobre"
+    "group_id": "ar-2centavos-cobre",
+    "group_label": "2 Centavos Cobre"
   },
   {
     "id": 650,
@@ -7561,8 +7563,8 @@
       "images/650B.jpeg"
     ],
     "description": "limpiada",
-    "group_id": "ar-2centavos-1947-50-cobre",
-    "group_label": "2 Centavos 1947-50 Cobre"
+    "group_id": "ar-2centavos-cobre",
+    "group_label": "2 Centavos Cobre"
   },
   {
     "id": 651,
@@ -7575,8 +7577,8 @@
       "images/651B.jpeg"
     ],
     "description": "marron",
-    "group_id": "ar-2centavos-1947-50-cobre",
-    "group_label": "2 Centavos 1947-50 Cobre"
+    "group_id": "ar-2centavos-cobre",
+    "group_label": "2 Centavos Cobre"
   },
   {
     "id": 652,
