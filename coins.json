@@ -8379,6 +8379,8 @@
     "reference": "CJ# 4",
     "grade": "Muy Bueno-",
     "grade_short": "MB-",
-    "description": "Banco Nacional (1827-31)."
+    "description": "Banco Nacional (1827-31).",
+    "status": "sold",
+    "soldAt": "2026-06-27T10:51:36-03:00"
   }
 ]
