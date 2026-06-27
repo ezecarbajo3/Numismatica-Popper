@@ -7465,5 +7465,117 @@
     "description": "limpiada",
     "group_id": "ar-2centavos-1942-47-bronce",
     "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 644,
+    "title": "2 Centavos 1947",
+    "country": "Argentina",
+    "year": 1947,
+    "price": "1 USD",
+    "images": [
+      "images/644A.jpeg",
+      "images/644B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-2centavos-1947-50-cobre",
+    "group_label": "2 Centavos 1947-50 Cobre"
+  },
+  {
+    "id": 645,
+    "title": "2 Centavos 1947",
+    "country": "Argentina",
+    "year": 1947,
+    "price": "2 USD",
+    "images": [
+      "images/645A.jpeg",
+      "images/645B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-2centavos-1947-50-cobre",
+    "group_label": "2 Centavos 1947-50 Cobre"
+  },
+  {
+    "id": 646,
+    "title": "2 Centavos 1947",
+    "country": "Argentina",
+    "year": 1947,
+    "price": "3 USD",
+    "images": [
+      "images/646A.jpeg",
+      "images/646B.jpeg"
+    ],
+    "description": "brillo original",
+    "group_id": "ar-2centavos-1947-50-cobre",
+    "group_label": "2 Centavos 1947-50 Cobre"
+  },
+  {
+    "id": 647,
+    "title": "2 Centavos 1948",
+    "country": "Argentina",
+    "year": 1948,
+    "price": "1 USD",
+    "images": [
+      "images/647A.jpeg",
+      "images/647B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-2centavos-1947-50-cobre",
+    "group_label": "2 Centavos 1947-50 Cobre"
+  },
+  {
+    "id": 648,
+    "title": "2 Centavos 1948",
+    "country": "Argentina",
+    "year": 1948,
+    "price": "2 USD",
+    "images": [
+      "images/648A.jpeg",
+      "images/648B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-2centavos-1947-50-cobre",
+    "group_label": "2 Centavos 1947-50 Cobre"
+  },
+  {
+    "id": 649,
+    "title": "2 Centavos 1948",
+    "country": "Argentina",
+    "year": 1948,
+    "price": "3 USD",
+    "images": [
+      "images/649A.jpeg",
+      "images/649B.jpeg"
+    ],
+    "description": "brillo original",
+    "group_id": "ar-2centavos-1947-50-cobre",
+    "group_label": "2 Centavos 1947-50 Cobre"
+  },
+  {
+    "id": 650,
+    "title": "2 Centavos 1949",
+    "country": "Argentina",
+    "year": 1949,
+    "price": "1 USD",
+    "images": [
+      "images/650A.jpeg",
+      "images/650B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-2centavos-1947-50-cobre",
+    "group_label": "2 Centavos 1947-50 Cobre"
+  },
+  {
+    "id": 651,
+    "title": "2 Centavos 1949",
+    "country": "Argentina",
+    "year": 1949,
+    "price": "2 USD",
+    "images": [
+      "images/651A.jpeg",
+      "images/651B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-2centavos-1947-50-cobre",
+    "group_label": "2 Centavos 1947-50 Cobre"
   }
 ]
