@@ -6894,10 +6894,12 @@
     "title": "Onza 2017 MS70 certificada",
     "country": "Estados Unidos",
     "year": 2017,
-    "price": "150 USD",
+    "price": "200 USD",
     "images": [
       "images/603A.jpeg",
-      "images/603B.jpeg"
+      "images/603B.jpeg",
+      "images/603C.jpeg",
+      "images/603D.jpeg"
     ],
     "grade": "MS70",
     "grade_short": "MS70",
