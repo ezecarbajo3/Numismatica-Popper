@@ -7002,5 +7002,118 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Año único"
+  },
+  {
+    "id": 611,
+    "title": "Centavo 1939",
+    "country": "Argentina",
+    "year": 1939,
+    "price": "1 USD",
+    "images": [
+      "images/611A.jpeg",
+      "images/611B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-centavo-1939-44",
+    "group_label": "Centavo 1939-44"
+  },
+  {
+    "id": 612,
+    "title": "Centavo 1940",
+    "country": "Argentina",
+    "year": 1940,
+    "price": "1 USD",
+    "images": [
+      "images/612A.jpeg",
+      "images/612B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-centavo-1939-44",
+    "group_label": "Centavo 1939-44"
+  },
+  {
+    "id": 613,
+    "title": "Centavo 1940",
+    "country": "Argentina",
+    "year": 1940,
+    "price": "1.5 USD",
+    "images": [
+      "images/613A.jpeg",
+      "images/613B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-centavo-1939-44",
+    "group_label": "Centavo 1939-44"
+  },
+  {
+    "id": 614,
+    "title": "Centavo 1941",
+    "country": "Argentina",
+    "year": 1941,
+    "price": "1 USD",
+    "images": [
+      "images/614A.jpeg",
+      "images/614B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-centavo-1939-44",
+    "group_label": "Centavo 1939-44"
+  },
+  {
+    "id": 615,
+    "title": "Centavo 1941",
+    "country": "Argentina",
+    "year": 1941,
+    "price": "1.5 USD",
+    "images": [
+      "images/615A.jpeg",
+      "images/615B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-centavo-1939-44",
+    "group_label": "Centavo 1939-44"
+  },
+  {
+    "id": 616,
+    "title": "Centavo 1942",
+    "country": "Argentina",
+    "year": 1942,
+    "price": "30 USD",
+    "images": [
+      "images/616A.jpeg",
+      "images/616B.jpeg"
+    ],
+    "mintage": "495.900",
+    "description": "Escasa, marron",
+    "group_id": "ar-centavo-1939-44",
+    "group_label": "Centavo 1939-44"
+  },
+  {
+    "id": 617,
+    "title": "Centavo 1944",
+    "country": "Argentina",
+    "year": 1944,
+    "price": "1 USD",
+    "images": [
+      "images/617A.jpeg",
+      "images/617B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-centavo-1939-44",
+    "group_label": "Centavo 1939-44"
+  },
+  {
+    "id": 618,
+    "title": "Centavo 1944",
+    "country": "Argentina",
+    "year": 1944,
+    "price": "1.5 USD",
+    "images": [
+      "images/618A.jpeg",
+      "images/618B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-centavo-1939-44",
+    "group_label": "Centavo 1939-44"
   }
 ]
