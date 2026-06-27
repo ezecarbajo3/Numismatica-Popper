@@ -7227,5 +7227,243 @@
     "description": "brillo original",
     "group_id": "ar-centavo-1945-48",
     "group_label": "1945-48"
+  },
+  {
+    "id": 627,
+    "title": "2 Centavos 1939",
+    "country": "Argentina",
+    "year": 1939,
+    "price": "1 USD",
+    "images": [
+      "images/627A.jpeg",
+      "images/627B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 628,
+    "title": "2 Centavos 1939",
+    "country": "Argentina",
+    "year": 1939,
+    "price": "2 USD",
+    "images": [
+      "images/628A.jpeg",
+      "images/628B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 629,
+    "title": "2 Centavos 1939",
+    "country": "Argentina",
+    "year": 1939,
+    "price": "3 USD",
+    "images": [
+      "images/629A.jpeg",
+      "images/629B.jpeg"
+    ],
+    "description": "brillo original",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 630,
+    "title": "2 Centavos 1940",
+    "country": "Argentina",
+    "year": 1940,
+    "price": "1 USD",
+    "images": [
+      "images/630A.jpeg",
+      "images/630B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 631,
+    "title": "2 Centavos 1940",
+    "country": "Argentina",
+    "year": 1940,
+    "price": "2 USD",
+    "images": [
+      "images/631A.jpeg",
+      "images/631B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 632,
+    "title": "2 Centavos 1941",
+    "country": "Argentina",
+    "year": 1941,
+    "price": "1 USD",
+    "images": [
+      "images/632A.jpeg",
+      "images/632B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 633,
+    "title": "2 Centavos 1941",
+    "country": "Argentina",
+    "year": 1941,
+    "price": "2 USD",
+    "images": [
+      "images/633A.jpeg",
+      "images/633B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 634,
+    "title": "2 Centavos 1941",
+    "country": "Argentina",
+    "year": 1941,
+    "price": "3 USD",
+    "images": [
+      "images/634A.jpeg",
+      "images/634B.jpeg"
+    ],
+    "description": "brillo original",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 635,
+    "title": "2 Centavos 1942",
+    "country": "Argentina",
+    "year": 1942,
+    "price": "1 USD",
+    "images": [
+      "images/635A.jpeg",
+      "images/635B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 636,
+    "title": "2 Centavos 1942",
+    "country": "Argentina",
+    "year": 1942,
+    "price": "2 USD",
+    "images": [
+      "images/636A.jpeg",
+      "images/636B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 637,
+    "title": "2 Centavos 1942",
+    "country": "Argentina",
+    "year": 1942,
+    "price": "4 USD",
+    "images": [
+      "images/637A.jpeg",
+      "images/637B.jpeg"
+    ],
+    "description": "brillo original",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 638,
+    "title": "2 Centavos 1945",
+    "country": "Argentina",
+    "year": 1945,
+    "price": "1 USD",
+    "images": [
+      "images/638A.jpeg",
+      "images/638B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 639,
+    "title": "2 Centavos 1945",
+    "country": "Argentina",
+    "year": 1945,
+    "price": "2 USD",
+    "images": [
+      "images/639A.jpeg",
+      "images/639B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 640,
+    "title": "2 Centavos 1945",
+    "country": "Argentina",
+    "year": 1945,
+    "price": "3 USD",
+    "images": [
+      "images/640A.jpeg",
+      "images/640B.jpeg"
+    ],
+    "description": "brillo original",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 641,
+    "title": "2 Centavos 1946",
+    "country": "Argentina",
+    "year": 1946,
+    "price": "1 USD",
+    "images": [
+      "images/641A.jpeg",
+      "images/641B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 642,
+    "title": "2 Centavos 1946",
+    "country": "Argentina",
+    "year": 1946,
+    "price": "2 USD",
+    "images": [
+      "images/642A.jpeg",
+      "images/642B.jpeg"
+    ],
+    "description": "marron",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
+  },
+  {
+    "id": 643,
+    "title": "2 Centavos 1947",
+    "country": "Argentina",
+    "year": 1947,
+    "price": "1 USD",
+    "images": [
+      "images/643A.jpeg",
+      "images/643B.jpeg"
+    ],
+    "description": "limpiada",
+    "group_id": "ar-2centavos-1942-47-bronce",
+    "group_label": "2 Centavos 1942-7 Bronce"
   }
 ]
