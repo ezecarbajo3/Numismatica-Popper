@@ -6875,5 +6875,18 @@
     "reference": "KM# 816",
     "group_id": "se-25ore-km816",
     "group_label": "25 Ore"
+  },
+  {
+    "id": 602,
+    "title": "Cent 1992",
+    "country": "Kiribati",
+    "year": 1992,
+    "price": "3.5 USD",
+    "images": [
+      "images/602A.jpeg",
+      "images/602B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
   }
 ]
