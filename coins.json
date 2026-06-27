@@ -3044,8 +3044,8 @@
       "images/325B.jpeg"
     ],
     "reference": "KM# 107.1",
-    "grade": "Muy Bueno -",
-    "grade_short": "MB-",
+    "grade": "Bueno+",
+    "grade_short": "B+",
     "group_id": "nl-cent-1878-1884",
     "group_label": "Cent 1878-1884"
   },
@@ -5662,7 +5662,7 @@
     "country": "Países Bajos",
     "metal": "Bronce",
     "year": 1927,
-    "price": "5 USD",
+    "price": "4.5 USD",
     "images": [
       "images/524A.jpeg",
       "images/524B.jpeg"
@@ -6659,7 +6659,7 @@
     "title": "Cent 1884",
     "country": "Países Bajos",
     "year": 1884,
-    "price": "6 USD",
+    "price": "5.5 USD",
     "images": [
       "images/588A.jpeg",
       "images/588B.jpeg"
@@ -6676,7 +6676,7 @@
     "title": "Cent 1837",
     "country": "Países Bajos",
     "year": 1837,
-    "price": "8 USD",
+    "price": "6.5 USD",
     "images": [
       "images/589A.jpeg",
       "images/589B.jpeg"
