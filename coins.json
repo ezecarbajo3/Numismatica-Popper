@@ -3046,8 +3046,8 @@
     "reference": "KM# 107.1",
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
-    "group_id": "nl-cent",
-    "group_label": "Cent"
+    "group_id": "nl-cent-1878-1884",
+    "group_label": "Cent 1878-1884"
   },
   {
     "id": 327,
@@ -3326,8 +3326,8 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "group_id": "nl-cent",
-    "group_label": "Cent"
+    "group_id": "nl-cent-1927-1928",
+    "group_label": "Cent 1927-1928"
   },
   {
     "id": 351,
@@ -5670,8 +5670,8 @@
     "reference": "KM# 152",
     "grade": "Excelente",
     "grade_short": "EX",
-    "group_id": "nl-cent",
-    "group_label": "Cent"
+    "group_id": "nl-cent-1927-1928",
+    "group_label": "Cent 1927-1928"
   },
   {
     "id": 513,
@@ -6668,8 +6668,8 @@
     "grade_short": "MB-",
     "metal": "Bronce",
     "reference": "KM# 107.1",
-    "group_id": "nl-cent",
-    "group_label": "Cent"
+    "group_id": "nl-cent-1878-1884",
+    "group_label": "Cent 1878-1884"
   },
   {
     "id": 589,
@@ -6685,9 +6685,7 @@
     "grade_short": "B-",
     "metal": "Cobre",
     "reference": "KM# 47",
-    "mintage": "5.202.040",
-    "group_id": "nl-cent",
-    "group_label": "Cent"
+    "mintage": "5.202.040"
   },
   {
     "id": 590,
