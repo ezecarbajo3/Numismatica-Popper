@@ -6734,5 +6734,146 @@
       "images/592C.jpeg"
     ],
     "description": "Contiene cuño 1977 y 1978"
+  },
+  {
+    "id": 593,
+    "title": "50 Centavos 2005",
+    "country": "Honduras",
+    "year": 2005,
+    "price": "3 USD",
+    "images": [
+      "images/593A.jpeg",
+      "images/593B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "metal": "Acero niquelado"
+  },
+  {
+    "id": 594,
+    "title": "25 Qirsh 1979",
+    "country": "Siria",
+    "year": 1979,
+    "price": "4 USD",
+    "images": [
+      "images/594A.jpeg",
+      "images/594B.jpeg"
+    ],
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "metal": "Cuproníquel",
+    "reference": "KM# 118",
+    "description": "Año único"
+  },
+  {
+    "id": 595,
+    "title": "10 Centimes 1904",
+    "country": "Bélgica",
+    "year": 1904,
+    "price": "3.5 USD",
+    "images": [
+      "images/595A.jpeg",
+      "images/595B.jpeg"
+    ],
+    "metal": "Cuproníquel",
+    "reference": "KM# 52",
+    "description": "Belgique"
+  },
+  {
+    "id": 596,
+    "title": "10 Centimes 1930",
+    "country": "Bélgica",
+    "year": 1930,
+    "price": "3.5 USD",
+    "images": [
+      "images/596A.jpeg",
+      "images/596B.jpeg"
+    ],
+    "metal": "Cuproníquel",
+    "reference": "KM# 96",
+    "description": "Belgie"
+  },
+  {
+    "id": 597,
+    "title": "2 Francos 1969",
+    "country": "Suiza",
+    "year": 1969,
+    "price": "3 USD",
+    "images": [
+      "images/597A.jpeg",
+      "images/597B.jpeg"
+    ],
+    "grade": "Sin Circular-",
+    "grade_short": "SC-",
+    "metal": "Cuproníquel",
+    "reference": "KM# 21a"
+  },
+  {
+    "id": 598,
+    "title": "1 Gulden 1971",
+    "country": "Antillas Holandesas",
+    "year": 1971,
+    "price": "3.5 USD",
+    "images": [
+      "images/598A.jpeg",
+      "images/598B.jpeg"
+    ],
+    "grade": "Excelente+",
+    "grade_short": "EX+",
+    "metal": "Níquel",
+    "reference": "KM# 12",
+    "group_id": "an-1gulden-km12",
+    "group_label": "1 Gulden"
+  },
+  {
+    "id": 599,
+    "title": "1 Gulden 1970",
+    "country": "Antillas Holandesas",
+    "year": 1970,
+    "price": "3.5 USD",
+    "images": [
+      "images/599A.jpeg",
+      "images/599B.jpeg"
+    ],
+    "grade": "Excelente+",
+    "grade_short": "EX+",
+    "metal": "Níquel",
+    "reference": "KM# 12",
+    "group_id": "an-1gulden-km12",
+    "group_label": "1 Gulden"
+  },
+  {
+    "id": 600,
+    "title": "25 Ore 1943",
+    "country": "Suecia",
+    "year": 1943,
+    "price": "4.5 USD",
+    "images": [
+      "images/600A.jpeg",
+      "images/600B.jpeg"
+    ],
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "metal": "Plata",
+    "reference": "KM# 816",
+    "group_id": "se-25ore-km816",
+    "group_label": "25 Ore"
+  },
+  {
+    "id": 601,
+    "title": "25 Ore 1944",
+    "country": "Suecia",
+    "year": 1944,
+    "price": "5 USD",
+    "images": [
+      "images/601A.jpeg",
+      "images/601B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "metal": "Plata",
+    "reference": "KM# 816",
+    "group_id": "se-25ore-km816",
+    "group_label": "25 Ore"
   }
 ]
