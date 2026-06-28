@@ -155,13 +155,15 @@ function renderCoinDetail(coin, groupMembers) {
   const mainIsVideo = mainImage && mainImage.endsWith('.mp4');
 
   detailContainer.innerHTML = `
+    ${groupMembers && groupMembers.length > 1 ? `
+    <div class="variants-section" id="detailVariants">
+      <h3 class="variants-heading">Variantes</h3>
+      <div class="variants-list" id="variantsList"></div>
+    </div>
+    ` : ""}
+
+    <div class="detail-row">
     <div class="detail-gallery reveal">
-      ${groupMembers && groupMembers.length > 1 ? `
-      <div class="variants-section" id="detailVariants">
-        <h3 class="variants-heading">Variantes</h3>
-        <div class="variants-list" id="variantsList"></div>
-      </div>
-      ` : ""}
       <div class="detail-main-image-wrap">
         <img
           id="detailMainImage"
@@ -228,6 +230,7 @@ function renderCoinDetail(coin, groupMembers) {
         </svg>
         Consultar por WhatsApp
       </a>
+    </div>
     </div>
   `;
 
