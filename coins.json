@@ -7836,5 +7836,204 @@
     "metal": "Bronce",
     "group_id": "uk-penny-bronze",
     "group_label": "Penny"
+  },
+  {
+    "id": 669,
+    "title": "100 Reis 1901",
+    "country": "Brasil",
+    "year": 1901,
+    "reference": "KM# 503",
+    "metal": "Cuproníquel",
+    "description": "Año único",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "price": "3 USD",
+    "images": [
+      "images/669A.jpeg",
+      "images/669B.jpeg"
+    ]
+  },
+  {
+    "id": 670,
+    "title": "20 Centavos 1945",
+    "country": "Brasil",
+    "year": 1945,
+    "reference": "KM# 556a",
+    "metal": "Bronce-aluminio",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "price": "1.5 USD",
+    "images": [
+      "images/670A.jpeg",
+      "images/670B.jpeg"
+    ],
+    "group_id": "br-20centavos-km556a",
+    "group_label": "20 Centavos"
+  },
+  {
+    "id": 671,
+    "title": "20 Centavos 1946",
+    "country": "Brasil",
+    "year": 1946,
+    "reference": "KM# 556a",
+    "metal": "Bronce-aluminio",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "price": "1.5 USD",
+    "images": [
+      "images/671A.jpeg",
+      "images/671B.jpeg"
+    ],
+    "group_id": "br-20centavos-km556a",
+    "group_label": "20 Centavos"
+  },
+  {
+    "id": 672,
+    "title": "50 Centavos 1947",
+    "country": "Brasil",
+    "year": 1947,
+    "reference": "KM# 557a",
+    "metal": "Bronce-aluminio",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "price": "1.5 USD",
+    "images": [
+      "images/672A.jpeg",
+      "images/672B.jpeg"
+    ]
+  },
+  {
+    "id": 673,
+    "title": "Cruzeiro 1945",
+    "country": "Brasil",
+    "year": 1945,
+    "metal": "Bronce-aluminio",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "price": "1.5 USD",
+    "images": [
+      "images/673A.jpeg",
+      "images/673B.jpeg"
+    ]
+  },
+  {
+    "id": 674,
+    "title": "200 Reis 1896",
+    "country": "Brasil",
+    "year": 1896,
+    "reference": "KM# 493",
+    "metal": "Cuproníquel",
+    "grade": "Regular +",
+    "grade_short": "R+",
+    "mintage": "2.850.000",
+    "price": "2.5 USD",
+    "images": [
+      "images/674A.jpeg",
+      "images/674B.jpeg"
+    ]
+  },
+  {
+    "id": 675,
+    "title": "100 Reis 1871",
+    "country": "Brasil",
+    "year": 1871,
+    "reference": "KM# 477",
+    "metal": "Cuproníquel",
+    "mintage": "4 millones",
+    "grade": "Bueno +",
+    "grade_short": "B+",
+    "price": "3.5 USD",
+    "images": [
+      "images/675A.jpeg",
+      "images/675B.jpeg"
+    ]
+  },
+  {
+    "id": 676,
+    "title": "Centavo 1998",
+    "country": "Brasil",
+    "year": 1998,
+    "metal": "Bronce",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "price": "1 USD",
+    "images": [
+      "images/676A.jpeg",
+      "images/676B.jpeg"
+    ]
+  },
+  {
+    "id": 677,
+    "title": "1 Real 2016",
+    "country": "Brasil",
+    "year": 2016,
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Natación paralímpica",
+    "price": "2.5 USD",
+    "images": [
+      "images/677A.jpeg",
+      "images/677B.jpeg"
+    ],
+    "group_id": "br-1real-olympics",
+    "group_label": "1 Real Olimpíadas"
+  },
+  {
+    "id": 678,
+    "title": "3 Pence 1960",
+    "country": "Reino Unido",
+    "year": 1960,
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "price": "2 USD",
+    "images": [
+      "images/678A.jpeg",
+      "images/678B.jpeg"
+    ]
+  },
+  {
+    "id": 679,
+    "title": "3 Pence 1943",
+    "country": "Reino Unido",
+    "year": 1943,
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "price": "2.5 USD",
+    "images": [
+      "images/679A.jpeg",
+      "images/679B.jpeg"
+    ]
+  },
+  {
+    "id": 680,
+    "title": "Penny 1872",
+    "country": "Reino Unido",
+    "year": 1872,
+    "metal": "Bronce",
+    "grade": "Regular",
+    "grade_short": "R",
+    "price": "2 USD",
+    "images": [
+      "images/680A.jpeg",
+      "images/680B.jpeg"
+    ],
+    "group_id": "uk-penny-bronze",
+    "group_label": "Penny"
+  },
+  {
+    "id": 681,
+    "title": "Penny 1861",
+    "country": "Reino Unido",
+    "year": 1861,
+    "metal": "Bronce",
+    "grade": "Regular",
+    "grade_short": "R",
+    "price": "2 USD",
+    "images": [
+      "images/681A.jpeg",
+      "images/681B.jpeg"
+    ],
+    "group_id": "uk-penny-bronze",
+    "group_label": "Penny"
   }
 ]
