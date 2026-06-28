@@ -2074,7 +2074,7 @@
     "country": "Swazilandia",
     "metal": "Bronce",
     "year": 1982,
-    "price": "5 USD",
+    "price": "4.5 USD",
     "images": [
       "images/232A.jpeg",
       "images/232B.jpeg"
@@ -2118,23 +2118,6 @@
     "description": "",
     "mintage": "",
     "reference": ""
-  },
-  {
-    "id": 241,
-    "title": "Millim 2000",
-    "country": "Túnez",
-    "metal": "Aluminio",
-    "year": "2000",
-    "price": "2.5 USD",
-    "images": [
-      "images/241A.jpeg",
-      "images/241B.jpeg"
-    ],
-    "reference": "KM# 349",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "description": "FAO."
   },
   {
     "id": 242,
@@ -2608,7 +2591,7 @@
     "country": "Marruecos",
     "metal": "Bronce-aluminio",
     "year": 1951,
-    "price": "3.5 USD",
+    "price": "3 USD",
     "images": [
       "images/280A.jpeg",
       "images/280B.jpeg"
@@ -2951,7 +2934,7 @@
     "country": "Polonia",
     "metal": "Níquel",
     "year": 1923,
-    "price": "4 USD",
+    "price": "3.5 USD",
     "images": [
       "images/318A.jpeg",
       "images/318B.jpeg"
@@ -3057,7 +3040,7 @@
     "country": "Polonia",
     "metal": "Níquel",
     "year": 1923,
-    "price": "4 USD",
+    "price": "3.5 USD",
     "images": [
       "images/327A.jpeg",
       "images/327B.jpeg"
@@ -3304,7 +3287,7 @@
     "country": "India",
     "metal": "Latón niquelado",
     "year": 1963,
-    "price": "3 USD",
+    "price": "2.5 USD",
     "reference": "KM# 8a",
     "images": [
       "images/349A.jpeg",
@@ -5696,7 +5679,7 @@
     "country": "Polonia",
     "metal": "Bronce",
     "year": 1928,
-    "price": "4.5 USD",
+    "price": "4 USD",
     "images": [
       "images/527A.jpeg",
       "images/527B.jpeg"
@@ -6290,10 +6273,10 @@
   },
   {
     "id": 564,
-    "title": "5 Centavos",
+    "title": "5 Centavos 1962",
     "country": "Perú",
     "metal": "Latón",
-    "year": "S/F",
+    "year": 1962,
     "price": "2.5 USD",
     "images": [
       "images/564A.jpeg",
@@ -6680,7 +6663,7 @@
     "title": "Cent 1837",
     "country": "Países Bajos",
     "year": 1837,
-    "price": "6.5 USD",
+    "price": "6 USD",
     "images": [
       "images/589A.jpeg",
       "images/589B.jpeg"
