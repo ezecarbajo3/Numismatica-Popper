@@ -8037,5 +8037,202 @@
     ],
     "group_id": "uk-penny-bronze",
     "group_label": "Penny"
+  },
+  {
+    "id": 682,
+    "title": "Centésimo 1977",
+    "country": "Uruguay",
+    "year": 1977,
+    "reference": "KM# 71",
+    "metal": "Aluminio",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "price": "2.5 USD",
+    "images": [
+      "images/682A.jpeg",
+      "images/682B.jpeg"
+    ],
+    "group_id": "uy-serie-aluminio",
+    "group_label": "Serie Aluminio"
+  },
+  {
+    "id": 683,
+    "title": "2 Centésimos 1977",
+    "country": "Uruguay",
+    "year": 1977,
+    "reference": "KM# 72",
+    "metal": "Aluminio",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "price": "2.5 USD",
+    "images": [
+      "images/683A.jpeg",
+      "images/683B.jpeg"
+    ],
+    "group_id": "uy-serie-aluminio",
+    "group_label": "Serie Aluminio"
+  },
+  {
+    "id": 684,
+    "title": "5 Centésimos 1978",
+    "country": "Uruguay",
+    "year": 1978,
+    "reference": "KM# 73",
+    "metal": "Aluminio",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "price": "2.5 USD",
+    "images": [
+      "images/684A.jpeg",
+      "images/684B.jpeg"
+    ],
+    "group_id": "uy-serie-aluminio",
+    "group_label": "Serie Aluminio"
+  },
+  {
+    "id": 685,
+    "title": "2 Centésimos 1901",
+    "country": "Uruguay",
+    "year": 1901,
+    "reference": "KM# 20",
+    "metal": "Cuproníquel",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "price": "1.5 USD",
+    "images": [
+      "images/685A.jpeg",
+      "images/685B.jpeg"
+    ],
+    "group_id": "uy-2centesimos",
+    "group_label": "2 Centésimos"
+  },
+  {
+    "id": 686,
+    "title": "2 Centésimos 1909",
+    "country": "Uruguay",
+    "year": 1909,
+    "reference": "KM# 20",
+    "metal": "Cuproníquel",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "price": "1 USD",
+    "images": [
+      "images/686A.jpeg",
+      "images/686B.jpeg"
+    ],
+    "group_id": "uy-2centesimos",
+    "group_label": "2 Centésimos"
+  },
+  {
+    "id": 687,
+    "title": "2 Centésimos 1924",
+    "country": "Uruguay",
+    "year": 1924,
+    "reference": "KM# 20",
+    "metal": "Cuproníquel",
+    "price": "1.5 USD",
+    "images": [
+      "images/687A.jpeg",
+      "images/687B.jpeg"
+    ],
+    "group_id": "uy-2centesimos",
+    "group_label": "2 Centésimos"
+  },
+  {
+    "id": 688,
+    "title": "2 Centésimos 1936",
+    "country": "Uruguay",
+    "year": 1936,
+    "reference": "KM# 20",
+    "metal": "Cuproníquel",
+    "price": "2 USD",
+    "images": [
+      "images/688A.jpeg",
+      "images/688B.jpeg"
+    ],
+    "group_id": "uy-2centesimos",
+    "group_label": "2 Centésimos"
+  },
+  {
+    "id": 689,
+    "title": "2 Centésimos 1909",
+    "country": "Uruguay",
+    "year": 1909,
+    "reference": "KM# 20",
+    "metal": "Cuproníquel",
+    "price": "1.5 USD",
+    "images": [
+      "images/689A.jpeg",
+      "images/689B.jpeg"
+    ],
+    "group_id": "uy-2centesimos",
+    "group_label": "2 Centésimos"
+  },
+  {
+    "id": 690,
+    "title": "Centésimo 1909",
+    "country": "Uruguay",
+    "year": 1909,
+    "reference": "KM# 19",
+    "metal": "Cuproníquel",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "price": "1.5 USD",
+    "images": [
+      "images/690A.jpeg",
+      "images/690B.jpeg"
+    ],
+    "group_id": "uy-centesimo",
+    "group_label": "Centésimo"
+  },
+  {
+    "id": 691,
+    "title": "Centésimo 1924",
+    "country": "Uruguay",
+    "year": 1924,
+    "reference": "KM# 19",
+    "metal": "Cuproníquel",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": "3 millones",
+    "price": "2 USD",
+    "images": [
+      "images/691A.jpeg",
+      "images/691B.jpeg"
+    ],
+    "group_id": "uy-centesimo",
+    "group_label": "Centésimo"
+  },
+  {
+    "id": 692,
+    "title": "Centésimo 1936",
+    "country": "Uruguay",
+    "year": 1936,
+    "reference": "KM# 19",
+    "metal": "Cuproníquel",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "mintage": "2 millones",
+    "price": "3 USD",
+    "images": [
+      "images/692A.jpeg",
+      "images/692B.jpeg"
+    ],
+    "group_id": "uy-centesimo",
+    "group_label": "Centésimo"
+  },
+  {
+    "id": 693,
+    "title": "5 Centésimos 1924",
+    "country": "Uruguay",
+    "year": 1924,
+    "reference": "KM# 21",
+    "metal": "Cuproníquel",
+    "mintage": "5 millones",
+    "price": "1.5 USD",
+    "images": [
+      "images/693A.jpeg",
+      "images/693B.jpeg"
+    ]
   }
 ]
