@@ -6178,7 +6178,9 @@
     "reference": "KM# 810",
     "grade": "Excelente",
     "grade_short": "EX",
-    "description": "Jorge."
+    "description": "Jorge.",
+    "group_id": "uk-penny-bronze",
+    "group_label": "Penny"
   },
   {
     "id": 557,
