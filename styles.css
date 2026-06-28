@@ -875,10 +875,22 @@ button {
 }
 
 .detail-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 0.74fr) minmax(280px, 0.6fr);
+  display: flex;
+  flex-direction: column;
   gap: 28px;
-  align-items: start;
+}
+
+/* ROW 2: main photo (50%) + description panel (50%), side by side */
+.detail-row {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.detail-row > .detail-gallery,
+.detail-row > .detail-info {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .detail-gallery {
@@ -1325,8 +1337,7 @@ button {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .detail-layout {
-    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
+  .detail-row {
     gap: 40px;
   }
 
@@ -1516,7 +1527,11 @@ button {
   }
 
   .detail-layout {
-    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .detail-row {
+    flex-direction: column;
     gap: 22px;
   }
 
