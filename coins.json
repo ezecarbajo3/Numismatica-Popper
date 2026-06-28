@@ -8130,6 +8130,8 @@
     "year": 1924,
     "reference": "KM# 20",
     "metal": "Cuproníquel",
+    "grade": "Excelente",
+    "grade_short": "EX",
     "price": "1.5 USD",
     "images": [
       "images/687A.jpeg",
@@ -8145,25 +8147,12 @@
     "year": 1936,
     "reference": "KM# 20",
     "metal": "Cuproníquel",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
     "price": "2 USD",
     "images": [
       "images/688A.jpeg",
       "images/688B.jpeg"
-    ],
-    "group_id": "uy-2centesimos",
-    "group_label": "2 Centésimos"
-  },
-  {
-    "id": 689,
-    "title": "2 Centésimos 1909",
-    "country": "Uruguay",
-    "year": 1909,
-    "reference": "KM# 20",
-    "metal": "Cuproníquel",
-    "price": "1.5 USD",
-    "images": [
-      "images/689A.jpeg",
-      "images/689B.jpeg"
     ],
     "group_id": "uy-2centesimos",
     "group_label": "2 Centésimos"
@@ -8228,6 +8217,8 @@
     "year": 1924,
     "reference": "KM# 21",
     "metal": "Cuproníquel",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
     "mintage": "5 millones",
     "price": "1.5 USD",
     "images": [
