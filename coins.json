@@ -2327,7 +2327,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "2.576.000",
-    "description": "Escasa."
+    "description": "Escasa.",
+    "status": "sold",
+    "soldAt": "2026-06-29T15:17:50.680915Z"
   },
   {
     "id": 257,
@@ -6145,7 +6147,9 @@
     ],
     "reference": "KM# 761",
     "grade": "Excelente con Detalles",
-    "grade_short": "EX**"
+    "grade_short": "EX**",
+    "status": "sold",
+    "soldAt": "2026-06-29T15:17:50.680915Z"
   },
   {
     "id": 556,
@@ -7596,7 +7600,9 @@
     "reference": "CJ# 195",
     "metal": "Cobre",
     "grade": "Excelente-",
-    "grade_short": "EX-"
+    "grade_short": "EX-",
+    "status": "sold",
+    "soldAt": "2026-06-29T15:17:50.680915Z"
   },
   {
     "id": 653,
