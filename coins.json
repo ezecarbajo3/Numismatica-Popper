@@ -7004,7 +7004,9 @@
     ],
     "description": "limpiada",
     "group_id": "ar-centavo-bronce",
-    "group_label": "Centavo Bronce"
+    "group_label": "Centavo Bronce",
+    "status": "sold",
+    "soldAt": "2026-06-29T11:20:24.424185Z"
   },
   {
     "id": 612,
@@ -7032,7 +7034,9 @@
     ],
     "description": "marron",
     "group_id": "ar-centavo-bronce",
-    "group_label": "Centavo Bronce"
+    "group_label": "Centavo Bronce",
+    "status": "sold",
+    "soldAt": "2026-06-29T11:20:24.424193Z"
   },
   {
     "id": 614,
@@ -7046,7 +7050,9 @@
     ],
     "description": "limpiada",
     "group_id": "ar-centavo-bronce",
-    "group_label": "Centavo Bronce"
+    "group_label": "Centavo Bronce",
+    "status": "sold",
+    "soldAt": "2026-06-29T11:20:24.424196Z"
   },
   {
     "id": 615,
@@ -7060,7 +7066,9 @@
     ],
     "description": "marron",
     "group_id": "ar-centavo-bronce",
-    "group_label": "Centavo Bronce"
+    "group_label": "Centavo Bronce",
+    "status": "sold",
+    "soldAt": "2026-06-29T11:20:24.424197Z"
   },
   {
     "id": 616,
@@ -7089,7 +7097,9 @@
     ],
     "description": "limpiada",
     "group_id": "ar-centavo-bronce",
-    "group_label": "Centavo Bronce"
+    "group_label": "Centavo Bronce",
+    "status": "sold",
+    "soldAt": "2026-06-29T11:20:24.424199Z"
   },
   {
     "id": 618,
@@ -7453,7 +7463,9 @@
     ],
     "description": "limpiada",
     "group_id": "ar-2centavos-bronce",
-    "group_label": "2 Centavos Bronce"
+    "group_label": "2 Centavos Bronce",
+    "status": "sold",
+    "soldAt": "2026-06-29T11:20:24.424204Z"
   },
   {
     "id": 644,
@@ -7495,7 +7507,9 @@
     ],
     "description": "brillo original",
     "group_id": "ar-2centavos-cobre",
-    "group_label": "2 Centavos Cobre"
+    "group_label": "2 Centavos Cobre",
+    "status": "sold",
+    "soldAt": "2026-06-29T11:20:24.424205Z"
   },
   {
     "id": 647,
@@ -7537,7 +7551,9 @@
     ],
     "description": "brillo original",
     "group_id": "ar-2centavos-cobre",
-    "group_label": "2 Centavos Cobre"
+    "group_label": "2 Centavos Cobre",
+    "status": "sold",
+    "soldAt": "2026-06-29T11:20:24.424207Z"
   },
   {
     "id": 650,
