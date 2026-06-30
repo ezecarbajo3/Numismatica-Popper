@@ -8125,6 +8125,7 @@
     "metal": "Cuproníquel",
     "grade": "Excelente",
     "grade_short": "EX",
+    "mintage": "7.504.262",
     "price": "2 USD",
     "images": [
       "images/685A.jpeg",
@@ -8142,6 +8143,7 @@
     "metal": "Cuproníquel",
     "grade": "Bueno-",
     "grade_short": "B-",
+    "mintage": "10 millones",
     "price": "1 USD",
     "images": [
       "images/686A.jpeg",
@@ -8159,6 +8161,7 @@
     "metal": "Cuproníquel",
     "grade": "Excelente",
     "grade_short": "EX",
+    "mintage": "11 millones",
     "price": "2 USD",
     "images": [
       "images/687A.jpeg",
@@ -8176,6 +8179,7 @@
     "metal": "Cuproníquel",
     "grade": "Excelente+",
     "grade_short": "EX+",
+    "mintage": "6,5 millones",
     "price": "2 USD",
     "images": [
       "images/688A.jpeg",
