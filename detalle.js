@@ -297,7 +297,6 @@ function renderCoinDetail(coin, groupMembers) {
       const info = document.createElement("div");
       info.className = "variant-info";
 
-      const isArgentina = (member.country || "").toLowerCase().includes("argentina");
       const isQuarters = member.group_id && member.group_id.includes("quarters");
       const isMillennium = member.group_id === "ca-25cents-2000-millennium";
       const isCommemorative = member.group_id && member.group_id.includes("conmemorativas");
@@ -312,7 +311,8 @@ function renderCoinDetail(coin, groupMembers) {
       if ((isQuarters || isMillennium || isCommemorative) && descLabel !== "–") {
         labelEl.textContent = descLabel;
       } else {
-        labelEl.textContent = isArgentina ? gradeLabel : yearLabel;
+        const parts = [yearLabel, gradeLabel].filter(p => p && p !== "–" && p !== "-");
+        labelEl.textContent = parts.length ? parts.join(" ") : "–";
       }
 
       const priceEl = document.createElement("span");
