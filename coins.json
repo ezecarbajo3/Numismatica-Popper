@@ -886,7 +886,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "1.288.265",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-06-30T12:32:17.161608Z"
   },
   {
     "id": 105,
@@ -3498,9 +3500,7 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "group_id": "ar-10centavos-1882",
-    "group_label": "10 Centavos 1882",
-    "status": "sold",
-    "soldAt": "2026-06-23T13:27:00.000Z"
+    "group_label": "10 Centavos 1882"
   },
   {
     "id": 368,
@@ -5986,7 +5986,9 @@
     "mintage": "762.027",
     "description": "Escasa.",
     "group_id": "ar-20centavos-1882",
-    "group_label": "20 Centavos 1882"
+    "group_label": "20 Centavos 1882",
+    "status": "sold",
+    "soldAt": "2026-06-30T12:32:17.161637Z"
   },
   {
     "id": 546,
@@ -7373,7 +7375,9 @@
     ],
     "description": "limpiada",
     "group_id": "ar-2centavos-bronce",
-    "group_label": "2 Centavos Bronce"
+    "group_label": "2 Centavos Bronce",
+    "status": "sold",
+    "soldAt": "2026-06-30T12:32:17.161646Z"
   },
   {
     "id": 636,
