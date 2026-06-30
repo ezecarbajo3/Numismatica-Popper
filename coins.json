@@ -6261,7 +6261,9 @@
       "images/562B.jpeg"
     ],
     "reference": "KM# 18",
-    "description": "Rombo."
+    "description": "Rombo.",
+    "status": "sold",
+    "soldAt": "2026-06-30T21:49:01Z"
   },
   {
     "id": 563,
