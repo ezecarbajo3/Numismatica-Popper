@@ -7133,7 +7133,9 @@
     ],
     "description": "limpiada",
     "group_id": "ar-centavo-cobre",
-    "group_label": "Centavo Cobre"
+    "group_label": "Centavo Cobre",
+    "status": "sold",
+    "soldAt": "2026-06-30T12:27:57.273463Z"
   },
   {
     "id": 620,
@@ -7147,7 +7149,9 @@
     ],
     "description": "marron",
     "group_id": "ar-centavo-cobre",
-    "group_label": "Centavo Cobre"
+    "group_label": "Centavo Cobre",
+    "status": "sold",
+    "soldAt": "2026-06-30T12:27:57.273472Z"
   },
   {
     "id": 621,
@@ -7161,7 +7165,9 @@
     ],
     "description": "limpiada",
     "group_id": "ar-centavo-cobre",
-    "group_label": "Centavo Cobre"
+    "group_label": "Centavo Cobre",
+    "status": "sold",
+    "soldAt": "2026-06-30T12:27:57.273473Z"
   },
   {
     "id": 622,
@@ -7175,7 +7181,9 @@
     ],
     "description": "marron",
     "group_id": "ar-centavo-cobre",
-    "group_label": "Centavo Cobre"
+    "group_label": "Centavo Cobre",
+    "status": "sold",
+    "soldAt": "2026-06-30T12:27:57.273474Z"
   },
   {
     "id": 623,
@@ -7189,7 +7197,9 @@
     ],
     "description": "brillo original",
     "group_id": "ar-centavo-cobre",
-    "group_label": "Centavo Cobre"
+    "group_label": "Centavo Cobre",
+    "status": "sold",
+    "soldAt": "2026-06-30T12:27:57.273475Z"
   },
   {
     "id": 624,
@@ -7203,7 +7213,9 @@
     ],
     "description": "limpiada",
     "group_id": "ar-centavo-cobre",
-    "group_label": "Centavo Cobre"
+    "group_label": "Centavo Cobre",
+    "status": "sold",
+    "soldAt": "2026-06-30T12:27:57.273476Z"
   },
   {
     "id": 625,
@@ -7217,7 +7229,9 @@
     ],
     "description": "marron",
     "group_id": "ar-centavo-cobre",
-    "group_label": "Centavo Cobre"
+    "group_label": "Centavo Cobre",
+    "status": "sold",
+    "soldAt": "2026-06-30T12:27:57.273477Z"
   },
   {
     "id": 626,
@@ -7231,7 +7245,9 @@
     ],
     "description": "brillo original",
     "group_id": "ar-centavo-cobre",
-    "group_label": "Centavo Cobre"
+    "group_label": "Centavo Cobre",
+    "status": "sold",
+    "soldAt": "2026-06-30T12:27:57.273478Z"
   },
   {
     "id": 627,
