@@ -8364,5 +8364,558 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "2.485.000"
+  },
+  {
+    "id": 700,
+    "title": "5 Pesos 1975",
+    "country": "Uruguay",
+    "metal": "Bronce-Aluminio",
+    "year": 1975,
+    "price": "2.5 USD",
+    "images": [
+      "images/700A.jpeg",
+      "images/700B.jpeg"
+    ],
+    "reference": "KM# 65",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": "10.000.000",
+    "description": "150 aniversario - Movimiento Revolucionario"
+  },
+  {
+    "id": 701,
+    "title": "5 Céntimos 1973",
+    "country": "Costa Rica",
+    "metal": "Cuproníquel",
+    "year": 1973,
+    "price": "2 USD",
+    "images": [
+      "images/701A.jpeg",
+      "images/701B.jpeg"
+    ],
+    "reference": "KM# 184.3",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "20.000.000",
+    "group_id": "cr-5centimos",
+    "group_label": "5 Centimos"
+  },
+  {
+    "id": 702,
+    "title": "5 Céntimos 1976",
+    "country": "Costa Rica",
+    "metal": "Cuproníquel",
+    "year": 1976,
+    "price": "2 USD",
+    "images": [
+      "images/702A.jpeg",
+      "images/702B.jpeg"
+    ],
+    "reference": "KM# 184.2",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "group_id": "cr-5centimos",
+    "group_label": "5 Centimos"
+  },
+  {
+    "id": 703,
+    "title": "5 Céntimos 1978",
+    "country": "Costa Rica",
+    "metal": "Cuproníquel",
+    "year": 1978,
+    "price": "2 USD",
+    "images": [
+      "images/703A.jpeg",
+      "images/703B.jpeg"
+    ],
+    "reference": "KM# 184.2",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "cr-5centimos",
+    "group_label": "5 Centimos"
+  },
+  {
+    "id": 704,
+    "title": "5 Céntimos 1979",
+    "country": "Costa Rica",
+    "metal": "Latón",
+    "year": 1979,
+    "price": "3 USD",
+    "images": [
+      "images/704A.jpeg",
+      "images/704B.jpeg"
+    ],
+    "reference": "KM# 184.3a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "3.060.000",
+    "description": "Año único",
+    "group_id": "cr-5centimos",
+    "group_label": "5 Centimos"
+  },
+  {
+    "id": 705,
+    "title": "10 Céntimos 1972",
+    "country": "Costa Rica",
+    "metal": "Cuproníquel",
+    "year": 1972,
+    "price": "2 USD",
+    "images": [
+      "images/705A.jpeg",
+      "images/705B.jpeg"
+    ],
+    "reference": "KM# 185.3",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": "20.000.000",
+    "group_id": "cr-10centimos",
+    "group_label": "10 Centimos"
+  },
+  {
+    "id": 706,
+    "title": "10 Céntimos 1975",
+    "country": "Costa Rica",
+    "metal": "Cuproníquel",
+    "year": 1975,
+    "price": "2.5 USD",
+    "images": [
+      "images/706A.jpeg",
+      "images/706B.jpeg"
+    ],
+    "reference": "KM# 185.3",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": "5.000.000",
+    "group_id": "cr-10centimos",
+    "group_label": "10 Centimos"
+  },
+  {
+    "id": 707,
+    "title": "10 Céntimos 1976",
+    "country": "Costa Rica",
+    "metal": "Cuproníquel",
+    "year": 1976,
+    "price": "2 USD",
+    "images": [
+      "images/707A.jpeg",
+      "images/707B.jpeg"
+    ],
+    "reference": "KM# 185.2",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "group_id": "cr-10centimos",
+    "group_label": "10 Centimos"
+  },
+  {
+    "id": 708,
+    "title": "10 Céntimos 1979",
+    "country": "Costa Rica",
+    "metal": "Acero niquelado",
+    "year": 1979,
+    "price": "2 USD",
+    "images": [
+      "images/708A.jpeg",
+      "images/708B.jpeg"
+    ],
+    "reference": "KM# 185.2b",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "20.000.000",
+    "description": "Año único",
+    "group_id": "cr-10centimos",
+    "group_label": "10 Centimos"
+  },
+  {
+    "id": 709,
+    "title": "25 Céntimos 1983",
+    "country": "Costa Rica",
+    "metal": "Aluminio",
+    "year": 1983,
+    "price": "2 USD",
+    "images": [
+      "images/709A.jpeg"
+    ],
+    "reference": "KM# 188.3",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "group_id": "cr-25centimos",
+    "group_label": "25 Centimos"
+  },
+  {
+    "id": 710,
+    "title": "25 Céntimos 1980",
+    "country": "Costa Rica",
+    "metal": "Acero niquelado",
+    "year": 1980,
+    "price": "2 USD",
+    "images": [
+      "images/710A.jpeg"
+    ],
+    "reference": "KM# 188.1a",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "description": "Año único",
+    "group_id": "cr-25centimos",
+    "group_label": "25 Centimos"
+  },
+  {
+    "id": 711,
+    "title": "10 Centavos 1903",
+    "country": "Paraguay",
+    "metal": "Cuproníquel",
+    "year": 1903,
+    "price": "8 USD",
+    "images": [
+      "images/711A.jpeg",
+      "images/711B.jpeg"
+    ],
+    "reference": "KM# 7",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": "1.200.000",
+    "description": "Escasa"
+  },
+  {
+    "id": 712,
+    "title": "50 Escudos 1974",
+    "country": "Chile",
+    "metal": "Latón de Níquel",
+    "year": 1974,
+    "price": "2 USD",
+    "images": [
+      "images/712A.jpeg",
+      "images/712B.jpeg"
+    ],
+    "reference": "KM# 201",
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 713,
+    "title": "10 Centésimos 1971",
+    "country": "Chile",
+    "metal": "Bronce-Aluminio",
+    "year": 1971,
+    "price": "2 USD",
+    "images": [
+      "images/713A.jpeg",
+      "images/713B.jpeg"
+    ],
+    "reference": "KM# 194",
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 714,
+    "title": "100 Escudos 1974",
+    "country": "Chile",
+    "metal": "Latón de Níquel",
+    "year": 1974,
+    "price": "1.5 USD",
+    "images": [
+      "images/714A.jpeg",
+      "images/714B.jpeg"
+    ],
+    "reference": "KM# 202",
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 715,
+    "title": "20 Centavos 1938",
+    "country": "Paraguay",
+    "metal": "Aluminio",
+    "year": 1938,
+    "price": "6 USD",
+    "images": [
+      "images/715A.jpeg",
+      "images/715B.jpeg"
+    ],
+    "reference": "KM# 15",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "400.000",
+    "description": "Escasa, año único"
+  },
+  {
+    "id": 716,
+    "title": "1 Peso 1925",
+    "country": "Paraguay",
+    "metal": "Cuproníquel",
+    "year": 1925,
+    "price": "2.5 USD",
+    "images": [
+      "images/716A.jpeg",
+      "images/716B.jpeg"
+    ],
+    "reference": "KM# 13",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "3.500.000",
+    "description": "Año único"
+  },
+  {
+    "id": 717,
+    "title": "2 Pesos 1938",
+    "country": "Paraguay",
+    "metal": "Aluminio",
+    "year": 1938,
+    "price": "3 USD",
+    "images": [
+      "images/717A.jpeg",
+      "images/717B.jpeg"
+    ],
+    "reference": "KM# 17",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "Año único"
+  },
+  {
+    "id": 718,
+    "title": "20 Centavos 1942",
+    "country": "Chile",
+    "metal": "Cobre",
+    "year": 1942,
+    "price": "1.5 USD",
+    "images": [
+      "images/718A.jpeg",
+      "images/718B.jpeg"
+    ],
+    "reference": "KM# 177",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "cl-20centavos",
+    "group_label": "20 Centavos"
+  },
+  {
+    "id": 719,
+    "title": "20 Centavos 1943",
+    "country": "Chile",
+    "metal": "Cobre",
+    "year": 1943,
+    "price": "1.5 USD",
+    "images": [
+      "images/719A.jpeg",
+      "images/719B.jpeg"
+    ],
+    "reference": "KM# 177",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "cl-20centavos",
+    "group_label": "20 Centavos"
+  },
+  {
+    "id": 720,
+    "title": "20 Centavos 1946",
+    "country": "Chile",
+    "metal": "Cobre",
+    "year": 1946,
+    "price": "1.5 USD",
+    "images": [
+      "images/720A.jpeg",
+      "images/720B.jpeg"
+    ],
+    "reference": "KM# 177",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "group_id": "cl-20centavos",
+    "group_label": "20 Centavos"
+  },
+  {
+    "id": 721,
+    "title": "1 Peso 1953",
+    "country": "Chile",
+    "metal": "Cobre",
+    "year": 1953,
+    "price": "2 USD",
+    "images": [
+      "images/721A.jpeg",
+      "images/721B.jpeg"
+    ],
+    "reference": "KM# 179",
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 722,
+    "title": "2 Centésimos 1968",
+    "country": "Chile",
+    "metal": "Bronce-Aluminio",
+    "year": 1968,
+    "price": "2 USD",
+    "images": [
+      "images/722A.jpeg",
+      "images/722B.jpeg"
+    ],
+    "reference": "KM# 193",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "cl-2centesimos",
+    "group_label": "2 Centesimos"
+  },
+  {
+    "id": 723,
+    "title": "2 Centésimos 1967",
+    "country": "Chile",
+    "metal": "Bronce-Aluminio",
+    "year": 1967,
+    "price": "2 USD",
+    "images": [
+      "images/723A.jpeg",
+      "images/723B.jpeg"
+    ],
+    "reference": "KM# 193",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "cl-2centesimos",
+    "group_label": "2 Centesimos"
+  },
+  {
+    "id": 724,
+    "title": "5 Centésimos 1969",
+    "country": "Chile",
+    "metal": "Bronce-Aluminio",
+    "year": 1969,
+    "price": "1.5 USD",
+    "images": [
+      "images/724A.jpeg",
+      "images/724B.jpeg"
+    ],
+    "reference": "KM# 190",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-"
+  },
+  {
+    "id": 725,
+    "title": "10 Centésimos 1969",
+    "country": "Chile",
+    "metal": "Bronce-Aluminio",
+    "year": 1969,
+    "price": "2 USD",
+    "images": [
+      "images/725A.jpeg",
+      "images/725B.jpeg"
+    ],
+    "reference": "KM# 191",
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 726,
+    "title": "10 Centavos 1923",
+    "country": "Chile",
+    "metal": "Cuproníquel",
+    "year": 1923,
+    "price": "2 USD",
+    "images": [
+      "images/726A.jpeg",
+      "images/726B.jpeg"
+    ],
+    "reference": "KM# 166",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "3.356.000",
+    "group_id": "cl-10centavos",
+    "group_label": "10 Centavos"
+  },
+  {
+    "id": 727,
+    "title": "10 Centavos 1925",
+    "country": "Chile",
+    "metal": "Cuproníquel",
+    "year": 1925,
+    "price": "2 USD",
+    "images": [
+      "images/727A.jpeg",
+      "images/727B.jpeg"
+    ],
+    "reference": "KM# 166",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "mintage": "2.665.000",
+    "group_id": "cl-10centavos",
+    "group_label": "10 Centavos"
+  },
+  {
+    "id": 728,
+    "title": "10 Centavos 1932",
+    "country": "Chile",
+    "metal": "Cuproníquel",
+    "year": 1932,
+    "price": "2.5 USD",
+    "images": [
+      "images/728A.jpeg",
+      "images/728B.jpeg"
+    ],
+    "reference": "KM# 166",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "mintage": "1.500.000",
+    "group_id": "cl-10centavos",
+    "group_label": "10 Centavos"
+  },
+  {
+    "id": 729,
+    "title": "10 Centavos 1935",
+    "country": "Chile",
+    "metal": "Cuproníquel",
+    "year": 1935,
+    "price": "2.5 USD",
+    "images": [
+      "images/729A.jpeg",
+      "images/729B.jpeg"
+    ],
+    "reference": "KM# 166",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "1.500.000",
+    "group_id": "cl-10centavos",
+    "group_label": "10 Centavos"
+  },
+  {
+    "id": 730,
+    "title": "10 Escudos 1974",
+    "country": "Chile",
+    "metal": "Aluminio",
+    "year": 1974,
+    "price": "2 USD",
+    "images": [
+      "images/730A.jpeg",
+      "images/730B.jpeg"
+    ],
+    "reference": "KM# 200",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Año único"
+  },
+  {
+    "id": 731,
+    "title": "10 Pesos 1958",
+    "country": "Chile",
+    "metal": "Aluminio",
+    "year": 1958,
+    "price": "1.5 USD",
+    "images": [
+      "images/731A.jpeg",
+      "images/731B.jpeg"
+    ],
+    "reference": "KM# 181"
+  },
+  {
+    "id": 732,
+    "title": "5 Pesos 1975",
+    "country": "Uruguay",
+    "metal": "Bronce-Aluminio",
+    "year": 1975,
+    "price": "3.5 USD",
+    "images": [
+      "images/732A.jpeg",
+      "images/732B.jpeg"
+    ],
+    "reference": "KM# 65",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "10.000.000",
+    "description": "150 aniversario - Movimiento Revolucionario"
   }
 ]
