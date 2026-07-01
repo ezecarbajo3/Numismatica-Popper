@@ -1089,6 +1089,30 @@ button {
   box-shadow: 0 16px 28px rgba(37, 211, 102, 0.18);
 }
 
+.detail-share {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 10px;
+  padding: 12px 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(207, 172, 107, 0.5);
+  background: transparent;
+  color: var(--gold, #cfac6b);
+  font-family: "Cinzel", serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.detail-share:hover {
+  background: rgba(207, 172, 107, 0.1);
+}
+
 .detail-loading,
 .detail-error {
   padding: 30px 0;

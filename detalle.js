@@ -143,6 +143,9 @@ function updateCoinContent(coin) {
   const waEl = document.getElementById("detailWhatsapp");
   if (waEl) waEl.href = buildWhatsAppLink(coin);
 
+  const shareEl = document.getElementById("detailShare");
+  if (shareEl) shareEl.dataset.shareUrl = `https://numismaticapopper.com/moneda/${coin.id}.html`;
+
   // Update URL so sharing/back-button works
   history.replaceState(null, "", `?id=${coin.id}`);
 }
@@ -230,9 +233,38 @@ function renderCoinDetail(coin, groupMembers) {
         </svg>
         Consultar por WhatsApp
       </a>
+
+      <button
+        type="button"
+        class="detail-share"
+        id="detailShare"
+        data-share-url="https://numismaticapopper.com/moneda/${coin.id}.html"
+      >
+        Copiar link para compartir
+      </button>
     </div>
     </div>
   `;
+
+  const shareBtn = document.getElementById("detailShare");
+  if (shareBtn) {
+    shareBtn.addEventListener("click", async () => {
+      const url = shareBtn.dataset.shareUrl;
+      try {
+        await navigator.clipboard.writeText(url);
+      } catch (err) {
+        const tempInput = document.createElement("textarea");
+        tempInput.value = url;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+      }
+      const original = shareBtn.textContent;
+      shareBtn.textContent = "¡Link copiado!";
+      setTimeout(() => { shareBtn.textContent = original; }, 2000);
+    });
+  }
 
   // ── Build image gallery thumbs ────────────────────────────────────────────
   const thumbsContainer = document.getElementById("detailThumbs");
