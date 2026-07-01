@@ -360,7 +360,9 @@
     "grade": "Regular+",
     "grade_short": "R+",
     "mintage": "",
-    "description": "Reino dos Sicilias"
+    "description": "Reino dos Sicilias",
+    "status": "sold",
+    "soldAt": "2026-07-01T19:45:45.795147Z"
   },
   {
     "id": 38,
@@ -1214,7 +1216,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-07-01T19:45:45.795164Z"
   },
   {
     "id": 144,
@@ -2825,7 +2829,9 @@
       "images/305B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "status": "sold",
+    "soldAt": "2026-07-01T19:45:45.795178Z"
   },
   {
     "id": 306,
@@ -2977,7 +2983,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "1.000.000",
-    "description": "FAO, no circulante"
+    "description": "FAO, no circulante",
+    "status": "sold",
+    "soldAt": "2026-07-01T19:45:45.795181Z"
   },
   {
     "id": 322,
@@ -5627,7 +5635,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "301.300",
-    "description": "FAO"
+    "description": "FAO",
+    "status": "sold",
+    "soldAt": "2026-07-01T19:45:45.795203Z"
   },
   {
     "id": 509,
@@ -5643,7 +5653,9 @@
     "reference": "KM# 72",
     "grade": "Excelente - detalles",
     "grade_short": "EX**",
-    "description": "Año único"
+    "description": "Año único",
+    "status": "sold",
+    "soldAt": "2026-07-01T19:45:45.795204Z"
   },
   {
     "id": 511,
@@ -6472,7 +6484,9 @@
     "grade": "Excelente-",
     "grade_short": "EX-",
     "metal": "Bronce",
-    "reference": "KM# 11"
+    "reference": "KM# 11",
+    "status": "sold",
+    "soldAt": "2026-07-01T19:45:45.795211Z"
   },
   {
     "id": 576,
@@ -6649,7 +6663,9 @@
     "grade_short": "SC",
     "metal": "Acero chapado en cobre",
     "reference": "KM# 89",
-    "mintage": "2.800.000"
+    "mintage": "2.800.000",
+    "status": "sold",
+    "soldAt": "2026-07-01T19:45:45.795218Z"
   },
   {
     "id": 588,
