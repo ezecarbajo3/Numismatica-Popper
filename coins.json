@@ -4689,7 +4689,7 @@
     "country": "Estados Unidos",
     "metal": "Plata 0.900",
     "year": 1955,
-    "price": "41.8 USD",
+    "price": "40 USD",
     "images": [
       "images/449A.jpeg",
       "images/449B.jpeg"
@@ -4825,7 +4825,7 @@
     "country": "Uruguay",
     "metal": "Plata 0.925",
     "year": 2005,
-    "price": "110 USD",
+    "price": "120 USD",
     "images": [
       "images/461A.jpeg",
       "images/461B.jpeg"
@@ -6893,7 +6893,7 @@
     "title": "Onza 2017 MS70 certificada",
     "country": "Estados Unidos",
     "year": 2017,
-    "price": "200 USD",
+    "price": "180 USD",
     "images": [
       "images/603A.jpeg",
       "images/603B.jpeg",
@@ -6902,7 +6902,7 @@
     ],
     "grade": "MS70",
     "grade_short": "MS70",
-    "description": "Máximo estado de conservación, asunción de Donald Trump"
+    "description": "no se consigue ni en estados unidos. MS70 es el maximo grado de conservacion. Certificada por ANACS (empresa mas respetada que ngc o pcgs)"
   },
   {
     "id": 604,
