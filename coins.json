@@ -6964,18 +6964,13 @@
   },
   {
     "id": 608,
-    "title": "5 Centimes 1964",
-    "country": "Argelia",
-    "metal": "Aluminio",
-    "year": 1964,
+    "title": "Cobre a clasificar",
+    "metal": "Cobre",
     "price": "4 USD",
     "images": [
       "images/608A.jpeg",
       "images/608B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Año único"
+    ]
   },
   {
     "id": 609,
