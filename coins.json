@@ -1324,7 +1324,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "6.900.000",
-    "description": "Ellis Island."
+    "description": "Ellis Island.",
+    "status": "sold",
+    "soldAt": "2026-07-01T21:16:26.000-03:00"
   },
   {
     "id": 150,
@@ -3126,7 +3128,9 @@
     ],
     "grade": "Excelente -",
     "grade_short": "EX-",
-    "description": "Ceca A"
+    "description": "Ceca A",
+    "status": "sold",
+    "soldAt": "2026-07-01T21:16:26.000-03:00"
   },
   {
     "id": 334,
@@ -3260,7 +3264,9 @@
       "images/345B.jpeg"
     ],
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "status": "sold",
+    "soldAt": "2026-07-01T21:16:26.000-03:00"
   },
   {
     "id": 346,
@@ -3508,7 +3514,9 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "group_id": "ar-10centavos-1882",
-    "group_label": "10 Centavos 1882"
+    "group_label": "10 Centavos 1882",
+    "status": "sold",
+    "soldAt": "2026-07-01T20:44:44.636154Z"
   },
   {
     "id": 368,
@@ -6117,7 +6125,9 @@
       "images/552A.jpeg",
       "images/552B.jpeg"
     ],
-    "reference": "KM# 159.1"
+    "reference": "KM# 159.1",
+    "status": "sold",
+    "soldAt": "2026-07-01T21:16:26.000-03:00"
   },
   {
     "id": 553,
@@ -7001,7 +7011,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Año único"
+    "description": "Año único",
+    "status": "sold",
+    "soldAt": "2026-07-01T21:16:26.000-03:00"
   },
   {
     "id": 610,
@@ -7016,7 +7028,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Año único"
+    "description": "Año único",
+    "status": "sold",
+    "soldAt": "2026-07-01T21:16:26.000-03:00"
   },
   {
     "id": 611,
