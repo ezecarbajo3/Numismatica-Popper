@@ -6024,7 +6024,9 @@
     "reference": "CJ# 33",
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "mintage": "3.400.000"
+    "mintage": "3.400.000",
+    "status": "sold",
+    "soldAt": "2026-07-02T17:54:42.358Z"
   },
   {
     "id": 547,
