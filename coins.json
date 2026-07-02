@@ -3516,7 +3516,9 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "group_id": "ar-10centavos-1882",
-    "group_label": "10 Centavos 1882"
+    "group_label": "10 Centavos 1882",
+    "status": "sold",
+    "soldAt": "2026-07-02T19:27:50.827020-03:00"
   },
   {
     "id": 368,
