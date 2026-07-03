@@ -307,7 +307,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "341.873",
-    "description": ""
+    "description": "",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
   },
   {
     "id": 35,
@@ -396,7 +398,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "1.477.000",
-    "description": "La cuarta más difícil"
+    "description": "La cuarta más difícil",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
   },
   {
     "id": 40,
@@ -413,7 +417,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "892.873",
-    "description": ""
+    "description": "",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
   },
   {
     "id": 43,
@@ -447,7 +453,9 @@
     "grade": "Muy Bueno-",
     "grade_short": "MB-",
     "mintage": "1.310.000",
-    "description": ""
+    "description": "",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
   },
   {
     "id": 50,
@@ -890,7 +898,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "1.288.265",
-    "description": ""
+    "description": "",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
   },
   {
     "id": 105,
@@ -908,8 +918,8 @@
     "grade_short": "R",
     "mintage": "840.108",
     "description": "Escasa.",
-    "group_id": "ar-20centavos-1899",
-    "group_label": "20 Centavos 1899"
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
   },
   {
     "id": 107,
@@ -927,8 +937,8 @@
     "grade_short": "B+",
     "mintage": "840.108",
     "description": "Escasa.",
-    "group_id": "ar-20centavos-1899",
-    "group_label": "20 Centavos 1899"
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
   },
   {
     "id": 111,
@@ -946,8 +956,8 @@
     "grade_short": "EX-",
     "mintage": "855.101",
     "description": "Escasa.",
-    "group_id": "ar-20centavos-1936",
-    "group_label": "20 Centavos 1936"
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
   },
   {
     "id": 112,
@@ -965,8 +975,8 @@
     "grade_short": "MB",
     "mintage": "855.101",
     "description": "Escasa.",
-    "group_id": "ar-20centavos-1936",
-    "group_label": "20 Centavos 1936"
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
   },
   {
     "id": 113,
@@ -2319,8 +2329,8 @@
     "grade_short": "MB",
     "mintage": "855.101",
     "description": "Escasa.",
-    "group_id": "ar-20centavos-1936",
-    "group_label": "20 Centavos 1936"
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
   },
   {
     "id": 256,
@@ -8981,5 +8991,710 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "778.000"
+  },
+  {
+    "id": 734,
+    "costo": 0,
+    "title": "5 Centavos 1896",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1896,
+    "price": "15 USD",
+    "images": [
+      "images/734A.jpeg",
+      "images/734B.jpeg"
+    ],
+    "reference": "CJ# 130",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
+  },
+  {
+    "id": 735,
+    "costo": 0,
+    "title": "5 Centavos 1899",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1899,
+    "price": "5 USD",
+    "images": [
+      "images/735A.jpeg",
+      "images/735B.jpeg"
+    ],
+    "reference": "CJ# 133",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
+  },
+  {
+    "id": 736,
+    "costo": 0,
+    "title": "5 Centavos 1903",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1903,
+    "price": "5 USD",
+    "images": [
+      "images/736A.jpeg",
+      "images/736B.jpeg"
+    ],
+    "reference": "CJ# 134",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
+  },
+  {
+    "id": 737,
+    "costo": 0,
+    "title": "5 Centavos 1904",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1904,
+    "price": "8 USD",
+    "images": [
+      "images/737A.jpeg",
+      "images/737B.jpeg"
+    ],
+    "reference": "CJ# 135",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
+  },
+  {
+    "id": 738,
+    "costo": 0,
+    "title": "5 Centavos 1904",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1904,
+    "price": "5 USD",
+    "images": [
+      "images/738A.jpeg",
+      "images/738B.jpeg"
+    ],
+    "reference": "CJ# 135",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
+  },
+  {
+    "id": 739,
+    "costo": 0,
+    "title": "5 Centavos 1905",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1905,
+    "price": "4 USD",
+    "images": [
+      "images/739A.jpeg",
+      "images/739B.jpeg"
+    ],
+    "reference": "CJ# 136",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
+  },
+  {
+    "id": 740,
+    "costo": 0,
+    "title": "5 Centavos 1907",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1907,
+    "price": "4 USD",
+    "images": [
+      "images/740A.jpeg",
+      "images/740B.jpeg"
+    ],
+    "reference": "CJ# 138",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
+  },
+  {
+    "id": 741,
+    "costo": 0,
+    "title": "5 Centavos 1907",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1907,
+    "price": "5 USD",
+    "images": [
+      "images/741A.jpeg",
+      "images/741B.jpeg"
+    ],
+    "reference": "CJ# 138",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
+  },
+  {
+    "id": 742,
+    "costo": 0,
+    "title": "5 Centavos 1908",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1908,
+    "price": "3 USD",
+    "images": [
+      "images/742A.jpeg",
+      "images/742B.jpeg"
+    ],
+    "reference": "CJ# 139",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
+  },
+  {
+    "id": 743,
+    "costo": 0,
+    "title": "5 Centavos 1911",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1911,
+    "price": "6 USD",
+    "images": [
+      "images/743A.jpeg",
+      "images/743B.jpeg"
+    ],
+    "reference": "CJ# 142",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
+  },
+  {
+    "id": 744,
+    "costo": 0,
+    "title": "5 Centavos 1912",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1912,
+    "price": "4 USD",
+    "images": [
+      "images/744A.jpeg",
+      "images/744B.jpeg"
+    ],
+    "reference": "CJ# 143",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
+  },
+  {
+    "id": 745,
+    "costo": 0,
+    "title": "5 Centavos 1941",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1941,
+    "price": "3 USD",
+    "images": [
+      "images/745A.jpeg",
+      "images/745B.jpeg"
+    ],
+    "reference": "CJ# 171",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel"
+  },
+  {
+    "id": 746,
+    "costo": 0,
+    "title": "10 Centavos 1935",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1935,
+    "price": "4 USD",
+    "images": [
+      "images/746A.jpeg",
+      "images/746B.jpeg"
+    ],
+    "reference": "CJ# 122",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
+  },
+  {
+    "id": 747,
+    "costo": 0,
+    "title": "10 Centavos 1935",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1935,
+    "price": "3.5 USD",
+    "images": [
+      "images/747A.jpeg",
+      "images/747B.jpeg"
+    ],
+    "reference": "CJ# 122",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
+  },
+  {
+    "id": 748,
+    "costo": 0,
+    "title": "10 Centavos 1935",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1935,
+    "price": "3 USD",
+    "images": [
+      "images/748A.jpeg",
+      "images/748B.jpeg"
+    ],
+    "reference": "CJ# 122",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
+  },
+  {
+    "id": 749,
+    "costo": 0,
+    "title": "10 Centavos 1919",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1919,
+    "price": "2 USD",
+    "images": [
+      "images/749A.jpeg",
+      "images/749B.jpeg"
+    ],
+    "reference": "CJ# 107",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
+  },
+  {
+    "id": 750,
+    "costo": 0,
+    "title": "10 Centavos 1916",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1916,
+    "price": "6 USD",
+    "images": [
+      "images/750A.jpeg",
+      "images/750B.jpeg"
+    ],
+    "reference": "CJ# 105",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel",
+    "mintage": "835.059",
+    "description": "ESCASA"
+  },
+  {
+    "id": 751,
+    "costo": 0,
+    "title": "10 Centavos 1915",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1915,
+    "price": "1 USD",
+    "images": [
+      "images/751A.jpeg",
+      "images/751B.jpeg"
+    ],
+    "reference": "CJ# 104",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
+  },
+  {
+    "id": 752,
+    "costo": 0,
+    "title": "10 Centavos 1912",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1912,
+    "price": "2 USD",
+    "images": [
+      "images/752A.jpeg",
+      "images/752B.jpeg"
+    ],
+    "reference": "CJ# 101",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
+  },
+  {
+    "id": 753,
+    "costo": 0,
+    "title": "10 Centavos 1908",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1908,
+    "price": "5 USD",
+    "images": [
+      "images/753A.jpeg",
+      "images/753B.jpeg"
+    ],
+    "reference": "CJ# 97",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
+  },
+  {
+    "id": 754,
+    "costo": 0,
+    "title": "10 Centavos 1908",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1908,
+    "price": "3.5 USD",
+    "images": [
+      "images/754A.jpeg",
+      "images/754B.jpeg"
+    ],
+    "reference": "CJ# 97",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
+  },
+  {
+    "id": 755,
+    "costo": 0,
+    "title": "10 Centavos 1907",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1907,
+    "price": "8 USD",
+    "images": [
+      "images/755A.jpeg",
+      "images/755B.jpeg"
+    ],
+    "reference": "CJ# 96",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
+  },
+  {
+    "id": 756,
+    "costo": 0,
+    "title": "10 Centavos 1897",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1897,
+    "price": "2.5 USD",
+    "images": [
+      "images/756A.jpeg",
+      "images/756B.jpeg"
+    ],
+    "reference": "CJ# 91",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
+  },
+  {
+    "id": 757,
+    "costo": 0,
+    "title": "10 Centavos 1897",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1897,
+    "price": "2 USD",
+    "images": [
+      "images/757A.jpeg",
+      "images/757B.jpeg"
+    ],
+    "reference": "CJ# 91",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
+  },
+  {
+    "id": 758,
+    "costo": 0,
+    "title": "10 Centavos 1896",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1896,
+    "price": "5 USD",
+    "images": [
+      "images/758A.jpeg",
+      "images/758B.jpeg"
+    ],
+    "reference": "CJ# 90",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
+  },
+  {
+    "id": 759,
+    "costo": 0,
+    "title": "10 Centavos 1914",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1914,
+    "price": "10 USD",
+    "images": [
+      "images/759A.jpeg",
+      "images/759B.jpeg"
+    ],
+    "reference": "CJ# 103",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel",
+    "mintage": "750.733",
+    "description": "ESCASA"
+  },
+  {
+    "id": 760,
+    "costo": 0,
+    "title": "10 Centavos 1931",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1931,
+    "price": "4 USD",
+    "images": [
+      "images/760A.jpeg",
+      "images/760B.jpeg"
+    ],
+    "reference": "CJ# 119",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel",
+    "mintage": "892.873",
+    "description": "ESCASA"
+  },
+  {
+    "id": 761,
+    "costo": 0,
+    "title": "10 Centavos 1931",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1931,
+    "price": "6 USD",
+    "images": [
+      "images/761A.jpeg",
+      "images/761B.jpeg"
+    ],
+    "reference": "CJ# 119",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel",
+    "mintage": "892.873",
+    "description": "ESCASA"
+  },
+  {
+    "id": 762,
+    "costo": 0,
+    "title": "5 Centavos 1930",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1930,
+    "price": "5 USD",
+    "images": [
+      "images/762A.jpeg",
+      "images/762B.jpeg"
+    ],
+    "reference": "CJ# 161",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "brillo original"
+  },
+  {
+    "id": 763,
+    "costo": 0,
+    "title": "20 Centavos 1916",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1916,
+    "price": "3 USD",
+    "images": [
+      "images/763A.jpeg",
+      "images/763B.jpeg"
+    ],
+    "reference": "CJ# 67",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel",
+    "mintage": "984.634",
+    "description": "ESCASA"
+  },
+  {
+    "id": 764,
+    "costo": 0,
+    "title": "20 Centavos 1916",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1916,
+    "price": "2.5 USD",
+    "images": [
+      "images/764A.jpeg",
+      "images/764B.jpeg"
+    ],
+    "reference": "CJ# 67",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel",
+    "mintage": "984.634",
+    "description": "ESCASA"
+  },
+  {
+    "id": 765,
+    "costo": 0,
+    "title": "20 Centavos 1914",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1914,
+    "price": "10 USD",
+    "images": [
+      "images/765A.jpeg",
+      "images/765B.jpeg"
+    ],
+    "reference": "CJ# 65",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel",
+    "mintage": "526.770",
+    "description": "ESCASA"
+  },
+  {
+    "id": 766,
+    "costo": 0,
+    "title": "20 Centavos 1912",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1912,
+    "price": "4 USD",
+    "images": [
+      "images/766A.jpeg",
+      "images/766B.jpeg"
+    ],
+    "reference": "CJ# 63",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
+  },
+  {
+    "id": 767,
+    "costo": 0,
+    "title": "20 Centavos 1912",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1912,
+    "price": "3 USD",
+    "images": [
+      "images/767A.jpeg",
+      "images/767B.jpeg"
+    ],
+    "reference": "CJ# 63",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
+  },
+  {
+    "id": 768,
+    "costo": 0,
+    "title": "20 Centavos 1911",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1911,
+    "price": "6 USD",
+    "images": [
+      "images/768A.jpeg",
+      "images/768B.jpeg"
+    ],
+    "reference": "CJ# 62",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
+  },
+  {
+    "id": 769,
+    "costo": 0,
+    "title": "20 Centavos 1911",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1911,
+    "price": "4 USD",
+    "images": [
+      "images/769A.jpeg",
+      "images/769B.jpeg"
+    ],
+    "reference": "CJ# 62",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
+  },
+  {
+    "id": 770,
+    "costo": 0,
+    "title": "20 Centavos 1909",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1909,
+    "price": "2.5 USD",
+    "images": [
+      "images/770A.jpeg",
+      "images/770B.jpeg"
+    ],
+    "reference": "CJ# 60",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
+  },
+  {
+    "id": 771,
+    "costo": 0,
+    "title": "20 Centavos 1909",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1909,
+    "price": "1.5 USD",
+    "images": [
+      "images/771A.jpeg",
+      "images/771B.jpeg"
+    ],
+    "reference": "CJ# 60",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
+  },
+  {
+    "id": 772,
+    "costo": 0,
+    "title": "20 Centavos 1905",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1905,
+    "price": "4 USD",
+    "images": [
+      "images/772A.jpeg",
+      "images/772B.jpeg"
+    ],
+    "reference": "CJ# 56",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
+  },
+  {
+    "id": 773,
+    "costo": 0,
+    "title": "20 Centavos 1905",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1905,
+    "price": "2.5 USD",
+    "images": [
+      "images/773A.jpeg",
+      "images/773B.jpeg"
+    ],
+    "reference": "CJ# 56",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
+  },
+  {
+    "id": 774,
+    "costo": 0,
+    "title": "20 Centavos 1898",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1898,
+    "price": "5 USD",
+    "images": [
+      "images/774A.jpeg",
+      "images/774B.jpeg"
+    ],
+    "reference": "CJ# 54",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
+  },
+  {
+    "id": 775,
+    "costo": 0,
+    "title": "20 Centavos 1896",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1896,
+    "price": "4 USD",
+    "images": [
+      "images/775A.jpeg",
+      "images/775B.jpeg"
+    ],
+    "reference": "CJ# 52",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
+  },
+  {
+    "id": 776,
+    "costo": 0,
+    "title": "20 Centavos 1896",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1896,
+    "price": "2 USD",
+    "images": [
+      "images/776A.jpeg",
+      "images/776B.jpeg"
+    ],
+    "reference": "CJ# 52",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
   }
 ]
