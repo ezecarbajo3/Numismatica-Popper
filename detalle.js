@@ -450,14 +450,27 @@ async function loadCoinDetail() {
         return 0;
       };
 
+      const getYear = (c) => {
+        const y = parseInt(c.year, 10);
+        return Number.isNaN(y) ? 0 : y;
+      };
+
       groupMembers = allCoins
         .filter(c => c.group_id === coin.group_id)
         .sort((a, b) => {
+          // 1. Año ascendente (más antigua primero)
+          const yearA = getYear(a);
+          const yearB = getYear(b);
+          if (yearA !== yearB) {
+            return yearA - yearB;
+          }
+          // 2. Mismo año: mejor grado primero
           const scoreA = getGradeScore(a);
           const scoreB = getGradeScore(b);
           if (scoreA !== scoreB) {
             return scoreB - scoreA;
           }
+          // 3. Desempate estable por id
           return a.id - b.id;
         });
     }
