@@ -105,8 +105,8 @@
     "grade_short": "B+",
     "mintage": "",
     "description": "",
-    "group_id": "ar-2centavos-1884",
-    "group_label": "2 Centavos 1884"
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 17,
@@ -124,8 +124,8 @@
     "grade_short": "EX",
     "mintage": "",
     "description": "",
-    "group_id": "ar-2centavos-1885",
-    "group_label": "2 Centavos 1885"
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 18,
@@ -142,7 +142,9 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 19,
@@ -159,7 +161,9 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 20,
@@ -289,8 +293,8 @@
     "grade_short": "R+",
     "mintage": "596.000",
     "description": "",
-    "group_id": "ar-2centavos-1896",
-    "group_label": "2 Centavos 1896"
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 34,
@@ -328,7 +332,9 @@
     "mintage": "2.100.000",
     "description": "",
     "status": "sold",
-    "soldAt": "2026-06-26T20:21:25-03:00"
+    "soldAt": "2026-06-26T20:21:25-03:00",
+    "group_id": "ar-1centavo-patacon",
+    "group_label": "1 Centavo Patacón"
   },
   {
     "id": 36,
@@ -381,7 +387,9 @@
     "grade": "Regular",
     "grade_short": "R",
     "mintage": "1.300.000",
-    "description": ""
+    "description": "",
+    "group_id": "ar-1centavo-patacon",
+    "group_label": "1 Centavo Patacón"
   },
   {
     "id": 39,
@@ -436,7 +444,9 @@
     "grade": "Bueno - detalles",
     "grade_short": "B**",
     "mintage": "443.700",
-    "description": "Contramarca de la época"
+    "description": "Contramarca de la época",
+    "group_id": "ar-1centavo-patacon",
+    "group_label": "1 Centavo Patacón"
   },
   {
     "id": 49,
@@ -473,8 +483,8 @@
     "grade_short": "R+",
     "mintage": "423.300",
     "description": "Escasa.",
-    "group_id": "ar-centavo-1895",
-    "group_label": "Centavo 1895"
+    "group_id": "ar-1centavo-patacon",
+    "group_label": "1 Centavo Patacón"
   },
   {
     "id": 51,
@@ -492,8 +502,8 @@
     "grade_short": "R+",
     "mintage": "423.300",
     "description": "Escasa.",
-    "group_id": "ar-centavo-1895",
-    "group_label": "Centavo 1895"
+    "group_id": "ar-1centavo-patacon",
+    "group_label": "1 Centavo Patacón"
   },
   {
     "id": 55,
@@ -845,7 +855,9 @@
     "mintage": "",
     "description": "",
     "status": "sold",
-    "soldAt": "2026-06-26T20:21:25-03:00"
+    "soldAt": "2026-06-26T20:21:25-03:00",
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 101,
@@ -862,7 +874,9 @@
     "grade": "N/A",
     "grade_short": "-",
     "mintage": "592.000",
-    "description": ""
+    "description": "",
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 102,
@@ -880,8 +894,8 @@
     "grade_short": "R+",
     "mintage": "596.000",
     "description": "",
-    "group_id": "ar-2centavos-1896",
-    "group_label": "2 Centavos 1896"
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 104,
@@ -1280,8 +1294,8 @@
     "grade_short": "B",
     "mintage": "596.000",
     "description": "Escasa.",
-    "group_id": "ar-2centavos-1896",
-    "group_label": "2 Centavos 1896"
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 147,
@@ -1594,8 +1608,8 @@
     "grade_short": "MB+",
     "mintage": "596.000",
     "description": "596k acuñadas.",
-    "group_id": "ar-2centavos-1896",
-    "group_label": "2 Centavos 1896"
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 179,
@@ -4461,7 +4475,9 @@
       "images/423B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "group_id": "ar-1centavo-patacon",
+    "group_label": "1 Centavo Patacón"
   },
   {
     "id": 434,
@@ -6047,7 +6063,9 @@
     "grade_short": "MB",
     "mintage": "3.400.000",
     "status": "sold",
-    "soldAt": "2026-07-02T17:54:42.358Z"
+    "soldAt": "2026-07-02T17:54:42.358Z",
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 547,
@@ -6064,8 +6082,8 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "3.000.000",
-    "group_id": "ar-2centavos-1885",
-    "group_label": "2 Centavos 1885"
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 548,
@@ -6082,8 +6100,8 @@
     "grade": "Muy Bueno-",
     "grade_short": "MB-",
     "mintage": "1.300.000",
-    "group_id": "ar-2centavos-1883",
-    "group_label": "2 Centavos 1883"
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 549,
@@ -6099,7 +6117,9 @@
     "reference": "CJ# 35",
     "grade": "Excelente Menos",
     "grade_short": "EX-",
-    "mintage": "2.200.000"
+    "mintage": "2.200.000",
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 550,
@@ -6116,8 +6136,8 @@
     "grade": "Excelente Menos - detalles",
     "grade_short": "EX-**",
     "mintage": "5.600.000",
-    "group_id": "ar-2centavos-1884",
-    "group_label": "2 Centavos 1884"
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 551,
@@ -6134,8 +6154,8 @@
     "grade": "Excelente Menos - detalles",
     "grade_short": "EX-**",
     "mintage": "5.600.000",
-    "group_id": "ar-2centavos-1884",
-    "group_label": "2 Centavos 1884"
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 552,
@@ -6433,8 +6453,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "1.300.000",
-    "group_id": "ar-2centavos-1883",
-    "group_label": "2 Centavos 1883"
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   },
   {
     "id": 571,
