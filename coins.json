@@ -3417,7 +3417,9 @@
     "images": [
       "images/357A.jpeg",
       "images/357B.jpeg"
-    ]
+    ],
+    "status": "sold",
+    "soldAt": "2026-07-02T22:28:53.598731Z"
   },
   {
     "id": 361,
