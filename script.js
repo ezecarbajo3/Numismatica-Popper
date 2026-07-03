@@ -670,6 +670,56 @@ function getFaceValue(title) {
   return m ? parseFloat(m[1]) : 1;
 }
 
+// Separa "[valor facial] [año]" del texto extra de un título de moneda.
+// Año = token de 4 dígitos (1500–2099) que aparezca DESPUÉS de una palabra (denominación),
+// para no confundir el valor facial (ej. "2000 Pesos 1992" → base "2000 Pesos 1992").
+function splitCoinTitle(rawTitle) {
+  const title = String(rawTitle || '').trim();
+  if (!title) return { base: '', extra: '' };
+  const tokens = title.split(/\s+/);
+  const isYear = (t) => /^\(?(1[5-9]\d{2}|20\d{2})\)?$/.test(t);
+  const isAlpha = (t) => /[A-Za-zÀ-ÿ]/.test(t);
+
+  let yearIndex = -1, sawAlpha = false;
+  for (let i = 0; i < tokens.length; i++) {
+    if (isYear(tokens[i]) && sawAlpha) yearIndex = i; // último año válido
+    if (isAlpha(tokens[i])) sawAlpha = true;
+  }
+
+  let cut; // índice del último token que pertenece al base
+  if (yearIndex >= 0) {
+    cut = yearIndex;
+  } else if (!/^\d/.test(tokens[0])) {
+    // Sin año y sin valor facial numérico al inicio (nombres, "Medalla…",
+    // "Catalogo…", "Troy Ounce", "Lote…"): todo el título es base, sin extra.
+    cut = tokens.length - 1;
+  } else {
+    // Sin año pero con valor facial: base = hasta la denominación (primera palabra),
+    // absorbiendo un año/fecha/rango pegado (ej. "1854/40", "1861-1863").
+    const firstAlpha = tokens.findIndex(isAlpha);
+    cut = firstAlpha === -1 ? tokens.length - 1 : firstAlpha;
+    while (cut + 1 < tokens.length && /\d{4}/.test(tokens[cut + 1])) cut++;
+  }
+  return {
+    base: tokens.slice(0, cut + 1).join(' '),
+    extra: tokens.slice(cut + 1).join(' '),
+  };
+}
+
+// Setea el título en un elemento: base en crema, texto extra en dorado.
+function applyCoinTitle(el, rawTitle) {
+  if (!el) return;
+  const { base, extra } = splitCoinTitle(rawTitle);
+  el.textContent = base;
+  if (extra) {
+    if (base) el.appendChild(document.createTextNode(' '));
+    const span = document.createElement('span');
+    span.className = 'coin-title-extra';
+    span.textContent = extra;
+    el.appendChild(span);
+  }
+}
+
 function sortCoins(coins) {
   // Inversión view: Lote Plata first, then by purity descending, then year
   if (activeCategory === 'plata' || activeCategory === 'inversion') {
@@ -763,7 +813,7 @@ function renderCoins(coins, skipAnimation = false) {
 
     if (coin.group_id) {
       article.classList.add('is-group');
-      title.textContent = coin.group_label || coin.title;
+      applyCoinTitle(title, coin.group_label || coin.title);
       yearTag.textContent = '';
       const count = getGroupMemberCount(coin.group_id);
       price.style.display = 'none'; // Hide price element to allow badgeRow to center
@@ -772,7 +822,7 @@ function renderCoins(coins, skipAnimation = false) {
         : (count === 1 ? `<span class="coin-grade-badge">1 variante</span>` : '');
     } else {
       article.classList.remove('is-group');
-      title.textContent   = coin.title || 'Sin título';
+      applyCoinTitle(title, coin.title || 'Sin título');
       yearTag.textContent = coin.year  || '';
       price.style.display = 'block'; 
       if (coin.original_price) {

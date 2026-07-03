@@ -6,6 +6,56 @@ function getQueryParam(name) {
   return params.get(name);
 }
 
+// Separa "[valor facial] [año]" del texto extra de un título de moneda.
+// Año = token de 4 dígitos (1500–2099) que aparezca DESPUÉS de una palabra (denominación),
+// para no confundir el valor facial (ej. "2000 Pesos 1992" → base "2000 Pesos 1992").
+function splitCoinTitle(rawTitle) {
+  const title = String(rawTitle || "").trim();
+  if (!title) return { base: "", extra: "" };
+  const tokens = title.split(/\s+/);
+  const isYear = (t) => /^\(?(1[5-9]\d{2}|20\d{2})\)?$/.test(t);
+  const isAlpha = (t) => /[A-Za-zÀ-ÿ]/.test(t);
+
+  let yearIndex = -1, sawAlpha = false;
+  for (let i = 0; i < tokens.length; i++) {
+    if (isYear(tokens[i]) && sawAlpha) yearIndex = i; // último año válido
+    if (isAlpha(tokens[i])) sawAlpha = true;
+  }
+
+  let cut; // índice del último token que pertenece al base
+  if (yearIndex >= 0) {
+    cut = yearIndex;
+  } else if (!/^\d/.test(tokens[0])) {
+    // Sin año y sin valor facial numérico al inicio (nombres, "Medalla…",
+    // "Catalogo…", "Troy Ounce", "Lote…"): todo el título es base, sin extra.
+    cut = tokens.length - 1;
+  } else {
+    // Sin año pero con valor facial: base = hasta la denominación (primera palabra),
+    // absorbiendo un año/fecha/rango pegado (ej. "1854/40", "1861-1863").
+    const firstAlpha = tokens.findIndex(isAlpha);
+    cut = firstAlpha === -1 ? tokens.length - 1 : firstAlpha;
+    while (cut + 1 < tokens.length && /\d{4}/.test(tokens[cut + 1])) cut++;
+  }
+  return {
+    base: tokens.slice(0, cut + 1).join(" "),
+    extra: tokens.slice(cut + 1).join(" "),
+  };
+}
+
+// Setea el título en un elemento: base en crema, texto extra en dorado.
+function applyCoinTitle(el, rawTitle) {
+  if (!el) return;
+  const { base, extra } = splitCoinTitle(rawTitle);
+  el.textContent = base;
+  if (extra) {
+    if (base) el.appendChild(document.createTextNode(" "));
+    const span = document.createElement("span");
+    span.className = "coin-title-extra";
+    span.textContent = extra;
+    el.appendChild(span);
+  }
+}
+
 function getImagesArray(coin) {
   if (Array.isArray(coin.images) && coin.images.length > 0) return coin.images;
   if (coin.image) return [coin.image];
@@ -103,7 +153,7 @@ function updateCoinContent(coin) {
   if (countryEl) countryEl.textContent = coin.country || "País no informado";
 
   const titleEl = document.getElementById("detailTitle");
-  if (titleEl) titleEl.textContent = coin.title || "Sin título";
+  applyCoinTitle(titleEl, coin.title || "Sin título");
 
   const descEl = document.getElementById("detailDescription");
   if (descEl) {
@@ -188,7 +238,7 @@ function renderCoinDetail(coin, groupMembers) {
 
     <div class="detail-info reveal">
       <p class="detail-country" id="detailCountry">${coin.country || "País no informado"}</p>
-      <h1 class="detail-title" id="detailTitle">${coin.title || "Sin título"}</h1>
+      <h1 class="detail-title" id="detailTitle"></h1>
 
       <p class="detail-description" id="detailDescription"
         ${coin.description ? "" : 'style="display:none"'}
@@ -245,6 +295,8 @@ function renderCoinDetail(coin, groupMembers) {
     </div>
     </div>
   `;
+
+  applyCoinTitle(document.getElementById("detailTitle"), coin.title || "Sin título");
 
   const shareBtn = document.getElementById("detailShare");
   if (shareBtn) {
