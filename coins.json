@@ -5749,6 +5749,7 @@
   },
   {
     "id": 517,
+    "costo": 12.07,
     "title": "10 Centavos 1883",
     "country": "Argentina",
     "metal": "Plata .900",
@@ -5803,6 +5804,7 @@
   },
   {
     "id": 520,
+    "costo": 15.7,
     "title": "2 1/2 Gulden 1960",
     "country": "Países Bajos",
     "metal": "Plata .720",
@@ -5848,6 +5850,7 @@
   },
   {
     "id": 524,
+    "costo": 3.53,
     "title": "10 Centésimos 1877",
     "country": "Uruguay",
     "metal": "Plata .900",
@@ -5883,6 +5886,7 @@
   },
   {
     "id": 526,
+    "costo": 15.7,
     "title": "50 Centavos 1903 (GIRADA)",
     "country": "Bolivia",
     "metal": "Plata .900",
@@ -5900,6 +5904,7 @@
   },
   {
     "id": 540,
+    "costo": 16.09,
     "title": "20 Centavos 1882",
     "country": "Argentina",
     "metal": "Plata .900",
@@ -5919,6 +5924,7 @@
   },
   {
     "id": 541,
+    "costo": 16.09,
     "title": "20 Centavos 1882",
     "country": "Argentina",
     "metal": "Plata .900",
@@ -5938,6 +5944,7 @@
   },
   {
     "id": 542,
+    "costo": 16.09,
     "title": "20 Centavos 1882",
     "country": "Argentina",
     "metal": "Plata .900",
@@ -5957,6 +5964,7 @@
   },
   {
     "id": 543,
+    "costo": 16.09,
     "title": "20 Centavos 1882",
     "country": "Argentina",
     "metal": "Plata .900",
@@ -5976,6 +5984,7 @@
   },
   {
     "id": 544,
+    "costo": 16.09,
     "title": "20 Centavos 1882",
     "country": "Argentina",
     "metal": "Plata .900",
@@ -6150,6 +6159,7 @@
   },
   {
     "id": 554,
+    "costo": 3.53,
     "title": "10 Centésimos 1877",
     "country": "Uruguay",
     "metal": "Plata .900",
@@ -6295,6 +6305,7 @@
   },
   {
     "id": 563,
+    "costo": 15.7,
     "title": "50 Centésimos 1917",
     "country": "Uruguay",
     "metal": "Plata .900",
@@ -6437,6 +6448,7 @@
   },
   {
     "id": 572,
+    "costo": 15.7,
     "title": "50 Centavos 1902",
     "country": "Bolivia",
     "year": 1902,
@@ -6455,6 +6467,7 @@
   },
   {
     "id": 573,
+    "costo": 15.7,
     "title": "50 Centavos 1902",
     "country": "Bolivia",
     "year": 1902,
