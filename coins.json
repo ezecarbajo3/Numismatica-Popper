@@ -6790,7 +6790,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Coin card + estampilla"
+    "description": "Coin card + estampilla",
+    "status": "sold",
+    "soldAt": "2026-07-04T11:18:24.414963Z"
   },
   {
     "id": 592,
