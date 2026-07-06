@@ -6491,7 +6491,9 @@
     "reference": "KM# 175.1",
     "mintage": "1.530.000",
     "group_id": "bo-50centavos-1902",
-    "group_label": "50 Centavos 1902"
+    "group_label": "50 Centavos 1902",
+    "status": "sold",
+    "soldAt": "2026-07-06T20:54:42.076442Z"
   },
   {
     "id": 573,
@@ -6510,7 +6512,9 @@
     "reference": "KM# 175.1",
     "mintage": "1.530.000",
     "group_id": "bo-50centavos-1902",
-    "group_label": "50 Centavos 1902"
+    "group_label": "50 Centavos 1902",
+    "status": "sold",
+    "soldAt": "2026-07-06T20:54:42.076454Z"
   },
   {
     "id": 574,
