@@ -9718,5 +9718,76 @@
     "reference": "CJ# 52",
     "group_id": "ar-20centavos-cuproniquel",
     "group_label": "20 Centavos cuproníquel"
+  },
+  {
+    "id": 777,
+    "costo": 4.62,
+    "title": "20 Centésimos 1930",
+    "country": "Uruguay",
+    "metal": "Plata 800",
+    "year": 1930,
+    "price": "12 USD",
+    "images": [
+      "images/777A.jpeg",
+      "images/777B.jpeg"
+    ],
+    "reference": "KM# 26",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "description": "hermosa patina."
+  },
+  {
+    "id": 778,
+    "costo": 1.98,
+    "title": "2 Centavos 1893",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1893,
+    "price": "4 USD",
+    "images": [
+      "images/778A.jpeg",
+      "images/778B.jpeg"
+    ],
+    "reference": "CJ# 34",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
+  },
+  {
+    "id": 779,
+    "costo": 1.65,
+    "title": "2 Centavos 1893",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1893,
+    "price": "2 USD",
+    "images": [
+      "images/779A.jpeg",
+      "images/779B.jpeg"
+    ],
+    "reference": "CJ# 34",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
+  },
+  {
+    "id": 780,
+    "costo": 1.32,
+    "title": "2 Centavos 1890",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1890,
+    "price": "3 USD",
+    "images": [
+      "images/780A.jpeg",
+      "images/780B.jpeg"
+    ],
+    "reference": "CJ# 31",
+    "grade": "Muy Bueno-",
+    "grade_short": "MB-",
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   }
 ]
