@@ -10113,7 +10113,8 @@
       "images/801B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "cantidad": 2
   },
   {
     "id": 802,
