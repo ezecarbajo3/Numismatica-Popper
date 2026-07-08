@@ -181,6 +181,17 @@ function updateCoinContent(coin) {
     }
   }
 
+  const cantidadRow = document.getElementById("specCantidadRow");
+  const cantidadVal = document.getElementById("specCantidad");
+  if (cantidadRow && cantidadVal) {
+    if (coin.cantidad && coin.cantidad >= 2) {
+      cantidadVal.textContent = coin.cantidad + " ejemplares";
+      cantidadRow.style.display = "";
+    } else {
+      cantidadRow.style.display = "none";
+    }
+  }
+
   const priceEl = document.getElementById("detailPrice");
   if (priceEl) {
     if (coin.original_price) {
@@ -262,6 +273,10 @@ function renderCoinDetail(coin, groupMembers) {
         <div class="detail-spec-row" id="specMintageRow" ${coin.mintage ? "" : 'style="display:none"'}>
           <div class="detail-spec-label">Acuñación</div>
           <div class="detail-spec-value" id="specMintage">${coin.mintage ? Number(String(coin.mintage).replace(/[.,]/g, "")).toLocaleString("es-AR") : ""}</div>
+        </div>
+        <div class="detail-spec-row" id="specCantidadRow" ${coin.cantidad && coin.cantidad >= 2 ? "" : 'style="display:none"'}>
+          <div class="detail-spec-label">Disponibles</div>
+          <div class="detail-spec-value" id="specCantidad">${coin.cantidad ? coin.cantidad + " ejemplares" : ""}</div>
         </div>
         <div class="detail-spec-row">
           <div class="detail-spec-label">Referencia interna</div>

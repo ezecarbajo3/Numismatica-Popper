@@ -732,6 +732,13 @@ button {
   white-space: nowrap;
 }
 
+.coin-grade-badge.coin-stock-badge {
+  border-color: rgba(37, 211, 102, 0.4);
+  background: linear-gradient(180deg, rgba(37, 211, 102, 0.15) 0%, rgba(37, 211, 102, 0.05) 100%);
+  color: var(--success);
+}
+
+
 .coin-card:hover:not(.is-zoomed) .coin-grade-badge {
   transform: scale(1.05);
   border-color: rgba(207, 172, 107, 0.5);
