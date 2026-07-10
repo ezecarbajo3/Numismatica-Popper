@@ -10193,8 +10193,10 @@
   },
   {
     "id": 806,
+    "costo": 19.87,
     "title": "4 Centésimos 1870",
     "country": "Paraguay",
+    "metal": "Cobre",
     "year": 1870,
     "price": "30 USD",
     "images": [
