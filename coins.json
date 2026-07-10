@@ -6350,7 +6350,9 @@
     "reference": "KM# 22",
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "description": "Canto parlante."
+    "description": "Canto parlante.",
+    "status": "sold",
+    "soldAt": "2026-07-10T23:08:00Z"
   },
   {
     "id": 564,
