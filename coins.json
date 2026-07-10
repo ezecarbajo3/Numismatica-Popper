@@ -5756,7 +5756,9 @@
     "reference": "KM# 4.1",
     "grade": "Sin Circular -",
     "grade_short": "SC-",
-    "description": "Única"
+    "description": "Única",
+    "group_id": "py-4centesimos-1870",
+    "group_label": "4 Centésimos 1870"
   },
   {
     "id": 516,
@@ -10188,5 +10190,21 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
+  },
+  {
+    "id": 806,
+    "title": "4 Centésimos 1870",
+    "country": "Paraguay",
+    "year": 1870,
+    "price": "30 USD",
+    "images": [
+      "images/806A.jpeg",
+      "images/806B.jpeg"
+    ],
+    "reference": "KM# 4.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "py-4centesimos-1870",
+    "group_label": "4 Centésimos 1870"
   }
 ]
