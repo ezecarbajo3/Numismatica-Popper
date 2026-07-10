@@ -8481,7 +8481,9 @@
     "grade_short": "EX",
     "mintage": "20.000.000",
     "group_id": "cr-5centimos",
-    "group_label": "5 Centimos"
+    "group_label": "5 Centimos",
+    "status": "sold",
+    "soldAt": "2026-07-10T17:05:47-03:00"
   },
   {
     "id": 702,
@@ -9891,7 +9893,7 @@
     "group_id": "cr-25colones-2023",
     "group_label": "25 Colones 2023",
     "status": "sold",
-    "soldAt": "2026-07-10T07:31:57.995513Z"
+    "soldAt": "2026-07-10T17:05:47-03:00"
   },
   {
     "id": 787,
@@ -10046,7 +10048,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "status": "sold",
-    "soldAt": "2026-07-10T07:31:57.995523Z"
+    "soldAt": "2026-07-10T17:05:47-03:00"
   },
   {
     "id": 797,
@@ -10062,7 +10064,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "status": "sold",
-    "soldAt": "2026-07-10T07:31:57.995526Z"
+    "soldAt": "2026-07-10T17:05:47-03:00"
   },
   {
     "id": 798,
@@ -10078,7 +10080,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "status": "sold",
-    "soldAt": "2026-07-10T07:31:57.995528Z"
+    "soldAt": "2026-07-10T17:05:47-03:00"
   },
   {
     "id": 799,
@@ -10094,7 +10096,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "status": "sold",
-    "soldAt": "2026-07-10T07:31:57.995530Z"
+    "soldAt": "2026-07-10T17:05:47-03:00"
   },
   {
     "id": 800,
