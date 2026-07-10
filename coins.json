@@ -9889,7 +9889,9 @@
     "grade_short": "SC",
     "description": "Alajuela",
     "group_id": "cr-25colones-2023",
-    "group_label": "25 Colones 2023"
+    "group_label": "25 Colones 2023",
+    "status": "sold",
+    "soldAt": "2026-07-10T07:31:57.995513Z"
   },
   {
     "id": 787,
@@ -10042,7 +10044,9 @@
       "images/796B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-07-10T07:31:57.995523Z"
   },
   {
     "id": 797,
@@ -10056,7 +10060,9 @@
       "images/797B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-07-10T07:31:57.995526Z"
   },
   {
     "id": 798,
@@ -10070,7 +10076,9 @@
       "images/798B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-07-10T07:31:57.995528Z"
   },
   {
     "id": 799,
@@ -10084,7 +10092,9 @@
       "images/799B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-07-10T07:31:57.995530Z"
   },
   {
     "id": 800,
