@@ -677,7 +677,9 @@
     "mintage": "1.000.000",
     "description": "Año único",
     "group_id": "group_a_km10_uy",
-    "group_label": "40 Centésimos (KM# 10)"
+    "group_label": "40 Centésimos (KM# 10)",
+    "status": "sold",
+    "soldAt": "2026-07-10T17:13:58-03:00"
   },
   {
     "id": 79,
