@@ -10203,6 +10203,8 @@
       "images/806A.jpeg",
       "images/806B.jpeg"
     ],
+    "status": "sold",
+    "soldAt": "2026-07-10T19:09:17-03:00",
     "reference": "KM# 4.1",
     "grade": "Excelente",
     "grade_short": "EX",
