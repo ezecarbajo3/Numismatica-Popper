@@ -8482,8 +8482,7 @@
     "mintage": "20.000.000",
     "group_id": "cr-5centimos",
     "group_label": "5 Centimos",
-    "status": "sold",
-    "soldAt": "2026-07-10T17:05:47-03:00"
+    "cantidad": 2
   },
   {
     "id": 702,
@@ -8500,7 +8499,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "group_id": "cr-5centimos",
-    "group_label": "5 Centimos"
+    "group_label": "5 Centimos",
+    "cantidad": 2
   },
   {
     "id": 703,
@@ -8536,7 +8536,8 @@
     "mintage": "3.060.000",
     "description": "Año único",
     "group_id": "cr-5centimos",
-    "group_label": "5 Centimos"
+    "group_label": "5 Centimos",
+    "cantidad": 5
   },
   {
     "id": 705,
