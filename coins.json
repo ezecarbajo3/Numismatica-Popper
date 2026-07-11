@@ -711,7 +711,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "",
-    "description": "Agujero centrado"
+    "description": "Agujero centrado",
+    "status": "sold",
+    "soldAt": "2026-07-11T16:58:49-03:00"
   },
   {
     "id": 89,
@@ -2179,7 +2181,9 @@
     "grade_short": "SC",
     "description": "",
     "mintage": "",
-    "reference": "KM# 84"
+    "reference": "KM# 84",
+    "status": "sold",
+    "soldAt": "2026-07-11T16:58:49-03:00"
   },
   {
     "id": 249,
