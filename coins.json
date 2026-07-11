@@ -17,25 +17,6 @@
     "description": ""
   },
   {
-    "id": 6,
-    "title": "10 Décimos 1830",
-    "country": "Argentina - Buenos Aires",
-    "metal": "Cobre",
-    "year": 1830,
-    "price": "65 USD",
-    "images": [
-      "images/6A.jpeg",
-      "images/6B.jpeg"
-    ],
-    "reference": "CJ# 8.2",
-    "grade": "Bueno",
-    "grade_short": "B",
-    "mintage": "",
-    "description": "",
-    "status": "sold",
-    "soldAt": "2026-06-23T00:34:17-03:00"
-  },
-  {
     "id": 7,
     "title": "2 Reales 1860",
     "country": "Argentina - Buenos Aires",
@@ -1120,25 +1101,6 @@
     "description": ""
   },
   {
-    "id": 131,
-    "title": "5 Centavos 1915",
-    "country": "Chile",
-    "metal": "Plata",
-    "year": 1915,
-    "price": "5 USD",
-    "images": [
-      "images/131A.jpeg",
-      "images/131B.jpeg"
-    ],
-    "reference": "KM# 155.3",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": "",
-    "description": "Empaste en el '1'.",
-    "status": "sold",
-    "soldAt": "2026-06-23T00:34:17-03:00"
-  },
-  {
     "id": 134,
     "title": "10 Centesimi 1894",
     "country": "Italia",
@@ -1713,25 +1675,6 @@
     "grade_short": "SC",
     "mintage": "",
     "description": "Difícil de ver"
-  },
-  {
-    "id": 187,
-    "title": "Lote Plata x6 Artigas",
-    "country": "Uruguay",
-    "metal": "Plata",
-    "year": "",
-    "price": "65 USD",
-    "images": [
-      "images/187A.jpeg",
-      "images/187B.jpeg"
-    ],
-    "reference": "KM# 31",
-    "grade": "Muy Buena",
-    "grade_short": "MB",
-    "mintage": "",
-    "description": "90 USD al peso en plata",
-    "status": "sold",
-    "soldAt": "2026-06-23T00:34:17-03:00"
   },
   {
     "id": 188,
@@ -2799,22 +2742,6 @@
     "description": "Gran tamaño"
   },
   {
-    "id": 300,
-    "title": "1 Peso 1933",
-    "country": "Chile",
-    "metal": "Cuproníquel",
-    "year": 1933,
-    "price": "2.5 USD",
-    "images": [
-      "images/300A.jpeg",
-      "images/300B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "status": "sold",
-    "soldAt": "2026-06-23T00:34:17-03:00"
-  },
-  {
     "id": 303,
     "title": "5 Dolares 2017",
     "country": "Jamaica",
@@ -2919,22 +2846,6 @@
     "reference": "KM 47",
     "grade": "Excelente+",
     "grade_short": "EX+"
-  },
-  {
-    "id": 315,
-    "title": "5 Pfennig 1968",
-    "country": "Alemania",
-    "metal": "Aluminio",
-    "year": 1968,
-    "price": "3 USD",
-    "images": [
-      "images/315A.jpeg",
-      "images/315B.jpeg"
-    ],
-    "reference": "KM 9",
-    "description": "República Democrática",
-    "status": "sold",
-    "soldAt": "2026-06-20T20:50:49.102104Z"
   },
   {
     "id": 316,
@@ -5789,44 +5700,6 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "2.700.000"
-  },
-  {
-    "id": 518,
-    "title": "50 Centavos 1903",
-    "country": "Bolivia",
-    "metal": "Plata .900",
-    "year": 1903,
-    "price": "20 USD",
-    "images": [
-      "images/531A.jpeg",
-      "images/531B.jpeg"
-    ],
-    "reference": "KM# 175",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": "690.000",
-    "status": "sold",
-    "soldAt": "2026-06-21T20:43:59-03:00"
-  },
-  {
-    "id": 519,
-    "title": "50 Centavos 1901",
-    "country": "Bolivia",
-    "metal": "Plata .900",
-    "year": 1901,
-    "price": "23 USD",
-    "images": [
-      "images/532A.jpeg",
-      "images/532B.jpeg",
-      "images/532C.jpeg",
-      "images/532D.jpeg"
-    ],
-    "reference": "KM# 175",
-    "grade": "Excelente +",
-    "grade_short": "EX+",
-    "description": "PÁTINA ÚNICA 🌈",
-    "status": "sold",
-    "soldAt": "2026-06-21T20:43:59-03:00"
   },
   {
     "id": 520,
