@@ -2583,7 +2583,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Mohammed V."
+    "description": "Mohammed V.",
+    "status": "sold",
+    "soldAt": "2026-07-11T17:36:41.940593Z"
   },
   {
     "id": 281,
