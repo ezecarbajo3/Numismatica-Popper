@@ -10220,5 +10220,23 @@
     "grade_short": "EX",
     "group_id": "py-4centesimos-1870",
     "group_label": "4 Centésimos 1870"
+  },
+  {
+    "id": 807,
+    "title": "20 Centavos 1908",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1908,
+    "price": "30 USD",
+    "images": [
+      "images/807A.jpeg",
+      "images/807B.jpeg"
+    ],
+    "reference": "CJ# 59",
+    "grade": "Bueno+",
+    "grade_short": "B+",
+    "mintage": "719.000",
+    "group_id": "ar-20centavos-cuproniquel",
+    "group_label": "20 Centavos cuproníquel"
   }
 ]
