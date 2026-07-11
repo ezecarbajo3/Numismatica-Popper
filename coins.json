@@ -5,7 +5,7 @@
     "country": "Argentina - Patria",
     "metal": "Plata .900",
     "year": 1815,
-    "price": "100 USD",
+    "price": "130 USD",
     "images": [
       "images/1A.jpeg",
       "images/1B.jpeg"
@@ -14,8 +14,7 @@
     "grade": "Muy Bueno - detalles",
     "grade_short": "MB**",
     "mintage": "",
-    "description": "",
-    "original_price": "130 USD"
+    "description": ""
   },
   {
     "id": 6,
@@ -224,7 +223,7 @@
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
     "year": 1861,
-    "price": "40 USD",
+    "price": "45 USD",
     "images": [
       "images/29A.jpeg",
       "images/29B.jpeg"
@@ -234,7 +233,6 @@
     "grade_short": "-",
     "mintage": "",
     "description": "Indian Head.",
-    "original_price": "45 USD",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent"
   },
@@ -10227,7 +10225,7 @@
     "country": "Argentina",
     "metal": "Cuproníquel",
     "year": 1908,
-    "price": "25 USD",
+    "price": "30 USD",
     "images": [
       "images/807A.jpeg",
       "images/807B.jpeg"
