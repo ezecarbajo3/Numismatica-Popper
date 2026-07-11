@@ -5707,7 +5707,9 @@
     "reference": "CJ# 23",
     "grade": "Excelente",
     "grade_short": "EX",
-    "mintage": "2.700.000"
+    "mintage": "2.700.000",
+    "status": "sold",
+    "soldAt": "2026-07-11T18:43:27-03:00"
   },
   {
     "id": 520,
@@ -9637,7 +9639,9 @@
     "reference": "KM# 26",
     "grade": "Excelente +",
     "grade_short": "EX+",
-    "description": "hermosa patina."
+    "description": "hermosa patina.",
+    "status": "sold",
+    "soldAt": "2026-07-11T18:43:27-03:00"
   },
   {
     "id": 778,
