@@ -10227,14 +10227,14 @@
     "country": "Argentina",
     "metal": "Cuproníquel",
     "year": 1908,
-    "price": "30 USD",
+    "price": "25 USD",
     "images": [
       "images/807A.jpeg",
       "images/807B.jpeg"
     ],
     "reference": "CJ# 59",
-    "grade": "Bueno+",
-    "grade_short": "B+",
+    "grade": "Bueno",
+    "grade_short": "B",
     "mintage": "719.000",
     "group_id": "ar-20centavos-cuproniquel",
     "group_label": "20 Centavos cuproníquel"
