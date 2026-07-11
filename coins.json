@@ -8120,7 +8120,9 @@
     "images": [
       "images/679A.jpeg",
       "images/679B.jpeg"
-    ]
+    ],
+    "status": "sold",
+    "soldAt": "2026-07-11T14:12:50-03:00"
   },
   {
     "id": 680,
@@ -9836,7 +9838,9 @@
       "images/782B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-07-11T14:12:50-03:00"
   },
   {
     "id": 783,
