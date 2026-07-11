@@ -832,9 +832,6 @@ function renderCoins(coins, skipAnimation = false) {
       }
       const grade = getGradeShort(coin);
       let badgesHTML = grade ? `<span class="coin-grade-badge">${grade}</span>` : '';
-      if (coin.cantidad && coin.cantidad >= 2) {
-        badgesHTML += ` <span class="coin-grade-badge coin-stock-badge">${coin.cantidad} en stock</span>`;
-      }
       badgeRow.innerHTML = badgesHTML;
     }
 

@@ -8561,7 +8561,9 @@
     "grade_short": "MB+",
     "mintage": "20.000.000",
     "group_id": "cr-10centimos",
-    "group_label": "10 Centimos"
+    "group_label": "10 Centimos",
+    "status": "sold",
+    "soldAt": "2026-07-10T22:40:27.001077Z"
   },
   {
     "id": 706,
@@ -8579,7 +8581,9 @@
     "grade_short": "MB+",
     "mintage": "5.000.000",
     "group_id": "cr-10centimos",
-    "group_label": "10 Centimos"
+    "group_label": "10 Centimos",
+    "status": "sold",
+    "soldAt": "2026-07-10T22:40:27.001086Z"
   },
   {
     "id": 707,
@@ -8596,7 +8600,9 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "group_id": "cr-10centimos",
-    "group_label": "10 Centimos"
+    "group_label": "10 Centimos",
+    "status": "sold",
+    "soldAt": "2026-07-10T22:40:27.001088Z"
   },
   {
     "id": 708,
@@ -8615,7 +8621,9 @@
     "mintage": "20.000.000",
     "description": "Año único",
     "group_id": "cr-10centimos",
-    "group_label": "10 Centimos"
+    "group_label": "10 Centimos",
+    "status": "sold",
+    "soldAt": "2026-07-10T22:40:27.001089Z"
   },
   {
     "id": 709,
