@@ -9402,7 +9402,9 @@
     "group_label": "5 Centavos cuproníquel",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "brillo original"
+    "description": "brillo original",
+    "status": "sold",
+    "soldAt": "2026-07-12T14:07:18-03:00"
   },
   {
     "id": 763,
