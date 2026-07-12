@@ -2026,7 +2026,9 @@
     "mintage": "",
     "reference": "KM# 131",
     "group_id": "be-25cents-wwii",
-    "group_label": "25 Cents WWII"
+    "group_label": "25 Cents WWII",
+    "status": "sold",
+    "soldAt": "2026-07-12T13:34:23.562272Z"
   },
   {
     "id": 227,
@@ -3004,7 +3006,9 @@
     ],
     "reference": "Y# 12",
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "status": "sold",
+    "soldAt": "2026-07-12T13:34:23.562283Z"
   },
   {
     "id": 329,
@@ -3497,7 +3501,9 @@
     "grade_short": "-",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
-    "description": "Indian Head"
+    "description": "Indian Head",
+    "status": "sold",
+    "soldAt": "2026-07-12T13:34:23.562288Z"
   },
   {
     "id": 370,
@@ -6881,7 +6887,9 @@
       "images/604B.jpeg"
     ],
     "grade": "Muy Bueno+",
-    "grade_short": "MB+"
+    "grade_short": "MB+",
+    "status": "sold",
+    "soldAt": "2026-07-12T13:34:23.562308Z"
   },
   {
     "id": 605,
@@ -7625,7 +7633,9 @@
     "reference": "KM# 212.2",
     "metal": "Bronce",
     "grade": "Excelente-",
-    "grade_short": "EX-"
+    "grade_short": "EX-",
+    "status": "sold",
+    "soldAt": "2026-07-12T13:34:23.562314Z"
   },
   {
     "id": 655,
