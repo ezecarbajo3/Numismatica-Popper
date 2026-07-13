@@ -419,6 +419,17 @@ function renderCoinDetail(coin, groupMembers) {
 
       variantsList.appendChild(btn);
     });
+
+    // Mostrar el cartel "Desliza para ver más variantes" solo si la lista
+    // realmente tiene scroll horizontal (el contenido no entra en el ancho visible).
+    const scrollHint = document.querySelector(".scroll-hint");
+    function updateScrollHint() {
+      if (!scrollHint) return;
+      const scrollable = variantsList.scrollWidth > variantsList.clientWidth + 1; // +1px tolerancia
+      scrollHint.classList.toggle("is-hidden", !scrollable);
+    }
+    requestAnimationFrame(updateScrollHint);
+    window.addEventListener("resize", updateScrollHint);
   }
 }
 

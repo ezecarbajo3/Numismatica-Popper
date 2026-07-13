@@ -2037,6 +2037,8 @@ body[data-view="catalog"] #catalog {
   margin: 0.7rem 0;
 }
 
+.scroll-hint.is-hidden { display: none; }
+
 .scroll-hint-arrow {
   display: inline-block;
   font-size: 1.1em;
