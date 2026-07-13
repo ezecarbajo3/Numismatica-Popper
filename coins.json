@@ -4741,7 +4741,9 @@
     ],
     "grade": "Bueno",
     "grade_short": "B",
-    "description": "Rara pieza"
+    "description": "Rara pieza",
+    "status": "sold",
+    "soldAt": "2026-07-13T16:50:19.280Z"
   },
   {
     "id": 456,
@@ -4816,7 +4818,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Moneda conmemorativa del mundial 1978 (Argentina)"
+    "description": "Moneda conmemorativa del mundial 1978 (Argentina)",
+    "status": "sold",
+    "soldAt": "2026-07-13T16:50:19.352Z"
   },
   {
     "id": 461,
@@ -5827,7 +5831,9 @@
     "price": "22 USD",
     "images": [
       "images/540A.jpeg",
-      "images/540B.jpeg"
+      "images/540B.jpeg",
+      "images/540C.jpeg",
+      "images/540D.jpeg"
     ],
     "reference": "CJ# 19",
     "grade": "Muy Bueno",
