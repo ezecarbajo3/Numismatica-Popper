@@ -1639,12 +1639,12 @@ button {
     gap: 0.6rem;
   }
 
-  .variant-thumb {
+  .variants-list .variant-thumb {
     width: 118px;
     padding: 0.55rem;
   }
 
-  .variant-thumb img {
+  .variants-list .variant-thumb img {
     width: 92px;
     height: 92px;
   }
