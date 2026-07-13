@@ -1,5 +1,5 @@
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 import sys
 
 file_path = '/Users/ezecarbajo/popper-site/coins.json'
@@ -22,7 +22,7 @@ updated_coins = []
 for coin in coins:
     if coin['id'] in target_ids:
         coin['status'] = 'sold'
-        coin['soldAt'] = datetime.now().isoformat() + 'Z'
+        coin['soldAt'] = datetime.now(timezone.utc).isoformat()
         updated_coins.append(coin)
 
 if len(updated_coins) > 0:

@@ -116,16 +116,6 @@ function isBook(coin) {
   return title.includes('libro') || title.includes('catálogo') || title.includes('catalogo') || title.includes('album') || title.includes('red book');
 }
 
-function isBlisterOnly(coin) {
-  const title = (coin.title || '').trim();
-  return /^bls[.\s]/i.test(title) || /blister/i.test(title);
-}
-
-function isLoteOnly(coin) {
-  const title = (coin.title || '').trim();
-  return /^lote\s/i.test(title) && !isLotePlata(coin);
-}
-
 function parsePriceUSD(priceStr) {
   if (!priceStr) return Infinity;
   const n = parseFloat(String(priceStr).replace(',', '.').replace(/[^\d.]/g, ''));
@@ -140,10 +130,6 @@ function isEconomica(coin) {
     !isBlister(coin) &&
     !isBook(coin)
   );
-}
-
-function isExonumia(coin) {
-  return isMedalOrToken(coin) || isBook(coin);
 }
 
 function getSilverPurity(coin) {
@@ -238,14 +224,9 @@ const CATEGORY_PREDICATES = {
   inversion:       isInvestment,      // kept for sessionStorage backwards compat
   argentina:       isArgentinaCoin,
   internacional:   (c) => !isArgentinaCoin(c) && !isMedalOrToken(c) && !isBlister(c) && !isBook(c),
-  medallas:        isMedalOrToken,
   'medallas-libros': (c) => isMedalOrToken(c) || isBook(c),
   blisters:        isBlister,
-  libros:          isBook,
-  blister_only:    isBlisterOnly,
-  lotes:           isLoteOnly,
   economicas:      isEconomica,
-  exonumia:        isExonumia,
 };
 
 // ─── Sub-filter helpers ───────────────────────────────────────────────────────
@@ -289,15 +270,6 @@ function getSubFilterOptions(category) {
       return specs.filter(s => pool.some(s.match));
     }
 
-    case 'medallas': {
-      const pool = allCoins.filter(isMedalOrToken);
-      const specs = [
-        { label: 'Medallas', value: 'Medallas', match: isMedal },
-        { label: 'Tokens',   value: 'Tokens',   match: isToken  },
-      ];
-      return specs.filter(s => pool.some(s.match));
-    }
-
     case 'medallas-libros': {
       const pool = allCoins.filter(c => isMedalOrToken(c) || isBook(c));
       const specs = [
@@ -325,7 +297,6 @@ function matchesSubFilter(coin, category, subFilter) {
     case 'inversion':
       if (subFilter === 'lotes') return isLotePlata(coin);
       return getSilverPurity(coin) === parseInt(subFilter, 10);
-    case 'medallas':
     case 'medallas-libros':
       if (subFilter === 'Medallas') return isMedal(coin);
       if (subFilter === 'Tokens')   return isToken(coin);

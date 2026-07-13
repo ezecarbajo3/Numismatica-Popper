@@ -4,7 +4,7 @@
 # Cada foto de moneda en images/ es un original de ~2800px (250KB–1MB). El grid
 # solo las muestra a ~300px, así que descargar y decodificar el original entero
 # traba el scroll y demora la aparición de las fotos. Este script crea una versión
-# chica en images/thumbs/<nombre>.webp (máx 600px de ancho, calidad 80, ~30KB) que
+# chica en images/thumbs/<nombre>.webp (máx 500px de ancho, calidad 78, ~30KB) que
 # el sitio usa en la grilla. Las fotos originales quedan intactas para la vista de
 # detalle y el zoom.
 #

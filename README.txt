@@ -1,43 +1,49 @@
-# Coin Catalog Site
+# Numismática Popper — Catálogo
 
-Este pack incluye:
-- `index.html`
-- `styles.css`
-- `script.js`
-- `coins.json`
+Sitio estático (HTML/CSS/JS, sin build) desplegado con GitHub Pages en
+https://numismaticapopper.com
 
-## Cómo usarlo en GitHub Pages
-1. Subí los 4 archivos al repositorio.
-2. Asegurate de que `index.html` esté en la raíz.
-3. Activá GitHub Pages desde `Settings > Pages`.
-4. Elegí la rama principal y carpeta `/root`.
+## Archivos principales
+- `index.html`     — landing + catálogo (grilla de monedas)
+- `detalle.html`   — ficha individual de moneda (?id=N)
+- `styles.css`     — estilos de todo el sitio
+- `script.js`      — lógica del catálogo (filtros, búsqueda, carrusel)
+- `detalle.js`     — lógica de la ficha de detalle
+- `coins.json`     — fuente de datos (array de monedas). Es la única fuente de verdad.
+- `images/`        — fotos originales (~2800px)
+- `images/thumbs/` — miniaturas WebP para la grilla (generadas por generate_thumbs.sh)
+- `moneda/<id>.html` — página de previsualización por moneda (og:image propio para
+                       compartir por WhatsApp). Redirige a detalle.html?id=<id>.
 
-## Cómo cargar monedas
-Abrí `coins.json` y agregá nuevos objetos dentro del array.
+## Scripts de mantenimiento
+- `generate_coin_pages.py` — regenera moneda/<id>.html a partir de coins.json.
+                             Correr tras cualquier cambio de fotos/altas en coins.json.
+- `generate_thumbs.sh`     — genera/actualiza las miniaturas WebP en images/thumbs/.
+- `mark_sold.js` / `mark_sold.py` — marcan monedas como vendidas (status/soldAt).
 
-Ejemplo:
+## Cómo cargar una moneda
+Editar `coins.json` y agregar un objeto al array. Campos habituales:
 
 ```json
 {
-  "id": 6,
+  "id": 618,
   "title": "2 Pesos 1881",
   "country": "Argentina",
-  "metal": "Plata",
+  "metal": "Plata .900",
   "year": 1881,
   "price": "USD 95",
-  "image": "images/2-pesos-1881.jpg",
-  "description": "Muy linda pieza argentina, ideal para colección.",
-  "reference": "KM# 30",
-  "status": "Disponible",
-  "grade": "Muy buena",
-  "weight": "10 g",
-  "diameter": "28 mm"
+  "images": ["images/618A.jpeg", "images/618B.jpeg"],
+  "grade": "Excelente",
+  "grade_short": "EX",
+  "reference": "CJ# 1",
+  "mintage": "1000000",
+  "description": "Muy linda pieza argentina."
 }
 ```
 
-## Recomendación
-Si vas a subir tus propias fotos, creá una carpeta `images` dentro del repo y usá rutas como:
-- `images/moneda-1.jpg`
-- `images/moneda-2.jpg`
-
-No repitas IDs. Y mantené siempre los mismos nombres de país y metal para que los filtros no se fragmenten.
+Notas:
+- La imagen frontal es la que termina en "A" (ej. 618A) — script.js la usa como principal.
+- No repetir IDs. Mantener siempre los mismos nombres de país y metal para que los
+  filtros no se fragmenten.
+- Tras editar coins.json: correr `generate_thumbs.sh` (nuevas fotos) y
+  `python3 generate_coin_pages.py` (altas/cambios de foto).
