@@ -494,6 +494,11 @@ button {
   flex-direction: column;
   cursor: pointer;
   will-change: transform;
+  /* Saltea layout/paint de las tarjetas fuera del viewport → scroll más fluido
+     con cientos de monedas. El navegador recuerda el tamaño real tras el primer
+     render; 340px es solo la estimación inicial para no romper la barra de scroll. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 340px;
 }
 
 .coin-card::after {

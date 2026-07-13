@@ -631,6 +631,17 @@ function getPrimaryImage(coin) {
   return 'https://via.placeholder.com/800x600?text=Sin+imagen';
 }
 
+// Devuelve la miniatura WebP (~500px, generada por generate_thumbs.sh) que usa el
+// grid en vez del original de ~2800px. Si el src no es una foto local de images/
+// (ej. placeholder remoto), lo devuelve tal cual. El original se sigue usando en la
+// vista de detalle y el zoom; si la miniatura no existiera, attachImgRetry cae al
+// original automáticamente.
+function thumbFor(src) {
+  if (!src || !src.startsWith('images/') || src.startsWith('images/thumbs/')) return src;
+  const base = src.split('/').pop().replace(/\.[^.]+$/, '');
+  return `images/thumbs/${base}.webp`;
+}
+
 function getGradeShort(coin) {
   return coin.grade_short || coin.gradeShort || coin.grade_short_label || '';
 }
@@ -639,12 +650,20 @@ function getGradeShort(coin) {
 // Fixes "broken image" thumbnails after back/forward navigation, where the
 // browser aborts in-flight requests when leaving the page.
 function attachImgRetry(img, maxTries = 2) {
+  let triedOriginal = false;
   let tries = 0;
   img.addEventListener('error', () => {
+    const current = img.src.split('?')[0];
+    // Si falló una miniatura WebP (ej. moneda nueva aún sin thumb generado), caer
+    // al JPEG original una sola vez antes de reintentar con cache-buster.
+    if (!triedOriginal && img.dataset.fullSrc && current.includes('/thumbs/')) {
+      triedOriginal = true;
+      img.src = img.dataset.fullSrc;
+      return;
+    }
     if (tries >= maxTries) return;
     tries += 1;
-    const base = img.src.split('?')[0];
-    setTimeout(() => { img.src = `${base}?r=${Date.now()}`; }, 250 * tries);
+    setTimeout(() => { img.src = `${current}?r=${Date.now()}`; }, 250 * tries);
   });
 }
 
@@ -806,9 +825,13 @@ function renderCoins(coins, skipAnimation = false) {
     // Auto-heal images that fail to load (aborted requests on navigation,
     // transient network errors, etc.) — retries with a cache-buster so the
     // user never has to hit F5 to recover broken thumbnails.
+    // El grid usa la miniatura WebP; el original queda en data-fullSrc para el
+    // zoom/preview y como fallback si la miniatura no existiera.
+    const primaryFull = getPrimaryImage(coin);
+    image.dataset.fullSrc = primaryFull;
     attachImgRetry(image);
 
-    image.src = getPrimaryImage(coin);
+    image.src = thumbFor(primaryFull);
     image.alt = coin.title || 'Moneda';
 
     if (coin.group_id) {
@@ -871,7 +894,9 @@ function renderCoins(coins, skipAnimation = false) {
       const setIdx = (newIdx) => {
         currentIdx = ((newIdx % images.length) + images.length) % images.length;
         updateDots();
-        const targetSrc = images[currentIdx];
+        const targetFull = images[currentIdx];
+        const targetSrc = thumbFor(targetFull);
+        image.dataset.fullSrc = targetFull; // el zoom/preview usa el original
         const myToken = ++swapToken;
         const pre = new Image();
         pre.src = targetSrc;
@@ -892,7 +917,7 @@ function renderCoins(coins, skipAnimation = false) {
       const preloadCarousel = () => {
         if (carouselPreloaded) return;
         carouselPreloaded = true;
-        images.forEach((src, i) => { if (i > 0) { const p = new Image(); p.src = src; } });
+        images.forEach((src, i) => { if (i > 0) { const p = new Image(); p.src = thumbFor(src); } });
       };
       if (idx < 4) preloadCarousel();
 
@@ -947,8 +972,9 @@ function renderCoins(coins, skipAnimation = false) {
       article.addEventListener('mouseenter', () => {
         zoomTimer = setTimeout(() => {
           article.classList.add('is-zoomed');
-          // Show current image (respects carousel position)
-          showImagePreview(image.src, coin.title);
+          // Muestra la foto original full-res (no la miniatura), respetando la
+          // posición actual del carrusel.
+          showImagePreview(image.dataset.fullSrc || image.src, coin.title);
         }, 3000);
       });
 
