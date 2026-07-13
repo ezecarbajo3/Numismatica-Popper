@@ -10146,5 +10146,57 @@
     "mintage": "719.000",
     "group_id": "ar-20centavos-cuproniquel",
     "group_label": "20 Centavos cuproníquel"
+  },
+  {
+    "id": 808,
+    "costo": 4.59,
+    "title": "10 Mils 1935",
+    "country": "Palestina",
+    "metal": "Cuproníquel",
+    "year": 1935,
+    "price": "12 USD",
+    "images": [
+      "images/808A.jpeg",
+      "images/808B.jpeg"
+    ],
+    "reference": "KM# 4",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "1.150.000"
+  },
+  {
+    "id": 809,
+    "costo": 13.11,
+    "title": "Duit 1769",
+    "country": "Países Bajos - Overijssel",
+    "metal": "Cobre",
+    "year": 1769,
+    "price": "20 USD",
+    "images": [
+      "images/809A.jpeg",
+      "images/809B.jpeg"
+    ],
+    "reference": "KM# 90",
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 810,
+    "costo": 6.56,
+    "title": "5 Rublos 1989",
+    "country": "Rusia",
+    "metal": "Cuproníquel",
+    "year": 1989,
+    "price": "20 USD",
+    "images": [
+      "images/810A.jpeg",
+      "images/810B.jpeg"
+    ],
+    "reference": "Y# 221",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "300.000",
+    "commemorates": "Catedral Pokrovsky de Moscú",
+    "description": "Versión Proof"
   }
 ]
