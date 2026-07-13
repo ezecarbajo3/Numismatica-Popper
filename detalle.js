@@ -213,7 +213,7 @@ function renderCoinDetail(coin, groupMembers) {
       <h3 class="variants-heading">Variantes</h3>
       <div class="variants-list" id="variantsList"></div>
     </div>
-    <h2 class="detail-section-heading">Detalle y fotografía de alta resolución</h2>
+    <div class="scroll-hint" aria-hidden="true">Desliza para ver más variantes<span class="scroll-hint-arrow">→</span></div>
     ` : ""}
 
     <div class="detail-row">

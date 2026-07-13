@@ -1649,9 +1649,9 @@ button {
     height: 92px;
   }
 
-  .detail-section-heading {
-    font-size: 0.82rem;
-    margin-bottom: 1.1rem;
+  .scroll-hint {
+    font-size: 0.74rem;
+    margin: 0.85rem 0 0.6rem;
   }
 
   /* ── Item 3: +20% font-size + fix layout 2 columnas ── */
@@ -2001,7 +2001,7 @@ body[data-view="catalog"] #catalog {
 /* ─── Variant switcher (detail page) ────────────────────────────────────── */
 
 .variants-section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid rgba(207, 172, 107, 0.18);
 }
@@ -2016,17 +2016,36 @@ body[data-view="catalog"] #catalog {
   margin: 0 0 0.75rem;
 }
 
-.detail-section-heading {
+/* Aviso "desliza para ver más variantes" — va ENTRE las dos líneas doradas
+   (borde inferior de .variants-section arriba, borde inferior de .scroll-hint
+   abajo), tanto en mobile como en desktop. */
+.scroll-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   font-family: "Cinzel", serif;
-  font-size: 0.92rem;
+  font-size: 0.82rem;
   font-weight: 500;
   color: var(--accent);
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 1.4rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid rgba(207, 172, 107, 0.18);
+  margin: 0.95rem 0 0.7rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid rgba(207, 172, 107, 0.18);
+}
+
+.scroll-hint-arrow {
+  display: inline-block;
+  font-size: 1.1em;
+  line-height: 1;
+  animation: scrollHintNudge 1.5s ease-in-out infinite;
+}
+
+@keyframes scrollHintNudge {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
 }
 
 .variants-list {
