@@ -1634,6 +1634,26 @@ button {
     font-size: clamp(1.62rem, 6.8vw, 2.04rem);
   }
 
+  /* ── Variantes: fila horizontal compacta (2–3 tarjetas visibles) ── */
+  .variants-list {
+    gap: 0.6rem;
+  }
+
+  .variant-thumb {
+    width: 118px;
+    padding: 0.55rem;
+  }
+
+  .variant-thumb img {
+    width: 92px;
+    height: 92px;
+  }
+
+  .detail-section-heading {
+    font-size: 0.82rem;
+    margin-bottom: 1.1rem;
+  }
+
   /* ── Item 3: +20% font-size + fix layout 2 columnas ── */
 
   /* 1. Sin scroll horizontal en toda la página */
@@ -1996,10 +2016,46 @@ body[data-view="catalog"] #catalog {
   margin: 0 0 0.75rem;
 }
 
+.detail-section-heading {
+  font-family: "Cinzel", serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 1.4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(207, 172, 107, 0.18);
+}
+
 .variants-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+  padding-bottom: 0.6rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(207, 172, 107, 0.45) transparent;
+}
+
+.variants-list::-webkit-scrollbar {
+  height: 6px;
+}
+
+.variants-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.variants-list::-webkit-scrollbar-thumb {
+  background: rgba(207, 172, 107, 0.35);
+  border-radius: 6px;
+}
+
+.variants-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(207, 172, 107, 0.55);
 }
 
 .variant-thumb {
@@ -2013,6 +2069,8 @@ body[data-view="catalog"] #catalog {
   border-radius: 10px;
   cursor: pointer;
   width: 136px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
 }
 
 .variant-thumb img {
