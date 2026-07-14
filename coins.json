@@ -10206,5 +10206,52 @@
     "mintage": "300.000",
     "commemorates": "Catedral de la Anunciación",
     "description": "Conmemora la Catedral de la Anunciación en Moscú. Versión Proof."
+  },
+  {
+    "id": 811,
+    "costo": 3.29,
+    "title": "50 Centavos 1960",
+    "country": "Colombia",
+    "metal": "Cuproníquel",
+    "year": 1960,
+    "price": "5 USD",
+    "images": [
+      "images/811A.jpeg",
+      "images/811B.jpeg"
+    ],
+    "reference": "KM# 223",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "commemorates": "150 Aniversario de la Proclamación de la Independencia de Colombia"
+  },
+  {
+    "id": 812,
+    "costo": 3.29,
+    "title": "100 Réis 1900",
+    "country": "Portugal",
+    "metal": "Cuproníquel",
+    "year": 1900,
+    "price": "6 USD",
+    "images": [
+      "images/812A.jpeg",
+      "images/812B.jpeg"
+    ],
+    "reference": "KM# 546",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+"
+  },
+  {
+    "id": 813,
+    "costo": 2.3,
+    "title": "1 Cent 1920",
+    "country": "Canadá",
+    "metal": "Bronce",
+    "year": 1920,
+    "price": "4 USD",
+    "images": [
+      "images/813A.jpeg",
+      "images/813B.jpeg"
+    ],
+    "reference": "KM# 28"
   }
 ]
