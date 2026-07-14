@@ -10214,7 +10214,7 @@
     "country": "Colombia",
     "metal": "Cuproníquel",
     "year": 1960,
-    "price": "5 USD",
+    "price": "10 USD",
     "images": [
       "images/811A.jpeg",
       "images/811B.jpeg"
@@ -10222,7 +10222,9 @@
     "reference": "KM# 223",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "commemorates": "150 Aniversario de la Proclamación de la Independencia de Colombia"
+    "mintage": "200.000",
+    "commemorates": "150 Aniversario de la Proclamación de la Independencia de Colombia",
+    "description": "Conmemora el 150 Aniversario de la Proclamación de la Independencia de Colombia."
   },
   {
     "id": 812,
