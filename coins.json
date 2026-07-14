@@ -4854,7 +4854,7 @@
   },
   {
     "id": 463,
-    "title": "1 Dollar 2021",
+    "title": "1 Dollar 2021 \"Peace Dollar\"",
     "country": "Estados Unidos",
     "metal": "Ag 0.999",
     "year": 2021,
@@ -4865,7 +4865,10 @@
       "images/466C.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "reference": "KM# 150a",
+    "mintage": "200.000",
+    "description": "Dólar de la Paz (Peace Dollar) en conmemoración del centenario de su primer diseño de 1921. Diseñado por el escultor Anthony de Francisci."
   },
   {
     "id": 464,
@@ -5784,7 +5787,9 @@
     "grade_short": "MB+",
     "mintage": "3.000.000",
     "group_id": "uy-10centesimos-1877",
-    "group_label": "10 Centésimos 1877"
+    "group_label": "10 Centésimos 1877",
+    "status": "sold",
+    "soldAt": "2026-07-14T00:12:30Z"
   },
   {
     "id": 525,
