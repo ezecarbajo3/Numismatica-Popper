@@ -2132,7 +2132,9 @@
     "grade_short": "SC",
     "description": "50 Aniversario del Primer Vuelo Espacial Tripulado",
     "mintage": "",
-    "reference": "Y# 1468"
+    "reference": "Y# 1468",
+    "status": "sold",
+    "soldAt": "2026-07-14T15:07:08-03:00"
   },
   {
     "id": 244,
@@ -5690,7 +5692,9 @@
     "grade_short": "SC-",
     "description": "Única",
     "group_id": "py-4centesimos-1870",
-    "group_label": "4 Centésimos 1870"
+    "group_label": "4 Centésimos 1870",
+    "status": "sold",
+    "soldAt": "2026-07-14T15:07:08-03:00"
   },
   {
     "id": 516,
@@ -10169,7 +10173,9 @@
     "reference": "KM# 4",
     "grade": "Excelente",
     "grade_short": "EX",
-    "mintage": "1.150.000"
+    "mintage": "1.150.000",
+    "status": "sold",
+    "soldAt": "2026-07-14T15:07:08-03:00"
   },
   {
     "id": 809,
