@@ -2348,7 +2348,9 @@
     "mintage": "",
     "description": "",
     "group_id": "eg-10milliemes-1973",
-    "group_label": "10 Milliemes 1973"
+    "group_label": "10 Milliemes 1973",
+    "status": "sold",
+    "soldAt": "2026-07-14T00:54:42.751069+00:00"
   },
   {
     "id": 261,
