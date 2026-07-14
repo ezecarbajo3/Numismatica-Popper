@@ -1117,7 +1117,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": "CECA BI."
+    "description": "CECA BI.",
+    "status": "sold",
+    "soldAt": "2026-07-14T15:10:26-03:00"
   },
   {
     "id": 135,
@@ -10246,7 +10248,9 @@
     ],
     "reference": "KM# 546",
     "grade": "Muy Bueno +",
-    "grade_short": "MB+"
+    "grade_short": "MB+",
+    "status": "sold",
+    "soldAt": "2026-07-14T15:10:26-03:00"
   },
   {
     "id": 813,
@@ -10262,6 +10266,8 @@
     ],
     "reference": "KM# 28",
     "grade": "Muy Bueno +",
-    "grade_short": "MB+"
+    "grade_short": "MB+",
+    "status": "sold",
+    "soldAt": "2026-07-14T15:10:26-03:00"
   }
 ]
