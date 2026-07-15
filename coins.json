@@ -6883,17 +6883,22 @@
     "id": 603,
     "title": "Onza 2017 MS70 certificada",
     "country": "Estados Unidos",
+    "metal": "Plata 999",
     "year": 2017,
     "price": "180 USD",
     "images": [
       "images/603A.jpeg",
       "images/603B.jpeg",
       "images/603C.jpeg",
-      "images/603D.jpeg"
+      "images/603D.jpeg",
+      "images/603E.jpeg",
+      "images/603F.jpeg"
     ],
+    "reference": "KM# 273",
     "grade": "MS70",
     "grade_short": "MS70",
-    "description": "no se consigue ni en estados unidos. MS70 es el maximo grado de conservacion. Certificada por ANACS (empresa mas respetada que ngc o pcgs)"
+    "mintage": "",
+    "description": "no se consigue ni en estados unidos. MS70 es el maximo grado de conservacion. Certificada por ANACS (empresa mas respetada que ngc o pcgs). Solo 24.205 unidades certificadas MS70."
   },
   {
     "id": 604,
