@@ -10218,7 +10218,9 @@
     "grade_short": "SC",
     "mintage": "300.000",
     "commemorates": "Catedral de la Anunciación",
-    "description": "Conmemora la Catedral de la Anunciación en Moscú. Versión Proof."
+    "description": "Conmemora la Catedral de la Anunciación en Moscú. Versión Proof.",
+    "group_id": "ru-5rublos-conmemorativos",
+    "group_label": "5 Rublos Conmemorativos"
   },
   {
     "id": 811,
@@ -10272,5 +10274,95 @@
     "grade_short": "MB+",
     "status": "sold",
     "soldAt": "2026-07-14T15:10:26-03:00"
+  },
+  {
+    "id": 814,
+    "title": "1 Rublo 1967",
+    "country": "Rusia",
+    "metal": "Cuproníquel",
+    "year": 1967,
+    "price": "7 USD",
+    "images": [
+      "images/814A.jpeg",
+      "images/814B.jpeg"
+    ],
+    "reference": "Y# 140.1",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "50 aniversario de la Revolución de Octubre",
+    "group_id": "ru-1rublo-conmemorativos",
+    "group_label": "1 Rublo Conmemorativos"
+  },
+  {
+    "id": 815,
+    "title": "5 Rublos 1988",
+    "country": "Rusia",
+    "metal": "Cuproníquel",
+    "year": 1988,
+    "price": "20 USD",
+    "images": [
+      "images/815A.jpeg",
+      "images/815B.jpeg"
+    ],
+    "reference": "Y# 217",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Leningrado - Pedro el Grande",
+    "group_id": "ru-5rublos-conmemorativos",
+    "group_label": "5 Rublos Conmemorativos"
+  },
+  {
+    "id": 816,
+    "title": "1 Rublo 1990",
+    "country": "Rusia",
+    "metal": "Cuproníquel",
+    "year": 1990,
+    "price": "15 USD",
+    "images": [
+      "images/816A.jpeg",
+      "images/816B.jpeg"
+    ],
+    "reference": "Y# 240",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "130 aniversario del nacimiento de Antón Chéjov",
+    "group_id": "ru-1rublo-conmemorativos",
+    "group_label": "1 Rublo Conmemorativos"
+  },
+  {
+    "id": 817,
+    "title": "5 Rublos 1991",
+    "country": "Rusia",
+    "metal": "Cuproníquel Proof",
+    "year": 1991,
+    "price": "20 USD",
+    "images": [
+      "images/817A.jpeg",
+      "images/817B.jpeg"
+    ],
+    "reference": "Y# 271",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Catedral de San Miguel Arcángel de Moscú. Versión Proof.",
+    "group_id": "ru-5rublos-conmemorativos",
+    "group_label": "5 Rublos Conmemorativos"
+  },
+  {
+    "id": 818,
+    "title": "5 Rublos 1990",
+    "country": "Rusia",
+    "metal": "Cuproníquel Proof",
+    "year": 1990,
+    "price": "20 USD",
+    "images": [
+      "images/818A.jpeg",
+      "images/818B.jpeg"
+    ],
+    "reference": "Y# 246",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Catedral de Uspenski. Versión Proof.",
+    "group_id": "ru-5rublos-conmemorativos",
+    "group_label": "5 Rublos Conmemorativos"
   }
 ]
