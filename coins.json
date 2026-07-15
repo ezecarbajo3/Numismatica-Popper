@@ -10220,7 +10220,9 @@
     "commemorates": "Catedral de la Anunciación",
     "description": "Conmemora la Catedral de la Anunciación en Moscú. Versión Proof.",
     "group_id": "ru-5rublos-conmemorativos",
-    "group_label": "5 Rublos Conmemorativos"
+    "group_label": "5 Rublos Conmemorativos",
+    "status": "sold",
+    "soldAt": "2026-07-15T10:56:37.196098-03:00"
   },
   {
     "id": 811,
@@ -10292,7 +10294,9 @@
     "grade_short": "SC",
     "description": "50 aniversario de la Revolución de Octubre",
     "group_id": "ru-1rublo-conmemorativos",
-    "group_label": "1 Rublo Conmemorativos"
+    "group_label": "1 Rublo Conmemorativos",
+    "status": "sold",
+    "soldAt": "2026-07-15T10:56:37.196098-03:00"
   },
   {
     "id": 815,
@@ -10310,7 +10314,9 @@
     "grade_short": "SC",
     "description": "Leningrado - Pedro el Grande",
     "group_id": "ru-5rublos-conmemorativos",
-    "group_label": "5 Rublos Conmemorativos"
+    "group_label": "5 Rublos Conmemorativos",
+    "status": "sold",
+    "soldAt": "2026-07-15T10:56:37.196098-03:00"
   },
   {
     "id": 816,
@@ -10328,7 +10334,9 @@
     "grade_short": "SC",
     "description": "130 aniversario del nacimiento de Antón Chéjov",
     "group_id": "ru-1rublo-conmemorativos",
-    "group_label": "1 Rublo Conmemorativos"
+    "group_label": "1 Rublo Conmemorativos",
+    "status": "sold",
+    "soldAt": "2026-07-15T10:56:37.196098-03:00"
   },
   {
     "id": 817,
@@ -10347,7 +10355,9 @@
     "grade_short": "SC",
     "description": "Catedral de San Miguel Arcángel de Moscú. Versión Proof.",
     "group_id": "ru-5rublos-conmemorativos",
-    "group_label": "5 Rublos Conmemorativos"
+    "group_label": "5 Rublos Conmemorativos",
+    "status": "sold",
+    "soldAt": "2026-07-15T10:56:37.196098-03:00"
   },
   {
     "id": 818,
@@ -10366,6 +10376,8 @@
     "grade_short": "SC",
     "description": "Catedral de Uspenski. Versión Proof.",
     "group_id": "ru-5rublos-conmemorativos",
-    "group_label": "5 Rublos Conmemorativos"
+    "group_label": "5 Rublos Conmemorativos",
+    "status": "sold",
+    "soldAt": "2026-07-15T10:56:37.196098-03:00"
   }
 ]
