@@ -10277,6 +10277,7 @@
   },
   {
     "id": 814,
+    "costo": 2,
     "title": "1 Rublo 1967",
     "country": "Rusia",
     "metal": "Cuproníquel",
@@ -10331,6 +10332,7 @@
   },
   {
     "id": 817,
+    "costo": 6.58,
     "title": "5 Rublos 1991",
     "country": "Rusia",
     "metal": "Cuproníquel Proof",
@@ -10349,6 +10351,7 @@
   },
   {
     "id": 818,
+    "costo": 6.58,
     "title": "5 Rublos 1990",
     "country": "Rusia",
     "metal": "Cuproníquel Proof",
