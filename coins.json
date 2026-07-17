@@ -10241,7 +10241,9 @@
     "grade_short": "SC",
     "mintage": "200.000",
     "commemorates": "150 Aniversario de la Proclamación de la Independencia de Colombia",
-    "description": "Conmemora el 150 Aniversario de la Proclamación de la Independencia de Colombia."
+    "description": "Conmemora el 150 Aniversario de la Proclamación de la Independencia de Colombia.",
+    "status": "sold",
+    "soldAt": "2026-07-17T14:05:31-03:00"
   },
   {
     "id": 812,
