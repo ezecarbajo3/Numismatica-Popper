@@ -10595,5 +10595,24 @@
     "group_label": "5 Centavos cuproníquel",
     "grade": "Excelente+",
     "grade_short": "EX+"
+  },
+  {
+    "id": 834,
+    "costo": 0,
+    "title": "5 Centavos 1931",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1931,
+    "price": "6 USD",
+    "images": [
+      "images/834A.jpeg",
+      "images/834B.jpeg"
+    ],
+    "reference": "CJ# 162",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "cantidad": 8
   }
 ]
