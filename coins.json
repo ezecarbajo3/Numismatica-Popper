@@ -10941,5 +10941,23 @@
     "grade_short": "SC",
     "cantidad": 2,
     "description": "Plutón"
+  },
+  {
+    "id": 855,
+    "costo": 2,
+    "title": "Kurus 2022",
+    "country": "Turquía",
+    "year": 2022,
+    "price": "3.5 USD",
+    "images": [
+      "images/855A.jpeg",
+      "images/855B.jpeg"
+    ],
+    "group_id": "tr-kurus-2022",
+    "group_label": "Kurus 2022",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "cantidad": 2,
+    "description": "Júpiter"
   }
 ]
