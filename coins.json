@@ -10559,5 +10559,41 @@
     "reference": "KM# 15",
     "grade": "Muy Bueno",
     "grade_short": "MB"
+  },
+  {
+    "id": 832,
+    "costo": 0,
+    "title": "5 Centavos 1936",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1936,
+    "price": "3 USD",
+    "images": [
+      "images/832A.jpeg",
+      "images/832B.jpeg"
+    ],
+    "reference": "CJ# 166",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel",
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 833,
+    "costo": 0,
+    "title": "5 Centavos 1939",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1939,
+    "price": "2 USD",
+    "images": [
+      "images/833A.jpeg",
+      "images/833B.jpeg"
+    ],
+    "reference": "CJ# 169",
+    "group_id": "ar-5centavos-cuproniquel",
+    "group_label": "5 Centavos cuproníquel",
+    "grade": "Excelente+",
+    "grade_short": "EX+"
   }
 ]
