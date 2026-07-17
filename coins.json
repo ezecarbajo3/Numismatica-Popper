@@ -6574,6 +6574,8 @@
       "images/583A.jpeg",
       "images/583B.jpeg"
     ],
+    "group_id": "tr-kurus-2022",
+    "group_label": "Kurus 2022",
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Uranio"
@@ -6588,6 +6590,8 @@
       "images/584A.jpeg",
       "images/584B.jpeg"
     ],
+    "group_id": "tr-kurus-2022",
+    "group_label": "Kurus 2022",
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Mercurio"
@@ -10748,5 +10752,194 @@
     "grade_short": "R",
     "cantidad": 2,
     "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia."
+  },
+  {
+    "id": 843,
+    "costo": 0,
+    "title": "Lote Plata x3",
+    "country": "Uruguay",
+    "metal": "Plata",
+    "year": "S/F",
+    "price": "26 USD",
+    "images": [
+      "images/843A.jpeg",
+      "images/843B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "cantidad": 2
+  },
+  {
+    "id": 844,
+    "costo": 0,
+    "title": "Peseta 1980",
+    "country": "España",
+    "year": 1980,
+    "price": "3 USD",
+    "images": [
+      "images/844A.jpeg",
+      "images/844B.jpeg"
+    ],
+    "description": "Adorno",
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 845,
+    "costo": 0,
+    "title": "Lote x3",
+    "country": "España",
+    "year": "S/F",
+    "price": "3 USD",
+    "images": [
+      "images/845A.jpeg",
+      "images/845B.jpeg"
+    ],
+    "cantidad": 2
+  },
+  {
+    "id": 846,
+    "costo": 0,
+    "title": "5 Dirham 2002",
+    "country": "Marruecos",
+    "year": 2002,
+    "price": "2.5 USD",
+    "images": [
+      "images/846A.jpeg",
+      "images/846B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 847,
+    "costo": 0,
+    "title": "10 Dirham 1995",
+    "country": "Marruecos",
+    "year": 1995,
+    "price": "3 USD",
+    "images": [
+      "images/847A.jpeg",
+      "images/847B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 848,
+    "costo": 0,
+    "title": "1 Dirham 1987",
+    "country": "Marruecos",
+    "year": 1987,
+    "price": "2 USD",
+    "images": [
+      "images/848A.jpeg",
+      "images/848B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "cantidad": 5
+  },
+  {
+    "id": 849,
+    "title": "20 Centavos 1965",
+    "country": "Bolivia",
+    "year": 1965,
+    "price": "2 USD",
+    "images": [
+      "images/849A.jpeg",
+      "images/849B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "cantidad": 4
+  },
+  {
+    "id": 850,
+    "costo": 2,
+    "title": "Kurus 2022",
+    "country": "Turquía",
+    "year": 2022,
+    "price": "3.5 USD",
+    "images": [
+      "images/850A.jpeg",
+      "images/850B.jpeg"
+    ],
+    "group_id": "tr-kurus-2022",
+    "group_label": "Kurus 2022",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "cantidad": 2,
+    "description": "Marte"
+  },
+  {
+    "id": 851,
+    "costo": 2,
+    "title": "Kurus 2022",
+    "country": "Turquía",
+    "year": 2022,
+    "price": "3.5 USD",
+    "images": [
+      "images/851A.jpeg",
+      "images/851B.jpeg"
+    ],
+    "group_id": "tr-kurus-2022",
+    "group_label": "Kurus 2022",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Tierra"
+  },
+  {
+    "id": 852,
+    "costo": 2,
+    "title": "Kurus 2022",
+    "country": "Turquía",
+    "year": 2022,
+    "price": "3.5 USD",
+    "images": [
+      "images/852A.jpeg",
+      "images/852B.jpeg"
+    ],
+    "group_id": "tr-kurus-2022",
+    "group_label": "Kurus 2022",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Saturno"
+  },
+  {
+    "id": 853,
+    "costo": 2,
+    "title": "Kurus 2022",
+    "country": "Turquía",
+    "year": 2022,
+    "price": "3.5 USD",
+    "images": [
+      "images/853A.jpeg",
+      "images/853B.jpeg"
+    ],
+    "group_id": "tr-kurus-2022",
+    "group_label": "Kurus 2022",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "cantidad": 2,
+    "description": "Neptuno"
+  },
+  {
+    "id": 854,
+    "costo": 2,
+    "title": "Kurus 2022",
+    "country": "Turquía",
+    "year": 2022,
+    "price": "3.5 USD",
+    "images": [
+      "images/854A.jpeg",
+      "images/854B.jpeg"
+    ],
+    "group_id": "tr-kurus-2022",
+    "group_label": "Kurus 2022",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "cantidad": 2,
+    "description": "Plutón"
   }
 ]
