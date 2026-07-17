@@ -10790,7 +10790,8 @@
     ],
     "description": "Adorno",
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "reference": "KM# 806"
   },
   {
     "id": 845,
@@ -10817,7 +10818,8 @@
       "images/846B.jpeg"
     ],
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "reference": "Y# 109"
   },
   {
     "id": 847,
@@ -10831,7 +10833,8 @@
       "images/847B.jpeg"
     ],
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "reference": "Y# 92"
   },
   {
     "id": 848,
@@ -10846,7 +10849,8 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 5
+    "cantidad": 5,
+    "reference": "KM# 88"
   },
   {
     "id": 849,
@@ -10860,7 +10864,8 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 4
+    "cantidad": 4,
+    "reference": "KM# 189"
   },
   {
     "id": 850,
@@ -10878,7 +10883,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "cantidad": 2,
-    "description": "Marte"
+    "description": "Marte",
+    "reference": "KM# 1537"
   },
   {
     "id": 851,
@@ -10895,7 +10901,8 @@
     "group_label": "Kurus 2022",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Tierra"
+    "description": "Tierra",
+    "reference": "KM# 1535"
   },
   {
     "id": 852,
@@ -10912,7 +10919,8 @@
     "group_label": "Kurus 2022",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Saturno"
+    "description": "Saturno",
+    "reference": "KM# 1541"
   },
   {
     "id": 853,
@@ -10930,7 +10938,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "cantidad": 2,
-    "description": "Neptuno"
+    "description": "Neptuno",
+    "reference": "KM# 1539"
   },
   {
     "id": 854,
@@ -10948,7 +10957,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "cantidad": 2,
-    "description": "Plutón"
+    "description": "Plutón",
+    "reference": "KM# 1540"
   },
   {
     "id": 855,
@@ -10966,7 +10976,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "cantidad": 2,
-    "description": "Júpiter"
+    "description": "Júpiter",
+    "reference": "KM# 1536"
   },
   {
     "id": 856,
