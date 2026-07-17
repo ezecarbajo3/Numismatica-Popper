@@ -10506,7 +10506,8 @@
       "images/826A.jpeg",
       "images/826B.jpeg"
     ],
-    "reference": "CJ# 8.1.1"
+    "reference": "CJ# 8.1.1",
+    "cantidad": 2
   },
   {
     "id": 827,
@@ -10526,20 +10527,6 @@
     "description": "Argentina"
   },
   {
-    "id": 828,
-    "costo": 1,
-    "title": "5 Pesos 1994",
-    "country": "Argentina",
-    "metal": "Níquel",
-    "year": 1994,
-    "price": "4 USD",
-    "images": [
-      "images/828A.jpeg",
-      "images/828B.jpeg"
-    ],
-    "reference": "CJ# 8.1.1"
-  },
-  {
     "id": 829,
     "costo": 1,
     "title": "1 Nuevo Peso 1989",
@@ -10554,24 +10541,8 @@
     "reference": "KM# 95",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Se cree que una gran parte de estas monedas fueron retiradas y luego fundidas tras su desmonetización en 1995, debido a su escasa circulación y bajo valor. Esto ayuda a explicar por qué hoy es relativamente difícil encontrarlas."
-  },
-  {
-    "id": 830,
-    "costo": 1,
-    "title": "1 Nuevo Peso 1989",
-    "country": "Uruguay",
-    "metal": "Acero inoxidable",
-    "year": 1989,
-    "price": "4 USD",
-    "images": [
-      "images/830A.jpeg",
-      "images/830B.jpeg"
-    ],
-    "reference": "KM# 95",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Se cree que una gran parte de estas monedas fueron retiradas y luego fundidas tras su desmonetización en 1995, debido a su escasa circulación y bajo valor. Esto ayuda a explicar por qué hoy es relativamente difícil encontrarlas."
+    "description": "Se cree que una gran parte de estas monedas fueron retiradas y luego fundidas tras su desmonetización en 1995, debido a su escasa circulación y bajo valor. Esto ayuda a explicar por qué hoy es relativamente difícil encontrarlas.",
+    "cantidad": 2
   },
   {
     "id": 831,
