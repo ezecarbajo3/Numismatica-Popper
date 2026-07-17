@@ -10379,5 +10379,133 @@
     "group_label": "5 Rublos Conmemorativos",
     "status": "sold",
     "soldAt": "2026-07-15T10:56:37.196098-03:00"
+  },
+  {
+    "id": 819,
+    "costo": 1,
+    "title": "1 Peso 1924",
+    "country": "Chile",
+    "metal": "Plata 500",
+    "year": 1924,
+    "price": "5 USD",
+    "images": [
+      "images/819A.jpeg",
+      "images/819B.jpeg"
+    ],
+    "reference": "KM# 152.6",
+    "grade": "Muy Bueno **",
+    "grade_short": "MB**",
+    "description": "Con detalles"
+  },
+  {
+    "id": 820,
+    "costo": 7,
+    "title": "1/2 Dollar 1967",
+    "country": "Estados Unidos",
+    "metal": "Plata 40%",
+    "year": 1967,
+    "price": "13 USD",
+    "images": [
+      "images/820A.jpeg",
+      "images/820B.jpeg"
+    ],
+    "reference": "KM# 202a",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "us-half-dollar-variants",
+    "group_label": "1/2 Dólar Kennedy"
+  },
+  {
+    "id": 821,
+    "costo": 3,
+    "title": "50 Ore 1931",
+    "country": "Suecia",
+    "metal": "Plata 60%",
+    "year": 1931,
+    "price": "8 USD",
+    "images": [
+      "images/821A.jpeg",
+      "images/821B.jpeg"
+    ],
+    "reference": "KM# 788",
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 822,
+    "costo": 2,
+    "title": "4 Falus 1871",
+    "country": "Marruecos",
+    "metal": "Bronce",
+    "year": 1871,
+    "price": "10 USD",
+    "images": [
+      "images/822A.jpeg",
+      "images/822B.jpeg"
+    ],
+    "reference": "KM# 166.1",
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 823,
+    "costo": 7,
+    "title": "1/2 Dollar 1967",
+    "country": "Estados Unidos",
+    "metal": "Plata 40%",
+    "year": 1967,
+    "price": "12 USD",
+    "images": [
+      "images/823A.jpeg",
+      "images/823B.jpeg"
+    ],
+    "reference": "KM# 202a",
+    "grade": "Sin Circular **",
+    "grade_short": "SC**",
+    "description": "Poquito de pegamento",
+    "group_id": "us-half-dollar-variants",
+    "group_label": "1/2 Dólar Kennedy"
+  },
+  {
+    "id": 824,
+    "costo": 2,
+    "title": "2 Centavos 1854",
+    "country": "Argentina",
+    "metal": "Cobre",
+    "year": 1854,
+    "price": "10 USD",
+    "images": [
+      "images/824A.jpeg",
+      "images/824B.jpeg"
+    ],
+    "reference": "CJ# 2"
+  },
+  {
+    "id": 825,
+    "costo": 2,
+    "title": "1 Krona 1954",
+    "country": "Suecia",
+    "metal": "Plata 40%",
+    "year": 1954,
+    "price": "10 USD",
+    "images": [
+      "images/825A.jpeg",
+      "images/825B.jpeg"
+    ],
+    "reference": "KM# 826"
+  },
+  {
+    "id": 826,
+    "costo": 1,
+    "title": "5 Pesos 1994",
+    "country": "Argentina",
+    "metal": "Níquel",
+    "year": 1994,
+    "price": "4 USD",
+    "images": [
+      "images/826A.jpeg",
+      "images/826B.jpeg"
+    ],
+    "reference": "CJ# 8.1.1"
   }
 ]
