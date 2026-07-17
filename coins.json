@@ -713,7 +713,9 @@
     "mintage": "",
     "description": "Agujero centrado",
     "status": "sold",
-    "soldAt": "2026-07-11T16:58:49-03:00"
+    "soldAt": "2026-07-11T16:58:49-03:00",
+    "group_id": "dk-10ore",
+    "group_label": "10 Ore"
   },
   {
     "id": 89,
@@ -1937,7 +1939,9 @@
     "grade_short": "SC",
     "description": "",
     "mintage": "",
-    "reference": "KM# 474"
+    "reference": "KM# 474",
+    "group_id": "lr-5cents",
+    "group_label": "5 Cents"
   },
   {
     "id": 220,
@@ -2540,7 +2544,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "group_id": "is-10kronur",
+    "group_label": "10 Krónur"
   },
   {
     "id": 274,
@@ -6459,7 +6465,9 @@
     "metal": "Bronce",
     "reference": "KM# 11",
     "status": "sold",
-    "soldAt": "2026-07-01T19:45:45.795211Z"
+    "soldAt": "2026-07-01T19:45:45.795211Z",
+    "group_id": "il-10pruta",
+    "group_label": "10 Pruta"
   },
   {
     "id": 576,
@@ -11010,7 +11018,9 @@
     ],
     "reference": "KM# 864.1",
     "grade": "Excelente+",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "group_id": "dk-10kroner",
+    "group_label": "10 Kroner"
   },
   {
     "id": 859,
@@ -11127,5 +11137,233 @@
     "reference": "KM# 855",
     "grade": "Excelente",
     "grade_short": "EX"
+  },
+  {
+    "id": 866,
+    "title": "5 Ore 1900",
+    "country": "Dinamarca",
+    "metal": "Bronce",
+    "year": 1900,
+    "price": "12 USD",
+    "images": [
+      "images/866A.jpeg",
+      "images/866B.jpeg"
+    ],
+    "reference": "KM# 794",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "description": "ESCASA"
+  },
+  {
+    "id": 867,
+    "title": "100 Pesetas 1980",
+    "country": "España",
+    "metal": "Cuproníquel",
+    "year": 1980,
+    "price": "3.5 USD",
+    "images": [
+      "images/867A.jpeg",
+      "images/867B.jpeg"
+    ],
+    "reference": "KM# 820",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Copa Mundial España 1982"
+  },
+  {
+    "id": 868,
+    "title": "100 Lei 1991",
+    "country": "Rumania",
+    "metal": "Acero chapado en níquel",
+    "year": 1991,
+    "price": "2.5 USD",
+    "images": [
+      "images/868A.jpeg",
+      "images/868B.jpeg"
+    ],
+    "reference": "KM# 111",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "cantidad": 3
+  },
+  {
+    "id": 869,
+    "title": "10 Krónur 1980",
+    "country": "Islandia",
+    "metal": "Cuproníquel",
+    "year": 1980,
+    "price": "2.5 USD",
+    "images": [
+      "images/869A.jpeg",
+      "images/869B.jpeg"
+    ],
+    "reference": "KM# 15",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "group_id": "is-10kronur",
+    "group_label": "10 Krónur"
+  },
+  {
+    "id": 870,
+    "title": "5 Cents 2000",
+    "country": "Liberia",
+    "metal": "Aluminio",
+    "year": 2000,
+    "price": "3 USD",
+    "images": [
+      "images/870A.jpeg",
+      "images/870B.jpeg"
+    ],
+    "reference": "KM# 474",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "group_id": "lr-5cents",
+    "group_label": "5 Cents",
+    "description": "Year of the Dragon"
+  },
+  {
+    "id": 871,
+    "title": "2 Dollars 1994",
+    "country": "Hong Kong",
+    "metal": "Cuproníquel",
+    "year": 1994,
+    "price": "2 USD",
+    "images": [
+      "images/871A.jpeg",
+      "images/871B.jpeg"
+    ],
+    "reference": "KM# 64"
+  },
+  {
+    "id": 872,
+    "title": "10 Pruta 1952",
+    "country": "Israel",
+    "metal": "Aluminio",
+    "year": 1952,
+    "price": "2.5 USD",
+    "images": [
+      "images/872A.jpeg",
+      "images/872B.jpeg"
+    ],
+    "reference": "KM# 17",
+    "grade": "Bueno+",
+    "grade_short": "B+",
+    "group_id": "il-10pruta",
+    "group_label": "10 Pruta"
+  },
+  {
+    "id": 873,
+    "title": "1 Millieme 1972",
+    "country": "Egipto",
+    "metal": "Aluminio",
+    "year": 1972,
+    "price": "2.5 USD",
+    "images": [
+      "images/873A.jpeg",
+      "images/873B.jpeg"
+    ],
+    "reference": "KM# A423",
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 874,
+    "costo": 1,
+    "title": "10 Fils 1975",
+    "country": "Irak",
+    "metal": "Acero inoxidable",
+    "year": 1975,
+    "price": "4 USD",
+    "images": [
+      "images/874A.jpeg",
+      "images/874B.jpeg"
+    ],
+    "reference": "KM# 142",
+    "description": "FAO; con leyenda"
+  },
+  {
+    "id": 875,
+    "costo": 0,
+    "title": "1 Boliviano 1951",
+    "country": "Bolivia",
+    "metal": "Bronce",
+    "year": 1951,
+    "price": "2.5 USD",
+    "images": [
+      "images/875A.jpeg",
+      "images/875B.jpeg"
+    ],
+    "reference": "KM# 184",
+    "grade": "Bueno+",
+    "grade_short": "B+",
+    "description": "Año único"
+  },
+  {
+    "id": 876,
+    "costo": 1,
+    "title": "20 Kroner 1991",
+    "country": "Dinamarca",
+    "metal": "Bronce de aluminio",
+    "year": 1991,
+    "price": "4.5 USD",
+    "images": [
+      "images/876A.jpeg",
+      "images/876B.jpeg"
+    ],
+    "reference": "KM# 871",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "description": "Alto valor nominal (3 usd)"
+  },
+  {
+    "id": 877,
+    "title": "10 Ore 1925",
+    "country": "Dinamarca",
+    "metal": "Cuproníquel",
+    "year": 1925,
+    "price": "2 USD",
+    "images": [
+      "images/877A.jpeg",
+      "images/877B.jpeg"
+    ],
+    "reference": "KM# 822",
+    "grade": "Bueno+",
+    "grade_short": "B+",
+    "group_id": "dk-10ore",
+    "group_label": "10 Ore"
+  },
+  {
+    "id": 878,
+    "title": "10 Ore 1937",
+    "country": "Dinamarca",
+    "metal": "Cuproníquel",
+    "year": 1937,
+    "price": "2.5 USD",
+    "images": [
+      "images/878A.jpeg",
+      "images/878B.jpeg"
+    ],
+    "reference": "KM# 822",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "group_id": "dk-10ore",
+    "group_label": "10 Ore"
+  },
+  {
+    "id": 879,
+    "title": "10 Kroner 1989",
+    "country": "Dinamarca",
+    "metal": "Bronce de aluminio",
+    "year": 1989,
+    "price": "3 USD",
+    "images": [
+      "images/879A.jpeg",
+      "images/879B.jpeg"
+    ],
+    "reference": "KM# 867",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "group_id": "dk-10kroner",
+    "group_label": "10 Kroner"
   }
 ]
