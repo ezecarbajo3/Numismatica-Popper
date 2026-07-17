@@ -10614,5 +10614,96 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "cantidad": 8
+  },
+  {
+    "id": 835,
+    "costo": 0,
+    "title": "2 Duit 1790",
+    "country": "Compañía de las Indias Orientales",
+    "year": 1790,
+    "price": "4.5 USD",
+    "images": [
+      "images/835A.jpeg",
+      "images/835B.jpeg"
+    ],
+    "reference": "KM# 118",
+    "grade": "Regular +",
+    "grade_short": "R+"
+  },
+  {
+    "id": 836,
+    "costo": 0,
+    "title": "Cent 1901",
+    "country": "Indias Orientales Neerlandesas",
+    "year": 1901,
+    "price": "3 USD",
+    "images": [
+      "images/836A.jpeg",
+      "images/836B.jpeg"
+    ],
+    "group_id": "indias-orientales-neerlandesas-cent",
+    "group_label": "Cent",
+    "grade": "Regular +",
+    "grade_short": "R+"
+  },
+  {
+    "id": 837,
+    "costo": 0,
+    "title": "Cent 1856",
+    "country": "Indias Orientales Neerlandesas",
+    "year": 1856,
+    "price": "3.5 USD",
+    "images": [
+      "images/837A.jpeg",
+      "images/837B.jpeg"
+    ],
+    "group_id": "indias-orientales-neerlandesas-cent",
+    "group_label": "Cent",
+    "grade": "Regular +",
+    "grade_short": "R+"
+  },
+  {
+    "id": 838,
+    "costo": 0,
+    "title": "1/2 Cent 1859",
+    "country": "Indias Orientales Neerlandesas",
+    "year": 1859,
+    "price": "3 USD",
+    "images": [
+      "images/838A.jpeg",
+      "images/838B.jpeg"
+    ],
+    "group_id": "indias-orientales-neerlandesas-1-2cent",
+    "group_label": "1/2 Cent",
+    "grade": "Regular +",
+    "grade_short": "R+"
+  },
+  {
+    "id": 839,
+    "costo": 0,
+    "title": "1/2 Cent 1857",
+    "country": "Indias Orientales Neerlandesas",
+    "year": 1857,
+    "price": "4 USD",
+    "images": [
+      "images/839A.jpeg",
+      "images/839B.jpeg"
+    ],
+    "group_id": "indias-orientales-neerlandesas-1-2cent",
+    "group_label": "1/2 Cent",
+    "grade": "Regular +",
+    "grade_short": "R+"
+  },
+  {
+    "id": 840,
+    "title": "Lote de monedas romanas x6",
+    "country": "Imperio Romano",
+    "year": "S/F",
+    "price": "20 USD",
+    "images": [
+      "images/840A.jpeg",
+      "images/840B.jpeg"
+    ],
+    "description": "A clasificar"
   }
 ]
