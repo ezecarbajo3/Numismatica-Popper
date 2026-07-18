@@ -11406,5 +11406,171 @@
     "grade_short": "MB",
     "group_id": "dk-10kroner",
     "group_label": "10 Kroner"
+  },
+  {
+    "id": 880,
+    "title": "10 Kronor 1991",
+    "country": "Suecia",
+    "metal": "Oro nórdico",
+    "year": 1991,
+    "price": "3 USD",
+    "images": [
+      "images/880A.jpeg",
+      "images/880B.jpeg"
+    ],
+    "reference": "KM# 877",
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 881,
+    "title": "10 Ore 1970",
+    "country": "Suecia",
+    "metal": "Cuproníquel (75% Copper, 25% Nickel)",
+    "year": 1970,
+    "price": "2 USD",
+    "images": [
+      "images/881A.jpeg",
+      "images/881B.jpeg"
+    ],
+    "reference": "KM# 835",
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 882,
+    "title": "5 Kronor 1983",
+    "country": "Suecia",
+    "metal": "Níquel recubierto de cuproníquel (Cladding: 75% Copper, 25% Nickel)",
+    "year": 1983,
+    "price": "2.5 USD",
+    "images": [
+      "images/882A.jpeg",
+      "images/882B.jpeg"
+    ],
+    "reference": "Schön# 75",
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 883,
+    "title": "2 Ore 1914",
+    "country": "Suecia",
+    "metal": "Bronce",
+    "year": 1914,
+    "price": "4.5 USD",
+    "images": [
+      "images/883A.jpeg",
+      "images/883B.jpeg"
+    ],
+    "reference": "KM# 778",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "group_id": "se-2ore-km778",
+    "group_label": "2 Ore"
+  },
+  {
+    "id": 884,
+    "title": "2 Ore 1950",
+    "country": "Suecia",
+    "metal": "Bronce",
+    "year": 1950,
+    "price": "5 USD",
+    "images": [
+      "images/884A.jpeg",
+      "images/884B.jpeg"
+    ],
+    "reference": "KM# 778",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "se-2ore-km778",
+    "group_label": "2 Ore"
+  },
+  {
+    "id": 885,
+    "title": "1 Krona 1981",
+    "country": "Suecia",
+    "metal": "Cuproníquel recubierto de cuproníquel (Cladding: 75% Copper, 25% Nickel; Core: 97% Copper, 3% Nickel)",
+    "year": 1981,
+    "price": "2 USD",
+    "images": [
+      "images/885A.jpeg",
+      "images/885B.jpeg"
+    ],
+    "reference": "KM# 852",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "cantidad": 6,
+    "group_id": "se-1krona",
+    "group_label": "1 Krona"
+  },
+  {
+    "id": 886,
+    "title": "1 Krona 1973",
+    "country": "Suecia",
+    "metal": "Cuproníquel recubierto de cuproníquel (Cladding: 75% Copper, 25% Nickel; Core: 97% Copper, 3% Nickel)",
+    "year": 1973,
+    "price": "2 USD",
+    "images": [
+      "images/886A.jpeg",
+      "images/886B.jpeg"
+    ],
+    "reference": "KM# 826a",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "cantidad": 2,
+    "group_id": "se-1krona",
+    "group_label": "1 Krona"
+  },
+  {
+    "id": 887,
+    "title": "5 Ore 1922",
+    "country": "Suecia",
+    "metal": "Bronce",
+    "year": 1922,
+    "price": "6 USD",
+    "images": [
+      "images/887A.jpeg",
+      "images/887B.jpeg"
+    ],
+    "reference": "KM# 779",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "ESCASA",
+    "group_id": "se-5ore-km779",
+    "group_label": "5 Ore"
+  },
+  {
+    "id": 888,
+    "title": "5 Ore 1950",
+    "country": "Suecia",
+    "metal": "Bronce",
+    "year": 1950,
+    "price": "3.5 USD",
+    "images": [
+      "images/888A.jpeg",
+      "images/888B.jpeg"
+    ],
+    "reference": "KM# 779",
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "group_id": "se-5ore-km779",
+    "group_label": "5 Ore"
+  },
+  {
+    "id": 889,
+    "title": "5 Ore 1942",
+    "country": "Suecia",
+    "metal": "Hierro",
+    "year": 1942,
+    "price": "5 USD",
+    "images": [
+      "images/889A.jpeg",
+      "images/889B.jpeg"
+    ],
+    "reference": "KM# 812",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "description": "Segunda Guerra Mundial"
   }
 ]
