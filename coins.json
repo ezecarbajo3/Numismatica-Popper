@@ -6301,14 +6301,16 @@
     "country": "Italia",
     "metal": "Cuproníquel",
     "year": 1918,
-    "price": "4 USD",
+    "price": "3.5 USD",
     "images": [
       "images/566A.jpeg",
       "images/566B.jpeg"
     ],
     "reference": "KM# 58",
     "grade": "Excelente Menos",
-    "grade_short": "EX-"
+    "grade_short": "EX-",
+    "group_id": "it-20centesimi-km58",
+    "group_label": "20 Centesimi"
   },
   {
     "id": 567,
@@ -11572,5 +11574,220 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "description": "Segunda Guerra Mundial"
+  },
+  {
+    "id": 890,
+    "costo": 0,
+    "title": "5 Baht 2007",
+    "country": "Tailandia",
+    "metal": "Cobre recubierto de cuproníquel",
+    "year": 2007,
+    "price": "2.5 USD",
+    "images": [
+      "images/890A.jpeg",
+      "images/890B.jpeg"
+    ],
+    "reference": "Y# 219",
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 891,
+    "costo": 0,
+    "title": "2 Qirsh 1980",
+    "country": "Egipto",
+    "metal": "Bronce de aluminio",
+    "year": 1980,
+    "price": "3 USD",
+    "images": [
+      "images/891A.jpeg",
+      "images/891B.jpeg"
+    ],
+    "reference": "KM# 500",
+    "grade": "Excelente+",
+    "grade_short": "EX+",
+    "description": "Año único"
+  },
+  {
+    "id": 892,
+    "costo": 0,
+    "title": "5 Paisa 1977",
+    "country": "Nepal",
+    "metal": "Aluminio (100%)",
+    "year": 1977,
+    "price": "3 USD",
+    "images": [
+      "images/892A.jpeg",
+      "images/892B.jpeg"
+    ],
+    "reference": "KM# 802",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Empaste de cuño"
+  },
+  {
+    "id": 893,
+    "costo": 0,
+    "title": "50 Fils 1998",
+    "country": "Emiratos Árabes Unidos",
+    "metal": "Cuproníquel",
+    "year": 1998,
+    "price": "3 USD",
+    "images": [
+      "images/893A.jpeg",
+      "images/893B.jpeg"
+    ],
+    "reference": "KM# 16",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "Torres petrolíferas"
+  },
+  {
+    "id": 894,
+    "costo": 0,
+    "title": "5 Ore 1966",
+    "country": "Noruega",
+    "metal": "Bronce (95% Cu, 4% Zn, 1% Sn)",
+    "year": 1966,
+    "price": "4 USD",
+    "images": [
+      "images/894A.jpeg",
+      "images/894B.jpeg"
+    ],
+    "reference": "KM# 405",
+    "grade": "Excelente+",
+    "grade_short": "EX+",
+    "description": "Alce euroasiático"
+  },
+  {
+    "id": 895,
+    "costo": 0,
+    "title": "5 Ore 1938",
+    "country": "Noruega",
+    "metal": "Bronce (Cu 95%, Sn 4%, Zn 1%)",
+    "year": 1938,
+    "price": "5 USD",
+    "images": [
+      "images/895A.jpeg",
+      "images/895B.jpeg"
+    ],
+    "reference": "KM# 368",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 1332000,
+    "description": "Hermosa pátina"
+  },
+  {
+    "id": 896,
+    "costo": 0,
+    "title": "2.5 Escudos 1979",
+    "country": "Portugal",
+    "metal": "Cuproníquel (75% Copper, 25% Nickel)",
+    "year": 1979,
+    "price": "2.5 USD",
+    "images": [
+      "images/896A.jpeg",
+      "images/896B.jpeg"
+    ],
+    "reference": "KM# 590",
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 897,
+    "costo": 0,
+    "title": "5 Escudos 1992",
+    "country": "Portugal",
+    "metal": "Latón de níquel (79% Copper, 20% Zinc, 1% Nickel)",
+    "year": 1992,
+    "price": "2.5 USD",
+    "images": [
+      "images/897A.jpeg",
+      "images/897B.jpeg"
+    ],
+    "reference": "KM# 632",
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 898,
+    "costo": 0,
+    "title": "50 Centesimi 1941",
+    "country": "Italia",
+    "metal": "Acmonital (ferritic)",
+    "year": 1941,
+    "price": "2 USD",
+    "images": [
+      "images/898A.jpeg",
+      "images/898B.jpeg"
+    ],
+    "reference": "KM# 76b"
+  },
+  {
+    "id": 899,
+    "costo": 0,
+    "title": "20 Centesimi 1919",
+    "country": "Italia",
+    "metal": "Cuproníquel",
+    "year": 1919,
+    "price": "4 USD",
+    "images": [
+      "images/899A.jpeg",
+      "images/899B.jpeg"
+    ],
+    "reference": "KM# 58",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "it-20centesimi-km58",
+    "group_label": "20 Centesimi"
+  },
+  {
+    "id": 900,
+    "costo": 0,
+    "title": "5 Centesimi 1861",
+    "country": "Italia",
+    "metal": "Bronce (Cu 96%, Sn 4%)",
+    "year": 1861,
+    "price": "3 USD",
+    "images": [
+      "images/900A.jpeg",
+      "images/900B.jpeg"
+    ],
+    "reference": "KM# 3",
+    "mintage": 3808922,
+    "grade": "Bueno-",
+    "grade_short": "B-",
+    "description": "Ceca Milán (M)"
+  },
+  {
+    "id": 901,
+    "costo": 0,
+    "title": "10 Centesimi 1866",
+    "country": "Italia",
+    "metal": "Bronce (Cu 96%, Sn 4%)",
+    "year": 1866,
+    "price": "4.5 USD",
+    "images": [
+      "images/901A.jpeg",
+      "images/901B.jpeg"
+    ],
+    "reference": "KM# 11",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "Ceca Milán (M)"
+  },
+  {
+    "id": 902,
+    "costo": 0,
+    "title": "5 Centesimi 1925",
+    "country": "Italia",
+    "metal": "Cobre",
+    "year": 1925,
+    "price": "2 USD",
+    "images": [
+      "images/902A.jpeg",
+      "images/902B.jpeg"
+    ],
+    "reference": "KM# 59"
   }
 ]
