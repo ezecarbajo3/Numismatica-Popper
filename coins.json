@@ -8300,7 +8300,8 @@
     "grade_short": "MB+",
     "description": "Ceca PG-M",
     "status": "sold",
-    "soldAt": "2026-07-18T18:05:49-03:00"
+    "soldAt": "2026-07-18T18:05:49-03:00",
+    "costo": 39.22
   },
   {
     "id": 695,
