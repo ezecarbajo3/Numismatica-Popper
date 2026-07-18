@@ -11679,7 +11679,9 @@
     "reference": "KM# 405",
     "grade": "Excelente+",
     "grade_short": "EX+",
-    "description": "Alce euroasiático"
+    "description": "Alce euroasiático",
+    "status": "sold",
+    "soldAt": "2026-07-18T20:08:05-03:00"
   },
   {
     "id": 895,
@@ -11697,7 +11699,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": 1332000,
-    "description": "Hermosa pátina"
+    "description": "Hermosa pátina",
+    "status": "sold",
+    "soldAt": "2026-07-18T20:08:05-03:00"
   },
   {
     "id": 896,
