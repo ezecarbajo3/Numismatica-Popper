@@ -8298,7 +8298,9 @@
     "reference": "KM# 689",
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
-    "description": "Ceca PG-M"
+    "description": "Ceca PG-M",
+    "status": "sold",
+    "soldAt": "2026-07-18T18:05:49-03:00"
   },
   {
     "id": 695,
@@ -10576,7 +10578,9 @@
     ],
     "reference": "KM# 15",
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "status": "sold",
+    "soldAt": "2026-07-18T18:05:49-03:00"
   },
   {
     "id": 832,
