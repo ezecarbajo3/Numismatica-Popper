@@ -73,10 +73,21 @@ function markSold(searchTerm) {
       console.log(`⚠  ID ${coin.id} "${coin.title}" is already marked sold — skipping`);
       return;
     }
-    coin.status = 'sold';
-    coin.soldAt = soldAt;
-    changed.push(coin);
-    console.log(`✓  Marked as VENDIDO: [${coin.id}] ${coin.title}`);
+
+    const cant = typeof coin.cantidad === 'number' ? coin.cantidad : 1;
+    if (cant > 1) {
+      coin.cantidad = cant - 1;
+      changed.push({ coin, becameSold: false });
+      console.log(`✓  Reduced stock for: [${coin.id}] ${coin.title} (remaining: ${coin.cantidad})`);
+    } else {
+      if (coin.hasOwnProperty('cantidad')) {
+        coin.cantidad = 0;
+      }
+      coin.status = 'sold';
+      coin.soldAt = soldAt;
+      changed.push({ coin, becameSold: true });
+      console.log(`✓  Marked as VENDIDO (Out of Stock): [${coin.id}] ${coin.title}`);
+    }
   });
 
   if (changed.length === 0) process.exit(0);
@@ -88,11 +99,18 @@ function markSold(searchTerm) {
     '',
     `**Query:** \`${searchTerm}\``,
     '',
-    '**Items marked:**',
-    ...changed.map(c => `- ID ${c.id}: _${c.title}_ (soldAt: ${soldAt})`),
+    '**Items modified:**',
+    ...changed.map(item => {
+      const c = item.coin;
+      if (item.becameSold) {
+        return `- ID ${c.id}: _${c.title}_ (soldAt: ${soldAt} - OUT OF STOCK)`;
+      } else {
+        return `- ID ${c.id}: _${c.title}_ (Remaining stock: ${c.cantidad})`;
+      }
+    }),
     '',
-    '**Visual effect:** grayscale overlay + VENDIDO ribbon applied on next page load.',
-    '**Retention:** Item will remain visible for 7 days, then auto-purge.',
+    '**Visual effect:** grayscale overlay + VENDIDO ribbon applied on next page load for out of stock items.',
+    '**Retention:** Out of stock items will remain visible for 7 days, then auto-purge.',
     '',
     '**Edge cases / notes:**',
     `- ${matches.length > changed.length ? `${matches.length - changed.length} match(es) already sold, skipped.` : 'No duplicates.'}`,
