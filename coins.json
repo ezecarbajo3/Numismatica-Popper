@@ -10791,7 +10791,8 @@
     "description": "Adorno",
     "grade": "Excelente",
     "grade_short": "EX",
-    "reference": "KM# 806"
+    "reference": "KM# 806",
+    "metal": "Bronce de aluminio"
   },
   {
     "id": 845,
@@ -10819,7 +10820,10 @@
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "reference": "Y# 109"
+    "reference": "Y# 109",
+    "metal": "Bimetálica",
+    "status": "sold",
+    "soldAt": "2026-07-18T04:49:21.059915+00:00"
   },
   {
     "id": 847,
@@ -10834,7 +10838,10 @@
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "reference": "Y# 92"
+    "reference": "Y# 92",
+    "metal": "Bimetálica",
+    "status": "sold",
+    "soldAt": "2026-07-18T04:49:21.060083+00:00"
   },
   {
     "id": 848,
@@ -10850,7 +10857,10 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "cantidad": 5,
-    "reference": "KM# 88"
+    "reference": "Y# 88",
+    "metal": "Cuproníquel",
+    "status": "sold",
+    "soldAt": "2026-07-18T04:49:21.060086+00:00"
   },
   {
     "id": 849,
@@ -10865,7 +10875,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "cantidad": 4,
-    "reference": "KM# 189"
+    "reference": "KM# 189",
+    "metal": "Acero recubierto de níquel"
   },
   {
     "id": 850,
@@ -10884,7 +10895,8 @@
     "grade_short": "SC",
     "cantidad": 2,
     "description": "Marte",
-    "reference": "KM# 1537"
+    "reference": "KM# 1537",
+    "metal": "Aluminio"
   },
   {
     "id": 851,
@@ -10902,7 +10914,10 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Tierra",
-    "reference": "KM# 1535"
+    "reference": "KM# 1535",
+    "metal": "Aluminio",
+    "status": "sold",
+    "soldAt": "2026-07-18T04:49:21.060088+00:00"
   },
   {
     "id": 852,
@@ -10920,7 +10935,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Saturno",
-    "reference": "KM# 1541"
+    "reference": "KM# 1541",
+    "metal": "Aluminio"
   },
   {
     "id": 853,
@@ -10939,7 +10955,8 @@
     "grade_short": "SC",
     "cantidad": 2,
     "description": "Neptuno",
-    "reference": "KM# 1539"
+    "reference": "KM# 1539",
+    "metal": "Aluminio"
   },
   {
     "id": 854,
@@ -10958,7 +10975,8 @@
     "grade_short": "SC",
     "cantidad": 2,
     "description": "Plutón",
-    "reference": "KM# 1540"
+    "reference": "KM# 1540",
+    "metal": "Aluminio"
   },
   {
     "id": 855,
@@ -10977,7 +10995,8 @@
     "grade_short": "SC",
     "cantidad": 2,
     "description": "Júpiter",
-    "reference": "KM# 1536"
+    "reference": "KM# 1536",
+    "metal": "Aluminio"
   },
   {
     "id": 856,
@@ -10991,12 +11010,14 @@
       "images/856A.jpeg",
       "images/856B.jpeg"
     ],
-    "reference": "KM# 652a",
+    "reference": "KM# 688",
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Natación",
     "group_id": "br-1real-olympics",
-    "group_label": "1 Real Olimpíadas"
+    "group_label": "1 Real Olimpíadas",
+    "status": "sold",
+    "soldAt": "2026-07-18T04:49:21.060090+00:00"
   },
   {
     "id": 857,
@@ -11013,7 +11034,9 @@
     "reference": "KM# 656",
     "grade": "Excelente+",
     "grade_short": "EX+",
-    "description": "Centenario Juscelino Kubitschek"
+    "description": "Centenario Juscelino Kubitschek",
+    "status": "sold",
+    "soldAt": "2026-07-18T04:49:21.060091+00:00"
   },
   {
     "id": 858,
@@ -11027,7 +11050,7 @@
       "images/858A.jpeg",
       "images/858B.jpeg"
     ],
-    "reference": "KM# 864.1",
+    "reference": "KM# 864",
     "grade": "Excelente+",
     "grade_short": "EX+",
     "group_id": "dk-10kroner",
@@ -11122,14 +11145,14 @@
     "costo": 0,
     "title": "2 Ore 1961",
     "country": "Dinamarca",
-    "metal": "Bronce",
+    "metal": "Zinc",
     "year": 1961,
     "price": "2.5 USD",
     "images": [
       "images/864A.jpeg",
       "images/864B.jpeg"
     ],
-    "reference": "KM# 847",
+    "reference": "KM# 840",
     "grade": "Muy Bueno+",
     "grade_short": "MB+"
   },
@@ -11147,7 +11170,9 @@
     ],
     "reference": "KM# 855",
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "status": "sold",
+    "soldAt": "2026-07-18T04:49:21.060093+00:00"
   },
   {
     "id": 866,
@@ -11195,7 +11220,9 @@
     "reference": "KM# 111",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 3
+    "cantidad": 3,
+    "status": "sold",
+    "soldAt": "2026-07-18T04:49:21.060095+00:00"
   },
   {
     "id": 869,
@@ -11212,7 +11239,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "group_id": "is-10kronur",
-    "group_label": "10 Krónur"
+    "group_label": "10 Krónur",
+    "mintage": 4600000
   },
   {
     "id": 870,
@@ -11290,7 +11318,10 @@
       "images/874B.jpeg"
     ],
     "reference": "KM# 142",
-    "description": "FAO; con leyenda"
+    "description": "FAO; con leyenda",
+    "mintage": 1000000,
+    "status": "sold",
+    "soldAt": "2026-07-18T04:49:21.060097+00:00"
   },
   {
     "id": 875,
@@ -11358,7 +11389,8 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "group_id": "dk-10ore",
-    "group_label": "10 Ore"
+    "group_label": "10 Ore",
+    "mintage": 2234000
   },
   {
     "id": 879,
