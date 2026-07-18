@@ -2867,7 +2867,9 @@
     ],
     "reference": "KM 47",
     "grade": "Excelente+",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "status": "sold",
+    "soldAt": "2026-07-18T19:07:21-03:00"
   },
   {
     "id": 316,
@@ -3103,7 +3105,9 @@
       "images/334B.jpeg"
     ],
     "grade": "Excelente +",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "status": "sold",
+    "soldAt": "2026-07-18T19:07:21-03:00"
   },
   {
     "id": 335,
@@ -6452,7 +6456,9 @@
     "grade_short": "SC",
     "metal": "Cuproníquel",
     "reference": "KM# 86",
-    "mintage": "3.300.000"
+    "mintage": "3.300.000",
+    "status": "sold",
+    "soldAt": "2026-07-18T19:07:21-03:00"
   },
   {
     "id": 575,
@@ -6574,7 +6580,9 @@
       "images/582B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-07-18T19:07:21-03:00"
   },
   {
     "id": 583,
@@ -10652,7 +10660,9 @@
     "reference": "KM# 118",
     "grade": "Regular +",
     "grade_short": "R+",
-    "description": "La Compañía Neerlandesa de las Indias Orientales (VOC) fue una empresa comercial fundada en 1602 por los Países Bajos para controlar el comercio de especias en Asia. Fue la primera gran corporación multinacional del mundo y contaba con poderes para comerciar, fundar colonias, firmar tratados e incluso mantener un ejército. Su influencia fue clave en la expansión colonial neerlandesa y en el desarrollo de las Indias Orientales Neerlandesas."
+    "description": "La Compañía Neerlandesa de las Indias Orientales (VOC) fue una empresa comercial fundada en 1602 por los Países Bajos para controlar el comercio de especias en Asia. Fue la primera gran corporación multinacional del mundo y contaba con poderes para comerciar, fundar colonias, firmar tratados e incluso mantener un ejército. Su influencia fue clave en la expansión colonial neerlandesa y en el desarrollo de las Indias Orientales Neerlandesas.",
+    "status": "sold",
+    "soldAt": "2026-07-18T19:07:21-03:00"
   },
   {
     "id": 836,
@@ -11633,7 +11643,9 @@
     "reference": "KM# 802",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Empaste de cuño"
+    "description": "Empaste de cuño",
+    "status": "sold",
+    "soldAt": "2026-07-18T19:07:21-03:00"
   },
   {
     "id": 893,
