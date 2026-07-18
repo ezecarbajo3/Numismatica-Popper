@@ -10856,11 +10856,9 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 5,
+    "cantidad": 9,
     "reference": "Y# 88",
-    "metal": "Cuproníquel",
-    "status": "sold",
-    "soldAt": "2026-07-18T04:49:21.060086+00:00"
+    "metal": "Cuproníquel"
   },
   {
     "id": 849,
