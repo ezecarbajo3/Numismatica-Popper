@@ -10719,6 +10719,7 @@
   },
   {
     "id": 840,
+    "costo": 0,
     "title": "Lote de monedas romanas x6",
     "country": "Imperio Romano",
     "year": "S/F",
@@ -10727,7 +10728,9 @@
       "images/840A.jpeg",
       "images/840B.jpeg"
     ],
-    "description": "A clasificar"
+    "description": "A clasificar",
+    "status": "sold",
+    "soldAt": "2026-07-18T12:50:31-03:00"
   },
   {
     "id": 841,
