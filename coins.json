@@ -5920,7 +5920,9 @@
     "mintage": "762.027",
     "description": "Escasa.",
     "group_id": "ar-20centavos-1882",
-    "group_label": "20 Centavos 1882"
+    "group_label": "20 Centavos 1882",
+    "status": "sold",
+    "soldAt": "2026-07-18T19:05:15-03:00"
   },
   {
     "id": 544,
