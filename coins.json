@@ -11788,6 +11788,204 @@
       "images/902A.jpeg",
       "images/902B.jpeg"
     ],
-    "reference": "KM# 59"
+    "reference": "KM# 59",
+    "group_id": "it-5centesimi-km59",
+    "group_label": "5 Centesimi"
+  },
+  {
+    "id": 903,
+    "title": "5 Centesimi 1924",
+    "country": "Italia",
+    "metal": "Cobre",
+    "year": 1924,
+    "price": "2 USD",
+    "images": [
+      "images/903A.jpeg",
+      "images/903B.jpeg"
+    ],
+    "reference": "KM# 59",
+    "group_id": "it-5centesimi-km59",
+    "group_label": "5 Centesimi"
+  },
+  {
+    "id": 904,
+    "title": "5 Centesimi 1938",
+    "country": "Italia",
+    "metal": "Bronce",
+    "year": 1938,
+    "price": "5 USD",
+    "images": [
+      "images/904A.jpeg",
+      "images/904B.jpeg"
+    ],
+    "reference": "KM# 73",
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 905,
+    "title": "20 Centesimi 1940",
+    "country": "Italia",
+    "metal": "Acmonital",
+    "year": 1940,
+    "price": "2 USD",
+    "images": [
+      "images/905A.jpeg",
+      "images/905B.jpeg"
+    ],
+    "reference": "KM# 75b",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "it-20centesimi-km75b",
+    "group_label": "20 Centesimi"
+  },
+  {
+    "id": 906,
+    "title": "20 Centesimi 1941",
+    "country": "Italia",
+    "metal": "Acmonital",
+    "year": 1941,
+    "price": "2 USD",
+    "images": [
+      "images/906A.jpeg",
+      "images/906B.jpeg"
+    ],
+    "reference": "KM# 75b",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "it-20centesimi-km75b",
+    "group_label": "20 Centesimi"
+  },
+  {
+    "id": 907,
+    "title": "20 Centesimi 1942",
+    "country": "Italia",
+    "metal": "Acmonital",
+    "year": 1942,
+    "price": "2 USD",
+    "images": [
+      "images/907A.jpeg",
+      "images/907B.jpeg"
+    ],
+    "reference": "KM# 75b",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "it-20centesimi-km75b",
+    "group_label": "20 Centesimi"
+  },
+  {
+    "id": 908,
+    "title": "20 Centesimi 1943",
+    "country": "Italia",
+    "metal": "Acmonital",
+    "year": 1943,
+    "price": "2 USD",
+    "images": [
+      "images/908A.jpeg",
+      "images/908B.jpeg"
+    ],
+    "reference": "KM# 75b",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "it-20centesimi-km75b",
+    "group_label": "20 Centesimi"
+  },
+  {
+    "id": 909,
+    "title": "100 Lire 1996",
+    "country": "Italia",
+    "metal": "Acmonital",
+    "year": 1996,
+    "price": "3 USD",
+    "images": [
+      "images/909A.jpeg",
+      "images/909B.jpeg"
+    ],
+    "reference": "KM# 159",
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 910,
+    "title": "20 Centesimi 1908",
+    "country": "Italia",
+    "metal": "Níquel",
+    "year": 1908,
+    "price": "2.5 USD",
+    "images": [
+      "images/910A.jpeg",
+      "images/910B.jpeg"
+    ],
+    "reference": "KM# 44",
+    "grade": "Bueno +",
+    "grade_short": "B+",
+    "group_id": "it-20centesimi-km44",
+    "group_label": "20 Centesimi"
+  },
+  {
+    "id": 911,
+    "title": "20 Centesimi 1912",
+    "country": "Italia",
+    "metal": "Níquel",
+    "year": 1912,
+    "price": "3.5 USD",
+    "images": [
+      "images/911A.jpeg",
+      "images/911B.jpeg"
+    ],
+    "reference": "KM# 44",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "it-20centesimi-km44",
+    "group_label": "20 Centesimi"
+  },
+  {
+    "id": 912,
+    "title": "20 Centesimi 1914",
+    "country": "Italia",
+    "metal": "Níquel",
+    "year": 1914,
+    "price": "3.5 USD",
+    "images": [
+      "images/912A.jpeg",
+      "images/912B.jpeg"
+    ],
+    "reference": "KM# 44",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "it-20centesimi-km44",
+    "group_label": "20 Centesimi"
+  },
+  {
+    "id": 913,
+    "title": "20 Centesimi 1922",
+    "country": "Italia",
+    "metal": "Níquel",
+    "year": 1922,
+    "price": "3.5 USD",
+    "images": [
+      "images/913A.jpeg",
+      "images/913B.jpeg"
+    ],
+    "reference": "KM# 44",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "it-20centesimi-km44",
+    "group_label": "20 Centesimi"
+  },
+  {
+    "id": 914,
+    "title": "10 Francos 1990",
+    "country": "Francia",
+    "metal": "Bimetálica",
+    "year": 1990,
+    "price": "2 USD",
+    "images": [
+      "images/914A.jpeg",
+      "images/914B.jpeg"
+    ],
+    "reference": "KM# 964.1",
+    "grade": "Excelente +",
+    "grade_short": "EX+"
   }
 ]
