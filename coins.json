@@ -11790,7 +11790,9 @@
     ],
     "reference": "KM# 59",
     "group_id": "it-5centesimi-km59",
-    "group_label": "5 Centesimi"
+    "group_label": "5 Centesimi",
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
   },
   {
     "id": 903,
@@ -11805,7 +11807,9 @@
     ],
     "reference": "KM# 59",
     "group_id": "it-5centesimi-km59",
-    "group_label": "5 Centesimi"
+    "group_label": "5 Centesimi",
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
   },
   {
     "id": 904,
