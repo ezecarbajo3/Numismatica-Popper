@@ -11933,7 +11933,9 @@
     ],
     "reference": "KM# 159",
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-07-18T23:41:40.234021+00:00"
   },
   {
     "id": 910,
@@ -11950,7 +11952,9 @@
     "grade": "Bueno +",
     "grade_short": "B+",
     "group_id": "it-20centesimi-km44",
-    "group_label": "20 Centesimi"
+    "group_label": "20 Centesimi",
+    "status": "sold",
+    "soldAt": "2026-07-18T23:41:40.234166+00:00"
   },
   {
     "id": 911,
@@ -11967,7 +11971,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "it-20centesimi-km44",
-    "group_label": "20 Centesimi"
+    "group_label": "20 Centesimi",
+    "status": "sold",
+    "soldAt": "2026-07-18T23:41:40.234169+00:00"
   },
   {
     "id": 912,
@@ -11984,7 +11990,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "it-20centesimi-km44",
-    "group_label": "20 Centesimi"
+    "group_label": "20 Centesimi",
+    "status": "sold",
+    "soldAt": "2026-07-18T23:41:40.234171+00:00"
   },
   {
     "id": 913,
@@ -12001,7 +12009,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "it-20centesimi-km44",
-    "group_label": "20 Centesimi"
+    "group_label": "20 Centesimi",
+    "status": "sold",
+    "soldAt": "2026-07-18T23:41:40.234172+00:00"
   },
   {
     "id": 914,
