@@ -1524,7 +1524,9 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
-    "description": "Reproducción de 1957 de una medalla militar original de 1814, entregada a las tropas que liberaron Montevideo del dominio español."
+    "description": "Reproducción de 1957 de una medalla militar original de 1814, entregada a las tropas que liberaron Montevideo del dominio español.",
+    "status": "sold",
+    "soldAt": "2026-07-18T15:33:06.000Z"
   },
   {
     "id": 175,
