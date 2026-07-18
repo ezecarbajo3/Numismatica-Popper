@@ -11448,7 +11448,7 @@
     "id": 881,
     "title": "10 Ore 1970",
     "country": "Suecia",
-    "metal": "Cuproníquel (75% Copper, 25% Nickel)",
+    "metal": "Cuproníquel",
     "year": 1970,
     "price": "2 USD",
     "images": [
@@ -11463,7 +11463,7 @@
     "id": 882,
     "title": "5 Kronor 1983",
     "country": "Suecia",
-    "metal": "Níquel recubierto de cuproníquel (Cladding: 75% Copper, 25% Nickel)",
+    "metal": "Cuproníquel",
     "year": 1983,
     "price": "2.5 USD",
     "images": [
@@ -11512,7 +11512,7 @@
     "id": 885,
     "title": "1 Krona 1981",
     "country": "Suecia",
-    "metal": "Cuproníquel recubierto de cuproníquel (Cladding: 75% Copper, 25% Nickel; Core: 97% Copper, 3% Nickel)",
+    "metal": "Cuproníquel",
     "year": 1981,
     "price": "2 USD",
     "images": [
@@ -11530,7 +11530,7 @@
     "id": 886,
     "title": "1 Krona 1973",
     "country": "Suecia",
-    "metal": "Cuproníquel recubierto de cuproníquel (Cladding: 75% Copper, 25% Nickel; Core: 97% Copper, 3% Nickel)",
+    "metal": "Cuproníquel",
     "year": 1973,
     "price": "2 USD",
     "images": [
@@ -11633,7 +11633,7 @@
     "costo": 0,
     "title": "5 Paisa 1977",
     "country": "Nepal",
-    "metal": "Aluminio (100%)",
+    "metal": "Aluminio",
     "year": 1977,
     "price": "3 USD",
     "images": [
@@ -11669,7 +11669,7 @@
     "costo": 0,
     "title": "5 Ore 1966",
     "country": "Noruega",
-    "metal": "Bronce (95% Cu, 4% Zn, 1% Sn)",
+    "metal": "Bronce",
     "year": 1966,
     "price": "4 USD",
     "images": [
@@ -11686,7 +11686,7 @@
     "costo": 0,
     "title": "5 Ore 1938",
     "country": "Noruega",
-    "metal": "Bronce (Cu 95%, Sn 4%, Zn 1%)",
+    "metal": "Bronce",
     "year": 1938,
     "price": "5 USD",
     "images": [
@@ -11704,7 +11704,7 @@
     "costo": 0,
     "title": "2.5 Escudos 1979",
     "country": "Portugal",
-    "metal": "Cuproníquel (75% Copper, 25% Nickel)",
+    "metal": "Cuproníquel",
     "year": 1979,
     "price": "2.5 USD",
     "images": [
@@ -11720,7 +11720,7 @@
     "costo": 0,
     "title": "5 Escudos 1992",
     "country": "Portugal",
-    "metal": "Latón de níquel (79% Copper, 20% Zinc, 1% Nickel)",
+    "metal": "Latón de níquel",
     "year": 1992,
     "price": "2.5 USD",
     "images": [
@@ -11736,7 +11736,7 @@
     "costo": 0,
     "title": "50 Centesimi 1941",
     "country": "Italia",
-    "metal": "Acmonital (ferritic)",
+    "metal": "Acmonital",
     "year": 1941,
     "price": "2 USD",
     "images": [
@@ -11768,7 +11768,7 @@
     "costo": 0,
     "title": "5 Centesimi 1861",
     "country": "Italia",
-    "metal": "Bronce (Cu 96%, Sn 4%)",
+    "metal": "Bronce",
     "year": 1861,
     "price": "3 USD",
     "images": [
@@ -11786,7 +11786,7 @@
     "costo": 0,
     "title": "10 Centesimi 1866",
     "country": "Italia",
-    "metal": "Bronce (Cu 96%, Sn 4%)",
+    "metal": "Bronce",
     "year": 1866,
     "price": "4.5 USD",
     "images": [
