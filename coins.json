@@ -1613,7 +1613,9 @@
     "grade": "Ver foto",
     "grade_short": "",
     "mintage": "",
-    "description": "Seated Liberty.\nVariante con flecha."
+    "description": "Seated Liberty.\nVariante con flecha.",
+    "status": "sold",
+    "soldAt": "2026-07-18T21:23:29-03:00"
   },
   {
     "id": 181,
