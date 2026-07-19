@@ -1615,7 +1615,8 @@
     "mintage": "",
     "description": "Seated Liberty.\nVariante con flecha.",
     "status": "sold",
-    "soldAt": "2026-07-18T21:23:29-03:00"
+    "soldAt": "2026-07-18T21:23:29-03:00",
+    "costo": 8
   },
   {
     "id": 181,
