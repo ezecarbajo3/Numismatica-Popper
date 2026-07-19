@@ -4787,14 +4787,18 @@
     "country": "Uruguay",
     "metal": "Plata 0.925",
     "year": 2003,
-    "price": "110 USD",
+    "price": "120 USD",
     "images": [
       "images/459A.jpeg",
       "images/459B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Moneda conmemorativa del mundial 2006 (Alemania)"
+    "description": "Moneda conmemorativa del mundial 2006 (Alemania)",
+    "reference": "KM# 122",
+    "mintage": 900,
+    "group_id": "uy-1000pesos-mundial",
+    "group_label": "1000 Pesos Mundial de Fútbol"
   },
   {
     "id": 458,
@@ -4802,14 +4806,18 @@
     "country": "Uruguay",
     "metal": "Plata 0.925",
     "year": 2004,
-    "price": "110 USD",
+    "price": "120 USD",
     "images": [
       "images/460A.jpeg",
       "images/460B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Moneda conmemorativa del mundial 2006 (Alemania)"
+    "description": "Moneda conmemorativa del mundial 2006 (Alemania)",
+    "reference": "KM# 123",
+    "mintage": 900,
+    "group_id": "uy-1000pesos-mundial",
+    "group_label": "1000 Pesos Mundial de Fútbol"
   },
   {
     "id": 459,
@@ -4824,7 +4832,11 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Moneda conmemorativa del mundial 2006 (Alemania)"
+    "description": "Moneda conmemorativa del mundial 2006 (Alemania)",
+    "reference": "KM# 124",
+    "mintage": 900,
+    "group_id": "uy-1000pesos-mundial",
+    "group_label": "1000 Pesos Mundial de Fútbol"
   },
   {
     "id": 460,
