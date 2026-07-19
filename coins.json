@@ -5863,6 +5863,8 @@
     "grade_short": "MB",
     "mintage": "762.027",
     "description": "Escasa.",
+    "status": "sold",
+    "soldAt": "2026-07-18T21:19:40-03:00",
     "group_id": "ar-20centavos-1882",
     "group_label": "20 Centavos 1882"
   },
