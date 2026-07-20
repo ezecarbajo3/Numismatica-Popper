@@ -11375,7 +11375,9 @@
     "reference": "KM# 184",
     "grade": "Bueno+",
     "grade_short": "B+",
-    "description": "Año único"
+    "description": "Año único",
+    "status": "sold",
+    "soldAt": "2026-07-20T13:39:26-03:00"
   },
   {
     "id": 876,
