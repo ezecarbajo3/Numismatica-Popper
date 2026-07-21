@@ -5688,7 +5688,9 @@
     ],
     "reference": "KM# A426",
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "status": "sold",
+    "soldAt": "2026-07-21T11:12:52.000Z"
   },
   {
     "id": 514,
