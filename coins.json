@@ -11909,8 +11909,7 @@
     "grade_short": "EX",
     "group_id": "it-20centesimi-km75b",
     "group_label": "20 Centesimi",
-    "status": "sold",
-    "soldAt": "2026-07-18T14:42:04-03:00"
+    "cantidad": 3
   },
   {
     "id": 906,
@@ -11927,9 +11926,7 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "it-20centesimi-km75b",
-    "group_label": "20 Centesimi",
-    "status": "sold",
-    "soldAt": "2026-07-18T14:42:04-03:00"
+    "group_label": "20 Centesimi"
   },
   {
     "id": 907,
@@ -11946,9 +11943,7 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "it-20centesimi-km75b",
-    "group_label": "20 Centesimi",
-    "status": "sold",
-    "soldAt": "2026-07-18T14:42:04-03:00"
+    "group_label": "20 Centesimi"
   },
   {
     "id": 908,
@@ -11965,9 +11960,7 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "it-20centesimi-km75b",
-    "group_label": "20 Centesimi",
-    "status": "sold",
-    "soldAt": "2026-07-18T14:42:04-03:00"
+    "group_label": "20 Centesimi"
   },
   {
     "id": 909,
