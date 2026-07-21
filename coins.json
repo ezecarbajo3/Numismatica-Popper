@@ -6617,7 +6617,9 @@
     "group_label": "Kurus 2022",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Uranio"
+    "description": "Uranio",
+    "status": "sold",
+    "soldAt": "2026-07-21T12:39:24-03:00"
   },
   {
     "id": 584,
@@ -6633,7 +6635,9 @@
     "group_label": "Kurus 2022",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Mercurio"
+    "description": "Mercurio",
+    "status": "sold",
+    "soldAt": "2026-07-21T12:39:24-03:00"
   },
   {
     "id": 585,
@@ -10932,7 +10936,7 @@
     "group_label": "Kurus 2022",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 2,
+    "cantidad": 1,
     "description": "Marte",
     "reference": "KM# 1537",
     "metal": "Aluminio"
@@ -10975,7 +10979,9 @@
     "grade_short": "SC",
     "description": "Saturno",
     "reference": "KM# 1541",
-    "metal": "Aluminio"
+    "metal": "Aluminio",
+    "status": "sold",
+    "soldAt": "2026-07-21T12:39:24-03:00"
   },
   {
     "id": 853,
@@ -10992,7 +10998,7 @@
     "group_label": "Kurus 2022",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 2,
+    "cantidad": 1,
     "description": "Neptuno",
     "reference": "KM# 1539",
     "metal": "Aluminio"
@@ -11012,7 +11018,7 @@
     "group_label": "Kurus 2022",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 2,
+    "cantidad": 1,
     "description": "Plutón",
     "reference": "KM# 1540",
     "metal": "Aluminio"
@@ -11032,7 +11038,7 @@
     "group_label": "Kurus 2022",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 2,
+    "cantidad": 1,
     "description": "Júpiter",
     "reference": "KM# 1536",
     "metal": "Aluminio"
