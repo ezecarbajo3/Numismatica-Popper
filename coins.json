@@ -6341,7 +6341,8 @@
     "grade": "Excelente Menos",
     "grade_short": "EX-",
     "group_id": "it-20centesimi-km58",
-    "group_label": "20 Centesimi"
+    "group_label": "20 Centesimi",
+    "cantidad": 3
   },
   {
     "id": 567,
@@ -10909,7 +10910,7 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 9,
+    "cantidad": 4,
     "reference": "Y# 88",
     "metal": "Cuproníquel"
   },
@@ -11508,8 +11509,7 @@
     "reference": "Schön# 75",
     "grade": "Excelente",
     "grade_short": "EX",
-    "status": "sold",
-    "soldAt": "2026-07-19T14:42:04.644661+00:00"
+    "cantidad": 1
   },
   {
     "id": 883,
@@ -11561,7 +11561,7 @@
     "reference": "KM# 852",
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 5,
+    "cantidad": 9,
     "group_id": "se-1krona",
     "group_label": "1 Krona"
   },
@@ -11788,7 +11788,8 @@
       "images/898A.jpeg",
       "images/898B.jpeg"
     ],
-    "reference": "KM# 76b"
+    "reference": "KM# 76b",
+    "cantidad": 2
   },
   {
     "id": 899,
@@ -11824,7 +11825,8 @@
     "mintage": 3808922,
     "grade": "Bueno-",
     "grade_short": "B-",
-    "description": "Ceca Milán (M)"
+    "description": "Ceca Milán (M)",
+    "cantidad": 2
   },
   {
     "id": 901,
@@ -12014,8 +12016,7 @@
     "grade_short": "EX",
     "group_id": "it-20centesimi-km44",
     "group_label": "20 Centesimi",
-    "status": "sold",
-    "soldAt": "2026-07-18T23:41:40.234169+00:00"
+    "cantidad": 1
   },
   {
     "id": 912,
@@ -12052,8 +12053,7 @@
     "grade_short": "EX",
     "group_id": "it-20centesimi-km44",
     "group_label": "20 Centesimi",
-    "status": "sold",
-    "soldAt": "2026-07-18T23:41:40.234172+00:00"
+    "cantidad": 1
   },
   {
     "id": 914,
