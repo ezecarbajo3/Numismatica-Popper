@@ -12388,10 +12388,6 @@
     "metal": "Cuproníquel",
     "year": 1974,
     "price": "2 USD",
-    "images": [
-      "images/934A.jpeg",
-      "images/934B.jpeg"
-    ],
     "grade": "Muy Bueno",
     "grade_short": "MB"
   },
@@ -12402,10 +12398,6 @@
     "metal": "Bimetálica",
     "year": 2012,
     "price": "1.5 USD",
-    "images": [
-      "images/935A.jpeg",
-      "images/935B.jpeg"
-    ],
     "reference": "CJ# 341",
     "grade": "Excelente",
     "grade_short": "EX",
