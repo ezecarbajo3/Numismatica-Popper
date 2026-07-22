@@ -5765,7 +5765,9 @@
     "grade_short": "EX",
     "mintage": "2.700.000",
     "status": "sold",
-    "soldAt": "2026-07-11T18:43:27-03:00"
+    "soldAt": "2026-07-11T18:43:27-03:00",
+    "group_id": "ar-10centavos-patacon",
+    "group_label": "10 Centavos Patacón"
   },
   {
     "id": 520,
@@ -12078,5 +12080,298 @@
     "reference": "KM# 964.1",
     "grade": "Excelente +",
     "grade_short": "EX+"
+  },
+  {
+    "id": 915,
+    "title": "10 Centavos 1883",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1883,
+    "price": "15 USD",
+    "images": [
+      "images/915A.jpeg",
+      "images/915B.jpeg"
+    ],
+    "reference": "CJ# 23",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "group_id": "ar-10centavos-patacon",
+    "group_label": "10 Centavos Patacón"
+  },
+  {
+    "id": 916,
+    "title": "2 Centesimi 1867 M",
+    "country": "Italia",
+    "metal": "Bronce",
+    "year": 1867,
+    "price": "3 USD",
+    "images": [
+      "images/916A.jpeg",
+      "images/916B.jpeg"
+    ],
+    "reference": "KM# 2.2",
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 917,
+    "title": "10 Yen 1972",
+    "country": "Japón",
+    "metal": "Bronce",
+    "year": 1972,
+    "price": "2.5 USD",
+    "images": [
+      "images/917A.jpeg",
+      "images/917B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 918,
+    "title": "5 Cents 2005 P",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": 2005,
+    "price": "2 USD",
+    "images": [
+      "images/918A.jpeg",
+      "images/918B.jpeg"
+    ],
+    "reference": "KM# 369",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "group_id": "us-5cents-2005",
+    "group_label": "5 Cents 2005"
+  },
+  {
+    "id": 919,
+    "title": "5 Cents 2005 D",
+    "country": "Estados Unidos",
+    "metal": "Cuproníquel",
+    "year": 2005,
+    "price": "2 USD",
+    "images": [
+      "images/919A.jpeg",
+      "images/919B.jpeg"
+    ],
+    "reference": "KM# 368",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "group_id": "us-5cents-2005",
+    "group_label": "5 Cents 2005"
+  },
+  {
+    "id": 920,
+    "title": "1 Franco 1942",
+    "country": "Francia - Régimen de Vichy",
+    "metal": "Aluminio",
+    "year": 1942,
+    "price": "4 USD",
+    "images": [
+      "images/920A.jpeg",
+      "images/920B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "El régimen de Vichy fue el gobierno francés que colaboró con la Alemania nazi entre 1940 y 1944, tras la derrota de Francia en la Segunda Guerra Mundial. Con sede en la ciudad de Vichy y liderado por el mariscal Philippe Pétain, controló la llamada \"Francia libre\" (zona sur no ocupada) mientras el norte quedaba bajo ocupación alemana directa.",
+    "group_id": "fr-1franco-vichy",
+    "group_label": "1 Franco Vichy"
+  },
+  {
+    "id": 921,
+    "title": "1 Franco 1943",
+    "country": "Francia - Régimen de Vichy",
+    "metal": "Aluminio",
+    "year": 1943,
+    "price": "4 USD",
+    "images": [
+      "images/921A.jpeg",
+      "images/921B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "El régimen de Vichy fue el gobierno francés que colaboró con la Alemania nazi entre 1940 y 1944, tras la derrota de Francia en la Segunda Guerra Mundial. Con sede en la ciudad de Vichy y liderado por el mariscal Philippe Pétain, controló la llamada \"Francia libre\" (zona sur no ocupada) mientras el norte quedaba bajo ocupación alemana directa.",
+    "group_id": "fr-1franco-vichy",
+    "group_label": "1 Franco Vichy"
+  },
+  {
+    "id": 922,
+    "title": "1 Franco 1944",
+    "country": "Francia - Régimen de Vichy",
+    "metal": "Aluminio",
+    "year": 1944,
+    "price": "4 USD",
+    "images": [
+      "images/922A.jpeg",
+      "images/922B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "El régimen de Vichy fue el gobierno francés que colaboró con la Alemania nazi entre 1940 y 1944, tras la derrota de Francia en la Segunda Guerra Mundial. Con sede en la ciudad de Vichy y liderado por el mariscal Philippe Pétain, controló la llamada \"Francia libre\" (zona sur no ocupada) mientras el norte quedaba bajo ocupación alemana directa.",
+    "group_id": "fr-1franco-vichy",
+    "group_label": "1 Franco Vichy"
+  },
+  {
+    "id": 923,
+    "title": "1 Franco 1945",
+    "country": "Francia",
+    "metal": "Aluminio",
+    "year": 1945,
+    "price": "2 USD",
+    "images": [
+      "images/923A.jpeg",
+      "images/923B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "group_id": "fr-1franco-morlon",
+    "group_label": "1 Franco Morlon"
+  },
+  {
+    "id": 924,
+    "title": "1 Franco 1946",
+    "country": "Francia",
+    "metal": "Aluminio",
+    "year": 1946,
+    "price": "2 USD",
+    "images": [
+      "images/924A.jpeg",
+      "images/924B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "group_id": "fr-1franco-morlon",
+    "group_label": "1 Franco Morlon"
+  },
+  {
+    "id": 925,
+    "title": "2 Francos 1943",
+    "country": "Francia - Régimen de Vichy",
+    "metal": "Aluminio",
+    "year": 1943,
+    "price": "7 USD",
+    "images": [
+      "images/925A.jpeg",
+      "images/925B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "El régimen de Vichy fue el gobierno francés que colaboró con la Alemania nazi entre 1940 y 1944, tras la derrota de Francia en la Segunda Guerra Mundial. Con sede en la ciudad de Vichy y liderado por el mariscal Philippe Pétain, controló la llamada \"Francia libre\" (zona sur no ocupada) mientras el norte quedaba bajo ocupación alemana directa."
+  },
+  {
+    "id": 926,
+    "title": "1 Denar 2016",
+    "country": "Macedonia del Norte",
+    "metal": "Acero latonado",
+    "year": 2016,
+    "price": "2.5 USD",
+    "images": [
+      "images/926A.jpeg",
+      "images/926B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 927,
+    "title": "10 Centimes 1919",
+    "country": "Francia",
+    "metal": "Bronce",
+    "year": 1919,
+    "price": "3.5 USD",
+    "images": [
+      "images/927A.jpeg",
+      "images/927B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 928,
+    "title": "10 Centimes 1929",
+    "country": "Francia",
+    "metal": "Cuproníquel",
+    "year": 1929,
+    "price": "3 USD",
+    "images": [
+      "images/928A.jpeg",
+      "images/928B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 929,
+    "title": "5 Liras 1949",
+    "country": "Italia",
+    "metal": "Aluminio",
+    "year": 1949,
+    "price": "2.5 USD",
+    "images": [
+      "images/929A.jpeg",
+      "images/929B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 930,
+    "title": "100 Liras 1979",
+    "country": "Italia",
+    "metal": "Acero",
+    "year": 1979,
+    "price": "3.5 USD",
+    "images": [
+      "images/930A.jpeg",
+      "images/930B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "commemorates": "FAO"
+  },
+  {
+    "id": 931,
+    "title": "5 Francos 1993",
+    "country": "Francia",
+    "metal": "Níquel",
+    "year": 1993,
+    "price": "2.5 USD",
+    "images": [
+      "images/931A.jpeg",
+      "images/931B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Brillo original."
+  },
+  {
+    "id": 932,
+    "title": "1 Yuan 2013",
+    "country": "China",
+    "metal": "Acero niquelado",
+    "year": 2013,
+    "price": "2 USD",
+    "images": [
+      "images/932A.jpeg",
+      "images/932B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "cantidad": 5
+  },
+  {
+    "id": 933,
+    "title": "5 Zlotych 1933",
+    "country": "Polonia",
+    "metal": "Plata .750",
+    "year": 1933,
+    "price": "22 USD",
+    "images": [
+      "images/933A.jpeg",
+      "images/933B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
   }
 ]
