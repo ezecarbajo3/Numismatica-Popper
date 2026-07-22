@@ -12561,7 +12561,9 @@
     "grade_short": "SC",
     "description": "Versión Proof.",
     "group_id": "us-half-dollar-franklin",
-    "group_label": "1/2 Dólar Franklin"
+    "group_label": "1/2 Dólar Franklin",
+    "reference": "KM# 199",
+    "mintage": "1.691.602"
   },
   {
     "id": 946,
@@ -12579,7 +12581,9 @@
     "grade_short": "SC",
     "description": "Versión Proof.",
     "group_id": "us-half-dollar-franklin",
-    "group_label": "1/2 Dólar Franklin"
+    "group_label": "1/2 Dólar Franklin",
+    "reference": "KM# 199",
+    "mintage": "3.028.244"
   },
   {
     "id": 947,
@@ -12597,7 +12601,9 @@
     "grade_short": "SC",
     "description": "Versión Proof.",
     "group_id": "us-half-dollar-franklin",
-    "group_label": "1/2 Dólar Franklin"
+    "group_label": "1/2 Dólar Franklin",
+    "reference": "KM# 199",
+    "mintage": "3.218.019"
   },
   {
     "id": 948,
@@ -12615,7 +12621,9 @@
     "grade_short": "SC",
     "description": "Versión Proof.",
     "group_id": "us-half-dollar-franklin",
-    "group_label": "1/2 Dólar Franklin"
+    "group_label": "1/2 Dólar Franklin",
+    "reference": "KM# 199",
+    "mintage": "3.075.645"
   },
   {
     "id": 949,
@@ -12666,7 +12674,8 @@
     "grade_short": "SC",
     "description": "Estado no reconocido internacionalmente ubicado entre Moldavia y Ucrania.\nEmite sus propios billetes y monedas desde 1994.",
     "group_id": "pmr-1kopeck-2000",
-    "group_label": "1 Kopeck 2000"
+    "group_label": "1 Kopeck 2000",
+    "reference": "KM# 1"
   },
   {
     "id": 952,
@@ -12683,7 +12692,8 @@
     "grade_short": "SC",
     "description": "Estado no reconocido internacionalmente ubicado entre Moldavia y Ucrania.\nEmite sus propios billetes y monedas desde 1994.",
     "group_id": "pmr-1kopeck-2000",
-    "group_label": "1 Kopeck 2000"
+    "group_label": "1 Kopeck 2000",
+    "reference": "KM# 1"
   },
   {
     "id": 953,
@@ -12700,7 +12710,8 @@
     "grade_short": "SC",
     "description": "Estado no reconocido internacionalmente ubicado entre Moldavia y Ucrania.\nEmite sus propios billetes y monedas desde 1994.",
     "group_id": "pmr-1kopeck-2000",
-    "group_label": "1 Kopeck 2000"
+    "group_label": "1 Kopeck 2000",
+    "reference": "KM# 1"
   },
   {
     "id": 954,
@@ -12714,7 +12725,8 @@
       "images/954B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "reference": "KM# 6"
   },
   {
     "id": 955,
@@ -12728,7 +12740,8 @@
       "images/955B.jpeg"
     ],
     "grade": "Muy Bueno -",
-    "grade_short": "MB-"
+    "grade_short": "MB-",
+    "reference": "KM# 29"
   },
   {
     "id": 956,
@@ -12742,7 +12755,8 @@
       "images/956B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "reference": "KM# 1411"
   },
   {
     "id": 957,
@@ -12756,7 +12770,8 @@
       "images/957B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "reference": "KM# 603"
   },
   {
     "id": 958,
@@ -12772,7 +12787,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "ru-10rublos",
-    "group_label": "10 Rublos"
+    "group_label": "10 Rublos",
+    "reference": "KM# 998"
   },
   {
     "id": 959,
@@ -12788,6 +12804,7 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "group_id": "ru-10rublos",
-    "group_label": "10 Rublos"
+    "group_label": "10 Rublos",
+    "reference": "KM# 998"
   }
 ]
