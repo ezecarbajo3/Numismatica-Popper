@@ -2145,7 +2145,9 @@
     "mintage": "",
     "reference": "Y# 1468",
     "status": "sold",
-    "soldAt": "2026-07-14T15:07:08-03:00"
+    "soldAt": "2026-07-14T15:07:08-03:00",
+    "group_id": "ru-10rublos",
+    "group_label": "10 Rublos"
   },
   {
     "id": 244,
@@ -12542,5 +12544,250 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC"
+  },
+  {
+    "id": 945,
+    "costo": 40,
+    "title": "1/2 Dólar 1960",
+    "country": "Estados Unidos",
+    "metal": "Plata 900",
+    "year": 1960,
+    "price": "45 USD",
+    "images": [
+      "images/945A.jpeg",
+      "images/945B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Versión Proof.",
+    "group_id": "us-half-dollar-franklin",
+    "group_label": "1/2 Dólar Franklin"
+  },
+  {
+    "id": 946,
+    "costo": 40,
+    "title": "1/2 Dólar 1961",
+    "country": "Estados Unidos",
+    "metal": "Plata 900",
+    "year": 1961,
+    "price": "45 USD",
+    "images": [
+      "images/946A.jpeg",
+      "images/946B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Versión Proof.",
+    "group_id": "us-half-dollar-franklin",
+    "group_label": "1/2 Dólar Franklin"
+  },
+  {
+    "id": 947,
+    "costo": 40,
+    "title": "1/2 Dólar 1962",
+    "country": "Estados Unidos",
+    "metal": "Plata 900",
+    "year": 1962,
+    "price": "45 USD",
+    "images": [
+      "images/947A.jpeg",
+      "images/947B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Versión Proof.",
+    "group_id": "us-half-dollar-franklin",
+    "group_label": "1/2 Dólar Franklin"
+  },
+  {
+    "id": 948,
+    "costo": 40,
+    "title": "1/2 Dólar 1963",
+    "country": "Estados Unidos",
+    "metal": "Plata 900",
+    "year": 1963,
+    "price": "45 USD",
+    "images": [
+      "images/948A.jpeg",
+      "images/948B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Versión Proof.",
+    "group_id": "us-half-dollar-franklin",
+    "group_label": "1/2 Dólar Franklin"
+  },
+  {
+    "id": 949,
+    "costo": 0.64,
+    "title": "1 Cent 2025",
+    "country": "Curazao",
+    "metal": "Acero niquelado",
+    "year": 2025,
+    "price": "3 USD",
+    "images": [
+      "images/949A.jpeg",
+      "images/949B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "group_id": "cur-1cent-2025",
+    "group_label": "1 Cent 2025"
+  },
+  {
+    "id": 950,
+    "costo": 0.64,
+    "title": "1 Cent 2025",
+    "country": "Curazao",
+    "metal": "Acero niquelado",
+    "year": 2025,
+    "price": "3 USD",
+    "images": [
+      "images/950A.jpeg",
+      "images/950B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "group_id": "cur-1cent-2025",
+    "group_label": "1 Cent 2025"
+  },
+  {
+    "id": 951,
+    "title": "1 Kopeck 2000",
+    "country": "Transnistria",
+    "metal": "Aluminio",
+    "year": 2000,
+    "price": "3 USD",
+    "images": [
+      "images/951A.jpeg",
+      "images/951B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Estado no reconocido internacionalmente ubicado entre Moldavia y Ucrania.\nEmite sus propios billetes y monedas desde 1994.",
+    "group_id": "pmr-1kopeck-2000",
+    "group_label": "1 Kopeck 2000"
+  },
+  {
+    "id": 952,
+    "title": "1 Kopeck 2000",
+    "country": "Transnistria",
+    "metal": "Aluminio",
+    "year": 2000,
+    "price": "3 USD",
+    "images": [
+      "images/952A.jpeg",
+      "images/952B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Estado no reconocido internacionalmente ubicado entre Moldavia y Ucrania.\nEmite sus propios billetes y monedas desde 1994.",
+    "group_id": "pmr-1kopeck-2000",
+    "group_label": "1 Kopeck 2000"
+  },
+  {
+    "id": 953,
+    "title": "1 Kopeck 2000",
+    "country": "Transnistria",
+    "metal": "Aluminio",
+    "year": 2000,
+    "price": "3 USD",
+    "images": [
+      "images/953A.jpeg",
+      "images/953B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Estado no reconocido internacionalmente ubicado entre Moldavia y Ucrania.\nEmite sus propios billetes y monedas desde 1994.",
+    "group_id": "pmr-1kopeck-2000",
+    "group_label": "1 Kopeck 2000"
+  },
+  {
+    "id": 954,
+    "title": "1 Kopeck 1992",
+    "country": "Ucrania",
+    "metal": "Acero inoxidable",
+    "year": 1992,
+    "price": "2.5 USD",
+    "images": [
+      "images/954A.jpeg",
+      "images/954B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 955,
+    "title": "50 Para 1953",
+    "country": "Yugoslavia",
+    "metal": "Aluminio",
+    "year": 1953,
+    "price": "2.5 USD",
+    "images": [
+      "images/955A.jpeg",
+      "images/955B.jpeg"
+    ],
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-"
+  },
+  {
+    "id": 956,
+    "title": "5 Jiao 2015",
+    "country": "China",
+    "metal": "Acero latonado",
+    "year": 2015,
+    "price": "2 USD",
+    "images": [
+      "images/956A.jpeg",
+      "images/956B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 957,
+    "title": "50 Kopecks 2002",
+    "country": "Rusia",
+    "metal": "Latón",
+    "year": 2002,
+    "price": "2 USD",
+    "images": [
+      "images/957A.jpeg",
+      "images/957B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX"
+  },
+  {
+    "id": 958,
+    "title": "10 Rublos 2018",
+    "country": "Rusia",
+    "metal": "Acero chapado en latón",
+    "year": 2018,
+    "price": "2.5 USD",
+    "images": [
+      "images/958A.jpeg",
+      "images/958B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "group_id": "ru-10rublos",
+    "group_label": "10 Rublos"
+  },
+  {
+    "id": 959,
+    "title": "10 Rublos 2015",
+    "country": "Rusia",
+    "metal": "Acero chapado en latón",
+    "year": 2015,
+    "price": "2.5 USD",
+    "images": [
+      "images/959A.jpeg",
+      "images/959B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "group_id": "ru-10rublos",
+    "group_label": "10 Rublos"
   }
 ]
