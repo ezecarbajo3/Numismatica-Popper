@@ -12096,7 +12096,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "group_id": "ar-10centavos-patacon",
-    "group_label": "10 Centavos Patacón"
+    "group_label": "10 Centavos Patacón",
+    "costo": 7
   },
   {
     "id": 916,
@@ -12111,7 +12112,8 @@
     ],
     "reference": "KM# 2.2",
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "costo": 0.5
   },
   {
     "id": 917,
@@ -12271,7 +12273,8 @@
       "images/926B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "costo": 0.5
   },
   {
     "id": 927,
@@ -12285,7 +12288,8 @@
       "images/927B.jpeg"
     ],
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "costo": 0.64
   },
   {
     "id": 928,
@@ -12299,7 +12303,8 @@
       "images/928B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "costo": 0.64
   },
   {
     "id": 929,
