@@ -12378,5 +12378,169 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX"
+  },
+  {
+    "id": 934,
+    "title": "10 Francos 1974",
+    "country": "Francia",
+    "metal": "Cuproníquel",
+    "year": 1974,
+    "price": "2 USD",
+    "images": [
+      "images/934A.jpeg",
+      "images/934B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
+  },
+  {
+    "id": 935,
+    "title": "2 Pesos 2012",
+    "country": "Argentina",
+    "metal": "Bimetálica",
+    "year": 2012,
+    "price": "1.5 USD",
+    "images": [
+      "images/935A.jpeg",
+      "images/935B.jpeg"
+    ],
+    "reference": "CJ# 341",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "commemorates": "Malvinas"
+  },
+  {
+    "id": 936,
+    "title": "25 Rublos 2011",
+    "country": "Rusia",
+    "metal": "Cuproníquel",
+    "year": 2011,
+    "price": "8 USD",
+    "images": [
+      "images/936A.jpeg",
+      "images/936B.jpeg"
+    ],
+    "reference": "KM# 1303",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "commemorates": "Sochi 2014"
+  },
+  {
+    "id": 937,
+    "title": "2 Marcos 1988 D",
+    "country": "Alemania",
+    "metal": "Cuproníquel",
+    "year": 1988,
+    "price": "3.5 USD",
+    "images": [
+      "images/937A.jpeg",
+      "images/937B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "commemorates": "Ludwig Erhard"
+  },
+  {
+    "id": 938,
+    "title": "15 Kopecks 1961",
+    "country": "Unión Soviética",
+    "metal": "Cuproníquel",
+    "year": 1961,
+    "price": "2.5 USD",
+    "images": [
+      "images/938A.jpeg",
+      "images/938B.jpeg"
+    ],
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "description": "Primer año."
+  },
+  {
+    "id": 939,
+    "title": "5 Centavos 1935",
+    "country": "Colombia",
+    "metal": "Cuproníquel",
+    "year": 1935,
+    "price": "6 USD",
+    "images": [
+      "images/939A.jpeg",
+      "images/939B.jpeg"
+    ],
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "description": "Escasa, 10 USD de catálogo."
+  },
+  {
+    "id": 940,
+    "title": "2 Filler 1963",
+    "country": "Austria",
+    "metal": "Aluminio",
+    "year": 1963,
+    "price": "2.5 USD",
+    "images": [
+      "images/940A.jpeg",
+      "images/940B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
+  },
+  {
+    "id": 941,
+    "title": "1 Dinar 1953",
+    "country": "Yugoslavia",
+    "metal": "Aluminio-bronce",
+    "year": 1953,
+    "price": "3 USD",
+    "images": [
+      "images/941A.jpeg",
+      "images/941B.jpeg"
+    ],
+    "grade": "Excelente -",
+    "grade_short": "EX-"
+  },
+  {
+    "id": 942,
+    "title": "10 Senti 2002",
+    "country": "Estonia",
+    "metal": "Aluminio-bronce",
+    "year": 2002,
+    "price": "2.5 USD",
+    "images": [
+      "images/942A.jpeg",
+      "images/942B.jpeg"
+    ],
+    "grade": "Excelente +",
+    "grade_short": "EX+"
+  },
+  {
+    "id": 943,
+    "title": "10 Centavos 1899",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1899,
+    "price": "2 USD",
+    "images": [
+      "images/943A.jpeg",
+      "images/943B.jpeg"
+    ],
+    "reference": "CJ# 27",
+    "grade": "Regular +",
+    "grade_short": "R+",
+    "group_id": "ar-10centavos-cuproniquel",
+    "group_label": "10 Centavos cuproníquel"
+  },
+  {
+    "id": 944,
+    "title": "20 Lipa 1995",
+    "country": "Croacia",
+    "metal": "Acero niquelado",
+    "year": 1995,
+    "price": "2.5 USD",
+    "images": [
+      "images/944A.jpeg",
+      "images/944B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC"
   }
 ]
