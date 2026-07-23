@@ -7797,7 +7797,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "gb-6pence-km903",
-    "group_label": "6 Pence"
+    "group_label": "6 Pence",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809345+00:00"
   },
   {
     "id": 660,
@@ -12099,7 +12101,11 @@
     "grade_short": "MB",
     "group_id": "ar-10centavos-patacon",
     "group_label": "10 Centavos Patacón",
-    "costo": 7
+    "costo": 7,
+    "mintage": "3.753.864",
+    "description": "Moneda histórica argentina del Peso Moneda Nacional acuñada en cuproníquel durante la presidencia de Julio A. Roca.",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809535+00:00"
   },
   {
     "id": 916,
@@ -12115,7 +12121,10 @@
     "reference": "KM# 2.2",
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "costo": 0.5
+    "costo": 0.5,
+    "description": "Acuñada bajo el reinado de Vittorio Emanuele II en la ceca de Milán (M).",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809538+00:00"
   },
   {
     "id": 917,
@@ -12129,7 +12138,9 @@
       "images/917B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "reference": "KM# 73.2",
+    "description": "Muestra el famoso Salón del Fénix del templo Byōdō-in en Uji en el anverso."
   },
   {
     "id": 918,
@@ -12146,7 +12157,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "group_id": "us-5cents-2005",
-    "group_label": "5 Cents 2005"
+    "group_label": "5 Cents 2005",
+    "description": "Edición conmemorativa \"Westward Journey\" con la figura del Búfalo (American Bison)."
   },
   {
     "id": 919,
@@ -12163,7 +12175,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "group_id": "us-5cents-2005",
-    "group_label": "5 Cents 2005"
+    "group_label": "5 Cents 2005",
+    "description": "Edición conmemorativa \"Westward Journey\" con la figura del Búfalo en el reverso, ceca Denver (D)."
   },
   {
     "id": 920,
@@ -12180,7 +12193,10 @@
     "grade_short": "MB",
     "description": "El régimen de Vichy fue el gobierno francés que colaboró con la Alemania nazi entre 1940 y 1944, tras la derrota de Francia en la Segunda Guerra Mundial. Con sede en la ciudad de Vichy y liderado por el mariscal Philippe Pétain, controló la llamada \"Francia libre\" (zona sur no ocupada) mientras el norte quedaba bajo ocupación alemana directa.",
     "group_id": "fr-1franco-vichy",
-    "group_label": "1 Franco Vichy"
+    "group_label": "1 Franco Vichy",
+    "reference": "KM# 902",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809540+00:00"
   },
   {
     "id": 921,
@@ -12197,7 +12213,10 @@
     "grade_short": "MB",
     "description": "El régimen de Vichy fue el gobierno francés que colaboró con la Alemania nazi entre 1940 y 1944, tras la derrota de Francia en la Segunda Guerra Mundial. Con sede en la ciudad de Vichy y liderado por el mariscal Philippe Pétain, controló la llamada \"Francia libre\" (zona sur no ocupada) mientras el norte quedaba bajo ocupación alemana directa.",
     "group_id": "fr-1franco-vichy",
-    "group_label": "1 Franco Vichy"
+    "group_label": "1 Franco Vichy",
+    "reference": "KM# 902",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809542+00:00"
   },
   {
     "id": 922,
@@ -12214,7 +12233,10 @@
     "grade_short": "MB",
     "description": "El régimen de Vichy fue el gobierno francés que colaboró con la Alemania nazi entre 1940 y 1944, tras la derrota de Francia en la Segunda Guerra Mundial. Con sede en la ciudad de Vichy y liderado por el mariscal Philippe Pétain, controló la llamada \"Francia libre\" (zona sur no ocupada) mientras el norte quedaba bajo ocupación alemana directa.",
     "group_id": "fr-1franco-vichy",
-    "group_label": "1 Franco Vichy"
+    "group_label": "1 Franco Vichy",
+    "reference": "KM# 902",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809543+00:00"
   },
   {
     "id": 923,
@@ -12230,7 +12252,11 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "group_id": "fr-1franco-morlon",
-    "group_label": "1 Franco Morlon"
+    "group_label": "1 Franco Morlon",
+    "reference": "KM# 885a",
+    "description": "Diseño de Pierre-Alexandre Morlon introducido tras la liberación de Francia en la Segunda Guerra Mundial.",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809545+00:00"
   },
   {
     "id": 924,
@@ -12246,7 +12272,11 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "group_id": "fr-1franco-morlon",
-    "group_label": "1 Franco Morlon"
+    "group_label": "1 Franco Morlon",
+    "reference": "KM# 885a",
+    "description": "Diseño Morlon en aluminio del periodo de posguerra.",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809546+00:00"
   },
   {
     "id": 925,
@@ -12261,7 +12291,8 @@
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "description": "El régimen de Vichy fue el gobierno francés que colaboró con la Alemania nazi entre 1940 y 1944, tras la derrota de Francia en la Segunda Guerra Mundial. Con sede en la ciudad de Vichy y liderado por el mariscal Philippe Pétain, controló la llamada \"Francia libre\" (zona sur no ocupada) mientras el norte quedaba bajo ocupación alemana directa."
+    "description": "El régimen de Vichy fue el gobierno francés que colaboró con la Alemania nazi entre 1940 y 1944, tras la derrota de Francia en la Segunda Guerra Mundial. Con sede en la ciudad de Vichy y liderado por el mariscal Philippe Pétain, controló la llamada \"Francia libre\" (zona sur no ocupada) mientras el norte quedaba bajo ocupación alemana directa.",
+    "reference": "KM# 903"
   },
   {
     "id": 926,
@@ -12276,7 +12307,11 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "costo": 0.5
+    "costo": 0.5,
+    "reference": "KM# 1",
+    "description": "Muestra el perro pastor Sharplaninac (Šarplaninac), raza autóctona de los montes Šar.",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809548+00:00"
   },
   {
     "id": 927,
@@ -12291,7 +12326,9 @@
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "costo": 0.64
+    "costo": 0.64,
+    "reference": "KM# 866",
+    "description": "Diseño perforado tipo Lindauer de la Primera Guerra Mundial."
   },
   {
     "id": 928,
@@ -12306,7 +12343,9 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "costo": 0.64
+    "costo": 0.64,
+    "reference": "KM# 866",
+    "description": "Diseño perforado tipo Lindauer del periodo de entreguerras."
   },
   {
     "id": 929,
@@ -12320,7 +12359,9 @@
       "images/929B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "reference": "KM# 89",
+    "description": "Muestra un racimo de uvas en el anverso y un arado en el reverso, diseño de Giuseppe Romagnoli."
   },
   {
     "id": 930,
@@ -12335,7 +12376,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "commemorates": "FAO"
+    "commemorates": "FAO",
+    "reference": "KM# 96.1",
+    "description": "Muestra a la diosa Minerva junto a un árbol de laurel."
   },
   {
     "id": 931,
@@ -12350,7 +12393,8 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Brillo original."
+    "description": "Brillo original.",
+    "reference": "KM# 926a"
   },
   {
     "id": 932,
@@ -12365,7 +12409,9 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 5
+    "cantidad": 5,
+    "reference": "KM# 1211",
+    "description": "Pertenece a la serie floral de la quinta serie del Yuan RMB, mostrando la flor de Orquídea."
   },
   {
     "id": 933,
@@ -12379,7 +12425,11 @@
       "images/933B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "reference": "KM# Y# 22",
+    "description": "Emblemática moneda de plata de la Segunda República Polaca diseñada por Antoni Madeyski, representando a Polonia como una mujer con guirnalda de espigas.",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809550+00:00"
   },
   {
     "id": 934,
@@ -12389,7 +12439,9 @@
     "year": 1974,
     "price": "2 USD",
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "reference": "KM# 940",
+    "description": "Diseño moderno abstracto de Georges Mathieu representando el mapa estilizado de Francia."
   },
   {
     "id": 935,
@@ -12401,7 +12453,8 @@
     "reference": "CJ# 341",
     "grade": "Excelente",
     "grade_short": "EX",
-    "commemorates": "Malvinas"
+    "commemorates": "Malvinas",
+    "description": "Emisión conmemorativa por el 30° Aniversario de la Gesta de Malvinas (1982-2012)."
   },
   {
     "id": 936,
@@ -12417,7 +12470,8 @@
     "reference": "KM# 1303",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "commemorates": "Sochi 2014"
+    "commemorates": "Sochi 2014",
+    "description": "Emisión conmemorativa por los Juegos Olímpicos de Invierno Sochi 2014."
   },
   {
     "id": 937,
@@ -12432,7 +12486,11 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "commemorates": "Ludwig Erhard"
+    "commemorates": "Ludwig Erhard",
+    "reference": "KM# 168",
+    "description": "Conmemorativa dedicada al político alemán Franz Josef Strauß, ceca Múnich (D).",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809552+00:00"
   },
   {
     "id": 938,
@@ -12447,7 +12505,10 @@
     ],
     "grade": "Excelente -",
     "grade_short": "EX-",
-    "description": "Primer año."
+    "description": "Primer año.",
+    "reference": "KM# Y# 131",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809554+00:00"
   },
   {
     "id": 939,
@@ -12462,7 +12523,8 @@
     ],
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
-    "description": "Escasa, 10 USD de catálogo."
+    "description": "Escasa, 10 USD de catálogo.",
+    "reference": "KM# 192.1"
   },
   {
     "id": 940,
@@ -12476,7 +12538,9 @@
       "images/940B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "reference": "KM# 2876",
+    "description": "Moneda de 2 Groschen acuñada en aluminio con el águila federal austríaca."
   },
   {
     "id": 941,
@@ -12490,7 +12554,9 @@
       "images/941B.jpeg"
     ],
     "grade": "Excelente -",
-    "grade_short": "EX-"
+    "grade_short": "EX-",
+    "reference": "KM# 32",
+    "description": "Acuñación con la leyenda FNRJ (República Federativa Popular de Yugoslavia) y las 5 antorchas."
   },
   {
     "id": 942,
@@ -12504,7 +12570,11 @@
       "images/942B.jpeg"
     ],
     "grade": "Excelente +",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "reference": "KM# 23",
+    "description": "Muestra los tres leones pasantes del escudo de armas de Estonia.",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809556+00:00"
   },
   {
     "id": 943,
@@ -12521,7 +12591,9 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "group_id": "ar-10centavos-cuproniquel",
-    "group_label": "10 Centavos cuproníquel"
+    "group_label": "10 Centavos cuproníquel",
+    "mintage": "8.657.480",
+    "description": "Moneda argentina del siglo XIX acuñada en cuproníquel con la efigie de la Libertad de Eugène-André Oudiné."
   },
   {
     "id": 944,
@@ -12535,7 +12607,9 @@
       "images/944B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "reference": "KM# 12",
+    "description": "Muestra una rama de olivo (\"Maslina\") en el reverso."
   },
   {
     "id": 945,
@@ -12575,7 +12649,9 @@
     "group_id": "us-half-dollar-franklin",
     "group_label": "1/2 Dólar Franklin",
     "reference": "KM# 199",
-    "mintage": "3.028.244"
+    "mintage": "3.028.244",
+    "status": "sold",
+    "soldAt": "2026-07-23T03:30:39.809557+00:00"
   },
   {
     "id": 947,
@@ -12632,7 +12708,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "group_id": "cur-1cent-2025",
-    "group_label": "1 Cent 2025"
+    "group_label": "1 Cent 2025",
+    "reference": "KM# 1",
+    "description": "Primera serie del nuevo Florín del Caribe (Caribbean Guilder) emitido conjuntamente para Curazao y San Martín."
   },
   {
     "id": 950,
@@ -12649,7 +12727,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "group_id": "cur-1cent-2025",
-    "group_label": "1 Cent 2025"
+    "group_label": "1 Cent 2025",
+    "reference": "KM# 1",
+    "description": "Primera serie del nuevo Florín del Caribe (Caribbean Guilder) emitido conjuntamente para Curazao y San Martín."
   },
   {
     "id": 951,
@@ -12718,7 +12798,8 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "reference": "KM# 6"
+    "reference": "KM# 6",
+    "description": "Primera serie post-soviética de Ucrania mostrando el Tryzub (tridente) en el escudo nacional."
   },
   {
     "id": 955,
@@ -12733,7 +12814,8 @@
     ],
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
-    "reference": "KM# 29"
+    "reference": "KM# 29",
+    "description": "Acuñación con el escudo de armas de la FNRJ de Yugoslavia."
   },
   {
     "id": 956,
@@ -12748,7 +12830,8 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "reference": "KM# 1411"
+    "reference": "KM# 1411",
+    "description": "Muestra la flor de Loto en el reverso."
   },
   {
     "id": 957,
@@ -12763,7 +12846,8 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "reference": "KM# 603"
+    "reference": "KM# 603",
+    "description": "Muestra a San Jorge a caballo matando al dragón."
   },
   {
     "id": 958,
@@ -12780,7 +12864,8 @@
     "grade_short": "EX",
     "group_id": "ru-10rublos",
     "group_label": "10 Rublos",
-    "reference": "KM# 998"
+    "reference": "KM# 998",
+    "description": "Emisión del Banco Central de Rusia con el águila bicéfala en el anverso."
   },
   {
     "id": 959,
@@ -12797,6 +12882,7 @@
     "grade_short": "MB",
     "group_id": "ru-10rublos",
     "group_label": "10 Rublos",
-    "reference": "KM# 998"
+    "reference": "KM# 998",
+    "description": "Emisión del Banco Central de Rusia con el águila bicéfala en el anverso."
   }
 ]
