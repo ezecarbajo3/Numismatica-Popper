@@ -12899,12 +12899,14 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "description": "Régimen de Vichy"
+    "description": "Emisión del Estado Francés (Régimen de Vichy) durante la Segunda Guerra Mundial.",
+    "reference": "KM# 898",
+    "mintage": 70860000
   },
   {
     "id": 961,
     "costo": 3.22,
-    "title": "10 Reichspfennig 1941",
+    "title": "10 Reichspfennig 1941 B",
     "country": "Alemania",
     "metal": "Zinc",
     "year": 1941,
@@ -12915,7 +12917,9 @@
     ],
     "grade": "Bueno",
     "grade_short": "B",
-    "description": "Tercer Reich"
+    "description": "Ceca B (Viena). Emisión del Tercer Reich en zinc durante la Segunda Guerra Mundial.",
+    "reference": "KM# 101",
+    "mintage": 70747430
   },
   {
     "id": 962,
@@ -12930,6 +12934,9 @@
       "images/962B.jpeg"
     ],
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "reference": "KM# 129",
+    "mintage": 15200000,
+    "description": "Reinado de Leopoldo III. Emisión de ocupación durante la Segunda Guerra Mundial."
   }
 ]
