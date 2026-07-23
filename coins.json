@@ -12884,5 +12884,52 @@
     "group_label": "10 Rublos",
     "reference": "KM# 998",
     "description": "Emisión del Banco Central de Rusia con el águila bicéfala en el anverso."
+  },
+  {
+    "id": 960,
+    "costo": 0,
+    "title": "10 Centimes 1941",
+    "country": "Francia",
+    "metal": "Zinc",
+    "year": 1941,
+    "price": "10 USD",
+    "images": [
+      "images/960A.jpeg",
+      "images/960B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "Régimen de Vichy"
+  },
+  {
+    "id": 961,
+    "costo": 3.22,
+    "title": "10 Reichspfennig 1941",
+    "country": "Alemania",
+    "metal": "Zinc",
+    "year": 1941,
+    "price": "6 USD",
+    "images": [
+      "images/961A.jpeg",
+      "images/961B.jpeg"
+    ],
+    "grade": "Bueno",
+    "grade_short": "B",
+    "description": "Tercer Reich"
+  },
+  {
+    "id": 962,
+    "costo": 3.22,
+    "title": "5 Francos 1941",
+    "country": "Bélgica",
+    "metal": "Zinc",
+    "year": 1941,
+    "price": "4.5 USD",
+    "images": [
+      "images/962A.jpeg",
+      "images/962B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB"
   }
 ]
