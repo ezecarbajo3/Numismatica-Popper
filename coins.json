@@ -12847,7 +12847,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "reference": "KM# 603",
-    "description": "Muestra a San Jorge a caballo matando al dragón."
+    "description": "Muestra a San Jorge a caballo matando al dragón.",
+    "status": "sold",
+    "soldAt": "2026-07-24T09:57:26-03:00"
   },
   {
     "id": 958,
@@ -12865,7 +12867,9 @@
     "group_id": "ru-10rublos",
     "group_label": "10 Rublos",
     "reference": "KM# 998",
-    "description": "Emisión del Banco Central de Rusia con el águila bicéfala en el anverso."
+    "description": "Emisión del Banco Central de Rusia con el águila bicéfala en el anverso.",
+    "status": "sold",
+    "soldAt": "2026-07-24T09:57:26-03:00"
   },
   {
     "id": 959,
