@@ -12799,7 +12799,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "KM# 6",
-    "description": "Primera serie post-soviética de Ucrania mostrando el Tryzub (tridente) en el escudo nacional."
+    "description": "Primera serie post-soviética de Ucrania mostrando el Tryzub (tridente) en el escudo nacional.",
+    "status": "sold",
+    "soldAt": "2026-07-25T03:04:42.892532-03:00"
   },
   {
     "id": 955,
@@ -12905,7 +12907,9 @@
     "grade_short": "EX",
     "description": "Emisión del Estado Francés (Régimen de Vichy) durante la Segunda Guerra Mundial.",
     "reference": "KM# 898",
-    "mintage": 70860000
+    "mintage": 70860000,
+    "status": "sold",
+    "soldAt": "2026-07-25T03:04:42.892532-03:00"
   },
   {
     "id": 961,
@@ -12923,7 +12927,9 @@
     "grade_short": "B",
     "description": "Ceca B (Viena). Emisión del Tercer Reich en zinc durante la Segunda Guerra Mundial.",
     "reference": "KM# 101",
-    "mintage": 70747430
+    "mintage": 70747430,
+    "status": "sold",
+    "soldAt": "2026-07-25T03:04:42.892532-03:00"
   },
   {
     "id": 962,
@@ -12941,6 +12947,8 @@
     "grade_short": "MB",
     "reference": "KM# 129",
     "mintage": 15200000,
-    "description": "Reinado de Leopoldo III. Emisión de ocupación durante la Segunda Guerra Mundial."
+    "description": "Reinado de Leopoldo III. Emisión de ocupación durante la Segunda Guerra Mundial.",
+    "status": "sold",
+    "soldAt": "2026-07-25T03:04:42.892532-03:00"
   }
 ]
