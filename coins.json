@@ -13129,7 +13129,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "KM# 32",
-    "description": "Retrato de Sheikh Mujibur Rahman."
+    "description": "Retrato de Sheikh Mujibur Rahman.",
+    "status": "sold",
+    "soldAt": "2026-07-25T21:01:03-03:00"
   },
   {
     "id": 973,
@@ -13168,7 +13170,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "KM# 195",
-    "description": "Moneda circulante de plástico composite."
+    "description": "Moneda circulante de plástico composite.",
+    "status": "sold",
+    "soldAt": "2026-07-25T21:01:03-03:00"
   },
   {
     "id": 975,
