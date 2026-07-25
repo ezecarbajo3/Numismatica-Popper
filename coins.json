@@ -12950,5 +12950,277 @@
     "description": "Reinado de Leopoldo III. Emisión de ocupación durante la Segunda Guerra Mundial.",
     "status": "sold",
     "soldAt": "2026-07-25T03:04:42.892532-03:00"
+  },
+  {
+    "id": 963,
+    "costo": 0,
+    "title": "10 Centesimi 1923",
+    "country": "Italia",
+    "metal": "Bronce",
+    "year": 1923,
+    "price": "2 USD",
+    "images": [
+      "images/963A.jpeg",
+      "images/963B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "reference": "KM# 60",
+    "description": "Reinado de Víctor Manuel III. Tipo Ape (Abeja).",
+    "group_id": "it-10centesimi-ape",
+    "group_label": "10 Centesimi Ape"
+  },
+  {
+    "id": 964,
+    "costo": 0,
+    "title": "10 Centesimi 1921",
+    "country": "Italia",
+    "metal": "Bronce",
+    "year": 1921,
+    "price": "2 USD",
+    "images": [
+      "images/964A.jpeg",
+      "images/964B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "reference": "KM# 60",
+    "description": "Reinado de Víctor Manuel III. Tipo Ape (Abeja).",
+    "group_id": "it-10centesimi-ape",
+    "group_label": "10 Centesimi Ape"
+  },
+  {
+    "id": 965,
+    "costo": 0,
+    "title": "10 Centesimi 1930",
+    "country": "Italia",
+    "metal": "Bronce",
+    "year": 1930,
+    "price": "2 USD",
+    "images": [
+      "images/965A.jpeg",
+      "images/965B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "reference": "KM# 60",
+    "description": "Reinado de Víctor Manuel III. Tipo Ape (Abeja).",
+    "group_id": "it-10centesimi-ape",
+    "group_label": "10 Centesimi Ape"
+  },
+  {
+    "id": 966,
+    "costo": 0,
+    "title": "1 Rublo 2008",
+    "country": "Rusia",
+    "metal": "Cuproníquel",
+    "year": 2008,
+    "price": "2 USD",
+    "images": [
+      "images/966A.jpeg",
+      "images/966B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "reference": "Y# 832",
+    "description": "Moneda de la Federación Rusa con el águila bicéfala en el anverso."
+  },
+  {
+    "id": 967,
+    "title": "1 Jiao 1992",
+    "country": "China",
+    "metal": "Aluminio",
+    "year": 1992,
+    "price": "2.5 USD",
+    "images": [
+      "images/967A.jpeg",
+      "images/967B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "reference": "KM# 335",
+    "description": "Emisión de la República Popular China. Flor de Peonía."
+  },
+  {
+    "id": 968,
+    "cantidad": 5,
+    "title": "1 Yen 1982",
+    "country": "Japón",
+    "metal": "Aluminio",
+    "year": 1982,
+    "price": "2 USD",
+    "images": [
+      "images/968A.jpeg",
+      "images/968B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "reference": "KM# 74",
+    "description": "Era Shōwa (Año 57)."
+  },
+  {
+    "id": 969,
+    "costo": 0,
+    "title": "1 Jiao 1999",
+    "country": "China",
+    "metal": "Aluminio",
+    "year": 1999,
+    "price": "2 USD",
+    "images": [
+      "images/969A.jpeg",
+      "images/969B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB+",
+    "reference": "KM# 1210",
+    "description": "Emisión de la República Popular China. Flor de Orquídea.",
+    "group_id": "cn-1jiao-orquidea",
+    "group_label": "1 Jiao Orquídea"
+  },
+  {
+    "id": 970,
+    "costo": 0,
+    "cantidad": 10,
+    "title": "1 Jiao 2009",
+    "country": "China",
+    "metal": "Acero niquelado",
+    "year": 2009,
+    "price": "2 USD",
+    "images": [
+      "images/970A.jpeg",
+      "images/970B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "reference": "KM# 1210b",
+    "description": "Emisión de la República Popular China. Flor de Orquídea (magnética).",
+    "group_id": "cn-1jiao-orquidea",
+    "group_label": "1 Jiao Orquídea"
+  },
+  {
+    "id": 971,
+    "costo": 2.59,
+    "title": "10 Francos 2011",
+    "country": "Burundi",
+    "metal": "Acero niquelado",
+    "year": 2011,
+    "price": "4.5 USD",
+    "images": [
+      "images/971A.jpeg",
+      "images/971B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 21",
+    "description": "Año único."
+  },
+  {
+    "id": 972,
+    "costo": 2.59,
+    "title": "1 Taka 2010",
+    "country": "Bangladesh",
+    "metal": "Acero inoxidable",
+    "year": 2010,
+    "price": "4 USD",
+    "images": [
+      "images/972A.jpeg",
+      "images/972B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 32",
+    "description": "Retrato de Sheikh Mujibur Rahman."
+  },
+  {
+    "id": 973,
+    "costo": 6.47,
+    "cantidad": 2,
+    "title": "Blister 1 y 10 Dinar 1976 FAO",
+    "country": "Yugoslavia",
+    "metal": "Cuproníquel",
+    "year": 1976,
+    "price": "14 USD",
+    "images": [
+      "images/973A.jpeg",
+      "images/973B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 61 / 63",
+    "mintage": 500000,
+    "commemorates": "FAO (Organización de las Naciones Unidas para la Alimentación y la Agricultura)",
+    "description": "De cada ejemplar se hicieron tan solo 500.000 unidades. Blister FAO."
+  },
+  {
+    "id": 974,
+    "costo": 2.27,
+    "title": "1 Rublo 2014",
+    "country": "Transnistria",
+    "metal": "Plástico",
+    "year": 2014,
+    "price": "4 USD",
+    "images": [
+      "images/974A.jpeg",
+      "images/974B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 195",
+    "description": "Moneda circulante de plástico composite."
+  },
+  {
+    "id": 975,
+    "costo": 2.27,
+    "title": "10 Australes 1989",
+    "country": "Argentina",
+    "metal": "Aluminio",
+    "year": 1989,
+    "price": "8 USD",
+    "images": [
+      "images/975A.jpeg",
+      "images/975B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "CJ# 378.2",
+    "description": "Efigie de la Libertad por Dupuis."
+  },
+  {
+    "id": 976,
+    "costo": 9.71,
+    "title": "2 Centavos 1896",
+    "country": "Argentina",
+    "metal": "Cobre",
+    "year": 1896,
+    "price": "15 USD",
+    "images": [
+      "images/976A.jpeg",
+      "images/976B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "reference": "CJ# 37",
+    "description": "ESCASA.",
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
+  },
+  {
+    "id": 977,
+    "costo": 14.24,
+    "title": "2 Centavos 1888",
+    "country": "Argentina",
+    "metal": "Cobre",
+    "year": 1888,
+    "price": "25 USD",
+    "images": [
+      "images/977A.jpeg",
+      "images/977B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "reference": "CJ# 29",
+    "description": "ESCASA.",
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   }
 ]
