@@ -13043,7 +13043,7 @@
   },
   {
     "id": 968,
-    "cantidad": 5,
+    "cantidad": 4,
     "title": "1 Yen 1982",
     "country": "Japón",
     "metal": "Aluminio",
@@ -13075,7 +13075,9 @@
     "reference": "KM# 1210",
     "description": "Emisión de la República Popular China. Flor de Orquídea.",
     "group_id": "cn-1jiao-orquidea",
-    "group_label": "1 Jiao Orquídea"
+    "group_label": "1 Jiao Orquídea",
+    "status": "sold",
+    "soldAt": "2026-07-25T21:03:57-03:00"
   },
   {
     "id": 970,
