@@ -10837,7 +10837,9 @@
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-07-26T00:11:46.000Z"
   },
   {
     "id": 844,
