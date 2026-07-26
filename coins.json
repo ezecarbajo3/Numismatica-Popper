@@ -13232,5 +13232,80 @@
     "description": "ESCASA.",
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón"
+  },
+  {
+    "id": 978,
+    "costo": 2,
+    "title": "2 Euro 2025",
+    "country": "Francia",
+    "metal": "Bimetálica",
+    "year": 2025,
+    "price": "4 USD",
+    "images": [
+      "images/978A.jpeg",
+      "images/978B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "commemorates": "Reapertura de la Catedral de Notre-Dame de París",
+    "description": "Conmemorativa de la reapertura de la Catedral de Notre-Dame de París.",
+    "group_id": "fr-2euro",
+    "group_label": "2 Euro"
+  },
+  {
+    "id": 979,
+    "costo": 2,
+    "title": "2 Euro 2022",
+    "country": "Francia",
+    "metal": "Bimetálica",
+    "year": 2022,
+    "price": "3.5 USD",
+    "images": [
+      "images/979A.jpeg",
+      "images/979B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 3065",
+    "description": "Diseño estándar (segunda variante de la efigie de la República / Árbol de la vida).",
+    "group_id": "fr-2euro",
+    "group_label": "2 Euro"
+  },
+  {
+    "id": 980,
+    "costo": 2,
+    "title": "2 Euro 2024",
+    "country": "Francia",
+    "metal": "Bimetálica",
+    "year": 2024,
+    "price": "4 USD",
+    "images": [
+      "images/980A.jpeg",
+      "images/980B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 3344",
+    "commemorates": "Juegos Olímpicos de París 2024",
+    "description": "Conmemorativa de los Juegos Olímpicos de París 2024 (Torre Eiffel y Hércules).",
+    "group_id": "fr-2euro",
+    "group_label": "2 Euro"
+  },
+  {
+    "id": 981,
+    "costo": 2,
+    "title": "2 Euro 2002",
+    "country": "Irlanda",
+    "metal": "Bimetálica",
+    "year": 2002,
+    "price": "3 USD",
+    "images": [
+      "images/981A.jpeg",
+      "images/981B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX-",
+    "reference": "KM# 39",
+    "description": "Primer mapa de la Unión Europea. Harpa celta en el anverso."
   }
 ]
