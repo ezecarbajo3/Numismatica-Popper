@@ -160,7 +160,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "83,390",
-    "description": "Moneda conmemorativa por el 50° aniversario del Ballet Nacional de Canadá"
+    "description": "Moneda conmemorativa por el 50° Aniversario del Ballet Nacional de Canadá.",
+    "commemorates": "50° Aniversario del Ballet Nacional de Canadá"
   },
   {
     "id": 26,
@@ -1927,7 +1928,8 @@
     "grade_short": "EX",
     "description": "Conmemorativa del Monasterio y Sitio del Escorial.",
     "mintage": "4000000",
-    "reference": "KM# 1305"
+    "reference": "KM# 1305",
+    "commemorates": "Monasterio y Sitio del Escorial"
   },
   {
     "id": 213,
@@ -4401,7 +4403,8 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Peso conmemorativo emitido por el 50º aniversario de las Naciones Unidas. Sin circular - acabado Proof."
+    "description": "Peso conmemorativo emitido por el 50º Aniversario de las Naciones Unidas (ONU). Sin circular - acabado Proof.",
+    "commemorates": "50º Aniversario de las Naciones Unidas (ONU)"
   },
   {
     "id": 432,
@@ -4802,11 +4805,12 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Moneda conmemorativa del mundial 2006 (Alemania)",
+    "description": "Moneda conmemorativa de la Copa Mundial de Fútbol 2006 (Alemania).",
     "reference": "KM# 122",
     "mintage": 900,
     "group_id": "uy-1000pesos-mundial",
-    "group_label": "1000 Pesos Mundial de Fútbol"
+    "group_label": "1000 Pesos Mundial de Fútbol",
+    "commemorates": "Copa Mundial de Fútbol 2006 (Alemania)"
   },
   {
     "id": 458,
@@ -4821,11 +4825,12 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Moneda conmemorativa del mundial 2006 (Alemania)",
+    "description": "Moneda conmemorativa de la Copa Mundial de Fútbol 2006 (Alemania).",
     "reference": "KM# 123",
     "mintage": 900,
     "group_id": "uy-1000pesos-mundial",
-    "group_label": "1000 Pesos Mundial de Fútbol"
+    "group_label": "1000 Pesos Mundial de Fútbol",
+    "commemorates": "Copa Mundial de Fútbol 2006 (Alemania)"
   },
   {
     "id": 459,
@@ -4840,11 +4845,12 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Moneda conmemorativa del mundial 2006 (Alemania)",
+    "description": "Moneda conmemorativa de la Copa Mundial de Fútbol 2006 (Alemania).",
     "reference": "KM# 124",
     "mintage": 900,
     "group_id": "uy-1000pesos-mundial",
-    "group_label": "1000 Pesos Mundial de Fútbol"
+    "group_label": "1000 Pesos Mundial de Fútbol",
+    "commemorates": "Copa Mundial de Fútbol 2006 (Alemania)"
   },
   {
     "id": 460,
@@ -4859,9 +4865,10 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Moneda conmemorativa del mundial 1978 (Argentina)",
+    "description": "Moneda conmemorativa de la Copa Mundial de Fútbol 1978 (Argentina).",
     "status": "sold",
-    "soldAt": "2026-07-13T16:50:19.352Z"
+    "soldAt": "2026-07-13T16:50:19.352Z",
+    "commemorates": "Copa Mundial de Fútbol 1978 (Argentina)"
   },
   {
     "id": 461,
@@ -4909,7 +4916,8 @@
     "grade_short": "SC",
     "reference": "KM# 150a",
     "mintage": "200.000",
-    "description": "Dólar de la Paz (Peace Dollar) en conmemoración del centenario de su primer diseño de 1921. Diseñado por el escultor Anthony de Francisci."
+    "description": "Dólar de la Paz (Peace Dollar) en conmemoración del centenario de su primer diseño de 1921. Diseñado por Anthony de Francisci.",
+    "commemorates": "Centenario del Peace Dollar (1921-2021)"
   },
   {
     "id": 464,
@@ -9813,7 +9821,8 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Conmemorativa"
+    "description": "Moneda conmemorativa del Bicentenario de la Independencia de Bolivia (1825-2025).",
+    "commemorates": "Bicentenario de la Independencia de Bolivia (1825-2025)"
   },
   {
     "id": 782,
@@ -12160,7 +12169,8 @@
     "grade_short": "SC",
     "group_id": "us-5cents-2005",
     "group_label": "5 Cents 2005",
-    "description": "Edición conmemorativa \"Westward Journey\" con la figura del Búfalo (American Bison)."
+    "description": "Edición conmemorativa \"Westward Journey\" con la figura del Búfalo (American Bison).",
+    "commemorates": "Serie Westward Journey (Búfalo Americano)"
   },
   {
     "id": 919,
@@ -12178,7 +12188,8 @@
     "grade_short": "SC",
     "group_id": "us-5cents-2005",
     "group_label": "5 Cents 2005",
-    "description": "Edición conmemorativa \"Westward Journey\" con la figura del Búfalo en el reverso, ceca Denver (D)."
+    "description": "Edición conmemorativa \"Westward Journey\" con la figura del Búfalo en el reverso, ceca Denver (D).",
+    "commemorates": "Serie Westward Journey (Búfalo Americano)"
   },
   {
     "id": 920,
@@ -12378,9 +12389,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "commemorates": "FAO",
+    "commemorates": "FAO (Organización de las Naciones Unidas para la Alimentación y la Agricultura)",
     "reference": "KM# 96.1",
-    "description": "Muestra a la diosa Minerva junto a un árbol de laurel."
+    "description": "Emisión conmemorativa de la FAO. Muestra a la diosa Minerva junto a un árbol de laurel."
   },
   {
     "id": 931,
@@ -12455,7 +12466,7 @@
     "reference": "CJ# 341",
     "grade": "Excelente",
     "grade_short": "EX",
-    "commemorates": "Malvinas",
+    "commemorates": "30° Aniversario de la Gesta de Malvinas",
     "description": "Emisión conmemorativa por el 30° Aniversario de la Gesta de Malvinas (1982-2012)."
   },
   {
@@ -12472,7 +12483,7 @@
     "reference": "KM# 1303",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "commemorates": "Sochi 2014",
+    "commemorates": "Juegos Olímpicos de Invierno Sochi 2014",
     "description": "Emisión conmemorativa por los Juegos Olímpicos de Invierno Sochi 2014."
   },
   {
@@ -12488,7 +12499,7 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "commemorates": "Ludwig Erhard",
+    "commemorates": "Franz Josef Strauß",
     "reference": "KM# 168",
     "description": "Conmemorativa dedicada al político alemán Franz Josef Strauß, ceca Múnich (D).",
     "status": "sold",
@@ -13157,7 +13168,7 @@
     "reference": "KM# 61 / 63",
     "mintage": 500000,
     "commemorates": "FAO (Organización de las Naciones Unidas para la Alimentación y la Agricultura)",
-    "description": "De cada ejemplar se hicieron tan solo 500.000 unidades. Blister FAO."
+    "description": "Emisión conmemorativa de la FAO. De cada ejemplar se hicieron tan solo 500.000 unidades. Blister FAO."
   },
   {
     "id": 974,
