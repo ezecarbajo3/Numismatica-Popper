@@ -3476,7 +3476,9 @@
       "images/366B.jpeg"
     ],
     "grade": "Excelente +",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "status": "sold",
+    "soldAt": "2026-07-27T08:26:09+02:00"
   },
   {
     "id": 367,
