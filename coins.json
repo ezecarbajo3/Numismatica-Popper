@@ -13261,7 +13261,9 @@
     "commemorates": "Reapertura de la Catedral de Notre-Dame de París",
     "description": "Conmemora la reapertura de la Catedral de Notre-Dame de París.",
     "group_id": "fr-2euro",
-    "group_label": "2 Euro"
+    "group_label": "2 Euro",
+    "status": "sold",
+    "soldAt": "2026-07-27T02:55:18-03:00"
   },
   {
     "id": 979,
@@ -13280,7 +13282,9 @@
     "reference": "KM# 3065",
     "description": "Nuevo diseño",
     "group_id": "fr-2euro",
-    "group_label": "2 Euro"
+    "group_label": "2 Euro",
+    "status": "sold",
+    "soldAt": "2026-07-27T02:55:18-03:00"
   },
   {
     "id": 980,
@@ -13300,7 +13304,9 @@
     "commemorates": "Juegos Olímpicos de París 2024",
     "description": "Conmemora los Juegos Olímpicos de París 2024 (Torre Eiffel y Hércules).",
     "group_id": "fr-2euro",
-    "group_label": "2 Euro"
+    "group_label": "2 Euro",
+    "status": "sold",
+    "soldAt": "2026-07-27T02:55:18-03:00"
   },
   {
     "id": 981,
