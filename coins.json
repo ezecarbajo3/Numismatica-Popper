@@ -13605,7 +13605,9 @@
     "price": "5.1 USD",
     "images": [
       "images/995A.jpeg",
-      "images/995B.jpeg"
+      "images/995B.jpeg",
+      "images/995C.jpeg",
+      "images/995D.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -13625,7 +13627,9 @@
     "price": "6.37 USD",
     "images": [
       "images/996A.jpeg",
-      "images/996B.jpeg"
+      "images/996B.jpeg",
+      "images/996C.jpeg",
+      "images/996D.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
