@@ -13389,7 +13389,9 @@
     "description": "Conmemora la Boda Real del Príncipe Carlos y Lady Diana Spencer.",
     "group_id": "uk-25newpence-1981",
     "group_label": "25 New Pence 1981 - Carlos y Diana",
-    "costo": 1.31
+    "costo": 1.31,
+    "status": "sold",
+    "soldAt": "2026-07-29T20:09:45.255Z"
   },
   {
     "id": 985,
@@ -13515,6 +13517,8 @@
     "description": "Conmemora la Exposición Británica de Nueva York en 1960. Acuñación de solo 1.024.038 piezas.",
     "group_id": "uk-5shillings-1960",
     "group_label": "5 Shillings 1960",
-    "costo": 5.24
+    "costo": 5.24,
+    "status": "sold",
+    "soldAt": "2026-07-29T20:09:45.255Z"
   }
 ]
