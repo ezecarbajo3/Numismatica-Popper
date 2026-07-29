@@ -9026,9 +9026,7 @@
     "reference": "CJ# 22",
     "grade": "Excelente",
     "grade_short": "EX",
-    "mintage": "778.000",
-    "status": "sold",
-    "soldAt": "2026-07-22T12:07:22.848200+00:00"
+    "mintage": "778.000"
   },
   {
     "id": 734,
@@ -12116,9 +12114,7 @@
     "group_label": "10 Centavos Patacón",
     "costo": 7,
     "mintage": "3.753.864",
-    "description": "Moneda histórica argentina del Peso Moneda Nacional acuñada en cuproníquel durante la presidencia de Julio A. Roca.",
-    "status": "sold",
-    "soldAt": "2026-07-23T03:30:39.809535+00:00"
+    "description": "Moneda histórica argentina del Peso Moneda Nacional acuñada en cuproníquel durante la presidencia de Julio A. Roca."
   },
   {
     "id": 916,
