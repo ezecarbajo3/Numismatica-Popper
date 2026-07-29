@@ -13516,5 +13516,124 @@
     "costo": 5.24,
     "status": "sold",
     "soldAt": "2026-07-29T20:09:45.255Z"
+  },
+  {
+    "id": 991,
+    "title": "1 Crown 1965",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1965,
+    "price": "6.37 USD",
+    "images": [
+      "images/991A.jpeg",
+      "images/991B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 910",
+    "mintage": 19640000,
+    "commemorates": "Sir Winston Churchill",
+    "description": "Conmemora a Sir Winston Churchill.",
+    "group_id": "uk-1crown-1965",
+    "group_label": "1 Crown 1965 - Churchill",
+    "costo": 1.31
+  },
+  {
+    "id": 992,
+    "title": "1 Crown 1965",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1965,
+    "price": "6.37 USD",
+    "images": [
+      "images/992A.jpeg",
+      "images/992B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 910",
+    "mintage": 19640000,
+    "commemorates": "Sir Winston Churchill",
+    "description": "Conmemora a Sir Winston Churchill.",
+    "group_id": "uk-1crown-1965",
+    "group_label": "1 Crown 1965 - Churchill",
+    "costo": 1.31
+  },
+  {
+    "id": 993,
+    "title": "5 Shillings 1953",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1953,
+    "price": "9.55 USD",
+    "images": [
+      "images/993A.jpeg",
+      "images/993B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 894",
+    "mintage": 5962600,
+    "commemorates": "Coronación de la Reina Isabel II",
+    "description": "No tan común. Conmemora la Coronación de la Reina Isabel II. Acuñación: 5.962.600 piezas.",
+    "group_id": "uk-5shillings-1953",
+    "group_label": "5 Shillings 1953 - Coronación",
+    "costo": 3.93
+  },
+  {
+    "id": 994,
+    "title": "Blister Primer Cono Decimal",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel / Bronce",
+    "year": 1968,
+    "price": "6.37 USD",
+    "images": [
+      "images/994A.jpeg",
+      "images/994B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "En blister original. Contiene la serie completa del primer cono monetario decimal.",
+    "costo": 1.31
+  },
+  {
+    "id": 995,
+    "title": "Blister 25 Cents 2008",
+    "country": "Canadá",
+    "metal": "Níquel",
+    "year": 2008,
+    "price": "5.1 USD",
+    "images": [
+      "images/995A.jpeg",
+      "images/995B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 775",
+    "commemorates": "Día del Armisticio",
+    "description": "En blister original. Acuñado en Windsor.",
+    "group_id": "ca-25cents-2008-armistice",
+    "group_label": "Blister 25 Cents 2008",
+    "costo": 1.31
+  },
+  {
+    "id": 996,
+    "title": "Blister 25 Cents 2008",
+    "country": "Canadá",
+    "metal": "Níquel",
+    "year": 2008,
+    "price": "6.37 USD",
+    "images": [
+      "images/996A.jpeg",
+      "images/996B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 775",
+    "commemorates": "Día del Armisticio",
+    "description": "En blister original. Acuñado en Windsor.",
+    "group_id": "ca-25cents-2008-armistice",
+    "group_label": "Blister 25 Cents 2008",
+    "costo": 1.31
   }
 ]
