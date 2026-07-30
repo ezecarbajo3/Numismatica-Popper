@@ -13702,5 +13702,24 @@
     "reference": "KM# 739",
     "mintage": 1021400,
     "description": "Escasa. Reina Victoria."
+  },
+  {
+    "id": 1001,
+    "title": "1 Peso 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "450 USD",
+    "images": [
+      "images/1001A.jpeg",
+      "images/1001B.jpeg"
+    ],
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "reference": "CJ# 13",
+    "mintage": 413711,
+    "description": "Patacón. Excelente pátina.",
+    "group_id": "ar-1peso-patacon",
+    "group_label": "1 Peso Patacón"
   }
 ]
