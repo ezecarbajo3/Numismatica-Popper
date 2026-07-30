@@ -13637,5 +13637,70 @@
     "group_id": "ca-25cents-2008-armistice",
     "group_label": "Blister 25 Cents 2008",
     "costo": 1.31
+  },
+  {
+    "id": 997,
+    "title": "1/2 Penny 1822",
+    "country": "Irlanda",
+    "metal": "Cobre",
+    "year": 1822,
+    "price": "12 USD",
+    "images": [
+      "images/997A.jpeg",
+      "images/997B.jpeg"
+    ],
+    "grade": "Bueno",
+    "grade_short": "B",
+    "reference": "KM# 150",
+    "description": "Jorge IV."
+  },
+  {
+    "id": 998,
+    "title": "1/2 Penny 1805",
+    "country": "Irlanda",
+    "metal": "Cobre",
+    "year": 1805,
+    "price": "15 USD",
+    "images": [
+      "images/998A.jpeg",
+      "images/998B.jpeg"
+    ],
+    "grade": "Bueno",
+    "grade_short": "B",
+    "reference": "Sp# 6621",
+    "description": "Jorge III."
+  },
+  {
+    "id": 999,
+    "title": "1 Penny 1805",
+    "country": "Irlanda",
+    "metal": "Cobre",
+    "year": 1805,
+    "price": "10 USD",
+    "images": [
+      "images/999A.jpeg",
+      "images/999B.jpeg"
+    ],
+    "grade": "Regular",
+    "grade_short": "R",
+    "reference": "Sp# 6620",
+    "description": "Jorge III."
+  },
+  {
+    "id": 1000,
+    "title": "Penny 1853",
+    "country": "Reino Unido",
+    "metal": "Cobre",
+    "year": 1853,
+    "price": "30 USD",
+    "images": [
+      "images/1000A.jpeg",
+      "images/1000B.jpeg"
+    ],
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "reference": "KM# 739",
+    "mintage": 1021400,
+    "description": "Escasa. Reina Victoria."
   }
 ]
