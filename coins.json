@@ -13746,7 +13746,10 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-07-31T23:21:48.287892+00:00"
   },
   {
     "id": 1003,
@@ -13763,7 +13766,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "",
-    "description": "Peter Simper fue hasta su caída, cerca de 1990, el mayor fabricante y operador de máquinas recreativas del Reino Unido —de mesas de pool a jukeboxes— con depósitos en Londres, Bordon, Gales del Sur, Skipton y Birmingham; este token de 5p era su ficha interna, plata que solo valía puertas adentro de sus salones, y al fundirse la empresa quedó huérfana y pasó a ser pieza de colección."
+    "description": "Peter Simper fue hasta su caída, cerca de 1990, el mayor fabricante y operador de máquinas recreativas del Reino Unido —de mesas de pool a jukeboxes— con depósitos en Londres, Bordon, Gales del Sur, Skipton y Birmingham; este token de 5p era su ficha interna, plata que solo valía puertas adentro de sus salones, y al fundirse la empresa quedó huérfana y pasó a ser pieza de colección.",
+    "costo": 0
   },
   {
     "id": 1004,
@@ -13782,7 +13786,10 @@
     "mintage": "",
     "description": "",
     "group_id": "uk-halfpenny-bronze",
-    "group_label": "1/2 Penny"
+    "group_label": "1/2 Penny",
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-07-31T23:21:48.288080+00:00"
   },
   {
     "id": 1005,
@@ -13801,7 +13808,10 @@
     "mintage": "",
     "description": "",
     "group_id": "uk-halfpenny-bronze",
-    "group_label": "1/2 Penny"
+    "group_label": "1/2 Penny",
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-07-31T23:21:48.288084+00:00"
   },
   {
     "id": 1006,
@@ -13820,7 +13830,10 @@
     "mintage": "",
     "description": "",
     "group_id": "uk-halfpenny-bronze",
-    "group_label": "1/2 Penny"
+    "group_label": "1/2 Penny",
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-07-31T23:21:48.288086+00:00"
   },
   {
     "id": 1007,
@@ -13839,7 +13852,8 @@
     "mintage": "86.411.100",
     "description": "",
     "group_id": "uk-penny-bronze",
-    "group_label": "Penny"
+    "group_label": "Penny",
+    "costo": 0
   },
   {
     "id": 1008,
@@ -13856,7 +13870,10 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-07-31T23:21:48.288088+00:00"
   },
   {
     "id": 1009,
@@ -13875,7 +13892,10 @@
     "mintage": "",
     "description": "",
     "group_id": "uk-farthing-bronze",
-    "group_label": "Farthing"
+    "group_label": "Farthing",
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-07-31T23:21:48.288089+00:00"
   },
   {
     "id": 1010,
@@ -13894,6 +13914,7 @@
     "mintage": "",
     "description": "",
     "group_id": "uk-farthing-bronze",
-    "group_label": "Farthing"
+    "group_label": "Farthing",
+    "costo": 0
   }
 ]
