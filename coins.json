@@ -13730,5 +13730,170 @@
     "description": "Patacón. Excelente pátina.",
     "group_id": "ar-1peso-patacon",
     "group_label": "1 Peso Patacón"
+  },
+  {
+    "id": 1002,
+    "title": "1 Pfennig 1885 A",
+    "country": "Alemania",
+    "metal": "Cobre",
+    "year": 1885,
+    "price": "6 USD",
+    "images": [
+      "images/1002A.jpeg",
+      "images/1002B.jpeg"
+    ],
+    "reference": "KM# 1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "description": ""
+  },
+  {
+    "id": 1003,
+    "title": "Token 5 Pence - Peter Simper",
+    "country": "Reino Unido",
+    "metal": "Latón",
+    "year": 0,
+    "price": "10 USD",
+    "images": [
+      "images/1003A.jpeg",
+      "images/1003B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": "",
+    "description": "Peter Simper fue hasta su caída, cerca de 1990, el mayor fabricante y operador de máquinas recreativas del Reino Unido —de mesas de pool a jukeboxes— con depósitos en Londres, Bordon, Gales del Sur, Skipton y Birmingham; este token de 5p era su ficha interna, plata que solo valía puertas adentro de sus salones, y al fundirse la empresa quedó huérfana y pasó a ser pieza de colección."
+  },
+  {
+    "id": 1004,
+    "title": "1/2 Penny 1911",
+    "country": "Reino Unido",
+    "metal": "Bronce",
+    "year": 1911,
+    "price": "3 USD",
+    "images": [
+      "images/1004A.jpeg",
+      "images/1004B.jpeg"
+    ],
+    "reference": "KM# 809",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "mintage": "",
+    "description": "",
+    "group_id": "uk-halfpenny-bronze",
+    "group_label": "1/2 Penny"
+  },
+  {
+    "id": 1005,
+    "title": "1/2 Penny 1916",
+    "country": "Reino Unido",
+    "metal": "Bronce",
+    "year": 1916,
+    "price": "4 USD",
+    "images": [
+      "images/1005A.jpeg",
+      "images/1005B.jpeg"
+    ],
+    "reference": "KM# 809",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "description": "",
+    "group_id": "uk-halfpenny-bronze",
+    "group_label": "1/2 Penny"
+  },
+  {
+    "id": 1006,
+    "title": "1/2 Penny 1926",
+    "country": "Reino Unido",
+    "metal": "Bronce",
+    "year": 1926,
+    "price": "5 USD",
+    "images": [
+      "images/1006A.jpeg",
+      "images/1006B.jpeg"
+    ],
+    "reference": "KM# 809",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": "",
+    "description": "",
+    "group_id": "uk-halfpenny-bronze",
+    "group_label": "1/2 Penny"
+  },
+  {
+    "id": 1007,
+    "title": "Penny 1916",
+    "country": "Reino Unido",
+    "metal": "Bronce",
+    "year": 1916,
+    "price": "5 USD",
+    "images": [
+      "images/1007A.jpeg",
+      "images/1007B.jpeg"
+    ],
+    "reference": "KM# 810",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "86.411.100",
+    "description": "",
+    "group_id": "uk-penny-bronze",
+    "group_label": "Penny"
+  },
+  {
+    "id": 1008,
+    "title": "Farthing 1909",
+    "country": "Reino Unido",
+    "metal": "Bronce",
+    "year": 1909,
+    "price": "3 USD",
+    "images": [
+      "images/1008A.jpeg",
+      "images/1008B.jpeg"
+    ],
+    "reference": "KM# 792",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "description": ""
+  },
+  {
+    "id": 1009,
+    "title": "Farthing 1915",
+    "country": "Reino Unido",
+    "metal": "Bronce",
+    "year": 1915,
+    "price": "3.5 USD",
+    "images": [
+      "images/1009A.jpeg",
+      "images/1009B.jpeg"
+    ],
+    "reference": "KM# 808",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": "",
+    "description": "",
+    "group_id": "uk-farthing-bronze",
+    "group_label": "Farthing"
+  },
+  {
+    "id": 1010,
+    "title": "Farthing 1929",
+    "country": "Reino Unido",
+    "metal": "Bronce",
+    "year": 1929,
+    "price": "4.5 USD",
+    "images": [
+      "images/1010A.jpeg",
+      "images/1010B.jpeg"
+    ],
+    "reference": "KM# 808",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "description": "",
+    "group_id": "uk-farthing-bronze",
+    "group_label": "Farthing"
   }
 ]
