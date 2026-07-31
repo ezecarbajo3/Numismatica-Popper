@@ -13701,7 +13701,10 @@
     "grade_short": "MB",
     "reference": "KM# 739",
     "mintage": 1021400,
-    "description": "Escasa. Reina Victoria."
+    "description": "Escasa. Reina Victoria.",
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-07-31T09:04:27.889165+00:00"
   },
   {
     "id": 1001,
