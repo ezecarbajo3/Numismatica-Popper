@@ -2185,7 +2185,9 @@
     "grade_short": "",
     "description": "",
     "mintage": "9000000",
-    "reference": "KM# 184.1a"
+    "reference": "KM# 184.1a",
+    "status": "sold",
+    "soldAt": "2026-08-02T18:52:32.680734+00:00"
   },
   {
     "id": 248,
@@ -6131,9 +6133,7 @@
       "images/552A.jpeg",
       "images/552B.jpeg"
     ],
-    "reference": "KM# 159.1",
-    "status": "sold",
-    "soldAt": "2026-07-01T21:16:26.000-03:00"
+    "reference": "KM# 159.1"
   },
   {
     "id": 553,
@@ -7712,7 +7712,9 @@
     "metal": "Bronce",
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
-    "mintage": "2.490.000"
+    "mintage": "2.490.000",
+    "status": "sold",
+    "soldAt": "2026-08-02T18:52:32.680906+00:00"
   },
   {
     "id": 654,
