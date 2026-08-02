@@ -13955,7 +13955,9 @@
     "grade_short": "EX",
     "description": "",
     "group_id": "uk-farthing-bronze",
-    "group_label": "Farthing"
+    "group_label": "Farthing",
+    "status": "sold",
+    "soldAt": "2026-08-02T07:22:08.564794+00:00"
   },
   {
     "id": 1013,
@@ -14011,7 +14013,9 @@
     "grade_short": "EX",
     "description": "",
     "group_id": "uk-farthing-bronze",
-    "group_label": "Farthing"
+    "group_label": "Farthing",
+    "status": "sold",
+    "soldAt": "2026-08-02T07:22:08.564794+00:00"
   },
   {
     "id": 1016,
@@ -14030,7 +14034,9 @@
     "grade_short": "SC-",
     "description": "Escasa",
     "group_id": "uk-farthing-bronze",
-    "group_label": "Farthing"
+    "group_label": "Farthing",
+    "status": "sold",
+    "soldAt": "2026-08-02T07:22:08.564794+00:00"
   },
   {
     "id": 1017,
@@ -14051,6 +14057,8 @@
     "commemorates": "Festival de Gran Bretaña",
     "description": "Conmemora el Festival de Gran Bretaña de 1951.",
     "group_id": "uk-5shillings-1951",
-    "group_label": "5 Shillings 1951 - Festival de Gran Bretaña"
+    "group_label": "5 Shillings 1951 - Festival de Gran Bretaña",
+    "status": "sold",
+    "soldAt": "2026-08-02T07:22:08.564794+00:00"
   }
 ]
