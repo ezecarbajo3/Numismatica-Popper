@@ -13662,7 +13662,9 @@
     "grade": "Bueno",
     "grade_short": "B",
     "reference": "KM# 150",
-    "description": "Jorge IV."
+    "description": "Jorge IV.",
+    "status": "sold",
+    "soldAt": "2026-08-02T21:37:09.014856+00:00"
   },
   {
     "id": 998,
@@ -13678,7 +13680,9 @@
     "grade": "Bueno",
     "grade_short": "B",
     "reference": "Sp# 6621",
-    "description": "Jorge III."
+    "description": "Jorge III.",
+    "status": "sold",
+    "soldAt": "2026-08-02T21:37:09.014856+00:00"
   },
   {
     "id": 999,
