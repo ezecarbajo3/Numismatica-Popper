@@ -14062,5 +14062,24 @@
     "group_label": "5 Shillings 1951 - Festival de Gran Bretaña",
     "status": "sold",
     "soldAt": "2026-08-02T07:22:08.564794+00:00"
+  },
+  {
+    "id": 1018,
+    "title": "10 Euro 2026",
+    "country": "Francia",
+    "metal": "Plata .999",
+    "year": 2026,
+    "price": "220 USD",
+    "images": [
+      "images/1018A.jpeg",
+      "images/1018B.jpeg"
+    ],
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 3000,
+    "commemorates": "Copa Mundial de la FIFA 2026",
+    "description": "Moneda coloreada de 10 Euro acuñada en plata fina .999 (22,2 g) por Monnaie de Paris. Emisión oficial conmemorativa de la Copa Mundial de la FIFA 2026. Tirada limitada a 3.000 piezas. Incluye blíster y certificado de autenticidad.",
+    "group_id": "fr-10euro-fifa-2026",
+    "group_label": "10 Euro 2026 - Copa Mundial de la FIFA"
   }
 ]
