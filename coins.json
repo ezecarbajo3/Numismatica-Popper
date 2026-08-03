@@ -161,7 +161,9 @@
     "grade_short": "SC",
     "mintage": "83,390",
     "description": "Moneda conmemorativa por el 50° Aniversario del Ballet Nacional de Canadá.",
-    "commemorates": "50° Aniversario del Ballet Nacional de Canadá"
+    "commemorates": "50° Aniversario del Ballet Nacional de Canadá",
+    "status": "sold",
+    "soldAt": "2026-08-03T20:49:00.268788+00:00"
   },
   {
     "id": 26,
@@ -697,7 +699,8 @@
     "mintage": "",
     "description": "",
     "status": "sold",
-    "soldAt": "2026-07-31T23:42:51.193555+00:00"
+    "soldAt": "2026-07-31T23:42:51.193555+00:00",
+    "costo": 8.0
   },
   {
     "id": 81,
@@ -1302,7 +1305,9 @@
     "grade": "Muy Bueno **",
     "grade_short": "MB**",
     "mintage": "",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-08-03T20:49:00.268933+00:00"
   },
   {
     "id": 149,
@@ -2187,7 +2192,8 @@
     "mintage": "9000000",
     "reference": "KM# 184.1a",
     "status": "sold",
-    "soldAt": "2026-08-02T18:52:32.680734+00:00"
+    "soldAt": "2026-08-02T18:52:32.680734+00:00",
+    "costo": 0.0
   },
   {
     "id": 248,
@@ -3482,7 +3488,8 @@
     "grade": "Excelente +",
     "grade_short": "EX+",
     "status": "sold",
-    "soldAt": "2026-07-27T08:26:09+02:00"
+    "soldAt": "2026-07-27T08:26:09+02:00",
+    "costo": 10.0
   },
   {
     "id": 367,
@@ -5799,7 +5806,9 @@
     ],
     "reference": "KM# 185",
     "grade": "Excelente +",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "status": "sold",
+    "soldAt": "2026-08-03T20:49:00.268959+00:00"
   },
   {
     "id": 522,
@@ -7714,7 +7723,8 @@
     "grade_short": "MB+",
     "mintage": "2.490.000",
     "status": "sold",
-    "soldAt": "2026-08-02T18:52:32.680906+00:00"
+    "soldAt": "2026-08-02T18:52:32.680906+00:00",
+    "costo": 1.0
   },
   {
     "id": 654,
@@ -13664,7 +13674,8 @@
     "reference": "KM# 150",
     "description": "Jorge IV.",
     "status": "sold",
-    "soldAt": "2026-08-02T21:37:09.014856+00:00"
+    "soldAt": "2026-08-02T21:37:09.014856+00:00",
+    "costo": 6.55
   },
   {
     "id": 998,
@@ -13682,7 +13693,8 @@
     "reference": "Sp# 6621",
     "description": "Jorge III.",
     "status": "sold",
-    "soldAt": "2026-08-02T21:37:09.014856+00:00"
+    "soldAt": "2026-08-02T21:37:09.014856+00:00",
+    "costo": 6.55
   },
   {
     "id": 999,
@@ -13963,7 +13975,8 @@
     "group_id": "uk-farthing-bronze",
     "group_label": "Farthing",
     "status": "sold",
-    "soldAt": "2026-08-02T07:22:08.564794+00:00"
+    "soldAt": "2026-08-02T07:22:08.564794+00:00",
+    "costo": 0.0
   },
   {
     "id": 1013,
@@ -14021,7 +14034,8 @@
     "group_id": "uk-farthing-bronze",
     "group_label": "Farthing",
     "status": "sold",
-    "soldAt": "2026-08-02T07:22:08.564794+00:00"
+    "soldAt": "2026-08-02T07:22:08.564794+00:00",
+    "costo": 0.0
   },
   {
     "id": 1016,
@@ -14042,7 +14056,8 @@
     "group_id": "uk-farthing-bronze",
     "group_label": "Farthing",
     "status": "sold",
-    "soldAt": "2026-08-02T07:22:08.564794+00:00"
+    "soldAt": "2026-08-02T07:22:08.564794+00:00",
+    "costo": 0.0
   },
   {
     "id": 1017,
