@@ -1642,7 +1642,9 @@
     "grade_short": "",
     "mintage": "",
     "description": "Indian Head.",
-    "original_price": "15 USD"
+    "original_price": "15 USD",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:36:46.861599+00:00"
   },
   {
     "id": 183,
@@ -9280,7 +9282,9 @@
     ],
     "reference": "CJ# 122",
     "group_id": "ar-10centavos-cuproniquel",
-    "group_label": "10 Centavos cuproníquel"
+    "group_label": "10 Centavos cuproníquel",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:36:46.861812+00:00"
   },
   {
     "id": 749,
@@ -9346,7 +9350,9 @@
     ],
     "reference": "CJ# 101",
     "group_id": "ar-10centavos-cuproniquel",
-    "group_label": "10 Centavos cuproníquel"
+    "group_label": "10 Centavos cuproníquel",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:36:46.861816+00:00"
   },
   {
     "id": 753,
@@ -9362,7 +9368,9 @@
     ],
     "reference": "CJ# 97",
     "group_id": "ar-10centavos-cuproniquel",
-    "group_label": "10 Centavos cuproníquel"
+    "group_label": "10 Centavos cuproníquel",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:36:46.861817+00:00"
   },
   {
     "id": 754,
@@ -9802,7 +9810,9 @@
     "grade": "Bueno",
     "grade_short": "B",
     "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón"
+    "group_label": "2 Centavos Patacón",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:36:46.861821+00:00"
   },
   {
     "id": 780,
