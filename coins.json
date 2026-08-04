@@ -886,7 +886,9 @@
     "mintage": "596.000",
     "description": "",
     "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón"
+    "group_label": "2 Centavos Patacón",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:40:58.169072+00:00"
   },
   {
     "id": 104,
@@ -9472,9 +9474,7 @@
     ],
     "reference": "CJ# 90",
     "group_id": "ar-10centavos-cuproniquel",
-    "group_label": "10 Centavos cuproníquel",
-    "status": "sold",
-    "soldAt": "2026-08-04T20:40:12.668078+00:00"
+    "group_label": "10 Centavos cuproníquel"
   },
   {
     "id": 759,
