@@ -4727,7 +4727,9 @@
     "grade": "Regular",
     "grade_short": "R+",
     "group_id": "us-cent-km90",
-    "group_label": "Indian Head Cent"
+    "group_label": "Indian Head Cent",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:39:16.939978+00:00"
   },
   {
     "id": 452,
@@ -4743,7 +4745,9 @@
     "grade": "Bueno",
     "grade_short": "B-",
     "group_id": "us-cent-km90",
-    "group_label": "Indian Head Cent"
+    "group_label": "Indian Head Cent",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:39:16.940139+00:00"
   },
   {
     "id": 453,
@@ -4759,7 +4763,9 @@
     "grade": "Bueno",
     "grade_short": "B",
     "group_id": "us-cent-km90",
-    "group_label": "Indian Head Cent"
+    "group_label": "Indian Head Cent",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:39:16.940143+00:00"
   },
   {
     "id": 454,
@@ -4948,7 +4954,9 @@
     "grade": "Bueno",
     "grade_short": "B-",
     "group_id": "us-cent-km90",
-    "group_label": "Indian Head Cent"
+    "group_label": "Indian Head Cent",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:39:16.940146+00:00"
   },
   {
     "id": 465,
@@ -4964,7 +4972,9 @@
     "grade": "Bueno",
     "grade_short": "B",
     "group_id": "us-cent-km90",
-    "group_label": "Indian Head Cent"
+    "group_label": "Indian Head Cent",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:39:16.940148+00:00"
   },
   {
     "id": 466,
@@ -4980,7 +4990,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "group_id": "us-cent-km90",
-    "group_label": "Indian Head Cent"
+    "group_label": "Indian Head Cent",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:39:16.940150+00:00"
   },
   {
     "id": 467,
@@ -5012,7 +5024,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "group_id": "us-cent-km90",
-    "group_label": "Indian Head Cent"
+    "group_label": "Indian Head Cent",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:39:16.940151+00:00"
   },
   {
     "id": 469,
@@ -5060,7 +5074,9 @@
     "grade": "Bueno",
     "grade_short": "B",
     "group_id": "us-cent-km90",
-    "group_label": "Indian Head Cent"
+    "group_label": "Indian Head Cent",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:39:16.940153+00:00"
   },
   {
     "id": 472,
@@ -5076,7 +5092,9 @@
     "grade": "Bueno",
     "grade_short": "B",
     "group_id": "us-cent-km90",
-    "group_label": "Indian Head Cent"
+    "group_label": "Indian Head Cent",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:39:16.940155+00:00"
   },
   {
     "id": 473,
@@ -5092,7 +5110,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "us-cent-km90",
-    "group_label": "Indian Head Cent"
+    "group_label": "Indian Head Cent",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:39:16.940156+00:00"
   },
   {
     "id": 474,
@@ -5156,7 +5176,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "group_id": "us-cent-km90",
-    "group_label": "Indian Head Cent"
+    "group_label": "Indian Head Cent",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:39:16.940158+00:00"
   },
   {
     "id": 478,
