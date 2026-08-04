@@ -9472,7 +9472,9 @@
     ],
     "reference": "CJ# 90",
     "group_id": "ar-10centavos-cuproniquel",
-    "group_label": "10 Centavos cuproníquel"
+    "group_label": "10 Centavos cuproníquel",
+    "status": "sold",
+    "soldAt": "2026-08-04T20:40:12.668078+00:00"
   },
   {
     "id": 759,
