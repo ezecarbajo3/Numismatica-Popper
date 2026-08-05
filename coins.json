@@ -2382,8 +2382,6 @@
     "grade_short": "MB",
     "mintage": "",
     "description": "",
-    "group_id": "eg-10milliemes-1973",
-    "group_label": "10 Milliemes 1973",
     "status": "sold",
     "soldAt": "2026-07-14T00:54:42.751069+00:00"
   },
@@ -2985,9 +2983,7 @@
       "images/322B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX",
-    "group_id": "nz-2cents-km32",
-    "group_label": "2 Cents"
+    "grade_short": "EX"
   },
   {
     "id": 323,
@@ -3514,8 +3510,6 @@
     ],
     "grade": "Excelente -",
     "grade_short": "EX-",
-    "group_id": "ar-10centavos-1882",
-    "group_label": "10 Centavos 1882",
     "status": "sold",
     "soldAt": "2026-07-02T19:27:50.827020-03:00"
   },
@@ -3605,9 +3599,7 @@
     "images": [
       "images/372A.jpeg",
       "images/372B.jpeg"
-    ],
-    "group_id": "us-dollar-innovation",
-    "group_label": "Dólar Innovación"
+    ]
   },
   {
     "id": 374,
@@ -13674,8 +13666,6 @@
     "mintage": 5962600,
     "commemorates": "Coronación de la Reina Isabel II",
     "description": "No tan común. Conmemora la Coronación de la Reina Isabel II.",
-    "group_id": "uk-5shillings-1953",
-    "group_label": "5 Shillings 1953 - Coronación",
     "costo": 3.93,
     "cantidad": 0,
     "status": "sold",
@@ -13830,9 +13820,7 @@
     "grade_short": "EX",
     "reference": "CJ# 13",
     "mintage": 413711,
-    "description": "Patacón. Excelente pátina.",
-    "group_id": "ar-1peso-patacon",
-    "group_label": "1 Peso Patacón"
+    "description": "Patacón. Excelente pátina."
   },
   {
     "id": 1002,
@@ -14160,8 +14148,6 @@
     "grade_short": "SC",
     "commemorates": "Festival de Gran Bretaña",
     "description": "Conmemora el Festival de Gran Bretaña de 1951.",
-    "group_id": "uk-5shillings-1951",
-    "group_label": "5 Shillings 1951 - Festival de Gran Bretaña",
     "status": "sold",
     "soldAt": "2026-08-02T07:22:08.564794+00:00"
   },
@@ -14182,8 +14168,6 @@
     "mintage": 3000,
     "commemorates": "Copa Mundial de la FIFA 2026",
     "description": "Moneda coloreada de 10 Euro acuñada en plata fina .999 (22,2 g) por Monnaie de Paris. Emisión oficial conmemorativa de la Copa Mundial de la FIFA 2026. Tirada limitada a 3.000 piezas. Incluye blíster y certificado de autenticidad.",
-    "group_id": "fr-10euro-fifa-2026",
-    "group_label": "10 Euro 2026 - Copa Mundial de la FIFA",
     "status": "sold",
     "soldAt": "2026-08-04T20:16:44.761731+00:00"
   },
@@ -14203,9 +14187,7 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": 5420000,
-    "description": "Imperio Alemán",
-    "group_id": "de-1-2marco-imperio",
-    "group_label": "1/2 Marco Imperio Alemán"
+    "description": "Imperio Alemán"
   },
   {
     "id": 1020,
@@ -14222,9 +14204,7 @@
     "reference": "KM# 86",
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
-    "description": "Iglesia de la Guarnición de Potsdam",
-    "group_id": "de-5reichsmark",
-    "group_label": "5 Reichsmark"
+    "description": "Iglesia de la Guarnición de Potsdam"
   },
   {
     "id": 1021,
@@ -14243,9 +14223,7 @@
     "grade_short": "EX-",
     "mintage": 3942500,
     "commemorates": "Friedrich Wilhelm Raiffeisen",
-    "description": "Conmemora el 150.º aniversario del nacimiento de Friedrich Wilhelm Raiffeisen.",
-    "group_id": "de-5marcos-conmemorativas",
-    "group_label": "5 Marcos Conmemorativas"
+    "description": "Conmemora el 150.º aniversario del nacimiento de Friedrich Wilhelm Raiffeisen."
   },
   {
     "id": 1022,
@@ -14281,9 +14259,7 @@
     "reference": "KM# 37",
     "grade": "Excelente-",
     "grade_short": "EX-",
-    "description": "",
-    "group_id": "de-2reichspfennig",
-    "group_label": "2 Reichspfennig"
+    "description": ""
   },
   {
     "id": 1024,
@@ -14381,9 +14357,7 @@
     "reference": "KM# 36",
     "grade": "Excelente-",
     "grade_short": "EX-",
-    "description": "",
-    "group_id": "de-1reichspfennig",
-    "group_label": "1 Reichspfennig"
+    "description": ""
   },
   {
     "id": 1029,
