@@ -14433,5 +14433,24 @@
     "mintage": 9000000,
     "cantidad": 3,
     "description": ""
+  },
+  {
+    "id": 1033,
+    "title": "25 New Pence 1972",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1972,
+    "price": "11.7 USD",
+    "costo": 0,
+    "images": [
+      "images/1033A.jpeg",
+      "images/1033B.jpeg"
+    ],
+    "reference": "KM# 917",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 7414000,
+    "commemorates": "Bodas de Plata de la Reina Isabel II y el Príncipe Felipe",
+    "description": "Conmemora las Bodas de Plata de la Reina Isabel II y el Príncipe Felipe."
   }
 ]
