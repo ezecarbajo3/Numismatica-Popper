@@ -611,59 +611,31 @@ function getFilteredCoins() {
   });
 }
 
-// ─── Contadores de la portada ─────────────────────────────────────────────────
+// ─── Accesos a "Ingresos" ─────────────────────────────────────────────────────
 
 /**
  * Cuenta las piezas tal como se van a ver en la grilla: descarta ocultas y
- * vendidas vencidas, aplica el predicado de categoría (o la exclusión por
- * defecto de libros y medallas cuando no hay categoría) y colapsa los grupos,
- * igual que renderCoins. Sin el colapso el número de la portada no coincidiría
- * con el de la barra de resultados.
+ * vendidas vencidas, aplica el predicado y colapsa los grupos igual que
+ * renderCoins, para no contar variantes que después se muestran como una sola.
  */
-function countLandingCoins(predicate) {
-  const pool = allCoins.filter((coin) => {
-    if (coin.hidden) return false;
-    if (isSoldExpired(coin)) return false;
-    if (predicate) return predicate(coin);
-    return !isBook(coin) && !isMedalOrToken(coin);
-  });
+function countCoinsFor(predicate) {
+  const pool = allCoins.filter((coin) =>
+    !coin.hidden && !isSoldExpired(coin) && predicate(coin)
+  );
   return collapseGroups(pool).length;
 }
 
-/** Escribe las cifras vivas de la portada. Se llama recién con allCoins cargado. */
-function hydrateLandingStats() {
-  const total    = countLandingCoins(null);
-  const ingresos = countLandingCoins(CATEGORY_PREDICATES.ingresos);
-
-  const setCount = (id, n) => {
+/**
+ * Regla del proyecto: nunca ofrecer un filtro que lleva a una grilla vacía.
+ * Si esta semana no entró nada, el enlace de la portada y el botón de la barra
+ * de categorías no se muestran. Se llama recién con allCoins cargado.
+ */
+function hydrateIngresosEntries() {
+  const hay = countCoinsFor(CATEGORY_PREDICATES.ingresos) > 0;
+  ['landingIngresos', 'catIngresos'].forEach((id) => {
     const el = document.getElementById(id);
-    if (!el) return;
-    el.textContent = n;
-    el.hidden = n === 0;
-  };
-
-  setCount('countAll', total);
-  setCount('countIngresos', ingresos);
-
-  const statPieces = document.getElementById('statPieces');
-  if (statPieces && total > 0) {
-    statPieces.textContent = `${total} piezas en catálogo`;
-    statPieces.hidden = false;
-  }
-
-  const statNew = document.getElementById('statNew');
-  if (statNew && ingresos > 0) {
-    statNew.textContent = ingresos === 1
-      ? '1 ingreso esta semana'
-      : `${ingresos} ingresos esta semana`;
-    statNew.hidden = false;
-  }
-
-  // Regla del proyecto: nunca ofrecer un filtro que lleva a una grilla vacía.
-  const landingIngresos = document.getElementById('landingIngresos');
-  const catIngresos     = document.getElementById('catIngresos');
-  if (landingIngresos) landingIngresos.hidden = ingresos === 0;
-  if (catIngresos)     catIngresos.hidden     = ingresos === 0;
+    if (el) el.hidden = !hay;
+  });
 }
 
 // ─── Rendering ────────────────────────────────────────────────────────────────
@@ -1137,8 +1109,9 @@ document.querySelectorAll('.cat-btn').forEach(btn => {
   });
 });
 
-// Landing button event listeners
-document.querySelectorAll('.landing-btn').forEach(btn => {
+// Accesos de la portada: los 6 botones de categoría, "Ver todas" y el enlace
+// discreto de Ingresos comparten el mismo data-attribute.
+document.querySelectorAll('[data-landing-category]').forEach(btn => {
   btn.addEventListener('click', () => {
     const cat = btn.dataset.landingCategory;
     enterCatalog(cat === 'todas' ? null : cat);
@@ -1161,7 +1134,7 @@ if (logoLink) {
 loadCoins().then((ok) => {
   if (!ok) return;
 
-  hydrateLandingStats();
+  hydrateIngresosEntries();
 
   const isBackFwd = isBackForwardNavigation();
   const state     = loadSavedState();
