@@ -3521,7 +3521,7 @@
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
     "year": 1904,
-    "price": "4 USD",
+    "price": "7 USD",
     "reference": "KM# 90",
     "images": [
       "images/368A.jpeg",
@@ -3559,7 +3559,7 @@
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
     "year": 1907,
-    "price": "7 USD",
+    "price": "9 USD",
     "reference": "KM# 90",
     "images": [
       "images/370A.jpeg",
@@ -3577,7 +3577,7 @@
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
     "year": 1905,
-    "price": "4 USD",
+    "price": "7 USD",
     "reference": "KM# 90",
     "images": [
       "images/371A.jpeg",
@@ -3617,7 +3617,11 @@
       "images/374B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "Dólar Presidentes",
+    "metal": "Latón de manganeso sobre cobre",
+    "reference": "KM# 502",
+    "grade": "Excelente",
+    "grade_short": "EX"
   },
   {
     "id": 375,
@@ -3631,7 +3635,11 @@
       "images/375B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "Dólar Presidentes",
+    "metal": "Latón de manganeso sobre cobre",
+    "reference": "KM# 451",
+    "grade": "Excelente",
+    "grade_short": "EX"
   },
   {
     "id": 376,
@@ -3645,7 +3653,11 @@
       "images/376B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "Dólar Presidentes",
+    "metal": "Latón de manganeso sobre cobre",
+    "reference": "KM# 402",
+    "grade": "Excelente",
+    "grade_short": "EX"
   },
   {
     "id": 377,
@@ -3659,7 +3671,9 @@
       "images/377B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "Dólar Presidentes",
+    "grade": "Excelente",
+    "grade_short": "EX"
   },
   {
     "id": 378,
@@ -3673,7 +3687,11 @@
       "images/378B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "Dólar Presidentes",
+    "metal": "Latón de manganeso sobre cobre",
+    "reference": "KM# 401",
+    "grade": "Excelente",
+    "grade_short": "EX"
   },
   {
     "id": 380,
@@ -3687,7 +3705,11 @@
       "images/380B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "Dólar Presidentes",
+    "metal": "Latón de manganeso sobre cobre",
+    "reference": "KM# 501",
+    "grade": "Excelente",
+    "grade_short": "EX"
   },
   {
     "id": 381,
@@ -3701,7 +3723,11 @@
       "images/381B.jpeg"
     ],
     "group_id": "us-dollar-presidents",
-    "group_label": "Dólar Presidentes"
+    "group_label": "Dólar Presidentes",
+    "metal": "Latón de manganeso sobre cobre",
+    "reference": "KM# 499",
+    "grade": "Excelente",
+    "grade_short": "EX"
   },
   {
     "id": 382,
@@ -10198,14 +10224,18 @@
     "costo": 1.65,
     "title": "50 Cents 1976",
     "country": "Uganda",
+    "metal": "Acero niquelado",
     "year": 1976,
     "price": "4 USD",
     "images": [
       "images/802A.jpeg",
       "images/802B.jpeg"
     ],
+    "reference": "KM# 4a",
     "grade": "Sin Circular",
     "grade_short": "SC",
+    "mintage": "10.000.000",
+    "description": "Escudo de armas de Uganda en anverso y grulla coronada con montañas en reverso.",
     "cantidad": 2
   },
   {
