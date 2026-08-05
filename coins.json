@@ -1646,7 +1646,8 @@
     "description": "Indian Head.",
     "original_price": "15 USD",
     "status": "sold",
-    "soldAt": "2026-08-04T20:36:46.861599+00:00"
+    "soldAt": "2026-08-04T20:36:46.861599+00:00",
+    "costo": 5.0
   },
   {
     "id": 183,
@@ -2033,7 +2034,8 @@
     "group_id": "be-franco-km128",
     "group_label": "Franco",
     "status": "sold",
-    "soldAt": "2026-08-05T06:49:44.735447+00:00"
+    "soldAt": "2026-08-05T06:49:44.735447+00:00",
+    "costo": 0.0
   },
   {
     "id": 226,
@@ -3625,7 +3627,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "status": "sold",
-    "soldAt": "2026-08-05T06:49:44.735599+00:00"
+    "soldAt": "2026-08-05T06:49:44.735599+00:00",
+    "costo": 1.0
   },
   {
     "id": 375,
@@ -3645,7 +3648,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "status": "sold",
-    "soldAt": "2026-08-05T06:49:44.735601+00:00"
+    "soldAt": "2026-08-05T06:49:44.735601+00:00",
+    "costo": 1.0
   },
   {
     "id": 376,
@@ -3699,7 +3703,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "status": "sold",
-    "soldAt": "2026-08-05T06:49:44.735603+00:00"
+    "soldAt": "2026-08-05T06:49:44.735603+00:00",
+    "costo": 1.0
   },
   {
     "id": 380,
@@ -3719,7 +3724,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "status": "sold",
-    "soldAt": "2026-08-05T06:49:44.735604+00:00"
+    "soldAt": "2026-08-05T06:49:44.735604+00:00",
+    "costo": 1.0
   },
   {
     "id": 381,
@@ -3739,7 +3745,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "status": "sold",
-    "soldAt": "2026-08-05T06:49:44.735605+00:00"
+    "soldAt": "2026-08-05T06:49:44.735605+00:00",
+    "costo": 1.0
   },
   {
     "id": 382,
@@ -14179,5 +14186,222 @@
     "group_label": "10 Euro 2026 - Copa Mundial de la FIFA",
     "status": "sold",
     "soldAt": "2026-08-04T20:16:44.761731+00:00"
+  },
+  {
+    "id": 1019,
+    "title": "1/2 Marco 1905 F",
+    "country": "Alemania",
+    "metal": "Plata .900",
+    "year": 1905,
+    "price": "12 USD",
+    "costo": 4.54,
+    "images": [
+      "images/1019A.jpeg",
+      "images/1019B.jpeg"
+    ],
+    "reference": "KM# 16",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 5420000,
+    "description": "Imperio Alemán",
+    "group_id": "de-1-2marco-imperio",
+    "group_label": "1/2 Marco Imperio Alemán"
+  },
+  {
+    "id": 1020,
+    "title": "5 Reichsmark 1935 D",
+    "country": "Alemania",
+    "metal": "Plata .900",
+    "year": 1935,
+    "price": "40 USD",
+    "costo": 23.3,
+    "images": [
+      "images/1020A.jpeg",
+      "images/1020B.jpeg"
+    ],
+    "reference": "KM# 86",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "description": "Iglesia de la Guarnición de Potsdam",
+    "group_id": "de-5reichsmark",
+    "group_label": "5 Reichsmark"
+  },
+  {
+    "id": 1021,
+    "title": "5 Marcos 1968 J",
+    "country": "Alemania",
+    "metal": "Plata .625",
+    "year": 1968,
+    "price": "20 USD",
+    "costo": 9.32,
+    "images": [
+      "images/1021A.jpeg",
+      "images/1021B.jpeg"
+    ],
+    "reference": "KM# 121",
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "mintage": 3942500,
+    "commemorates": "Friedrich Wilhelm Raiffeisen",
+    "description": "Conmemora el 150.º aniversario del nacimiento de Friedrich Wilhelm Raiffeisen.",
+    "group_id": "de-5marcos-conmemorativas",
+    "group_label": "5 Marcos Conmemorativas"
+  },
+  {
+    "id": 1022,
+    "title": "1 Penny 1891",
+    "country": "Reino Unido",
+    "metal": "Bronce",
+    "year": 1891,
+    "price": "15 USD",
+    "costo": 3.5,
+    "images": [
+      "images/1022A.jpeg",
+      "images/1022B.jpeg"
+    ],
+    "reference": "KM# 754",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "",
+    "group_id": "uk-penny-bronze",
+    "group_label": "Penny"
+  },
+  {
+    "id": 1023,
+    "title": "2 Reichspfennig 1924 A",
+    "country": "Alemania",
+    "metal": "Bronce",
+    "year": 1924,
+    "price": "4.5 USD",
+    "costo": 0.7,
+    "images": [
+      "images/1023A.jpeg",
+      "images/1023B.jpeg"
+    ],
+    "reference": "KM# 37",
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "description": "",
+    "group_id": "de-2reichspfennig",
+    "group_label": "2 Reichspfennig"
+  },
+  {
+    "id": 1024,
+    "title": "Farthing 1952",
+    "country": "Reino Unido",
+    "metal": "Bronce",
+    "year": 1952,
+    "price": "3.5 USD",
+    "costo": 0.58,
+    "images": [
+      "images/1024A.jpeg",
+      "images/1024B.jpeg"
+    ],
+    "reference": "KM# 867",
+    "grade": "Muy Bueno-",
+    "grade_short": "MB-",
+    "mintage": 5251200,
+    "description": "",
+    "group_id": "uk-farthing-bronze",
+    "group_label": "Farthing"
+  },
+  {
+    "id": 1025,
+    "title": "Farthing 1923",
+    "country": "Reino Unido",
+    "metal": "Bronce",
+    "year": 1923,
+    "price": "5 USD",
+    "costo": 0.58,
+    "images": [
+      "images/1025A.jpeg",
+      "images/1025B.jpeg"
+    ],
+    "reference": "KM# 825",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "description": "",
+    "group_id": "uk-farthing-bronze",
+    "group_label": "Farthing"
+  },
+  {
+    "id": 1026,
+    "title": "5 Euro 2019 G",
+    "country": "Alemania",
+    "metal": "Cuproníquel (con polímero)",
+    "year": 2019,
+    "price": "25 USD",
+    "costo": 17.48,
+    "images": [
+      "images/1026A.jpeg",
+      "images/1026B.jpeg"
+    ],
+    "reference": "KM# 380",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 600000,
+    "commemorates": "Zonas climáticas de la Tierra: Zona templada",
+    "description": "Zonas climáticas de la Tierra: Zona templada. Escasa.",
+    "group_id": "de-5euro-zonas-climaticas",
+    "group_label": "5 Euro Zonas Climáticas"
+  },
+  {
+    "id": 1027,
+    "title": "5 Euro 2017 A",
+    "country": "Alemania",
+    "metal": "Cuproníquel (con polímero)",
+    "year": 2017,
+    "price": "27 USD",
+    "costo": 17.48,
+    "images": [
+      "images/1027A.jpeg",
+      "images/1027B.jpeg"
+    ],
+    "reference": "KM# 357",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 400000,
+    "commemorates": "Zonas climáticas de la Tierra: Zona tropical",
+    "description": "Zonas climáticas de la Tierra: Zona tropical. Escasa.",
+    "group_id": "de-5euro-zonas-climaticas",
+    "group_label": "5 Euro Zonas Climáticas"
+  },
+  {
+    "id": 1028,
+    "title": "1 Reichspfennig 1932 A",
+    "country": "Alemania",
+    "metal": "Bronce",
+    "year": 1932,
+    "price": "4.5 USD",
+    "costo": 2.33,
+    "images": [
+      "images/1028A.jpeg",
+      "images/1028B.jpeg"
+    ],
+    "reference": "KM# 36",
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "description": "",
+    "group_id": "de-1reichspfennig",
+    "group_label": "1 Reichspfennig"
+  },
+  {
+    "id": 1029,
+    "title": "1/2 Penny 1920",
+    "country": "Reino Unido",
+    "metal": "Bronce",
+    "year": 1920,
+    "price": "6 USD",
+    "costo": 1.17,
+    "images": [
+      "images/1029A.jpeg",
+      "images/1029B.jpeg"
+    ],
+    "reference": "KM# 815",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "",
+    "group_id": "uk-halfpenny-bronze",
+    "group_label": "1/2 Penny"
   }
 ]
