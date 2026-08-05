@@ -14259,7 +14259,8 @@
     "reference": "KM# 37",
     "grade": "Excelente-",
     "grade_short": "EX-",
-    "description": ""
+    "description": "",
+    "cantidad": 2
   },
   {
     "id": 1024,
@@ -14595,8 +14596,8 @@
     "country": "Chipre",
     "metal": "Cuproníquel",
     "year": 1996,
-    "price": "4 USD",
-    "costo": 0.0,
+    "price": "5 USD",
+    "costo": 2.34,
     "images": [
       "images/1041A.jpeg",
       "images/1041B.jpeg"
@@ -14606,5 +14607,23 @@
     "grade_short": "SC",
     "mintage": 6000000,
     "description": "Rapto de Europa: famoso mito de la mitología griega. En este relato, el dios Zeus se convierte en un toro blanco para acercarse a la princesa fenicia Europa, quien luego sube a su lomo y es llevada por la fuerza a la isla de Creta."
+  },
+  {
+    "id": 1042,
+    "title": "1 Paisa 1975",
+    "country": "Pakistán",
+    "metal": "Aluminio",
+    "year": 1975,
+    "price": "4.5 USD",
+    "costo": 2.34,
+    "images": [
+      "images/1042A.jpeg",
+      "images/1042B.jpeg"
+    ],
+    "reference": "KM# 33",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 43000000,
+    "description": "Conmemorativa FAO - Flor de algodón y Minar-e-Pakistan"
   }
 ]
