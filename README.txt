@@ -20,6 +20,8 @@ https://numismaticapopper.com
                              Correr tras cualquier cambio de fotos/altas en coins.json.
 - `generate_thumbs.sh`     — genera/actualiza las miniaturas WebP en images/thumbs/.
 - `mark_sold.js` / `mark_sold.py` — marcan monedas como vendidas (status/soldAt).
+- `stamp_published.py`     — sella la fecha de alta (publishedAt) para el badge "NUEVO".
+                             `python3 stamp_published.py 1043 1044` o `--from 1019`.
 
 ## Cómo cargar una moneda
 Editar `coins.json` y agregar un objeto al array. Campos habituales:
@@ -47,3 +49,9 @@ Notas:
   filtros no se fragmenten.
 - Tras editar coins.json: correr `generate_thumbs.sh` (nuevas fotos) y
   `python3 generate_coin_pages.py` (altas/cambios de foto).
+- Toda moneda nueva debe llevar `publishedAt` (fecha de alta, ISO UTC) para que la
+  grilla le muestre el cartelito "NUEVO". Lo más simple es correr
+  `python3 stamp_published.py <id1> <id2> ...` justo después del alta — sella la
+  fecha actual y nunca pisa un publishedAt existente.
+- El badge dura NEW_BADGE_DAYS días (7, definido en script.js) y después desaparece
+  solo: no hay que sacarlo a mano. Las monedas sin `publishedAt` nunca lo muestran.

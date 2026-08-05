@@ -276,7 +276,9 @@
     "mintage": "596.000",
     "description": "",
     "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón"
+    "group_label": "2 Centavos Patacón",
+    "status": "sold",
+    "soldAt": "2026-08-05T22:34:36.205241+00:00"
   },
   {
     "id": 34,
@@ -6120,7 +6122,9 @@
     "grade_short": "MB+",
     "mintage": "3.000.000",
     "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón"
+    "group_label": "2 Centavos Patacón",
+    "status": "sold",
+    "soldAt": "2026-08-05T22:34:36.205419+00:00"
   },
   {
     "id": 548,
@@ -14187,7 +14191,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": 5420000,
-    "description": "Imperio Alemán"
+    "description": "Imperio Alemán",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1020,
@@ -14204,7 +14209,8 @@
     "reference": "KM# 86",
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
-    "description": "Iglesia de la Guarnición de Potsdam"
+    "description": "Iglesia de la Guarnición de Potsdam",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1021,
@@ -14223,7 +14229,10 @@
     "grade_short": "EX-",
     "mintage": 3942500,
     "commemorates": "Friedrich Wilhelm Raiffeisen",
-    "description": "Conmemora el 150.º aniversario del nacimiento de Friedrich Wilhelm Raiffeisen."
+    "description": "Conmemora el 150.º aniversario del nacimiento de Friedrich Wilhelm Raiffeisen.",
+    "status": "sold",
+    "soldAt": "2026-08-05T22:34:36.205476+00:00",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1022,
@@ -14242,7 +14251,8 @@
     "grade_short": "MB",
     "description": "",
     "group_id": "uk-penny-bronze",
-    "group_label": "Penny"
+    "group_label": "Penny",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1023,
@@ -14260,7 +14270,8 @@
     "grade": "Excelente-",
     "grade_short": "EX-",
     "description": "",
-    "cantidad": 2
+    "cantidad": 1,
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1024,
@@ -14280,7 +14291,8 @@
     "mintage": 5251200,
     "description": "",
     "group_id": "uk-farthing-bronze",
-    "group_label": "Farthing"
+    "group_label": "Farthing",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1025,
@@ -14299,7 +14311,8 @@
     "grade_short": "MB+",
     "description": "",
     "group_id": "uk-farthing-bronze",
-    "group_label": "Farthing"
+    "group_label": "Farthing",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1026,
@@ -14320,7 +14333,8 @@
     "commemorates": "Zonas climáticas de la Tierra: Zona templada",
     "description": "Zonas climáticas de la Tierra: Zona templada. Escasa.",
     "group_id": "de-5euro-zonas-climaticas",
-    "group_label": "5 Euro Zonas Climáticas"
+    "group_label": "5 Euro Zonas Climáticas",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1027,
@@ -14341,7 +14355,10 @@
     "commemorates": "Zonas climáticas de la Tierra: Zona tropical",
     "description": "Zonas climáticas de la Tierra: Zona tropical. Escasa.",
     "group_id": "de-5euro-zonas-climaticas",
-    "group_label": "5 Euro Zonas Climáticas"
+    "group_label": "5 Euro Zonas Climáticas",
+    "status": "sold",
+    "soldAt": "2026-08-05T22:34:36.205479+00:00",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1028,
@@ -14358,7 +14375,10 @@
     "reference": "KM# 36",
     "grade": "Excelente-",
     "grade_short": "EX-",
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-08-05T22:34:36.205480+00:00",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1029,
@@ -14377,7 +14397,8 @@
     "grade_short": "MB",
     "description": "",
     "group_id": "uk-halfpenny-bronze",
-    "group_label": "1/2 Penny"
+    "group_label": "1/2 Penny",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1030,
@@ -14397,7 +14418,8 @@
     "mintage": 10002000,
     "description": "Raro",
     "group_id": "congo-belga-1-franco",
-    "group_label": "1 Franco"
+    "group_label": "1 Franco",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1031,
@@ -14416,7 +14438,8 @@
     "grade_short": "EX-",
     "mintage": 15000000,
     "cantidad": 2,
-    "description": ""
+    "description": "",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1032,
@@ -14435,7 +14458,8 @@
     "grade_short": "MB+",
     "mintage": 9000000,
     "cantidad": 3,
-    "description": ""
+    "description": "",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1033,
@@ -14454,7 +14478,8 @@
     "grade_short": "SC",
     "mintage": 7414000,
     "commemorates": "Bodas de Plata de la Reina Isabel II y el Príncipe Felipe",
-    "description": "Conmemora las Bodas de Plata de la Reina Isabel II y el Príncipe Felipe."
+    "description": "Conmemora las Bodas de Plata de la Reina Isabel II y el Príncipe Felipe.",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1034,
@@ -14472,7 +14497,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Moneda cuadrada con esquinas redondeadas. Rueda del Dharma (Dharmachakra). Rombo"
+    "description": "Moneda cuadrada con esquinas redondeadas. Rueda del Dharma (Dharmachakra). Rombo",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1035,
@@ -14490,7 +14516,8 @@
     "grade": "Sin Circular -",
     "grade_short": "SC-",
     "mintage": 4976000,
-    "description": "Bicentenario del Instituto de Francia. Año único, no tan común"
+    "description": "Bicentenario del Instituto de Francia. Año único, no tan común",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1036,
@@ -14508,7 +14535,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": 3360000,
-    "description": "Gallina con pollitos. No tan común"
+    "description": "Gallina con pollitos. No tan común",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1037,
@@ -14528,7 +14556,8 @@
     "mintage": 6441000,
     "description": "",
     "group_id": "be-2centimes",
-    "group_label": "2 Centimes"
+    "group_label": "2 Centimes",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1038,
@@ -14548,7 +14577,8 @@
     "mintage": 4981000,
     "description": "",
     "group_id": "be-2centimes",
-    "group_label": "2 Centimes"
+    "group_label": "2 Centimes",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1039,
@@ -14568,7 +14598,8 @@
     "mintage": 4983000,
     "description": "",
     "group_id": "be-2centimes",
-    "group_label": "2 Centimes"
+    "group_label": "2 Centimes",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1040,
@@ -14588,7 +14619,8 @@
     "mintage": 20000000,
     "description": "",
     "group_id": "congo-belga-1-franco",
-    "group_label": "1 Franco"
+    "group_label": "1 Franco",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1041,
@@ -14606,7 +14638,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": 6000000,
-    "description": "Rapto de Europa: famoso mito de la mitología griega. En este relato, el dios Zeus se convierte en un toro blanco para acercarse a la princesa fenicia Europa, quien luego sube a su lomo y es llevada por la fuerza a la isla de Creta."
+    "description": "Rapto de Europa: famoso mito de la mitología griega. En este relato, el dios Zeus se convierte en un toro blanco para acercarse a la princesa fenicia Europa, quien luego sube a su lomo y es llevada por la fuerza a la isla de Creta.",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
     "id": 1042,
@@ -14624,6 +14657,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": 43000000,
-    "description": "Conmemorativa FAO - Flor de algodón y Minar-e-Pakistan"
+    "description": "Conmemorativa FAO - Flor de algodón y Minar-e-Pakistan",
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   }
 ]

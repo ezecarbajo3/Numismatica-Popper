@@ -799,6 +799,31 @@ button {
   display: block;
 }
 
+/* ─── "Nuevo" badge ──────────────────────────────────────────────────────── */
+/* Píldora dorada en la esquina superior izquierda de la foto. Aparece durante
+   los primeros días desde publishedAt (ver NEW_BADGE_DAYS en script.js). */
+
+.new-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 6; /* sobre las flechas del carrusel (4), debajo del ribbon (10) */
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #d9bd7e 0%, #c9a227 100%);
+  color: #14100a;
+  font-family: "Cinzel", serif;
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  user-select: none;
+}
+
 /* ─── Sold state ─────────────────────────────────────────────────────────── */
 
 .coin-card.is-sold {
@@ -1556,6 +1581,13 @@ button {
 
   .coin-grade-badge {
     font-size: 0.78rem; /* 0.65rem × 1.2 */
+  }
+
+  .new-badge {
+    font-size: 0.66rem;
+    padding: 4px 10px;
+    top: 8px;
+    left: 8px;
   }
 
   .card-arrow {

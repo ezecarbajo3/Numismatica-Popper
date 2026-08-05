@@ -219,6 +219,25 @@ function getGroupMemberCount(groupId) {
   return allCoins.filter(c => c.group_id === groupId && c.status !== 'sold').length;
 }
 
+// ── Badge "NUEVO" ───────────────────────────────────────────────────────────
+// Una moneda se considera nueva durante NEW_BADGE_DAYS días desde publishedAt.
+// Sin publishedAt (todo el catálogo viejo) no lleva badge, y el badge se apaga
+// solo al vencer la ventana — no hay nada que limpiar a mano.
+const NEW_BADGE_DAYS = 7;
+
+function isNewCoin(coin) {
+  if (!coin || !coin.publishedAt) return false;
+  if (coin.status === 'sold') return false; // el ribbon VENDIDO manda
+  const ts = Date.parse(coin.publishedAt);
+  if (Number.isNaN(ts)) return false;
+  return (Date.now() - ts) < NEW_BADGE_DAYS * 86400000;
+}
+
+// Un grupo se marca como nuevo si cualquiera de sus variantes activas lo es.
+function isNewGroup(groupId) {
+  return allCoins.some(c => c.group_id === groupId && isNewCoin(c));
+}
+
 const CATEGORY_PREDICATES = {
   plata:           isInvestment,
   inversion:       isInvestment,      // kept for sessionStorage backwards compat
@@ -843,6 +862,14 @@ function renderCoins(coins, skipAnimation = false) {
       price.textContent = 'VENDIDO';
       price.classList.add('is-sold-price');
       price.style.display = 'block';
+    }
+
+    // ── Badge "NUEVO" ─────────────────────────────────────────────────────────
+    if (coin.group_id ? isNewGroup(coin.group_id) : isNewCoin(coin)) {
+      const newTag = document.createElement('span');
+      newTag.className = 'new-badge';
+      newTag.textContent = 'Nuevo';
+      imageWrap.appendChild(newTag);
     }
 
     // ── Inline image carousel ─────────────────────────────────────────────────
