@@ -14251,7 +14251,7 @@
     "metal": "Bronce",
     "year": 1924,
     "price": "4.5 USD",
-    "costo": 0.7,
+    "costo": 0.0,
     "images": [
       "images/1023A.jpeg",
       "images/1023B.jpeg"
@@ -14269,7 +14269,7 @@
     "metal": "Bronce",
     "year": 1952,
     "price": "3.5 USD",
-    "costo": 0.58,
+    "costo": 0.0,
     "images": [
       "images/1024A.jpeg",
       "images/1024B.jpeg"
@@ -14289,7 +14289,7 @@
     "metal": "Bronce",
     "year": 1923,
     "price": "5 USD",
-    "costo": 0.58,
+    "costo": 0.0,
     "images": [
       "images/1025A.jpeg",
       "images/1025B.jpeg"
@@ -14367,7 +14367,7 @@
     "metal": "Bronce",
     "year": 1920,
     "price": "6 USD",
-    "costo": 1.17,
+    "costo": 0.0,
     "images": [
       "images/1029A.jpeg",
       "images/1029B.jpeg"
@@ -14537,7 +14537,7 @@
     "metal": "Cobre",
     "year": 1905,
     "price": "4 USD",
-    "costo": 2.34,
+    "costo": 1.17,
     "images": [
       "images/1038A.jpeg",
       "images/1038B.jpeg"
@@ -14557,7 +14557,7 @@
     "metal": "Cobre",
     "year": 1909,
     "price": "4 USD",
-    "costo": 2.34,
+    "costo": 1.17,
     "images": [
       "images/1039A.jpeg",
       "images/1039B.jpeg"
@@ -14577,7 +14577,7 @@
     "metal": "Aluminio",
     "year": 1959,
     "price": "11 USD",
-    "costo": 2.34,
+    "costo": 1.17,
     "images": [
       "images/1040A.jpeg",
       "images/1040B.jpeg"
@@ -14597,7 +14597,7 @@
     "metal": "Cuproníquel",
     "year": 1996,
     "price": "5 USD",
-    "costo": 2.34,
+    "costo": 1.17,
     "images": [
       "images/1041A.jpeg",
       "images/1041B.jpeg"
@@ -14615,7 +14615,7 @@
     "metal": "Aluminio",
     "year": 1975,
     "price": "4.5 USD",
-    "costo": 2.34,
+    "costo": 1.17,
     "images": [
       "images/1042A.jpeg",
       "images/1042B.jpeg"
