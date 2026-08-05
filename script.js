@@ -239,6 +239,10 @@ function isNewGroup(groupId) {
 }
 
 const CATEGORY_PREDICATES = {
+  // "Ingresos" = lo publicado en los últimos NEW_BADGE_DAYS días. Misma regla que
+  // el badge "NUEVO" de la grilla (ver renderCoins), así el filtro y el badge
+  // nunca se contradicen.
+  ingresos:        (c) => (c.group_id ? isNewGroup(c.group_id) : isNewCoin(c)),
   plata:           isInvestment,
   inversion:       isInvestment,      // kept for sessionStorage backwards compat
   argentina:       isArgentinaCoin,
@@ -605,6 +609,61 @@ function getFilteredCoins() {
 
     return true;
   });
+}
+
+// ─── Contadores de la portada ─────────────────────────────────────────────────
+
+/**
+ * Cuenta las piezas tal como se van a ver en la grilla: descarta ocultas y
+ * vendidas vencidas, aplica el predicado de categoría (o la exclusión por
+ * defecto de libros y medallas cuando no hay categoría) y colapsa los grupos,
+ * igual que renderCoins. Sin el colapso el número de la portada no coincidiría
+ * con el de la barra de resultados.
+ */
+function countLandingCoins(predicate) {
+  const pool = allCoins.filter((coin) => {
+    if (coin.hidden) return false;
+    if (isSoldExpired(coin)) return false;
+    if (predicate) return predicate(coin);
+    return !isBook(coin) && !isMedalOrToken(coin);
+  });
+  return collapseGroups(pool).length;
+}
+
+/** Escribe las cifras vivas de la portada. Se llama recién con allCoins cargado. */
+function hydrateLandingStats() {
+  const total    = countLandingCoins(null);
+  const ingresos = countLandingCoins(CATEGORY_PREDICATES.ingresos);
+
+  const setCount = (id, n) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.textContent = n;
+    el.hidden = n === 0;
+  };
+
+  setCount('countAll', total);
+  setCount('countIngresos', ingresos);
+
+  const statPieces = document.getElementById('statPieces');
+  if (statPieces && total > 0) {
+    statPieces.textContent = `${total} piezas en catálogo`;
+    statPieces.hidden = false;
+  }
+
+  const statNew = document.getElementById('statNew');
+  if (statNew && ingresos > 0) {
+    statNew.textContent = ingresos === 1
+      ? '1 ingreso esta semana'
+      : `${ingresos} ingresos esta semana`;
+    statNew.hidden = false;
+  }
+
+  // Regla del proyecto: nunca ofrecer un filtro que lleva a una grilla vacía.
+  const landingIngresos = document.getElementById('landingIngresos');
+  const catIngresos     = document.getElementById('catIngresos');
+  if (landingIngresos) landingIngresos.hidden = ingresos === 0;
+  if (catIngresos)     catIngresos.hidden     = ingresos === 0;
 }
 
 // ─── Rendering ────────────────────────────────────────────────────────────────
@@ -1101,6 +1160,8 @@ if (logoLink) {
 
 loadCoins().then((ok) => {
   if (!ok) return;
+
+  hydrateLandingStats();
 
   const isBackFwd = isBackForwardNavigation();
   const state     = loadSavedState();
