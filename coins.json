@@ -2031,7 +2031,9 @@
     "mintage": "",
     "reference": "KM# 128",
     "group_id": "be-franco-km128",
-    "group_label": "Franco"
+    "group_label": "Franco",
+    "status": "sold",
+    "soldAt": "2026-08-05T06:49:44.735447+00:00"
   },
   {
     "id": 226,
@@ -3621,7 +3623,9 @@
     "metal": "Latón de manganeso sobre cobre",
     "reference": "KM# 502",
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "status": "sold",
+    "soldAt": "2026-08-05T06:49:44.735599+00:00"
   },
   {
     "id": 375,
@@ -3639,7 +3643,9 @@
     "metal": "Latón de manganeso sobre cobre",
     "reference": "KM# 451",
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "status": "sold",
+    "soldAt": "2026-08-05T06:49:44.735601+00:00"
   },
   {
     "id": 376,
@@ -3691,7 +3697,9 @@
     "metal": "Latón de manganeso sobre cobre",
     "reference": "KM# 401",
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "status": "sold",
+    "soldAt": "2026-08-05T06:49:44.735603+00:00"
   },
   {
     "id": 380,
@@ -3709,7 +3717,9 @@
     "metal": "Latón de manganeso sobre cobre",
     "reference": "KM# 501",
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "status": "sold",
+    "soldAt": "2026-08-05T06:49:44.735604+00:00"
   },
   {
     "id": 381,
@@ -3727,7 +3737,9 @@
     "metal": "Latón de manganeso sobre cobre",
     "reference": "KM# 499",
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "status": "sold",
+    "soldAt": "2026-08-05T06:49:44.735605+00:00"
   },
   {
     "id": 382,
