@@ -14414,5 +14414,24 @@
     "mintage": 15000000,
     "cantidad": 2,
     "description": ""
+  },
+  {
+    "id": 1032,
+    "title": "50 Francos 1977",
+    "country": "Ruanda",
+    "metal": "Latón",
+    "year": 1977,
+    "price": "8 USD",
+    "costo": 2.34,
+    "images": [
+      "images/1032A.jpeg",
+      "images/1032B.jpeg"
+    ],
+    "reference": "KM# 16",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": 9000000,
+    "cantidad": 3,
+    "description": ""
   }
 ]
