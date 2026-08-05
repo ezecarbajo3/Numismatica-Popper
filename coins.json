@@ -14394,7 +14394,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": 10002000,
-    "description": "Raro"
+    "description": "Raro",
+    "group_id": "congo-belga-1-franco",
+    "group_label": "1 Franco"
   },
   {
     "id": 1031,
@@ -14452,5 +14454,157 @@
     "mintage": 7414000,
     "commemorates": "Bodas de Plata de la Reina Isabel II y el Príncipe Felipe",
     "description": "Conmemora las Bodas de Plata de la Reina Isabel II y el Príncipe Felipe."
+  },
+  {
+    "id": 1034,
+    "title": "5 Chetrums 1975",
+    "country": "Bután",
+    "metal": "Aluminio",
+    "year": 1975,
+    "price": "8 USD",
+    "costo": 2.34,
+    "images": [
+      "images/1034A.jpeg",
+      "images/1034B.jpeg"
+    ],
+    "reference": "KM# 37",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "description": "Moneda cuadrada con esquinas redondeadas. Rueda del Dharma (Dharmachakra). Rombo"
+  },
+  {
+    "id": 1035,
+    "title": "1 Franco 1995",
+    "country": "Francia",
+    "metal": "Níquel",
+    "year": 1995,
+    "price": "5 USD",
+    "costo": 2.34,
+    "images": [
+      "images/1035A.jpeg",
+      "images/1035B.jpeg"
+    ],
+    "reference": "KM# 1133",
+    "grade": "Sin Circular -",
+    "grade_short": "SC-",
+    "mintage": 4976000,
+    "description": "Bicentenario del Instituto de Francia. Año único, no tan común"
+  },
+  {
+    "id": 1036,
+    "title": "1 Pingin 1943",
+    "country": "Irlanda",
+    "metal": "Bronce",
+    "year": 1943,
+    "price": "4 USD",
+    "costo": 0.0,
+    "images": [
+      "images/1036A.jpeg",
+      "images/1036B.jpeg"
+    ],
+    "reference": "KM# 11",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 3360000,
+    "description": "Gallina con pollitos. No tan común"
+  },
+  {
+    "id": 1037,
+    "title": "2 Centimes 1911",
+    "country": "Bélgica",
+    "metal": "Cobre",
+    "year": 1911,
+    "price": "4 USD",
+    "costo": 0.0,
+    "images": [
+      "images/1037A.jpeg",
+      "images/1037B.jpeg"
+    ],
+    "reference": "KM# 65",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": 6441000,
+    "description": "",
+    "group_id": "be-2centimes",
+    "group_label": "2 Centimes"
+  },
+  {
+    "id": 1038,
+    "title": "2 Centimes 1905",
+    "country": "Bélgica",
+    "metal": "Cobre",
+    "year": 1905,
+    "price": "4 USD",
+    "costo": 2.34,
+    "images": [
+      "images/1038A.jpeg",
+      "images/1038B.jpeg"
+    ],
+    "reference": "KM# 35.1",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 4981000,
+    "description": "",
+    "group_id": "be-2centimes",
+    "group_label": "2 Centimes"
+  },
+  {
+    "id": 1039,
+    "title": "2 Centimes 1909",
+    "country": "Bélgica",
+    "metal": "Cobre",
+    "year": 1909,
+    "price": "4 USD",
+    "costo": 2.34,
+    "images": [
+      "images/1039A.jpeg",
+      "images/1039B.jpeg"
+    ],
+    "reference": "KM# 35.1",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 4983000,
+    "description": "",
+    "group_id": "be-2centimes",
+    "group_label": "2 Centimes"
+  },
+  {
+    "id": 1040,
+    "title": "1 Franco 1959",
+    "country": "Congo Belga y Ruanda-Urundi",
+    "metal": "Aluminio",
+    "year": 1959,
+    "price": "11 USD",
+    "costo": 2.34,
+    "images": [
+      "images/1040A.jpeg",
+      "images/1040B.jpeg"
+    ],
+    "reference": "KM# 4",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "mintage": 20000000,
+    "description": "",
+    "group_id": "congo-belga-1-franco",
+    "group_label": "1 Franco"
+  },
+  {
+    "id": 1041,
+    "title": "50 Cents 1996",
+    "country": "Chipre",
+    "metal": "Cuproníquel",
+    "year": 1996,
+    "price": "4 USD",
+    "costo": 0.0,
+    "images": [
+      "images/1041A.jpeg",
+      "images/1041B.jpeg"
+    ],
+    "reference": "KM# 66",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 6000000,
+    "description": "Rapto de Europa: famoso mito de la mitología griega. En este relato, el dios Zeus se convierte en un toro blanco para acercarse a la princesa fenicia Europa, quien luego sube a su lomo y es llevada por la fuerza a la isla de Creta."
   }
 ]
