@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+/* Varios controles usan display:flex, que le gana al atributo `hidden`.
+   Los contadores y el botón "Ingresos" dependen de que hidden funcione. */
+[hidden] {
+  display: none !important;
+}
+
 :root {
   --bg: #0a0a0a;
   --bg-card: #1a1a1a;
@@ -1691,46 +1697,15 @@ button {
     margin: 0.6rem 0;
   }
 
-  /* ── Item 3: +20% font-size + fix layout 2 columnas ── */
-
-  /* 1. Sin scroll horizontal en toda la página */
+  /* Sin scroll horizontal en toda la página */
   html, body {
     overflow-x: hidden;
     max-width: 100vw;
   }
 
-  /* 2. Grid 2 columnas → 3 filas de 2 recuadros */
-  .landing-nav {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.4rem;
-    padding: 0 0.4rem;
-  }
-
-  /* 3. Botones: igual ancho, misma altura, sin guiones */
-  .landing-btn {
-    width: 100%;
-    aspect-ratio: auto;
-    height: 5.5rem;
-    padding: 10px 0.5rem;
-    box-sizing: border-box;
-    white-space: normal;
-    overflow-wrap: normal;
-    word-break: normal;
-  }
-
-  /* 4. Font-size de las 6 categorías */
-  .landing-btn:not(.landing-btn--all) {
-    font-size: 0.78rem;
-    letter-spacing: 0.03em;
-  }
-
-  /* 5. "Ver todas" sigue en fila completa, sin altura forzada */
-  .landing-btn--all {
-    height: auto;
-    min-height: auto;
-    padding: 1rem 1.4rem;
-    aspect-ratio: auto;
-  }
+  /* Las reglas responsive de la portada viven junto a su bloque base, más
+     abajo. Estaban acá y no se aplicaban: el bloque base las pisaba por venir
+     después en el archivo (las media queries no suman especificidad). */
 }
 
 /* ─── Desktop: section & subsection title size boost ────────────────────── */
@@ -1754,33 +1729,7 @@ button {
     font-size: clamp(2.08rem, 4.62vw, 4rem); /* clamp original × 0.70 */
   }
 
-  /* ── 2 & 3. Landing: 6 recuadros en una sola fila ── */
-  .landing-inner {
-    width: min(100%, 1140px); /* expandir contenedor para ocupar el ancho */
-  }
-
-  .landing-nav {
-    grid-template-columns: repeat(6, 1fr); /* una fila de 6 columnas */
-    gap: 1rem;
-  }
-
-  /* "Ver todas" ya tiene grid-column:1/-1 → ocupa los 6 slots */
-
-  /* ── 2. Font-size +50% en los 6 recuadros de categoría ── */
-  .landing-btn:not(.landing-btn--all) {
-    font-size: 1.425rem; /* 0.95rem × 1.50 */
-    aspect-ratio: auto;  /* sin ratio forzado → altura definida por contenido */
-    min-height: 7rem;    /* altura mínima elegante para todos los recuadros */
-    padding: 1.25rem 0.75rem;
-    box-sizing: border-box;
-    overflow-wrap: break-word;
-    word-break: break-word;
-  }
-
-  /* ── 3a. "¿Qué estás buscando?" +20% ── */
-  .landing-heading {
-    font-size: 0.936rem; /* 0.78rem × 1.20 */
-  }
+  /* Las reglas de la portada se movieron junto a su bloque base, más abajo. */
 
   /* ── 3b. Ticker: contenedor +10% y fuente +10% ── */
   .ticker-bar {
@@ -1791,12 +1740,6 @@ button {
     font-size: 0.792rem; /* 0.72rem × 1.10 */
   }
 
-  /* ── 3c. Reducir espacio vertical entre ticker y heading ── */
-  .landing-screen {
-    align-items: flex-start; /* contenido arriba, sin centrado vertical */
-    padding-top: 1.25rem;    /* mucho menos que el 2rem por defecto */
-    min-height: auto;        /* quitar el alto mínimo que generaba el gap */
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1804,7 +1747,9 @@ button {
     scroll-behavior: auto;
   }
 
-  .ticker-track {
+  .ticker-track,
+  .ingresos-dot,
+  .landing-btn--all::after {
     animation: none !important;
   }
 
@@ -1873,6 +1818,59 @@ body[data-view="catalog"] #catalog {
   gap: 0.75rem;
 }
 
+/* ── Ornamento del hero: filete dorado con rombo al centro ── */
+
+.hero-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  margin: 0 0 0.9rem;
+}
+
+.hero-ornament__rule {
+  flex: 1 1 0;
+  max-width: 190px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(207, 172, 107, 0.45));
+}
+
+.hero-ornament__rule:last-child {
+  background: linear-gradient(90deg, rgba(207, 172, 107, 0.45), transparent);
+}
+
+.hero-ornament__gem {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  transform: rotate(45deg);
+  background: linear-gradient(135deg, #efd9a2, #a8844a);
+}
+
+/* ── Franja de credibilidad ── */
+
+.landing-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem 0.9rem;
+  margin: 0 0 1.4rem;
+  font-family: "Cinzel", serif;
+  font-size: 0.66rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(207, 172, 107, 0.58);
+}
+
+/* Separador "·" entre segmentos, saltando los que quedan ocultos */
+.landing-stats__item + .landing-stats__item:not([hidden])::before {
+  content: "·";
+  margin-right: 0.9rem;
+  color: rgba(207, 172, 107, 0.32);
+}
+
 .landing-heading {
   font-family: "Cinzel", serif;
   font-size: 0.78rem;
@@ -1890,14 +1888,19 @@ body[data-view="catalog"] #catalog {
   gap: 0.65rem;
 }
 
+/* ── Nivel 3: tarjetas de categoría ── */
+
 .landing-btn {
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.55rem;
   aspect-ratio: 1;
   padding: 0.75rem;
-  background: rgba(207, 172, 107, 0.04);
-  border: 1px solid rgba(207, 172, 107, 0.22);
+  background: linear-gradient(180deg, rgba(207, 172, 107, 0.055) 0%, rgba(207, 172, 107, 0.015) 100%);
+  border: 1px solid rgba(207, 172, 107, 0.2);
   border-radius: var(--radius);
   color: rgba(239, 217, 162, 0.82);
   font-family: "Cinzel", serif;
@@ -1907,133 +1910,389 @@ body[data-view="catalog"] #catalog {
   cursor: pointer;
   letter-spacing: 0.06em;
   line-height: 1.3;
+  overflow: hidden;
+}
+
+.landing-btn__icon {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+  color: rgba(207, 172, 107, 0.55);
+  transition: color 0.22s ease, transform 0.22s ease;
+}
+
+.landing-btn__label {
+  display: block;
 }
 
 .landing-btn:hover,
 .landing-btn:focus-visible {
-  background: rgba(207, 172, 107, 0.1);
+  background: linear-gradient(180deg, rgba(207, 172, 107, 0.13) 0%, rgba(207, 172, 107, 0.04) 100%);
   border-color: rgba(207, 172, 107, 0.5);
   color: var(--accent-light);
-  box-shadow: 0 0 20px rgba(207, 172, 107, 0.08);
+  box-shadow: 0 0 24px rgba(207, 172, 107, 0.1);
   outline: none;
+}
+
+.landing-btn:hover .landing-btn__icon,
+.landing-btn:focus-visible .landing-btn__icon {
+  color: var(--accent-light);
+  transform: translateY(-2px);
 }
 
 .landing-btn:active {
   transform: scale(0.98);
 }
 
+/* ── Nivel 1: CTA principal ── */
+
 .landing-btn--all {
   grid-column: 1 / -1;
-  order: -1;
+  order: -2;
+  flex-direction: row;
+  gap: 0.9rem;
   aspect-ratio: auto;
-  padding: 1rem 1.4rem;
+  padding: 1.15rem 1.4rem;
   font-size: 1.32rem;
   background: linear-gradient(135deg, #efd9a2 0%, #cfac6b 50%, #a8844a 100%);
   border-color: transparent;
   color: #1a1000;
   font-weight: 700;
   letter-spacing: 0.14em;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(239, 217, 162, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Barrido de brillo en hover */
+.landing-btn--all::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 45%;
+  height: 200%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  transform: skewX(-20deg);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.landing-btn--all:hover::after,
+.landing-btn--all:focus-visible::after {
+  animation: cta-shine 0.85s ease-out;
+}
+
+@keyframes cta-shine {
+  0%   { left: -75%; opacity: 0; }
+  15%  { opacity: 1; }
+  100% { left: 130%; opacity: 0; }
 }
 
 .landing-btn--all:hover,
 .landing-btn--all:focus-visible {
-  filter: brightness(1.08);
+  filter: brightness(1.06);
   border-color: transparent;
   color: #1a1000;
-  box-shadow: 0 8px 28px rgba(207, 172, 107, 0.28);
+  transform: translateY(-1px);
+  box-shadow:
+    0 14px 38px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(239, 217, 162, 0.5),
+    0 0 34px rgba(207, 172, 107, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
-@media (max-width: 480px) {
+/* ── Nivel 2: Ingresos ── */
+
+.landing-btn--ingresos {
+  grid-column: 1 / -1;
+  order: -1;
+  flex-direction: row;
+  gap: 0.6rem;
+  aspect-ratio: auto;
+  padding: 0.85rem 1.25rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: rgba(207, 172, 107, 0.035);
+  border-color: rgba(207, 172, 107, 0.38);
+  color: var(--accent-light);
+}
+
+.landing-btn--ingresos:hover,
+.landing-btn--ingresos:focus-visible {
+  background: rgba(207, 172, 107, 0.09);
+  border-color: rgba(207, 172, 107, 0.68);
+}
+
+.landing-btn__note {
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  color: rgba(207, 172, 107, 0.5);
+}
+
+.ingresos-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--accent-light);
+  animation: ingresos-pulse 2.2s ease-out infinite;
+}
+
+@keyframes ingresos-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(239, 217, 162, 0.5); }
+  70%  { box-shadow: 0 0 0 7px rgba(239, 217, 162, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(239, 217, 162, 0); }
+}
+
+/* ── Contadores ── */
+
+.landing-count {
+  flex: 0 0 auto;
+  padding: 0.18em 0.7em;
+  border-radius: 999px;
+  border: 1px solid rgba(207, 172, 107, 0.4);
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent-light);
+  line-height: 1.6;
+}
+
+.landing-count--solid {
+  border-color: rgba(26, 16, 0, 0.28);
+  background: rgba(26, 16, 0, 0.16);
+  color: #1a1000;
+}
+
+/* ── Redes sociales ── */
+
+.landing-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.landing-social__label {
+  font-family: "Cinzel", serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(207, 172, 107, 0.42);
+}
+
+.social-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.social-row--footer {
+  margin-top: 6px;
+}
+
+/* En la portada las redes ya están arriba del footer: mostrarlas dos veces
+   seguidas queda redundante. En el catálogo y en la ficha sí se muestran. */
+body[data-view="landing"] .social-row--footer {
+  display: none;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(207, 172, 107, 0.28);
+  background: rgba(207, 172, 107, 0.04);
+  color: rgba(207, 172, 107, 0.72);
+  text-decoration: none;
+  transition:
+    color 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease,
+    transform 0.22s ease;
+}
+
+.social-btn svg {
+  width: 19px;
+  height: 19px;
+}
+
+.social-btn:hover,
+.social-btn:focus-visible {
+  color: var(--accent-light);
+  border-color: rgba(207, 172, 107, 0.6);
+  background: rgba(207, 172, 107, 0.1);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* ─── Portada: responsive ────────────────────────────────────────────────────
+   Estos bloques van DESPUÉS del base a propósito. Las media queries no suman
+   especificidad, así que si el base viniera después las pisaría (es lo que
+   pasaba antes: la grilla de 2 columnas en mobile nunca se aplicaba).
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* ── Teléfonos: 2 columnas ── */
+@media (max-width: 640px) {
   .landing-screen {
     min-height: calc(100svh - 160px);
     align-items: flex-start;
-    padding-top: 1.5rem;
+    padding-top: 1.25rem;
   }
 
-  .landing-btn {
-    font-size: 1rem;
-    padding: 0.6rem;
+  .landing-nav {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .landing-btn:not(.landing-btn--all):not(.landing-btn--ingresos) {
+    aspect-ratio: auto;
+    height: 6.6rem;
+    padding: 0.6rem 0.5rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+  }
+
+  .landing-btn__icon {
+    width: 23px;
+    height: 23px;
+  }
+
+  .landing-btn--all,
+  .landing-btn--ingresos {
+    height: auto;
   }
 
   .landing-btn--all {
-    font-size: 1.56rem;
-    padding: 0.9rem 1rem;
+    font-size: 1.12rem;
+    letter-spacing: 0.1em;
+    padding: 0.95rem 1.1rem;
+  }
+
+  .landing-btn--ingresos {
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    padding: 0.78rem 1rem;
+  }
+
+  /* El aclarador sobra en pantalla chica: el contador ya explica el botón */
+  .landing-btn__note {
+    display: none;
+  }
+
+  .landing-stats {
+    font-size: 0.58rem;
+    letter-spacing: 0.14em;
+    gap: 0.3rem 0.65rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .landing-stats__item + .landing-stats__item:not([hidden])::before {
+    margin-right: 0.65rem;
+  }
+
+  .hero-ornament__rule {
+    max-width: 90px;
+  }
+
+  .social-btn {
+    width: 38px;
+    height: 38px;
   }
 }
 
-/* ─── Desktop: landing layout adjustments ───────────────────────────────── */
+/* ── Tablet: 3 columnas ── */
+@media (min-width: 641px) and (max-width: 980px) {
+  /* Esta banda no tenía override de tamaño: el clamp base desbordaba el ancho
+     y el logotipo se cortaba de costado. */
+  .site-header h1 {
+    font-size: clamp(1.9rem, 5.4vw, 2.9rem);
+  }
 
-@media (min-width: 481px) {
-  /* 1. Bring content closer to the ticker (reduce top space) */
   .landing-screen {
     min-height: calc(100svh - 220px);
     align-items: flex-start;
     padding-top: 1.25rem;
   }
 
-  /* 2. Widen the button grid so long labels fit on one line */
   .landing-inner {
-    width: min(100%, 660px);
+    width: min(100%, 680px);
   }
 
-  .landing-btn {
+  .landing-btn:not(.landing-btn--all):not(.landing-btn--ingresos) {
     aspect-ratio: auto;
-    padding: 1.1rem 0.75rem;
-    min-height: 80px;
-    font-size: 1.15rem;
-    white-space: nowrap;
+    min-height: 120px;
+    padding: 1.15rem 0.75rem;
+    font-size: 1.05rem;
+  }
+
+  .landing-btn--all {
+    font-size: 1.4rem;
   }
 }
 
-/* ─── Económicas: golden accent for cat-btn and landing-btn ─────────────── */
+/* ── Desktop: las 6 categorías en una sola fila ── */
+@media (min-width: 981px) {
+  .landing-screen {
+    align-items: flex-start;
+    padding-top: 1.5rem;
+    min-height: auto;
+  }
 
-.cat-btn--economicas {
-  background: linear-gradient(135deg, #efd9a2 0%, #cfac6b 50%, #a8844a 100%);
-  border-color: transparent;
-  color: #1a1000;
-  font-weight: 700;
-  letter-spacing: 0.14em;
+  .landing-inner {
+    width: min(100%, 1140px);
+  }
+
+  .landing-nav {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.85rem;
+  }
+
+  .landing-btn:not(.landing-btn--all):not(.landing-btn--ingresos) {
+    aspect-ratio: auto;
+    min-height: 8.6rem;
+    padding: 1.4rem 0.4rem;
+    gap: 0.9rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em; /* justo para que "Medallas / Libros" entre en una línea */
+    overflow-wrap: break-word;
+  }
+
+  .landing-btn__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .landing-btn--all {
+    font-size: 1.55rem;
+    padding: 1.35rem 1.75rem;
+  }
+
+  .landing-btn--ingresos {
+    font-size: 1.02rem;
+    padding: 0.95rem 1.75rem;
+  }
+
+  .landing-heading {
+    font-size: 0.936rem;
+  }
 }
 
-.cat-btn--economicas:hover {
-  filter: brightness(1.08);
-  border-color: transparent;
-  color: #1a1000;
-  transform: none;
-  box-shadow: 0 8px 28px rgba(207, 172, 107, 0.28);
-}
+/* ─── Desktop: landing layout adjustments ───────────────────────────────── */
 
-.cat-btn--economicas.is-active {
-  background: linear-gradient(135deg, #efd9a2 0%, #cfac6b 50%, #a8844a 100%);
-  border-color: transparent;
-  color: #1a1000;
-  font-weight: 700;
-  box-shadow:
-    0 0 20px rgba(207, 172, 107, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-.cat-btn--economicas.is-active:hover {
-  transform: none;
-  filter: brightness(1.08);
-}
-
-.landing-btn--economicas {
-  background: linear-gradient(135deg, #efd9a2 0%, #cfac6b 50%, #a8844a 100%);
-  border-color: transparent;
-  color: #1a1000;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-}
-
-.landing-btn--economicas:hover,
-.landing-btn--economicas:focus-visible {
-  filter: brightness(1.08);
-  border-color: transparent;
-  color: #1a1000;
-  outline: none;
-  box-shadow: 0 8px 28px rgba(207, 172, 107, 0.28);
-}
+/* Económicas ya no lleva acento dorado: el único elemento en oro sólido es el
+   CTA principal "Ver todas las monedas". */
 
 /* ─── Variant switcher (detail page) ────────────────────────────────────── */
 
@@ -2250,13 +2509,3 @@ body[data-view="catalog"] #catalog {
 
 /* ─── Mobile refinements ──────────────────────────────────────────────────── */
 
-@media (max-width: 480px) {
-  .landing-btn:not(.landing-btn--all) {
-    font-size: 0.78rem;
-  }
-
-  .landing-btn--all {
-    font-size: 1.08rem;
-    letter-spacing: 0.1em;
-  }
-}
