@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" href="images/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="styles.css?v=20260806d" />
+  <link rel="stylesheet" href="styles.css?v=20260807a" />
 </head>
 <body data-view="landing">
   <header class="site-header">
@@ -30,7 +30,7 @@
           <circle cx="40" cy="40" r="31" fill="none" stroke="url(#np-gold)" stroke-width="0.5" stroke-dasharray="2.5 3.5" opacity="0.6"/>
           <text x="40" y="48" text-anchor="middle" fill="url(#np-gold)" font-family="Cinzel, Georgia, serif" font-size="24" font-weight="600" letter-spacing="3">NP</text>
         </svg>
-        <h1><span class="h1-numismatica">Numismática</span><span class="h1-popper">Popper</span></h1>
+        <h1><span class="h1-numismatica">Numismática</span>&nbsp;&nbsp;<span class="h1-popper">Popper</span></h1>
       </a>
       <p class="subtitle">Aumentando tu colección desde 2020</p>
     </div>
@@ -63,7 +63,12 @@
       <!-- Ingresos: divisor con filetes. Se oculta si esta semana no entró nada. -->
       <button type="button" class="landing-divider" id="landingIngresos" data-landing-category="ingresos" hidden>
         <span class="landing-divider__rule" aria-hidden="true"></span>
-        <span class="landing-divider__label">Ingresos semanales</span>
+        <span class="landing-chip">
+          <span class="landing-chip__label">Ingresos semanales</span>
+          <svg class="landing-chip__arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 8h9M8.5 4.5L12 8l-3.5 3.5"/>
+          </svg>
+        </span>
         <span class="landing-divider__rule" aria-hidden="true"></span>
       </button>
 
@@ -217,7 +222,7 @@
     </article>
   </template>
 
-  <script src="script.js?v=20260806d"></script>
+  <script src="script.js?v=20260807a"></script>
 
   <footer class="site-footer" aria-label="Pie de página">
     <div class="footer-inner">
