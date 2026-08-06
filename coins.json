@@ -14852,5 +14852,57 @@
     "group_label": "25 Centimes",
     "mintage": 500,
     "costo": 0.585
+  },
+  {
+    "id": 1051,
+    "title": "50 Reichspfennig",
+    "country": "Alemania",
+    "metal": "Níquel",
+    "year": 1935,
+    "price": "6 USD",
+    "images": [
+      "images/1051A.jpeg",
+      "images/1051B.jpeg"
+    ],
+    "reference": "KM# 49",
+    "grade": "Muy Buena",
+    "grade_short": "MB",
+    "description": "Imperio Aleman",
+    "publishedAt": "2026-08-06T21:38:02.578547+00:00"
+  },
+  {
+    "id": 1052,
+    "title": "5 Kuruş",
+    "country": "Turquía",
+    "metal": "Aluminio",
+    "year": 1975,
+    "price": "7 USD",
+    "images": [
+      "images/1052A.jpeg",
+      "images/1052B.jpeg"
+    ],
+    "reference": "KM# 906",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "",
+    "publishedAt": "2026-08-06T21:38:02.578547+00:00",
+    "mintage": 690000
+  },
+  {
+    "id": 1053,
+    "title": "50 Francs",
+    "country": "Argelia",
+    "metal": "Cuproníquel",
+    "year": 1949,
+    "price": "9 USD",
+    "images": [
+      "images/1053A.jpeg",
+      "images/1053B.jpeg"
+    ],
+    "reference": "KM# 92",
+    "grade": "Muy Buena",
+    "grade_short": "MB",
+    "description": "Colonia Francesa",
+    "publishedAt": "2026-08-06T21:38:02.578547+00:00"
   }
 ]
