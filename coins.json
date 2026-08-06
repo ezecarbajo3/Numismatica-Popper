@@ -14703,7 +14703,9 @@
     "group_id": "be-5-francos",
     "group_label": "5 Francos",
     "mintage": 15200000,
-    "costo": 0.0
+    "costo": 0.0,
+    "status": "sold",
+    "soldAt": "2026-08-06T21:16:05.817937+00:00"
   },
   {
     "id": 1044,
@@ -14724,7 +14726,9 @@
     "group_id": "be-5-francos",
     "group_label": "5 Francos",
     "mintage": 15200000,
-    "costo": 0.0
+    "costo": 0.0,
+    "status": "sold",
+    "soldAt": "2026-08-06T21:16:05.818056+00:00"
   },
   {
     "id": 1045,
@@ -14743,7 +14747,9 @@
     "description": "Segunda Guerra Mundial",
     "publishedAt": "2026-08-06T20:46:25.046353+00:00",
     "mintage": 500000,
-    "costo": 0.0
+    "costo": 0.0,
+    "status": "sold",
+    "soldAt": "2026-08-06T21:16:05.818058+00:00"
   },
   {
     "id": 1046,
@@ -14761,7 +14767,9 @@
     "grade_short": "MB",
     "description": "Primera Guerra Mundial",
     "publishedAt": "2026-08-06T20:46:25.046353+00:00",
-    "costo": 0.0
+    "costo": 0.0,
+    "status": "sold",
+    "soldAt": "2026-08-06T21:16:05.818060+00:00"
   },
   {
     "id": 1047,
@@ -14797,7 +14805,9 @@
     "grade_short": "MB+",
     "description": "Segunda Guerra Mundial",
     "publishedAt": "2026-08-06T20:46:25.046353+00:00",
-    "costo": 0.0
+    "costo": 0.0,
+    "status": "sold",
+    "soldAt": "2026-08-06T21:16:05.818061+00:00"
   },
   {
     "id": 1049,
@@ -14818,7 +14828,9 @@
     "group_id": "lu-25-centimes",
     "group_label": "25 Centimes",
     "mintage": 4000000,
-    "costo": 0.0
+    "costo": 0.0,
+    "status": "sold",
+    "soldAt": "2026-08-06T21:16:05.818063+00:00"
   },
   {
     "id": 1050,
