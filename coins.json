@@ -14912,6 +14912,8 @@
     "grade": "Muy Buena",
     "grade_short": "MB",
     "description": "Colonia Francesa",
-    "publishedAt": "2026-08-06T21:38:02.578547+00:00"
+    "publishedAt": "2026-08-06T21:38:02.578547+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-06T22:01:06.054981+00:00"
   }
 ]
