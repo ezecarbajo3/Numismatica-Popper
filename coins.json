@@ -14419,7 +14419,9 @@
     "description": "Raro",
     "group_id": "congo-belga-1-franco",
     "group_label": "1 Franco",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-06T19:41:46.172361+00:00"
   },
   {
     "id": 1031,
@@ -14437,7 +14439,7 @@
     "grade": "Excelente-",
     "grade_short": "EX-",
     "mintage": 15000000,
-    "cantidad": 2,
+    "cantidad": 1,
     "description": "",
     "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
@@ -14457,7 +14459,7 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": 9000000,
-    "cantidad": 3,
+    "cantidad": 2,
     "description": "",
     "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
@@ -14498,7 +14500,9 @@
     "grade_short": "SC",
     "mintage": "",
     "description": "Moneda cuadrada con esquinas redondeadas. Rueda del Dharma (Dharmachakra). Rombo",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-06T19:41:46.174700+00:00"
   },
   {
     "id": 1035,
@@ -14639,7 +14643,9 @@
     "grade_short": "SC",
     "mintage": 6000000,
     "description": "Rapto de Europa: famoso mito de la mitología griega. En este relato, el dios Zeus se convierte en un toro blanco para acercarse a la princesa fenicia Europa, quien luego sube a su lomo y es llevada por la fuerza a la isla de Creta.",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-06T19:41:46.174704+00:00"
   },
   {
     "id": 1042,
@@ -14658,6 +14664,8 @@
     "grade_short": "SC",
     "mintage": 43000000,
     "description": "Conmemorativa FAO - Flor de algodón y Minar-e-Pakistan",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-06T19:41:46.174706+00:00"
   }
 ]
