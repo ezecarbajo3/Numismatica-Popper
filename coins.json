@@ -14895,7 +14895,9 @@
     "commemorates": "FAO - Planificación Familiar",
     "description": "",
     "publishedAt": "2026-08-06T21:38:02.578547+00:00",
-    "mintage": 690000
+    "mintage": 690000,
+    "status": "sold",
+    "soldAt": "2026-08-06T22:05:00.118059+00:00"
   },
   {
     "id": 1053,
