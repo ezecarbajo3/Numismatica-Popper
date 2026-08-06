@@ -14702,7 +14702,8 @@
     "publishedAt": "2026-08-06T20:46:25.046353+00:00",
     "group_id": "be-5-francos",
     "group_label": "5 Francos",
-    "mintage": 15200000
+    "mintage": 15200000,
+    "costo": 0.0
   },
   {
     "id": 1044,
@@ -14722,7 +14723,8 @@
     "publishedAt": "2026-08-06T20:46:25.046353+00:00",
     "group_id": "be-5-francos",
     "group_label": "5 Francos",
-    "mintage": 15200000
+    "mintage": 15200000,
+    "costo": 0.0
   },
   {
     "id": 1045,
@@ -14740,7 +14742,8 @@
     "grade_short": "MB+",
     "description": "Segunda Guerra Mundial",
     "publishedAt": "2026-08-06T20:46:25.046353+00:00",
-    "mintage": 500000
+    "mintage": 500000,
+    "costo": 0.0
   },
   {
     "id": 1046,
@@ -14757,7 +14760,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "description": "Primera Guerra Mundial",
-    "publishedAt": "2026-08-06T20:46:25.046353+00:00"
+    "publishedAt": "2026-08-06T20:46:25.046353+00:00",
+    "costo": 0.0
   },
   {
     "id": 1047,
@@ -14774,7 +14778,8 @@
     "grade": "Excelente con Detalles",
     "grade_short": "EX**",
     "description": "Segunda Guerra Mundial. Excelente detalles",
-    "publishedAt": "2026-08-06T20:46:25.046353+00:00"
+    "publishedAt": "2026-08-06T20:46:25.046353+00:00",
+    "costo": 0.0
   },
   {
     "id": 1048,
@@ -14791,7 +14796,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "description": "Segunda Guerra Mundial",
-    "publishedAt": "2026-08-06T20:46:25.046353+00:00"
+    "publishedAt": "2026-08-06T20:46:25.046353+00:00",
+    "costo": 0.0
   },
   {
     "id": 1049,
@@ -14811,7 +14817,8 @@
     "publishedAt": "2026-08-06T20:46:25.046353+00:00",
     "group_id": "lu-25-centimes",
     "group_label": "25 Centimes",
-    "mintage": 4000000
+    "mintage": 4000000,
+    "costo": 0.0
   },
   {
     "id": 1050,
@@ -14831,6 +14838,7 @@
     "publishedAt": "2026-08-06T20:46:25.046353+00:00",
     "group_id": "lu-25-centimes",
     "group_label": "25 Centimes",
-    "mintage": 500
+    "mintage": 500,
+    "costo": 0.0
   }
 ]
