@@ -147,6 +147,7 @@ input,
   text-transform: uppercase;
   font-family: "Cinzel", serif;
   font-weight: 400;
+  font-style: italic;
 }
 
 /* ─── Ticker banner ──────────────────────────────────────────────────────── */
@@ -1750,7 +1751,8 @@ button {
   }
 
   .ticker-track,
-  .landing-btn--all::after {
+  .landing-btn--all::after,
+  .landing-chip::after {
     animation: none !important;
   }
 
@@ -1981,7 +1983,7 @@ body[data-view="catalog"] #catalog {
   align-items: center;
   gap: 0.9rem;
   width: 100%;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.64rem; /* +15% de aire hasta los 6 botones */
   padding: 0.45rem 0;
   background: none;
   border: 0;
@@ -1999,8 +2001,43 @@ body[data-view="catalog"] #catalog {
   background: linear-gradient(90deg, rgba(207, 172, 107, 0.42), transparent);
 }
 
-.landing-divider__label {
+/* La cápsula es lo que convierte esto en algo que se lee como tocable:
+   forma cerrada + flecha + un aro que late hacia afuera cada 3,2 s. */
+.landing-chip {
+  position: relative;
   flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.5rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid rgba(207, 172, 107, 0.34);
+  background: rgba(207, 172, 107, 0.05);
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Aro que se expande y se desvanece: la señal de "tocame" */
+.landing-chip::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 999px;
+  border: 1px solid rgba(207, 172, 107, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  animation: chip-ripple 3.2s ease-out infinite;
+}
+
+@keyframes chip-ripple {
+  0%   { transform: scale(1);    opacity: 0.6; }
+  65%  { transform: scale(1.16); opacity: 0; }
+  100% { transform: scale(1.16); opacity: 0; }
+}
+
+.landing-chip__label {
   font-family: "Cinzel", serif;
   font-size: 1.07rem;
   font-weight: 400;
@@ -2011,9 +2048,41 @@ body[data-view="catalog"] #catalog {
   transition: color 0.25s ease;
 }
 
-.landing-divider:hover .landing-divider__label,
-.landing-divider:focus-visible .landing-divider__label {
+.landing-chip__arrow {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  color: rgba(207, 172, 107, 0.75);
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+/* Al interactuar ya hay feedback de sobra: el aro se apaga */
+.landing-divider:hover .landing-chip::after,
+.landing-divider:focus-visible .landing-chip::after {
+  animation: none;
+  opacity: 0;
+}
+
+.landing-divider:hover .landing-chip,
+.landing-divider:focus-visible .landing-chip {
+  border-color: rgba(207, 172, 107, 0.68);
+  background: rgba(207, 172, 107, 0.12);
+  box-shadow: 0 0 22px rgba(207, 172, 107, 0.14);
+}
+
+.landing-divider:hover .landing-chip__label,
+.landing-divider:focus-visible .landing-chip__label {
   color: var(--accent-light);
+}
+
+.landing-divider:hover .landing-chip__arrow,
+.landing-divider:focus-visible .landing-chip__arrow {
+  color: var(--accent-light);
+  transform: translateX(3px);
+}
+
+.landing-divider:active .landing-chip {
+  transform: scale(0.985);
 }
 
 .landing-divider:focus-visible {
@@ -2146,14 +2215,24 @@ body[data-view="landing"] .social-row--footer {
   }
 
   .landing-divider {
-    gap: 0.7rem;
-    margin-bottom: 0.4rem;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem; /* +15% de aire hasta los 6 botones */
     padding: 0.3rem 0;
   }
 
-  .landing-divider__label {
+  .landing-chip {
+    gap: 0.45rem;
+    padding: 0.42rem 0.9rem;
+  }
+
+  .landing-chip__label {
     font-size: 0.94rem;
     letter-spacing: 0.08em;
+  }
+
+  .landing-chip__arrow {
+    width: 13px;
+    height: 13px;
   }
 
   .landing-social {
@@ -2235,7 +2314,7 @@ body[data-view="landing"] .social-row--footer {
     padding: 1.25rem 1.75rem;
   }
 
-  .landing-divider__label {
+  .landing-chip__label {
     font-size: 0.99rem;
   }
 
