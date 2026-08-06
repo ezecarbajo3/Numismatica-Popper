@@ -14681,5 +14681,156 @@
     "publishedAt": "2026-08-05T22:52:23.735711+00:00",
     "status": "sold",
     "soldAt": "2026-08-06T19:41:46.174706+00:00"
+  },
+  {
+    "id": 1043,
+    "title": "5 Francos",
+    "country": "Bélgica",
+    "metal": "Bronce",
+    "year": 1941,
+    "price": "6 USD",
+    "images": [
+      "images/1043A.jpeg",
+      "images/1043B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "description": "Segunda Guerra Mundial",
+    "publishedAt": "2026-08-06T20:46:25.046353+00:00",
+    "group_id": "bé-5-francos",
+    "group_label": "5 Francos"
+  },
+  {
+    "id": 1044,
+    "title": "5 Francos",
+    "country": "Bélgica",
+    "metal": "Bronce",
+    "year": 1941,
+    "price": "6 USD",
+    "images": [
+      "images/1044A.jpeg",
+      "images/1044B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "description": "Segunda Guerra Mundial",
+    "publishedAt": "2026-08-06T20:46:25.046353+00:00",
+    "group_id": "bé-5-francos",
+    "group_label": "5 Francos"
+  },
+  {
+    "id": 1045,
+    "title": "1 Cent",
+    "country": "Países Bajos",
+    "metal": "Bronce",
+    "year": 1942,
+    "price": "4.5 USD",
+    "images": [
+      "images/1045A.jpeg",
+      "images/1045B.jpeg"
+    ],
+    "reference": "KM# 39a",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "description": "Segunda Guerra Mundial",
+    "publishedAt": "2026-08-06T20:46:25.046353+00:00",
+    "group_id": "nl-cent-1878-1884",
+    "group_label": "Cent 1878-1884",
+    "mintage": 500000
+  },
+  {
+    "id": 1046,
+    "title": "5 Centimes",
+    "country": "Bélgica",
+    "metal": "Zinc",
+    "year": 1916,
+    "price": "8 USD",
+    "images": [
+      "images/1046A.jpeg",
+      "images/1046B.jpeg"
+    ],
+    "reference": "KM# 80",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "Primera Guerra Mundial",
+    "publishedAt": "2026-08-06T20:46:25.046353+00:00",
+    "group_id": "be-2centimes",
+    "group_label": "2 Centimes"
+  },
+  {
+    "id": 1047,
+    "title": "2 Francos",
+    "country": "Bélgica",
+    "metal": "Bronce",
+    "year": 1944,
+    "price": "6 USD",
+    "images": [
+      "images/1047A.jpeg",
+      "images/1047B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Excelente con Detalles",
+    "grade_short": "EX**",
+    "description": "Segunda Guerra Mundial. Excelente detalles",
+    "publishedAt": "2026-08-06T20:46:25.046353+00:00"
+  },
+  {
+    "id": 1048,
+    "title": "25 Cents",
+    "country": "Países Bajos",
+    "metal": "Plata",
+    "year": 1942,
+    "price": "4.5 USD",
+    "images": [
+      "images/1048A.jpeg",
+      "images/1048B.jpeg"
+    ],
+    "reference": "KM# 38",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "description": "Segunda Guerra Mundial",
+    "publishedAt": "2026-08-06T20:46:25.046353+00:00"
+  },
+  {
+    "id": 1049,
+    "title": "25 Centimes",
+    "country": "Luxemburgo",
+    "metal": "Aluminio",
+    "year": 1972,
+    "price": "4.5 USD",
+    "images": [
+      "images/1049A.jpeg",
+      "images/1049B.jpeg"
+    ],
+    "reference": "KM# 45a",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "",
+    "publishedAt": "2026-08-06T20:46:25.046353+00:00",
+    "group_id": "lu-25-centimes",
+    "group_label": "25 Centimes",
+    "mintage": 4000000
+  },
+  {
+    "id": 1050,
+    "title": "25 Centimes",
+    "country": "Luxemburgo",
+    "metal": "Bronce",
+    "year": 1946,
+    "price": "15 USD",
+    "images": [
+      "images/1050A.jpeg",
+      "images/1050B.jpeg"
+    ],
+    "reference": "KM# E43",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "Post Guerra, Escasa",
+    "publishedAt": "2026-08-06T20:46:25.046353+00:00",
+    "group_id": "lu-25-centimes",
+    "group_label": "25 Centimes",
+    "mintage": 500
   }
 ]
