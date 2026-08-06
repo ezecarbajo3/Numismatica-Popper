@@ -14210,7 +14210,9 @@
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "description": "Iglesia de la Guarnición de Potsdam",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-06T20:29:50.881240+00:00"
   },
   {
     "id": 1021,
