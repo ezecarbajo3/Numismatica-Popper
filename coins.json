@@ -14481,7 +14481,9 @@
     "mintage": 7414000,
     "commemorates": "Bodas de Plata de la Reina Isabel II y el Príncipe Felipe",
     "description": "Conmemora las Bodas de Plata de la Reina Isabel II y el Príncipe Felipe.",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-06T20:25:53.171987+00:00"
   },
   {
     "id": 1034,
