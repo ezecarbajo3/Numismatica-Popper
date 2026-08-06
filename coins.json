@@ -10647,7 +10647,9 @@
       "images/824A.jpeg",
       "images/824B.jpeg"
     ],
-    "reference": "CJ# 2"
+    "reference": "CJ# 2",
+    "status": "sold",
+    "soldAt": "2026-08-06T22:00:19.368377+00:00"
   },
   {
     "id": 825,
