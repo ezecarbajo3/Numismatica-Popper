@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" href="images/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="styles.css?v=20260806c" />
+  <link rel="stylesheet" href="styles.css?v=20260806d" />
 </head>
 <body data-view="landing">
   <header class="site-header">
@@ -55,14 +55,19 @@
 
       <h2 class="landing-heading">¿Qué estás buscando?</h2>
 
+      <!-- Acción principal -->
+      <button type="button" class="landing-btn landing-btn--all" data-landing-category="todas">
+        <span class="landing-btn__label">Ver todas las monedas</span>
+      </button>
+
+      <!-- Ingresos: divisor con filetes. Se oculta si esta semana no entró nada. -->
+      <button type="button" class="landing-divider" id="landingIngresos" data-landing-category="ingresos" hidden>
+        <span class="landing-divider__rule" aria-hidden="true"></span>
+        <span class="landing-divider__label">Ingresos semanales</span>
+        <span class="landing-divider__rule" aria-hidden="true"></span>
+      </button>
+
       <nav class="landing-nav" aria-label="Categorías principales">
-
-        <!-- Acción principal -->
-        <button type="button" class="landing-btn landing-btn--all" data-landing-category="todas">
-          <span class="landing-btn__label">Ver todas las monedas</span>
-        </button>
-
-        <!-- Categorías -->
         <button type="button" class="landing-btn" data-landing-category="plata">
           <svg class="landing-btn__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <rect x="4"  y="18" width="11" height="7" rx="1.2"/>
@@ -116,14 +121,6 @@
           <span class="landing-btn__label">Medallas / Libros</span>
         </button>
       </nav>
-
-      <!-- Ingresos: enlace discreto, no un botón. Se oculta si no hay novedades. -->
-      <button type="button" class="landing-link" id="landingIngresos" data-landing-category="ingresos" hidden>
-        Ingresos de la semana
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M3 8h9M8.5 4.5L12 8l-3.5 3.5"/>
-        </svg>
-      </button>
 
       <div class="landing-social">
         <span class="landing-social__label">Seguinos</span>
@@ -220,7 +217,7 @@
     </article>
   </template>
 
-  <script src="script.js?v=20260806c"></script>
+  <script src="script.js?v=20260806d"></script>
 
   <footer class="site-footer" aria-label="Pie de página">
     <div class="footer-inner">
