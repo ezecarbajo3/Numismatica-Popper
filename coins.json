@@ -1261,7 +1261,7 @@
     "title": "2 Centavos 1896",
     "country": "Argentina",
     "metal": "Bronce",
-    "year": "1896",
+    "year": 1896,
     "price": "10 USD",
     "images": [
       "images/146A.jpeg",
@@ -1280,7 +1280,7 @@
     "title": "2 Reales 1860",
     "country": "Argentina - Buenos Aires",
     "metal": "Cobre",
-    "year": "1860",
+    "year": 1860,
     "price": "22 USD",
     "images": [
       "images/147A.jpeg",
@@ -1299,7 +1299,7 @@
     "title": "1/2 Dólar 1964",
     "country": "Estados Unidos",
     "metal": "Plata 900",
-    "year": "1964",
+    "year": 1964,
     "price": "20 USD",
     "images": [
       "images/148A.jpeg",
@@ -1318,7 +1318,7 @@
     "title": "1/2 Dólar 1986 S",
     "country": "Estados Unidos",
     "metal": "Cuproníquel Proof",
-    "year": "1986",
+    "year": 1986,
     "price": "16 USD",
     "images": [
       "images/149A.jpeg",
@@ -1337,7 +1337,7 @@
     "title": "1/2 Dólar 1989 S",
     "country": "Estados Unidos",
     "metal": "Cuproníquel Proof",
-    "year": "1989",
+    "year": 1989,
     "price": "18 USD",
     "images": [
       "images/150A.jpeg",
@@ -1354,7 +1354,7 @@
     "title": "10 Centavos 1892",
     "country": "Bolivia",
     "metal": "Cuproníquel",
-    "year": "1892",
+    "year": 1892,
     "price": "6 USD",
     "images": [
       "images/151A.jpeg",
@@ -1371,7 +1371,7 @@
     "title": "5 Centavos 1927",
     "country": "Portugal",
     "metal": "Bronce",
-    "year": "1927",
+    "year": 1927,
     "price": "4 USD",
     "images": [
       "images/157A.jpeg",
@@ -1388,7 +1388,7 @@
     "title": "1/4 Dólar 1926",
     "country": "Estados Unidos",
     "metal": "Plata 900",
-    "year": "1926",
+    "year": 1926,
     "price": "20 USD",
     "images": [
       "images/161A.jpeg",
@@ -1405,7 +1405,7 @@
     "title": "10 Rappen 1903",
     "country": "Suiza",
     "metal": "Cuproníquel",
-    "year": "1903",
+    "year": 1903,
     "price": "4 USD",
     "images": [
       "images/164A.jpeg",
@@ -1424,7 +1424,7 @@
     "title": "Album Bicentennial 1776-1976",
     "country": "Estados Unidos",
     "metal": "",
-    "year": "1976",
+    "year": 1976,
     "price": "10 USD",
     "images": [
       "images/165A.jpeg",
@@ -1441,7 +1441,7 @@
     "title": "Album Commemorative Cents 2009",
     "country": "Estados Unidos",
     "metal": "",
-    "year": "2009",
+    "year": 2009,
     "price": "10 USD",
     "images": [
       "images/166A.jpeg",
@@ -1458,7 +1458,7 @@
     "title": "Album Commemorative Nickels 2004-2005",
     "country": "Estados Unidos",
     "metal": "",
-    "year": "2005",
+    "year": 2005,
     "price": "10 USD",
     "images": [
       "images/167A.jpeg",
@@ -1475,11 +1475,10 @@
     "title": "Catalogo Carlos Janson 1881-2001",
     "country": "Argentina",
     "metal": "",
-    "year": "2001",
+    "year": 2001,
     "price": "18 USD",
     "images": [
-      "images/170A.jpeg",
-      "images/170B.jpeg"
+      "images/170A.jpeg"
     ],
     "reference": "",
     "grade": "",
@@ -1492,11 +1491,10 @@
     "title": "Catalogo Carlos Janson 1881-2004",
     "country": "Argentina",
     "metal": "",
-    "year": "2004",
+    "year": 2004,
     "price": "20 USD",
     "images": [
-      "images/171A.jpeg",
-      "images/171B.jpeg"
+      "images/171A.jpeg"
     ],
     "reference": "",
     "grade": "",
@@ -1509,11 +1507,10 @@
     "title": "Catalogo Carlos Janson 1881-2009",
     "country": "Argentina",
     "metal": "",
-    "year": "2009",
+    "year": 2009,
     "price": "22 USD",
     "images": [
-      "images/172A.jpeg",
-      "images/172B.jpeg"
+      "images/172A.jpeg"
     ],
     "reference": "",
     "grade": "",
@@ -1526,7 +1523,7 @@
     "title": "Militar Uruguay",
     "country": "Medalla",
     "metal": "Plata",
-    "year": "1957",
+    "year": 1957,
     "price": "20 USD",
     "images": [
       "images/173A.jpeg",
@@ -1545,7 +1542,7 @@
     "title": "Peso Mercosur 1998",
     "country": "Argentina",
     "metal": "Bimetálica",
-    "year": "1998",
+    "year": 1998,
     "price": "5 USD",
     "images": [
       "images/175A.jpeg",
@@ -1562,7 +1559,7 @@
     "title": "1/2 Skilling 1867",
     "country": "Noruega",
     "metal": "Cobre",
-    "year": "1867",
+    "year": 1867,
     "price": "25 USD",
     "images": [
       "images/177A.jpeg",
@@ -1579,7 +1576,7 @@
     "title": "2 Centavos 1896",
     "country": "Argentina",
     "metal": "Bronce",
-    "year": "1896",
+    "year": 1896,
     "price": "15 USD",
     "images": [
       "images/178A.jpeg",
@@ -1598,7 +1595,7 @@
     "title": "20 Reis 1891",
     "country": "Portugal",
     "metal": "Bronce",
-    "year": "1891",
+    "year": 1891,
     "price": "7 USD",
     "images": [
       "images/179A.jpeg",
@@ -1615,7 +1612,7 @@
     "title": "1/2 Dime 1853",
     "country": "Estados Unidos",
     "metal": "Plata .900",
-    "year": "1853",
+    "year": 1853,
     "price": "20 USD",
     "images": [
       "images/180A.jpeg",
@@ -1635,7 +1632,7 @@
     "title": "Cent 1881",
     "country": "Estados Unidos",
     "metal": "Bronce",
-    "year": "1881",
+    "year": 1881,
     "price": "10 USD",
     "images": [
       "images/181A.jpeg",
@@ -4045,7 +4042,7 @@
     "title": "1/4 Dólar 1999",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "1999",
+    "year": 1999,
     "price": "2 USD",
     "images": [
       "images/404A.jpeg",
@@ -4060,7 +4057,7 @@
     "title": "1/4 Dólar 1999",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "1999",
+    "year": 1999,
     "price": "2 USD",
     "images": [
       "images/407A.jpeg",
@@ -4075,7 +4072,7 @@
     "title": "1/4 Dólar 1999",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "1999",
+    "year": 1999,
     "price": "2 USD",
     "images": [
       "images/408A.jpeg",
@@ -4090,7 +4087,7 @@
     "title": "1/4 Dólar 1999",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "1999",
+    "year": 1999,
     "price": "2 USD",
     "images": [
       "images/483A.jpeg",
@@ -4105,7 +4102,7 @@
     "title": "1/4 Dólar 2000",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2000",
+    "year": 2000,
     "price": "2 USD",
     "images": [
       "images/406A.jpeg",
@@ -4120,7 +4117,7 @@
     "title": "1/4 Dólar 2000",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2000",
+    "year": 2000,
     "price": "2 USD",
     "images": [
       "images/412A.jpeg",
@@ -4135,7 +4132,7 @@
     "title": "1/4 Dólar 2000",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2000",
+    "year": 2000,
     "price": "2 USD",
     "images": [
       "images/414A.jpeg",
@@ -4150,7 +4147,7 @@
     "title": "1/4 Dólar 2000",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2000",
+    "year": 2000,
     "price": "2 USD",
     "images": [
       "images/419A.jpeg",
@@ -4165,7 +4162,7 @@
     "title": "1/4 Dólar 2000",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2000",
+    "year": 2000,
     "price": "2 USD",
     "images": [
       "images/482A.jpeg",
@@ -4180,7 +4177,7 @@
     "title": "1/4 Dólar 2001",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2001",
+    "year": 2001,
     "price": "2 USD",
     "images": [
       "images/405A.jpeg",
@@ -4195,7 +4192,7 @@
     "title": "1/4 Dólar 2001",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2001",
+    "year": 2001,
     "price": "2 USD",
     "images": [
       "images/411A.jpeg",
@@ -4210,7 +4207,7 @@
     "title": "1/4 Dólar 2001",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2001",
+    "year": 2001,
     "price": "2.5 USD",
     "images": [
       "images/413A.jpeg",
@@ -4225,7 +4222,7 @@
     "title": "1/4 Dólar 2001",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2001",
+    "year": 2001,
     "price": "2 USD",
     "images": [
       "images/416A.jpeg",
@@ -4240,7 +4237,7 @@
     "title": "1/4 Dólar 2001",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2001",
+    "year": 2001,
     "price": "2 USD",
     "images": [
       "images/418A.jpeg",
@@ -4255,7 +4252,7 @@
     "title": "1/4 Dólar 2001",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2001",
+    "year": 2001,
     "price": "2 USD",
     "images": [
       "images/485A.jpeg",
@@ -4270,7 +4267,7 @@
     "title": "1/4 Dólar 2001",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2001",
+    "year": 2001,
     "price": "2.5 USD",
     "images": [
       "images/490A.jpeg",
@@ -4285,7 +4282,7 @@
     "title": "1/4 Dólar 2003",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2003",
+    "year": 2003,
     "price": "2 USD",
     "images": [
       "images/410A.jpeg",
@@ -4300,7 +4297,7 @@
     "title": "1/4 Dólar 2004",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2004",
+    "year": 2004,
     "price": "2 USD",
     "images": [
       "images/491A.jpeg",
@@ -4315,7 +4312,7 @@
     "title": "1/4 Dólar 2005",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2005",
+    "year": 2005,
     "price": "2 USD",
     "images": [
       "images/415A.jpeg",
@@ -4330,7 +4327,7 @@
     "title": "1/4 Dólar 2005",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2005",
+    "year": 2005,
     "price": "2 USD",
     "images": [
       "images/487A.jpeg",
@@ -4345,7 +4342,7 @@
     "title": "1/4 Dólar 2005",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2005",
+    "year": 2005,
     "price": "2 USD",
     "images": [
       "images/488A.jpeg",
@@ -4360,7 +4357,7 @@
     "title": "1/4 Dólar 2005",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2005",
+    "year": 2005,
     "price": "2 USD",
     "images": [
       "images/489A.jpeg",
@@ -4375,7 +4372,7 @@
     "title": "1/4 Dólar 2006",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2006",
+    "year": 2006,
     "price": "2 USD",
     "images": [
       "images/417A.jpeg",
@@ -4390,7 +4387,7 @@
     "title": "1/4 Dólar 2006",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2006",
+    "year": 2006,
     "price": "2 USD",
     "images": [
       "images/486A.jpeg",
@@ -4405,7 +4402,7 @@
     "title": "1/4 Dólar 2007",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2007",
+    "year": 2007,
     "price": "2 USD",
     "images": [
       "images/484A.jpeg",
@@ -4420,7 +4417,7 @@
     "title": "1/4 Dólar 2008",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2008",
+    "year": 2008,
     "price": "2 USD",
     "images": [
       "images/409A.jpeg",
@@ -5242,7 +5239,7 @@
     "title": "1/4 Dólar 2021",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2021",
+    "year": 2021,
     "price": "2 USD",
     "images": [
       "images/492A.jpeg",
@@ -5257,7 +5254,7 @@
     "title": "1/4 Dólar 2021",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2021",
+    "year": 2021,
     "price": "2 USD",
     "images": [
       "images/493A.jpeg",
@@ -5272,7 +5269,7 @@
     "title": "1/4 Dólar 1976",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "1976",
+    "year": 1976,
     "price": "2 USD",
     "images": [
       "images/494A.jpeg",
@@ -5285,11 +5282,11 @@
     "title": "1/4 Dólar 2016",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2016",
+    "year": 2016,
     "price": "2 USD",
     "images": [
-      "images/495A.jpeg",
-      "images/495B.jpeg"
+      "images/482A.jpeg",
+      "images/482B.jpeg"
     ],
     "description": "West Virginia P",
     "group_id": "us-quarters-parques",
@@ -5301,11 +5298,11 @@
     "title": "1/4 Dólar 2020",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2020",
+    "year": 2020,
     "price": "2 USD",
     "images": [
-      "images/496A.jpeg",
-      "images/496B.jpeg"
+      "images/483A.jpeg",
+      "images/483B.jpeg"
     ],
     "description": "US Virgin Island D",
     "group_id": "us-quarters-parques",
@@ -5317,11 +5314,11 @@
     "title": "1/4 Dólar 2017",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2017",
+    "year": 2017,
     "price": "2 USD",
     "images": [
-      "images/497A.jpeg",
-      "images/497B.jpeg"
+      "images/484A.jpeg",
+      "images/484B.jpeg"
     ],
     "description": "IOWA P",
     "group_id": "us-quarters-parques",
@@ -5333,11 +5330,11 @@
     "title": "1/4 Dólar 2011",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2011",
+    "year": 2011,
     "price": "2.5 USD",
     "images": [
-      "images/498A.jpeg",
-      "images/498B.jpeg"
+      "images/485A.jpeg",
+      "images/485B.jpeg"
     ],
     "description": "Oklahoma P",
     "group_id": "us-quarters-parques",
@@ -5349,11 +5346,11 @@
     "title": "1/4 Dólar 2015",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2015",
+    "year": 2015,
     "price": "2 USD",
     "images": [
-      "images/499A.jpeg",
-      "images/499B.jpeg"
+      "images/486A.jpeg",
+      "images/486B.jpeg"
     ],
     "description": "Louisiana D",
     "group_id": "us-quarters-parques",
@@ -5365,11 +5362,11 @@
     "title": "1/4 Dólar 2018",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2018",
+    "year": 2018,
     "price": "2 USD",
     "images": [
-      "images/500A.jpeg",
-      "images/500B.jpeg"
+      "images/487A.jpeg",
+      "images/487B.jpeg"
     ],
     "description": "Minnesota P",
     "group_id": "us-quarters-parques",
@@ -5381,11 +5378,11 @@
     "title": "1/4 Dólar 2016",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
-    "year": "2016",
+    "year": 2016,
     "price": "2 USD",
     "images": [
-      "images/501A.jpeg",
-      "images/501B.jpeg"
+      "images/488A.jpeg",
+      "images/488B.jpeg"
     ],
     "description": "North Dakota D",
     "group_id": "us-quarters-parques",
@@ -7114,7 +7111,8 @@
     "images": [
       "images/608A.jpeg",
       "images/608B.jpeg"
-    ]
+    ],
+    "country": "Desconocido"
   },
   {
     "id": 609,
@@ -12545,7 +12543,11 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "reference": "KM# 940",
-    "description": "Diseño moderno abstracto de Georges Mathieu representando el mapa estilizado de Francia."
+    "description": "Diseño moderno abstracto de Georges Mathieu representando el mapa estilizado de Francia.",
+    "images": [
+      "images/934A.jpeg",
+      "images/934B.jpeg"
+    ]
   },
   {
     "id": 935,
@@ -12558,7 +12560,11 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "commemorates": "30° Aniversario de la Gesta de Malvinas",
-    "description": "Emisión conmemorativa por el 30° Aniversario de la Gesta de Malvinas (1982-2012)."
+    "description": "Emisión conmemorativa por el 30° Aniversario de la Gesta de Malvinas (1982-2012).",
+    "images": [
+      "images/935A.jpeg",
+      "images/935B.jpeg"
+    ]
   },
   {
     "id": 936,
