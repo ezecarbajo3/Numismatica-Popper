@@ -31,6 +31,40 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ─── Halo dorado que sigue al puntero (ver glow.js) ──────────────────────────
+   Va en z-index -1: se pinta sobre el fondo de la página pero por debajo de
+   las tarjetas y las fotos, así que ilumina sin lavar el contenido. Arranca
+   fuera de pantalla y solo aparece cuando el mouse se mueve. */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 640px;
+  /* El halo se centra en el puntero: la caja se corre media medida hacia
+     arriba y hacia la izquierda. */
+  margin: -320px 0 0 -320px;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+  /* Mover con transform en vez de recalcular el degradado: así el navegador
+     compone en GPU y no repinta la grilla del catálogo en cada frame. */
+  transform: translate3d(var(--glow-x, -9999px), var(--glow-y, -9999px), 0);
+  will-change: transform, opacity;
+  transition: opacity 0.6s ease;
+  background: radial-gradient(
+    circle closest-side,
+    rgba(207, 172, 107, 0.1) 0%,
+    rgba(207, 172, 107, 0.04) 40%,
+    transparent 70%
+  );
+}
+
+body.has-glow::before {
+  opacity: 1;
+}
+
 body {
   margin: 0;
   font-family: "Cinzel", "Georgia", "Times New Roman", serif;
