@@ -14521,7 +14521,9 @@
     "grade_short": "SC-",
     "mintage": 4976000,
     "description": "Bicentenario del Instituto de Francia. Año único, no tan común",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-06T20:06:41.063267+00:00"
   },
   {
     "id": 1036,
@@ -14540,7 +14542,9 @@
     "grade_short": "EX",
     "mintage": 3360000,
     "description": "Gallina con pollitos. No tan común",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-06T20:06:41.063391+00:00"
   },
   {
     "id": 1037,
@@ -14561,7 +14565,9 @@
     "description": "",
     "group_id": "be-2centimes",
     "group_label": "2 Centimes",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-06T20:06:41.063393+00:00"
   },
   {
     "id": 1038,
@@ -14582,7 +14588,9 @@
     "description": "",
     "group_id": "be-2centimes",
     "group_label": "2 Centimes",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-06T20:06:41.063394+00:00"
   },
   {
     "id": 1039,
@@ -14603,7 +14611,9 @@
     "description": "",
     "group_id": "be-2centimes",
     "group_label": "2 Centimes",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-06T20:06:41.063395+00:00"
   },
   {
     "id": 1040,
