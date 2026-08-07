@@ -14876,7 +14876,9 @@
     "grade": "Muy Buena",
     "grade_short": "MB",
     "description": "Imperio Aleman",
-    "publishedAt": "2026-08-06T21:38:02.578547+00:00"
+    "publishedAt": "2026-08-06T21:38:02.578547+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-07T07:55:43.002967+00:00"
   },
   {
     "id": 1052,
