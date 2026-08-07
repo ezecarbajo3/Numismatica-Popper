@@ -13424,7 +13424,9 @@
     "grade": "Excelente",
     "grade_short": "EX-",
     "reference": "KM# 39",
-    "description": "Primer mapa de la Unión Europea. Harpa celta en el anverso."
+    "description": "Primer mapa de la Unión Europea. Harpa celta en el anverso.",
+    "status": "sold",
+    "soldAt": "2026-08-07T20:05:37.032051+00:00"
   },
   {
     "id": 982,
