@@ -10786,7 +10786,8 @@
     "group_label": "5 Centavos cuproníquel",
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 8
+    "cantidad": 8,
+    "mintage": "506.361"
   },
   {
     "id": 835,
