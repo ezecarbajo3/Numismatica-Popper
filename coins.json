@@ -14979,7 +14979,7 @@
       "images/1055A.jpeg",
       "images/1055B.jpeg"
     ],
-    "reference": "KM# 98",
+    "reference": "KM# 100",
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "description": "",
@@ -14998,7 +14998,7 @@
       "images/1056A.jpeg",
       "images/1056B.jpeg"
     ],
-    "reference": "",
+    "reference": "KM# 101",
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "description": "",
@@ -15029,14 +15029,14 @@
     "id": 1058,
     "title": "1 Pfennig 1907",
     "country": "Alemania",
-    "metal": "Papel",
+    "metal": "Cobre",
     "year": 1907,
     "price": "4 USD",
     "images": [
       "images/1058A.jpeg",
       "images/1058B.jpeg"
     ],
-    "reference": "Tieste Va# 0460.075",
+    "reference": "KM# 10",
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "description": "",
