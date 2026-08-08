@@ -15134,5 +15134,60 @@
     "description": "",
     "publishedAt": "2026-08-08T19:44:39.841213+00:00",
     "costo": 0.585
+  },
+  {
+    "id": 1064,
+    "title": "20 Francos 1994",
+    "country": "Francia",
+    "metal": "Trimetálica",
+    "year": 1994,
+    "price": "15 USD",
+    "images": [
+      "images/1064A.jpeg",
+      "images/1064B.jpeg"
+    ],
+    "reference": "KM# 1036",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Centenario del Comité Olímpico Internacional (Pierre de Coubertin)",
+    "publishedAt": "2026-08-08T20:08:32.734540+00:00"
+  },
+  {
+    "id": 1065,
+    "title": "1 Rublo 1967",
+    "country": "Rusia",
+    "metal": "Cuproníquel",
+    "year": 1967,
+    "price": "7 USD",
+    "images": [
+      "images/1065A.jpeg",
+      "images/1065B.jpeg"
+    ],
+    "reference": "Y# 140.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "50 aniversario de la Revolución de Octubre",
+    "publishedAt": "2026-08-08T20:08:32.734540+00:00",
+    "group_id": "ru-1rublo-conmemorativos",
+    "group_label": "1 Rublo Conmemorativos"
+  },
+  {
+    "id": 1066,
+    "title": "1 Rublo 1965",
+    "country": "Rusia",
+    "metal": "Cuproníquel",
+    "year": 1965,
+    "price": "7 USD",
+    "images": [
+      "images/1066A.jpeg",
+      "images/1066B.jpeg"
+    ],
+    "reference": "Y# 135.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "20 aniversario de la Victoria en la Gran Guerra Patria",
+    "publishedAt": "2026-08-08T20:08:32.734540+00:00",
+    "group_id": "ru-1rublo-conmemorativos",
+    "group_label": "1 Rublo Conmemorativos"
   }
 ]
