@@ -15043,5 +15043,91 @@
     "publishedAt": "2026-08-08T19:21:22.539465+00:00",
     "costo": 2.41,
     "cantidad": 1
+  },
+  {
+    "id": 1059,
+    "title": "50 Cents 1972",
+    "country": "Malta",
+    "metal": "Cuproníquel",
+    "year": 1972,
+    "price": "7 USD",
+    "images": [
+      "images/1059A.jpeg",
+      "images/1059B.jpeg"
+    ],
+    "reference": "KM# 12",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "",
+    "publishedAt": "2026-08-08T19:44:39.841213+00:00"
+  },
+  {
+    "id": 1060,
+    "title": "1 Lira 1986",
+    "country": "Malta",
+    "metal": "Níquel",
+    "year": 1986,
+    "price": "10 USD",
+    "images": [
+      "images/1060A.jpeg",
+      "images/1060B.jpeg"
+    ],
+    "reference": "KM# 82",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "description": "",
+    "publishedAt": "2026-08-08T19:44:39.841213+00:00",
+    "mintage": 2272000
+  },
+  {
+    "id": 1061,
+    "title": "10 Francos 1974",
+    "country": "Ruanda",
+    "metal": "Cuproníquel",
+    "year": 1974,
+    "price": "6 USD",
+    "images": [
+      "images/1061A.jpeg",
+      "images/1061B.jpeg"
+    ],
+    "reference": "KM# 14.1",
+    "grade": "Muy Bueno-",
+    "grade_short": "MB-",
+    "description": "",
+    "publishedAt": "2026-08-08T19:44:39.841213+00:00"
+  },
+  {
+    "id": 1062,
+    "title": "5 Rupias 1987",
+    "country": "Mauricio",
+    "metal": "Cuproníquel",
+    "year": 1987,
+    "price": "6 USD",
+    "images": [
+      "images/1062A.jpeg",
+      "images/1062B.jpeg"
+    ],
+    "reference": "KM# 56",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "",
+    "publishedAt": "2026-08-08T19:44:39.841213+00:00"
+  },
+  {
+    "id": 1063,
+    "title": "10 Makuta 1978",
+    "country": "Zaire",
+    "metal": "Cuproníquel",
+    "year": 1978,
+    "price": "12 USD",
+    "images": [
+      "images/1063A.jpeg",
+      "images/1063B.jpeg"
+    ],
+    "reference": "KM# 7",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "",
+    "publishedAt": "2026-08-08T19:44:39.841213+00:00"
   }
 ]
