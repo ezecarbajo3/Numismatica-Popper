@@ -525,7 +525,9 @@
     "grade": "Sin Circular menos",
     "grade_short": "SC-",
     "mintage": "1.000.000",
-    "description": "100 aniversario de la reforma constitucional bicameral"
+    "description": "100 aniversario de la reforma constitucional bicameral",
+    "status": "sold",
+    "soldAt": "2026-08-08T21:28:38.863033+00:00"
   },
   {
     "id": 58,
