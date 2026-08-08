@@ -540,7 +540,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
-    "description": "Bicentenario de la independencia - Año único"
+    "description": "Bicentenario de la independencia - Año único",
+    "status": "sold",
+    "soldAt": "2026-08-08T18:41:09.852638+00:00"
   },
   {
     "id": 62,
@@ -557,7 +559,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "300.000",
-    "description": "250 aniversario de la fundación de Montevideo - ESCASA"
+    "description": "250 aniversario de la fundación de Montevideo - ESCASA",
+    "status": "sold",
+    "soldAt": "2026-08-08T18:41:09.852782+00:00"
   },
   {
     "id": 65,
@@ -642,7 +646,9 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "120.000",
-    "description": "Año único."
+    "description": "Año único.",
+    "status": "sold",
+    "soldAt": "2026-08-08T18:41:09.852786+00:00"
   },
   {
     "id": 78,
@@ -682,7 +688,9 @@
     "mintage": "1.000.000",
     "description": "Año único",
     "group_id": "group_a_km10_uy",
-    "group_label": "40 Centésimos (KM# 10)"
+    "group_label": "40 Centésimos (KM# 10)",
+    "status": "sold",
+    "soldAt": "2026-08-08T18:41:09.852788+00:00"
   },
   {
     "id": 80,
@@ -1680,7 +1688,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "10.000.000",
-    "description": "Bicentenario del Reglamento de Tierras de 1815"
+    "description": "Bicentenario del Reglamento de Tierras de 1815",
+    "status": "sold",
+    "soldAt": "2026-08-08T18:41:09.852798+00:00"
   },
   {
     "id": 186,
@@ -1697,7 +1707,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "description": "Difícil de ver"
+    "description": "Difícil de ver",
+    "status": "sold",
+    "soldAt": "2026-08-08T18:41:09.852800+00:00"
   },
   {
     "id": 188,
@@ -8240,7 +8252,9 @@
       "images/682B.jpeg"
     ],
     "group_id": "uy-serie-aluminio",
-    "group_label": "Serie Aluminio"
+    "group_label": "Serie Aluminio",
+    "status": "sold",
+    "soldAt": "2026-08-08T18:41:09.852865+00:00"
   },
   {
     "id": 683,
@@ -8257,7 +8271,9 @@
       "images/683B.jpeg"
     ],
     "group_id": "uy-serie-aluminio",
-    "group_label": "Serie Aluminio"
+    "group_label": "Serie Aluminio",
+    "status": "sold",
+    "soldAt": "2026-08-08T18:41:09.852867+00:00"
   },
   {
     "id": 684,
@@ -8274,7 +8290,9 @@
       "images/684B.jpeg"
     ],
     "group_id": "uy-serie-aluminio",
-    "group_label": "Serie Aluminio"
+    "group_label": "Serie Aluminio",
+    "status": "sold",
+    "soldAt": "2026-08-08T18:41:09.852868+00:00"
   },
   {
     "id": 685,
@@ -8400,7 +8418,9 @@
       "images/692B.jpeg"
     ],
     "group_id": "uy-centesimo",
-    "group_label": "Centésimo"
+    "group_label": "Centésimo",
+    "status": "sold",
+    "soldAt": "2026-08-08T18:41:09.852871+00:00"
   },
   {
     "id": 693,
@@ -8541,7 +8561,9 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "10.000.000",
-    "description": "150 aniversario - Movimiento Revolucionario"
+    "description": "150 aniversario - Movimiento Revolucionario",
+    "status": "sold",
+    "soldAt": "2026-08-08T18:41:09.852873+00:00"
   },
   {
     "id": 701,
