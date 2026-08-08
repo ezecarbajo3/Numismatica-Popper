@@ -15060,7 +15060,9 @@
     "grade_short": "EX",
     "description": "",
     "publishedAt": "2026-08-08T19:44:39.841213+00:00",
-    "costo": 0.585
+    "costo": 0.585,
+    "status": "sold",
+    "soldAt": "2026-08-08T20:31:32.667781+00:00"
   },
   {
     "id": 1060,
@@ -15079,7 +15081,9 @@
     "description": "",
     "publishedAt": "2026-08-08T19:44:39.841213+00:00",
     "mintage": 2272000,
-    "costo": 0.585
+    "costo": 0.585,
+    "status": "sold",
+    "soldAt": "2026-08-08T20:31:32.667964+00:00"
   },
   {
     "id": 1061,
@@ -15097,7 +15101,9 @@
     "grade_short": "MB-",
     "description": "",
     "publishedAt": "2026-08-08T19:44:39.841213+00:00",
-    "costo": 0.585
+    "costo": 0.585,
+    "status": "sold",
+    "soldAt": "2026-08-08T20:31:32.667967+00:00"
   },
   {
     "id": 1062,
@@ -15115,7 +15121,9 @@
     "grade_short": "MB",
     "description": "",
     "publishedAt": "2026-08-08T19:44:39.841213+00:00",
-    "costo": 0.585
+    "costo": 0.585,
+    "status": "sold",
+    "soldAt": "2026-08-08T20:31:32.667969+00:00"
   },
   {
     "id": 1063,
@@ -15133,7 +15141,9 @@
     "grade_short": "SC",
     "description": "",
     "publishedAt": "2026-08-08T19:44:39.841213+00:00",
-    "costo": 0.585
+    "costo": 0.585,
+    "status": "sold",
+    "soldAt": "2026-08-08T20:31:32.667971+00:00"
   },
   {
     "id": 1064,
