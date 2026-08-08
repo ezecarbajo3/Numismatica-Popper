@@ -14948,5 +14948,100 @@
     "status": "sold",
     "soldAt": "2026-08-06T22:01:06.054981+00:00",
     "costo": 0.585
+  },
+  {
+    "id": 1054,
+    "title": "1 Reichspfennig 1943",
+    "country": "Alemania",
+    "metal": "Zinc",
+    "year": 1943,
+    "price": "7 USD",
+    "images": [
+      "images/1054A.jpeg",
+      "images/1054B.jpeg"
+    ],
+    "reference": "KM# 97",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "",
+    "publishedAt": "2026-08-08T19:21:22.539465+00:00",
+    "costo": 2.41,
+    "cantidad": 6
+  },
+  {
+    "id": 1055,
+    "title": "5 Reichspfennig 1941",
+    "country": "Alemania",
+    "metal": "Zinc",
+    "year": 1941,
+    "price": "7 USD",
+    "images": [
+      "images/1055A.jpeg",
+      "images/1055B.jpeg"
+    ],
+    "reference": "KM# 98",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "",
+    "publishedAt": "2026-08-08T19:21:22.539465+00:00",
+    "costo": 2.41,
+    "cantidad": 2
+  },
+  {
+    "id": 1056,
+    "title": "10 Reichspfennig 1940",
+    "country": "Alemania",
+    "metal": "Zinc",
+    "year": 1940,
+    "price": "7 USD",
+    "images": [
+      "images/1056A.jpeg",
+      "images/1056B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "",
+    "publishedAt": "2026-08-08T19:21:22.539465+00:00",
+    "costo": 2.41,
+    "cantidad": 5
+  },
+  {
+    "id": 1057,
+    "title": "1 Reichspfennig 1937",
+    "country": "Alemania",
+    "metal": "Bronce",
+    "year": 1937,
+    "price": "10 USD",
+    "images": [
+      "images/1057A.jpeg",
+      "images/1057B.jpeg"
+    ],
+    "reference": "KM# 89",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "description": "",
+    "publishedAt": "2026-08-08T19:21:22.539465+00:00",
+    "costo": 2.41,
+    "cantidad": 2
+  },
+  {
+    "id": 1058,
+    "title": "1 Pfennig 1907",
+    "country": "Alemania",
+    "metal": "Papel",
+    "year": 1907,
+    "price": "4 USD",
+    "images": [
+      "images/1058A.jpeg",
+      "images/1058B.jpeg"
+    ],
+    "reference": "Tieste Va# 0460.075",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "",
+    "publishedAt": "2026-08-08T19:21:22.539465+00:00",
+    "costo": 2.41,
+    "cantidad": 1
   }
 ]
