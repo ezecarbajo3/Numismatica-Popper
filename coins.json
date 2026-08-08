@@ -411,7 +411,9 @@
     "mintage": "892.873",
     "description": "",
     "group_id": "ar-10centavos-cuproniquel",
-    "group_label": "10 Centavos cuproníquel"
+    "group_label": "10 Centavos cuproníquel",
+    "status": "sold",
+    "soldAt": "2026-08-08T18:50:47.041651+00:00"
   },
   {
     "id": 43,
