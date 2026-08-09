@@ -532,12 +532,20 @@ button {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  will-change: transform;
   /* Saltea layout/paint de las tarjetas fuera del viewport → scroll más fluido
      con cientos de monedas. El navegador recuerda el tamaño real tras el primer
      render; 340px es solo la estimación inicial para no romper la barra de scroll. */
   content-visibility: auto;
   contain-intrinsic-size: auto 340px;
+}
+
+/* will-change promueve cada tarjeta a su propia capa del compositor. Con ~450
+   tarjetas eso es memoria para nada en un celular, donde además no hay hover:
+   se reserva para punteros finos, que son los únicos que animan el translateY. */
+@media (hover: hover) and (pointer: fine) {
+  .coin-card {
+    will-change: transform;
+  }
 }
 
 .coin-card::after {
@@ -2542,14 +2550,18 @@ body[data-view="catalog"] .subtitle {
   display: none;
 }
 
+/* Fondo opaco a propósito, sin backdrop-filter: desenfocar el fondo detrás de
+   un elemento sticky obliga a iOS a re-capturar y difuminar todo el fondo en
+   cada frame de scroll. Sobre una grilla de ~450 tarjetas (>80.000px de alto)
+   eso hacía que Safari se quedara sin memoria y matara la pestaña en bucle
+   ("A problem repeatedly occurred"). La barra es oscura sobre fondo oscuro, así
+   que el desenfoque no aportaba nada visible. */
 body[data-view="catalog"] .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
   padding: 11px 0;
-  background: rgba(9, 9, 9, 0.92);
-  backdrop-filter: blur(14px) saturate(1.2);
-  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  background: #0a0a0a;
   border-bottom: 1px solid rgba(207, 172, 107, 0.22);
 }
 
@@ -2589,10 +2601,13 @@ body[data-view="catalog"] .site-header h1 {
    clases las pone y las saca switchView() en script.js.
    ───────────────────────────────────────────────────────────────────────────── */
 
+/* Solo se funden elementos de una pantalla de alto. #catalog mide >80.000px:
+   animarle la opacidad lo promueve a una capa enorme y revienta la memoria del
+   compositor en móvil. Al volver a la portada el catálogo se corta en seco y la
+   portada entra animada, que se lee igual de bien. */
 body.is-view-leaving .site-header,
 body.is-view-leaving .ticker-bar,
-body.is-view-leaving #landing,
-body.is-view-leaving #catalog {
+body.is-view-leaving #landing {
   opacity: 0;
   transition: opacity 180ms ease;
 }
@@ -2602,12 +2617,15 @@ body.is-view-leaving #catalog {
   to   { opacity: 1; transform: none; }
 }
 
+/* Se anima solo la franja superior (elementos chicos). Las monedas ya entran
+   con su propio fade por tarjeta vía IntersectionObserver (initRevealEffects),
+   que es barato porque solo toca las que están a la vista. */
 body.is-view-entering .site-header,
 body.is-view-entering .ticker-bar,
 body.is-view-entering .landing-inner,
 body.is-view-entering .category-bar,
 body.is-view-entering .search-outer,
-body.is-view-entering #catalog main {
+body.is-view-entering .results-bar {
   animation: view-in 380ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }
 
@@ -2615,13 +2633,12 @@ body.is-view-entering .ticker-bar    { animation-delay: 60ms; }
 body.is-view-entering .category-bar  { animation-delay: 60ms; }
 body.is-view-entering .search-outer  { animation-delay: 120ms; }
 body.is-view-entering .landing-inner { animation-delay: 120ms; }
-body.is-view-entering #catalog main  { animation-delay: 180ms; }
+body.is-view-entering .results-bar   { animation-delay: 180ms; }
 
 @media (prefers-reduced-motion: reduce) {
   body.is-view-leaving .site-header,
   body.is-view-leaving .ticker-bar,
-  body.is-view-leaving #landing,
-  body.is-view-leaving #catalog {
+  body.is-view-leaving #landing {
     opacity: 1;
     transition: none !important;
   }
@@ -2631,7 +2648,7 @@ body.is-view-entering #catalog main  { animation-delay: 180ms; }
   body.is-view-entering .landing-inner,
   body.is-view-entering .category-bar,
   body.is-view-entering .search-outer,
-  body.is-view-entering #catalog main {
+  body.is-view-entering .results-bar {
     animation: none !important;
   }
 }
