@@ -2560,7 +2560,7 @@ body[data-view="catalog"] .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 11px 0;
+  padding: 16px 0;
   background: #0a0a0a;
   border-bottom: 1px solid rgba(207, 172, 107, 0.22);
 }
@@ -2656,7 +2656,7 @@ body.is-view-entering .results-bar   { animation-delay: 180ms; }
 /* ── Cabecera fija: teléfonos ── */
 @media (max-width: 640px) {
   body[data-view="catalog"] .site-header {
-    padding: 9px 0;
+    padding: 13px 0;
   }
 
   body[data-view="catalog"] .site-logo-link {
