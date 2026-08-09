@@ -15045,7 +15045,9 @@
     "description": "",
     "publishedAt": "2026-08-08T19:21:22.539465+00:00",
     "costo": 2.41,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-08-09T16:08:38.034255+00:00"
   },
   {
     "id": 1059,
