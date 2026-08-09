@@ -26,6 +26,12 @@ let revealObserver  = null;
 
 const STATE_KEY = 'nump_filter_state';
 
+// Se consulta en cada uso (no se cachea) porque el usuario puede cambiar la
+// preferencia del sistema con la pestaña ya abierta.
+function prefersReducedMotion() {
+  return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
 // ─── Country lookup helpers ───────────────────────────────────────────────────
 
 const ARGENTINA_EQUIVALENTS = {
@@ -413,35 +419,6 @@ function closeSubFilterBar() {
   activeSubFilter = null;
 }
 
-// ─── Image preview overlay ────────────────────────────────────────────────────
-
-function showImagePreview(src, altText) {
-  hideImagePreview(true); // instant-remove any stale overlay
-
-  const overlay = document.createElement('div');
-  overlay.id = 'imgPreviewOverlay';
-  overlay.className = 'img-preview-overlay';
-
-  const img = document.createElement('img');
-  img.src = src;
-  img.alt = altText || '';
-  img.className = 'img-preview-img';
-  overlay.appendChild(img);
-  document.body.appendChild(overlay);
-
-  // Double rAF to ensure the browser paints once before adding the class
-  requestAnimationFrame(() => requestAnimationFrame(() => overlay.classList.add('is-visible')));
-}
-
-function hideImagePreview(instant = false) {
-  const overlay = document.getElementById('imgPreviewOverlay');
-  if (!overlay) return;
-  if (instant) { overlay.remove(); return; }
-  overlay.classList.remove('is-visible');
-  overlay.addEventListener('transitionend', () => overlay.remove(), { once: true });
-  setTimeout(() => overlay.remove(), 600); // failsafe
-}
-
 // ─── Landing / Catalog view ───────────────────────────────────────────────────
 
 function showLanding() {
@@ -452,34 +429,63 @@ function showCatalog() {
   document.body.dataset.view = 'catalog';
 }
 
+/**
+ * Cambio de vista con transición: la vista saliente se funde, se aplica el
+ * cambio con las dos vistas invisibles (la entrante todavía en display:none, así
+ * que renderizar la grilla acá no parpadea) y la entrante sube escalonada de
+ * arriba hacia abajo — cabecera, categorías, buscador y monedas.
+ *
+ * Solo lo usan los saltos que dispara el usuario. La restauración de
+ * back/forward sigue llamando a showCatalog() directo: ahí la animación
+ * arruinaría la restauración del scroll.
+ */
+const VIEW_FADE_MS  = 180;
+const VIEW_ENTER_MS = 600;
+
+function switchView(apply) {
+  if (prefersReducedMotion()) { apply(); return; }
+
+  document.body.classList.add('is-view-leaving');
+  setTimeout(() => {
+    document.body.classList.remove('is-view-leaving');
+    apply();
+    document.body.classList.add('is-view-entering');
+    setTimeout(() => document.body.classList.remove('is-view-entering'), VIEW_ENTER_MS);
+  }, VIEW_FADE_MS);
+}
+
 function goToLanding() {
-  searchInput.value = '';
-  clearSearchBtn.classList.remove('is-visible');
-  activeCategory  = null;
-  activeSubFilter = null;
-  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('is-active'));
-  closeSubFilterBar();
-  hideImagePreview(true);
-  try { sessionStorage.removeItem(STATE_KEY); } catch (_) {}
-  showLanding();
+  switchView(() => {
+    searchInput.value = '';
+    clearSearchBtn.classList.remove('is-visible');
+    activeCategory  = null;
+    activeSubFilter = null;
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('is-active'));
+    closeSubFilterBar();
+    try { sessionStorage.removeItem(STATE_KEY); } catch (_) {}
+    showLanding();
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  });
 }
 
 function enterCatalog(categoryKey) {
-  showCatalog();
-  activeCategory  = categoryKey || null;
-  activeSubFilter = null;
-  document.querySelectorAll('.cat-btn').forEach(b =>
-    b.classList.toggle('is-active', b.dataset.category === activeCategory)
-  );
-  if (activeCategory) {
-    buildSubFilterBar(activeCategory);
-  } else {
-    closeSubFilterBar();
-  }
-  saveState();
-  renderCoins(getFilteredCoins());
-  initRevealEffects();
-  window.scrollTo({ top: 0, behavior: 'instant' });
+  switchView(() => {
+    showCatalog();
+    activeCategory  = categoryKey || null;
+    activeSubFilter = null;
+    document.querySelectorAll('.cat-btn').forEach(b =>
+      b.classList.toggle('is-active', b.dataset.category === activeCategory)
+    );
+    if (activeCategory) {
+      buildSubFilterBar(activeCategory);
+    } else {
+      closeSubFilterBar();
+    }
+    saveState();
+    renderCoins(getFilteredCoins());
+    initRevealEffects();
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  });
 }
 
 // ─── State persistence ────────────────────────────────────────────────────────
@@ -627,15 +633,12 @@ function countCoinsFor(predicate) {
 
 /**
  * Regla del proyecto: nunca ofrecer un filtro que lleva a una grilla vacía.
- * Si esta semana no entró nada, el enlace de la portada y el botón de la barra
- * de categorías no se muestran. Se llama recién con allCoins cargado.
+ * Si esta semana no entró nada, el acceso de Ingresos no se muestra. Vive solo
+ * en la portada. Se llama recién con allCoins cargado.
  */
 function hydrateIngresosEntries() {
-  const hay = countCoinsFor(CATEGORY_PREDICATES.ingresos) > 0;
-  ['landingIngresos', 'catIngresos'].forEach((id) => {
-    const el = document.getElementById(id);
-    if (el) el.hidden = !hay;
-  });
+  const el = document.getElementById('landingIngresos');
+  if (el) el.hidden = countCoinsFor(CATEGORY_PREDICATES.ingresos) === 0;
 }
 
 // ─── Rendering ────────────────────────────────────────────────────────────────
@@ -815,7 +818,6 @@ function renderCoins(coins, skipAnimation = false) {
   }
 
   const fragment = document.createDocumentFragment();
-  const hasPointerFine = window.matchMedia('(pointer: fine)').matches;
   const displayCoins = collapseGroups(sortCoins(coins));
 
   displayCoins.forEach((coin, idx) => {
@@ -846,8 +848,8 @@ function renderCoins(coins, skipAnimation = false) {
     // Auto-heal images that fail to load (aborted requests on navigation,
     // transient network errors, etc.) — retries with a cache-buster so the
     // user never has to hit F5 to recover broken thumbnails.
-    // El grid usa la miniatura WebP; el original queda en data-fullSrc para el
-    // zoom/preview y como fallback si la miniatura no existiera.
+    // El grid usa la miniatura WebP; el original queda en data-fullSrc como
+    // fallback si la miniatura no existiera (lo consume attachImgRetry).
     const primaryFull = getPrimaryImage(coin);
     image.dataset.fullSrc = primaryFull;
     attachImgRetry(image);
@@ -925,7 +927,7 @@ function renderCoins(coins, skipAnimation = false) {
         updateDots();
         const targetFull = images[currentIdx];
         const targetSrc = thumbFor(targetFull);
-        image.dataset.fullSrc = targetFull; // el zoom/preview usa el original
+        image.dataset.fullSrc = targetFull; // fallback si falta la miniatura
         const myToken = ++swapToken;
         const pre = new Image();
         pre.src = targetSrc;
@@ -991,28 +993,6 @@ function renderCoins(coins, skipAnimation = false) {
           setIdx(delta < 0 ? currentIdx + 1 : currentIdx - 1);
         }
       }, { passive: false });
-    }
-
-    // ── Hover image preview — shows fixed-position overlay after 3 s ──────────
-    // Gated to pointer:fine so it never fires on touch screens.
-    if (hasPointerFine) {
-      let zoomTimer = null;
-
-      article.addEventListener('mouseenter', () => {
-        zoomTimer = setTimeout(() => {
-          article.classList.add('is-zoomed');
-          // Muestra la foto original full-res (no la miniatura), respetando la
-          // posición actual del carrusel.
-          showImagePreview(image.dataset.fullSrc || image.src, coin.title);
-        }, 3000);
-      });
-
-      article.addEventListener('mouseleave', () => {
-        clearTimeout(zoomTimer);
-        zoomTimer = null;
-        article.classList.remove('is-zoomed');
-        hideImagePreview();
-      });
     }
 
     // ── Card navigation ───────────────────────────────────────────────────────
@@ -1084,7 +1064,6 @@ resetFiltersButton.addEventListener('click', () => {
   activeSubFilter = null;
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('is-active'));
   closeSubFilterBar();
-  hideImagePreview(true);
   saveState();
   renderCoins(getFilteredCoins());
   initRevealEffects();

@@ -103,9 +103,7 @@ input,
 .card-arrow,
 .card-dot,
 .search-clear,
-.reset-link,
-.img-preview-overlay,
-.img-preview-img {
+.reset-link {
   transition:
     transform 0.22s ease,
     opacity 0.22s ease,
@@ -552,7 +550,7 @@ button {
   transition: box-shadow 0.22s ease;
 }
 
-.coin-card:hover:not(.is-zoomed) {
+.coin-card:hover {
   transform: translateY(-6px);
   border-color: rgba(207, 172, 107, 0.42);
   box-shadow:
@@ -560,18 +558,8 @@ button {
     0 0 28px rgba(207, 172, 107, 0.08);
 }
 
-.coin-card:hover:not(.is-zoomed)::after {
+.coin-card:hover::after {
   box-shadow: inset 0 0 0 1px rgba(207, 172, 107, 0.12);
-}
-
-/* ─── Hover zoom ─────────────────────────────────────────────────────────── */
-
-.coin-card.is-zoomed {
-  z-index: 50;
-  border-color: rgba(207, 172, 107, 0.5);
-  box-shadow:
-    0 0 0 1px rgba(207, 172, 107, 0.18),
-    0 24px 48px rgba(0, 0, 0, 0.7);
 }
 
 /* ─── Coin image wrap ────────────────────────────────────────────────────── */
@@ -595,7 +583,7 @@ button {
   display: block;
 }
 
-.coin-card:hover:not(.is-zoomed) .coin-image {
+.coin-card:hover .coin-image {
   transform: scale(1.025);
   filter: brightness(1.03);
 }
@@ -707,7 +695,7 @@ button {
   letter-spacing: 0.05em;
 }
 
-.coin-card:hover:not(.is-zoomed) .coin-title {
+.coin-card:hover .coin-title {
   color: var(--accent-light);
   transform: translateY(-1px);
 }
@@ -741,7 +729,7 @@ button {
   min-width: 0;
 }
 
-.coin-card:hover:not(.is-zoomed) .coin-meta {
+.coin-card:hover .coin-meta {
   color: #c9b89e;
 }
 
@@ -785,7 +773,7 @@ button {
 }
 
 
-.coin-card:hover:not(.is-zoomed) .coin-grade-badge {
+.coin-card:hover .coin-grade-badge {
   transform: scale(1.05);
   border-color: rgba(207, 172, 107, 0.5);
   box-shadow:
@@ -822,7 +810,7 @@ button {
   background-clip: text;
 }
 
-.coin-card:hover:not(.is-zoomed) .coin-price {
+.coin-card:hover .coin-price {
   transform: scale(1.02);
   filter: brightness(1.08);
 }
@@ -873,7 +861,7 @@ button {
   cursor: default;
 }
 
-.coin-card.is-sold:hover:not(.is-zoomed) {
+.coin-card.is-sold:hover {
   transform: none;
   border-color: rgba(120, 100, 80, 0.15);
   box-shadow: var(--shadow);
@@ -1206,46 +1194,6 @@ button {
   font-size: 0.8rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-}
-
-/* ─── Image preview overlay (hover zoom) ────────────────────────────────── */
-
-.img-preview-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(5, 5, 5, 0.65);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.35s ease;
-}
-
-.img-preview-overlay.is-visible {
-  opacity: 1;
-}
-
-.img-preview-img {
-  width: min(55vmin, 500px);
-  height: min(55vmin, 500px);
-  object-fit: contain;
-  background: #141414;
-  border: 1px solid rgba(207, 172, 107, 0.35);
-  border-radius: 20px;
-  box-shadow:
-    0 50px 100px rgba(0, 0, 0, 0.9),
-    0 0 50px rgba(207, 172, 107, 0.1);
-  padding: 12px;
-  transform: scale(0.9);
-  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.img-preview-overlay.is-visible .img-preview-img {
-  transform: scale(1);
 }
 
 /* ─── Sub-filter: Argentina item wrapper (button + external date) ────────── */
@@ -1734,9 +1682,16 @@ button {
     margin: 0.6rem 0;
   }
 
-  /* Sin scroll horizontal en toda la página */
-  html, body {
+  /* Sin scroll horizontal en toda la página. El overflow-x va SOLO en <html>:
+     ahí se propaga al viewport y sigue recortando igual. Puesto también en
+     <body> convierte al body en contenedor de scroll propio, y eso anula el
+     position:sticky de la cabecera del catálogo (se quedaría clavada arriba de
+     todo en vez de acompañar el scroll). */
+  html {
     overflow-x: hidden;
+  }
+
+  html, body {
     max-width: 100vw;
   }
 
@@ -1801,10 +1756,6 @@ button {
   .reveal.is-visible {
     opacity: 1 !important;
     transform: none !important;
-  }
-
-  .coin-card.is-zoomed {
-    transition: none !important;
   }
 
   .sub-filter-bar,
@@ -2577,3 +2528,136 @@ body[data-view="landing"] .social-row--footer {
 
 /* ─── Mobile refinements ──────────────────────────────────────────────────── */
 
+
+/* ═══ Vista catálogo: cabecera fija ═══════════════════════════════════════════
+   La portada conserva la cabecera grande con subtítulo y cartel corredizo. En
+   el catálogo esa cabecera se reduce a una sola línea (monograma + logotipo)
+   que queda pegada arriba: sirve de ancla para volver a la portada desde
+   cualquier punto del scroll. Todo va bajo body[data-view="catalog"] para no
+   tocar detalle.html, que usa .site-header--compact y no tiene data-view.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+body[data-view="catalog"] .ticker-bar,
+body[data-view="catalog"] .subtitle {
+  display: none;
+}
+
+body[data-view="catalog"] .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 11px 0;
+  background: rgba(9, 9, 9, 0.92);
+  backdrop-filter: blur(14px) saturate(1.2);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  border-bottom: 1px solid rgba(207, 172, 107, 0.22);
+}
+
+/* El halo radial y el doble filete están pensados para una cabecera alta; en
+   11px de alto se leen como una banda sucia. */
+body[data-view="catalog"] .site-header::before,
+body[data-view="catalog"] .site-header::after {
+  display: none;
+}
+
+body[data-view="catalog"] .site-logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  cursor: pointer;
+}
+
+body[data-view="catalog"] .np-monogram {
+  width: 34px;
+  height: 34px;
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+body[data-view="catalog"] .site-header h1 {
+  display: block;
+  margin: 0;
+  font-size: clamp(1.05rem, 2.4vw, 1.6rem);
+  letter-spacing: 0.14em;
+  white-space: nowrap;
+  line-height: 1.1;
+}
+
+/* ═══ Transición entre portada y catálogo ═════════════════════════════════════
+   La saliente se funde; la entrante sube escalonada de arriba hacia abajo. Las
+   clases las pone y las saca switchView() en script.js.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+body.is-view-leaving .site-header,
+body.is-view-leaving .ticker-bar,
+body.is-view-leaving #landing,
+body.is-view-leaving #catalog {
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+@keyframes view-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+
+body.is-view-entering .site-header,
+body.is-view-entering .ticker-bar,
+body.is-view-entering .landing-inner,
+body.is-view-entering .category-bar,
+body.is-view-entering .search-outer,
+body.is-view-entering #catalog main {
+  animation: view-in 380ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+body.is-view-entering .ticker-bar    { animation-delay: 60ms; }
+body.is-view-entering .category-bar  { animation-delay: 60ms; }
+body.is-view-entering .search-outer  { animation-delay: 120ms; }
+body.is-view-entering .landing-inner { animation-delay: 120ms; }
+body.is-view-entering #catalog main  { animation-delay: 180ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  body.is-view-leaving .site-header,
+  body.is-view-leaving .ticker-bar,
+  body.is-view-leaving #landing,
+  body.is-view-leaving #catalog {
+    opacity: 1;
+    transition: none !important;
+  }
+
+  body.is-view-entering .site-header,
+  body.is-view-entering .ticker-bar,
+  body.is-view-entering .landing-inner,
+  body.is-view-entering .category-bar,
+  body.is-view-entering .search-outer,
+  body.is-view-entering #catalog main {
+    animation: none !important;
+  }
+}
+
+/* ── Cabecera fija: teléfonos ── */
+@media (max-width: 640px) {
+  body[data-view="catalog"] .site-header {
+    padding: 9px 0;
+  }
+
+  body[data-view="catalog"] .site-logo-link {
+    gap: 9px;
+  }
+
+  body[data-view="catalog"] .np-monogram {
+    width: 26px;
+    height: 26px;
+    margin: 0;
+  }
+
+  /* Anula el bloque flex de la cabecera grande en mobile: acá el h1 es un
+     bloque más dentro del flex del enlace. */
+  body[data-view="catalog"] .site-header h1 {
+    display: block;
+    margin: 0;
+    font-size: clamp(0.82rem, 4.2vw, 1.05rem);
+    letter-spacing: 0.06em;
+  }
+}
