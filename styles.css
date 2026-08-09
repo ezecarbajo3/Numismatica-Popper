@@ -2581,8 +2581,8 @@ body[data-view="catalog"] .site-logo-link {
 }
 
 body[data-view="catalog"] .np-monogram {
-  width: 34px;
-  height: 34px;
+  width: 51px;   /* 34px + 50% */
+  height: 51px;
   margin: 0;
   flex: 0 0 auto;
 }
@@ -2590,7 +2590,7 @@ body[data-view="catalog"] .np-monogram {
 body[data-view="catalog"] .site-header h1 {
   display: block;
   margin: 0;
-  font-size: clamp(1.05rem, 2.4vw, 1.6rem);
+  font-size: clamp(1.26rem, 2.88vw, 1.92rem); /* +20% sobre 1.05/2.4/1.6 */
   letter-spacing: 0.14em;
   white-space: nowrap;
   line-height: 1.1;
@@ -2664,8 +2664,8 @@ body.is-view-entering .results-bar   { animation-delay: 180ms; }
   }
 
   body[data-view="catalog"] .np-monogram {
-    width: 26px;
-    height: 26px;
+    width: 39px;   /* 26px + 50% */
+    height: 39px;
     margin: 0;
   }
 
@@ -2674,7 +2674,7 @@ body.is-view-entering .results-bar   { animation-delay: 180ms; }
   body[data-view="catalog"] .site-header h1 {
     display: block;
     margin: 0;
-    font-size: clamp(0.82rem, 4.2vw, 1.05rem);
+    font-size: clamp(0.984rem, 5.04vw, 1.26rem); /* +20% sobre 0.82/4.2/1.05 */
     letter-spacing: 0.06em;
   }
 }
