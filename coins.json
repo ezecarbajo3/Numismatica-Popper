@@ -2125,7 +2125,9 @@
     "grade_short": "",
     "description": "",
     "mintage": "",
-    "reference": ""
+    "reference": "",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966265+00:00"
   },
   {
     "id": 239,
@@ -6680,7 +6682,9 @@
     "grade": "Muy Bueno con Detalles",
     "grade_short": "MB**",
     "metal": "Cuproníquel",
-    "reference": "KM# 11"
+    "reference": "KM# 11",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966449+00:00"
   },
   {
     "id": 581,
@@ -8065,7 +8069,9 @@
       "images/670B.jpeg"
     ],
     "group_id": "br-20centavos-km556a",
-    "group_label": "20 Centavos"
+    "group_label": "20 Centavos",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966475+00:00"
   },
   {
     "id": 671,
@@ -8111,7 +8117,9 @@
     "images": [
       "images/673A.jpeg",
       "images/673B.jpeg"
-    ]
+    ],
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966477+00:00"
   },
   {
     "id": 674,
@@ -8813,7 +8821,9 @@
     ],
     "reference": "KM# 202",
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966488+00:00"
   },
   {
     "id": 715,
@@ -8880,7 +8890,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "cl-20centavos",
-    "group_label": "20 Centavos"
+    "group_label": "20 Centavos",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966491+00:00"
   },
   {
     "id": 719,
@@ -8897,7 +8909,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "cl-20centavos",
-    "group_label": "20 Centavos"
+    "group_label": "20 Centavos",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966492+00:00"
   },
   {
     "id": 720,
@@ -8946,7 +8960,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "cl-2centesimos",
-    "group_label": "2 Centesimos"
+    "group_label": "2 Centesimos",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966494+00:00"
   },
   {
     "id": 723,
@@ -9011,7 +9027,9 @@
     "grade_short": "MB",
     "mintage": "3.356.000",
     "group_id": "cl-10centavos",
-    "group_label": "10 Centavos"
+    "group_label": "10 Centavos",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966496+00:00"
   },
   {
     "id": 727,
@@ -9081,7 +9099,9 @@
     "reference": "KM# 200",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Año único"
+    "description": "Año único",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966498+00:00"
   },
   {
     "id": 731,
@@ -10928,7 +10948,7 @@
     "group_label": "Cent",
     "grade": "Regular",
     "grade_short": "R",
-    "cantidad": 7,
+    "cantidad": 4,
     "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia."
   },
   {
@@ -10946,8 +10966,10 @@
     "group_label": "1/2 Cent",
     "grade": "Regular",
     "grade_short": "R",
-    "cantidad": 2,
-    "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia."
+    "cantidad": 0,
+    "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia.",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:31.000842+00:00"
   },
   {
     "id": 843,
@@ -11046,7 +11068,7 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 4,
+    "cantidad": 3,
     "reference": "Y# 88",
     "metal": "Cuproníquel"
   },
@@ -11465,7 +11487,9 @@
       "images/871A.jpeg",
       "images/871B.jpeg"
     ],
-    "reference": "KM# 64"
+    "reference": "KM# 64",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966536+00:00"
   },
   {
     "id": 872,
@@ -11570,7 +11594,9 @@
     "grade": "Bueno+",
     "grade_short": "B+",
     "group_id": "dk-10ore",
-    "group_label": "10 Ore"
+    "group_label": "10 Ore",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966539+00:00"
   },
   {
     "id": 878,
@@ -12054,7 +12080,7 @@
     "grade_short": "EX",
     "group_id": "it-20centesimi-km75b",
     "group_label": "20 Centesimi",
-    "cantidad": 3
+    "cantidad": 2
   },
   {
     "id": 906,
@@ -12071,7 +12097,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "it-20centesimi-km75b",
-    "group_label": "20 Centesimi"
+    "group_label": "20 Centesimi",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966548+00:00"
   },
   {
     "id": 907,
@@ -12088,7 +12116,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "it-20centesimi-km75b",
-    "group_label": "20 Centesimi"
+    "group_label": "20 Centesimi",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966549+00:00"
   },
   {
     "id": 908,
@@ -12105,7 +12135,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "it-20centesimi-km75b",
-    "group_label": "20 Centesimi"
+    "group_label": "20 Centesimi",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966551+00:00"
   },
   {
     "id": 909,
@@ -12211,7 +12243,9 @@
     ],
     "reference": "KM# 964.1",
     "grade": "Excelente +",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966553+00:00"
   },
   {
     "id": 915,
@@ -12537,7 +12571,7 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 5,
+    "cantidad": 3,
     "reference": "KM# 1211",
     "description": "Pertenece a la serie floral de la quinta serie del Yuan RMB, mostrando la flor de Orquídea."
   },
@@ -12969,7 +13003,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "reference": "KM# 1411",
-    "description": "Muestra la flor de Loto en el reverso."
+    "description": "Muestra la flor de Loto en el reverso.",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966565+00:00"
   },
   {
     "id": 957,
@@ -13106,7 +13142,9 @@
     "reference": "KM# 60",
     "description": "Reinado de Víctor Manuel III. Tipo Ape (Abeja).",
     "group_id": "it-10centesimi-ape",
-    "group_label": "10 Centesimi Ape"
+    "group_label": "10 Centesimi Ape",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:50:30.966568+00:00"
   },
   {
     "id": 964,
@@ -13181,7 +13219,7 @@
   },
   {
     "id": 968,
-    "cantidad": 4,
+    "cantidad": 3,
     "title": "1 Yen 1982",
     "country": "Japón",
     "metal": "Aluminio",
@@ -13220,7 +13258,7 @@
   {
     "id": 970,
     "costo": 0,
-    "cantidad": 10,
+    "cantidad": 9,
     "title": "1 Jiao 2009",
     "country": "China",
     "metal": "Acero niquelado",
