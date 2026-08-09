@@ -8960,9 +8960,7 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "group_id": "cl-2centesimos",
-    "group_label": "2 Centesimos",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966494+00:00"
+    "group_label": "2 Centesimos"
   },
   {
     "id": 723,
@@ -8994,7 +8992,9 @@
     ],
     "reference": "KM# 190",
     "grade": "Muy Bueno -",
-    "grade_short": "MB-"
+    "grade_short": "MB-",
+    "status": "sold",
+    "soldAt": "2026-08-09T21:53:39.911753+00:00"
   },
   {
     "id": 725,
@@ -10948,7 +10948,7 @@
     "group_label": "Cent",
     "grade": "Regular",
     "grade_short": "R",
-    "cantidad": 4,
+    "cantidad": 7,
     "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia."
   },
   {
@@ -10987,7 +10987,7 @@
     "grade_short": "MB",
     "cantidad": 0,
     "status": "sold",
-    "soldAt": "2026-07-26T00:11:46.000Z"
+    "soldAt": "2026-08-09T21:53:39.911773+00:00"
   },
   {
     "id": 844,
