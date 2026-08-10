@@ -2711,18 +2711,21 @@ body[data-view="catalog"] .site-header {
 }
 
 /* Al dejar atrás los filtros la barra se despega un poco del fondo: el negro
-   baja a 0.82 y las monedas se insinúan pasando por detrás. Va SOLO alpha, sin
+   baja a 0.66 y las monedas se insinúan pasando por detrás. Va SOLO alpha, sin
    backdrop-filter — ver el comentario de arriba: desenfocar detrás de un sticky
    sobre esta grilla mata la pestaña en iOS. La transparencia sola no re-captura
    nada y no cuesta memoria.
    Acompaña al texto plateado: entra y sale con la misma clase. */
 body[data-view="catalog"].is-in-grid .site-header {
-  background-color: rgba(10, 10, 10, 0.82);
+  background-color: rgba(10, 10, 10, 0.66);
 }
 
 /* ── Flecha "subir": a la derecha del logotipo, en la misma línea ───────────
    Aparece en el mismo momento que el plateado: cuando el scroll llega al borde
    de arriba de la grilla. Antes de eso no hay nada a lo que subir.
+
+   Va dentro de un aro del mismo diámetro que el círculo exterior del monograma,
+   así la fila queda simétrica: dos aros iguales flanqueando el logotipo.
 
    Se colapsa a ancho cero en vez de esconderse con visibility: así el logotipo
    queda perfectamente centrado mientras la flecha no está, y cuando aparece se
@@ -2731,6 +2734,7 @@ body[data-view="catalog"].is-in-grid .site-header {
    colapse junto con ella. */
 
 .to-top {
+  position: relative;   /* ancla del aro, ver el ::before de más abajo */
   display: none;
   flex: 0 0 auto;
   width: 0;
@@ -2749,8 +2753,8 @@ body[data-view="catalog"].is-in-grid .site-header {
 .to-top svg {
   display: block;
   flex: 0 0 auto;
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   margin: 0 auto;
 }
 
@@ -2776,11 +2780,39 @@ body[data-view="catalog"] .to-top {
 }
 
 body[data-view="catalog"].is-in-grid .to-top {
-  width: 31px;      /* 17 del icono + 7 de padding a cada lado */
-  margin-left: 10px;
-  padding: 7px;
+  width: 51px;      /* la misma caja que el monograma, para que los dos aros midan igual */
+  height: 51px;
+  margin-left: 13px;  /* = el gap logo↔logotipo del .site-logo-link */
+  padding: 0;
   opacity: 1;
   pointer-events: auto;
+}
+
+/* El aro replica el círculo exterior del monograma: 47px de diámetro —el r=37 de
+   su viewBox 80 llevado a una caja de 51px— y el mismo pelo de trazo.
+   Va en un ::before de tamaño fijo y NO como border del botón: la caja se
+   despliega animando width, así que un border-radius: 50% sobre ella sería una
+   elipse deformándose durante la animación, y en teléfono la caja mide 39×44
+   —rectangular por el área de toque— o sea que daría un óvalo permanente.
+   Con tamaño fijo el aro no se deforma nunca: se revela recortado por el
+   overflow: hidden del botón, el mismo barrido que ya hace el chevron.
+   currentColor para que siga al botón: se aclara en hover y se va a plata con el
+   filter de is-in-grid, que se aplica al botón entero.
+   No necesita transición propia: el opacity del botón arrastra al pseudo. Y por
+   eso el aro se define para toda la vista de catálogo y no solo para is-in-grid:
+   así al volver arriba se desvanece junto con la flecha en vez de desaparecer de
+   golpe. Con la caja colapsada a ancho cero no se asoma nada. */
+body[data-view="catalog"] .to-top::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 47px;
+  height: 47px;
+  margin: -23.5px 0 0 -23.5px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 /* El halo radial y el doble filete están pensados para una cabecera alta; en
@@ -2954,19 +2986,30 @@ body[data-view="catalog"].is-in-grid .to-top {
     gap: 9px;
   }
 
-  /* El icono baja a 14px pero la caja se ensancha y se estira a lo alto: 36×44
-     de área de toque, y 8px de aire para que el pulgar no caiga en el logotipo,
-     que navega a la portada. */
+  /* El icono baja a 17px y la caja toma el ancho del monograma —39px, para que
+     los dos aros midan igual— pero se estira a lo alto hasta los 44px de área de
+     toque, y el aire al logotipo iguala el gap del .site-logo-link para que el
+     pulgar no caiga en él, que navega a la portada. */
   .to-top svg {
-    width: 14px;
-    height: 14px;
+    width: 17px;
+    height: 17px;
   }
 
   body[data-view="catalog"].is-in-grid .to-top {
-    width: 36px;
+    width: 39px;
+    height: auto;   /* anula los 51px de escritorio: acá manda el min-height */
     min-height: 44px;
-    margin-left: 8px;
-    padding: 11px;
+    margin-left: 9px;
+    padding: 0;
+  }
+
+  /* 36px = el aro r=37 del monograma llevado a su caja de 39px. La caja del botón
+     es más alta que ancha (44 de área de toque), y por eso el aro va en un pseudo
+     de tamaño fijo: acá se vería el óvalo. */
+  body[data-view="catalog"] .to-top::before {
+    width: 36px;
+    height: 36px;
+    margin: -18px 0 0 -18px;
   }
 
   body[data-view="catalog"] .np-monogram {
