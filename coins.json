@@ -2551,7 +2551,9 @@
     "mintage": "6.900.000",
     "description": "",
     "group_id": "pe-10centavos-km214",
-    "group_label": "10 Centavos"
+    "group_label": "10 Centavos",
+    "status": "sold",
+    "soldAt": "2026-08-10T21:05:57.200369+00:00"
   },
   {
     "id": 271,
@@ -6670,7 +6672,9 @@
     "grade": "Bueno+",
     "grade_short": "B+",
     "metal": "Zinc",
-    "reference": "KM# 26"
+    "reference": "KM# 26",
+    "status": "sold",
+    "soldAt": "2026-08-10T21:05:57.200524+00:00"
   },
   {
     "id": 578,
@@ -6814,7 +6818,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "metal": "Aluminio",
-    "reference": "KM# 13"
+    "reference": "KM# 13",
+    "status": "sold",
+    "soldAt": "2026-08-10T21:05:57.200527+00:00"
   },
   {
     "id": 587,
@@ -8280,7 +8286,9 @@
       "images/681B.jpeg"
     ],
     "group_id": "uk-penny-bronze",
-    "group_label": "Penny"
+    "group_label": "Penny",
+    "status": "sold",
+    "soldAt": "2026-08-10T21:05:57.200535+00:00"
   },
   {
     "id": 682,
