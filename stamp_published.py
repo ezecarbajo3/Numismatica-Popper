@@ -12,11 +12,15 @@ Nunca pisa un publishedAt existente y sin argumentos no toca nada.
 """
 
 import json
+import os
 import sys
 from datetime import datetime, timezone
 
-file_path = '/Users/ezecarbajo/popper-site/coins.json'
-log_path = '/Users/ezecarbajo/Desktop/Popper/operational_log.md'
+# Rutas derivadas de la ubicación del script, no absolutas: así el repo
+# sigue funcionando si se clona en otra carpeta o en otra máquina.
+_REPO_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(_REPO_DIR, 'coins.json')
+log_path = os.path.join(os.path.expanduser('~'), 'Desktop', 'Popper', 'operational_log.md')
 
 args = sys.argv[1:]
 if not args:

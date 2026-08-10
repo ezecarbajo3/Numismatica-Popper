@@ -970,9 +970,16 @@ function buildCoinCard(coin, idx, skipAnimation) {
   // El grid usa la miniatura WebP; el original queda en data-fullSrc como
   // fallback si la miniatura no existiera (lo consume handleImgError).
   const primaryFull = getPrimaryImage(coin);
-  image.dataset.fullSrc = primaryFull;
-  image.src = thumbFor(primaryFull);
-  image.alt = coin.title || 'Moneda';
+  if (primaryFull) {
+    image.dataset.fullSrc = primaryFull;
+    image.src = thumbFor(primaryFull);
+    image.alt = coin.title || 'Moneda';
+  } else {
+    // Hay monedas publicadas todavía sin fotos. Sin esto el navegador dibuja el
+    // ícono de imagen rota, que es peor que un hueco prolijo.
+    image.remove();
+    imageWrap.classList.add('is-photoless');
+  }
 
   if (coin.group_id) {
     article.classList.add('is-group');

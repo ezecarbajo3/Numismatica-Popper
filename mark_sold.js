@@ -3,9 +3,10 @@
  * mark_sold.js — Numismática Popper: sold-item lifecycle manager
  *
  * Usage:
- *   node mark_sold.js "search term"   → mark matching coin(s) as sold
- *   node mark_sold.js --purge         → remove sold items >7 days old + delete images
- *   node mark_sold.js --list-sold     → print all currently sold items
+ *   node mark_sold.js "search term"      → mark matching coin(s) as sold
+ *   node mark_sold.js --purge            → dry-run: lista lo que se borraría
+ *   node mark_sold.js --purge --confirm  → borra de verdad (irreversible)
+ *   node mark_sold.js --list-sold        → print all currently sold items
  *
  * Expects to be run from the project root (same directory as coins.json).
  */
@@ -16,7 +17,14 @@ const os   = require('os');
 
 const COINS_FILE   = path.join(__dirname, 'coins.json');
 const LOG_FILE     = path.join(os.homedir(), 'Desktop', 'Popper', 'operational_log.md');
-const SEVEN_DAYS   = 7 * 24 * 60 * 60 * 1000;
+
+// Ventana de retención de una moneda vendida. DEBE coincidir con
+// SOLD_RETENTION_DAYS de common.js, que es la que decide qué muestra el sitio.
+// Estaba en 7 días mientras el sitio mostraba 30: corrido tal cual, --purge
+// borraba de coins.json y del disco 168 monedas, 112 de ellas todavía visibles
+// en el catálogo, sin vuelta atrás.
+const RETENTION_DAYS = 30;
+const RETENTION_MS   = RETENTION_DAYS * 24 * 60 * 60 * 1000;
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -110,7 +118,7 @@ function markSold(searchTerm) {
     }),
     '',
     '**Visual effect:** grayscale overlay + VENDIDO ribbon applied on next page load for out of stock items.',
-    '**Retention:** Out of stock items will remain visible for 7 days, then auto-purge.',
+    `**Retention:** Out of stock items will remain visible for ${RETENTION_DAYS} days, then auto-purge.`,
     '',
     '**Edge cases / notes:**',
     `- ${matches.length > changed.length ? `${matches.length - changed.length} match(es) already sold, skipped.` : 'No duplicates.'}`,
@@ -122,37 +130,67 @@ function markSold(searchTerm) {
   appendLog(logEntry);
 }
 
-function purgeExpired() {
+// Borra del catálogo las monedas vendidas cuya ventana ya venció, junto con TODO
+// lo que arrastran: fotos originales, miniaturas WebP y la página de compartir.
+// Antes dejaba huérfanos los dos últimos, así que quedaban moneda/<id>.html
+// apuntando a una ficha inexistente.
+//
+// Es irreversible y sin --confirm solo muestra qué haría.
+function purgeExpired(confirmed) {
   const coins    = readCoins();
   const now      = Date.now();
   const expired  = coins.filter(c =>
     c.status === 'sold' && c.soldAt &&
-    (now - new Date(c.soldAt).getTime() > SEVEN_DAYS)
+    (now - new Date(c.soldAt).getTime() > RETENTION_MS)
   );
 
   if (expired.length === 0) {
-    console.log('✓ No expired sold items to purge.');
+    console.log(`✓ No hay vendidas con más de ${RETENTION_DAYS} días para purgar.`);
     return;
   }
 
-  const deletedImages = [];
-  expired.forEach(coin => {
-    const images = Array.isArray(coin.images) ? coin.images : (coin.image ? [coin.image] : []);
-    images.forEach(imgPath => {
-      const abs = path.join(__dirname, imgPath);
-      if (fs.existsSync(abs)) {
-        fs.unlinkSync(abs);
-        deletedImages.push(imgPath);
-        console.log(`🗑  Deleted image: ${imgPath}`);
+  // Rutas asociadas a una moneda: fotos, sus miniaturas y la página de compartir.
+  const assetsOf = (coin) => {
+    const images = Array.isArray(coin.images) ? coin.images : [];
+    const out = [...images];
+    images.forEach(img => {
+      if (img.startsWith('images/') && !img.startsWith('images/thumbs/') && !/\.mp4$/i.test(img)) {
+        const base = img.split('/').pop().replace(/\.[^.]+$/, '');
+        out.push(`images/thumbs/${base}.webp`);
       }
     });
-    console.log(`✗  Purged coin: [${coin.id}] ${coin.title}`);
+    out.push(`moneda/${coin.id}.html`);
+    return out.filter(p => fs.existsSync(path.join(__dirname, p)));
+  };
+
+  if (!confirmed) {
+    console.log(`\nSIMULACIÓN — no se borró nada. ${expired.length} moneda(s) vencida(s):\n`);
+    let files = 0;
+    expired.forEach(coin => {
+      const assets = assetsOf(coin);
+      files += assets.length;
+      const dias = Math.floor((now - new Date(coin.soldAt).getTime()) / 86400000);
+      console.log(`  [${coin.id}] ${coin.title} — vendida hace ${dias} días, ${assets.length} archivo(s)`);
+    });
+    console.log(`\nSe borrarían ${expired.length} monedas de coins.json y ${files} archivos del disco.`);
+    console.log('Es IRREVERSIBLE. Para hacerlo de verdad: node mark_sold.js --purge --confirm\n');
+    return;
+  }
+
+  const deletedFiles = [];
+  expired.forEach(coin => {
+    assetsOf(coin).forEach(rel => {
+      fs.unlinkSync(path.join(__dirname, rel));
+      deletedFiles.push(rel);
+      console.log(`🗑  Borrado: ${rel}`);
+    });
+    console.log(`✗  Purgada: [${coin.id}] ${coin.title}`);
   });
 
   const remaining = coins.filter(c => !expired.includes(c));
   writeCoins(remaining);
 
-  console.log(`\n✓ Purged ${expired.length} coin(s), deleted ${deletedImages.length} image(s).`);
+  console.log(`\n✓ Purgadas ${expired.length} moneda(s), borrados ${deletedFiles.length} archivo(s).`);
 
   const logEntry = [
     '**Action:** `purge_expired`',
@@ -160,14 +198,13 @@ function purgeExpired() {
     `**Items purged (${expired.length}):**`,
     ...expired.map(c => `- ID ${c.id}: _${c.title}_ (soldAt: ${c.soldAt})`),
     '',
-    `**Images deleted (${deletedImages.length}):**`,
-    ...(deletedImages.length ? deletedImages.map(p => `- \`${p}\``) : ['- None']),
+    `**Files deleted (${deletedFiles.length}):**`,
+    ...(deletedFiles.length ? deletedFiles.map(p => `- \`${p}\``) : ['- None']),
     '',
     '**Edge cases / notes:**',
-    `- Retention threshold: 7 days (${SEVEN_DAYS / 1000 / 3600}h).`,
+    `- Retention threshold: ${RETENTION_DAYS} días (igual que SOLD_RETENTION_DAYS en common.js).`,
     `- Remaining coins in catalog: ${remaining.length}.`,
     '',
-    '**Optimization suggestion:** Automate with `crontab -e` → `0 3 * * 1 cd ~/path/to/project && node mark_sold.js --purge`',
   ].join('\n');
 
   appendLog(logEntry);
@@ -182,8 +219,8 @@ function listSold() {
   sold.forEach(c => {
     const soldAt   = new Date(c.soldAt);
     const elapsed  = now - soldAt.getTime();
-    const daysLeft = Math.max(0, Math.ceil((SEVEN_DAYS - elapsed) / 86400000));
-    const status   = elapsed > SEVEN_DAYS ? '⚠  EXPIRED (run --purge)' : `${daysLeft}d left`;
+    const daysLeft = Math.max(0, Math.ceil((RETENTION_MS - elapsed) / 86400000));
+    const status   = elapsed > RETENTION_MS ? '⚠  VENCIDA (correr --purge)' : `quedan ${daysLeft}d`;
     console.log(`  [${c.id}] ${c.title}  —  sold ${soldAt.toLocaleDateString('es-AR')}  (${status})`);
   });
 }
@@ -198,12 +235,13 @@ if (!flag || flag === '--help') {
     '',
     'Usage:',
     '  node mark_sold.js "search term"   Mark matching coin as sold',
-    '  node mark_sold.js --purge         Remove expired sold items + delete images',
+    '  node mark_sold.js --purge         Simula la purga de vendidas vencidas',
+    '  node mark_sold.js --purge --confirm  Purga de verdad (IRREVERSIBLE)',
     '  node mark_sold.js --list-sold     Show current sold items with days remaining',
     '',
   ].join('\n'));
 } else if (flag === '--purge') {
-  purgeExpired();
+  purgeExpired(args.includes('--confirm'));
 } else if (flag === '--list-sold') {
   listSold();
 } else {

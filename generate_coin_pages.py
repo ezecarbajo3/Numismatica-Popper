@@ -29,7 +29,6 @@ TEMPLATE = """<!DOCTYPE html>
   <meta property="og:url" content="{page_url}" />
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/png" href="../images/og-image.png" />
-  <meta http-equiv="refresh" content="0; url={detail_url}" />
 </head>
 <body>
   <script>window.location.replace("{detail_url}");</script>
@@ -39,10 +38,24 @@ TEMPLATE = """<!DOCTYPE html>
 """
 
 
+def primary_image(images):
+    """La foto de portada es la que termina en 'A', igual que en el catálogo.
+
+    Con images[0] a secas, una moneda cuyo array quedó reordenado (la 1018 es
+    ["1018C","1018A","1018B"]) se previsualizaba en WhatsApp con una foto y se
+    abría con otra.
+    """
+    for img in images:
+        name = img.split("/")[-1].upper()
+        if "A." in name:
+            return img
+    return images[0] if images else None
+
+
 def build_page(coin):
     coin_id = coin["id"]
     images = coin.get("images") or []
-    image_path = images[0] if images else "images/og-image.png"
+    image_path = primary_image(images) or "images/og-image.png"
     title = html.escape(coin.get("title") or "Moneda")
     description = html.escape(f"{coin.get('country', '')} · {coin.get('price', 'Consultar')}".strip(" ·"))
     return TEMPLATE.format(
@@ -66,7 +79,20 @@ def main():
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(page)
 
+    # Limpieza de huérfanas: si una moneda desaparece de coins.json, su página
+    # quedaba para siempre redirigiendo a una ficha inexistente ("No se encontró
+    # la moneda"). Antes esta función solo escribía, nunca borraba.
+    vigentes = {f"{coin['id']}.html" for coin in coins}
+    huerfanas = [
+        name for name in os.listdir(OUTPUT_DIR)
+        if name.endswith(".html") and name not in vigentes
+    ]
+    for name in huerfanas:
+        os.remove(os.path.join(OUTPUT_DIR, name))
+
     print(f"Generadas {len(coins)} páginas en {OUTPUT_DIR}")
+    if huerfanas:
+        print(f"Borradas {len(huerfanas)} páginas huérfanas: {', '.join(sorted(huerfanas))}")
 
 
 if __name__ == "__main__":

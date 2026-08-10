@@ -12603,11 +12603,7 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "reference": "KM# 940",
-    "description": "Diseño moderno abstracto de Georges Mathieu representando el mapa estilizado de Francia.",
-    "images": [
-      "images/934A.jpeg",
-      "images/934B.jpeg"
-    ]
+    "description": "Diseño moderno abstracto de Georges Mathieu representando el mapa estilizado de Francia."
   },
   {
     "id": 935,
@@ -12620,11 +12616,7 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "commemorates": "30° Aniversario de la Gesta de Malvinas",
-    "description": "Emisión conmemorativa por el 30° Aniversario de la Gesta de Malvinas (1982-2012).",
-    "images": [
-      "images/935A.jpeg",
-      "images/935B.jpeg"
-    ]
+    "description": "Emisión conmemorativa por el 30° Aniversario de la Gesta de Malvinas (1982-2012)."
   },
   {
     "id": 936,
