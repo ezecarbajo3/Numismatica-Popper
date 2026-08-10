@@ -1490,11 +1490,34 @@ document.querySelectorAll('.cat-btn').forEach(btn => {
 });
 
 // Accesos de la portada: los 6 botones de categoría, "Ver todas" y el enlace
-// discreto de Ingresos comparten el mismo data-attribute.
+// discreto de Ingresos comparten el mismo data-attribute. Solo los 6 de la
+// grilla dibujan el aro de presión antes de entrar al catálogo; el resto navega
+// en el acto.
+//
+// Debe coincidir con la duración de `landing-press-ripple` en styles.css.
+const LANDING_PRESS_MS = 380;
+let landingPressPending = false;
+
 document.querySelectorAll('[data-landing-category]').forEach(btn => {
   btn.addEventListener('click', () => {
-    const cat = btn.dataset.landingCategory;
-    enterCatalog(cat === 'todas' ? null : cat);
+    const cat    = btn.dataset.landingCategory;
+    const target = cat === 'todas' ? null : cat;
+    const isCategoryCard = btn.classList.contains('landing-btn')
+      && !btn.classList.contains('landing-btn--all');
+
+    if (!isCategoryCard || prefersReducedMotion()) {
+      enterCatalog(target);
+      return;
+    }
+    if (landingPressPending) return; // ya hay un aro en curso
+
+    landingPressPending = true;
+    btn.classList.add('is-pressed');
+    setTimeout(() => {
+      btn.classList.remove('is-pressed');
+      landingPressPending = false;
+      enterCatalog(target);
+    }, LANDING_PRESS_MS);
   });
 });
 

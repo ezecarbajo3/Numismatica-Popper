@@ -1872,6 +1872,7 @@ button {
 
   .ticker-track,
   .landing-btn--all::after,
+  .landing-btn.is-pressed::after,
   .landing-chip::after,
   .cat-btn.is-active::after {
     animation: none !important;
@@ -2014,7 +2015,6 @@ body[data-view="catalog"] #catalog {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   line-height: 1.35;
-  overflow: hidden;
 }
 
 .landing-btn__icon {
@@ -2046,6 +2046,32 @@ body[data-view="catalog"] #catalog {
   transform: scale(0.99);
 }
 
+/* Mismo aro que el chip de "Ingresos semanales" (ver .landing-chip::after),
+   pero disparado por clase en vez de latir en reposo: al tocar un filtro la
+   portada se va enseguida, así que el latido de 3,2 s no se llegaría a ver.
+   Excluye al CTA "Ver todas", que ya usa su ::after para el barrido cta-shine. */
+.landing-btn:not(.landing-btn--all).is-pressed {
+  z-index: 1; /* el aro se sale del botón; que no lo tape el vecino siguiente */
+}
+
+.landing-btn:not(.landing-btn--all).is-pressed::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 10px; /* el chip es una píldora (999px); la tarjeta, no */
+  border: 1px solid rgba(var(--accent-rgb), 0.5);
+  opacity: 0;
+  pointer-events: none;
+  animation: landing-press-ripple 380ms ease-out;
+}
+
+/* Es el tramo útil de chip-ripple (0 %→65 %): el resto de aquel keyframe es
+   solo la pausa entre latidos, que acá no aplica. */
+@keyframes landing-press-ripple {
+  from { transform: scale(1);    opacity: 0.6; }
+  to   { transform: scale(1.16); opacity: 0; }
+}
+
 /* ── Nivel 1: CTA principal ── */
 
 .landing-btn--all {
@@ -2062,6 +2088,7 @@ body[data-view="catalog"] #catalog {
   letter-spacing: 0.22em;
   border-radius: 10px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  overflow: hidden; /* recorta el barrido de cta-shine dentro del botón */
 }
 
 /* Barrido de brillo, apenas insinuado, solo en hover */
