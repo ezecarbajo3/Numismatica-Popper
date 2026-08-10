@@ -8177,7 +8177,9 @@
     "images": [
       "images/674A.jpeg",
       "images/674B.jpeg"
-    ]
+    ],
+    "status": "sold",
+    "soldAt": "2026-08-10T21:20:11.407339+00:00"
   },
   {
     "id": 675,
