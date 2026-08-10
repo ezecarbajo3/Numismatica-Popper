@@ -1,4 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Orbitron:wght@400;700&display=swap");
+/* ═════════════════════════════════════════════════════════════════════════════
+   Numismática Popper — hoja de estilos única del sitio.
+
+   Las fuentes se piden desde el <head> de index.html y detalle.html, NO con un
+   @import acá: un @import no se descubre hasta que este archivo bajó y se
+   parseó, así que encadenaba HTML → styles.css → CSS de Google → .woff2.
+
+   DÓNDE ESTÁ CADA COSA (buscá el texto entre comillas):
+
+     Base y variables ......... ":root"
+     Halo del puntero ......... "Halo dorado"
+     Cabecera alta ............ "Site header"
+     Cartel corredizo ......... "Ticker"
+     Barra de categorías ...... "Category bar"
+     Sub-filtros .............. "Sub-filter bar"
+     Buscador y orden ......... "Search"
+     Tarjeta de moneda ........ "Coin card"
+     Grilla ................... "Coins grid"
+     Ficha de detalle ......... "Detail page"
+     Variantes ................ "Variants"
+     Portada .................. "Landing"
+     Cabecera fija del catálogo "Cabecera fija"
+     Transición entre vistas .. "Transición entre portada y catálogo"
+
+   BREAKPOINTS. No están agrupados a propósito: cada bloque vive junto al
+   componente que corrige, y moverlos cambiaría el orden de la cascada entre
+   reglas de igual especificidad. Los anchos en uso son 640px (teléfono),
+   980px (tablet) y 981px+ (escritorio), más `hover:hover and pointer:fine`
+   para lo que solo tiene sentido con mouse y `prefers-reduced-motion`.
+   ═════════════════════════════════════════════════════════════════════════════ */
 
 * {
   box-sizing: border-box;
@@ -16,8 +45,12 @@
   --bg-card-alt: #1f1f1f;
   --text: #f5f0e6;
   --muted: #b2a38d;
-  --border: rgba(207, 172, 107, 0.22);
+  --border: rgba(var(--accent-rgb), 0.22);
   --accent: #cfac6b;
+  /* Los mismos componentes del dorado, sueltos, para poder escribir
+     rgba(var(--accent-rgb), .18) donde antes había 111 rgba(var(--accent-rgb),…)
+     literales con alfas distintos. */
+  --accent-rgb: 207, 172, 107;
   --accent-light: #efd9a2;
   --accent-dark: #a8844a;
   --success: #25d366;
@@ -34,35 +67,41 @@ html {
 /* ─── Halo dorado que sigue al puntero (ver glow.js) ──────────────────────────
    Va en z-index -1: se pinta sobre el fondo de la página pero por debajo de
    las tarjetas y las fotos, así que ilumina sin lavar el contenido. Arranca
-   fuera de pantalla y solo aparece cuando el mouse se mueve. */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 640px;
-  height: 640px;
-  /* El halo se centra en el puntero: la caja se corre media medida hacia
-     arriba y hacia la izquierda. */
-  margin: -320px 0 0 -320px;
-  z-index: -1;
-  pointer-events: none;
-  opacity: 0;
-  /* Mover con transform en vez de recalcular el degradado: así el navegador
-     compone en GPU y no repinta la grilla del catálogo en cada frame. */
-  transform: translate3d(var(--glow-x, -9999px), var(--glow-y, -9999px), 0);
-  will-change: transform, opacity;
-  transition: opacity 0.6s ease;
-  background: radial-gradient(
-    circle closest-side,
-    rgba(207, 172, 107, 0.1) 0%,
-    rgba(207, 172, 107, 0.04) 40%,
-    transparent 70%
-  );
-}
+   fuera de pantalla y solo aparece cuando el mouse se mueve.
 
-body.has-glow::before {
-  opacity: 1;
+   Todo el bloque vive dentro del media query de puntero fino: en un teléfono
+   glow.js ni siquiera se engancha, pero el `will-change` igual promovía una
+   capa de compositor de 640×640 que no se usaba nunca. */
+@media (hover: hover) and (pointer: fine) {
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 640px;
+    /* El halo se centra en el puntero: la caja se corre media medida hacia
+       arriba y hacia la izquierda. */
+    margin: -320px 0 0 -320px;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0;
+    /* Mover con transform en vez de recalcular el degradado: así el navegador
+       compone en GPU y no repinta la grilla del catálogo en cada frame. */
+    transform: translate3d(var(--glow-x, -9999px), var(--glow-y, -9999px), 0);
+    will-change: transform, opacity;
+    transition: opacity 0.6s ease;
+    background: radial-gradient(
+      circle closest-side,
+      rgba(var(--accent-rgb), 0.1) 0%,
+      rgba(var(--accent-rgb), 0.04) 40%,
+      transparent 70%
+    );
+  }
+
+  body.has-glow::before {
+    opacity: 1;
+  }
 }
 
 body {
@@ -75,8 +114,8 @@ body {
 
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #070707; }
-::-webkit-scrollbar-thumb { background: rgba(207, 172, 107, 0.35); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(207, 172, 107, 0.55); }
+::-webkit-scrollbar-thumb { background: rgba(var(--accent-rgb), 0.35); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(var(--accent-rgb), 0.55); }
 
 .container {
   width: min(calc(100% - 32px), var(--container));
@@ -119,7 +158,7 @@ input,
 .site-header {
   position: relative;
   background: linear-gradient(180deg, #141414 0%, #0a0a0a 100%);
-  border-bottom: 1px solid rgba(207, 172, 107, 0.18);
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.18);
   padding: 55px 0 36px;
   text-align: center;
   overflow: hidden;
@@ -129,7 +168,7 @@ input,
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% -10%, rgba(207, 172, 107, 0.12) 0%, transparent 65%);
+  background: radial-gradient(ellipse at 50% -10%, rgba(var(--accent-rgb), 0.12) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -137,8 +176,8 @@ input,
   content: "";
   position: absolute;
   top: 10px; left: 10px; right: 10px; bottom: 10px;
-  border-top: 1px solid rgba(207, 172, 107, 0.14);
-  border-bottom: 1px solid rgba(207, 172, 107, 0.14);
+  border-top: 1px solid rgba(var(--accent-rgb), 0.14);
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.14);
   pointer-events: none;
 }
 
@@ -188,7 +227,7 @@ input,
   background: #030303;
   overflow: hidden;
   white-space: nowrap;
-  border-bottom: 1px solid rgba(207, 172, 107, 0.2);
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.2);
   padding: 9px 0;
   position: relative;
 }
@@ -209,8 +248,8 @@ input,
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-shadow:
-    0 0 8px rgba(207, 172, 107, 0.5),
-    0 0 22px rgba(207, 172, 107, 0.25);
+    0 0 8px rgba(var(--accent-rgb), 0.5),
+    0 0 22px rgba(var(--accent-rgb), 0.25);
 }
 
 @keyframes ticker-scroll {
@@ -222,7 +261,7 @@ input,
 
 .category-bar {
   background: rgba(10, 10, 10, 0.95);
-  border-bottom: 1px solid rgba(207, 172, 107, 0.12);
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.12);
 }
 
 .category-nav {
@@ -235,11 +274,11 @@ input,
 .cat-btn {
   flex: 1;
   min-width: 0;
-  border: 1px solid rgba(207, 172, 107, 0.25);
+  border: 1px solid rgba(var(--accent-rgb), 0.25);
   border-radius: 999px;
   padding: 10px 10px;
-  background: rgba(207, 172, 107, 0.04);
-  color: rgba(207, 172, 107, 0.65);
+  background: rgba(var(--accent-rgb), 0.04);
+  color: rgba(var(--accent-rgb), 0.65);
   font-family: "Cinzel", serif;
   font-size: 0.66rem;
   font-weight: 500;
@@ -254,11 +293,11 @@ input,
 }
 
 .cat-btn:hover {
-  border-color: rgba(207, 172, 107, 0.55);
+  border-color: rgba(var(--accent-rgb), 0.55);
   color: var(--accent-light);
-  background: rgba(207, 172, 107, 0.08);
+  background: rgba(var(--accent-rgb), 0.08);
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(207, 172, 107, 0.1);
+  box-shadow: 0 4px 16px rgba(var(--accent-rgb), 0.1);
 }
 
 .cat-btn.is-active {
@@ -268,37 +307,18 @@ input,
   color: #1a1000;
   font-weight: 700;
   box-shadow:
-    0 0 20px rgba(207, 172, 107, 0.2),
+    0 0 20px rgba(var(--accent-rgb), 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-/* El aro que late: exactamente el mismo de "Ingresos semanales" en la portada
-   (reutiliza @keyframes chip-ripple, más abajo). El dorado solo dice "estás en
-   esta categoría"; el latido dice además "tocá acá de nuevo para sacarla", que
-   es el único modo de quitar el filtro. Absoluto, así el ::after no entra como
-   flex item del botón. */
-.cat-btn.is-active::after {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  border-radius: 999px;
-  border: 1px solid rgba(207, 172, 107, 0.5);
-  opacity: 0;
-  pointer-events: none;
-  animation: chip-ripple 3.2s ease-out infinite;
-}
+/* El aro que late: el dorado solo dice "estás en esta categoría"; el latido
+   dice además "tocá acá de nuevo para sacarla", que es el único modo de quitar
+   el filtro. La forma está definida una sola vez, más abajo, junto al chip de
+   "Ingresos semanales" de la portada: es literalmente el mismo aro. */
 
 .cat-btn.is-active:hover {
   transform: none;
   filter: brightness(1.06);
-}
-
-/* Con el puntero encima el feedback ya sobra: el aro se apaga, igual que en el
-   chip de la portada. */
-.cat-btn.is-active:hover::after,
-.cat-btn.is-active:focus-visible::after {
-  animation: none;
-  opacity: 0;
 }
 
 /* ─── Sub-filter bar (contextual dropdown) ───────────────────────────────── */
@@ -317,7 +337,7 @@ input,
 .sub-filter-bar.is-open {
   max-height: 100px;
   opacity: 1;
-  border-top-color: rgba(207, 172, 107, 0.08);
+  border-top-color: rgba(var(--accent-rgb), 0.08);
 }
 
 .sub-filter-list {
@@ -337,7 +357,7 @@ input,
 .sub-filter-btn {
   flex-shrink: 0;
   padding: 5px 18px;
-  border: 1px solid rgba(207, 172, 107, 0.22);
+  border: 1px solid rgba(var(--accent-rgb), 0.22);
   border-radius: 999px;
   background: transparent;
   color: rgba(239, 217, 162, 0.6);
@@ -351,20 +371,20 @@ input,
 }
 
 .sub-filter-btn:hover {
-  border-color: rgba(207, 172, 107, 0.55);
+  border-color: rgba(var(--accent-rgb), 0.55);
   color: var(--accent-light);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(207, 172, 107, 0.08);
-  background: rgba(207, 172, 107, 0.06);
+  box-shadow: 0 4px 12px rgba(var(--accent-rgb), 0.08);
+  background: rgba(var(--accent-rgb), 0.06);
 }
 
 .sub-filter-btn.is-active {
   border-color: var(--accent);
-  background: linear-gradient(135deg, rgba(239, 217, 162, 0.18), rgba(207, 172, 107, 0.1));
+  background: linear-gradient(135deg, rgba(239, 217, 162, 0.18), rgba(var(--accent-rgb), 0.1));
   color: var(--accent-light);
   box-shadow:
-    0 0 14px rgba(207, 172, 107, 0.12),
-    inset 0 1px 0 rgba(207, 172, 107, 0.15);
+    0 0 14px rgba(var(--accent-rgb), 0.12),
+    inset 0 1px 0 rgba(var(--accent-rgb), 0.15);
 }
 
 /* ─── Sub-filter: "Pureza de la plata" static label ─────────────────────── */
@@ -375,7 +395,7 @@ input,
   flex-shrink: 0;
   padding: 0 14px 0 2px;
   margin-right: 4px;
-  border-right: 1px solid rgba(207, 172, 107, 0.25);
+  border-right: 1px solid rgba(var(--accent-rgb), 0.25);
   font-family: "Cinzel", serif;
   font-size: 0.6rem;
   font-weight: 700;
@@ -429,7 +449,7 @@ input,
   width: 100%;
   padding: 13px 44px 13px 42px;
   background: rgba(18, 18, 18, 0.98);
-  border: 1px solid rgba(207, 172, 107, 0.22);
+  border: 1px solid rgba(var(--accent-rgb), 0.22);
   border-radius: 999px;
   color: var(--accent-light);
   font-family: "Cinzel", serif;
@@ -440,21 +460,21 @@ input,
 }
 
 #searchInput::placeholder {
-  color: rgba(207, 172, 107, 0.35);
+  color: rgba(var(--accent-rgb), 0.35);
   font-family: "Cinzel", serif;
   letter-spacing: 0.08em;
 }
 
 #searchInput:hover {
-  border-color: rgba(207, 172, 107, 0.4);
+  border-color: rgba(var(--accent-rgb), 0.4);
 }
 
 #searchInput:focus {
   outline: none;
-  border-color: rgba(207, 172, 107, 0.6);
+  border-color: rgba(var(--accent-rgb), 0.6);
   background: rgba(22, 22, 22, 0.99);
   box-shadow:
-    0 0 0 3px rgba(207, 172, 107, 0.08),
+    0 0 0 3px rgba(var(--accent-rgb), 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
@@ -613,20 +633,20 @@ input,
   right: 12px;
   bottom: 0;
   height: 1px;
-  background: rgba(207, 172, 107, 0.1);
+  background: rgba(var(--accent-rgb), 0.1);
   pointer-events: none;
 }
 
 .sort-option:hover,
 .sort-option:focus-visible {
-  background: rgba(207, 172, 107, 0.08);
+  background: rgba(var(--accent-rgb), 0.08);
   color: var(--accent-light);
   outline: none;
 }
 
 /* Mismo relleno que un sub-filtro activo: el catálogo ya habla así. */
 .sort-option.is-active {
-  background: linear-gradient(135deg, rgba(239, 217, 162, 0.18), rgba(207, 172, 107, 0.1));
+  background: linear-gradient(135deg, rgba(239, 217, 162, 0.18), rgba(var(--accent-rgb), 0.1));
   color: var(--accent-light);
 }
 
@@ -684,7 +704,7 @@ button {
 
 #resultsCount {
   margin: 0;
-  color: rgba(207, 172, 107, 0.48);
+  color: rgba(var(--accent-rgb), 0.48);
   font-family: "Cinzel", serif;
   font-size: 0.62rem;
   letter-spacing: 0.16em;
@@ -708,7 +728,7 @@ button {
   position: relative;
   z-index: 1;
   background: linear-gradient(180deg, #1e1e1e 0%, #181818 100%);
-  border: 1px solid rgba(207, 172, 107, 0.15);
+  border: 1px solid rgba(var(--accent-rgb), 0.15);
   border-radius: 18px;
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -722,11 +742,12 @@ button {
   contain-intrinsic-size: auto 340px;
 }
 
-/* will-change promueve cada tarjeta a su propia capa del compositor. Con ~450
-   tarjetas eso es memoria para nada en un celular, donde además no hay hover:
-   se reserva para punteros finos, que son los únicos que animan el translateY. */
+/* will-change promueve cada tarjeta a su propia capa del compositor. Ya estaba
+   limitado a punteros finos (en un celular no hay hover que animar), pero en
+   escritorio seguían siendo ~450 capas simultáneas. Se reserva para la tarjeta
+   que el puntero está tocando, que es la única que anima el translateY. */
 @media (hover: hover) and (pointer: fine) {
-  .coin-card {
+  .coin-card:hover {
     will-change: transform;
   }
 }
@@ -743,14 +764,14 @@ button {
 
 .coin-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(207, 172, 107, 0.42);
+  border-color: rgba(var(--accent-rgb), 0.42);
   box-shadow:
     0 24px 50px rgba(0, 0, 0, 0.7),
-    0 0 28px rgba(207, 172, 107, 0.08);
+    0 0 28px rgba(var(--accent-rgb), 0.08);
 }
 
 .coin-card:hover::after {
-  box-shadow: inset 0 0 0 1px rgba(207, 172, 107, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(var(--accent-rgb), 0.12);
 }
 
 /* ─── Coin image wrap ────────────────────────────────────────────────────── */
@@ -763,7 +784,7 @@ button {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-bottom: 1px solid rgba(207, 172, 107, 0.1);
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.1);
 }
 
 .coin-image {
@@ -789,7 +810,7 @@ button {
   width: 30px;
   height: 30px;
   padding: 0;
-  border: 1px solid rgba(207, 172, 107, 0.38);
+  border: 1px solid rgba(var(--accent-rgb), 0.38);
   border-radius: 50%;
   background: rgba(10, 10, 10, 0.78);
   backdrop-filter: blur(6px);
@@ -818,7 +839,7 @@ button {
 }
 
 .card-arrow:hover {
-  background: rgba(207, 172, 107, 0.88);
+  background: rgba(var(--accent-rgb), 0.88);
   border-color: var(--accent);
   color: #1a1000;
   transform: translateY(-50%) scale(1.1);
@@ -898,13 +919,7 @@ button {
   color: var(--accent);
 }
 
-.coin-status,
-.whatsapp-button {
-  display: none;
-}
-
-.coin-meta,
-.coin-description {
+.coin-meta {
   margin: 0;
   color: var(--muted);
   line-height: 1.55;
@@ -924,13 +939,6 @@ button {
   color: #c9b89e;
 }
 
-.coin-description {
-  text-align: center;
-  font-family: "Cinzel", serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
-}
-
 .coin-badge-row {
   display: flex;
   align-items: center;
@@ -946,8 +954,8 @@ button {
   min-width: 44px;
   padding: 5px 12px;
   border-radius: 999px;
-  border: 1px solid rgba(207, 172, 107, 0.3);
-  background: linear-gradient(180deg, rgba(207, 172, 107, 0.1) 0%, rgba(207, 172, 107, 0.04) 100%);
+  border: 1px solid rgba(var(--accent-rgb), 0.3);
+  background: linear-gradient(180deg, rgba(var(--accent-rgb), 0.1) 0%, rgba(var(--accent-rgb), 0.04) 100%);
   color: var(--accent);
   font-family: "Cinzel", serif;
   font-size: 0.56rem;
@@ -957,19 +965,13 @@ button {
   white-space: nowrap;
 }
 
-.coin-grade-badge.coin-stock-badge {
-  border-color: rgba(37, 211, 102, 0.4);
-  background: linear-gradient(180deg, rgba(37, 211, 102, 0.15) 0%, rgba(37, 211, 102, 0.05) 100%);
-  color: var(--success);
-}
-
 
 .coin-card:hover .coin-grade-badge {
   transform: scale(1.05);
-  border-color: rgba(207, 172, 107, 0.5);
+  border-color: rgba(var(--accent-rgb), 0.5);
   box-shadow:
     0 8px 18px rgba(0, 0, 0, 0.3),
-    0 0 12px rgba(207, 172, 107, 0.1);
+    0 0 12px rgba(var(--accent-rgb), 0.1);
 }
 
 .coin-footer {
@@ -995,6 +997,12 @@ button {
   font-weight: 600;
   font-family: "Cinzel", serif;
   letter-spacing: 0.04em;
+}
+
+/* El degradado sobre el texto se aplica solo cuando la pieza está a la venta.
+   Antes iba en la regla base y el estado "vendida" tenía que deshacerlo con
+   cinco !important; excluyéndolo acá no hace falta ninguno. */
+.coin-price:not(.is-sold-price) {
   background: linear-gradient(135deg, #efd9a2 0%, #cfac6b 55%, #a8844a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1076,19 +1084,15 @@ button {
   transform-origin: center;
   z-index: 10;
   pointer-events: none;
-  border-top: 1px solid rgba(207, 172, 107, 0.45);
-  border-bottom: 1px solid rgba(207, 172, 107, 0.45);
+  border-top: 1px solid rgba(var(--accent-rgb), 0.45);
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.45);
   box-shadow: 0 2px 14px rgba(0, 0, 0, 0.7);
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .coin-price.is-sold-price,
 .detail-price.is-sold-price {
-  background: none !important;
-  -webkit-background-clip: unset !important;
-  -webkit-text-fill-color: var(--muted) !important;
-  background-clip: unset !important;
-  color: var(--muted) !important;
+  color: var(--muted);
   letter-spacing: 0.22em;
   text-transform: uppercase;
   opacity: 0.7;
@@ -1114,11 +1118,11 @@ button {
 .empty-state {
   grid-column: 1 / -1;
   background: linear-gradient(180deg, #191919 0%, #141414 100%);
-  border: 1px dashed rgba(207, 172, 107, 0.18);
+  border: 1px dashed rgba(var(--accent-rgb), 0.18);
   border-radius: var(--radius);
   padding: 30px;
   text-align: center;
-  color: rgba(207, 172, 107, 0.5);
+  color: rgba(var(--accent-rgb), 0.5);
   font-family: "Cinzel", serif;
   font-size: 0.78rem;
   letter-spacing: 0.12em;
@@ -1135,21 +1139,21 @@ button {
   align-items: center;
   gap: 8px;
   margin-bottom: 16px;
-  color: rgba(207, 172, 107, 0.6);
+  color: rgba(var(--accent-rgb), 0.6);
   text-decoration: none;
   font-family: "Cinzel", serif;
   font-size: 0.62rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  border: 1px solid rgba(207, 172, 107, 0.2);
+  border: 1px solid rgba(var(--accent-rgb), 0.2);
   border-radius: 999px;
   padding: 8px 18px;
 }
 
 .back-link:hover {
   color: var(--accent);
-  border-color: rgba(207, 172, 107, 0.5);
-  background: rgba(207, 172, 107, 0.06);
+  border-color: rgba(var(--accent-rgb), 0.5);
+  background: rgba(var(--accent-rgb), 0.06);
   transform: translateX(-2px);
 }
 
@@ -1183,17 +1187,17 @@ button {
   justify-content: center;
   transform: none;
   background: linear-gradient(180deg, #181818 0%, #121212 100%);
-  border: 1px solid rgba(207, 172, 107, 0.18);
+  border: 1px solid rgba(var(--accent-rgb), 0.18);
   border-radius: 22px;
   padding: 6px;
   box-shadow: var(--shadow);
 }
 
 .detail-main-image-wrap:hover {
-  border-color: rgba(207, 172, 107, 0.38);
+  border-color: rgba(var(--accent-rgb), 0.38);
   box-shadow:
     0 24px 48px rgba(0, 0, 0, 0.7),
-    0 0 22px rgba(207, 172, 107, 0.07);
+    0 0 22px rgba(var(--accent-rgb), 0.07);
 }
 
 .detail-main-image {
@@ -1223,7 +1227,7 @@ button {
   height: 72px;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(207, 172, 107, 0.2);
+  border: 1px solid rgba(var(--accent-rgb), 0.2);
   background: #141414;
   padding: 0;
   cursor: pointer;
@@ -1232,10 +1236,10 @@ button {
 .detail-thumb:hover,
 .detail-thumb.is-active {
   transform: translateY(-3px) scale(1.03);
-  border-color: rgba(207, 172, 107, 0.6);
+  border-color: rgba(var(--accent-rgb), 0.6);
   box-shadow:
     0 10px 18px rgba(0, 0, 0, 0.35),
-    0 0 10px rgba(207, 172, 107, 0.08);
+    0 0 10px rgba(var(--accent-rgb), 0.08);
 }
 
 .detail-thumb img,
@@ -1252,7 +1256,7 @@ button {
 
 .detail-country {
   margin: 0 0 10px;
-  color: rgba(207, 172, 107, 0.55);
+  color: rgba(var(--accent-rgb), 0.55);
   font-family: "Cinzel", serif;
   font-weight: 400;
   font-size: 0.68rem;
@@ -1275,7 +1279,7 @@ button {
 .detail-divider {
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(207, 172, 107, 0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(var(--accent-rgb), 0.3), transparent);
   margin: 0 0 18px;
 }
 
@@ -1297,7 +1301,7 @@ button {
 }
 
 .detail-spec-label {
-  color: rgba(207, 172, 107, 0.55);
+  color: rgba(var(--accent-rgb), 0.55);
   font-family: "Cinzel", serif;
   font-size: 0.64rem;
   letter-spacing: 0.2em;
@@ -1323,6 +1327,10 @@ button {
   font-family: "Cinzel", serif;
   letter-spacing: 0.06em;
   text-align: center;
+}
+
+/* Ver el comentario de .coin-price: el degradado va solo si está a la venta. */
+.detail-price:not(.is-sold-price) {
   background: linear-gradient(135deg, #efd9a2 20%, #cfac6b 60%, #a8844a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1378,7 +1386,7 @@ button {
   margin-top: 10px;
   padding: 12px 20px;
   border-radius: 14px;
-  border: 1px solid rgba(207, 172, 107, 0.5);
+  border: 1px solid rgba(var(--accent-rgb), 0.5);
   background: transparent;
   color: var(--gold, #cfac6b);
   font-family: "Cinzel", serif;
@@ -1389,41 +1397,17 @@ button {
 }
 
 .detail-share:hover {
-  background: rgba(207, 172, 107, 0.1);
+  background: rgba(var(--accent-rgb), 0.1);
 }
 
 .detail-loading,
 .detail-error {
   padding: 30px 0;
-  color: rgba(207, 172, 107, 0.45);
+  color: rgba(var(--accent-rgb), 0.45);
   font-family: "Cinzel", serif;
   font-size: 0.8rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-}
-
-/* ─── Sub-filter: Argentina item wrapper (button + external date) ────────── */
-
-.sub-filter-item {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 0;
-  gap: 4px;
-}
-
-.sub-filter-item-sub {
-  display: block;
-  width: 100%;
-  text-align: center;
-  font-size: 0.72em;
-  color: var(--accent);
-  font-weight: 400;
-  font-family: "Cinzel", serif;
-  letter-spacing: 0.08em;
-  opacity: 0.78;
-  line-height: 1;
-  white-space: nowrap;
 }
 
 /* ─── Sub-filter: Internacional vertical list ────────────────────────────── */
@@ -1447,7 +1431,7 @@ button {
 }
 
 .sub-filter-list--vertical::-webkit-scrollbar-thumb {
-  background: rgba(207, 172, 107, 0.32);
+  background: rgba(var(--accent-rgb), 0.32);
   border-radius: 2px;
 }
 
@@ -1475,79 +1459,6 @@ button {
   opacity: 0.8;
   flex-shrink: 0;
   white-space: nowrap;
-}
-
-/* ─── Placeholder section ────────────────────────────────────────────────── */
-
-.placeholder-section {
-  padding: 58px 0 70px;
-  border-top: 1px solid rgba(207, 172, 107, 0.1);
-  background: rgba(207, 172, 107, 0.01);
-}
-
-.placeholder-header {
-  text-align: center;
-  margin-bottom: 36px;
-}
-
-.placeholder-title {
-  margin: 0 0 10px;
-  font-family: "Cinzel", serif;
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-
-.placeholder-subtitle {
-  margin: 0;
-  color: rgba(207, 172, 107, 0.45);
-  font-family: "Cinzel", serif;
-  font-size: 0.68rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  opacity: 0.9;
-}
-
-.placeholder-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.placeholder-card {
-  background: rgba(207, 172, 107, 0.02);
-  border: 1px dashed rgba(207, 172, 107, 0.16);
-  border-radius: var(--radius);
-  min-height: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(207, 172, 107, 0.22);
-  font-family: "Cinzel", serif;
-  font-size: 0.64rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.placeholder-card::before {
-  content: "Próximamente";
-}
-
-@media (max-width: 980px) {
-  .placeholder-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .placeholder-grid {
-    grid-template-columns: 1fr;
-  }
-  .placeholder-section {
-    padding: 40px 0 50px;
-  }
 }
 
 /* ─── Reveal animation ───────────────────────────────────────────────────── */
@@ -1586,10 +1497,6 @@ button {
     flex: 0 0 auto;
     font-size: 0.672rem;       /* 0.88rem × 0.80 × 0.80 × 1.20 */
     white-space: nowrap;
-  }
-
-  .cat-br {
-    display: none;
   }
 
   .sub-filter-bar.is-open {
@@ -1678,10 +1585,6 @@ button {
     white-space: normal;
     letter-spacing: 0.04em;
     height: 100%;
-  }
-
-  .cat-br {
-    display: block;
   }
 
   .sub-filter-btn {
@@ -2043,11 +1946,11 @@ body[data-view="catalog"] #catalog {
   flex: 1 1 0;
   max-width: 170px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(207, 172, 107, 0.3));
+  background: linear-gradient(90deg, transparent, rgba(var(--accent-rgb), 0.3));
 }
 
 .hero-ornament__rule:last-child {
-  background: linear-gradient(90deg, rgba(207, 172, 107, 0.3), transparent);
+  background: linear-gradient(90deg, rgba(var(--accent-rgb), 0.3), transparent);
 }
 
 .hero-ornament__gem {
@@ -2055,14 +1958,14 @@ body[data-view="catalog"] #catalog {
   height: 4px;
   flex: 0 0 auto;
   transform: rotate(45deg);
-  background: rgba(207, 172, 107, 0.75);
+  background: rgba(var(--accent-rgb), 0.75);
 }
 
 .landing-heading {
   font-family: "Cinzel", serif;
   font-size: 0.7rem;
   font-weight: 400;
-  color: rgba(207, 172, 107, 0.45);
+  color: rgba(var(--accent-rgb), 0.45);
   text-align: center;
   letter-spacing: 0.3em;
   text-indent: 0.3em; /* compensa el tracking para que quede ópticamente centrado */
@@ -2088,7 +1991,7 @@ body[data-view="catalog"] #catalog {
   aspect-ratio: 1;
   padding: 0.75rem;
   background: rgba(255, 255, 255, 0.016);
-  border: 1px solid rgba(207, 172, 107, 0.14);
+  border: 1px solid rgba(var(--accent-rgb), 0.14);
   border-radius: 10px;
   color: rgba(239, 217, 162, 0.7);
   font-family: "Cinzel", serif;
@@ -2106,7 +2009,7 @@ body[data-view="catalog"] #catalog {
   width: 29px;
   height: 29px;
   flex: 0 0 auto;
-  color: rgba(207, 172, 107, 0.5);
+  color: rgba(var(--accent-rgb), 0.5);
   transition: color 0.25s ease;
 }
 
@@ -2116,8 +2019,8 @@ body[data-view="catalog"] #catalog {
 
 .landing-btn:hover,
 .landing-btn:focus-visible {
-  background: rgba(207, 172, 107, 0.05);
-  border-color: rgba(207, 172, 107, 0.42);
+  background: rgba(var(--accent-rgb), 0.05);
+  border-color: rgba(var(--accent-rgb), 0.42);
   color: var(--accent-light);
   outline: none;
 }
@@ -2168,10 +2071,15 @@ body[data-view="catalog"] #catalog {
   animation: cta-shine 0.9s ease-out;
 }
 
+/* El destello se mueve con transform y no con `left`: recorre el mismo camino
+   (de -75% a 135% del ancho del botón) pero se compone en GPU en vez de
+   recalcular la posición en cada frame.
+   La cuenta: el recorrido es 210% del ancho del botón y el destello mide 40% de
+   ese ancho, así que en unidades del propio elemento son 210/40 = 525%. */
 @keyframes cta-shine {
-  0%   { left: -75%; opacity: 0; }
+  0%   { transform: translateX(0) skewX(-20deg);      opacity: 0; }
   18%  { opacity: 1; }
-  100% { left: 135%; opacity: 0; }
+  100% { transform: translateX(525%) skewX(-20deg);   opacity: 0; }
 }
 
 .landing-btn--all:hover,
@@ -2181,7 +2089,7 @@ body[data-view="catalog"] #catalog {
   color: #17110a;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.3),
-    0 0 26px rgba(207, 172, 107, 0.18);
+    0 0 26px rgba(var(--accent-rgb), 0.18);
 }
 
 /* ── Ingresos: divisor con filetes entre el CTA y las categorías ── */
@@ -2201,12 +2109,12 @@ body[data-view="catalog"] #catalog {
 .landing-divider__rule {
   flex: 1 1 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(207, 172, 107, 0.42));
+  background: linear-gradient(90deg, transparent, rgba(var(--accent-rgb), 0.42));
   transition: background 0.25s ease;
 }
 
 .landing-divider__rule:last-child {
-  background: linear-gradient(90deg, rgba(207, 172, 107, 0.42), transparent);
+  background: linear-gradient(90deg, rgba(var(--accent-rgb), 0.42), transparent);
 }
 
 /* La cápsula es lo que convierte esto en algo que se lee como tocable:
@@ -2219,24 +2127,39 @@ body[data-view="catalog"] #catalog {
   gap: 0.55rem;
   padding: 0.5rem 1.15rem;
   border-radius: 999px;
-  border: 1px solid rgba(207, 172, 107, 0.34);
-  background: rgba(207, 172, 107, 0.05);
+  border: 1px solid rgba(var(--accent-rgb), 0.34);
+  background: rgba(var(--accent-rgb), 0.05);
   transition:
     border-color 0.25s ease,
     background 0.25s ease,
     box-shadow 0.25s ease;
 }
 
-/* Aro que se expande y se desvanece: la señal de "tocame" */
-.landing-chip::after {
+/* Aro que se expande y se desvanece: la señal de "tocame".
+   Lo usan el chip de "Ingresos semanales" de la portada y el botón de categoría
+   activo del catálogo. Estaba escrito dos veces, carácter por carácter, en las
+   dos puntas del archivo. Va en posición absoluta para que el ::after no entre
+   como flex item de su botón. */
+.landing-chip::after,
+.cat-btn.is-active::after {
   content: "";
   position: absolute;
   inset: -1px;
   border-radius: 999px;
-  border: 1px solid rgba(207, 172, 107, 0.5);
+  border: 1px solid rgba(var(--accent-rgb), 0.5);
   opacity: 0;
   pointer-events: none;
   animation: chip-ripple 3.2s ease-out infinite;
+}
+
+/* Con el puntero encima el feedback ya sobra: el aro se apaga. */
+.landing-chip:hover::after,
+.landing-divider:hover .landing-chip::after,
+.landing-divider:focus-visible .landing-chip::after,
+.cat-btn.is-active:hover::after,
+.cat-btn.is-active:focus-visible::after {
+  animation: none;
+  opacity: 0;
 }
 
 @keyframes chip-ripple {
@@ -2260,22 +2183,15 @@ body[data-view="catalog"] #catalog {
   width: 14px;
   height: 14px;
   flex: 0 0 auto;
-  color: rgba(207, 172, 107, 0.75);
+  color: rgba(var(--accent-rgb), 0.75);
   transition: transform 0.25s ease, color 0.25s ease;
-}
-
-/* Al interactuar ya hay feedback de sobra: el aro se apaga */
-.landing-divider:hover .landing-chip::after,
-.landing-divider:focus-visible .landing-chip::after {
-  animation: none;
-  opacity: 0;
 }
 
 .landing-divider:hover .landing-chip,
 .landing-divider:focus-visible .landing-chip {
-  border-color: rgba(207, 172, 107, 0.68);
-  background: rgba(207, 172, 107, 0.12);
-  box-shadow: 0 0 22px rgba(207, 172, 107, 0.14);
+  border-color: rgba(var(--accent-rgb), 0.68);
+  background: rgba(var(--accent-rgb), 0.12);
+  box-shadow: 0 0 22px rgba(var(--accent-rgb), 0.14);
 }
 
 .landing-divider:hover .landing-chip__label,
@@ -2298,11 +2214,11 @@ body[data-view="catalog"] #catalog {
 }
 
 .landing-divider:hover .landing-divider__rule {
-  background: linear-gradient(90deg, transparent, rgba(207, 172, 107, 0.7));
+  background: linear-gradient(90deg, transparent, rgba(var(--accent-rgb), 0.7));
 }
 
 .landing-divider:hover .landing-divider__rule:last-child {
-  background: linear-gradient(90deg, rgba(207, 172, 107, 0.7), transparent);
+  background: linear-gradient(90deg, rgba(var(--accent-rgb), 0.7), transparent);
 }
 
 /* ── Redes sociales ── */
@@ -2321,7 +2237,7 @@ body[data-view="catalog"] #catalog {
   letter-spacing: 0.32em;
   text-indent: 0.32em;
   text-transform: uppercase;
-  color: rgba(207, 172, 107, 0.35);
+  color: rgba(var(--accent-rgb), 0.35);
 }
 
 .social-row {
@@ -2348,9 +2264,9 @@ body[data-view="landing"] .social-row--footer {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  border: 1px solid rgba(207, 172, 107, 0.16);
+  border: 1px solid rgba(var(--accent-rgb), 0.16);
   background: none;
-  color: rgba(207, 172, 107, 0.55);
+  color: rgba(var(--accent-rgb), 0.55);
   text-decoration: none;
   transition:
     color 0.25s ease,
@@ -2365,7 +2281,7 @@ body[data-view="landing"] .social-row--footer {
 .social-btn:hover,
 .social-btn:focus-visible {
   color: var(--accent-light);
-  border-color: rgba(207, 172, 107, 0.45);
+  border-color: rgba(var(--accent-rgb), 0.45);
   outline: none;
 }
 
@@ -2593,7 +2509,7 @@ body[data-view="landing"] .social-row--footer {
   scroll-snap-type: x proximity;
   padding-bottom: 0.6rem;
   scrollbar-width: thin;
-  scrollbar-color: rgba(207, 172, 107, 0.45) transparent;
+  scrollbar-color: rgba(var(--accent-rgb), 0.45) transparent;
 }
 
 .variants-list::-webkit-scrollbar {
@@ -2605,12 +2521,12 @@ body[data-view="landing"] .social-row--footer {
 }
 
 .variants-list::-webkit-scrollbar-thumb {
-  background: rgba(207, 172, 107, 0.35);
+  background: rgba(var(--accent-rgb), 0.35);
   border-radius: 6px;
 }
 
 .variants-list::-webkit-scrollbar-thumb:hover {
-  background: rgba(207, 172, 107, 0.55);
+  background: rgba(var(--accent-rgb), 0.55);
 }
 
 .variant-thumb {
@@ -2619,8 +2535,8 @@ body[data-view="landing"] .social-row--footer {
   align-items: center;
   gap: 0.5rem;
   padding: 0.72rem;
-  background: rgba(207, 172, 107, 0.03);
-  border: 1px solid rgba(207, 172, 107, 0.18);
+  background: rgba(var(--accent-rgb), 0.03);
+  border: 1px solid rgba(var(--accent-rgb), 0.18);
   border-radius: 10px;
   cursor: pointer;
   width: 136px;
@@ -2637,7 +2553,7 @@ body[data-view="landing"] .social-row--footer {
 
 .variant-thumb.is-active {
   border-color: var(--accent);
-  box-shadow: 0 0 0 1px var(--accent), 0 0 14px rgba(207, 172, 107, 0.15);
+  box-shadow: 0 0 0 1px var(--accent), 0 0 14px rgba(var(--accent-rgb), 0.15);
 }
 
 .variant-thumb.is-sold {
@@ -2695,7 +2611,7 @@ body[data-view="landing"] .social-row--footer {
 /* ─── Site footer ─────────────────────────────────────────────────────────── */
 
 .site-footer {
-  border-top: 1px solid rgba(207, 172, 107, 0.14);
+  border-top: 1px solid rgba(var(--accent-rgb), 0.14);
   padding: 34px 0 28px;
   text-align: center;
   background: linear-gradient(0deg, #070707 0%, #0a0a0a 100%);
@@ -2724,7 +2640,7 @@ body[data-view="landing"] .social-row--footer {
   font-size: 0.58rem;
   font-weight: 400;
   letter-spacing: 0.24em;
-  color: rgba(207, 172, 107, 0.42);
+  color: rgba(var(--accent-rgb), 0.42);
   text-transform: uppercase;
 }
 
@@ -2778,7 +2694,7 @@ body[data-view="catalog"] .site-header {
   padding: 16px 0;
   background-image: none; /* anula el degradé de la cabecera alta */
   background-color: #0a0a0a;
-  border-bottom: 1px solid rgba(207, 172, 107, 0.22);
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.22);
   transition: background-color 420ms ease;
 }
 
@@ -2811,7 +2727,7 @@ body[data-view="catalog"].is-in-grid .site-header {
   overflow: hidden;
   border: 0;
   background: none;
-  color: rgba(207, 172, 107, 0.7);
+  color: rgba(var(--accent-rgb), 0.7);
   cursor: pointer;
   line-height: 0;
   opacity: 0;
