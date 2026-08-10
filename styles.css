@@ -103,7 +103,7 @@ input,
 .card-arrow,
 .card-dot,
 .search-clear,
-.reset-link {
+.sort-btn {
   transition:
     transform 0.22s ease,
     opacity 0.22s ease,
@@ -262,6 +262,7 @@ input,
 }
 
 .cat-btn.is-active {
+  position: relative;
   border-color: var(--accent);
   background: linear-gradient(135deg, #efd9a2 0%, #cfac6b 50%, #a8844a 100%);
   color: #1a1000;
@@ -271,9 +272,33 @@ input,
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
+/* El aro que late: exactamente el mismo de "Ingresos semanales" en la portada
+   (reutiliza @keyframes chip-ripple, más abajo). El dorado solo dice "estás en
+   esta categoría"; el latido dice además "tocá acá de nuevo para sacarla", que
+   es el único modo de quitar el filtro. Absoluto, así el ::after no entra como
+   flex item del botón. */
+.cat-btn.is-active::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 999px;
+  border: 1px solid rgba(207, 172, 107, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  animation: chip-ripple 3.2s ease-out infinite;
+}
+
 .cat-btn.is-active:hover {
   transform: none;
   filter: brightness(1.06);
+}
+
+/* Con el puntero encima el feedback ya sobra: el aro se apaga, igual que en el
+   chip de la portada. */
+.cat-btn.is-active:hover::after,
+.cat-btn.is-active:focus-visible::after {
+  animation: none;
+  opacity: 0;
 }
 
 /* ─── Sub-filter bar (contextual dropdown) ───────────────────────────────── */
@@ -459,9 +484,18 @@ input,
   display: block;
 }
 
-.reset-link {
+/* ─── Orden: botón + desplegable ─────────────────────────────────────────────
+   Ocupa el hueco que tenía "Limpiar filtros" y hereda su misma forma y ritmo,
+   así la barra de búsqueda no se mueve ni un pixel. */
+
+.sort-wrap {
+  position: relative;
   flex: 1 0 0%;
   min-width: 0;
+}
+
+.sort-btn {
+  width: 100%;
   background: transparent;
   border: 1px solid var(--accent);
   border-radius: 999px;
@@ -473,17 +507,157 @@ input,
   letter-spacing: 0.14em;
   text-transform: uppercase;
   padding: 13px 10px;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   white-space: nowrap;
-  transition: background 0.22s ease, color 0.22s ease;
 }
 
-.reset-link:hover {
+.sort-btn:hover,
+.sort-btn[aria-expanded="true"] {
   background: var(--accent);
   color: #1a1000;
+}
+
+.sort-btn__caret {
+  width: 10px;
+  height: 10px;
+  flex: 0 0 auto;
+  color: currentColor;
+  transition: transform 0.2s ease;
+}
+
+.sort-btn[aria-expanded="true"] .sort-btn__caret {
+  transform: rotate(180deg);
+}
+
+/* El panel. Mismo fondo que el buscador y mismo borde que el resto de la
+   página: no hay ningún color nuevo acá. */
+.sort-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 230px;
+  max-width: calc(100vw - 32px);
+  padding: 6px;
+  background: rgba(18, 18, 18, 0.98);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  z-index: 50; /* sobre las tarjetas (10), debajo de la barra fija (100) */
+
+  /* Se anima con visibility y no con [hidden]: así la transición corre también
+     al cerrar. El delay de visibility espera a que termine el fundido. */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px) scale(0.98);
+  transform-origin: top right;
+  transition:
+    opacity 0.14s ease,
+    transform 0.16s ease,
+    visibility 0s linear 0.16s;
+}
+
+.sort-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition:
+    opacity 0.18s ease,
+    transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0s;
+}
+
+.sort-option {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: rgba(239, 217, 162, 0.6);
+  font-family: "Cinzel", serif;
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Filete de separación entre criterios, no después del último. Va en un
+   pseudo-elemento y no en un border-bottom: así cada fila conserva sus cuatro
+   esquinas redondeadas y el relleno de la fila activa no queda cortado. */
+.sort-option:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 0;
+  height: 1px;
+  background: rgba(207, 172, 107, 0.1);
+  pointer-events: none;
+}
+
+.sort-option:hover,
+.sort-option:focus-visible {
+  background: rgba(207, 172, 107, 0.08);
+  color: var(--accent-light);
+  outline: none;
+}
+
+/* Mismo relleno que un sub-filtro activo: el catálogo ya habla así. */
+.sort-option.is-active {
+  background: linear-gradient(135deg, rgba(239, 217, 162, 0.18), rgba(207, 172, 107, 0.1));
+  color: var(--accent-light);
+}
+
+/* El SVG dibuja la flecha hacia arriba (decreciente). El sentido creciente la
+   gira 180°, que es como el usuario lee la lista: v = de menor a mayor. */
+.sort-option__arrow {
+  width: 12px;
+  height: 12px;
+  flex: 0 0 auto;
+  color: var(--accent);
+  transition: transform 0.22s ease;
+}
+
+.sort-option.is-asc .sort-option__arrow {
+  transform: rotate(180deg);
+}
+
+/* Las tres filas entran escalonadas al abrir; al cerrar se van junto al panel
+   (sin delay), para que no quede una escalera a la inversa. */
+.sort-menu .sort-option {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+
+.sort-menu.is-open .sort-option {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.22s ease,
+    transform 0.26s cubic-bezier(0.16, 1, 0.3, 1),
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.sort-menu.is-open .sort-option:nth-child(2) {
+  transition-delay: 45ms, 45ms, 0s, 0s;
+}
+
+.sort-menu.is-open .sort-option:nth-child(3) {
+  transition-delay: 90ms, 90ms, 0s, 0s;
 }
 
 /* ─── Base input/button reset ────────────────────────────────────────────── */
@@ -1499,6 +1673,16 @@ button {
     gap: 8px;
   }
 
+  /* En teléfono el panel se lee más grande, en línea con los sub-filtros. */
+  .sort-option {
+    font-size: 0.86rem;
+    padding: 12px 12px;
+  }
+
+  .sort-menu {
+    min-width: 210px;
+  }
+
   .coins-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1749,8 +1933,15 @@ button {
 
   .ticker-track,
   .landing-btn--all::after,
-  .landing-chip::after {
+  .landing-chip::after,
+  .cat-btn.is-active::after {
     animation: none !important;
+  }
+
+  /* Sin transición el panel necesita quedar visible por clase, no por fundido. */
+  .sort-menu .sort-option {
+    opacity: 1;
+    transform: none;
   }
 
   *,
@@ -2690,7 +2881,7 @@ body.is-logo-morphing .site-header .container {
 }
 
 /* ═══ Barra fija en gris al dejar atrás los filtros ═══════════════════════════
-   Pasado "Limpiar filtros" ya no hay nada que filtrar a la vista: el logo cede
+   Pasado el botón "Orden" ya no hay nada que filtrar a la vista: el logo cede
    el protagonismo a las monedas y se retira a un gris plata. El filtro va sobre
    los dos hijos y NUNCA sobre .site-header — un filter sobre la barra sticky
    crearía una capa del alto de la grilla entera. Sobre un SVG de 51px y una

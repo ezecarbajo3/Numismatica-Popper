@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" href="images/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="styles.css?v=20260810e" />
+  <link rel="stylesheet" href="styles.css?v=20260810f" />
 </head>
 <body data-view="landing">
   <header class="site-header">
@@ -187,7 +187,37 @@
           </svg>
         </button>
       </div>
-      <button type="button" id="resetFilters" class="reset-link">Limpiar filtros</button>
+      <!-- Orden: ocupa el lugar que tenía "Limpiar filtros". Los filtros se
+           quitan tocando de nuevo el botón de categoría, que queda latiendo. -->
+      <div class="sort-wrap" id="sortWrap">
+        <button type="button" id="sortButton" class="sort-btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="sortMenu">
+          <span class="sort-btn__label">Orden</span>
+          <svg class="sort-btn__caret" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 6.5L8 10.5l4-4"/>
+          </svg>
+        </button>
+
+        <div class="sort-menu" id="sortMenu" role="listbox" aria-label="Ordenar por">
+          <button type="button" class="sort-option" role="option" aria-selected="false" data-sort="alfabetico">
+            <span class="sort-option__label">Alfabético</span>
+            <svg class="sort-option__arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 12.5V3.5M4.5 7L8 3.5 11.5 7"/>
+            </svg>
+          </button>
+          <button type="button" class="sort-option" role="option" aria-selected="false" data-sort="precio">
+            <span class="sort-option__label">Precio</span>
+            <svg class="sort-option__arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 12.5V3.5M4.5 7L8 3.5 11.5 7"/>
+            </svg>
+          </button>
+          <button type="button" class="sort-option" role="option" aria-selected="false" data-sort="antiguedad">
+            <span class="sort-option__label">Antigüedad</span>
+            <svg class="sort-option__arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 12.5V3.5M4.5 7L8 3.5 11.5 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
 
     <main class="container">
@@ -221,8 +251,8 @@
     </article>
   </template>
 
-  <script src="glow.js?v=20260810e" defer></script>
-  <script src="script.js?v=20260810e"></script>
+  <script src="glow.js?v=20260810f" defer></script>
+  <script src="script.js?v=20260810f"></script>
 
   <footer class="site-footer" aria-label="Pie de página">
     <div class="footer-inner">

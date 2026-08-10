@@ -10,12 +10,14 @@ const SVG_CHEVRON_RIGHT = `<svg viewBox="0 0 24 24" fill="none" stroke="currentC
 // ─── DOM refs ─────────────────────────────────────────────────────────────────
 const searchInput        = document.getElementById('searchInput');
 const clearSearchBtn     = document.getElementById('clearSearch');
-const resetFiltersButton = document.getElementById('resetFilters');
 const resultsCount       = document.getElementById('resultsCount');
 const coinsGrid          = document.getElementById('coinsGrid');
 const coinCardTemplate   = document.getElementById('coinCardTemplate');
 const subFilterBar       = document.getElementById('subFilterBar');
 const subFilterList      = document.getElementById('subFilterList');
+const sortWrap           = document.getElementById('sortWrap');
+const sortButton         = document.getElementById('sortButton');
+const sortMenu           = document.getElementById('sortMenu');
 
 // ─── State ────────────────────────────────────────────────────────────────────
 let allCoins        = [];
@@ -23,6 +25,14 @@ let groupMinPriceMap = new Map(); // group_id → { val: number, str: string }
 let activeCategory  = null;
 let activeSubFilter = null;
 let revealObserver  = null;
+
+// Orden de la grilla. 'asc' es la flecha hacia abajo (de menor a mayor: A→Z,
+// del más barato al más caro, de la más antigua a la más nueva) y 'desc' la
+// flecha hacia arriba. Cada criterio recuerda su propio sentido, así volver a
+// uno ya usado lo devuelve como el usuario lo había dejado.
+const SORT_KEYS = ['alfabetico', 'precio', 'antiguedad'];
+let activeSort  = 'alfabetico';
+let sortDirections = { alfabetico: 'asc', precio: 'asc', antiguedad: 'asc' };
 
 const STATE_KEY = 'nump_filter_state';
 
@@ -581,6 +591,7 @@ function goToLanding() {
     activeSubFilter = null;
     document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('is-active'));
     closeSubFilterBar();
+    closeSortMenu();
     try { sessionStorage.removeItem(STATE_KEY); } catch (_) {}
     showLanding();
     stopHeaderMuteObserver();
@@ -601,6 +612,7 @@ function enterCatalog(categoryKey) {
     } else {
       closeSubFilterBar();
     }
+    closeSortMenu();
     saveState();
     renderCoins(getFilteredCoins());
     initRevealEffects();
@@ -617,6 +629,8 @@ function saveState(scrollY = null) {
     category:  activeCategory,
     subFilter: activeSubFilter,
     search:    searchInput.value,
+    sort:      activeSort,
+    sortDirs:  sortDirections,
   };
   if (scrollY !== null) {
     state.scrollY = scrollY;
@@ -655,6 +669,19 @@ function applyRestoredState(state) {
     );
     buildSubFilterBar(state.category, state.subFilter || null);
   }
+
+  // El orden vuelve como estaba al entrar a la ficha de la moneda. Se validan
+  // las claves: un sessionStorage viejo o tocado a mano no debe dejar la grilla
+  // ordenada por un criterio inexistente.
+  if (SORT_KEYS.includes(state.sort)) activeSort = state.sort;
+  if (state.sortDirs) {
+    SORT_KEYS.forEach(key => {
+      if (state.sortDirs[key] === 'asc' || state.sortDirs[key] === 'desc') {
+        sortDirections[key] = state.sortDirs[key];
+      }
+    });
+  }
+  syncSortUI();
 
   renderCoins(getFilteredCoins(), true);
 }
@@ -884,48 +911,104 @@ function applyCoinTitle(el, rawTitle) {
   }
 }
 
-function sortCoins(coins) {
+// Comparador histórico del catálogo: es lo que el menú llama "Alfabético", el
+// orden por defecto. Se deja intacto — los criterios nuevos se apoyan en él
+// para desempatar, así dos monedas del mismo precio o del mismo año siguen
+// saliendo en el orden de siempre.
+function compareAlfabetico(a, b) {
   // Inversión view: Lote Plata first, then by purity descending, then year
   if (activeCategory === 'plata' || activeCategory === 'inversion') {
-    return [...coins].sort((a, b) => {
-      const lotA = isLotePlata(a) ? 0 : 1;
-      const lotB = isLotePlata(b) ? 0 : 1;
-      if (lotA !== lotB) return lotA - lotB;
-      const purA = getSilverPurity(a);
-      const purB = getSilverPurity(b);
-      if (purA !== purB) return purB - purA;
-      return (Number(a.year) || 0) - (Number(b.year) || 0);
-    });
+    const lotA = isLotePlata(a) ? 0 : 1;
+    const lotB = isLotePlata(b) ? 0 : 1;
+    if (lotA !== lotB) return lotA - lotB;
+    const purA = getSilverPurity(a);
+    const purB = getSilverPurity(b);
+    if (purA !== purB) return purB - purA;
+    return (Number(a.year) || 0) - (Number(b.year) || 0);
   }
 
   // Default: country A→Z, Argentina subsections, year ascending, face value ascending
-  return [...coins].sort((a, b) => {
-    const normA = normalizeCountryValue(a.country);
-    const normB = normalizeCountryValue(b.country);
-    const groupA = ARGENTINA_GROUP_VALUES.has(normA) ? 'Argentina' : normA;
-    const groupB = ARGENTINA_GROUP_VALUES.has(normB) ? 'Argentina' : normB;
+  const normA = normalizeCountryValue(a.country);
+  const normB = normalizeCountryValue(b.country);
+  const groupA = ARGENTINA_GROUP_VALUES.has(normA) ? 'Argentina' : normA;
+  const groupB = ARGENTINA_GROUP_VALUES.has(normB) ? 'Argentina' : normB;
 
-    // 1. Country alphabetically (A → Z)
-    const byCountry = groupA.localeCompare(groupB, 'es');
-    if (byCountry !== 0) return byCountry;
+  // 1. Country alphabetically (A → Z)
+  const byCountry = groupA.localeCompare(groupB, 'es');
+  if (byCountry !== 0) return byCountry;
 
-    // 2. Argentina: subsection order (Patria → Confed. → Bs As → República)
-    if (groupA === 'Argentina') {
-      const subA = ARGENTINA_SUBSECTION_ORDER[normA] ?? 4;
-      const subB = ARGENTINA_SUBSECTION_ORDER[normB] ?? 4;
-      if (subA !== subB) return subA - subB;
-    }
+  // 2. Argentina: subsection order (Patria → Confed. → Bs As → República)
+  if (groupA === 'Argentina') {
+    const subA = ARGENTINA_SUBSECTION_ORDER[normA] ?? 4;
+    const subB = ARGENTINA_SUBSECTION_ORDER[normB] ?? 4;
+    if (subA !== subB) return subA - subB;
+  }
 
-    // 3. Year ascending (oldest first)
-    const yearA = Number(a.year) || 0;
-    const yearB = Number(b.year) || 0;
-    if (yearA !== yearB) return yearA - yearB;
+  // 3. Year ascending (oldest first)
+  const yearA = Number(a.year) || 0;
+  const yearB = Number(b.year) || 0;
+  if (yearA !== yearB) return yearA - yearB;
 
-    // 4. Face value ascending (numeric prefix of title; 1 if none)
-    const valA = getFaceValue(a.title);
-    const valB = getFaceValue(b.title);
-    return valA - valB;
-  });
+  // 4. Face value ascending (numeric prefix of title; 1 if none)
+  return getFaceValue(a.title) - getFaceValue(b.title);
+}
+
+/**
+ * Precio de la tarjeta tal como se muestra. Una tarjeta de grupo representa a
+ * varias variantes y no muestra precio propio: la ordena el mínimo del grupo,
+ * que es el número con el que el cliente la evalúa.
+ */
+function sortPriceValue(coin) {
+  if (coin.group_id) {
+    const g = groupMinPriceMap.get(coin.group_id);
+    if (g) return g.val;
+  }
+  return parsePriceUSD(coin.price); // Infinity si no hay precio legible
+}
+
+// Hay 7 monedas con año "S/F"/"N/A"/vacío y algunas sin año: no tienen lugar en
+// una línea de tiempo, así que van al final en los dos sentidos.
+function sortYearValue(coin) {
+  const y = Number(coin.year);
+  return Number.isFinite(y) && y > 0 ? y : null;
+}
+
+/**
+ * Ordena según el criterio elegido en el menú "Orden".
+ *
+ * 'alfabetico' es el orden de siempre; en 'desc' se invierte el array entero,
+ * que es el espejo exacto de lo que el usuario ve (Z→A). Los otros dos criterios
+ * comparan su valor y caen en compareAlfabetico al empatar. Los registros sin
+ * dato utilizable quedan siempre al final, nunca al principio.
+ */
+function sortCoins(coins) {
+  const dir  = sortDirections[activeSort] === 'desc' ? -1 : 1;
+  const list = [...coins];
+
+  if (activeSort === 'precio') {
+    return list.sort((a, b) => {
+      const pa = sortPriceValue(a);
+      const pb = sortPriceValue(b);
+      const okA = Number.isFinite(pa);
+      const okB = Number.isFinite(pb);
+      if (okA !== okB) return okA ? -1 : 1;
+      if (okA && pa !== pb) return (pa - pb) * dir;
+      return compareAlfabetico(a, b);
+    });
+  }
+
+  if (activeSort === 'antiguedad') {
+    return list.sort((a, b) => {
+      const ya = sortYearValue(a);
+      const yb = sortYearValue(b);
+      if ((ya === null) !== (yb === null)) return ya === null ? 1 : -1;
+      if (ya !== null && ya !== yb) return (ya - yb) * dir;
+      return compareAlfabetico(a, b);
+    });
+  }
+
+  list.sort(compareAlfabetico);
+  return dir === -1 ? list.reverse() : list;
 }
 
 function renderCoins(coins, skipAnimation = false) {
@@ -939,7 +1022,11 @@ function renderCoins(coins, skipAnimation = false) {
   }
 
   const fragment = document.createDocumentFragment();
-  const displayCoins = collapseGroups(sortCoins(coins));
+  // Primero se colapsan los grupos y recién después se ordena: así el criterio
+  // se aplica sobre las tarjetas que realmente se ven y no sobre variantes que
+  // después desaparecen. collapseGroups elige el representante por grado e id,
+  // sin depender del orden de entrada, así que el orden por defecto no cambia.
+  const displayCoins = sortCoins(collapseGroups(coins));
 
   displayCoins.forEach((coin, idx) => {
     const card = coinCardTemplate.content.cloneNode(true);
@@ -1159,7 +1246,7 @@ function initRevealEffects() {
 
 // ─── Barra fija: gris al dejar atrás los filtros ──────────────────────────────
 //
-// Cuando "Limpiar filtros" se mete debajo de la cabecera fija ya no queda nada
+// Cuando el botón "Orden" se mete debajo de la cabecera fija ya no queda nada
 // de la zona de filtros a la vista: el logo se desatura y le deja el dorado a
 // las monedas. Vuelve al color al subir.
 //
@@ -1172,7 +1259,7 @@ let headerMuteResizeId = null;
 
 function initHeaderMuteObserver() {
   const header = document.querySelector('.site-header');
-  if (!header || !resetFiltersButton || !('IntersectionObserver' in window)) return;
+  if (!header || !sortWrap || !('IntersectionObserver' in window)) return;
 
   if (headerMuteObserver) headerMuteObserver.disconnect();
 
@@ -1192,7 +1279,7 @@ function initHeaderMuteObserver() {
     { rootMargin: `-${header.offsetHeight}px 0px 0px 0px`, threshold: 0 }
   );
 
-  headerMuteObserver.observe(resetFiltersButton);
+  headerMuteObserver.observe(sortWrap);
 }
 
 // Se difiere dos frames para que el rootMargin se calcule sobre una cabecera ya
@@ -1238,17 +1325,74 @@ clearSearchBtn.addEventListener('click', () => {
   searchInput.focus();
 });
 
-resetFiltersButton.addEventListener('click', () => {
-  searchInput.value = '';
-  clearSearchBtn.classList.remove('is-visible');
-  activeCategory  = null;
-  activeSubFilter = null;
-  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('is-active'));
-  closeSubFilterBar();
-  saveState();
-  renderCoins(getFilteredCoins());
-  initRevealEffects();
-});
+// ─── Orden ────────────────────────────────────────────────────────────────────
+//
+// Cada criterio guarda su propio sentido: tocar el que ya está activo lo da
+// vuelta y el panel queda abierto, para que se vea girar la flecha; tocar otro
+// lo activa con el sentido que tenía y cierra.
+
+function syncSortUI() {
+  if (!sortMenu) return;
+  sortMenu.querySelectorAll('.sort-option').forEach(opt => {
+    const key = opt.dataset.sort;
+    const isActive = key === activeSort;
+    opt.classList.toggle('is-active', isActive);
+    opt.classList.toggle('is-asc', sortDirections[key] === 'asc');
+    opt.setAttribute('aria-selected', String(isActive));
+  });
+}
+
+function openSortMenu() {
+  if (!sortMenu) return;
+  sortMenu.classList.add('is-open');
+  sortButton.setAttribute('aria-expanded', 'true');
+}
+
+function closeSortMenu() {
+  if (!sortMenu) return;
+  sortMenu.classList.remove('is-open');
+  sortButton.setAttribute('aria-expanded', 'false');
+}
+
+if (sortButton && sortMenu) {
+  sortButton.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (sortMenu.classList.contains('is-open')) closeSortMenu();
+    else openSortMenu();
+  });
+
+  sortMenu.querySelectorAll('.sort-option').forEach(opt => {
+    opt.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const key = opt.dataset.sort;
+      if (!SORT_KEYS.includes(key)) return;
+
+      if (key === activeSort) {
+        sortDirections[key] = sortDirections[key] === 'asc' ? 'desc' : 'asc';
+      } else {
+        activeSort = key;
+        closeSortMenu();
+      }
+
+      syncSortUI();
+      applyFilters();
+    });
+  });
+
+  // Fuera del panel y Escape lo cierran, como cualquier menú.
+  document.addEventListener('click', (e) => {
+    if (!sortMenu.classList.contains('is-open')) return;
+    if (!e.target.closest('.sort-wrap')) closeSortMenu();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape' || !sortMenu.classList.contains('is-open')) return;
+    closeSortMenu();
+    sortButton.focus();
+  });
+
+  syncSortUI();
+}
 
 document.querySelectorAll('.cat-btn').forEach(btn => {
   btn.addEventListener('click', () => {
