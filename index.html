@@ -12,7 +12,17 @@
   <link rel="icon" type="image/png" href="images/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="styles.css?v=20260810h" />
+  <!-- Las fuentes van acá y NO como @import dentro de styles.css: un @import no
+       se descubre hasta parsear el CSS, así que la cadena era
+       HTML → styles.css (75 KB) → CSS de Google → .woff2, cuatro saltos
+       serializados y bloqueantes. Desde el <head> el navegador los pide en
+       paralelo con el CSS, y recién ahí sirven los preconnect de arriba.
+       Solo Cinzel y Lora: son las dos únicas familias que el CSS usa. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:wght@400&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=20260810i" />
+  <!-- El catálogo es lo primero que necesita script.js. Sin esto no empieza a
+       bajar hasta que el script se ejecuta, o sea después del CSS y las fuentes. -->
+  <link rel="preload" href="coins.json" as="fetch" />
 </head>
 <body data-view="landing">
   <header class="site-header">
@@ -264,8 +274,9 @@
     </article>
   </template>
 
-  <script src="glow.js?v=20260810h" defer></script>
-  <script src="script.js?v=20260810h"></script>
+  <script src="common.js?v=20260810i" defer></script>
+  <script src="glow.js?v=20260810i" defer></script>
+  <script src="script.js?v=20260810i" defer></script>
 
   <footer class="site-footer" aria-label="Pie de página">
     <div class="footer-inner">

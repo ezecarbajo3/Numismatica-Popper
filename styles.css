@@ -1082,16 +1082,31 @@ button {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
-.coin-price.is-sold-price {
+.coin-price.is-sold-price,
+.detail-price.is-sold-price {
   background: none !important;
   -webkit-background-clip: unset !important;
   -webkit-text-fill-color: var(--muted) !important;
   background-clip: unset !important;
   color: var(--muted) !important;
-  font-size: 0.82rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   opacity: 0.7;
+}
+
+.coin-price.is-sold-price {
+  font-size: 0.82rem;
+}
+
+/* La ficha también muestra el estado vendido. Antes no lo miraba: como cada
+   moneda tiene su moneda/<id>.html público, un link viejo de WhatsApp de una
+   pieza ya vendida se veía igual que una disponible, con el botón de consulta
+   activo. La cinta es la misma que la de la tarjeta, y el contenedor necesita
+   `position: relative` para anclarla y `overflow: hidden` para recortar la
+   punta que sobresale (right: -40px). */
+.detail-main-image-wrap {
+  position: relative;
+  overflow: hidden;
 }
 
 /* ─── Empty state ────────────────────────────────────────────────────────── */

@@ -6,71 +6,55 @@ function getQueryParam(name) {
   return params.get(name);
 }
 
-// Separa "[valor facial] [año]" del texto extra de un título de moneda.
-// Año = token de 4 dígitos (1500–2099) que aparezca DESPUÉS de una palabra (denominación),
-// para no confundir el valor facial (ej. "2000 Pesos 1992" → base "2000 Pesos 1992").
-function splitCoinTitle(rawTitle) {
-  const title = String(rawTitle || "").trim();
-  if (!title) return { base: "", extra: "" };
-  const tokens = title.split(/\s+/);
-  const isYear = (t) => /^\(?(1[5-9]\d{2}|20\d{2})\)?$/.test(t);
-  const isAlpha = (t) => /[A-Za-zÀ-ÿ]/.test(t);
+// splitCoinTitle, applyCoinTitle, getImagesArray, attachImgRetry, thumbFor,
+// gradeRank y escapeHTML viven en common.js: son exactamente las mismas que usa
+// el catálogo. Antes estaban duplicadas acá y dos ya habían divergido — la copia
+// de esta página tomaba `images[0]` como foto principal en vez de la que termina
+// en "A", así que la moneda 1018 se veía distinta en la grilla y en la ficha.
 
-  let yearIndex = -1, sawAlpha = false;
-  for (let i = 0; i < tokens.length; i++) {
-    if (isYear(tokens[i]) && sawAlpha) yearIndex = i; // último año válido
-    if (isAlpha(tokens[i])) sawAlpha = true;
+/**
+ * Puntaje de conservación para ORDENAR LAS VARIANTES de un grupo.
+ *
+ * Deliberadamente NO es `gradeRank` de common.js: esta escala penaliza el
+ * sufijo "**" (pieza con defecto) restando 15 y separa SC de SC-, cosas que la
+ * del catálogo no distingue. Entre las monedas agrupadas hay 9 con "**" y 4 con
+ * "SC-", así que unificarlas cambiaría el orden en que se listan las variantes.
+ * Se deja tal cual a propósito; si algún día se unifican, hay que revisar esas
+ * 13 fichas a ojo.
+ */
+function getVariantGradeScore(c) {
+  const grade = (c.grade_short || "").toUpperCase().trim();
+  if (grade.startsWith("SC")) {
+    return grade.includes("-") ? 140 : 150;
   }
-
-  let cut; // índice del último token que pertenece al base
-  if (yearIndex >= 0) {
-    cut = yearIndex;
-  } else if (!/^\d/.test(tokens[0])) {
-    // Sin año y sin valor facial numérico al inicio (nombres, "Medalla…",
-    // "Catalogo…", "Troy Ounce", "Lote…"): todo el título es base, sin extra.
-    cut = tokens.length - 1;
-  } else {
-    // Sin año pero con valor facial: base = hasta la denominación (primera palabra),
-    // absorbiendo un año/fecha/rango pegado (ej. "1854/40", "1861-1863").
-    const firstAlpha = tokens.findIndex(isAlpha);
-    cut = firstAlpha === -1 ? tokens.length - 1 : firstAlpha;
-    while (cut + 1 < tokens.length && /\d{4}/.test(tokens[cut + 1])) cut++;
+  if (grade.startsWith("EX")) {
+    let score = 110;
+    if (grade.includes("+")) score = 120;
+    if (grade.includes("-")) score = 100;
+    if (grade.includes("**")) score -= 15;
+    return score;
   }
-  return {
-    base: tokens.slice(0, cut + 1).join(" "),
-    extra: tokens.slice(cut + 1).join(" "),
-  };
-}
-
-// Setea el título en un elemento: base en crema, texto extra en dorado.
-function applyCoinTitle(el, rawTitle) {
-  if (!el) return;
-  const { base, extra } = splitCoinTitle(rawTitle);
-  el.textContent = base;
-  if (extra) {
-    if (base) el.appendChild(document.createTextNode(" "));
-    const span = document.createElement("span");
-    span.className = "coin-title-extra";
-    span.textContent = extra;
-    el.appendChild(span);
+  if (grade.startsWith("MB")) {
+    let score = 80;
+    if (grade.includes("+")) score = 90;
+    if (grade.includes("-")) score = 70;
+    if (grade.includes("**")) score -= 15;
+    return score;
   }
-}
-
-function getImagesArray(coin) {
-  if (Array.isArray(coin.images) && coin.images.length > 0) return coin.images;
-  if (coin.image) return [coin.image];
-  return ["https://via.placeholder.com/900x900?text=Sin+imagen"];
-}
-
-// Re-fetches an <img> if its load fails (up to 2 times, with a cache-buster).
-function attachImgRetry(img, maxTries = 2) {
-  let tries = 0;
-  img.addEventListener("error", () => {
-    if (tries >= maxTries) return;
-    tries += 1;
-    const base = img.src.split("?")[0];
-    setTimeout(() => { img.src = `${base}?r=${Date.now()}`; }, 250 * tries);
-  });
+  if (grade.startsWith("B")) {
+    let score = 50;
+    if (grade.includes("+")) score = 60;
+    if (grade.includes("-")) score = 40;
+    if (grade.includes("**")) score -= 15;
+    return score;
+  }
+  if (grade.startsWith("R")) {
+    let score = 20;
+    if (grade.includes("+")) score = 30;
+    if (grade.includes("**")) score -= 15;
+    return score;
+  }
+  return 0;
 }
 
 function buildWhatsAppLink(coin) {
@@ -83,70 +67,125 @@ function buildWhatsAppLink(coin) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
-// ─── Dynamic update (called when switching variants) ─────────────────────────
+// ─── Galería ─────────────────────────────────────────────────────────────────
+//
+// La tira de miniaturas se construía DOS veces con código distinto (una en el
+// render inicial y otra al cambiar de variante), y la segunda copia se había
+// quedado sin el reintento de imagen y sin el `loading`. Ahora hay una sola.
 
-function updateCoinContent(coin) {
-  const mainImg        = document.getElementById("detailMainImage");
-  const mainVideo      = document.getElementById("detailMainVideo");
-  const thumbsContainer = document.getElementById("detailThumbs");
-  const images         = getImagesArray(coin);
+const isVideoSrc = (src) => /\.mp4$/i.test(String(src || ""));
 
-  // Main media
-  const firstMediaIsVideo = images[0] && images[0].endsWith('.mp4');
-  if (firstMediaIsVideo) {
-    if (mainImg) { mainImg.src = ""; mainImg.style.display = "none"; }
-    if (mainVideo) { mainVideo.src = images[0]; mainVideo.style.display = ""; }
+// La foto grande sí va en resolución original: es la que se mira de cerca.
+function setMainMedia(src) {
+  const mainImg   = document.getElementById("detailMainImage");
+  const mainVideo = document.getElementById("detailMainVideo");
+  if (isVideoSrc(src)) {
+    if (mainImg)   { mainImg.removeAttribute("src"); mainImg.style.display = "none"; }
+    if (mainVideo) { mainVideo.src = src; mainVideo.style.display = ""; }
   } else {
-    if (mainImg) { mainImg.src = images[0]; mainImg.style.display = ""; }
-    if (mainVideo) { mainVideo.src = ""; mainVideo.style.display = "none"; }
+    if (mainImg)   { mainImg.src = src || ""; mainImg.style.display = ""; }
+    if (mainVideo) { mainVideo.removeAttribute("src"); mainVideo.style.display = "none"; }
   }
+}
 
-  // Rebuild image gallery thumbs
-  if (thumbsContainer) {
-    thumbsContainer.innerHTML = "";
-    if (images.length > 1) {
-      images.forEach((src, i) => {
-        const btn = document.createElement("button");
-        btn.type      = "button";
-        btn.className = "detail-thumb" + (i === 0 ? " is-active" : "");
-        
-        const isVideo = src.endsWith('.mp4');
-        if (isVideo) {
-          const video = document.createElement("video");
-          video.src = src;
-          video.preload = "metadata";
-          video.muted = true;
-          btn.appendChild(video);
-        } else {
-          const img = document.createElement("img");
-          img.src = src;
-          img.alt = `${coin.title || "Moneda"} ${i + 1}`;
-          btn.appendChild(img);
-        }
-        
-        btn.addEventListener("click", () => {
-          const clickSrcIsVideo = src.endsWith('.mp4');
-          if (clickSrcIsVideo) {
-            if (mainImg) { mainImg.src = ""; mainImg.style.display = "none"; }
-            if (mainVideo) { mainVideo.src = src; mainVideo.style.display = ""; mainVideo.play().catch(()=>{}); }
-          } else {
-            if (mainImg) { mainImg.src = src; mainImg.style.display = ""; }
-            if (mainVideo) { mainVideo.src = ""; mainVideo.style.display = "none"; }
-          }
-          thumbsContainer.querySelectorAll(".detail-thumb")
-            .forEach(t => t.classList.toggle("is-active", t === btn));
-        });
-        thumbsContainer.appendChild(btn);
-      });
+function buildThumbStrip(coin) {
+  const thumbsContainer = document.getElementById("detailThumbs");
+  if (!thumbsContainer) return;
+
+  thumbsContainer.innerHTML = "";
+  const images = getImagesArray(coin);
+  if (images.length <= 1) return;
+
+  // La activa es la que se está viendo en grande, que es la de portada — no
+  // necesariamente la primera del array.
+  const primary = getPrimaryImage(coin);
+
+  images.forEach((src, index) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `detail-thumb${src === primary ? " is-active" : ""}`;
+    button.dataset.image = src;
+
+    if (isVideoSrc(src)) {
+      const video = document.createElement("video");
+      video.src = src;
+      video.preload = "metadata";
+      video.muted = true;
+      button.appendChild(video);
+    } else {
+      const img = document.createElement("img");
+      img.loading = src === primary ? "eager" : "lazy";
+      img.decoding = "async";
+      // Miniatura WebP de ~49 KB, no el original de ~530 KB: esto es un
+      // cuadradito de 60px. Una ficha con 4 fotos bajaba ~2 MB para dibujarlos.
+      img.dataset.fullSrc = src;
+      img.src = thumbFor(src);
+      img.alt = `${coin.title || "Moneda"} ${index + 1}`;
+      attachImgRetry(img);
+      button.appendChild(img);
+    }
+
+    button.addEventListener("click", () => {
+      setMainMedia(src);
+      if (isVideoSrc(src)) {
+        const mainVideo = document.getElementById("detailMainVideo");
+        if (mainVideo) mainVideo.play().catch(() => {});
+      }
+      thumbsContainer.querySelectorAll(".detail-thumb")
+        .forEach(t => t.classList.toggle("is-active", t === button));
+    });
+
+    thumbsContainer.appendChild(button);
+  });
+}
+
+// Estado "vendida" de la moneda principal. La ficha no lo miraba en absoluto:
+// solo lo consultaba para las variantes. Como cada moneda tiene su
+// moneda/<id>.html público, abrir un link viejo de WhatsApp de una pieza ya
+// vendida mostraba precio normal y el botón de consulta activo.
+function applySoldState(coin) {
+  const isSold = coin.status === "sold";
+  document.body.classList.toggle("is-sold-detail", isSold);
+
+  const wrap = document.querySelector(".detail-main-image-wrap");
+  if (wrap) {
+    const existing = wrap.querySelector(".sold-ribbon");
+    if (isSold && !existing) {
+      const ribbon = document.createElement("div");
+      ribbon.className = "sold-ribbon";
+      ribbon.textContent = "VENDIDO";
+      wrap.appendChild(ribbon);
+    } else if (!isSold && existing) {
+      existing.remove();
     }
   }
 
+  const priceEl = document.getElementById("detailPrice");
+  if (priceEl) priceEl.classList.toggle("is-sold-price", isSold);
+
+  const waEl = document.getElementById("detailWhatsapp");
+  if (waEl) {
+    waEl.hidden = isSold;
+    waEl.setAttribute("aria-hidden", isSold ? "true" : "false");
+    if (isSold) waEl.setAttribute("tabindex", "-1");
+    else waEl.removeAttribute("tabindex");
+  }
+}
+
+// ─── Dynamic update (called when switching variants) ─────────────────────────
+
+function updateCoinContent(coin) {
+  // getPrimaryImage y no images[0]: la foto de portada es la que termina en "A".
+  // Es exactamente la que muestra la grilla, así que abrir una tarjeta ya no
+  // cambia de foto (la moneda 1018 tiene ["1018C","1018A","1018B"]).
+  setMainMedia(getPrimaryImage(coin));
+  buildThumbStrip(coin);
+
   // Text / spec fields
-  const set = (id, html, asText = true) => {
+  const set = (id, value) => {
     const el = document.getElementById(id);
     if (!el) return;
-    if (asText) el.textContent = html || "NA";
-    else el.innerHTML = html || "NA";
+    el.textContent = value || "NA";
   };
 
   const countryEl = document.getElementById("detailCountry");
@@ -158,7 +197,7 @@ function updateCoinContent(coin) {
   const descEl = document.getElementById("detailDescription");
   if (descEl) {
     if (coin.description) {
-      descEl.innerHTML = coin.description.replace(/\n/g, "<br>");
+      descEl.innerHTML = escapeHTML(coin.description).replace(/\n/g, "<br>");
       descEl.style.display = "";
     } else {
       descEl.style.display = "none";
@@ -184,7 +223,11 @@ function updateCoinContent(coin) {
   const priceEl = document.getElementById("detailPrice");
   if (priceEl) {
     if (coin.original_price) {
-      priceEl.innerHTML = `<span class="price-original">${coin.original_price}</span> ${coin.price || "Consultar"}`;
+      // `.price-current` es la clase que el catálogo aplica al precio nuevo;
+      // acá faltaba, así que el precio rebajado se veía sin su estilo.
+      priceEl.innerHTML =
+        `<span class="price-original">${escapeHTML(coin.original_price)}</span> ` +
+        `<span class="price-current">${escapeHTML(coin.price || "Consultar")}</span>`;
     } else {
       priceEl.textContent = coin.price || "Consultar";
     }
@@ -196,16 +239,22 @@ function updateCoinContent(coin) {
   const shareEl = document.getElementById("detailShare");
   if (shareEl) shareEl.dataset.shareUrl = `https://numismaticapopper.com/moneda/${coin.id}.html`;
 
+  applySoldState(coin);
+
   // Update URL so sharing/back-button works
   history.replaceState(null, "", `?id=${coin.id}`);
 }
 
 // ─── Full render (called once on page load) ───────────────────────────────────
 
+// Todo lo que se interpola en este template pasa por escapeHTML(). No es
+// paranoia: la moneda 463 se titula `1 Dollar 2021 "Peace Dollar"` y sus
+// comillas ya rompían el atributo alt de la foto principal.
 function renderCoinDetail(coin, groupMembers) {
   const images    = getImagesArray(coin);
-  const mainImage = images[0];
-  const mainIsVideo = mainImage && mainImage.endsWith('.mp4');
+  // La foto de portada es la que termina en "A", igual que en la grilla.
+  const mainImage = getPrimaryImage(coin) || images[0];
+  const mainIsVideo = isVideoSrc(mainImage);
 
   detailContainer.innerHTML = `
     ${groupMembers && groupMembers.length > 1 ? `
@@ -222,14 +271,15 @@ function renderCoinDetail(coin, groupMembers) {
         <img
           id="detailMainImage"
           class="detail-main-image"
-          src="${mainIsVideo ? '' : mainImage}"
-          alt="${coin.title || "Moneda"}"
+          src="${mainIsVideo ? '' : escapeHTML(mainImage)}"
+          alt="${escapeHTML(coin.title || "Moneda")}"
+          decoding="async"
           style="${mainIsVideo ? 'display:none' : ''}"
         />
         <video
           id="detailMainVideo"
           class="detail-main-image"
-          src="${mainIsVideo ? mainImage : ''}"
+          src="${mainIsVideo ? escapeHTML(mainImage) : ''}"
           controls
           style="${mainIsVideo ? '' : 'display:none'}"
         ></video>
@@ -238,27 +288,27 @@ function renderCoinDetail(coin, groupMembers) {
     </div>
 
     <div class="detail-info reveal">
-      <p class="detail-country" id="detailCountry">${coin.country || "País no informado"}</p>
+      <p class="detail-country" id="detailCountry">${escapeHTML(coin.country || "País no informado")}</p>
       <h1 class="detail-title" id="detailTitle"></h1>
 
       <p class="detail-description" id="detailDescription"
         ${coin.description ? "" : 'style="display:none"'}
-      >${coin.description ? coin.description.replace(/\n/g, "<br>") : ""}</p>
+      >${coin.description ? escapeHTML(coin.description).replace(/\n/g, "<br>") : ""}</p>
 
       <div class="detail-divider"></div>
 
       <div class="detail-specs">
         <div class="detail-spec-row">
           <div class="detail-spec-label">Referencia</div>
-          <div class="detail-spec-value" id="specReference">${coin.reference || "NA"}</div>
+          <div class="detail-spec-value" id="specReference">${escapeHTML(coin.reference || "NA")}</div>
         </div>
         <div class="detail-spec-row">
           <div class="detail-spec-label">Estado de conservación</div>
-          <div class="detail-spec-value" id="specGrade">${coin.grade || "NA"}</div>
+          <div class="detail-spec-value" id="specGrade">${escapeHTML(coin.grade || "NA")}</div>
         </div>
         <div class="detail-spec-row">
           <div class="detail-spec-label">Material</div>
-          <div class="detail-spec-value" id="specMetal">${coin.metal || "NA"}</div>
+          <div class="detail-spec-value" id="specMetal">${escapeHTML(coin.metal || "NA")}</div>
         </div>
         <div class="detail-spec-row" id="specMintageRow" ${coin.mintage ? "" : 'style="display:none"'}>
           <div class="detail-spec-label">Acuñación</div>
@@ -266,16 +316,18 @@ function renderCoinDetail(coin, groupMembers) {
         </div>
         <div class="detail-spec-row">
           <div class="detail-spec-label">Referencia interna</div>
-          <div class="detail-spec-value" id="specId">${coin.id || "NA"}</div>
+          <div class="detail-spec-value" id="specId">${coin.id != null ? escapeHTML(coin.id) : "NA"}</div>
         </div>
       </div>
 
-      <p class="detail-price" id="detailPrice">${coin.original_price ? `<span class="price-original">${coin.original_price}</span> ` : ""}${coin.price || "Consultar"}</p>
+      <p class="detail-price" id="detailPrice">${coin.original_price
+        ? `<span class="price-original">${escapeHTML(coin.original_price)}</span> <span class="price-current">${escapeHTML(coin.price || "Consultar")}</span>`
+        : escapeHTML(coin.price || "Consultar")}</p>
 
       <a
         class="detail-whatsapp"
         id="detailWhatsapp"
-        href="${buildWhatsAppLink(coin)}"
+        href="${escapeHTML(buildWhatsAppLink(coin))}"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -319,48 +371,11 @@ function renderCoinDetail(coin, groupMembers) {
     });
   }
 
-  // ── Build image gallery thumbs ────────────────────────────────────────────
-  const thumbsContainer = document.getElementById("detailThumbs");
-  const mainImageEl     = document.getElementById("detailMainImage");
-  const mainVideoEl     = document.getElementById("detailMainVideo");
+  // ── Galería ────────────────────────────────────────────────────────────────
+  const mainImageEl = document.getElementById("detailMainImage");
   if (mainImageEl) attachImgRetry(mainImageEl);
-
-  images.forEach((src, index) => {
-    const button  = document.createElement("button");
-    button.type      = "button";
-    button.className = `detail-thumb${index === 0 ? " is-active" : ""}`;
-    button.dataset.image = src;
-    
-    const isVideo = src.endsWith('.mp4');
-    if (isVideo) {
-      const video = document.createElement("video");
-      video.src = src;
-      video.preload = "metadata";
-      video.muted = true;
-      button.appendChild(video);
-    } else {
-      const img = document.createElement("img");
-      img.loading = index === 0 ? "eager" : "lazy";
-      img.src = src;
-      img.alt = `${coin.title || "Moneda"} ${index + 1}`;
-      attachImgRetry(img);
-      button.appendChild(img);
-    }
-
-    button.addEventListener("click", () => {
-      const clickSrcIsVideo = src.endsWith('.mp4');
-      if (clickSrcIsVideo) {
-        if (mainImageEl) { mainImageEl.src = ""; mainImageEl.style.display = "none"; }
-        if (mainVideoEl) { mainVideoEl.src = src; mainVideoEl.style.display = ""; mainVideoEl.play().catch(()=>{}); }
-      } else {
-        if (mainImageEl) { mainImageEl.src = src; mainImageEl.style.display = ""; }
-        if (mainVideoEl) { mainVideoEl.src = ""; mainVideoEl.style.display = "none"; }
-      }
-      thumbsContainer.querySelectorAll(".detail-thumb")
-        .forEach(t => t.classList.toggle("is-active", t === button));
-    });
-    thumbsContainer.appendChild(button);
-  });
+  buildThumbStrip(coin);
+  applySoldState(coin);
 
   // ── Build variant switcher ────────────────────────────────────────────────
   if (groupMembers && groupMembers.length > 1) {
@@ -373,11 +388,16 @@ function renderCoinDetail(coin, groupMembers) {
       if (member.status === "sold") btn.classList.add("is-sold");
       btn.dataset.coinId = member.id;
 
-      const memberImgs = getImagesArray(member);
+      // Miniatura WebP, no el original: una ficha de un grupo con 15 variantes
+      // bajaba ~8 MB de fotos de 2800px para dibujar cuadraditos de 80px.
+      const memberPrimary = getPrimaryImage(member);
       const img = document.createElement("img");
-      img.src = memberImgs[0];
+      img.dataset.fullSrc = memberPrimary;
+      img.src = thumbFor(memberPrimary);
       img.alt = member.title || "Variante";
       img.loading = "lazy";
+      img.decoding = "async";
+      attachImgRetry(img);
 
       const info = document.createElement("div");
       info.className = "variant-info";
@@ -439,20 +459,10 @@ function initDetailRevealEffects() {
   const revealItems = document.querySelectorAll(
     ".detail-gallery, .detail-info, .detail-thumbs, .back-link"
   );
+  // `.detail-gallery`, `.detail-info` y `.back-link` ya traen la clase desde el
+  // markup; `.detail-thumbs` no, así que se agrega acá para todos por igual.
   revealItems.forEach(item => item.classList.add("reveal"));
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.12 }
-  );
-  revealItems.forEach(item => observer.observe(item));
+  createRevealObserver(revealItems);
 }
 
 // ─── Bootstrap ────────────────────────────────────────────────────────────────
@@ -466,7 +476,9 @@ async function loadCoinDetail() {
   }
 
   try {
-    const response = await fetch("coins.json", { cache: "no-store" });
+    // Caché normal del navegador (ver el comentario en script.js/loadCoins):
+    // con `no-store` cada apertura de ficha re-descargaba los 353 KB.
+    const response = await fetch("coins.json");
     if (!response.ok) throw new Error("No se pudo cargar coins.json");
 
     const allCoins = await response.json();
@@ -477,43 +489,19 @@ async function loadCoinDetail() {
       return false;
     }
 
+    // El catálogo esconde las ocultas a mano y las vendidas cuya ventana de 30
+    // días ya venció, pero la ficha no filtraba nada: 63 monedas seguían
+    // accesibles por URL (y con su moneda/<id>.html público) después de haber
+    // desaparecido del sitio.
+    if (!isCoinPubliclyVisible(coin)) {
+      detailContainer.innerHTML =
+        '<p class="detail-error">Esta moneda ya no está disponible. ' +
+        '<a href="index.html">Ver el catálogo</a></p>';
+      return false;
+    }
+
     let groupMembers = null;
     if (coin.group_id) {
-      const getGradeScore = (c) => {
-        const grade = (c.grade_short || "").toUpperCase().trim();
-        if (grade.startsWith("SC")) {
-          return grade.includes("-") ? 140 : 150;
-        }
-        if (grade.startsWith("EX")) {
-          let score = 110;
-          if (grade.includes("+")) score = 120;
-          if (grade.includes("-")) score = 100;
-          if (grade.includes("**")) score -= 15;
-          return score;
-        }
-        if (grade.startsWith("MB")) {
-          let score = 80;
-          if (grade.includes("+")) score = 90;
-          if (grade.includes("-")) score = 70;
-          if (grade.includes("**")) score -= 15;
-          return score;
-        }
-        if (grade.startsWith("B")) {
-          let score = 50;
-          if (grade.includes("+")) score = 60;
-          if (grade.includes("-")) score = 40;
-          if (grade.includes("**")) score -= 15;
-          return score;
-        }
-        if (grade.startsWith("R")) {
-          let score = 20;
-          if (grade.includes("+")) score = 30;
-          if (grade.includes("**")) score -= 15;
-          return score;
-        }
-        return 0;
-      };
-
       const getYear = (c) => {
         const y = parseInt(c.year, 10);
         return Number.isNaN(y) ? 0 : y;
@@ -529,8 +517,8 @@ async function loadCoinDetail() {
             return yearA - yearB;
           }
           // 2. Mismo año: mejor grado primero
-          const scoreA = getGradeScore(a);
-          const scoreB = getGradeScore(b);
+          const scoreA = getVariantGradeScore(a);
+          const scoreB = getVariantGradeScore(b);
           if (scoreA !== scoreB) {
             return scoreB - scoreA;
           }
@@ -552,13 +540,29 @@ loadCoinDetail().then(() => {
   initDetailRevealEffects();
 });
 
-// "← Volver" usa history.back() para que script.js restaure el catálogo
-// en la posición exacta donde estaba, en lugar de mostrar la pantalla de bienvenida.
+// "← Volver" usa history.back() para que script.js restaure el catálogo en la
+// posición exacta donde estaba, en vez de mostrar la portada.
+//
+// La condición NO puede ser `history.length > 1`: ese contador es de toda la
+// pestaña, no de este sitio. Quien abre un link compartido por WhatsApp en una
+// pestaña que ya tenía historial —el caso de uso mismo de las páginas
+// moneda/<id>.html— salía del dominio al tocar "Volver". Lo que corresponde
+// preguntar es si venimos del catálogo, y eso lo dice el referrer.
+function cameFromOwnCatalog() {
+  if (!document.referrer) return false;
+  try {
+    const ref = new URL(document.referrer);
+    return ref.origin === window.location.origin && !/\/moneda\//.test(ref.pathname);
+  } catch (_) {
+    return false;
+  }
+}
+
 const backLink = document.querySelector('.back-link');
 if (backLink) {
   backLink.addEventListener('click', (e) => {
     e.preventDefault();
-    if (history.length > 1) {
+    if (cameFromOwnCatalog()) {
       history.back();
     } else {
       window.location.href = backLink.getAttribute('href') || 'index.html';

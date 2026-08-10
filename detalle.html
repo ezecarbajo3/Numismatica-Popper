@@ -10,7 +10,13 @@
   <meta property="og:url" content="https://numismaticapopper.com/detalle.html" />
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/png" href="images/og-image.png" />
-  <link rel="stylesheet" href="styles.css?v=20260810e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Mismas fuentes y mismo ?v= que index.html: si difieren, ir del catálogo a
+       la ficha vuelve a descargar los 75 KB del CSS por ser otra URL. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:wght@400&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=20260810i" />
+  <link rel="preload" href="coins.json" as="fetch" />
 </head>
 <body>
   <header class="site-header site-header--compact">
@@ -41,8 +47,9 @@
     </section>
   </main>
 
-  <script src="glow.js?v=20260810e" defer></script>
-  <script src="detalle.js?v=20260810e"></script>
+  <script src="common.js?v=20260810i" defer></script>
+  <script src="glow.js?v=20260810i" defer></script>
+  <script src="detalle.js?v=20260810i" defer></script>
 
   <footer class="site-footer" aria-label="Pie de página">
     <div class="footer-inner">

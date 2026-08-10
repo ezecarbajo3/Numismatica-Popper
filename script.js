@@ -3,11 +3,15 @@ if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
 
-// ─── SVG constants ────────────────────────────────────────────────────────────
-const SVG_CHEVRON_LEFT  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>`;
-const SVG_CHEVRON_RIGHT = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>`;
+// Los helpers compartidos con la ficha de detalle (títulos, imágenes, grados,
+// precios, reveal) viven en common.js, que se carga antes que este archivo.
 
 // ─── DOM refs ─────────────────────────────────────────────────────────────────
+//
+// Estos elementos son parte del contrato de index.html, la única página que
+// carga este archivo: si falta alguno el catálogo no tiene sentido y conviene
+// que reviente ruidosamente en la consola. Los opcionales de verdad —los que
+// pueden no estar según la vista— sí se consultan con guarda antes de usarse.
 const searchInput        = document.getElementById('searchInput');
 const clearSearchBtn     = document.getElementById('clearSearch');
 const resultsCount       = document.getElementById('resultsCount');
@@ -15,16 +19,21 @@ const coinsGrid          = document.getElementById('coinsGrid');
 const coinCardTemplate   = document.getElementById('coinCardTemplate');
 const subFilterBar       = document.getElementById('subFilterBar');
 const subFilterList      = document.getElementById('subFilterList');
-const sortWrap           = document.getElementById('sortWrap');
 const sortButton         = document.getElementById('sortButton');
 const sortMenu           = document.getElementById('sortMenu');
 
 // ─── State ────────────────────────────────────────────────────────────────────
 let allCoins        = [];
-let groupMinPriceMap = new Map(); // group_id → { val: number, str: string }
+// group_id → { minVal, minStr, count, isNew }. Se arma una sola vez al cargar el
+// catálogo: antes cada tarjeta de grupo recorría las 874 monedas dos veces para
+// saber su cantidad de variantes y si era nueva (~178.000 iteraciones por render).
+let groupIndex      = new Map();
 let activeCategory  = null;
 let activeSubFilter = null;
 let revealObserver  = null;
+// Las tarjetas que se están mostrando, por id: la delegación de eventos las
+// necesita para resolver un click sin cerrar sobre cada moneda.
+let renderedCoinsById = new Map();
 
 // Orden de la grilla. 'asc' es la flecha hacia abajo (de menor a mayor: A→Z,
 // del más barato al más caro, de la más antigua a la más nueva) y 'desc' la
@@ -35,12 +44,6 @@ let activeSort  = 'alfabetico';
 let sortDirections = { alfabetico: 'asc', precio: 'asc', antiguedad: 'asc' };
 
 const STATE_KEY = 'nump_filter_state';
-
-// Se consulta en cada uso (no se cachea) porque el usuario puede cambiar la
-// preferencia del sistema con la pestaña ya abierta.
-function prefersReducedMotion() {
-  return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-}
 
 // ─── Country lookup helpers ───────────────────────────────────────────────────
 
@@ -132,12 +135,6 @@ function isBook(coin) {
   return title.includes('libro') || title.includes('catálogo') || title.includes('catalogo') || title.includes('album') || title.includes('red book');
 }
 
-function parsePriceUSD(priceStr) {
-  if (!priceStr) return Infinity;
-  const n = parseFloat(String(priceStr).replace(',', '.').replace(/[^\d.]/g, ''));
-  return isNaN(n) ? Infinity : n;
-}
-
 function isEconomica(coin) {
   return (
     parsePriceUSD(coin.price) < 5 &&
@@ -162,43 +159,28 @@ function isInvestment(coin) {
 
 // ─── Group helpers ────────────────────────────────────────────────────────────
 
-const GRADE_RANK_MAP = {
-  'R-':4,'R':5,'R+':6,
-  'B-':7,'B':8,'B+':9,
-  'MB-':10,'MB':11,'MB+':12,
-  'EX-':13,'EBC-':13,
-  'EX':14,'EBC':14,
-  'EX+':15,'EBC+':15,
-  'SC':16,'UNC':16,'FDC':16,'MS':16,
-};
-
-function gradeRank(coin) {
-  // Try grade_short first (most reliable)
-  let raw = String(coin.grade_short || '').trim().replace(/\s+/g, '').toUpperCase().replace(/\*+$/, '');
-  if (raw && raw !== '-' && GRADE_RANK_MAP[raw] !== undefined) return GRADE_RANK_MAP[raw];
-
-  // Fall back: parse full grade text
-  const g = String(coin.grade || '').toUpperCase();
-  const hasMinus = /[-]\s*$| -/.test(g);
-  const hasPlus  = /[+]\s*$| \+/.test(g);
-  const mod = hasMinus ? '-' : hasPlus ? '+' : '';
-  if (/^SIN\s*CIRC|^SC\b|^UNC\b|^FDC\b/i.test(g))   return GRADE_RANK_MAP['SC'];
-  if (/^EXCEL/i.test(g))  return GRADE_RANK_MAP['EX'  + mod] ?? GRADE_RANK_MAP['EX'];
-  if (/^MUY\s*B/i.test(g)) return GRADE_RANK_MAP['MB' + mod] ?? GRADE_RANK_MAP['MB'];
-  if (/^BUENO/i.test(g))  return GRADE_RANK_MAP['B'   + mod] ?? GRADE_RANK_MAP['B'];
-  if (/^REGULAR/i.test(g)) return GRADE_RANK_MAP['R'  + mod] ?? GRADE_RANK_MAP['R'];
-  return 0; // unknown
-}
-
-function buildGroupMinPrices() {
-  groupMinPriceMap = new Map();
+// Índice de grupos, armado una sola vez por carga de catálogo. Reemplaza a tres
+// recorridos completos de `allCoins` que se hacían POR TARJETA durante el render
+// (precio mínimo, cantidad de variantes y "¿es nueva?"). Con 102 grupos sobre
+// 874 monedas eran ~178.000 iteraciones en cada tecla del buscador.
+function buildGroupIndex() {
+  groupIndex = new Map();
   for (const coin of allCoins) {
-    if (!coin.group_id || coin.status === 'sold') continue;
-    const p = parsePriceUSD(coin.price);
-    const existing = groupMinPriceMap.get(coin.group_id);
-    if (!existing || p < existing.val) {
-      groupMinPriceMap.set(coin.group_id, { val: p, str: coin.price });
+    if (!coin.group_id) continue;
+    let entry = groupIndex.get(coin.group_id);
+    if (!entry) {
+      entry = { minVal: Infinity, minStr: '', count: 0, isNew: false };
+      groupIndex.set(coin.group_id, entry);
     }
+    if (coin.status !== 'sold') {
+      entry.count += 1;
+      const p = parsePriceUSD(coin.price);
+      if (p < entry.minVal) {
+        entry.minVal = p;
+        entry.minStr = coin.price;
+      }
+    }
+    if (isNewCoin(coin)) entry.isNew = true;
   }
 }
 
@@ -232,15 +214,15 @@ function collapseGroups(coins) {
 }
 
 function getGroupMemberCount(groupId) {
-  return allCoins.filter(c => c.group_id === groupId && c.status !== 'sold').length;
+  const entry = groupIndex.get(groupId);
+  return entry ? entry.count : 0;
 }
 
 // ── Badge "NUEVO" ───────────────────────────────────────────────────────────
-// Una moneda se considera nueva durante NEW_BADGE_DAYS días desde publishedAt.
-// Sin publishedAt (todo el catálogo viejo) no lleva badge, y el badge se apaga
-// solo al vencer la ventana — no hay nada que limpiar a mano.
-const NEW_BADGE_DAYS = 7;
-
+// Una moneda se considera nueva durante NEW_BADGE_DAYS días desde publishedAt
+// (la constante vive en common.js). Sin publishedAt (todo el catálogo viejo) no
+// lleva badge, y el badge se apaga solo al vencer la ventana — no hay nada que
+// limpiar a mano.
 function isNewCoin(coin) {
   if (!coin || !coin.publishedAt) return false;
   if (coin.status === 'sold') return false; // el ribbon VENDIDO manda
@@ -249,9 +231,10 @@ function isNewCoin(coin) {
   return (Date.now() - ts) < NEW_BADGE_DAYS * 86400000;
 }
 
-// Un grupo se marca como nuevo si cualquiera de sus variantes activas lo es.
+// Un grupo se marca como nuevo si cualquiera de sus variantes lo es.
 function isNewGroup(groupId) {
-  return allCoins.some(c => c.group_id === groupId && isNewCoin(c));
+  const entry = groupIndex.get(groupId);
+  return entry ? entry.isNew : false;
 }
 
 const CATEGORY_PREDICATES = {
@@ -260,7 +243,6 @@ const CATEGORY_PREDICATES = {
   // nunca se contradicen.
   ingresos:        (c) => (c.group_id ? isNewGroup(c.group_id) : isNewCoin(c)),
   plata:           isInvestment,
-  inversion:       isInvestment,      // kept for sessionStorage backwards compat
   argentina:       isArgentinaCoin,
   internacional:   (c) => !isArgentinaCoin(c) && !isMedalOrToken(c) && !isBlister(c) && !isBook(c),
   'medallas-libros': (c) => isMedalOrToken(c) || isBook(c),
@@ -296,8 +278,7 @@ function getSubFilterOptions(category) {
       return countries.map(c => ({ label: c, value: c }));
     }
 
-    case 'plata':
-    case 'inversion': {
+    case 'plata': {
       const pool = allCoins.filter(isInvestment);
       const specs = [
         { label: '.9999', value: '9999',  match: c => getSilverPurity(c) === 9999 },
@@ -333,7 +314,6 @@ function matchesSubFilter(coin, category, subFilter) {
     case 'internacional':
       return coin.country === subFilter;
     case 'plata':
-    case 'inversion':
       if (subFilter === 'lotes') return isLotePlata(coin);
       return getSilverPurity(coin) === parseInt(subFilter, 10);
     case 'medallas-libros':
@@ -373,7 +353,7 @@ function buildSubFilterBar(category, restoredSubFilter = null) {
   }
 
   // Inversión (plata) → prepend static "Pureza de la plata" label
-  if (category === 'plata' || category === 'inversion') {
+  if (category === 'plata') {
     const labelEl = document.createElement('span');
     labelEl.className = 'sub-filter-purity-label';
     labelEl.textContent = 'Pureza de la plata';
@@ -452,15 +432,33 @@ function showCatalog() {
 const VIEW_FADE_MS  = 180;
 const VIEW_ENTER_MS = 600;
 
+// Token de generación: dos toques rápidos (portada → categoría → otra categoría)
+// lanzaban dos transiciones encimadas, y los timers de la primera apagaban a
+// mitad de camino a la segunda — incluida la limpieza del transform del logo,
+// que dejaba el logotipo torcido. Cada transición nueva invalida la anterior.
+let viewTransitionToken = 0;
+let viewFadeTimer  = null;
+let viewEnterTimer = null;
+
 function switchView(apply) {
   if (prefersReducedMotion()) { apply(); return; }
 
+  viewTransitionToken += 1;
+  const myToken = viewTransitionToken;
+
+  clearTimeout(viewFadeTimer);
+  clearTimeout(viewEnterTimer);
+
   document.body.classList.add('is-view-leaving');
-  setTimeout(() => {
+  viewFadeTimer = setTimeout(() => {
+    if (myToken !== viewTransitionToken) return;
     document.body.classList.remove('is-view-leaving');
-    morphLogo(apply);
+    morphLogo(apply, myToken);
     document.body.classList.add('is-view-entering');
-    setTimeout(() => document.body.classList.remove('is-view-entering'), VIEW_ENTER_MS);
+    viewEnterTimer = setTimeout(() => {
+      if (myToken !== viewTransitionToken) return;
+      document.body.classList.remove('is-view-entering');
+    }, VIEW_ENTER_MS);
   }, VIEW_FADE_MS);
 }
 
@@ -477,6 +475,7 @@ function switchView(apply) {
 
 const LOGO_MORPH_MS    = 620;
 const LOGO_MORPH_EASE  = 'cubic-bezier(0.22, 1, 0.36, 1)';
+let logoMorphCleanupTimer = null;
 
 /**
  * Caja que envuelve a varios rects. Se usa para el h1: en móvil su caja es un
@@ -493,7 +492,7 @@ function unionRect(nodes) {
   return { left, top, width: right - left, height: bottom - top };
 }
 
-function morphLogo(apply) {
+function morphLogo(apply, token) {
   const header   = document.querySelector('.site-header');
   const monogram = header && header.querySelector('.np-monogram');
   const title    = header && header.querySelector('h1');
@@ -561,6 +560,7 @@ function morphLogo(apply) {
   // segundo estrena la transición. Con uno solo el motor colapsa los dos estilos
   // en el mismo frame y no hay animación.
   requestAnimationFrame(() => requestAnimationFrame(() => {
+    if (token !== undefined && token !== viewTransitionToken) return;
     parts.forEach(p => {
       if (!p.pending) return;
       p.el.style.transition = `transform ${LOGO_MORPH_MS}ms ${LOGO_MORPH_EASE}`;
@@ -569,8 +569,12 @@ function morphLogo(apply) {
   }));
 
   // Un transform inline que quede pegado convierte al h1 en containing block y
-  // rompe el sticky de la cabecera: la limpieza no es opcional.
-  setTimeout(() => {
+  // rompe el sticky de la cabecera: la limpieza no es opcional. Pero si mientras
+  // tanto arrancó otra transición, este timer limpiaría el transform de ESA
+  // animación a mitad de camino — por eso el token.
+  clearTimeout(logoMorphCleanupTimer);
+  logoMorphCleanupTimer = setTimeout(() => {
+    if (token !== undefined && token !== viewTransitionToken) return;
     parts.forEach(p => clearMorphStyles(p.el));
     document.body.classList.remove('is-logo-morphing');
   }, LOGO_MORPH_MS + 120);
@@ -587,8 +591,14 @@ function goToLanding() {
   switchView(() => {
     searchInput.value = '';
     clearSearchBtn.classList.remove('is-visible');
+    clearTimeout(searchDebounceId);
     activeCategory  = null;
     activeSubFilter = null;
+    // El orden también vuelve al de fábrica: si no, reentrar al catálogo lo
+    // dejaba ordenado por un criterio que el usuario no volvió a pedir.
+    activeSort = 'alfabetico';
+    sortDirections = { alfabetico: 'asc', precio: 'asc', antiguedad: 'asc' };
+    syncSortUI();
     document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('is-active'));
     closeSubFilterBar();
     closeSortMenu();
@@ -613,7 +623,7 @@ function enterCatalog(categoryKey) {
       closeSubFilterBar();
     }
     closeSortMenu();
-    saveState();
+    saveState(0);
     renderCoins(getFilteredCoins());
     initRevealEffects();
     window.scrollTo({ top: 0, behavior: 'instant' });
@@ -683,18 +693,24 @@ function applyRestoredState(state) {
   }
   syncSortUI();
 
-  renderCoins(getFilteredCoins(), true);
+  return renderCoins(getFilteredCoins(), true);
 }
 
 // ─── Data loading ─────────────────────────────────────────────────────────────
 
+// El catálogo se pide con la caché normal del navegador, NO con `no-store`.
+// GitHub Pages lo sirve con ETag y `max-age=600`: dentro de esos 10 minutos el
+// fetch resuelve desde disco sin tocar la red, y después revalida con un 304 de
+// ~200 bytes. Con `no-store` cada ida y vuelta al detalle re-descargaba los
+// 353 KB enteros — era el costo más alto de toda la navegación.
 async function loadCoins() {
   try {
-    const response = await fetch('coins.json', { cache: 'no-store' });
+    const response = await fetch('coins.json');
     if (!response.ok) throw new Error('No se pudo cargar coins.json');
     const data = await response.json();
     allCoins = Array.isArray(data) ? data : [];
-    buildGroupMinPrices();
+    prepareCoins();
+    buildGroupIndex();
     return true;
   } catch (error) {
     console.error(error);
@@ -706,13 +722,6 @@ async function loadCoins() {
 }
 
 // ─── Filtering ────────────────────────────────────────────────────────────────
-
-const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
-
-function isSoldExpired(coin) {
-  return coin.status === 'sold' && coin.soldAt &&
-    (Date.now() - new Date(coin.soldAt).getTime() > THIRTY_DAYS_MS);
-}
 
 const SEARCH_ALIASES = {
   'usa':  'estados unidos',
@@ -727,6 +736,20 @@ function stripAccents(str) {
 
 function normalizeSearch(str) {
   return stripAccents(String(str || '').trim().toLowerCase());
+}
+
+// El texto sobre el que busca el usuario se arma UNA vez al cargar el catálogo.
+// Antes se reconstruía dentro del filter, así que cada tecla disparaba ~800
+// `String.normalize('NFD')` + regex Unicode sobre 11 campos. Es lo que hacía que
+// escribir en el buscador se sintiera pegajoso.
+function prepareCoins() {
+  for (const coin of allCoins) {
+    coin._searchText = normalizeSearch([
+      coin.title, getCountryDisplayLabel(coin.country), coin.country,
+      coin.metal, coin.year, coin.price, coin.description,
+      coin.reference, coin.grade, coin.grade_short, coin.mintage,
+    ].filter(Boolean).join(' '));
+  }
 }
 
 function getFilteredCoins() {
@@ -752,14 +775,7 @@ function getFilteredCoins() {
       if (!matchesSubFilter(coin, activeCategory, activeSubFilter)) return false;
     }
 
-    if (searchTerm) {
-      const text = normalizeSearch([
-        coin.title, getCountryDisplayLabel(coin.country), coin.country,
-        coin.metal, coin.year, coin.price, coin.description,
-        coin.reference, coin.grade, coin.grade_short, coin.mintage,
-      ].filter(Boolean).join(' '));
-      if (!text.includes(searchTerm)) return false;
-    }
+    if (searchTerm && !(coin._searchText || '').includes(searchTerm)) return false;
 
     return true;
   });
@@ -790,54 +806,9 @@ function hydrateIngresosEntries() {
 }
 
 // ─── Rendering ────────────────────────────────────────────────────────────────
-
-function getPrimaryImage(coin) {
-  if (Array.isArray(coin.images) && coin.images.length > 0) {
-    const imageA = coin.images.find(img => {
-      const fileName = img.split('/').pop()?.toUpperCase() || '';
-      return fileName.includes('A.');
-    });
-    return imageA || coin.images[0];
-  }
-  if (coin.image) return coin.image;
-  return 'https://via.placeholder.com/800x600?text=Sin+imagen';
-}
-
-// Devuelve la miniatura WebP (~500px, generada por generate_thumbs.sh) que usa el
-// grid en vez del original de ~2800px. Si el src no es una foto local de images/
-// (ej. placeholder remoto), lo devuelve tal cual. El original se sigue usando en la
-// vista de detalle y el zoom; si la miniatura no existiera, attachImgRetry cae al
-// original automáticamente.
-function thumbFor(src) {
-  if (!src || !src.startsWith('images/') || src.startsWith('images/thumbs/')) return src;
-  const base = src.split('/').pop().replace(/\.[^.]+$/, '');
-  return `images/thumbs/${base}.webp`;
-}
-
-function getGradeShort(coin) {
-  return coin.grade_short || coin.gradeShort || coin.grade_short_label || '';
-}
-
-// Re-fetches an <img> if its load fails (up to 2 times, with a cache-buster).
-// Fixes "broken image" thumbnails after back/forward navigation, where the
-// browser aborts in-flight requests when leaving the page.
-function attachImgRetry(img, maxTries = 2) {
-  let triedOriginal = false;
-  let tries = 0;
-  img.addEventListener('error', () => {
-    const current = img.src.split('?')[0];
-    // Si falló una miniatura WebP (ej. moneda nueva aún sin thumb generado), caer
-    // al JPEG original una sola vez antes de reintentar con cache-buster.
-    if (!triedOriginal && img.dataset.fullSrc && current.includes('/thumbs/')) {
-      triedOriginal = true;
-      img.src = img.dataset.fullSrc;
-      return;
-    }
-    if (tries >= maxTries) return;
-    tries += 1;
-    setTimeout(() => { img.src = `${current}?r=${Date.now()}`; }, 250 * tries);
-  });
-}
+//
+// getPrimaryImage, thumbFor, getGradeShort y attachImgRetry viven en common.js:
+// la ficha de detalle usa exactamente las mismas.
 
 function goToDetail(coinId) {
   saveState(window.scrollY);
@@ -851,73 +822,26 @@ const ARGENTINA_SUBSECTION_ORDER = {
   'Argentina':                4,
 };
 
-function getCountrySortGroup(country) {
-  const normalized = normalizeCountryValue(country);
-  return ARGENTINA_GROUP_VALUES.has(normalized) ? 'Argentina' : normalized;
-}
-
 function getFaceValue(title) {
   const m = String(title || '').match(/^(\d+(?:\.\d+)?)\s/);
   return m ? parseFloat(m[1]) : 1;
 }
 
-// Separa "[valor facial] [año]" del texto extra de un título de moneda.
-// Año = token de 4 dígitos (1500–2099) que aparezca DESPUÉS de una palabra (denominación),
-// para no confundir el valor facial (ej. "2000 Pesos 1992" → base "2000 Pesos 1992").
-function splitCoinTitle(rawTitle) {
-  const title = String(rawTitle || '').trim();
-  if (!title) return { base: '', extra: '' };
-  const tokens = title.split(/\s+/);
-  const isYear = (t) => /^\(?(1[5-9]\d{2}|20\d{2})\)?$/.test(t);
-  const isAlpha = (t) => /[A-Za-zÀ-ÿ]/.test(t);
-
-  let yearIndex = -1, sawAlpha = false;
-  for (let i = 0; i < tokens.length; i++) {
-    if (isYear(tokens[i]) && sawAlpha) yearIndex = i; // último año válido
-    if (isAlpha(tokens[i])) sawAlpha = true;
-  }
-
-  let cut; // índice del último token que pertenece al base
-  if (yearIndex >= 0) {
-    cut = yearIndex;
-  } else if (!/^\d/.test(tokens[0])) {
-    // Sin año y sin valor facial numérico al inicio (nombres, "Medalla…",
-    // "Catalogo…", "Troy Ounce", "Lote…"): todo el título es base, sin extra.
-    cut = tokens.length - 1;
-  } else {
-    // Sin año pero con valor facial: base = hasta la denominación (primera palabra),
-    // absorbiendo un año/fecha/rango pegado (ej. "1854/40", "1861-1863").
-    const firstAlpha = tokens.findIndex(isAlpha);
-    cut = firstAlpha === -1 ? tokens.length - 1 : firstAlpha;
-    while (cut + 1 < tokens.length && /\d{4}/.test(tokens[cut + 1])) cut++;
-  }
-  return {
-    base: tokens.slice(0, cut + 1).join(' '),
-    extra: tokens.slice(cut + 1).join(' '),
-  };
-}
-
-// Setea el título en un elemento: base en crema, texto extra en dorado.
-function applyCoinTitle(el, rawTitle) {
-  if (!el) return;
-  const { base, extra } = splitCoinTitle(rawTitle);
-  el.textContent = base;
-  if (extra) {
-    if (base) el.appendChild(document.createTextNode(' '));
-    const span = document.createElement('span');
-    span.className = 'coin-title-extra';
-    span.textContent = extra;
-    el.appendChild(span);
-  }
-}
+// splitCoinTitle y applyCoinTitle viven en common.js (las comparte la ficha).
 
 // Comparador histórico del catálogo: es lo que el menú llama "Alfabético", el
 // orden por defecto. Se deja intacto — los criterios nuevos se apoyan en él
 // para desempatar, así dos monedas del mismo precio o del mismo año siguen
 // saliendo en el orden de siempre.
+//
+// El colador se instancia UNA vez: `localeCompare(x, 'es')` dentro del
+// comparador reconstruía la tabla de intercalación en cada una de las ~4.000
+// comparaciones de un sort de 448 elementos. Mismo resultado, mucho más barato.
+const COUNTRY_COLLATOR = new Intl.Collator('es');
+
 function compareAlfabetico(a, b) {
   // Inversión view: Lote Plata first, then by purity descending, then year
-  if (activeCategory === 'plata' || activeCategory === 'inversion') {
+  if (activeCategory === 'plata') {
     const lotA = isLotePlata(a) ? 0 : 1;
     const lotB = isLotePlata(b) ? 0 : 1;
     if (lotA !== lotB) return lotA - lotB;
@@ -934,7 +858,7 @@ function compareAlfabetico(a, b) {
   const groupB = ARGENTINA_GROUP_VALUES.has(normB) ? 'Argentina' : normB;
 
   // 1. Country alphabetically (A → Z)
-  const byCountry = groupA.localeCompare(groupB, 'es');
+  const byCountry = COUNTRY_COLLATOR.compare(groupA, groupB);
   if (byCountry !== 0) return byCountry;
 
   // 2. Argentina: subsection order (Patria → Confed. → Bs As → República)
@@ -960,8 +884,11 @@ function compareAlfabetico(a, b) {
  */
 function sortPriceValue(coin) {
   if (coin.group_id) {
-    const g = groupMinPriceMap.get(coin.group_id);
-    if (g) return g.val;
+    const g = groupIndex.get(coin.group_id);
+    // `count > 0` = el grupo tiene al menos una variante disponible. Si están
+    // todas vendidas no hay precio de grupo y manda el precio propio de la
+    // moneda, que es lo que la tarjeta muestra.
+    if (g && g.count > 0) return g.minVal;
   }
   return parsePriceUSD(coin.price); // Infinity si no hay precio legible
 }
@@ -1011,224 +938,344 @@ function sortCoins(coins) {
   return dir === -1 ? list.reverse() : list;
 }
 
+// Construye UNA tarjeta. No engancha ningún listener: todo lo que la tarjeta
+// hace (abrir la ficha, mover el carrusel, reintentar una foto rota) lo atiende
+// la delegación de más abajo. Antes eran 8 listeners por tarjeta, o sea ~3.500
+// creados y destruidos en cada búsqueda.
+function buildCoinCard(coin, idx, skipAnimation) {
+  const card = coinCardTemplate.content.cloneNode(true);
+
+  const article   = card.querySelector('.coin-card');
+  const imageWrap = card.querySelector('.coin-image-wrap');
+  const image     = card.querySelector('.coin-image');
+  const title     = card.querySelector('.coin-title');
+  const yearTag   = card.querySelector('.coin-year-tag');
+  const meta      = card.querySelector('.coin-meta');
+  const badgeRow  = card.querySelector('.coin-badge-row');
+  const price     = card.querySelector('.coin-price');
+
+  article.dataset.coinId = coin.id;
+  if (skipAnimation) article.classList.remove('reveal');
+
+  // Las primeras tarjetas van eager y con prioridad; el resto lazy, así el
+  // navegador solo baja lo que el usuario alcanza scrolleando.
+  if (idx < 4) {
+    image.loading = 'eager';
+    image.fetchPriority = idx < 2 ? 'high' : 'auto';
+  } else {
+    image.loading = 'lazy';
+    image.fetchPriority = 'low';
+  }
+
+  // El grid usa la miniatura WebP; el original queda en data-fullSrc como
+  // fallback si la miniatura no existiera (lo consume handleImgError).
+  const primaryFull = getPrimaryImage(coin);
+  image.dataset.fullSrc = primaryFull;
+  image.src = thumbFor(primaryFull);
+  image.alt = coin.title || 'Moneda';
+
+  if (coin.group_id) {
+    article.classList.add('is-group');
+    applyCoinTitle(title, coin.group_label || coin.title);
+    yearTag.textContent = '';
+    const count = getGroupMemberCount(coin.group_id);
+    price.style.display = 'none'; // se oculta para que badgeRow quede centrado
+    badgeRow.innerHTML = count > 1
+      ? `<span class="coin-grade-badge">${count} variantes</span>`
+      : (count === 1 ? '<span class="coin-grade-badge">1 variante</span>' : '');
+  } else {
+    article.classList.remove('is-group');
+    applyCoinTitle(title, coin.title || 'Sin título');
+    yearTag.textContent = coin.year || '';
+    price.style.display = 'block';
+    if (coin.original_price) {
+      price.innerHTML = `<span class="price-original">${escapeHTML(coin.original_price)}</span><span class="price-current">${escapeHTML(coin.price)}</span>`;
+    } else {
+      price.textContent = coin.price || 'Consultar';
+    }
+    const grade = getGradeShort(coin);
+    badgeRow.innerHTML = grade ? `<span class="coin-grade-badge">${escapeHTML(grade)}</span>` : '';
+  }
+
+  meta.textContent = getCountryDisplayLabel(coin.country);
+
+  // ── Vendida ────────────────────────────────────────────────────────────────
+  if (coin.status === 'sold') {
+    article.classList.add('is-sold');
+
+    const ribbon = document.createElement('div');
+    ribbon.className = 'sold-ribbon';
+    ribbon.textContent = 'VENDIDO';
+    imageWrap.appendChild(ribbon);
+
+    price.textContent = 'VENDIDO';
+    price.classList.add('is-sold-price');
+    price.style.display = 'block';
+  }
+
+  // ── Badge "NUEVO" ──────────────────────────────────────────────────────────
+  if (coin.group_id ? isNewGroup(coin.group_id) : isNewCoin(coin)) {
+    const newTag = document.createElement('span');
+    newTag.className = 'new-badge';
+    newTag.textContent = 'Nuevo';
+    imageWrap.appendChild(newTag);
+  }
+
+  // ── Carrusel ───────────────────────────────────────────────────────────────
+  const images = getImagesArray(coin);
+  if (images.length > 1) {
+    article.dataset.idx = '0';
+
+    const prevBtn = document.createElement('button');
+    prevBtn.type = 'button';
+    prevBtn.className = 'card-arrow card-arrow--prev';
+    prevBtn.setAttribute('aria-label', 'Imagen anterior');
+    prevBtn.innerHTML = SVG_CHEVRON_LEFT;
+
+    const nextBtn = document.createElement('button');
+    nextBtn.type = 'button';
+    nextBtn.className = 'card-arrow card-arrow--next';
+    nextBtn.setAttribute('aria-label', 'Imagen siguiente');
+    nextBtn.innerHTML = SVG_CHEVRON_RIGHT;
+
+    const dotsWrap = document.createElement('div');
+    dotsWrap.className = 'card-dots';
+    images.forEach((_, i) => {
+      const dot = document.createElement('span');
+      dot.className = 'card-dot' + (i === 0 ? ' is-active' : '');
+      dotsWrap.appendChild(dot);
+    });
+
+    imageWrap.appendChild(prevBtn);
+    imageWrap.appendChild(nextBtn);
+    imageWrap.appendChild(dotsWrap);
+
+    if (idx < 4) preloadCarousel(article, coin);
+  }
+
+  return card;
+}
+
+// ── Carrusel: operaciones sueltas, sin closures por tarjeta ──────────────────
+//
+// El índice actual vive en `data-idx` y el token anti-carrera en `data-swap`,
+// así una tarjeta no necesita retener nada en memoria entre clicks.
+
+function preloadCarousel(article, coin) {
+  if (article.dataset.preloaded === '1') return;
+  article.dataset.preloaded = '1';
+  getImagesArray(coin).forEach((src, i) => {
+    if (i > 0) { const p = new Image(); p.src = thumbFor(src); }
+  });
+}
+
+// Decodifica la foto destino fuera de pantalla antes de cambiar la <img>
+// visible, así el cambio ocurre en un solo paso y sin parpadeo. Los puntitos se
+// actualizan enseguida para dar respuesta inmediata mientras decodifica. El
+// token protege contra swaps fuera de orden al tocar rápido.
+function stepCarousel(article, delta) {
+  const coin = renderedCoinsById.get(Number(article.dataset.coinId));
+  if (!coin) return;
+  const images = getImagesArray(coin);
+  if (images.length < 2) return;
+
+  const current = Number(article.dataset.idx || 0);
+  const next = ((current + delta) % images.length + images.length) % images.length;
+  article.dataset.idx = String(next);
+
+  article.querySelectorAll('.card-dot').forEach((dot, i) =>
+    dot.classList.toggle('is-active', i === next)
+  );
+
+  const image = article.querySelector('.coin-image');
+  if (!image) return;
+
+  const targetFull = images[next];
+  const targetSrc  = thumbFor(targetFull);
+  image.dataset.fullSrc = targetFull; // fallback si falta la miniatura
+  // El reintento arranca de cero para la foto nueva.
+  delete image.dataset.triedOriginal;
+  delete image.dataset.retryTries;
+
+  const myToken = String(Number(article.dataset.swap || 0) + 1);
+  article.dataset.swap = myToken;
+
+  const pre = new Image();
+  pre.src = targetSrc;
+  const apply = () => { if (article.dataset.swap === myToken) image.src = targetSrc; };
+  if (pre.decode) {
+    pre.decode().then(apply).catch(apply);
+  } else if (pre.complete) {
+    apply();
+  } else {
+    pre.onload = apply;
+    pre.onerror = apply;
+  }
+}
+
+/**
+ * Render de la grilla.
+ *
+ * Las primeras RENDER_FIRST_BATCH tarjetas se montan sincrónicas (son las que
+ * el usuario ve) y el resto en tandas por frame. Antes se construían las 448 de
+ * una: ~9.400 nodos en un solo tick, y encima en `enterCatalog` eso caía JUSTO
+ * entre las dos mediciones del FLIP del logo, forzando un layout completo en el
+ * momento más caro de la transición. `content-visibility: auto` ya se ocupa del
+ * pintado; esto reparte la construcción.
+ */
+// Devuelve una promesa que se resuelve cuando TODAS las tarjetas están en el
+// DOM. La restauración de scroll depende de eso: si se hace scrollTo con solo
+// las primeras 48 montadas, la página todavía no mide lo suficiente y el
+// navegador recorta el salto (se quedaba 250–500px más arriba).
+const RENDER_FIRST_BATCH = 48;
+const RENDER_CHUNK       = 96;
+let renderToken = 0;
+
 function renderCoins(coins, skipAnimation = false) {
+  // Invalida cualquier tanda pendiente de un render anterior (ej. el usuario
+  // siguió tecleando antes de que terminara de dibujarse la búsqueda previa).
+  renderToken += 1;
+  const myToken = renderToken;
+
   coinsGrid.innerHTML = '';
+  renderedCoinsById = new Map();
 
   if (!coins.length) {
     coinsGrid.innerHTML =
       '<div class="empty-state">No hay monedas que coincidan con los filtros seleccionados.</div>';
     resultsCount.textContent = '0 monedas encontradas';
-    return;
+    return Promise.resolve();
   }
 
-  const fragment = document.createDocumentFragment();
   // Primero se colapsan los grupos y recién después se ordena: así el criterio
   // se aplica sobre las tarjetas que realmente se ven y no sobre variantes que
   // después desaparecen. collapseGroups elige el representante por grado e id,
   // sin depender del orden de entrada, así que el orden por defecto no cambia.
   const displayCoins = sortCoins(collapseGroups(coins));
+  displayCoins.forEach(coin => renderedCoinsById.set(Number(coin.id), coin));
 
-  displayCoins.forEach((coin, idx) => {
-    const card = coinCardTemplate.content.cloneNode(true);
-
-    const article   = card.querySelector('.coin-card');
-    const imageWrap = card.querySelector('.coin-image-wrap');
-    const image     = card.querySelector('.coin-image');
-    const title     = card.querySelector('.coin-title');
-    const yearTag   = card.querySelector('.coin-year-tag');
-    const meta      = card.querySelector('.coin-meta');
-    const badgeRow  = card.querySelector('.coin-badge-row');
-    const price     = card.querySelector('.coin-price');
-
-    if (skipAnimation) article.classList.remove('reveal');
-
-    // Above-fold cards: eager + high priority. The rest are lazy so the browser
-    // only fetches them as the user scrolls (native lazy-loading).
-    // Keep the eager set small — these are full-weight photos.
-    if (idx < 4) {
-      image.loading = 'eager';
-      image.fetchPriority = idx < 2 ? 'high' : 'auto';
-    } else {
-      image.loading = 'lazy';
-      image.fetchPriority = 'low';
-    }
-
-    // Auto-heal images that fail to load (aborted requests on navigation,
-    // transient network errors, etc.) — retries with a cache-buster so the
-    // user never has to hit F5 to recover broken thumbnails.
-    // El grid usa la miniatura WebP; el original queda en data-fullSrc como
-    // fallback si la miniatura no existiera (lo consume attachImgRetry).
-    const primaryFull = getPrimaryImage(coin);
-    image.dataset.fullSrc = primaryFull;
-    attachImgRetry(image);
-
-    image.src = thumbFor(primaryFull);
-    image.alt = coin.title || 'Moneda';
-
-    if (coin.group_id) {
-      article.classList.add('is-group');
-      applyCoinTitle(title, coin.group_label || coin.title);
-      yearTag.textContent = '';
-      const count = getGroupMemberCount(coin.group_id);
-      price.style.display = 'none'; // Hide price element to allow badgeRow to center
-      badgeRow.innerHTML = count > 1
-        ? `<span class="coin-grade-badge">${count} variantes</span>`
-        : (count === 1 ? `<span class="coin-grade-badge">1 variante</span>` : '');
-    } else {
-      article.classList.remove('is-group');
-      applyCoinTitle(title, coin.title || 'Sin título');
-      yearTag.textContent = coin.year  || '';
-      price.style.display = 'block'; 
-      if (coin.original_price) {
-        price.innerHTML = `<span class="price-original">${coin.original_price}</span><span class="price-current">${coin.price}</span>`;
-      } else {
-        price.textContent = coin.price || 'Consultar';
-      }
-      const grade = getGradeShort(coin);
-      let badgesHTML = grade ? `<span class="coin-grade-badge">${grade}</span>` : '';
-      badgeRow.innerHTML = badgesHTML;
-    }
-
-    meta.textContent = getCountryDisplayLabel(coin.country);
-
-    // ── Sold state ────────────────────────────────────────────────────────────
-    if (coin.status === 'sold') {
-      article.classList.add('is-sold');
-
-      const ribbon = document.createElement('div');
-      ribbon.className = 'sold-ribbon';
-      ribbon.textContent = 'VENDIDO';
-      imageWrap.appendChild(ribbon);
-
-      price.textContent = 'VENDIDO';
-      price.classList.add('is-sold-price');
-      price.style.display = 'block';
-    }
-
-    // ── Badge "NUEVO" ─────────────────────────────────────────────────────────
-    if (coin.group_id ? isNewGroup(coin.group_id) : isNewCoin(coin)) {
-      const newTag = document.createElement('span');
-      newTag.className = 'new-badge';
-      newTag.textContent = 'Nuevo';
-      imageWrap.appendChild(newTag);
-    }
-
-    // ── Inline image carousel ─────────────────────────────────────────────────
-    const images = Array.isArray(coin.images) ? coin.images : [];
-    if (images.length > 1) {
-      let currentIdx = 0;
-      let carouselPreloaded = false;
-      let swapToken = 0;
-
-      const updateDots = () => {
-        imageWrap.querySelectorAll('.card-dot').forEach((dot, i) =>
-          dot.classList.toggle('is-active', i === currentIdx)
-        );
-      };
-
-      // Decode the target off-screen before swapping the visible <img>, so the
-      // photo changes in a single click with no half-painted/blank flash. The
-      // dots update immediately to give instant feedback even while decoding.
-      // A token guards against out-of-order swaps when clicking quickly.
-      const setIdx = (newIdx) => {
-        currentIdx = ((newIdx % images.length) + images.length) % images.length;
-        updateDots();
-        const targetFull = images[currentIdx];
-        const targetSrc = thumbFor(targetFull);
-        image.dataset.fullSrc = targetFull; // fallback si falta la miniatura
-        const myToken = ++swapToken;
-        const pre = new Image();
-        pre.src = targetSrc;
-        const apply = () => { if (myToken === swapToken) image.src = targetSrc; };
-        if (pre.decode) {
-          pre.decode().then(apply).catch(apply);
-        } else if (pre.complete) {
-          apply();
-        } else {
-          pre.onload = apply;
-          pre.onerror = apply;
-        }
-      };
-
-      // Preload secondary images so the first arrow tap is instant. For the
-      // above-fold cards this runs at render; the rest wait until first
-      // hover/touch to avoid a burst of off-screen requests.
-      const preloadCarousel = () => {
-        if (carouselPreloaded) return;
-        carouselPreloaded = true;
-        images.forEach((src, i) => { if (i > 0) { const p = new Image(); p.src = thumbFor(src); } });
-      };
-      if (idx < 4) preloadCarousel();
-
-      const prevBtn = document.createElement('button');
-      prevBtn.type = 'button';
-      prevBtn.className = 'card-arrow card-arrow--prev';
-      prevBtn.setAttribute('aria-label', 'Imagen anterior');
-      prevBtn.innerHTML = SVG_CHEVRON_LEFT;
-
-      const nextBtn = document.createElement('button');
-      nextBtn.type = 'button';
-      nextBtn.className = 'card-arrow card-arrow--next';
-      nextBtn.setAttribute('aria-label', 'Imagen siguiente');
-      nextBtn.innerHTML = SVG_CHEVRON_RIGHT;
-
-      const dotsWrap = document.createElement('div');
-      dotsWrap.className = 'card-dots';
-      images.forEach((_, i) => {
-        const dot = document.createElement('span');
-        dot.className = 'card-dot' + (i === 0 ? ' is-active' : '');
-        dotsWrap.appendChild(dot);
-      });
-
-      prevBtn.addEventListener('click', (e) => { e.stopPropagation(); setIdx(currentIdx - 1); });
-      nextBtn.addEventListener('click', (e) => { e.stopPropagation(); setIdx(currentIdx + 1); });
-      imageWrap.appendChild(prevBtn);
-      imageWrap.appendChild(nextBtn);
-      imageWrap.appendChild(dotsWrap);
-
-      article.addEventListener('mouseenter', preloadCarousel);
-
-      // Touch swipe (mobile) — swipe left → next, swipe right → prev
-      let touchStartX = 0;
-      imageWrap.addEventListener('touchstart', (e) => {
-        preloadCarousel();
-        touchStartX = e.changedTouches[0].clientX;
-      }, { passive: true });
-      imageWrap.addEventListener('touchend', (e) => {
-        const delta = e.changedTouches[0].clientX - touchStartX;
-        if (Math.abs(delta) > 40) {
-          e.stopPropagation();
-          setIdx(delta < 0 ? currentIdx + 1 : currentIdx - 1);
-        }
-      }, { passive: false });
-    }
-
-    // ── Card navigation ───────────────────────────────────────────────────────
-    if (coin.status !== 'sold') {
-      article.addEventListener('click', () => goToDetail(coin.id));
-      article.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault();
-          goToDetail(coin.id);
-        }
-      });
-    }
-
-    fragment.appendChild(card);
-  });
-
-  coinsGrid.appendChild(fragment);
   const displayCount = displayCoins.length;
   resultsCount.textContent = `${displayCount} ${displayCount === 1 ? 'ítem encontrado' : 'ítems encontrados'}`;
+
+  const appendRange = (from, to) => {
+    const fragment = document.createDocumentFragment();
+    for (let i = from; i < to; i++) {
+      fragment.appendChild(buildCoinCard(displayCoins[i], i, skipAnimation));
+    }
+    coinsGrid.appendChild(fragment);
+  };
+
+  const firstCount = Math.min(RENDER_FIRST_BATCH, displayCount);
+  appendRange(0, firstCount);
+
+  if (firstCount >= displayCount) return Promise.resolve();
+
+  return new Promise((resolve) => {
+    const pump = (from) => {
+      if (myToken !== renderToken) { resolve(); return; } // llegó un render más nuevo
+      const to = Math.min(from + RENDER_CHUNK, displayCount);
+      appendRange(from, to);
+      if (revealObserver) observeRevealItems(coinsGrid.querySelectorAll('.coin-card.reveal:not(.is-visible)'));
+      if (to < displayCount) requestAnimationFrame(() => pump(to));
+      else resolve();
+    };
+    requestAnimationFrame(() => pump(firstCount));
+  });
+}
+
+// ─── Delegación de eventos de la grilla ───────────────────────────────────────
+//
+// Un listener por tipo sobre #coinsGrid, montado una sola vez, en lugar de ocho
+// por tarjeta recreados en cada render.
+
+// Un swipe horizontal termina emitiendo un `click` sintético que sube hasta la
+// tarjeta: sin esta bandera, deslizar para ver la otra foto abría la ficha.
+let suppressNextCardClick = false;
+let touchStartX = 0;
+let touchStartY = 0;
+
+function initGridDelegation() {
+  // Los eventos `error` no burbujean, pero sí bajan en fase de captura.
+  coinsGrid.addEventListener('error', (event) => {
+    const img = event.target;
+    if (img && img.classList && img.classList.contains('coin-image')) handleImgError(img);
+  }, true);
+
+  coinsGrid.addEventListener('click', (event) => {
+    const arrow = event.target.closest('.card-arrow');
+    if (arrow) {
+      event.stopPropagation();
+      const article = arrow.closest('.coin-card');
+      if (article) stepCarousel(article, arrow.classList.contains('card-arrow--prev') ? -1 : 1);
+      return;
+    }
+
+    if (suppressNextCardClick) { suppressNextCardClick = false; return; }
+
+    const article = event.target.closest('.coin-card');
+    if (!article || article.classList.contains('is-sold')) return;
+    goToDetail(Number(article.dataset.coinId));
+  });
+
+  coinsGrid.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const article = event.target.closest('.coin-card');
+    if (!article || article.classList.contains('is-sold')) return;
+    event.preventDefault();
+    goToDetail(Number(article.dataset.coinId));
+  });
+
+  // Las fotos secundarias se precargan al primer hover/toque, no al render:
+  // con 448 tarjetas, precargarlas todas serían ~900 pedidos que nadie pidió.
+  coinsGrid.addEventListener('mouseenter', (event) => {
+    const article = event.target.closest && event.target.closest('.coin-card');
+    if (!article) return;
+    const coin = renderedCoinsById.get(Number(article.dataset.coinId));
+    if (coin) preloadCarousel(article, coin);
+  }, true);
+
+  coinsGrid.addEventListener('touchstart', (event) => {
+    const article = event.target.closest('.coin-card');
+    if (!article) return;
+    const coin = renderedCoinsById.get(Number(article.dataset.coinId));
+    if (coin) preloadCarousel(article, coin);
+    touchStartX = event.changedTouches[0].clientX;
+    touchStartY = event.changedTouches[0].clientY;
+  }, { passive: true });
+
+  // `passive: true`: este handler nunca llama a preventDefault, y declararlo
+  // pasivo evita que el navegador tenga que esperarlo para decidir el scroll.
+  coinsGrid.addEventListener('touchend', (event) => {
+    const article = event.target.closest('.coin-card');
+    if (!article) return;
+    const dx = event.changedTouches[0].clientX - touchStartX;
+    const dy = event.changedTouches[0].clientY - touchStartY;
+    // Horizontal de verdad: si el dedo se fue más en vertical, era un scroll.
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+      suppressNextCardClick = true;
+      stepCarousel(article, dx < 0 ? 1 : -1);
+    }
+  }, { passive: true });
 }
 
 // ─── Reveal animations ────────────────────────────────────────────────────────
 
+// Observa los elementos que todavía esperan aparecer. NO agrega la clase
+// `reveal` a nada: quien construye la tarjeta ya decidió si corresponde
+// animarla (en la restauración por back/forward no corresponde), y volver a
+// ponerla acá pisaba esa decisión.
+function observeRevealItems(items) {
+  if (!revealObserver) return;
+  items.forEach(item => revealObserver.observe(item));
+}
+
 function initRevealEffects() {
   if (revealObserver) revealObserver.disconnect();
 
-  const revealItems = document.querySelectorAll('.coin-card, .results-bar');
-  revealItems.forEach(item => item.classList.add('reveal'));
+  if (!('IntersectionObserver' in window)) {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
+    return;
+  }
 
   revealObserver = new IntersectionObserver(
     (entries, observer) => {
@@ -1241,7 +1288,7 @@ function initRevealEffects() {
     { threshold: 0.12 }
   );
 
-  revealItems.forEach(item => revealObserver.observe(item));
+  observeRevealItems(document.querySelectorAll('.reveal:not(.is-visible)'));
 }
 
 // ─── Barra fija: el modo "estoy dentro de la grilla" ──────────────────────────
@@ -1316,21 +1363,33 @@ window.addEventListener('resize', () => {
 
 // ─── Apply filters ────────────────────────────────────────────────────────────
 
+// Un cambio de filtro devuelve la grilla al principio, así que el scroll
+// guardado deja de valer: se pisa con 0. Antes `saveState()` conservaba el
+// scrollY del filtro anterior y, al volver del detalle, saltaba a un offset de
+// una grilla que ya no existía.
 function applyFilters() {
   renderCoins(getFilteredCoins(), true);
-  saveState();
+  observeRevealItems(coinsGrid.querySelectorAll('.coin-card.reveal:not(.is-visible)'));
+  saveState(0);
 }
 
 // ─── Event listeners ──────────────────────────────────────────────────────────
 
+// Sin debounce, cada tecla rehacía la grilla entera. 150 ms es imperceptible al
+// escribir y colapsa una ráfaga de tecleo en un solo render.
+const SEARCH_DEBOUNCE_MS = 150;
+let searchDebounceId = null;
+
 searchInput.addEventListener('input', () => {
   clearSearchBtn.classList.toggle('is-visible', searchInput.value.length > 0);
-  applyFilters();
+  clearTimeout(searchDebounceId);
+  searchDebounceId = setTimeout(applyFilters, SEARCH_DEBOUNCE_MS);
 });
 
 clearSearchBtn.addEventListener('click', () => {
   searchInput.value = '';
   clearSearchBtn.classList.remove('is-visible');
+  clearTimeout(searchDebounceId);
   applyFilters();
   searchInput.focus();
 });
@@ -1454,6 +1513,8 @@ if (logoLink) {
 
 // ─── Bootstrap ────────────────────────────────────────────────────────────────
 
+initGridDelegation();
+
 loadCoins().then((ok) => {
   if (!ok) return;
 
@@ -1462,29 +1523,34 @@ loadCoins().then((ok) => {
   const isBackFwd = isBackForwardNavigation();
   const state     = loadSavedState();
 
-  // Only restore catalog on back/forward navigation
+  // El catálogo solo se restaura al volver con atrás/adelante.
   if (isBackFwd && state && state.view === 'catalog') {
     showCatalog();
-    applyRestoredState(state);
-    scheduleHeaderMuteObserver();
-    if (state.scrollY) {
-      requestAnimationFrame(() => requestAnimationFrame(() => {
-        window.scrollTo({ top: state.scrollY, behavior: 'instant' });
-      }));
-    } else {
+    // initRevealEffects va SIEMPRE, también cuando hay scroll guardado: antes
+    // solo corría cuando NO había scrollY, o sea nunca en el caso normal de
+    // volver del detalle, y quedaba un observador sin montar.
+    applyRestoredState(state).then(() => {
       initRevealEffects();
-    }
+      scheduleHeaderMuteObserver();
+      // El scroll se restaura recién con la grilla entera montada: si no, la
+      // página todavía no mide lo suficiente y el navegador recorta el salto.
+      if (state.scrollY) {
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          window.scrollTo({ top: state.scrollY, behavior: 'instant' });
+        }));
+      }
+    });
     return;
   }
 
-  // Fresh load or reload → always show landing
+  // Carga nueva o recarga → siempre la portada.
   showLanding();
 });
 
-// ─── Back/forward cache restore ────────────────────────────────────────────────
-// When the page is restored from the bfcache (e.g. the browser/app "back"
-// button), the bootstrap above does NOT re-run. Re-assert the scroll position
-// and kick any thumbnails the browser left in a broken state back into loading.
+// ─── Restauración desde el bfcache ────────────────────────────────────────────
+// Al volver desde la caché de atrás/adelante el bootstrap NO se re-ejecuta:
+// hay que reafirmar la posición de scroll y recuperar las miniaturas que el
+// navegador haya dejado a medio cargar.
 window.addEventListener('pageshow', (event) => {
   if (!event.persisted) return;
 
@@ -1495,8 +1561,13 @@ window.addEventListener('pageshow', (event) => {
     }));
   }
 
+  // Solo las que fallaron de verdad. La condición anterior era
+  // `!img.complete || img.naturalWidth === 0`, y `complete` es false para toda
+  // imagen lazy que todavía no empezó a cargar — o sea casi toda la grilla. El
+  // resultado era reescribirles el src con un cache-buster único y forzar la
+  // re-descarga de las ~448 miniaturas justo al volver atrás.
   document.querySelectorAll('.coin-image').forEach((img) => {
-    if (!img.complete || img.naturalWidth === 0) {
+    if (img.complete && img.naturalWidth === 0) {
       const base = img.src.split('?')[0];
       img.src = `${base}?r=${Date.now()}`;
     }
