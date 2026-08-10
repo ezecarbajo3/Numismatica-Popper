@@ -2752,8 +2752,74 @@ body[data-view="catalog"] .site-header {
   top: 0;
   z-index: 100;
   padding: 16px 0;
-  background: #0a0a0a;
+  background-image: none; /* anula el degradé de la cabecera alta */
+  background-color: #0a0a0a;
   border-bottom: 1px solid rgba(207, 172, 107, 0.22);
+  transition: background-color 420ms ease;
+}
+
+/* Al dejar atrás los filtros la barra se despega un poco del fondo: el negro
+   baja a 0.82 y las monedas se insinúan pasando por detrás. Va SOLO alpha, sin
+   backdrop-filter — ver el comentario de arriba: desenfocar detrás de un sticky
+   sobre esta grilla mata la pestaña en iOS. La transparencia sola no re-captura
+   nada y no cuesta memoria.
+   Acompaña al texto plateado: entra y sale con la misma clase. */
+body[data-view="catalog"].is-past-filters .site-header {
+  background-color: rgba(10, 10, 10, 0.82);
+}
+
+/* ── Flecha "subir": a la derecha del logotipo, en la misma línea ───────────
+   Solo en el catálogo. En la portada no hay nada arriba a lo que volver. */
+
+.to-top {
+  position: relative;
+  display: none;
+  flex: 0 0 auto;
+  padding: 7px;
+  border: 0;
+  background: none;
+  color: rgba(207, 172, 107, 0.7);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 999px;
+}
+
+.to-top svg {
+  display: block;
+  width: 17px;
+  height: 17px;
+}
+
+/* Área de toque de 44px sin engordar la barra: la flecha dibujada mide 31px,
+   este pseudo-elemento agranda solo lo que recibe el dedo. */
+.to-top::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+}
+
+.to-top:hover,
+.to-top:focus-visible {
+  color: var(--accent-light);
+  background: rgba(207, 172, 107, 0.08);
+  outline: none;
+}
+
+.to-top:active {
+  transform: translateY(-1px);
+}
+
+/* La cabecera del catálogo pasa a ser una fila: logotipo + flecha centrados.
+   El .subtitle, que es el otro hijo del contenedor, está en display:none acá. */
+body[data-view="catalog"] .site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+body[data-view="catalog"] .to-top {
+  display: inline-flex;
 }
 
 /* El halo radial y el doble filete están pensados para una cabecera alta; en
@@ -2890,12 +2956,18 @@ body.is-logo-morphing .site-header .container {
    ───────────────────────────────────────────────────────────────────────────── */
 
 body[data-view="catalog"] .np-monogram,
-body[data-view="catalog"] .site-header h1 {
-  transition: filter 420ms ease;
+body[data-view="catalog"] .site-header h1,
+body[data-view="catalog"] .to-top {
+  /* color/background van explícitos: esta regla pisa la transición global de
+     `button` y si no, el hover de la flecha saltaría de golpe. */
+  transition: filter 420ms ease, color 0.22s ease, background 0.22s ease;
 }
 
+/* La flecha vive en la misma línea que el logotipo: si el texto se va a plata
+   y ella se queda dorada, la fila se parte en dos. */
 body[data-view="catalog"].is-past-filters .np-monogram,
-body[data-view="catalog"].is-past-filters .site-header h1 {
+body[data-view="catalog"].is-past-filters .site-header h1,
+body[data-view="catalog"].is-past-filters .to-top {
   /* grayscale a secas deja el dorado en un gris barroso contra el #0a0a0a de la
      barra; el brillo lo levanta a plata legible. */
   filter: grayscale(1) brightness(1.28) contrast(0.96);
@@ -2909,6 +2981,21 @@ body[data-view="catalog"].is-past-filters .site-header h1 {
 
   body[data-view="catalog"] .site-logo-link {
     gap: 9px;
+  }
+
+  body[data-view="catalog"] .site-header .container {
+    gap: 4px;
+  }
+
+  /* Menos flecha y más área de toque: el SVG baja a 14px pero el padding sube,
+     así el blanco alrededor sigue siendo agarrable con el pulgar. */
+  .to-top {
+    padding: 9px;
+  }
+
+  .to-top svg {
+    width: 14px;
+    height: 14px;
   }
 
   body[data-view="catalog"] .np-monogram {

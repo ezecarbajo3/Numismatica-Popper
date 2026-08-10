@@ -1422,6 +1422,15 @@ document.querySelectorAll('[data-landing-category]').forEach(btn => {
   });
 });
 
+// Flecha "subir": sube al principio del catálogo, no a la portada. Está fuera
+// del enlace del logo justamente para que el clic no navegue.
+const toTopButton = document.getElementById('toTop');
+if (toTopButton) {
+  toTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? 'instant' : 'smooth' });
+  });
+}
+
 // Logo link: go back to landing when in catalog
 const logoLink = document.querySelector('.site-logo-link');
 if (logoLink) {
