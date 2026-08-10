@@ -34,6 +34,8 @@ https://numismaticapopper.com
 - `mark_sold.py`           — alternativa mínima: marca vendidas por id.
 - `stamp_published.py`     — sella la fecha de alta (publishedAt) para el badge "NUEVO".
                              `python3 stamp_published.py 1043 1044` o `--from 1019`.
+- `validate_grades.py`     — verifica que grade/grade_short respeten la convención de
+                             conservación (ver abajo). Correr tras tocar grados.
 
 ## Cómo cargar una moneda
 Editar `coins.json` y agregar un objeto al array. Campos habituales:
@@ -61,6 +63,17 @@ Notas:
   array, tiene que llamarse "A" (ver getPrimaryImage en common.js).
 - No repetir IDs. Mantener siempre los mismos nombres de país y metal para que los
   filtros no se fragmenten.
+- Conservación: `grade_short` es el campo confiable y tiene una lista CERRADA de
+  valores — `R`, `B`, `MB`, `EX`, `SC`, con `+`, `-` o nada, y opcionalmente `**`
+  al final (marca "con detalles"/defecto). Nada de `UNC`, `MS70`, `Ex`, `-` ni
+  espacios. `grade` es el texto largo que le corresponde y va SIEMPRE en sincronía:
+
+      SC → Sin Circular      MB+ → Muy Bueno +      EX-** → Excelente - **
+      EX → Excelente         B-  → Bueno -          R     → Regular
+
+  Una moneda puede no tener conservación (libros, catálogos, piezas sin evaluar):
+  ahí van los dos campos en `""` y la grilla no muestra badge. Tras tocar grados,
+  correr `python3 validate_grades.py`.
 - Tras editar coins.json: correr `generate_thumbs.sh` (nuevas fotos) y
   `python3 generate_coin_pages.py` (altas/cambios de foto). Sin miniatura la
   grilla cae al original, que pesa ~10x más.
