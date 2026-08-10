@@ -2199,7 +2199,7 @@
     "grade_short": "SC",
     "description": "",
     "mintage": "",
-    "reference": ""
+    "reference": "KM# 153a"
   },
   {
     "id": 247,
@@ -2689,7 +2689,7 @@
       "images/285A.jpeg",
       "images/285B.jpeg"
     ],
-    "reference": "",
+    "reference": "KM# 2",
     "grade": "Muy Bueno+",
     "grade_short": "MB+",
     "mintage": "",
@@ -2755,7 +2755,8 @@
       "images/296B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "reference": "KM# 242"
   },
   {
     "id": 297,
@@ -2940,7 +2941,8 @@
       "images/317B.jpeg"
     ],
     "grade": "Muy Bueno+",
-    "grade_short": "MB+"
+    "grade_short": "MB+",
+    "reference": "KM# 915.1"
   },
   {
     "id": 318,
@@ -3001,7 +3003,8 @@
       "images/322B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "reference": "KM# 58"
   },
   {
     "id": 323,
@@ -3015,7 +3018,8 @@
       "images/323B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "reference": "KM# 69"
   },
   {
     "id": 324,
@@ -3097,7 +3101,8 @@
     "grade": "Bueno",
     "grade_short": "B",
     "group_id": "pt-50centavos-1929",
-    "group_label": "50 Centavos 1929"
+    "group_label": "50 Centavos 1929",
+    "reference": "KM# 576"
   },
   {
     "id": 332,
@@ -3193,7 +3198,8 @@
       "images/338B.jpeg"
     ],
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "reference": "KM# 10a"
   },
   {
     "id": 339,
@@ -3223,7 +3229,8 @@
       "images/340B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "reference": "KM# 168"
   },
   {
     "id": 342,
@@ -3237,7 +3244,8 @@
       "images/342B.jpeg"
     ],
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "reference": "KM# 64"
   },
   {
     "id": 344,
@@ -3868,7 +3876,8 @@
       "images/390B.jpeg"
     ],
     "group_id": "pe-sol-fauna",
-    "group_label": "Fauna"
+    "group_label": "Fauna",
+    "reference": "KM# 410"
   },
   {
     "id": 391,
@@ -3882,7 +3891,8 @@
       "images/391B.jpeg"
     ],
     "group_id": "pe-sol-fauna",
-    "group_label": "Fauna"
+    "group_label": "Fauna",
+    "reference": "KM# 404"
   },
   {
     "id": 392,
@@ -3896,7 +3906,8 @@
       "images/392B.jpeg"
     ],
     "group_id": "pe-sol-fauna",
-    "group_label": "Fauna"
+    "group_label": "Fauna",
+    "reference": "KM# 415"
   },
   {
     "id": 393,
@@ -3910,7 +3921,8 @@
       "images/393B.jpeg"
     ],
     "group_id": "pe-sol-fauna",
-    "group_label": "Fauna"
+    "group_label": "Fauna",
+    "reference": "KM# 403"
   },
   {
     "id": 394,
@@ -3924,7 +3936,8 @@
       "images/394B.jpeg"
     ],
     "group_id": "pe-sol-fauna",
-    "group_label": "Fauna"
+    "group_label": "Fauna",
+    "reference": "KM# 417"
   },
   {
     "id": 395,
@@ -3938,7 +3951,8 @@
       "images/395B.jpeg"
     ],
     "group_id": "pe-sol-fauna",
-    "group_label": "Fauna"
+    "group_label": "Fauna",
+    "reference": "KM# 409"
   },
   {
     "id": 396,
@@ -3952,7 +3966,8 @@
       "images/396B.jpeg"
     ],
     "group_id": "pe-sol-fauna",
-    "group_label": "Fauna"
+    "group_label": "Fauna",
+    "reference": "KM# 412"
   },
   {
     "id": 397,
@@ -3966,7 +3981,8 @@
       "images/397B.jpeg"
     ],
     "group_id": "pe-sol-fauna",
-    "group_label": "Fauna"
+    "group_label": "Fauna",
+    "reference": "KM# 405"
   },
   {
     "id": 398,
@@ -3980,7 +3996,8 @@
       "images/398B.jpeg"
     ],
     "group_id": "pe-sol-fauna",
-    "group_label": "Fauna"
+    "group_label": "Fauna",
+    "reference": "KM# 411"
   },
   {
     "id": 399,
@@ -3994,7 +4011,8 @@
       "images/399B.jpeg"
     ],
     "group_id": "pe-sol-fauna",
-    "group_label": "Fauna"
+    "group_label": "Fauna",
+    "reference": "KM# 419"
   },
   {
     "id": 400,
@@ -5423,7 +5441,8 @@
     "grade_short": "SC",
     "description": "Pride",
     "group_id": "ca-25cents-2000-millennium",
-    "group_label": "Entrada al Tercer Milenio"
+    "group_label": "Entrada al Tercer Milenio",
+    "reference": "KM# 384.2"
   },
   {
     "id": 490,
@@ -5440,7 +5459,8 @@
     "grade_short": "SC",
     "description": "Freedom",
     "group_id": "ca-25cents-2000-millennium",
-    "group_label": "Entrada al Tercer Milenio"
+    "group_label": "Entrada al Tercer Milenio",
+    "reference": "KM# 374"
   },
   {
     "id": 491,
@@ -5457,7 +5477,8 @@
     "grade_short": "SC",
     "description": "Community",
     "group_id": "ca-25cents-2000-millennium",
-    "group_label": "Entrada al Tercer Milenio"
+    "group_label": "Entrada al Tercer Milenio",
+    "reference": "KM# 376"
   },
   {
     "id": 492,
@@ -5474,7 +5495,8 @@
     "grade_short": "SC",
     "description": "Achievement",
     "group_id": "ca-25cents-2000-millennium",
-    "group_label": "Entrada al Tercer Milenio"
+    "group_label": "Entrada al Tercer Milenio",
+    "reference": "KM# 381"
   },
   {
     "id": 493,
@@ -5491,7 +5513,8 @@
     "grade_short": "SC",
     "description": "Harmony",
     "group_id": "ca-25cents-2000-millennium",
-    "group_label": "Entrada al Tercer Milenio"
+    "group_label": "Entrada al Tercer Milenio",
+    "reference": "KM# 377"
   },
   {
     "id": 494,
@@ -5508,7 +5531,8 @@
     "grade_short": "SC",
     "description": "Natural Legacy",
     "group_id": "ca-25cents-2000-millennium",
-    "group_label": "Entrada al Tercer Milenio"
+    "group_label": "Entrada al Tercer Milenio",
+    "reference": "KM# 382"
   },
   {
     "id": 495,
@@ -5525,7 +5549,8 @@
     "grade_short": "SC",
     "description": "Health",
     "group_id": "ca-25cents-2000-millennium",
-    "group_label": "Entrada al Tercer Milenio"
+    "group_label": "Entrada al Tercer Milenio",
+    "reference": "KM# 373"
   },
   {
     "id": 496,
@@ -5542,7 +5567,8 @@
     "grade_short": "SC",
     "description": "Wisdom",
     "group_id": "ca-25cents-2000-millennium",
-    "group_label": "Entrada al Tercer Milenio"
+    "group_label": "Entrada al Tercer Milenio",
+    "reference": "KM# 378"
   },
   {
     "id": 497,
@@ -5559,7 +5585,8 @@
     "grade_short": "SC",
     "description": "Creativity",
     "group_id": "ca-25cents-2000-millennium",
-    "group_label": "Entrada al Tercer Milenio"
+    "group_label": "Entrada al Tercer Milenio",
+    "reference": "KM# 379"
   },
   {
     "id": 498,
@@ -5576,7 +5603,8 @@
     "grade_short": "SC",
     "description": "Family",
     "group_id": "ca-25cents-2000-millennium",
-    "group_label": "Entrada al Tercer Milenio"
+    "group_label": "Entrada al Tercer Milenio",
+    "reference": "KM# 375"
   },
   {
     "id": 499,
@@ -5593,7 +5621,8 @@
     "grade_short": "SC",
     "description": "Celebration",
     "group_id": "ca-25cents-2000-millennium",
-    "group_label": "Entrada al Tercer Milenio"
+    "group_label": "Entrada al Tercer Milenio",
+    "reference": "KM# 383"
   },
   {
     "id": 500,
@@ -5610,7 +5639,8 @@
     "grade_short": "SC",
     "description": "Ingenuity",
     "group_id": "ca-25cents-2000-millennium",
-    "group_label": "Entrada al Tercer Milenio"
+    "group_label": "Entrada al Tercer Milenio",
+    "reference": "KM# 380"
   },
   {
     "id": 501,
@@ -6304,7 +6334,8 @@
       "images/557A.jpeg",
       "images/557B.jpeg"
     ],
-    "description": "Estela de Raimondi."
+    "description": "Estela de Raimondi.",
+    "reference": "KM# 342"
   },
   {
     "id": 558,
@@ -6432,7 +6463,8 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Túpac Amaru."
+    "description": "Túpac Amaru.",
+    "reference": "KM# 275"
   },
   {
     "id": 566,
@@ -6637,7 +6669,8 @@
     ],
     "grade": "Bueno+",
     "grade_short": "B+",
-    "metal": "Zinc"
+    "metal": "Zinc",
+    "reference": "KM# 26"
   },
   {
     "id": 578,
@@ -6780,7 +6813,8 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "metal": "Aluminio"
+    "metal": "Aluminio",
+    "reference": "KM# 13"
   },
   {
     "id": 587,
@@ -7086,7 +7120,8 @@
       "images/605B.jpeg"
     ],
     "grade": "Muy Bueno+",
-    "grade_short": "MB+"
+    "grade_short": "MB+",
+    "reference": "Y# 274"
   },
   {
     "id": 606,
@@ -7853,7 +7888,8 @@
     ],
     "description": "Cabeza de vaca",
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "reference": "KM# 374"
   },
   {
     "id": 657,
@@ -10087,7 +10123,8 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 3
+    "cantidad": 3,
+    "reference": "KM# 33"
   },
   {
     "id": 790,
@@ -10258,7 +10295,8 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 2
+    "cantidad": 2,
+    "reference": "KM# 43"
   },
   {
     "id": 801,
@@ -10273,7 +10311,8 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 2
+    "cantidad": 2,
+    "reference": "KM# 24"
   },
   {
     "id": 802,
@@ -10307,7 +10346,8 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 3
+    "cantidad": 3,
+    "reference": "KM# 32"
   },
   {
     "id": 804,
@@ -10948,7 +10988,7 @@
     "group_label": "Cent",
     "grade": "Regular",
     "grade_short": "R",
-    "cantidad": 7,
+    "cantidad": 2,
     "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia."
   },
   {
@@ -11068,7 +11108,7 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 3,
+    "cantidad": 2,
     "reference": "Y# 88",
     "metal": "Cuproníquel"
   },
@@ -11084,7 +11124,7 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 4,
+    "cantidad": 3,
     "reference": "KM# 189",
     "metal": "Acero recubierto de níquel"
   },
@@ -12047,7 +12087,9 @@
     "group_id": "it-5centesimi-km59",
     "group_label": "5 Centesimi",
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "status": "sold",
+    "soldAt": "2026-08-10T19:09:44.954578+00:00"
   },
   {
     "id": 904,
@@ -12080,7 +12122,7 @@
     "grade_short": "EX",
     "group_id": "it-20centesimi-km75b",
     "group_label": "20 Centesimi",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 906,
@@ -13134,9 +13176,7 @@
     "reference": "KM# 60",
     "description": "Reinado de Víctor Manuel III. Tipo Ape (Abeja).",
     "group_id": "it-10centesimi-ape",
-    "group_label": "10 Centesimi Ape",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966568+00:00"
+    "group_label": "10 Centesimi Ape"
   },
   {
     "id": 964,
@@ -13155,7 +13195,9 @@
     "reference": "KM# 60",
     "description": "Reinado de Víctor Manuel III. Tipo Ape (Abeja).",
     "group_id": "it-10centesimi-ape",
-    "group_label": "10 Centesimi Ape"
+    "group_label": "10 Centesimi Ape",
+    "status": "sold",
+    "soldAt": "2026-08-10T19:09:44.954578+00:00"
   },
   {
     "id": 965,
@@ -13174,7 +13216,9 @@
     "reference": "KM# 60",
     "description": "Reinado de Víctor Manuel III. Tipo Ape (Abeja).",
     "group_id": "it-10centesimi-ape",
-    "group_label": "10 Centesimi Ape"
+    "group_label": "10 Centesimi Ape",
+    "status": "sold",
+    "soldAt": "2026-08-10T19:09:44.954578+00:00"
   },
   {
     "id": 966,
