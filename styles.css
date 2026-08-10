@@ -2566,10 +2566,18 @@ body[data-view="catalog"] .site-header {
 }
 
 /* El halo radial y el doble filete están pensados para una cabecera alta; en
-   11px de alto se leen como una banda sucia. */
+   11px de alto se leen como una banda sucia.
+   Se apagan con opacity y no con display:none para que al conmutar de vista se
+   disuelvan en vez de saltar, mientras el logo hace su vuelo. */
+.site-header::before,
+.site-header::after {
+  opacity: 1;
+  transition: opacity 320ms ease;
+}
+
 body[data-view="catalog"] .site-header::before,
 body[data-view="catalog"] .site-header::after {
-  display: none;
+  opacity: 0;
 }
 
 body[data-view="catalog"] .site-logo-link {
@@ -2604,8 +2612,11 @@ body[data-view="catalog"] .site-header h1 {
 /* Solo se funden elementos de una pantalla de alto. #catalog mide >80.000px:
    animarle la opacidad lo promueve a una capa enorme y revienta la memoria del
    compositor en móvil. Al volver a la portada el catálogo se corta en seco y la
-   portada entra animada, que se lee igual de bien. */
-body.is-view-leaving .site-header,
+   portada entra animada, que se lee igual de bien.
+
+   La cabecera queda fuera del fundido a propósito: el monograma y el logotipo
+   viajan de una posición a la otra con un FLIP (ver morphLogo() en script.js) y
+   ese recorrido solo se ve si el elemento nunca desaparece. */
 body.is-view-leaving .ticker-bar,
 body.is-view-leaving #landing {
   opacity: 0;
@@ -2620,7 +2631,6 @@ body.is-view-leaving #landing {
 /* Se anima solo la franja superior (elementos chicos). Las monedas ya entran
    con su propio fade por tarjeta vía IntersectionObserver (initRevealEffects),
    que es barato porque solo toca las que están a la vista. */
-body.is-view-entering .site-header,
 body.is-view-entering .ticker-bar,
 body.is-view-entering .landing-inner,
 body.is-view-entering .category-bar,
@@ -2636,14 +2646,12 @@ body.is-view-entering .landing-inner { animation-delay: 120ms; }
 body.is-view-entering .results-bar   { animation-delay: 180ms; }
 
 @media (prefers-reduced-motion: reduce) {
-  body.is-view-leaving .site-header,
   body.is-view-leaving .ticker-bar,
   body.is-view-leaving #landing {
     opacity: 1;
     transition: none !important;
   }
 
-  body.is-view-entering .site-header,
   body.is-view-entering .ticker-bar,
   body.is-view-entering .landing-inner,
   body.is-view-entering .category-bar,
@@ -2651,6 +2659,55 @@ body.is-view-entering .results-bar   { animation-delay: 180ms; }
   body.is-view-entering .results-bar {
     animation: none !important;
   }
+}
+
+/* ═══ Vuelo del logo entre vistas ═════════════════════════════════════════════
+   El monograma y el logotipo cambian de tamaño y de sitio entre la portada y el
+   catálogo. En vez de duplicar acá los tamaños de cada breakpoint, script.js
+   mide las dos posiciones reales y anima la diferencia con un transform (FLIP).
+   Este bloque solo prepara el terreno; el transform y su transición los pone el
+   JS inline y los borra al terminar.
+
+   Se animan únicamente estos dos elementos, nunca .site-header ni ningún
+   ancestro de la grilla: una capa de compositor que envuelva las ~450 tarjetas
+   (>80.000px de alto) es lo que hacía que Safari matara la pestaña en móvil.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+/* Durante el vuelo el logo se sale de la caja de la cabecera: al entrar al
+   catálogo la franja ya está encogida (84px en escritorio, 66px en teléfono)
+   mientras el logotipo todavía está grande y varias decenas de píxeles más
+   abajo — medido, hasta 139px por fuera. El overflow:hidden de .site-header lo
+   cortaría por la mitad. */
+body.is-logo-morphing .site-header {
+  overflow: visible;
+  z-index: 100;
+}
+
+/* Sin esto el logotipo pasa por encima de las categorías al volver a la portada:
+   ahí la cabecera no es sticky y no tiene contexto de apilamiento propio. */
+body.is-logo-morphing .site-header .container {
+  z-index: 2;
+}
+
+/* ═══ Barra fija en gris al dejar atrás los filtros ═══════════════════════════
+   Pasado "Limpiar filtros" ya no hay nada que filtrar a la vista: el logo cede
+   el protagonismo a las monedas y se retira a un gris plata. El filtro va sobre
+   los dos hijos y NUNCA sobre .site-header — un filter sobre la barra sticky
+   crearía una capa del alto de la grilla entera. Sobre un SVG de 51px y una
+   línea de texto no cuesta nada.
+   La clase la pone y la saca el IntersectionObserver de initHeaderMuteObserver().
+   ───────────────────────────────────────────────────────────────────────────── */
+
+body[data-view="catalog"] .np-monogram,
+body[data-view="catalog"] .site-header h1 {
+  transition: filter 420ms ease;
+}
+
+body[data-view="catalog"].is-past-filters .np-monogram,
+body[data-view="catalog"].is-past-filters .site-header h1 {
+  /* grayscale a secas deja el dorado en un gris barroso contra el #0a0a0a de la
+     barra; el brillo lo levanta a plata legible. */
+  filter: grayscale(1) brightness(1.28) contrast(0.96);
 }
 
 /* ── Cabecera fija: teléfonos ── */

@@ -448,10 +448,129 @@ function switchView(apply) {
   document.body.classList.add('is-view-leaving');
   setTimeout(() => {
     document.body.classList.remove('is-view-leaving');
-    apply();
+    morphLogo(apply);
     document.body.classList.add('is-view-entering');
     setTimeout(() => document.body.classList.remove('is-view-entering'), VIEW_ENTER_MS);
   }, VIEW_FADE_MS);
+}
+
+// ─── Vuelo del logo entre vistas (FLIP) ───────────────────────────────────────
+//
+// El monograma y el logotipo son el MISMO nodo en las dos vistas: la portada los
+// apila centrados y grandes, el catálogo los pone en fila, chicos, en la franja
+// fija. Sin esto el salto es instantáneo y no se lee como un recorrido.
+//
+// Se miden las dos posiciones reales (antes y después del cambio de vista), se
+// aplica la transformada que devuelve el elemento a donde estaba y se la deja
+// caer a la identidad. Medir en vez de escribir los valores a mano es lo que
+// hace que funcione igual en los tres breakpoints sin duplicar ni un clamp.
+
+const LOGO_MORPH_MS    = 620;
+const LOGO_MORPH_EASE  = 'cubic-bezier(0.22, 1, 0.36, 1)';
+
+/**
+ * Caja que envuelve a varios rects. Se usa para el h1: en móvil su caja es un
+ * flex del ancho del contenedor en la portada y una caja ajustada al texto en el
+ * catálogo, así que medir el borde del h1 daría una escala y un desplazamiento
+ * disparatados. Los spans del texto sí son consistentes en las dos vistas.
+ */
+function unionRect(nodes) {
+  const rects = nodes.map(n => n.getBoundingClientRect());
+  const left   = Math.min(...rects.map(r => r.left));
+  const top    = Math.min(...rects.map(r => r.top));
+  const right  = Math.max(...rects.map(r => r.right));
+  const bottom = Math.max(...rects.map(r => r.bottom));
+  return { left, top, width: right - left, height: bottom - top };
+}
+
+function morphLogo(apply) {
+  const header   = document.querySelector('.site-header');
+  const monogram = header && header.querySelector('.np-monogram');
+  const title    = header && header.querySelector('h1');
+  const spans    = title ? [...title.querySelectorAll('.h1-numismatica, .h1-popper')] : [];
+
+  if (!monogram || !title || !spans.length) { apply(); return; }
+
+  // El elemento que se transforma y el que sirve de referencia para medir no son
+  // necesariamente el mismo (ver unionRect).
+  const parts = [
+    { el: monogram, anchor: [monogram] },
+    { el: title,    anchor: spans      },
+  ];
+
+  parts.forEach(p => {
+    p.el.style.transition = 'none';
+    p.el.style.transform  = '';
+    p.firstAnchor = unionRect(p.anchor);
+  });
+
+  apply();
+
+  parts.forEach(p => {
+    p.lastAnchor = unionRect(p.anchor);
+    p.lastOrigin = p.el.getBoundingClientRect();
+  });
+
+  let animating = false;
+
+  parts.forEach(p => {
+    const first = p.firstAnchor;
+    const last  = p.lastAnchor;
+    if (!first.height || !last.height) return;
+
+    // Escala uniforme sacada del alto: el tracking del logotipo pasa de .2em a
+    // .14em, así que la relación de anchos deformaría el texto a lo alto.
+    const s = first.height / last.height;
+
+    // transform-origin es la esquina del elemento, que no coincide con el ancla
+    // medida — hay que componer el desplazamiento alrededor de ese origen.
+    const ox = p.lastOrigin.left;
+    const oy = p.lastOrigin.top;
+    const tx = first.left - (ox + s * (last.left - ox));
+    const ty = (first.top + first.height / 2)
+             - (oy + s * (last.top + last.height / 2 - oy));
+
+    // Sub-píxel: no vale la pena animar un salto invisible.
+    if (Math.abs(tx) < 0.5 && Math.abs(ty) < 0.5 && Math.abs(s - 1) < 0.005) return;
+
+    p.el.style.transformOrigin = '0 0';
+    p.el.style.willChange      = 'transform';
+    p.el.style.transform       = `translate(${tx}px, ${ty}px) scale(${s})`;
+    p.pending = true;
+    animating = true;
+  });
+
+  if (!animating) {
+    parts.forEach(p => clearMorphStyles(p.el));
+    return;
+  }
+
+  document.body.classList.add('is-logo-morphing');
+
+  // Doble rAF: el primero deja que el navegador registre el estado invertido, el
+  // segundo estrena la transición. Con uno solo el motor colapsa los dos estilos
+  // en el mismo frame y no hay animación.
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    parts.forEach(p => {
+      if (!p.pending) return;
+      p.el.style.transition = `transform ${LOGO_MORPH_MS}ms ${LOGO_MORPH_EASE}`;
+      p.el.style.transform  = 'none';
+    });
+  }));
+
+  // Un transform inline que quede pegado convierte al h1 en containing block y
+  // rompe el sticky de la cabecera: la limpieza no es opcional.
+  setTimeout(() => {
+    parts.forEach(p => clearMorphStyles(p.el));
+    document.body.classList.remove('is-logo-morphing');
+  }, LOGO_MORPH_MS + 120);
+}
+
+function clearMorphStyles(el) {
+  el.style.transition      = '';
+  el.style.transform       = '';
+  el.style.transformOrigin = '';
+  el.style.willChange      = '';
 }
 
 function goToLanding() {
@@ -464,6 +583,7 @@ function goToLanding() {
     closeSubFilterBar();
     try { sessionStorage.removeItem(STATE_KEY); } catch (_) {}
     showLanding();
+    stopHeaderMuteObserver();
     window.scrollTo({ top: 0, behavior: 'instant' });
   });
 }
@@ -485,6 +605,7 @@ function enterCatalog(categoryKey) {
     renderCoins(getFilteredCoins());
     initRevealEffects();
     window.scrollTo({ top: 0, behavior: 'instant' });
+    scheduleHeaderMuteObserver();
   });
 }
 
@@ -1036,6 +1157,66 @@ function initRevealEffects() {
   revealItems.forEach(item => revealObserver.observe(item));
 }
 
+// ─── Barra fija: gris al dejar atrás los filtros ──────────────────────────────
+//
+// Cuando "Limpiar filtros" se mete debajo de la cabecera fija ya no queda nada
+// de la zona de filtros a la vista: el logo se desatura y le deja el dorado a
+// las monedas. Vuelve al color al subir.
+//
+// Con IntersectionObserver y no con un listener de scroll: sobre una grilla de
+// ~450 tarjetas, un handler por frame de scroll es justo lo que hay que evitar.
+// El umbral se corre con rootMargin hasta el borde inferior de la barra.
+
+let headerMuteObserver = null;
+let headerMuteResizeId = null;
+
+function initHeaderMuteObserver() {
+  const header = document.querySelector('.site-header');
+  if (!header || !resetFiltersButton || !('IntersectionObserver' in window)) return;
+
+  if (headerMuteObserver) headerMuteObserver.disconnect();
+
+  // Solo tiene sentido en el catálogo, y además hay que medir la barra ya
+  // encogida: en la portada la cabecera es varias veces más alta y el rootMargin
+  // saldría mal.
+  if (document.body.dataset.view !== 'catalog') return;
+
+  headerMuteObserver = new IntersectionObserver(
+    ([entry]) => {
+      // El segundo término distingue "se fue por arriba" de "todavía no llegó
+      // desde abajo" — sin él, un resultado de búsqueda corto que deja el botón
+      // fuera de pantalla dispararía el gris sin haber scrolleado.
+      const isPast = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+      document.body.classList.toggle('is-past-filters', isPast);
+    },
+    { rootMargin: `-${header.offsetHeight}px 0px 0px 0px`, threshold: 0 }
+  );
+
+  headerMuteObserver.observe(resetFiltersButton);
+}
+
+// Se difiere dos frames para que el rootMargin se calcule sobre una cabecera ya
+// encogida y con la grilla montada: llamarlo en medio de esos cambios da una
+// altura que no es la definitiva y el umbral queda corrido.
+function scheduleHeaderMuteObserver() {
+  requestAnimationFrame(() => requestAnimationFrame(initHeaderMuteObserver));
+}
+
+function stopHeaderMuteObserver() {
+  if (headerMuteObserver) {
+    headerMuteObserver.disconnect();
+    headerMuteObserver = null;
+  }
+  document.body.classList.remove('is-past-filters');
+}
+
+// La barra mide 84px en escritorio y 66px en teléfono: al cambiar de breakpoint
+// hay que rehacer el rootMargin, que es un valor fijo en píxeles.
+window.addEventListener('resize', () => {
+  clearTimeout(headerMuteResizeId);
+  headerMuteResizeId = setTimeout(initHeaderMuteObserver, 150);
+});
+
 // ─── Apply filters ────────────────────────────────────────────────────────────
 
 function applyFilters() {
@@ -1122,6 +1303,7 @@ loadCoins().then((ok) => {
   if (isBackFwd && state && state.view === 'catalog') {
     showCatalog();
     applyRestoredState(state);
+    scheduleHeaderMuteObserver();
     if (state.scrollY) {
       requestAnimationFrame(() => requestAnimationFrame(() => {
         window.scrollTo({ top: state.scrollY, behavior: 'instant' });
