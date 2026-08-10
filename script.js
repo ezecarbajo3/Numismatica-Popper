@@ -1244,22 +1244,27 @@ function initRevealEffects() {
   revealItems.forEach(item => revealObserver.observe(item));
 }
 
-// ─── Barra fija: gris al dejar atrás los filtros ──────────────────────────────
+// ─── Barra fija: el modo "estoy dentro de la grilla" ──────────────────────────
 //
-// Cuando el botón "Orden" se mete debajo de la cabecera fija ya no queda nada
-// de la zona de filtros a la vista: el logo se desatura y le deja el dorado a
-// las monedas. Vuelve al color al subir.
+// El disparador es exacto: el borde de arriba de la grilla pasando por debajo
+// de la barra fija. Ni antes ni después. En ese punto pasan las tres cosas a la
+// vez — el fondo de la barra se vuelve un poco transparente, el logotipo se va
+// a plata y aparece la flecha para subir. Al volver hacia arriba, se deshacen.
 //
 // Con IntersectionObserver y no con un listener de scroll: sobre una grilla de
 // ~450 tarjetas, un handler por frame de scroll es justo lo que hay que evitar.
-// El umbral se corre con rootMargin hasta el borde inferior de la barra.
+//
+// Se observa #gridTop y no #coinsGrid: la grilla mide >80.000px, siempre está
+// cruzada con la pantalla y por lo tanto nunca dejaría de "intersecar". El
+// centinela mide 1px y se apoya justo en su borde superior.
 
 let headerMuteObserver = null;
 let headerMuteResizeId = null;
 
 function initHeaderMuteObserver() {
-  const header = document.querySelector('.site-header');
-  if (!header || !sortWrap || !('IntersectionObserver' in window)) return;
+  const header  = document.querySelector('.site-header');
+  const gridTop = document.getElementById('gridTop');
+  if (!header || !gridTop || !('IntersectionObserver' in window)) return;
 
   if (headerMuteObserver) headerMuteObserver.disconnect();
 
@@ -1268,18 +1273,23 @@ function initHeaderMuteObserver() {
   // saldría mal.
   if (document.body.dataset.view !== 'catalog') return;
 
+  // rootMargin negativo = se sube el borde de arriba de la "pantalla útil"
+  // hasta el borde de abajo de la barra fija. Cruzar ese borde ES el disparador.
   headerMuteObserver = new IntersectionObserver(
     ([entry]) => {
-      // El segundo término distingue "se fue por arriba" de "todavía no llegó
-      // desde abajo" — sin él, un resultado de búsqueda corto que deja el botón
-      // fuera de pantalla dispararía el gris sin haber scrolleado.
-      const isPast = !entry.isIntersecting && entry.boundingClientRect.top < 0;
-      document.body.classList.toggle('is-past-filters', isPast);
+      // Comparar contra rootBounds.top y no contra 0: el borde que importa es el
+      // de la pantalla ya recortada por el rootMargin, que está a la altura de
+      // la barra. Con `< 0` el cambio llegaba tarde, una barra más abajo.
+      // El término distingue además "se fue por arriba" de "todavía no llegó
+      // desde abajo": con pocos resultados la grilla puede no llenar la pantalla.
+      const limite = entry.rootBounds ? entry.rootBounds.top : 0;
+      const isPast = !entry.isIntersecting && entry.boundingClientRect.top <= limite;
+      document.body.classList.toggle('is-in-grid', isPast);
     },
     { rootMargin: `-${header.offsetHeight}px 0px 0px 0px`, threshold: 0 }
   );
 
-  headerMuteObserver.observe(sortWrap);
+  headerMuteObserver.observe(gridTop);
 }
 
 // Se difiere dos frames para que el rootMargin se calcule sobre una cabecera ya
@@ -1294,7 +1304,7 @@ function stopHeaderMuteObserver() {
     headerMuteObserver.disconnect();
     headerMuteObserver = null;
   }
-  document.body.classList.remove('is-past-filters');
+  document.body.classList.remove('is-in-grid');
 }
 
 // La barra mide 84px en escritorio y 66px en teléfono: al cambiar de breakpoint

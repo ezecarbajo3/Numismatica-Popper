@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" href="images/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="styles.css?v=20260810g" />
+  <link rel="stylesheet" href="styles.css?v=20260810h" />
 </head>
 <body data-view="landing">
   <header class="site-header">
@@ -232,6 +232,12 @@
         <p id="resultsCount">Cargando monedas...</p>
       </section>
 
+      <!-- Marca dónde arrancan las monedas. La grilla mide >80.000px y por eso
+           nunca deja de cruzarse con la pantalla: el observador necesita algo
+           chico justo en su borde de arriba. Alto 1px anulado con margen
+           negativo, así no corre nada. -->
+      <div id="gridTop" class="grid-sentinel" aria-hidden="true"></div>
+
       <section id="coinsGrid" class="coins-grid"></section>
     </main>
   </div>
@@ -258,8 +264,8 @@
     </article>
   </template>
 
-  <script src="glow.js?v=20260810g" defer></script>
-  <script src="script.js?v=20260810g"></script>
+  <script src="glow.js?v=20260810h" defer></script>
+  <script src="script.js?v=20260810h"></script>
 
   <footer class="site-footer" aria-label="Pie de página">
     <div class="footer-inner">
