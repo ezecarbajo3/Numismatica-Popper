@@ -12375,7 +12375,7 @@
     "reference": "KM# 852",
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 9,
+    "cantidad": 8,
     "group_id": "se-1krona",
     "group_label": "1 Krona",
     "peso": 7.0,
@@ -12395,9 +12395,11 @@
     "reference": "KM# 826a",
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
-    "cantidad": 2,
+    "cantidad": 0,
     "group_id": "se-1krona",
-    "group_label": "1 Krona"
+    "group_label": "1 Krona",
+    "status": "sold",
+    "soldAt": "2026-08-11T20:46:33.445517+00:00"
   },
   {
     "id": 887,
