@@ -14,6 +14,8 @@
     "grade": "Muy Bueno **",
     "grade_short": "MB**",
     "mintage": "",
+    "peso": 1.692,
+    "diametro": 15.8,
     "description": ""
   },
   {
@@ -31,6 +33,8 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "mintage": "",
+    "peso": 7.6,
+    "diametro": 32.0,
     "description": "",
     "group_id": "ar-2reales-1860-ba",
     "group_label": "2 Reales 1860"
@@ -50,6 +54,8 @@
     "grade": "Regular",
     "grade_short": "R",
     "mintage": "",
+    "peso": 7.4,
+    "diametro": 31.9,
     "description": ""
   },
   {
@@ -67,6 +73,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
+    "peso": 25.0,
+    "diametro": 37.0,
     "description": "Corona de plata - Ideal inversión"
   },
   {
@@ -84,6 +92,8 @@
     "grade": "Bueno +",
     "grade_short": "B+",
     "mintage": "",
+    "peso": 10.0,
+    "diametro": 30.0,
     "description": "",
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón"
@@ -103,6 +113,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
+    "peso": 10.0,
+    "diametro": 30.0,
     "description": "",
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón"
@@ -122,6 +134,8 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "",
+    "peso": 10.0,
+    "diametro": 30.0,
     "description": "",
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón"
@@ -141,6 +155,8 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "",
+    "peso": 10.0,
+    "diametro": 30.0,
     "description": "",
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón"
@@ -160,6 +176,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "83,390",
+    "peso": 25.175,
+    "diametro": 36.07,
     "description": "Moneda conmemorativa por el 50° Aniversario del Ballet Nacional de Canadá.",
     "commemorates": "50° Aniversario del Ballet Nacional de Canadá",
     "status": "sold",
@@ -197,6 +215,8 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
+    "peso": 4.67,
+    "diametro": 19.0,
     "description": "Indian Head.",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent"
@@ -216,6 +236,8 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
+    "peso": 4.67,
+    "diametro": 19.0,
     "description": "Indian Head.",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent"
@@ -235,6 +257,8 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
+    "peso": 4.67,
+    "diametro": 19.0,
     "description": "Indian Head.",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent"
@@ -254,6 +278,8 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
+    "peso": 4.67,
+    "diametro": 19.0,
     "description": "Indian Head.",
     "original_price": "22 USD",
     "group_id": "us-cent-km90",
@@ -274,6 +300,8 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "mintage": "596.000",
+    "peso": 10.0,
+    "diametro": 30.0,
     "description": "",
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón",
@@ -295,6 +323,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "341.873",
+    "peso": 4.0,
+    "diametro": 21.0,
     "description": "",
     "group_id": "ar-20centavos-cuproniquel",
     "group_label": "20 Centavos cuproníquel"
@@ -314,6 +344,8 @@
     "grade": "Muy Bueno **",
     "grade_short": "MB**",
     "mintage": "2.100.000",
+    "peso": 5.0,
+    "diametro": 25.0,
     "description": "",
     "status": "sold",
     "soldAt": "2026-06-26T20:21:25-03:00",
@@ -352,6 +384,8 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "mintage": "",
+    "peso": 6.24,
+    "diametro": 24.3,
     "description": "Reino dos Sicilias",
     "status": "sold",
     "soldAt": "2026-07-01T19:45:45.795147Z"
@@ -371,6 +405,8 @@
     "grade": "Regular",
     "grade_short": "R",
     "mintage": "1.300.000",
+    "peso": 5.0,
+    "diametro": 25.0,
     "description": "",
     "group_id": "ar-1centavo-patacon",
     "group_label": "1 Centavo Patacón"
@@ -390,6 +426,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "1.477.000",
+    "peso": 2.0,
+    "diametro": 17.0,
     "description": "La cuarta más difícil",
     "group_id": "ar-5centavos-cuproniquel",
     "group_label": "5 Centavos cuproníquel"
@@ -409,6 +447,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "892.873",
+    "peso": 3.0,
+    "diametro": 19.0,
     "description": "",
     "group_id": "ar-10centavos-cuproniquel",
     "group_label": "10 Centavos cuproníquel",
@@ -430,6 +470,8 @@
     "grade": "Bueno **",
     "grade_short": "B**",
     "mintage": "443.700",
+    "peso": 5.0,
+    "diametro": 25.0,
     "description": "Contramarca de la época",
     "group_id": "ar-1centavo-patacon",
     "group_label": "1 Centavo Patacón"
@@ -449,6 +491,8 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "1.310.000",
+    "peso": 2.0,
+    "diametro": 17.0,
     "description": "",
     "group_id": "ar-5centavos-cuproniquel",
     "group_label": "5 Centavos cuproníquel"
@@ -468,6 +512,8 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "mintage": "423.300",
+    "peso": 5.0,
+    "diametro": 25.0,
     "description": "Escasa.",
     "group_id": "ar-1centavo-patacon",
     "group_label": "1 Centavo Patacón"
@@ -487,6 +533,8 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "mintage": "423.300",
+    "peso": 5.0,
+    "diametro": 25.0,
     "description": "Escasa.",
     "group_id": "ar-1centavo-patacon",
     "group_label": "1 Centavo Patacón"
@@ -506,6 +554,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "",
+    "peso": 9.0,
+    "diametro": 27.0,
     "description": "",
     "group_id": "group_a_km30_uy",
     "group_label": "Peso (KM# 30)"
@@ -525,6 +575,8 @@
     "grade": "Sin Circular -",
     "grade_short": "SC-",
     "mintage": "1.000.000",
+    "peso": 18.0,
+    "diametro": 34.0,
     "description": "100 aniversario de la reforma constitucional bicameral",
     "status": "sold",
     "soldAt": "2026-08-08T21:28:38.863033+00:00",
@@ -545,6 +597,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
+    "peso": 10.4,
+    "diametro": 28.0,
     "description": "Bicentenario de la independencia - Año único",
     "status": "sold",
     "soldAt": "2026-08-08T18:41:09.852638+00:00"
@@ -564,6 +618,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "300.000",
+    "peso": 14.5,
+    "diametro": 33.0,
     "description": "250 aniversario de la fundación de Montevideo - ESCASA",
     "status": "sold",
     "soldAt": "2026-08-08T18:41:09.852782+00:00"
@@ -617,6 +673,7 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
+    "peso": 5.5,
     "description": "Getulio Vargas"
   },
   {
@@ -634,6 +691,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
+    "peso": 2.51,
+    "diametro": 19.93,
     "description": ""
   },
   {
@@ -651,6 +710,8 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "120.000",
+    "peso": 6.8,
+    "diametro": 24.0,
     "description": "Año único.",
     "status": "sold",
     "soldAt": "2026-08-08T18:41:09.852786+00:00"
@@ -670,6 +731,8 @@
     "grade": "Bueno **",
     "grade_short": "B**",
     "mintage": "1.000.000",
+    "peso": 35.0,
+    "diametro": 38.0,
     "description": "Año único",
     "group_id": "group_a_km10_uy",
     "group_label": "40 Centésimos (KM# 10)",
@@ -691,6 +754,8 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "1.000.000",
+    "peso": 35.0,
+    "diametro": 38.0,
     "description": "Año único",
     "group_id": "group_a_km10_uy",
     "group_label": "40 Centésimos (KM# 10)",
@@ -712,6 +777,8 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "mintage": "",
+    "peso": 5.0,
+    "diametro": 25.0,
     "description": "",
     "status": "sold",
     "soldAt": "2026-07-31T23:42:51.193555+00:00",
@@ -732,6 +799,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "",
+    "peso": 3.0,
+    "diametro": 18.0,
     "description": "Agujero centrado",
     "status": "sold",
     "soldAt": "2026-07-11T16:58:49-03:00",
@@ -753,6 +822,8 @@
     "grade": "Bueno +",
     "grade_short": "B+",
     "mintage": "2.354.000",
+    "peso": 10.0,
+    "diametro": 26.0,
     "description": ""
   },
   {
@@ -787,6 +858,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
+    "peso": 6.5,
+    "diametro": 23.0,
     "description": "Estación eléctrica - Año único"
   },
   {
@@ -804,6 +877,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
+    "peso": 2.0,
+    "diametro": 16.0,
     "description": ""
   },
   {
@@ -821,6 +896,8 @@
     "grade": "Excelente +",
     "grade_short": "EX+",
     "mintage": "",
+    "peso": 2.0,
+    "diametro": 20.0,
     "description": "",
     "status": "sold",
     "soldAt": "2026-07-01T21:30:00.000-03:00"
@@ -840,6 +917,8 @@
     "grade": "Bueno -",
     "grade_short": "B-",
     "mintage": "",
+    "peso": 9.45,
+    "diametro": 30.8,
     "description": "",
     "group_id": "uk-penny-bronze",
     "group_label": "Penny"
@@ -859,6 +938,8 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "mintage": "",
+    "peso": 10.0,
+    "diametro": 30.0,
     "description": "",
     "status": "sold",
     "soldAt": "2026-06-26T20:21:25-03:00",
@@ -880,6 +961,8 @@
     "grade": "",
     "grade_short": "",
     "mintage": "592.000",
+    "peso": 10.0,
+    "diametro": 30.0,
     "description": "",
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón"
@@ -899,6 +982,8 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "mintage": "596.000",
+    "peso": 10.0,
+    "diametro": 30.0,
     "description": "",
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón",
@@ -920,6 +1005,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "1.288.265",
+    "peso": 2.0,
+    "diametro": 17.0,
     "description": "",
     "group_id": "ar-5centavos-cuproniquel",
     "group_label": "5 Centavos cuproníquel"
@@ -939,6 +1026,8 @@
     "grade": "Regular",
     "grade_short": "R",
     "mintage": "840.108",
+    "peso": 4.0,
+    "diametro": 21.0,
     "description": "Escasa.",
     "group_id": "ar-20centavos-cuproniquel",
     "group_label": "20 Centavos cuproníquel"
@@ -958,6 +1047,8 @@
     "grade": "Bueno +",
     "grade_short": "B+",
     "mintage": "840.108",
+    "peso": 4.0,
+    "diametro": 21.0,
     "description": "Escasa.",
     "group_id": "ar-20centavos-cuproniquel",
     "group_label": "20 Centavos cuproníquel"
@@ -977,6 +1068,8 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "mintage": "855.101",
+    "peso": 4.0,
+    "diametro": 21.0,
     "description": "Escasa.",
     "group_id": "ar-20centavos-cuproniquel",
     "group_label": "20 Centavos cuproníquel"
@@ -996,6 +1089,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "855.101",
+    "peso": 4.0,
+    "diametro": 21.0,
     "description": "Escasa.",
     "group_id": "ar-20centavos-cuproniquel",
     "group_label": "20 Centavos cuproníquel"
@@ -1015,6 +1110,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "387.072",
+    "peso": 3.4,
+    "diametro": 20.0,
     "description": "Casa",
     "group_id": "ar-2centavos-bronce",
     "group_label": "2 Centavos Bronce"
@@ -1034,6 +1131,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "903.070",
+    "peso": 3.3,
+    "diametro": 20.0,
     "description": "",
     "group_id": "ar-2centavos-cobre",
     "group_label": "2 Centavos Cobre"
@@ -1053,6 +1152,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "903.070",
+    "peso": 3.3,
+    "diametro": 20.0,
     "description": "",
     "group_id": "ar-2centavos-cobre",
     "group_label": "2 Centavos Cobre"
@@ -1072,6 +1173,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
+    "peso": 2.0,
+    "diametro": 16.0,
     "description": "Año único."
   },
   {
@@ -1108,6 +1211,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
+    "peso": 2.5,
+    "diametro": 19.0,
     "description": ""
   },
   {
@@ -1125,6 +1230,8 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "",
+    "peso": 3.28,
+    "diametro": 21.6,
     "description": ""
   },
   {
@@ -1142,6 +1249,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
+    "peso": 10.0,
+    "diametro": 30.0,
     "description": "CECA BI.",
     "status": "sold",
     "soldAt": "2026-07-14T15:10:26-03:00"
@@ -1161,6 +1270,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
+    "peso": 4.0,
+    "diametro": 23.5,
     "description": "Año único."
   },
   {
@@ -1178,6 +1289,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
+    "peso": 4.8,
+    "diametro": 25.0,
     "description": ""
   },
   {
@@ -1195,6 +1308,8 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "",
+    "peso": 3.9,
+    "diametro": 21.0,
     "description": "Agujero centrado."
   },
   {
@@ -1212,6 +1327,8 @@
     "grade": "Bueno +",
     "grade_short": "B+",
     "mintage": "",
+    "peso": 9.0,
+    "diametro": 27.0,
     "description": "",
     "group_id": "group_a_km30_uy",
     "group_label": "Peso (KM# 30)"
@@ -1231,6 +1348,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
+    "peso": 5.0,
+    "diametro": 23.0,
     "description": "",
     "status": "sold",
     "soldAt": "2026-07-01T19:45:45.795164Z"
@@ -1250,6 +1369,8 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "mintage": "560.000",
+    "peso": 8.33,
+    "diametro": 27.0,
     "description": "Reverso moneda y un importante giro."
   },
   {
@@ -1284,6 +1405,8 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "596.000",
+    "peso": 10.0,
+    "diametro": 30.0,
     "description": "Escasa.",
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón"
@@ -1303,6 +1426,8 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "",
+    "peso": 7.6,
+    "diametro": 32.0,
     "description": "",
     "group_id": "ar-2reales-1860-ba",
     "group_label": "2 Reales 1860"
@@ -1322,6 +1447,8 @@
     "grade": "Muy Bueno **",
     "grade_short": "MB**",
     "mintage": "",
+    "peso": 12.5,
+    "diametro": 30.61,
     "description": "",
     "status": "sold",
     "soldAt": "2026-08-03T20:49:00.268933+00:00"
@@ -1341,6 +1468,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "6.900.000",
+    "peso": 11.34,
+    "diametro": 30.61,
     "description": "Ellis Island.",
     "status": "sold",
     "soldAt": "2026-07-01T21:16:26.000-03:00"
@@ -1360,6 +1489,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "767.000",
+    "peso": 11.34,
+    "diametro": 30.61,
     "description": "Aniversario del Congreso."
   },
   {
@@ -1377,6 +1508,8 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "1.000.000",
+    "peso": 5.0,
+    "diametro": 25.0,
     "description": "Agujero centrado."
   },
   {
@@ -1394,6 +1527,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
+    "peso": 3.1,
+    "diametro": 19.2,
     "description": ""
   },
   {
@@ -1411,6 +1546,8 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
+    "peso": 6.25,
+    "diametro": 24.3,
     "description": "Standing Liberty."
   },
   {
@@ -1428,6 +1565,8 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "mintage": "1.000.000",
+    "peso": 3.0,
+    "diametro": 19.15,
     "description": "",
     "group_id": "ch-10rappen-km27",
     "group_label": "10 Rappen"
@@ -1582,6 +1721,8 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "mintage": "",
+    "peso": 2.92,
+    "diametro": 18.5,
     "description": "Muy rara de ver."
   },
   {
@@ -1599,6 +1740,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "596.000",
+    "peso": 10.0,
+    "diametro": 30.0,
     "description": "596k acuñadas.",
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón"
@@ -1618,6 +1761,8 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "mintage": "",
+    "peso": 12.0,
+    "diametro": 30.0,
     "description": "Carlos I."
   },
   {
@@ -1635,6 +1780,8 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
+    "peso": 1.24,
+    "diametro": 15.5,
     "description": "Seated Liberty.\nVariante con flecha.",
     "status": "sold",
     "soldAt": "2026-07-18T21:23:29-03:00",
@@ -1655,6 +1802,8 @@
     "grade": "",
     "grade_short": "",
     "mintage": "",
+    "peso": 3.11,
+    "diametro": 19.0,
     "description": "Indian Head.",
     "original_price": "15 USD",
     "status": "sold",
@@ -1693,6 +1842,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "10.000.000",
+    "peso": 10.4,
+    "diametro": 28.0,
     "description": "Bicentenario del Reglamento de Tierras de 1815",
     "status": "sold",
     "soldAt": "2026-08-08T18:41:09.852798+00:00"
@@ -1712,6 +1863,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
+    "peso": 1.6,
+    "diametro": 15.0,
     "description": "Difícil de ver",
     "status": "sold",
     "soldAt": "2026-08-08T18:41:09.852800+00:00"
@@ -1748,6 +1901,8 @@
     "grade": "Bueno",
     "grade_short": "B",
     "mintage": "",
+    "peso": 5.67,
+    "diametro": 25.5,
     "description": "Reina Victoria.\nTercer retrato."
   },
   {
@@ -1765,6 +1920,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
+    "peso": 5.0,
+    "diametro": 23.0,
     "description": "Variante con pureza de la Plata"
   },
   {
@@ -1782,6 +1939,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "",
+    "peso": 6.5,
+    "diametro": 26.0,
     "description": "Segunda Guerra Mundial",
     "group_id": "be-25cents-wwii",
     "group_label": "25 Cents WWII"
@@ -1801,6 +1960,8 @@
     "grade": "Bueno **",
     "grade_short": "B**",
     "mintage": "",
+    "peso": 5.0,
+    "diametro": 21.2,
     "description": "",
     "group_id": "us-5c-liberty",
     "group_label": "Liberty Nickel"
@@ -1820,6 +1981,8 @@
     "grade": "Excelente **",
     "grade_short": "EX**",
     "mintage": "3.800.000",
+    "peso": 0.62,
+    "diametro": 15.74,
     "description": "No tan vista"
   },
   {
@@ -1854,7 +2017,9 @@
     "grade": "Bueno -",
     "grade_short": "B-",
     "description": "Año único",
-    "mintage": ""
+    "mintage": "",
+    "peso": 10.0,
+    "diametro": 30.0
   },
   {
     "id": 202,
@@ -1871,7 +2036,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "description": "Pátina Rainbow (Arcoiris)",
-    "mintage": ""
+    "mintage": "",
+    "peso": 5.0,
+    "diametro": 23.0
   },
   {
     "id": 204,
@@ -1888,7 +2055,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "description": "",
-    "mintage": ""
+    "mintage": "",
+    "peso": 2.0,
+    "diametro": 16.0
   },
   {
     "id": 205,
@@ -1905,7 +2074,9 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "description": "",
-    "mintage": ""
+    "mintage": "",
+    "peso": 5.0,
+    "diametro": 24.0
   },
   {
     "id": 206,
@@ -1922,6 +2093,8 @@
     "grade_short": "R",
     "description": "Barcelona\nLuis XIII\nMoneda de urgencia",
     "mintage": "",
+    "peso": 4.0,
+    "diametro": 21.0,
     "reference": "KM# 28"
   },
   {
@@ -1956,6 +2129,8 @@
     "grade_short": "EX",
     "description": "Conmemorativa del Monasterio y Sitio del Escorial.",
     "mintage": "4000000",
+    "peso": 8.5,
+    "diametro": 25.75,
     "reference": "KM# 1305",
     "commemorates": "Monasterio y Sitio del Escorial"
   },
@@ -1974,6 +2149,8 @@
     "grade_short": "SC",
     "description": "",
     "mintage": "",
+    "peso": 2.25,
+    "diametro": 27.0,
     "reference": "KM# 474",
     "group_id": "lr-5cents",
     "group_label": "5 Cents"
@@ -1993,6 +2170,8 @@
     "grade_short": "SC",
     "description": "Collie",
     "mintage": "",
+    "peso": 1.44,
+    "diametro": 21.9,
     "reference": "KM# 420",
     "status": "sold",
     "soldAt": "2026-08-10T21:51:39.055928+00:00"
@@ -2012,6 +2191,8 @@
     "grade_short": "EX",
     "description": "",
     "mintage": "",
+    "peso": 7.75,
+    "diametro": 27.25,
     "reference": "KM# 62.2",
     "status": "sold",
     "soldAt": "2026-08-10T21:51:39.056069+00:00"
@@ -2031,6 +2212,8 @@
     "grade_short": "MB",
     "description": "Segunda Guerra Mundial",
     "mintage": "",
+    "peso": 4.25,
+    "diametro": 21.5,
     "reference": "KM# 128",
     "group_id": "be-franco-km128",
     "group_label": "Franco"
@@ -2050,6 +2233,8 @@
     "grade_short": "MB",
     "description": "Segunda Guerra Mundial",
     "mintage": "",
+    "peso": 4.25,
+    "diametro": 21.5,
     "reference": "KM# 128",
     "group_id": "be-franco-km128",
     "group_label": "Franco",
@@ -2072,6 +2257,8 @@
     "grade_short": "EX-",
     "description": "Variante (BELGIQUE-BELGIE)\nSegunda Guerra Mundial",
     "mintage": "",
+    "peso": 6.5,
+    "diametro": 26.0,
     "reference": "KM# 131",
     "group_id": "be-25cents-wwii",
     "group_label": "25 Cents WWII",
@@ -2093,6 +2280,8 @@
     "grade_short": "EX-",
     "description": "Variante (BELGIE-BELGIQUE)\nSegunda Guerra Mundial",
     "mintage": "",
+    "peso": 6.5,
+    "diametro": 26.0,
     "reference": "KM# 132",
     "group_id": "be-25cents-wwii",
     "group_label": "25 Cents WWII"
@@ -2112,6 +2301,8 @@
     "grade_short": "EX",
     "description": "Cuadrada",
     "mintage": "500000",
+    "peso": 2.79,
+    "diametro": 20.9,
     "reference": "KM# 8"
   },
   {
@@ -2129,6 +2320,8 @@
     "grade_short": "",
     "description": "",
     "mintage": "",
+    "peso": 1.41,
+    "diametro": 16.25,
     "reference": "KM# 50",
     "status": "sold",
     "soldAt": "2026-08-09T21:50:30.966265+00:00"
@@ -2148,6 +2341,8 @@
     "grade_short": "EX+",
     "description": "",
     "mintage": "",
+    "peso": 1.5,
+    "diametro": 16.0,
     "reference": "KM# 46"
   },
   {
@@ -2165,6 +2360,8 @@
     "grade_short": "R+",
     "description": "",
     "mintage": "",
+    "peso": 7.06,
+    "diametro": 22.0,
     "reference": "C# 163.2"
   },
   {
@@ -2182,6 +2379,8 @@
     "grade_short": "SC",
     "description": "50 Aniversario del Primer Vuelo Espacial Tripulado",
     "mintage": "",
+    "peso": 5.63,
+    "diametro": 22.0,
     "reference": "Y# 1468",
     "status": "sold",
     "soldAt": "2026-07-14T15:07:08-03:00",
@@ -2220,6 +2419,8 @@
     "grade_short": "",
     "description": "",
     "mintage": "9000000",
+    "peso": 1.0,
+    "diametro": 15.0,
     "reference": "KM# 184.1a",
     "status": "sold",
     "soldAt": "2026-08-02T18:52:32.680734+00:00",
@@ -2240,6 +2441,8 @@
     "grade_short": "SC",
     "description": "",
     "mintage": "",
+    "peso": 1.0,
+    "diametro": 15.0,
     "reference": "KM# 84",
     "status": "sold",
     "soldAt": "2026-07-11T16:58:49-03:00"
@@ -2259,6 +2462,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
+    "peso": 3.75,
+    "diametro": 22.0,
     "description": ""
   },
   {
@@ -2276,6 +2481,8 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "mintage": "",
+    "peso": 11.3,
+    "diametro": 28.5,
     "description": ""
   },
   {
@@ -2293,6 +2500,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "2.000.000",
+    "peso": 2.0,
+    "diametro": 17.2,
     "description": "Escasa.",
     "group_id": "co-1centavo-km205a",
     "group_label": "1 Centavo"
@@ -2312,6 +2521,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "1.000.000",
+    "peso": 2.0,
+    "diametro": 17.2,
     "description": "Escasa.",
     "group_id": "co-1centavo-km205a",
     "group_label": "1 Centavo"
@@ -2331,6 +2542,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "8.500.000",
+    "peso": 3.25,
+    "diametro": 21.0,
     "description": ""
   },
   {
@@ -2348,6 +2561,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "855.101",
+    "peso": 4.0,
+    "diametro": 21.0,
     "description": "Escasa.",
     "group_id": "ar-20centavos-cuproniquel",
     "group_label": "20 Centavos cuproníquel"
@@ -2367,6 +2582,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "2.576.000",
+    "peso": 2.6,
+    "diametro": 18.9,
     "description": "Escasa.",
     "status": "sold",
     "soldAt": "2026-06-29T15:17:50.680915Z"
@@ -2386,6 +2603,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
+    "peso": 1.65,
+    "diametro": 23.0,
     "description": "Ceca J."
   },
   {
@@ -2403,6 +2622,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "",
+    "peso": 3.2,
+    "diametro": 21.1,
     "description": "",
     "status": "sold",
     "soldAt": "2026-07-14T00:54:42.751069+00:00"
@@ -2422,6 +2643,8 @@
     "grade": "Excelente +",
     "grade_short": "EX+",
     "mintage": "",
+    "peso": 3.0,
+    "diametro": 19.15,
     "description": "",
     "group_id": "ch-10rappen-km27",
     "group_label": "10 Rappen"
@@ -2441,6 +2664,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "2.000.000",
+    "peso": 3.0,
+    "diametro": 19.15,
     "description": "",
     "group_id": "ch-10rappen-km27",
     "group_label": "10 Rappen"
@@ -2460,6 +2685,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "3.000.000",
+    "peso": 3.0,
+    "diametro": 19.15,
     "description": "",
     "group_id": "ch-10rappen-km27",
     "group_label": "10 Rappen"
@@ -2479,6 +2706,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "2.500.000",
+    "peso": 4.0,
+    "diametro": 21.05,
     "description": "",
     "group_id": "ch-20rappen-km29",
     "group_label": "20 Rappen"
@@ -2498,6 +2727,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "3.000.000",
+    "peso": 4.0,
+    "diametro": 21.05,
     "description": "",
     "group_id": "ch-20rappen-km29",
     "group_label": "20 Rappen"
@@ -2517,6 +2748,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "3.100.000",
+    "peso": 4.0,
+    "diametro": 21.05,
     "description": "",
     "group_id": "ch-20rappen-km29",
     "group_label": "20 Rappen"
@@ -2536,6 +2769,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "500.000",
+    "peso": 2.0,
+    "diametro": 17.15,
     "description": "Muy escasa."
   },
   {
@@ -2553,6 +2788,8 @@
     "grade": "Bueno -",
     "grade_short": "B-",
     "mintage": "6.900.000",
+    "peso": 3.86,
+    "diametro": 20.0,
     "description": "",
     "group_id": "pe-10centavos-km214",
     "group_label": "10 Centavos",
@@ -2575,6 +2812,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "2.000.000",
+    "peso": 3.86,
+    "diametro": 20.0,
     "description": "",
     "group_id": "pe-10centavos-km214",
     "group_label": "10 Centavos"
@@ -2594,6 +2833,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
+    "peso": 12.6,
+    "diametro": 30.0,
     "description": "",
     "group_id": "is-10kronur",
     "group_label": "10 Krónur"
@@ -2613,6 +2854,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "",
+    "peso": 4.0,
+    "diametro": 21.0,
     "description": "Año único."
   },
   {
@@ -2647,6 +2890,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
+    "peso": 3.0,
+    "diametro": 20.0,
     "description": "Mohammed V.",
     "status": "sold",
     "soldAt": "2026-07-11T17:36:41.940593Z"
@@ -2666,6 +2911,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
+    "peso": 4.0,
+    "diametro": 21.0,
     "description": ""
   },
   {
@@ -2683,6 +2930,8 @@
     "grade": "Excelente +",
     "grade_short": "EX+",
     "mintage": "",
+    "peso": 4.0,
+    "diametro": 21.75,
     "description": "Rama IX."
   },
   {
@@ -2700,6 +2949,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "",
+    "peso": 1.41,
+    "diametro": 16.2,
     "description": ""
   },
   {
@@ -2717,6 +2968,8 @@
     "grade": "Excelente +",
     "grade_short": "EX+",
     "mintage": "15.000.000",
+    "peso": 8.5,
+    "diametro": 25.75,
     "description": "Bicentenario del banco nacional."
   },
   {
@@ -2734,6 +2987,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
+    "peso": 0.61,
+    "diametro": 17.0,
     "description": ""
   },
   {
@@ -2749,7 +3004,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "reference": "KM# 294"
+    "reference": "KM# 294",
+    "peso": 4.06,
+    "diametro": 20.8
   },
   {
     "id": 296,
@@ -2764,7 +3021,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "reference": "KM# 242"
+    "reference": "KM# 242",
+    "peso": 23.406,
+    "diametro": 29.0
   },
   {
     "id": 297,
@@ -2779,6 +3038,8 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
+    "peso": 14.14,
+    "diametro": 32.3,
     "description": "Jorge VI",
     "reference": "KM# 879"
   },
@@ -2795,6 +3056,8 @@
     ],
     "reference": "KM. 81",
     "mintage": "8.000.000",
+    "peso": 4.0,
+    "diametro": 21.0,
     "grade": "Muy Bueno -",
     "grade_short": "MB-"
   },
@@ -2812,6 +3075,8 @@
     "reference": "KM 222",
     "grade": "Excelente -",
     "grade_short": "EX-",
+    "peso": 13.8,
+    "diametro": 33.0,
     "description": "Gran tamaño"
   },
   {
@@ -2827,7 +3092,9 @@
     ],
     "reference": "KM. 163",
     "grade": "Excelente +",
-    "grade_short": "EX+"
+    "grade_short": "EX+",
+    "peso": 4.3,
+    "diametro": 21.5
   },
   {
     "id": 304,
@@ -2842,7 +3109,9 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "reference": "KM# 852"
+    "reference": "KM# 852",
+    "peso": 7.0,
+    "diametro": 25.0
   },
   {
     "id": 305,
@@ -2859,7 +3128,9 @@
     "grade_short": "EX",
     "status": "sold",
     "soldAt": "2026-07-01T19:45:45.795178Z",
-    "reference": "KM# 1244"
+    "reference": "KM# 1244",
+    "peso": 8.2,
+    "diametro": 26.15
   },
   {
     "id": 306,
@@ -2874,7 +3145,9 @@
     ],
     "reference": "KM. 253",
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "peso": 2.52,
+    "diametro": 18.4
   },
   {
     "id": 307,
@@ -2889,6 +3162,8 @@
     "reference": "Y# 574",
     "grade": "Sin Circular",
     "grade_short": "SC",
+    "peso": 3.0,
+    "diametro": 20.0,
     "description": "Rama X"
   },
   {
@@ -2906,7 +3181,9 @@
     "grade_short": "EX+",
     "group_id": "ch-10rappen-km27",
     "group_label": "10 Rappen",
-    "reference": "KM# 27"
+    "reference": "KM# 27",
+    "peso": 3.0,
+    "diametro": 19.15
   },
   {
     "id": 312,
@@ -2923,7 +3200,9 @@
     "grade": "Excelente +",
     "grade_short": "EX+",
     "status": "sold",
-    "soldAt": "2026-07-18T19:07:21-03:00"
+    "soldAt": "2026-07-18T19:07:21-03:00",
+    "peso": 4.5,
+    "diametro": 22.0
   },
   {
     "id": 316,
@@ -2939,6 +3218,8 @@
     "reference": "KM 2874",
     "grade": "Excelente",
     "grade_short": "EX",
+    "peso": 3.5,
+    "diametro": 21.0,
     "description": "Post Guerra"
   },
   {
@@ -2954,7 +3235,9 @@
     ],
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
-    "reference": "KM# 915.1"
+    "reference": "KM# 915.1",
+    "peso": 3.0,
+    "diametro": 20.0
   },
   {
     "id": 318,
@@ -2969,7 +3252,9 @@
     ],
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
-    "reference": "Y# 10"
+    "reference": "Y# 10",
+    "peso": 3.5,
+    "diametro": 20.0
   },
   {
     "id": 319,
@@ -2984,7 +3269,9 @@
     ],
     "grade": "Excelente +",
     "grade_short": "EX+",
-    "reference": "KM# 41"
+    "reference": "KM# 41",
+    "peso": 4.9,
+    "diametro": 22.5
   },
   {
     "id": 320,
@@ -3001,6 +3288,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "1.000.000",
+    "peso": 1.5,
+    "diametro": 20.0,
     "description": "FAO, no circulante",
     "status": "sold",
     "soldAt": "2026-07-01T19:45:45.795181Z"
@@ -3018,7 +3307,9 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "reference": "KM# 58"
+    "reference": "KM# 58",
+    "peso": 2.05,
+    "diametro": 17.5
   },
   {
     "id": 323,
@@ -3033,7 +3324,9 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "reference": "KM# 69"
+    "reference": "KM# 69",
+    "peso": 7.1,
+    "diametro": 25.5
   },
   {
     "id": 324,
@@ -3048,7 +3341,9 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "reference": "KM# 43"
+    "reference": "KM# 43",
+    "peso": 7.1,
+    "diametro": 25.5
   },
   {
     "id": 325,
@@ -3065,7 +3360,9 @@
     "grade": "Bueno +",
     "grade_short": "B+",
     "group_id": "nl-cent-1878-1884",
-    "group_label": "Cent 1878-1884"
+    "group_label": "Cent 1878-1884",
+    "peso": 2.5,
+    "diametro": 19.0
   },
   {
     "id": 327,
@@ -3082,7 +3379,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "status": "sold",
-    "soldAt": "2026-07-12T13:34:23.562283Z"
+    "soldAt": "2026-07-12T13:34:23.562283Z",
+    "peso": 3.0,
+    "diametro": 20.0
   },
   {
     "id": 329,
@@ -3098,6 +3397,8 @@
     "reference": "KM# 577",
     "grade": "Sin Circular",
     "grade_short": "SC",
+    "peso": 4.5,
+    "diametro": 23.0,
     "description": "Pátina exclusiva",
     "group_id": "pt-50centavos-1929",
     "group_label": "50 Centavos 1929"
@@ -3117,7 +3418,9 @@
     "grade_short": "B",
     "group_id": "pt-50centavos-1929",
     "group_label": "50 Centavos 1929",
-    "reference": "KM# 576"
+    "reference": "KM# 576",
+    "peso": 8.0,
+    "diametro": 26.8
   },
   {
     "id": 332,
@@ -3133,6 +3436,8 @@
     "reference": "KM# 441",
     "grade": "Excelente",
     "grade_short": "EX",
+    "peso": 2.5,
+    "diametro": 19.05,
     "description": "Nacimiento e infancia de Lincoln"
   },
   {
@@ -3168,7 +3473,9 @@
     "grade_short": "EX+",
     "status": "sold",
     "soldAt": "2026-07-18T19:07:21-03:00",
-    "reference": "KM# 47"
+    "reference": "KM# 47",
+    "peso": 3.83,
+    "diametro": 21.8
   },
   {
     "id": 335,
@@ -3185,7 +3492,9 @@
     "grade": "Bueno -",
     "grade_short": "B-",
     "group_id": "pe-10centavos-km214",
-    "group_label": "10 Centavos"
+    "group_label": "10 Centavos",
+    "peso": 3.86,
+    "diametro": 20.0
   },
   {
     "id": 337,
@@ -3202,7 +3511,8 @@
     "grade_short": "SC",
     "status": "sold",
     "soldAt": "2026-07-11T17:31:28-03:00",
-    "reference": "KM# 315"
+    "reference": "KM# 315",
+    "peso": 31.1
   },
   {
     "id": 338,
@@ -3575,6 +3885,8 @@
     "grade_short": "",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
+    "peso": 4.67,
+    "diametro": 19.0,
     "description": "Indian Head"
   },
   {
@@ -3593,6 +3905,8 @@
     "grade_short": "",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
+    "peso": 4.67,
+    "diametro": 19.0,
     "description": "Indian Head",
     "status": "sold",
     "soldAt": "2026-07-12T13:34:23.562288Z"
@@ -3613,6 +3927,8 @@
     "grade_short": "",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
+    "peso": 4.67,
+    "diametro": 19.0,
     "description": "Indian Head"
   },
   {
@@ -3631,6 +3947,8 @@
     "grade_short": "",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
+    "peso": 4.67,
+    "diametro": 19.0,
     "description": "Indian Head"
   },
   {
@@ -4682,7 +5000,9 @@
     "grade_short": "B",
     "group_id": "us-5c-liberty",
     "group_label": "Liberty Nickel",
-    "reference": "KM# 112"
+    "reference": "KM# 112",
+    "peso": 5.0,
+    "diametro": 21.2
   },
   {
     "id": 440,
@@ -4884,7 +5204,9 @@
     "group_label": "Indian Head Cent",
     "status": "sold",
     "soldAt": "2026-08-04T20:39:16.939978+00:00",
-    "reference": "KM# 90a"
+    "reference": "KM# 90a",
+    "peso": 3.11,
+    "diametro": 19.0
   },
   {
     "id": 452,
@@ -4903,7 +5225,9 @@
     "group_label": "Indian Head Cent",
     "status": "sold",
     "soldAt": "2026-08-04T20:39:16.940139+00:00",
-    "reference": "KM# 90a"
+    "reference": "KM# 90a",
+    "peso": 3.11,
+    "diametro": 19.0
   },
   {
     "id": 453,
@@ -4922,7 +5246,9 @@
     "group_label": "Indian Head Cent",
     "status": "sold",
     "soldAt": "2026-08-04T20:39:16.940143+00:00",
-    "reference": "KM# 90a"
+    "reference": "KM# 90a",
+    "peso": 3.11,
+    "diametro": 19.0
   },
   {
     "id": 454,
@@ -5158,7 +5484,9 @@
     "group_label": "Indian Head Cent",
     "status": "sold",
     "soldAt": "2026-08-04T20:39:16.940150+00:00",
-    "reference": "KM# 90"
+    "reference": "KM# 90",
+    "peso": 4.67,
+    "diametro": 19.0
   },
   {
     "id": 467,
@@ -5175,7 +5503,9 @@
     "grade_short": "EX",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
-    "reference": "KM# 90"
+    "reference": "KM# 90",
+    "peso": 4.67,
+    "diametro": 19.0
   },
   {
     "id": 468,
@@ -5194,7 +5524,9 @@
     "group_label": "Indian Head Cent",
     "status": "sold",
     "soldAt": "2026-08-04T20:39:16.940151+00:00",
-    "reference": "KM# 90"
+    "reference": "KM# 90",
+    "peso": 4.67,
+    "diametro": 19.0
   },
   {
     "id": 469,
@@ -5211,7 +5543,9 @@
     "grade_short": "B",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
-    "reference": "KM# 90a"
+    "reference": "KM# 90a",
+    "peso": 3.11,
+    "diametro": 19.0
   },
   {
     "id": 470,
@@ -5228,7 +5562,9 @@
     "grade_short": "B-",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
-    "reference": "KM# 90a"
+    "reference": "KM# 90a",
+    "peso": 3.11,
+    "diametro": 19.0
   },
   {
     "id": 471,
@@ -5247,7 +5583,9 @@
     "group_label": "Indian Head Cent",
     "status": "sold",
     "soldAt": "2026-08-04T20:39:16.940153+00:00",
-    "reference": "KM# 90a"
+    "reference": "KM# 90a",
+    "peso": 3.11,
+    "diametro": 19.0
   },
   {
     "id": 472,
@@ -5266,7 +5604,9 @@
     "group_label": "Indian Head Cent",
     "status": "sold",
     "soldAt": "2026-08-04T20:39:16.940155+00:00",
-    "reference": "KM# 90a"
+    "reference": "KM# 90a",
+    "peso": 3.11,
+    "diametro": 19.0
   },
   {
     "id": 473,
@@ -5285,7 +5625,9 @@
     "group_label": "Indian Head Cent",
     "status": "sold",
     "soldAt": "2026-08-04T20:39:16.940156+00:00",
-    "reference": "KM# 90a"
+    "reference": "KM# 90a",
+    "peso": 3.11,
+    "diametro": 19.0
   },
   {
     "id": 474,
@@ -5302,7 +5644,9 @@
     "grade_short": "R+",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
-    "reference": "KM# 90a"
+    "reference": "KM# 90a",
+    "peso": 3.11,
+    "diametro": 19.0
   },
   {
     "id": 475,
@@ -5319,7 +5663,9 @@
     "grade_short": "B-",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
-    "reference": "KM# 90a"
+    "reference": "KM# 90a",
+    "peso": 3.11,
+    "diametro": 19.0
   },
   {
     "id": 476,
@@ -5336,7 +5682,9 @@
     "grade_short": "B",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
-    "reference": "KM# 90a"
+    "reference": "KM# 90a",
+    "peso": 3.11,
+    "diametro": 19.0
   },
   {
     "id": 477,
@@ -5355,7 +5703,9 @@
     "group_label": "Indian Head Cent",
     "status": "sold",
     "soldAt": "2026-08-04T20:39:16.940158+00:00",
-    "reference": "KM# 90a"
+    "reference": "KM# 90a",
+    "peso": 3.11,
+    "diametro": 19.0
   },
   {
     "id": 478,
@@ -5372,7 +5722,9 @@
     "grade_short": "EX",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
-    "reference": "KM# 90a"
+    "reference": "KM# 90a",
+    "peso": 3.11,
+    "diametro": 19.0
   },
   {
     "id": 479,
@@ -6269,6 +6621,8 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": "3.400.000",
+    "peso": 10.0,
+    "diametro": 30.0,
     "status": "sold",
     "soldAt": "2026-07-02T17:54:42.358Z",
     "group_id": "ar-2centavos-patacon",
@@ -6289,6 +6643,8 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "3.000.000",
+    "peso": 10.0,
+    "diametro": 30.0,
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón",
     "status": "sold",
@@ -6345,6 +6701,8 @@
     "grade": "Excelente - **",
     "grade_short": "EX-**",
     "mintage": "5.600.000",
+    "peso": 10.0,
+    "diametro": 30.0,
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón"
   },
@@ -6363,6 +6721,8 @@
     "grade": "Excelente - **",
     "grade_short": "EX-**",
     "mintage": "5.600.000",
+    "peso": 10.0,
+    "diametro": 30.0,
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón"
   },
@@ -6982,7 +7342,9 @@
     "metal": "Bronce",
     "reference": "KM# 107.1",
     "group_id": "nl-cent-1878-1884",
-    "group_label": "Cent 1878-1884"
+    "group_label": "Cent 1878-1884",
+    "peso": 2.5,
+    "diametro": 19.0
   },
   {
     "id": 589,
@@ -7273,7 +7635,9 @@
     "reference": "KM# 367",
     "grade": "Excelente -",
     "grade_short": "EX-",
-    "mintage": "4.990.000"
+    "mintage": "4.990.000",
+    "peso": 2.0,
+    "diametro": 16.0
   },
   {
     "id": 607,
@@ -9826,6 +10190,8 @@
     "group_id": "ar-10centavos-cuproniquel",
     "group_label": "10 Centavos cuproníquel",
     "mintage": "892.873",
+    "peso": 3.0,
+    "diametro": 19.0,
     "description": "ESCASA"
   },
   {
@@ -9844,6 +10210,8 @@
     "group_id": "ar-10centavos-cuproniquel",
     "group_label": "10 Centavos cuproníquel",
     "mintage": "892.873",
+    "peso": 3.0,
+    "diametro": 19.0,
     "description": "ESCASA"
   },
   {
@@ -10132,7 +10500,9 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón"
+    "group_label": "2 Centavos Patacón",
+    "peso": 10.0,
+    "diametro": 30.0
   },
   {
     "id": 779,
@@ -10152,7 +10522,9 @@
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón",
     "status": "sold",
-    "soldAt": "2026-08-04T20:36:46.861821+00:00"
+    "soldAt": "2026-08-04T20:36:46.861821+00:00",
+    "peso": 10.0,
+    "diametro": 30.0
   },
   {
     "id": 780,
@@ -10170,7 +10542,9 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón"
+    "group_label": "2 Centavos Patacón",
+    "peso": 10.0,
+    "diametro": 30.0
   },
   {
     "id": 781,
@@ -11737,6 +12111,8 @@
     "grade_short": "SC",
     "group_id": "lr-5cents",
     "group_label": "5 Cents",
+    "peso": 2.25,
+    "diametro": 27.0,
     "description": "Year of the Dragon"
   },
   {
@@ -11859,7 +12235,9 @@
     "group_id": "dk-10ore",
     "group_label": "10 Ore",
     "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966539+00:00"
+    "soldAt": "2026-08-09T21:50:30.966539+00:00",
+    "peso": 3.0,
+    "diametro": 18.0
   },
   {
     "id": 878,
@@ -11877,7 +12255,9 @@
     "grade_short": "MB+",
     "group_id": "dk-10ore",
     "group_label": "10 Ore",
-    "mintage": 2234000
+    "mintage": 2234000,
+    "peso": 3.0,
+    "diametro": 18.0
   },
   {
     "id": 879,
@@ -11995,7 +12375,9 @@
     "grade_short": "EX",
     "cantidad": 9,
     "group_id": "se-1krona",
-    "group_label": "1 Krona"
+    "group_label": "1 Krona",
+    "peso": 7.0,
+    "diametro": 25.0
   },
   {
     "id": 886,
@@ -13020,6 +13402,8 @@
     "group_id": "ar-10centavos-cuproniquel",
     "group_label": "10 Centavos cuproníquel",
     "mintage": "8.657.480",
+    "peso": 10.0,
+    "diametro": 30.0,
     "description": "Moneda argentina del siglo XIX acuñada en cuproníquel con la efigie de la Libertad de Eugène-André Oudiné."
   },
   {

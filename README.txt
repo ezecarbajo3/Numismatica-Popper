@@ -53,6 +53,8 @@ Editar `coins.json` y agregar un objeto al array. Campos habituales:
   "grade_short": "EX",
   "reference": "CJ# 1",
   "mintage": "1000000",
+  "peso": 25,
+  "diametro": 37,
   "description": "Muy linda pieza argentina."
 }
 ```
@@ -63,6 +65,11 @@ Notas:
   array, tiene que llamarse "A" (ver getPrimaryImage en common.js).
 - No repetir IDs. Mantener siempre los mismos nombres de país y metal para que los
   filtros no se fragmenten.
+- `peso` (gramos) y `diametro` (milímetros) van como NÚMERO crudo, sin unidad y con
+  punto decimal: `"peso": 1.692`. La ficha los formatea sola ("1,69 g", "15,8 mm").
+  Se sacan de Numista (`weight` y `size` de la API v3). Si no se conocen, se omite
+  la clave entera — nada de `""`, `null` ni `"NA"`; la fila desaparece de la ficha.
+  Ojo: `size` de Numista solo es el diámetro si la pieza es circular.
 - Conservación: `grade_short` es el campo confiable y tiene una lista CERRADA de
   valores — `R`, `B`, `MB`, `EX`, `SC`, con `+`, `-` o nada, y opcionalmente `**`
   al final (marca "con detalles"/defecto). Nada de `UNC`, `MS70`, `Ex`, `-` ni

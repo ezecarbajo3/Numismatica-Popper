@@ -57,6 +57,15 @@ function getVariantGradeScore(c) {
   return 0;
 }
 
+// Peso y diámetro se guardan como número crudo en coins.json (tal cual los da
+// Numista: 1.6915 g, 15.8 mm) y se formatean recién acá, igual que `mintage`.
+// Se redondea a 2 decimales para no mostrar "1,6915 g" en la ficha.
+function formatMedida(value, unidad) {
+  const n = Number(value);
+  if (!Number.isFinite(n)) return "";
+  return `${Math.round(n * 100) / 100} ${unidad}`.replace(".", ",");
+}
+
 function buildWhatsAppLink(coin) {
   const title   = coin.title   || "Sin título";
   const country = coin.country || "País no informado";
@@ -220,6 +229,23 @@ function updateCoinContent(coin) {
     }
   }
 
+  // Peso y diámetro: mismo patrón de mostrar/ocultar que Acuñación. No se puede
+  // usar el helper `set()` de arriba porque ese escribe "NA" cuando falta el
+  // dato, y acá la fila entera tiene que desaparecer.
+  const setMedidaRow = (rowId, valId, value, unidad) => {
+    const row = document.getElementById(rowId);
+    const val = document.getElementById(valId);
+    if (!row || !val) return;
+    if (value) {
+      val.textContent = formatMedida(value, unidad);
+      row.style.display = "";
+    } else {
+      row.style.display = "none";
+    }
+  };
+  setMedidaRow("specPesoRow",     "specPeso",     coin.peso,     "g");
+  setMedidaRow("specDiametroRow", "specDiametro", coin.diametro, "mm");
+
   const priceEl = document.getElementById("detailPrice");
   if (priceEl) {
     if (coin.original_price) {
@@ -313,6 +339,14 @@ function renderCoinDetail(coin, groupMembers) {
         <div class="detail-spec-row" id="specMintageRow" ${coin.mintage ? "" : 'style="display:none"'}>
           <div class="detail-spec-label">Acuñación</div>
           <div class="detail-spec-value" id="specMintage">${coin.mintage ? Number(String(coin.mintage).replace(/[.,]/g, "")).toLocaleString("es-AR") : ""}</div>
+        </div>
+        <div class="detail-spec-row" id="specPesoRow" ${coin.peso ? "" : 'style="display:none"'}>
+          <div class="detail-spec-label">Peso</div>
+          <div class="detail-spec-value" id="specPeso">${coin.peso ? escapeHTML(formatMedida(coin.peso, "g")) : ""}</div>
+        </div>
+        <div class="detail-spec-row" id="specDiametroRow" ${coin.diametro ? "" : 'style="display:none"'}>
+          <div class="detail-spec-label">Diámetro</div>
+          <div class="detail-spec-value" id="specDiametro">${coin.diametro ? escapeHTML(formatMedida(coin.diametro, "mm")) : ""}</div>
         </div>
         <div class="detail-spec-row">
           <div class="detail-spec-label">Referencia interna</div>
