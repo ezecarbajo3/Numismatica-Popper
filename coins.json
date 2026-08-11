@@ -10901,7 +10901,7 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 2,
+    "cantidad": 1,
     "reference": "KM# 24"
   },
   {
@@ -10952,7 +10952,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "reference": "KM# 95"
+    "reference": "KM# 95",
+    "status": "sold",
+    "soldAt": "2026-08-11T06:32:46.410562+00:00"
   },
   {
     "id": 805,
@@ -12393,7 +12395,7 @@
     "reference": "KM# 826a",
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
-    "cantidad": 2,
+    "cantidad": 1,
     "group_id": "se-1krona",
     "group_label": "1 Krona"
   },
@@ -13842,7 +13844,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "reference": "Y# 832",
-    "description": "Moneda de la Federación Rusa con el águila bicéfala en el anverso."
+    "description": "Moneda de la Federación Rusa con el águila bicéfala en el anverso.",
+    "status": "sold",
+    "soldAt": "2026-08-11T06:32:46.410697+00:00"
   },
   {
     "id": 967,
