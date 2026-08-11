@@ -66,7 +66,9 @@ Notas:
 - No repetir IDs. Mantener siempre los mismos nombres de país y metal para que los
   filtros no se fragmenten.
 - `peso` (gramos) y `diametro` (milímetros) van como NÚMERO crudo, sin unidad y con
-  punto decimal: `"peso": 1.692`. La ficha los formatea sola ("1,69 g", "15,8 mm").
+  punto decimal: `"peso": 1.692`. La ficha muestra solo el número redondeado a 2
+  decimales y con coma ("1,69", "15,8"); la unidad va en la etiqueta de la fila,
+  que dice "Peso (g)" y "Diámetro (mm)". Nunca escribir la unidad en el valor.
   Se sacan de Numista (`weight` y `size` de la API v3). Si no se conocen, se omite
   la clave entera — nada de `""`, `null` ni `"NA"`; la fila desaparece de la ficha.
   Ojo: `size` de Numista solo es el diámetro si la pieza es circular.

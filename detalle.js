@@ -58,12 +58,13 @@ function getVariantGradeScore(c) {
 }
 
 // Peso y diámetro se guardan como número crudo en coins.json (tal cual los da
-// Numista: 1.6915 g, 15.8 mm) y se formatean recién acá, igual que `mintage`.
-// Se redondea a 2 decimales para no mostrar "1,6915 g" en la ficha.
-function formatMedida(value, unidad) {
+// Numista: 1.6915, 15.8) y se formatean recién acá, igual que `mintage`.
+// Se redondea a 2 decimales para no mostrar "1,6915" en la ficha. La unidad NO
+// va en el valor: vive en la etiqueta de la fila ("Peso (g)", "Diámetro (mm)").
+function formatMedida(value) {
   const n = Number(value);
   if (!Number.isFinite(n)) return "";
-  return `${Math.round(n * 100) / 100} ${unidad}`.replace(".", ",");
+  return String(Math.round(n * 100) / 100).replace(".", ",");
 }
 
 function buildWhatsAppLink(coin) {
@@ -232,19 +233,19 @@ function updateCoinContent(coin) {
   // Peso y diámetro: mismo patrón de mostrar/ocultar que Acuñación. No se puede
   // usar el helper `set()` de arriba porque ese escribe "NA" cuando falta el
   // dato, y acá la fila entera tiene que desaparecer.
-  const setMedidaRow = (rowId, valId, value, unidad) => {
+  const setMedidaRow = (rowId, valId, value) => {
     const row = document.getElementById(rowId);
     const val = document.getElementById(valId);
     if (!row || !val) return;
     if (value) {
-      val.textContent = formatMedida(value, unidad);
+      val.textContent = formatMedida(value);
       row.style.display = "";
     } else {
       row.style.display = "none";
     }
   };
-  setMedidaRow("specPesoRow",     "specPeso",     coin.peso,     "g");
-  setMedidaRow("specDiametroRow", "specDiametro", coin.diametro, "mm");
+  setMedidaRow("specPesoRow",     "specPeso",     coin.peso);
+  setMedidaRow("specDiametroRow", "specDiametro", coin.diametro);
 
   const priceEl = document.getElementById("detailPrice");
   if (priceEl) {
@@ -341,12 +342,12 @@ function renderCoinDetail(coin, groupMembers) {
           <div class="detail-spec-value" id="specMintage">${coin.mintage ? Number(String(coin.mintage).replace(/[.,]/g, "")).toLocaleString("es-AR") : ""}</div>
         </div>
         <div class="detail-spec-row" id="specPesoRow" ${coin.peso ? "" : 'style="display:none"'}>
-          <div class="detail-spec-label">Peso</div>
-          <div class="detail-spec-value" id="specPeso">${coin.peso ? escapeHTML(formatMedida(coin.peso, "g")) : ""}</div>
+          <div class="detail-spec-label">Peso <span class="detail-spec-unit">(g)</span></div>
+          <div class="detail-spec-value" id="specPeso">${coin.peso ? escapeHTML(formatMedida(coin.peso)) : ""}</div>
         </div>
         <div class="detail-spec-row" id="specDiametroRow" ${coin.diametro ? "" : 'style="display:none"'}>
-          <div class="detail-spec-label">Diámetro</div>
-          <div class="detail-spec-value" id="specDiametro">${coin.diametro ? escapeHTML(formatMedida(coin.diametro, "mm")) : ""}</div>
+          <div class="detail-spec-label">Diámetro <span class="detail-spec-unit">(mm)</span></div>
+          <div class="detail-spec-value" id="specDiametro">${coin.diametro ? escapeHTML(formatMedida(coin.diametro)) : ""}</div>
         </div>
         <div class="detail-spec-row">
           <div class="detail-spec-label">Referencia interna</div>

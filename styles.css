@@ -1321,6 +1321,14 @@ button {
   white-space: nowrap;
 }
 
+/* La unidad de peso y diámetro va en la etiqueta, no en el valor. Se escapa del
+   `uppercase` y del tracking de la etiqueta: las unidades del SI son "g" y "mm"
+   en minúscula, y con 0.2em de separación "(g)" se abría demasiado. */
+.detail-spec-unit {
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+
 .detail-spec-value {
   color: var(--text);
   font-family: "Cinzel", serif;
