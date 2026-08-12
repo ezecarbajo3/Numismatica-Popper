@@ -15155,7 +15155,9 @@
     "reference": "CJ# 13",
     "mintage": 413711,
     "description": "Patacón. Excelente pátina.",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-12T13:00:40.865486+00:00"
   },
   {
     "id": 1002,
