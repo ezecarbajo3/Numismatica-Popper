@@ -16123,7 +16123,9 @@
     "grade_short": "EX**",
     "description": "Segunda Guerra Mundial. Excelente detalles",
     "publishedAt": "2026-08-06T20:46:25.046353+00:00",
-    "costo": 0.585
+    "costo": 0.585,
+    "status": "sold",
+    "soldAt": "2026-08-12T13:05:45.921467+00:00"
   },
   {
     "id": 1048,
