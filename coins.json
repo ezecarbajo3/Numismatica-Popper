@@ -16508,5 +16508,62 @@
     "costo": 2,
     "status": "sold",
     "soldAt": "2026-08-08T21:09:54.568753+00:00"
+  },
+  {
+    "id": 1067,
+    "title": "Blister 1 Dollar 1984 D",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1984,
+    "price": "140 USD",
+    "images": [
+      "images/1067A.jpeg",
+      "images/1067B.jpeg"
+    ],
+    "reference": "KM# 210",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Escasa. Conmemorativa de los XXIII Juegos Olímpicos de Los Ángeles 1984. Ceca Denver (D).",
+    "publishedAt": "2026-08-12T12:07:51.795918+00:00",
+    "costo": 105.0,
+    "mintage": 116675,
+    "commemorates": "XXIII Juegos Olímpicos Los Ángeles 1984"
+  },
+  {
+    "id": 1068,
+    "title": "Blister 1 Dollar 1983 S",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1983,
+    "price": "140 USD",
+    "images": [
+      "images/1068A.jpeg",
+      "images/1068B.jpeg"
+    ],
+    "reference": "KM# 209",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Escasa. Conmemorativa de los XXIII Juegos Olímpicos de Los Ángeles 1984 (Lanzador de disco). Ceca San Francisco (S).",
+    "publishedAt": "2026-08-12T12:07:51.795918+00:00",
+    "costo": 105.0,
+    "mintage": 174014,
+    "commemorates": "XXIII Juegos Olímpicos Los Ángeles 1984"
+  },
+  {
+    "id": 1069,
+    "title": "Blister 1984 Proof",
+    "country": "Alemania",
+    "metal": "Cuproníquel / Bronce",
+    "year": 1984,
+    "price": "23 USD",
+    "images": [
+      "images/1069A.jpeg",
+      "images/1069B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Ceca J, incluye 10 piezas de las cuales 3 conmemorativas.",
+    "publishedAt": "2026-08-12T12:07:51.795918+00:00"
   }
 ]
