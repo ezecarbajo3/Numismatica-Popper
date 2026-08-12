@@ -2483,7 +2483,9 @@
     "mintage": "",
     "peso": 11.3,
     "diametro": 28.5,
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-08-12T07:10:43.674066+00:00"
   },
   {
     "id": 251,
@@ -2837,7 +2839,9 @@
     "diametro": 30.0,
     "description": "",
     "group_id": "is-10kronur",
-    "group_label": "10 Krónur"
+    "group_label": "10 Krónur",
+    "status": "sold",
+    "soldAt": "2026-08-12T07:10:43.674193+00:00"
   },
   {
     "id": 274,
@@ -3271,7 +3275,9 @@
     "grade_short": "EX+",
     "reference": "KM# 41",
     "peso": 4.9,
-    "diametro": 22.5
+    "diametro": 22.5,
+    "status": "sold",
+    "soldAt": "2026-08-12T07:10:43.674199+00:00"
   },
   {
     "id": 320,
@@ -3343,7 +3349,9 @@
     "grade_short": "EX",
     "reference": "KM# 43",
     "peso": 7.1,
-    "diametro": 25.5
+    "diametro": 25.5,
+    "status": "sold",
+    "soldAt": "2026-08-12T07:10:43.674201+00:00"
   },
   {
     "id": 325,
@@ -7187,7 +7195,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "metal": "Aluminio",
-    "reference": "KM# 13"
+    "reference": "KM# 13",
+    "status": "sold",
+    "soldAt": "2026-08-12T07:10:43.674235+00:00"
   },
   {
     "id": 580,
@@ -7425,7 +7435,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "metal": "Acero niquelado",
-    "reference": "KM# 84"
+    "reference": "KM# 84",
+    "status": "sold",
+    "soldAt": "2026-08-12T07:10:43.674239+00:00"
   },
   {
     "id": 594,
@@ -10721,7 +10733,9 @@
     "grade_short": "SC",
     "group_id": "na-10cents",
     "group_label": "10 Cents",
-    "reference": "KM# 2"
+    "reference": "KM# 2",
+    "status": "sold",
+    "soldAt": "2026-08-12T07:10:43.674269+00:00"
   },
   {
     "id": 791,
@@ -10738,7 +10752,9 @@
     "grade_short": "SC",
     "group_id": "na-10cents",
     "group_label": "10 Cents",
-    "reference": "KM# 2"
+    "reference": "KM# 2",
+    "status": "sold",
+    "soldAt": "2026-08-12T07:10:43.674271+00:00"
   },
   {
     "id": 792,
@@ -10768,7 +10784,7 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 2,
+    "cantidad": 1,
     "reference": "KM# 146"
   },
   {
@@ -12276,7 +12292,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "group_id": "dk-10kroner",
-    "group_label": "10 Kroner"
+    "group_label": "10 Kroner",
+    "status": "sold",
+    "soldAt": "2026-08-12T07:10:43.674328+00:00"
   },
   {
     "id": 880,
@@ -12485,7 +12503,9 @@
     "reference": "KM# 500",
     "grade": "Excelente +",
     "grade_short": "EX+",
-    "description": "Año único"
+    "description": "Año único",
+    "status": "sold",
+    "soldAt": "2026-08-12T07:10:43.674334+00:00"
   },
   {
     "id": 892,
@@ -12646,7 +12666,7 @@
     "grade": "Bueno -",
     "grade_short": "B-",
     "description": "Ceca Milán (M)",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 901,
@@ -13527,7 +13547,9 @@
     "group_id": "cur-1cent-2025",
     "group_label": "1 Cent 2025",
     "reference": "KM# 1",
-    "description": "Primera serie del nuevo Florín del Caribe (Caribbean Guilder) emitido conjuntamente para Curazao y San Martín."
+    "description": "Primera serie del nuevo Florín del Caribe (Caribbean Guilder) emitido conjuntamente para Curazao y San Martín.",
+    "status": "sold",
+    "soldAt": "2026-08-12T07:10:43.674345+00:00"
   },
   {
     "id": 950,
