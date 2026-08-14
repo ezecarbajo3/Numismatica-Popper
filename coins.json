@@ -16568,6 +16568,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Ceca J, incluye 10 piezas de las cuales 3 conmemorativas.",
-    "publishedAt": "2026-08-12T12:07:51.795918+00:00"
+    "publishedAt": "2026-08-12T12:07:51.795918+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-14T22:49:59.823707+00:00"
   }
 ]
