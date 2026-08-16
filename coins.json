@@ -706,7 +706,9 @@
     "mintage": "",
     "peso": 5.5,
     "description": "Getulio Vargas",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-16T07:30:14.247780+00:00"
   },
   {
     "id": 72,
@@ -2517,7 +2519,9 @@
     "description": "",
     "mintage": "",
     "reference": "KM# 153a",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-16T07:30:14.247780+00:00"
   },
   {
     "id": 247,
@@ -13750,7 +13754,9 @@
     "grade_short": "EX",
     "reference": "KM# 89",
     "description": "Muestra un racimo de uvas en el anverso y un arado en el reverso, diseño de Giuseppe Romagnoli.",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-16T07:30:14.247780+00:00"
   },
   {
     "id": 930,
