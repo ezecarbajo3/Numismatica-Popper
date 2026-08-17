@@ -9997,8 +9997,6 @@
     "grade_short": "EX",
     "group_id": "cl-20centavos",
     "group_label": "20 Centavos",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966491+00:00",
     "costo": 0
   },
   {
@@ -10017,8 +10015,6 @@
     "grade_short": "EX",
     "group_id": "cl-20centavos",
     "group_label": "20 Centavos",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966492+00:00",
     "costo": 0
   },
   {
