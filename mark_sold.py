@@ -7,7 +7,6 @@ import argparse
 
 _REPO_DIR = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(_REPO_DIR, 'coins.json')
-log_path = os.path.join(os.path.expanduser('~'), 'Desktop', 'Popper', 'operational_log.md')
 
 def parse_sales_text(text):
     """
@@ -212,26 +211,8 @@ def main():
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(coins, f, indent=2, ensure_ascii=False)
 
-    # Registrar en operational_log.md
-    log_entries = []
-    for found_coin, became_sold, rem_stock, req_qty in updated_coins:
-        cid = found_coin.get('id')
-        title = found_coin.get('title')
-        country = found_coin.get('country')
-        metal = found_coin.get('metal')
-        price = found_coin.get('price')
-        if became_sold:
-            log_entry = f"\n- **VENDIDA** (Vendidas: {req_qty}) — {title} (ID {cid}, {country}, {metal}, {price}) → status: sold, soldAt: {found_coin['soldAt']}"
-        else:
-            log_entry = f"\n- **STOCK REDUCIDO** (Vendidas: {req_qty}) — {title} (ID {cid}, {country}, {metal}, {price}) → cantidad restante: {rem_stock}"
-        log_entries.append(log_entry)
-        
-    try:
-        os.makedirs(os.path.dirname(log_path), exist_ok=True)
-        with open(log_path, 'a', encoding='utf-8') as f:
-            f.write("".join(log_entries))
-    except Exception as e:
-        print(f"Warning: Could not write operational log ({e})", file=sys.stderr)
+    # No se escribe en operational_log.md: esa bitácora guarda lógica, no ventas.
+    # La venta ya queda registrada en coins.json, en VTAS.xlsx y en el historial de git.
 
     ids_str = ",".join(str(c['id']) for c, _, _, _ in updated_coins)
     titles_str = "; ".join(c['title'] for c, _, _, _ in updated_coins)

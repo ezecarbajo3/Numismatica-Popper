@@ -20,7 +20,6 @@ from datetime import datetime, timezone
 # sigue funcionando si se clona en otra carpeta o en otra máquina.
 _REPO_DIR = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(_REPO_DIR, 'coins.json')
-log_path = os.path.join(os.path.expanduser('~'), 'Desktop', 'Popper', 'operational_log.md')
 
 args = sys.argv[1:]
 if not args:
@@ -70,9 +69,9 @@ if not stamped:
 with open(file_path, 'w') as f:
     json.dump(coins, f, indent=2, ensure_ascii=False)
 
-scope = f"--from {from_id}" if from_id is not None else ",".join(str(i) for i in target_ids)
 ids_str = ",".join(str(c['id']) for c in stamped)
-with open(log_path, 'a') as f:
-    f.write(f"\n- **PUBLICADAS (badge NUEVO)** — {len(stamped)} monedas selladas con publishedAt: {now} (scope: {scope}) → IDs {ids_str}")
+
+# No se escribe en operational_log.md: esa bitácora guarda lógica, no altas de monedas.
+# El sellado ya queda en coins.json (publishedAt) y en el historial de git.
 
 print(f"SUCCESS:{ids_str}")
