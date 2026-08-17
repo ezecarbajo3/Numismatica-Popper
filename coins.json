@@ -1292,7 +1292,9 @@
     "peso": 3.28,
     "diametro": 21.6,
     "description": "",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-17T01:48:07.526679+00:00"
   },
   {
     "id": 134,
@@ -3676,7 +3678,9 @@
     "group_label": "10 Centavos",
     "peso": 3.86,
     "diametro": 20.0,
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-17T01:48:07.526679+00:00"
   },
   {
     "id": 337,
