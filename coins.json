@@ -4174,7 +4174,9 @@
       "images/372B.jpeg"
     ],
     "reference": "KM# 755",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-18T15:21:25.904522+00:00"
   },
   {
     "id": 374,
@@ -7094,7 +7096,9 @@
       "images/552B.jpeg"
     ],
     "reference": "KM# 159.1",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-18T15:21:25.904522+00:00"
   },
   {
     "id": 553,
@@ -7971,7 +7975,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "KM# 1",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-18T15:21:25.904522+00:00"
   },
   {
     "id": 603,
