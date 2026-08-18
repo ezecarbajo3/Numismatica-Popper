@@ -10163,9 +10163,7 @@
     "mintage": "2.665.000",
     "group_id": "cl-10centavos",
     "group_label": "10 Centavos",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-18T15:21:35.373165+00:00"
+    "costo": 0
   },
   {
     "id": 728,
