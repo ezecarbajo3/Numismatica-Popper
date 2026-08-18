@@ -15283,7 +15283,9 @@
     "description": "",
     "group_id": "uk-penny-bronze",
     "group_label": "Penny",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-18T14:50:42.706532+00:00"
   },
   {
     "id": 1008,
