@@ -5183,7 +5183,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "reference": "KM# 73",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-18T11:36:26.388814+00:00"
   },
   {
     "id": 435,
