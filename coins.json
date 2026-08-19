@@ -14815,9 +14815,7 @@
     "description": "Conmemora la Boda Real del Príncipe Carlos y Lady Diana Spencer.",
     "group_id": "uk-25newpence-1981",
     "group_label": "25 New Pence 1981 - Carlos y Diana",
-    "costo": 1.31,
-    "status": "sold",
-    "soldAt": "2026-07-29T20:09:45.255Z"
+    "costo": 1.31
   },
   {
     "id": 985,
