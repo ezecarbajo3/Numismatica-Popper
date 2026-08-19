@@ -713,59 +713,53 @@ button {
 }
 
 /* ─── Intro de Insumos ───────────────────────────────────────────────────────
-   La única prosa del catálogo. Va en Lora itálica —no en Cinzel— justamente
-   para que se lea como una frase de la casa y no como una etiqueta más de la
-   interfaz. Solo aparece con la categoría Insumos activa: la enciende y apaga
-   syncInsumosIntro() en script.js. Los dos filetes retoman el ornamento de la
-   portada (.hero-ornament) para que la pieza pertenezca al sitio.
+   La única prosa del catálogo. Va a sangre —fuera del .container— y en Allura,
+   una cursiva manuscrita de trazo fino: se lee como una frase escrita a mano de
+   la casa y no como una etiqueta más de la interfaz. Solo aparece con la
+   categoría Insumos activa; la enciende y apaga syncInsumosIntro() en script.js.
+
+   El cuerpo se mide en vw, no en rem, para que la frase llene el ancho de la
+   pantalla en cualquier medida. La pendiente cambia en el breakpoint de 640px
+   porque el texto pasa de dos renglones a cuatro: con un solo clamp, o queda
+   ilegible en teléfono o desborda en escritorio.
    ───────────────────────────────────────────────────────────────────────────── */
 
 .insumos-intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.6rem;
-  padding: 4.25rem 0 3.25rem;
+  padding: clamp(2.6rem, 5vw, 4.5rem) clamp(20px, 3.2vw, 60px);
   animation: view-in 520ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }
 
-/* `hidden` solo vale display:none si nada lo pisa, y acá lo pisa el flex. */
+/* Redundante con el `[hidden] { display: none }` del navegador, pero explícito:
+   basta con darle un `display` a .insumos-intro para que aquél deje de valer, y
+   la sección quedaría visible en todas las categorías. */
 .insumos-intro[hidden] {
   display: none;
 }
 
-.insumos-intro__rule {
-  width: min(180px, 40%);
-  height: 1px;
-  background: linear-gradient(90deg,
-    transparent,
-    rgba(var(--accent-rgb), 0.42),
-    transparent);
-}
-
 .insumos-intro__text {
   margin: 0;
-  max-width: 34ch;
-  font-family: "Lora", Georgia, serif;
-  font-style: italic;
+  font-family: "Allura", "Snell Roundhand", "Apple Chancery", cursive;
   font-weight: 400;
-  font-size: clamp(1.08rem, 0.95rem + 0.6vw, 1.45rem);
-  line-height: 1.75;
-  letter-spacing: 0.012em;
+  font-size: clamp(1.75rem, 5vw, 4.35rem);
+  line-height: 1.32;
+  /* Allura es una cursiva ligada: cualquier letter-spacing positivo abre las
+     uniones entre letras y la frase deja de parecer escrita de un trazo. El
+     resto del sitio va con tracking abierto, acá va en cero a propósito. */
+  letter-spacing: 0;
+  /* Sin `text-wrap: balance` a propósito: emparejar los renglones los acorta,
+     que es exactamente lo contrario de llenar el ancho de la pantalla. */
   text-align: center;
-  text-wrap: balance;
-  color: rgba(239, 217, 162, 0.74);
+  color: rgba(239, 217, 162, 0.8);
 }
 
 @media (max-width: 640px) {
   .insumos-intro {
-    padding: 2.6rem 0 2.1rem;
-    gap: 1.15rem;
+    padding: 2.2rem 16px 1.9rem;
   }
 
   .insumos-intro__text {
-    max-width: 26ch;
-    line-height: 1.68;
+    font-size: 9.2vw;
+    line-height: 1.3;
   }
 }
 

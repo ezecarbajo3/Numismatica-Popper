@@ -17,9 +17,11 @@
        HTML → styles.css (75 KB) → CSS de Google → .woff2, cuatro saltos
        serializados y bloqueantes. Desde el <head> el navegador los pide en
        paralelo con el CSS, y recién ahí sirven los preconnect de arriba.
-       Solo Cinzel y Lora: son las dos únicas familias que el CSS usa. -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;1,400&display=swap" />
-  <link rel="stylesheet" href="styles.css?v=20260819a" />
+       Cinzel es la fuente del sitio, Lora la prosa de la ficha de detalle y
+       Allura la frase de Insumos: son las tres únicas familias que el CSS usa.
+       detalle.html no pide Allura porque esa página no la usa. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@400;500;600;700&family=Lora:wght@400&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=20260819b" />
   <!-- El catálogo es lo primero que necesita script.js. Sin esto no empieza a
        bajar hasta que el script se ejecuta, o sea después del CSS y las fuentes. -->
   <link rel="preload" href="coins.json" as="fetch" />
@@ -250,18 +252,17 @@
       </div>
     </div>
 
-    <main class="container">
-      <!-- Solo se muestra con la categoría Insumos activa; la enciende y apaga
-           syncInsumosIntro() en script.js. -->
-      <section id="insumosIntro" class="insumos-intro" hidden>
-        <span class="insumos-intro__rule" aria-hidden="true"></span>
-        <p class="insumos-intro__text">
-          Parte de coleccionar es saber cuidar y almacenar tus monedas,
-          hacelo de la mano de Numismática&nbsp;Popper.
-        </p>
-        <span class="insumos-intro__rule" aria-hidden="true"></span>
-      </section>
+    <!-- Va fuera del .container a propósito: ocupa el ancho entero de la
+         pantalla, con su propio respiro lateral. Solo se muestra con la
+         categoría Insumos activa; la enciende y apaga syncInsumosIntro(). -->
+    <section id="insumosIntro" class="insumos-intro" hidden>
+      <p class="insumos-intro__text">
+        Parte de coleccionar es saber cuidar y almacenar tus monedas,
+        hacelo de la mano de Numismática&nbsp;Popper.
+      </p>
+    </section>
 
+    <main class="container">
       <section class="results-bar reveal">
         <p id="resultsCount">Cargando monedas...</p>
       </section>
@@ -298,9 +299,9 @@
     </article>
   </template>
 
-  <script src="common.js?v=20260819a" defer></script>
-  <script src="glow.js?v=20260819a" defer></script>
-  <script src="script.js?v=20260819a" defer></script>
+  <script src="common.js?v=20260819b" defer></script>
+  <script src="glow.js?v=20260819b" defer></script>
+  <script src="script.js?v=20260819b" defer></script>
 
   <footer class="site-footer" aria-label="Pie de página">
     <div class="footer-inner">

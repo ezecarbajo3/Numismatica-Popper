@@ -697,6 +697,12 @@ function isBackForwardNavigation() {
   return performance.navigation?.type === 2;
 }
 
+function isReloadNavigation() {
+  const entries = performance.getEntriesByType('navigation');
+  if (entries.length > 0) return entries[0].type === 'reload';
+  return performance.navigation?.type === 1;
+}
+
 function applyRestoredState(state) {
   // Categorías renombradas: 'inversion' → 'plata', y 'blisters' /
   // 'medallas-libros' → 'varios' (ver LEGACY_CATEGORY_KEYS).
@@ -1636,11 +1642,21 @@ loadCoins().then((ok) => {
   }
 
   const isBackFwd = isBackForwardNavigation();
+  const isReload  = isReloadNavigation();
   const state     = loadSavedState();
 
-  // El catálogo solo se restaura al volver con atrás/adelante.
-  if (isBackFwd && state && state.view === 'catalog') {
+  // El catálogo se restaura al volver con atrás/adelante y también al recargar:
+  // apretar F5 con una categoría puesta no debe devolver a la portada. La
+  // diferencia es que la recarga arranca con el buscador limpio y arriba de
+  // todo — la búsqueda es momentánea, el filtro no.
+  if ((isBackFwd || isReload) && state && state.view === 'catalog') {
     showCatalog();
+    if (isReload && !isBackFwd) {
+      state.search  = '';
+      state.scrollY = 0;
+      searchInput.value = '';
+      clearSearchBtn.classList.remove('is-visible');
+    }
     // initRevealEffects va SIEMPRE, también cuando hay scroll guardado: antes
     // solo corría cuando NO había scrollY, o sea nunca en el caso normal de
     // volver del detalle, y quedaba un observador sin montar.
@@ -1654,11 +1670,13 @@ loadCoins().then((ok) => {
           window.scrollTo({ top: state.scrollY, behavior: 'instant' });
         }));
       }
+      // El scroll guardado apuntaba a la grilla con búsqueda: ya no vale.
+      if (isReload && !isBackFwd) saveState(0);
     });
     return;
   }
 
-  // Carga nueva o recarga → siempre la portada.
+  // Carga nueva → portada.
   showLanding();
 });
 
