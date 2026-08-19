@@ -15046,7 +15046,9 @@
     "description": "En blister original. Acuñado en Windsor.",
     "group_id": "ca-25cents-2008-armistice",
     "group_label": "Blister 25 Cents 2008",
-    "costo": 1.31
+    "costo": 1.31,
+    "status": "sold",
+    "soldAt": "2026-08-19T17:37:13.262081+00:00"
   },
   {
     "id": 996,
