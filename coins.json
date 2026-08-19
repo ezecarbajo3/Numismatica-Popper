@@ -15643,7 +15643,9 @@
     "description": "",
     "group_id": "uk-farthing-bronze",
     "group_label": "Farthing",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-19T17:51:15.242996+00:00"
   },
   {
     "id": 1025,
