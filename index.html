@@ -18,8 +18,8 @@
        serializados y bloqueantes. Desde el <head> el navegador los pide en
        paralelo con el CSS, y recién ahí sirven los preconnect de arriba.
        Solo Cinzel y Lora: son las dos únicas familias que el CSS usa. -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:wght@400&display=swap" />
-  <link rel="stylesheet" href="styles.css?v=20260811a" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;1,400&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=20260819a" />
   <!-- El catálogo es lo primero que necesita script.js. Sin esto no empieza a
        bajar hasta que el script se ejecuta, o sea después del CSS y las fuentes. -->
   <link rel="preload" href="coins.json" as="fetch" />
@@ -125,22 +125,35 @@
           <span class="landing-btn__label">Económicas</span>
         </button>
 
-        <button type="button" class="landing-btn" data-landing-category="blisters">
+        <!-- Insumos: carpeta de anillas con un folio de monedas adentro. Las dos
+             cosas juntas porque la carpeta sola se confunde con el libro que
+             ahora vive en el ícono de Varios. -->
+        <button type="button" class="landing-btn" data-landing-category="insumos">
           <svg class="landing-btn__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="9" y="4" width="19" height="14" rx="1.6"/>
-            <rect x="4" y="10" width="19" height="14" rx="1.6"/>
-            <circle cx="13.5" cy="17" r="3"/>
+            <rect x="4.5" y="4.5" width="23" height="23" rx="1.9"/>
+            <path d="M11.2 4.5v23"/>
+            <circle cx="7.85" cy="12" r="1.15"/>
+            <circle cx="7.85" cy="20" r="1.15"/>
+            <circle cx="16.6" cy="12.2" r="2.05"/>
+            <circle cx="22.9" cy="12.2" r="2.05"/>
+            <circle cx="16.6" cy="19.8" r="2.05"/>
+            <circle cx="22.9" cy="19.8" r="2.05"/>
           </svg>
-          <span class="landing-btn__label">Blisters / Lotes</span>
+          <span class="landing-btn__label">Insumos</span>
         </button>
 
-        <button type="button" class="landing-btn" data-landing-category="medallas-libros">
+        <!-- Varios: cuatro siluetas distintas en 2x2 (moneda, blíster, libro y
+             medalla con cinta). Dice "surtido" sin dibujar las cuatro cosas
+             de forma literal, que a 29px se empasta. -->
+        <button type="button" class="landing-btn" data-landing-category="varios">
           <svg class="landing-btn__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M10.5 3.5l4 8M21.5 3.5l-4 8"/>
-            <circle cx="16" cy="19" r="8"/>
-            <circle cx="16" cy="19" r="3.6"/>
+            <circle cx="10.5" cy="10.5" r="4.8"/>
+            <rect x="16.9" y="5.9" width="9.4" height="9.4" rx="1.5"/>
+            <rect x="5.8" y="18" width="9.4" height="7.4" rx="1"/>
+            <path d="M19.5 17.4l2 3.1M23.5 17.4l-2 3.1"/>
+            <circle cx="21.5" cy="23.1" r="3.4"/>
           </svg>
-          <span class="landing-btn__label">Medallas / Libros</span>
+          <span class="landing-btn__label">Varios</span>
         </button>
       </nav>
 
@@ -177,8 +190,8 @@
         <button type="button" class="cat-btn" data-category="argentina">Argentinas</button>
         <button type="button" class="cat-btn" data-category="internacional">Mundiales</button>
         <button type="button" class="cat-btn" data-category="economicas">Económicas</button>
-        <button type="button" class="cat-btn" data-category="blisters">Blisters / Lotes</button>
-        <button type="button" class="cat-btn" data-category="medallas-libros">Medallas / Libros</button>
+        <button type="button" class="cat-btn" data-category="insumos">Insumos</button>
+        <button type="button" class="cat-btn" data-category="varios">Varios</button>
       </nav>
 
       <div class="sub-filter-bar" id="subFilterBar">
@@ -238,6 +251,17 @@
     </div>
 
     <main class="container">
+      <!-- Solo se muestra con la categoría Insumos activa; la enciende y apaga
+           syncInsumosIntro() en script.js. -->
+      <section id="insumosIntro" class="insumos-intro" hidden>
+        <span class="insumos-intro__rule" aria-hidden="true"></span>
+        <p class="insumos-intro__text">
+          Parte de coleccionar es saber cuidar y almacenar tus monedas,
+          hacelo de la mano de Numismática&nbsp;Popper.
+        </p>
+        <span class="insumos-intro__rule" aria-hidden="true"></span>
+      </section>
+
       <section class="results-bar reveal">
         <p id="resultsCount">Cargando monedas...</p>
       </section>
@@ -274,9 +298,9 @@
     </article>
   </template>
 
-  <script src="common.js?v=20260811a" defer></script>
-  <script src="glow.js?v=20260811a" defer></script>
-  <script src="script.js?v=20260811a" defer></script>
+  <script src="common.js?v=20260819a" defer></script>
+  <script src="glow.js?v=20260819a" defer></script>
+  <script src="script.js?v=20260819a" defer></script>
 
   <footer class="site-footer" aria-label="Pie de página">
     <div class="footer-inner">

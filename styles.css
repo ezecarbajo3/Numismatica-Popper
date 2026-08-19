@@ -14,6 +14,7 @@
      Barra de categorías ...... "Category bar"
      Sub-filtros .............. "Sub-filter bar"
      Buscador y orden ......... "Search"
+     Intro de Insumos ......... "Intro de Insumos"
      Tarjeta de moneda ........ "Coin card"
      Grilla ................... "Coins grid"
      Ficha de detalle ......... "Detail page"
@@ -709,6 +710,63 @@ button {
   font-size: 0.62rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+
+/* ─── Intro de Insumos ───────────────────────────────────────────────────────
+   La única prosa del catálogo. Va en Lora itálica —no en Cinzel— justamente
+   para que se lea como una frase de la casa y no como una etiqueta más de la
+   interfaz. Solo aparece con la categoría Insumos activa: la enciende y apaga
+   syncInsumosIntro() en script.js. Los dos filetes retoman el ornamento de la
+   portada (.hero-ornament) para que la pieza pertenezca al sitio.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.insumos-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 4.25rem 0 3.25rem;
+  animation: view-in 520ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+/* `hidden` solo vale display:none si nada lo pisa, y acá lo pisa el flex. */
+.insumos-intro[hidden] {
+  display: none;
+}
+
+.insumos-intro__rule {
+  width: min(180px, 40%);
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(var(--accent-rgb), 0.42),
+    transparent);
+}
+
+.insumos-intro__text {
+  margin: 0;
+  max-width: 34ch;
+  font-family: "Lora", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.08rem, 0.95rem + 0.6vw, 1.45rem);
+  line-height: 1.75;
+  letter-spacing: 0.012em;
+  text-align: center;
+  text-wrap: balance;
+  color: rgba(239, 217, 162, 0.74);
+}
+
+@media (max-width: 640px) {
+  .insumos-intro {
+    padding: 2.6rem 0 2.1rem;
+    gap: 1.15rem;
+  }
+
+  .insumos-intro__text {
+    max-width: 26ch;
+    line-height: 1.68;
+  }
 }
 
 /* ─── Coins grid ─────────────────────────────────────────────────────────── */
@@ -2941,7 +2999,8 @@ body.is-view-entering .results-bar   { animation-delay: 180ms; }
   body.is-view-entering .landing-inner,
   body.is-view-entering .category-bar,
   body.is-view-entering .search-outer,
-  body.is-view-entering .results-bar {
+  body.is-view-entering .results-bar,
+  .insumos-intro {
     animation: none !important;
   }
 }

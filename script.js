@@ -124,10 +124,28 @@ function isLotePlata(coin) {
   return /^lote\s+plata/i.test((coin.title || '').trim());
 }
 
-function isBlister(coin) {
+// "Blisters" y "Lotes" son dos sub-filtros distintos dentro de Varios, así que
+// el predicado viejo se parte en dos. isBlister queda como la unión de ambos
+// porque es la que usan `internacional` y `economicas` para excluir.
+function isBlisterOnly(coin) {
   const title = (coin.title || '').trim();
-  return /^bls[.\s]/i.test(title) || /blister/i.test(title) ||
-    (/^lote\s/i.test(title) && !isLotePlata(coin));
+  return /^bls[.\s]/i.test(title) || /blister/i.test(title);
+}
+
+function isLoteVario(coin) {
+  const title = (coin.title || '').trim();
+  return /^lote\s/i.test(title) && !isLotePlata(coin) && !isBlisterOnly(coin);
+}
+
+function isBlister(coin) {
+  return isBlisterOnly(coin) || isLoteVario(coin);
+}
+
+// Folios, carpetas, sobres y cartoncitos: no son monedas, viven detrás de su
+// propio botón y se excluyen a mano de Mundiales, Económicas y "Ver todas".
+function isInsumo(coin) {
+  return (coin.country || '').trim().toLowerCase() === 'insumos'
+      || (coin.title   || '').toLowerCase().includes('insumo');
 }
 
 function isBook(coin) {
@@ -141,7 +159,8 @@ function isEconomica(coin) {
     !isArgentinaCoin(coin) &&
     !isMedalOrToken(coin) &&
     !isBlister(coin) &&
-    !isBook(coin)
+    !isBook(coin) &&
+    !isInsumo(coin)
   );
 }
 
@@ -244,11 +263,21 @@ const CATEGORY_PREDICATES = {
   ingresos:        (c) => (c.group_id ? isNewGroup(c.group_id) : isNewCoin(c)),
   plata:           isInvestment,
   argentina:       isArgentinaCoin,
-  internacional:   (c) => !isArgentinaCoin(c) && !isMedalOrToken(c) && !isBlister(c) && !isBook(c),
-  'medallas-libros': (c) => isMedalOrToken(c) || isBook(c),
-  blisters:        isBlister,
+  internacional:   (c) => !isArgentinaCoin(c) && !isMedalOrToken(c) && !isBlister(c) && !isBook(c) && !isInsumo(c),
+  // "Varios" es el cajón de lo que no es moneda de colección corriente:
+  // medallas, tokens, libros, blísters y lotes, todo bajo un mismo botón.
+  varios:          (c) => isMedalOrToken(c) || isBook(c) || isBlister(c),
   economicas:      isEconomica,
-  insumos:         (c) => (c.country || '').trim().toLowerCase() === 'insumos' || (c.title || '').toLowerCase().includes('insumo'),
+  insumos:         isInsumo,
+};
+
+// Claves que ya no existen pero pueden venir de un sessionStorage viejo o de un
+// link compartido (?cat=blisters). Sin esto el catálogo abre con una categoría
+// que ningún botón reconoce: filtra, pero no hay forma de sacarla.
+const LEGACY_CATEGORY_KEYS = {
+  inversion:         'plata',
+  blisters:          'varios',
+  'medallas-libros': 'varios',
 };
 
 // ─── Sub-filter helpers ───────────────────────────────────────────────────────
@@ -291,18 +320,20 @@ function getSubFilterOptions(category) {
       return specs.filter(s => pool.some(s.match));
     }
 
-    case 'medallas-libros': {
-      const pool = allCoins.filter(c => isMedalOrToken(c) || isBook(c));
+    case 'varios': {
+      const pool = allCoins.filter(CATEGORY_PREDICATES.varios);
       const specs = [
-        { label: 'Medallas', value: 'Medallas', match: isMedal },
-        { label: 'Tokens',   value: 'Tokens',   match: isToken  },
-        { label: 'Libros',   value: 'Libros',   match: isBook   },
+        { label: 'Medallas', value: 'Medallas', match: isMedal       },
+        { label: 'Tokens',   value: 'Tokens',   match: isToken       },
+        { label: 'Libros',   value: 'Libros',   match: isBook        },
+        { label: 'Blisters', value: 'Blisters', match: isBlisterOnly },
+        { label: 'Lotes',    value: 'Lotes',    match: isLoteVario   },
       ];
       return specs.filter(s => pool.some(s.match));
     }
 
     default:
-      return null; // blisters have no sub-filters
+      return null; // economicas e insumos no se sub-dividen
   }
 }
 
@@ -317,10 +348,12 @@ function matchesSubFilter(coin, category, subFilter) {
     case 'plata':
       if (subFilter === 'lotes') return isLotePlata(coin);
       return getSilverPurity(coin) === parseInt(subFilter, 10);
-    case 'medallas-libros':
+    case 'varios':
       if (subFilter === 'Medallas') return isMedal(coin);
       if (subFilter === 'Tokens')   return isToken(coin);
       if (subFilter === 'Libros')   return isBook(coin);
+      if (subFilter === 'Blisters') return isBlisterOnly(coin);
+      if (subFilter === 'Lotes')    return isLoteVario(coin);
       return true;
     default:
       return true;
@@ -665,8 +698,9 @@ function isBackForwardNavigation() {
 }
 
 function applyRestoredState(state) {
-  // Migrate old 'inversion' category key to 'plata'
-  if (state.category === 'inversion') state.category = 'plata';
+  // Categorías renombradas: 'inversion' → 'plata', y 'blisters' /
+  // 'medallas-libros' → 'varios' (ver LEGACY_CATEGORY_KEYS).
+  if (LEGACY_CATEGORY_KEYS[state.category]) state.category = LEGACY_CATEGORY_KEYS[state.category];
 
   if (state.search) {
     searchInput.value = state.search;
@@ -775,7 +809,10 @@ function getFilteredCoins() {
       if (predicate && !predicate(coin)) return false;
     } else {
       // Default view: hide books and medals/tokens when no search term is entered
-      if (!searchTerm && (isBook(coin) || isMedalOrToken(coin))) return false;
+      // Los insumos van en la misma bolsa: no son monedas, no entran en "Ver
+      // todas". Va dentro del `!searchTerm` a propósito, para que buscar
+      // "folio" o "insumos" los siga encontrando.
+      if (!searchTerm && (isBook(coin) || isMedalOrToken(coin) || isInsumo(coin))) return false;
     }
 
     if (activeSubFilter && activeCategory) {
@@ -1145,7 +1182,20 @@ const RENDER_FIRST_BATCH = 48;
 const RENDER_CHUNK       = 96;
 let renderToken = 0;
 
+/**
+ * La frase de bienvenida de Insumos vive únicamente detrás de ese botón. Se
+ * sincroniza desde renderCoins porque es el único punto por el que pasan TODOS
+ * los caminos de pintado —applyFilters, enterCatalog, applyRestoredState y el
+ * arranque por ?cat=—, así no hay forma de que quede desfasada.
+ */
+function syncInsumosIntro() {
+  const el = document.getElementById('insumosIntro');
+  if (el) el.hidden = activeCategory !== 'insumos';
+}
+
 function renderCoins(coins, skipAnimation = false) {
+  syncInsumosIntro();
+
   // Invalida cualquier tanda pendiente de un render anterior (ej. el usuario
   // siguió tecleando antes de que terminara de dibujarse la búsqueda previa).
   renderToken += 1;
@@ -1559,7 +1609,12 @@ loadCoins().then((ok) => {
 
   const urlParams = new URLSearchParams(window.location.search);
   const searchParam = urlParams.get('buscar') || urlParams.get('q') || urlParams.get('search');
-  const catParam = urlParams.get('cat') || urlParams.get('categoria') || urlParams.get('category');
+  const catParamRaw = urlParams.get('cat') || urlParams.get('categoria') || urlParams.get('category');
+  const catParam = LEGACY_CATEGORY_KEYS[catParamRaw] || catParamRaw;
+  // `todas` no es una categoría: es la ausencia de filtro, igual que el botón
+  // "Ver todas las monedas" de la portada, que entra con null. Sin esto un link
+  // ?cat=todas se saltea la vista por defecto y muestra libros, medallas e
+  // insumos mezclados con las monedas.
 
   if (searchParam) {
     showCatalog();
@@ -1576,7 +1631,7 @@ loadCoins().then((ok) => {
   }
 
   if (catParam) {
-    enterCatalog(catParam);
+    enterCatalog(catParam === 'todas' ? null : catParam);
     return;
   }
 
