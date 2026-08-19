@@ -16591,7 +16591,8 @@
     "images": [
       "images/1070A.jpeg"
     ],
-    "publishedAt": "2026-08-19T03:07:26.617640+00:00"
+    "publishedAt": "2026-08-19T03:07:26.617640+00:00",
+    "country": "Insumos"
   },
   {
     "id": 1071,
@@ -16600,7 +16601,8 @@
     "images": [
       "images/1071A.jpeg"
     ],
-    "publishedAt": "2026-08-19T03:07:26.617640+00:00"
+    "publishedAt": "2026-08-19T03:07:26.617640+00:00",
+    "country": "Insumos"
   },
   {
     "id": 1072,
@@ -16609,7 +16611,8 @@
     "images": [
       "images/1072A.jpeg"
     ],
-    "publishedAt": "2026-08-19T03:07:26.617640+00:00"
+    "publishedAt": "2026-08-19T03:07:26.617640+00:00",
+    "country": "Insumos"
   },
   {
     "id": 1073,
@@ -16618,7 +16621,8 @@
     "images": [
       "images/1073A.jpeg"
     ],
-    "publishedAt": "2026-08-19T03:07:26.617640+00:00"
+    "publishedAt": "2026-08-19T03:07:26.617640+00:00",
+    "country": "Insumos"
   },
   {
     "id": 1074,
@@ -16627,7 +16631,8 @@
     "images": [
       "images/1074A.jpeg"
     ],
-    "publishedAt": "2026-08-19T03:07:26.617640+00:00"
+    "publishedAt": "2026-08-19T03:07:26.617640+00:00",
+    "country": "Insumos"
   },
   {
     "id": 1075,
@@ -16636,6 +16641,7 @@
     "images": [
       "images/1075A.jpeg"
     ],
-    "publishedAt": "2026-08-19T03:07:26.617640+00:00"
+    "publishedAt": "2026-08-19T03:07:26.617640+00:00",
+    "country": "Insumos"
   }
 ]
