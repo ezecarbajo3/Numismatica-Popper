@@ -16699,5 +16699,62 @@
     "images": [
       "images/1082A.jpeg"
     ]
+  },
+  {
+    "id": 1083,
+    "title": "50.000 Nuevos Pesos 1991",
+    "country": "Uruguay",
+    "metal": "Plata .925",
+    "year": 1991,
+    "price": "83 USD",
+    "images": [
+      "images/1083A.jpeg",
+      "images/1083B.jpeg"
+    ],
+    "reference": "KM# 100",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "I Serie Iberoamericana - Encuentro de Dos Mundos. Acabado Proof en Plata .925 (27 g, 40 mm) acuñada en la FNMT de Madrid.",
+    "publishedAt": "2026-08-19T16:30:54.539315+00:00",
+    "mintage": 40000,
+    "commemorates": "I Serie Iberoamericana - Encuentro de Dos Mundos"
+  },
+  {
+    "id": 1084,
+    "title": "2.000 Pesos 2024",
+    "country": "Uruguay",
+    "metal": "Plata .900",
+    "year": 2024,
+    "price": "73 USD",
+    "images": [
+      "images/1084A.jpeg",
+      "images/1084B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Centenario de la Corte Electoral (1924-2024). Moneda conmemorativa no circulante en Plata .900 Proof (12.5 g, 33 mm) con aplicación de color en anverso.",
+    "publishedAt": "2026-08-19T16:30:54.539315+00:00",
+    "mintage": 2500,
+    "commemorates": "Centenario de la Corte Electoral (1924-2024)"
+  },
+  {
+    "id": 1085,
+    "title": "1.000 Pesos 2022",
+    "country": "Uruguay",
+    "metal": "Plata .900",
+    "year": 2022,
+    "price": "77 USD",
+    "images": [
+      "images/1085A.jpeg",
+      "images/1085B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "50° Aniversario del Milagro de los Andes (1972-2022). Moneda conmemorativa no circulante en Plata .900 Proof (12.5 g, 33 mm) con diseño anular calado.",
+    "publishedAt": "2026-08-19T16:30:54.539315+00:00",
+    "mintage": 1500,
+    "commemorates": "50° Aniversario del Milagro de los Andes (1972-2022)"
   }
 ]
