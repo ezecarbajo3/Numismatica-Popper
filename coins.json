@@ -16706,7 +16706,7 @@
     "country": "Uruguay",
     "metal": "Plata .925",
     "year": 1991,
-    "price": "83 USD",
+    "price": "85 USD",
     "images": [
       "images/1083A.jpeg",
       "images/1083B.jpeg"
@@ -16717,7 +16717,8 @@
     "description": "I Serie Iberoamericana - Encuentro de Dos Mundos. Acabado Proof en Plata .925 (27 g, 40 mm) acuñada en la FNMT de Madrid.",
     "publishedAt": "2026-08-19T16:30:54.539315+00:00",
     "mintage": 40000,
-    "commemorates": "I Serie Iberoamericana - Encuentro de Dos Mundos"
+    "commemorates": "I Serie Iberoamericana - Encuentro de Dos Mundos",
+    "costo": 70.29
   },
   {
     "id": 1084,
@@ -16725,7 +16726,7 @@
     "country": "Uruguay",
     "metal": "Plata .900",
     "year": 2024,
-    "price": "73 USD",
+    "price": "75 USD",
     "images": [
       "images/1084A.jpeg",
       "images/1084B.jpeg"
@@ -16736,7 +16737,8 @@
     "description": "Centenario de la Corte Electoral (1924-2024). Moneda conmemorativa no circulante en Plata .900 Proof (12.5 g, 33 mm) con aplicación de color en anverso.",
     "publishedAt": "2026-08-19T16:30:54.539315+00:00",
     "mintage": 2500,
-    "commemorates": "Centenario de la Corte Electoral (1924-2024)"
+    "commemorates": "Centenario de la Corte Electoral (1924-2024)",
+    "costo": 67.09
   },
   {
     "id": 1085,
@@ -16744,7 +16746,7 @@
     "country": "Uruguay",
     "metal": "Plata .900",
     "year": 2022,
-    "price": "77 USD",
+    "price": "80 USD",
     "images": [
       "images/1085A.jpeg",
       "images/1085B.jpeg"
@@ -16755,6 +16757,7 @@
     "description": "50° Aniversario del Milagro de los Andes (1972-2022). Moneda conmemorativa no circulante en Plata .900 Proof (12.5 g, 33 mm) con diseño anular calado.",
     "publishedAt": "2026-08-19T16:30:54.539315+00:00",
     "mintage": 1500,
-    "commemorates": "50° Aniversario del Milagro de los Andes (1972-2022)"
+    "commemorates": "50° Aniversario del Milagro de los Andes (1972-2022)",
+    "costo": 67.09
   }
 ]
