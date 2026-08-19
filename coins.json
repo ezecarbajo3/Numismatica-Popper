@@ -16759,5 +16759,24 @@
     "mintage": 1500,
     "commemorates": "50° Aniversario del Milagro de los Andes (1972-2022)",
     "costo": 67.09
+  },
+  {
+    "id": 1086,
+    "title": "1 Peso 1917",
+    "country": "Uruguay",
+    "metal": "Plata .900",
+    "year": 1917,
+    "price": "85 USD",
+    "images": [
+      "images/1086A.jpeg",
+      "images/1086B.jpeg"
+    ],
+    "reference": "KM# 23",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "description": "Efigie de José Gervasio Artigas en uniforme militar y Escudo Nacional de Uruguay. Acuñada en Plata .900 (25 g, 37 mm).",
+    "publishedAt": "2026-08-19T16:41:29.963296+00:00",
+    "costo": 70.29,
+    "mintage": 2000000
   }
 ]
