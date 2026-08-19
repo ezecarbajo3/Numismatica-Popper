@@ -16637,5 +16637,41 @@
       "images/1075A.jpeg"
     ],
     "country": "Insumos"
+  },
+  {
+    "id": 1076,
+    "title": "Folio chico cartoncitos",
+    "country": "Insumos",
+    "price": "Consultar",
+    "images": [
+      "images/1076A.jpeg"
+    ]
+  },
+  {
+    "id": 1077,
+    "title": "Folio grande cartoncitos",
+    "country": "Insumos",
+    "price": "Consultar",
+    "images": [
+      "images/1077A.jpeg"
+    ]
+  },
+  {
+    "id": 1078,
+    "title": "Sobre plástico blando (SMO)",
+    "country": "Insumos",
+    "price": "Consultar",
+    "images": [
+      "images/1078A.jpeg"
+    ]
+  },
+  {
+    "id": 1079,
+    "title": "Sobre plástico rígido (SMOR)",
+    "country": "Insumos",
+    "price": "Consultar",
+    "images": [
+      "images/1079A.jpeg"
+    ]
   }
 ]
