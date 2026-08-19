@@ -16583,5 +16583,59 @@
     "publishedAt": "2026-08-12T12:07:51.795918+00:00",
     "status": "sold",
     "soldAt": "2026-08-14T22:49:59.823707+00:00"
+  },
+  {
+    "id": 1070,
+    "title": "Folios chicos 6 espacios",
+    "price": "Consultar",
+    "images": [
+      "images/1070A.jpeg"
+    ],
+    "publishedAt": "2026-08-19T03:07:26.617640+00:00"
+  },
+  {
+    "id": 1071,
+    "title": "Folios chicos 12 espacios",
+    "price": "Consultar",
+    "images": [
+      "images/1071A.jpeg"
+    ],
+    "publishedAt": "2026-08-19T03:07:26.617640+00:00"
+  },
+  {
+    "id": 1072,
+    "title": "Folios chicos 20 espacios",
+    "price": "Consultar",
+    "images": [
+      "images/1072A.jpeg"
+    ],
+    "publishedAt": "2026-08-19T03:07:26.617640+00:00"
+  },
+  {
+    "id": 1073,
+    "title": "Folios chicos 30 espacios",
+    "price": "Consultar",
+    "images": [
+      "images/1073A.jpeg"
+    ],
+    "publishedAt": "2026-08-19T03:07:26.617640+00:00"
+  },
+  {
+    "id": 1074,
+    "title": "Folios chicos 48 espacios",
+    "price": "Consultar",
+    "images": [
+      "images/1074A.jpeg"
+    ],
+    "publishedAt": "2026-08-19T03:07:26.617640+00:00"
+  },
+  {
+    "id": 1075,
+    "title": "Folios chicos 33 espacios",
+    "price": "Consultar",
+    "images": [
+      "images/1075A.jpeg"
+    ],
+    "publishedAt": "2026-08-19T03:07:26.617640+00:00"
   }
 ]
