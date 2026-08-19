@@ -248,6 +248,7 @@ const CATEGORY_PREDICATES = {
   'medallas-libros': (c) => isMedalOrToken(c) || isBook(c),
   blisters:        isBlister,
   economicas:      isEconomica,
+  insumos:         (c) => (c.country || '').trim().toLowerCase() === 'insumos' || (c.title || '').toLowerCase().includes('insumo'),
 };
 
 // ─── Sub-filter helpers ───────────────────────────────────────────────────────
@@ -724,10 +725,16 @@ async function loadCoins() {
 // ─── Filtering ────────────────────────────────────────────────────────────────
 
 const SEARCH_ALIASES = {
-  'usa':  'estados unidos',
-  'eeuu': 'estados unidos',
-  'uk':   'reino unido',
-  'urss': 'union sovietica',
+  'usa':        'estados unidos',
+  'eeuu':       'estados unidos',
+  'uk':         'reino unido',
+  'urss':       'union sovietica',
+  'insumo':     'insumos',
+  'sobres':     'sobre',
+  'carpetas':   'carpeta',
+  'folios':     'folio',
+  'carton':     'cartoncito',
+  'cartones':   'cartoncito',
 };
 
 function stripAccents(str) {
@@ -767,8 +774,8 @@ function getFilteredCoins() {
       const predicate = CATEGORY_PREDICATES[activeCategory];
       if (predicate && !predicate(coin)) return false;
     } else {
-      // Default view: hide books and medals/tokens (exclusive to their own filters)
-      if (isBook(coin) || isMedalOrToken(coin)) return false;
+      // Default view: hide books and medals/tokens when no search term is entered
+      if (!searchTerm && (isBook(coin) || isMedalOrToken(coin))) return false;
     }
 
     if (activeSubFilter && activeCategory) {
@@ -1549,6 +1556,29 @@ loadCoins().then((ok) => {
   if (!ok) return;
 
   hydrateIngresosEntries();
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const searchParam = urlParams.get('buscar') || urlParams.get('q') || urlParams.get('search');
+  const catParam = urlParams.get('cat') || urlParams.get('categoria') || urlParams.get('category');
+
+  if (searchParam) {
+    showCatalog();
+    searchInput.value = searchParam;
+    clearSearchBtn.classList.add('is-visible');
+    activeCategory = null;
+    activeSubFilter = null;
+    saveState(0);
+    renderCoins(getFilteredCoins(), true);
+    initRevealEffects();
+    scheduleHeaderMuteObserver();
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    return;
+  }
+
+  if (catParam) {
+    enterCatalog(catParam);
+    return;
+  }
 
   const isBackFwd = isBackForwardNavigation();
   const state     = loadSavedState();
