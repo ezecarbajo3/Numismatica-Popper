@@ -16673,5 +16673,23 @@
     "images": [
       "images/1079A.jpeg"
     ]
+  },
+  {
+    "id": 1080,
+    "title": "Carpeta chica",
+    "country": "Insumos",
+    "price": "Consultar",
+    "images": [
+      "images/1080A.jpeg"
+    ]
+  },
+  {
+    "id": 1081,
+    "title": "Carpeta grande",
+    "country": "Insumos",
+    "price": "Consultar",
+    "images": [
+      "images/1081A.jpeg"
+    ]
   }
 ]
