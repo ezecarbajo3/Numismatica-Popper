@@ -6477,7 +6477,9 @@
     "group_id": "ar-50cents-conmemorativas",
     "group_label": "50 Centavos Conmemorativas",
     "reference": "CJ# 5.5",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-19T01:29:34.668682+00:00"
   },
   {
     "id": 503,
