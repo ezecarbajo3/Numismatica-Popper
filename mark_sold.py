@@ -39,8 +39,8 @@ def parse_sales_text(text):
         if not line_clean:
             continue
 
-        m1 = re.match(r'^(?:id\s+)?(?P<id>\d+)\s+(?P<price>[$]?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)\s+(?P<clients>.+)$', line_clean, re.IGNORECASE)
-        m2 = re.match(r'^(?:id\s+)?(?P<id>\d+)\s+(?P<clients>.+?)\s+(?P<price>[$]?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)$', line_clean, re.IGNORECASE)
+        m1 = re.match(r'^(?:id\s+)?(?P<id>\d+)\s+(?:a\s+|por\s+)?(?P<price>[$]?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)\s+(?P<clients>.+)$', line_clean, re.IGNORECASE)
+        m2 = re.match(r'^(?:id\s+)?(?P<id>\d+)\s+(?P<clients>.+?)\s+(?:a\s+|por\s+)?(?P<price>[$]?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)$', line_clean, re.IGNORECASE)
 
         m = m1 or m2
         if m:
@@ -74,9 +74,9 @@ def parse_sales_text(text):
             # Sub pattern matching
             pattern = re.compile(
                 r'(?:id\s+)?(?P<id>\d+)\s+'
-                r'(?P<price>(?:\$)?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)\s+'
+                r'(?:a\s+|por\s+)?(?P<price>(?:\$)?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)\s+'
                 r'(?P<clients>.+?)'
-                r'(?=(?:\s+(?:id\s+)?\d+\s+(?:\$)?\d+)|$)',
+                r'(?=(?:\s+(?:id\s+)?\d+\s+(?:a\s+|por\s+)?(?:\$)?\d+)|$)',
                 re.IGNORECASE
             )
             matches = list(pattern.finditer(line_clean))
