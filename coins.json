@@ -16831,7 +16831,7 @@
     "year": 2013,
     "price": "12 USD",
     "costo": 9.0,
-    "cantidad": 0,
+    "cantidad": 1,
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "CJ# 343 / CJ# 344",
@@ -16844,9 +16844,7 @@
       "images/1089E.jpeg",
       "images/1089F.jpeg"
     ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:57:26.790566+00:00"
+    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
   {
     "id": 1090,
@@ -17324,7 +17322,7 @@
     "year": 2014,
     "price": "3.5 USD",
     "costo": 2.5,
-    "cantidad": 1,
+    "cantidad": 0,
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "KM# 8",
@@ -17333,7 +17331,9 @@
       "images/1113A.jpeg",
       "images/1113B.jpeg"
     ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
+    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-21T22:26:47.041248+00:00"
   },
   {
     "id": 1114,
@@ -17463,7 +17463,7 @@
     "year": 2025,
     "price": "2.5 USD",
     "costo": 0.9,
-    "cantidad": 2,
+    "cantidad": 3,
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "",
