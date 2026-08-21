@@ -16923,50 +16923,6 @@
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
   {
-    "id": 1094,
-    "title": "1 Dólar 1982",
-    "country": "Canadá",
-    "metal": "Níquel",
-    "year": 1982,
-    "price": "4 USD",
-    "costo": 3.0,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 134",
-    "description": "Patriación de la Constitución de Canadá (1982). Cuadro de los Padres de la Confederación.",
-    "images": [
-      "images/1094A.jpeg",
-      "images/1094B.jpeg",
-      "images/1094C.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
-  },
-  {
-    "id": 1095,
-    "title": "1 Dólar 2022",
-    "country": "Canadá",
-    "metal": "Acero bañado en latón",
-    "year": 2022,
-    "price": "3.5 USD",
-    "costo": 2.5,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 3183",
-    "description": "Homenaje a Oscar Peterson, legendario pianista y compositor de jazz (con aplicación de color).",
-    "images": [
-      "images/1095A.jpeg",
-      "images/1095B.jpeg",
-      "images/1095C.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
-  },
-  {
     "id": 1096,
     "title": "1 Dólar 2023",
     "country": "Canadá",
@@ -16987,28 +16943,6 @@
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
   {
-    "id": 1097,
-    "title": "1 Dólar 2024",
-    "country": "Canadá",
-    "metal": "Acero bañado en latón",
-    "year": 2024,
-    "price": "3.5 USD",
-    "costo": 2.5,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 3447",
-    "description": "150° Aniversario del nacimiento de Lucy Maud Montgomery, autora de Anne of Green Gables (con aplicación de color).",
-    "images": [
-      "images/1097A.jpeg",
-      "images/1097B.jpeg",
-      "images/1097C.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
-  },
-  {
     "id": 1098,
     "title": "1 Dólar 2025",
     "country": "Canadá",
@@ -17026,48 +16960,6 @@
       "images/1098B.jpeg"
     ],
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
-    "id": 1099,
-    "title": "2 Dólares 2022",
-    "country": "Canadá",
-    "metal": "Bimetálica (aro níquel negro)",
-    "year": 2022,
-    "price": "5.5 USD",
-    "costo": 4.5,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 3217",
-    "description": "Homenaje póstumo y luto por la Reina Isabel II (aro exterior de níquel negro / oscurecido).",
-    "images": [
-      "images/1099A.jpeg",
-      "images/1099B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
-  },
-  {
-    "id": 1100,
-    "title": "2 Dólares 2024",
-    "country": "Canadá",
-    "metal": "Bimetálica",
-    "year": 2024,
-    "price": "5.5 USD",
-    "costo": 4.5,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 3448",
-    "description": "Centenario de la Real Fuerza Aérea Canadiense (RCAF) (con aplicación de color).",
-    "images": [
-      "images/1100A.jpeg",
-      "images/1100B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
   },
   {
     "id": 1101,
@@ -17126,73 +17018,6 @@
       "images/1103B.jpeg"
     ],
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
-    "id": 1104,
-    "title": "5 Yuan 2017",
-    "country": "China",
-    "metal": "Latón",
-    "year": 2017,
-    "price": "4.5 USD",
-    "costo": 3.0,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 2252",
-    "description": "Arte de la caligrafía tradicional china (Kai Shu / Regular Script).",
-    "images": [
-      "images/1104A.jpeg",
-      "images/1104B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
-  },
-  {
-    "id": 1105,
-    "title": "5 Yuan 2019",
-    "country": "China",
-    "metal": "Latón",
-    "year": 2019,
-    "price": "5.5 USD",
-    "costo": 4.0,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 2449",
-    "description": "Patrimonio de la Humanidad - Monte Taishan (formato cuadrangular con esquinas redondeadas).",
-    "images": [
-      "images/1105A.jpeg",
-      "images/1105B.jpeg",
-      "images/1105C.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
-  },
-  {
-    "id": 1106,
-    "title": "5 Yuan 2024",
-    "country": "China",
-    "metal": "Latón",
-    "year": 2024,
-    "price": "5.5 USD",
-    "costo": 4.0,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "",
-    "description": "Arte tradicional chino - Ópera de Pekín (personaje Dan/Jing con aplicación de color).",
-    "images": [
-      "images/1106A.jpeg",
-      "images/1106B.jpeg",
-      "images/1106C.jpeg",
-      "images/1106D.jpeg",
-      "images/1106E.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
   },
   {
     "id": 1107,
@@ -17254,29 +17079,6 @@
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
   {
-    "id": 1110,
-    "title": "5 Maloti 2016",
-    "country": "Lesoto",
-    "metal": "Bimetálica",
-    "year": 2016,
-    "price": "3.5 USD",
-    "costo": 2.5,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 137",
-    "description": "50° Aniversario de la Independencia de Lesoto (1966-2016). Reyes Moshoeshoe I, Moshoeshoe II y Letsie III.",
-    "images": [
-      "images/1110A.jpeg",
-      "images/1110B.jpeg",
-      "images/1110C.jpeg",
-      "images/1110D.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
-  },
-  {
     "id": 1111,
     "title": "1 Piastra 1955",
     "country": "Líbano",
@@ -17313,48 +17115,6 @@
       "images/1112B.jpeg"
     ],
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
-    "id": 1113,
-    "title": "20 Ouguiya 2014",
-    "country": "Mauritania",
-    "metal": "Bimetálica",
-    "year": 2014,
-    "price": "3.5 USD",
-    "costo": 2.5,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 8",
-    "description": "Dromedario / camello en el desierto y Escudo Nacional de Mauritania.",
-    "images": [
-      "images/1113A.jpeg",
-      "images/1113B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T22:26:47.041248+00:00"
-  },
-  {
-    "id": 1114,
-    "title": "4 Monedas 2018",
-    "country": "Moldavia",
-    "metal": "Níquel y Bimetálica",
-    "year": 2018,
-    "price": "10 USD",
-    "costo": 6.5,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 315-318",
-    "description": "Set completo de 4 monedas (1, 2, 5 y 10 Lei) cuyos reversos combinados forman el Escudo de Armas de Moldavia.",
-    "images": [
-      "images/1114A.jpeg",
-      "images/1114B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
   },
   {
     "id": 1115,
@@ -17414,48 +17174,6 @@
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
   {
-    "id": 1118,
-    "title": "25 Rublos 2018",
-    "country": "Rusia",
-    "metal": "Cuproníquel",
-    "year": 2018,
-    "price": "3.5 USD",
-    "costo": 2.0,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "Y# 1599",
-    "description": "Copa Mundial de la FIFA Rusia 2018 - Emblema Oficial del torneo.",
-    "images": [
-      "images/1118A.jpeg",
-      "images/1118B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
-  },
-  {
-    "id": 1119,
-    "title": "20 Liras 2000",
-    "country": "San Marino",
-    "metal": "Bronce de aluminio",
-    "year": 2000,
-    "price": "2 USD",
-    "costo": 1.0,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 437",
-    "description": "Las Tres Torres del Monte Titano de San Marino.",
-    "images": [
-      "images/1119A.jpeg",
-      "images/1119B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
-  },
-  {
     "id": 1120,
     "title": "5 Cents 2025",
     "country": "San Martín (Países Bajos)",
@@ -17492,48 +17210,6 @@
       "images/1121B.jpeg"
     ],
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
-    "id": 1122,
-    "title": "5 Pounds 2003",
-    "country": "Siria",
-    "metal": "Acero niquelado",
-    "year": 2003,
-    "price": "2.5 USD",
-    "costo": 1.5,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 129",
-    "description": "Ciudadela histórica de Alepo y Escudo Nacional con el Halcón de Quraish.",
-    "images": [
-      "images/1122A.jpeg",
-      "images/1122B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
-  },
-  {
-    "id": 1123,
-    "title": "5 Para 1979",
-    "country": "Yugoslavia",
-    "metal": "Bronce de aluminio",
-    "year": 1979,
-    "price": "2 USD",
-    "costo": 1.0,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 55",
-    "description": "Escudo de armas de la República Federativa Socialista de Yugoslavia.",
-    "images": [
-      "images/1123A.jpeg",
-      "images/1123B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-21T15:56:48.269300+00:00"
   },
   {
     "id": 1124,
