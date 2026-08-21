@@ -17379,5 +17379,24 @@
     "description": "Sol de Mayo. Dodecagonal (12 lados). Ceca de Santiago (So).",
     "publishedAt": "2026-08-21T16:59:56.406985+00:00",
     "costo": 0.97
+  },
+  {
+    "id": 1133,
+    "title": "1 Peso 1877",
+    "country": "Uruguay",
+    "metal": "Plata 900",
+    "year": 1877,
+    "price": "80 USD",
+    "images": [
+      "images/1133A.jpeg",
+      "images/1133B.jpeg"
+    ],
+    "reference": "KM# 17",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "Peso de plata de los inicios de la República Oriental del Uruguay.",
+    "publishedAt": "2026-08-21T23:03:10.808412+00:00",
+    "costo": 70.0,
+    "mintage": 3000000
   }
 ]
