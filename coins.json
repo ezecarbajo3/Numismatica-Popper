@@ -16831,7 +16831,7 @@
     "year": 2013,
     "price": "12 USD",
     "costo": 9.0,
-    "cantidad": 1,
+    "cantidad": 0,
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "CJ# 343 / CJ# 344",
@@ -16844,7 +16844,9 @@
       "images/1089E.jpeg",
       "images/1089F.jpeg"
     ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
+    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-21T15:57:26.790566+00:00"
   },
   {
     "id": 1090,
