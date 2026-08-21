@@ -17534,5 +17534,176 @@
     "publishedAt": "2026-08-19T22:53:10.802456+00:00",
     "status": "sold",
     "soldAt": "2026-08-21T15:56:48.269300+00:00"
+  },
+  {
+    "id": 1124,
+    "title": "5 Taka",
+    "country": "Bangladés",
+    "metal": "Acero inoxidable",
+    "year": 2006,
+    "price": "4 USD",
+    "images": [
+      "images/1124A.jpeg",
+      "images/1124B.jpeg"
+    ],
+    "reference": "KM# 26.2",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Puente Jamuna (Bangabandhu Bridge).",
+    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
+    "group_id": "ba-5-taka",
+    "group_label": "5 Taka",
+    "costo": 0.0
+  },
+  {
+    "id": 1125,
+    "title": "1 Taka",
+    "country": "Bangladés",
+    "metal": "Acero",
+    "year": 1993,
+    "price": "4 USD",
+    "images": [
+      "images/1125A.jpeg",
+      "images/1125B.jpeg"
+    ],
+    "reference": "KM# 9a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Familia planificada - Alimentos para todos.",
+    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
+    "group_id": "ba-1-taka",
+    "group_label": "1 Taka",
+    "costo": 0.0
+  },
+  {
+    "id": 1126,
+    "title": "5 Taka",
+    "country": "Bangladés",
+    "metal": "Acero inoxidable",
+    "year": 2012,
+    "price": "3 USD",
+    "images": [
+      "images/1126A.jpeg",
+      "images/1126B.jpeg"
+    ],
+    "reference": "KM# 33",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Sheikh Mujibur Rahman / Bangladesh Bank.",
+    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
+    "group_id": "ba-5-taka",
+    "group_label": "5 Taka",
+    "costo": 0.0
+  },
+  {
+    "id": 1127,
+    "title": "5 Poisha",
+    "country": "Bangladés",
+    "metal": "Aluminio",
+    "year": 1974,
+    "price": "5 USD",
+    "images": [
+      "images/1127A.jpeg",
+      "images/1127B.jpeg"
+    ],
+    "reference": "KM# 6",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "FAO - Arado y rueda dentada / Agricultura.",
+    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
+    "costo": 2.58,
+    "mintage": 5000000
+  },
+  {
+    "id": 1128,
+    "title": "10 Cents",
+    "country": "Países Bajos",
+    "metal": "Zinc",
+    "year": 1942,
+    "price": "3.5 USD",
+    "images": [
+      "images/1128A.jpeg",
+      "images/1128B.jpeg"
+    ],
+    "reference": "KM# 173",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "Ocupación Alemana (Segunda Guerra Mundial) - Tres tulipanes.",
+    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
+    "costo": 1.29
+  },
+  {
+    "id": 1129,
+    "title": "1 Taka",
+    "country": "Bangladés",
+    "metal": "Acero inoxidable",
+    "year": 2010,
+    "price": "3 USD",
+    "images": [
+      "images/1129A.jpeg",
+      "images/1129B.jpeg"
+    ],
+    "reference": "KM# 32",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Sheikh Mujibur Rahman.",
+    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
+    "group_id": "ba-1-taka",
+    "group_label": "1 Taka",
+    "costo": 0.0
+  },
+  {
+    "id": 1130,
+    "title": "1 Poisha",
+    "country": "Bangladés",
+    "metal": "Aluminio",
+    "year": 1974,
+    "price": "3.5 USD",
+    "images": [
+      "images/1130A.jpeg",
+      "images/1130B.jpeg"
+    ],
+    "reference": "KM# 5",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Diseño floral ornamental.",
+    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
+    "costo": 1.94
+  },
+  {
+    "id": 1131,
+    "title": "25 Poisha",
+    "country": "Bangladés",
+    "metal": "Acero",
+    "year": 1980,
+    "price": "3.5 USD",
+    "images": [
+      "images/1131A.jpeg",
+      "images/1131B.jpeg"
+    ],
+    "reference": "KM# 12",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Tigre Real de Bengala.",
+    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
+    "costo": 0.0
+  },
+  {
+    "id": 1132,
+    "title": "1 Centésimo",
+    "country": "Uruguay",
+    "metal": "Aluminio",
+    "year": 1977,
+    "price": "1.5 USD",
+    "images": [
+      "images/1132A.jpeg",
+      "images/1132B.jpeg"
+    ],
+    "reference": "KM# 71",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Sol de Mayo. Dodecagonal (12 lados). Ceca de Santiago (So).",
+    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
+    "costo": 0.97
   }
 ]
