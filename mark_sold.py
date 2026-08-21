@@ -35,6 +35,7 @@ def parse_sales_text(text):
 
     for line in lines:
         line_clean = re.sub(r'\([^\)]*el resto no[^\)]*\)', '', line, flags=re.IGNORECASE).strip()
+        line_clean = re.sub(r'\b(?:pe\s+y\s+mv|pe\s+y\s+mark[\s\-_]sold|mv\s+y\s+pe|pe|mv)\s*$', '', line_clean, flags=re.IGNORECASE).strip()
         if not line_clean:
             continue
 
