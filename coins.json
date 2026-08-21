@@ -7573,8 +7573,7 @@
     "grade_short": "SC",
     "metal": "Aluminio",
     "reference": "KM# 13",
-    "status": "sold",
-    "soldAt": "2026-08-12T07:10:43.674235+00:00",
+    "cantidad": 2,
     "costo": 0
   },
   {
