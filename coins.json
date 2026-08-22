@@ -17792,5 +17792,168 @@
     "description": "",
     "publishedAt": "2026-08-22T16:12:28.212471+00:00",
     "costo": 40.0
+  },
+  {
+    "id": 1155,
+    "title": "1 Dólar Morgan",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1897,
+    "price": "80 USD",
+    "images": [
+      "images/1155A.jpeg",
+      "images/1155B.jpeg"
+    ],
+    "reference": "KM# 110",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "description": "",
+    "publishedAt": "2026-08-22T22:27:19.165116+00:00",
+    "costo": 45.16
+  },
+  {
+    "id": 1156,
+    "title": "5 Deutsche Mark",
+    "country": "Alemania",
+    "metal": "Plata .625",
+    "year": 1965,
+    "price": "20 USD",
+    "images": [
+      "images/1156A.jpeg",
+      "images/1156B.jpeg"
+    ],
+    "reference": "KM# 112.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "",
+    "publishedAt": "2026-08-22T22:27:19.165116+00:00",
+    "group_id": "de-5-deutsche-mark",
+    "group_label": "5 Deutsche Mark",
+    "costo": 7.37,
+    "mintage": "4.050.000"
+  },
+  {
+    "id": 1157,
+    "title": "5 Deutsche Mark",
+    "country": "Alemania",
+    "metal": "Plata .625",
+    "year": 1951,
+    "price": "18 USD",
+    "images": [
+      "images/1157A.jpeg",
+      "images/1157B.jpeg"
+    ],
+    "reference": "KM# 112.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "",
+    "publishedAt": "2026-08-22T22:27:19.165116+00:00",
+    "group_id": "de-5-deutsche-mark",
+    "group_label": "5 Deutsche Mark",
+    "costo": 7.37
+  },
+  {
+    "id": 1158,
+    "title": "50 Schilling",
+    "country": "Austria",
+    "metal": "Plata .900",
+    "year": 1963,
+    "price": "40 USD",
+    "images": [
+      "images/1158A.jpeg",
+      "images/1158B.jpeg"
+    ],
+    "reference": "KM# 2894",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "600 Años de la Unión de Tirol con Austria (1363-1963).",
+    "publishedAt": "2026-08-22T22:27:19.165116+00:00",
+    "group_id": "au-50-schilling",
+    "group_label": "50 Schilling",
+    "costo": 7.37,
+    "mintage": "2.989.600",
+    "commemorates": "600 Años de la Unión de Tirol con Austria"
+  },
+  {
+    "id": 1159,
+    "title": "1/2 Dólar Franklin",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1958,
+    "price": "30 USD",
+    "images": [
+      "images/1159A.jpeg",
+      "images/1159B.jpeg"
+    ],
+    "reference": "KM# 199",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "description": "",
+    "publishedAt": "2026-08-22T22:27:19.165116+00:00",
+    "group_id": "us-half-dollar-franklin",
+    "group_label": "1/2 Dólar Franklin",
+    "costo": 7.37
+  },
+  {
+    "id": 1160,
+    "title": "50 Schilling",
+    "country": "Austria",
+    "metal": "Plata .900",
+    "year": 1969,
+    "price": "40 USD",
+    "images": [
+      "images/1160A.jpeg",
+      "images/1160B.jpeg"
+    ],
+    "reference": "KM# 2906",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "450 Aniversario de la Muerte de Maximiliano I de Habsburgo (1493-1519).",
+    "publishedAt": "2026-08-22T22:27:19.165116+00:00",
+    "group_id": "au-50-schilling",
+    "group_label": "50 Schilling",
+    "costo": 7.37,
+    "mintage": "2.045.000",
+    "commemorates": "450 Aniversario de la Muerte de Maximiliano I"
+  },
+  {
+    "id": 1161,
+    "title": "25 Schilling",
+    "country": "Austria",
+    "metal": "Plata .800",
+    "year": 1957,
+    "price": "25 USD",
+    "images": [
+      "images/1161A.jpeg",
+      "images/1161B.jpeg"
+    ],
+    "reference": "KM# 2883",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "800 Años de la Basílica de Mariazell (1157-1957).",
+    "publishedAt": "2026-08-22T22:27:19.165116+00:00",
+    "costo": 7.37,
+    "mintage": "4.999.000",
+    "commemorates": "800 Años de la Basílica de Mariazell"
+  },
+  {
+    "id": 1162,
+    "title": "5 Deutsche Mark",
+    "country": "Alemania",
+    "metal": "Plata .625",
+    "year": 1951,
+    "price": "18 USD",
+    "images": [
+      "images/1162A.jpeg",
+      "images/1162B.jpeg"
+    ],
+    "reference": "KM# 112.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "",
+    "publishedAt": "2026-08-22T22:27:19.165116+00:00",
+    "group_id": "de-5-deutsche-mark",
+    "group_label": "5 Deutsche Mark",
+    "costo": 7.37
   }
 ]
