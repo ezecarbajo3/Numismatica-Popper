@@ -17219,7 +17219,9 @@
     "publishedAt": "2026-08-21T16:59:56.406985+00:00",
     "group_id": "ba-5-taka",
     "group_label": "5 Taka",
-    "costo": 0.0
+    "costo": 0.0,
+    "status": "sold",
+    "soldAt": "2026-08-22T12:16:57.728157+00:00"
   },
   {
     "id": 1125,
