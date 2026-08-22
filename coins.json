@@ -17114,7 +17114,7 @@
     "year": 1943,
     "price": "4.5 USD",
     "costo": 2.5,
-    "cantidad": 1,
+    "cantidad": 0,
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "KM# 119",
@@ -17123,7 +17123,9 @@
       "images/1115A.jpeg",
       "images/1115B.jpeg"
     ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
+    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-22T22:47:02.012671+00:00"
   },
   {
     "id": 1116,
@@ -17133,7 +17135,7 @@
     "year": 1943,
     "price": "4.5 USD",
     "costo": 2.5,
-    "cantidad": 2,
+    "cantidad": 1,
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "KM# 120",
@@ -17152,7 +17154,7 @@
     "year": 1945,
     "price": "4.5 USD",
     "costo": 2.5,
-    "cantidad": 1,
+    "cantidad": 0,
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "KM# 121",
@@ -17161,7 +17163,9 @@
       "images/1117A.jpeg",
       "images/1117B.jpeg"
     ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
+    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-22T22:47:02.012671+00:00"
   },
   {
     "id": 1120,
