@@ -17774,5 +17774,23 @@
     "publishedAt": "2026-08-22T16:00:34.563299+00:00",
     "costo": 2.58,
     "cantidad": 2
+  },
+  {
+    "id": 1154,
+    "title": "5 Francos 1837",
+    "country": "Francia",
+    "metal": "Plata .900",
+    "year": 1837,
+    "price": "51.5 USD",
+    "images": [
+      "images/1154A.jpeg",
+      "images/1154B.jpeg"
+    ],
+    "reference": "KM# 749",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "",
+    "publishedAt": "2026-08-22T16:12:28.212471+00:00",
+    "costo": 40.0
   }
 ]
