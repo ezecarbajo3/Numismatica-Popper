@@ -17398,5 +17398,233 @@
     "publishedAt": "2026-08-21T23:03:10.808412+00:00",
     "costo": 70.0,
     "mintage": 3000000
+  },
+  {
+    "id": 1134,
+    "title": "Lote x3 Euro 2017-2025",
+    "country": "Países Bajos",
+    "metal": "Varios",
+    "year": 2025,
+    "price": "5 USD",
+    "images": [
+      "images/1134A.jpeg",
+      "images/1134B.jpeg"
+    ],
+    "reference": "KM# 342, 343, 344",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Lote de 3 piezas de euro (5, 10 y 20 Céntimos) del Rey Felipe con monograma real.",
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00"
+  },
+  {
+    "id": 1135,
+    "title": "5 Chetrums 1975",
+    "country": "Bután",
+    "metal": "Aluminio",
+    "year": 1975,
+    "price": "3.5 USD",
+    "images": [
+      "images/1135A.jpeg",
+      "images/1135B.jpeg"
+    ],
+    "reference": "KM# 37",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "description": "Moneda cuadrada de aluminio con esquinas redondeadas del Reino de Bután bajo el reinado de Jigme Singye Wangchuck.",
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00"
+  },
+  {
+    "id": 1136,
+    "title": "1 Deutsche Mark 1959 D",
+    "country": "Alemania",
+    "metal": "Cuproníquel",
+    "year": 1959,
+    "price": "4 USD",
+    "images": [
+      "images/1136A.jpeg",
+      "images/1136B.jpeg"
+    ],
+    "reference": "KM# 110",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "1 Marco alemán de la República Federal de Alemania, acuñado en la ceca D (Múnich).",
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00",
+    "group_id": "de-1-deutsche-mark",
+    "group_label": "1 Deutsche Mark"
+  },
+  {
+    "id": 1137,
+    "title": "1 Deutsche Mark 1984 G",
+    "country": "Alemania",
+    "metal": "Cuproníquel",
+    "year": 1984,
+    "price": "3.5 USD",
+    "images": [
+      "images/1137A.jpeg",
+      "images/1137B.jpeg"
+    ],
+    "reference": "KM# 110",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "1 Marco alemán de la República Federal de Alemania, acuñado en la ceca G (Karlsruhe).",
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00",
+    "group_id": "de-1-deutsche-mark",
+    "group_label": "1 Deutsche Mark"
+  },
+  {
+    "id": 1138,
+    "title": "1 Deutsche Mark 1991 F",
+    "country": "Alemania",
+    "metal": "Cuproníquel",
+    "year": 1991,
+    "price": "3.5 USD",
+    "images": [
+      "images/1138A.jpeg",
+      "images/1138B.jpeg"
+    ],
+    "reference": "KM# 110",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "1 Marco alemán posterior a la reunificación alemana, acuñado en la ceca F (Stuttgart).",
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00",
+    "group_id": "de-1-deutsche-mark",
+    "group_label": "1 Deutsche Mark"
+  },
+  {
+    "id": 1139,
+    "title": "5 Francos 1956",
+    "country": "Congo Belga y Ruanda-Urundi",
+    "metal": "Aluminio",
+    "year": 1956,
+    "price": "6 USD",
+    "images": [
+      "images/1139A.jpeg",
+      "images/1139B.jpeg"
+    ],
+    "reference": "KM# 3",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "description": "Moneda colonial de 5 Francos con palmera africana y escudo coronado de Bélgica.",
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00"
+  },
+  {
+    "id": 1140,
+    "title": "Lote x3 Dinara 2023",
+    "country": "Serbia",
+    "metal": "Acero latonado",
+    "year": 2023,
+    "price": "5 USD",
+    "images": [
+      "images/1140A.jpeg"
+    ],
+    "reference": "KM# 54, 55, 56a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Lote de 3 monedas de Serbia del año 2023: 1 Dinar (Banco Nacional), 2 Dinara (Monasterio Gračanica) y 5 Dinara (Monasterio Krušedol).",
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00"
+  },
+  {
+    "id": 1141,
+    "title": "2 Dinara 2009",
+    "country": "Serbia",
+    "metal": "Acero latonado",
+    "year": 2009,
+    "price": "2.5 USD",
+    "images": [
+      "images/1141A.jpeg",
+      "images/1141B.jpeg"
+    ],
+    "reference": "KM# 49",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "description": "2 Dinara de la República de Serbia con la fachada del Monasterio de Gračanica y el escudo nacional.",
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00"
+  },
+  {
+    "id": 1142,
+    "title": "1 Centesimo 1900 R",
+    "country": "Italia",
+    "metal": "Cobre",
+    "year": 1900,
+    "price": "3.5 USD",
+    "images": [
+      "images/1142A.jpeg",
+      "images/1142B.jpeg"
+    ],
+    "reference": "KM# 29",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "description": "1 Centésimo del Reino de Italia bajo el reinado de Umberto I, ceca de Roma (R).",
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00"
+  },
+  {
+    "id": 1143,
+    "title": "10 Centesimi 1929 R",
+    "country": "Italia",
+    "metal": "Cobre",
+    "year": 1929,
+    "price": "2.5 USD",
+    "images": [
+      "images/1143A.jpeg",
+      "images/1143B.jpeg"
+    ],
+    "reference": "KM# 60",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "Clásica moneda de 10 Centesimi con el diseño de la abeja obrera sobre flor (Ape), ceca de Roma (R).",
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00",
+    "group_id": "it-10centesimi-ape",
+    "group_label": "10 Centesimi Ape"
+  },
+  {
+    "id": 1144,
+    "title": "25 Poisha 1973",
+    "country": "Bangladesh",
+    "metal": "Acero inoxidable",
+    "year": 1973,
+    "price": "2.5 USD",
+    "images": [
+      "images/1144A.jpeg",
+      "images/1144B.jpeg"
+    ],
+    "reference": "KM# 3",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "description": "25 Poisha con el pez nacional Hilsha (Rupchanda) y el emblema del lirio de agua (Shapla).",
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00"
+  },
+  {
+    "id": 1145,
+    "title": "100 Lei 1991",
+    "country": "Rumania",
+    "metal": "Acero niquelado",
+    "year": 1991,
+    "price": "2.5 USD",
+    "images": [
+      "images/1145A.jpeg",
+      "images/1145B.jpeg"
+    ],
+    "reference": "KM# 111",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "100 Lei conmemorativa de Mihai Viteazul (Miguel el Valiente), gobernante y unificador de Rumania.",
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00"
+  },
+  {
+    "id": 1146,
+    "title": "5 Fen 1982",
+    "country": "China",
+    "metal": "Aluminio",
+    "year": 1982,
+    "price": "2.5 USD",
+    "images": [
+      "images/1146A.jpeg",
+      "images/1146B.jpeg"
+    ],
+    "reference": "KM# 3",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "5 Fen de la República Popular China con espigas de arroz y el escudo nacional en la Puerta de Tiananmen.",
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00"
   }
 ]
