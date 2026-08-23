@@ -17663,7 +17663,9 @@
     "description": "Centenario del Comité Olímpico Internacional (Pierre de Coubertin)",
     "publishedAt": "2026-08-22T16:00:34.563299+00:00",
     "costo": 4.52,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-08-23T02:54:16.458662+00:00"
   },
   {
     "id": 1148,
