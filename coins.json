@@ -17836,7 +17836,9 @@
     "group_id": "de-5-deutsche-mark",
     "group_label": "5 Deutsche Mark",
     "costo": 7.37,
-    "mintage": "4.050.000"
+    "mintage": "4.050.000",
+    "status": "sold",
+    "soldAt": "2026-08-26T01:41:37.411611+00:00"
   },
   {
     "id": 1157,
