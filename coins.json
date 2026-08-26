@@ -18243,5 +18243,49 @@
     "description": "Federico VII. 32 USD de catálogo.",
     "publishedAt": "2026-08-26T22:58:42.644435+00:00",
     "costo": 0.0
+  },
+  {
+    "id": 1176,
+    "title": "50 Pence Johnson's Dictionary",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 2005,
+    "price": "3 USD",
+    "images": [
+      "images/1176A.jpeg",
+      "images/1176B.jpeg"
+    ],
+    "reference": "KM# 1050",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 3808,
+    "peso": "",
+    "diametro": "",
+    "description": "Conmemorativa del 250.° aniversario del Diccionario de Samuel Johnson (1755). Entrada 'FIFTY PENCE'.",
+    "publishedAt": "2026-08-26T23:01:53.314486+00:00",
+    "costo": 1.0,
+    "commemorates": "250.° Aniversario del Diccionario de la Lengua Inglesa de Samuel Johnson (1755)."
+  },
+  {
+    "id": 1177,
+    "title": "50 Pence 50 Years of Pride UK",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 2022,
+    "price": "4 USD",
+    "images": [
+      "images/1177A.jpeg",
+      "images/1177B.jpeg"
+    ],
+    "reference": "KM# 2158",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 25,
+    "peso": "",
+    "diametro": "",
+    "description": "Conmemorativa de los 50 años del movimiento Pride en el Reino Unido (1972-2022). Palabras 'Protest', 'Unity', 'Pride', 'Equality' y 'Visibility'.",
+    "publishedAt": "2026-08-26T23:01:53.314486+00:00",
+    "costo": 1.0,
+    "commemorates": "50.° Aniversario del movimiento Pride en el Reino Unido (1972-2022)."
   }
 ]
