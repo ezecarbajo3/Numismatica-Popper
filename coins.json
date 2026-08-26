@@ -17963,5 +17963,26 @@
     "group_id": "de-5-deutsche-mark",
     "group_label": "5 Deutsche Mark",
     "costo": 7.37
+  },
+  {
+    "id": 1163,
+    "title": "1 Euro Cent",
+    "country": "Francia",
+    "metal": "Cobre",
+    "year": 2020,
+    "price": "10.0 USD",
+    "images": [
+      "images/1163A.jpeg",
+      "images/1163B.jpeg"
+    ],
+    "reference": "KM# 1282",
+    "grade": "Sin Circular +",
+    "grade_short": "SC+",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-26T15:04:52.486643+00:00",
+    "costo": 5.0
   }
 ]
