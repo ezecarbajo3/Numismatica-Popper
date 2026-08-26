@@ -18136,5 +18136,112 @@
     "group_id": "fr-2euro",
     "group_label": "2 Euro",
     "costo": 2.2
+  },
+  {
+    "id": 1171,
+    "title": "100 Francs CFA",
+    "country": "Estados del África Occidental",
+    "metal": "Níquel",
+    "year": 1967,
+    "price": "2.5 USD",
+    "images": [
+      "images/1171A.jpeg",
+      "images/1171B.jpeg"
+    ],
+    "reference": "KM# 4",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Primer año de emisión.",
+    "publishedAt": "2026-08-26T22:58:42.644435+00:00",
+    "costo": 0.55
+  },
+  {
+    "id": 1172,
+    "title": "1 Duit",
+    "country": "Indias Orientales Neerlandesas",
+    "metal": "Cobre",
+    "year": 1790,
+    "price": "10 USD",
+    "images": [
+      "images/1172A.jpeg",
+      "images/1172B.jpeg"
+    ],
+    "reference": "KM# 111",
+    "grade": "Bueno +",
+    "grade_short": "B+",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Monograma VOC de la Compañía Neerlandesa de las Indias Orientales. Escudo de armas de Holanda.",
+    "publishedAt": "2026-08-26T22:58:42.644435+00:00",
+    "costo": 6.0
+  },
+  {
+    "id": 1173,
+    "title": "1 Gulden",
+    "country": "Países Bajos",
+    "metal": "Níquel",
+    "year": 1980,
+    "price": "3 USD",
+    "images": [
+      "images/1173A.jpeg",
+      "images/1173B.jpeg"
+    ],
+    "reference": "KM# 200",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Conmemorativa del cambio de trono (30 de abril de 1980). Doble efigie de Juliana y Beatriz.",
+    "publishedAt": "2026-08-26T22:58:42.644435+00:00",
+    "costo": 0.77,
+    "cantidad": 3,
+    "commemorates": "Doble efigie de la reina Juliana y la reina Beatriz (Cambio de trono, 30 de abril de 1980)."
+  },
+  {
+    "id": 1174,
+    "title": "1 Centime Dupré",
+    "country": "Francia",
+    "metal": "Cobre",
+    "year": 1797,
+    "price": "20 USD",
+    "images": [
+      "images/1174A.jpeg",
+      "images/1174B.jpeg"
+    ],
+    "reference": "KM# 646",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "L'An 6 (1797-1798), ceca A (París). Grabado por Augustin Dupré con busto de la Libertad.",
+    "publishedAt": "2026-08-26T22:58:42.644435+00:00",
+    "costo": 0.0
+  },
+  {
+    "id": 1175,
+    "title": "4 Skilling",
+    "country": "Dinamarca",
+    "metal": "Vellón (Plata .250)",
+    "year": 1854,
+    "price": "25 USD",
+    "images": [
+      "images/1175A.jpeg",
+      "images/1175B.jpeg"
+    ],
+    "reference": "KM# 758",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Federico VII. 32 USD de catálogo.",
+    "publishedAt": "2026-08-26T22:58:42.644435+00:00",
+    "costo": 0.0
   }
 ]
