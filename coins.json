@@ -17966,22 +17966,22 @@
   },
   {
     "id": 1163,
-    "title": "1 Euro Cent",
+    "title": "2 Euro",
     "country": "Francia",
-    "metal": "Cobre",
+    "metal": "Bimetálica (centro de níquel-latón en anillo de cuproníquel)",
     "year": 2020,
     "price": "10.0 USD",
     "images": [
       "images/1163A.jpeg",
       "images/1163B.jpeg"
     ],
-    "reference": "KM# 1282",
+    "reference": "KM# 1284",
     "grade": "Sin Circular +",
     "grade_short": "SC+",
     "mintage": "",
     "peso": "",
     "diametro": "",
-    "description": "",
+    "description": "Árbol de Joaquín Jiménez (\"L'arbre étoilé\") en hexágono.",
     "publishedAt": "2026-08-26T15:04:52.486643+00:00",
     "costo": 5.0
   }
