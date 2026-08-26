@@ -17984,5 +17984,26 @@
     "description": "Árbol de Joaquín Jiménez (\"L'arbre étoilé\") en hexágono.",
     "publishedAt": "2026-08-26T15:04:52.486643+00:00",
     "costo": 5.0
+  },
+  {
+    "id": 1164,
+    "title": "Moneda",
+    "country": "Desconocido",
+    "metal": "Papel",
+    "year": 2022,
+    "price": "6.5 USD",
+    "images": [
+      "images/1164A.jpeg",
+      "images/1164B.jpeg"
+    ],
+    "reference": "P# 365",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-26T15:37:44.118614+00:00",
+    "costo": 3.22
   }
 ]
