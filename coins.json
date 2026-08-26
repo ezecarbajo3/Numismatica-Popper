@@ -18287,5 +18287,115 @@
     "publishedAt": "2026-08-26T23:01:53.314486+00:00",
     "costo": 1.0,
     "commemorates": "50.° Aniversario del movimiento Pride en el Reino Unido (1972-2022)."
+  },
+  {
+    "id": 1178,
+    "title": "1 Crown",
+    "country": "Tristán de Acuña",
+    "metal": "Cuproníquel",
+    "year": 1978,
+    "price": "16 USD",
+    "images": [
+      "images/1178A.jpeg",
+      "images/1178B.jpeg"
+    ],
+    "reference": "KM# 2",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "28.47 g",
+    "diametro": "38.61 mm",
+    "description": "Conmemorativa del 25° aniversario de la coronación de la reina Isabel II (1953-1978). En anverso efigie real, en reverso escudo con unicornio y langosta de roca (Jasus paulensis).",
+    "publishedAt": "2026-08-26T23:47:29.444774+00:00",
+    "costo": 6.0,
+    "cantidad": 2,
+    "commemorates": "25° Aniversario de la Coronación de la Reina Isabel II (1953-1978)."
+  },
+  {
+    "id": 1179,
+    "title": "25 Pence",
+    "country": "Tristán de Acuña",
+    "metal": "Cuproníquel",
+    "year": 1980,
+    "price": "18 USD",
+    "images": [
+      "images/1179A.jpeg",
+      "images/1179B.jpeg"
+    ],
+    "reference": "KM# 3",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "28.47 g",
+    "diametro": "38.61 mm",
+    "description": "Conmemorativa del 80° cumpleaños de la Reina Madre (4 de agosto de 1980). En reverso efigie coronada mirando hacia la izquierda.",
+    "publishedAt": "2026-08-26T23:47:29.444774+00:00",
+    "costo": 6.0,
+    "cantidad": 2,
+    "commemorates": "80° Cumpleaños de la Reina Madre (1900-1980)."
+  },
+  {
+    "id": 1180,
+    "title": "25 Pence",
+    "country": "Santa Elena",
+    "metal": "Cuproníquel",
+    "year": 1980,
+    "price": "16 USD",
+    "images": [
+      "images/1180A.jpeg",
+      "images/1180B.jpeg"
+    ],
+    "reference": "KM# 8",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "28.74 g",
+    "diametro": "38.61 mm",
+    "description": "Conmemorativa del 80° aniversario del nacimiento de la Reina Madre. En reverso efigie sobre barco de vela y las colinas de Santa Elena.",
+    "publishedAt": "2026-08-26T23:47:29.444774+00:00",
+    "costo": 6.0,
+    "cantidad": 3,
+    "commemorates": "80° Aniversario del nacimiento de la Reina Madre (1900-1980)."
+  },
+  {
+    "id": 1181,
+    "title": "5 Shillings",
+    "country": "Jersey",
+    "metal": "Cuproníquel",
+    "year": 1966,
+    "price": "12 USD",
+    "images": [
+      "images/1181A.jpeg",
+      "images/1181B.jpeg"
+    ],
+    "reference": "KM# 28",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "28.47 g",
+    "diametro": "38.61 mm",
+    "description": "Conmemorativa del 900° aniversario de la Batalla de Hastings (1066-1966). En reverso escudo con los tres leones de Jersey dividiendo las fechas 1066 y 1966.",
+    "publishedAt": "2026-08-26T23:47:29.444774+00:00",
+    "costo": 6.0,
+    "cantidad": 1,
+    "commemorates": "900° Aniversario de la Batalla de Hastings (1066-1966)."
+  },
+  {
+    "id": 1182,
+    "title": "50 Pence",
+    "country": "Islas Malvinas",
+    "metal": "Cuproníquel",
+    "year": 1980,
+    "price": "20 USD",
+    "images": [
+      "images/1182A.jpeg",
+      "images/1182B.jpeg"
+    ],
+    "reference": "KM# 15",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "28.28 g",
+    "diametro": "38.61 mm",
+    "description": "Conmemorativa del 80° aniversario de la Reina Madre (1900-1980). En reverso busto de la Reina Madre mirando a la izquierda por Philip Nathan.",
+    "publishedAt": "2026-08-26T23:47:29.444774+00:00",
+    "costo": 6.0,
+    "cantidad": 2,
+    "commemorates": "80° Aniversario de la Reina Madre (1900-1980)."
   }
 ]
