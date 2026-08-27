@@ -1910,7 +1910,9 @@
     "price": "13 USD",
     "images": [
       "images/183A.jpeg",
-      "images/183B.jpeg"
+      "images/183B.jpeg",
+      "images/183C.jpeg",
+      "images/183D.jpeg"
     ],
     "reference": "CJ# 6.18-6.22",
     "grade": "Sin Circular",
@@ -7766,10 +7768,7 @@
       "images/590A.jpeg",
       "images/590B.jpeg",
       "images/590C.jpeg",
-      "images/590D.jpeg",
-      "images/590E.jpeg",
-      "images/590F.jpeg",
-      "images/590G.jpeg"
+      "images/590D.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
