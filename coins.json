@@ -17384,7 +17384,9 @@
     "grade_short": "SC",
     "description": "Sol de Mayo. Dodecagonal (12 lados). Ceca de Santiago (So).",
     "publishedAt": "2026-08-21T16:59:56.406985+00:00",
-    "costo": 0.97
+    "costo": 0.97,
+    "status": "sold",
+    "soldAt": "2026-08-27T11:51:50.374327+00:00"
   },
   {
     "id": 1133,
