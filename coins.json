@@ -18872,5 +18872,118 @@
     "group_label": "20 Pence",
     "costo": 0.24,
     "cantidad": 2
+  },
+  {
+    "id": 1203,
+    "title": "5 Pence",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1991,
+    "price": "1 USD",
+    "images": [
+      "images/1203A.jpeg",
+      "images/1203B.jpeg"
+    ],
+    "reference": "KM# 937b",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 74975,
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-27T12:42:23.460889+00:00",
+    "group_id": "uk-5pence",
+    "group_label": "5 Pence",
+    "costo": 0.06
+  },
+  {
+    "id": 1204,
+    "title": "5 Pence",
+    "country": "Reino Unido",
+    "metal": "Acero niquelado",
+    "year": 2014,
+    "price": "1 USD",
+    "images": [
+      "images/1204A.jpeg",
+      "images/1204B.jpeg"
+    ],
+    "reference": "KM# 1109d",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 368,
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-27T12:42:23.460889+00:00",
+    "group_id": "uk-5pence",
+    "group_label": "5 Pence",
+    "costo": 0.06
+  },
+  {
+    "id": 1205,
+    "title": "5 Pence",
+    "country": "Reino Unido",
+    "metal": "Acero niquelado",
+    "year": 2017,
+    "price": "1 USD",
+    "images": [
+      "images/1205A.jpeg",
+      "images/1205B.jpeg"
+    ],
+    "reference": "KM# 1334",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-27T12:42:23.460889+00:00",
+    "group_id": "uk-5pence",
+    "group_label": "5 Pence",
+    "costo": 0.06
+  },
+  {
+    "id": 1206,
+    "title": "5 Pence",
+    "country": "Reino Unido",
+    "metal": "Acero niquelado",
+    "year": 2012,
+    "price": "1 USD",
+    "images": [
+      "images/1206A.jpeg",
+      "images/1206B.jpeg"
+    ],
+    "reference": "KM# 1109d",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 995,
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-27T12:42:23.460889+00:00",
+    "group_id": "uk-5pence",
+    "group_label": "5 Pence",
+    "costo": 0.06
+  },
+  {
+    "id": 1207,
+    "title": "2 Pence",
+    "country": "Reino Unido",
+    "metal": "Acero cobreado",
+    "year": 2015,
+    "price": "1 USD",
+    "images": [
+      "images/1207A.jpeg",
+      "images/1207B.jpeg"
+    ],
+    "reference": "KM# 1108",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 1721,
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-27T12:42:23.460889+00:00",
+    "costo": 0.02
   }
 ]
