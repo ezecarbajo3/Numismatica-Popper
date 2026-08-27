@@ -18639,7 +18639,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 1993,
-    "price": "1 USD",
+    "price": "1.5 USD",
     "images": [
       "images/1193A.jpeg",
       "images/1193B.jpeg"
@@ -18654,7 +18654,7 @@
     "publishedAt": "2026-08-27T12:32:10.694758+00:00",
     "group_id": "uk-20pence",
     "group_label": "20 Pence",
-    "costo": 0.0,
+    "costo": 0.24,
     "cantidad": 1
   },
   {
@@ -18663,7 +18663,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 2002,
-    "price": "1 USD",
+    "price": "1.5 USD",
     "images": [
       "images/1194A.jpeg",
       "images/1194B.jpeg"
@@ -18678,7 +18678,7 @@
     "publishedAt": "2026-08-27T12:32:10.694758+00:00",
     "group_id": "uk-20pence",
     "group_label": "20 Pence",
-    "costo": 0.0,
+    "costo": 0.24,
     "cantidad": 1
   },
   {
@@ -18687,7 +18687,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 2006,
-    "price": "1 USD",
+    "price": "1.5 USD",
     "images": [
       "images/1195A.jpeg",
       "images/1195B.jpeg"
@@ -18702,7 +18702,7 @@
     "publishedAt": "2026-08-27T12:32:10.694758+00:00",
     "group_id": "uk-20pence",
     "group_label": "20 Pence",
-    "costo": 0.0,
+    "costo": 0.24,
     "cantidad": 1
   },
   {
@@ -18711,7 +18711,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 2008,
-    "price": "1 USD",
+    "price": "1.5 USD",
     "images": [
       "images/1196A.jpeg",
       "images/1196B.jpeg"
@@ -18726,7 +18726,7 @@
     "publishedAt": "2026-08-27T12:32:10.694758+00:00",
     "group_id": "uk-20pence",
     "group_label": "20 Pence",
-    "costo": 0.0,
+    "costo": 0.24,
     "cantidad": 4
   },
   {
@@ -18735,7 +18735,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 2010,
-    "price": "1 USD",
+    "price": "1.5 USD",
     "images": [
       "images/1197A.jpeg",
       "images/1197B.jpeg"
@@ -18750,7 +18750,7 @@
     "publishedAt": "2026-08-27T12:32:10.694758+00:00",
     "group_id": "uk-20pence",
     "group_label": "20 Pence",
-    "costo": 0.0,
+    "costo": 0.24,
     "cantidad": 1
   },
   {
@@ -18759,7 +18759,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 2011,
-    "price": "1 USD",
+    "price": "1.5 USD",
     "images": [
       "images/1198A.jpeg",
       "images/1198B.jpeg"
@@ -18774,7 +18774,7 @@
     "publishedAt": "2026-08-27T12:32:10.694758+00:00",
     "group_id": "uk-20pence",
     "group_label": "20 Pence",
-    "costo": 0.0,
+    "costo": 0.24,
     "cantidad": 1
   },
   {
@@ -18783,7 +18783,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 2015,
-    "price": "1 USD",
+    "price": "1.5 USD",
     "images": [
       "images/1199A.jpeg",
       "images/1199B.jpeg"
@@ -18798,7 +18798,7 @@
     "publishedAt": "2026-08-27T12:32:10.694758+00:00",
     "group_id": "uk-20pence",
     "group_label": "20 Pence",
-    "costo": 0.0,
+    "costo": 0.24,
     "cantidad": 3
   },
   {
@@ -18807,7 +18807,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 2016,
-    "price": "1 USD",
+    "price": "1.5 USD",
     "images": [
       "images/1200A.jpeg",
       "images/1200B.jpeg"
@@ -18822,7 +18822,7 @@
     "publishedAt": "2026-08-27T12:32:10.694758+00:00",
     "group_id": "uk-20pence",
     "group_label": "20 Pence",
-    "costo": 0.0,
+    "costo": 0.24,
     "cantidad": 2
   },
   {
@@ -18831,7 +18831,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 2020,
-    "price": "1 USD",
+    "price": "1.5 USD",
     "images": [
       "images/1201A.jpeg",
       "images/1201B.jpeg"
@@ -18846,7 +18846,7 @@
     "publishedAt": "2026-08-27T12:32:10.694758+00:00",
     "group_id": "uk-20pence",
     "group_label": "20 Pence",
-    "costo": 0.0,
+    "costo": 0.24,
     "cantidad": 1
   },
   {
@@ -18855,7 +18855,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 2022,
-    "price": "1.5 USD",
+    "price": "2 USD",
     "images": [
       "images/1202A.jpeg",
       "images/1202B.jpeg"
@@ -18870,7 +18870,7 @@
     "publishedAt": "2026-08-27T12:32:10.694758+00:00",
     "group_id": "uk-20pence",
     "group_label": "20 Pence",
-    "costo": 0.0,
+    "costo": 0.24,
     "cantidad": 2
   }
 ]
