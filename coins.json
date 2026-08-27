@@ -18099,7 +18099,9 @@
     "diametro": "",
     "description": "Efigie del rey Felipe (Philippe) de Bélgica.",
     "publishedAt": "2026-08-26T22:25:37.770885+00:00",
-    "costo": 0.6
+    "costo": 0.6,
+    "status": "sold",
+    "soldAt": "2026-08-27T12:53:00.559652+00:00"
   },
   {
     "id": 1169,
