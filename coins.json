@@ -17389,7 +17389,9 @@
     "description": "Peso de plata de los inicios de la República Oriental del Uruguay.",
     "publishedAt": "2026-08-21T23:03:10.808412+00:00",
     "costo": 70.0,
-    "mintage": 3000000
+    "mintage": 3000000,
+    "status": "sold",
+    "soldAt": "2026-08-27T21:13:11.570728+00:00"
   },
   {
     "id": 1134,
