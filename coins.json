@@ -18168,7 +18168,9 @@
     "diametro": "",
     "description": "Primer año de emisión.",
     "publishedAt": "2026-08-26T22:58:42.644435+00:00",
-    "costo": 0.55
+    "costo": 0.55,
+    "status": "sold",
+    "soldAt": "2026-08-27T12:53:32.799152+00:00"
   },
   {
     "id": 1172,
