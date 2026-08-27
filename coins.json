@@ -18191,7 +18191,9 @@
     "diametro": "",
     "description": "Monograma VOC de la Compañía Neerlandesa de las Indias Orientales. Escudo de armas de Holanda.",
     "publishedAt": "2026-08-26T22:58:42.644435+00:00",
-    "costo": 6.0
+    "costo": 6.0,
+    "status": "sold",
+    "soldAt": "2026-08-27T12:56:41.831040+00:00"
   },
   {
     "id": 1173,
