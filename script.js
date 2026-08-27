@@ -188,7 +188,7 @@ function buildGroupIndex() {
     if (!coin.group_id) continue;
     let entry = groupIndex.get(coin.group_id);
     if (!entry) {
-      entry = { minVal: Infinity, minStr: '', count: 0, isNew: false };
+      entry = { minVal: Infinity, minStr: '', count: 0, isNew: false, latestPublishedAt: 0 };
       groupIndex.set(coin.group_id, entry);
     }
     if (coin.status !== 'sold') {
@@ -200,6 +200,12 @@ function buildGroupIndex() {
       }
     }
     if (isNewCoin(coin)) entry.isNew = true;
+    if (coin.publishedAt) {
+      const ts = Date.parse(coin.publishedAt);
+      if (!Number.isNaN(ts) && ts > entry.latestPublishedAt) {
+        entry.latestPublishedAt = ts;
+      }
+    }
   }
 }
 
@@ -889,6 +895,19 @@ function getFaceValue(title) {
 // comparaciones de un sort de 448 elementos. Mismo resultado, mucho más barato.
 const COUNTRY_COLLATOR = new Intl.Collator('es');
 
+function getCoinPublishDate(coin) {
+  if (!coin) return 0;
+  if (coin.group_id) {
+    const entry = groupIndex.get(coin.group_id);
+    if (entry && entry.latestPublishedAt) return entry.latestPublishedAt;
+  }
+  if (coin.publishedAt) {
+    const ts = Date.parse(coin.publishedAt);
+    return Number.isNaN(ts) ? 0 : ts;
+  }
+  return 0;
+}
+
 function compareAlfabetico(a, b) {
   // Inversión view: Lote Plata first, then by purity descending, then year
   if (activeCategory === 'plata') {
@@ -899,6 +918,14 @@ function compareAlfabetico(a, b) {
     const purB = getSilverPurity(b);
     if (purA !== purB) return purB - purA;
     return (Number(a.year) || 0) - (Number(b.year) || 0);
+  }
+
+  // Ingresos view: fecha de publicación más reciente primero, desempate por id desc
+  if (activeCategory === 'ingresos') {
+    const dateA = getCoinPublishDate(a);
+    const dateB = getCoinPublishDate(b);
+    if (dateA !== dateB) return dateB - dateA;
+    return (b.id || 0) - (a.id || 0);
   }
 
   // Default: country A→Z, Argentina subsections, year ascending, face value ascending

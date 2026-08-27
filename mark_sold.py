@@ -6,7 +6,8 @@ import re
 import argparse
 
 _REPO_DIR = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(_REPO_DIR, 'coins.json')
+# POPPER_COINS_JSON permite apuntar a una copia para testear sin tocar el catálogo real
+file_path = os.environ.get("POPPER_COINS_JSON") or os.path.join(_REPO_DIR, 'coins.json')
 
 def parse_sales_text(text):
     """
@@ -130,12 +131,10 @@ def main():
         sys.exit(1)
         
     if not requested_counts:
-        if args.text:
-            print("SUCCESS::Sin monedas de catálogo web para actualizar")
-            sys.exit(0)
-        else:
-            print("ERROR: No valid coin IDs provided")
-            sys.exit(1)
+        # Nunca reportar éxito sin haber tocado nada: el widget lo mostraba como
+        # "Web actualizada" aunque no hubiera resuelto ninguna moneda.
+        print("ERROR: No se resolvió ninguna moneda del catálogo para actualizar")
+        sys.exit(1)
 
     if not os.path.exists(file_path):
         print(f"ERROR: {file_path} not found")
