@@ -17804,24 +17804,6 @@
     "costo": 40.0
   },
   {
-    "id": 1155,
-    "title": "1 Dólar Morgan",
-    "country": "Estados Unidos",
-    "metal": "Plata .900",
-    "year": 1897,
-    "price": "80 USD",
-    "images": [
-      "images/1155A.jpeg",
-      "images/1155B.jpeg"
-    ],
-    "reference": "KM# 110",
-    "grade": "Excelente +",
-    "grade_short": "EX+",
-    "description": "",
-    "publishedAt": "2026-08-22T22:27:19.165116+00:00",
-    "costo": 45.16
-  },
-  {
     "id": 1156,
     "title": "5 Deutsche Mark",
     "country": "Alemania",
@@ -17967,27 +17949,6 @@
     "group_id": "de-5-deutsche-mark",
     "group_label": "5 Deutsche Mark",
     "costo": 7.37
-  },
-  {
-    "id": 1163,
-    "title": "2 Euro",
-    "country": "Francia",
-    "metal": "Bimetálica (centro de níquel-latón en anillo de cuproníquel)",
-    "year": 2020,
-    "price": "10.0 USD",
-    "images": [
-      "images/1163A.jpeg",
-      "images/1163B.jpeg"
-    ],
-    "reference": "KM# 1284",
-    "grade": "Sin Circular +",
-    "grade_short": "SC+",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Árbol de Joaquín Jiménez (\"L'arbre étoilé\") en hexágono.",
-    "publishedAt": "2026-08-26T15:04:52.486643+00:00",
-    "costo": 5.0
   },
   {
     "id": 1164,
