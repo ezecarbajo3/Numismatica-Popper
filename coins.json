@@ -7322,9 +7322,7 @@
     "grade_short": "SC",
     "description": "Túpac Amaru.",
     "reference": "KM# 275",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-27T12:51:48.828970+00:00"
+    "costo": 0
   },
   {
     "id": 566,
@@ -19033,5 +19031,74 @@
     "group_id": "uk-10-pence",
     "group_label": "10 Pence",
     "costo": 0.12
+  },
+  {
+    "id": 1210,
+    "title": "50 Pence",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 2014,
+    "price": "2 USD",
+    "images": [
+      "images/1210A.jpeg",
+      "images/1210B.jpeg"
+    ],
+    "reference": "KM# 1112",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-27T12:51:37.996464+00:00",
+    "group_id": "uk-50pence",
+    "group_label": "50 Pence",
+    "costo": 0.6
+  },
+  {
+    "id": 1211,
+    "title": "50 Pence",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 2019,
+    "price": "2 USD",
+    "images": [
+      "images/1211A.jpeg",
+      "images/1211B.jpeg"
+    ],
+    "reference": "KM# 1337",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-27T12:51:37.996464+00:00",
+    "group_id": "uk-50pence",
+    "group_label": "50 Pence",
+    "costo": 0.6
+  },
+  {
+    "id": 1212,
+    "title": "50 Pence",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 2020,
+    "price": "2 USD",
+    "images": [
+      "images/1212A.jpeg",
+      "images/1212B.jpeg"
+    ],
+    "reference": "KM# 1337",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-27T12:51:37.996464+00:00",
+    "group_id": "uk-50pence",
+    "group_label": "50 Pence",
+    "costo": 0.6
   }
 ]
