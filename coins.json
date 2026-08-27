@@ -18985,5 +18985,51 @@
     "description": "",
     "publishedAt": "2026-08-27T12:42:23.460889+00:00",
     "costo": 0.02
+  },
+  {
+    "id": 1208,
+    "title": "10 Pence",
+    "country": "Reino Unido",
+    "metal": "Plata .925",
+    "year": 2012,
+    "price": "1.5 USD",
+    "images": [
+      "images/1208A.jpeg",
+      "images/1208B.jpeg"
+    ],
+    "reference": "KM# 1110d",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 995,
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-27T12:48:26.617250+00:00",
+    "group_id": "uk-10-pence",
+    "group_label": "10 Pence",
+    "costo": 0.12
+  },
+  {
+    "id": 1209,
+    "title": "10 Pence",
+    "country": "Reino Unido",
+    "metal": "Plata .925",
+    "year": 2015,
+    "price": "1.5 USD",
+    "images": [
+      "images/1209A.jpeg",
+      "images/1209B.jpeg"
+    ],
+    "reference": "KM# 1110d",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 1539,
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-27T12:48:26.617250+00:00",
+    "group_id": "uk-10-pence",
+    "group_label": "10 Pence",
+    "costo": 0.12
   }
 ]
