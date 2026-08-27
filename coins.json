@@ -19185,26 +19185,5 @@
     "group_label": "5 Pence",
     "costo": 0.06,
     "cantidad": 1
-  },
-  {
-    "id": 1218,
-    "title": "1 Penny - George VI (Without \"King and Emperor\") 1950",
-    "country": "Jamaica",
-    "metal": "Níquel",
-    "year": 1950,
-    "price": "15.0 USD",
-    "images": [
-      "images/1218A.jpeg",
-      "images/1218B.jpeg"
-    ],
-    "reference": "KM# 35",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": 600000,
-    "peso": "7.5",
-    "diametro": "27",
-    "description": "",
-    "publishedAt": "2026-08-27T18:53:25.527016+00:00",
-    "costo": 6.0
   }
 ]
