@@ -18393,8 +18393,10 @@
     "description": "Conmemorativa del 900° aniversario de la Batalla de Hastings (1066-1966).",
     "publishedAt": "2026-08-26T23:47:29.444774+00:00",
     "costo": 6.0,
-    "cantidad": 1,
-    "commemorates": "900° Aniversario de la Batalla de Hastings (1066-1966)."
+    "cantidad": 0,
+    "commemorates": "900° Aniversario de la Batalla de Hastings (1066-1966).",
+    "status": "sold",
+    "soldAt": "2026-08-27T12:59:28.931029+00:00"
   },
   {
     "id": 1182,
