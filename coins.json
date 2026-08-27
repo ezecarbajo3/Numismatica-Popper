@@ -18094,7 +18094,9 @@
     "publishedAt": "2026-08-26T22:25:37.770885+00:00",
     "group_id": "fr-2euro",
     "group_label": "2 Euro",
-    "costo": 2.2
+    "costo": 2.2,
+    "status": "sold",
+    "soldAt": "2026-08-27T19:18:55.830560+00:00"
   },
   {
     "id": 1171,
