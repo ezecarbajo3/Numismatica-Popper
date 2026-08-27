@@ -18237,7 +18237,9 @@
     "diametro": "",
     "description": "L'An 6 (1797-1798), ceca A (París). Grabado por Augustin Dupré con busto de la Libertad.",
     "publishedAt": "2026-08-26T22:58:42.644435+00:00",
-    "costo": 0.0
+    "costo": 0.0,
+    "status": "sold",
+    "soldAt": "2026-08-27T12:56:57.880060+00:00"
   },
   {
     "id": 1175,
