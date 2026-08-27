@@ -1919,7 +1919,8 @@
     "grade_short": "SC",
     "mintage": "",
     "description": "",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 3
   },
   {
     "id": 185,
@@ -5106,23 +5107,6 @@
     "costo": 0
   },
   {
-    "id": 430,
-    "title": "1 Peso 1877",
-    "country": "Uruguay",
-    "metal": "0.900 Silver",
-    "year": 1877,
-    "price": "165 USD",
-    "images": [
-      "images/420A.jpeg",
-      "images/420B.jpeg"
-    ],
-    "grade": "Excelente -",
-    "grade_short": "EX-",
-    "reference": "KM# 17",
-    "description": "Peso de plata de los inicios de la República Oriental del Uruguay. Pátina original.",
-    "costo": 0
-  },
-  {
     "id": 431,
     "title": "1 Peso 1995",
     "country": "Argentina",
@@ -7773,7 +7757,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "30 Aniversario",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 591,
