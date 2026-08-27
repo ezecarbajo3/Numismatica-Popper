@@ -17423,7 +17423,9 @@
     "grade_short": "SC",
     "description": "Lote de 3 piezas de euro (5, 10 y 20 Céntimos) del Rey Felipe con monograma real.",
     "publishedAt": "2026-08-22T01:12:55.339717+00:00",
-    "costo": 0.42
+    "costo": 0.42,
+    "status": "sold",
+    "soldAt": "2026-08-27T11:54:32.282055+00:00"
   },
   {
     "id": 1135,
