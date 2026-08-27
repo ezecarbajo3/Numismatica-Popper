@@ -17954,7 +17954,9 @@
     "commemorates": "90.° Aniversario de Jacques Chirac (1932-2019)",
     "description": "90.° aniversario del nacimiento del expresidente de la República Francesa Jacques Chirac (1932-2019).",
     "publishedAt": "2026-08-26T15:37:44.118614+00:00",
-    "costo": 3.22
+    "costo": 3.22,
+    "status": "sold",
+    "soldAt": "2026-08-27T16:16:01.211443-03:00"
   },
   {
     "id": 1165,
