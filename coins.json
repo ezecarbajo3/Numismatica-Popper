@@ -19392,5 +19392,196 @@
     "costo": 0.0,
     "status": "sold",
     "soldAt": "2026-08-28T16:59:47.932289+00:00"
+  },
+  {
+    "id": 1226,
+    "title": "2 Dolares 150 años de la Corte Suprema 2026",
+    "country": "Canadá",
+    "metal": "Cuproníquel",
+    "year": 2026,
+    "price": "5.5 USD",
+    "images": [
+      "images/1226A.jpeg",
+      "images/1226B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
+    "costo": 4.5,
+    "cantidad": 2
+  },
+  {
+    "id": 1227,
+    "title": "10 Yuan Perro 2018",
+    "country": "China",
+    "metal": "Cuproníquel",
+    "year": 2018,
+    "price": "5.0 USD",
+    "images": [
+      "images/1227A.jpeg",
+      "images/1227B.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
+    "costo": 4.0
+  },
+  {
+    "id": 1228,
+    "title": "10 Yuan Serpiente 2025",
+    "country": "China",
+    "metal": "Cuproníquel",
+    "year": 2025,
+    "price": "5.0 USD",
+    "images": [
+      "images/1228A.jpeg",
+      "images/1228B.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
+    "costo": 4.0
+  },
+  {
+    "id": 1229,
+    "title": "KM# 229",
+    "country": "Sri Lanka",
+    "metal": "Cuproníquel",
+    "year": null,
+    "price": "5.0 USD",
+    "images": [
+      "images/1229A.jpeg",
+      "images/1229B.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
+    "costo": 3.22
+  },
+  {
+    "id": 1230,
+    "title": "km# 228",
+    "country": "Sri Lanka",
+    "metal": "Cuproníquel",
+    "year": null,
+    "price": "5.0 USD",
+    "images": [
+      "images/1230A.jpeg",
+      "images/1230B.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
+    "costo": 3.22
+  },
+  {
+    "id": 1231,
+    "title": "km# 226",
+    "country": "Sri Lanka",
+    "metal": "Cuproníquel",
+    "year": null,
+    "price": "5.0 USD",
+    "images": [
+      "images/1231A.jpeg",
+      "images/1231B.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
+    "costo": 3.22
+  },
+  {
+    "id": 1232,
+    "title": "5 yuan juegos olimpicos de invierno 2022",
+    "country": "China",
+    "metal": "Cuproníquel",
+    "year": 2022,
+    "price": "4.0 USD",
+    "images": [
+      "images/1232A.jpeg",
+      "images/1232B.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
+    "costo": 3.0
+  },
+  {
+    "id": 1233,
+    "title": "5 yuan (coloreada) juegos olimpicos de invierno 2022",
+    "country": "China",
+    "metal": "Cuproníquel",
+    "year": 2022,
+    "price": "5.0 USD",
+    "images": [
+      "images/1233A.jpeg",
+      "images/1233B.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
+    "costo": 3.5
+  },
+  {
+    "id": 1234,
+    "title": "5 Yuan (Peking Opera) 2023",
+    "country": "China, República Popular",
+    "metal": "Latón",
+    "year": 2023,
+    "price": "5.5 USD",
+    "images": [
+      "images/1234A.jpeg",
+      "images/1234B.jpeg"
+    ],
+    "reference": "KM# 2841",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "13.1",
+    "diametro": "30",
+    "description": "",
+    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
+    "costo": 4.0,
+    "cantidad": 4
   }
 ]
