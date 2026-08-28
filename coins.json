@@ -19050,8 +19050,7 @@
     "group_id": "uk-50pence",
     "group_label": "50 Pence",
     "costo": 0.6,
-    "status": "sold",
-    "soldAt": "2026-08-28T17:00:58.911603+00:00"
+    "cantidad": 1
   },
   {
     "id": 1212,
