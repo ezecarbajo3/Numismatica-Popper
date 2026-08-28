@@ -8065,7 +8065,9 @@
       "images/608B.jpeg"
     ],
     "country": "Desconocido",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-28T17:03:07.761273+00:00"
   },
   {
     "id": 609,
