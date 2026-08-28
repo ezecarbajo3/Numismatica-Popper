@@ -18746,7 +18746,9 @@
     "group_id": "uk-20pence",
     "group_label": "20 Pence",
     "costo": 0.24,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-08-28T14:59:17.680919+00:00"
   },
   {
     "id": 1199,
