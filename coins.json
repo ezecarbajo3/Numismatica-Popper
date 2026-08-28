@@ -18577,11 +18577,9 @@
     "diametro": "",
     "description": "",
     "costo": 6.0,
-    "cantidad": 0,
+    "cantidad": 1,
     "publishedAt": "2026-08-26T23:55:34.420385+00:00",
-    "commemorates": "80° Cumpleaños de la Reina Madre",
-    "status": "sold",
-    "soldAt": "2026-08-28T14:04:12.594348+00:00"
+    "commemorates": "80° Cumpleaños de la Reina Madre"
   },
   {
     "id": 1192,
