@@ -19455,7 +19455,9 @@
     "diametro": "27",
     "description": "Zodíaco Chino - Año de la Serpiente. Bimetálica con centro de cuproníquel y anillo cobreado.",
     "publishedAt": "2026-08-28T23:32:35.616834+00:00",
-    "costo": 4.0
+    "costo": 4.0,
+    "status": "sold",
+    "soldAt": "2026-08-29T20:01:52.168559+00:00"
   },
   {
     "id": 1229,
@@ -19497,7 +19499,9 @@
     "diametro": "28",
     "description": "150° Aniversario de la Facultad de Medicina de Colombo (1870-2020). Forma heptagonal de Reuleaux (7 lados).",
     "publishedAt": "2026-08-28T23:32:35.616834+00:00",
-    "costo": 3.22
+    "costo": 3.22,
+    "status": "sold",
+    "soldAt": "2026-08-29T20:01:52.168559+00:00"
   },
   {
     "id": 1231,
@@ -19539,7 +19543,9 @@
     "diametro": "30",
     "description": "XXIV Juegos Olímpicos de Invierno Beijing 2022 - Deportes sobre hielo (Patinaje de velocidad en pista corta).",
     "publishedAt": "2026-08-28T23:32:35.616834+00:00",
-    "costo": 3.0
+    "costo": 3.0,
+    "status": "sold",
+    "soldAt": "2026-08-29T20:01:52.168559+00:00"
   },
   {
     "id": 1233,
@@ -19560,7 +19566,9 @@
     "diametro": "30",
     "description": "XXIV Juegos Olímpicos de Invierno Beijing 2022 - Deportes de nieve (Esquí alpino, coloreada).",
     "publishedAt": "2026-08-28T23:32:35.616834+00:00",
-    "costo": 3.5
+    "costo": 3.5,
+    "status": "sold",
+    "soldAt": "2026-08-29T20:01:52.168559+00:00"
   },
   {
     "id": 1234,
@@ -19582,6 +19590,6 @@
     "description": "Arte de la Ópera Tradicional China de Pekín - Personaje emblemático Sheng (rol masculino).",
     "publishedAt": "2026-08-28T23:32:35.616834+00:00",
     "costo": 4.0,
-    "cantidad": 4
+    "cantidad": 3
   }
 ]
