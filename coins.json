@@ -19593,5 +19593,178 @@
     "publishedAt": "2026-08-28T23:32:35.616834+00:00",
     "costo": 4.0,
     "cantidad": 3
+  },
+  {
+    "id": 1235,
+    "title": "sene 2020",
+    "country": "Samoa",
+    "metal": "Aluminio",
+    "year": 2020,
+    "price": "3.0 USD",
+    "images": [
+      "images/1235A.jpeg",
+      "images/1235B.jpeg"
+    ],
+    "reference": "KM# 504",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "0.72",
+    "diametro": "14",
+    "description": "",
+    "publishedAt": "2026-08-29T20:36:29.307537+00:00",
+    "costo": 0.86,
+    "cantidad": 12
+  },
+  {
+    "id": 1236,
+    "title": "km3576a 2025",
+    "country": "Canadá",
+    "metal": "Latón",
+    "year": 2025,
+    "price": "3.5 USD",
+    "images": [
+      "images/1236A.jpeg",
+      "images/1236B.jpeg"
+    ],
+    "reference": "KM# 3576a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 2000000,
+    "peso": "6.27",
+    "diametro": "26.5",
+    "description": "",
+    "publishedAt": "2026-08-29T20:36:29.307537+00:00",
+    "costo": 2.5
+  },
+  {
+    "id": 1237,
+    "title": "km66 1067",
+    "country": "Canadá",
+    "metal": "Cuproníquel",
+    "year": null,
+    "price": "2.5 USD",
+    "images": [
+      "images/1237A.jpeg",
+      "images/1237B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-29T20:36:29.307537+00:00",
+    "costo": 1.5,
+    "cantidad": 2
+  },
+  {
+    "id": 1238,
+    "title": "km1006 1992",
+    "country": "Francia",
+    "metal": "Cuproníquel",
+    "year": 1992,
+    "price": "4.0 USD",
+    "images": [
+      "images/1238A.jpeg",
+      "images/1238B.jpeg"
+    ],
+    "reference": "KM# 1006",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 1850,
+    "peso": "10",
+    "diametro": "29",
+    "description": "",
+    "publishedAt": "2026-08-29T20:36:29.307537+00:00",
+    "costo": 1.93,
+    "cantidad": 2
+  },
+  {
+    "id": 1239,
+    "title": "km 222 2018",
+    "country": "Sri Lanka",
+    "metal": "Cuproníquel",
+    "year": 2018,
+    "price": "4.5 USD",
+    "images": [
+      "images/1239A.jpeg",
+      "images/1239B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-29T20:36:29.307537+00:00",
+    "costo": 2.89
+  },
+  {
+    "id": 1240,
+    "title": "100 pesos 2025",
+    "country": "Chile",
+    "metal": "Bimetálica",
+    "year": 2025,
+    "price": "3.0 USD",
+    "images": [
+      "images/1240A.jpeg",
+      "images/1240B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "7.58",
+    "diametro": "23.5",
+    "description": "",
+    "publishedAt": "2026-08-29T20:36:29.307537+00:00",
+    "costo": 2.5,
+    "cantidad": 3
+  },
+  {
+    "id": 1241,
+    "title": "km510 2004",
+    "country": "Canadá",
+    "metal": "Níquel",
+    "year": 2004,
+    "price": "2.5 USD",
+    "images": [
+      "images/1241A.jpeg",
+      "images/1241B.jpeg"
+    ],
+    "reference": "KM# 510",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "4.4",
+    "diametro": "23.9",
+    "description": "",
+    "publishedAt": "2026-08-29T20:36:29.307537+00:00",
+    "costo": 1.5
+  },
+  {
+    "id": 1242,
+    "title": "rapanui peso 2021",
+    "country": "Numismática Popper",
+    "metal": "Cuproníquel",
+    "year": 2021,
+    "price": "3.0 USD",
+    "images": [
+      "images/1242A.jpeg",
+      "images/1242B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-29T20:36:29.307537+00:00",
+    "costo": 0.86,
+    "cantidad": 12
   }
 ]
