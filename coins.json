@@ -19478,7 +19478,9 @@
     "diametro": "28",
     "description": "150° Aniversario del Censo de Población y Viviendas (1871-2021). Forma heptagonal de Reuleaux (7 lados).",
     "publishedAt": "2026-08-28T23:32:35.616834+00:00",
-    "costo": 3.22
+    "costo": 3.22,
+    "status": "sold",
+    "soldAt": "2026-08-29T20:03:58.884973+00:00"
   },
   {
     "id": 1230,
