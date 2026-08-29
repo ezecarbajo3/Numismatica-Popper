@@ -19199,7 +19199,9 @@
     "group_id": "uk-5pence",
     "group_label": "5 Pence",
     "costo": 0.06,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-08-29T22:15:42.762622+00:00"
   },
   {
     "id": 1218,
