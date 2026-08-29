@@ -19616,7 +19616,7 @@
     "description": "Serie Aves de Samoa - Lori corona azul (Vini australis). Anverso con el escudo nacional de Samoa.",
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
     "costo": 0.86,
-    "cantidad": 12
+    "cantidad": 11
   },
   {
     "id": 1236,
@@ -19637,7 +19637,9 @@
     "diametro": "26.5",
     "description": "150° Aniversario de la creación de la Corte Suprema de Canadá (1875-2025). Versión conmemorativa coloreada con el emblema oficial en rojo.",
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
-    "costo": 2.5
+    "costo": 2.5,
+    "status": "sold",
+    "soldAt": "2026-08-29T22:21:27.084568+00:00"
   },
   {
     "id": 1237,
@@ -19659,7 +19661,7 @@
     "description": "Centenario de la Confederación de Canadá (1867-1967). Liebre americana (conejo saltarín) diseño de Alex Colville y busto de la reina Isabel II.",
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
     "costo": 1.5,
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 1238,
@@ -19681,7 +19683,7 @@
     "description": "10° Aniversario del fallecimiento de Pierre Mendès France (1907-1982), Primer Ministro de Francia. Diseño de Émile Rousseau.",
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
     "costo": 1.93,
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 1239,
@@ -19702,7 +19704,9 @@
     "diametro": "26.4",
     "description": "75° Aniversario del Cuerpo de Señales de Sri Lanka (Sri Lanka Signal Corps, 1943-2018). Emblema militar y valor facial.",
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
-    "costo": 2.89
+    "costo": 2.89,
+    "status": "sold",
+    "soldAt": "2026-08-29T22:21:27.084568+00:00"
   },
   {
     "id": 1240,
@@ -19724,7 +19728,7 @@
     "description": "Moneda bimetálica con mujer mapuche ('Pueblos Originarios') en el anverso y escudo nacional de Chile en el reverso.",
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
     "costo": 2.5,
-    "cantidad": 3
+    "cantidad": 2
   },
   {
     "id": 1241,
@@ -19767,6 +19771,6 @@
     "description": "Emisión de fantasía / exonumia de Isla de Pascua (Rapa Nui). Escultura Moai en el reverso y mapa de la isla con la leyenda 'RAPANUI CHILE 2021' en el anverso.",
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
     "costo": 0.86,
-    "cantidad": 10
+    "cantidad": 9
   }
 ]
