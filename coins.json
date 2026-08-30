@@ -16973,25 +16973,6 @@
     "soldAt": "2026-08-22T22:47:02.012671+00:00"
   },
   {
-    "id": 1120,
-    "title": "5 Cents 2025",
-    "country": "San Martín (Países Bajos)",
-    "metal": "Acero revestido de cobre",
-    "year": 2025,
-    "price": "2.5 USD",
-    "costo": 0.9,
-    "cantidad": 3,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "",
-    "description": "Nueva emisión monetaria de San Martín.",
-    "images": [
-      "images/1120A.jpeg",
-      "images/1120B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
     "id": 1124,
     "title": "5 Taka 2006",
     "country": "Bangladés",
@@ -19785,5 +19766,24 @@
       "images/1257B.jpeg"
     ],
     "publishedAt": "2026-08-30T02:44:10.961879+00:00"
+  },
+  {
+    "id": 1258,
+    "title": "5 Cents 2025",
+    "country": "San Martín (Países Bajos)",
+    "metal": "Acero revestido de cobre",
+    "year": 2025,
+    "price": "2.5 USD",
+    "costo": 0.9,
+    "cantidad": 3,
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "",
+    "description": "Nueva emisión monetaria de San Martín.",
+    "images": [
+      "images/1258A.jpeg",
+      "images/1258B.jpeg"
+    ],
+    "publishedAt": "2026-08-30T02:54:04.395581+00:00"
   }
 ]
