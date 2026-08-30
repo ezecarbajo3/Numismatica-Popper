@@ -13447,9 +13447,11 @@
     "diametro": "",
     "description": "",
     "costo": 6.0,
-    "cantidad": 1,
+    "cantidad": 0,
     "publishedAt": "2026-08-26T23:55:34.420385+00:00",
-    "commemorates": "Delfín de Peale (WWF Silver Proof)"
+    "commemorates": "Delfín de Peale (WWF Silver Proof)",
+    "status": "sold",
+    "soldAt": "2026-08-30T15:22:13.347338+00:00"
   },
   {
     "id": 1193,
