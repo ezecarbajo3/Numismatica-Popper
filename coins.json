@@ -16967,25 +16967,6 @@
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
   {
-    "id": 1101,
-    "title": "2 Dólares 2026",
-    "country": "Canadá",
-    "metal": "Bimetálica",
-    "year": 2026,
-    "price": "5.5 USD",
-    "costo": 4.5,
-    "cantidad": 2,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "",
-    "description": "50° Aniversario de la emblemática Torre CN de Toronto (con aplicación de color).",
-    "images": [
-      "images/1101A.jpeg",
-      "images/1101B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
     "id": 1102,
     "title": "25 Cents 2004",
     "country": "Canadá",
@@ -19431,22 +19412,22 @@
   },
   {
     "id": 1226,
-    "title": "1 Dólar 2025 Corte Suprema",
+    "title": "2 Dólares 2026 Torre CN (Coloreada)",
     "country": "Canadá",
-    "metal": "Acero bañado en latón",
-    "year": 2025,
+    "metal": "Bimetálica",
+    "year": 2026,
     "price": "5.5 USD",
     "images": [
       "images/1226A.jpeg",
       "images/1226B.jpeg"
     ],
-    "reference": "KM# 3576",
+    "reference": "",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "mintage": 1000000,
-    "peso": "6.27",
-    "diametro": "26.5",
-    "description": "150° Aniversario de la creación de la Corte Suprema de Canadá (1875-2025).",
+    "mintage": 2000000,
+    "peso": "6.99",
+    "diametro": "28.0",
+    "description": "50° Aniversario de la emblemática Torre CN de Toronto (1976-2026) con aplicación de color.",
     "publishedAt": "2026-08-28T23:32:35.616834+00:00",
     "costo": 4.5,
     "cantidad": 2
