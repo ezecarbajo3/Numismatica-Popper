@@ -19785,5 +19785,153 @@
       "images/1258B.jpeg"
     ],
     "publishedAt": "2026-08-30T02:54:04.395581+00:00"
+  },
+  {
+    "id": 1259,
+    "title": "25 Līrah / Livres 2002",
+    "country": "Líbano",
+    "metal": "Níquel",
+    "year": 2002,
+    "price": "2.0 USD",
+    "images": [
+      "images/1259A.jpeg",
+      "images/1259B.jpeg"
+    ],
+    "reference": "KM# 40",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "2.82",
+    "diametro": "20.5",
+    "description": "",
+    "publishedAt": "2026-08-30T03:03:02.044991+00:00",
+    "costo": 0.9
+  },
+  {
+    "id": 1260,
+    "title": "50 Sen 1955",
+    "country": "Indonesia (1949-presente)",
+    "metal": "Cuproníquel",
+    "year": 1955,
+    "price": "2.0 USD",
+    "images": [
+      "images/1260A.jpeg",
+      "images/1260B.jpeg"
+    ],
+    "reference": "KM# 10",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "3.24",
+    "diametro": "20",
+    "description": "",
+    "publishedAt": "2026-08-30T03:03:02.044991+00:00",
+    "costo": 0.5
+  },
+  {
+    "id": 1261,
+    "title": "cent 1998",
+    "country": "Chipre",
+    "metal": "Níquel",
+    "year": 1998,
+    "price": "2.0 USD",
+    "images": [
+      "images/1261A.jpeg",
+      "images/1261B.jpeg"
+    ],
+    "reference": "KM# 53.3",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "2",
+    "diametro": "16.5",
+    "description": "",
+    "publishedAt": "2026-08-30T03:03:02.044991+00:00",
+    "costo": 0.8
+  },
+  {
+    "id": 1262,
+    "title": "franc 1992",
+    "country": "Francia",
+    "metal": "Níquel",
+    "year": 1992,
+    "price": "5.0 USD",
+    "images": [
+      "images/1262A.jpeg",
+      "images/1262B.jpeg"
+    ],
+    "reference": "KM# 931.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "4.5",
+    "diametro": "19.5",
+    "description": "",
+    "publishedAt": "2026-08-30T03:03:02.044991+00:00",
+    "costo": 2.57
+  },
+  {
+    "id": 1263,
+    "title": "piastre 1955",
+    "country": "Líbano",
+    "metal": "Bronce",
+    "year": 1955,
+    "price": "5.5 USD",
+    "images": [
+      "images/1263A.jpeg",
+      "images/1263B.jpeg"
+    ],
+    "reference": "KM# 19",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 4000000,
+    "peso": "2",
+    "diametro": "18",
+    "description": "",
+    "publishedAt": "2026-08-30T03:03:02.044991+00:00",
+    "costo": 2.5
+  },
+  {
+    "id": 1264,
+    "title": "5 Yuan (Mount Taishan) 2019",
+    "country": "China, República Popular",
+    "metal": "Latón",
+    "year": 2019,
+    "price": "5.5 USD",
+    "images": [
+      "images/1264A.jpeg",
+      "images/1264B.jpeg"
+    ],
+    "reference": "KM# 2449",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "11.49",
+    "diametro": "27.19",
+    "description": "",
+    "publishedAt": "2026-08-30T03:03:02.044991+00:00",
+    "costo": 4.0
+  },
+  {
+    "id": 1265,
+    "title": "peso 2021",
+    "country": "Isla de Pascua",
+    "metal": "Cuproníquel",
+    "year": 2021,
+    "price": "3.0 USD",
+    "images": [
+      "images/1265A.jpeg",
+      "images/1265B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "aluminio",
+    "publishedAt": "2026-08-30T03:03:02.044991+00:00",
+    "costo": 0.86,
+    "cantidad": 8
   }
 ]
