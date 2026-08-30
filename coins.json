@@ -12517,7 +12517,9 @@
     "grade_short": "B+",
     "description": "25 Poisha con el pez nacional Hilsha (Rupchanda) y el emblema del lirio de agua (Shapla).",
     "publishedAt": "2026-08-22T01:12:55.339717+00:00",
-    "costo": 0.0
+    "costo": 0.0,
+    "status": "sold",
+    "soldAt": "2026-08-30T22:30:21.325459+00:00"
   },
   {
     "id": 1145,
