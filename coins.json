@@ -16834,63 +16834,6 @@
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
   {
-    "id": 1090,
-    "title": "20 Feniga 2025",
-    "country": "Bosnia y Herzegovina",
-    "metal": "Acero revestido de cobre",
-    "year": 2025,
-    "price": "2 USD",
-    "costo": 1.0,
-    "cantidad": 1,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 116",
-    "description": "Mapa de Bosnia y Herzegovina y motivos geométricos.",
-    "images": [
-      "images/1090A.jpeg",
-      "images/1090B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
-    "id": 1091,
-    "title": "1 Real 2024",
-    "country": "Brasil",
-    "metal": "Bimetálica",
-    "year": 2024,
-    "price": "2 USD",
-    "costo": 1.0,
-    "cantidad": 2,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 684",
-    "description": "30 años del Plan Real (1994-2024). Efigie de la República y símbolo del Real.",
-    "images": [
-      "images/1091A.jpeg",
-      "images/1091B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
-    "id": 1096,
-    "title": "1 Dólar 2023",
-    "country": "Canadá",
-    "metal": "Acero bañado en latón",
-    "year": 2023,
-    "price": "3.5 USD",
-    "costo": 2.5,
-    "cantidad": 1,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 3317",
-    "description": "Homenaje a Elsie MacGill, pionera de la ingeniería aeronáutica (con aplicación de color).",
-    "images": [
-      "images/1096A.jpeg",
-      "images/1096B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
     "id": 1098,
     "title": "1 Dólar 2025",
     "country": "Canadá",
@@ -16948,25 +16891,6 @@
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
   {
-    "id": 1107,
-    "title": "1 Centavo 1998",
-    "country": "Chipre",
-    "metal": "Aluminio",
-    "year": 1998,
-    "price": "2 USD",
-    "costo": 0.8,
-    "cantidad": 1,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 53",
-    "description": "Pájaro en rama y Escudo de Armas de la República de Chipre.",
-    "images": [
-      "images/1107A.jpeg",
-      "images/1107B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
     "id": 1108,
     "title": "1 Dalasi 2011",
     "country": "Gambia",
@@ -16988,25 +16912,6 @@
     "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
-    "id": 1109,
-    "title": "50 Sen 1955",
-    "country": "Indonesia",
-    "metal": "Aluminio",
-    "year": 1955,
-    "price": "1.5 USD",
-    "costo": 0.5,
-    "cantidad": 1,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 10",
-    "description": "Efigie del héroe nacional indonesio Pangeran Diponegoro.",
-    "images": [
-      "images/1109A.jpeg",
-      "images/1109B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
     "id": 1111,
     "title": "1 Piastra 1955",
     "country": "Líbano",
@@ -17022,25 +16927,6 @@
     "images": [
       "images/1111A.jpeg",
       "images/1111B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
-    "id": 1112,
-    "title": "25 Livres 2002",
-    "country": "Líbano",
-    "metal": "Acero niquelado",
-    "year": 2002,
-    "price": "2 USD",
-    "costo": 0.9,
-    "cantidad": 1,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 34",
-    "description": "Cedro del Líbano.",
-    "images": [
-      "images/1112A.jpeg",
-      "images/1112B.jpeg"
     ],
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
@@ -17102,25 +16988,6 @@
     "images": [
       "images/1120A.jpeg",
       "images/1120B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
-    "id": 1121,
-    "title": "25 Pounds 2003",
-    "country": "Siria",
-    "metal": "Bimetálica",
-    "year": 2003,
-    "price": "3.5 USD",
-    "costo": 2.0,
-    "cantidad": 1,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 131",
-    "description": "Edificio del Banco Central de Siria y Escudo Nacional con el Halcón de Quraish.",
-    "images": [
-      "images/1121A.jpeg",
-      "images/1121B.jpeg"
     ],
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
@@ -17618,44 +17485,6 @@
     "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
-    "id": 1149,
-    "title": "2 Francos 1995",
-    "country": "Francia",
-    "metal": "Níquel",
-    "year": 1995,
-    "price": "4 USD",
-    "images": [
-      "images/1149A.jpeg",
-      "images/1149B.jpeg"
-    ],
-    "reference": "KM# 1119",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Centenario de la muerte de Louis Pasteur",
-    "publishedAt": "2026-08-22T16:00:34.563299+00:00",
-    "costo": 1.94,
-    "cantidad": 2
-  },
-  {
-    "id": 1150,
-    "title": "2 Francos 1993",
-    "country": "Francia",
-    "metal": "Níquel",
-    "year": 1993,
-    "price": "4 USD",
-    "images": [
-      "images/1150A.jpeg",
-      "images/1150B.jpeg"
-    ],
-    "reference": "KM# 1062",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Cincuentenario de la muerte de Jean Moulin (Resistencia Francesa)",
-    "publishedAt": "2026-08-22T16:00:34.563299+00:00",
-    "costo": 1.94,
-    "cantidad": 2
-  },
-  {
     "id": 1151,
     "title": "5 Francos 1994",
     "country": "Francia",
@@ -17673,44 +17502,6 @@
     "publishedAt": "2026-08-22T16:00:34.563299+00:00",
     "costo": 2.58,
     "cantidad": 1
-  },
-  {
-    "id": 1152,
-    "title": "5 Francos 1989",
-    "country": "Francia",
-    "metal": "Cuproníquel",
-    "year": 1989,
-    "price": "5 USD",
-    "images": [
-      "images/1152A.jpeg",
-      "images/1152B.jpeg"
-    ],
-    "reference": "KM# 968",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Centenario de la Torre Eiffel (1889-1989)",
-    "publishedAt": "2026-08-22T16:00:34.563299+00:00",
-    "costo": 2.58,
-    "cantidad": 1
-  },
-  {
-    "id": 1153,
-    "title": "5 Francos 1992",
-    "country": "Francia",
-    "metal": "Cuproníquel",
-    "year": 1992,
-    "price": "4.5 USD",
-    "images": [
-      "images/1153A.jpeg",
-      "images/1153B.jpeg"
-    ],
-    "reference": "KM# 1006",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Homenaje a Pierre Mendès France",
-    "publishedAt": "2026-08-22T16:00:34.563299+00:00",
-    "costo": 2.58,
-    "cantidad": 2
   },
   {
     "id": 1154,
@@ -19861,5 +19652,138 @@
     "publishedAt": "2026-08-30T02:31:10.888065+00:00",
     "costo": 1.5,
     "cantidad": 2
+  },
+  {
+    "id": 1250,
+    "title": "1 Dólar 2023",
+    "country": "Canadá",
+    "metal": "Acero bañado en latón",
+    "year": 2023,
+    "price": "3.5 USD",
+    "costo": 2.5,
+    "cantidad": 1,
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 3317",
+    "description": "Homenaje a Elsie MacGill, pionera de la ingeniería aeronáutica (con aplicación de color).",
+    "images": [
+      "images/1250A.jpeg",
+      "images/1250B.jpeg"
+    ],
+    "publishedAt": "2026-08-30T02:44:10.961879+00:00"
+  },
+  {
+    "id": 1251,
+    "title": "5 Francos 1989",
+    "country": "Francia",
+    "metal": "Cuproníquel",
+    "year": 1989,
+    "price": "5 USD",
+    "images": [
+      "images/1251A.jpeg",
+      "images/1251B.jpeg"
+    ],
+    "reference": "KM# 968",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Centenario de la Torre Eiffel (1889-1989)",
+    "publishedAt": "2026-08-30T02:44:10.961879+00:00",
+    "costo": 2.58,
+    "cantidad": 1
+  },
+  {
+    "id": 1252,
+    "title": "2 Francos 1995",
+    "country": "Francia",
+    "metal": "Níquel",
+    "year": 1995,
+    "price": "4 USD",
+    "images": [
+      "images/1252A.jpeg",
+      "images/1252B.jpeg"
+    ],
+    "reference": "KM# 1119",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Centenario de la muerte de Louis Pasteur",
+    "publishedAt": "2026-08-30T02:44:10.961879+00:00",
+    "costo": 1.94,
+    "cantidad": 2
+  },
+  {
+    "id": 1253,
+    "title": "2 Francos 1993",
+    "country": "Francia",
+    "metal": "Níquel",
+    "year": 1993,
+    "price": "4 USD",
+    "images": [
+      "images/1253A.jpeg",
+      "images/1253B.jpeg"
+    ],
+    "reference": "KM# 1062",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Cincuentenario de la muerte de Jean Moulin (Resistencia Francesa)",
+    "publishedAt": "2026-08-30T02:44:10.961879+00:00",
+    "costo": 1.94,
+    "cantidad": 2
+  },
+  {
+    "id": 1254,
+    "title": "25 Pounds 2003",
+    "country": "Siria",
+    "metal": "Bimetálica",
+    "year": 2003,
+    "price": "3.5 USD",
+    "costo": 2.0,
+    "cantidad": 1,
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 131",
+    "description": "Edificio del Banco Central de Siria y Escudo Nacional con el Halcón de Quraish.",
+    "images": [
+      "images/1254A.jpeg",
+      "images/1254B.jpeg"
+    ],
+    "publishedAt": "2026-08-30T02:44:10.961879+00:00"
+  },
+  {
+    "id": 1255,
+    "title": "20 Feniga 2025",
+    "country": "Bosnia y Herzegovina",
+    "metal": "Acero revestido de cobre",
+    "year": 2025,
+    "price": "2 USD",
+    "costo": 1.0,
+    "cantidad": 1,
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 116",
+    "description": "Mapa de Bosnia y Herzegovina y motivos geométricos.",
+    "images": [
+      "images/1255A.jpeg",
+      "images/1255B.jpeg"
+    ],
+    "publishedAt": "2026-08-30T02:44:10.961879+00:00"
+  },
+  {
+    "id": 1256,
+    "title": "1 Real 2024",
+    "country": "Brasil",
+    "metal": "Bimetálica",
+    "year": 2024,
+    "price": "2 USD",
+    "costo": 1.0,
+    "cantidad": 2,
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "reference": "KM# 684",
+    "description": "30 años del Plan Real (1994-2024). Efigie de la República y símbolo del Real.",
+    "images": [
+      "images/1256A.jpeg",
+      "images/1256B.jpeg"
+    ],
+    "publishedAt": "2026-08-30T02:44:10.961879+00:00"
   }
 ]
