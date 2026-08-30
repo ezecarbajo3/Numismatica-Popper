@@ -11035,7 +11035,9 @@
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón",
     "peso": 10.0,
-    "diametro": 30.0
+    "diametro": 30.0,
+    "status": "sold",
+    "soldAt": "2026-08-30T01:46:30.862075+00:00"
   },
   {
     "id": 779,
