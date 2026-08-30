@@ -19423,7 +19423,7 @@
     "id": 1241,
     "title": "25 Cents 2004 Día del Recuerdo (Amapola)",
     "country": "Canadá",
-    "metal": "Acero bañado en níquel",
+    "metal": "Acero niquelado",
     "year": 2004,
     "price": "2.5 USD",
     "images": [
@@ -19438,11 +19438,12 @@
     "diametro": "23.9",
     "description": "Día del Recuerdo (Remembrance Day) - Primera moneda de circulación coloreada del mundo, con la emblemática amapola roja ('Poppy').",
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
-    "costo": 1.5
+    "costo": 1.5,
+    "cantidad": 1
   },
   {
     "id": 1242,
-    "title": "1 Peso 2021 Rapa Nui (Moai)",
+    "title": "1 Peso 2021 Moai",
     "country": "Isla de Pascua",
     "metal": "Cuproníquel",
     "year": 2021,
@@ -19457,7 +19458,7 @@
     "mintage": "",
     "peso": "2.2",
     "diametro": "14",
-    "description": "Emisión de fantasía / exonumia de Isla de Pascua (Rapa Nui). Escultura Moai en el reverso y mapa de la isla con la leyenda 'RAPANUI CHILE 2021' en el anverso.",
+    "description": "Moneda de Isla de Pascua (Rapa Nui). Escultura Moai en el reverso y mapa de la isla con la leyenda 'RAPANUI CHILE 2021' en el anverso.",
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
     "costo": 0.86,
     "cantidad": 8
@@ -19479,15 +19480,15 @@
     "mintage": 2000000,
     "peso": "6.99",
     "diametro": "28.0",
-    "description": "50° Aniversario de la emblemática Torre CN de Toronto (1976-2026) con aplicación de color.",
+    "description": "50° Aniversario de la emblemática Torre CN de Toronto (1976-2026) con aplicación de color y efigie del rey Carlos III.",
     "publishedAt": "2026-08-28T23:32:35.616834+00:00",
     "costo": 4.5,
     "cantidad": 2
   },
   {
     "id": 1244,
-    "title": "5 Yuan (Peking Opera) 2024",
-    "country": "China, República Popular",
+    "title": "5 Yuan 2024 Ópera de Pekín (Dan)",
+    "country": "China",
     "metal": "Latón",
     "year": 2024,
     "price": "6.0 USD",
@@ -19501,59 +19502,60 @@
     "mintage": "",
     "peso": "13.1",
     "diametro": "30",
-    "description": "opera",
+    "description": "Serie Conmemorativa del Arte de la Ópera de Pekín - Personaje Dan (rol femenino) con aplicación de color.",
     "publishedAt": "2026-08-30T02:31:10.888065+00:00",
     "costo": 4.0,
-    "cantidad": 2,
-    "commemorates": "opera"
+    "cantidad": 2
   },
   {
     "id": 1245,
-    "title": "canada 1970",
-    "country": "Numismática Popper",
-    "metal": "Cuproníquel",
+    "title": "1 Dólar 1970 Centenario de Manitoba",
+    "country": "Canadá",
+    "metal": "Níquel",
     "year": 1970,
     "price": "4.0 USD",
     "images": [
       "images/1245A.jpeg",
       "images/1245B.jpeg"
     ],
-    "reference": "",
+    "reference": "KM# 78",
     "grade": "Excelente +",
     "grade_short": "EX+",
     "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "manitoba",
+    "peso": "15.62",
+    "diametro": "32.13",
+    "description": "Centenario de la creación de la provincia de Manitoba (1870-1970). Flor azafrán de las praderas (Prairie Crocus) y busto de la reina Isabel II.",
     "publishedAt": "2026-08-30T02:31:10.888065+00:00",
-    "costo": 3.0
+    "costo": 3.0,
+    "cantidad": 1
   },
   {
     "id": 1246,
-    "title": "canada 1971",
-    "country": "Numismática Popper",
-    "metal": "Cuproníquel",
+    "title": "1 Dólar 1971 Centenario de Columbia Británica",
+    "country": "Canadá",
+    "metal": "Níquel",
     "year": 1971,
     "price": "4.0 USD",
     "images": [
       "images/1246A.jpeg",
       "images/1246B.jpeg"
     ],
-    "reference": "",
+    "reference": "KM# 79",
     "grade": "Excelente +",
     "grade_short": "EX+",
     "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "british columbia",
+    "peso": "15.62",
+    "diametro": "32.13",
+    "description": "Centenario de la unión de la Columbia Británica a la Confederación de Canadá (1871-1971). Escudo provincial y flor de cornejo.",
     "publishedAt": "2026-08-30T02:31:10.888065+00:00",
-    "costo": 3.0
+    "costo": 3.0,
+    "cantidad": 1
   },
   {
     "id": 1247,
-    "title": "dalasi 2011",
+    "title": "1 Dalasi 2011 Pez Tigre",
     "country": "Gambia",
-    "metal": "Níquel",
+    "metal": "Acero niquelado",
     "year": 2011,
     "price": "4.0 USD",
     "images": [
@@ -19566,37 +19568,39 @@
     "mintage": "",
     "peso": "8.67",
     "diametro": "28",
-    "description": "",
+    "description": "Pez tigre africano (Hydrocynus goliath / African tigerfish) y escudo nacional de Gambia.",
     "publishedAt": "2026-08-30T02:31:10.888065+00:00",
-    "costo": 2.5
+    "costo": 2.5,
+    "cantidad": 1
   },
   {
     "id": 1248,
-    "title": "5 francos 1945",
+    "title": "5 Francos 1945",
     "country": "Mónaco",
-    "metal": "Cuproníquel",
+    "metal": "Aluminio",
     "year": 1945,
     "price": "5.0 USD",
     "images": [
       "images/1248A.jpeg",
       "images/1248B.jpeg"
     ],
-    "reference": "",
+    "reference": "KM# 122",
     "grade": "Excelente",
     "grade_short": "EX",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "",
+    "mintage": 1000000,
+    "peso": "3.5",
+    "diametro": "31",
+    "description": "Príncipe Luis II de Mónaco y escudo de armas con el lema 'DEO JUVANTE'.",
     "publishedAt": "2026-08-30T02:31:10.888065+00:00",
-    "costo": 2.5
+    "costo": 2.5,
+    "cantidad": 1
   },
   {
     "id": 1249,
-    "title": "sri lanka  km 178",
+    "title": "2 Rupees 2008 Fondo de Previsión de Empleados (EPF)",
     "country": "Sri Lanka",
-    "metal": "Cuproníquel",
-    "year": null,
+    "metal": "Acero niquelado",
+    "year": 2008,
     "price": "5.0 USD",
     "images": [
       "images/1249A.jpeg",
@@ -19606,37 +19610,38 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "",
+    "peso": "7",
+    "diametro": "28.5",
+    "description": "50° Aniversario del Fondo de Previsión de Empleados (Employees' Provident Fund - EPF, 1958-2008).",
     "publishedAt": "2026-08-30T02:31:10.888065+00:00",
-    "costo": 3.22
+    "costo": 3.22,
+    "cantidad": 1
   },
   {
     "id": 1250,
-    "title": "25 cents 2023",
+    "title": "25 Centavos 2023 Alberto Spencer",
     "country": "Ecuador",
-    "metal": "Cuproníquel",
+    "metal": "Acero inoxidable",
     "year": 2023,
     "price": "3.0 USD",
     "images": [
       "images/1250A.jpeg",
       "images/1250B.jpeg"
     ],
-    "reference": "",
+    "reference": "KM# 134",
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "spencer",
+    "peso": "5.8",
+    "diametro": "24.2",
+    "description": "Homenaje al legendario futbolista ecuatoriano Alberto Spencer, máximo goleador histórico de la Copa Libertadores.",
     "publishedAt": "2026-08-30T02:31:10.888065+00:00",
     "costo": 1.5,
     "cantidad": 2
   },
   {
     "id": 1251,
-    "title": "1 Dólar 2023",
+    "title": "1 Dólar 2023 Elsie MacGill (Coloreada)",
     "country": "Canadá",
     "metal": "Acero bañado en latón",
     "year": 2023,
@@ -19645,21 +19650,24 @@
     "cantidad": 1,
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "reference": "KM# 3317",
+    "reference": "KM# 3344",
     "description": "Homenaje a Elsie MacGill, pionera de la ingeniería aeronáutica (con aplicación de color).",
     "images": [
       "images/1251A.jpeg",
       "images/1251B.jpeg"
     ],
-    "publishedAt": "2026-08-30T02:44:10.961879+00:00"
+    "publishedAt": "2026-08-30T02:44:10.961879+00:00",
+    "mintage": "",
+    "peso": "6.27",
+    "diametro": "26.5"
   },
   {
     "id": 1252,
-    "title": "5 Francos 1989",
+    "title": "5 Francos 1989 Torre Eiffel",
     "country": "Francia",
-    "metal": "Cuproníquel",
+    "metal": "Cuproníquel bañado en níquel",
     "year": 1989,
-    "price": "5 USD",
+    "price": "5.0 USD",
     "images": [
       "images/1252A.jpeg",
       "images/1252B.jpeg"
@@ -19667,18 +19675,21 @@
     "reference": "KM# 968",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Centenario de la Torre Eiffel (1889-1989)",
+    "description": "Centenario de la Torre Eiffel (1889-1989). Diseño de Frédéric Joubert.",
     "publishedAt": "2026-08-30T02:44:10.961879+00:00",
     "costo": 2.58,
-    "cantidad": 1
+    "cantidad": 1,
+    "mintage": "",
+    "peso": "10",
+    "diametro": "29"
   },
   {
     "id": 1253,
-    "title": "2 Francos 1995",
+    "title": "2 Francos 1995 Louis Pasteur",
     "country": "Francia",
     "metal": "Níquel",
     "year": 1995,
-    "price": "4 USD",
+    "price": "4.0 USD",
     "images": [
       "images/1253A.jpeg",
       "images/1253B.jpeg"
@@ -19686,18 +19697,21 @@
     "reference": "KM# 1119",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Centenario de la muerte de Louis Pasteur",
+    "description": "Centenario de la muerte de Louis Pasteur (1822-1895), químico y microbiólogo francés.",
     "publishedAt": "2026-08-30T02:44:10.961879+00:00",
     "costo": 1.94,
-    "cantidad": 2
+    "cantidad": 2,
+    "mintage": "",
+    "peso": "7.5",
+    "diametro": "26.5"
   },
   {
     "id": 1254,
-    "title": "2 Francos 1993",
+    "title": "2 Francos 1993 Jean Moulin",
     "country": "Francia",
     "metal": "Níquel",
     "year": 1993,
-    "price": "4 USD",
+    "price": "4.0 USD",
     "images": [
       "images/1254A.jpeg",
       "images/1254B.jpeg"
@@ -19705,14 +19719,17 @@
     "reference": "KM# 1062",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Cincuentenario de la muerte de Jean Moulin (Resistencia Francesa)",
+    "description": "Cincuentenario de la muerte de Jean Moulin (Resistencia Francesa).",
     "publishedAt": "2026-08-30T02:44:10.961879+00:00",
     "costo": 1.94,
-    "cantidad": 2
+    "cantidad": 2,
+    "mintage": "",
+    "peso": "7.5",
+    "diametro": "26.5"
   },
   {
     "id": 1255,
-    "title": "25 Pounds 2003",
+    "title": "25 Libras 2003",
     "country": "Siria",
     "metal": "Bimetálica",
     "year": 2003,
@@ -19722,56 +19739,65 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "KM# 131",
-    "description": "Edificio del Banco Central de Siria y Escudo Nacional con el Halcón de Quraish.",
+    "description": "Edificio del Banco Central de Siria y Escudo Nacional con el Halcón de Quraish (con imagen latente de seguridad).",
     "images": [
       "images/1255A.jpeg",
       "images/1255B.jpeg"
     ],
-    "publishedAt": "2026-08-30T02:44:10.961879+00:00"
+    "publishedAt": "2026-08-30T02:44:10.961879+00:00",
+    "mintage": "",
+    "peso": "8.4",
+    "diametro": "25"
   },
   {
     "id": 1256,
     "title": "20 Feniga 2025",
     "country": "Bosnia y Herzegovina",
-    "metal": "Acero revestido de cobre",
+    "metal": "Acero recubierto de cobre",
     "year": 2025,
-    "price": "2 USD",
+    "price": "2.0 USD",
     "costo": 1.0,
     "cantidad": 1,
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "KM# 116",
-    "description": "Mapa de Bosnia y Herzegovina y motivos geométricos.",
+    "description": "Mapa de Bosnia y Herzegovina y motivos geométricos con las banderas estilizadas.",
     "images": [
       "images/1256A.jpeg",
       "images/1256B.jpeg"
     ],
-    "publishedAt": "2026-08-30T02:44:10.961879+00:00"
+    "publishedAt": "2026-08-30T02:44:10.961879+00:00",
+    "mintage": "",
+    "peso": "4.5",
+    "diametro": "22"
   },
   {
     "id": 1257,
-    "title": "1 Real 2024",
+    "title": "1 Real 2024 30 Años del Plan Real",
     "country": "Brasil",
     "metal": "Bimetálica",
     "year": 2024,
-    "price": "2 USD",
+    "price": "2.0 USD",
     "costo": 1.0,
     "cantidad": 2,
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "reference": "KM# 684",
-    "description": "30 años del Plan Real (1994-2024). Efigie de la República y símbolo del Real.",
+    "reference": "KM# 738",
+    "description": "30° Aniversario del Plan Real (1994-2024). Efigie de la República y símbolo del Real (R$).",
     "images": [
       "images/1257A.jpeg",
       "images/1257B.jpeg"
     ],
-    "publishedAt": "2026-08-30T02:44:10.961879+00:00"
+    "publishedAt": "2026-08-30T02:44:10.961879+00:00",
+    "mintage": "",
+    "peso": "7.0",
+    "diametro": "27.0"
   },
   {
     "id": 1258,
     "title": "5 Cents 2025",
-    "country": "San Martín (Países Bajos)",
-    "metal": "Acero revestido de cobre",
+    "country": "San Martín",
+    "metal": "Acero niquelado",
     "year": 2025,
     "price": "2.5 USD",
     "costo": 0.9,
@@ -19779,18 +19805,21 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "",
-    "description": "Nueva emisión monetaria de San Martín.",
+    "description": "Nueva emisión del florín caribeño. Conchas 'Tellin' y flor de azahar rodeada de olas.",
     "images": [
       "images/1258A.jpeg",
       "images/1258B.jpeg"
     ],
-    "publishedAt": "2026-08-30T02:54:04.395581+00:00"
+    "publishedAt": "2026-08-30T02:54:04.395581+00:00",
+    "mintage": "",
+    "peso": "2.42",
+    "diametro": "16.75"
   },
   {
     "id": 1259,
-    "title": "25 Līrah / Livres 2002",
+    "title": "25 Livres 2002",
     "country": "Líbano",
-    "metal": "Níquel",
+    "metal": "Acero niquelado",
     "year": 2002,
     "price": "2.0 USD",
     "images": [
@@ -19803,14 +19832,15 @@
     "mintage": "",
     "peso": "2.82",
     "diametro": "20.5",
-    "description": "",
+    "description": "Cedro del Líbano y valor facial dentro de diseño geométrico.",
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
-    "costo": 0.9
+    "costo": 0.9,
+    "cantidad": 1
   },
   {
     "id": 1260,
-    "title": "50 Sen 1955",
-    "country": "Indonesia (1949-presente)",
+    "title": "50 Sen 1955 Diponegoro",
+    "country": "Indonesia",
     "metal": "Cuproníquel",
     "year": 1955,
     "price": "2.0 USD",
@@ -19824,15 +19854,16 @@
     "mintage": "",
     "peso": "3.24",
     "diametro": "20",
-    "description": "",
+    "description": "Príncipe Diponegoro, héroe nacional de Indonesia, y escudo de armas con el águila Garuda Pancasila.",
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
-    "costo": 0.5
+    "costo": 0.5,
+    "cantidad": 1
   },
   {
     "id": 1261,
-    "title": "cent 1998",
+    "title": "1 Cent 1998",
     "country": "Chipre",
-    "metal": "Níquel",
+    "metal": "Latón de níquel",
     "year": 1998,
     "price": "2.0 USD",
     "images": [
@@ -19845,13 +19876,14 @@
     "mintage": "",
     "peso": "2",
     "diametro": "16.5",
-    "description": "",
+    "description": "Pájaro estilizado en rama de árbol (de jarra de cerámica chipriota arcaica) y Escudo de Chipre (paloma de la paz).",
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
-    "costo": 0.8
+    "costo": 0.8,
+    "cantidad": 1
   },
   {
     "id": 1262,
-    "title": "franc 1992",
+    "title": "1/2 Franco 1992 Sembradora",
     "country": "Francia",
     "metal": "Níquel",
     "year": 1992,
@@ -19866,15 +19898,16 @@
     "mintage": "",
     "peso": "4.5",
     "diametro": "19.5",
-    "description": "",
+    "description": "La Sembradora (La Semeuse) de Louis-Oscar Roty y rama de olivo.",
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
-    "costo": 2.57
+    "costo": 2.57,
+    "cantidad": 1
   },
   {
     "id": 1263,
-    "title": "piastre 1955",
+    "title": "1 Piastra 1955",
     "country": "Líbano",
-    "metal": "Bronce",
+    "metal": "Bronce de aluminio",
     "year": 1955,
     "price": "5.5 USD",
     "images": [
@@ -19887,14 +19920,15 @@
     "mintage": 4000000,
     "peso": "2",
     "diametro": "18",
-    "description": "",
+    "description": "Emisión con orificio central. Barco fenicio de vela y Cedro del Líbano.",
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
-    "costo": 2.5
+    "costo": 2.5,
+    "cantidad": 1
   },
   {
     "id": 1264,
-    "title": "5 Yuan (Mount Taishan) 2019",
-    "country": "China, República Popular",
+    "title": "5 Yuan 2019 Monte Taishan",
+    "country": "China",
     "metal": "Latón",
     "year": 2019,
     "price": "5.5 USD",
@@ -19908,15 +19942,16 @@
     "mintage": "",
     "peso": "11.49",
     "diametro": "27.19",
-    "description": "",
+    "description": "Patrimonio Mundial de la UNESCO - Monte Taishan (Monte Tai). Moneda de forma cuadrada con bordes redondeados.",
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
-    "costo": 4.0
+    "costo": 4.0,
+    "cantidad": 1
   },
   {
     "id": 1265,
-    "title": "peso 2021",
+    "title": "1 Peso 2021 Moai (Aluminio)",
     "country": "Isla de Pascua",
-    "metal": "Cuproníquel",
+    "metal": "Aluminio",
     "year": 2021,
     "price": "3.0 USD",
     "images": [
@@ -19929,7 +19964,7 @@
     "mintage": "",
     "peso": "",
     "diametro": "",
-    "description": "aluminio",
+    "description": "Moneda de Isla de Pascua (Rapa Nui) acuñada en aluminio. Escultura Moai en el reverso y mapa de la isla con la leyenda 'RAPANUI CHILE 2021' en el anverso.",
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
     "costo": 0.86,
     "cantidad": 8
