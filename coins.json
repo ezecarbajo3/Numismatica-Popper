@@ -900,7 +900,7 @@
     "country": "Antillas Holandesas",
     "metal": "Bronce",
     "year": 1963,
-    "price": "3,5 USD",
+    "price": "3.5 USD",
     "images": [
       "images/128A.jpeg",
       "images/128B.jpeg"
@@ -1536,7 +1536,7 @@
     "country": "Argentina",
     "metal": "Aluminio",
     "year": 1975,
-    "price": "2,5 USD",
+    "price": "2.5 USD",
     "images": [
       "images/194A.jpeg",
       "images/194B.jpeg"
@@ -1737,7 +1737,7 @@
     "country": "Islas Cook",
     "metal": "Aluminio",
     "year": 2003,
-    "price": "3,5 USD",
+    "price": "3.5 USD",
     "images": [
       "images/220A.jpeg",
       "images/220B.jpeg"
@@ -1891,7 +1891,7 @@
     "country": "Marruecos",
     "metal": "Bronce",
     "year": 1861,
-    "price": "4,5 USD",
+    "price": "4.5 USD",
     "images": [
       "images/242A.jpeg",
       "images/242B.jpeg"
@@ -1911,7 +1911,7 @@
     "country": "El Salvador",
     "metal": "Bronce",
     "year": 1989,
-    "price": "2,5 USD",
+    "price": "2.5 USD",
     "images": [
       "images/244A.jpeg",
       "images/244B.jpeg"
@@ -4103,7 +4103,7 @@
     "country": "Estados Unidos",
     "metal": "Cu Ni",
     "year": 1914,
-    "price": "35.2 USD",
+    "price": "35.5 USD",
     "images": [
       "images/429A.jpeg",
       "images/429B.jpeg"
@@ -4121,7 +4121,7 @@
     "country": "Estados Unidos",
     "metal": "Cu Ni",
     "year": 1914,
-    "price": "41.8 USD",
+    "price": "42 USD",
     "images": [
       "images/430A.jpeg",
       "images/430B.jpeg"
@@ -4159,7 +4159,7 @@
     "country": "Estados Unidos",
     "metal": "Cu",
     "year": 1910,
-    "price": "24.2 USD",
+    "price": "24.5 USD",
     "images": [
       "images/437A.jpeg",
       "images/437B.jpeg"
@@ -4195,7 +4195,7 @@
     "country": "Estados Unidos",
     "metal": "Cu",
     "year": 1912,
-    "price": "24.2 USD",
+    "price": "24.5 USD",
     "images": [
       "images/440A.jpeg",
       "images/440B.jpeg"
@@ -4213,7 +4213,7 @@
     "country": "Estados Unidos",
     "metal": "Cu",
     "year": 1912,
-    "price": "26.4 USD",
+    "price": "26.5 USD",
     "images": [
       "images/441A.jpeg",
       "images/441B.jpeg"
@@ -4249,7 +4249,7 @@
     "country": "Estados Unidos",
     "metal": "Cu",
     "year": 1915,
-    "price": "35.2 USD",
+    "price": "35.5 USD",
     "images": [
       "images/444A.jpeg",
       "images/444B.jpeg"
@@ -4267,7 +4267,7 @@
     "country": "Estados Unidos",
     "metal": "Cu",
     "year": 1926,
-    "price": "28.6 USD",
+    "price": "29 USD",
     "images": [
       "images/445A.jpeg",
       "images/445B.jpeg"
@@ -4321,7 +4321,7 @@
     "country": "Estados Unidos",
     "metal": "Plata 0.900",
     "year": 1920,
-    "price": "41.8 USD",
+    "price": "42 USD",
     "images": [
       "images/448A.jpeg",
       "images/448B.jpeg"
@@ -4583,7 +4583,7 @@
     "country": "Estados Unidos",
     "metal": "Cu",
     "year": 1875,
-    "price": "46.2 USD",
+    "price": "46.5 USD",
     "images": [
       "images/478A.jpeg",
       "images/478B.jpeg"
@@ -5231,7 +5231,7 @@
     "country": "España",
     "metal": "Cuproníquel",
     "year": 1937,
-    "price": "3,5 USD",
+    "price": "3.5 USD",
     "images": [
       "images/535A.jpeg",
       "images/535B.jpeg"
@@ -11080,7 +11080,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 1965,
-    "price": "6.37 USD",
+    "price": "6.5 USD",
     "images": [
       "images/991A.jpeg",
       "images/991B.jpeg"
@@ -11100,7 +11100,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 1965,
-    "price": "6.37 USD",
+    "price": "6.5 USD",
     "images": [
       "images/992A.jpeg",
       "images/992B.jpeg"
@@ -11120,7 +11120,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel / Bronce",
     "year": 1968,
-    "price": "6.37 USD",
+    "price": "6.5 USD",
     "images": [
       "images/994A.jpeg",
       "images/994B.jpeg"
@@ -11136,7 +11136,7 @@
     "country": "Canadá",
     "metal": "Níquel",
     "year": 2008,
-    "price": "5.1 USD",
+    "price": "5.5 USD",
     "images": [
       "images/995A.jpeg",
       "images/995B.jpeg",
@@ -11160,7 +11160,7 @@
     "country": "Canadá",
     "metal": "Níquel",
     "year": 2008,
-    "price": "6.37 USD",
+    "price": "6.5 USD",
     "images": [
       "images/996A.jpeg",
       "images/996B.jpeg",
@@ -14052,7 +14052,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1883,
-    "price": "8.0 USD",
+    "price": "8 USD",
     "images": [
       "images/1218A.jpeg",
       "images/1218B.jpeg"
@@ -14077,7 +14077,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1884,
-    "price": "3.0 USD",
+    "price": "3 USD",
     "images": [
       "images/1219A.jpeg",
       "images/1219B.jpeg"
@@ -14102,7 +14102,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1885,
-    "price": "5.0 USD",
+    "price": "5 USD",
     "images": [
       "images/1220A.jpeg",
       "images/1220B.jpeg"
@@ -14125,7 +14125,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1889,
-    "price": "2.0 USD",
+    "price": "2 USD",
     "images": [
       "images/1221A.jpeg",
       "images/1221B.jpeg"
@@ -14146,7 +14146,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1890,
-    "price": "2.0 USD",
+    "price": "2 USD",
     "images": [
       "images/1222A.jpeg",
       "images/1222B.jpeg"
@@ -14171,7 +14171,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1891,
-    "price": "2.0 USD",
+    "price": "2 USD",
     "images": [
       "images/1223A.jpeg",
       "images/1223B.jpeg"
@@ -14194,7 +14194,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1892,
-    "price": "3.0 USD",
+    "price": "3 USD",
     "images": [
       "images/1224A.jpeg",
       "images/1224B.jpeg"
@@ -14219,7 +14219,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1893,
-    "price": "3.0 USD",
+    "price": "3 USD",
     "images": [
       "images/1225A.jpeg",
       "images/1225B.jpeg"
@@ -14244,7 +14244,7 @@
     "country": "China",
     "metal": "Bimetálica",
     "year": 2018,
-    "price": "5.0 USD",
+    "price": "5 USD",
     "images": [
       "images/1227A.jpeg",
       "images/1227B.jpeg"
@@ -14265,7 +14265,7 @@
     "country": "China",
     "metal": "Bimetálica",
     "year": 2025,
-    "price": "5.0 USD",
+    "price": "5 USD",
     "images": [
       "images/1228A.jpeg",
       "images/1228B.jpeg"
@@ -14288,7 +14288,7 @@
     "country": "Sri Lanka",
     "metal": "Acero niquelado",
     "year": 2021,
-    "price": "5.0 USD",
+    "price": "5 USD",
     "images": [
       "images/1229A.jpeg",
       "images/1229B.jpeg"
@@ -14311,7 +14311,7 @@
     "country": "Sri Lanka",
     "metal": "Acero niquelado",
     "year": 2020,
-    "price": "5.0 USD",
+    "price": "5 USD",
     "images": [
       "images/1230A.jpeg",
       "images/1230B.jpeg"
@@ -14334,7 +14334,7 @@
     "country": "Sri Lanka",
     "metal": "Acero niquelado",
     "year": 2020,
-    "price": "5.0 USD",
+    "price": "5 USD",
     "images": [
       "images/1231A.jpeg",
       "images/1231B.jpeg"
@@ -14355,7 +14355,7 @@
     "country": "China",
     "metal": "Latón",
     "year": 2022,
-    "price": "4.0 USD",
+    "price": "4 USD",
     "images": [
       "images/1232A.jpeg",
       "images/1232B.jpeg"
@@ -14378,7 +14378,7 @@
     "country": "China",
     "metal": "Latón",
     "year": 2022,
-    "price": "5.0 USD",
+    "price": "5 USD",
     "images": [
       "images/1233A.jpeg",
       "images/1233B.jpeg"
@@ -14445,7 +14445,7 @@
     "country": "Canadá",
     "metal": "Acero bañado en latón",
     "year": 2025,
-    "price": "4.0 USD",
+    "price": "4 USD",
     "images": [
       "images/1236A.jpeg",
       "images/1236B.jpeg"
@@ -14468,7 +14468,7 @@
     "country": "Canadá",
     "metal": "Níquel",
     "year": 1967,
-    "price": "3.0 USD",
+    "price": "3 USD",
     "images": [
       "images/1237A.jpeg",
       "images/1237B.jpeg"
@@ -14490,7 +14490,7 @@
     "country": "Francia",
     "metal": "Cuproníquel bañado en níquel",
     "year": 1992,
-    "price": "4.0 USD",
+    "price": "4 USD",
     "images": [
       "images/1238A.jpeg",
       "images/1238B.jpeg"
@@ -14535,7 +14535,7 @@
     "country": "Chile",
     "metal": "Bimetálica",
     "year": 2025,
-    "price": "3.0 USD",
+    "price": "3 USD",
     "images": [
       "images/1240A.jpeg",
       "images/1240B.jpeg"
@@ -14579,7 +14579,7 @@
     "country": "Isla de Pascua",
     "metal": "Cuproníquel",
     "year": 2021,
-    "price": "3.0 USD",
+    "price": "3 USD",
     "images": [
       "images/1242A.jpeg",
       "images/1242B.jpeg"
@@ -14623,7 +14623,7 @@
     "country": "China",
     "metal": "Latón",
     "year": 2024,
-    "price": "6.0 USD",
+    "price": "6 USD",
     "images": [
       "images/1244A.jpeg",
       "images/1244B.jpeg"
@@ -14645,7 +14645,7 @@
     "country": "Canadá",
     "metal": "Níquel",
     "year": 1970,
-    "price": "4.0 USD",
+    "price": "4 USD",
     "images": [
       "images/1245A.jpeg",
       "images/1245B.jpeg"
@@ -14667,7 +14667,7 @@
     "country": "Canadá",
     "metal": "Níquel",
     "year": 1971,
-    "price": "4.0 USD",
+    "price": "4 USD",
     "images": [
       "images/1246A.jpeg",
       "images/1246B.jpeg"
@@ -14689,7 +14689,7 @@
     "country": "Gambia",
     "metal": "Acero niquelado",
     "year": 2011,
-    "price": "4.0 USD",
+    "price": "4 USD",
     "images": [
       "images/1247A.jpeg",
       "images/1247B.jpeg"
@@ -14711,7 +14711,7 @@
     "country": "Mónaco",
     "metal": "Aluminio",
     "year": 1945,
-    "price": "5.0 USD",
+    "price": "5 USD",
     "images": [
       "images/1248A.jpeg",
       "images/1248B.jpeg"
@@ -14733,7 +14733,7 @@
     "country": "Sri Lanka",
     "metal": "Acero niquelado",
     "year": 2008,
-    "price": "5.0 USD",
+    "price": "5 USD",
     "images": [
       "images/1249A.jpeg",
       "images/1249B.jpeg"
@@ -14755,7 +14755,7 @@
     "country": "Ecuador",
     "metal": "Acero inoxidable",
     "year": 2023,
-    "price": "3.0 USD",
+    "price": "3 USD",
     "images": [
       "images/1250A.jpeg",
       "images/1250B.jpeg"
@@ -14799,7 +14799,7 @@
     "country": "Francia",
     "metal": "Cuproníquel bañado en níquel",
     "year": 1989,
-    "price": "5.0 USD",
+    "price": "5 USD",
     "images": [
       "images/1252A.jpeg",
       "images/1252B.jpeg"
@@ -14821,7 +14821,7 @@
     "country": "Francia",
     "metal": "Níquel",
     "year": 1995,
-    "price": "4.0 USD",
+    "price": "4 USD",
     "images": [
       "images/1253A.jpeg",
       "images/1253B.jpeg"
@@ -14843,7 +14843,7 @@
     "country": "Francia",
     "metal": "Níquel",
     "year": 1993,
-    "price": "4.0 USD",
+    "price": "4 USD",
     "images": [
       "images/1254A.jpeg",
       "images/1254B.jpeg"
@@ -14887,7 +14887,7 @@
     "country": "Bosnia y Herzegovina",
     "metal": "Acero recubierto de cobre",
     "year": 2025,
-    "price": "2.0 USD",
+    "price": "2 USD",
     "costo": 1.0,
     "cantidad": 1,
     "grade": "Sin Circular",
@@ -14909,7 +14909,7 @@
     "country": "Brasil",
     "metal": "Bimetálica",
     "year": 2024,
-    "price": "2.0 USD",
+    "price": "2 USD",
     "costo": 1.0,
     "cantidad": 2,
     "grade": "Sin Circular",
@@ -14953,7 +14953,7 @@
     "country": "Líbano",
     "metal": "Acero niquelado",
     "year": 2002,
-    "price": "2.0 USD",
+    "price": "2 USD",
     "images": [
       "images/1259A.jpeg",
       "images/1259B.jpeg"
@@ -14975,7 +14975,7 @@
     "country": "Indonesia",
     "metal": "Cuproníquel",
     "year": 1955,
-    "price": "2.0 USD",
+    "price": "2 USD",
     "images": [
       "images/1260A.jpeg",
       "images/1260B.jpeg"
@@ -14997,7 +14997,7 @@
     "country": "Chipre",
     "metal": "Latón de níquel",
     "year": 1998,
-    "price": "2.0 USD",
+    "price": "2 USD",
     "images": [
       "images/1261A.jpeg",
       "images/1261B.jpeg"
@@ -15019,7 +15019,7 @@
     "country": "Francia",
     "metal": "Níquel",
     "year": 1992,
-    "price": "5.0 USD",
+    "price": "5 USD",
     "images": [
       "images/1262A.jpeg",
       "images/1262B.jpeg"
@@ -15085,7 +15085,7 @@
     "country": "Isla de Pascua",
     "metal": "Aluminio",
     "year": 2021,
-    "price": "3.0 USD",
+    "price": "3 USD",
     "images": [
       "images/1265A.jpeg",
       "images/1265B.jpeg"
