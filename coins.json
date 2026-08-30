@@ -14676,7 +14676,9 @@
     "reference": "CJ# 29",
     "description": "ESCASA.",
     "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón"
+    "group_label": "2 Centavos Patacón",
+    "status": "sold",
+    "soldAt": "2026-08-30T01:39:37.619145+00:00"
   },
   {
     "id": 978,
