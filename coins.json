@@ -16814,25 +16814,6 @@
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
   {
-    "id": 1088,
-    "title": "25 Centavos 2023",
-    "country": "Ecuador",
-    "metal": "Acero niquelado",
-    "year": 2023,
-    "price": "2.5 USD",
-    "costo": 1.5,
-    "cantidad": 2,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 109",
-    "description": "Homenaje a Alberto Spencer, gloria del fútbol ecuatoriano y sudamericano.",
-    "images": [
-      "images/1088A.jpeg",
-      "images/1088B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
     "id": 1089,
     "title": "25 y 50 Centavos 2013",
     "country": "Argentina",
@@ -16887,44 +16868,6 @@
     "images": [
       "images/1091A.jpeg",
       "images/1091B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
-    "id": 1092,
-    "title": "1 Dólar 1970",
-    "country": "Canadá",
-    "metal": "Níquel",
-    "year": 1970,
-    "price": "4 USD",
-    "costo": 3.0,
-    "cantidad": 1,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 78",
-    "description": "Centenario de la provincia de Manitoba (1870-1970). Flor de azafrán de las praderas.",
-    "images": [
-      "images/1092A.jpeg",
-      "images/1092B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
-    "id": 1093,
-    "title": "1 Dólar 1971",
-    "country": "Canadá",
-    "metal": "Níquel",
-    "year": 1971,
-    "price": "4 USD",
-    "costo": 3.0,
-    "cantidad": 1,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 81",
-    "description": "Centenario de la entrada de Columbia Británica a la Confederación (1871-1971). Escudo y flores de cornejo.",
-    "images": [
-      "images/1093A.jpeg",
-      "images/1093B.jpeg"
     ],
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
@@ -17121,25 +17064,6 @@
     "publishedAt": "2026-08-19T22:53:10.802456+00:00",
     "status": "sold",
     "soldAt": "2026-08-22T22:47:02.012671+00:00"
-  },
-  {
-    "id": 1116,
-    "title": "2 Francos 1943",
-    "country": "Mónaco",
-    "metal": "Aluminio",
-    "year": 1943,
-    "price": "4.5 USD",
-    "costo": 2.5,
-    "cantidad": 1,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 120",
-    "description": "Efigie del Príncipe Luis II de Mónaco.",
-    "images": [
-      "images/1116A.jpeg",
-      "images/1116B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
   {
     "id": 1117,
