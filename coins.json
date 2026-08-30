@@ -19126,28 +19126,6 @@
     "soldAt": "2026-08-28T16:59:47.932289+00:00"
   },
   {
-    "id": 1226,
-    "title": "2 Dólares 2026 Torre CN (Coloreada)",
-    "country": "Canadá",
-    "metal": "Bimetálica",
-    "year": 2026,
-    "price": "5.5 USD",
-    "images": [
-      "images/1226A.jpeg",
-      "images/1226B.jpeg"
-    ],
-    "reference": "",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": 2000000,
-    "peso": "6.99",
-    "diametro": "28.0",
-    "description": "50° Aniversario de la emblemática Torre CN de Toronto (1976-2026) con aplicación de color.",
-    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
-    "costo": 4.5,
-    "cantidad": 2
-  },
-  {
     "id": 1227,
     "title": "10 Yuan 2018 Año del Perro",
     "country": "China",
@@ -19505,14 +19483,36 @@
   },
   {
     "id": 1243,
+    "title": "2 Dólares 2026 Torre CN (Coloreada)",
+    "country": "Canadá",
+    "metal": "Bimetálica",
+    "year": 2026,
+    "price": "5.5 USD",
+    "images": [
+      "images/1243A.jpeg",
+      "images/1243B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 2000000,
+    "peso": "6.99",
+    "diametro": "28.0",
+    "description": "50° Aniversario de la emblemática Torre CN de Toronto (1976-2026) con aplicación de color.",
+    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
+    "costo": 4.5,
+    "cantidad": 2
+  },
+  {
+    "id": 1244,
     "title": "5 Yuan (Peking Opera) 2024",
     "country": "China, República Popular",
     "metal": "Latón",
     "year": 2024,
     "price": "6.0 USD",
     "images": [
-      "images/1243A.jpeg",
-      "images/1243B.jpeg"
+      "images/1244A.jpeg",
+      "images/1244B.jpeg"
     ],
     "reference": "",
     "grade": "Sin Circular",
@@ -19527,15 +19527,15 @@
     "commemorates": "opera"
   },
   {
-    "id": 1244,
+    "id": 1245,
     "title": "canada 1970",
     "country": "Numismática Popper",
     "metal": "Cuproníquel",
     "year": 1970,
     "price": "4.0 USD",
     "images": [
-      "images/1244A.jpeg",
-      "images/1244B.jpeg"
+      "images/1245A.jpeg",
+      "images/1245B.jpeg"
     ],
     "reference": "",
     "grade": "Excelente +",
@@ -19548,15 +19548,15 @@
     "costo": 3.0
   },
   {
-    "id": 1245,
+    "id": 1246,
     "title": "canada 1971",
     "country": "Numismática Popper",
     "metal": "Cuproníquel",
     "year": 1971,
     "price": "4.0 USD",
     "images": [
-      "images/1245A.jpeg",
-      "images/1245B.jpeg"
+      "images/1246A.jpeg",
+      "images/1246B.jpeg"
     ],
     "reference": "",
     "grade": "Excelente +",
@@ -19569,15 +19569,15 @@
     "costo": 3.0
   },
   {
-    "id": 1246,
+    "id": 1247,
     "title": "dalasi 2011",
     "country": "Gambia",
     "metal": "Níquel",
     "year": 2011,
     "price": "4.0 USD",
     "images": [
-      "images/1246A.jpeg",
-      "images/1246B.jpeg"
+      "images/1247A.jpeg",
+      "images/1247B.jpeg"
     ],
     "reference": "KM# 59a",
     "grade": "Sin Circular",
@@ -19590,15 +19590,15 @@
     "costo": 2.5
   },
   {
-    "id": 1247,
+    "id": 1248,
     "title": "5 francos 1945",
     "country": "Mónaco",
     "metal": "Cuproníquel",
     "year": 1945,
     "price": "5.0 USD",
     "images": [
-      "images/1247A.jpeg",
-      "images/1247B.jpeg"
+      "images/1248A.jpeg",
+      "images/1248B.jpeg"
     ],
     "reference": "",
     "grade": "Excelente",
@@ -19611,15 +19611,15 @@
     "costo": 2.5
   },
   {
-    "id": 1248,
+    "id": 1249,
     "title": "sri lanka  km 178",
     "country": "Sri Lanka",
     "metal": "Cuproníquel",
     "year": null,
     "price": "5.0 USD",
     "images": [
-      "images/1248A.jpeg",
-      "images/1248B.jpeg"
+      "images/1249A.jpeg",
+      "images/1249B.jpeg"
     ],
     "reference": "KM# 178",
     "grade": "Sin Circular",
@@ -19632,15 +19632,15 @@
     "costo": 3.22
   },
   {
-    "id": 1249,
+    "id": 1250,
     "title": "25 cents 2023",
     "country": "Ecuador",
     "metal": "Cuproníquel",
     "year": 2023,
     "price": "3.0 USD",
     "images": [
-      "images/1249A.jpeg",
-      "images/1249B.jpeg"
+      "images/1250A.jpeg",
+      "images/1250B.jpeg"
     ],
     "reference": "",
     "grade": "Sin Circular",
@@ -19654,7 +19654,7 @@
     "cantidad": 2
   },
   {
-    "id": 1250,
+    "id": 1251,
     "title": "1 Dólar 2023",
     "country": "Canadá",
     "metal": "Acero bañado en latón",
@@ -19667,21 +19667,21 @@
     "reference": "KM# 3317",
     "description": "Homenaje a Elsie MacGill, pionera de la ingeniería aeronáutica (con aplicación de color).",
     "images": [
-      "images/1250A.jpeg",
-      "images/1250B.jpeg"
+      "images/1251A.jpeg",
+      "images/1251B.jpeg"
     ],
     "publishedAt": "2026-08-30T02:44:10.961879+00:00"
   },
   {
-    "id": 1251,
+    "id": 1252,
     "title": "5 Francos 1989",
     "country": "Francia",
     "metal": "Cuproníquel",
     "year": 1989,
     "price": "5 USD",
     "images": [
-      "images/1251A.jpeg",
-      "images/1251B.jpeg"
+      "images/1252A.jpeg",
+      "images/1252B.jpeg"
     ],
     "reference": "KM# 968",
     "grade": "Sin Circular",
@@ -19692,15 +19692,15 @@
     "cantidad": 1
   },
   {
-    "id": 1252,
+    "id": 1253,
     "title": "2 Francos 1995",
     "country": "Francia",
     "metal": "Níquel",
     "year": 1995,
     "price": "4 USD",
     "images": [
-      "images/1252A.jpeg",
-      "images/1252B.jpeg"
+      "images/1253A.jpeg",
+      "images/1253B.jpeg"
     ],
     "reference": "KM# 1119",
     "grade": "Sin Circular",
@@ -19711,15 +19711,15 @@
     "cantidad": 2
   },
   {
-    "id": 1253,
+    "id": 1254,
     "title": "2 Francos 1993",
     "country": "Francia",
     "metal": "Níquel",
     "year": 1993,
     "price": "4 USD",
     "images": [
-      "images/1253A.jpeg",
-      "images/1253B.jpeg"
+      "images/1254A.jpeg",
+      "images/1254B.jpeg"
     ],
     "reference": "KM# 1062",
     "grade": "Sin Circular",
@@ -19730,7 +19730,7 @@
     "cantidad": 2
   },
   {
-    "id": 1254,
+    "id": 1255,
     "title": "25 Pounds 2003",
     "country": "Siria",
     "metal": "Bimetálica",
@@ -19743,13 +19743,13 @@
     "reference": "KM# 131",
     "description": "Edificio del Banco Central de Siria y Escudo Nacional con el Halcón de Quraish.",
     "images": [
-      "images/1254A.jpeg",
-      "images/1254B.jpeg"
+      "images/1255A.jpeg",
+      "images/1255B.jpeg"
     ],
     "publishedAt": "2026-08-30T02:44:10.961879+00:00"
   },
   {
-    "id": 1255,
+    "id": 1256,
     "title": "20 Feniga 2025",
     "country": "Bosnia y Herzegovina",
     "metal": "Acero revestido de cobre",
@@ -19762,13 +19762,13 @@
     "reference": "KM# 116",
     "description": "Mapa de Bosnia y Herzegovina y motivos geométricos.",
     "images": [
-      "images/1255A.jpeg",
-      "images/1255B.jpeg"
+      "images/1256A.jpeg",
+      "images/1256B.jpeg"
     ],
     "publishedAt": "2026-08-30T02:44:10.961879+00:00"
   },
   {
-    "id": 1256,
+    "id": 1257,
     "title": "1 Real 2024",
     "country": "Brasil",
     "metal": "Bimetálica",
@@ -19781,8 +19781,8 @@
     "reference": "KM# 684",
     "description": "30 años del Plan Real (1994-2024). Efigie de la República y símbolo del Real.",
     "images": [
-      "images/1256A.jpeg",
-      "images/1256B.jpeg"
+      "images/1257A.jpeg",
+      "images/1257B.jpeg"
     ],
     "publishedAt": "2026-08-30T02:44:10.961879+00:00"
   }
