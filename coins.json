@@ -19787,5 +19787,155 @@
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
     "costo": 0.86,
     "cantidad": 8
+  },
+  {
+    "id": 1243,
+    "title": "5 Yuan (Peking Opera) 2024",
+    "country": "China, República Popular",
+    "metal": "Latón",
+    "year": 2024,
+    "price": "6.0 USD",
+    "images": [
+      "images/1243A.jpeg",
+      "images/1243B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "13.1",
+    "diametro": "30",
+    "description": "opera",
+    "publishedAt": "2026-08-30T02:31:10.888065+00:00",
+    "costo": 4.0,
+    "cantidad": 2,
+    "commemorates": "opera"
+  },
+  {
+    "id": 1244,
+    "title": "canada 1970",
+    "country": "Numismática Popper",
+    "metal": "Cuproníquel",
+    "year": 1970,
+    "price": "4.0 USD",
+    "images": [
+      "images/1244A.jpeg",
+      "images/1244B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "manitoba",
+    "publishedAt": "2026-08-30T02:31:10.888065+00:00",
+    "costo": 3.0
+  },
+  {
+    "id": 1245,
+    "title": "canada 1971",
+    "country": "Numismática Popper",
+    "metal": "Cuproníquel",
+    "year": 1971,
+    "price": "4.0 USD",
+    "images": [
+      "images/1245A.jpeg",
+      "images/1245B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "british columbia",
+    "publishedAt": "2026-08-30T02:31:10.888065+00:00",
+    "costo": 3.0
+  },
+  {
+    "id": 1246,
+    "title": "dalasi 2011",
+    "country": "Gambia",
+    "metal": "Níquel",
+    "year": 2011,
+    "price": "4.0 USD",
+    "images": [
+      "images/1246A.jpeg",
+      "images/1246B.jpeg"
+    ],
+    "reference": "KM# 59a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "8.67",
+    "diametro": "28",
+    "description": "",
+    "publishedAt": "2026-08-30T02:31:10.888065+00:00",
+    "costo": 2.5
+  },
+  {
+    "id": 1247,
+    "title": "5 francos 1945",
+    "country": "Mónaco",
+    "metal": "Cuproníquel",
+    "year": 1945,
+    "price": "5.0 USD",
+    "images": [
+      "images/1247A.jpeg",
+      "images/1247B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-30T02:31:10.888065+00:00",
+    "costo": 2.5
+  },
+  {
+    "id": 1248,
+    "title": "sri lanka  km 178",
+    "country": "Sri Lanka",
+    "metal": "Cuproníquel",
+    "year": null,
+    "price": "5.0 USD",
+    "images": [
+      "images/1248A.jpeg",
+      "images/1248B.jpeg"
+    ],
+    "reference": "KM# 178",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-08-30T02:31:10.888065+00:00",
+    "costo": 3.22
+  },
+  {
+    "id": 1249,
+    "title": "25 cents 2023",
+    "country": "Ecuador",
+    "metal": "Cuproníquel",
+    "year": 2023,
+    "price": "3.0 USD",
+    "images": [
+      "images/1249A.jpeg",
+      "images/1249B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "spencer",
+    "publishedAt": "2026-08-30T02:31:10.888065+00:00",
+    "costo": 1.5,
+    "cantidad": 2
   }
 ]
