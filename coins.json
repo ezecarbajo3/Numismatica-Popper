@@ -923,7 +923,9 @@
     "peso": 2.0,
     "diametro": 16.0,
     "description": "",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 98,
@@ -1233,7 +1235,9 @@
     "peso": 2.0,
     "diametro": 16.0,
     "description": "Año único.",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 124,
@@ -2162,7 +2166,9 @@
     "mintage": "",
     "peso": 2.0,
     "diametro": 16.0,
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 205,
@@ -2329,7 +2335,9 @@
     "reference": "KM# 128",
     "group_id": "be-franco-km128",
     "group_label": "Franco",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 225,
@@ -2461,7 +2469,9 @@
     "peso": 1.5,
     "diametro": 16.0,
     "reference": "KM# 46",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 242,
@@ -3217,7 +3227,9 @@
     "diametro": 21.0,
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 299,
@@ -3752,7 +3764,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "reference": "KM# 168",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 342,
@@ -3854,7 +3868,9 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 350,
@@ -8017,7 +8033,9 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "reference": "Y# 274",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 606,
@@ -9954,7 +9972,9 @@
     "grade_short": "MB",
     "mintage": "3.500.000",
     "description": "Año único",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 717,
@@ -11216,7 +11236,7 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 2,
+    "cantidad": 1,
     "reference": "KM# 33"
   },
   {
@@ -11320,7 +11340,7 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 2,
+    "cantidad": 1,
     "reference": "KM# 168"
   },
   {
@@ -11455,7 +11475,7 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 2,
+    "cantidad": 1,
     "reference": "KM# 32"
   },
   {
@@ -12229,7 +12249,7 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 2,
+    "cantidad": 1,
     "reference": "Y# 88",
     "metal": "Cuproníquel"
   },
@@ -12916,7 +12936,7 @@
     "reference": "KM# 852",
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 8,
+    "cantidad": 7,
     "group_id": "se-1krona",
     "group_label": "1 Krona",
     "peso": 7.0,
@@ -14507,7 +14527,7 @@
   {
     "id": 970,
     "costo": 0,
-    "cantidad": 9,
+    "cantidad": 8,
     "title": "1 Jiao 2009",
     "country": "China",
     "metal": "Acero niquelado",
@@ -17026,7 +17046,7 @@
     "year": 2011,
     "price": "4 USD",
     "costo": 2.5,
-    "cantidad": 1,
+    "cantidad": 0,
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "KM# 59a",
@@ -17035,7 +17055,9 @@
       "images/1108A.jpeg",
       "images/1108B.jpeg"
     ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
+    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 1109,
@@ -17336,7 +17358,9 @@
     "grade_short": "SC",
     "description": "Diseño floral ornamental.",
     "publishedAt": "2026-08-21T16:59:56.406985+00:00",
-    "costo": 1.94
+    "costo": 1.94,
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 1131,
@@ -17453,7 +17477,9 @@
     "publishedAt": "2026-08-22T01:12:55.339717+00:00",
     "group_id": "de-1-deutsche-mark",
     "group_label": "1 Deutsche Mark",
-    "costo": 0.0
+    "costo": 0.0,
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 1137,
@@ -17678,7 +17704,9 @@
     "description": "Bicentenario de la Primera República Francesa",
     "publishedAt": "2026-08-22T16:00:34.563299+00:00",
     "costo": 1.94,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 1149,
@@ -18170,8 +18198,10 @@
     "description": "Conmemorativa del cambio de trono (30 de abril de 1980). Doble efigie de Juliana y Beatriz.",
     "publishedAt": "2026-08-26T22:58:42.644435+00:00",
     "costo": 0.77,
-    "cantidad": 1,
-    "commemorates": "Doble efigie de la reina Juliana y la reina Beatriz (Cambio de trono, 30 de abril de 1980)."
+    "cantidad": 0,
+    "commemorates": "Doble efigie de la reina Juliana y la reina Beatriz (Cambio de trono, 30 de abril de 1980).",
+    "status": "sold",
+    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 1174,
