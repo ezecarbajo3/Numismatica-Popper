@@ -15131,8 +15131,7 @@
     "group_id": "ar-2-1-2-pesos",
     "group_label": "2 1/2 Pesos",
     "costo": 110.0,
-    "status": "sold",
-    "soldAt": "2026-08-31T18:33:32.228066+00:00"
+    "cantidad": 1
   },
   {
     "id": 1267,
