@@ -15156,5 +15156,29 @@
     "group_id": "ar-2-1-2-pesos",
     "group_label": "2 1/2 Pesos",
     "costo": 40.0
+  },
+  {
+    "id": 1268,
+    "title": "Blister 1 Peso",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 2023,
+    "price": "150 USD",
+    "images": [
+      "images/1268A.jpeg",
+      "images/1268B.jpeg",
+      "images/1268C.jpeg",
+      "images/1268D.jpeg"
+    ],
+    "reference": "KM# 194",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 2500,
+    "peso": "25",
+    "diametro": "",
+    "description": "40 Aniversario de la Restauración de la Democracia. Incluye Blister + Certificado. Solo 2.500 acuñadas.",
+    "publishedAt": "2026-08-31T18:33:42.559320+00:00",
+    "costo": 115.76,
+    "commemorates": "40 Aniversario de la Restauración de la Democracia"
   }
 ]
