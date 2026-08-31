@@ -5946,7 +5946,9 @@
       "images/592C.jpeg"
     ],
     "description": "Contiene cuño 1977 y 1978",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-08-31T12:57:03.816577+00:00"
   },
   {
     "id": 593,
