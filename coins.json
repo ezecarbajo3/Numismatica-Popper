@@ -15108,5 +15108,51 @@
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
     "costo": 0.86,
     "cantidad": 8
+  },
+  {
+    "id": 1266,
+    "title": "2 1/2 Pesos",
+    "country": "Argentina",
+    "metal": "Plata",
+    "year": 1880,
+    "price": "150 USD",
+    "images": [
+      "images/1266A.jpeg",
+      "images/1266B.jpeg"
+    ],
+    "reference": "CJ# 32.1",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Fue catalogada por Cunietti-Ferrando como ensayo. Se conocen muy pocos ejemplares similares, la mayoría subastados en Estados Unidos. Estas pruebas habrían sido encargadas en 1880 a la Monnaie de París, punzonadas con el dígito 0 por Eugène Oudiné.",
+    "publishedAt": "2026-08-31T17:25:25.983346+00:00",
+    "group_id": "ar-2-1-2-pesos",
+    "group_label": "2 1/2 Pesos",
+    "costo": 110.0
+  },
+  {
+    "id": 1267,
+    "title": "2 1/2 Pesos",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1880,
+    "price": "60 USD",
+    "images": [
+      "images/1267A.jpeg",
+      "images/1267B.jpeg"
+    ],
+    "reference": "CJ# 32.2",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Fue catalogada por Cunietti-Ferrando como ensayo. Se conocen muy pocos ejemplares similares, la mayoría subastados en Estados Unidos. Estas pruebas habrían sido encargadas en 1880 a la Monnaie de París, punzonadas con el dígito 0 por Eugène Oudiné.",
+    "publishedAt": "2026-08-31T17:25:25.983346+00:00",
+    "group_id": "ar-2-1-2-pesos",
+    "group_label": "2 1/2 Pesos",
+    "costo": 40.0
   }
 ]
