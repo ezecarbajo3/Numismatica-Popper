@@ -59,10 +59,10 @@ def parse_sales_text(text):
             elif motivo.upper() in coin_map:
                 cid = coin_map[motivo.upper()]['id']
             else:
-                id_m = re.search(r'\b(P?\d{1,5})\b', motivo, re.IGNORECASE)
+                id_m = re.search(r'\b([A-Za-z]?\d{1,5})\b', motivo)
                 if id_m:
                     m_val = id_m.group(1).upper()
-                    if int(m_val) if m_val.isdigit() else m_val in coin_map:
+                    if (int(m_val) if m_val.isdigit() else m_val) in coin_map:
                         cid = coin_map[int(m_val) if m_val.isdigit() else m_val]['id']
                 if cid is None:
                     m_norm = motivo.lower()
@@ -78,8 +78,8 @@ def parse_sales_text(text):
             continue
 
         # 2. Patrón clásico por ID
-        m1 = re.match(r'^(?:id\s+)?(?P<id>P?\d+)\s+(?:a\s+|por\s+)?(?P<price>[$]?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)\s+(?P<clients>.+)$', line_clean, re.IGNORECASE)
-        m2 = re.match(r'^(?:id\s+)?(?P<id>P?\d+)\s+(?P<clients>.+?)\s+(?:a\s+|por\s+)?(?P<price>[$]?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)$', line_clean, re.IGNORECASE)
+        m1 = re.match(r'^(?:id\s+)?(?P<id>[A-Za-z]?\d+)\s+(?:a\s+|por\s+)?(?P<price>[$]?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)\s+(?P<clients>.+)$', line_clean, re.IGNORECASE)
+        m2 = re.match(r'^(?:id\s+)?(?P<id>[A-Za-z]?\d+)\s+(?P<clients>.+?)\s+(?:a\s+|por\s+)?(?P<price>[$]?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)$', line_clean, re.IGNORECASE)
         m = m1 or m2
         if m:
             raw_id = m.group('id').upper()
@@ -92,7 +92,7 @@ def parse_sales_text(text):
             continue
 
         # 3. Sub-pattern / IDs que realmente existan en coins.json
-        id_matches = re.findall(r'\b(?:id\s*)?(P?\d{1,5})\b', line_clean, re.IGNORECASE)
+        id_matches = re.findall(r'\b(?:id\s*)?([A-Za-z]?\d{1,5})\b', line_clean, re.IGNORECASE)
         for mid in id_matches:
             raw_id = mid.upper()
             lookup_key = int(raw_id) if raw_id.isdigit() else raw_id
