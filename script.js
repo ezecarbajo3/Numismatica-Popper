@@ -224,7 +224,7 @@ function collapseGroups(coins) {
     // Among active: higher grade wins; tie → lower id
     const rankEx = gradeRank(ex);
     const rankC  = gradeRank(coin);
-    if (rankC > rankEx || (rankC === rankEx && coin.id < ex.id)) {
+    if (rankC > rankEx || (rankC === rankEx && String(coin.id) < String(ex.id))) {
       repById.set(coin.group_id, coin);
     }
   }
@@ -797,7 +797,9 @@ function normalizeSearch(str) {
 // escribir en el buscador se sintiera pegajoso.
 function prepareCoins() {
   for (const coin of allCoins) {
+    const idTokens = coin.id != null ? `${coin.id} #${coin.id}` : '';
     coin._searchText = normalizeSearch([
+      idTokens,
       coin.title, getCountryDisplayLabel(coin.country), coin.country,
       coin.metal, coin.year, coin.price, coin.description,
       coin.reference, coin.grade, coin.grade_short, coin.mintage,
@@ -925,7 +927,10 @@ function compareAlfabetico(a, b) {
     const dateA = getCoinPublishDate(a);
     const dateB = getCoinPublishDate(b);
     if (dateA !== dateB) return dateB - dateA;
-    return (b.id || 0) - (a.id || 0);
+    const numA = Number(String(a.id || '').replace(/\D/g, '')) || 0;
+    const numB = Number(String(b.id || '').replace(/\D/g, '')) || 0;
+    if (numA !== numB) return numB - numA;
+    return String(b.id || '').localeCompare(String(a.id || ''));
   }
 
   // Default: country A→Z, Argentina subsections, year ascending, face value ascending
@@ -1158,7 +1163,7 @@ function preloadCarousel(article, coin) {
 // actualizan enseguida para dar respuesta inmediata mientras decodifica. El
 // token protege contra swaps fuera de orden al tocar rápido.
 function stepCarousel(article, delta) {
-  const coin = renderedCoinsById.get(Number(article.dataset.coinId));
+  const coin = renderedCoinsById.get(String(article.dataset.coinId));
   if (!coin) return;
   const images = getImagesArray(coin);
   if (images.length < 2) return;
@@ -1249,7 +1254,7 @@ function renderCoins(coins, skipAnimation = false) {
   // después desaparecen. collapseGroups elige el representante por grado e id,
   // sin depender del orden de entrada, así que el orden por defecto no cambia.
   const displayCoins = sortCoins(collapseGroups(coins));
-  displayCoins.forEach(coin => renderedCoinsById.set(Number(coin.id), coin));
+  displayCoins.forEach(coin => renderedCoinsById.set(String(coin.id), coin));
 
   const displayCount = displayCoins.length;
   resultsCount.textContent = `${displayCount} ${displayCount === 1 ? 'ítem encontrado' : 'ítems encontrados'}`;
@@ -1311,7 +1316,7 @@ function initGridDelegation() {
 
     const article = event.target.closest('.coin-card');
     if (!article || article.classList.contains('is-sold')) return;
-    goToDetail(Number(article.dataset.coinId));
+    goToDetail(article.dataset.coinId);
   });
 
   coinsGrid.addEventListener('keydown', (event) => {
@@ -1319,7 +1324,7 @@ function initGridDelegation() {
     const article = event.target.closest('.coin-card');
     if (!article || article.classList.contains('is-sold')) return;
     event.preventDefault();
-    goToDetail(Number(article.dataset.coinId));
+    goToDetail(article.dataset.coinId);
   });
 
   // Las fotos secundarias se precargan al primer hover/toque, no al render:
@@ -1327,14 +1332,14 @@ function initGridDelegation() {
   coinsGrid.addEventListener('mouseenter', (event) => {
     const article = event.target.closest && event.target.closest('.coin-card');
     if (!article) return;
-    const coin = renderedCoinsById.get(Number(article.dataset.coinId));
+    const coin = renderedCoinsById.get(String(article.dataset.coinId));
     if (coin) preloadCarousel(article, coin);
   }, true);
 
   coinsGrid.addEventListener('touchstart', (event) => {
     const article = event.target.closest('.coin-card');
     if (!article) return;
-    const coin = renderedCoinsById.get(Number(article.dataset.coinId));
+    const coin = renderedCoinsById.get(String(article.dataset.coinId));
     if (coin) preloadCarousel(article, coin);
     touchStartX = event.changedTouches[0].clientX;
     touchStartY = event.changedTouches[0].clientY;

@@ -503,12 +503,14 @@ function initDetailRevealEffects() {
 // ─── Bootstrap ────────────────────────────────────────────────────────────────
 
 async function loadCoinDetail() {
-  const coinId = Number(getQueryParam("id"));
+  const rawId = getQueryParam("id");
 
-  if (!coinId) {
+  if (!rawId || !rawId.trim()) {
     detailContainer.innerHTML = '<p class="detail-error">No se indicó ninguna moneda.</p>';
     return false;
   }
+
+  const cleanId = rawId.trim().toLowerCase();
 
   try {
     // Caché normal del navegador (ver el comentario en script.js/loadCoins):
@@ -517,7 +519,7 @@ async function loadCoinDetail() {
     if (!response.ok) throw new Error("No se pudo cargar coins.json");
 
     const allCoins = await response.json();
-    const coin     = allCoins.find(c => Number(c.id) === coinId);
+    const coin     = allCoins.find(c => String(c.id).toLowerCase() === cleanId);
 
     if (!coin) {
       detailContainer.innerHTML = '<p class="detail-error">No se encontró la moneda.</p>';

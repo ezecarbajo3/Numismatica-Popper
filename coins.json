@@ -11852,15 +11852,15 @@
     ]
   },
   {
-    "id": 1083,
+    "id": "P3",
     "title": "50.000 Nuevos Pesos 1991",
     "country": "Uruguay",
     "metal": "Plata .925",
     "year": 1991,
     "price": "85 USD",
     "images": [
-      "images/1083A.jpeg",
-      "images/1083B.jpeg"
+      "images/P3A.jpeg",
+      "images/P3B.jpeg"
     ],
     "reference": "KM# 100",
     "grade": "Sin Circular",
@@ -11872,15 +11872,15 @@
     "costo": 70.29
   },
   {
-    "id": 1084,
+    "id": "P2",
     "title": "2.000 Pesos 2024",
     "country": "Uruguay",
     "metal": "Plata .900",
     "year": 2024,
     "price": "75 USD",
     "images": [
-      "images/1084A.jpeg",
-      "images/1084B.jpeg"
+      "images/P2A.jpeg",
+      "images/P2B.jpeg"
     ],
     "reference": "",
     "grade": "Sin Circular",
@@ -11892,15 +11892,15 @@
     "costo": 67.09
   },
   {
-    "id": 1085,
+    "id": "P1",
     "title": "1.000 Pesos 2022",
     "country": "Uruguay",
     "metal": "Plata .900",
     "year": 2022,
     "price": "80 USD",
     "images": [
-      "images/1085A.jpeg",
-      "images/1085B.jpeg"
+      "images/P1A.jpeg",
+      "images/P1B.jpeg"
     ],
     "reference": "",
     "grade": "Sin Circular",

@@ -31,7 +31,11 @@ def parse_sales_text(text):
                 coins = json.load(f)
         except Exception:
             pass
-    coin_map = {c['id']: c for c in coins if isinstance(c, dict) and 'id' in c}
+    coin_map = {}
+    for c in coins:
+        if isinstance(c, dict) and 'id' in c:
+            coin_map[c['id']] = c
+            coin_map[str(c['id']).upper()] = c
 
     for line in lines:
         line_clean = re.sub(r'\([^\)]*el resto no[^\)]*\)', '', line, flags=re.IGNORECASE).strip()
@@ -51,12 +55,16 @@ def parse_sales_text(text):
 
             cid = None
             if motivo.isdigit() and int(motivo) in coin_map:
-                cid = int(motivo)
+                cid = coin_map[int(motivo)]['id']
+            elif motivo.upper() in coin_map:
+                cid = coin_map[motivo.upper()]['id']
             else:
-                id_m = re.search(r'\b(\d{1,5})\b', motivo)
-                if id_m and int(id_m.group(1)) in coin_map:
-                    cid = int(id_m.group(1))
-                else:
+                id_m = re.search(r'\b(P?\d{1,5})\b', motivo, re.IGNORECASE)
+                if id_m:
+                    m_val = id_m.group(1).upper()
+                    if int(m_val) if m_val.isdigit() else m_val in coin_map:
+                        cid = coin_map[int(m_val) if m_val.isdigit() else m_val]['id']
+                if cid is None:
                     m_norm = motivo.lower()
                     for c in coins:
                         t = (c.get('title') or '').lower()
@@ -70,29 +78,33 @@ def parse_sales_text(text):
             continue
 
         # 2. Patrón clásico por ID
-        m1 = re.match(r'^(?:id\s+)?(?P<id>\d+)\s+(?:a\s+|por\s+)?(?P<price>[$]?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)\s+(?P<clients>.+)$', line_clean, re.IGNORECASE)
-        m2 = re.match(r'^(?:id\s+)?(?P<id>\d+)\s+(?P<clients>.+?)\s+(?:a\s+|por\s+)?(?P<price>[$]?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)$', line_clean, re.IGNORECASE)
+        m1 = re.match(r'^(?:id\s+)?(?P<id>P?\d+)\s+(?:a\s+|por\s+)?(?P<price>[$]?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)\s+(?P<clients>.+)$', line_clean, re.IGNORECASE)
+        m2 = re.match(r'^(?:id\s+)?(?P<id>P?\d+)\s+(?P<clients>.+?)\s+(?:a\s+|por\s+)?(?P<price>[$]?\d+(?:[\.,]\d+)?(?:\s*(?:usd|dolar(?:es)?))?)$', line_clean, re.IGNORECASE)
         m = m1 or m2
         if m:
-            cid = int(m.group('id'))
-            if cid in coin_map:
+            raw_id = m.group('id').upper()
+            lookup_key = int(raw_id) if raw_id.isdigit() else raw_id
+            if lookup_key in coin_map:
+                cid = coin_map[lookup_key]['id']
                 clients_raw = m.group('clients').strip()
                 qty = len([c for c in clients_raw.split(',') if c.strip()]) if ',' in clients_raw else 1
                 counts[cid] = counts.get(cid, 0) + max(1, qty)
             continue
 
         # 3. Sub-pattern / IDs que realmente existan en coins.json
-        id_matches = re.findall(r'\b(?:id\s*)?(\d{1,5})\b', line_clean, re.IGNORECASE)
+        id_matches = re.findall(r'\b(?:id\s*)?(P?\d{1,5})\b', line_clean, re.IGNORECASE)
         for mid in id_matches:
-            cid = int(mid)
-            if cid in coin_map:
+            raw_id = mid.upper()
+            lookup_key = int(raw_id) if raw_id.isdigit() else raw_id
+            if lookup_key in coin_map:
+                cid = coin_map[lookup_key]['id']
                 counts[cid] = counts.get(cid, 0) + 1
 
     return counts
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Mark coins as sold / decrement stock, or mark as available in coins.json")
-    parser.add_argument("ids", nargs="*", help="List of IDs or ID:QTY (e.g. 105 2034 2034 or 2034:2)")
+    parser.add_argument("ids", nargs="*", help="List of IDs or ID:QTY (e.g. 105 P1 P2:2 or 2034:2)")
     parser.add_argument("--text", default=None, help="Raw sales text e.g. 'id 105 2000 quique' or multiline list")
     parser.add_argument("--json", dest="json_input", default=None, help="JSON list of {id, qty}")
     parser.add_argument("--skip-stock-check", action="store_true", help="Allow selling down to 0 even if requested > initial stock")
@@ -109,7 +121,8 @@ def main():
     elif args.json_input:
         data = json.loads(args.json_input)
         for item in data:
-            cid = int(item['id'])
+            raw_id = str(item['id']).strip().upper()
+            cid = int(raw_id) if raw_id.isdigit() else raw_id
             qty = int(item.get('qty', item.get('cantidad', 1)))
             requested_counts[cid] = requested_counts.get(cid, 0) + qty
             
@@ -117,15 +130,14 @@ def main():
         for arg in args.ids:
             if ":" in arg:
                 parts = arg.split(":")
-                cid = int(parts[0])
+                raw_id = parts[0].strip().upper()
+                cid = int(raw_id) if raw_id.isdigit() else raw_id
                 qty = int(parts[1])
                 requested_counts[cid] = requested_counts.get(cid, 0) + qty
             else:
-                try:
-                    cid = int(arg)
-                    requested_counts[cid] = requested_counts.get(cid, 0) + 1
-                except ValueError:
-                    pass
+                raw_id = arg.strip().upper()
+                cid = int(raw_id) if raw_id.isdigit() else raw_id
+                requested_counts[cid] = requested_counts.get(cid, 0) + 1
     else:
         print("Usage: python3 mark_sold.py <id1> <id2> ... or --text 'id 105 2000 quique'")
         sys.exit(1)
@@ -146,7 +158,12 @@ def main():
     # ─────────────────────────────────────────────────────────────
     # DOBLE VERIFICACIÓN DE EXISTENCIA Y STOCK
     # ─────────────────────────────────────────────────────────────
-    coin_map = {c['id']: c for c in coins}
+    coin_map = {}
+    for c in coins:
+        if isinstance(c, dict) and 'id' in c:
+            coin_map[c['id']] = c
+            coin_map[str(c['id']).upper()] = c
+            coin_map[str(c['id']).lower()] = c
     verification_errors = []
 
     for cid, req_qty in requested_counts.items():
