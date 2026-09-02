@@ -13110,7 +13110,9 @@
     "description": "Conmemorativa de los 50 años del movimiento Pride en el Reino Unido (1972-2022). Palabras 'Protest', 'Unity', 'Pride', 'Equality' y 'Visibility'.",
     "publishedAt": "2026-08-26T23:01:53.314486+00:00",
     "costo": 1.0,
-    "commemorates": "50.° Aniversario del movimiento Pride en el Reino Unido (1972-2022)."
+    "commemorates": "50.° Aniversario del movimiento Pride en el Reino Unido (1972-2022).",
+    "status": "sold",
+    "soldAt": "2026-09-02T21:15:35.809756+00:00"
   },
   {
     "id": 1178,
@@ -13810,7 +13812,9 @@
     "diametro": "",
     "description": "",
     "publishedAt": "2026-08-27T12:42:23.460889+00:00",
-    "costo": 0.02
+    "costo": 0.02,
+    "status": "sold",
+    "soldAt": "2026-09-02T21:15:35.809756+00:00"
   },
   {
     "id": 1208,
@@ -13856,7 +13860,9 @@
     "publishedAt": "2026-08-27T12:48:26.617250+00:00",
     "group_id": "uk-10-pence",
     "group_label": "10 Pence",
-    "costo": 0.12
+    "costo": 0.12,
+    "status": "sold",
+    "soldAt": "2026-09-02T21:15:35.809756+00:00"
   },
   {
     "id": 1210,
@@ -14818,10 +14824,12 @@
     "description": "Centenario de la Torre Eiffel (1889-1989). Diseño de Frédéric Joubert.",
     "publishedAt": "2026-08-30T02:44:10.961879+00:00",
     "costo": 2.58,
-    "cantidad": 1,
+    "cantidad": 0,
     "mintage": "",
     "peso": "10",
-    "diametro": "29"
+    "diametro": "29",
+    "status": "sold",
+    "soldAt": "2026-09-02T21:15:35.809756+00:00"
   },
   {
     "id": 1253,
