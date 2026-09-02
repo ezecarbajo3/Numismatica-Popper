@@ -15639,5 +15639,131 @@
     "costo": 1.0,
     "cantidad": 2,
     "commemorates": "Centenario del Bluenose"
+  },
+  {
+    "id": "R1",
+    "title": "1 Duit",
+    "country": "Isla de Java (Ocupación Británica)",
+    "metal": "Cobre",
+    "year": 1811,
+    "price": "50 USD",
+    "images": [
+      "images/R1A.jpeg",
+      "images/R1B.jpeg"
+    ],
+    "reference": "KM# 240",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Acuñada durante la ocupación británica de Java (1811–1816) en el marco de las Guerras Napoleónicas, cuando las fuerzas británicas lideradas por Sir Stamford Raffles arrebataron el control de la isla a la administración franco-holandesa para frenar la expansión napoleónica en las Indias Orientales. Presenta el monograma oficial de la Compañía Británica de las Indias Orientales (EIC) y la marca de ceca de Surabaya.",
+    "publishedAt": "2026-09-02T20:44:50.855158+00:00",
+    "costo": 40.0
+  },
+  {
+    "id": "R2",
+    "title": "1 Kaserah",
+    "country": "Sultanato de Cachemira",
+    "metal": "Cobre",
+    "year": 1469,
+    "price": "20 USD",
+    "images": [
+      "images/R2A.jpeg",
+      "images/R2B.jpeg"
+    ],
+    "reference": "Rajgor# 2820",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Emitida durante el reinado del sultán Hasan Shah (1469–1484), monarca de la dinastía Shah Mir que gobernó el valle de Cachemira en el norte del subcontinente indio. Esta pieza de cobre medieval exhibe inscripciones en caligrafía persa tradicional, reflejando el florecimiento cultural e islámico independiente de la región previo a su incorporación al Imperio Mogol.",
+    "publishedAt": "2026-09-02T20:44:50.855158+00:00",
+    "costo": 15.0
+  },
+  {
+    "id": "R3",
+    "title": "1 Cent",
+    "country": "Islas Vírgenes Británicas",
+    "metal": "Bronce",
+    "year": 1973,
+    "price": "13 USD",
+    "images": [
+      "images/R3A.jpeg",
+      "images/R3B.jpeg"
+    ],
+    "reference": "KM# 1",
+    "grade": "",
+    "grade_short": "",
+    "mintage": 53000,
+    "peso": "",
+    "diametro": "",
+    "description": "Primera emisión monetaria propia del territorio británico de ultramar de las Islas Vírgenes Británicas bajo el reinado de Isabel II, acuñada por la prestigiosa Franklin Mint en 1973. Exhibe en el anverso el segundo retrato oficial de la reina y en el reverso el pájaro bobo patirrojo (Sula sula), ave emblemática del Caribe, con una reducida tirada de solo 53.000 ejemplares para circulación general.",
+    "publishedAt": "2026-09-02T20:44:50.855158+00:00",
+    "costo": 5.19
+  },
+  {
+    "id": "R4",
+    "title": "1/80 Riyal",
+    "country": "Yemen del Norte",
+    "metal": "Bronce",
+    "year": 1956,
+    "price": "16.5 USD",
+    "images": [
+      "images/R4A.jpeg",
+      "images/R4B.jpeg"
+    ],
+    "reference": "Y# 11.1",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "3.3",
+    "diametro": "21",
+    "description": "Acuñada en la histórica ceca de Saná bajo el Reino Mutawakkilita de Yemen durante el mandato del imán Ahmad bin Yahya (1948–1962). Esta fracción monetaria tradicional de 1/80 riyal es un testimonio directo del período feudal y tradicionalista del reino zaidí anterior a la guerra civil de 1962 y el fin de la monarquía yemení.",
+    "publishedAt": "2026-09-02T20:44:50.855158+00:00",
+    "costo": 9.74
+  },
+  {
+    "id": "R5",
+    "title": "1 Soldo",
+    "country": "Condado de Gorizia",
+    "metal": "Cobre",
+    "year": 1789,
+    "price": "35 USD",
+    "images": [
+      "images/R5A.jpeg",
+      "images/R5B.jpeg"
+    ],
+    "reference": "KM# 24",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Acuñada en la histórica ceca de Hall en Tirol bajo el reinado del emperador José II del Sacro Imperio Romano Germánico y soberano de la Casa de Habsburgo. Corresponde al principesco Condado de Gorizia y Gradisca (en la actual frontera ítalo-eslovena), constituyendo una pieza clave de las reformas y el sistema monetario austriaco para sus territorios del norte de Italia a finales del siglo XVIII.",
+    "publishedAt": "2026-09-02T20:44:50.855158+00:00",
+    "costo": 30.0
+  },
+  {
+    "id": "R6",
+    "title": "10 Rublos",
+    "country": "Spitsbergen (Svalbard)",
+    "metal": "Acero recubierto de cuproníquel",
+    "year": 1993,
+    "price": "30 USD",
+    "images": [
+      "images/R6A.jpeg",
+      "images/R6B.jpeg"
+    ],
+    "reference": "KM# Tn5",
+    "grade": "",
+    "grade_short": "",
+    "mintage": 77800,
+    "peso": "2.85",
+    "diametro": "20",
+    "description": "Emisión especial de la compañía minera estatal rusa Arktikugol para la comunidad minera de Barentsburg en el archipiélago ártico de Svalbard (Spitsbergen), administrado por Noruega bajo el Tratado de 1920. Al incluir la inscripción 'Federación Rusa', Noruega presentó una queja diplomática formal por violación de soberanía, obligando a retirar y desmonetizar casi la totalidad de la tirada, convirtiéndola en una pieza ártica sumamente codiciada.",
+    "publishedAt": "2026-09-02T20:44:50.855158+00:00",
+    "costo": 25.0
   }
 ]
