@@ -13715,7 +13715,9 @@
     "group_id": "uk-20pence",
     "group_label": "20 Pence",
     "costo": 0.24,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-09-03T01:27:03.159859+00:00"
   },
   {
     "id": 1203,
@@ -13952,7 +13954,9 @@
     "publishedAt": "2026-08-27T12:51:37.996464+00:00",
     "group_id": "uk-50pence",
     "group_label": "50 Pence",
-    "costo": 0.6
+    "costo": 0.6,
+    "status": "sold",
+    "soldAt": "2026-09-03T01:27:03.159859+00:00"
   },
   {
     "id": 1213,
@@ -15228,7 +15232,7 @@
     "description": "",
     "publishedAt": "2026-09-02T20:37:19.124704+00:00",
     "costo": 1.62,
-    "cantidad": 3
+    "cantidad": 2
   },
   {
     "id": 1270,
@@ -15250,7 +15254,7 @@
     "description": "",
     "publishedAt": "2026-09-02T20:37:19.124704+00:00",
     "costo": 2.27,
-    "cantidad": 3
+    "cantidad": 2
   },
   {
     "id": 1271,
@@ -15294,7 +15298,9 @@
     "description": "",
     "publishedAt": "2026-09-02T20:37:19.124704+00:00",
     "costo": 1.17,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-09-03T01:27:03.159859+00:00"
   },
   {
     "id": 1273,
@@ -15451,7 +15457,7 @@
     "description": "",
     "publishedAt": "2026-09-02T20:37:19.124704+00:00",
     "costo": 1.3,
-    "cantidad": 3
+    "cantidad": 2
   },
   {
     "id": 1280,
@@ -15727,7 +15733,9 @@
     "diametro": "",
     "description": "Primera emisión monetaria propia del territorio británico de ultramar de las Islas Vírgenes Británicas bajo el reinado de Isabel II, acuñada por la prestigiosa Franklin Mint en 1973. Exhibe en el anverso el segundo retrato oficial de la reina y en el reverso el pájaro bobo patirrojo (Sula sula), ave emblemática del Caribe, con una reducida tirada de solo 53.000 ejemplares para circulación general.",
     "publishedAt": "2026-09-02T20:44:50.855158+00:00",
-    "costo": 5.19
+    "costo": 5.19,
+    "status": "sold",
+    "soldAt": "2026-09-03T01:27:03.159859+00:00"
   },
   {
     "id": "R4",
