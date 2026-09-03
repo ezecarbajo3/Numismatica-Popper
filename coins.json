@@ -1311,7 +1311,9 @@
     "grade_short": "",
     "mintage": "",
     "description": "",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-03T00:37:08.913490+00:00"
   },
   {
     "id": 175,
