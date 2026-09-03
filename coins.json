@@ -12797,7 +12797,9 @@
     "publishedAt": "2026-08-22T22:27:19.165116+00:00",
     "group_id": "de-5-deutsche-mark",
     "group_label": "5 Deutsche Mark",
-    "costo": 7.37
+    "costo": 7.37,
+    "status": "sold",
+    "soldAt": "2026-09-03T00:47:57.023146+00:00"
   },
   {
     "id": 1164,
@@ -12936,7 +12938,9 @@
     "diametro": "",
     "description": "Efigie del rey Alberto II de Bélgica.",
     "publishedAt": "2026-08-26T22:25:37.770885+00:00",
-    "costo": 0.0
+    "costo": 0.0,
+    "status": "sold",
+    "soldAt": "2026-09-03T00:47:57.023146+00:00"
   },
   {
     "id": 1170,
