@@ -1098,7 +1098,9 @@
     "description": "",
     "group_id": "ar-2reales-1860-ba",
     "group_label": "2 Reales 1860",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-03T00:18:46.685546+00:00"
   },
   {
     "id": 150,
@@ -1118,7 +1120,9 @@
     "peso": 11.34,
     "diametro": 30.61,
     "description": "Aniversario del Congreso.",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-03T00:18:46.685546+00:00"
   },
   {
     "id": 151,
@@ -1178,7 +1182,9 @@
     "peso": 6.25,
     "diametro": 24.3,
     "description": "Standing Liberty.",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-03T00:18:46.685546+00:00"
   },
   {
     "id": 164,
@@ -11195,7 +11201,9 @@
     "grade_short": "R",
     "reference": "Sp# 6620",
     "description": "Jorge III.",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-03T00:18:46.685546+00:00"
   },
   {
     "id": 1001,
@@ -11332,7 +11340,9 @@
     "grade_short": "MB",
     "mintage": 5420000,
     "description": "Imperio Alemán",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-09-03T00:18:46.685546+00:00"
   },
   {
     "id": 1022,
@@ -11494,7 +11504,7 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": 9000000,
-    "cantidad": 2,
+    "cantidad": 1,
     "description": "",
     "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
@@ -15547,8 +15557,10 @@
     "group_id": "ca-1-dolar-fifa-2026",
     "group_label": "1 Dólar Mundial FIFA 2026",
     "costo": 2.5,
-    "cantidad": 2,
-    "commemorates": "Copa Mundial de la FIFA 2026 (Color)"
+    "cantidad": 0,
+    "commemorates": "Copa Mundial de la FIFA 2026 (Color)",
+    "status": "sold",
+    "soldAt": "2026-09-03T00:18:46.685546+00:00"
   },
   {
     "id": 1285,
@@ -15620,7 +15632,7 @@
     "group_id": "ca-10-cents-bluenose-2021",
     "group_label": "10 Cents Centenario del Bluenose 2021",
     "costo": 1.0,
-    "cantidad": 2,
+    "cantidad": 1,
     "commemorates": "Centenario del Bluenose (Color)"
   },
   {
