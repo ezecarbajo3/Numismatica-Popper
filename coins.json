@@ -15811,5 +15811,26 @@
     "description": "Emisión especial de la compañía minera estatal rusa Arktikugol para la comunidad minera de Barentsburg en el archipiélago ártico de Svalbard (Spitsbergen), administrado por Noruega bajo el Tratado de 1920. Al incluir la inscripción 'Federación Rusa', Noruega presentó una queja diplomática formal por violación de soberanía, obligando a retirar y desmonetizar casi la totalidad de la tirada, convirtiéndola en una pieza ártica sumamente codiciada.",
     "publishedAt": "2026-09-02T20:44:50.855158+00:00",
     "costo": 25.0
+  },
+  {
+    "id": 1289,
+    "title": "50 Centavos 1883",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1883,
+    "price": "65 USD",
+    "images": [
+      "images/1289A.jpeg",
+      "images/1289B.jpeg"
+    ],
+    "reference": "CJ# 15-17",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 2273000,
+    "peso": "12.5",
+    "diametro": "30.1",
+    "description": "",
+    "publishedAt": "2026-09-03T21:19:26.868237+00:00",
+    "costo": 48.54
   }
 ]
