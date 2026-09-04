@@ -14785,7 +14785,9 @@
     "description": "50° Aniversario del Fondo de Previsión de Empleados (Employees' Provident Fund - EPF, 1958-2008).",
     "publishedAt": "2026-08-30T02:31:10.888065+00:00",
     "costo": 3.22,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-09-04T23:54:19.093378+00:00"
   },
   {
     "id": 1250,
