@@ -15853,7 +15853,9 @@
     "description": "",
     "publishedAt": "2026-09-04T19:05:07.645274+00:00",
     "costo": 3.28,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-09-04T22:20:41.159026+00:00"
   },
   {
     "id": 1291,
@@ -15875,7 +15877,9 @@
     "description": "",
     "publishedAt": "2026-09-04T19:05:07.645274+00:00",
     "costo": 2.92,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-09-04T22:20:41.159026+00:00"
   },
   {
     "id": 1292,
@@ -15897,7 +15901,9 @@
     "description": "",
     "publishedAt": "2026-09-04T19:05:07.645274+00:00",
     "costo": 3.72,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-09-04T22:20:41.159026+00:00"
   },
   {
     "id": 1293,
@@ -15919,8 +15925,10 @@
     "description": "",
     "publishedAt": "2026-09-04T19:05:07.645274+00:00",
     "costo": 6.49,
-    "cantidad": 1,
-    "commemorates": "F.A.O."
+    "cantidad": 0,
+    "commemorates": "F.A.O.",
+    "status": "sold",
+    "soldAt": "2026-09-04T22:20:41.159026+00:00"
   },
   {
     "id": 1294,
