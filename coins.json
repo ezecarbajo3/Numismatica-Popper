@@ -16470,21 +16470,21 @@
   },
   {
     "id": 1318,
-    "title": "10 dolares 2000",
+    "title": "10 Dólares 2000",
     "country": "Jamaica",
-    "metal": "Cuproníquel",
+    "metal": "Acero niquelado",
     "year": 2000,
     "price": "3 USD",
     "images": [
       "images/1318A.jpeg",
       "images/1318B.jpeg"
     ],
-    "reference": "",
+    "reference": "KM# 181",
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "",
-    "peso": "",
-    "diametro": "",
+    "peso": "5.94",
+    "diametro": "24",
     "description": "",
     "publishedAt": "2026-09-04T22:41:19.721383+00:00",
     "costo": 1.5
@@ -16512,7 +16512,7 @@
   },
   {
     "id": 1320,
-    "title": "50 Cents - Elizabeth II (4th portrait; Non-Magnetic) 2006",
+    "title": "50 Cents 2006",
     "country": "Nueva Zelanda",
     "metal": "Cuproníquel",
     "year": 2006,
@@ -16563,7 +16563,7 @@
       "images/1322A.jpeg",
       "images/1322B.jpeg"
     ],
-    "reference": "CJ# 18-20",
+    "reference": "CJ# 20",
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": 1510950,
@@ -16584,7 +16584,7 @@
       "images/1323A.jpeg",
       "images/1323B.jpeg"
     ],
-    "reference": "CJ# 21-23",
+    "reference": "CJ# 23",
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": 2786000,
@@ -16598,7 +16598,7 @@
   },
   {
     "id": 1324,
-    "title": "1/2 melgarejo 1865",
+    "title": "1/2 Melgarejo 1865",
     "country": "Bolivia",
     "metal": "Plata .667",
     "year": 1865,
@@ -16607,34 +16607,34 @@
       "images/1324A.jpeg",
       "images/1324B.jpeg"
     ],
-    "reference": "",
-    "grade": "mb**",
-    "grade_short": "mb**",
+    "reference": "KM# 142",
+    "grade": "Muy Bueno **",
+    "grade_short": "MB**",
     "mintage": "",
     "peso": "1.25",
     "diametro": "15",
-    "description": "",
+    "description": "Medalla monetaria de Mariano Melgarejo: El héroe de diciembre / Salva la patria de la anarquía.",
     "publishedAt": "2026-09-04T22:41:19.721383+00:00",
     "costo": 14.0
   },
   {
     "id": 1325,
-    "title": "estaodos unidos 1 dolar 1922",
-    "country": "Numismática Popper",
-    "metal": "Cuproníquel",
+    "title": "1 Dólar Peace 1922",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
     "year": 1922,
     "price": "52 USD",
     "images": [
       "images/1325A.jpeg",
       "images/1325B.jpeg"
     ],
-    "reference": "",
+    "reference": "KM# 150",
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Dolar Peace",
+    "peso": "26.73",
+    "diametro": "38.1",
+    "description": "Dólar Peace",
     "publishedAt": "2026-09-04T22:41:19.721383+00:00",
     "costo": 32.47
   },
@@ -16651,15 +16651,14 @@
       "images/1326C.jpeg",
       "images/1326D.jpeg"
     ],
-    "reference": "Ensayo CJ# 34",
+    "reference": "CJ# 34",
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
     "peso": "12.5",
     "diametro": "30.1",
-    "description": "ensayo",
+    "description": "Ensayo de 50 Centavos grabado por Eugène Oudiné para la República Argentina.",
     "publishedAt": "2026-09-04T22:41:19.721383+00:00",
-    "costo": 81.17,
-    "commemorates": "ensayo"
+    "costo": 81.17
   }
 ]
