@@ -10178,7 +10178,9 @@
     "group_label": "10 Centavos Patacón",
     "costo": 7,
     "mintage": "3.753.864",
-    "description": "Moneda histórica argentina del Peso Moneda Nacional acuñada en cuproníquel durante la presidencia de Julio A. Roca."
+    "description": "Moneda histórica argentina del Peso Moneda Nacional acuñada en cuproníquel durante la presidencia de Julio A. Roca.",
+    "status": "sold",
+    "soldAt": "2026-09-04T23:18:45.578332+00:00"
   },
   {
     "id": 917,
