@@ -16661,23 +16661,5 @@
     "publishedAt": "2026-09-04T22:41:19.721383+00:00",
     "costo": 81.17,
     "commemorates": "ensayo"
-  },
-  {
-    "id": 1327,
-    "title": "aa",
-    "country": "Numismática Popper",
-    "metal": "Cuproníquel",
-    "year": null,
-    "price": "4 USD",
-    "images": [],
-    "reference": "",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "",
-    "publishedAt": "2026-09-04T22:41:19.721383+00:00",
-    "costo": 4.0
   }
 ]
