@@ -16193,5 +16193,27 @@
     "publishedAt": "2026-09-04T19:05:07.645274+00:00",
     "costo": 1.48,
     "cantidad": 1
+  },
+  {
+    "id": 1306,
+    "title": "2 Rappen",
+    "country": "Suiza",
+    "metal": "Bronce",
+    "year": 1893,
+    "price": "10 USD",
+    "images": [
+      "images/1306A.jpeg",
+      "images/1306B.jpeg"
+    ],
+    "reference": "KM# 4.2",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 2000000,
+    "peso": "2.5",
+    "diametro": "20",
+    "description": "",
+    "publishedAt": "2026-09-04T21:30:17.199615+00:00",
+    "costo": 6.46,
+    "cantidad": 1
   }
 ]
