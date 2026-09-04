@@ -16009,45 +16009,19 @@
     "diametro": "27",
     "description": "",
     "publishedAt": "2026-09-04T19:05:07.645274+00:00",
-    "group_id": "di-5-re",
-    "group_label": "5 Øre",
     "costo": 4.21,
     "cantidad": 1
   },
   {
     "id": 1298,
-    "title": "5 Øre",
-    "country": "Dinamarca",
-    "metal": "Bronce",
-    "year": 1908,
-    "price": "4.5 USD",
-    "images": [
-      "images/1298A.jpeg",
-      "images/1298B.jpeg"
-    ],
-    "reference": "KM# 806",
-    "grade": "Muy Bueno+",
-    "grade_short": "MB+",
-    "mintage": 1198000,
-    "peso": "8",
-    "diametro": "27",
-    "description": "",
-    "publishedAt": "2026-09-04T19:05:07.645274+00:00",
-    "group_id": "di-5-re",
-    "group_label": "5 Øre",
-    "costo": 6.77,
-    "cantidad": 1
-  },
-  {
-    "id": 1299,
     "title": "10 Francos",
     "country": "Francia",
     "metal": "Bronce de aluminio",
     "year": 1987,
     "price": "6 USD",
     "images": [
-      "images/1299A.jpeg",
-      "images/1299B.jpeg"
+      "images/1298A.jpeg",
+      "images/1298B.jpeg"
     ],
     "reference": "KM# 961d",
     "grade": "Muy Bueno",
@@ -16064,15 +16038,15 @@
     "commemorates": "Milenario de la Dinastía Capeta (987-1987)"
   },
   {
-    "id": 1300,
+    "id": 1299,
     "title": "25 Céntimos",
     "country": "Francia",
     "metal": "Níquel",
     "year": 1903,
     "price": "6 USD",
     "images": [
-      "images/1300A.jpeg",
-      "images/1300B.jpeg"
+      "images/1299A.jpeg",
+      "images/1299B.jpeg"
     ],
     "reference": "KM# 855",
     "grade": "Muy Bueno",
@@ -16086,15 +16060,15 @@
     "cantidad": 1
   },
   {
-    "id": 1301,
+    "id": 1300,
     "title": "1 Cent",
     "country": "Países Bajos",
     "metal": "Bronce",
     "year": 1902,
     "price": "13 USD",
     "images": [
-      "images/1301A.jpeg",
-      "images/1301B.jpeg"
+      "images/1300A.jpeg",
+      "images/1300B.jpeg"
     ],
     "reference": "KM# 132.1",
     "grade": "Excelente",
@@ -16108,15 +16082,15 @@
     "cantidad": 1
   },
   {
-    "id": 1302,
+    "id": 1301,
     "title": "1 Soldo",
     "country": "Italia - Estados Preunitarios",
     "metal": "Cobre",
     "year": 1862,
     "price": "9.5 USD",
     "images": [
-      "images/1302A.jpeg",
-      "images/1302B.jpeg"
+      "images/1301A.jpeg",
+      "images/1301B.jpeg"
     ],
     "reference": "C# 35.1",
     "grade": "Bueno+",
@@ -16130,15 +16104,15 @@
     "cantidad": 1
   },
   {
-    "id": 1303,
+    "id": 1302,
     "title": "1 Centavo",
     "country": "Portugal",
     "metal": "Bronce",
     "year": 1918,
     "price": "6 USD",
     "images": [
-      "images/1303A.jpeg",
-      "images/1303B.jpeg"
+      "images/1302A.jpeg",
+      "images/1302B.jpeg"
     ],
     "reference": "KM# 565",
     "grade": "Excelente -",
@@ -16152,15 +16126,15 @@
     "cantidad": 1
   },
   {
-    "id": 1304,
+    "id": 1303,
     "title": "100 Liras",
     "country": "San Marino",
     "metal": "Acmonital",
     "year": 1978,
     "price": "6 USD",
     "images": [
-      "images/1304A.jpeg",
-      "images/1304B.jpeg"
+      "images/1303A.jpeg",
+      "images/1303B.jpeg"
     ],
     "reference": "KM# 82",
     "grade": "Sin Circular",
@@ -16177,15 +16151,15 @@
     "commemorates": "F.A.O."
   },
   {
-    "id": 1305,
+    "id": 1304,
     "title": "100 Liras",
     "country": "San Marino",
     "metal": "Acero inoxidable",
     "year": 1985,
     "price": "3.5 USD",
     "images": [
-      "images/1305A.jpeg",
-      "images/1305B.jpeg"
+      "images/1304A.jpeg",
+      "images/1304B.jpeg"
     ],
     "reference": "KM# 179",
     "grade": "Sin Circular",
@@ -16198,6 +16172,28 @@
     "group_id": "sa-100-liras",
     "group_label": "100 Liras",
     "costo": 3.58,
+    "cantidad": 1
+  },
+  {
+    "id": 1305,
+    "title": "10 Øre",
+    "country": "Suecia",
+    "metal": "Plata .400",
+    "year": 1955,
+    "price": "4.5 USD",
+    "images": [
+      "images/1305A.jpeg",
+      "images/1305B.jpeg"
+    ],
+    "reference": "KM# 823",
+    "grade": "Excelente -",
+    "grade_short": "EXC-",
+    "mintage": "",
+    "peso": "1.44",
+    "diametro": "15.5",
+    "description": "",
+    "publishedAt": "2026-09-04T19:05:07.645274+00:00",
+    "costo": 1.48,
     "cantidad": 1
   }
 ]
