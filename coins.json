@@ -16644,7 +16644,7 @@
   },
   {
     "id": 1326,
-    "title": "50 Centavos 1880 Ensayo",
+    "title": "20 Centavos 1880 Ensayo",
     "country": "Argentina",
     "metal": "Plata .900",
     "year": 1880,
@@ -16655,13 +16655,13 @@
       "images/1326C.jpeg",
       "images/1326D.jpeg"
     ],
-    "reference": "CJ# 34",
+    "reference": "CJ# 35",
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
-    "peso": "12.5",
-    "diametro": "30.1",
-    "description": "Ensayo de 50 Centavos grabado por Eugène Oudiné para la República Argentina.",
+    "peso": "5",
+    "diametro": "23",
+    "description": "Ensayo de 20 Centavos grabado por Eugène Oudiné para la República Argentina.",
     "publishedAt": "2026-09-04T22:41:19.721383+00:00",
     "costo": 81.17
   }
