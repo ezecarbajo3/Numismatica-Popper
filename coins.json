@@ -16664,5 +16664,29 @@
     "description": "Ensayo de 20 Centavos grabado por Eugène Oudiné para la República Argentina.",
     "publishedAt": "2026-09-04T22:41:19.721383+00:00",
     "costo": 81.17
+  },
+  {
+    "id": 1327,
+    "title": "Blister 25 Pesos 2024 Puente de la Mujer",
+    "country": "Argentina",
+    "metal": "Plata .925",
+    "year": 2024,
+    "price": "97.5 USD",
+    "images": [
+      "images/1327A.jpeg",
+      "images/1327B.jpeg",
+      "images/1327C.jpeg",
+      "images/1327D.jpeg"
+    ],
+    "reference": "KM# 195",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "13.5",
+    "diametro": "33",
+    "description": "XIII Serie Capitales Iberoamericanas (Puente de la Mujer, Buenos Aires). Incluye Blister original.",
+    "publishedAt": "2026-09-05T20:28:37.759687+00:00",
+    "costo": 77.92,
+    "commemorates": "XIII Serie Capitales Iberoamericanas - Puente de la Mujer, Buenos Aires"
   }
 ]
