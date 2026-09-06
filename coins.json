@@ -16446,7 +16446,9 @@
     "diametro": "17.75",
     "description": "Acuñada en la ceca de Kabul (actual Afganistán) bajo el reinado de Spalapati Deva (c. 750–900 d.C.), soberano de la dinastía hindú Shahi de Gandhara y Kabul. Presenta en anverso el jinete guerrero con lanza y en reverso el toro sagrado Nandi con leyenda en devanagari.",
     "publishedAt": "2026-09-06T22:36:03.122460+00:00",
-    "costo": 15.0
+    "costo": 15.0,
+    "status": "sold",
+    "soldAt": "2026-09-06T23:05:24.939745+00:00"
   },
   {
     "id": "R9",
