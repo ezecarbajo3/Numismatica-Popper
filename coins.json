@@ -4022,7 +4022,7 @@
     "costo": 0
   },
   {
-    "id": 432,
+    "id": "F11",
     "title": "1 Dime 1829",
     "country": "Estados Unidos",
     "metal": "Plata 0.8924",
@@ -4038,7 +4038,7 @@
     "costo": 0
   },
   {
-    "id": 433,
+    "id": "F2",
     "title": "1 Centavo 1883",
     "country": "Argentina",
     "metal": "Cobre",
@@ -4074,74 +4074,6 @@
     "soldAt": "2026-08-18T11:36:26.388814+00:00"
   },
   {
-    "id": 435,
-    "title": "1 Dollar 1925",
-    "country": "Estados Unidos",
-    "metal": "Plata 0.900",
-    "year": 1925,
-    "price": "71.5 USD",
-    "images": [
-      "images/427A.jpeg",
-      "images/427B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "reference": "KM# 150",
-    "costo": 0
-  },
-  {
-    "id": 436,
-    "title": "1000 Pesos 1969",
-    "country": "Uruguay",
-    "metal": "Plata 0.900",
-    "year": 1969,
-    "price": "66 USD",
-    "images": [
-      "images/428A.jpeg",
-      "images/428B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "reference": "KM# 55",
-    "costo": 0
-  },
-  {
-    "id": 437,
-    "title": "5 Cents 1914",
-    "country": "Estados Unidos",
-    "metal": "Cu Ni",
-    "year": 1914,
-    "price": "35.5 USD",
-    "images": [
-      "images/429A.jpeg",
-      "images/429B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "group_id": "us-5c-buffalo",
-    "group_label": "Buffalo Nickel",
-    "reference": "KM# 134",
-    "costo": 0
-  },
-  {
-    "id": 438,
-    "title": "5 Cents 1914",
-    "country": "Estados Unidos",
-    "metal": "Cu Ni",
-    "year": 1914,
-    "price": "42 USD",
-    "images": [
-      "images/430A.jpeg",
-      "images/430B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B",
-    "group_id": "us-5c-buffalo",
-    "group_label": "Buffalo Nickel",
-    "reference": "KM# 134",
-    "costo": 0
-  },
-  {
     "id": 439,
     "title": "5 Cents 1888",
     "country": "Estados Unidos",
@@ -4162,201 +4094,7 @@
     "costo": 0
   },
   {
-    "id": 440,
-    "title": "1 Cent 1910",
-    "country": "Estados Unidos",
-    "metal": "Cu",
-    "year": 1910,
-    "price": "24.5 USD",
-    "images": [
-      "images/437A.jpeg",
-      "images/437B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "group_id": "us-cent-lincoln",
-    "group_label": "Lincoln Cent",
-    "reference": "KM# 132",
-    "costo": 0
-  },
-  {
-    "id": 441,
-    "title": "1 Cent 1911",
-    "country": "Estados Unidos",
-    "metal": "Cu",
-    "year": 1911,
-    "price": "55 USD",
-    "images": [
-      "images/439A.jpeg",
-      "images/439B.jpeg"
-    ],
-    "grade": "Bueno -",
-    "grade_short": "B-",
-    "group_id": "us-cent-lincoln",
-    "group_label": "Lincoln Cent",
-    "reference": "KM# 132",
-    "costo": 0
-  },
-  {
-    "id": 442,
-    "title": "1 Cent 1912",
-    "country": "Estados Unidos",
-    "metal": "Cu",
-    "year": 1912,
-    "price": "24.5 USD",
-    "images": [
-      "images/440A.jpeg",
-      "images/440B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B",
-    "group_id": "us-cent-lincoln",
-    "group_label": "Lincoln Cent",
-    "reference": "KM# 132",
-    "costo": 0
-  },
-  {
-    "id": 443,
-    "title": "1 Cent 1912",
-    "country": "Estados Unidos",
-    "metal": "Cu",
-    "year": 1912,
-    "price": "26.5 USD",
-    "images": [
-      "images/441A.jpeg",
-      "images/441B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "group_id": "us-cent-lincoln",
-    "group_label": "Lincoln Cent",
-    "reference": "KM# 132",
-    "costo": 0
-  },
-  {
-    "id": 444,
-    "title": "1 Cent 1914",
-    "country": "Estados Unidos",
-    "metal": "Cu",
-    "year": 1914,
-    "price": "33 USD",
-    "images": [
-      "images/443A.jpeg",
-      "images/443B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "group_id": "us-cent-lincoln",
-    "group_label": "Lincoln Cent",
-    "reference": "KM# 132",
-    "costo": 0
-  },
-  {
-    "id": 445,
-    "title": "1 Cent 1915",
-    "country": "Estados Unidos",
-    "metal": "Cu",
-    "year": 1915,
-    "price": "35.5 USD",
-    "images": [
-      "images/444A.jpeg",
-      "images/444B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B",
-    "group_id": "us-cent-lincoln",
-    "group_label": "Lincoln Cent",
-    "reference": "KM# 132",
-    "costo": 0
-  },
-  {
-    "id": 446,
-    "title": "1 Cent 1926",
-    "country": "Estados Unidos",
-    "metal": "Cu",
-    "year": 1926,
-    "price": "29 USD",
-    "images": [
-      "images/445A.jpeg",
-      "images/445B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "group_id": "us-cent-lincoln",
-    "group_label": "Lincoln Cent",
-    "reference": "KM# 132",
-    "costo": 0
-  },
-  {
-    "id": 447,
-    "title": "5 Cents 1913",
-    "country": "Estados Unidos",
-    "metal": "Cu Ni",
-    "year": 1913,
-    "price": "60.5 USD",
-    "images": [
-      "images/446A.jpeg",
-      "images/446B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B",
-    "group_id": "us-5c-buffalo",
-    "group_label": "Buffalo Nickel",
-    "reference": "KM# 134",
-    "costo": 0
-  },
-  {
-    "id": 448,
-    "title": "5 Cents 1914",
-    "country": "Estados Unidos",
-    "metal": "Cu Ni",
-    "year": 1914,
-    "price": "104.5 USD",
-    "images": [
-      "images/447A.jpeg",
-      "images/447B.jpeg"
-    ],
-    "grade": "Excelente +",
-    "grade_short": "EX+",
-    "group_id": "us-5c-buffalo",
-    "group_label": "Buffalo Nickel",
-    "reference": "KM# 134",
-    "costo": 0
-  },
-  {
-    "id": 449,
-    "title": "Half dollar 1920",
-    "country": "Estados Unidos",
-    "metal": "Plata 0.900",
-    "year": 1920,
-    "price": "42 USD",
-    "images": [
-      "images/448A.jpeg",
-      "images/448B.jpeg"
-    ],
-    "grade": "Bueno -",
-    "grade_short": "B-",
-    "reference": "KM# 142",
-    "costo": 0
-  },
-  {
-    "id": 450,
-    "title": "Half dollar 1955",
-    "country": "Estados Unidos",
-    "metal": "Plata 0.900",
-    "year": 1955,
-    "price": "40 USD",
-    "images": [
-      "images/449A.jpeg",
-      "images/449B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "reference": "KM# 199",
-    "costo": 0
-  },
-  {
-    "id": 454,
+    "id": "F1",
     "title": "1 Centavo 1854",
     "country": "Argentina",
     "metal": "Cu",
@@ -4372,7 +4110,7 @@
     "costo": 0
   },
   {
-    "id": 456,
+    "id": "F3",
     "title": "20 Centavos 1972",
     "country": "Argentina",
     "metal": "Bronce de aluminio",
@@ -4389,7 +4127,7 @@
     "costo": 0
   },
   {
-    "id": 457,
+    "id": "F5",
     "title": "1000 Pesos 2003",
     "country": "Uruguay",
     "metal": "Plata 0.925",
@@ -4410,7 +4148,7 @@
     "costo": 0
   },
   {
-    "id": 458,
+    "id": "F6",
     "title": "1000 Pesos 2004",
     "country": "Uruguay",
     "metal": "Plata 0.925",
@@ -4431,7 +4169,7 @@
     "costo": 0
   },
   {
-    "id": 459,
+    "id": "F7",
     "title": "1000 Pesos 2005",
     "country": "Uruguay",
     "metal": "Plata 0.925",
@@ -4452,24 +4190,7 @@
     "costo": 0
   },
   {
-    "id": 461,
-    "title": "1 Peso 2023",
-    "country": "Argentina",
-    "metal": "Ag 0.900",
-    "year": 2023,
-    "price": "220 USD",
-    "images": [
-      "images/464A.jpeg",
-      "images/464B.jpeg",
-      "images/464C.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "CJ# 8.35",
-    "costo": 0
-  },
-  {
-    "id": 462,
+    "id": "F4",
     "title": "5 Pesos 2013",
     "country": "Argentina",
     "metal": "Ag 0.925",
@@ -4506,7 +4227,7 @@
     "costo": 0
   },
   {
-    "id": 467,
+    "id": "F12",
     "title": "1 Cent 1862",
     "country": "Estados Unidos",
     "metal": "Cu Ni",
@@ -4526,7 +4247,7 @@
     "costo": 0
   },
   {
-    "id": 469,
+    "id": "F13",
     "title": "1 Cent 1864",
     "country": "Estados Unidos",
     "metal": "Cu",
@@ -4546,7 +4267,7 @@
     "costo": 0
   },
   {
-    "id": 470,
+    "id": "F14",
     "title": "1 Cent 1865",
     "country": "Estados Unidos",
     "metal": "Cu",
@@ -4566,7 +4287,7 @@
     "costo": 0
   },
   {
-    "id": 474,
+    "id": "F15",
     "title": "1 Cent 1874",
     "country": "Estados Unidos",
     "metal": "Cu",
@@ -4586,7 +4307,7 @@
     "costo": 0
   },
   {
-    "id": 475,
+    "id": "F16",
     "title": "1 Cent 1875",
     "country": "Estados Unidos",
     "metal": "Cu",
@@ -4606,7 +4327,7 @@
     "costo": 0
   },
   {
-    "id": 476,
+    "id": "F17",
     "title": "1 Cent 1876",
     "country": "Estados Unidos",
     "metal": "Cu",
@@ -4626,7 +4347,7 @@
     "costo": 0
   },
   {
-    "id": 478,
+    "id": "F18",
     "title": "1 Cent 1880",
     "country": "Estados Unidos",
     "metal": "Cu",
@@ -10365,19 +10086,6 @@
     "costo": 0
   },
   {
-    "id": 934,
-    "title": "10 Francos 1974",
-    "country": "Francia",
-    "metal": "Cuproníquel",
-    "year": 1974,
-    "price": "2 USD",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "reference": "KM# 940",
-    "description": "Diseño moderno abstracto de Georges Mathieu representando el mapa estilizado de Francia.",
-    "costo": 0
-  },
-  {
     "id": 935,
     "title": "2 Pesos 2012",
     "country": "Argentina",
@@ -10500,7 +10208,7 @@
     "costo": 0
   },
   {
-    "id": 945,
+    "id": "F8",
     "costo": 40,
     "title": "1/2 Dólar 1960",
     "country": "Estados Unidos",
@@ -10520,7 +10228,7 @@
     "mintage": "1.691.602"
   },
   {
-    "id": 947,
+    "id": "F9",
     "costo": 40,
     "title": "1/2 Dólar 1962",
     "country": "Estados Unidos",
@@ -10540,7 +10248,7 @@
     "mintage": "3.218.019"
   },
   {
-    "id": 948,
+    "id": "F10",
     "costo": 40,
     "title": "1/2 Dólar 1963",
     "country": "Estados Unidos",
