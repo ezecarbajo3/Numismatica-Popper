@@ -16666,7 +16666,9 @@
     "diametro": "23",
     "description": "Ensayo de 20 Centavos grabado por Eugène Oudiné para la República Argentina.",
     "publishedAt": "2026-09-04T22:41:19.721383+00:00",
-    "costo": 81.17
+    "costo": 81.17,
+    "status": "sold",
+    "soldAt": "2026-09-06T08:31:01.134695+00:00"
   },
   {
     "id": 1327,
