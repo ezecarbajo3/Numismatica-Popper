@@ -16405,5 +16405,90 @@
     "commemorates": "XIII Serie Capitales Iberoamericanas - Puente de la Mujer, Buenos Aires",
     "status": "sold",
     "soldAt": "2026-09-06T08:22:45.039142+00:00"
+  },
+  {
+    "id": "R7",
+    "title": "2 1/2 Centésimos 1929",
+    "country": "Panamá",
+    "metal": "Cuproníquel",
+    "year": 1929,
+    "price": "13 USD",
+    "images": [
+      "images/R7A.jpeg",
+      "images/R7B.jpeg"
+    ],
+    "reference": "KM# 8",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "peso": "3.27",
+    "diametro": "18",
+    "description": "Rara.",
+    "publishedAt": "2026-09-06T22:36:03.122460+00:00",
+    "costo": 6.49
+  },
+  {
+    "id": "R8",
+    "title": "1 Jital 900 d.C.",
+    "country": "Reino Shahi de Gandhara y Kabul",
+    "metal": "Plata",
+    "year": 900,
+    "price": "20 USD",
+    "images": [
+      "images/R8A.jpeg",
+      "images/R8B.jpeg"
+    ],
+    "reference": "Mitch WI# 106",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "mintage": "",
+    "peso": "3.15",
+    "diametro": "17.75",
+    "description": "Acuñada en la ceca de Kabul (actual Afganistán) bajo el reinado de Spalapati Deva (c. 750–900 d.C.), soberano de la dinastía hindú Shahi de Gandhara y Kabul. Presenta en anverso el jinete con lanza y en reverso el toro sagrado Nandi con leyenda en devanagari.",
+    "publishedAt": "2026-09-06T22:36:03.122460+00:00",
+    "costo": 15.0
+  },
+  {
+    "id": "R9",
+    "title": "10 Pfennig 1920 Beethoven",
+    "country": "Alemania",
+    "metal": "Hierro",
+    "year": 1920,
+    "price": "16.5 USD",
+    "images": [
+      "images/R9A.jpeg",
+      "images/R9B.jpeg"
+    ],
+    "reference": "Funck 2012# 51.1A",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "3.56",
+    "diametro": "20.8",
+    "description": "Moneda de necesidad (Notgeld) emitida por la ciudad de Bonn en 1920 en conmemoración del 150° aniversario del nacimiento de Ludwig van Beethoven, con el retrato del célebre compositor en el anverso.",
+    "publishedAt": "2026-09-06T22:36:03.122460+00:00",
+    "costo": 12.99,
+    "commemorates": "Ludwig van Beethoven"
+  },
+  {
+    "id": "R10",
+    "title": "50 Centavos 1902",
+    "country": "Colombia (Santander)",
+    "metal": "Latón",
+    "year": 1902,
+    "price": "120 USD",
+    "images": [
+      "images/R10A.jpeg",
+      "images/R10B.jpeg"
+    ],
+    "reference": "KM# A3",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": "",
+    "peso": "1.45",
+    "diametro": "23.1",
+    "description": "Moneda provisoria de necesidad acuñada en el Estado de Santander durante la Guerra de los Mil Días (1899–1902), fabricada a partir del casquillo de una bala utilizada en el conflicto bélico.",
+    "publishedAt": "2026-09-06T22:36:03.122460+00:00",
+    "costo": 100.0
   }
 ]
