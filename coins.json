@@ -7539,7 +7539,9 @@
     "reference": "CJ# 22",
     "grade": "Excelente",
     "grade_short": "EX",
-    "mintage": "778.000"
+    "mintage": "778.000",
+    "status": "sold",
+    "soldAt": "2026-09-07T14:31:02.952608+00:00"
   },
   {
     "id": 734,
