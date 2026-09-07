@@ -8936,7 +8936,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "reference": "KM# 806",
-    "metal": "Bronce de aluminio"
+    "metal": "Bronce de aluminio",
+    "status": "sold",
+    "soldAt": "2026-09-07T10:09:32.384258-03:00"
   },
   {
     "id": 845,
