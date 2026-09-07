@@ -16750,5 +16750,137 @@
     "diametro": "30",
     "description": "",
     "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+  },
+  {
+    "id": 1340,
+    "title": "10 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "23 USD",
+    "images": [
+      "images/1340A.jpeg",
+      "images/1340B.jpeg"
+    ],
+    "reference": "CJ# 22",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "778.000",
+    "peso": "2.5",
+    "diametro": "18.3",
+    "description": "",
+    "publishedAt": "2026-09-07T14:44:12.993856+00:00",
+    "group_id": "ar-10centavos-patacon",
+    "group_label": "10 Centavos Patacón"
+  },
+  {
+    "id": 1341,
+    "title": "10 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "10 USD",
+    "images": [
+      "images/1341A.jpeg",
+      "images/1341B.jpeg"
+    ],
+    "reference": "CJ# 22",
+    "grade": "Muy Bueno **",
+    "grade_short": "MB**",
+    "mintage": "778.000",
+    "peso": "2.5",
+    "diametro": "18.3",
+    "description": "Con detalles",
+    "publishedAt": "2026-09-07T14:44:12.993856+00:00",
+    "group_id": "ar-10centavos-patacon",
+    "group_label": "10 Centavos Patacón"
+  },
+  {
+    "id": 1342,
+    "title": "10 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "25 USD",
+    "images": [
+      "images/1342A.jpeg",
+      "images/1342B.jpeg"
+    ],
+    "reference": "CJ# 22",
+    "grade": "Excelente+",
+    "grade_short": "EX+",
+    "mintage": "778.000",
+    "peso": "2.5",
+    "diametro": "18.3",
+    "description": "",
+    "publishedAt": "2026-09-07T14:44:12.993856+00:00",
+    "group_id": "ar-10centavos-patacon",
+    "group_label": "10 Centavos Patacón"
+  },
+  {
+    "id": 1343,
+    "title": "10 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "23 USD",
+    "images": [
+      "images/1343A.jpeg",
+      "images/1343B.jpeg"
+    ],
+    "reference": "CJ# 22",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "778.000",
+    "peso": "2.5",
+    "diametro": "18.3",
+    "description": "",
+    "publishedAt": "2026-09-07T14:44:12.993856+00:00",
+    "group_id": "ar-10centavos-patacon",
+    "group_label": "10 Centavos Patacón"
+  },
+  {
+    "id": 1344,
+    "title": "10 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "30 USD",
+    "images": [
+      "images/1344A.jpeg",
+      "images/1344B.jpeg"
+    ],
+    "reference": "CJ# 22",
+    "grade": "Sin Circular -",
+    "grade_short": "SC-",
+    "mintage": "778.000",
+    "peso": "2.5",
+    "diametro": "18.3",
+    "description": "",
+    "publishedAt": "2026-09-07T14:44:12.993856+00:00",
+    "group_id": "ar-10centavos-patacon",
+    "group_label": "10 Centavos Patacón"
+  },
+  {
+    "id": 1345,
+    "title": "10 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "22 USD",
+    "images": [
+      "images/1345A.jpeg",
+      "images/1345B.jpeg"
+    ],
+    "reference": "CJ# 22",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": "778.000",
+    "peso": "2.5",
+    "diametro": "18.3",
+    "description": "",
+    "publishedAt": "2026-09-07T14:44:12.993856+00:00",
+    "group_id": "ar-10centavos-patacon",
+    "group_label": "10 Centavos Patacón"
   }
 ]
