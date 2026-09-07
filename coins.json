@@ -16494,5 +16494,119 @@
     "description": "Moneda provisoria de necesidad acuñada en el Estado de Santander durante la Guerra de los Mil Días (1899–1902), fabricada a partir del casquillo de una bala utilizada en el conflicto bélico civil colombiano.",
     "publishedAt": "2026-09-06T22:36:03.122460+00:00",
     "costo": 100.0
+  },
+  {
+    "id": 1328,
+    "title": "1 Esquiú 1990",
+    "country": "Argentina - Catamarca",
+    "metal": "Plata .900",
+    "year": 1990,
+    "price": "50 USD",
+    "images": [
+      "images/1328A.jpeg",
+      "images/1328B.jpeg"
+    ],
+    "reference": "KM# Tn1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "100.000",
+    "peso": "15",
+    "diametro": "30",
+    "description": "Medalla monetaria provincial acuñada en homenaje a Fray Mamerto Esquiú.",
+    "publishedAt": "2026-09-07T13:57:48.788113+00:00",
+    "group_id": "ar-1-esquiu-1990",
+    "group_label": "1 Esquiú 1990",
+    "costo": 23.97,
+    "commemorates": "Fray Mamerto Esquiú"
+  },
+  {
+    "id": 1329,
+    "title": "1 Esquiú 1990",
+    "country": "Argentina - Catamarca",
+    "metal": "Plata .900",
+    "year": 1990,
+    "price": "50 USD",
+    "images": [
+      "images/1329A.jpeg",
+      "images/1329B.jpeg"
+    ],
+    "reference": "KM# Tn1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "100.000",
+    "peso": "15",
+    "diametro": "30",
+    "description": "Medalla monetaria provincial acuñada en homenaje a Fray Mamerto Esquiú.",
+    "publishedAt": "2026-09-07T13:57:48.788113+00:00",
+    "group_id": "ar-1-esquiu-1990",
+    "group_label": "1 Esquiú 1990",
+    "costo": 23.97,
+    "commemorates": "Fray Mamerto Esquiú"
+  },
+  {
+    "id": 1330,
+    "title": "1 Esquiú 1990",
+    "country": "Argentina - Catamarca",
+    "metal": "Plata .900",
+    "year": 1990,
+    "price": "50 USD",
+    "images": [
+      "images/1330A.jpeg",
+      "images/1330B.jpeg"
+    ],
+    "reference": "KM# Tn1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "100.000",
+    "peso": "15",
+    "diametro": "30",
+    "description": "Medalla monetaria provincial acuñada en homenaje a Fray Mamerto Esquiú.",
+    "publishedAt": "2026-09-07T13:57:48.788113+00:00",
+    "group_id": "ar-1-esquiu-1990",
+    "group_label": "1 Esquiú 1990",
+    "costo": 23.97,
+    "commemorates": "Fray Mamerto Esquiú"
+  },
+  {
+    "id": 1331,
+    "title": "500 Liras 1966",
+    "country": "Italia",
+    "metal": "Plata .835",
+    "year": 1966,
+    "price": "22 USD",
+    "images": [
+      "images/1331A.jpeg",
+      "images/1331B.jpeg"
+    ],
+    "reference": "KM# 98",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "mintage": "",
+    "peso": "11",
+    "diametro": "29.3",
+    "description": "Acuñada en plata .835 con el motivo de las tres carabelas (Santa María, Pinta y Niña) navegando hacia la derecha.",
+    "publishedAt": "2026-09-07T13:57:48.788113+00:00",
+    "costo": 15.03
+  },
+  {
+    "id": 1332,
+    "title": "25 Cents 1902",
+    "country": "Canadá",
+    "metal": "Plata .925",
+    "year": 1902,
+    "price": "50 USD",
+    "images": [
+      "images/1332A.jpeg",
+      "images/1332B.jpeg"
+    ],
+    "reference": "KM# 11",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "peso": "5.81",
+    "diametro": "23.62",
+    "description": "ESCASA, 100 usd de catálogo. Retrato del rey Eduardo VII (Edward VII).",
+    "publishedAt": "2026-09-07T13:57:48.788113+00:00",
+    "costo": 15.23
   }
 ]
