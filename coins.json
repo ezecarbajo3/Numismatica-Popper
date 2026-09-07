@@ -16610,5 +16610,145 @@
     "description": "ESCASA, 100 usd de catálogo. Retrato del rey Eduardo VII (Edward VII).",
     "publishedAt": "2026-09-07T13:57:48.788113+00:00",
     "costo": 15.23
+  },
+  {
+    "id": 1333,
+    "title": "200 Réis 1936",
+    "country": "Brasil",
+    "metal": "Cuproníquel",
+    "year": 1936,
+    "price": "4 USD",
+    "images": [
+      "images/1333A.jpeg",
+      "images/1333B.jpeg"
+    ],
+    "reference": "KM# 537",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": 3028500,
+    "peso": "6",
+    "diametro": "23",
+    "description": "Vizconde de Mauá",
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+  },
+  {
+    "id": 1334,
+    "title": "200 Réis 1874",
+    "country": "Brasil",
+    "metal": "Cuproníquel",
+    "year": 1874,
+    "price": "2 USD",
+    "images": [
+      "images/1334A.jpeg",
+      "images/1334B.jpeg"
+    ],
+    "reference": "KM# 478",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "mintage": "",
+    "peso": "15",
+    "diametro": "32",
+    "description": "Con perforación",
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+  },
+  {
+    "id": 1335,
+    "title": "1 Cruzado Novo 1989",
+    "country": "Brasil",
+    "metal": "Acero inoxidable",
+    "year": 1989,
+    "price": "3 USD",
+    "images": [
+      "images/1335A.jpeg",
+      "images/1335B.jpeg"
+    ],
+    "reference": "KM# 615",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "2.01",
+    "diametro": "16.5",
+    "description": "Centenario de la Proclamación de la República",
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+  },
+  {
+    "id": 1336,
+    "title": "100 Réis 1894",
+    "country": "Brasil",
+    "metal": "Cuproníquel",
+    "year": 1894,
+    "price": "6 USD",
+    "images": [
+      "images/1336A.jpeg",
+      "images/1336B.jpeg"
+    ],
+    "reference": "KM# 497",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": 1181000,
+    "peso": "10",
+    "diametro": "27",
+    "description": "",
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+  },
+  {
+    "id": 1337,
+    "title": "20 Réis 1869",
+    "country": "Brasil",
+    "metal": "Bronce",
+    "year": 1869,
+    "price": "4 USD",
+    "images": [
+      "images/1337A.jpeg",
+      "images/1337B.jpeg"
+    ],
+    "reference": "KM# 474",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "peso": "7",
+    "diametro": "25",
+    "description": "",
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+  },
+  {
+    "id": 1338,
+    "title": "5000 Cruzeiros 1992",
+    "country": "Brasil",
+    "metal": "Acero inoxidable",
+    "year": 1992,
+    "price": "4 USD",
+    "images": [
+      "images/1338A.jpeg",
+      "images/1338B.jpeg"
+    ],
+    "reference": "KM# 625",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "9.95",
+    "diametro": "31",
+    "description": "Bicentenario de la muerte de Tiradentes",
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+  },
+  {
+    "id": 1339,
+    "title": "400 Réis 1901",
+    "country": "Brasil",
+    "metal": "Cuproníquel",
+    "year": 1901,
+    "price": "4 USD",
+    "images": [
+      "images/1339A.jpeg",
+      "images/1339B.jpeg"
+    ],
+    "reference": "KM# 503",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "peso": "12",
+    "diametro": "30",
+    "description": "",
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
   }
 ]
