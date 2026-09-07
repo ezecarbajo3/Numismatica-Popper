@@ -16629,7 +16629,9 @@
     "peso": "6",
     "diametro": "23",
     "description": "Vizconde de Mauá",
-    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00",
+    "status": "sold",
+    "soldAt": "2026-09-07T19:39:02.711890+00:00"
   },
   {
     "id": 1334,
@@ -16649,7 +16651,9 @@
     "peso": "15",
     "diametro": "32",
     "description": "Con perforación",
-    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00",
+    "status": "sold",
+    "soldAt": "2026-09-07T19:39:02.711890+00:00"
   },
   {
     "id": 1335,
@@ -16669,7 +16673,9 @@
     "peso": "2.01",
     "diametro": "16.5",
     "description": "Centenario de la Proclamación de la República",
-    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00",
+    "status": "sold",
+    "soldAt": "2026-09-07T19:39:02.711890+00:00"
   },
   {
     "id": 1336,
@@ -16689,7 +16695,9 @@
     "peso": "10",
     "diametro": "27",
     "description": "",
-    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00",
+    "status": "sold",
+    "soldAt": "2026-09-07T19:39:02.711890+00:00"
   },
   {
     "id": 1337,
@@ -16709,7 +16717,9 @@
     "peso": "7",
     "diametro": "25",
     "description": "",
-    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00",
+    "status": "sold",
+    "soldAt": "2026-09-07T19:39:02.711890+00:00"
   },
   {
     "id": 1338,
@@ -16749,7 +16759,9 @@
     "peso": "12",
     "diametro": "30",
     "description": "",
-    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00",
+    "status": "sold",
+    "soldAt": "2026-09-07T19:39:02.711890+00:00"
   },
   {
     "id": 1340,
