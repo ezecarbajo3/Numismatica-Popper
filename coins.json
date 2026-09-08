@@ -16739,7 +16739,9 @@
     "peso": "9.95",
     "diametro": "31",
     "description": "Bicentenario de la muerte de Tiradentes",
-    "publishedAt": "2026-09-07T14:32:26.187860+00:00"
+    "publishedAt": "2026-09-07T14:32:26.187860+00:00",
+    "status": "sold",
+    "soldAt": "2026-09-08T13:55:07.391805+00:00"
   },
   {
     "id": 1339,
