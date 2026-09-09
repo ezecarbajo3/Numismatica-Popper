@@ -8612,7 +8612,7 @@
     "country": "Estados Unidos",
     "metal": "Plata 40%",
     "year": 1967,
-    "price": "13 USD",
+    "price": "12 USD",
     "images": [
       "images/820A.jpeg",
       "images/820B.jpeg"
@@ -17550,5 +17550,139 @@
     "publishedAt": "2026-09-09T21:17:41.188046+00:00",
     "costo": 1.1,
     "commemorates": "centenario de la real policia montada del canada"
+  },
+  {
+    "id": 1383,
+    "title": "2 Øre 1899",
+    "country": "Dinamarca",
+    "metal": "Bronce",
+    "year": 1899,
+    "price": "10 USD",
+    "images": [
+      "images/1383A.jpeg",
+      "images/1383B.jpeg"
+    ],
+    "reference": "KM# 793",
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "mintage": 2504000,
+    "peso": "4",
+    "diametro": "21",
+    "description": "",
+    "publishedAt": "2026-09-09T21:32:20.624900+00:00",
+    "costo": 5.14
+  },
+  {
+    "id": 1384,
+    "title": "25 Öre 1949",
+    "country": "Suecia",
+    "metal": "Plata .400",
+    "year": 1949,
+    "price": "5 USD",
+    "images": [
+      "images/1384A.jpeg",
+      "images/1384B.jpeg"
+    ],
+    "reference": "KM# 816",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 5812180,
+    "peso": "2.32",
+    "diametro": "17",
+    "description": "",
+    "publishedAt": "2026-09-09T21:32:20.624900+00:00",
+    "costo": 2.58
+  },
+  {
+    "id": 1385,
+    "title": "1/2 Dollar 1967",
+    "country": "Estados Unidos",
+    "metal": "Plata 40%",
+    "year": 1967,
+    "price": "13 USD",
+    "images": [
+      "images/1385A.jpeg",
+      "images/1385B.jpeg"
+    ],
+    "reference": "KM# 202a",
+    "grade": "Excelente+",
+    "grade_short": "EX+",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-09T21:32:20.624900+00:00",
+    "group_id": "us-half-dollar-variants",
+    "group_label": "1/2 Dólar Kennedy",
+    "costo": 4.55
+  },
+  {
+    "id": 1386,
+    "title": "1 Dólar 1898",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1898,
+    "price": "78 USD",
+    "images": [
+      "images/1386A.jpeg",
+      "images/1386B.jpeg"
+    ],
+    "reference": "KM# 110",
+    "grade": "Excelente+",
+    "grade_short": "EX+",
+    "mintage": 5884000,
+    "peso": "26.73",
+    "diametro": "38.1",
+    "description": "Dólar Morgan",
+    "publishedAt": "2026-09-09T21:32:20.624900+00:00",
+    "group_id": "us-morgan-dollar",
+    "group_label": "1 Dólar Morgan",
+    "costo": 57.79
+  },
+  {
+    "id": 1387,
+    "title": "1 Dólar 1889",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1889,
+    "price": "78 USD",
+    "images": [
+      "images/1387A.jpeg",
+      "images/1387B.jpeg"
+    ],
+    "reference": "KM# 110",
+    "grade": "Excelente+",
+    "grade_short": "EX+",
+    "mintage": "",
+    "peso": "26.73",
+    "diametro": "38.1",
+    "description": "Dólar Morgan",
+    "publishedAt": "2026-09-09T21:32:20.624900+00:00",
+    "group_id": "us-morgan-dollar",
+    "group_label": "1 Dólar Morgan",
+    "costo": 57.79
+  },
+  {
+    "id": 1388,
+    "title": "5 Deutsche Mark 1951",
+    "country": "Alemania",
+    "metal": "Plata .625",
+    "year": 1951,
+    "price": "18 USD",
+    "images": [
+      "images/1388A.jpeg",
+      "images/1388B.jpeg"
+    ],
+    "reference": "KM# 112.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Ceca F",
+    "publishedAt": "2026-09-09T21:32:20.624900+00:00",
+    "group_id": "de-5-deutsche-mark",
+    "group_label": "5 Deutsche Mark",
+    "costo": 7.37
   }
 ]
