@@ -17190,5 +17190,237 @@
     "publishedAt": "2026-09-09T20:41:29.872932+00:00",
     "costo": 2.92,
     "commemorates": "Mercury Dime"
+  },
+  {
+    "id": 1366,
+    "title": "finlandia 5 pennia 1934",
+    "country": "Numismática Popper",
+    "metal": "Cuproníquel",
+    "year": 1934,
+    "price": "4.5 USD",
+    "images": [
+      "images/1366A.jpeg",
+      "images/1366B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-09T21:06:39.898812+00:00",
+    "costo": 2.79
+  },
+  {
+    "id": 1367,
+    "title": "1 Centavo 1945",
+    "country": "Argentina",
+    "metal": "Cobre",
+    "year": 1945,
+    "price": "25 USD",
+    "images": [
+      "images/1367A.jpeg",
+      "images/1367B.jpeg"
+    ],
+    "reference": "KM# 37a",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 420000,
+    "peso": "2",
+    "diametro": "16",
+    "description": "",
+    "publishedAt": "2026-09-09T21:06:39.898812+00:00",
+    "costo": 18.63
+  },
+  {
+    "id": 1368,
+    "title": "pfennig 1859",
+    "country": "Alemania",
+    "metal": "Cuproníquel",
+    "year": 1859,
+    "price": "18 USD",
+    "images": [
+      "images/1368A.jpeg",
+      "images/1368B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "nassau",
+    "publishedAt": "2026-09-09T21:06:39.898812+00:00",
+    "costo": 10.46
+  },
+  {
+    "id": 1369,
+    "title": "10 rupias 2013",
+    "country": "Sri Lanka",
+    "metal": "Cuproníquel",
+    "year": 2013,
+    "price": "3.5 USD",
+    "images": [
+      "images/1369A.jpeg",
+      "images/1369B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular -",
+    "grade_short": "SC-",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-09T21:06:39.898812+00:00",
+    "costo": 1.95,
+    "cantidad": 5
+  },
+  {
+    "id": 1370,
+    "title": "5 Rupees (non 2004",
+    "country": "Sri Lanka (1972-presente)",
+    "metal": "Níquel",
+    "year": 2004,
+    "price": "4.5 USD",
+    "images": [
+      "images/1370A.jpeg",
+      "images/1370B.jpeg"
+    ],
+    "reference": "KM# 148",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": "",
+    "peso": "9.5",
+    "diametro": "23.4",
+    "description": "magnetic) 2004",
+    "publishedAt": "2026-09-09T21:06:39.898812+00:00",
+    "costo": 1.95
+  },
+  {
+    "id": 1371,
+    "title": "5 Rupees (non 1994",
+    "country": "Sri Lanka (1972-presente)",
+    "metal": "Níquel",
+    "year": 1994,
+    "price": "4.5 USD",
+    "images": [
+      "images/1371A.jpeg",
+      "images/1371B.jpeg"
+    ],
+    "reference": "KM# 148",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": "",
+    "peso": "9.5",
+    "diametro": "23.4",
+    "description": "magnetic) 1994",
+    "publishedAt": "2026-09-09T21:06:39.898812+00:00",
+    "costo": 1.95
+  },
+  {
+    "id": 1372,
+    "title": "10 Rupees (Ceylon Tea 150th Anniversary) 2017",
+    "country": "Sri Lanka (1972-presente)",
+    "metal": "Acero chapado en cromo",
+    "year": 2017,
+    "price": "3.5 USD",
+    "images": [
+      "images/1372A.jpeg",
+      "images/1372B.jpeg"
+    ],
+    "reference": "KM# 217",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "mintage": 5000000,
+    "peso": "8.4",
+    "diametro": "26.5",
+    "description": "",
+    "publishedAt": "2026-09-09T21:06:39.898812+00:00",
+    "costo": 1.95
+  },
+  {
+    "id": 1373,
+    "title": "eslovaquia 2 euro 2017",
+    "country": "Numismática Popper",
+    "metal": "Cuproníquel",
+    "year": 2017,
+    "price": "4.5 USD",
+    "images": [
+      "images/1373A.jpeg",
+      "images/1373B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular -",
+    "grade_short": "SC-",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-09T21:06:39.898812+00:00",
+    "costo": 2.44
+  },
+  {
+    "id": 1374,
+    "title": "2 Euros - Beatrix (1st map) 2001",
+    "country": "Países Bajos",
+    "metal": "Bimetálica (centro de níquel-latón en anillo de cuproníquel)",
+    "year": 2001,
+    "price": "4 USD",
+    "images": [
+      "images/1374A.jpeg",
+      "images/1374B.jpeg"
+    ],
+    "reference": "KM# 241",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "8.5",
+    "diametro": "25.75",
+    "description": "",
+    "publishedAt": "2026-09-09T21:06:39.898812+00:00",
+    "costo": 2.44
+  },
+  {
+    "id": 1375,
+    "title": "eslovenia 20 euro cents 2007",
+    "country": "Numismática Popper",
+    "metal": "Cuproníquel",
+    "year": 2007,
+    "price": "2 USD",
+    "images": [
+      "images/1375A.jpeg",
+      "images/1375B.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-09T21:06:39.898812+00:00",
+    "costo": 0.65
+  },
+  {
+    "id": 1376,
+    "title": "finlandia  20 euro cents 2002",
+    "country": "Numismática Popper",
+    "metal": "Cuproníquel",
+    "year": 2002,
+    "price": "2 USD",
+    "images": [
+      "images/1376A.jpeg",
+      "images/1376B.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-09T21:06:39.898812+00:00",
+    "costo": 0.65
   }
 ]
