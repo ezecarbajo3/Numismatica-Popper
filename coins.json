@@ -16909,7 +16909,7 @@
     "country": "México",
     "metal": "Plata .100",
     "year": 1958,
-    "price": "",
+    "price": "6.5 USD",
     "images": [
       "images/1347A.jpeg",
       "images/1347B.jpeg"
@@ -16932,7 +16932,7 @@
     "country": "México",
     "metal": "Plata .100",
     "year": 1961,
-    "price": "",
+    "price": "6 USD",
     "images": [
       "images/1348A.jpeg",
       "images/1348B.jpeg"
@@ -16955,7 +16955,7 @@
     "country": "Argentina",
     "metal": "Cuproníquel",
     "year": 1942,
-    "price": "",
+    "price": "13 USD",
     "images": [
       "images/1354A.jpeg",
       "images/1354B.jpeg"
@@ -16976,7 +16976,7 @@
     "country": "Canadá",
     "metal": "Bronce",
     "year": 1967,
-    "price": "",
+    "price": "2 USD",
     "images": [
       "images/1355A.jpeg",
       "images/1355B.jpeg"
@@ -16989,7 +16989,8 @@
     "diametro": "19.05",
     "description": "Centenario de la Confederación (1867-1967)",
     "publishedAt": "2026-09-09T19:39:13.699367+00:00",
-    "costo": 0.84
+    "costo": 0.84,
+    "cantidad": 3
   },
   {
     "id": 1357,
@@ -16997,7 +16998,7 @@
     "country": "Jersey",
     "metal": "Bronce",
     "year": 1990,
-    "price": "",
+    "price": "4 USD",
     "images": [
       "images/1357A.jpeg",
       "images/1357B.jpeg"
@@ -17018,7 +17019,7 @@
     "country": "Alemania",
     "metal": "Cobre",
     "year": 1930,
-    "price": "",
+    "price": "4 USD",
     "images": [
       "images/1358A.jpeg",
       "images/1358B.jpeg"
@@ -17039,7 +17040,7 @@
     "country": "Colombia",
     "metal": "Cuproníquel",
     "year": 1967,
-    "price": "",
+    "price": "6.5 USD",
     "images": [
       "images/1359A.jpeg",
       "images/1359B.jpeg"
@@ -17047,10 +17048,10 @@
     "reference": "KM# 229",
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "mintage": 4000442,
+    "mintage": "4.000.000",
     "peso": "12.5",
     "diametro": "30",
-    "description": "Francisco José de Caldas",
+    "description": "Año único",
     "publishedAt": "2026-09-09T19:39:13.699367+00:00",
     "costo": 2.92
   }
