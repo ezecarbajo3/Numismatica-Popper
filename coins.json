@@ -17485,7 +17485,9 @@
     "diametro": "22.5",
     "description": "Gales (Puerro galés)",
     "publishedAt": "2026-09-09T21:17:41.188046+00:00",
-    "costo": 1.95
+    "costo": 1.95,
+    "status": "sold",
+    "soldAt": "2026-09-09T23:21:06.933178+00:00"
   },
   {
     "id": 1380,
@@ -17507,7 +17509,9 @@
     "description": "Irlanda del Norte (Cruz celta y flor de lino)",
     "publishedAt": "2026-09-09T21:17:41.188046+00:00",
     "costo": 1.95,
-    "commemorates": "Irlanda del Norte"
+    "commemorates": "Irlanda del Norte",
+    "status": "sold",
+    "soldAt": "2026-09-09T23:21:06.933178+00:00"
   },
   {
     "id": 1381,
@@ -17528,7 +17532,9 @@
     "diametro": "22.5",
     "description": "Gales (Dragón galés)",
     "publishedAt": "2026-09-09T21:17:41.188046+00:00",
-    "costo": 1.95
+    "costo": 1.95,
+    "status": "sold",
+    "soldAt": "2026-09-09T23:21:06.933178+00:00"
   },
   {
     "id": 1382,
