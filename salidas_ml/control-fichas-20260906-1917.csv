@@ -1,0 +1,640 @@
+publicacion_id,sku,titulo,marca,modelo,origen_modelo,variantes_en_familia
+MLA2067296865,507,Moneda Argentina 1 Peso 1997,Genérica,CJ# 6.5,referencia,1
+MLA2067296869,391,Moneda Perú 1 Sol 2017,Genérica,1 Sol,valor facial (referencias distintas),3
+MLA2067296871,99,Moneda Reino Unido Penny 1862,Genérica,KM# 749.2,referencia,1
+MLA2067296877,939,Moneda Colombia 5 Centavos 1935,Genérica,KM# 192.1,referencia,1
+MLA2067296879,812,Moneda Portugal 100 Réis 1900,Genérica,KM# 546,referencia,1
+MLA2067296883,342,Moneda República Dominicana Centavos 1986,Genérica,KM# 64,referencia,1
+MLA2067296887,876,Moneda Dinamarca 20 Kroner 1991,Genérica,KM# 871,referencia,1
+MLA2067296889,1195,Moneda Reino Unido 20 Pence 2006,Genérica,KM# 990,referencia,1
+MLA2067296891,723,Moneda Chile 2 Centésimos 1967,Genérica,KM# 193,referencia,1
+MLA2067296893,746,Moneda Argentina 10 Centavos 1935,Genérica,CJ# 122,referencia,2
+MLA2067296897,750,Moneda Argentina 10 Centavos 1916,Genérica,CJ# 105,referencia,1
+MLA2067296899,1241,Moneda Canadá 25 Cents Día Del Recuerdo (amapola) 2004,Genérica,KM# 510,referencia,1
+MLA2067296901,1246,Moneda Canadá 1 Dólar Centenario De Columbia Británica 1971,Genérica,KM# 79,referencia,1
+MLA2067296903,38,Moneda Argentina Centavo 1885,Genérica,CJ# 41,referencia,1
+MLA2067296907,629,Moneda Argentina 2 Centavos 1939,Genérica,CJ# 174,referencia,3
+MLA2067296909,588,Moneda Países Bajos Cent 1884,Genérica,KM# 107.1,referencia,1
+MLA2067296911,944,Moneda Croacia 20 Lipa 1995,Genérica,KM# 12,referencia,1
+MLA2067296913,603,Moneda Estados Unidos Onza Ms70 Certificada 2017,Genérica,KM# 273,referencia,1
+MLA2067296917,363,Moneda Yugoslavia 20 Para 1976,Genérica,KM# 45,referencia,1
+MLA2067296919,1265,Moneda Isla De Pascua 1 Peso Moai (aluminio) 2021,Genérica,1 Peso Moai (Aluminio),valor facial (sin referencia),1
+MLA2067296921,755,Moneda Argentina 10 Centavos 1907,Genérica,CJ# 96,referencia,1
+MLA2067296923,1011,Moneda Reino Unido Farthing 1938,Genérica,KM# 843,referencia,1
+MLA2067296925,616,Moneda Argentina Centavo 1942,Genérica,CJ# 190,referencia,1
+MLA2067296931,516,Moneda Países Bajos 2 1/2 Cents 1929,Genérica,KM# 150,referencia,1
+MLA2067296935,640,Moneda Argentina 2 Centavos 1945,Genérica,CJ# 179,referencia,3
+MLA2067296941,785,Moneda Costa Rica 25 Colones 2023,Genérica,25 Colones,valor facial (referencias distintas),3
+MLA2067296943,1205,Moneda Reino Unido 5 Pence 2017,Genérica,KM# 1334,referencia,1
+MLA2067296945,1031,Moneda Congo Belga 1 Franco 1946,Genérica,KM# 26,referencia,1
+MLA2067296947,1307,Moneda Uruguay 2 Centésimos 1869,Genérica,KM# 12,referencia,1
+MLA2067296951,566,Moneda Italia 20 Centesimi 1918,Genérica,KM# 58,referencia,1
+MLA2067296953,1261,Moneda Chipre 1 Cent 1998,Genérica,KM# 53.3,referencia,1
+MLA2067296957,1268,Moneda Argentina Blister 1 Peso 2023,Genérica,KM# 194,referencia,1
+MLA2067296959,641,Moneda Argentina 2 Centavos 1946,Genérica,CJ# 180,referencia,2
+MLA2067296961,728,Moneda Chile 10 Centavos 1932,Genérica,KM# 166,referencia,1
+MLA2067296965,503,Moneda Argentina 50 Centavos 2000,Genérica,50 Centavos,valor facial (referencias distintas),2
+MLA2067296971,1200,Moneda Reino Unido 20 Pence 2016,Genérica,KM# 1111,referencia,1
+MLA2067296975,983,Moneda Reino Unido 25 New Pence 1981,Genérica,KM# 925,referencia,3
+MLA2067296979,1186,Moneda Gibraltar 25 New Pence 1971,Genérica,KM# 5,referencia,1
+MLA2067296981,902,Moneda Italia 5 Centesimi 1925,Genérica,KM# 59,referencia,1
+MLA2067296983,303,Moneda Jamaica 5 Dolares 2017,Genérica,KM. 163,referencia,1
+MLA2067296987,1312,Moneda Estados Unidos 1/2 Dólar Kennedy 1968,Genérica,KM# 202a,referencia,1
+MLA2067296993,1321,Moneda México 1 Centavo 1945,Genérica,KM# 415,referencia,1
+MLA2067297017,210,Moneda Argentina 1 Peso Falsa 1995,Genérica,1 Peso FALSA,valor facial (sin referencia),1
+MLA2067297019,1,Moneda Argentina 1/2 Real 1815,Genérica,CJ# 17,referencia,1
+MLA2067297021,257,Moneda Alemania 50 Pfennig 1921,Genérica,KM# 27,referencia,1
+MLA2067297025,1204,Moneda Reino Unido 5 Pence 2014,Genérica,KM# 1109d,referencia,1
+MLA2067297027,991,Moneda Reino Unido 1 Crown 1965,Genérica,KM# 910,referencia,2
+MLA2067297029,848,Moneda Marruecos 1 Dirham 1987,Genérica,Y# 88,referencia,1
+MLA2067297037,1309,Moneda Perú 1 Centavo 1946,Genérica,KM# 211a,referencia,1
+MLA2067297039,963,Moneda Italia 10 Centesimi 1923,Genérica,KM# 60,referencia,1
+MLA2067297041,761,Moneda Argentina 10 Centavos 1931,Genérica,CJ# 119,referencia,3
+MLA2067297051,647,Moneda Argentina 2 Centavos 1948,Genérica,CJ# 182,referencia,2
+MLA2067297053,651,Moneda Argentina 2 Centavos 1949,Genérica,CJ# 183,referencia,2
+MLA2067297055,1288,Moneda Canadá 10 Cents 2021,Genérica,10 Cents,valor facial (referencias distintas),2
+MLA2067297059,822,Moneda Marruecos 4 Falus 1871,Genérica,KM# 166.1,referencia,1
+MLA2067297061,1146,Moneda China 5 Fen 1982,Genérica,KM# 3,referencia,1
+MLA2067297063,1158,Moneda Austria 50 Schilling 1963,Genérica,KM# 2894,referencia,1
+MLA2067297065,329,Moneda Portugal 50 Centavos 1929,Genérica,50 Centavos,valor facial (referencias distintas),2
+MLA2067297073,855,Moneda Turquía Kurus 2022,Genérica,Kurus,valor facial (referencias distintas),4
+MLA2067297075,731,Moneda Chile 10 Pesos 1958,Genérica,KM# 181,referencia,1
+MLA2067297079,1154,Moneda Francia 5 Francos 1837,Genérica,KM# 749,referencia,1
+MLA2067297085,1242,Moneda Isla De Pascua 1 Peso Moai 2021,Genérica,1 Peso Moai,valor facial (sin referencia),1
+MLA2067297087,928,Moneda Francia 10 Centimes 1929,Genérica,KM# 866,referencia,1
+MLA2067297091,836,Moneda Indias Orientales Neerlandesas Cent 1901,Genérica,KM# 307.1,referencia,1
+MLA2067297093,732,Moneda Uruguay 5 Pesos 1975,Genérica,KM# 65,referencia,1
+MLA2067297095,988,Moneda Reino Unido 25 New Pence 1977,Genérica,KM# 920,referencia,2
+MLA2067297105,1086,Moneda Uruguay 1 Peso 1917,Genérica,KM# 23,referencia,1
+MLA2067297111,722,Moneda Chile 2 Centésimos 1968,Genérica,KM# 193,referencia,1
+MLA2067297113,66,Moneda Token Porsche 2001,Genérica,Porsche,valor facial (sin referencia),1
+MLA2067297115,330,Moneda Portugal 50 Centavos 1929,Genérica,50 Centavos,valor facial (referencias distintas),2
+MLA2067297117,688,Moneda Uruguay 2 Centésimos 1936,Genérica,KM# 20,referencia,1
+MLA2067297121,346,Moneda Francia 5 Centimes 1916,Genérica,KM# 842,referencia,1
+MLA2067297127,560,Moneda Noruega 10 Øre 1946,Genérica,KM# 383,referencia,1
+MLA2067297129,14,Moneda Argentina 2 Centavos 1884,Genérica,CJ# 26,referencia,2
+MLA2067297135,687,Moneda Uruguay 2 Centésimos 1924,Genérica,KM# 20,referencia,1
+MLA2067297139,282,Moneda Tailandia 2 Baht 2015,Genérica,Y# 445,referencia,1
+MLA2067297145,386,Moneda Estados Unidos 1/2 Dollar 1971,Genérica,KM# 202b,referencia,1
+MLA2067297147,365,Moneda Argentina 20 Centavos 1882,Genérica,CJ# 19,referencia,2
+MLA2067297151,819,Moneda Chile 1 Peso 1924,Genérica,KM# 152.6,referencia,1
+MLA2067297153,140,Moneda Uruguay Peso 1942,Genérica,KM# 30,referencia,2
+MLA2067297157,642,Moneda Argentina 2 Centavos 1946,Genérica,CJ# 180,referencia,2
+MLA2067297159,680,Moneda Reino Unido Penny 1872,Genérica,KM# 755,referencia,1
+MLA2067297161,397,Moneda Perú 1 Sol 2017,Genérica,1 Sol,valor facial (referencias distintas),3
+MLA2067297167,34,Moneda Argentina 20 Centavos 1931,Genérica,CJ# 81,referencia,1
+MLA2067297169,1142,Moneda Italia 1 Centesimo R 1900,Genérica,KM# 29,referencia,1
+MLA2067297171,740,Moneda Argentina 5 Centavos 1907,Genérica,CJ# 138,referencia,2
+MLA2067297173,1143,Moneda Italia 10 Centesimi R 1929,Genérica,KM# 60,referencia,1
+MLA2067297179,28,Moneda Estados Unidos Cent 1863,Genérica,KM# 90,referencia,1
+MLA2067297187,701,Moneda Costa Rica 5 Céntimos 1973,Genérica,KM# 184.3,referencia,1
+MLA2067297195,213,Moneda Liberia 5 Cents 2000,Genérica,KM# 474,referencia,2
+MLA2067297197,1319,Moneda Costa Rica 50 Céntimos 1983,Genérica,KM# 209,referencia,1
+MLA2067297199,164,Moneda Suiza 10 Rappen 1903,Genérica,KM# 27,referencia,1
+MLA2067297203,1064,Moneda Francia 20 Francos 1994,Genérica,KM# 1036,referencia,1
+MLA2067297205,1299,Moneda Francia 25 Céntimos 1903,Genérica,KM# 855,referencia,1
+MLA2067297209,304,Moneda Suecia 25 Ore 1979,Genérica,KM# 852,referencia,1
+MLA2067297217,554,Moneda Uruguay 10 Centésimos 1877,Genérica,KM# 14,referencia,1
+MLA2067297221,244,Moneda El Salvador Centavo 1989,Genérica,KM# 153a,referencia,1
+MLA2067297225,774,Moneda Argentina 20 Centavos 1898,Genérica,CJ# 54,referencia,1
+MLA2067297227,550,Moneda Argentina 2 Centavos 1884,Genérica,CJ# 26,referencia,2
+MLA2067297231,146,Moneda Argentina 2 Centavos 1896,Genérica,CJ# 37,referencia,2
+MLA2067297235,544,Moneda Argentina 20 Centavos 1882,Genérica,CJ# 19,referencia,2
+MLA2067297237,759,Moneda Argentina 10 Centavos 1914,Genérica,CJ# 103,referencia,1
+MLA2067297239,573,Moneda Bolivia 50 Centavos 1902,Genérica,KM# 175.1,referencia,2
+MLA2067297247,498,Moneda Canadá 25 Cents 2000,Genérica,25 Cents,valor facial (referencias distintas),12
+MLA2067297251,953,Moneda Transnistria 1 Kopeck 2000,Genérica,KM# 1,referencia,3
+MLA2067297261,1139,Moneda Congo Belga Y Ruanda-urundi 5 Francos 1956,Genérica,KM# 3,referencia,1
+MLA2067297263,1022,Moneda Reino Unido 1 Penny 1891,Genérica,KM# 754,referencia,1
+MLA2067297265,568,Moneda Francia 10 Francos 1948,Genérica,K. 1909,referencia,1
+MLA2067297267,1316,Moneda Argentina 10 Centavos 1883,Genérica,CJ# 23.1,referencia,1
+MLA2067297269,770,Moneda Argentina 20 Centavos 1909,Genérica,CJ# 60,referencia,2
+MLA2067297275,17,Moneda Argentina 2 Centavos 1885,Genérica,2 Centavos,valor facial (referencias distintas),2
+MLA2067297285,332,Moneda Estados Unidos Cent 2009,Genérica,KM# 441,referencia,1
+MLA2067297289,742,Moneda Argentina 5 Centavos 1908,Genérica,CJ# 139,referencia,1
+MLA2067297293,415,Moneda Estados Unidos 1/4 Dólar 2001,Genérica,1/4 Dólar,valor facial (referencias distintas),7
+MLA2067297297,581,Moneda Alemania 5 Pfennig 1906,Genérica,KM# 11,referencia,1
+MLA2067297299,32,Moneda Estados Unidos Cent 1860,Genérica,KM# 90,referencia,1
+MLA2067297303,271,Moneda Perú 10 Centavos 1940,Genérica,KM# 214.2,referencia,1
+MLA2067297305,697,Moneda Paraguay 5 Céntimos 1944,Genérica,KM# 21,referencia,1
+MLA2067297307,1285,Moneda Canadá 1 Dólar 2026,Genérica,Numista #579030,referencia,1
+MLA2067297313,559,Moneda Venezuela 5 Céntimos 1945,Genérica,Y# 29a,referencia,1
+MLA2067297315,760,Moneda Argentina 10 Centavos 1931,Genérica,CJ# 119,referencia,3
+MLA2067297333,128,Moneda Antillas Holandesas Cent 1963,Genérica,KM# 1,referencia,1
+MLA2067297339,1295,Moneda Dinamarca 1 Øre 1918,Genérica,KM# 812.1a,referencia,1
+MLA2067297341,832,Moneda Argentina 5 Centavos 1936,Genérica,CJ# 166,referencia,1
+MLA2067297345,371,Moneda Estados Unidos Cent 1905,Genérica,KM# 90,referencia,1
+MLA2067297349,557,Moneda Perú 1 Sol 2010,Genérica,KM# 342,referencia,1
+MLA2067297351,493,Moneda Canadá 25 Cents 2000,Genérica,25 Cents,valor facial (referencias distintas),12
+MLA2067297353,306,Moneda Colombia 10 Centavos 1976,Genérica,KM. 253,referencia,1
+MLA2067297355,889,Moneda Suecia 5 Ore 1942,Genérica,KM# 812,referencia,1
+MLA2067297357,405,Moneda Estados Unidos 1/4 Dólar 1999,Genérica,1/4 Dólar,valor facial (referencias distintas),4
+MLA2067297359,751,Moneda Argentina 10 Centavos 1915,Genérica,CJ# 104,referencia,1
+MLA2067297363,780,Moneda Argentina 2 Centavos 1890,Genérica,CJ# 31,referencia,2
+MLA2067297369,1302,Moneda Portugal 1 Centavo 1918,Genérica,KM# 565,referencia,1
+MLA2067297371,911,Moneda Italia 20 Centesimi 1912,Genérica,KM# 44,referencia,1
+MLA2067297383,985,Moneda Reino Unido 25 New Pence 1980,Genérica,KM# 921,referencia,2
+MLA2067297385,1185,Moneda Gibraltar 1 Crown 1980,Genérica,KM# 11,referencia,1
+MLA2067297393,1098,Moneda Canadá 1 Dólar 2025,Genérica,1 Dólar,valor facial (sin referencia),1
+MLA2067297395,401,Moneda Perú 1 Sol 2024,Genérica,1 Sol,valor facial (referencias distintas),2
+MLA2067297401,1199,Moneda Reino Unido 20 Pence 2015,Genérica,KM# 1111,referencia,1
+MLA2067297415,801,Moneda Malawi 2 Tambala 1995,Genérica,KM# 24,referencia,1
+MLA2067297425,1234,Moneda China 5 Yuan Ópera De Pekín 2023,Genérica,KM# 2841,referencia,1
+MLA2067297427,514,Moneda Polonia 5 Groszy 1928,Genérica,Y# 10a,referencia,1
+MLA2067297435,403,Moneda Perú 1 Sol 2025,Genérica,KM# 450,referencia,1
+MLA2067297443,873,Moneda Egipto 1 Millieme 1972,Genérica,KM# A423,referencia,1
+MLA2067297445,1275,Moneda Países Bajos 1 Gulden 2001,Genérica,KM# 205,referencia,1
+MLA2067297447,227,Moneda Bélgica 25 Cents 1943,Genérica,KM# 132,referencia,2
+MLA2067297449,899,Moneda Italia 20 Centesimi 1919,Genérica,KM# 58,referencia,1
+MLA2067297453,420,Moneda Estados Unidos 1/4 Dólar 2003,Genérica,KM# 344,referencia,1
+MLA2067297463,501,Moneda Argentina 50 Centavos 1996,Genérica,CJ# 5.4,referencia,1
+MLA2067297465,703,Moneda Costa Rica 5 Céntimos 1978,Genérica,KM# 184.2,referencia,1
+MLA2067297467,500,Moneda Canadá 25 Cents 2000,Genérica,25 Cents,valor facial (referencias distintas),12
+MLA2067297469,1141,Moneda Serbia 2 Dinara 2009,Genérica,KM# 49,referencia,1
+MLA2067297479,347,Moneda Francia 10 Francos 1949,Genérica,K. 1909,referencia,1
+MLA2067297481,590,Moneda Argentina Blister 2 Pesos Malvinas 2012,Genérica,Blister 2 Pesos Malvinas,valor facial (sin referencia),1
+MLA2067297483,805,Moneda Samoa 5 Sene 2006,Genérica,KM# 137,referencia,1
+MLA2067297487,870,Moneda Liberia 5 Cents 2000,Genérica,KM# 474,referencia,2
+MLA2067297489,1198,Moneda Reino Unido 20 Pence 2011,Genérica,KM# 1111,referencia,1
+MLA2067297497,1056,Moneda Alemania 10 Reichspfennig 1940,Genérica,KM# 101,referencia,1
+MLA2067297501,695,Moneda Paraguay 10 Céntimos 1944,Genérica,KM# 22,referencia,1
+MLA2067297503,274,Moneda Arabia Saudita 10 Halalat 1972,Genérica,KM# 46,referencia,1
+MLA2067297511,1014,Moneda Reino Unido Farthing 1951,Genérica,KM# 867,referencia,1
+MLA2067297515,186,Moneda Uruguay 10 Centésimos 1994,Genérica,KM# 102,referencia,1
+MLA2067297519,1227,Moneda China 10 Yuan Año Del Perro 2018,Genérica,KM# 2390,referencia,1
+MLA2067297529,1324,Moneda Bolivia 1/2 Melgarejo 1865,Genérica,KM# 142,referencia,1
+MLA2067297533,781,Moneda Bolivia 2 Bolivianos 2025,Genérica,KM# 225,referencia,1
+MLA2067297535,416,Moneda Estados Unidos 1/4 Dólar 2001,Genérica,1/4 Dólar,valor facial (referencias distintas),7
+MLA2067297547,1301,Moneda Italia 1 Soldo 1862,Genérica,C# 35.1,referencia,1
+MLA2067297553,1279,Moneda Seychelles 1 Cent 2022,Genérica,KM# 176,referencia,1
+MLA2067297559,1103,Moneda Canadá 5 Cents 1967,Genérica,KM# 66,referencia,1
+MLA2067297561,636,Moneda Argentina 2 Centavos 1942,Genérica,CJ# 177,referencia,2
+MLA2067297563,422,Moneda Estados Unidos 1/4 Dólar 2005,Genérica,1/4 Dólar,valor facial (referencias distintas),4
+MLA2067297565,869,Moneda Islandia 10 Krónur 1980,Genérica,KM# 15,referencia,1
+MLA2067297573,377,Moneda Estados Unidos 1 Dollar P 2000,Genérica,KM# 310,referencia,1
+MLA2067297575,251,Moneda Colombia 1 Centavo 1974,Genérica,KM# 205a,referencia,1
+MLA2067297579,390,Moneda Perú 1 Sol 2018,Genérica,1 Sol,valor facial (referencias distintas),4
+MLA2067297589,1244,Moneda China 5 Yuan Ópera De Pekín (dan) 2024,Genérica,5 Yuan Ópera de Pekín (Dan),valor facial (sin referencia),1
+MLA2067297595,821,Moneda Suecia 50 Ore 1931,Genérica,KM# 788,referencia,1
+MLA2067297599,1102,Moneda Canadá 25 Cents 2004,Genérica,KM# 492,referencia,1
+MLA2067297601,29,Moneda Estados Unidos Cent 1861,Genérica,KM# 90,referencia,1
+MLA2067297721,151,Moneda Bolivia 10 Centavos 1892,Genérica,KM# 172,referencia,1
+MLA2067297727,297,Moneda Reino Unido 2 Shillings 1949,Genérica,KM# 879,referencia,1
+MLA2067297729,1238,Moneda Francia 5 Francs Pierre Mendès France 1992,Genérica,KM# 1006,referencia,1
+MLA2067297731,1262,Moneda Francia 1/2 Franco Sembradora 1992,Genérica,KM# 931.1,referencia,1
+MLA2067297737,950,Moneda Curazao 1 Cent 2025,Genérica,KM# 1,referencia,1
+MLA2067297739,661,Moneda Reino Unido 6 Pence 1958,Genérica,KM# 903,referencia,1
+MLA2067297741,597,Moneda Suiza 2 Francos 1969,Genérica,KM# 21a,referencia,1
+MLA2067297743,684,Moneda Uruguay 5 Centésimos 1978,Genérica,KM# 73,referencia,1
+MLA2067297745,735,Moneda Argentina 5 Centavos 1899,Genérica,CJ# 133,referencia,1
+MLA2067297747,606,Moneda Noruega Ore 1929,Genérica,KM# 367,referencia,1
+MLA2067297751,612,Moneda Argentina Centavo 1940,Genérica,CJ# 187,referencia,1
+MLA2067297753,864,Moneda Dinamarca 2 Ore 1961,Genérica,KM# 840,referencia,1
+MLA2067297755,664,Moneda Reino Unido 2 Shillings 1967,Genérica,KM# 906,referencia,1
+MLA2067297757,1032,Moneda Ruanda 50 Francos 1977,Genérica,KM# 16,referencia,1
+MLA2067297761,1214,Moneda Reino Unido 1 Penny 2004,Genérica,KM# 986,referencia,1
+MLA2067297765,407,Moneda Estados Unidos 1/4 Dólar 1999,Genérica,1/4 Dólar,valor facial (referencias distintas),4
+MLA2067297769,1029,Moneda Reino Unido 1/2 Penny 1920,Genérica,KM# 815,referencia,1
+MLA2067297777,254,Moneda Argentina 20 Centavos 1936,Genérica,CJ# 83,referencia,3
+MLA2067297781,1257,Moneda Brasil 1 Real 30 Años Del Plan Real 2024,Genérica,KM# 738,referencia,1
+MLA2067297789,425,Moneda Estados Unidos 1/4 Dólar 2005,Genérica,1/4 Dólar,valor facial (referencias distintas),4
+MLA2067297791,1223,Moneda Argentina 2 Centavos 1891,Genérica,2 Centavos,valor facial (referencias distintas),2
+MLA2067297793,50,Moneda Argentina Centavo 1895,Genérica,CJ# 50,referencia,2
+MLA2067297795,548,Moneda Argentina 2 Centavos 1883,Genérica,CJ# 25,referencia,2
+MLA2067297801,1276,Moneda Hungría 10 Forint 2020,Genérica,KM# 848,referencia,1
+MLA2067297803,393,Moneda Perú 1 Sol 2017,Genérica,1 Sol,valor facial (referencias distintas),3
+MLA2067297805,558,Moneda Venezuela 5 Céntimos 1938,Genérica,Y# 27,referencia,1
+MLA2067297809,1220,Moneda Argentina 2 Centavos 1885,Genérica,2 Centavos,valor facial (referencias distintas),2
+MLA2067297811,1182,Moneda Islas Malvinas 50 Pence 1980,Genérica,KM# 15,referencia,1
+MLA2067297813,1196,Moneda Reino Unido 20 Pence 2008,Genérica,KM# 1111,referencia,1
+MLA2067297815,382,Moneda Estados Unidos 1/2 Dollar D 1976,Genérica,KM# 205,referencia,1
+MLA2067297825,1314,Moneda Argentina 5 Centavos 1975,Genérica,CJ# 354,referencia,1
+MLA2067297827,19,Moneda Argentina 2 Centavos 1891,Genérica,2 Centavos,valor facial (referencias distintas),2
+MLA3919736464,927,Moneda Francia 10 Centimes 1919,Genérica,KM# 866,referencia,1
+MLA3919736466,269,Moneda Suiza 5 Rappen 1889,Genérica,KM# 26,referencia,1
+MLA3919736472,1013,Moneda Reino Unido Farthing 1946,Genérica,KM# 843,referencia,1
+MLA3919736474,712,Moneda Chile 50 Escudos 1974,Genérica,KM# 201,referencia,1
+MLA3919736480,734,Moneda Argentina 5 Centavos 1896,Genérica,CJ# 130,referencia,1
+MLA3919736484,9,Moneda Francia 10 Francos 1965,Genérica,KM# 932,referencia,1
+MLA3919736486,863,Moneda Dinamarca 5 Ore 1970,Genérica,KM# 848,referencia,1
+MLA3919736488,839,Moneda Indias Orientales Neerlandesas 1/2 Cent 1857,Genérica,KM# 306,referencia,1
+MLA3919736492,1256,Moneda Bosnia Y Herzegovina 20 Feniga 2025,Genérica,KM# 116,referencia,1
+MLA3919736494,660,Moneda Reino Unido 6 Pence 1966,Genérica,KM# 903,referencia,1
+MLA3919736496,1308,Moneda México 1 Centavo 1946,Genérica,KM# 415,referencia,1
+MLA3919736498,1281,Moneda Belice 1 Dólar 2021,Genérica,KM# 119,referencia,1
+MLA3919736500,971,Moneda Burundi 10 Francos 2011,Genérica,KM# 21,referencia,1
+MLA3919736502,1026,Moneda Alemania 5 Euro G 2019,Genérica,KM# 380,referencia,1
+MLA3919736504,1050,Moneda Luxemburgo 25 Centimes 1946,Genérica,KM# E43,referencia,1
+MLA3919736506,1057,Moneda Alemania 1 Reichspfennig 1937,Genérica,KM# 89,referencia,1
+MLA3919736508,996,Moneda Canadá Blister 25 Cents 2008,Genérica,KM# 775,referencia,1
+MLA3919736510,718,Moneda Chile 20 Centavos 1942,Genérica,KM# 177,referencia,1
+MLA3919736514,406,Moneda Estados Unidos 1/4 Dólar 1999,Genérica,1/4 Dólar,valor facial (referencias distintas),4
+MLA3919736516,1269,Moneda Vanuatu 10 Vatu 2009,Genérica,KM# 6,referencia,1
+MLA3919736520,1187,Moneda Gibraltar 1 Crown 1967,Genérica,KM# 4,referencia,1
+MLA3919736522,553,Moneda Estados Unidos 1/4 Dólar (patina) 2016,Genérica,KM# 636,referencia,1
+MLA3919736524,917,Moneda Japón 10 Yen 1972,Genérica,KM# 73.2,referencia,1
+MLA3919736530,878,Moneda Dinamarca 10 Ore 1937,Genérica,KM# 822,referencia,1
+MLA3919736532,994,Moneda Reino Unido Blister Primer Cono Decimal 1968,Genérica,Blister Primer Cono Decimal,valor facial (sin referencia),1
+MLA3919736534,318,Moneda Polonia 10 Groszy 1923,Genérica,Y# 10,referencia,1
+MLA3919736538,1193,Moneda Reino Unido 20 Pence 1993,Genérica,KM# 939,referencia,1
+MLA3919736540,1250,Moneda Ecuador 25 Centavos Alberto Spencer 2023,Genérica,KM# 134,referencia,1
+MLA3919736542,362,Moneda España 5 Céntimos 1870,Genérica,KM# 662,referencia,1
+MLA3919736550,8,Moneda Argentina 2 Reales 1854,Genérica,CJ# 19,referencia,1
+MLA3919736558,749,Moneda Argentina 10 Centavos 1919,Genérica,CJ# 107,referencia,1
+MLA3919736560,639,Moneda Argentina 2 Centavos 1945,Genérica,CJ# 179,referencia,3
+MLA3919736562,1264,Moneda China 5 Yuan Monte Taishan 2019,Genérica,KM# 2449,referencia,1
+MLA3919736564,344,Moneda Tailandia 50 Satang 2018,Genérica,Y# 573,referencia,1
+MLA3919736566,578,Moneda Bélgica 5 Centimes 1923,Genérica,KM# 66,referencia,1
+MLA3919736568,361,Moneda México 20 Centavos 1946,Genérica,KM# 439,referencia,1
+MLA3919736570,144,Moneda Guatemala 25 Centavos 1960,Genérica,KM# 263,referencia,1
+MLA3919736572,511,Moneda Países Bajos 1 Cent 1927,Genérica,KM# 152,referencia,1
+MLA3919736576,666,Moneda Reino Unido Penny 1913,Genérica,KM# 810,referencia,1
+MLA3919736578,104,Moneda Argentina 5 Centavos 1934,Genérica,CJ# 164,referencia,1
+MLA3919736580,1259,Moneda Líbano 25 Livres 2002,Genérica,KM# 40,referencia,1
+MLA3919736582,387,Moneda Estados Unidos 1/2 Dollar D 1972,Genérica,KM# 202b,referencia,1
+MLA3919736584,633,Moneda Argentina 2 Centavos 1941,Genérica,CJ# 176,referencia,3
+MLA3919736586,1253,Moneda Francia 2 Francos Louis Pasteur 1995,Genérica,KM# 1119,referencia,1
+MLA3919736588,413,Moneda Estados Unidos 1/4 Dólar 2001,Genérica,1/4 Dólar,valor facial (referencias distintas),7
+MLA3919736590,51,Moneda Argentina Centavo 1895,Genérica,CJ# 50,referencia,2
+MLA3919736592,265,Moneda Suiza 20 Rappen 1883,Genérica,KM# 29,referencia,1
+MLA3919736594,662,Moneda Reino Unido Shilling 1966,Genérica,KM# 904,referencia,1
+MLA3919736600,645,Moneda Argentina 2 Centavos 1947,Genérica,CJ# 181,referencia,2
+MLA3919736622,7,Moneda Argentina 2 Reales 1860,Genérica,CJ# 23,referencia,1
+MLA3919736624,1087,Moneda Chile 100 Pesos 2025,Genérica,100 Pesos,valor facial (referencias distintas),2
+MLA3919736626,1178,Moneda Tristán De Acuña 1 Crown 1978,Genérica,KM# 2,referencia,1
+MLA3919736630,773,Moneda Argentina 20 Centavos 1905,Genérica,CJ# 56,referencia,2
+MLA3919736634,1215,Moneda Reino Unido 1 Pound 2016,Genérica,KM# 1378,referencia,1
+MLA3919736636,686,Moneda Uruguay 2 Centésimos 1909,Genérica,KM# 20,referencia,1
+MLA3919736642,738,Moneda Argentina 5 Centavos 1904,Genérica,CJ# 135,referencia,2
+MLA3919736646,479,Moneda Estados Unidos 1/4 Dólar 2021,Genérica,KM# 758,referencia,2
+MLA3919736648,396,Moneda Perú 1 Sol 2018,Genérica,1 Sol,valor facial (referencias distintas),4
+MLA3919736650,1131,Moneda Bangladés 25 Poisha 1980,Genérica,KM# 12,referencia,1
+MLA3919736652,262,Moneda Suiza 10 Rappen 1883,Genérica,KM# 27,referencia,1
+MLA3919736656,904,Moneda Italia 5 Centesimi 1938,Genérica,KM# 73,referencia,1
+MLA3919736662,959,Moneda Rusia 10 Rublos 2015,Genérica,KM# 998,referencia,1
+MLA3919736666,598,Moneda Antillas Holandesas 1 Gulden 1971,Genérica,KM# 12,referencia,1
+MLA3919736668,490,Moneda Canadá 25 Cents 2000,Genérica,25 Cents,valor facial (referencias distintas),12
+MLA3919736670,668,Moneda Reino Unido Penny 1906,Genérica,KM# 794.2,referencia,1
+MLA3919736672,1040,Moneda Congo Belga Y Ruanda-urundi 1 Franco 1959,Genérica,KM# 4,referencia,1
+MLA3919736676,296,Moneda Perú 1/2 Sol 1965,Genérica,KM# 242,referencia,1
+MLA3919736678,1297,Moneda Dinamarca 5 Øre 1894,Genérica,KM# 794.2,referencia,1
+MLA3919736682,650,Moneda Argentina 2 Centavos 1949,Genérica,CJ# 183,referencia,2
+MLA3919736688,720,Moneda Chile 20 Centavos 1946,Genérica,KM# 177,referencia,1
+MLA3919736694,252,Moneda Colombia 1 Centavo 1976,Genérica,KM# 205a,referencia,1
+MLA3919736698,901,Moneda Italia 10 Centesimi 1866,Genérica,KM# 11,referencia,1
+MLA3919736700,1254,Moneda Francia 2 Francos Jean Moulin 1993,Genérica,KM# 1062,referencia,1
+MLA3919736702,669,Moneda Brasil 100 Reis 1901,Genérica,KM# 503,referencia,1
+MLA3919736708,628,Moneda Argentina 2 Centavos 1939,Genérica,CJ# 174,referencia,3
+MLA3919736710,316,Moneda Austria 10 Groschen 1949,Genérica,KM 2874,referencia,1
+MLA3919736714,1213,Moneda Reino Unido 1 Penny 2002,Genérica,KM# 986,referencia,1
+MLA3919736718,40,Moneda Argentina 10 Centavos 1931,Genérica,CJ# 119,referencia,3
+MLA3919736722,803,Moneda Ruanda 1 Franco 2003,Genérica,KM# 32,referencia,1
+MLA3919736724,696,Moneda Paraguay 10 Céntimos 1947,Genérica,KM# 22,referencia,1
+MLA3919736730,30,Moneda Estados Unidos Cent 1864,Genérica,KM# 90,referencia,1
+MLA3919736734,648,Moneda Argentina 2 Centavos 1948,Genérica,CJ# 182,referencia,2
+MLA3919736738,769,Moneda Argentina 20 Centavos 1911,Genérica,CJ# 62,referencia,2
+MLA3919736746,764,Moneda Argentina 20 Centavos 1916,Genérica,CJ# 67,referencia,2
+MLA3919736752,351,Moneda Egipto Qirsh 1984,Genérica,KM# 553,referencia,1
+MLA3919736756,1305,Moneda Suecia 10 Øre 1955,Genérica,KM# 823,referencia,1
+MLA3919736760,1318,Moneda Jamaica 10 Dólares 2000,Genérica,KM# 181,referencia,1
+MLA3919736764,1315,Moneda Argentina 1 Peso 1983,Genérica,CJ# 366,referencia,1
+MLA3919736768,1221,Moneda Argentina 2 Centavos 1889,Genérica,KM# 33,referencia,1
+MLA3919736778,837,Moneda Indias Orientales Neerlandesas Cent 1856,Genérica,KM# 307.1,referencia,1
+MLA3919736782,745,Moneda Argentina 5 Centavos 1941,Genérica,CJ# 171,referencia,1
+MLA3919736784,763,Moneda Argentina 20 Centavos 1916,Genérica,CJ# 67,referencia,2
+MLA3919736792,418,Moneda Estados Unidos 1/4 Dólar 2001,Genérica,1/4 Dólar,valor facial (referencias distintas),7
+MLA3919736794,1245,Moneda Canadá 1 Dólar Centenario De Manitoba 1970,Genérica,KM# 78,referencia,1
+MLA3919736796,525,Moneda Estados Unidos 1/4 Dólar (descentrada) 1999,Genérica,KM# 297,referencia,1
+MLA3919736800,201,Moneda Paraguay 2 Centesimos 1870,Genérica,KM# 3,referencia,1
+MLA3919736802,775,Moneda Argentina 20 Centavos 1896,Genérica,CJ# 52,referencia,2
+MLA3919736810,421,Moneda Estados Unidos 1/4 Dólar 2004,Genérica,KM# 356,referencia,1
+MLA3919736812,504,Moneda Argentina 50 Centavos 2000,Genérica,50 Centavos,valor facial (referencias distintas),2
+MLA3919736816,389,Moneda Estados Unidos 1/2 Dollar D 2022,Genérica,KM# 202b,referencia,1
+MLA3919736818,1313,Moneda Canadá 1 Cent 1919,Genérica,KM# 21,referencia,1
+MLA3919736824,1137,Moneda Alemania 1 Deutsche Mark G 1984,Genérica,KM# 110,referencia,1
+MLA3919736826,1235,Moneda Samoa 1 Sene Lori Corona Azul 2020,Genérica,KM# 504,referencia,1
+MLA3919736828,439,Moneda Estados Unidos 5 Cents 1888,Genérica,KM# 112,referencia,1
+MLA3919736832,427,Moneda Estados Unidos 1/4 Dólar 2006,Genérica,1/4 Dólar,valor facial (referencias distintas),2
+MLA3919736834,1296,Moneda Dinamarca 2 Øre 1874,Genérica,KM# 793.1,referencia,1
+MLA3919736836,1231,Moneda Sri Lanka 20 Rupees Banco Central 2020,Genérica,KM# 226,referencia,1
+MLA3919736838,1190,Moneda Gibraltar 1 Crown 1991,Genérica,KM# 85,referencia,1
+MLA3919736840,850,Moneda Turquía Kurus 2022,Genérica,Kurus,valor facial (referencias distintas),4
+MLA3919736844,242,Moneda Marruecos 2 Falus -1863 1861,Genérica,C# 163.2,referencia,1
+MLA3919736848,556,Moneda Reino Unido Penny 1921,Genérica,KM# 810,referencia,2
+MLA3919736850,561,Moneda Noruega 10 Øre 1957,Genérica,KM# 396,referencia,1
+MLA3919736854,747,Moneda Argentina 10 Centavos 1935,Genérica,CJ# 122,referencia,2
+MLA3919736862,1243,Moneda Canadá 2 Dólares Torre Cn (coloreada) 2026,Genérica,2 Dólares Torre CN (Coloreada),valor facial (sin referencia),1
+MLA3919736868,157,Moneda Portugal 5 Centavos 1927,Genérica,KM# 572,referencia,1
+MLA3919736870,1188,Moneda Gibraltar 1 Crown 1970,Genérica,KM# 4,referencia,1
+MLA3919736878,676,Moneda Brasil Centavo 1998,Genérica,KM# 647,referencia,1
+MLA3919736880,765,Moneda Argentina 20 Centavos 1914,Genérica,CJ# 65,referencia,1
+MLA3919736884,986,Moneda Reino Unido 25 New Pence 1980,Genérica,KM# 921,referencia,2
+MLA3919736894,717,Moneda Paraguay 2 Pesos 1938,Genérica,KM# 17,referencia,1
+MLA3919736896,657,Moneda Perú 10 Soles 1971,Genérica,KM# 255,referencia,1
+MLA3919736900,757,Moneda Argentina 10 Centavos 1897,Genérica,CJ# 91,referencia,2
+MLA3919736902,523,Moneda España 25 Céntimos 1925,Genérica,KM# 740,referencia,1
+MLA3919736908,1203,Moneda Reino Unido 5 Pence 1991,Genérica,KM# 937b,referencia,1
+MLA3919736910,599,Moneda Antillas Holandesas 1 Gulden 1970,Genérica,KM# 12,referencia,1
+MLA3919736912,1320,Moneda Nueva Zelanda 50 Cents 2006,Genérica,KM# 119,referencia,1
+MLA3919736916,630,Moneda Argentina 2 Centavos 1940,Genérica,CJ# 175,referencia,2
+MLA3919736918,309,Moneda Suiza 10 Rappen 1970,Genérica,KM# 27,referencia,1
+MLA3919736920,263,Moneda Suiza 10 Rappen 1884,Genérica,KM# 27,referencia,1
+MLA3919736922,1280,Moneda Belice 10 Cents 2020,Genérica,KM# 35,referencia,1
+MLA3919736926,376,Moneda Estados Unidos 1 Dollar P 2007,Genérica,KM# 402,referencia,1
+MLA3919736928,631,Moneda Argentina 2 Centavos 1940,Genérica,CJ# 175,referencia,2
+MLA3919736932,685,Moneda Uruguay 2 Centésimos 1901,Genérica,KM# 20,referencia,1
+MLA3919736936,1298,Moneda Francia 10 Francos 1987,Genérica,KM# 961d,referencia,1
+MLA3919736940,1260,Moneda Indonesia 50 Sen Diponegoro 1955,Genérica,KM# 10,referencia,1
+MLA3919736942,691,Moneda Uruguay Centésimo 1924,Genérica,KM# 19,referencia,1
+MLA3919736944,1255,Moneda Siria 25 Libras 2003,Genérica,KM# 131,referencia,1
+MLA3919736948,715,Moneda Paraguay 20 Centavos 1938,Genérica,KM# 15,referencia,1
+MLA3919736950,754,Moneda Argentina 10 Centavos 1908,Genérica,CJ# 97,referencia,1
+MLA3919736954,1206,Moneda Reino Unido 5 Pence 2012,Genérica,KM# 1109d,referencia,1
+MLA3919736956,787,Moneda Costa Rica 25 Colones 2023,Genérica,25 Colones,valor facial (referencias distintas),3
+MLA3919736958,807,Moneda Argentina 20 Centavos 1908,Genérica,CJ# 59,referencia,1
+MLA3919736960,1251,Moneda Canadá 1 Dólar Elsie Macgill (coloreada) 2023,Genérica,KM# 3344,referencia,1
+MLA3919736962,325,Moneda Países Bajos Cent 1878,Genérica,KM# 107.1,referencia,1
+MLA3919736964,202,Moneda Uruguay 5 Centésimos 1948,Genérica,KM# 21a,referencia,1
+MLA3919736968,409,Moneda Estados Unidos 1/4 Dólar 2000,Genérica,1/4 Dólar,valor facial (referencias distintas),5
+MLA3919736972,1306,Moneda Suiza 2 Rappen 1893,Genérica,KM# 4.2,referencia,1
+MLA3919736976,399,Moneda Perú 1 Sol 2019,Genérica,1 Sol,valor facial (referencias distintas),3
+MLA3919736980,940,Moneda Austria 2 Filler 1963,Genérica,KM# 2876,referencia,1
+MLA3919736982,175,Moneda Argentina Peso Mercosur 1998,Genérica,CJ# 6,referencia,1
+MLA3919736988,766,Moneda Argentina 20 Centavos 1912,Genérica,CJ# 63,referencia,2
+MLA3919736992,107,Moneda Argentina 20 Centavos 1899,Genérica,CJ# 55,referencia,2
+MLA3919736996,39,Moneda Argentina 5 Centavos 1914,Genérica,CJ# 145.2,referencia,1
+MLA3919737000,1304,Moneda San Marino 100 Liras 1985,Genérica,KM# 179,referencia,1
+MLA3919737002,564,Moneda Perú 5 Centavos 1962,Genérica,KM# 223.2,referencia,1
+MLA3919737004,506,Moneda Argentina 1 Peso 2001,Genérica,CJ# 6.7.1,referencia,1
+MLA3919737008,423,Moneda Estados Unidos 1/4 Dólar 2005,Genérica,1/4 Dólar,valor facial (referencias distintas),4
+MLA3919737012,733,Moneda Argentina 10 Centavos 1882,Genérica,CJ# 22,referencia,1
+MLA3919737016,549,Moneda Argentina 2 Centavos 1894,Genérica,CJ# 35,referencia,1
+MLA3919737020,727,Moneda Chile 10 Centavos 1925,Genérica,KM# 166,referencia,1
+MLA3919737024,913,Moneda Italia 20 Centesimi 1922,Genérica,KM# 44,referencia,1
+MLA3919737026,26,Moneda México Troy Ounce 2021,Genérica,KM# M49b,referencia,1
+MLA3919737030,898,Moneda Italia 50 Centesimi 1941,Genérica,KM# 76b,referencia,1
+MLA3919737034,431,Moneda Argentina 1 Peso 1995,Genérica,CJ# 8.2,referencia,1
+MLA3919737036,719,Moneda Chile 20 Centavos 1943,Genérica,KM# 177,referencia,1
+MLA3919737040,656,Moneda Perú 1 Sol 2016,Genérica,KM# 374,referencia,1
+MLA3919737042,792,Moneda Namibia 50 Cents 2025,Genérica,KM# 4,referencia,1
+MLA3919737044,776,Moneda Argentina 20 Centavos 1896,Genérica,CJ# 52,referencia,2
+MLA3919737052,833,Moneda Argentina 5 Centavos 1939,Genérica,CJ# 169,referencia,1
+MLA3919737056,426,Moneda Estados Unidos 1/4 Dólar 2006,Genérica,1/4 Dólar,valor facial (referencias distintas),2
+MLA3919737058,569,Moneda España 25 Céntimos 1927,Genérica,KM# 742,referencia,1
+MLA3919737064,951,Moneda Transnistria 1 Kopeck 2000,Genérica,KM# 1,referencia,3
+MLA3919737068,91,Moneda Egipto 50 Piastres 2019,Genérica,KM# 1035,referencia,1
+MLA3919737070,429,Moneda Estados Unidos 1/4 Dólar 2008,Genérica,KM# 422,referencia,1
+MLA3919737074,579,Moneda Antillas Holandesas 2 1/2 Cent 1984,Genérica,KM# 13,referencia,1
+MLA3919737076,820,Moneda Estados Unidos 1/2 Dollar 1967,Genérica,KM# 202a,referencia,2
+MLA3919737090,692,Moneda Uruguay Centésimo 1936,Genérica,KM# 19,referencia,1
+MLA3919737094,1237,Moneda Canadá 5 Cents Centenario De La Confederación 1967,Genérica,KM# 66,referencia,1
+MLA3919737102,930,Moneda Italia 100 Liras 1979,Genérica,KM# 96.1,referencia,1
+MLA3919737116,743,Moneda Argentina 5 Centavos 1911,Genérica,CJ# 142,referencia,1
+MLA3919737230,1247,Moneda Gambia 1 Dalasi Pez Tigre 2011,Genérica,KM# 59a,referencia,1
+MLA3919737232,494,Moneda Canadá 25 Cents 2000,Genérica,25 Cents,valor facial (referencias distintas),12
+MLA3919737234,663,Moneda Reino Unido Shilling 1948,Genérica,KM# 864,referencia,1
+MLA3919737236,572,Moneda Bolivia 50 Centavos 1902,Genérica,KM# 175.1,referencia,2
+MLA3919737240,809,Moneda Países Bajos Duit 1769,Genérica,KM# 90,referencia,1
+MLA3919737242,897,Moneda Portugal 5 Escudos 1992,Genérica,KM# 632,referencia,1
+MLA3919737244,655,Moneda Perú 5 Centavos 1934,Genérica,KM# 213.2,referencia,1
+MLA3919737262,281,Moneda Arabia Saudita 10 Halalat 1980,Genérica,KM# 54,referencia,1
+MLA3919737266,844,Moneda España Peseta 1980,Genérica,KM# 806,referencia,1
+MLA3919737268,721,Moneda Chile 1 Peso 1953,Genérica,KM# 179,referencia,1
+MLA3919737270,189,Moneda Reino Unido 1/2 Penny 1900,Genérica,KM# 789,referencia,1
+MLA3919737276,1300,Moneda Países Bajos 1 Cent 1902,Genérica,KM# 132.1,referencia,1
+MLA3919737280,267,Moneda Suiza 20 Rappen 1920,Genérica,KM# 29,referencia,1
+MLA3919737282,570,Moneda Argentina 2 Centavos 1883,Genérica,CJ# 25,referencia,2
+MLA3919737284,194,Moneda Argentina Centavo 1975,Genérica,CJ# 360,referencia,1
+MLA3919737286,925,Moneda Francia 2 Francos 1943,Genérica,KM# 903,referencia,1
+MLA3919737290,589,Moneda Países Bajos Cent 1837,Genérica,KM# 47,referencia,1
+MLA3919737292,838,Moneda Indias Orientales Neerlandesas 1/2 Cent 1859,Genérica,KM# 306,referencia,1
+MLA3919737302,919,Moneda Estados Unidos 5 Cents D 2005,Genérica,KM# 368,referencia,1
+MLA3919737304,178,Moneda Argentina 2 Centavos 1896,Genérica,CJ# 37,referencia,2
+MLA3919737306,192,Moneda Estados Unidos 5 Cents 1902,Genérica,KM# 112,referencia,1
+MLA3919737312,665,Moneda Reino Unido Penny 1920,Genérica,KM# 810,referencia,1
+MLA3919737324,404,Moneda Estados Unidos 1/4 Dólar 1999,Genérica,1/4 Dólar,valor facial (referencias distintas),4
+MLA3919860020,299,Moneda Perú 1 Sol 1961,Genérica,KM 222,referencia,1
+MLA3919860024,1277,Moneda Canadá 1 Dólar 1973,Genérica,KM# 82,referencia,1
+MLA3919860026,395,Moneda Perú 1 Sol 2018,Genérica,1 Sol,valor facial (referencias distintas),4
+MLA3919860028,410,Moneda Estados Unidos 1/4 Dólar 2000,Genérica,1/4 Dólar,valor facial (referencias distintas),5
+MLA3919860034,1289,Moneda Argentina 50 Centavos 1883,Genérica,CJ# 15-17,referencia,1
+MLA3919860036,317,Moneda Francia 10 Francos 1955,Genérica,KM# 915.1,referencia,1
+MLA3919860038,862,Moneda Dinamarca 1 Krone 1969,Genérica,KM# 851,referencia,1
+MLA3919860042,339,Moneda Reino Unido 5 Pence 2016,Genérica,KM# 1334,referencia,1
+MLA3919860046,412,Moneda Estados Unidos 1/4 Dólar 2000,Genérica,1/4 Dólar,valor facial (referencias distintas),5
+MLA3919860048,191,Moneda Bélgica 25 Cents 1943,Genérica,KM# 132,referencia,2
+MLA3919860050,968,Moneda Japón 1 Yen 1982,Genérica,KM# 74,referencia,1
+MLA3919860052,567,Moneda Francia 25 Centimes 1927,Genérica,KM# 867a,referencia,1
+MLA3919860054,858,Moneda Dinamarca 10 Kroner 1979,Genérica,KM# 864,referencia,1
+MLA3919860056,253,Moneda Colombia 5 Centavos 1978,Genérica,KM# 206a,referencia,1
+MLA3919860058,1184,Moneda Gibraltar 1 Crown 1977,Genérica,KM# 12,referencia,1
+MLA3919860060,1160,Moneda Austria 50 Schilling 1969,Genérica,KM# 2906,referencia,1
+MLA3919860062,481,Moneda Estados Unidos 1/4 Dólar 1976,Genérica,KM# 204,referencia,1
+MLA3919860066,491,Moneda Canadá 25 Cents 2000,Genérica,25 Cents,valor facial (referencias distintas),12
+MLA3919860068,802,Moneda Uganda 50 Cents 1976,Genérica,KM# 4a,referencia,1
+MLA3919860072,1068,Moneda Estados Unidos Blister 1 Dollar S 1983,Genérica,KM# 209,referencia,1
+MLA3919860076,384,Moneda Estados Unidos 1/2 Dollar 1974,Genérica,KM# 202b,referencia,1
+MLA3919860078,644,Moneda Argentina 2 Centavos 1947,Genérica,CJ# 181,referencia,2
+MLA3919860080,394,Moneda Perú 1 Sol 2019,Genérica,1 Sol,valor facial (referencias distintas),3
+MLA3919860090,952,Moneda Transnistria 1 Kopeck 2000,Genérica,KM# 1,referencia,3
+MLA3919860092,211,Moneda España 2 Euro 2013,Genérica,KM# 1305,referencia,1
+MLA3919860094,1067,Moneda Estados Unidos Blister 1 Dollar D 1984,Genérica,KM# 210,referencia,1
+MLA3919860096,115,Moneda Argentina 2 Centavos 1950,Genérica,CJ# 185,referencia,2
+MLA3919860100,885,Moneda Suecia 1 Krona 1981,Genérica,KM# 852,referencia,1
+MLA3919860104,428,Moneda Estados Unidos 1/4 Dólar 2007,Genérica,KM# 404,referencia,1
+MLA3919860106,771,Moneda Argentina 20 Centavos 1909,Genérica,CJ# 60,referencia,2
+MLA3919860108,505,Moneda Argentina 50 Centavos 1998,Genérica,CJ# 5.6,referencia,1
+MLA3919860110,866,Moneda Suecia 5 Ore 1900,Genérica,KM# 794,referencia,1
+MLA3919860112,205,Moneda Portugal 20 Centavos 1924,Genérica,KM# 574,referencia,1
+MLA3919860114,967,Moneda China 1 Jiao 1992,Genérica,KM# 335,referencia,1
+MLA3919860116,854,Moneda Turquía Kurus 2022,Genérica,Kurus,valor facial (referencias distintas),4
+MLA3919860130,987,Moneda Reino Unido 25 New Pence 1977,Genérica,KM# 920,referencia,2
+MLA3919860132,1248,Moneda Mónaco 5 Francos 1945,Genérica,KM# 122,referencia,1
+MLA3919860134,882,Moneda Suecia 5 Kronor 1983,Genérica,Schön# 75,referencia,1
+MLA3919860138,783,Moneda Canadá 25 Cents 2011,Genérica,25 Cents,valor facial (referencias distintas),2
+MLA3919860142,1175,Moneda Dinamarca 4 Skilling 1854,Genérica,KM# 758,referencia,1
+MLA3919860144,1111,Moneda Líbano 1 Piastra 1955,Genérica,KM# 19,referencia,2
+MLA3919860150,744,Moneda Argentina 5 Centavos 1912,Genérica,CJ# 143,referencia,1
+MLA3919860154,350,Moneda Países Bajos Cent 1928,Genérica,KM# 152,referencia,1
+MLA3919860158,1128,Moneda Países Bajos 10 Cents 1942,Genérica,KM# 173,referencia,1
+MLA3919860160,388,Moneda Estados Unidos 1/2 Dollar D 2017,Genérica,KM# 202b,referencia,1
+MLA3919860164,55,Moneda Uruguay Peso 1942,Genérica,KM# 30,referencia,2
+MLA3919860172,1054,Moneda Alemania 1 Reichspfennig 1941,Genérica,KM# 97,referencia,1
+MLA3919860174,973,Moneda Yugoslavia Blister 1 Y 10 Dinar Fao 1976,Genérica,KM# 61 / 63,referencia,1
+MLA3919860182,190,Moneda Chile 20 Centavos 1879,Genérica,KM# 138.2,referencia,1
+MLA3919860192,1216,Moneda Reino Unido 1 Pound 2018,Genérica,KM# 1378,referencia,1
+MLA3919860194,402,Moneda Perú 1 Sol 2024,Genérica,1 Sol,valor facial (referencias distintas),2
+MLA3919860198,943,Moneda Argentina 10 Centavos 1899,Genérica,CJ# 27,referencia,1
+MLA3919860200,1183,Moneda Gibraltar 25 New Pence 1972,Genérica,KM# 6,referencia,1
+MLA3919860202,292,Moneda Islandia 10 Aurar 1981,Genérica,KM# 23,referencia,1
+MLA3919860206,601,Moneda Suecia 25 Ore 1944,Genérica,KM# 816,referencia,1
+MLA3919860208,860,Moneda Dinamarca 5 Kroner 1990,Genérica,KM# 869,referencia,1
+MLA3919860210,1194,Moneda Reino Unido 20 Pence 2002,Genérica,KM# 990,referencia,1
+MLA3919860212,690,Moneda Uruguay Centésimo 1909,Genérica,KM# 19,referencia,1
+MLA3919860220,232,Moneda Swazilandia 2 Cents 1982,Genérica,KM# 8,referencia,1
+MLA3919860224,1271,Moneda Maldivas 10 Laari 2012,Genérica,KM# 115,referencia,1
+MLA3919860232,931,Moneda Francia 5 Francos 1993,Genérica,KM# 926a,referencia,1
+MLA3919860234,295,Moneda Perú 1 Inti 1988,Genérica,KM# 294,referencia,1
+MLA3919860238,323,Moneda Hong Kong Dólar 2015,Genérica,KM# 69,referencia,1
+MLA3919860240,725,Moneda Chile 10 Centésimos 1969,Genérica,KM# 191,referencia,1
+MLA3919860242,861,Moneda Dinamarca 1 Krone 1980,Genérica,KM# 862,referencia,1
+MLA3919860248,634,Moneda Argentina 2 Centavos 1941,Genérica,CJ# 176,referencia,3
+MLA3919860252,872,Moneda Israel 10 Pruta 1952,Genérica,KM# 17,referencia,1
+MLA3919860256,18,Moneda Argentina 2 Centavos 1890,Genérica,CJ# 31,referencia,2
+MLA3919860258,1151,Moneda Francia 5 Francos 1994,Genérica,KM# 1063,referencia,1
+MLA3919860260,586,Moneda Antillas Holandesas Cent 1985,Genérica,KM# 13,referencia,1
+MLA3919860264,758,Moneda Argentina 10 Centavos 1896,Genérica,CJ# 90,referencia,1
+MLA3919860268,1180,Moneda Santa Elena 25 Pence 1980,Genérica,KM# 8,referencia,1
+MLA3919860270,594,Moneda Siria 25 Qirsh 1979,Genérica,KM# 118,referencia,1
+MLA3919860274,72,Moneda Zambia 25 Ngwee 1992,Genérica,KM# 29,referencia,1
+MLA3919860276,1191,Moneda Guernsey 25 New Pence 1980,Genérica,KM# 35,referencia,1
+MLA3919860288,1025,Moneda Reino Unido Farthing 1923,Genérica,KM# 825,referencia,1
+MLA3919860290,526,Moneda Bolivia 50 Centavos (girada) 1903,Genérica,KM# 175,referencia,1
+MLA3919860298,1294,Moneda Estados Unidos 1/2 Dólar Kennedy 1967,Genérica,KM# 202a,referencia,1
+MLA3919860300,495,Moneda Canadá 25 Cents 2000,Genérica,25 Cents,valor facial (referencias distintas),12
+MLA3919860306,736,Moneda Argentina 5 Centavos 1903,Genérica,CJ# 134,referencia,1
+MLA3919860312,496,Moneda Canadá 25 Cents 2000,Genérica,25 Cents,valor facial (referencias distintas),12
+MLA3919860314,368,Moneda Estados Unidos Cent 1904,Genérica,KM# 90,referencia,1
+MLA3919860316,675,Moneda Brasil 100 Reis 1871,Genérica,KM# 477,referencia,1
+MLA3919860318,322,Moneda Nueva Zelanda 2 Cents 1987,Genérica,KM# 58,referencia,1
+MLA3919860322,768,Moneda Argentina 20 Centavos 1911,Genérica,CJ# 62,referencia,2
+MLA3919860328,772,Moneda Argentina 20 Centavos 1905,Genérica,CJ# 56,referencia,2
+MLA3919860330,1325,Moneda Estados Unidos 1 Dólar Peace 1922,Genérica,KM# 150,referencia,1
+MLA3919860332,658,Moneda Reino Unido 6 Pence 1962,Genérica,KM# 903,referencia,1
+MLA3919860340,825,Moneda Suecia 1 Krona 1954,Genérica,KM# 826,referencia,1
+MLA3919860342,414,Moneda Estados Unidos 1/4 Dólar 2001,Genérica,1/4 Dólar,valor facial (referencias distintas),7
+MLA3919860344,671,Moneda Brasil 20 Centavos 1946,Genérica,KM# 556a,referencia,1
+MLA3919860348,411,Moneda Estados Unidos 1/4 Dólar 2000,Genérica,1/4 Dólar,valor facial (referencias distintas),5
+MLA3919860350,261,Moneda Suiza 10 Rappen 1967,Genérica,KM# 27,referencia,1
+MLA3919860356,398,Moneda Perú 1 Sol 2018,Genérica,1 Sol,valor facial (referencias distintas),4
+MLA3919860358,827,Moneda Medalla Medalla Centenario Argentino 1810 1910,Genérica,CEMI# AGL01,referencia,1
+MLA3919860362,826,Moneda Argentina 5 Pesos 1994,Genérica,CJ# 8.1.1,referencia,1
+MLA3919860364,1197,Moneda Reino Unido 20 Pence 2010,Genérica,KM# 1111,referencia,1
+MLA3919860366,756,Moneda Argentina 10 Centavos 1897,Genérica,CJ# 91,referencia,2
+MLA3919860380,699,Moneda Paraguay 50 Céntimos 1944,Genérica,KM# 24,referencia,1
+MLA3919860382,113,Moneda Argentina 2 Centavos 1944,Genérica,CJ# 178,referencia,1
+MLA3919860390,1263,Moneda Líbano 1 Piastra 1955,Genérica,KM# 19,referencia,2
+MLA3919860392,941,Moneda Yugoslavia 1 Dinar 1953,Genérica,KM# 32,referencia,1
+MLA3919860394,565,Moneda Perú 10 Soles 1978,Genérica,KM# 275,referencia,1
+MLA3919860398,683,Moneda Uruguay 2 Centésimos 1977,Genérica,KM# 72,referencia,1
+MLA3919860404,1317,Moneda Imperio Otomano 10 Para 1900,Genérica,KM# 744,referencia,1
+MLA3919860418,179,Moneda Portugal 20 Reis 1891,Genérica,KM# 533,referencia,1
+MLA3919860422,43,Moneda Argentina Centavo 1886,Genérica,CJ# 42,referencia,1
+MLA3919860424,489,Moneda Canadá 25 Cents 2000,Genérica,25 Cents,valor facial (referencias distintas),12
+MLA3919860426,888,Moneda Suecia 5 Ore 1950,Genérica,KM# 779,referencia,1
+MLA3919860428,880,Moneda Suecia 10 Kronor 1991,Genérica,KM# 877,referencia,1
+MLA3919860430,266,Moneda Suiza 20 Rappen 1885,Genérica,KM# 29,referencia,1
+MLA3919860432,1258,Moneda San Martín 5 Cents 2025,Genérica,5 Cents,valor facial (sin referencia),1
+MLA3919860438,1311,Moneda Venezuela 25 Céntimos 1954,Genérica,Y# 35,referencia,1
+MLA3919860440,970,Moneda China 1 Jiao 2009,Genérica,KM# 1210b,referencia,1
+MLA3919860444,984,Moneda Reino Unido 25 New Pence 1981,Genérica,KM# 925,referencia,3
+MLA3919860448,607,Moneda Egipto 5 Milliemes 1973,Genérica,KM# 432,referencia,1
+MLA3919860460,135,Moneda África Occidental Francesa 10 Francos 1956,Genérica,KM# 6,referencia,1
+MLA3919860462,932,Moneda China 1 Yuan 2013,Genérica,KM# 1211,referencia,1
+MLA3919860472,1055,Moneda Alemania 5 Reichspfennig 1941,Genérica,KM# 100,referencia,1
+MLA3919860480,417,Moneda Estados Unidos 1/4 Dólar 2001,Genérica,1/4 Dólar,valor facial (referencias distintas),7
+MLA3919860482,114,Moneda Argentina 2 Centavos 1950,Genérica,CJ# 185,referencia,2
+MLA3919860484,618,Moneda Argentina Centavo 1944,Genérica,CJ# 191,referencia,1
+MLA3919860490,419,Moneda Estados Unidos 1/4 Dólar 2001,Genérica,1/4 Dólar,valor facial (referencias distintas),7
+MLA3919860494,767,Moneda Argentina 20 Centavos 1912,Genérica,CJ# 63,referencia,2
+MLA3919860496,600,Moneda Suecia 25 Ore 1943,Genérica,KM# 816,referencia,1
+MLA3919860502,392,Moneda Perú 1 Sol 2019,Genérica,1 Sol,valor facial (referencias distintas),3
+MLA3919860512,741,Moneda Argentina 5 Centavos 1907,Genérica,CJ# 138,referencia,2
+MLA3919860514,859,Moneda Dinamarca 2 Kroner 1994,Genérica,KM# 874,referencia,1
+MLA3919860518,711,Moneda Paraguay 10 Centavos 1903,Genérica,KM# 7,referencia,1
+MLA3919860522,678,Moneda Reino Unido 3 Pence 1960,Genérica,KM# 900,referencia,1
+MLA3919860524,1145,Moneda Rumania 100 Lei 1991,Genérica,KM# 111,referencia,1
+MLA3919860526,936,Moneda Rusia 25 Rublos 2011,Genérica,KM# 1303,referencia,1
+MLA3919860534,918,Moneda Estados Unidos 5 Cents P 2005,Genérica,KM# 369,referencia,1
+MLA3919860540,188,Moneda Medalla Medalla Centenario De Necochea 1981,Genérica,Medalla Centenario de Necochea,valor facial (sin referencia),1
+MLA3919860542,795,Moneda Sri Lanka 1 Rupia 2017,Genérica,KM# 168,referencia,1
+MLA3919860544,702,Moneda Costa Rica 5 Céntimos 1976,Genérica,KM# 184.2,referencia,1
+MLA3919860554,1274,Moneda Tayikistán 1 Somoni 2025,Genérica,KM# 56,referencia,1
+MLA3919860558,101,Moneda Argentina 2 Centavos 1895,Genérica,CJ# 33,referencia,1
+MLA3919860562,823,Moneda Estados Unidos 1/2 Dollar 1967,Genérica,KM# 202a,referencia,2
+MLA3919860564,737,Moneda Argentina 5 Centavos 1904,Genérica,CJ# 135,referencia,2
+MLA3919860570,881,Moneda Suecia 10 Ore 1970,Genérica,KM# 835,referencia,1
+MLA3919860572,849,Moneda Bolivia 20 Centavos 1965,Genérica,KM# 189,referencia,1
+MLA3919860574,480,Moneda Estados Unidos 1/4 Dólar 2021,Genérica,KM# 758,referencia,2
+MLA3919860578,499,Moneda Canadá 25 Cents 2000,Genérica,25 Cents,valor facial (referencias distintas),12
+MLA3919860584,385,Moneda Estados Unidos 1/2 Dollar D 1995,Genérica,KM# 202b,referencia,1
+MLA3919860588,576,Moneda Israel 100 Pruta 1955,Genérica,KM# 14,referencia,1
+MLA3919860590,1135,Moneda Bután 5 Chetrums 1975,Genérica,KM# 37,referencia,1
+MLA3919860596,1310,Moneda Perú 2 Centavos 1863,Genérica,KM# 188.1,referencia,1
+MLA3919860602,585,Moneda Egipto 10 Milliemes 1935,Genérica,KM# 347,referencia,1
+MLA3919860608,90,Moneda Rusia 10 Rublos 2014,Genérica,KM# 156.6,referencia,1
+MLA3919860610,400,Moneda Perú 1 Sol 2015,Genérica,KM# 374,referencia,1
+MLA3919860612,1208,Moneda Reino Unido 10 Pence 2012,Genérica,KM# 1110d,referencia,1
+MLA3919860614,713,Moneda Chile 10 Centésimos 1971,Genérica,KM# 194,referencia,1
+MLA3919860622,739,Moneda Argentina 5 Centavos 1905,Genérica,CJ# 136,referencia,1
+MLA3919860626,638,Moneda Argentina 2 Centavos 1945,Genérica,CJ# 179,referencia,3
+MLA3919860628,900,Moneda Italia 5 Centesimi 1861,Genérica,KM# 3,referencia,1
+MLA3919860632,408,Moneda Estados Unidos 1/4 Dólar 2000,Genérica,1/4 Dólar,valor facial (referencias distintas),5
+MLA3919860634,1201,Moneda Reino Unido 20 Pence 2020,Genérica,KM# 1336,referencia,1
+MLA3919860636,492,Moneda Canadá 25 Cents 2000,Genérica,25 Cents,valor facial (referencias distintas),12
+MLA3919860638,249,Moneda Emiratos Árabes Unidos 5 Fils 1974,Genérica,KM# 2.1,referencia,1
+MLA3919860642,627,Moneda Argentina 2 Centavos 1939,Genérica,CJ# 174,referencia,3
+MLA3919860648,1303,Moneda San Marino 100 Liras 1978,Genérica,KM# 82,referencia,1
+MLA3919860654,177,Moneda Noruega 1/2 Skilling 1867,Genérica,KM# 329,referencia,1
+MLA3919860660,497,Moneda Canadá 25 Cents 2000,Genérica,25 Cents,valor facial (referencias distintas),12
+MLA3919860662,788,Moneda Costa Rica 25 Colones 2023,Genérica,25 Colones,valor facial (referencias distintas),3
+MLA3919860762,784,Moneda Canadá 25 Cents 2011,Genérica,25 Cents,valor facial (referencias distintas),2
+MLA3919860764,49,Moneda Argentina 5 Centavos 1916,Genérica,CJ# 147,referencia,1
+MLA3919860768,975,Moneda Argentina 10 Australes 1989,Genérica,CJ# 378.2,referencia,1
+MLA3919860788,1138,Moneda Alemania 1 Deutsche Mark F 1991,Genérica,KM# 110,referencia,1
+MLA3919860790,992,Moneda Reino Unido 1 Crown 1965,Genérica,KM# 910,referencia,2
+MLA3919860792,704,Moneda Costa Rica 5 Céntimos 1979,Genérica,KM# 184.3a,referencia,1
+MLA3919860794,1156,Moneda Alemania 5 Deutsche Mark 1965,Genérica,KM# 112.1,referencia,1
+MLA3919860796,112,Moneda Argentina 20 Centavos 1936,Genérica,CJ# 83,referencia,3
+MLA3919860798,285,Moneda Malasia 10 Sen 1973,Genérica,KM# 2,referencia,1
+MLA3919860802,637,Moneda Argentina 2 Centavos 1942,Genérica,CJ# 177,referencia,2
+MLA3919860804,136,Moneda India Rupia 2008,Genérica,KM# 331,referencia,1
+MLA3919860806,287,Moneda Austria 2 Euro 2016,Genérica,KM# 3248,referencia,1
+MLA3919860808,89,Moneda Brasil 1000 Réis 1910,Genérica,KM# 507,referencia,1
+MLA3919860812,884,Moneda Suecia 2 Ore 1950,Genérica,KM# 778,referencia,1
+MLA3919860814,867,Moneda España 100 Pesetas 1980,Genérica,KM# 820,referencia,1
+MLA3919860816,370,Moneda Estados Unidos Cent 1907,Genérica,KM# 90,referencia,1
+MLA3919860818,1023,Moneda Alemania 2 Reichspfennig A 1924,Genérica,KM# 37,referencia,1
+MLA3919860820,1240,Moneda Chile 100 Pesos 2025,Genérica,100 Pesos,valor facial (referencias distintas),2
+MLA3919860834,1179,Moneda Tristán De Acuña 25 Pence 1980,Genérica,KM# 3,referencia,1
+MLA3919860836,424,Moneda Estados Unidos 1/4 Dólar 2005,Genérica,1/4 Dólar,valor facial (referencias distintas),4
+MLA3919860838,853,Moneda Turquía Kurus 2022,Genérica,Kurus,valor facial (referencias distintas),4
+MLA3919860840,632,Moneda Argentina 2 Centavos 1941,Genérica,CJ# 176,referencia,3
+MLA3919860846,138,Moneda Bolivia 10 Centavos 1883,Genérica,KM# 170.2,referencia,1
+MLA3919860848,834,Moneda Argentina 5 Centavos 1931,Genérica,CJ# 162,referencia,1
+MLA3919860850,789,Moneda Kirguistán 1 Tyin 2008,Genérica,KM# 33,referencia,1
+MLA3919860852,595,Moneda Bélgica 10 Centimes 1904,Genérica,KM# 52,referencia,1
+MLA3919860854,1161,Moneda Austria 25 Schilling 1957,Genérica,KM# 2883,referencia,1
+MLA3919860856,905,Moneda Italia 20 Centesimi 1940,Genérica,KM# 75b,referencia,1
+MLA3919860858,982,Moneda Reino Unido 25 New Pence 1981,Genérica,KM# 925,referencia,3
+MLA3919860864,667,Moneda Reino Unido Penny 1921,Genérica,KM# 810,referencia,2
+MLA3919860866,463,Moneda Estados Unidos 1 Dollar  Peace Dollar  2021,Genérica,KM# 150a,referencia,1
+MLA3919860870,1322,Moneda Argentina 20 Centavos 1883,Genérica,CJ# 20,referencia,1
+MLA3919860872,693,Moneda Uruguay 5 Centésimos 1924,Genérica,KM# 21,referencia,1
+MLA3919860874,893,Moneda Emiratos Árabes Unidos 50 Fils 1998,Genérica,KM# 16,referencia,1
+MLA3919860876,698,Moneda Paraguay 5 Céntimos 1947,Genérica,KM# 21,referencia,1
+MLA3919860878,887,Moneda Suecia 5 Ore 1922,Genérica,KM# 779,referencia,1
+MLA3919860880,105,Moneda Argentina 20 Centavos 1899,Genérica,CJ# 55,referencia,2
+MLA3919860884,800,Moneda Uzbekistán 50 Som 2018,Genérica,KM# 43,referencia,1
+MLA3919860886,829,Moneda Uruguay 1 Nuevo Peso 1989,Genérica,KM# 95,referencia,1
+MLA3919860888,206,Moneda España Seiseno -1652 1641,Genérica,KM# 28,referencia,1
+MLA3919860890,522,Moneda España 25 Céntimos 1937,Genérica,KM# 753,referencia,1
+MLA3919860896,111,Moneda Argentina 20 Centavos 1936,Genérica,CJ# 83,referencia,3
+MLA3919860900,890,Moneda Tailandia 5 Baht 2007,Genérica,Y# 219,referencia,1
+MLA3919860904,955,Moneda Yugoslavia 50 Para 1953,Genérica,KM# 29,referencia,1
+MLA3919860906,1159,Moneda Estados Unidos 1/2 Dólar Franklin 1958,Genérica,KM# 199,referencia,1
+MLA1770748599,53,Moneda Suecia 10 Öre 1919,Genérica,Suecia 10 Öre 1919,valor facial (sin referencia),1
+MLA1770748623,60,Moneda Macao 10 Avos 2005,Genérica,Macao 10 Avos 2005,valor facial (sin referencia),1
+MLA1770761229,103,Moneda Argentina 5 Centavos 1908,Genérica,Argentina 5 Centavos 1908,valor facial (sin referencia),1
+MLA1770761233,51,Moneda Argentina 1 Centavo 1895,Genérica,CJ# 50,referencia,1
+MLA1770761281,29,Moneda Estados Unidos 1 Cent 1861,Genérica,KM# 90,referencia,1
+MLA1770761287,118,Moneda Turquía 1 Kuru 2022,Genérica,Turquía 1 Kuru 2022,valor facial (sin referencia),1
+MLA1770774423,113,Moneda Argentina 2 Centavos 1944,Genérica,CJ# 178,referencia,1
+MLA1770774461,79,Moneda Uruguay 40 Centésimos 1857,Genérica,Uruguay 40 Centésimos 1857,valor facial (sin referencia),1
+MLA3919736664,183,Moneda Argentina Blister Bicentenario 2010,Genérica,CJ# 6.18-6.22,referencia,1
+MLA3919736860,652,Moneda Argentina Centavo (descentrada) 1948,Genérica,CJ# 195,referencia,1
+MLA3919737022,1283,Moneda Argentina 1 Centavo 1974,Genérica,CJ# 359,referencia,1
+MLA3919737296,1089,Moneda Argentina 25 Y 50 Centavos 2013,Genérica,CJ# 343 / CJ# 344,referencia,1
+MLA3919860044,1282,Moneda Turquía 10 Kuru 2023,Genérica,KM# 1241,referencia,1
+MLA3919860126,1270,Moneda Yemen 5 Rials 2004,Genérica,KM# 26,referencia,1
+MLA3919860446,1287,Moneda Canadá 10 Cents 2021,Genérica,10 Cents,valor facial (referencias distintas),2

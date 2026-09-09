@@ -1,0 +1,34 @@
+Publicaciones activas: 625  |  ya hechas en corridas previas: 230
+  50/395  ok=29 saltados=21 fallas=0
+  100/395  ok=79 saltados=21 fallas=0
+  150/395  ok=129 saltados=21 fallas=0
+  200/395  ok=179 saltados=21 fallas=0
+  250/395  ok=229 saltados=21 fallas=0
+  300/395  ok=279 saltados=21 fallas=0
+  350/395  ok=326 saltados=21 fallas=3
+
+======================================================================
+PLACA DE MARCA EN PUBLICACIONES DE ML
+======================================================================
+picture id de la placa : 607774-MLA117388035947_092026
+Procesadas             : 395
+Actualizadas           : 360
+Ya la tenian           : 21
+Fallas                 : 14
+    MLA2067297203  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+    MLA2067297051  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+    MLA2067297029  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+    MLA2067297019  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+    MLA2067296959  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+    MLA2067296953  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+    MLA2067296947  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+    MLA2067296925  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+    MLA2067296921  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+    MLA2067296917  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+    MLA2067296907  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+    MLA2067296901  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+    MLA2067296897  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+    MLA2067296865  PUT 429: {'cause': [], 'message': '', 'error': 'too_many_requests', 'status': 429}
+
+Log    : /Users/ezecarbajo/popper-site/salidas_ml/placa-20260908-2324.json
+Estado : /Users/ezecarbajo/popper-site/salidas_ml/placa_estado.json  (borralo para volver a procesar todo desde cero)

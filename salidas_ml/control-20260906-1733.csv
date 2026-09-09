@@ -1,0 +1,635 @@
+id,titulo,precio_usd,precio_web_ars,precio_ml,envio_gratis,neto_estimado,margen,corregido_si_no
+1,Moneda Argentina 1/2 Real 1815,130.0,200200.0,264000,si,221760.0,21560.0,no
+7,Moneda Argentina 2 Reales 1860,9.0,13860.0,20000,no,16800.0,2940.0,no
+8,Moneda Argentina 2 Reales 1854,13.0,20020.0,28000,no,23520.0,3500.0,no
+9,Moneda Francia 10 Francos 1965,70.0,107800.0,133000,no,111720.0,3920.0,no
+14,Moneda Argentina 2 Centavos 1884,3.0,4620.0,9000,no,7560.0,2940.0,no
+17,Moneda Argentina 2 Centavos 1885,16.0,24640.0,33000,no,27720.0,3080.0,no
+18,Moneda Argentina 2 Centavos 1890,2.5,3850.0,8000,no,6720.0,2870.0,no
+19,Moneda Argentina 2 Centavos 1891,3.0,4620.0,9000,no,7560.0,2940.0,no
+26,Moneda México Troy Ounce 2021,100.0,154000.0,208000,si,174720.0,20720.0,no
+28,Moneda Estados Unidos Cent 1863,25.0,38500.0,50000,no,42000.0,3500.0,no
+29,Moneda Estados Unidos Cent 1861,45.0,69300.0,87000,no,73080.0,3780.0,no
+30,Moneda Estados Unidos Cent 1864,20.0,30800.0,40000,no,33600.0,2800.0,no
+32,Moneda Estados Unidos Cent 1860,20.0,30800.0,40000,no,33600.0,2800.0,no
+34,Moneda Argentina 20 Centavos 1931,15.0,23100.0,31000,no,26040.0,2940.0,no
+38,Moneda Argentina Centavo 1885,6.0,9240.0,15000,no,12600.0,3360.0,no
+39,Moneda Argentina 5 Centavos 1914,8.0,12320.0,18000,no,15120.0,2800.0,no
+40,Moneda Argentina 10 Centavos 1931,10.0,15400.0,22000,no,18480.0,3080.0,no
+43,Moneda Argentina Centavo 1886,9.0,13860.0,20000,no,16800.0,2940.0,no
+49,Moneda Argentina 5 Centavos 1916,6.0,9240.0,15000,no,12600.0,3360.0,no
+50,Moneda Argentina Centavo 1895,15.0,23100.0,31000,no,26040.0,2940.0,no
+51,Moneda Argentina Centavo 1895,15.0,23100.0,31000,no,26040.0,2940.0,no
+55,Moneda Uruguay Peso 1942,16.0,24640.0,33000,no,27720.0,3080.0,no
+66,Moneda Token Porsche 2001,10.0,15400.0,22000,no,18480.0,3080.0,no
+72,Moneda Zambia 25 Ngwee 1992,3.5,5390.0,10000,no,8400.0,3010.0,no
+89,Moneda Brasil 1000 Réis 1910,22.0,33880.0,44000,no,36960.0,3080.0,no
+90,Moneda Rusia 10 Rublos 2014,4.0,6160.0,11000,no,9240.0,3080.0,no
+91,Moneda Egipto 50 Piastres 2019,4.0,6160.0,11000,no,9240.0,3080.0,no
+99,Moneda Reino Unido Penny 1862,8.0,12320.0,18000,no,15120.0,2800.0,no
+101,Moneda Argentina 2 Centavos 1895,4.0,6160.0,11000,no,9240.0,3080.0,no
+104,Moneda Argentina 5 Centavos 1934,3.0,4620.0,9000,no,7560.0,2940.0,no
+105,Moneda Argentina 20 Centavos 1899,6.0,9240.0,15000,no,12600.0,3360.0,no
+107,Moneda Argentina 20 Centavos 1899,30.0,46200.0,59000,no,49560.0,3360.0,no
+111,Moneda Argentina 20 Centavos 1936,12.0,18480.0,26000,no,21840.0,3360.0,no
+112,Moneda Argentina 20 Centavos 1936,8.0,12320.0,18000,no,15120.0,2800.0,no
+113,Moneda Argentina 2 Centavos 1944,20.0,30800.0,40000,no,33600.0,2800.0,no
+114,Moneda Argentina 2 Centavos 1950,15.0,23100.0,31000,no,26040.0,2940.0,no
+115,Moneda Argentina 2 Centavos 1950,12.0,18480.0,26000,no,21840.0,3360.0,no
+128,Moneda Antillas Holandesas Cent 1963,3.5,5390.0,10000,no,8400.0,3010.0,no
+135,Moneda África Occidental Francesa 10 Francos 1956,4.0,6160.0,11000,no,9240.0,3080.0,no
+136,Moneda India Rupia 2008,4.0,6160.0,11000,no,9240.0,3080.0,no
+138,Moneda Bolivia 10 Centavos 1883,8.0,12320.0,18000,no,15120.0,2800.0,no
+140,Moneda Uruguay Peso 1942,14.0,21560.0,29000,no,24360.0,2800.0,no
+144,Moneda Guatemala 25 Centavos 1960,15.0,23100.0,31000,no,26040.0,2940.0,no
+146,Moneda Argentina 2 Centavos 1896,10.0,15400.0,22000,no,18480.0,3080.0,no
+151,Moneda Bolivia 10 Centavos 1892,6.0,9240.0,15000,no,12600.0,3360.0,no
+157,Moneda Portugal 5 Centavos 1927,4.0,6160.0,11000,no,9240.0,3080.0,no
+164,Moneda Suiza 10 Rappen 1903,4.0,6160.0,11000,no,9240.0,3080.0,no
+165,Moneda Estados Unidos Album Bicentennial 1776 1976,10.0,15400.0,22000,no,18480.0,3080.0,no
+166,Moneda Estados Unidos Album Commemorative Cents 2009,10.0,15400.0,22000,no,18480.0,3080.0,no
+167,Moneda Estados Unidos Album Commemorative Nickels 2004 2005,10.0,15400.0,22000,no,18480.0,3080.0,no
+175,Moneda Argentina Peso Mercosur 1998,5.0,7700.0,13000,no,10920.0,3220.0,no
+177,Moneda Noruega 1/2 Skilling 1867,25.0,38500.0,50000,no,42000.0,3500.0,no
+178,Moneda Argentina 2 Centavos 1896,15.0,23100.0,31000,no,26040.0,2940.0,no
+179,Moneda Portugal 20 Reis 1891,7.0,10780.0,16000,no,13440.0,2660.0,no
+183,Moneda Argentina Blister Bicentenario 2010,13.0,20020.0,28000,no,23520.0,3500.0,no
+186,Moneda Uruguay 10 Centésimos 1994,4.0,6160.0,11000,no,9240.0,3080.0,no
+188,Moneda Medalla Medalla Centenario de Necochea 1981,10.0,15400.0,22000,no,18480.0,3080.0,no
+189,Moneda Reino Unido 1/2 Penny 1900,5.0,7700.0,13000,no,10920.0,3220.0,no
+190,Moneda Chile 20 Centavos 1879,22.0,33880.0,44000,no,36960.0,3080.0,no
+191,Moneda Bélgica 25 Cents 1943,5.0,7700.0,13000,no,10920.0,3220.0,no
+192,Moneda Estados Unidos 5 Cents 1902,4.0,6160.0,11000,no,9240.0,3080.0,no
+194,Moneda Argentina Centavo 1975,2.5,3850.0,8000,no,6720.0,2870.0,no
+201,Moneda Paraguay 2 Centesimos 1870,6.0,9240.0,15000,no,12600.0,3360.0,no
+202,Moneda Uruguay 5 Centésimos 1948,6.0,9240.0,15000,no,12600.0,3360.0,no
+205,Moneda Portugal 20 Centavos 1924,3.5,5390.0,10000,no,8400.0,3010.0,no
+206,Moneda España Seiseno -1652 1641,12.0,18480.0,26000,no,21840.0,3360.0,no
+210,Moneda Argentina 1 Peso FALSA 1995,4.0,6160.0,11000,no,9240.0,3080.0,no
+211,Moneda España 2 Euro 2013,9.0,13860.0,20000,no,16800.0,2940.0,no
+213,Moneda Liberia 5 Cents 2000,3.0,4620.0,9000,no,7560.0,2940.0,no
+227,Moneda Bélgica 25 Cents 1943,4.0,6160.0,11000,no,9240.0,3080.0,no
+232,Moneda Swazilandia 2 Cents 1982,4.5,6930.0,12000,no,10080.0,3150.0,no
+242,Moneda Marruecos 2 Falus -1863 1861,4.5,6930.0,12000,no,10080.0,3150.0,no
+244,Moneda El Salvador Centavo 1989,2.5,3850.0,8000,no,6720.0,2870.0,no
+249,Moneda Emiratos Árabes Unidos 5 Fils 1974,3.0,4620.0,9000,no,7560.0,2940.0,no
+251,Moneda Colombia 1 Centavo 1974,3.5,5390.0,10000,no,8400.0,3010.0,no
+252,Moneda Colombia 1 Centavo 1976,4.0,6160.0,11000,no,9240.0,3080.0,no
+253,Moneda Colombia 5 Centavos 1978,3.0,4620.0,9000,no,7560.0,2940.0,no
+254,Moneda Argentina 20 Centavos 1936,6.0,9240.0,15000,no,12600.0,3360.0,no
+257,Moneda Alemania 50 Pfennig 1921,3.5,5390.0,10000,no,8400.0,3010.0,no
+261,Moneda Suiza 10 Rappen 1967,2.0,3080.0,7000,no,5880.0,2800.0,no
+262,Moneda Suiza 10 Rappen 1883,6.0,9240.0,15000,no,12600.0,3360.0,no
+263,Moneda Suiza 10 Rappen 1884,5.0,7700.0,13000,no,10920.0,3220.0,no
+265,Moneda Suiza 20 Rappen 1883,15.0,23100.0,31000,no,26040.0,2940.0,no
+266,Moneda Suiza 20 Rappen 1885,8.0,12320.0,18000,no,15120.0,2800.0,no
+267,Moneda Suiza 20 Rappen 1920,2.5,3850.0,8000,no,6720.0,2870.0,no
+269,Moneda Suiza 5 Rappen 1889,35.0,53900.0,68000,no,57120.0,3220.0,no
+271,Moneda Perú 10 Centavos 1940,3.0,4620.0,9000,no,7560.0,2940.0,no
+274,Moneda Arabia Saudita 10 Halalat 1972,4.5,6930.0,12000,no,10080.0,3150.0,no
+281,Moneda Arabia Saudita 10 Halalat 1980,4.5,6930.0,12000,no,10080.0,3150.0,no
+282,Moneda Tailandia 2 Baht 2015,3.0,4620.0,9000,no,7560.0,2940.0,no
+285,Moneda Malasia 10 Sen 1973,2.5,3850.0,8000,no,6720.0,2870.0,no
+287,Moneda Austria 2 Euro 2016,5.0,7700.0,13000,no,10920.0,3220.0,no
+292,Moneda Islandia 10 Aurar 1981,3.0,4620.0,9000,no,7560.0,2940.0,no
+295,Moneda Perú 1 Inti 1988,3.0,4620.0,9000,no,7560.0,2940.0,no
+296,Moneda Perú 1/2 Sol 1965,2.5,3850.0,8000,no,6720.0,2870.0,no
+297,Moneda Reino Unido 2 Shillings 1949,3.5,5390.0,10000,no,8400.0,3010.0,no
+299,Moneda Perú 1 Sol 1961,2.5,3850.0,8000,no,6720.0,2870.0,no
+303,Moneda Jamaica 5 Dolares 2017,2.5,3850.0,8000,no,6720.0,2870.0,no
+304,Moneda Suecia 25 Ore 1979,2.0,3080.0,7000,no,5880.0,2800.0,no
+306,Moneda Colombia 10 Centavos 1976,2.5,3850.0,8000,no,6720.0,2870.0,no
+309,Moneda Suiza 10 Rappen 1970,2.0,3080.0,7000,no,5880.0,2800.0,no
+316,Moneda Austria 10 Groschen 1949,3.5,5390.0,10000,no,8400.0,3010.0,no
+317,Moneda Francia 10 Francos 1955,2.5,3850.0,8000,no,6720.0,2870.0,no
+318,Moneda Polonia 10 Groszy 1923,3.5,5390.0,10000,no,8400.0,3010.0,no
+322,Moneda Nueva Zelanda 2 Cents 1987,2.5,3850.0,8000,no,6720.0,2870.0,no
+323,Moneda Hong Kong Dólar 2015,2.5,3850.0,8000,no,6720.0,2870.0,no
+325,Moneda Países Bajos Cent 1878,4.5,6930.0,12000,no,10080.0,3150.0,no
+329,Moneda Portugal 50 Centavos 1929,6.0,9240.0,15000,no,12600.0,3360.0,no
+330,Moneda Portugal 50 Centavos 1929,2.5,3850.0,8000,no,6720.0,2870.0,no
+332,Moneda Estados Unidos Cent 2009,2.0,3080.0,7000,no,5880.0,2800.0,no
+339,Moneda Reino Unido 5 Pence 2016,2.0,3080.0,7000,no,5880.0,2800.0,no
+342,Moneda República Dominicana Centavos 1986,2.5,3850.0,8000,no,6720.0,2870.0,no
+344,Moneda Tailandia 50 Satang 2018,3.0,4620.0,9000,no,7560.0,2940.0,no
+346,Moneda Francia 5 Centimes 1916,3.5,5390.0,10000,no,8400.0,3010.0,no
+347,Moneda Francia 10 Francos 1949,3.5,5390.0,10000,no,8400.0,3010.0,no
+350,Moneda Países Bajos Cent 1928,4.5,6930.0,12000,no,10080.0,3150.0,no
+351,Moneda Egipto Qirsh 1984,4.0,6160.0,11000,no,9240.0,3080.0,no
+361,Moneda México 20 Centavos 1946,2.5,3850.0,8000,no,6720.0,2870.0,no
+362,Moneda España 5 Céntimos 1870,3.5,5390.0,10000,no,8400.0,3010.0,no
+363,Moneda Yugoslavia 20 Para 1976,3.0,4620.0,9000,no,7560.0,2940.0,no
+365,Moneda Argentina 20 Centavos 1882,40.0,61600.0,77000,no,64680.0,3080.0,no
+368,Moneda Estados Unidos Cent 1904,7.0,10780.0,16000,no,13440.0,2660.0,no
+370,Moneda Estados Unidos Cent 1907,9.0,13860.0,20000,no,16800.0,2940.0,no
+371,Moneda Estados Unidos Cent 1905,7.0,10780.0,16000,no,13440.0,2660.0,no
+376,Moneda Estados Unidos 1 Dollar P 2007,2.0,3080.0,7000,no,5880.0,2800.0,no
+377,Moneda Estados Unidos 1 Dollar P 2000,2.0,3080.0,7000,no,5880.0,2800.0,no
+382,Moneda Estados Unidos 1/2 Dollar D 1976,2.5,3850.0,8000,no,6720.0,2870.0,no
+384,Moneda Estados Unidos 1/2 Dollar 1974,2.0,3080.0,7000,no,5880.0,2800.0,no
+385,Moneda Estados Unidos 1/2 Dollar D 1995,2.5,3850.0,8000,no,6720.0,2870.0,no
+386,Moneda Estados Unidos 1/2 Dollar 1971,2.0,3080.0,7000,no,5880.0,2800.0,no
+387,Moneda Estados Unidos 1/2 Dollar D 1972,2.0,3080.0,7000,no,5880.0,2800.0,no
+388,Moneda Estados Unidos 1/2 Dollar D 2017,3.5,5390.0,10000,no,8400.0,3010.0,no
+389,Moneda Estados Unidos 1/2 Dollar D 2022,3.0,4620.0,9000,no,7560.0,2940.0,no
+390,Moneda Perú 1 Sol 2018,2.5,3850.0,8000,no,6720.0,2870.0,no
+391,Moneda Perú 1 Sol 2017,2.5,3850.0,8000,no,6720.0,2870.0,no
+392,Moneda Perú 1 Sol 2019,2.5,3850.0,8000,no,6720.0,2870.0,no
+393,Moneda Perú 1 Sol 2017,2.5,3850.0,8000,no,6720.0,2870.0,no
+394,Moneda Perú 1 Sol 2019,2.5,3850.0,8000,no,6720.0,2870.0,no
+395,Moneda Perú 1 Sol 2018,2.5,3850.0,8000,no,6720.0,2870.0,no
+396,Moneda Perú 1 Sol 2018,2.5,3850.0,8000,no,6720.0,2870.0,no
+397,Moneda Perú 1 Sol 2017,2.5,3850.0,8000,no,6720.0,2870.0,no
+398,Moneda Perú 1 Sol 2018,2.5,3850.0,8000,no,6720.0,2870.0,no
+399,Moneda Perú 1 Sol 2019,2.5,3850.0,8000,no,6720.0,2870.0,no
+400,Moneda Perú 1 Sol 2015,2.0,3080.0,7000,no,5880.0,2800.0,no
+401,Moneda Perú 1 Sol 2024,3.0,4620.0,9000,no,7560.0,2940.0,no
+402,Moneda Perú 1 Sol 2024,3.0,4620.0,9000,no,7560.0,2940.0,no
+403,Moneda Perú 1 Sol 2025,3.0,4620.0,9000,no,7560.0,2940.0,no
+404,Moneda Estados Unidos 1/4 Dólar 1999,2.0,3080.0,7000,no,5880.0,2800.0,no
+405,Moneda Estados Unidos 1/4 Dólar 1999,2.0,3080.0,7000,no,5880.0,2800.0,no
+406,Moneda Estados Unidos 1/4 Dólar 1999,2.0,3080.0,7000,no,5880.0,2800.0,no
+407,Moneda Estados Unidos 1/4 Dólar 1999,2.0,3080.0,7000,no,5880.0,2800.0,no
+408,Moneda Estados Unidos 1/4 Dólar 2000,2.0,3080.0,7000,no,5880.0,2800.0,no
+409,Moneda Estados Unidos 1/4 Dólar 2000,2.0,3080.0,7000,no,5880.0,2800.0,no
+410,Moneda Estados Unidos 1/4 Dólar 2000,2.0,3080.0,7000,no,5880.0,2800.0,no
+411,Moneda Estados Unidos 1/4 Dólar 2000,2.0,3080.0,7000,no,5880.0,2800.0,no
+412,Moneda Estados Unidos 1/4 Dólar 2000,2.0,3080.0,7000,no,5880.0,2800.0,no
+413,Moneda Estados Unidos 1/4 Dólar 2001,2.0,3080.0,7000,no,5880.0,2800.0,no
+414,Moneda Estados Unidos 1/4 Dólar 2001,2.0,3080.0,7000,no,5880.0,2800.0,no
+415,Moneda Estados Unidos 1/4 Dólar 2001,2.5,3850.0,8000,no,6720.0,2870.0,no
+416,Moneda Estados Unidos 1/4 Dólar 2001,2.0,3080.0,7000,no,5880.0,2800.0,no
+417,Moneda Estados Unidos 1/4 Dólar 2001,2.0,3080.0,7000,no,5880.0,2800.0,no
+418,Moneda Estados Unidos 1/4 Dólar 2001,2.0,3080.0,7000,no,5880.0,2800.0,no
+419,Moneda Estados Unidos 1/4 Dólar 2001,2.5,3850.0,8000,no,6720.0,2870.0,no
+420,Moneda Estados Unidos 1/4 Dólar 2003,2.0,3080.0,7000,no,5880.0,2800.0,no
+421,Moneda Estados Unidos 1/4 Dólar 2004,2.0,3080.0,7000,no,5880.0,2800.0,no
+422,Moneda Estados Unidos 1/4 Dólar 2005,2.0,3080.0,7000,no,5880.0,2800.0,no
+423,Moneda Estados Unidos 1/4 Dólar 2005,2.0,3080.0,7000,no,5880.0,2800.0,no
+424,Moneda Estados Unidos 1/4 Dólar 2005,2.0,3080.0,7000,no,5880.0,2800.0,no
+425,Moneda Estados Unidos 1/4 Dólar 2005,2.0,3080.0,7000,no,5880.0,2800.0,no
+426,Moneda Estados Unidos 1/4 Dólar 2006,2.0,3080.0,7000,no,5880.0,2800.0,no
+427,Moneda Estados Unidos 1/4 Dólar 2006,2.0,3080.0,7000,no,5880.0,2800.0,no
+428,Moneda Estados Unidos 1/4 Dólar 2007,2.0,3080.0,7000,no,5880.0,2800.0,no
+429,Moneda Estados Unidos 1/4 Dólar 2008,2.0,3080.0,7000,no,5880.0,2800.0,no
+431,Moneda Argentina 1 Peso 1995,220.0,338800.0,430000,si,361200.0,22400.0,no
+439,Moneda Estados Unidos 5 Cents 1888,33.0,50820.0,64000,no,53760.0,2940.0,no
+463,"Moneda Estados Unidos 1 Dollar ""Peace Dollar"" 2021",275.0,423500.0,532000,si,446880.0,23380.0,no
+479,Moneda Estados Unidos 1/4 Dólar 2021,2.0,3080.0,7000,no,5880.0,2800.0,no
+480,Moneda Estados Unidos 1/4 Dólar 2021,2.0,3080.0,7000,no,5880.0,2800.0,no
+481,Moneda Estados Unidos 1/4 Dólar 1976,2.0,3080.0,7000,no,5880.0,2800.0,no
+489,Moneda Canadá 25 Cents 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+490,Moneda Canadá 25 Cents 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+491,Moneda Canadá 25 Cents 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+492,Moneda Canadá 25 Cents 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+493,Moneda Canadá 25 Cents 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+494,Moneda Canadá 25 Cents 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+495,Moneda Canadá 25 Cents 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+496,Moneda Canadá 25 Cents 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+497,Moneda Canadá 25 Cents 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+498,Moneda Canadá 25 Cents 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+499,Moneda Canadá 25 Cents 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+500,Moneda Canadá 25 Cents 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+501,Moneda Argentina 50 Centavos 1996,2.5,3850.0,8000,no,6720.0,2870.0,no
+503,Moneda Argentina 50 Centavos 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+504,Moneda Argentina 50 Centavos 2000,2.5,3850.0,8000,no,6720.0,2870.0,no
+505,Moneda Argentina 50 Centavos 1998,2.5,3850.0,8000,no,6720.0,2870.0,no
+506,Moneda Argentina 1 Peso 2001,2.5,3850.0,8000,no,6720.0,2870.0,no
+507,Moneda Argentina 1 Peso 1997,2.5,3850.0,8000,no,6720.0,2870.0,no
+511,Moneda Países Bajos 1 Cent 1927,4.5,6930.0,12000,no,10080.0,3150.0,no
+514,Moneda Polonia 5 Groszy 1928,4.0,6160.0,11000,no,9240.0,3080.0,no
+516,Moneda Países Bajos 2 1/2 Cents 1929,5.0,7700.0,13000,no,10920.0,3220.0,no
+522,Moneda España 25 Céntimos 1937,3.5,5390.0,10000,no,8400.0,3010.0,no
+523,Moneda España 25 Céntimos 1925,5.0,7700.0,13000,no,10920.0,3220.0,no
+525,Moneda Estados Unidos 1/4 Dólar (DESCENTRADA) 1999,5.0,7700.0,13000,no,10920.0,3220.0,no
+526,Moneda Bolivia 50 Centavos (GIRADA) 1903,100.0,154000.0,208000,si,174720.0,20720.0,no
+544,Moneda Argentina 20 Centavos 1882,28.0,43120.0,55000,no,46200.0,3080.0,no
+548,Moneda Argentina 2 Centavos 1883,8.0,12320.0,18000,no,15120.0,2800.0,no
+549,Moneda Argentina 2 Centavos 1894,15.0,23100.0,31000,no,26040.0,2940.0,no
+550,Moneda Argentina 2 Centavos 1884,4.0,6160.0,11000,no,9240.0,3080.0,no
+553,Moneda Estados Unidos 1/4 Dólar (patina) 2016,3.0,4620.0,9000,no,7560.0,2940.0,no
+554,Moneda Uruguay 10 Centésimos 1877,8.0,12320.0,18000,no,15120.0,2800.0,no
+556,Moneda Reino Unido Penny 1921,3.0,4620.0,9000,no,7560.0,2940.0,no
+557,Moneda Perú 1 Sol 2010,2.5,3850.0,8000,no,6720.0,2870.0,no
+558,Moneda Venezuela 5 Céntimos 1938,4.0,6160.0,11000,no,9240.0,3080.0,no
+559,Moneda Venezuela 5 Céntimos 1945,2.5,3850.0,8000,no,6720.0,2870.0,no
+560,Moneda Noruega 10 Øre 1946,4.0,6160.0,11000,no,9240.0,3080.0,no
+561,Moneda Noruega 10 Øre 1957,2.5,3850.0,8000,no,6720.0,2870.0,no
+564,Moneda Perú 5 Centavos 1962,2.5,3850.0,8000,no,6720.0,2870.0,no
+565,Moneda Perú 10 Soles 1978,2.5,3850.0,8000,no,6720.0,2870.0,no
+566,Moneda Italia 20 Centesimi 1918,3.5,5390.0,10000,no,8400.0,3010.0,no
+567,Moneda Francia 25 Centimes 1927,3.5,5390.0,10000,no,8400.0,3010.0,no
+568,Moneda Francia 10 Francos 1948,3.5,5390.0,10000,no,8400.0,3010.0,no
+569,Moneda España 25 Céntimos 1927,4.0,6160.0,11000,no,9240.0,3080.0,no
+570,Moneda Argentina 2 Centavos 1883,15.0,23100.0,31000,no,26040.0,2940.0,no
+572,Moneda Bolivia 50 Centavos 1902,26.0,40040.0,52000,no,43680.0,3640.0,no
+573,Moneda Bolivia 50 Centavos 1902,23.0,35420.0,46000,no,38640.0,3220.0,no
+576,Moneda Israel 100 Pruta 1955,4.0,6160.0,11000,no,9240.0,3080.0,no
+578,Moneda Bélgica 5 Centimes 1923,3.5,5390.0,10000,no,8400.0,3010.0,no
+579,Moneda Antillas Holandesas 2 1/2 Cent 1984,3.0,4620.0,9000,no,7560.0,2940.0,no
+581,Moneda Alemania 5 Pfennig 1906,3.5,5390.0,10000,no,8400.0,3010.0,no
+585,Moneda Egipto 10 Milliemes 1935,4.5,6930.0,12000,no,10080.0,3150.0,no
+586,Moneda Antillas Holandesas Cent 1985,2.5,3850.0,8000,no,6720.0,2870.0,no
+588,Moneda Países Bajos Cent 1884,5.5,8470.0,14000,no,11760.0,3290.0,no
+589,Moneda Países Bajos Cent 1837,6.0,9240.0,15000,no,12600.0,3360.0,no
+590,Moneda Argentina Blister 2 Pesos Malvinas 2012,8.0,12320.0,18000,no,15120.0,2800.0,no
+594,Moneda Siria 25 Qirsh 1979,4.0,6160.0,11000,no,9240.0,3080.0,no
+595,Moneda Bélgica 10 Centimes 1904,3.5,5390.0,10000,no,8400.0,3010.0,no
+597,Moneda Suiza 2 Francos 1969,3.0,4620.0,9000,no,7560.0,2940.0,no
+598,Moneda Antillas Holandesas 1 Gulden 1971,3.5,5390.0,10000,no,8400.0,3010.0,no
+599,Moneda Antillas Holandesas 1 Gulden 1970,3.5,5390.0,10000,no,8400.0,3010.0,no
+600,Moneda Suecia 25 Ore 1943,4.5,6930.0,12000,no,10080.0,3150.0,no
+601,Moneda Suecia 25 Ore 1944,5.0,7700.0,13000,no,10920.0,3220.0,no
+603,Moneda Estados Unidos Onza MS70 certificada 2017,150.0,231000.0,301000,si,252840.0,21840.0,no
+606,Moneda Noruega Ore 1929,4.0,6160.0,11000,no,9240.0,3080.0,no
+607,Moneda Egipto 5 Milliemes 1973,3.5,5390.0,10000,no,8400.0,3010.0,no
+612,Moneda Argentina Centavo 1940,2.0,3080.0,7000,no,5880.0,2800.0,no
+616,Moneda Argentina Centavo 1942,30.0,46200.0,59000,no,49560.0,3360.0,no
+618,Moneda Argentina Centavo 1944,2.0,3080.0,7000,no,5880.0,2800.0,no
+627,Moneda Argentina 2 Centavos 1939,2.5,3850.0,8000,no,6720.0,2870.0,no
+628,Moneda Argentina 2 Centavos 1939,2.5,3850.0,8000,no,6720.0,2870.0,no
+629,Moneda Argentina 2 Centavos 1939,3.0,4620.0,9000,no,7560.0,2940.0,no
+630,Moneda Argentina 2 Centavos 1940,2.0,3080.0,7000,no,5880.0,2800.0,no
+631,Moneda Argentina 2 Centavos 1940,2.0,3080.0,7000,no,5880.0,2800.0,no
+632,Moneda Argentina 2 Centavos 1941,2.0,3080.0,7000,no,5880.0,2800.0,no
+633,Moneda Argentina 2 Centavos 1941,2.0,3080.0,7000,no,5880.0,2800.0,no
+634,Moneda Argentina 2 Centavos 1941,3.0,4620.0,9000,no,7560.0,2940.0,no
+636,Moneda Argentina 2 Centavos 1942,2.0,3080.0,7000,no,5880.0,2800.0,no
+637,Moneda Argentina 2 Centavos 1942,4.0,6160.0,11000,no,9240.0,3080.0,no
+638,Moneda Argentina 2 Centavos 1945,2.0,3080.0,7000,no,5880.0,2800.0,no
+639,Moneda Argentina 2 Centavos 1945,2.0,3080.0,7000,no,5880.0,2800.0,no
+640,Moneda Argentina 2 Centavos 1945,3.0,4620.0,9000,no,7560.0,2940.0,no
+641,Moneda Argentina 2 Centavos 1946,2.0,3080.0,7000,no,5880.0,2800.0,no
+642,Moneda Argentina 2 Centavos 1946,2.0,3080.0,7000,no,5880.0,2800.0,no
+644,Moneda Argentina 2 Centavos 1947,2.0,3080.0,7000,no,5880.0,2800.0,no
+645,Moneda Argentina 2 Centavos 1947,2.0,3080.0,7000,no,5880.0,2800.0,no
+647,Moneda Argentina 2 Centavos 1948,2.0,3080.0,7000,no,5880.0,2800.0,no
+648,Moneda Argentina 2 Centavos 1948,2.0,3080.0,7000,no,5880.0,2800.0,no
+650,Moneda Argentina 2 Centavos 1949,2.0,3080.0,7000,no,5880.0,2800.0,no
+651,Moneda Argentina 2 Centavos 1949,2.0,3080.0,7000,no,5880.0,2800.0,no
+652,Moneda Argentina Centavo (Descentrada) 1948,4.0,6160.0,11000,no,9240.0,3080.0,no
+655,Moneda Perú 5 Centavos 1934,4.5,6930.0,12000,no,10080.0,3150.0,no
+656,Moneda Perú 1 Sol 2016,2.5,3850.0,8000,no,6720.0,2870.0,no
+657,Moneda Perú 10 Soles 1971,4.0,6160.0,11000,no,9240.0,3080.0,no
+658,Moneda Reino Unido 6 Pence 1962,2.0,3080.0,7000,no,5880.0,2800.0,no
+660,Moneda Reino Unido 6 Pence 1966,2.0,3080.0,7000,no,5880.0,2800.0,no
+661,Moneda Reino Unido 6 Pence 1958,2.0,3080.0,7000,no,5880.0,2800.0,no
+662,Moneda Reino Unido Shilling 1966,2.0,3080.0,7000,no,5880.0,2800.0,no
+663,Moneda Reino Unido Shilling 1948,2.5,3850.0,8000,no,6720.0,2870.0,no
+664,Moneda Reino Unido 2 Shillings 1967,3.0,4620.0,9000,no,7560.0,2940.0,no
+665,Moneda Reino Unido Penny 1920,3.0,4620.0,9000,no,7560.0,2940.0,no
+666,Moneda Reino Unido Penny 1913,3.5,5390.0,10000,no,8400.0,3010.0,no
+667,Moneda Reino Unido Penny 1921,3.0,4620.0,9000,no,7560.0,2940.0,no
+668,Moneda Reino Unido Penny 1906,3.0,4620.0,9000,no,7560.0,2940.0,no
+669,Moneda Brasil 100 Reis 1901,3.0,4620.0,9000,no,7560.0,2940.0,no
+671,Moneda Brasil 20 Centavos 1946,2.0,3080.0,7000,no,5880.0,2800.0,no
+675,Moneda Brasil 100 Reis 1871,3.5,5390.0,10000,no,8400.0,3010.0,no
+676,Moneda Brasil Centavo 1998,2.0,3080.0,7000,no,5880.0,2800.0,no
+678,Moneda Reino Unido 3 Pence 1960,2.0,3080.0,7000,no,5880.0,2800.0,no
+680,Moneda Reino Unido Penny 1872,2.0,3080.0,7000,no,5880.0,2800.0,no
+683,Moneda Uruguay 2 Centésimos 1977,2.5,3850.0,8000,no,6720.0,2870.0,no
+684,Moneda Uruguay 5 Centésimos 1978,2.5,3850.0,8000,no,6720.0,2870.0,no
+685,Moneda Uruguay 2 Centésimos 1901,2.0,3080.0,7000,no,5880.0,2800.0,no
+686,Moneda Uruguay 2 Centésimos 1909,2.0,3080.0,7000,no,5880.0,2800.0,no
+687,Moneda Uruguay 2 Centésimos 1924,2.0,3080.0,7000,no,5880.0,2800.0,no
+688,Moneda Uruguay 2 Centésimos 1936,2.0,3080.0,7000,no,5880.0,2800.0,no
+690,Moneda Uruguay Centésimo 1909,2.5,3850.0,8000,no,6720.0,2870.0,no
+691,Moneda Uruguay Centésimo 1924,3.0,4620.0,9000,no,7560.0,2940.0,no
+692,Moneda Uruguay Centésimo 1936,4.0,6160.0,11000,no,9240.0,3080.0,no
+693,Moneda Uruguay 5 Centésimos 1924,2.0,3080.0,7000,no,5880.0,2800.0,no
+695,Moneda Paraguay 10 Céntimos 1944,4.0,6160.0,11000,no,9240.0,3080.0,no
+696,Moneda Paraguay 10 Céntimos 1947,2.0,3080.0,7000,no,5880.0,2800.0,no
+697,Moneda Paraguay 5 Céntimos 1944,3.5,5390.0,10000,no,8400.0,3010.0,no
+698,Moneda Paraguay 5 Céntimos 1947,2.5,3850.0,8000,no,6720.0,2870.0,no
+699,Moneda Paraguay 50 Céntimos 1944,2.0,3080.0,7000,no,5880.0,2800.0,no
+701,Moneda Costa Rica 5 Céntimos 1973,2.0,3080.0,7000,no,5880.0,2800.0,no
+702,Moneda Costa Rica 5 Céntimos 1976,2.0,3080.0,7000,no,5880.0,2800.0,no
+703,Moneda Costa Rica 5 Céntimos 1978,2.0,3080.0,7000,no,5880.0,2800.0,no
+704,Moneda Costa Rica 5 Céntimos 1979,3.0,4620.0,9000,no,7560.0,2940.0,no
+711,Moneda Paraguay 10 Centavos 1903,8.0,12320.0,18000,no,15120.0,2800.0,no
+712,Moneda Chile 50 Escudos 1974,2.0,3080.0,7000,no,5880.0,2800.0,no
+713,Moneda Chile 10 Centésimos 1971,2.0,3080.0,7000,no,5880.0,2800.0,no
+715,Moneda Paraguay 20 Centavos 1938,6.0,9240.0,15000,no,12600.0,3360.0,no
+717,Moneda Paraguay 2 Pesos 1938,3.0,4620.0,9000,no,7560.0,2940.0,no
+718,Moneda Chile 20 Centavos 1942,2.0,3080.0,7000,no,5880.0,2800.0,no
+719,Moneda Chile 20 Centavos 1943,2.0,3080.0,7000,no,5880.0,2800.0,no
+720,Moneda Chile 20 Centavos 1946,2.0,3080.0,7000,no,5880.0,2800.0,no
+721,Moneda Chile 1 Peso 1953,2.0,3080.0,7000,no,5880.0,2800.0,no
+722,Moneda Chile 2 Centésimos 1968,2.0,3080.0,7000,no,5880.0,2800.0,no
+723,Moneda Chile 2 Centésimos 1967,2.0,3080.0,7000,no,5880.0,2800.0,no
+725,Moneda Chile 10 Centésimos 1969,2.0,3080.0,7000,no,5880.0,2800.0,no
+727,Moneda Chile 10 Centavos 1925,2.0,3080.0,7000,no,5880.0,2800.0,no
+728,Moneda Chile 10 Centavos 1932,2.5,3850.0,8000,no,6720.0,2870.0,no
+731,Moneda Chile 10 Pesos 1958,2.0,3080.0,7000,no,5880.0,2800.0,no
+732,Moneda Uruguay 5 Pesos 1975,3.5,5390.0,10000,no,8400.0,3010.0,no
+733,Moneda Argentina 10 Centavos 1882,20.0,30800.0,40000,no,33600.0,2800.0,no
+734,Moneda Argentina 5 Centavos 1896,15.0,23100.0,31000,no,26040.0,2940.0,no
+735,Moneda Argentina 5 Centavos 1899,5.0,7700.0,13000,no,10920.0,3220.0,no
+736,Moneda Argentina 5 Centavos 1903,5.0,7700.0,13000,no,10920.0,3220.0,no
+737,Moneda Argentina 5 Centavos 1904,8.0,12320.0,18000,no,15120.0,2800.0,no
+738,Moneda Argentina 5 Centavos 1904,5.0,7700.0,13000,no,10920.0,3220.0,no
+739,Moneda Argentina 5 Centavos 1905,4.0,6160.0,11000,no,9240.0,3080.0,no
+740,Moneda Argentina 5 Centavos 1907,4.0,6160.0,11000,no,9240.0,3080.0,no
+741,Moneda Argentina 5 Centavos 1907,5.0,7700.0,13000,no,10920.0,3220.0,no
+742,Moneda Argentina 5 Centavos 1908,3.0,4620.0,9000,no,7560.0,2940.0,no
+743,Moneda Argentina 5 Centavos 1911,6.0,9240.0,15000,no,12600.0,3360.0,no
+744,Moneda Argentina 5 Centavos 1912,4.0,6160.0,11000,no,9240.0,3080.0,no
+745,Moneda Argentina 5 Centavos 1941,3.0,4620.0,9000,no,7560.0,2940.0,no
+746,Moneda Argentina 10 Centavos 1935,4.0,6160.0,11000,no,9240.0,3080.0,no
+747,Moneda Argentina 10 Centavos 1935,3.5,5390.0,10000,no,8400.0,3010.0,no
+749,Moneda Argentina 10 Centavos 1919,2.0,3080.0,7000,no,5880.0,2800.0,no
+750,Moneda Argentina 10 Centavos 1916,6.0,9240.0,15000,no,12600.0,3360.0,no
+751,Moneda Argentina 10 Centavos 1915,1.0,1540.0,5000,no,4200.0,2660.0,no
+754,Moneda Argentina 10 Centavos 1908,3.5,5390.0,10000,no,8400.0,3010.0,no
+755,Moneda Argentina 10 Centavos 1907,8.0,12320.0,18000,no,15120.0,2800.0,no
+756,Moneda Argentina 10 Centavos 1897,2.5,3850.0,8000,no,6720.0,2870.0,no
+757,Moneda Argentina 10 Centavos 1897,2.0,3080.0,7000,no,5880.0,2800.0,no
+758,Moneda Argentina 10 Centavos 1896,5.0,7700.0,13000,no,10920.0,3220.0,no
+759,Moneda Argentina 10 Centavos 1914,10.0,15400.0,22000,no,18480.0,3080.0,no
+760,Moneda Argentina 10 Centavos 1931,4.0,6160.0,11000,no,9240.0,3080.0,no
+761,Moneda Argentina 10 Centavos 1931,6.0,9240.0,15000,no,12600.0,3360.0,no
+763,Moneda Argentina 20 Centavos 1916,3.0,4620.0,9000,no,7560.0,2940.0,no
+764,Moneda Argentina 20 Centavos 1916,2.5,3850.0,8000,no,6720.0,2870.0,no
+765,Moneda Argentina 20 Centavos 1914,10.0,15400.0,22000,no,18480.0,3080.0,no
+766,Moneda Argentina 20 Centavos 1912,4.0,6160.0,11000,no,9240.0,3080.0,no
+767,Moneda Argentina 20 Centavos 1912,3.0,4620.0,9000,no,7560.0,2940.0,no
+768,Moneda Argentina 20 Centavos 1911,6.0,9240.0,15000,no,12600.0,3360.0,no
+769,Moneda Argentina 20 Centavos 1911,4.0,6160.0,11000,no,9240.0,3080.0,no
+770,Moneda Argentina 20 Centavos 1909,2.5,3850.0,8000,no,6720.0,2870.0,no
+771,Moneda Argentina 20 Centavos 1909,1.5,2310.0,6000,no,5040.0,2730.0,no
+772,Moneda Argentina 20 Centavos 1905,4.0,6160.0,11000,no,9240.0,3080.0,no
+773,Moneda Argentina 20 Centavos 1905,2.5,3850.0,8000,no,6720.0,2870.0,no
+774,Moneda Argentina 20 Centavos 1898,5.0,7700.0,13000,no,10920.0,3220.0,no
+775,Moneda Argentina 20 Centavos 1896,4.0,6160.0,11000,no,9240.0,3080.0,no
+776,Moneda Argentina 20 Centavos 1896,2.0,3080.0,7000,no,5880.0,2800.0,no
+780,Moneda Argentina 2 Centavos 1890,3.0,4620.0,9000,no,7560.0,2940.0,no
+781,Moneda Bolivia 2 Bolivianos 2025,3.0,4620.0,9000,no,7560.0,2940.0,no
+783,Moneda Canadá 25 Cents 2011,4.5,6930.0,12000,no,10080.0,3150.0,no
+784,Moneda Canadá 25 Cents 2011,4.5,6930.0,12000,no,10080.0,3150.0,no
+785,Moneda Costa Rica 25 Colones 2023,2.5,3850.0,8000,no,6720.0,2870.0,no
+787,Moneda Costa Rica 25 Colones 2023,2.5,3850.0,8000,no,6720.0,2870.0,no
+788,Moneda Costa Rica 25 Colones 2023,2.5,3850.0,8000,no,6720.0,2870.0,no
+789,Moneda Kirguistán 1 Tyin 2008,2.5,3850.0,8000,no,6720.0,2870.0,no
+792,Moneda Namibia 50 Cents 2025,3.5,5390.0,10000,no,8400.0,3010.0,no
+795,Moneda Sri Lanka 1 Rupia 2017,3.5,5390.0,10000,no,8400.0,3010.0,no
+800,Moneda Uzbekistán 50 Som 2018,2.5,3850.0,8000,no,6720.0,2870.0,no
+801,Moneda Malawi 2 Tambala 1995,2.5,3850.0,8000,no,6720.0,2870.0,no
+802,Moneda Uganda 50 Cents 1976,4.0,6160.0,11000,no,9240.0,3080.0,no
+803,Moneda Ruanda 1 Franco 2003,2.5,3850.0,8000,no,6720.0,2870.0,no
+805,Moneda Samoa 5 Sene 2006,3.0,4620.0,9000,no,7560.0,2940.0,no
+807,Moneda Argentina 20 Centavos 1908,30.0,46200.0,59000,no,49560.0,3360.0,no
+809,Moneda Países Bajos Duit 1769,20.0,30800.0,40000,no,33600.0,2800.0,no
+812,Moneda Portugal 100 Réis 1900,6.0,9240.0,15000,no,12600.0,3360.0,no
+819,Moneda Chile 1 Peso 1924,5.0,7700.0,13000,no,10920.0,3220.0,no
+820,Moneda Estados Unidos 1/2 Dollar 1967,13.0,20020.0,28000,no,23520.0,3500.0,no
+821,Moneda Suecia 50 Ore 1931,8.0,12320.0,18000,no,15120.0,2800.0,no
+822,Moneda Marruecos 4 Falus 1871,10.0,15400.0,22000,no,18480.0,3080.0,no
+823,Moneda Estados Unidos 1/2 Dollar 1967,12.0,18480.0,26000,no,21840.0,3360.0,no
+825,Moneda Suecia 1 Krona 1954,10.0,15400.0,22000,no,18480.0,3080.0,no
+826,Moneda Argentina 5 Pesos 1994,4.0,6160.0,11000,no,9240.0,3080.0,no
+827,Moneda Medalla Medalla Centenario Argentino 1810 1910,4.0,6160.0,11000,no,9240.0,3080.0,no
+829,Moneda Uruguay 1 Nuevo Peso 1989,4.0,6160.0,11000,no,9240.0,3080.0,no
+832,Moneda Argentina 5 Centavos 1936,3.0,4620.0,9000,no,7560.0,2940.0,no
+833,Moneda Argentina 5 Centavos 1939,2.0,3080.0,7000,no,5880.0,2800.0,no
+834,Moneda Argentina 5 Centavos 1931,6.0,9240.0,15000,no,12600.0,3360.0,no
+836,Moneda Indias Orientales Neerlandesas Cent 1901,3.0,4620.0,9000,no,7560.0,2940.0,no
+837,Moneda Indias Orientales Neerlandesas Cent 1856,3.5,5390.0,10000,no,8400.0,3010.0,no
+838,Moneda Indias Orientales Neerlandesas 1/2 Cent 1859,3.0,4620.0,9000,no,7560.0,2940.0,no
+839,Moneda Indias Orientales Neerlandesas 1/2 Cent 1857,4.0,6160.0,11000,no,9240.0,3080.0,no
+844,Moneda España Peseta 1980,3.0,4620.0,9000,no,7560.0,2940.0,no
+848,Moneda Marruecos 1 Dirham 1987,2.0,3080.0,7000,no,5880.0,2800.0,no
+849,Moneda Bolivia 20 Centavos 1965,2.0,3080.0,7000,no,5880.0,2800.0,no
+850,Moneda Turquía Kurus 2022,3.5,5390.0,10000,no,8400.0,3010.0,no
+853,Moneda Turquía Kurus 2022,3.5,5390.0,10000,no,8400.0,3010.0,no
+854,Moneda Turquía Kurus 2022,3.5,5390.0,10000,no,8400.0,3010.0,no
+855,Moneda Turquía Kurus 2022,3.5,5390.0,10000,no,8400.0,3010.0,no
+858,Moneda Dinamarca 10 Kroner 1979,3.5,5390.0,10000,no,8400.0,3010.0,no
+859,Moneda Dinamarca 2 Kroner 1994,2.5,3850.0,8000,no,6720.0,2870.0,no
+860,Moneda Dinamarca 5 Kroner 1990,3.0,4620.0,9000,no,7560.0,2940.0,no
+861,Moneda Dinamarca 1 Krone 1980,2.0,3080.0,7000,no,5880.0,2800.0,no
+862,Moneda Dinamarca 1 Krone 1969,2.0,3080.0,7000,no,5880.0,2800.0,no
+863,Moneda Dinamarca 5 Ore 1970,2.5,3850.0,8000,no,6720.0,2870.0,no
+864,Moneda Dinamarca 2 Ore 1961,2.5,3850.0,8000,no,6720.0,2870.0,no
+866,Moneda Suecia 5 Ore 1900,12.0,18480.0,26000,no,21840.0,3360.0,no
+867,Moneda España 100 Pesetas 1980,3.5,5390.0,10000,no,8400.0,3010.0,no
+869,Moneda Islandia 10 Krónur 1980,2.5,3850.0,8000,no,6720.0,2870.0,no
+870,Moneda Liberia 5 Cents 2000,3.0,4620.0,9000,no,7560.0,2940.0,no
+872,Moneda Israel 10 Pruta 1952,2.5,3850.0,8000,no,6720.0,2870.0,no
+873,Moneda Egipto 1 Millieme 1972,2.5,3850.0,8000,no,6720.0,2870.0,no
+876,Moneda Dinamarca 20 Kroner 1991,4.5,6930.0,12000,no,10080.0,3150.0,no
+878,Moneda Dinamarca 10 Ore 1937,2.5,3850.0,8000,no,6720.0,2870.0,no
+880,Moneda Suecia 10 Kronor 1991,3.0,4620.0,9000,no,7560.0,2940.0,no
+881,Moneda Suecia 10 Ore 1970,2.0,3080.0,7000,no,5880.0,2800.0,no
+882,Moneda Suecia 5 Kronor 1983,2.5,3850.0,8000,no,6720.0,2870.0,no
+884,Moneda Suecia 2 Ore 1950,5.0,7700.0,13000,no,10920.0,3220.0,no
+885,Moneda Suecia 1 Krona 1981,2.0,3080.0,7000,no,5880.0,2800.0,no
+887,Moneda Suecia 5 Ore 1922,6.0,9240.0,15000,no,12600.0,3360.0,no
+888,Moneda Suecia 5 Ore 1950,3.5,5390.0,10000,no,8400.0,3010.0,no
+889,Moneda Suecia 5 Ore 1942,5.0,7700.0,13000,no,10920.0,3220.0,no
+890,Moneda Tailandia 5 Baht 2007,2.5,3850.0,8000,no,6720.0,2870.0,no
+893,Moneda Emiratos Árabes Unidos 50 Fils 1998,3.0,4620.0,9000,no,7560.0,2940.0,no
+897,Moneda Portugal 5 Escudos 1992,2.5,3850.0,8000,no,6720.0,2870.0,no
+898,Moneda Italia 50 Centesimi 1941,2.0,3080.0,7000,no,5880.0,2800.0,no
+899,Moneda Italia 20 Centesimi 1919,4.0,6160.0,11000,no,9240.0,3080.0,no
+900,Moneda Italia 5 Centesimi 1861,3.0,4620.0,9000,no,7560.0,2940.0,no
+901,Moneda Italia 10 Centesimi 1866,4.5,6930.0,12000,no,10080.0,3150.0,no
+902,Moneda Italia 5 Centesimi 1925,2.0,3080.0,7000,no,5880.0,2800.0,no
+904,Moneda Italia 5 Centesimi 1938,5.0,7700.0,13000,no,10920.0,3220.0,no
+905,Moneda Italia 20 Centesimi 1940,2.0,3080.0,7000,no,5880.0,2800.0,no
+911,Moneda Italia 20 Centesimi 1912,3.5,5390.0,10000,no,8400.0,3010.0,no
+913,Moneda Italia 20 Centesimi 1922,3.5,5390.0,10000,no,8400.0,3010.0,no
+917,Moneda Japón 10 Yen 1972,2.5,3850.0,8000,no,6720.0,2870.0,no
+918,Moneda Estados Unidos 5 Cents P 2005,2.0,3080.0,7000,no,5880.0,2800.0,no
+919,Moneda Estados Unidos 5 Cents D 2005,2.0,3080.0,7000,no,5880.0,2800.0,no
+925,Moneda Francia 2 Francos 1943,7.0,10780.0,16000,no,13440.0,2660.0,no
+927,Moneda Francia 10 Centimes 1919,3.5,5390.0,10000,no,8400.0,3010.0,no
+928,Moneda Francia 10 Centimes 1929,3.0,4620.0,9000,no,7560.0,2940.0,no
+930,Moneda Italia 100 Liras 1979,3.5,5390.0,10000,no,8400.0,3010.0,no
+931,Moneda Francia 5 Francos 1993,2.5,3850.0,8000,no,6720.0,2870.0,no
+932,Moneda China 1 Yuan 2013,2.0,3080.0,7000,no,5880.0,2800.0,no
+936,Moneda Rusia 25 Rublos 2011,8.0,12320.0,18000,no,15120.0,2800.0,no
+939,Moneda Colombia 5 Centavos 1935,6.0,9240.0,15000,no,12600.0,3360.0,no
+940,Moneda Austria 2 Filler 1963,2.5,3850.0,8000,no,6720.0,2870.0,no
+941,Moneda Yugoslavia 1 Dinar 1953,3.0,4620.0,9000,no,7560.0,2940.0,no
+943,Moneda Argentina 10 Centavos 1899,2.0,3080.0,7000,no,5880.0,2800.0,no
+944,Moneda Croacia 20 Lipa 1995,2.5,3850.0,8000,no,6720.0,2870.0,no
+950,Moneda Curazao 1 Cent 2025,3.0,4620.0,9000,no,7560.0,2940.0,no
+951,Moneda Transnistria 1 Kopeck 2000,3.0,4620.0,9000,no,7560.0,2940.0,no
+952,Moneda Transnistria 1 Kopeck 2000,3.0,4620.0,9000,no,7560.0,2940.0,no
+953,Moneda Transnistria 1 Kopeck 2000,3.0,4620.0,9000,no,7560.0,2940.0,no
+955,Moneda Yugoslavia 50 Para 1953,2.5,3850.0,8000,no,6720.0,2870.0,no
+959,Moneda Rusia 10 Rublos 2015,2.5,3850.0,8000,no,6720.0,2870.0,no
+963,Moneda Italia 10 Centesimi 1923,2.0,3080.0,7000,no,5880.0,2800.0,no
+967,Moneda China 1 Jiao 1992,2.5,3850.0,8000,no,6720.0,2870.0,no
+968,Moneda Japón 1 Yen 1982,2.0,3080.0,7000,no,5880.0,2800.0,no
+970,Moneda China 1 Jiao 2009,2.0,3080.0,7000,no,5880.0,2800.0,no
+971,Moneda Burundi 10 Francos 2011,4.5,6930.0,12000,no,10080.0,3150.0,no
+973,Moneda Yugoslavia Blister 1 y 10 Dinar FAO 1976,14.0,21560.0,29000,no,24360.0,2800.0,no
+975,Moneda Argentina 10 Australes 1989,8.0,12320.0,18000,no,15120.0,2800.0,no
+982,Moneda Reino Unido 25 New Pence 1981,11.0,16940.0,24000,no,20160.0,3220.0,no
+983,Moneda Reino Unido 25 New Pence 1981,11.0,16940.0,24000,no,20160.0,3220.0,no
+984,Moneda Reino Unido 25 New Pence 1981,7.0,10780.0,16000,no,13440.0,2660.0,no
+985,Moneda Reino Unido 25 New Pence 1980,12.0,18480.0,26000,no,21840.0,3360.0,no
+986,Moneda Reino Unido 25 New Pence 1980,8.0,12320.0,18000,no,15120.0,2800.0,no
+987,Moneda Reino Unido 25 New Pence 1977,11.0,16940.0,24000,no,20160.0,3220.0,no
+988,Moneda Reino Unido 25 New Pence 1977,7.0,10780.0,16000,no,13440.0,2660.0,no
+991,Moneda Reino Unido 1 Crown 1965,6.5,10010.0,16000,no,13440.0,3430.0,no
+992,Moneda Reino Unido 1 Crown 1965,6.5,10010.0,16000,no,13440.0,3430.0,no
+994,Moneda Reino Unido Blister Primer Cono Decimal 1968,6.5,10010.0,16000,no,13440.0,3430.0,no
+996,Moneda Canadá Blister 25 Cents 2008,6.5,10010.0,16000,no,13440.0,3430.0,no
+1011,Moneda Reino Unido Farthing 1938,4.0,6160.0,11000,no,9240.0,3080.0,no
+1013,Moneda Reino Unido Farthing 1946,3.5,5390.0,10000,no,8400.0,3010.0,no
+1014,Moneda Reino Unido Farthing 1951,4.5,6930.0,12000,no,10080.0,3150.0,no
+1022,Moneda Reino Unido 1 Penny 1891,15.0,23100.0,31000,no,26040.0,2940.0,no
+1023,Moneda Alemania 2 Reichspfennig A 1924,4.5,6930.0,12000,no,10080.0,3150.0,no
+1025,Moneda Reino Unido Farthing 1923,5.0,7700.0,13000,no,10920.0,3220.0,no
+1026,Moneda Alemania 5 Euro G 2019,25.0,38500.0,50000,no,42000.0,3500.0,no
+1029,Moneda Reino Unido 1/2 Penny 1920,6.0,9240.0,15000,no,12600.0,3360.0,no
+1031,Moneda Congo Belga 1 Franco 1946,10.0,15400.0,22000,no,18480.0,3080.0,no
+1032,Moneda Ruanda 50 Francos 1977,8.0,12320.0,18000,no,15120.0,2800.0,no
+1040,Moneda Congo Belga y Ruanda-Urundi 1 Franco 1959,11.0,16940.0,24000,no,20160.0,3220.0,no
+1050,Moneda Luxemburgo 25 Centimes 1946,15.0,23100.0,31000,no,26040.0,2940.0,no
+1054,Moneda Alemania 1 Reichspfennig 1941,7.0,10780.0,16000,no,13440.0,2660.0,no
+1055,Moneda Alemania 5 Reichspfennig 1941,7.0,10780.0,16000,no,13440.0,2660.0,no
+1056,Moneda Alemania 10 Reichspfennig 1940,7.0,10780.0,16000,no,13440.0,2660.0,no
+1057,Moneda Alemania 1 Reichspfennig 1937,10.0,15400.0,22000,no,18480.0,3080.0,no
+1064,Moneda Francia 20 Francos 1994,15.0,23100.0,31000,no,26040.0,2940.0,no
+1067,Moneda Estados Unidos Blister 1 Dollar D 1984,120.0,184800.0,245000,si,205800.0,21000.0,no
+1068,Moneda Estados Unidos Blister 1 Dollar S 1983,120.0,184800.0,245000,si,205800.0,21000.0,no
+1086,Moneda Uruguay 1 Peso 1917,85.0,130900.0,161000,no,135240.0,4340.0,no
+1087,Moneda Chile 100 Pesos 2025,3.5,5390.0,10000,no,8400.0,3010.0,no
+1089,Moneda Argentina 25 y 50 Centavos 2013,12.0,18480.0,26000,no,21840.0,3360.0,no
+1098,Moneda Canadá 1 Dólar 2025,3.5,5390.0,10000,no,8400.0,3010.0,no
+1102,Moneda Canadá 25 Cents 2004,2.5,3850.0,8000,no,6720.0,2870.0,no
+1103,Moneda Canadá 5 Cents 1967,2.5,3850.0,8000,no,6720.0,2870.0,no
+1111,Moneda Líbano 1 Piastra 1955,4.5,6930.0,12000,no,10080.0,3150.0,no
+1128,Moneda Países Bajos 10 Cents 1942,3.5,5390.0,10000,no,8400.0,3010.0,no
+1131,Moneda Bangladés 25 Poisha 1980,3.5,5390.0,10000,no,8400.0,3010.0,no
+1135,Moneda Bután 5 Chetrums 1975,6.0,9240.0,15000,no,12600.0,3360.0,no
+1137,Moneda Alemania 1 Deutsche Mark G 1984,2.0,3080.0,7000,no,5880.0,2800.0,no
+1138,Moneda Alemania 1 Deutsche Mark F 1991,2.0,3080.0,7000,no,5880.0,2800.0,no
+1139,Moneda Congo Belga y Ruanda-Urundi 5 Francos 1956,8.0,12320.0,18000,no,15120.0,2800.0,no
+1141,Moneda Serbia 2 Dinara 2009,2.0,3080.0,7000,no,5880.0,2800.0,no
+1142,Moneda Italia 1 Centesimo R 1900,3.0,4620.0,9000,no,7560.0,2940.0,no
+1143,Moneda Italia 10 Centesimi R 1929,2.0,3080.0,7000,no,5880.0,2800.0,no
+1145,Moneda Rumania 100 Lei 1991,2.5,3850.0,8000,no,6720.0,2870.0,no
+1146,Moneda China 5 Fen 1982,2.5,3850.0,8000,no,6720.0,2870.0,no
+1151,Moneda Francia 5 Francos 1994,4.5,6930.0,12000,no,10080.0,3150.0,no
+1154,Moneda Francia 5 Francos 1837,51.5,79310.0,99000,no,83160.0,3850.0,no
+1156,Moneda Alemania 5 Deutsche Mark 1965,20.0,30800.0,40000,no,33600.0,2800.0,no
+1158,Moneda Austria 50 Schilling 1963,40.0,61600.0,77000,no,64680.0,3080.0,no
+1159,Moneda Estados Unidos 1/2 Dólar Franklin 1958,30.0,46200.0,59000,no,49560.0,3360.0,no
+1160,Moneda Austria 50 Schilling 1969,40.0,61600.0,77000,no,64680.0,3080.0,no
+1161,Moneda Austria 25 Schilling 1957,25.0,38500.0,50000,no,42000.0,3500.0,no
+1175,Moneda Dinamarca 4 Skilling 1854,25.0,38500.0,50000,no,42000.0,3500.0,no
+1178,Moneda Tristán de Acuña 1 Crown 1978,16.0,24640.0,33000,no,27720.0,3080.0,no
+1179,Moneda Tristán de Acuña 25 Pence 1980,18.0,27720.0,37000,no,31080.0,3360.0,no
+1180,Moneda Santa Elena 25 Pence 1980,16.0,24640.0,33000,no,27720.0,3080.0,no
+1182,Moneda Islas Malvinas 50 Pence 1980,20.0,30800.0,40000,no,33600.0,2800.0,no
+1183,Moneda Gibraltar 25 New Pence 1972,14.0,21560.0,29000,no,24360.0,2800.0,no
+1184,Moneda Gibraltar 1 Crown 1977,14.0,21560.0,29000,no,24360.0,2800.0,no
+1185,Moneda Gibraltar 1 Crown 1980,14.0,21560.0,29000,no,24360.0,2800.0,no
+1186,Moneda Gibraltar 25 New Pence 1971,14.0,21560.0,29000,no,24360.0,2800.0,no
+1187,Moneda Gibraltar 1 Crown 1967,14.0,21560.0,29000,no,24360.0,2800.0,no
+1188,Moneda Gibraltar 1 Crown 1970,18.0,27720.0,37000,no,31080.0,3360.0,no
+1190,Moneda Gibraltar 1 Crown 1991,16.0,24640.0,33000,no,27720.0,3080.0,no
+1191,Moneda Guernsey 25 New Pence 1980,14.0,21560.0,29000,no,24360.0,2800.0,no
+1193,Moneda Reino Unido 20 Pence 1993,1.5,2310.0,6000,no,5040.0,2730.0,no
+1194,Moneda Reino Unido 20 Pence 2002,1.5,2310.0,6000,no,5040.0,2730.0,no
+1195,Moneda Reino Unido 20 Pence 2006,1.5,2310.0,6000,no,5040.0,2730.0,no
+1196,Moneda Reino Unido 20 Pence 2008,1.5,2310.0,6000,no,5040.0,2730.0,no
+1197,Moneda Reino Unido 20 Pence 2010,1.5,2310.0,6000,no,5040.0,2730.0,no
+1198,Moneda Reino Unido 20 Pence 2011,1.5,2310.0,6000,no,5040.0,2730.0,no
+1199,Moneda Reino Unido 20 Pence 2015,1.5,2310.0,6000,no,5040.0,2730.0,no
+1200,Moneda Reino Unido 20 Pence 2016,1.5,2310.0,6000,no,5040.0,2730.0,no
+1201,Moneda Reino Unido 20 Pence 2020,1.5,2310.0,6000,no,5040.0,2730.0,no
+1203,Moneda Reino Unido 5 Pence 1991,1.0,1540.0,5000,no,4200.0,2660.0,no
+1204,Moneda Reino Unido 5 Pence 2014,1.0,1540.0,5000,no,4200.0,2660.0,no
+1205,Moneda Reino Unido 5 Pence 2017,1.0,1540.0,5000,no,4200.0,2660.0,no
+1206,Moneda Reino Unido 5 Pence 2012,1.0,1540.0,5000,no,4200.0,2660.0,no
+1208,Moneda Reino Unido 10 Pence 2012,1.5,2310.0,6000,no,5040.0,2730.0,no
+1213,Moneda Reino Unido 1 Penny 2002,0.5,770.0,4000,no,3360.0,2590.0,no
+1214,Moneda Reino Unido 1 Penny 2004,0.5,770.0,4000,no,3360.0,2590.0,no
+1215,Moneda Reino Unido 1 Pound 2016,2.0,3080.0,7000,no,5880.0,2800.0,no
+1216,Moneda Reino Unido 1 Pound 2018,2.0,3080.0,7000,no,5880.0,2800.0,no
+1220,Moneda Argentina 2 Centavos 1885,5.0,7700.0,13000,no,10920.0,3220.0,no
+1221,Moneda Argentina 2 Centavos 1889,2.0,3080.0,7000,no,5880.0,2800.0,no
+1223,Moneda Argentina 2 Centavos 1891,2.0,3080.0,7000,no,5880.0,2800.0,no
+1227,Moneda China 10 Yuan Año del Perro 2018,5.0,7700.0,13000,no,10920.0,3220.0,no
+1231,Moneda Sri Lanka 20 Rupees Banco Central 2020,5.0,7700.0,13000,no,10920.0,3220.0,no
+1234,Moneda China 5 Yuan Ópera de Pekín 2023,5.5,8470.0,14000,no,11760.0,3290.0,no
+1235,Moneda Samoa 1 Sene Lori Corona Azul 2020,3.5,5390.0,10000,no,8400.0,3010.0,no
+1237,Moneda Canadá 5 Cents Centenario de la Confederación 1967,3.0,4620.0,9000,no,7560.0,2940.0,no
+1238,Moneda Francia 5 Francs Pierre Mendès France 1992,4.0,6160.0,11000,no,9240.0,3080.0,no
+1240,Moneda Chile 100 Pesos 2025,3.0,4620.0,9000,no,7560.0,2940.0,no
+1241,Moneda Canadá 25 Cents Día del Recuerdo (Amapola) 2004,2.5,3850.0,8000,no,6720.0,2870.0,no
+1242,Moneda Isla de Pascua 1 Peso Moai 2021,3.0,4620.0,9000,no,7560.0,2940.0,no
+1243,Moneda Canadá 2 Dólares Torre CN (Coloreada) 2026,5.5,8470.0,14000,no,11760.0,3290.0,no
+1244,Moneda China 5 Yuan Ópera de Pekín (Dan) 2024,6.0,9240.0,15000,no,12600.0,3360.0,no
+1245,Moneda Canadá 1 Dólar Centenario de Manitoba 1970,4.0,6160.0,11000,no,9240.0,3080.0,no
+1246,Moneda Canadá 1 Dólar Centenario de Columbia Británica 1971,4.0,6160.0,11000,no,9240.0,3080.0,no
+1247,Moneda Gambia 1 Dalasi Pez Tigre 2011,4.0,6160.0,11000,no,9240.0,3080.0,no
+1248,Moneda Mónaco 5 Francos 1945,5.0,7700.0,13000,no,10920.0,3220.0,no
+1250,Moneda Ecuador 25 Centavos Alberto Spencer 2023,3.0,4620.0,9000,no,7560.0,2940.0,no
+1251,Moneda Canadá 1 Dólar Elsie MacGill (Coloreada) 2023,3.5,5390.0,10000,no,8400.0,3010.0,no
+1253,Moneda Francia 2 Francos Louis Pasteur 1995,4.0,6160.0,11000,no,9240.0,3080.0,no
+1254,Moneda Francia 2 Francos Jean Moulin 1993,4.0,6160.0,11000,no,9240.0,3080.0,no
+1255,Moneda Siria 25 Libras 2003,3.5,5390.0,10000,no,8400.0,3010.0,no
+1256,Moneda Bosnia y Herzegovina 20 Feniga 2025,2.0,3080.0,7000,no,5880.0,2800.0,no
+1257,Moneda Brasil 1 Real 30 Años del Plan Real 2024,2.0,3080.0,7000,no,5880.0,2800.0,no
+1258,Moneda San Martín 5 Cents 2025,2.5,3850.0,8000,no,6720.0,2870.0,no
+1259,Moneda Líbano 25 Livres 2002,2.0,3080.0,7000,no,5880.0,2800.0,no
+1260,Moneda Indonesia 50 Sen Diponegoro 1955,2.0,3080.0,7000,no,5880.0,2800.0,no
+1261,Moneda Chipre 1 Cent 1998,2.0,3080.0,7000,no,5880.0,2800.0,no
+1262,Moneda Francia 1/2 Franco Sembradora 1992,5.0,7700.0,13000,no,10920.0,3220.0,no
+1263,Moneda Líbano 1 Piastra 1955,5.5,8470.0,14000,no,11760.0,3290.0,no
+1264,Moneda China 5 Yuan Monte Taishan 2019,5.5,8470.0,14000,no,11760.0,3290.0,no
+1265,Moneda Isla de Pascua 1 Peso Moai (Aluminio) 2021,3.0,4620.0,9000,no,7560.0,2940.0,no
+1268,Moneda Argentina Blister 1 Peso 2023,150.0,231000.0,301000,si,252840.0,21840.0,no
+1269,Moneda Vanuatu 10 Vatu 2009,3.0,4620.0,9000,no,7560.0,2940.0,no
+1270,Moneda Yemen 5 Rials 2004,3.5,5390.0,10000,no,8400.0,3010.0,no
+1271,Moneda Maldivas 10 Laari 2012,2.5,3850.0,8000,no,6720.0,2870.0,no
+1274,Moneda Tayikistán 1 Somoni 2025,4.0,6160.0,11000,no,9240.0,3080.0,no
+1275,Moneda Países Bajos 1 Gulden 2001,4.5,6930.0,12000,no,10080.0,3150.0,no
+1276,Moneda Hungría 10 Forint 2020,3.0,4620.0,9000,no,7560.0,2940.0,no
+1277,Moneda Canadá 1 Dólar 1973,4.0,6160.0,11000,no,9240.0,3080.0,no
+1279,Moneda Seychelles 1 Cent 2022,2.5,3850.0,8000,no,6720.0,2870.0,no
+1280,Moneda Belice 10 Cents 2020,2.5,3850.0,8000,no,6720.0,2870.0,no
+1281,Moneda Belice 1 Dólar 2021,4.0,6160.0,11000,no,9240.0,3080.0,no
+1282,Moneda Turquía 10 Kuruş 2023,2.0,3080.0,7000,no,5880.0,2800.0,no
+1283,Moneda Argentina 1 Centavo 1974,2.0,3080.0,7000,no,5880.0,2800.0,no
+1285,Moneda Canadá 1 Dólar 2026,3.0,4620.0,9000,no,7560.0,2940.0,no
+1287,Moneda Canadá 10 Cents 2021,2.5,3850.0,8000,no,6720.0,2870.0,no
+1288,Moneda Canadá 10 Cents 2021,2.0,3080.0,7000,no,5880.0,2800.0,no
+1289,Moneda Argentina 50 Centavos 1883,65.0,100100.0,124000,no,104160.0,4060.0,no
+1294,Moneda Estados Unidos 1/2 Dólar Kennedy 1967,10.0,15400.0,22000,no,18480.0,3080.0,no
+1295,Moneda Dinamarca 1 Øre 1918,8.0,12320.0,18000,no,15120.0,2800.0,no
+1296,Moneda Dinamarca 2 Øre 1874,6.0,9240.0,15000,no,12600.0,3360.0,no
+1297,Moneda Dinamarca 5 Øre 1894,7.0,10780.0,16000,no,13440.0,2660.0,no
+1298,Moneda Francia 10 Francos 1987,4.5,6930.0,12000,no,10080.0,3150.0,no
+1299,Moneda Francia 25 Céntimos 1903,6.0,9240.0,15000,no,12600.0,3360.0,no
+1300,Moneda Países Bajos 1 Cent 1902,6.0,9240.0,15000,no,12600.0,3360.0,no
+1301,Moneda Italia 1 Soldo 1862,13.0,20020.0,28000,no,23520.0,3500.0,no
+1302,Moneda Portugal 1 Centavo 1918,8.0,12320.0,18000,no,15120.0,2800.0,no
+1303,Moneda San Marino 100 Liras 1978,5.5,8470.0,14000,no,11760.0,3290.0,no
+1304,Moneda San Marino 100 Liras 1985,5.5,8470.0,14000,no,11760.0,3290.0,no
+1305,Moneda Suecia 10 Øre 1955,3.5,5390.0,10000,no,8400.0,3010.0,no
+1306,Moneda Suiza 2 Rappen 1893,10.0,15400.0,22000,no,18480.0,3080.0,no
+1307,Moneda Uruguay 2 Centésimos 1869,12.0,18480.0,26000,no,21840.0,3360.0,no
+1308,Moneda México 1 Centavo 1946,4.0,6160.0,11000,no,9240.0,3080.0,no
+1309,Moneda Perú 1 Centavo 1946,5.5,8470.0,14000,no,11760.0,3290.0,no
+1310,Moneda Perú 2 Centavos 1863,12.0,18480.0,26000,no,21840.0,3360.0,no
+1311,Moneda Venezuela 25 Céntimos 1954,5.0,7700.0,13000,no,10920.0,3220.0,no
+1312,Moneda Estados Unidos 1/2 Dólar Kennedy 1968,10.0,15400.0,22000,no,18480.0,3080.0,no
+1313,Moneda Canadá 1 Cent 1919,9.0,13860.0,20000,no,16800.0,2940.0,no
+1314,Moneda Argentina 5 Centavos 1975,4.0,6160.0,11000,no,9240.0,3080.0,no
+1315,Moneda Argentina 1 Peso 1983,10.0,15400.0,22000,no,18480.0,3080.0,no
+1316,Moneda Argentina 10 Centavos 1883,22.0,33880.0,44000,no,36960.0,3080.0,no
+1317,Moneda Imperio Otomano 10 Para 1900,12.0,18480.0,26000,no,21840.0,3360.0,no
+1318,Moneda Jamaica 10 Dólares 2000,3.0,4620.0,9000,no,7560.0,2940.0,no
+1319,Moneda Costa Rica 50 Céntimos 1983,2.0,3080.0,7000,no,5880.0,2800.0,no
+1320,Moneda Nueva Zelanda 50 Cents 2006,2.5,3850.0,8000,no,6720.0,2870.0,no
+1321,Moneda México 1 Centavo 1945,4.0,6160.0,11000,no,9240.0,3080.0,no
+1322,Moneda Argentina 20 Centavos 1883,25.0,38500.0,50000,no,42000.0,3500.0,no
+1324,Moneda Bolivia 1/2 Melgarejo 1865,20.0,30800.0,40000,no,33600.0,2800.0,no
+1325,Moneda Estados Unidos 1 Dólar Peace 1922,55.0,84700.0,105000,no,88200.0,3500.0,no
