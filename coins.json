@@ -17422,5 +17422,133 @@
     "description": "",
     "publishedAt": "2026-09-09T21:06:39.898812+00:00",
     "costo": 0.65
+  },
+  {
+    "id": 1377,
+    "title": "100 Pesos 1989",
+    "country": "Chile",
+    "metal": "Bronce",
+    "year": 1989,
+    "price": "2 USD",
+    "images": [
+      "images/1377A.jpeg",
+      "images/1377B.jpeg"
+    ],
+    "reference": "KM# 226",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "9",
+    "diametro": "27",
+    "description": "",
+    "publishedAt": "2026-09-09T21:17:41.188046+00:00",
+    "costo": 0.4
+  },
+  {
+    "id": 1378,
+    "title": "100 Pesos 1997",
+    "country": "Chile",
+    "metal": "Bronce",
+    "year": 1997,
+    "price": "2 USD",
+    "images": [
+      "images/1378A.jpeg",
+      "images/1378B.jpeg"
+    ],
+    "reference": "KM# 226",
+    "grade": "Sin Circular -",
+    "grade_short": "SC-",
+    "mintage": "",
+    "peso": "9",
+    "diametro": "27",
+    "description": "",
+    "publishedAt": "2026-09-09T21:17:41.188046+00:00",
+    "costo": 0.4
+  },
+  {
+    "id": 1379,
+    "title": "1 pound 1985",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1985,
+    "price": "3.5 USD",
+    "images": [
+      "images/1379A.jpeg",
+      "images/1379B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Gales",
+    "publishedAt": "2026-09-09T21:17:41.188046+00:00",
+    "costo": 1.95
+  },
+  {
+    "id": 1380,
+    "title": "1 Pound 1996",
+    "country": "Reino Unido",
+    "metal": "Níquel",
+    "year": 1996,
+    "price": "4 USD",
+    "images": [
+      "images/1380A.jpeg",
+      "images/1380B.jpeg"
+    ],
+    "reference": "KM# 972",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": "",
+    "peso": "9.5",
+    "diametro": "22.5",
+    "description": "Irlanda del Norte",
+    "publishedAt": "2026-09-09T21:17:41.188046+00:00",
+    "costo": 1.95,
+    "commemorates": "Irlanda del Norte"
+  },
+  {
+    "id": 1381,
+    "title": "1 pound 2000",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 2000,
+    "price": "4 USD",
+    "images": [
+      "images/1381A.jpeg",
+      "images/1381B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Gales",
+    "publishedAt": "2026-09-09T21:17:41.188046+00:00",
+    "costo": 1.95
+  },
+  {
+    "id": 1382,
+    "title": "25 Cents 1973",
+    "country": "Canadá",
+    "metal": "Níquel",
+    "year": 1973,
+    "price": "3 USD",
+    "images": [
+      "images/1382A.jpeg",
+      "images/1382B.jpeg"
+    ],
+    "reference": "KM# 81",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "5.05",
+    "diametro": "23.88",
+    "description": "centenario de la real policia montada del canada",
+    "publishedAt": "2026-09-09T21:17:41.188046+00:00",
+    "costo": 1.1,
+    "commemorates": "centenario de la real policia montada del canada"
   }
 ]
