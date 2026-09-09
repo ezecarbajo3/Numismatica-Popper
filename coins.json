@@ -12433,7 +12433,9 @@
     "group_label": "50 Schilling",
     "costo": 7.37,
     "mintage": "2.989.600",
-    "commemorates": "600 Años de la Unión de Tirol con Austria"
+    "commemorates": "600 Años de la Unión de Tirol con Austria",
+    "status": "sold",
+    "soldAt": "2026-09-09T00:24:05.249222+00:00"
   },
   {
     "id": 1159,
@@ -12475,7 +12477,9 @@
     "group_label": "50 Schilling",
     "costo": 7.37,
     "mintage": "2.045.000",
-    "commemorates": "450 Aniversario de la Muerte de Maximiliano I"
+    "commemorates": "450 Aniversario de la Muerte de Maximiliano I",
+    "status": "sold",
+    "soldAt": "2026-09-09T00:24:05.249222+00:00"
   },
   {
     "id": 1161,
