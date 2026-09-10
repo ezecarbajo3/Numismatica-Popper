@@ -17216,7 +17216,9 @@
     "diametro": "18",
     "description": "",
     "publishedAt": "2026-09-09T21:06:39.898812+00:00",
-    "costo": 2.79
+    "costo": 2.79,
+    "status": "sold",
+    "soldAt": "2026-09-10T04:31:54.331784+00:00"
   },
   {
     "id": 1367,
@@ -17411,7 +17413,9 @@
     "diametro": "22.25",
     "description": "Caballos Lipizzanos (2do mapa)",
     "publishedAt": "2026-09-09T21:06:39.898812+00:00",
-    "costo": 0.65
+    "costo": 0.65,
+    "status": "sold",
+    "soldAt": "2026-09-10T04:31:54.331784+00:00"
   },
   {
     "id": 1376,
@@ -17432,7 +17436,9 @@
     "diametro": "22.25",
     "description": "León heráldico de Finlandia (1er mapa)",
     "publishedAt": "2026-09-09T21:06:39.898812+00:00",
-    "costo": 0.65
+    "costo": 0.65,
+    "status": "sold",
+    "soldAt": "2026-09-10T04:31:54.331784+00:00"
   },
   {
     "id": 1377,
