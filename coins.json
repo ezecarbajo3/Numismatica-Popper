@@ -12195,7 +12195,9 @@
     "grade_short": "EX-",
     "description": "2 Dinara de la República de Serbia con la fachada del Monasterio de Gračanica y el escudo nacional.",
     "publishedAt": "2026-08-22T01:12:55.339717+00:00",
-    "costo": 0.0
+    "costo": 0.0,
+    "status": "sold",
+    "soldAt": "2026-09-10T04:32:55.809941+00:00"
   },
   {
     "id": 1142,
@@ -15323,7 +15325,7 @@
     "group_id": "ca-1-dolar-fifa-2026",
     "group_label": "1 Dólar Mundial FIFA 2026",
     "costo": 2.5,
-    "cantidad": 2,
+    "cantidad": 1,
     "commemorates": "Copa Mundial de la FIFA 2026"
   },
   {
