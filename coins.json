@@ -16813,7 +16813,9 @@
     "description": "Con detalles",
     "publishedAt": "2026-09-07T14:44:12.993856+00:00",
     "group_id": "ar-10centavos-patacon",
-    "group_label": "10 Centavos Patacón"
+    "group_label": "10 Centavos Patacón",
+    "status": "sold",
+    "soldAt": "2026-09-10T00:18:48.479011+00:00"
   },
   {
     "id": 1342,
@@ -16990,7 +16992,7 @@
     "description": "Centenario de la Confederación (1867-1967)",
     "publishedAt": "2026-09-09T19:39:13.699367+00:00",
     "costo": 0.84,
-    "cantidad": 3
+    "cantidad": 2
   },
   {
     "id": 1357,
@@ -17032,7 +17034,9 @@
     "diametro": "17.5",
     "description": "República de Weimar - Ceca Karlsruhe",
     "publishedAt": "2026-09-09T19:39:13.699367+00:00",
-    "costo": 1.94
+    "costo": 1.94,
+    "status": "sold",
+    "soldAt": "2026-09-10T00:18:48.479011+00:00"
   },
   {
     "id": 1359,
@@ -17098,7 +17102,7 @@
     "description": "artigas",
     "publishedAt": "2026-09-09T20:41:29.872932+00:00",
     "costo": 4.87,
-    "cantidad": 2,
+    "cantidad": 1,
     "commemorates": "artigas"
   },
   {
@@ -17122,7 +17126,9 @@
     "publishedAt": "2026-09-09T20:41:29.872932+00:00",
     "group_id": "uy-10centesimos-1877",
     "group_label": "10 Centésimos 1877",
-    "costo": 5.84
+    "costo": 5.84,
+    "status": "sold",
+    "soldAt": "2026-09-10T00:18:48.479011+00:00"
   },
   {
     "id": 1363,
@@ -17359,7 +17365,9 @@
     "diametro": "25.75",
     "description": "Cruz doble sobre tres colinas (Escudo de Eslovaquia)",
     "publishedAt": "2026-09-09T21:06:39.898812+00:00",
-    "costo": 2.44
+    "costo": 2.44,
+    "status": "sold",
+    "soldAt": "2026-09-10T00:18:48.479011+00:00"
   },
   {
     "id": 1374,
@@ -17380,7 +17388,9 @@
     "diametro": "25.75",
     "description": "Beatrix (1er mapa)",
     "publishedAt": "2026-09-09T21:06:39.898812+00:00",
-    "costo": 2.44
+    "costo": 2.44,
+    "status": "sold",
+    "soldAt": "2026-09-10T00:18:48.479011+00:00"
   },
   {
     "id": 1375,
