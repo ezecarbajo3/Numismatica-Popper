@@ -17720,7 +17720,7 @@
     "country": "Reino Unido",
     "metal": "Acero recubierto de cobre",
     "year": 2008,
-    "price": "1 USD",
+    "price": "0.7 USD",
     "images": [
       "images/1389A.jpeg",
       "images/1389B.jpeg"
@@ -17735,7 +17735,7 @@
     "publishedAt": "2026-09-10T13:18:23.680759+00:00",
     "group_id": "uk-1penny",
     "group_label": "1 Penny",
-    "costo": 0.29
+    "costo": 0.3
   },
   {
     "id": 1390,
@@ -17743,7 +17743,7 @@
     "country": "Reino Unido",
     "metal": "Acero recubierto de cobre",
     "year": 2009,
-    "price": "1 USD",
+    "price": "0.7 USD",
     "images": [
       "images/1390A.jpeg",
       "images/1390B.jpeg"
@@ -17758,7 +17758,7 @@
     "publishedAt": "2026-09-10T13:18:23.680759+00:00",
     "group_id": "uk-1penny",
     "group_label": "1 Penny",
-    "costo": 0.29
+    "costo": 0.3
   },
   {
     "id": 1391,
@@ -17766,7 +17766,7 @@
     "country": "Reino Unido",
     "metal": "Acero recubierto de cobre",
     "year": 2010,
-    "price": "1 USD",
+    "price": "0.7 USD",
     "images": [
       "images/1391A.jpeg",
       "images/1391B.jpeg"
@@ -17781,7 +17781,7 @@
     "publishedAt": "2026-09-10T13:18:23.680759+00:00",
     "group_id": "uk-1penny",
     "group_label": "1 Penny",
-    "costo": 0.29
+    "costo": 0.3
   },
   {
     "id": 1392,
@@ -17789,7 +17789,7 @@
     "country": "Reino Unido",
     "metal": "Acero recubierto de cobre",
     "year": 2011,
-    "price": "1 USD",
+    "price": "0.7 USD",
     "images": [
       "images/1392A.jpeg",
       "images/1392B.jpeg"
@@ -17804,7 +17804,7 @@
     "publishedAt": "2026-09-10T13:18:23.680759+00:00",
     "group_id": "uk-1penny",
     "group_label": "1 Penny",
-    "costo": 0.29
+    "costo": 0.3
   },
   {
     "id": 1393,
@@ -17812,7 +17812,7 @@
     "country": "Reino Unido",
     "metal": "Acero recubierto de cobre",
     "year": 2012,
-    "price": "1 USD",
+    "price": "0.7 USD",
     "images": [
       "images/1393A.jpeg",
       "images/1393B.jpeg"
@@ -17827,7 +17827,7 @@
     "publishedAt": "2026-09-10T13:18:23.680759+00:00",
     "group_id": "uk-1penny",
     "group_label": "1 Penny",
-    "costo": 0.29
+    "costo": 0.3
   },
   {
     "id": 1394,
@@ -17835,7 +17835,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 1990,
-    "price": "1 USD",
+    "price": "0.7 USD",
     "images": [
       "images/1394A.jpeg",
       "images/1394B.jpeg"
@@ -17850,7 +17850,7 @@
     "publishedAt": "2026-09-10T13:18:23.680759+00:00",
     "group_id": "uk-5pence",
     "group_label": "5 Pence",
-    "costo": 0.29
+    "costo": 0.3
   },
   {
     "id": 1395,
@@ -17858,7 +17858,7 @@
     "country": "Reino Unido",
     "metal": "Cuproníquel",
     "year": 1991,
-    "price": "1 USD",
+    "price": "0.7 USD",
     "images": [
       "images/1395A.jpeg",
       "images/1395B.jpeg"
@@ -17873,7 +17873,7 @@
     "publishedAt": "2026-09-10T13:18:23.680759+00:00",
     "group_id": "uk-5pence",
     "group_label": "5 Pence",
-    "costo": 0.29
+    "costo": 0.3
   },
   {
     "id": 1396,
@@ -17896,7 +17896,7 @@
     "publishedAt": "2026-09-10T13:18:23.680759+00:00",
     "group_id": "uk-5pence",
     "group_label": "5 Pence",
-    "costo": 0.29
+    "costo": 0.3
   },
   {
     "id": 1397,
@@ -17904,7 +17904,7 @@
     "country": "Reino Unido",
     "metal": "Acero niquelado",
     "year": 2012,
-    "price": "1 USD",
+    "price": "0.7 USD",
     "images": [
       "images/1397A.jpeg",
       "images/1397B.jpeg"
@@ -17919,7 +17919,7 @@
     "publishedAt": "2026-09-10T13:18:23.680759+00:00",
     "group_id": "uk-5pence",
     "group_label": "5 Pence",
-    "costo": 0.29
+    "costo": 0.3
   },
   {
     "id": 1398,
@@ -17927,7 +17927,7 @@
     "country": "Reino Unido",
     "metal": "Acero niquelado",
     "year": 2013,
-    "price": "1 USD",
+    "price": "0.7 USD",
     "images": [
       "images/1398A.jpeg",
       "images/1398B.jpeg"
@@ -17942,7 +17942,7 @@
     "publishedAt": "2026-09-10T13:18:23.680759+00:00",
     "group_id": "uk-5pence",
     "group_label": "5 Pence",
-    "costo": 0.29
+    "costo": 0.3
   },
   {
     "id": 1399,
@@ -17950,7 +17950,7 @@
     "country": "Reino Unido",
     "metal": "Acero niquelado",
     "year": 2014,
-    "price": "1 USD",
+    "price": "0.7 USD",
     "images": [
       "images/1399A.jpeg",
       "images/1399B.jpeg"
@@ -17965,7 +17965,7 @@
     "publishedAt": "2026-09-10T13:18:23.680759+00:00",
     "group_id": "uk-5pence",
     "group_label": "5 Pence",
-    "costo": 0.29
+    "costo": 0.3
   },
   {
     "id": 1400,
@@ -17973,7 +17973,7 @@
     "country": "Reino Unido",
     "metal": "Acero niquelado",
     "year": 2016,
-    "price": "1 USD",
+    "price": "0.7 USD",
     "images": [
       "images/1400A.jpeg",
       "images/1400B.jpeg"
@@ -17988,6 +17988,6 @@
     "publishedAt": "2026-09-10T13:18:23.680759+00:00",
     "group_id": "uk-5pence",
     "group_label": "5 Pence",
-    "costo": 0.29
+    "costo": 0.3
   }
 ]
