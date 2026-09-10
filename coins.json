@@ -17262,7 +17262,9 @@
     "diametro": "17.5",
     "description": "Ducado de Nassau - Adolfo",
     "publishedAt": "2026-09-09T21:06:39.898812+00:00",
-    "costo": 10.46
+    "costo": 10.46,
+    "status": "sold",
+    "soldAt": "2026-09-10T13:33:56.799800+00:00"
   },
   {
     "id": 1369,
