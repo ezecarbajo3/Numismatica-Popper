@@ -17631,7 +17631,9 @@
     "publishedAt": "2026-09-09T21:32:20.624900+00:00",
     "group_id": "us-half-dollar-variants",
     "group_label": "1/2 Dólar Kennedy",
-    "costo": 4.55
+    "costo": 4.55,
+    "status": "sold",
+    "soldAt": "2026-09-10T04:26:29.731080+00:00"
   },
   {
     "id": 1386,
