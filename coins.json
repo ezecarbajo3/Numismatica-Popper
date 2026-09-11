@@ -14398,7 +14398,9 @@
     "description": "Serie Conmemorativa del Arte de la Ópera de Pekín - Personaje Dan (rol femenino) con aplicación de color.",
     "publishedAt": "2026-08-30T02:31:10.888065+00:00",
     "costo": 4.0,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-09-11T13:21:32.708047+00:00"
   },
   {
     "id": 1245,
