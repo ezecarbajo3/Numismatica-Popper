@@ -18020,7 +18020,7 @@
     "mintage": "",
     "peso": "",
     "diametro": "",
-    "description": "Acuñada durante el reinado del sultán Hasan Nooraddeen I (1779–1799) en el Sultanato de las Maldivas. Fracción monetaria tradicional de ½ larin en cobre con inscripciones arábigas en el anverso con el nombre del monarca (Sultán Hasan Nur al-Din).",
+    "description": "Acuñada durante el reinado del sultán Hasan Nooraddeen I (1779–1799) en el Sultanato de las Maldivas con inscripciones arábigas y el nombre del monarca (Sultán Hasan Nur al-Din).",
     "publishedAt": "2026-09-11T18:56:41.522971+00:00",
     "costo": 32.36
   },
@@ -18083,7 +18083,7 @@
     "mintage": "",
     "peso": "",
     "diametro": "",
-    "description": "Moneda provincial de Córdoba acuñada en plata en 1842 con el monograma provincial y las iniciales de ensayador J.P.P., catalogada CJ# 38.1.42 (variante A26-R1).",
+    "description": "Moneda provincial de Córdoba acuñada en 1842 con el monograma provincial y las iniciales de ensayador J.P.P. (variante A26-R1).",
     "publishedAt": "2026-09-11T18:56:41.522971+00:00",
     "costo": 103.56
   },
@@ -18189,30 +18189,29 @@
     "mintage": 1268993,
     "peso": "3.5",
     "diametro": "21.18",
-    "description": "Emisión de posguerra acuñada en zinc bajo la Ocupación Aliada en la ceca de Stuttgart (F), catalogada KM# A104 / J# 375. Para desnazificar la moneda se modificaron los cuños del Tercer Reich removiendo la esvástica de las garras del águila. Es una pieza sumamente escasa y rara debido a su baja tirada en 1947 y a que la gran mayoría de los ejemplares fue desmonetizada y fundida tras la reforma monetaria de junio de 1948 que dio origen al Deutsche Mark.",
+    "description": "Emisión de posguerra bajo la Ocupación Aliada en la ceca de Stuttgart (F). Para desnazificar la moneda se modificaron los cuños del Tercer Reich removiendo la esvástica de las garras del águila. Pieza sumamente escasa debido a su baja tirada en 1947 y a que la gran mayoría de los ejemplares fue desmonetizada y fundida tras la reforma monetaria de junio de 1948 que dio origen al Deutsche Mark.",
     "publishedAt": "2026-09-11T22:07:41.318290+00:00",
     "costo": 32.36
   },
   {
     "id": 1402,
-    "title": "2 Reichsmark 1934",
+    "title": "2 Reichsmark 1939",
     "country": "Alemania",
     "metal": "Plata .625",
-    "year": 1934,
+    "year": 1939,
     "price": "30 USD",
     "images": [
       "images/1402A.jpeg",
       "images/1402B.jpeg"
     ],
-    "reference": "KM# 81",
+    "reference": "KM# 86",
     "grade": "",
     "grade_short": "",
     "mintage": 703000,
     "peso": "8",
     "diametro": "25",
-    "description": "Acuñada en plata .625 en la ceca de Múnich (D), catalogada KM# 81 / AKS# 93. Conmemora la histórica Iglesia de la Guarnición de Potsdam (Garnisonkirche Potsdam), célebre templo barroco prusiano.",
+    "description": "Emisión del Tercer Reich con el busto del mariscal Paul von Hindenburg y águila con esvástica. Ceca de Múnich (D).",
     "publishedAt": "2026-09-11T22:07:41.318290+00:00",
-    "costo": 20.0,
-    "commemorates": "Iglesia de la Guarnición de Potsdam (Garnisonkirche)"
+    "costo": 20.0
   }
 ]
