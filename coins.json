@@ -18002,5 +18002,152 @@
     "group_id": "uk-5pence",
     "group_label": "5 Pence",
     "costo": 0.3
+  },
+  {
+    "id": "R11",
+    "title": "1/2 Larin 1780",
+    "country": "Sultanato de Maldivas",
+    "metal": "Cobre",
+    "year": 1780,
+    "price": "45.5 USD",
+    "images": [
+      "images/R11A.jpeg",
+      "images/R11B.jpeg"
+    ],
+    "reference": "KM# 29.1",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Acuñada durante el reinado del sultán Hasan Nooraddeen I (1779–1799) en el Sultanato de las Maldivas. Fracción monetaria tradicional de ½ larin en cobre con inscripciones arábigas en el anverso con el nombre del monarca (Sultán Hasan Nur al-Din).",
+    "publishedAt": "2026-09-11T18:56:41.522971+00:00",
+    "costo": 32.36
+  },
+  {
+    "id": "R12",
+    "title": "Follis 316 d.C.",
+    "country": "Imperio Romano",
+    "metal": "Vellón",
+    "year": 316,
+    "price": "32.5 USD",
+    "images": [
+      "images/R12A.jpeg",
+      "images/R12B.jpeg"
+    ],
+    "reference": "RIC# 21",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "3.02",
+    "diametro": "20",
+    "description": "Follis de vellón acuñado en la ceca de Heraclea bajo el César Licinio II (el Joven), hijo del emperador Licinio I. Presenta en anverso el busto hacia la izquierda (DN VAL LICIN LICINIVS NOB C) y en reverso la puerta de campamento militar con leyenda PROVIDENTIAE CAESS (KHTA en exergo).",
+    "publishedAt": "2026-09-11T18:56:41.522971+00:00",
+    "costo": 22.65
+  },
+  {
+    "id": "R13",
+    "title": "Antoniniano 272 d.C.",
+    "country": "Imperio Romano",
+    "metal": "Vellón",
+    "year": 272,
+    "price": "32.5 USD",
+    "images": [
+      "images/R13A.jpeg",
+      "images/R13B.jpeg"
+    ],
+    "reference": "RIC# 100",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "2.52",
+    "diametro": "19",
+    "description": "Antoniniano de vellón acuñado bajo el emperador Tétrico I (271–274 d.C.) del Imperio Galo. Exhibe en anverso el busto radiado y acorazado hacia la derecha (IMP C TETRICVS PF AVG) y en reverso la personificación de la Paz sosteniendo ramo de olivo y cetro (PAX AVG).",
+    "publishedAt": "2026-09-11T18:56:41.522971+00:00",
+    "costo": 22.65
+  },
+  {
+    "id": "R14",
+    "title": "1 Real 1842",
+    "country": "Argentina - Córdoba",
+    "metal": "Plata",
+    "year": 1842,
+    "price": "117 USD",
+    "images": [
+      "images/R14A.jpeg",
+      "images/R14B.jpeg"
+    ],
+    "reference": "CJ# 38.1.42",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Moneda provincial de Córdoba acuñada en plata en 1842 con el monograma provincial y las iniciales de ensayador J.P.P., catalogada CJ# 38.1.42 (variante A26-R1).",
+    "publishedAt": "2026-09-11T18:56:41.522971+00:00",
+    "costo": 103.56
+  },
+  {
+    "id": "R15",
+    "title": "1 Gani 1438",
+    "country": "Sultanato Bahmaní",
+    "metal": "Cobre",
+    "year": 1438,
+    "price": "58.5 USD",
+    "images": [
+      "images/R15A.jpeg",
+      "images/R15B.jpeg"
+    ],
+    "reference": "GG# BH84",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Acuñada en cobre durante el reinado del sultán Ala Al-din Ahmad Shah II (1436–1458), gobernante del Sultanato Bahmaní del Decán (sur de la India), primer estado islámico chiita independiente de la región previo a su fragmentación.",
+    "publishedAt": "2026-09-11T18:56:41.522971+00:00",
+    "costo": 45.31
+  },
+  {
+    "id": "R16",
+    "title": "4 Gani 1316",
+    "country": "Sultanato de Delhi",
+    "metal": "Vellón",
+    "year": 1316,
+    "price": "45.5 USD",
+    "images": [
+      "images/R16A.jpeg",
+      "images/R16B.jpeg"
+    ],
+    "reference": "NW# 408",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Acuñada en vellón bajo el reinado del sultán Qutb ud-Din Mubarak Shah (1316–1320), último monarca de la dinastía Khalji que gobernó el Sultanato de Delhi, con caligrafía e inscripciones árabes tradicionales.",
+    "publishedAt": "2026-09-11T18:56:41.522971+00:00",
+    "costo": 32.36
+  },
+  {
+    "id": "R17",
+    "title": "20 Mongo 1937",
+    "country": "Mongolia",
+    "metal": "Cuproníquel",
+    "year": 1937,
+    "price": "32.5 USD",
+    "images": [
+      "images/R17A.jpeg",
+      "images/R17B.jpeg"
+    ],
+    "reference": "KM# 14",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Emisión de la República Popular de Mongolia acuñada en la ceca de Leningrado en 1937 en cuproníquel, exhibiendo el histórico escudo nacional Soyombo.",
+    "publishedAt": "2026-09-11T18:56:41.522971+00:00",
+    "costo": 22.65
   }
 ]
