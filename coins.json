@@ -17205,7 +17205,9 @@
     "description": "Mercury Dime",
     "publishedAt": "2026-09-09T20:41:29.872932+00:00",
     "costo": 2.92,
-    "commemorates": "Mercury Dime"
+    "commemorates": "Mercury Dime",
+    "status": "sold",
+    "soldAt": "2026-09-11T14:28:31.366465+00:00"
   },
   {
     "id": 1366,
