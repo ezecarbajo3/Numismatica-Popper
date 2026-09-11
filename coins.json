@@ -18149,5 +18149,70 @@
     "description": "Emisión de la República Popular de Mongolia acuñada en la ceca de Leningrado en 1937 en cuproníquel, exhibiendo el histórico escudo nacional Soyombo.",
     "publishedAt": "2026-09-11T18:56:41.522971+00:00",
     "costo": 22.65
+  },
+  {
+    "id": 1401,
+    "title": "1000 Dobras 1997",
+    "country": "Santo Tomé y Príncipe",
+    "metal": "Acero cromado",
+    "year": 1997,
+    "price": "8 USD",
+    "images": [
+      "images/1401A.jpeg",
+      "images/1401B.jpeg"
+    ],
+    "reference": "KM# 90",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "6.3",
+    "diametro": "25",
+    "description": "Emisión oficial conmemorativa del programa FAO (Organización de las Naciones Unidas para la Alimentación y la Agricultura). Santo Tomé y Príncipe es una nación insular soberana de África Central ubicada en el Golfo de Guinea, antigua colonia portuguesa independiente desde 1975, conformada por un archipiélago volcánico con las islas principales de Santo Tomé y Príncipe.",
+    "publishedAt": "2026-09-11T22:07:41.318290+00:00",
+    "costo": 3.24,
+    "commemorates": "Programa FAO - Seguridad Alimentaria"
+  },
+  {
+    "id": "R18",
+    "title": "10 Pfennig 1947",
+    "country": "Alemania",
+    "metal": "Zinc",
+    "year": 1947,
+    "price": "42.5 USD",
+    "images": [
+      "images/R18A.jpeg",
+      "images/R18B.jpeg"
+    ],
+    "reference": "KM# A104",
+    "grade": "",
+    "grade_short": "",
+    "mintage": 1268993,
+    "peso": "3.5",
+    "diametro": "21.18",
+    "description": "Emisión de posguerra acuñada en zinc bajo la Ocupación Aliada en la ceca de Stuttgart (F), catalogada KM# A104 / J# 375. Para desnazificar la moneda se modificaron los cuños del Tercer Reich removiendo la esvástica de las garras del águila. Es una pieza sumamente escasa y rara debido a su baja tirada en 1947 y a que la gran mayoría de los ejemplares fue desmonetizada y fundida tras la reforma monetaria de junio de 1948 que dio origen al Deutsche Mark.",
+    "publishedAt": "2026-09-11T22:07:41.318290+00:00",
+    "costo": 32.36
+  },
+  {
+    "id": 1402,
+    "title": "2 Reichsmark 1934",
+    "country": "Alemania",
+    "metal": "Plata .625",
+    "year": 1934,
+    "price": "30 USD",
+    "images": [
+      "images/1402A.jpeg",
+      "images/1402B.jpeg"
+    ],
+    "reference": "KM# 81",
+    "grade": "",
+    "grade_short": "",
+    "mintage": 703000,
+    "peso": "8",
+    "diametro": "25",
+    "description": "Acuñada en plata .625 en la ceca de Múnich (D), catalogada KM# 81 / AKS# 93. Conmemora la histórica Iglesia de la Guarnición de Potsdam (Garnisonkirche Potsdam), célebre templo barroco prusiano.",
+    "publishedAt": "2026-09-11T22:07:41.318290+00:00",
+    "costo": 20.0,
+    "commemorates": "Iglesia de la Guarnición de Potsdam (Garnisonkirche)"
   }
 ]
