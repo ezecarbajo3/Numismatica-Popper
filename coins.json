@@ -4769,7 +4769,8 @@
     "group_id": "ca-25cents-2000-millennium",
     "group_label": "Entrada al Tercer Milenio",
     "reference": "KM# 380",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 501,
