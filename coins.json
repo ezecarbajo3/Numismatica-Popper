@@ -1574,7 +1574,9 @@
     "grade_short": "SC",
     "mintage": "",
     "description": "Copa del Mundo Argentina 1978",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-11T13:41:30.075995+00:00"
   },
   {
     "id": 201,
@@ -14243,7 +14245,9 @@
     "description": "Centenario de la Confederación de Canadá (1867-1967). Liebre americana (conejo saltarín) diseño de Alex Colville y busto de la reina Isabel II.",
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
     "costo": 1.5,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-09-11T13:41:30.075995+00:00"
   },
   {
     "id": 1238,
