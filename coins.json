@@ -18178,7 +18178,9 @@
     "description": "Emisión conmemorativa del programa de la FAO. Santo Tomé y Príncipe es una nación insular soberana de África Central ubicada en el Golfo de Guinea, antigua colonia portuguesa independiente desde 1975.",
     "publishedAt": "2026-09-11T22:07:41.318290+00:00",
     "costo": 3.24,
-    "commemorates": "Programa FAO - Seguridad Alimentaria"
+    "commemorates": "Programa FAO - Seguridad Alimentaria",
+    "status": "sold",
+    "soldAt": "2026-09-12T17:17:31.267123+00:00"
   },
   {
     "id": "R18",
