@@ -15104,8 +15104,10 @@
     "description": "",
     "publishedAt": "2026-09-02T20:37:19.124704+00:00",
     "costo": 3.25,
-    "cantidad": 2,
-    "commemorates": "Último Gulden (Tim van Melis)"
+    "cantidad": 0,
+    "commemorates": "Último Gulden (Tim van Melis)",
+    "status": "sold",
+    "soldAt": "2026-09-12T12:37:05.930353-03:00"
   },
   {
     "id": 1276,
