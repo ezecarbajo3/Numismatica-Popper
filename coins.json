@@ -18092,8 +18092,7 @@
     "description": "Moneda provincial con el monograma de Córdoba y las iniciales del ensayador J.P.P. (variante A26-R1).",
     "publishedAt": "2026-09-11T18:56:41.522971+00:00",
     "costo": 103.56,
-    "status": "sold",
-    "soldAt": "2026-09-12T17:17:01.204420+00:00"
+    "cantidad": 1
   },
   {
     "id": "R15",
