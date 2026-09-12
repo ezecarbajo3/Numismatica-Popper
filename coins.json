@@ -3850,7 +3850,9 @@
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 344",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-12T14:31:15.165338+00:00"
   },
   {
     "id": 421,
