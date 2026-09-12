@@ -10617,7 +10617,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "CJ# 378.2",
-    "description": "Efigie de la Libertad por Dupuis."
+    "description": "Efigie de la Libertad por Dupuis.",
+    "status": "sold",
+    "soldAt": "2026-09-12T17:20:13.658293+00:00"
   },
   {
     "id": 976,
@@ -16160,7 +16162,9 @@
     "description": "Variante con reloj en el frontispicio del Congreso Nacional",
     "publishedAt": "2026-09-04T21:53:04.537068+00:00",
     "costo": 5.84,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-09-12T17:20:13.658293+00:00"
   },
   {
     "id": 1316,
