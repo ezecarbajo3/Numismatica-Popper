@@ -17070,7 +17070,9 @@
     "diametro": "30",
     "description": "Año único",
     "publishedAt": "2026-09-09T19:39:13.699367+00:00",
-    "costo": 2.92
+    "costo": 2.92,
+    "status": "sold",
+    "soldAt": "2026-09-12T15:20:17.667340+00:00"
   },
   {
     "id": 1360,
