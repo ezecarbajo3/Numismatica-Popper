@@ -2443,7 +2443,9 @@
     "peso": 0.61,
     "diametro": 17.0,
     "description": "",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-14T21:22:20.048104+00:00"
   },
   {
     "id": 295,
@@ -8412,7 +8414,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "reference": "KM# 4"
+    "reference": "KM# 4",
+    "status": "sold",
+    "soldAt": "2026-09-14T21:22:20.048104+00:00"
   },
   {
     "id": 793,
@@ -8501,7 +8505,7 @@
     "grade_short": "SC",
     "mintage": "10.000.000",
     "description": "Escudo de armas de Uganda en anverso y grulla coronada con montañas en reverso.",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 803,
@@ -14492,7 +14496,9 @@
     "description": "Pez tigre africano (Hydrocynus goliath / African tigerfish) y escudo nacional de Gambia.",
     "publishedAt": "2026-08-30T02:31:10.888065+00:00",
     "costo": 2.5,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-09-14T21:22:20.048104+00:00"
   },
   {
     "id": 1248,
