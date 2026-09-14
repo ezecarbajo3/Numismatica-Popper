@@ -570,7 +570,9 @@
     "peso": 2.51,
     "diametro": 19.93,
     "description": "",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-14T20:46:07.741099+00:00"
   },
   {
     "id": 89,
@@ -8439,8 +8441,10 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 1,
-    "reference": "KM# 168"
+    "cantidad": 0,
+    "reference": "KM# 168",
+    "status": "sold",
+    "soldAt": "2026-09-14T20:46:07.741099+00:00"
   },
   {
     "id": 800,
@@ -8471,8 +8475,10 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 1,
-    "reference": "KM# 24"
+    "cantidad": 0,
+    "reference": "KM# 24",
+    "status": "sold",
+    "soldAt": "2026-09-14T20:46:07.741099+00:00"
   },
   {
     "id": 802,
@@ -8539,7 +8545,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "reference": "KM# 137"
+    "reference": "KM# 137",
+    "status": "sold",
+    "soldAt": "2026-09-14T20:46:07.741099+00:00"
   },
   {
     "id": 807,
@@ -10333,7 +10341,9 @@
     "group_id": "pmr-1kopeck-2000",
     "group_label": "1 Kopeck 2000",
     "reference": "KM# 1",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-14T20:46:07.741099+00:00"
   },
   {
     "id": 952,
@@ -14206,7 +14216,7 @@
     "description": "Serie Aves de Samoa - Lori corona azul (Vini australis). Anverso con el escudo nacional de Samoa.",
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
     "costo": 0.86,
-    "cantidad": 10
+    "cantidad": 7
   },
   {
     "id": 1236,
@@ -14552,7 +14562,7 @@
     "year": 2023,
     "price": "3.5 USD",
     "costo": 2.5,
-    "cantidad": 1,
+    "cantidad": 0,
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "KM# 3344",
@@ -14564,7 +14574,9 @@
     "publishedAt": "2026-08-30T02:44:10.961879+00:00",
     "mintage": "",
     "peso": "6.27",
-    "diametro": "26.5"
+    "diametro": "26.5",
+    "status": "sold",
+    "soldAt": "2026-09-14T20:46:07.741099+00:00"
   },
   {
     "id": 1252,
