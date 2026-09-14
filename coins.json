@@ -3036,7 +3036,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-14T20:49:44.664570+00:00"
   },
   {
     "id": 361,
@@ -5725,7 +5727,9 @@
     "metal": "Cuproníquel",
     "reference": "KM# 118",
     "description": "Año único",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-14T20:49:44.664570+00:00"
   },
   {
     "id": 595,
@@ -12019,7 +12023,9 @@
     "grade_short": "SC",
     "description": "Tigre Real de Bengala.",
     "publishedAt": "2026-08-21T16:59:56.406985+00:00",
-    "costo": 0.0
+    "costo": 0.0,
+    "status": "sold",
+    "soldAt": "2026-09-14T20:49:44.664570+00:00"
   },
   {
     "id": 1132,
@@ -17047,7 +17053,9 @@
     "diametro": "25.91",
     "description": "Castillo de Mont Orgueil",
     "publishedAt": "2026-09-09T19:39:13.699367+00:00",
-    "costo": 1.38
+    "costo": 1.38,
+    "status": "sold",
+    "soldAt": "2026-09-14T20:49:44.664570+00:00"
   },
   {
     "id": 1358,
