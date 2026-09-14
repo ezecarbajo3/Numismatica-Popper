@@ -8520,8 +8520,10 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 1,
-    "reference": "KM# 32"
+    "cantidad": 0,
+    "reference": "KM# 32",
+    "status": "sold",
+    "soldAt": "2026-09-14T21:22:57.032290+00:00"
   },
   {
     "id": 804,
