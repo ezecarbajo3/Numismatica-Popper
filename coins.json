@@ -15853,5 +15853,90 @@
     "description": "Ceca A (París)",
     "publishedAt": "2026-09-16T22:27:24.503373+00:00",
     "costo": 5.13
+  },
+  {
+    "id": 1421,
+    "title": "5 Qirsh 2008",
+    "country": "Egipto",
+    "metal": "Acero chapado en cobre",
+    "year": 2008,
+    "price": "3.5 USD",
+    "images": [
+      "images/1421A.jpeg",
+      "images/1421B.jpeg"
+    ],
+    "reference": "KM# 941a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-16T22:30:04.665033+00:00",
+    "costo": 0.01
+  },
+  {
+    "id": 1422,
+    "title": "25 Öre 1914",
+    "country": "Suecia",
+    "metal": "Plata .600",
+    "year": 1914,
+    "price": "8 USD",
+    "images": [
+      "images/1422A.jpeg",
+      "images/1422B.jpeg"
+    ],
+    "reference": "KM# 785",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-16T22:30:04.665033+00:00",
+    "costo": 0.01
+  },
+  {
+    "id": 1423,
+    "title": "1 Céntimo 1944",
+    "country": "Paraguay",
+    "metal": "Bronce-Aluminio",
+    "year": 1944,
+    "price": "4 USD",
+    "images": [
+      "images/1423A.jpeg",
+      "images/1423B.jpeg"
+    ],
+    "reference": "KM# 20",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-16T22:30:04.665033+00:00",
+    "costo": 0.01
+  },
+  {
+    "id": 1424,
+    "title": "2 Centavos 1896",
+    "country": "Argentina",
+    "metal": "Cobre",
+    "year": 1896,
+    "price": "13 USD",
+    "images": [
+      "images/1424A.jpeg",
+      "images/1424B.jpeg"
+    ],
+    "reference": "CJ# 37",
+    "grade": "Bueno-",
+    "grade_short": "B-",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-16T22:30:04.665033+00:00",
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón"
   }
 ]
