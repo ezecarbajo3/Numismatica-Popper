@@ -12112,7 +12112,9 @@
     "grade_short": "SC",
     "description": "Moneda cuadrada de aluminio con esquinas redondeadas del Reino de Bután bajo el reinado de Jigme Singye Wangchuck.",
     "publishedAt": "2026-08-22T01:12:55.339717+00:00",
-    "costo": 1.19
+    "costo": 1.19,
+    "status": "sold",
+    "soldAt": "2026-09-16T15:29:06.327489+00:00"
   },
   {
     "id": 1136,
@@ -14524,7 +14526,9 @@
     "description": "Príncipe Luis II de Mónaco y escudo de armas con el lema 'DEO JUVANTE'.",
     "publishedAt": "2026-08-30T02:31:10.888065+00:00",
     "costo": 2.5,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-09-16T15:29:06.327489+00:00"
   },
   {
     "id": 1249,
