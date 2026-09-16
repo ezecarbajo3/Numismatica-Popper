@@ -15704,5 +15704,154 @@
     "costo": 0.64,
     "cantidad": 20,
     "commemorates": "Independencia"
+  },
+  {
+    "id": 1414,
+    "title": "2 Pesos 1994",
+    "country": "Argentina",
+    "metal": "Níquel",
+    "year": 1994,
+    "price": "3.5 USD",
+    "images": [
+      "images/1414A.jpeg",
+      "images/1414B.jpeg"
+    ],
+    "reference": "CJ# 7.1.1",
+    "grade": "Sin Circular-",
+    "grade_short": "SC-",
+    "mintage": 1000000,
+    "peso": "",
+    "diametro": "",
+    "description": "Convención Nacional Constituyente",
+    "publishedAt": "2026-09-16T22:27:24.503373+00:00",
+    "costo": 0.64,
+    "commemorates": "Convención Nacional Constituyente"
+  },
+  {
+    "id": 1415,
+    "title": "1 Peso 1925",
+    "country": "Paraguay",
+    "metal": "Cuproníquel",
+    "year": 1925,
+    "price": "2 USD",
+    "images": [
+      "images/1415A.jpeg",
+      "images/1415B.jpeg"
+    ],
+    "reference": "KM# 13",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 3500000,
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-16T22:27:24.503373+00:00",
+    "costo": 0.01,
+    "cantidad": 6
+  },
+  {
+    "id": 1416,
+    "title": "2 Pesos 1938",
+    "country": "Paraguay",
+    "metal": "Aluminio",
+    "year": 1938,
+    "price": "3 USD",
+    "images": [
+      "images/1416A.jpeg",
+      "images/1416B.jpeg"
+    ],
+    "reference": "KM# 17",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-16T22:27:24.503373+00:00",
+    "costo": 0.01
+  },
+  {
+    "id": 1417,
+    "title": "1 Peso 1938",
+    "country": "Paraguay",
+    "metal": "Aluminio",
+    "year": 1938,
+    "price": "3 USD",
+    "images": [
+      "images/1417A.jpeg",
+      "images/1417B.jpeg"
+    ],
+    "reference": "KM# 16",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-16T22:27:24.503373+00:00",
+    "costo": 0.01
+  },
+  {
+    "id": 1418,
+    "title": "5 Francos 1956",
+    "country": "Ruanda-Urundi",
+    "metal": "Aluminio",
+    "year": 1956,
+    "price": "10.5 USD",
+    "images": [
+      "images/1418A.jpeg",
+      "images/1418B.jpeg"
+    ],
+    "reference": "KM# 3",
+    "grade": "Excelente-",
+    "grade_short": "EX-",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-16T22:27:24.503373+00:00",
+    "costo": 0.64
+  },
+  {
+    "id": 1419,
+    "title": "1 Franco 1942",
+    "country": "Francia",
+    "metal": "Aluminio",
+    "year": 1942,
+    "price": "2 USD",
+    "images": [
+      "images/1419A.jpeg",
+      "images/1419B.jpeg"
+    ],
+    "reference": "KM# 902",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Régimen de Vichy",
+    "publishedAt": "2026-09-16T22:27:24.503373+00:00",
+    "costo": 0.01
+  },
+  {
+    "id": 1420,
+    "title": "2 Centésimos 1869 A",
+    "country": "Uruguay",
+    "metal": "Bronce",
+    "year": 1869,
+    "price": "14 USD",
+    "images": [
+      "images/1420A.jpeg",
+      "images/1420B.jpeg"
+    ],
+    "reference": "KM# 12",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Ceca A (París)",
+    "publishedAt": "2026-09-16T22:27:24.503373+00:00",
+    "costo": 5.13
   }
 ]
