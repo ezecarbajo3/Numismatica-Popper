@@ -18226,27 +18226,6 @@
     "soldAt": "2026-09-12T17:18:54.506327+00:00"
   },
   {
-    "id": "R18",
-    "title": "10 Pfennig 1947",
-    "country": "Alemania",
-    "metal": "Zinc",
-    "year": 1947,
-    "price": "42.5 USD",
-    "images": [
-      "images/R18A.jpeg",
-      "images/R18B.jpeg"
-    ],
-    "reference": "KM# A104",
-    "grade": "",
-    "grade_short": "",
-    "mintage": 1268993,
-    "peso": "3.5",
-    "diametro": "21.18",
-    "description": "Emisión de posguerra bajo la Ocupación Aliada en la ceca de Stuttgart (F). Para desnazificar la moneda se modificaron los cuños del Tercer Reich removiendo la esvástica de las garras del águila. Pieza sumamente escasa debido a su baja tirada y a que la gran mayoría de los ejemplares fue desmonetizada y fundida tras la reforma monetaria de junio de 1948 que dio origen al Deutsche Mark.",
-    "publishedAt": "2026-09-11T22:07:41.318290+00:00",
-    "costo": 32.36
-  },
-  {
     "id": 1402,
     "title": "2 Reichsmark 1939",
     "country": "Alemania",
