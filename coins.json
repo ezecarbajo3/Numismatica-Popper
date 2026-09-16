@@ -12907,8 +12907,10 @@
     "description": "Conmemorativa del 25° aniversario de la coronación de la reina Isabel II (1953-1978).",
     "publishedAt": "2026-08-26T23:47:29.444774+00:00",
     "costo": 6.0,
-    "cantidad": 1,
-    "commemorates": "25° Aniversario de la Coronación de la Reina Isabel II (1953-1978)."
+    "cantidad": 0,
+    "commemorates": "25° Aniversario de la Coronación de la Reina Isabel II (1953-1978).",
+    "status": "sold",
+    "soldAt": "2026-09-16T21:24:58.294249+00:00"
   },
   {
     "id": 1179,
@@ -12929,7 +12931,7 @@
     "description": "Conmemorativa del 80° cumpleaños de la Reina Madre (4 de agosto de 1980).",
     "publishedAt": "2026-08-26T23:47:29.444774+00:00",
     "costo": 6.0,
-    "cantidad": 2,
+    "cantidad": 1,
     "commemorates": "80° Cumpleaños de la Reina Madre (1900-1980)."
   },
   {
@@ -12951,7 +12953,7 @@
     "description": "Conmemorativa del 80° aniversario del nacimiento de la Reina Madre.",
     "publishedAt": "2026-08-26T23:47:29.444774+00:00",
     "costo": 6.0,
-    "cantidad": 4,
+    "cantidad": 3,
     "commemorates": "80° Aniversario del nacimiento de la Reina Madre (1900-1980)."
   },
   {
