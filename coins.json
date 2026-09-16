@@ -299,26 +299,6 @@
     "costo": 0
   },
   {
-    "id": 36,
-    "title": "16 Skilling 1814",
-    "country": "Dinamarca",
-    "metal": "Cobre",
-    "year": 1814,
-    "price": "50 USD",
-    "images": [
-      "images/36A.jpeg",
-      "images/36B.jpeg"
-    ],
-    "reference": "KM# TN3",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": "",
-    "description": "Bono posguerra",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-20T16:24:38.435839+00:00"
-  },
-  {
     "id": 38,
     "title": "Centavo 1885",
     "country": "Argentina",
@@ -532,27 +512,6 @@
     "costo": 0
   },
   {
-    "id": 70,
-    "title": "400 Réis 1938",
-    "country": "Brasil",
-    "metal": "Cuproníquel",
-    "year": 1938,
-    "price": "2.5 USD",
-    "images": [
-      "images/70A.jpeg",
-      "images/70B.jpeg"
-    ],
-    "reference": "KM# 547",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": "",
-    "peso": 5.5,
-    "description": "Getulio Vargas",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-16T07:30:14.247780+00:00"
-  },
-  {
     "id": 72,
     "title": "25 Ngwee 1992",
     "country": "Zambia",
@@ -631,28 +590,6 @@
     "diametro": 23.0,
     "description": "Estación eléctrica - Año único",
     "costo": 0
-  },
-  {
-    "id": 94,
-    "title": "Ore 1915",
-    "country": "Suecia",
-    "metal": "Bronce",
-    "year": 1915,
-    "price": "4 USD",
-    "images": [
-      "images/94A.jpeg",
-      "images/94B.jpeg"
-    ],
-    "reference": "KM# 777.2",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": "",
-    "peso": 2.0,
-    "diametro": 16.0,
-    "description": "",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 99,
@@ -875,28 +812,6 @@
     "costo": 0
   },
   {
-    "id": 117,
-    "title": "Halala 2016",
-    "country": "Arabia Saudita",
-    "metal": "Acero niquelado",
-    "year": 2016,
-    "price": "3.5 USD",
-    "images": [
-      "images/117A.jpeg",
-      "images/117B.jpeg"
-    ],
-    "reference": "KM# 73",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": 2.0,
-    "diametro": 16.0,
-    "description": "Año único.",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
-  },
-  {
     "id": 128,
     "title": "Cent 1963",
     "country": "Antillas Holandesas",
@@ -915,28 +830,6 @@
     "diametro": 19.0,
     "description": "",
     "costo": 0
-  },
-  {
-    "id": 130,
-    "title": "Kopek 1911",
-    "country": "Rusia",
-    "metal": "Cobre",
-    "year": 1911,
-    "price": "5 USD",
-    "images": [
-      "images/130A.jpeg",
-      "images/130B.jpeg"
-    ],
-    "reference": "Y# 9.2",
-    "grade": "Muy Bueno -",
-    "grade_short": "MB-",
-    "mintage": "",
-    "peso": 3.28,
-    "diametro": 21.6,
-    "description": "",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-17T01:48:07.526679+00:00"
   },
   {
     "id": 135,
@@ -1623,28 +1516,6 @@
     "costo": 0
   },
   {
-    "id": 204,
-    "title": "Ore 1950",
-    "country": "Noruega",
-    "metal": "Bronce",
-    "year": 1950,
-    "price": "4 USD",
-    "images": [
-      "images/204A.jpeg",
-      "images/204B.jpeg"
-    ],
-    "reference": "KM# 367",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "description": "",
-    "mintage": "",
-    "peso": 2.0,
-    "diametro": 16.0,
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
-  },
-  {
     "id": 205,
     "title": "20 Centavos 1924",
     "country": "Portugal",
@@ -1746,74 +1617,6 @@
     "costo": 0
   },
   {
-    "id": 220,
-    "title": "Cent 2003",
-    "country": "Islas Cook",
-    "metal": "Aluminio",
-    "year": 2003,
-    "price": "3.5 USD",
-    "images": [
-      "images/220A.jpeg",
-      "images/220B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Collie",
-    "mintage": "",
-    "peso": 1.44,
-    "diametro": 21.9,
-    "reference": "KM# 420",
-    "status": "sold",
-    "soldAt": "2026-08-10T21:51:39.055928+00:00",
-    "costo": 0
-  },
-  {
-    "id": 222,
-    "title": "20 Cents 1992",
-    "country": "Chipre",
-    "metal": "Latón de Níquel",
-    "year": 1992,
-    "price": "3 USD",
-    "images": [
-      "images/222A.jpeg",
-      "images/222B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "description": "",
-    "mintage": "",
-    "peso": 7.75,
-    "diametro": 27.25,
-    "reference": "KM# 62.2",
-    "status": "sold",
-    "soldAt": "2026-08-10T21:51:39.056069+00:00",
-    "costo": 0
-  },
-  {
-    "id": 224,
-    "title": "Franco 1946",
-    "country": "Bélgica",
-    "metal": "Zinc",
-    "year": 1946,
-    "price": "4 USD",
-    "images": [
-      "images/224A.jpeg",
-      "images/224B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "description": "Segunda Guerra Mundial",
-    "mintage": "",
-    "peso": 4.25,
-    "diametro": 21.5,
-    "reference": "KM# 128",
-    "group_id": "be-franco-km128",
-    "group_label": "Franco",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
-  },
-  {
     "id": 227,
     "title": "25 Cents 1943",
     "country": "Bélgica",
@@ -1854,50 +1657,6 @@
     "diametro": 20.9,
     "reference": "KM# 8",
     "costo": 0
-  },
-  {
-    "id": 236,
-    "title": "Sen 1997",
-    "country": "Malasia",
-    "metal": "",
-    "year": 1997,
-    "price": "2 USD",
-    "images": [
-      "images/236A.jpeg",
-      "images/236B.jpeg"
-    ],
-    "grade": "",
-    "grade_short": "",
-    "description": "",
-    "mintage": "",
-    "peso": 1.41,
-    "diametro": 16.25,
-    "reference": "KM# 50",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966265+00:00",
-    "costo": 0
-  },
-  {
-    "id": 239,
-    "title": "Rappen 1950",
-    "country": "Suiza",
-    "metal": "Bronce",
-    "year": 1950,
-    "price": "3 USD",
-    "images": [
-      "images/239A.jpeg",
-      "images/239B.jpeg"
-    ],
-    "grade": "Excelente +",
-    "grade_short": "EX+",
-    "description": "",
-    "mintage": "",
-    "peso": 1.5,
-    "diametro": 16.0,
-    "reference": "KM# 46",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 242,
@@ -1955,28 +1714,6 @@
     "peso": 3.75,
     "diametro": 22.0,
     "description": "",
-    "costo": 0
-  },
-  {
-    "id": 250,
-    "title": "1 Dirham 1973",
-    "country": "Emiratos Árabes Unidos",
-    "metal": "Cuproníquel",
-    "year": 1973,
-    "price": "3 USD",
-    "images": [
-      "images/250A.jpeg",
-      "images/250B.jpeg"
-    ],
-    "reference": "KM# 6.1",
-    "grade": "Excelente -",
-    "grade_short": "EX-",
-    "mintage": "",
-    "peso": 11.3,
-    "diametro": 28.5,
-    "description": "",
-    "status": "sold",
-    "soldAt": "2026-08-12T07:10:43.674066+00:00",
     "costo": 0
   },
   {
@@ -2238,30 +1975,6 @@
     "costo": 0
   },
   {
-    "id": 270,
-    "title": "10 Centavos 1921",
-    "country": "Perú",
-    "metal": "Cuproníquel",
-    "year": 1921,
-    "price": "2 USD",
-    "images": [
-      "images/270A.jpeg",
-      "images/270B.jpeg"
-    ],
-    "reference": "KM# 214.1",
-    "grade": "Bueno -",
-    "grade_short": "B-",
-    "mintage": "6.900.000",
-    "peso": 3.86,
-    "diametro": 20.0,
-    "description": "",
-    "group_id": "pe-10centavos-km214",
-    "group_label": "10 Centavos",
-    "status": "sold",
-    "soldAt": "2026-08-10T21:05:57.200369+00:00",
-    "costo": 0.5
-  },
-  {
     "id": 271,
     "title": "10 Centavos 1940",
     "country": "Perú",
@@ -2279,32 +1992,6 @@
     "peso": 3.86,
     "diametro": 20.0,
     "description": "",
-    "group_id": "pe-10centavos-km214",
-    "group_label": "10 Centavos",
-    "costo": 0
-  },
-  {
-    "id": 273,
-    "title": "10 Krónur 1980",
-    "country": "Islandia",
-    "metal": "Cuproníquel",
-    "year": 1980,
-    "price": "3 USD",
-    "images": [
-      "images/273A.jpeg",
-      "images/273B.jpeg"
-    ],
-    "reference": "KM# 16",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": 12.6,
-    "diametro": 30.0,
-    "description": "",
-    "group_id": "is-10kronur",
-    "group_label": "10 Krónur",
-    "status": "sold",
-    "soldAt": "2026-08-12T07:10:43.674193+00:00",
     "costo": 0
   },
   {
@@ -2326,26 +2013,6 @@
     "diametro": 21.0,
     "description": "Año único.",
     "costo": 0
-  },
-  {
-    "id": 277,
-    "title": "5 Céntimos 2013",
-    "country": "Perú",
-    "metal": "Aluminio",
-    "year": 2013,
-    "price": "2 USD",
-    "images": [
-      "images/277A.jpeg",
-      "images/277B.jpeg"
-    ],
-    "reference": "KM# 304.2",
-    "grade": "Sin Circular -",
-    "grade_short": "SC-",
-    "mintage": "",
-    "description": "",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-17T01:59:54.516642+00:00"
   },
   {
     "id": 281,
@@ -2503,27 +2170,6 @@
     "description": "Jorge VI",
     "reference": "KM# 879",
     "costo": 0
-  },
-  {
-    "id": 298,
-    "title": "1 Dragma 1957",
-    "country": "Grecia",
-    "metal": "Cuproníquel",
-    "year": 1957,
-    "price": "3 USD",
-    "images": [
-      "images/298A.jpeg",
-      "images/298B.jpeg"
-    ],
-    "reference": "KM. 81",
-    "mintage": "8.000.000",
-    "peso": 4.0,
-    "diametro": 21.0,
-    "grade": "Muy Bueno -",
-    "grade_short": "MB-",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 299,
@@ -2692,26 +2338,6 @@
     "costo": 0
   },
   {
-    "id": 319,
-    "title": "50 Cents 1979",
-    "country": "Hong Kong",
-    "metal": "Bronce",
-    "year": 1979,
-    "price": "3 USD",
-    "images": [
-      "images/319A.jpeg",
-      "images/319B.jpeg"
-    ],
-    "grade": "Excelente +",
-    "grade_short": "EX+",
-    "reference": "KM# 41",
-    "peso": 4.9,
-    "diametro": 22.5,
-    "status": "sold",
-    "soldAt": "2026-08-12T07:10:43.674199+00:00",
-    "costo": 0
-  },
-  {
     "id": 322,
     "title": "2 Cents 1987",
     "country": "Nueva Zelanda",
@@ -2745,26 +2371,6 @@
     "reference": "KM# 69",
     "peso": 7.1,
     "diametro": 25.5,
-    "costo": 0
-  },
-  {
-    "id": 324,
-    "title": "Dólar 1979",
-    "country": "Hong Kong",
-    "metal": "Cuproníquel",
-    "year": 1979,
-    "price": "3 USD",
-    "images": [
-      "images/324A.jpeg",
-      "images/324B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "reference": "KM# 43",
-    "peso": 7.1,
-    "diametro": 25.5,
-    "status": "sold",
-    "soldAt": "2026-08-12T07:10:43.674201+00:00",
     "costo": 0
   },
   {
@@ -2848,46 +2454,6 @@
     "costo": 0
   },
   {
-    "id": 335,
-    "title": "10 Centavos 1919",
-    "country": "Perú",
-    "metal": "Cuproníquel",
-    "year": 1919,
-    "price": "2 USD",
-    "images": [
-      "images/335A.jpeg",
-      "images/335B.jpeg"
-    ],
-    "reference": "KM# 214.1",
-    "grade": "Bueno -",
-    "grade_short": "B-",
-    "group_id": "pe-10centavos-km214",
-    "group_label": "10 Centavos",
-    "peso": 3.86,
-    "diametro": 20.0,
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-17T01:48:07.526679+00:00"
-  },
-  {
-    "id": 338,
-    "title": "2 Ngwee 1983",
-    "country": "Zambia",
-    "metal": "Bronce",
-    "year": 1983,
-    "price": "2.5 USD",
-    "images": [
-      "images/338A.jpeg",
-      "images/338B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 10a",
-    "status": "sold",
-    "soldAt": "2026-08-10T21:51:39.056080+00:00",
-    "costo": 0
-  },
-  {
     "id": 339,
     "title": "5 Pence 2016",
     "country": "Reino Unido",
@@ -2902,25 +2468,6 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "costo": 0
-  },
-  {
-    "id": 340,
-    "title": "1 Dólar 1996",
-    "country": "Jamaica",
-    "metal": "Acero niquelado",
-    "year": 1996,
-    "price": "2.5 USD",
-    "description": "heptagonal",
-    "images": [
-      "images/340A.jpeg",
-      "images/340B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "reference": "KM# 168",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 342,
@@ -2988,24 +2535,6 @@
     "group_id": "fr-10francos-head",
     "group_label": "10 Francos",
     "costo": 0
-  },
-  {
-    "id": 349,
-    "title": "Naya Paisa 1963",
-    "country": "India",
-    "metal": "Latón niquelado",
-    "year": 1963,
-    "price": "2.5 USD",
-    "reference": "KM# 8a",
-    "images": [
-      "images/349A.jpeg",
-      "images/349B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 350,
@@ -3175,24 +2704,6 @@
     "diametro": 19.0,
     "description": "Indian Head",
     "costo": 0
-  },
-  {
-    "id": 372,
-    "title": "1 Dollar 2026 D",
-    "country": "Estados Unidos",
-    "year": 2026,
-    "price": "2.5 USD",
-    "description": "Iowa",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "images": [
-      "images/372A.jpeg",
-      "images/372B.jpeg"
-    ],
-    "reference": "KM# 755",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-18T15:21:25.904522+00:00"
   },
   {
     "id": 376,
@@ -4068,24 +3579,6 @@
     "costo": 0
   },
   {
-    "id": 434,
-    "title": "8 Reales 1808",
-    "country": "Bolivia",
-    "metal": "Plata 0.896",
-    "year": 1808,
-    "price": "187 USD",
-    "images": [
-      "images/425A.jpeg",
-      "images/425B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "reference": "KM# 73",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-18T11:36:26.388814+00:00"
-  },
-  {
     "id": 439,
     "title": "5 Cents 1888",
     "country": "Estados Unidos",
@@ -4802,27 +4295,6 @@
     "costo": 0
   },
   {
-    "id": 502,
-    "title": "50 Centavos 1997",
-    "country": "Argentina",
-    "metal": "Bronce de aluminio",
-    "year": 1997,
-    "price": "2.5 USD",
-    "images": [
-      "images/515A.jpeg",
-      "images/515B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Evita",
-    "group_id": "ar-50cents-conmemorativas",
-    "group_label": "50 Centavos Conmemorativas",
-    "reference": "CJ# 5.5",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-19T01:29:34.668682+00:00"
-  },
-  {
     "id": 503,
     "title": "50 Centavos 2000",
     "country": "Argentina",
@@ -5038,28 +4510,6 @@
     "reference": "KM# 175"
   },
   {
-    "id": 541,
-    "costo": 16.09,
-    "title": "20 Centavos 1882",
-    "country": "Argentina",
-    "metal": "Plata .900",
-    "year": 1882,
-    "price": "15 USD",
-    "images": [
-      "images/541A.jpeg",
-      "images/541B.jpeg"
-    ],
-    "reference": "CJ# 19",
-    "grade": "Bueno **",
-    "grade_short": "B**",
-    "mintage": "762.027",
-    "description": "Escasa.",
-    "group_id": "ar-20centavos-1882",
-    "group_label": "20 Centavos 1882",
-    "status": "sold",
-    "soldAt": "2026-08-31T12:58:57.411742+00:00"
-  },
-  {
     "id": 542,
     "costo": 16.09,
     "title": "20 Centavos 1882",
@@ -5182,22 +4632,6 @@
     "costo": 0,
     "status": "sold",
     "soldAt": "2026-09-05T18:18:11.721503+00:00"
-  },
-  {
-    "id": 552,
-    "title": "20 Centavos 1884",
-    "country": "Bolivia",
-    "metal": "Plata .900",
-    "year": 1884,
-    "price": "7 USD",
-    "images": [
-      "images/552A.jpeg",
-      "images/552B.jpeg"
-    ],
-    "reference": "KM# 159.1",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-18T15:21:25.904522+00:00"
   },
   {
     "id": 553,
@@ -5509,24 +4943,6 @@
     "costo": 0
   },
   {
-    "id": 577,
-    "title": "10 Pfennig 1919",
-    "country": "Alemania",
-    "year": 1919,
-    "price": "2.5 USD",
-    "images": [
-      "images/577A.jpeg",
-      "images/577B.jpeg"
-    ],
-    "grade": "Bueno +",
-    "grade_short": "B+",
-    "metal": "Zinc",
-    "reference": "KM# 26",
-    "status": "sold",
-    "soldAt": "2026-08-10T21:05:57.200524+00:00",
-    "costo": 0.5
-  },
-  {
     "id": 578,
     "title": "5 Centimes 1923",
     "country": "Bélgica",
@@ -5558,24 +4974,6 @@
     "metal": "Aluminio",
     "reference": "KM# 13",
     "cantidad": 2,
-    "costo": 0
-  },
-  {
-    "id": 580,
-    "title": "5 Pfennig 1908",
-    "country": "Alemania",
-    "year": 1908,
-    "price": "2 USD",
-    "images": [
-      "images/580A.jpeg",
-      "images/580B.jpeg"
-    ],
-    "grade": "Muy Bueno **",
-    "grade_short": "MB**",
-    "metal": "Cuproníquel",
-    "reference": "KM# 11",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966449+00:00",
     "costo": 0
   },
   {
@@ -5681,40 +5079,6 @@
     "description": "30 Aniversario",
     "costo": 0,
     "cantidad": 2
-  },
-  {
-    "id": 592,
-    "title": "Blister Mundial 1978",
-    "country": "Argentina",
-    "year": 1978,
-    "price": "10 USD",
-    "images": [
-      "images/592A.jpeg",
-      "images/592B.jpeg",
-      "images/592C.jpeg"
-    ],
-    "description": "Contiene cuño 1977 y 1978",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-31T12:57:03.816577+00:00"
-  },
-  {
-    "id": 593,
-    "title": "50 Centavos 2005",
-    "country": "Honduras",
-    "year": 2005,
-    "price": "3 USD",
-    "images": [
-      "images/593A.jpeg",
-      "images/593B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "metal": "Acero niquelado",
-    "reference": "KM# 84",
-    "status": "sold",
-    "soldAt": "2026-08-12T07:10:43.674239+00:00",
-    "costo": 0
   },
   {
     "id": 594,
@@ -5839,23 +5203,6 @@
     "costo": 0
   },
   {
-    "id": 602,
-    "title": "Cent 1992",
-    "country": "Kiribati",
-    "year": 1992,
-    "price": "3.5 USD",
-    "images": [
-      "images/602A.jpeg",
-      "images/602B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 1",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-18T15:21:25.904522+00:00"
-  },
-  {
     "id": 603,
     "title": "Onza 2017 MS70 certificada",
     "country": "Estados Unidos",
@@ -5876,23 +5223,6 @@
     "mintage": "",
     "description": "no se consigue ni en estados unidos. MS70 es el maximo grado de conservacion. Certificada por ANACS (empresa mas respetada que ngc o pcgs). Solo 24.205 unidades certificadas MS70.",
     "costo": 0
-  },
-  {
-    "id": 605,
-    "title": "1 Zloty 1992",
-    "country": "Polonia",
-    "year": 1992,
-    "price": "2.5 USD",
-    "images": [
-      "images/605A.jpeg",
-      "images/605B.jpeg"
-    ],
-    "grade": "Muy Bueno +",
-    "grade_short": "MB+",
-    "reference": "Y# 274",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 606,
@@ -5929,20 +5259,6 @@
     "grade_short": "SC",
     "description": "Año único",
     "costo": 0
-  },
-  {
-    "id": 608,
-    "title": "Cobre a clasificar",
-    "metal": "Cobre",
-    "price": "4 USD",
-    "images": [
-      "images/608A.jpeg",
-      "images/608B.jpeg"
-    ],
-    "country": "Desconocido",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-28T17:03:07.761273+00:00"
   },
   {
     "id": 612,
@@ -6575,26 +5891,6 @@
     "costo": 0
   },
   {
-    "id": 670,
-    "title": "20 Centavos 1945",
-    "country": "Brasil",
-    "year": 1945,
-    "reference": "KM# 556a",
-    "metal": "Bronce-aluminio",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "price": "2 USD",
-    "images": [
-      "images/670A.jpeg",
-      "images/670B.jpeg"
-    ],
-    "group_id": "br-20centavos-km556a",
-    "group_label": "20 Centavos",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966475+00:00",
-    "costo": 0
-  },
-  {
     "id": 671,
     "title": "20 Centavos 1946",
     "country": "Brasil",
@@ -6608,64 +5904,7 @@
       "images/671A.jpeg",
       "images/671B.jpeg"
     ],
-    "group_id": "br-20centavos-km556a",
-    "group_label": "20 Centavos",
     "costo": 0
-  },
-  {
-    "id": 672,
-    "title": "50 Centavos 1947",
-    "country": "Brasil",
-    "year": 1947,
-    "reference": "KM# 557a",
-    "metal": "Bronce-aluminio",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "price": "2 USD",
-    "images": [
-      "images/672A.jpeg",
-      "images/672B.jpeg"
-    ],
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-17T01:59:54.516642+00:00"
-  },
-  {
-    "id": 673,
-    "title": "Cruzeiro 1945",
-    "country": "Brasil",
-    "year": 1945,
-    "metal": "Bronce-aluminio",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "price": "2 USD",
-    "images": [
-      "images/673A.jpeg",
-      "images/673B.jpeg"
-    ],
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966477+00:00",
-    "reference": "KM# 558",
-    "costo": 0
-  },
-  {
-    "id": 674,
-    "title": "200 Reis 1896",
-    "country": "Brasil",
-    "year": 1896,
-    "reference": "KM# 493",
-    "metal": "Cuproníquel",
-    "grade": "Regular +",
-    "grade_short": "R+",
-    "mintage": "2.850.000",
-    "price": "2.5 USD",
-    "images": [
-      "images/674A.jpeg",
-      "images/674B.jpeg"
-    ],
-    "status": "sold",
-    "soldAt": "2026-08-10T21:20:11.407339+00:00",
-    "costo": 0.5
   },
   {
     "id": 675,
@@ -6732,26 +5971,6 @@
     "group_label": "Penny",
     "reference": "KM# 755",
     "costo": 0
-  },
-  {
-    "id": 681,
-    "title": "Penny 1861",
-    "country": "Reino Unido",
-    "year": 1861,
-    "metal": "Bronce",
-    "grade": "Regular",
-    "grade_short": "R",
-    "price": "2 USD",
-    "images": [
-      "images/681A.jpeg",
-      "images/681B.jpeg"
-    ],
-    "group_id": "uk-penny-bronze",
-    "group_label": "Penny",
-    "status": "sold",
-    "soldAt": "2026-08-10T21:05:57.200535+00:00",
-    "costo": 0.5,
-    "reference": "KM# 755"
   },
   {
     "id": 683,
@@ -7196,24 +6415,6 @@
     "costo": 0
   },
   {
-    "id": 714,
-    "title": "100 Escudos 1974",
-    "country": "Chile",
-    "metal": "Latón de Níquel",
-    "year": 1974,
-    "price": "2 USD",
-    "images": [
-      "images/714A.jpeg",
-      "images/714B.jpeg"
-    ],
-    "reference": "KM# 202",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966488+00:00",
-    "costo": 0
-  },
-  {
     "id": 715,
     "title": "20 Centavos 1938",
     "country": "Paraguay",
@@ -7230,26 +6431,6 @@
     "mintage": "400.000",
     "description": "Escasa, año único",
     "costo": 0
-  },
-  {
-    "id": 716,
-    "title": "1 Peso 1925",
-    "country": "Paraguay",
-    "metal": "Cuproníquel",
-    "year": 1925,
-    "price": "2.5 USD",
-    "images": [
-      "images/716A.jpeg",
-      "images/716B.jpeg"
-    ],
-    "reference": "KM# 13",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": "3.500.000",
-    "description": "Año único",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 717,
@@ -7375,24 +6556,6 @@
     "costo": 0
   },
   {
-    "id": 724,
-    "title": "5 Centésimos 1969",
-    "country": "Chile",
-    "metal": "Bronce-Aluminio",
-    "year": 1969,
-    "price": "2 USD",
-    "images": [
-      "images/724A.jpeg",
-      "images/724B.jpeg"
-    ],
-    "reference": "KM# 190",
-    "grade": "Muy Bueno -",
-    "grade_short": "MB-",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:53:39.911753+00:00",
-    "costo": 0
-  },
-  {
     "id": 725,
     "title": "10 Centésimos 1969",
     "country": "Chile",
@@ -7406,27 +6569,6 @@
     "reference": "KM# 191",
     "grade": "Excelente",
     "grade_short": "EX",
-    "costo": 0
-  },
-  {
-    "id": 726,
-    "title": "10 Centavos 1923",
-    "country": "Chile",
-    "metal": "Cuproníquel",
-    "year": 1923,
-    "price": "2 USD",
-    "images": [
-      "images/726A.jpeg",
-      "images/726B.jpeg"
-    ],
-    "reference": "KM# 166",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": "3.356.000",
-    "group_id": "cl-10centavos",
-    "group_label": "10 Centavos",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966496+00:00",
     "costo": 0
   },
   {
@@ -7465,46 +6607,6 @@
     "mintage": "1.500.000",
     "group_id": "cl-10centavos",
     "group_label": "10 Centavos",
-    "costo": 0
-  },
-  {
-    "id": 729,
-    "title": "10 Centavos 1935",
-    "country": "Chile",
-    "metal": "Cuproníquel",
-    "year": 1935,
-    "price": "2.5 USD",
-    "images": [
-      "images/729A.jpeg",
-      "images/729B.jpeg"
-    ],
-    "reference": "KM# 166",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": "1.500.000",
-    "group_id": "cl-10centavos",
-    "group_label": "10 Centavos",
-    "status": "sold",
-    "soldAt": "2026-08-10T21:51:39.056129+00:00",
-    "costo": 0
-  },
-  {
-    "id": 730,
-    "title": "10 Escudos 1974",
-    "country": "Chile",
-    "metal": "Aluminio",
-    "year": 1974,
-    "price": "2 USD",
-    "images": [
-      "images/730A.jpeg",
-      "images/730B.jpeg"
-    ],
-    "reference": "KM# 200",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Año único",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966498+00:00",
     "costo": 0
   },
   {
@@ -8201,28 +7303,6 @@
     "group_label": "20 Centavos cuproníquel"
   },
   {
-    "id": 778,
-    "costo": 1.98,
-    "title": "2 Centavos 1893",
-    "country": "Argentina",
-    "metal": "Bronce",
-    "year": 1893,
-    "price": "4 USD",
-    "images": [
-      "images/778A.jpeg",
-      "images/778B.jpeg"
-    ],
-    "reference": "CJ# 34",
-    "grade": "Muy Bueno +",
-    "grade_short": "MB+",
-    "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón",
-    "peso": 10.0,
-    "diametro": 30.0,
-    "status": "sold",
-    "soldAt": "2026-08-30T01:46:30.862075+00:00"
-  },
-  {
     "id": 780,
     "costo": 1.32,
     "title": "2 Centavos 1890",
@@ -8366,44 +7446,6 @@
     "reference": "KM# 33"
   },
   {
-    "id": 790,
-    "costo": 1.32,
-    "title": "10 Cents 2025",
-    "country": "Namibia",
-    "year": 2025,
-    "price": "3 USD",
-    "images": [
-      "images/790A.jpeg",
-      "images/790B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "group_id": "na-10cents",
-    "group_label": "10 Cents",
-    "reference": "KM# 2",
-    "status": "sold",
-    "soldAt": "2026-08-12T07:10:43.674269+00:00"
-  },
-  {
-    "id": 791,
-    "costo": 1.32,
-    "title": "10 Cents 2023",
-    "country": "Namibia",
-    "year": 2023,
-    "price": "3 USD",
-    "images": [
-      "images/791A.jpeg",
-      "images/791B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "group_id": "na-10cents",
-    "group_label": "10 Cents",
-    "reference": "KM# 2",
-    "status": "sold",
-    "soldAt": "2026-08-12T07:10:43.674271+00:00"
-  },
-  {
     "id": 792,
     "costo": 2.31,
     "title": "50 Cents 2025",
@@ -8419,24 +7461,6 @@
     "reference": "KM# 4",
     "status": "sold",
     "soldAt": "2026-09-14T21:22:20.048104+00:00"
-  },
-  {
-    "id": 793,
-    "costo": 1.32,
-    "title": "5 Baisa 2008",
-    "country": "Omán",
-    "year": 2008,
-    "price": "3 USD",
-    "images": [
-      "images/793A.jpeg",
-      "images/793B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "cantidad": 0,
-    "reference": "KM# 146",
-    "status": "sold",
-    "soldAt": "2026-08-17T16:42:24.956328+00:00"
   },
   {
     "id": 795,
@@ -8526,23 +7550,6 @@
     "reference": "KM# 32",
     "status": "sold",
     "soldAt": "2026-09-14T21:22:57.032290+00:00"
-  },
-  {
-    "id": 804,
-    "costo": 2.31,
-    "title": "1 Sen 2020",
-    "country": "Brunei",
-    "year": 2020,
-    "price": "3.5 USD",
-    "images": [
-      "images/804A.jpeg",
-      "images/804B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 95",
-    "status": "sold",
-    "soldAt": "2026-08-11T06:32:46.410562+00:00"
   },
   {
     "id": 805,
@@ -8910,45 +7917,6 @@
     "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia."
   },
   {
-    "id": 842,
-    "costo": 0,
-    "title": "1/2 Cent 1857",
-    "country": "Indias Orientales Neerlandesas",
-    "year": 1857,
-    "price": "2 USD",
-    "images": [
-      "images/842A.jpeg",
-      "images/842B.jpeg"
-    ],
-    "group_id": "indias-orientales-neerlandesas-1-2cent",
-    "group_label": "1/2 Cent",
-    "grade": "Regular",
-    "grade_short": "R",
-    "cantidad": 0,
-    "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia.",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:31.000842+00:00",
-    "reference": "KM# 306"
-  },
-  {
-    "id": 843,
-    "costo": 0,
-    "title": "Lote Plata x3",
-    "country": "Uruguay",
-    "metal": "Plata",
-    "year": "S/F",
-    "price": "26 USD",
-    "images": [
-      "images/843A.jpeg",
-      "images/843B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "cantidad": 0,
-    "status": "sold",
-    "soldAt": "2026-08-09T21:53:39.911773+00:00"
-  },
-  {
     "id": 844,
     "costo": 0,
     "title": "Peseta 1980",
@@ -9109,8 +8077,6 @@
     "reference": "KM# 864",
     "grade": "Excelente +",
     "grade_short": "EX+",
-    "group_id": "dk-10kroner",
-    "group_label": "10 Kroner",
     "cantidad": 2
   },
   {
@@ -9264,8 +8230,6 @@
     "reference": "KM# 15",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "group_id": "is-10kronur",
-    "group_label": "10 Krónur",
     "mintage": 4600000,
     "costo": 0
   },
@@ -9291,22 +8255,6 @@
     "costo": 0
   },
   {
-    "id": 871,
-    "title": "2 Dollars 1994",
-    "country": "Hong Kong",
-    "metal": "Cuproníquel",
-    "year": 1994,
-    "price": "2 USD",
-    "images": [
-      "images/871A.jpeg",
-      "images/871B.jpeg"
-    ],
-    "reference": "KM# 64",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966536+00:00",
-    "costo": 0
-  },
-  {
     "id": 872,
     "title": "10 Pruta 1952",
     "country": "Israel",
@@ -9320,8 +8268,6 @@
     "reference": "KM# 17",
     "grade": "Bueno +",
     "grade_short": "B+",
-    "group_id": "il-10pruta",
-    "group_label": "10 Pruta",
     "costo": 0
   },
   {
@@ -9360,28 +8306,6 @@
     "cantidad": 2
   },
   {
-    "id": 877,
-    "title": "10 Ore 1925",
-    "country": "Dinamarca",
-    "metal": "Cuproníquel",
-    "year": 1925,
-    "price": "2 USD",
-    "images": [
-      "images/877A.jpeg",
-      "images/877B.jpeg"
-    ],
-    "reference": "KM# 822",
-    "grade": "Bueno +",
-    "grade_short": "B+",
-    "group_id": "dk-10ore",
-    "group_label": "10 Ore",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966539+00:00",
-    "peso": 3.0,
-    "diametro": 18.0,
-    "costo": 0
-  },
-  {
     "id": 878,
     "title": "10 Ore 1937",
     "country": "Dinamarca",
@@ -9395,31 +8319,9 @@
     "reference": "KM# 822",
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
-    "group_id": "dk-10ore",
-    "group_label": "10 Ore",
     "mintage": 2234000,
     "peso": 3.0,
     "diametro": 18.0,
-    "costo": 0
-  },
-  {
-    "id": 879,
-    "title": "10 Kroner 1989",
-    "country": "Dinamarca",
-    "metal": "Bronce de aluminio",
-    "year": 1989,
-    "price": "3 USD",
-    "images": [
-      "images/879A.jpeg",
-      "images/879B.jpeg"
-    ],
-    "reference": "KM# 867",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "group_id": "dk-10kroner",
-    "group_label": "10 Kroner",
-    "status": "sold",
-    "soldAt": "2026-08-12T07:10:43.674328+00:00",
     "costo": 0
   },
   {
@@ -9486,8 +8388,6 @@
     "reference": "KM# 778",
     "grade": "Excelente",
     "grade_short": "EX",
-    "group_id": "se-2ore-km778",
-    "group_label": "2 Ore",
     "costo": 0
   },
   {
@@ -9505,31 +8405,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "cantidad": 7,
-    "group_id": "se-1krona",
-    "group_label": "1 Krona",
     "peso": 7.0,
     "diametro": 25.0,
-    "costo": 0
-  },
-  {
-    "id": 886,
-    "title": "1 Krona 1973",
-    "country": "Suecia",
-    "metal": "Cuproníquel",
-    "year": 1973,
-    "price": "2 USD",
-    "images": [
-      "images/886A.jpeg",
-      "images/886B.jpeg"
-    ],
-    "reference": "KM# 826a",
-    "grade": "Muy Bueno +",
-    "grade_short": "MB+",
-    "cantidad": 0,
-    "group_id": "se-1krona",
-    "group_label": "1 Krona",
-    "status": "sold",
-    "soldAt": "2026-08-11T20:46:33.445517+00:00",
     "costo": 0
   },
   {
@@ -9601,25 +8478,6 @@
     "reference": "Y# 219",
     "grade": "Muy Bueno",
     "grade_short": "MB"
-  },
-  {
-    "id": 891,
-    "costo": 0,
-    "title": "2 Qirsh 1980",
-    "country": "Egipto",
-    "metal": "Bronce de aluminio",
-    "year": 1980,
-    "price": "3 USD",
-    "images": [
-      "images/891A.jpeg",
-      "images/891B.jpeg"
-    ],
-    "reference": "KM# 500",
-    "grade": "Excelente +",
-    "grade_short": "EX+",
-    "description": "Año único",
-    "status": "sold",
-    "soldAt": "2026-08-12T07:10:43.674334+00:00"
   },
   {
     "id": 893,
@@ -9736,30 +8594,8 @@
       "images/902B.jpeg"
     ],
     "reference": "KM# 59",
-    "group_id": "it-5centesimi-km59",
-    "group_label": "5 Centesimi",
     "grade": "Muy Bueno",
     "grade_short": "MB"
-  },
-  {
-    "id": 903,
-    "title": "5 Centesimi 1924",
-    "country": "Italia",
-    "metal": "Cobre",
-    "year": 1924,
-    "price": "2 USD",
-    "images": [
-      "images/903A.jpeg",
-      "images/903B.jpeg"
-    ],
-    "reference": "KM# 59",
-    "group_id": "it-5centesimi-km59",
-    "group_label": "5 Centesimi",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "status": "sold",
-    "soldAt": "2026-08-10T19:09:44.954578+00:00",
-    "costo": 0
   },
   {
     "id": 904,
@@ -9791,69 +8627,7 @@
     "reference": "KM# 75b",
     "grade": "Excelente",
     "grade_short": "EX",
-    "group_id": "it-20centesimi-km75b",
-    "group_label": "20 Centesimi",
     "cantidad": 1,
-    "costo": 0
-  },
-  {
-    "id": 906,
-    "title": "20 Centesimi 1941",
-    "country": "Italia",
-    "metal": "Acmonital",
-    "year": 1941,
-    "price": "2 USD",
-    "images": [
-      "images/906A.jpeg",
-      "images/906B.jpeg"
-    ],
-    "reference": "KM# 75b",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "group_id": "it-20centesimi-km75b",
-    "group_label": "20 Centesimi",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966548+00:00",
-    "costo": 0
-  },
-  {
-    "id": 907,
-    "title": "20 Centesimi 1942",
-    "country": "Italia",
-    "metal": "Acmonital",
-    "year": 1942,
-    "price": "2 USD",
-    "images": [
-      "images/907A.jpeg",
-      "images/907B.jpeg"
-    ],
-    "reference": "KM# 75b",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "group_id": "it-20centesimi-km75b",
-    "group_label": "20 Centesimi",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966549+00:00",
-    "costo": 0
-  },
-  {
-    "id": 908,
-    "title": "20 Centesimi 1943",
-    "country": "Italia",
-    "metal": "Acmonital",
-    "year": 1943,
-    "price": "2 USD",
-    "images": [
-      "images/908A.jpeg",
-      "images/908B.jpeg"
-    ],
-    "reference": "KM# 75b",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "group_id": "it-20centesimi-km75b",
-    "group_label": "20 Centesimi",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966551+00:00",
     "costo": 0
   },
   {
@@ -9892,24 +8666,6 @@
     "group_id": "it-20centesimi-km44",
     "group_label": "20 Centesimi",
     "cantidad": 1,
-    "costo": 0
-  },
-  {
-    "id": 914,
-    "title": "10 Francos 1990",
-    "country": "Francia",
-    "metal": "Bimetálica",
-    "year": 1990,
-    "price": "2 USD",
-    "images": [
-      "images/914A.jpeg",
-      "images/914B.jpeg"
-    ],
-    "reference": "KM# 964.1",
-    "grade": "Excelente +",
-    "grade_short": "EX+",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966553+00:00",
     "costo": 0
   },
   {
@@ -10041,25 +8797,6 @@
     "costo": 0.64,
     "reference": "KM# 866",
     "description": "Diseño perforado tipo Lindauer del periodo de entreguerras."
-  },
-  {
-    "id": 929,
-    "title": "5 Liras 1949",
-    "country": "Italia",
-    "metal": "Aluminio",
-    "year": 1949,
-    "price": "2.5 USD",
-    "images": [
-      "images/929A.jpeg",
-      "images/929B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "reference": "KM# 89",
-    "description": "Muestra un racimo de uvas en el anverso y un arado en el reverso, diseño de Giuseppe Romagnoli.",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-16T07:30:14.247780+00:00"
   },
   {
     "id": 930,
@@ -10297,27 +9034,6 @@
     "mintage": "3.075.645"
   },
   {
-    "id": 949,
-    "costo": 0.64,
-    "title": "1 Cent 2025",
-    "country": "Curazao",
-    "metal": "Acero niquelado",
-    "year": 2025,
-    "price": "3 USD",
-    "images": [
-      "images/949A.jpeg",
-      "images/949B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "group_id": "cur-1cent-2025",
-    "group_label": "1 Cent 2025",
-    "reference": "KM# 1",
-    "description": "Primera serie del nuevo Florín del Caribe (Caribbean Guilder) emitido conjuntamente para Curazao y San Martín.",
-    "status": "sold",
-    "soldAt": "2026-08-12T07:10:43.674345+00:00"
-  },
-  {
     "id": 950,
     "costo": 0.64,
     "title": "1 Cent 2025",
@@ -10331,8 +9047,6 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "group_id": "cur-1cent-2025",
-    "group_label": "1 Cent 2025",
     "reference": "KM# 1",
     "description": "Primera serie del nuevo Florín del Caribe (Caribbean Guilder) emitido conjuntamente para Curazao y San Martín."
   },
@@ -10413,25 +9127,6 @@
     "costo": 0
   },
   {
-    "id": 956,
-    "title": "5 Jiao 2015",
-    "country": "China",
-    "metal": "Acero latonado",
-    "year": 2015,
-    "price": "2 USD",
-    "images": [
-      "images/956A.jpeg",
-      "images/956B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "reference": "KM# 1411",
-    "description": "Muestra la flor de Loto en el reverso.",
-    "status": "sold",
-    "soldAt": "2026-08-09T21:50:30.966565+00:00",
-    "costo": 0
-  },
-  {
     "id": 959,
     "title": "10 Rublos 2015",
     "country": "Rusia",
@@ -10444,8 +9139,6 @@
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "group_id": "ru-10rublos",
-    "group_label": "10 Rublos",
     "reference": "KM# 998",
     "description": "Emisión del Banco Central de Rusia con el águila bicéfala en el anverso.",
     "costo": 0
@@ -10468,67 +9161,6 @@
     "description": "Reinado de Víctor Manuel III. Tipo Ape (Abeja).",
     "group_id": "it-10centesimi-ape",
     "group_label": "10 Centesimi Ape"
-  },
-  {
-    "id": 964,
-    "costo": 0,
-    "title": "10 Centesimi 1921",
-    "country": "Italia",
-    "metal": "Bronce",
-    "year": 1921,
-    "price": "2 USD",
-    "images": [
-      "images/964A.jpeg",
-      "images/964B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "reference": "KM# 60",
-    "description": "Reinado de Víctor Manuel III. Tipo Ape (Abeja).",
-    "group_id": "it-10centesimi-ape",
-    "group_label": "10 Centesimi Ape",
-    "status": "sold",
-    "soldAt": "2026-08-10T19:09:44.954578+00:00"
-  },
-  {
-    "id": 965,
-    "costo": 0,
-    "title": "10 Centesimi 1930",
-    "country": "Italia",
-    "metal": "Bronce",
-    "year": 1930,
-    "price": "2 USD",
-    "images": [
-      "images/965A.jpeg",
-      "images/965B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "reference": "KM# 60",
-    "description": "Reinado de Víctor Manuel III. Tipo Ape (Abeja).",
-    "group_id": "it-10centesimi-ape",
-    "group_label": "10 Centesimi Ape",
-    "status": "sold",
-    "soldAt": "2026-08-10T19:09:44.954578+00:00"
-  },
-  {
-    "id": 966,
-    "costo": 0,
-    "title": "1 Rublo 2008",
-    "country": "Rusia",
-    "metal": "Cuproníquel",
-    "year": 2008,
-    "price": "2 USD",
-    "images": [
-      "images/966A.jpeg",
-      "images/966B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "reference": "Y# 832",
-    "description": "Moneda de la Federación Rusa con el águila bicéfala en el anverso.",
-    "status": "sold",
-    "soldAt": "2026-08-11T06:32:46.410697+00:00"
   },
   {
     "id": 967,
@@ -10581,9 +9213,7 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "reference": "KM# 1210b",
-    "description": "Emisión de la República Popular China. Flor de Orquídea (magnética).",
-    "group_id": "cn-1jiao-orquidea",
-    "group_label": "1 Jiao Orquídea"
+    "description": "Emisión de la República Popular China. Flor de Orquídea (magnética)."
   },
   {
     "id": 971,
@@ -10643,48 +9273,6 @@
     "cantidad": 0,
     "status": "sold",
     "soldAt": "2026-09-12T17:21:00.995359+00:00"
-  },
-  {
-    "id": 976,
-    "costo": 9.71,
-    "title": "2 Centavos 1896",
-    "country": "Argentina",
-    "metal": "Cobre",
-    "year": 1896,
-    "price": "15 USD",
-    "images": [
-      "images/976A.jpeg",
-      "images/976B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "reference": "CJ# 37",
-    "description": "ESCASA.",
-    "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón",
-    "status": "sold",
-    "soldAt": "2026-08-28T17:00:29.219242+00:00"
-  },
-  {
-    "id": 977,
-    "costo": 14.24,
-    "title": "2 Centavos 1888",
-    "country": "Argentina",
-    "metal": "Cobre",
-    "year": 1888,
-    "price": "25 USD",
-    "images": [
-      "images/977A.jpeg",
-      "images/977B.jpeg"
-    ],
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "reference": "CJ# 29",
-    "description": "ESCASA.",
-    "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón",
-    "status": "sold",
-    "soldAt": "2026-08-30T01:39:37.619145+00:00"
   },
   {
     "id": 982,
@@ -10891,30 +9479,6 @@
     "costo": 1.31
   },
   {
-    "id": 995,
-    "title": "Blister 25 Cents 2008",
-    "country": "Canadá",
-    "metal": "Níquel",
-    "year": 2008,
-    "price": "5.5 USD",
-    "images": [
-      "images/995A.jpeg",
-      "images/995B.jpeg",
-      "images/995C.jpeg",
-      "images/995D.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 775",
-    "commemorates": "Día del Armisticio",
-    "description": "En blister original. Acuñado en Windsor.",
-    "group_id": "ca-25cents-2008-armistice",
-    "group_label": "Blister 25 Cents 2008",
-    "costo": 1.31,
-    "status": "sold",
-    "soldAt": "2026-08-19T17:37:13.262081+00:00"
-  },
-  {
     "id": 996,
     "title": "Blister 25 Cents 2008",
     "country": "Canadá",
@@ -10932,8 +9496,6 @@
     "reference": "KM# 775",
     "commemorates": "Día del Armisticio",
     "description": "En blister original. Acuñado en Windsor.",
-    "group_id": "ca-25cents-2008-armistice",
-    "group_label": "Blister 25 Cents 2008",
     "costo": 1.31
   },
   {
@@ -10956,26 +9518,6 @@
     "soldAt": "2026-09-03T00:18:46.685546+00:00"
   },
   {
-    "id": 1001,
-    "title": "1 Peso 1882",
-    "country": "Argentina",
-    "metal": "Plata .900",
-    "year": 1882,
-    "price": "450 USD",
-    "images": [
-      "images/1001A.jpeg",
-      "images/1001B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "reference": "CJ# 13",
-    "mintage": 413711,
-    "description": "Patacón. Excelente pátina.",
-    "costo": 345,
-    "status": "sold",
-    "soldAt": "2026-08-12T13:00:40.865486+00:00"
-  },
-  {
     "id": 1003,
     "title": "Token 5 Pence - Peter Simper",
     "country": "Reino Unido",
@@ -10992,28 +9534,6 @@
     "mintage": "",
     "description": "Peter Simper fue hasta su caída, cerca de 1990, el mayor fabricante y operador de máquinas recreativas del Reino Unido —de mesas de pool a jukeboxes— con depósitos en Londres, Bordon, Gales del Sur, Skipton y Birmingham; este token de 5p era su ficha interna, plata que solo valía puertas adentro de sus salones, y al fundirse la empresa quedó huérfana y pasó a ser pieza de colección.",
     "costo": 0
-  },
-  {
-    "id": 1007,
-    "title": "Penny 1916",
-    "country": "Reino Unido",
-    "metal": "Bronce",
-    "year": 1916,
-    "price": "2.5 USD",
-    "images": [
-      "images/1007A.jpeg",
-      "images/1007B.jpeg"
-    ],
-    "reference": "KM# 810",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": "86.411.100",
-    "description": "",
-    "group_id": "uk-penny-bronze",
-    "group_label": "Penny",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-08-18T14:50:42.706532+00:00"
   },
   {
     "id": 1011,
@@ -11134,29 +9654,6 @@
     "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
-    "id": 1024,
-    "title": "Farthing 1952",
-    "country": "Reino Unido",
-    "metal": "Bronce",
-    "year": 1952,
-    "price": "3.5 USD",
-    "costo": 0.0,
-    "images": [
-      "images/1024A.jpeg",
-      "images/1024B.jpeg"
-    ],
-    "reference": "KM# 867",
-    "grade": "Muy Bueno -",
-    "grade_short": "MB-",
-    "mintage": 5251200,
-    "description": "",
-    "group_id": "uk-farthing-bronze",
-    "group_label": "Farthing",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-19T17:51:15.242996+00:00"
-  },
-  {
     "id": 1025,
     "title": "Farthing 1923",
     "country": "Reino Unido",
@@ -11194,8 +9691,6 @@
     "mintage": 600000,
     "commemorates": "Zonas climáticas de la Tierra: Zona templada",
     "description": "Zonas climáticas de la Tierra: Zona templada. Escasa.",
-    "group_id": "de-5euro-zonas-climaticas",
-    "group_label": "5 Euro Zonas Climáticas",
     "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
@@ -11214,8 +9709,6 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "description": "",
-    "group_id": "uk-halfpenny-bronze",
-    "group_label": "1/2 Penny",
     "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
@@ -11275,29 +9768,7 @@
     "grade_short": "MB-",
     "mintage": 20000000,
     "description": "",
-    "group_id": "congo-belga-1-franco",
-    "group_label": "1 Franco",
     "publishedAt": "2026-08-05T22:52:23.735711+00:00"
-  },
-  {
-    "id": 1047,
-    "title": "2 Francos 1944",
-    "country": "Bélgica",
-    "metal": "Bronce",
-    "year": 1944,
-    "price": "6 USD",
-    "images": [
-      "images/1047A.jpeg",
-      "images/1047B.jpeg"
-    ],
-    "reference": "KM# 131",
-    "grade": "Excelente **",
-    "grade_short": "EX**",
-    "description": "Segunda Guerra Mundial. Excelente detalles",
-    "publishedAt": "2026-08-06T20:46:25.046353+00:00",
-    "costo": 0.585,
-    "status": "sold",
-    "soldAt": "2026-08-12T13:05:45.921467+00:00"
   },
   {
     "id": 1050,
@@ -11315,8 +9786,6 @@
     "grade_short": "EX",
     "description": "Post Guerra, Escasa",
     "publishedAt": "2026-08-06T20:46:25.046353+00:00",
-    "group_id": "lu-25-centimes",
-    "group_label": "25 Centimes",
     "mintage": 500,
     "costo": 0.585
   },
@@ -11397,27 +9866,6 @@
     "cantidad": 1
   },
   {
-    "id": 1058,
-    "title": "1 Pfennig 1907",
-    "country": "Alemania",
-    "metal": "Cobre",
-    "year": 1907,
-    "price": "4 USD",
-    "images": [
-      "images/1058A.jpeg",
-      "images/1058B.jpeg"
-    ],
-    "reference": "KM# 10",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "description": "",
-    "publishedAt": "2026-08-08T19:21:22.539465+00:00",
-    "costo": 2.41,
-    "cantidad": 0,
-    "status": "sold",
-    "soldAt": "2026-08-09T16:08:38.034255+00:00"
-  },
-  {
     "id": 1064,
     "title": "20 Francos 1994",
     "country": "Francia",
@@ -11474,25 +9922,6 @@
     "costo": 105.0,
     "mintage": 174014,
     "commemorates": "XXIII Juegos Olímpicos Los Ángeles 1984"
-  },
-  {
-    "id": 1069,
-    "title": "Blister 1984 Proof",
-    "country": "Alemania",
-    "metal": "Cuproníquel / Bronce",
-    "year": 1984,
-    "price": "23 USD",
-    "images": [
-      "images/1069A.jpeg",
-      "images/1069B.jpeg"
-    ],
-    "reference": "",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Ceca J, incluye 10 piezas de las cuales 3 conmemorativas.",
-    "publishedAt": "2026-08-12T12:07:51.795918+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-14T22:49:59.823707+00:00"
   },
   {
     "id": 1070,
@@ -11787,27 +10216,6 @@
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
   {
-    "id": 1108,
-    "title": "1 Dalasi 2011",
-    "country": "Gambia",
-    "metal": "Acero niquelado",
-    "year": 2011,
-    "price": "4 USD",
-    "costo": 2.5,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 59a",
-    "description": "Cocodrilo del Nilo y efigie del presidente Dawda Jawara.",
-    "images": [
-      "images/1108A.jpeg",
-      "images/1108B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
-  },
-  {
     "id": 1111,
     "title": "1 Piastra 1955",
     "country": "Líbano",
@@ -11827,135 +10235,6 @@
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
   },
   {
-    "id": 1115,
-    "title": "1 Franco 1943",
-    "country": "Mónaco",
-    "metal": "Aluminio",
-    "year": 1943,
-    "price": "4.5 USD",
-    "costo": 2.5,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 119",
-    "description": "Efigie del Príncipe Luis II de Mónaco.",
-    "images": [
-      "images/1115A.jpeg",
-      "images/1115B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-22T22:47:02.012671+00:00"
-  },
-  {
-    "id": 1117,
-    "title": "5 Francos 1945",
-    "country": "Mónaco",
-    "metal": "Aluminio",
-    "year": 1945,
-    "price": "4.5 USD",
-    "costo": 2.5,
-    "cantidad": 0,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 121",
-    "description": "Efigie del Príncipe Luis II de Mónaco.",
-    "images": [
-      "images/1117A.jpeg",
-      "images/1117B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "status": "sold",
-    "soldAt": "2026-08-22T22:47:02.012671+00:00"
-  },
-  {
-    "id": 1124,
-    "title": "5 Taka 2006",
-    "country": "Bangladés",
-    "metal": "Acero inoxidable",
-    "year": 2006,
-    "price": "4 USD",
-    "images": [
-      "images/1124A.jpeg",
-      "images/1124B.jpeg"
-    ],
-    "reference": "KM# 26.2",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Puente Jamuna (Bangabandhu Bridge).",
-    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
-    "group_id": "ba-5-taka",
-    "group_label": "5 Taka",
-    "costo": 0.0,
-    "status": "sold",
-    "soldAt": "2026-08-22T12:16:57.728157+00:00"
-  },
-  {
-    "id": 1125,
-    "title": "1 Taka 1993",
-    "country": "Bangladés",
-    "metal": "Acero inoxidable",
-    "year": 1993,
-    "price": "4 USD",
-    "images": [
-      "images/1125A.jpeg",
-      "images/1125B.jpeg"
-    ],
-    "reference": "KM# 9a",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Familia planificada - Alimentos para todos.",
-    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
-    "group_id": "ba-1-taka",
-    "group_label": "1 Taka",
-    "costo": 0.0,
-    "status": "sold",
-    "soldAt": "2026-08-21T22:58:50.733870+00:00"
-  },
-  {
-    "id": 1126,
-    "title": "5 Taka 2012",
-    "country": "Bangladés",
-    "metal": "Acero inoxidable",
-    "year": 2012,
-    "price": "3 USD",
-    "images": [
-      "images/1126A.jpeg",
-      "images/1126B.jpeg"
-    ],
-    "reference": "KM# 33",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Sheikh Mujibur Rahman / Bangladesh Bank.",
-    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
-    "group_id": "ba-5-taka",
-    "group_label": "5 Taka",
-    "costo": 0.0,
-    "status": "sold",
-    "soldAt": "2026-08-21T22:14:13.431673+00:00"
-  },
-  {
-    "id": 1127,
-    "title": "5 Poisha 1974",
-    "country": "Bangladés",
-    "metal": "Aluminio",
-    "year": 1974,
-    "price": "5 USD",
-    "images": [
-      "images/1127A.jpeg",
-      "images/1127B.jpeg"
-    ],
-    "reference": "KM# 6",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "FAO - Arado y rueda dentada / Agricultura.",
-    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
-    "costo": 2.58,
-    "mintage": 5000000,
-    "status": "sold",
-    "soldAt": "2026-08-21T22:14:13.431673+00:00"
-  },
-  {
     "id": 1128,
     "title": "10 Cents 1942",
     "country": "Países Bajos",
@@ -11972,48 +10251,6 @@
     "description": "Ocupación Alemana (Segunda Guerra Mundial) - Tres tulipanes.",
     "publishedAt": "2026-08-21T16:59:56.406985+00:00",
     "costo": 1.29
-  },
-  {
-    "id": 1129,
-    "title": "1 Taka 2010",
-    "country": "Bangladés",
-    "metal": "Acero inoxidable",
-    "year": 2010,
-    "price": "3 USD",
-    "images": [
-      "images/1129A.jpeg",
-      "images/1129B.jpeg"
-    ],
-    "reference": "KM# 32",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Sheikh Mujibur Rahman.",
-    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
-    "group_id": "ba-1-taka",
-    "group_label": "1 Taka",
-    "costo": 0.0,
-    "status": "sold",
-    "soldAt": "2026-08-21T22:14:13.431673+00:00"
-  },
-  {
-    "id": 1130,
-    "title": "1 Poisha 1974",
-    "country": "Bangladés",
-    "metal": "Aluminio",
-    "year": 1974,
-    "price": "3.5 USD",
-    "images": [
-      "images/1130A.jpeg",
-      "images/1130B.jpeg"
-    ],
-    "reference": "KM# 5",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Diseño floral ornamental.",
-    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
-    "costo": 1.94,
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 1131,
@@ -12036,67 +10273,6 @@
     "soldAt": "2026-09-14T20:49:44.664570+00:00"
   },
   {
-    "id": 1132,
-    "title": "1 Centésimo 1977",
-    "country": "Uruguay",
-    "metal": "Aluminio",
-    "year": 1977,
-    "price": "1.5 USD",
-    "images": [
-      "images/1132A.jpeg",
-      "images/1132B.jpeg"
-    ],
-    "reference": "KM# 71",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Sol de Mayo. Dodecagonal (12 lados). Ceca de Santiago (So).",
-    "publishedAt": "2026-08-21T16:59:56.406985+00:00",
-    "costo": 0.97,
-    "status": "sold",
-    "soldAt": "2026-08-27T11:51:50.374327+00:00"
-  },
-  {
-    "id": 1133,
-    "title": "1 Peso 1877",
-    "country": "Uruguay",
-    "metal": "Plata 900",
-    "year": 1877,
-    "price": "80 USD",
-    "images": [
-      "images/1133A.jpeg",
-      "images/1133B.jpeg"
-    ],
-    "reference": "KM# 17",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "description": "Peso de plata de los inicios de la República Oriental del Uruguay.",
-    "publishedAt": "2026-08-21T23:03:10.808412+00:00",
-    "costo": 70.0,
-    "mintage": 3000000,
-    "status": "sold",
-    "soldAt": "2026-08-27T21:13:11.570728+00:00"
-  },
-  {
-    "id": 1134,
-    "title": "Lote x3 Euro 2017-2025",
-    "country": "Bélgica",
-    "metal": "Varios",
-    "year": 2025,
-    "price": "3 USD",
-    "images": [
-      "images/1134A.jpeg",
-      "images/1134B.jpeg"
-    ],
-    "reference": "KM# 342, 343, 344",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Lote de 3 piezas de euro (5, 10 y 20 Céntimos) del Rey Felipe con monograma real.",
-    "publishedAt": "2026-08-22T01:12:55.339717+00:00",
-    "costo": 0.42,
-    "status": "sold",
-    "soldAt": "2026-08-27T11:54:32.282055+00:00"
-  },
-  {
     "id": 1135,
     "title": "5 Chetrums 1975",
     "country": "Bután",
@@ -12115,28 +10291,6 @@
     "costo": 1.19,
     "status": "sold",
     "soldAt": "2026-09-16T15:29:06.327489+00:00"
-  },
-  {
-    "id": 1136,
-    "title": "1 Deutsche Mark 1959 D",
-    "country": "Alemania",
-    "metal": "Cuproníquel",
-    "year": 1959,
-    "price": "2 USD",
-    "images": [
-      "images/1136A.jpeg",
-      "images/1136B.jpeg"
-    ],
-    "reference": "KM# 110",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "description": "1 Marco alemán de la República Federal de Alemania, acuñado en la ceca D (Múnich).",
-    "publishedAt": "2026-08-22T01:12:55.339717+00:00",
-    "group_id": "de-1-deutsche-mark",
-    "group_label": "1 Deutsche Mark",
-    "costo": 0.0,
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 1137,
@@ -12272,26 +10426,6 @@
     "costo": 0.0
   },
   {
-    "id": 1144,
-    "title": "25 Poisha 1973",
-    "country": "Bangladesh",
-    "metal": "Acero inoxidable",
-    "year": 1973,
-    "price": "2.5 USD",
-    "images": [
-      "images/1144A.jpeg",
-      "images/1144B.jpeg"
-    ],
-    "reference": "KM# 3",
-    "grade": "Bueno +",
-    "grade_short": "B+",
-    "description": "25 Poisha con el pez nacional Hilsha (Rupchanda) y el emblema del lirio de agua (Shapla).",
-    "publishedAt": "2026-08-22T01:12:55.339717+00:00",
-    "costo": 0.0,
-    "status": "sold",
-    "soldAt": "2026-08-30T22:30:21.325459+00:00"
-  },
-  {
     "id": 1145,
     "title": "100 Lei 1991",
     "country": "Rumania",
@@ -12326,48 +10460,6 @@
     "description": "5 Fen de la República Popular China con espigas de arroz y el escudo nacional en la Puerta de Tiananmen.",
     "publishedAt": "2026-08-22T01:12:55.339717+00:00",
     "costo": 0.0
-  },
-  {
-    "id": 1147,
-    "title": "20 Francos 1994",
-    "country": "Francia",
-    "metal": "Trimetálica",
-    "year": 1994,
-    "price": "7.5 USD",
-    "images": [
-      "images/1147A.jpeg",
-      "images/1147B.jpeg"
-    ],
-    "reference": "KM# 1036",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Centenario del Comité Olímpico Internacional (Pierre de Coubertin)",
-    "publishedAt": "2026-08-22T16:00:34.563299+00:00",
-    "costo": 4.52,
-    "cantidad": 0,
-    "status": "sold",
-    "soldAt": "2026-08-23T02:54:16.458662+00:00"
-  },
-  {
-    "id": 1148,
-    "title": "1 Franco 1992",
-    "country": "Francia",
-    "metal": "Níquel",
-    "year": 1992,
-    "price": "4 USD",
-    "images": [
-      "images/1148A.jpeg",
-      "images/1148B.jpeg"
-    ],
-    "reference": "KM# 1004.1",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Bicentenario de la Primera República Francesa",
-    "publishedAt": "2026-08-22T16:00:34.563299+00:00",
-    "costo": 1.94,
-    "cantidad": 0,
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
   },
   {
     "id": 1151,
@@ -12426,28 +10518,6 @@
     "group_label": "5 Deutsche Mark",
     "costo": 7.37,
     "mintage": "4.050.000"
-  },
-  {
-    "id": 1157,
-    "title": "5 Deutsche Mark 1951",
-    "country": "Alemania",
-    "metal": "Plata .625",
-    "year": 1951,
-    "price": "18 USD",
-    "images": [
-      "images/1157A.jpeg",
-      "images/1157B.jpeg"
-    ],
-    "reference": "KM# 112.1",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "description": "",
-    "publishedAt": "2026-08-22T22:27:19.165116+00:00",
-    "group_id": "de-5-deutsche-mark",
-    "group_label": "5 Deutsche Mark",
-    "costo": 7.37,
-    "status": "sold",
-    "soldAt": "2026-08-26T01:45:31.965247+00:00"
   },
   {
     "id": 1158,
@@ -12560,124 +10630,6 @@
     "soldAt": "2026-09-03T00:47:57.023146+00:00"
   },
   {
-    "id": 1164,
-    "title": "2 Euro 2022 Jacques Chirac",
-    "country": "Francia",
-    "metal": "Bimetálica (centro de níquel-latón en anillo de cuproníquel)",
-    "year": 2022,
-    "price": "6.5 USD",
-    "images": [
-      "images/1164A.jpeg",
-      "images/1164B.jpeg"
-    ],
-    "reference": "KM# 3154",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "commemorates": "90.° Aniversario de Jacques Chirac (1932-2019)",
-    "description": "90.° aniversario del nacimiento del expresidente de la República Francesa Jacques Chirac (1932-2019).",
-    "publishedAt": "2026-08-26T15:37:44.118614+00:00",
-    "costo": 3.22,
-    "status": "sold",
-    "soldAt": "2026-08-27T16:16:01.211443-03:00"
-  },
-  {
-    "id": 1165,
-    "title": "2 Euro 2022 Jacques Chirac",
-    "country": "Francia",
-    "metal": "Bimetálica (centro de níquel-latón en anillo de cuproníquel)",
-    "year": 2022,
-    "price": "3.5 USD",
-    "images": [
-      "images/1165A.jpeg",
-      "images/1165B.jpeg"
-    ],
-    "reference": "KM# 3066",
-    "grade": "Excelente +",
-    "grade_short": "EX+",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "90.° aniversario del nacimiento del expresidente de la República Francesa Jacques Chirac (1932-2019).",
-    "publishedAt": "2026-08-26T22:25:37.770885+00:00",
-    "costo": 2.2,
-    "commemorates": "90.° Aniversario de Jacques Chirac (1932-2019)",
-    "status": "sold",
-    "soldAt": "2026-08-27T12:53:13.650342+00:00"
-  },
-  {
-    "id": 1166,
-    "title": "20 Euro Cent 2024 Josephine Baker",
-    "country": "Francia",
-    "metal": "Oro Nórdico (Latón)",
-    "year": 2024,
-    "price": "1.5 USD",
-    "images": [
-      "images/1166A.jpeg",
-      "images/1166B.jpeg"
-    ],
-    "reference": "KM# 3324",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Emisión conmemorativa dedicada a Josephine Baker.",
-    "publishedAt": "2026-08-26T22:25:37.770885+00:00",
-    "costo": 0.24,
-    "commemorates": "Josephine Baker",
-    "status": "sold",
-    "soldAt": "2026-08-27T12:52:42.083142+00:00"
-  },
-  {
-    "id": 1167,
-    "title": "20 Euro Cent 2023",
-    "country": "Bélgica",
-    "metal": "Oro Nórdico (Latón)",
-    "year": 2023,
-    "price": "1.5 USD",
-    "images": [
-      "images/1167A.jpeg",
-      "images/1167B.jpeg"
-    ],
-    "reference": "KM# 335",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Efigie del rey Felipe (Philippe) de Bélgica.",
-    "publishedAt": "2026-08-26T22:25:37.770885+00:00",
-    "costo": 0.24,
-    "status": "sold",
-    "soldAt": "2026-08-27T12:52:20.720464+00:00"
-  },
-  {
-    "id": 1168,
-    "title": "50 Euro Cent 2016",
-    "country": "Bélgica",
-    "metal": "Oro Nórdico (Latón)",
-    "year": 2016,
-    "price": "1.5 USD",
-    "images": [
-      "images/1168A.jpeg",
-      "images/1168B.jpeg"
-    ],
-    "reference": "KM# 336",
-    "grade": "Excelente +",
-    "grade_short": "EX+",
-    "mintage": 2000000,
-    "peso": "",
-    "diametro": "",
-    "description": "Efigie del rey Felipe (Philippe) de Bélgica.",
-    "publishedAt": "2026-08-26T22:25:37.770885+00:00",
-    "costo": 0.6,
-    "status": "sold",
-    "soldAt": "2026-08-27T12:53:00.559652+00:00"
-  },
-  {
     "id": 1169,
     "title": "5 Euro Cent 1999",
     "country": "Bélgica",
@@ -12701,125 +10653,6 @@
     "soldAt": "2026-09-03T00:47:57.023146+00:00"
   },
   {
-    "id": 1170,
-    "title": "2 Euro 2020",
-    "country": "Francia",
-    "metal": "Bimetálica (centro de níquel-latón en anillo de cuproníquel)",
-    "year": 2020,
-    "price": "3.5 USD",
-    "images": [
-      "images/1170A.jpeg",
-      "images/1170B.jpeg"
-    ],
-    "reference": "KM# 1414",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Árbol de Joaquín Jiménez (\"L'arbre étoilé\") en hexágono.",
-    "publishedAt": "2026-08-26T22:25:37.770885+00:00",
-    "group_id": "fr-2euro",
-    "group_label": "2 Euro",
-    "costo": 2.2,
-    "status": "sold",
-    "soldAt": "2026-08-27T19:18:55.830560+00:00"
-  },
-  {
-    "id": 1171,
-    "title": "100 Francs CFA 1967",
-    "country": "Estados del África Occidental",
-    "metal": "Níquel",
-    "year": 1967,
-    "price": "2.5 USD",
-    "images": [
-      "images/1171A.jpeg",
-      "images/1171B.jpeg"
-    ],
-    "reference": "KM# 4",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Primer año de emisión.",
-    "publishedAt": "2026-08-26T22:58:42.644435+00:00",
-    "costo": 0.55,
-    "status": "sold",
-    "soldAt": "2026-08-27T12:53:32.799152+00:00"
-  },
-  {
-    "id": 1172,
-    "title": "1 Duit 1790",
-    "country": "Indias Orientales Neerlandesas",
-    "metal": "Cobre",
-    "year": 1790,
-    "price": "10 USD",
-    "images": [
-      "images/1172A.jpeg",
-      "images/1172B.jpeg"
-    ],
-    "reference": "KM# 111",
-    "grade": "Bueno +",
-    "grade_short": "B+",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Monograma VOC de la Compañía Neerlandesa de las Indias Orientales. Escudo de armas de Holanda.",
-    "publishedAt": "2026-08-26T22:58:42.644435+00:00",
-    "costo": 6.0,
-    "status": "sold",
-    "soldAt": "2026-08-27T12:56:41.831040+00:00"
-  },
-  {
-    "id": 1173,
-    "title": "1 Gulden 1980",
-    "country": "Países Bajos",
-    "metal": "Níquel",
-    "year": 1980,
-    "price": "3 USD",
-    "images": [
-      "images/1173A.jpeg",
-      "images/1173B.jpeg"
-    ],
-    "reference": "KM# 200",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Conmemorativa del cambio de trono (30 de abril de 1980). Doble efigie de Juliana y Beatriz.",
-    "publishedAt": "2026-08-26T22:58:42.644435+00:00",
-    "costo": 0.77,
-    "cantidad": 0,
-    "commemorates": "Doble efigie de la reina Juliana y la reina Beatriz (Cambio de trono, 30 de abril de 1980).",
-    "status": "sold",
-    "soldAt": "2026-08-30T00:03:22.889190+00:00"
-  },
-  {
-    "id": 1174,
-    "title": "1 Centime 1797 Dupré",
-    "country": "Francia",
-    "metal": "Cobre",
-    "year": 1797,
-    "price": "20 USD",
-    "images": [
-      "images/1174A.jpeg",
-      "images/1174B.jpeg"
-    ],
-    "reference": "KM# 646",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "L'An 6 (1797-1798), ceca A (París). Grabado por Augustin Dupré con busto de la Libertad.",
-    "publishedAt": "2026-08-26T22:58:42.644435+00:00",
-    "costo": 0.0,
-    "status": "sold",
-    "soldAt": "2026-08-27T12:56:57.880060+00:00"
-  },
-  {
     "id": 1175,
     "title": "4 Skilling 1854",
     "country": "Dinamarca",
@@ -12839,54 +10672,6 @@
     "description": "Federico VII. 32 USD de catálogo.",
     "publishedAt": "2026-08-26T22:58:42.644435+00:00",
     "costo": 0.0
-  },
-  {
-    "id": 1176,
-    "title": "50 Pence 2005 Johnson's Dictionary",
-    "country": "Reino Unido",
-    "metal": "Cuproníquel",
-    "year": 2005,
-    "price": "3 USD",
-    "images": [
-      "images/1176A.jpeg",
-      "images/1176B.jpeg"
-    ],
-    "reference": "KM# 1050",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Conmemorativa del 250.° aniversario del Diccionario de Samuel Johnson (1755). Entrada 'FIFTY PENCE'.",
-    "publishedAt": "2026-08-26T23:01:53.314486+00:00",
-    "costo": 1.0,
-    "commemorates": "250.° Aniversario del Diccionario de la Lengua Inglesa de Samuel Johnson (1755).",
-    "status": "sold",
-    "soldAt": "2026-08-27T12:56:14.048734+00:00"
-  },
-  {
-    "id": 1177,
-    "title": "50 Pence 2022 50 Years of Pride UK",
-    "country": "Reino Unido",
-    "metal": "Cuproníquel",
-    "year": 2022,
-    "price": "4 USD",
-    "images": [
-      "images/1177A.jpeg",
-      "images/1177B.jpeg"
-    ],
-    "reference": "KM# 2158",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": 5000000,
-    "peso": "",
-    "diametro": "",
-    "description": "Conmemorativa de los 50 años del movimiento Pride en el Reino Unido (1972-2022). Palabras 'Protest', 'Unity', 'Pride', 'Equality' y 'Visibility'.",
-    "publishedAt": "2026-08-26T23:01:53.314486+00:00",
-    "costo": 1.0,
-    "commemorates": "50.° Aniversario del movimiento Pride en el Reino Unido (1972-2022).",
-    "status": "sold",
-    "soldAt": "2026-09-02T21:15:35.809756+00:00"
   },
   {
     "id": 1178,
@@ -12955,30 +10740,6 @@
     "costo": 6.0,
     "cantidad": 3,
     "commemorates": "80° Aniversario del nacimiento de la Reina Madre (1900-1980)."
-  },
-  {
-    "id": 1181,
-    "title": "5 Shillings 1966",
-    "country": "Jersey",
-    "metal": "Cuproníquel",
-    "year": 1966,
-    "price": "12 USD",
-    "images": [
-      "images/1181A.jpeg",
-      "images/1181B.jpeg"
-    ],
-    "reference": "KM# 28",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "peso": "28.47 g",
-    "diametro": "38.61 mm",
-    "description": "Conmemorativa del 900° aniversario de la Batalla de Hastings (1066-1966).",
-    "publishedAt": "2026-08-26T23:47:29.444774+00:00",
-    "costo": 6.0,
-    "cantidad": 0,
-    "commemorates": "900° Aniversario de la Batalla de Hastings (1066-1966).",
-    "status": "sold",
-    "soldAt": "2026-08-27T12:59:28.931029+00:00"
   },
   {
     "id": 1182,
@@ -13142,31 +10903,6 @@
     "group_label": "1 Crown (Castillo)"
   },
   {
-    "id": 1189,
-    "title": "1 Crown 1979",
-    "country": "Gibraltar",
-    "metal": "Cuproníquel",
-    "year": 1979,
-    "price": "12 USD",
-    "images": [
-      "images/1189A.jpeg",
-      "images/1189B.jpeg"
-    ],
-    "reference": "KM# 14",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "",
-    "costo": 6.0,
-    "cantidad": 0,
-    "publishedAt": "2026-08-26T23:55:34.420385+00:00",
-    "commemorates": "Boda Real",
-    "status": "sold",
-    "soldAt": "2026-08-27T13:52:48.952589+00:00"
-  },
-  {
     "id": 1190,
     "title": "1 Crown 1991",
     "country": "Gibraltar",
@@ -13211,31 +10947,6 @@
     "cantidad": 1,
     "publishedAt": "2026-08-26T23:55:34.420385+00:00",
     "commemorates": "80° Cumpleaños de la Reina Madre"
-  },
-  {
-    "id": 1192,
-    "title": "50 Pence 1998",
-    "country": "Islas Malvinas",
-    "metal": "Plata .925",
-    "year": 1998,
-    "price": "120 USD",
-    "images": [
-      "images/1192A.jpeg",
-      "images/1192B.jpeg"
-    ],
-    "reference": "KM# 60a",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "",
-    "costo": 6.0,
-    "cantidad": 0,
-    "publishedAt": "2026-08-26T23:55:34.420385+00:00",
-    "commemorates": "Delfín de Peale (WWF Silver Proof)",
-    "status": "sold",
-    "soldAt": "2026-08-30T15:22:13.347338+00:00"
   },
   {
     "id": 1193,
@@ -13572,29 +11283,6 @@
     "costo": 0.06
   },
   {
-    "id": 1207,
-    "title": "2 Pence 2015",
-    "country": "Reino Unido",
-    "metal": "Acero cobreado",
-    "year": 2015,
-    "price": "1 USD",
-    "images": [
-      "images/1207A.jpeg",
-      "images/1207B.jpeg"
-    ],
-    "reference": "KM# 1108",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": 1721,
-    "peso": "",
-    "diametro": "",
-    "description": "",
-    "publishedAt": "2026-08-27T12:42:23.460889+00:00",
-    "costo": 0.02,
-    "status": "sold",
-    "soldAt": "2026-09-02T21:15:35.809756+00:00"
-  },
-  {
     "id": 1208,
     "title": "10 Pence 2012",
     "country": "Reino Unido",
@@ -13613,85 +11301,7 @@
     "diametro": "",
     "description": "",
     "publishedAt": "2026-08-27T12:48:26.617250+00:00",
-    "group_id": "uk-10-pence",
-    "group_label": "10 Pence",
     "costo": 0.12
-  },
-  {
-    "id": 1209,
-    "title": "10 Pence 2015",
-    "country": "Reino Unido",
-    "metal": "Acero",
-    "year": 2015,
-    "price": "1.5 USD",
-    "images": [
-      "images/1209A.jpeg",
-      "images/1209B.jpeg"
-    ],
-    "reference": "KM# 1110d",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "",
-    "publishedAt": "2026-08-27T12:48:26.617250+00:00",
-    "group_id": "uk-10-pence",
-    "group_label": "10 Pence",
-    "costo": 0.12,
-    "status": "sold",
-    "soldAt": "2026-09-02T21:15:35.809756+00:00"
-  },
-  {
-    "id": 1210,
-    "title": "50 Pence 2014",
-    "country": "Reino Unido",
-    "metal": "Cuproníquel",
-    "year": 2014,
-    "price": "2 USD",
-    "images": [
-      "images/1210A.jpeg",
-      "images/1210B.jpeg"
-    ],
-    "reference": "KM# 1112",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "",
-    "publishedAt": "2026-08-27T12:51:37.996464+00:00",
-    "group_id": "uk-50pence",
-    "group_label": "50 Pence",
-    "costo": 0.6,
-    "status": "sold",
-    "soldAt": "2026-08-28T17:02:01.026033+00:00"
-  },
-  {
-    "id": 1211,
-    "title": "50 Pence 2019",
-    "country": "Reino Unido",
-    "metal": "Cuproníquel",
-    "year": 2019,
-    "price": "2 USD",
-    "images": [
-      "images/1211A.jpeg",
-      "images/1211B.jpeg"
-    ],
-    "reference": "KM# 1337",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "",
-    "publishedAt": "2026-08-27T12:51:37.996464+00:00",
-    "group_id": "uk-50pence",
-    "group_label": "50 Pence",
-    "costo": 0.6,
-    "cantidad": 0,
-    "status": "sold",
-    "soldAt": "2026-08-28T17:01:49.439117+00:00"
   },
   {
     "id": 1212,
@@ -13712,8 +11322,6 @@
     "diametro": "",
     "description": "",
     "publishedAt": "2026-08-27T12:51:37.996464+00:00",
-    "group_id": "uk-50pence",
-    "group_label": "50 Pence",
     "costo": 0.6,
     "status": "sold",
     "soldAt": "2026-09-03T01:27:03.159859+00:00"
@@ -13815,82 +11423,6 @@
     "cantidad": 1
   },
   {
-    "id": 1217,
-    "title": "5 Pence 2023",
-    "country": "Reino Unido",
-    "metal": "Acero",
-    "year": 2023,
-    "price": "1.5 USD",
-    "images": [
-      "images/1217A.jpeg",
-      "images/1217B.jpeg"
-    ],
-    "reference": "KM# 2436",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "",
-    "publishedAt": "2026-08-27T14:13:28.180164+00:00",
-    "group_id": "uk-5pence",
-    "group_label": "5 Pence",
-    "costo": 0.06,
-    "cantidad": 0,
-    "status": "sold",
-    "soldAt": "2026-08-29T22:15:42.762622+00:00"
-  },
-  {
-    "id": 1218,
-    "title": "2 Centavos 1883",
-    "country": "Argentina",
-    "metal": "Bronce",
-    "year": 1883,
-    "price": "8 USD",
-    "images": [
-      "images/1218A.jpeg",
-      "images/1218B.jpeg"
-    ],
-    "reference": "KM# 33",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": 1389000,
-    "peso": "10",
-    "diametro": "30",
-    "description": "",
-    "publishedAt": "2026-08-28T15:59:17.255874+00:00",
-    "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón",
-    "costo": 0.0,
-    "status": "sold",
-    "soldAt": "2026-08-28T16:57:44.386235+00:00"
-  },
-  {
-    "id": 1219,
-    "title": "2 Centavos 1884",
-    "country": "Argentina",
-    "metal": "Bronce",
-    "year": 1884,
-    "price": "3 USD",
-    "images": [
-      "images/1219A.jpeg",
-      "images/1219B.jpeg"
-    ],
-    "reference": "KM# 33",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": 5667000,
-    "peso": "10",
-    "diametro": "30",
-    "description": "",
-    "publishedAt": "2026-08-28T15:59:17.255874+00:00",
-    "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón",
-    "costo": 0.0,
-    "status": "sold",
-    "soldAt": "2026-08-28T16:58:05.350708+00:00"
-  },
-  {
     "id": 1220,
     "title": "2 Centavos 1885",
     "country": "Argentina",
@@ -13935,31 +11467,6 @@
     "costo": 0.0
   },
   {
-    "id": 1222,
-    "title": "2 Centavos 1890",
-    "country": "Argentina",
-    "metal": "Bronce",
-    "year": 1890,
-    "price": "2 USD",
-    "images": [
-      "images/1222A.jpeg",
-      "images/1222B.jpeg"
-    ],
-    "reference": "KM# 33",
-    "grade": "Muy Bueno -",
-    "grade_short": "MB-",
-    "mintage": 3609000,
-    "peso": "10",
-    "diametro": "30",
-    "description": "",
-    "publishedAt": "2026-08-28T15:59:17.255874+00:00",
-    "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón",
-    "costo": 0.0,
-    "status": "sold",
-    "soldAt": "2026-08-28T16:59:13.053920+00:00"
-  },
-  {
     "id": 1223,
     "title": "2 Centavos 1891",
     "country": "Argentina",
@@ -13985,56 +11492,6 @@
     "soldAt": "2026-09-11T13:19:22.276362+00:00"
   },
   {
-    "id": 1224,
-    "title": "2 Centavos 1892",
-    "country": "Argentina",
-    "metal": "Bronce",
-    "year": 1892,
-    "price": "3 USD",
-    "images": [
-      "images/1224A.jpeg",
-      "images/1224B.jpeg"
-    ],
-    "reference": "KM# 33",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": 3497000,
-    "peso": "10",
-    "diametro": "30",
-    "description": "",
-    "publishedAt": "2026-08-28T15:59:17.255874+00:00",
-    "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón",
-    "costo": 0.0,
-    "status": "sold",
-    "soldAt": "2026-08-28T16:59:26.961449+00:00"
-  },
-  {
-    "id": 1225,
-    "title": "2 Centavos 1893",
-    "country": "Argentina",
-    "metal": "Bronce",
-    "year": 1893,
-    "price": "3 USD",
-    "images": [
-      "images/1225A.jpeg",
-      "images/1225B.jpeg"
-    ],
-    "reference": "KM# 33",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": 5473000,
-    "peso": "10",
-    "diametro": "30",
-    "description": "",
-    "publishedAt": "2026-08-28T15:59:17.255874+00:00",
-    "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón",
-    "costo": 0.0,
-    "status": "sold",
-    "soldAt": "2026-08-28T16:59:47.932289+00:00"
-  },
-  {
     "id": 1227,
     "title": "10 Yuan 2018 Año del Perro",
     "country": "China",
@@ -14054,75 +11511,6 @@
     "description": "Zodíaco Chino - Año del Perro. Bimetálica con centro de cuproníquel y anillo de latón.",
     "publishedAt": "2026-08-28T23:32:35.616834+00:00",
     "costo": 4.0
-  },
-  {
-    "id": 1228,
-    "title": "10 Yuan 2025 Año de la Serpiente",
-    "country": "China",
-    "metal": "Bimetálica",
-    "year": 2025,
-    "price": "5 USD",
-    "images": [
-      "images/1228A.jpeg",
-      "images/1228B.jpeg"
-    ],
-    "reference": "",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": "9.2",
-    "diametro": "27",
-    "description": "Zodíaco Chino - Año de la Serpiente. Bimetálica con centro de cuproníquel y anillo cobreado.",
-    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
-    "costo": 4.0,
-    "status": "sold",
-    "soldAt": "2026-08-29T20:01:52.168559+00:00"
-  },
-  {
-    "id": 1229,
-    "title": "20 Rupees 2021 Censo de Población",
-    "country": "Sri Lanka",
-    "metal": "Acero niquelado",
-    "year": 2021,
-    "price": "5 USD",
-    "images": [
-      "images/1229A.jpeg",
-      "images/1229B.jpeg"
-    ],
-    "reference": "KM# 229",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": 2000000,
-    "peso": "8.59",
-    "diametro": "28",
-    "description": "150° Aniversario del Censo de Población y Viviendas (1871-2021). Forma heptagonal de Reuleaux (7 lados).",
-    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
-    "costo": 3.22,
-    "status": "sold",
-    "soldAt": "2026-08-29T20:03:58.884973+00:00"
-  },
-  {
-    "id": 1230,
-    "title": "20 Rupees 2020 Facultad de Medicina",
-    "country": "Sri Lanka",
-    "metal": "Acero niquelado",
-    "year": 2020,
-    "price": "5 USD",
-    "images": [
-      "images/1230A.jpeg",
-      "images/1230B.jpeg"
-    ],
-    "reference": "KM# 228",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": 500000,
-    "peso": "8.59",
-    "diametro": "28",
-    "description": "150° Aniversario de la Facultad de Medicina de Colombo (1870-2020). Forma heptagonal de Reuleaux (7 lados).",
-    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
-    "costo": 3.22,
-    "status": "sold",
-    "soldAt": "2026-08-29T20:01:52.168559+00:00"
   },
   {
     "id": 1231,
@@ -14145,52 +11533,6 @@
     "publishedAt": "2026-08-28T23:32:35.616834+00:00",
     "costo": 3.22,
     "cantidad": 1
-  },
-  {
-    "id": 1232,
-    "title": "5 Yuan 2022 Juegos Olímpicos Invierno (Hielo)",
-    "country": "China",
-    "metal": "Latón",
-    "year": 2022,
-    "price": "4 USD",
-    "images": [
-      "images/1232A.jpeg",
-      "images/1232B.jpeg"
-    ],
-    "reference": "Sun# J120",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": "13.1",
-    "diametro": "30",
-    "description": "XXIV Juegos Olímpicos de Invierno Beijing 2022 - Deportes sobre hielo (Patinaje de velocidad en pista corta).",
-    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
-    "costo": 3.0,
-    "status": "sold",
-    "soldAt": "2026-08-29T20:01:52.168559+00:00"
-  },
-  {
-    "id": 1233,
-    "title": "5 Yuan 2022 Juegos Olímpicos Invierno (Nieve)",
-    "country": "China",
-    "metal": "Latón",
-    "year": 2022,
-    "price": "5 USD",
-    "images": [
-      "images/1233A.jpeg",
-      "images/1233B.jpeg"
-    ],
-    "reference": "Sun# J121",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": "13.1",
-    "diametro": "30",
-    "description": "XXIV Juegos Olímpicos de Invierno Beijing 2022 - Deportes de nieve (Esquí alpino, coloreada).",
-    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
-    "costo": 3.5,
-    "status": "sold",
-    "soldAt": "2026-08-29T20:01:52.168559+00:00"
   },
   {
     "id": 1234,
@@ -14237,29 +11579,6 @@
     "cantidad": 7
   },
   {
-    "id": 1236,
-    "title": "1 Dólar 2025 Corte Suprema (Coloreada)",
-    "country": "Canadá",
-    "metal": "Acero bañado en latón",
-    "year": 2025,
-    "price": "4 USD",
-    "images": [
-      "images/1236A.jpeg",
-      "images/1236B.jpeg"
-    ],
-    "reference": "KM# 3576a",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": 2000000,
-    "peso": "6.27",
-    "diametro": "26.5",
-    "description": "150° Aniversario de la creación de la Corte Suprema de Canadá (1875-2025). Versión conmemorativa coloreada con el emblema oficial en rojo.",
-    "publishedAt": "2026-08-29T20:36:29.307537+00:00",
-    "costo": 2.5,
-    "status": "sold",
-    "soldAt": "2026-08-29T22:21:27.084568+00:00"
-  },
-  {
     "id": 1237,
     "title": "5 Cents 1967 Centenario de la Confederación",
     "country": "Canadá",
@@ -14304,29 +11623,6 @@
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
     "costo": 1.93,
     "cantidad": 1
-  },
-  {
-    "id": 1239,
-    "title": "10 Rupees 2018 Cuerpo de Señales",
-    "country": "Sri Lanka",
-    "metal": "Acero inoxidable",
-    "year": 2018,
-    "price": "4.5 USD",
-    "images": [
-      "images/1239A.jpeg",
-      "images/1239B.jpeg"
-    ],
-    "reference": "KM# 222",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": 2000000,
-    "peso": "6.43",
-    "diametro": "26.4",
-    "description": "75° Aniversario del Cuerpo de Señales de Sri Lanka (Sri Lanka Signal Corps, 1943-2018). Emblema militar y valor facial.",
-    "publishedAt": "2026-08-29T20:36:29.307537+00:00",
-    "costo": 2.89,
-    "status": "sold",
-    "soldAt": "2026-08-29T22:21:27.084568+00:00"
   },
   {
     "id": 1240,
@@ -14599,30 +11895,6 @@
     "diametro": "26.5",
     "status": "sold",
     "soldAt": "2026-09-14T20:46:07.741099+00:00"
-  },
-  {
-    "id": 1252,
-    "title": "5 Francos 1989 Torre Eiffel",
-    "country": "Francia",
-    "metal": "Cuproníquel bañado en níquel",
-    "year": 1989,
-    "price": "5 USD",
-    "images": [
-      "images/1252A.jpeg",
-      "images/1252B.jpeg"
-    ],
-    "reference": "KM# 968",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Centenario de la Torre Eiffel (1889-1989). Diseño de Frédéric Joubert.",
-    "publishedAt": "2026-08-30T02:44:10.961879+00:00",
-    "costo": 2.58,
-    "cantidad": 0,
-    "mintage": "",
-    "peso": "10",
-    "diametro": "29",
-    "status": "sold",
-    "soldAt": "2026-09-02T21:15:35.809756+00:00"
   },
   {
     "id": 1253,
@@ -14909,57 +12181,6 @@
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
     "costo": 0.86,
     "cantidad": 8
-  },
-  {
-    "id": 1266,
-    "title": "2 1/2 Pesos 1880",
-    "country": "Argentina",
-    "metal": "Plata",
-    "year": 1880,
-    "price": "150 USD",
-    "images": [
-      "images/1266A.jpeg",
-      "images/1266B.jpeg"
-    ],
-    "reference": "CJ# 32.1",
-    "grade": "",
-    "grade_short": "",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Fue catalogada por Cunietti-Ferrando como ensayo. Se conocen muy pocos ejemplares similares, la mayoría subastados en Estados Unidos. Estas pruebas habrían sido encargadas en 1880 a la Monnaie de París, punzonadas con el dígito 0 por Eugène Oudiné.",
-    "publishedAt": "2026-08-31T17:25:25.983346+00:00",
-    "group_id": "ar-2-1-2-pesos",
-    "group_label": "2 1/2 Pesos",
-    "costo": 110.0,
-    "cantidad": 0,
-    "status": "sold",
-    "soldAt": "2026-08-31T18:34:11.195423+00:00"
-  },
-  {
-    "id": 1267,
-    "title": "2 1/2 Pesos 1880",
-    "country": "Argentina",
-    "metal": "Bronce",
-    "year": 1880,
-    "price": "60 USD",
-    "images": [
-      "images/1267A.jpeg",
-      "images/1267B.jpeg"
-    ],
-    "reference": "CJ# 32.2",
-    "grade": "",
-    "grade_short": "",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Fue catalogada por Cunietti-Ferrando como ensayo. Se conocen muy pocos ejemplares similares, la mayoría subastados en Estados Unidos. Estas pruebas habrían sido encargadas en 1880 a la Monnaie de París, punzonadas con el dígito 0 por Eugène Oudiné.",
-    "publishedAt": "2026-08-31T17:25:25.983346+00:00",
-    "group_id": "ar-2-1-2-pesos",
-    "group_label": "2 1/2 Pesos",
-    "costo": 40.0,
-    "status": "sold",
-    "soldAt": "2026-08-31T18:34:29.993863+00:00"
   },
   {
     "id": 1268,
