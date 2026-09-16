@@ -12248,7 +12248,7 @@
     "description": "",
     "publishedAt": "2026-09-02T20:37:19.124704+00:00",
     "costo": 2.27,
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 1271,
@@ -15596,7 +15596,9 @@
     "publishedAt": "2026-09-16T18:08:43.498110+00:00",
     "group_id": "ar-10centavos-patacon",
     "group_label": "10 Centavos Patacón",
-    "costo": 16.03
+    "costo": 16.03,
+    "status": "sold",
+    "soldAt": "2026-09-16T23:40:23.346719+00:00"
   },
   {
     "id": 1409,
@@ -15659,7 +15661,9 @@
     "diametro": "25",
     "description": "",
     "publishedAt": "2026-09-16T18:08:43.498110+00:00",
-    "costo": 3.21
+    "costo": 3.21,
+    "status": "sold",
+    "soldAt": "2026-09-16T23:40:23.346719+00:00"
   },
   {
     "id": 1412,
@@ -15702,7 +15706,7 @@
     "description": "Independencia",
     "publishedAt": "2026-09-16T18:08:43.498110+00:00",
     "costo": 0.64,
-    "cantidad": 20,
+    "cantidad": 18,
     "commemorates": "Independencia"
   },
   {
@@ -15831,7 +15835,9 @@
     "diametro": "",
     "description": "Régimen de Vichy",
     "publishedAt": "2026-09-16T22:27:24.503373+00:00",
-    "costo": 0.01
+    "costo": 0.01,
+    "status": "sold",
+    "soldAt": "2026-09-16T23:40:23.346719+00:00"
   },
   {
     "id": 1420,
@@ -15915,7 +15921,9 @@
     "diametro": "",
     "description": "",
     "publishedAt": "2026-09-16T22:30:04.665033+00:00",
-    "costo": 0.01
+    "costo": 0.01,
+    "status": "sold",
+    "soldAt": "2026-09-16T23:40:23.346719+00:00"
   },
   {
     "id": 1424,
