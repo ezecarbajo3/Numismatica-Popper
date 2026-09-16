@@ -9803,7 +9803,7 @@
     "reference": "KM# 97",
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "description": "",
+    "description": "Alemania Nazi",
     "publishedAt": "2026-08-08T19:21:22.539465+00:00",
     "costo": 2.41,
     "cantidad": 3
@@ -13217,7 +13217,7 @@
     "mintage": 2000000,
     "peso": "2.5",
     "diametro": "20",
-    "description": "",
+    "description": "Alto valor de catalogo!",
     "publishedAt": "2026-09-04T21:30:17.199615+00:00",
     "costo": 6.46,
     "cantidad": 1
@@ -15501,7 +15501,7 @@
       "images/1404A.jpeg",
       "images/1404B.jpeg"
     ],
-    "reference": "CJ# 326-328",
+    "reference": "CJ# 327",
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": "",
@@ -15514,20 +15514,20 @@
   },
   {
     "id": 1405,
-    "title": "1/2 Dolar 1959",
+    "title": "1/4 Dolar 1959",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Plata .900",
     "year": 1959,
     "price": "14 USD",
     "images": [
       "images/1405A.jpeg",
       "images/1405B.jpeg"
     ],
-    "reference": "",
+    "reference": "KM# 164",
     "grade": "Sin Circular -",
     "grade_short": "SC-",
     "mintage": "",
-    "peso": "",
+    "peso": "6.25",
     "diametro": "",
     "description": "Ceca D",
     "publishedAt": "2026-09-16T18:08:43.498110+00:00",
@@ -15537,18 +15537,18 @@
     "id": 1406,
     "title": "Shilling 1897",
     "country": "Sudáfrica",
-    "metal": "Cuproníquel",
+    "metal": "Plata .925",
     "year": 1897,
     "price": "30 USD",
     "images": [
       "images/1406A.jpeg",
       "images/1406B.jpeg"
     ],
-    "reference": "",
+    "reference": "KM# 5",
     "grade": "Excelente -",
     "grade_short": "EX-",
-    "mintage": "",
-    "peso": "",
+    "mintage": 397300,
+    "peso": "5.65",
     "diametro": "",
     "description": "RARA",
     "publishedAt": "2026-09-16T18:08:43.498110+00:00",
@@ -15630,7 +15630,7 @@
       "images/1410A.jpeg",
       "images/1410B.jpeg"
     ],
-    "reference": "CJ# 3.1.1-3.1.19",
+    "reference": "CJ# 3.1",
     "grade": "Bueno -",
     "grade_short": "B-",
     "mintage": "",
@@ -15646,7 +15646,7 @@
     "country": "Argentina",
     "metal": "Bronce",
     "year": 1890,
-    "price": "3.5 USD",
+    "price": "4.5 USD",
     "images": [
       "images/1411A.jpeg",
       "images/1411B.jpeg"
@@ -15761,8 +15761,8 @@
       "images/1416B.jpeg"
     ],
     "reference": "KM# 17",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
     "mintage": "",
     "peso": "",
     "diametro": "",
@@ -15818,7 +15818,7 @@
     "country": "Francia",
     "metal": "Aluminio",
     "year": 1942,
-    "price": "2 USD",
+    "price": "4 USD",
     "images": [
       "images/1419A.jpeg",
       "images/1419B.jpeg"
@@ -15934,10 +15934,11 @@
     "mintage": "",
     "peso": "",
     "diametro": "",
-    "description": "",
+    "description": "ESCASA",
     "publishedAt": "2026-09-16T22:30:04.665033+00:00",
     "group_id": "ar-2centavos-patacon",
-    "group_label": "2 Centavos Patacón"
+    "group_label": "2 Centavos Patacón",
+    "costo": 0
   },
   {
     "id": 1425,
