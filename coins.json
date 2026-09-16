@@ -15938,5 +15938,47 @@
     "publishedAt": "2026-09-16T22:30:04.665033+00:00",
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón"
+  },
+  {
+    "id": 1425,
+    "title": "2 Centavos 1854",
+    "country": "Argentina",
+    "metal": "Cobre",
+    "year": 1854,
+    "price": "25 USD",
+    "images": [
+      "images/1425A.jpeg",
+      "images/1425B.jpeg"
+    ],
+    "reference": "CJ# 2",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "peso": "10",
+    "diametro": "29.77",
+    "description": "Oportunidad!",
+    "publishedAt": "2026-09-16T22:45:16.189412+00:00",
+    "costo": 0.01
+  },
+  {
+    "id": 1426,
+    "title": "1 Real 1776",
+    "country": "Bolivia",
+    "metal": "Plata .903",
+    "year": 1776,
+    "price": "10 USD",
+    "images": [
+      "images/1426A.jpeg",
+      "images/1426B.jpeg"
+    ],
+    "reference": "KM# 52",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "3.38",
+    "diametro": "21.5",
+    "description": "Rara de encontrar! 20 usd de catálogo.",
+    "publishedAt": "2026-09-16T22:45:16.189412+00:00",
+    "costo": 0.01
   }
 ]
