@@ -15994,6 +15994,8 @@
     "diametro": "21.5",
     "description": "Rara de encontrar! 20 usd de catálogo.",
     "publishedAt": "2026-09-16T22:45:16.189412+00:00",
-    "costo": 0.01
+    "costo": 0.01,
+    "status": "sold",
+    "soldAt": "2026-09-17T12:46:30.793799+00:00"
   }
 ]
