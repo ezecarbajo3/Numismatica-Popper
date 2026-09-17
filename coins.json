@@ -15510,7 +15510,9 @@
     "description": "Muy Descentrada",
     "publishedAt": "2026-09-16T18:08:43.498110+00:00",
     "costo": 23.4,
-    "commemorates": "Muy Descentrada"
+    "commemorates": "Muy Descentrada",
+    "status": "sold",
+    "soldAt": "2026-09-17T00:18:48.538888+00:00"
   },
   {
     "id": 1405,
