@@ -15623,7 +15623,9 @@
     "diametro": "25",
     "description": "",
     "publishedAt": "2026-09-16T18:08:43.498110+00:00",
-    "costo": 3.21
+    "costo": 3.21,
+    "status": "sold",
+    "soldAt": "2026-09-17T12:48:21.144067+00:00"
   },
   {
     "id": 1410,
@@ -15668,7 +15670,9 @@
     "description": "",
     "publishedAt": "2026-09-16T18:08:43.498110+00:00",
     "costo": 3.21,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-09-17T12:48:21.144067+00:00"
   },
   {
     "id": 1412,
