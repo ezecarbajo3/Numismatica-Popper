@@ -16337,7 +16337,7 @@
     "country": "Argentina - Córdoba",
     "metal": "Plata",
     "year": 1848,
-    "price": "220 USD",
+    "price": "200 USD",
     "images": [
       "images/R20A.jpeg",
       "images/R20B.jpeg"
@@ -16350,7 +16350,7 @@
     "diametro": "18,7 mm",
     "description": "Acuñada en la Casa de Moneda de Córdoba durante el apogeo del régimen federal bajo el influjo del gobernador Manuel López ('Quebracho'). Esta pieza provincial presenta el característico sol radiante cordobés con la leyenda 'Confederada' y el castillo provincial (variante A1 - R1), reflejando las dificultades económicas y la autonomía monetaria de las provincias durante las guerras civiles.",
     "publishedAt": "2026-09-18T21:27:27.959470+00:00",
-    "costo": 200.0
+    "costo": 180.0
   },
   {
     "id": "R21",
@@ -16358,7 +16358,7 @@
     "country": "Argentina - Córdoba",
     "metal": "Plata",
     "year": 1851,
-    "price": "450 USD",
+    "price": "400 USD",
     "images": [
       "images/R21A.jpeg",
       "images/R21B.jpeg"
@@ -16371,7 +16371,7 @@
     "diametro": "30,2 mm",
     "description": "Acuñada en vísperas del Pronunciamiento de Urquiza y la batalla de Caseros, esta imponente pieza de 4 reales de la Casa de Moneda de Córdoba (variante A2 - R4) representa una de las últimas emisiones provinciales del régimen rosista. Su módulo mayor y notable relieve con el castillo heráldico y el sol flamígero la convierten en un testimonio cumbre de la numismática federal argentina.",
     "publishedAt": "2026-09-18T21:27:27.959470+00:00",
-    "costo": 400.0
+    "costo": 380.0
   },
   {
     "id": "R22",
