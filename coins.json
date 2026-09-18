@@ -16288,5 +16288,110 @@
     "publishedAt": "2026-09-18T18:46:07.758513+00:00",
     "costo": 2.58,
     "cantidad": 2
+  },
+  {
+    "id": "R18",
+    "title": "2 Kopecks 1916",
+    "country": "Alemania",
+    "metal": "Hierro",
+    "year": 1916,
+    "price": "39 USD",
+    "images": [
+      "images/R18A.jpeg",
+      "images/R18B.jpeg"
+    ],
+    "reference": "KM# 22",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": "",
+    "peso": "5,8 g",
+    "diametro": "24 mm",
+    "description": "Acuñada en hierro durante la Primera Guerra Mundial por la administración militar alemana de los territorios orientales ocupados (Ober Ost). Diseñada para sustituir el circulante imperial ruso en las gobernaciones bálticas y polacas bajo control del Imperio Alemán, constituye un testimonio numismático excepcional de la ocupación bélica en el frente oriental y del colapso zarista.",
+    "publishedAt": "2026-09-18T21:27:27.959470+00:00",
+    "costo": 29.03
+  },
+  {
+    "id": "R19",
+    "title": "1/2 Stiver 1813",
+    "country": "Demerara y Esequibo",
+    "metal": "Cobre",
+    "year": 1813,
+    "price": "97 USD",
+    "images": [
+      "images/R19A.jpeg",
+      "images/R19B.jpeg"
+    ],
+    "reference": "KM# 9",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "8,8 g",
+    "diametro": "28 mm",
+    "description": "Emitida bajo el reinado de Jorge III para las colonias holandesas de Demerara y Esequibo, capturadas por Gran Bretaña durante las Guerras Napoleónicas y formalmente cedidas en 1814. Acuñada en Londres para satisfacer la aguda escasez de moneda fraccionaria en las plantaciones caribeñas, esta pieza preserva la denominación tradicional holandesa en una emisión colonial británica sumamente codiciada.",
+    "publishedAt": "2026-09-18T21:27:27.959470+00:00",
+    "costo": 83.87
+  },
+  {
+    "id": "R20",
+    "title": "1 Real 1848",
+    "country": "Argentina - Córdoba",
+    "metal": "Plata",
+    "year": 1848,
+    "price": "220 USD",
+    "images": [
+      "images/R20A.jpeg",
+      "images/R20B.jpeg"
+    ],
+    "reference": "CJ# 56.1.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "3,04 g",
+    "diametro": "18,7 mm",
+    "description": "Acuñada en la Casa de Moneda de Córdoba durante el apogeo del régimen federal bajo el influjo del gobernador Manuel López ('Quebracho'). Esta pieza provincial presenta el característico sol radiante cordobés con la leyenda 'Confederada' y el castillo provincial (variante A1 - R1), reflejando las dificultades económicas y la autonomía monetaria de las provincias durante las guerras civiles.",
+    "publishedAt": "2026-09-18T21:27:27.959470+00:00",
+    "costo": 200.0
+  },
+  {
+    "id": "R21",
+    "title": "4 Reales 1851",
+    "country": "Argentina - Córdoba",
+    "metal": "Plata",
+    "year": 1851,
+    "price": "450 USD",
+    "images": [
+      "images/R21A.jpeg",
+      "images/R21B.jpeg"
+    ],
+    "reference": "CJ# 66.1.6",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": "",
+    "peso": "11,47 g",
+    "diametro": "30,2 mm",
+    "description": "Acuñada en vísperas del Pronunciamiento de Urquiza y la batalla de Caseros, esta imponente pieza de 4 reales de la Casa de Moneda de Córdoba (variante A2 - R4) representa una de las últimas emisiones provinciales del régimen rosista. Su módulo mayor y notable relieve con el castillo heráldico y el sol flamígero la convierten en una codiciada joya de la numismática federal argentina.",
+    "publishedAt": "2026-09-18T21:27:27.959470+00:00",
+    "costo": 400.0
+  },
+  {
+    "id": "R22",
+    "title": "2 Reales 1814",
+    "country": "Argentina - Provincias del Río de la Plata",
+    "metal": "Plata",
+    "year": 1814,
+    "price": "1000 USD",
+    "images": [
+      "images/R22A.jpeg",
+      "images/R22B.jpeg"
+    ],
+    "reference": "CJ# 88.4",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Acuñada en la histórica ceca de Potosí durante el turbulento año de 1814, en pleno apogeo de las guerras de independencia en el Alto Perú. Entre la retirada del Ejército del Norte y la contraofensiva realista, las emisiones de esta época reflejan las tensiones militares y políticas de las Provincias Unidas en su lucha por consolidar la soberanía del Río de la Plata.",
+    "publishedAt": "2026-09-18T21:27:27.959470+00:00",
+    "costo": 900.0
   }
 ]
