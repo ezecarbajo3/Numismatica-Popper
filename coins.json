@@ -16379,7 +16379,7 @@
     "country": "Argentina - Provincias del Río de la Plata",
     "metal": "Plata",
     "year": 1814,
-    "price": "1000 USD",
+    "price": "900 USD",
     "images": [
       "images/R22A.jpeg",
       "images/R22B.jpeg"
@@ -16392,6 +16392,6 @@
     "diametro": "",
     "description": "Acuñada en la histórica ceca de Potosí durante el turbulento año de 1814, en pleno apogeo de las guerras de independencia en el Alto Perú. Entre la retirada del Ejército del Norte y la contraofensiva realista, las emisiones de esta época reflejan las tensiones militares y políticas de las Provincias Unidas en su lucha por consolidar la soberanía del Río de la Plata.",
     "publishedAt": "2026-09-18T21:27:27.959470+00:00",
-    "costo": 900.0
+    "costo": 880.0
   }
 ]
