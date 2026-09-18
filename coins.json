@@ -16393,5 +16393,47 @@
     "description": "Acuñada en la histórica ceca de Potosí durante el turbulento año de 1814, en pleno apogeo de las guerras de independencia en el Alto Perú. Entre la retirada del Ejército del Norte y la contraofensiva realista, las emisiones de esta época reflejan las tensiones militares y políticas de las Provincias Unidas en su lucha por consolidar la soberanía del Río de la Plata.",
     "publishedAt": "2026-09-18T21:27:27.959470+00:00",
     "costo": 880.0
+  },
+  {
+    "id": "R23",
+    "title": "1/4 Anna 1936",
+    "country": "India Británica",
+    "metal": "Bronce",
+    "year": 1936,
+    "price": "10.5 USD",
+    "images": [
+      "images/R23A.jpeg",
+      "images/R23B.jpeg"
+    ],
+    "reference": "KM# 512",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "4.85",
+    "diametro": "25.4",
+    "description": "Acuñada durante el último año de reinado de Jorge V como Rey-Emperador de la India, quien falleció en enero de 1936. Esta emisión representa el cierre de una era para la moneda colonial británica en el subcontinente, previa al efímero reinado de Eduardo VIII y la transición a Jorge VI, en pleno auge del movimiento independentista y la reorganización política del Raj británico.",
+    "publishedAt": "2026-09-18T22:42:05.734901+00:00",
+    "costo": 6.45
+  },
+  {
+    "id": "R24",
+    "title": "1/2 Piastre 1921",
+    "country": "Siria",
+    "metal": "Cuproníquel",
+    "year": 1921,
+    "price": "16.5 USD",
+    "images": [
+      "images/R24A.jpeg",
+      "images/R24B.jpeg"
+    ],
+    "reference": "KM# 68",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": 4000000,
+    "peso": "4",
+    "diametro": "21",
+    "description": "Acuñada en París bajo el Mandato Francés de Siria y Líbano tras la disolución del Imperio Otomano luego de la Primera Guerra Mundial. Esta pieza forma parte de las primeras emisiones monetarias fiduciarias administradas por el Banco de Siria para reemplazar el circulante otomano e instaurar la nueva libra siria ligada al franco francés, constituyendo un testimonio clave de la reorganización colonial de Oriente Medio.",
+    "publishedAt": "2026-09-18T22:42:05.734901+00:00",
+    "costo": 12.9
   }
 ]
