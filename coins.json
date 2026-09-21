@@ -3216,7 +3216,9 @@
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 305",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-21T16:14:09.955792+00:00"
   },
   {
     "id": 412,
@@ -3250,7 +3252,9 @@
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 321",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-21T16:14:09.955792+00:00"
   },
   {
     "id": 414,
@@ -3388,7 +3392,9 @@
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 356",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-21T16:14:09.955792+00:00"
   },
   {
     "id": 422,
@@ -3473,7 +3479,9 @@
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 383",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-21T16:14:09.955792+00:00"
   },
   {
     "id": 427,
@@ -3490,7 +3498,9 @@
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 386",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-21T16:14:09.955792+00:00"
   },
   {
     "id": 428,
@@ -3507,7 +3517,9 @@
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 404",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-21T16:14:09.955792+00:00"
   },
   {
     "id": 429,
@@ -3524,7 +3536,9 @@
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 422",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-21T16:14:09.955792+00:00"
   },
   {
     "id": 431,
