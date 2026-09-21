@@ -343,29 +343,6 @@
     "costo": 0
   },
   {
-    "id": 40,
-    "title": "10 Centavos 1931",
-    "country": "Argentina",
-    "metal": "Cuproníquel",
-    "year": 1931,
-    "price": "10 USD",
-    "images": [
-      "images/40A.jpeg",
-      "images/40B.jpeg"
-    ],
-    "reference": "CJ# 119",
-    "grade": "Muy Bueno +",
-    "grade_short": "MB+",
-    "mintage": "892.873",
-    "peso": 3.0,
-    "diametro": 19.0,
-    "description": "",
-    "group_id": "ar-10centavos-cuproniquel",
-    "group_label": "10 Centavos cuproníquel",
-    "costo": 0,
-    "cantidad": 1
-  },
-  {
     "id": 43,
     "title": "Centavo 1886",
     "country": "Argentina",
@@ -471,8 +448,6 @@
     "peso": 9.0,
     "diametro": 27.0,
     "description": "",
-    "group_id": "group_a_km30_uy",
-    "group_label": "Peso (KM# 30)",
     "costo": 0
   },
   {
@@ -572,26 +547,6 @@
     "costo": 0
   },
   {
-    "id": 91,
-    "title": "50 Piastres 2019",
-    "country": "Egipto",
-    "metal": "Acero chapado en latón",
-    "year": 2019,
-    "price": "4 USD",
-    "images": [
-      "images/91A.jpeg",
-      "images/91B.jpeg"
-    ],
-    "reference": "KM# 1035",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "mintage": "",
-    "peso": 6.5,
-    "diametro": 23.0,
-    "description": "Estación eléctrica - Año único",
-    "costo": 0
-  },
-  {
     "id": 99,
     "title": "Penny 1862",
     "country": "Reino Unido",
@@ -655,7 +610,8 @@
     "description": "",
     "group_id": "ar-5centavos-cuproniquel",
     "group_label": "5 Centavos cuproníquel",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 105,
@@ -787,29 +743,8 @@
     "description": "",
     "group_id": "ar-2centavos-cobre",
     "group_label": "2 Centavos Cobre",
-    "costo": 0
-  },
-  {
-    "id": 115,
-    "title": "2 Centavos 1950",
-    "country": "Argentina",
-    "metal": "Cobre",
-    "year": 1950,
-    "price": "12 USD",
-    "images": [
-      "images/115A.jpeg",
-      "images/115B.jpeg"
-    ],
-    "reference": "CJ# 185",
-    "grade": "Muy Bueno",
-    "grade_short": "MB",
-    "mintage": "903.070",
-    "peso": 3.3,
-    "diametro": 20.0,
-    "description": "",
-    "group_id": "ar-2centavos-cobre",
-    "group_label": "2 Centavos Cobre",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 128,
@@ -891,28 +826,6 @@
     "peso": 3.9,
     "diametro": 21.0,
     "description": "Agujero centrado.",
-    "costo": 0
-  },
-  {
-    "id": 140,
-    "title": "Peso 1942",
-    "country": "Uruguay",
-    "metal": "Plata .720",
-    "year": 1942,
-    "price": "14 USD",
-    "images": [
-      "images/140A.jpeg",
-      "images/140B.jpeg"
-    ],
-    "reference": "KM# 30",
-    "grade": "Bueno +",
-    "grade_short": "B+",
-    "mintage": "",
-    "peso": 9.0,
-    "diametro": 27.0,
-    "description": "",
-    "group_id": "group_a_km30_uy",
-    "group_label": "Peso (KM# 30)",
     "costo": 0
   },
   {
