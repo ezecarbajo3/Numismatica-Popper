@@ -16132,7 +16132,9 @@
     "diametro": "24.38",
     "description": "2nd type",
     "publishedAt": "2026-09-18T18:46:07.758513+00:00",
-    "costo": 0.2
+    "costo": 0.2,
+    "status": "sold",
+    "soldAt": "2026-09-22T20:46:59.525292+00:00"
   },
   {
     "id": 1436,
