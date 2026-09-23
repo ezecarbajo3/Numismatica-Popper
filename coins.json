@@ -8560,8 +8560,10 @@
     "reference": "KM# 75b",
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 1,
-    "costo": 0
+    "cantidad": 0,
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-09-23T01:03:57.700480+00:00"
   },
   {
     "id": 911,
