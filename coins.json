@@ -2990,7 +2990,8 @@
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 297",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 3
   },
   {
     "id": 405,
@@ -3000,14 +3001,15 @@
     "year": 1999,
     "price": "1 USD",
     "images": [
-      "images/407A.jpeg",
-      "images/407B.jpeg"
+      "images/405A.jpeg",
+      "images/405B.jpeg"
     ],
     "description": "Delaware D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 293",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 406,
@@ -3017,14 +3019,15 @@
     "year": 1999,
     "price": "1 USD",
     "images": [
-      "images/408A.jpeg",
-      "images/408B.jpeg"
+      "images/406A.jpeg",
+      "images/406B.jpeg"
     ],
     "description": "Georgia D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 296",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 407,
@@ -3034,14 +3037,15 @@
     "year": 1999,
     "price": "1 USD",
     "images": [
-      "images/483A.jpeg",
-      "images/483B.jpeg"
+      "images/407A.jpeg",
+      "images/407B.jpeg"
     ],
     "description": "New Jersey D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 295",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 408,
@@ -3051,14 +3055,15 @@
     "year": 2000,
     "price": "1 USD",
     "images": [
-      "images/406A.jpeg",
-      "images/406B.jpeg"
+      "images/408A.jpeg",
+      "images/408B.jpeg"
     ],
     "description": "Virginia D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 309",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 3
   },
   {
     "id": 409,
@@ -3068,14 +3073,15 @@
     "year": 2000,
     "price": "1 USD",
     "images": [
-      "images/412A.jpeg",
-      "images/412B.jpeg"
+      "images/409A.jpeg",
+      "images/409B.jpeg"
     ],
     "description": "Maryland D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 306",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 410,
@@ -3085,14 +3091,15 @@
     "year": 2000,
     "price": "1 USD",
     "images": [
-      "images/414A.jpeg",
-      "images/414B.jpeg"
+      "images/410A.jpeg",
+      "images/410B.jpeg"
     ],
     "description": "New Hampshire D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 308",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 411,
@@ -3102,16 +3109,15 @@
     "year": 2000,
     "price": "1 USD",
     "images": [
-      "images/419A.jpeg",
-      "images/419B.jpeg"
+      "images/411A.jpeg",
+      "images/411B.jpeg"
     ],
     "description": "Massachusetts D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 305",
     "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-09-21T16:14:09.955792+00:00"
+    "cantidad": 1
   },
   {
     "id": 412,
@@ -3121,14 +3127,15 @@
     "year": 2000,
     "price": "1 USD",
     "images": [
-      "images/482A.jpeg",
-      "images/482B.jpeg"
+      "images/412A.jpeg",
+      "images/412B.jpeg"
     ],
     "description": "Massachusetts P",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 305",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 413,
@@ -3138,16 +3145,15 @@
     "year": 2001,
     "price": "1 USD",
     "images": [
-      "images/405A.jpeg",
-      "images/405B.jpeg"
+      "images/413A.jpeg",
+      "images/413B.jpeg"
     ],
     "description": "Vermont D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 321",
     "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-09-21T16:14:09.955792+00:00"
+    "cantidad": 1
   },
   {
     "id": 414,
@@ -3157,14 +3163,15 @@
     "year": 2001,
     "price": "1 USD",
     "images": [
-      "images/411A.jpeg",
-      "images/411B.jpeg"
+      "images/414A.jpeg",
+      "images/414B.jpeg"
     ],
     "description": "Rhode Island P",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 320",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 415,
@@ -3174,14 +3181,15 @@
     "year": 2001,
     "price": "2.5 USD",
     "images": [
-      "images/413A.jpeg",
-      "images/413B.jpeg"
+      "images/415A.jpeg",
+      "images/415B.jpeg"
     ],
     "description": "New York D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 318",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 3
   },
   {
     "id": 416,
@@ -3198,7 +3206,8 @@
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 321",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 417,
@@ -3208,14 +3217,15 @@
     "year": 2001,
     "price": "1 USD",
     "images": [
-      "images/418A.jpeg",
-      "images/418B.jpeg"
+      "images/417A.jpeg",
+      "images/417B.jpeg"
     ],
     "description": "Kentucky D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 322",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 418,
@@ -3225,14 +3235,15 @@
     "year": 2001,
     "price": "1 USD",
     "images": [
-      "images/485A.jpeg",
-      "images/485B.jpeg"
+      "images/418A.jpeg",
+      "images/418B.jpeg"
     ],
     "description": "North Carolina D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 319",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 419,
@@ -3249,7 +3260,10 @@
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 318",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "cantidad": 0,
+    "soldAt": "2026-09-27T22:15:24.951362+00:00"
   },
   {
     "id": 420,
@@ -3259,16 +3273,15 @@
     "year": 2003,
     "price": "1 USD",
     "images": [
-      "images/410A.jpeg",
-      "images/410B.jpeg"
+      "images/420A.jpeg",
+      "images/420B.jpeg"
     ],
     "description": "Alabama D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 344",
     "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-09-12T14:31:15.165338+00:00"
+    "cantidad": 1
   },
   {
     "id": 421,
@@ -3287,7 +3300,8 @@
     "reference": "KM# 356",
     "costo": 0,
     "status": "sold",
-    "soldAt": "2026-09-21T16:14:09.955792+00:00"
+    "soldAt": "2026-09-21T16:14:09.955792+00:00",
+    "cantidad": 0
   },
   {
     "id": 422,
@@ -3297,14 +3311,15 @@
     "year": 2005,
     "price": "1 USD",
     "images": [
-      "images/415A.jpeg",
-      "images/415B.jpeg"
+      "images/422A.jpeg",
+      "images/422B.jpeg"
     ],
     "description": "Kansas D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 373",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 423,
@@ -3314,14 +3329,15 @@
     "year": 2005,
     "price": "1 USD",
     "images": [
-      "images/487A.jpeg",
-      "images/487B.jpeg"
+      "images/423A.jpeg",
+      "images/423B.jpeg"
     ],
     "description": "West Virginia P",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 374",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 424,
@@ -3331,14 +3347,15 @@
     "year": 2005,
     "price": "1 USD",
     "images": [
-      "images/488A.jpeg",
-      "images/488B.jpeg"
+      "images/424A.jpeg",
+      "images/424B.jpeg"
     ],
     "description": "West Virginia D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 374",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 425,
@@ -3348,14 +3365,15 @@
     "year": 2005,
     "price": "1 USD",
     "images": [
-      "images/489A.jpeg",
-      "images/489B.jpeg"
+      "images/425A.jpeg",
+      "images/425B.jpeg"
     ],
     "description": "Oregon D",
     "group_id": "us-quarters-estados",
     "group_label": "Quarters Estados",
     "reference": "KM# 372",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 426,
