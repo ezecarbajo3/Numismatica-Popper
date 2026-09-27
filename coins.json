@@ -1576,24 +1576,6 @@
     "costo": 0
   },
   {
-    "id": 244,
-    "title": "Centavo 1989",
-    "country": "El Salvador",
-    "metal": "Bronce",
-    "year": 1989,
-    "price": "2.5 USD",
-    "images": [
-      "images/244A.jpeg",
-      "images/244B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "",
-    "mintage": "",
-    "reference": "KM# 153a",
-    "costo": 0
-  },
-  {
     "id": 249,
     "title": "5 Fils 1974",
     "country": "Emiratos Árabes Unidos",
@@ -1611,7 +1593,8 @@
     "peso": 3.75,
     "diametro": 22.0,
     "description": "",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 251,
