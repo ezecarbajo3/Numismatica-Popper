@@ -2752,7 +2752,8 @@
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna",
     "reference": "KM# 410",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 3
   },
   {
     "id": 391,
@@ -2768,7 +2769,8 @@
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna",
     "reference": "KM# 404",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 392,
@@ -2784,7 +2786,8 @@
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna",
     "reference": "KM# 415",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 3
   },
   {
     "id": 393,
@@ -2816,7 +2819,8 @@
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna",
     "reference": "KM# 417",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 395,
@@ -2848,7 +2852,8 @@
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna",
     "reference": "KM# 412",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 397,
@@ -2880,7 +2885,8 @@
     "group_id": "pe-sol-fauna",
     "group_label": "Fauna",
     "reference": "KM# 411",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 399,
@@ -2928,7 +2934,8 @@
     "group_id": "pe-sol-ceramicos",
     "group_label": "Cerámicos Precolombinos",
     "reference": "KM# 447",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 402,
