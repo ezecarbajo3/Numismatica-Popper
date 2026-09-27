@@ -1319,16 +1319,17 @@
       "images/191A.jpeg",
       "images/191B.jpeg"
     ],
-    "reference": "KM# 131",
+    "reference": "KM# 132",
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "14.400.000",
     "peso": 6.5,
     "diametro": 26.0,
-    "description": "Variante (BELGIQUE-BELGIE)\nSegunda Guerra Mundial",
+    "description": "Variante (BELGIE-BELGIQUE)\nSegunda Guerra Mundial",
     "group_id": "be-25cents-wwii",
     "group_label": "25 Cents WWII",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 192,
