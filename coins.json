@@ -12091,7 +12091,9 @@
     "description": "40 Aniversario de la Restauración de la Democracia. Incluye Blister + Certificado. Solo 2.500 acuñadas.",
     "publishedAt": "2026-08-31T18:33:42.559320+00:00",
     "costo": 115.76,
-    "commemorates": "40 Aniversario de la Restauración de la Democracia"
+    "commemorates": "40 Aniversario de la Restauración de la Democracia",
+    "status": "sold",
+    "soldAt": "2026-09-27T15:24:16.860036+00:00"
   },
   {
     "id": 1269,
