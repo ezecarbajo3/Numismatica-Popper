@@ -1978,8 +1978,7 @@
     "diametro": 17.0,
     "description": "",
     "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-09-14T21:22:20.048104+00:00"
+    "cantidad": 1
   },
   {
     "id": 295,
