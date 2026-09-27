@@ -4271,7 +4271,8 @@
     "reference": "KM# 753",
     "grade": "Excelente",
     "grade_short": "EX",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 523,
@@ -4535,7 +4536,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "6.000.000",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 559,
@@ -4569,7 +4571,8 @@
     "grade": "Sin Circular -",
     "grade_short": "SC-",
     "mintage": "3.700.000",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 561,
@@ -4602,22 +4605,6 @@
     "reference": "KM# 223.2",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "costo": 0
-  },
-  {
-    "id": 565,
-    "title": "10 Soles 1978",
-    "country": "Perú",
-    "year": 1978,
-    "price": "2.5 USD",
-    "images": [
-      "images/565A.jpeg",
-      "images/565B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Túpac Amaru.",
-    "reference": "KM# 275",
     "costo": 0
   },
   {
