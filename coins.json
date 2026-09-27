@@ -3246,26 +3246,6 @@
     "cantidad": 1
   },
   {
-    "id": 419,
-    "title": "1/4 Dólar 2001",
-    "country": "Estados Unidos",
-    "metal": "Cuproníquel",
-    "year": 2001,
-    "price": "2.5 USD",
-    "images": [
-      "images/490A.jpeg",
-      "images/490B.jpeg"
-    ],
-    "description": "New York P",
-    "group_id": "us-quarters-estados",
-    "group_label": "Quarters Estados",
-    "reference": "KM# 318",
-    "costo": 0,
-    "status": "sold",
-    "cantidad": 0,
-    "soldAt": "2026-09-27T22:15:24.951362+00:00"
-  },
-  {
     "id": 420,
     "title": "1/4 Dólar 2003",
     "country": "Estados Unidos",
@@ -3282,26 +3262,6 @@
     "reference": "KM# 344",
     "costo": 0,
     "cantidad": 1
-  },
-  {
-    "id": 421,
-    "title": "1/4 Dólar 2004",
-    "country": "Estados Unidos",
-    "metal": "Cuproníquel",
-    "year": 2004,
-    "price": "1 USD",
-    "images": [
-      "images/491A.jpeg",
-      "images/491B.jpeg"
-    ],
-    "description": "Florida P",
-    "group_id": "us-quarters-estados",
-    "group_label": "Quarters Estados",
-    "reference": "KM# 356",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-09-21T16:14:09.955792+00:00",
-    "cantidad": 0
   },
   {
     "id": 422,
@@ -3374,82 +3334,6 @@
     "reference": "KM# 372",
     "costo": 0,
     "cantidad": 1
-  },
-  {
-    "id": 426,
-    "title": "1/4 Dólar 2006",
-    "country": "Estados Unidos",
-    "metal": "Cuproníquel",
-    "year": 2006,
-    "price": "1 USD",
-    "images": [
-      "images/417A.jpeg",
-      "images/417B.jpeg"
-    ],
-    "description": "Nebraska D",
-    "group_id": "us-quarters-estados",
-    "group_label": "Quarters Estados",
-    "reference": "KM# 383",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-09-21T16:14:09.955792+00:00"
-  },
-  {
-    "id": 427,
-    "title": "1/4 Dólar 2006",
-    "country": "Estados Unidos",
-    "metal": "Cuproníquel",
-    "year": 2006,
-    "price": "1 USD",
-    "images": [
-      "images/486A.jpeg",
-      "images/486B.jpeg"
-    ],
-    "description": "South Dakota P",
-    "group_id": "us-quarters-estados",
-    "group_label": "Quarters Estados",
-    "reference": "KM# 386",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-09-21T16:14:09.955792+00:00"
-  },
-  {
-    "id": 428,
-    "title": "1/4 Dólar 2007",
-    "country": "Estados Unidos",
-    "metal": "Cuproníquel",
-    "year": 2007,
-    "price": "1 USD",
-    "images": [
-      "images/484A.jpeg",
-      "images/484B.jpeg"
-    ],
-    "description": "Washington D",
-    "group_id": "us-quarters-estados",
-    "group_label": "Quarters Estados",
-    "reference": "KM# 404",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-09-21T16:14:09.955792+00:00"
-  },
-  {
-    "id": 429,
-    "title": "1/4 Dólar 2008",
-    "country": "Estados Unidos",
-    "metal": "Cuproníquel",
-    "year": 2008,
-    "price": "1 USD",
-    "images": [
-      "images/409A.jpeg",
-      "images/409B.jpeg"
-    ],
-    "description": "New Mexico D",
-    "group_id": "us-quarters-estados",
-    "group_label": "Quarters Estados",
-    "reference": "KM# 422",
-    "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-09-21T16:14:09.955792+00:00"
   },
   {
     "id": 431,
