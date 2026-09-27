@@ -1660,7 +1660,8 @@
     "peso": 3.25,
     "diametro": 21.0,
     "description": "",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 4
   },
   {
     "id": 254,
