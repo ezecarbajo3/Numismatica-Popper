@@ -1,0 +1,7933 @@
+{
+ "us:1962 half dollar": {
+  "consultado": "2026-09-11T01:31:15.210333+00:00",
+  "tabla": {
+   "descripcion": "1962 50C MS",
+   "filas": [
+    {
+     "actualizado": "2026-09-10",
+     "designacion": "MS ",
+     "precios": {
+      "50": 26.0,
+      "53": 26.0,
+      "55": 26.5,
+      "58": 27.5,
+      "60": 29.5,
+      "61": 30.5,
+      "62": 32.0,
+      "63": 34.5,
+      "64": 39.5,
+      "65": 95.0,
+      "66": 1050.0,
+      "F": 25.5,
+      "G": 25.5,
+      "PrAg": 25.5,
+      "VF": 25.5,
+      "VG": 25.5
+     },
+     "tipo": "Base"
+    },
+    {
+     "actualizado": "2025-12-05",
+     "designacion": "MS FBL",
+     "precios": {
+      "60": 30.0,
+      "61": 35.0,
+      "62": 37.5,
+      "63": 50.0,
+      "64": 265.0,
+      "65": 1750.0,
+      "66": 9750.0
+     },
+     "tipo": "Base"
+    },
+    {
+     "actualizado": "2026-09-10",
+     "designacion": "MS ",
+     "precios": {
+      "50": 26.0,
+      "53": 26.0,
+      "55": 27.0,
+      "58": 28.0,
+      "60": 30.0,
+      "61": 31.0,
+      "62": 33.0,
+      "63": 37.0,
+      "64": 50.0,
+      "65": 225.0,
+      "66": 1900.0
+     },
+     "tipo": "Plus"
+    },
+    {
+     "actualizado": "2025-12-05",
+     "designacion": "MS FBL",
+     "precios": {
+      "60": 32.5,
+      "61": 36.0,
+      "62": 38.5,
+      "63": 65.0,
+      "64": 360.0,
+      "65": 2200.0
+     },
+     "tipo": "Plus"
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.com/coin-explorer/united-states/",
+   "via": "us-json"
+  }
+ },
+ "world:ARGENTINA 1815 1/2 Real": {
+  "consultado": "2026-09-11T01:29:24.656412+00:00",
+  "tabla": {
+   "descripcion": "Argentina 1/2 Real KM 1.2 Prices & Values",
+   "especificaciones": {
+    "asw": "0.0487oz",
+    "composicion": "Silver Fineness: 0.8960",
+    "peso": "1.6915g",
+    "valor_metal": "$3.10 (9/11/2026)"
+   },
+   "filas": [
+    {
+     "anio": "1815PTS F",
+     "denominacion": "1/2 Real",
+     "mintage": "",
+     "precios": {
+      "60": 345.0,
+      "63": 850.0,
+      "VF": 85.0,
+      "VG": 20.0,
+      "XF": 180.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/argentina-1-2-real-km-1.2-1815-cuid-1036131-duid-1212365",
+   "via": "world-html"
+  }
+ },
+ "world:ARGENTINA 1882 10 Centavos": {
+  "consultado": "2026-09-11T01:32:02.272886+00:00",
+  "tabla": {
+   "descripcion": "Argentina 10 Centavos KM 26 Prices & Values",
+   "especificaciones": {
+    "asw": "0.0723oz",
+    "composicion": "Silver Fineness: 0.9000",
+    "peso": "2.5000g",
+    "valor_metal": "$4.60 (9/11/2026)"
+   },
+   "filas": [
+    {
+     "anio": "1881",
+     "denominacion": "10 Centavos",
+     "mintage": "1,020",
+     "precios": {
+      "60": 375.0,
+      "VF": 150.0,
+      "XF": 225.0
+     }
+    },
+    {
+     "anio": "1882",
+     "denominacion": "10 Centavos",
+     "mintage": "778,000",
+     "precios": {
+      "60": 75.0,
+      "VF": 15.0,
+      "XF": 30.0
+     }
+    },
+    {
+     "anio": "1883",
+     "denominacion": "10 Centavos",
+     "mintage": "2,786,000",
+     "precios": {
+      "60": 50.0,
+      "VF": 10.0,
+      "XF": 20.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/argentina-10-centavos-km-26-1881-1883-cuid-1038910-duid-1212970",
+   "via": "world-html"
+  }
+ },
+ "world:ARGENTINA 1882 20 Centavos": {
+  "consultado": "2026-09-11T01:30:10.286164+00:00",
+  "tabla": {
+   "descripcion": "Argentina 20 Centavos KM 27 Prices & Values",
+   "especificaciones": {
+    "asw": "0.1447oz",
+    "composicion": "Silver Fineness: 0.9000",
+    "peso": "5.0000g",
+    "valor_metal": "$9.19 (9/11/2026)"
+   },
+   "filas": [
+    {
+     "anio": "1881",
+     "denominacion": "20 Centavos",
+     "mintage": "2,018",
+     "precios": {
+      "60": 250.0,
+      "VF": 80.0,
+      "XF": 145.0
+     }
+    },
+    {
+     "anio": "1882",
+     "denominacion": "20 Centavos",
+     "mintage": "762,000",
+     "precios": {
+      "60": 80.0,
+      "VF": 15.0,
+      "XF": 35.0
+     }
+    },
+    {
+     "anio": "1883",
+     "denominacion": "20 Centavos",
+     "mintage": "",
+     "precios": {
+      "60": 45.0,
+      "VF": 10.0,
+      "XF": 20.0
+     }
+    },
+    {
+     "anio": "1883/2 Inverted 2",
+     "denominacion": "20 Centavos",
+     "mintage": "1,511,000",
+     "precios": {
+      "60": 100.0,
+      "VF": 20.0,
+      "XF": 50.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/argentina-20-centavos-km-27-1881-1883-2-cuid-1038113-duid-1212895",
+   "via": "world-html"
+  }
+ },
+ "world:ARGENTINA 1914 5 Centavos": {
+  "consultado": "2026-09-11T01:29:28.477027+00:00",
+  "tabla": {
+   "descripcion": "Argentina 5 Centavos KM 34 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel",
+    "diametro": "17.3mm",
+    "peso": "2.0000g"
+   },
+   "filas": [
+    {
+     "anio": "1896",
+     "denominacion": "5 Centavos",
+     "mintage": "1,499,000",
+     "precios": {
+      "50": 100.0,
+      "60": 130.0,
+      "F": 30.0,
+      "G": 6.0,
+      "VF": 50.0,
+      "VG": 15.0,
+      "XF": 75.0
+     }
+    },
+    {
+     "anio": "1897",
+     "denominacion": "5 Centavos",
+     "mintage": "3,981,000",
+     "precios": {
+      "50": 50.0,
+      "60": 80.0,
+      "F": 10.0,
+      "G": 2.0,
+      "VF": 20.0,
+      "VG": 3.0,
+      "XF": 35.0
+     }
+    },
+    {
+     "anio": "1898",
+     "denominacion": "5 Centavos",
+     "mintage": "2,661,000",
+     "precios": {
+      "50": 70.0,
+      "60": 100.0,
+      "F": 12.0,
+      "G": 2.0,
+      "VF": 35.0,
+      "VG": 3.0,
+      "XF": 50.0
+     }
+    },
+    {
+     "anio": "1899",
+     "denominacion": "5 Centavos",
+     "mintage": "2,835,000",
+     "precios": {
+      "50": 70.0,
+      "60": 100.0,
+      "F": 10.0,
+      "G": 2.0,
+      "VF": 35.0,
+      "VG": 3.0,
+      "XF": 50.0
+     }
+    },
+    {
+     "anio": "1903",
+     "denominacion": "5 Centavos",
+     "mintage": "2,502,000",
+     "precios": {
+      "50": 85.0,
+      "60": 120.0,
+      "F": 20.0,
+      "G": 4.0,
+      "VF": 35.0,
+      "VG": 10.0,
+      "XF": 50.0
+     }
+    },
+    {
+     "anio": "1904",
+     "denominacion": "5 Centavos",
+     "mintage": "2,518,000",
+     "precios": {
+      "50": 55.0,
+      "60": 85.0,
+      "F": 15.0,
+      "G": 2.0,
+      "VF": 25.0,
+      "VG": 4.0,
+      "XF": 40.0
+     }
+    },
+    {
+     "anio": "1905",
+     "denominacion": "5 Centavos",
+     "mintage": "4,359,000",
+     "precios": {
+      "50": 40.0,
+      "60": 60.0,
+      "F": 10.0,
+      "G": 1.0,
+      "VF": 20.0,
+      "VG": 2.0,
+      "XF": 28.0
+     }
+    },
+    {
+     "anio": "1906",
+     "denominacion": "5 Centavos",
+     "mintage": "3,939,000",
+     "precios": {
+      "50": 45.0,
+      "60": 65.0,
+      "F": 10.0,
+      "G": 1.0,
+      "VF": 15.0,
+      "VG": 2.0,
+      "XF": 25.0
+     }
+    },
+    {
+     "anio": "1907",
+     "denominacion": "5 Centavos",
+     "mintage": "1,682,000",
+     "precios": {
+      "50": 70.0,
+      "60": 100.0,
+      "F": 15.0,
+      "G": 3.0,
+      "VF": 27.0,
+      "VG": 5.0,
+      "XF": 45.0
+     }
+    },
+    {
+     "anio": "1908",
+     "denominacion": "5 Centavos",
+     "mintage": "1,693,000",
+     "precios": {
+      "50": 70.0,
+      "60": 100.0,
+      "F": 10.0,
+      "G": 2.0,
+      "VF": 25.0,
+      "VG": 3.0,
+      "XF": 40.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1909",
+     "denominacion": "5 Centavos",
+     "mintage": "4,650,000",
+     "precios": {
+      "50": 60.0,
+      "60": 90.0,
+      "F": 5.0,
+      "G": 1.0,
+      "VF": 8.0,
+      "VG": 2.0,
+      "XF": 20.0
+     }
+    },
+    {
+     "anio": "1910",
+     "denominacion": "5 Centavos",
+     "mintage": "1,469,000",
+     "precios": {
+      "50": 70.0,
+      "60": 100.0,
+      "F": 17.0,
+      "G": 5.0,
+      "VF": 25.0,
+      "VG": 12.0,
+      "XF": 40.0
+     }
+    },
+    {
+     "anio": "1911",
+     "denominacion": "5 Centavos",
+     "mintage": "1,431,000",
+     "precios": {
+      "50": 70.0,
+      "60": 100.0,
+      "F": 10.0,
+      "G": 2.0,
+      "VF": 15.0,
+      "VG": 3.0,
+      "XF": 30.0
+     }
+    },
+    {
+     "anio": "1912",
+     "denominacion": "5 Centavos",
+     "mintage": "2,377,000",
+     "precios": {
+      "50": 45.0,
+      "60": 65.0,
+      "F": 6.0,
+      "G": 1.0,
+      "VF": 10.0,
+      "VG": 2.0,
+      "XF": 25.0
+     }
+    },
+    {
+     "anio": "1913",
+     "denominacion": "5 Centavos",
+     "mintage": "1,477,000",
+     "precios": {
+      "50": 70.0,
+      "60": 100.0,
+      "F": 10.0,
+      "G": 3.0,
+      "VF": 30.0,
+      "VG": 5.0,
+      "XF": 50.0
+     }
+    },
+    {
+     "anio": "1914",
+     "denominacion": "5 Centavos",
+     "mintage": "1,097,000",
+     "precios": {
+      "50": 85.0,
+      "60": 120.0,
+      "F": 10.0,
+      "G": 3.0,
+      "VF": 32.0,
+      "VG": 5.0,
+      "XF": 60.0
+     }
+    },
+    {
+     "anio": "1915",
+     "denominacion": "5 Centavos",
+     "mintage": "1,310,000",
+     "precios": {
+      "50": 70.0,
+      "60": 100.0,
+      "F": 10.0,
+      "G": 1.0,
+      "VF": 30.0,
+      "VG": 2.0,
+      "XF": 50.0
+     }
+    },
+    {
+     "anio": "1916",
+     "denominacion": "5 Centavos",
+     "mintage": "1,310,000",
+     "precios": {
+      "50": 70.0,
+      "60": 100.0,
+      "F": 15.0,
+      "G": 2.0,
+      "VF": 30.0,
+      "VG": 4.0,
+      "XF": 50.0
+     }
+    },
+    {
+     "anio": "1917",
+     "denominacion": "5 Centavos",
+     "mintage": "1,009,000",
+     "precios": {
+      "50": 80.0,
+      "60": 110.0,
+      "F": 12.0,
+      "G": 3.0,
+      "VF": 30.0,
+      "VG": 5.0,
+      "XF": 50.0
+     }
+    },
+    {
+     "anio": "1918",
+     "denominacion": "5 Centavos",
+     "mintage": "2,287,000",
+     "precios": {
+      "50": 40.0,
+      "60": 60.0,
+      "F": 10.0,
+      "G": 1.0,
+      "VF": 15.0,
+      "VG": 2.0,
+      "XF": 25.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1919",
+     "denominacion": "5 Centavos",
+     "mintage": "2,476,000",
+     "precios": {
+      "50": 12.0,
+      "60": 20.0,
+      "F": 1.5,
+      "VF": 5.0,
+      "VG": 1.0,
+      "XF": 7.0
+     }
+    },
+    {
+     "anio": "1920",
+     "denominacion": "5 Centavos",
+     "mintage": "5,235,000",
+     "precios": {
+      "50": 10.0,
+      "60": 15.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "VG": 0.4,
+      "XF": 6.0
+     }
+    },
+    {
+     "anio": "1921",
+     "denominacion": "5 Centavos",
+     "mintage": "7,040,000",
+     "precios": {
+      "50": 10.0,
+      "60": 15.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "VG": 0.3,
+      "XF": 6.0
+     }
+    },
+    {
+     "anio": "1922",
+     "denominacion": "5 Centavos",
+     "mintage": "9,427,000",
+     "precios": {
+      "50": 10.0,
+      "60": 15.0,
+      "F": 2.0,
+      "VF": 5.0,
+      "VG": 0.3,
+      "XF": 5.0
+     }
+    },
+    {
+     "anio": "1923",
+     "denominacion": "5 Centavos",
+     "mintage": "6,256,000",
+     "precios": {
+      "50": 10.0,
+      "60": 15.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "VG": 0.3,
+      "XF": 5.0
+     }
+    },
+    {
+     "anio": "1924",
+     "denominacion": "5 Centavos",
+     "mintage": "6,355,000",
+     "precios": {
+      "50": 10.0,
+      "60": 15.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "VG": 0.3,
+      "XF": 5.0
+     }
+    },
+    {
+     "anio": "1925",
+     "denominacion": "5 Centavos",
+     "mintage": "3,955,000",
+     "precios": {
+      "50": 7.0,
+      "60": 10.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "VG": 0.3,
+      "XF": 5.0
+     }
+    },
+    {
+     "anio": "1926",
+     "denominacion": "5 Centavos",
+     "mintage": "3,560,000",
+     "precios": {
+      "50": 7.0,
+      "60": 10.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "VG": 0.3,
+      "XF": 5.0
+     }
+    },
+    {
+     "anio": "1927",
+     "denominacion": "5 Centavos",
+     "mintage": "5,650,000",
+     "precios": {
+      "50": 9.0,
+      "60": 15.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "VG": 0.3,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "1928",
+     "denominacion": "5 Centavos",
+     "mintage": "6,380,000",
+     "precios": {
+      "50": 6.0,
+      "60": 8.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "VG": 0.3,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1929",
+     "denominacion": "5 Centavos",
+     "mintage": "11,831,000",
+     "precios": {
+      "50": 12.0,
+      "60": 17.0,
+      "F": 2.0,
+      "VF": 5.0,
+      "VG": 1.0,
+      "XF": 8.0
+     }
+    },
+    {
+     "anio": "1930 round top 3",
+     "denominacion": "5 Centavos",
+     "mintage": "7,110,000",
+     "precios": {
+      "50": 6.0,
+      "60": 8.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "1931 flat top 3",
+     "denominacion": "5 Centavos",
+     "mintage": "506,000",
+     "precios": {
+      "50": 40.0,
+      "60": 60.0,
+      "F": 5.0,
+      "VF": 20.0,
+      "VG": 3.0,
+      "XF": 30.0
+     }
+    },
+    {
+     "anio": "1933 round top 3",
+     "denominacion": "5 Centavos",
+     "mintage": "5,537,000",
+     "precios": {
+      "50": 6.0,
+      "60": 8.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "1934 round top 3",
+     "denominacion": "5 Centavos",
+     "mintage": "1,288,000",
+     "precios": {
+      "50": 10.0,
+      "60": 20.0,
+      "F": 1.0,
+      "VF": 3.0
+     }
+    },
+    {
+     "anio": "1935",
+     "denominacion": "5 Centavos",
+     "mintage": "3,052,000",
+     "precios": {
+      "50": 4.5,
+      "60": 6.0,
+      "F": 0.5,
+      "VF": 1.0,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "1936",
+     "denominacion": "5 Centavos",
+     "mintage": "7,175,000",
+     "precios": {
+      "50": 4.5,
+      "60": 6.0,
+      "F": 0.5,
+      "VF": 1.0,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "1937",
+     "denominacion": "5 Centavos",
+     "mintage": "7,063,000",
+     "precios": {
+      "50": 4.5,
+      "60": 6.0,
+      "F": 0.5,
+      "VF": 1.0,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "1938",
+     "denominacion": "5 Centavos",
+     "mintage": "10,252,000",
+     "precios": {
+      "50": 4.5,
+      "60": 6.0,
+      "F": 0.5,
+      "VF": 1.0,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "1939",
+     "denominacion": "5 Centavos",
+     "mintage": "7,171,000",
+     "precios": {
+      "50": 4.5,
+      "60": 6.0,
+      "F": 0.5,
+      "VF": 1.0,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1940",
+     "denominacion": "5 Centavos",
+     "mintage": "10,191,000",
+     "precios": {
+      "50": 4.5,
+      "60": 6.0,
+      "F": 0.5,
+      "VF": 1.0,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "1941",
+     "denominacion": "5 Centavos",
+     "mintage": "951,000",
+     "precios": {
+      "50": 4.5,
+      "60": 6.0,
+      "F": 0.5,
+      "VF": 1.0,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "1942",
+     "denominacion": "5 Centavos",
+     "mintage": "8,692,000",
+     "precios": {
+      "50": 4.5,
+      "60": 6.0,
+      "F": 0.5,
+      "VF": 1.0,
+      "XF": 3.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/argentina-5-centavos-km-34-1896-1942-cuid-1038255-duid-1212937",
+   "via": "world-html"
+  }
+ },
+ "world:ARGENTINA 2000 50 Centavos": {
+  "consultado": "2026-09-11T01:30:08.372928+00:00",
+  "tabla": {
+   "descripcion": "Argentina 50 Centavos KM 129.1 Prices & Values",
+   "especificaciones": {
+    "composicion": "Aluminum-Bronze",
+    "diametro": "25.2mm",
+    "peso": "5.8000g"
+   },
+   "filas": [
+    {
+     "anio": "2000",
+     "denominacion": "50 Centavos",
+     "mintage": "1,695,000",
+     "precios": {
+      "50": 3.0,
+      "63": 1.0,
+      "65": 1.5,
+      "XF": 2.5
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/argentina-50-centavos-km-129.1-2000-cuid-1063912-duid-1229283",
+   "via": "world-html"
+  }
+ },
+ "world:BELGIAN CONGO 1959 1 Franc": {
+  "consultado": "2026-09-11T01:31:22.965224+00:00",
+  "tabla": {
+   "descripcion": "Belgian Congo RUANDA-URUNDI 5 Francs KM 3 Prices & Values",
+   "especificaciones": {
+    "composicion": "Aluminum",
+    "diametro": "28mm",
+    "peso": "2.2000g"
+   },
+   "filas": [
+    {
+     "anio": "1956 DB",
+     "denominacion": "5 Francs",
+     "mintage": "10,000,000",
+     "precios": {
+      "50": 1.5,
+      "60": 2.0,
+      "63": 4.0,
+      "65": 20.0,
+      "VF": 1.0,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1956 DB Proof",
+     "denominacion": "5 Francs",
+     "mintage": "",
+     "precios": {
+      "63": 125.0
+     }
+    },
+    {
+     "anio": "1958 DB",
+     "denominacion": "5 Francs",
+     "mintage": "26,110,000",
+     "precios": {
+      "50": 1.0,
+      "60": 1.8,
+      "63": 3.5,
+      "65": 15.0,
+      "VF": 0.75,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1959 DB",
+     "denominacion": "5 Francs",
+     "mintage": "3,890,000",
+     "precios": {
+      "50": 1.3,
+      "60": 2.5,
+      "63": 5.0,
+      "65": 22.0,
+      "VF": 1.0,
+      "XF": 1.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/belgian-congo-ruanda-urundi-5-francs-km-3-1956-1959-cuid-1043461-duid-1309332",
+   "via": "world-html"
+  }
+ },
+ "world:BELGIUM 2023 20 euro Cent": {
+  "consultado": "2026-09-11T01:31:33.481784+00:00",
+  "tabla": {
+   "descripcion": "Belgium 20 Euro Cent KM 335 Prices & Values",
+   "especificaciones": {
+    "composicion": "Aluminum-Bronze",
+    "diametro": "22.25mm",
+    "peso": "5.7400g"
+   },
+   "filas": [
+    {
+     "anio": "2014",
+     "denominacion": "20 Euro Cent",
+     "mintage": "97,000",
+     "precios": {
+      "65": 1.8
+     }
+    },
+    {
+     "anio": "2014 Proof",
+     "denominacion": "20 Euro Cent",
+     "mintage": "3,000",
+     "precios": {
+      "63": 12.0
+     }
+    },
+    {
+     "anio": "2015",
+     "denominacion": "20 Euro Cent",
+     "mintage": "",
+     "precios": {
+      "65": 1.8
+     }
+    },
+    {
+     "anio": "2015 Proof",
+     "denominacion": "20 Euro Cent",
+     "mintage": "",
+     "precios": {
+      "63": 12.0
+     }
+    },
+    {
+     "anio": "2016",
+     "denominacion": "20 Euro Cent",
+     "mintage": "",
+     "precios": {
+      "65": 1.8
+     }
+    },
+    {
+     "anio": "2016 Proof",
+     "denominacion": "20 Euro Cent",
+     "mintage": "",
+     "precios": {
+      "63": 12.0
+     }
+    },
+    {
+     "anio": "2017",
+     "denominacion": "20 Euro Cent",
+     "mintage": "",
+     "precios": {
+      "65": 1.8
+     }
+    },
+    {
+     "anio": "2017 Proof",
+     "denominacion": "20 Euro Cent",
+     "mintage": "",
+     "precios": {
+      "63": 12.0
+     }
+    },
+    {
+     "anio": "2018",
+     "denominacion": "20 Euro Cent",
+     "mintage": "",
+     "precios": {
+      "65": 1.8
+     }
+    },
+    {
+     "anio": "2018 Proof",
+     "denominacion": "20 Euro Cent",
+     "mintage": "",
+     "precios": {
+      "63": 12.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "2022",
+     "denominacion": "20 Euro Cent",
+     "mintage": "13,000",
+     "precios": {
+      "50": 0.0,
+      "60": 0.0,
+      "63": 0.0,
+      "65": 0.0,
+      "F": 0.0,
+      "G": 0.0,
+      "PrAg": 0.0,
+      "VF": 0.0,
+      "VG": 0.0,
+      "XF": 0.0
+     }
+    },
+    {
+     "anio": "2022 Proof",
+     "denominacion": "20 Euro Cent",
+     "mintage": "500",
+     "precios": {
+      "63": 0.0
+     }
+    },
+    {
+     "anio": "2023",
+     "denominacion": "20 Euro Cent",
+     "mintage": "",
+     "precios": {
+      "50": 0.0,
+      "60": 0.0,
+      "63": 0.0,
+      "65": 0.0,
+      "F": 0.0,
+      "G": 0.0,
+      "PrAg": 0.0,
+      "VF": 0.0,
+      "VG": 0.0,
+      "XF": 0.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/belgium-20-euro-cent-km-335-2014-2026-cuid-1825165-duid-1887202",
+   "via": "world-html"
+  }
+ },
+ "world:BRAZIL 1945 20 Centavos": {
+  "consultado": "2026-09-11T01:30:16.960402+00:00",
+  "tabla": {
+   "descripcion": "Brazil 20 Centavos KM 556a Prices & Values",
+   "especificaciones": {
+    "composicion": "Aluminum-Bronze",
+    "diametro": "20mm",
+    "peso": "4.0000g"
+   },
+   "filas": [
+    {
+     "anio": "1943",
+     "denominacion": "20 Centavos",
+     "mintage": "",
+     "precios": {
+      "60": 2.0,
+      "63": 2.75,
+      "65": 3.5,
+      "VF": 0.4,
+      "XF": 0.7
+     }
+    },
+    {
+     "anio": "1944 Coins dated 1944 exist with and without designer's initials and straight or curved-back 9 in date",
+     "denominacion": "20 Centavos",
+     "mintage": "12,673,000",
+     "precios": {
+      "60": 0.5,
+      "63": 0.8,
+      "65": 1.0,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1945",
+     "denominacion": "20 Centavos",
+     "mintage": "61,632,000",
+     "precios": {
+      "60": 0.5,
+      "63": 0.8,
+      "65": 1.0,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1946",
+     "denominacion": "20 Centavos",
+     "mintage": "31,526,000",
+     "precios": {
+      "60": 2.0,
+      "63": 2.75,
+      "65": 3.5,
+      "VF": 0.4,
+      "XF": 0.7
+     }
+    },
+    {
+     "anio": "1947",
+     "denominacion": "20 Centavos",
+     "mintage": "36,422,000",
+     "precios": {
+      "60": 2.0,
+      "63": 2.75,
+      "65": 3.5,
+      "VF": 0.4,
+      "XF": 0.7
+     }
+    },
+    {
+     "anio": "1948",
+     "denominacion": "20 Centavos",
+     "mintage": "39,671,000",
+     "precios": {
+      "60": 2.0,
+      "63": 2.75,
+      "65": 3.5,
+      "VF": 0.4,
+      "XF": 0.7
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/brazil-20-centavos-km-556a-1943-1948-cuid-1038526-duid-1277515",
+   "via": "world-html"
+  }
+ },
+ "world:CANADA 2000 25 Cents": {
+  "consultado": "2026-09-11T01:30:04.953587+00:00",
+  "tabla": {
+   "descripcion": "Canada 25 Cents KM 184 Prices & Values",
+   "especificaciones": {
+    "composicion": "Nickel",
+    "diametro": "23.88mm",
+    "peso": "5.0700g"
+   },
+   "filas": [
+    {
+     "anio": "1990(no mint mark)",
+     "denominacion": "25 Cents",
+     "mintage": "31,258,000",
+     "precios": {
+      "60": 0.4,
+      "63": 1.2,
+      "65": 21.0
+     }
+    },
+    {
+     "anio": "1990(no mint mark) Proof",
+     "denominacion": "25 Cents",
+     "mintage": "140,649",
+     "precios": {
+      "63": 3.5
+     }
+    },
+    {
+     "anio": "1991(no mint mark)",
+     "denominacion": "25 Cents",
+     "mintage": "459,000",
+     "precios": {
+      "50": 3.0,
+      "60": 6.0,
+      "63": 12.0,
+      "65": 31.0
+     }
+    },
+    {
+     "anio": "1991(no mint mark) Proof",
+     "denominacion": "25 Cents",
+     "mintage": "131,888",
+     "precios": {
+      "63": 20.0
+     }
+    },
+    {
+     "anio": "1993(no mint mark)",
+     "denominacion": "25 Cents",
+     "mintage": "73,758,000",
+     "precios": {
+      "60": 0.4,
+      "63": 1.3,
+      "65": 27.0
+     }
+    },
+    {
+     "anio": "1993(no mint mark) Proof",
+     "denominacion": "25 Cents",
+     "mintage": "143,065",
+     "precios": {
+      "63": 2.5
+     }
+    },
+    {
+     "anio": "1994(no mint mark)",
+     "denominacion": "25 Cents",
+     "mintage": "77,670,000",
+     "precios": {
+      "60": 0.4,
+      "63": 0.9,
+      "65": 24.0
+     }
+    },
+    {
+     "anio": "1994(no mint mark) Proof",
+     "denominacion": "25 Cents",
+     "mintage": "146,424",
+     "precios": {
+      "63": 3.0
+     }
+    },
+    {
+     "anio": "1995(no mint mark)",
+     "denominacion": "25 Cents",
+     "mintage": "89,210,000",
+     "precios": {
+      "60": 0.4,
+      "63": 1.4,
+      "65": 17.0
+     }
+    },
+    {
+     "anio": "1995(no mint mark) Proof",
+     "denominacion": "25 Cents",
+     "mintage": "",
+     "precios": {
+      "63": 3.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1996(no mint mark)",
+     "denominacion": "25 Cents",
+     "mintage": "28,106,000",
+     "precios": {
+      "60": 0.4,
+      "63": 2.0,
+      "65": 16.0
+     }
+    },
+    {
+     "anio": "1996(no mint mark) Proof",
+     "denominacion": "25 Cents",
+     "mintage": "",
+     "precios": {
+      "63": 6.0
+     }
+    },
+    {
+     "anio": "1997(no mint mark) PL",
+     "denominacion": "25 Cents",
+     "mintage": "",
+     "precios": {
+      "63": 0.7,
+      "65": 3.5
+     }
+    },
+    {
+     "anio": "1997(no mint mark) Proof",
+     "denominacion": "25 Cents",
+     "mintage": "",
+     "precios": {
+      "63": 6.0
+     }
+    },
+    {
+     "anio": "1998W PL",
+     "denominacion": "25 Cents",
+     "mintage": "",
+     "precios": {
+      "63": 5.0,
+      "65": 6.0
+     }
+    },
+    {
+     "anio": "1999(no mint mark) PL",
+     "denominacion": "25 Cents",
+     "mintage": "258,888,000",
+     "precios": {
+      "63": 0.75,
+      "65": 5.5
+     }
+    },
+    {
+     "anio": "1999(no mint mark) Proof",
+     "denominacion": "25 Cents",
+     "mintage": "",
+     "precios": {
+      "63": 9.5
+     }
+    },
+    {
+     "anio": "2000(no mint mark) PL",
+     "denominacion": "25 Cents",
+     "mintage": "434,087,000",
+     "precios": {
+      "63": 0.75,
+      "65": 3.5
+     }
+    },
+    {
+     "anio": "2000(no mint mark) Proof",
+     "denominacion": "25 Cents",
+     "mintage": "",
+     "precios": {
+      "63": 6.0
+     }
+    },
+    {
+     "anio": "2000W PL",
+     "denominacion": "25 Cents",
+     "mintage": "",
+     "precios": {
+      "63": 5.0,
+      "65": 10.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "2001(no mint mark)",
+     "denominacion": "25 Cents",
+     "mintage": "8,415,000",
+     "precios": {
+      "60": 3.0,
+      "63": 4.5,
+      "65": 30.0
+     }
+    },
+    {
+     "anio": "2001(no mint mark) Proof",
+     "denominacion": "25 Cents",
+     "mintage": "",
+     "precios": {
+      "63": 7.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/canada-25-cents-km-184-1990-2001-cuid-1034508-duid-1270355",
+   "via": "world-html"
+  }
+ },
+ "world:CHILE 1879 20 Centavos": {
+  "consultado": "2026-09-11T01:29:39.463811+00:00",
+  "tabla": {
+   "descripcion": "Chile 20 Centavos KM 138.1 Prices & Values",
+   "especificaciones": {
+    "asw": "0.1342oz",
+    "composicion": "Silver Fineness: 0.8350",
+    "diametro": "23mm",
+    "peso": "5.0000g",
+    "valor_metal": "$8.53 (9/11/2026)"
+   },
+   "filas": [
+    {
+     "anio": "1867",
+     "denominacion": "20 Centavos",
+     "mintage": "286,000",
+     "precios": {
+      "XF": 14.0
+     }
+    },
+    {
+     "anio": "1868",
+     "denominacion": "20 Centavos",
+     "mintage": "197,000",
+     "precios": {
+      "F": 147.5,
+      "XF": 10.0
+     }
+    },
+    {
+     "anio": "1869",
+     "denominacion": "20 Centavos",
+     "mintage": "",
+     "precios": {
+      "F": 81.0,
+      "VF": 88.0,
+      "XF": 115.0
+     }
+    },
+    {
+     "anio": "1869/8",
+     "denominacion": "20 Centavos",
+     "mintage": "163,000",
+     "precios": {
+      "XF": 12.0
+     }
+    },
+    {
+     "anio": "1870",
+     "denominacion": "20 Centavos",
+     "mintage": "",
+     "precios": {
+      "F": 81.0,
+      "VF": 85.0,
+      "XF": 98.0
+     }
+    },
+    {
+     "anio": "1870/60",
+     "denominacion": "20 Centavos",
+     "mintage": "992,000",
+     "precios": {
+      "F": 85.0,
+      "VF": 98.0,
+      "XF": 110.0
+     }
+    },
+    {
+     "anio": "1871",
+     "denominacion": "20 Centavos",
+     "mintage": "",
+     "precios": {
+      "F": 81.0,
+      "VF": 98.0,
+      "XF": 115.0
+     }
+    },
+    {
+     "anio": "1872",
+     "denominacion": "20 Centavos",
+     "mintage": "",
+     "precios": {
+      "F": 81.0,
+      "VF": 88.0,
+      "XF": 100.0
+     }
+    },
+    {
+     "anio": "1873",
+     "denominacion": "20 Centavos",
+     "mintage": "",
+     "precios": {
+      "F": 85.0,
+      "VF": 115.0,
+      "XF": 130.0
+     }
+    },
+    {
+     "anio": "1873/2 O over horizontal O in OLA",
+     "denominacion": "20 Centavos",
+     "mintage": "",
+     "precios": {
+      "F": 81.0,
+      "VF": 88.0,
+      "XF": 100.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1874 Narrow date",
+     "denominacion": "20 Centavos",
+     "mintage": "",
+     "precios": {
+      "60": 35.0,
+      "F": 81.0,
+      "VF": 98.0,
+      "XF": 115.0
+     }
+    },
+    {
+     "anio": "1874 Wide date",
+     "denominacion": "20 Centavos",
+     "mintage": "1,256,000",
+     "precios": {
+      "60": 35.0,
+      "F": 81.0,
+      "VF": 98.0,
+      "XF": 115.0
+     }
+    },
+    {
+     "anio": "1875",
+     "denominacion": "20 Centavos",
+     "mintage": "120,000",
+     "precios": {
+      "F": 98.0,
+      "VF": 15.0,
+      "VG": 72.0,
+      "XF": 28.0
+     }
+    },
+    {
+     "anio": "1876 Large stars",
+     "denominacion": "20 Centavos",
+     "mintage": "749,000",
+     "precios": {
+      "60": 37.5,
+      "F": 85.0,
+      "VF": 107.5,
+      "XF": 130.0
+     }
+    },
+    {
+     "anio": "1876 Small stars",
+     "denominacion": "20 Centavos",
+     "mintage": "",
+     "precios": {
+      "60": 37.5,
+      "F": 85.0,
+      "VF": 98.0,
+      "XF": 115.0
+     }
+    },
+    {
+     "anio": "1877",
+     "denominacion": "20 Centavos",
+     "mintage": "549,000",
+     "precios": {
+      "F": 85.0,
+      "VF": 98.0,
+      "XF": 115.0
+     }
+    },
+    {
+     "anio": "1878",
+     "denominacion": "20 Centavos",
+     "mintage": "",
+     "precios": {
+      "F": 85.0,
+      "VF": 98.0,
+      "XF": 115.0
+     }
+    },
+    {
+     "anio": "1878/7",
+     "denominacion": "20 Centavos",
+     "mintage": "2,639,000",
+     "precios": {
+      "F": 85.0,
+      "VF": 98.0,
+      "XF": 115.0
+     }
+    },
+    {
+     "anio": "1879",
+     "denominacion": "20 Centavos",
+     "mintage": "9,645",
+     "precios": {
+      "VF": 175.0,
+      "VG": 60.0,
+      "XF": 250.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/chile-20-centavos-km-138.1-1867-1879-cuid-1038731-duid-1278733",
+   "via": "world-html"
+  }
+ },
+ "world:COLOMBIA 1902 50 Centavos": {
+  "consultado": "2026-09-11T01:32:00.633453+00:00",
+  "tabla": {
+   "descripcion": "Colombia 50 Centavos KM 192 Prices & Values",
+   "especificaciones": {
+    "asw": "0.3356oz",
+    "composicion": "Silver Fineness: 0.8350",
+    "diametro": "30mm",
+    "peso": "12.5000g",
+    "valor_metal": "$21.36 (9/11/2026)"
+   },
+   "filas": [
+    {
+     "anio": "1902(P)",
+     "denominacion": "50 Centavos",
+     "mintage": "960,000",
+     "precios": {
+      "60": 150.0,
+      "VF": 36.0,
+      "XF": 70.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/colombia-50-centavos-km-192-1902-cuid-1039020-duid-1277983",
+   "via": "world-html"
+  }
+ },
+ "world:COLOMBIA 1978 5 Centavos": {
+  "consultado": "2026-09-11T01:29:43.766845+00:00",
+  "tabla": {
+   "descripcion": "Colombia 5 Centavos KM 206a Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper Clad Steel",
+    "diametro": "21.29mm",
+    "peso": "3.2300g"
+   },
+   "filas": [
+    {
+     "anio": "1967",
+     "denominacion": "5 Centavos",
+     "mintage": "10,280,000",
+     "precios": {
+      "60": 2.5,
+      "63": 3.0,
+      "65": 1.0,
+      "VF": 0.1,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1968",
+     "denominacion": "5 Centavos",
+     "mintage": "8,900,000",
+     "precios": {
+      "60": 2.5,
+      "63": 3.0,
+      "65": 1.0,
+      "VF": 0.1,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1969",
+     "denominacion": "5 Centavos",
+     "mintage": "17,800,000",
+     "precios": {
+      "60": 2.5,
+      "63": 3.0,
+      "65": 1.0,
+      "VF": 0.1,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1970",
+     "denominacion": "5 Centavos",
+     "mintage": "14,842,000",
+     "precios": {
+      "60": 2.5,
+      "63": 3.0,
+      "65": 0.5,
+      "VF": 0.1,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1971",
+     "denominacion": "5 Centavos",
+     "mintage": "10,730,000",
+     "precios": {
+      "60": 2.5,
+      "63": 3.0,
+      "65": 0.5,
+      "VF": 0.1,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1972",
+     "denominacion": "5 Centavos",
+     "mintage": "10,170,000",
+     "precios": {
+      "60": 2.5,
+      "63": 3.0,
+      "65": 0.5,
+      "VF": 0.1,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1973",
+     "denominacion": "5 Centavos",
+     "mintage": "10,525,000",
+     "precios": {
+      "60": 2.5,
+      "63": 3.0,
+      "65": 0.5,
+      "VF": 0.1,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1974",
+     "denominacion": "5 Centavos",
+     "mintage": "5,310,000",
+     "precios": {
+      "60": 2.5,
+      "63": 3.0,
+      "65": 0.5,
+      "VF": 0.1,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1975",
+     "denominacion": "5 Centavos",
+     "mintage": "5,631,000",
+     "precios": {
+      "60": 2.5,
+      "63": 3.0,
+      "65": 0.5,
+      "VF": 0.1,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1976",
+     "denominacion": "5 Centavos",
+     "mintage": "3,009,000",
+     "precios": {
+      "60": 2.5,
+      "63": 3.0,
+      "65": 0.5,
+      "VF": 0.1,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1977",
+     "denominacion": "5 Centavos",
+     "mintage": "2,000,000",
+     "precios": {
+      "60": 2.5,
+      "63": 3.0,
+      "65": 0.8,
+      "VF": 0.1,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1978",
+     "denominacion": "5 Centavos",
+     "mintage": "468,000",
+     "precios": {
+      "60": 2.5,
+      "63": 3.0,
+      "65": 1.5,
+      "VF": 0.1,
+      "XF": 0.3
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/colombia-5-centavos-km-206a-1967-1979-cuid-1038403-duid-1278241",
+   "via": "world-html"
+  }
+ },
+ "world:COSTA RICA 1973 5 Centimos": {
+  "consultado": "2026-09-11T01:30:20.765498+00:00",
+  "tabla": {
+   "descripcion": "Costa Rica 5 Centimos KM 184.3 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel",
+    "diametro": "14.98mm",
+    "peso": "1.0200g"
+   },
+   "filas": [
+    {
+     "anio": "1972(g)",
+     "denominacion": "5 Centimos",
+     "mintage": "12,550,000",
+     "precios": {
+      "60": 1.2,
+      "63": 3.0,
+      "65": 0.5,
+      "VF": 0.2,
+      "XF": 0.6
+     }
+    },
+    {
+     "anio": "1973(g)",
+     "denominacion": "5 Centimos",
+     "mintage": "20,000,000",
+     "precios": {
+      "60": 1.2,
+      "63": 3.0,
+      "65": 0.5,
+      "VF": 0.2,
+      "XF": 0.6
+     }
+    },
+    {
+     "anio": "1976(g) thick '5'",
+     "denominacion": "5 Centimos",
+     "mintage": "15,000,000",
+     "precios": {
+      "60": 1.2,
+      "63": 3.0,
+      "65": 0.5,
+      "VF": 0.2,
+      "XF": 0.6
+     }
+    },
+    {
+     "anio": "1976(g) thin '5'",
+     "denominacion": "5 Centimos",
+     "mintage": "",
+     "precios": {
+      "60": 1.2,
+      "63": 3.0,
+      "65": 0.5,
+      "VF": 0.2,
+      "XF": 0.6
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/costa-rica-5-centimos-km-184.3-1972-1976-cuid-1037007-duid-1274673",
+   "via": "world-html"
+  }
+ },
+ "world:COSTA RICA 1983 50 Centimos": {
+  "consultado": "2026-09-11T01:31:58.764836+00:00",
+  "tabla": {
+   "descripcion": "Costa Rica 50 Centimos KM 209.1 Prices & Values",
+   "especificaciones": {
+    "composicion": "Stainless Steel",
+    "diametro": "19.11mm",
+    "peso": "2.1800g"
+   },
+   "filas": [
+    {
+     "anio": "1982(c)",
+     "denominacion": "50 Centimos",
+     "mintage": "12,000,000",
+     "precios": {
+      "60": 1.2,
+      "63": 2.0,
+      "65": 1.5,
+      "VF": 0.1,
+      "XF": 0.6
+     }
+    },
+    {
+     "anio": "1983(c)",
+     "denominacion": "50 Centimos",
+     "mintage": "24,000,000",
+     "precios": {
+      "60": 1.5,
+      "63": 2.5,
+      "65": 1.5,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1990(c)",
+     "denominacion": "50 Centimos",
+     "mintage": "24,000,000",
+     "precios": {
+      "60": 1.2,
+      "63": 2.0,
+      "65": 1.5,
+      "VF": 0.1,
+      "XF": 0.6
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/costa-rica-50-centimos-km-209.1-1982-1990-cuid-1037149-duid-1279263",
+   "via": "world-html"
+  }
+ },
+ "world:DENMARK 1979 10 Kroner": {
+  "consultado": "2026-09-11T01:31:04.777386+00:00",
+  "tabla": {
+   "descripcion": "Denmark 10 Kroner KM 864.1 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel",
+    "diametro": "28mm",
+    "peso": "12.5000g"
+   },
+   "filas": [
+    {
+     "anio": "1979(h) B; B",
+     "denominacion": "10 Kroner",
+     "mintage": "76,801,000",
+     "precios": {
+      "65": 4.5,
+      "XF": 2.25
+     }
+    },
+    {
+     "anio": "1981(h) B; B",
+     "denominacion": "10 Kroner",
+     "mintage": "10,520,000",
+     "precios": {
+      "63": 3.0,
+      "65": 7.0,
+      "VF": 2.5
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/denmark-10-kroner-km-864.1-1979-1981-cuid-1045887-duid-1237756",
+   "via": "world-html"
+  }
+ },
+ "world:EGYPT 1935 10 Milliemes": {
+  "consultado": "2026-09-11T01:30:13.859753+00:00",
+  "tabla": {
+   "descripcion": "Egypt 10 Milliemes KM 347 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel",
+    "peso": "5.2200g"
+   },
+   "filas": [
+    {
+     "anio": "1348-1929BP",
+     "denominacion": "10 Milliemes",
+     "mintage": "1,500,000",
+     "precios": {
+      "60": 20.0,
+      "63": 38.0,
+      "VF": 1.4,
+      "XF": 8.5
+     }
+    },
+    {
+     "anio": "1352-1933H",
+     "denominacion": "10 Milliemes",
+     "mintage": "1,500,000",
+     "precios": {
+      "60": 25.0,
+      "63": 45.0,
+      "VF": 1.4,
+      "XF": 8.5
+     }
+    },
+    {
+     "anio": "1354-1935H",
+     "denominacion": "10 Milliemes",
+     "mintage": "4,000,000",
+     "precios": {
+      "60": 11.5,
+      "63": 20.0,
+      "VF": 0.8,
+      "XF": 3.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/egypt-10-milliemes-km-347-1348-1929-1354-1935-cuid-1043779-duid-1241640",
+   "via": "world-html"
+  }
+ },
+ "world:EGYPT 1972 1 Millieme": {
+  "consultado": "2026-09-11T01:31:06.592185+00:00",
+  "tabla": {
+   "descripcion": "Egypt 10 Milliemes KM A426 Prices & Values",
+   "especificaciones": {
+    "composicion": "Aluminum",
+    "diametro": "21mm Numismatic specification data and valuation estimates provided by Active Interest Media’s NumisMaster . Find more coin values at NumisMaster.com Go to the NGC US Coin Price Guide Price Guide Click on \"Shop\" to search for the coin on eBay. Scroll below to see all grades. When you click on links to various merchants on this site and make a purchase, this can result in this site earning a commission. Affiliate programs and affiliations include, but are not limited to, the eBay Partner Network. --> <tab"
+   },
+   "filas": [
+    {
+     "anio": "1392-1972 Two varieties of edge letterings exist",
+     "denominacion": "10 Milliemes",
+     "mintage": "20,000,000",
+     "precios": {
+      "60": 1.5,
+      "63": 2.5,
+      "65": 4.0,
+      "VF": 0.5,
+      "XF": 0.8
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/egypt-10-milliemes-km-a426-1392-1972-cuid-1068100-duid-1241829",
+   "via": "world-html"
+  }
+ },
+ "world:FALKLAND ISLANDS 1998 50 Pence": {
+  "consultado": "2026-09-11T01:31:37.735567+00:00",
+  "tabla": {
+   "descripcion": "Falkland Islands 50 Pence KM 14.2 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel",
+    "diametro": "27.3mm",
+    "peso": "8.0000g"
+   },
+   "filas": [
+    {
+     "anio": "1998",
+     "denominacion": "50 Pence",
+     "mintage": "",
+     "precios": {
+      "60": 3.5,
+      "63": 5.0,
+      "65": 7.5,
+      "XF": 2.0
+     }
+    },
+    {
+     "anio": "1999",
+     "denominacion": "50 Pence",
+     "mintage": "",
+     "precios": {
+      "60": 3.5,
+      "63": 5.0,
+      "65": 7.5,
+      "XF": 2.0
+     }
+    },
+    {
+     "anio": "1999 Proof",
+     "denominacion": "50 Pence",
+     "mintage": "2,500",
+     "precios": {
+      "63": 8.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/falkland-islands-50-pence-km-14.2-1998-1999-cuid-1170518-duid-1245309",
+   "via": "world-html"
+  }
+ },
+ "world:FRANCE 1929 10 Centimes": {
+  "consultado": "2026-09-11T01:31:13.542736+00:00",
+  "tabla": {
+   "descripcion": "France 10 Centimes KM 866a Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel",
+    "diametro": "21.3mm",
+    "peso": "4.0000g"
+   },
+   "filas": [
+    {
+     "anio": "1917",
+     "denominacion": "10 Centimes",
+     "mintage": "8,170,999",
+     "precios": {
+      "50": 4.0,
+      "60": 20.0,
+      "63": 35.0,
+      "F": 0.8,
+      "VF": 1.5,
+      "XF": 3.5
+     }
+    },
+    {
+     "anio": "1918",
+     "denominacion": "10 Centimes",
+     "mintage": "30,605,000",
+     "precios": {
+      "50": 2.0,
+      "60": 3.5,
+      "63": 6.5,
+      "F": 0.3,
+      "VF": 0.5,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1919",
+     "denominacion": "10 Centimes",
+     "mintage": "33,488,999",
+     "precios": {
+      "50": 2.0,
+      "60": 3.5,
+      "63": 6.5,
+      "F": 0.3,
+      "VF": 0.5,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1920",
+     "denominacion": "10 Centimes",
+     "mintage": "38,845,000",
+     "precios": {
+      "50": 2.0,
+      "60": 3.5,
+      "63": 6.5,
+      "F": 0.3,
+      "VF": 0.5,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1921",
+     "denominacion": "10 Centimes",
+     "mintage": "42,768,000",
+     "precios": {
+      "50": 1.0,
+      "60": 2.5,
+      "63": 6.5,
+      "F": 0.1,
+      "VF": 0.3,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1922",
+     "denominacion": "10 Centimes",
+     "mintage": "23,033,000",
+     "precios": {
+      "50": 2.5,
+      "60": 4.0,
+      "63": 7.0,
+      "F": 0.3,
+      "VF": 0.8,
+      "XF": 1.3
+     }
+    },
+    {
+     "anio": "1922 (tb)",
+     "denominacion": "10 Centimes",
+     "mintage": "12,412,000",
+     "precios": {
+      "50": 3.0,
+      "60": 6.5,
+      "63": 12.0,
+      "F": 0.8,
+      "VF": 1.5,
+      "XF": 2.5
+     }
+    },
+    {
+     "anio": "1923",
+     "denominacion": "10 Centimes",
+     "mintage": "18,701,000",
+     "precios": {
+      "50": 3.5,
+      "60": 4.5,
+      "63": 8.0,
+      "F": 0.5,
+      "VF": 1.0,
+      "XF": 2.0
+     }
+    },
+    {
+     "anio": "1923 (tb)",
+     "denominacion": "10 Centimes",
+     "mintage": "30,016,000",
+     "precios": {
+      "50": 2.0,
+      "60": 3.0,
+      "63": 5.0,
+      "F": 0.3,
+      "VF": 0.5,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1924",
+     "denominacion": "10 Centimes",
+     "mintage": "43,949,000",
+     "precios": {
+      "50": 1.0,
+      "60": 2.0,
+      "63": 3.0,
+      "F": 0.1,
+      "VF": 0.3,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1924 (tb)",
+     "denominacion": "10 Centimes",
+     "mintage": "13,591,000",
+     "precios": {
+      "50": 15.0,
+      "60": 35.0,
+      "63": 65.0,
+      "F": 1.5,
+      "VF": 4.5,
+      "XF": 12.5
+     }
+    },
+    {
+     "anio": "1925",
+     "denominacion": "10 Centimes",
+     "mintage": "46,266,000",
+     "precios": {
+      "50": 1.0,
+      "60": 2.0,
+      "63": 3.0,
+      "F": 0.1,
+      "VF": 0.3,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1926",
+     "denominacion": "10 Centimes",
+     "mintage": "25,660,000",
+     "precios": {
+      "50": 2.0,
+      "60": 3.0,
+      "63": 5.0,
+      "F": 0.3,
+      "VF": 0.5,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1927",
+     "denominacion": "10 Centimes",
+     "mintage": "16,203,000",
+     "precios": {
+      "50": 2.25,
+      "60": 4.0,
+      "63": 7.0,
+      "F": 0.4,
+      "VF": 0.8,
+      "XF": 1.3
+     }
+    },
+    {
+     "anio": "1928",
+     "denominacion": "10 Centimes",
+     "mintage": "6,967,000",
+     "precios": {
+      "50": 12.0,
+      "60": 27.0,
+      "63": 55.0,
+      "F": 1.0,
+      "VF": 2.5,
+      "XF": 8.0
+     }
+    },
+    {
+     "anio": "1929",
+     "denominacion": "10 Centimes",
+     "mintage": "24,531,000",
+     "precios": {
+      "50": 1.5,
+      "60": 2.0,
+      "63": 3.0,
+      "F": 0.1,
+      "VF": 0.3,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1930",
+     "denominacion": "10 Centimes",
+     "mintage": "22,146,000",
+     "precios": {
+      "50": 1.5,
+      "60": 2.0,
+      "63": 3.0,
+      "F": 0.1,
+      "VF": 0.3,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1931",
+     "denominacion": "10 Centimes",
+     "mintage": "49,107,000",
+     "precios": {
+      "50": 1.5,
+      "60": 2.0,
+      "63": 3.0,
+      "F": 0.1,
+      "VF": 0.3,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1932",
+     "denominacion": "10 Centimes",
+     "mintage": "30,317,000",
+     "precios": {
+      "50": 1.5,
+      "60": 2.0,
+      "63": 3.0,
+      "F": 0.1,
+      "VF": 0.3,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1933",
+     "denominacion": "10 Centimes",
+     "mintage": "13,042,000",
+     "precios": {
+      "50": 2.0,
+      "60": 4.0,
+      "63": 7.0,
+      "F": 0.3,
+      "VF": 0.8,
+      "XF": 1.5
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1934",
+     "denominacion": "10 Centimes",
+     "mintage": "24,067,000",
+     "precios": {
+      "50": 1.5,
+      "60": 2.0,
+      "63": 3.0,
+      "F": 0.1,
+      "VF": 0.5,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1935",
+     "denominacion": "10 Centimes",
+     "mintage": "47,487,000",
+     "precios": {
+      "50": 1.5,
+      "60": 2.0,
+      "63": 3.0,
+      "F": 0.1,
+      "VF": 0.5,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1936",
+     "denominacion": "10 Centimes",
+     "mintage": "57,738,000",
+     "precios": {
+      "50": 1.5,
+      "60": 2.0,
+      "63": 3.0,
+      "F": 0.1,
+      "VF": 0.5,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1937",
+     "denominacion": "10 Centimes",
+     "mintage": "25,308,000",
+     "precios": {
+      "50": 1.5,
+      "60": 2.0,
+      "63": 3.0,
+      "F": 0.1,
+      "VF": 0.5,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1938",
+     "denominacion": "10 Centimes",
+     "mintage": "17,063,000",
+     "precios": {
+      "50": 2.0,
+      "60": 4.5,
+      "63": 8.0,
+      "F": 0.3,
+      "VF": 0.8,
+      "XF": 1.8
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/france-10-centimes-km-866a-1917-1938-cuid-1201881-duid-1264149",
+   "via": "world-html"
+  }
+ },
+ "world:FRANCE 1992 1 Franc": {
+  "consultado": "2026-09-11T01:31:31.697941+00:00",
+  "tabla": {
+   "descripcion": "France 1/2 Franc KM 931.1 Prices & Values",
+   "especificaciones": {
+    "composicion": "Nickel",
+    "diametro": "19.5mm",
+    "peso": "4.5000g"
+   },
+   "filas": [
+    {
+     "anio": "1965 Large legends",
+     "denominacion": "1/2 Franc",
+     "mintage": "",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1965 Small legends",
+     "denominacion": "1/2 Franc",
+     "mintage": "184,834,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1966",
+     "denominacion": "1/2 Franc",
+     "mintage": "88,890,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1967",
+     "denominacion": "1/2 Franc",
+     "mintage": "28,394,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1968",
+     "denominacion": "1/2 Franc",
+     "mintage": "57,548,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1969",
+     "denominacion": "1/2 Franc",
+     "mintage": "47,144,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1970",
+     "denominacion": "1/2 Franc",
+     "mintage": "42,298,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1971",
+     "denominacion": "1/2 Franc",
+     "mintage": "36,068,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1972 Without \"O. ROTY",
+     "denominacion": "1/2 Franc",
+     "mintage": "",
+     "precios": {
+      "50": 110.0,
+      "60": 125.0,
+      "63": 150.0,
+      "65": 200.0,
+      "F": 25.0,
+      "VF": 50.0,
+      "XF": 100.0
+     }
+    },
+    {
+     "anio": "1972",
+     "denominacion": "1/2 Franc",
+     "mintage": "42,302,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1973",
+     "denominacion": "1/2 Franc",
+     "mintage": "48,372,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1974",
+     "denominacion": "1/2 Franc",
+     "mintage": "37,072,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1975",
+     "denominacion": "1/2 Franc",
+     "mintage": "22,803,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1976",
+     "denominacion": "1/2 Franc",
+     "mintage": "115,314,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1977",
+     "denominacion": "1/2 Franc",
+     "mintage": "131,644,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1978",
+     "denominacion": "1/2 Franc",
+     "mintage": "63,360,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1979",
+     "denominacion": "1/2 Franc",
+     "mintage": "51,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1980 In sets only",
+     "denominacion": "1/2 Franc",
+     "mintage": "60,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1981",
+     "denominacion": "1/2 Franc",
+     "mintage": "50,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1982",
+     "denominacion": "1/2 Franc",
+     "mintage": "78,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1983",
+     "denominacion": "1/2 Franc",
+     "mintage": "50,000,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1984",
+     "denominacion": "1/2 Franc",
+     "mintage": "80,000,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1985",
+     "denominacion": "1/2 Franc",
+     "mintage": "50,000,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1986",
+     "denominacion": "1/2 Franc",
+     "mintage": "110,000,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1987",
+     "denominacion": "1/2 Franc",
+     "mintage": "50,000,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1988",
+     "denominacion": "1/2 Franc",
+     "mintage": "100,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1989",
+     "denominacion": "1/2 Franc",
+     "mintage": "83,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1990",
+     "denominacion": "1/2 Franc",
+     "mintage": "15,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1991 Exists in both coin and medal alignment",
+     "denominacion": "1/2 Franc",
+     "mintage": "49,988,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1992 Exists in both coin and medal alignment",
+     "denominacion": "1/2 Franc",
+     "mintage": "29,968,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1993",
+     "denominacion": "1/2 Franc",
+     "mintage": "24,972,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1994 Bee",
+     "denominacion": "1/2 Franc",
+     "mintage": "29,972,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1994 Fish",
+     "denominacion": "1/2 Franc",
+     "mintage": "10,000,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1995",
+     "denominacion": "1/2 Franc",
+     "mintage": "29,976,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1996",
+     "denominacion": "1/2 Franc",
+     "mintage": "55,978,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1997",
+     "denominacion": "1/2 Franc",
+     "mintage": "99,976,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1998 In sets only",
+     "denominacion": "1/2 Franc",
+     "mintage": "",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1999 In sets only",
+     "denominacion": "1/2 Franc",
+     "mintage": "",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "2000",
+     "denominacion": "1/2 Franc",
+     "mintage": "75,000,000",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "2001 In sets only",
+     "denominacion": "1/2 Franc",
+     "mintage": "",
+     "precios": {
+      "50": 0.4,
+      "53": 0.4,
+      "55": 0.5,
+      "58": 0.5,
+      "60": 0.75,
+      "61": 0.85,
+      "62": 0.95,
+      "63": 1.25,
+      "64": 2.0,
+      "65": 3.5,
+      "66": 7.5,
+      "67": 20.0,
+      "F": 0.3,
+      "G": 0.3,
+      "PrAg": 0.3,
+      "VF": 0.3,
+      "VG": 0.3,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/france-1-2-franc-km-931.1-1965-2001-cuid-1127796-duid-1265472",
+   "via": "world-html"
+  }
+ },
+ "world:GERMANY 1951 5 Deutsche Mark": {
+  "consultado": "2026-09-11T01:32:10.344222+00:00",
+  "tabla": {
+   "descripcion": "Germany - Federal Republic 2 Mark KM 111 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel",
+    "diametro": "26.75mm",
+    "peso": "7.0000g"
+   },
+   "filas": [
+    {
+     "anio": "1951D",
+     "denominacion": "2 Mark",
+     "mintage": "19,564,000",
+     "precios": {
+      "60": 75.0,
+      "63": 150.0,
+      "VF": 25.0,
+      "XF": 32.0
+     }
+    },
+    {
+     "anio": "1951D Proof",
+     "denominacion": "2 Mark",
+     "mintage": "200",
+     "precios": {
+      "63": 450.0
+     }
+    },
+    {
+     "anio": "1951F",
+     "denominacion": "2 Mark",
+     "mintage": "22,609,000",
+     "precios": {
+      "60": 75.0,
+      "63": 150.0,
+      "VF": 25.0,
+      "XF": 32.0
+     }
+    },
+    {
+     "anio": "1951F Proof",
+     "denominacion": "2 Mark",
+     "mintage": "150",
+     "precios": {
+      "63": 500.0
+     }
+    },
+    {
+     "anio": "1951G The 1951G dated coin was restruck without authorization by a mint official using genuine dies - quantity unknown",
+     "denominacion": "2 Mark",
+     "mintage": "Est. 13012000",
+     "precios": {
+      "60": 150.0,
+      "63": 300.0,
+      "VF": 50.0,
+      "XF": 75.0
+     }
+    },
+    {
+     "anio": "1951G Proof",
+     "denominacion": "2 Mark",
+     "mintage": "33",
+     "precios": {
+      "63": 1200.0
+     }
+    },
+    {
+     "anio": "1951J",
+     "denominacion": "2 Mark",
+     "mintage": "20,104,000",
+     "precios": {
+      "60": 75.0,
+      "63": 150.0,
+      "VF": 25.0,
+      "XF": 32.0
+     }
+    },
+    {
+     "anio": "1951J Proof",
+     "denominacion": "2 Mark",
+     "mintage": "180",
+     "precios": {
+      "63": 450.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/germany-federal-republic-2-mark-km-111-1951-cuid-1129922-duid-1317396",
+   "via": "world-html"
+  }
+ },
+ "world:GERMANY 1959 1 Deutsche Mark D": {
+  "consultado": "2026-09-11T01:31:29.812924+00:00",
+  "tabla": {
+   "descripcion": "Germany - Federal Republic 3 Silver Ducat X M74 Prices & Values",
+   "especificaciones": {
+    "asw": "1.4468oz",
+    "composicion": "Silver Fineness: 1.0000",
+    "diametro": "50mm",
+    "peso": "45.0000g",
+    "valor_metal": "$92.09 (9/11/2026)"
+   },
+   "filas": [
+    {
+     "anio": "(1959) Proof",
+     "denominacion": "3 Silver Ducat",
+     "mintage": "",
+     "precios": {}
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/germany-federal-republic-3-silver-ducat-x-m74-1959-cuid-1209049-duid-1314968",
+   "via": "world-html"
+  }
+ },
+ "world:GREAT BRITAIN 1916 Penny": {
+  "consultado": "2026-09-11T01:31:21.253199+00:00",
+  "tabla": {
+   "descripcion": "Great Britain Penny KM 810 Prices & Values",
+   "especificaciones": {
+    "composicion": "Bronze",
+    "diametro": "31mm",
+    "peso": "9.4000g"
+   },
+   "filas": [
+    {
+     "anio": "1911",
+     "denominacion": "Penny",
+     "mintage": "23,079,000",
+     "precios": {
+      "50": 11.0,
+      "53": 13.0,
+      "55": 17.0,
+      "58": 18.0,
+      "60": 25.0,
+      "61": 35.0,
+      "62": 45.0,
+      "63": 80.0,
+      "64": 135.0,
+      "65": 215.0,
+      "66": 375.0,
+      "F": 2.75,
+      "G": 1.75,
+      "PrAg": 1.0,
+      "VF": 5.5,
+      "VG": 2.25,
+      "XF": 8.0
+     }
+    },
+    {
+     "anio": "1912",
+     "denominacion": "Penny",
+     "mintage": "48,306,000",
+     "precios": {
+      "50": 11.0,
+      "53": 12.0,
+      "55": 17.0,
+      "58": 18.0,
+      "60": 25.0,
+      "61": 35.0,
+      "62": 45.0,
+      "63": 70.0,
+      "64": 85.0,
+      "65": 115.0,
+      "66": 375.0,
+      "F": 2.75,
+      "G": 1.75,
+      "PrAg": 1.0,
+      "VF": 5.5,
+      "VG": 2.5,
+      "XF": 8.5
+     }
+    },
+    {
+     "anio": "1912H",
+     "denominacion": "Penny",
+     "mintage": "16,800,000",
+     "precios": {
+      "50": 22.0,
+      "53": 28.0,
+      "55": 35.0,
+      "58": 45.0,
+      "60": 75.0,
+      "61": 90.0,
+      "62": 125.0,
+      "63": 175.0,
+      "64": 275.0,
+      "65": 350.0,
+      "66": 500.0,
+      "F": 5.5,
+      "G": 2.5,
+      "PrAg": 1.5,
+      "VF": 8.5,
+      "VG": 3.0,
+      "XF": 11.0
+     }
+    },
+    {
+     "anio": "1913",
+     "denominacion": "Penny",
+     "mintage": "65,497,000",
+     "precios": {
+      "50": 11.0,
+      "53": 13.0,
+      "55": 18.0,
+      "58": 20.0,
+      "60": 28.0,
+      "61": 40.0,
+      "62": 55.0,
+      "63": 75.0,
+      "64": 175.0,
+      "65": 225.0,
+      "66": 375.0,
+      "F": 2.75,
+      "G": 1.75,
+      "PrAg": 1.0,
+      "VF": 5.5,
+      "VG": 2.5,
+      "XF": 8.5
+     }
+    },
+    {
+     "anio": "1914",
+     "denominacion": "Penny",
+     "mintage": "50,821,000",
+     "precios": {
+      "50": 11.0,
+      "53": 13.0,
+      "55": 18.0,
+      "58": 20.0,
+      "60": 25.0,
+      "61": 35.0,
+      "62": 55.0,
+      "63": 100.0,
+      "64": 175.0,
+      "65": 250.0,
+      "66": 375.0,
+      "F": 2.75,
+      "G": 1.75,
+      "PrAg": 1.0,
+      "VF": 5.5,
+      "VG": 2.5,
+      "XF": 8.5
+     }
+    },
+    {
+     "anio": "1915",
+     "denominacion": "Penny",
+     "mintage": "47,311,000",
+     "precios": {
+      "50": 11.0,
+      "53": 13.0,
+      "55": 18.0,
+      "58": 20.0,
+      "60": 25.0,
+      "61": 35.0,
+      "62": 45.0,
+      "63": 85.0,
+      "64": 135.0,
+      "65": 225.0,
+      "66": 375.0,
+      "F": 2.75,
+      "G": 1.75,
+      "PrAg": 1.0,
+      "VF": 5.5,
+      "VG": 2.5,
+      "XF": 8.5
+     }
+    },
+    {
+     "anio": "1916",
+     "denominacion": "Penny",
+     "mintage": "86,411,000",
+     "precios": {
+      "50": 11.0,
+      "53": 13.0,
+      "55": 18.0,
+      "58": 20.0,
+      "60": 25.0,
+      "61": 35.0,
+      "62": 45.0,
+      "63": 90.0,
+      "64": 150.0,
+      "65": 225.0,
+      "66": 400.0,
+      "F": 2.75,
+      "G": 1.75,
+      "PrAg": 1.0,
+      "VF": 5.5,
+      "VG": 2.5,
+      "XF": 8.5
+     }
+    },
+    {
+     "anio": "1917",
+     "denominacion": "Penny",
+     "mintage": "107,905,000",
+     "precios": {
+      "50": 11.0,
+      "53": 13.0,
+      "55": 18.0,
+      "58": 20.0,
+      "60": 30.0,
+      "61": 40.0,
+      "62": 50.0,
+      "63": 85.0,
+      "64": 175.0,
+      "65": 225.0,
+      "66": 425.0,
+      "F": 2.75,
+      "G": 1.75,
+      "PrAg": 1.0,
+      "VF": 5.5,
+      "VG": 2.5,
+      "XF": 8.5
+     }
+    },
+    {
+     "anio": "1918",
+     "denominacion": "Penny",
+     "mintage": "84,227,000",
+     "precios": {
+      "50": 11.0,
+      "53": 13.0,
+      "55": 18.0,
+      "58": 20.0,
+      "60": 30.0,
+      "61": 40.0,
+      "62": 55.0,
+      "63": 90.0,
+      "64": 175.0,
+      "65": 300.0,
+      "66": 400.0,
+      "F": 2.75,
+      "G": 1.75,
+      "PrAg": 1.0,
+      "VF": 5.5,
+      "VG": 2.5,
+      "XF": 8.5
+     }
+    },
+    {
+     "anio": "1918H",
+     "denominacion": "Penny",
+     "mintage": "2,573,000",
+     "precios": {
+      "50": 125.0,
+      "53": 175.0,
+      "55": 225.0,
+      "58": 325.0,
+      "60": 550.0,
+      "61": 775.0,
+      "62": 1050.0,
+      "63": 1300.0,
+      "64": 1750.0,
+      "65": 3200.0,
+      "F": 18.0,
+      "G": 8.5,
+      "PrAg": 5.0,
+      "VF": 35.0,
+      "VG": 12.5,
+      "XF": 80.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1918KN",
+     "denominacion": "Penny",
+     "mintage": "",
+     "precios": {
+      "50": 125.0,
+      "53": 175.0,
+      "55": 225.0,
+      "58": 325.0,
+      "60": 550.0,
+      "61": 850.0,
+      "62": 1050.0,
+      "63": 1300.0,
+      "64": 1650.0,
+      "65": 3200.0,
+      "F": 20.0,
+      "G": 8.5,
+      "PrAg": 5.0,
+      "VF": 35.0,
+      "VG": 12.5,
+      "XF": 100.0
+     }
+    },
+    {
+     "anio": "1919",
+     "denominacion": "Penny",
+     "mintage": "113,761,000",
+     "precios": {
+      "50": 11.0,
+      "53": 13.0,
+      "55": 18.0,
+      "58": 20.0,
+      "60": 25.0,
+      "61": 35.0,
+      "62": 45.0,
+      "63": 90.0,
+      "64": 135.0,
+      "65": 225.0,
+      "66": 375.0,
+      "F": 2.75,
+      "G": 1.75,
+      "PrAg": 1.0,
+      "VF": 5.5,
+      "VG": 2.5,
+      "XF": 8.5
+     }
+    },
+    {
+     "anio": "1919H",
+     "denominacion": "Penny",
+     "mintage": "4,526,000",
+     "precios": {
+      "50": 115.0,
+      "53": 175.0,
+      "55": 225.0,
+      "58": 325.0,
+      "60": 550.0,
+      "61": 775.0,
+      "62": 1050.0,
+      "63": 1300.0,
+      "64": 1550.0,
+      "65": 3300.0,
+      "F": 20.0,
+      "G": 8.5,
+      "PrAg": 5.0,
+      "VF": 35.0,
+      "VG": 12.5,
+      "XF": 85.0
+     }
+    },
+    {
+     "anio": "1919KN",
+     "denominacion": "Penny",
+     "mintage": "",
+     "precios": {
+      "50": 115.0,
+      "53": 175.0,
+      "55": 225.0,
+      "58": 325.0,
+      "60": 550.0,
+      "61": 775.0,
+      "62": 1050.0,
+      "63": 1300.0,
+      "64": 1650.0,
+      "65": 3250.0,
+      "F": 20.0,
+      "G": 8.5,
+      "PrAg": 5.0,
+      "VF": 35.0,
+      "VG": 12.5,
+      "XF": 90.0
+     }
+    },
+    {
+     "anio": "1920",
+     "denominacion": "Penny",
+     "mintage": "124,693,000",
+     "precios": {
+      "50": 11.0,
+      "53": 13.0,
+      "55": 18.0,
+      "58": 20.0,
+      "60": 25.0,
+      "61": 35.0,
+      "62": 45.0,
+      "63": 90.0,
+      "64": 135.0,
+      "65": 225.0,
+      "66": 375.0,
+      "F": 2.75,
+      "G": 1.75,
+      "PrAg": 1.0,
+      "VF": 5.5,
+      "VG": 2.5,
+      "XF": 8.5
+     }
+    },
+    {
+     "anio": "1921",
+     "denominacion": "Penny",
+     "mintage": "129,717,999",
+     "precios": {
+      "50": 11.0,
+      "53": 13.0,
+      "55": 18.0,
+      "58": 20.0,
+      "60": 25.0,
+      "61": 35.0,
+      "62": 45.0,
+      "63": 90.0,
+      "64": 135.0,
+      "65": 215.0,
+      "66": 375.0,
+      "F": 2.75,
+      "G": 1.75,
+      "PrAg": 1.0,
+      "VF": 5.5,
+      "VG": 2.5,
+      "XF": 8.5
+     }
+    },
+    {
+     "anio": "1922 Reverse of 1927",
+     "denominacion": "Penny",
+     "mintage": "",
+     "precios": {
+      "F": 4000.0,
+      "G": 3000.0,
+      "PrAg": 2750.0,
+      "VF": 7500.0,
+      "VG": 3500.0,
+      "XF": 10000.0
+     }
+    },
+    {
+     "anio": "1922",
+     "denominacion": "Penny",
+     "mintage": "16,347,000",
+     "precios": {
+      "50": 11.0,
+      "53": 13.0,
+      "55": 18.0,
+      "58": 20.0,
+      "60": 25.0,
+      "61": 35.0,
+      "62": 45.0,
+      "63": 90.0,
+      "64": 135.0,
+      "65": 225.0,
+      "66": 400.0,
+      "F": 2.75,
+      "G": 1.75,
+      "PrAg": 1.0,
+      "VF": 5.5,
+      "VG": 2.5,
+      "XF": 8.5
+     }
+    },
+    {
+     "anio": "1926",
+     "denominacion": "Penny",
+     "mintage": "4,499,000",
+     "precios": {
+      "50": 25.0,
+      "53": 30.0,
+      "55": 35.0,
+      "58": 45.0,
+      "60": 75.0,
+      "61": 100.0,
+      "62": 125.0,
+      "63": 175.0,
+      "64": 275.0,
+      "65": 325.0,
+      "66": 525.0,
+      "F": 6.5,
+      "G": 2.5,
+      "PrAg": 1.5,
+      "VF": 9.0,
+      "VG": 3.0,
+      "XF": 12.0
+     }
+    },
+    {
+     "anio": "1926 Proof",
+     "denominacion": "Penny",
+     "mintage": "",
+     "precios": {
+      "63": 2500.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/great-britain-penny-km-810-1911-1926-cuid-1202240-duid-1324957",
+   "via": "world-html"
+  }
+ },
+ "world:GREAT BRITAIN 1980 25 New Pence": {
+  "consultado": "2026-09-11T01:31:19.451243+00:00",
+  "tabla": {
+   "descripcion": "Great Britain 25 New Pence KM 921 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel",
+    "diametro": "38.61mm",
+    "peso": "28.2800g"
+   },
+   "filas": [
+    {
+     "anio": "-1980",
+     "denominacion": "25 New Pence",
+     "mintage": "9,306,000",
+     "precios": {
+      "60": 1.3,
+      "63": 1.5,
+      "65": 2.0,
+      "XF": 1.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/great-britain-25-new-pence-km-921-1980-cuid-1202257-duid-1327068",
+   "via": "world-html"
+  }
+ },
+ "world:GREAT BRITAIN 2014 5 Pence": {
+  "consultado": "2026-09-11T01:31:39.557971+00:00",
+  "tabla": {
+   "descripcion": "Great Britain 5 Pence KM 1109a Prices & Values",
+   "especificaciones": {
+    "asw": "0.0967oz",
+    "composicion": "Silver Fineness: 0.9250",
+    "diametro": "18mm",
+    "peso": "3.2500g",
+    "valor_metal": "$6.15 (9/11/2026)"
+   },
+   "filas": [
+    {
+     "anio": "2008 Proof",
+     "denominacion": "5 Pence",
+     "mintage": "",
+     "precios": {
+      "63": 20.0
+     }
+    },
+    {
+     "anio": "2009 Proof",
+     "denominacion": "5 Pence",
+     "mintage": "",
+     "precios": {
+      "63": 20.0
+     }
+    },
+    {
+     "anio": "2010 Proof",
+     "denominacion": "5 Pence",
+     "mintage": "3,500",
+     "precios": {
+      "63": 20.0
+     }
+    },
+    {
+     "anio": "2011 Proof Also exists as a Piedfort, P79.",
+     "denominacion": "5 Pence",
+     "mintage": "",
+     "precios": {
+      "63": 35.0
+     }
+    },
+    {
+     "anio": "2014",
+     "denominacion": "5 Pence",
+     "mintage": "",
+     "precios": {}
+    },
+    {
+     "anio": "2014 Proof",
+     "denominacion": "5 Pence",
+     "mintage": "368",
+     "precios": {}
+    },
+    {
+     "anio": "2015",
+     "denominacion": "5 Pence",
+     "mintage": "",
+     "precios": {}
+    },
+    {
+     "anio": "2015 Proof",
+     "denominacion": "5 Pence",
+     "mintage": "1,539",
+     "precios": {}
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/great-britain-5-pence-km-1109a-2008-2015-cuid-1187407-duid-1891399",
+   "via": "world-html"
+  }
+ },
+ "world:GREAT BRITAIN 2018 1 Pound": {
+  "consultado": "2026-09-11T01:31:41.978000+00:00",
+  "tabla": {
+   "descripcion": "Great Britain 10 Pounds KM 1512 Prices & Values",
+   "especificaciones": {
+    "composicion": "Gold Fineness: 0.9990",
+    "diametro": "16.5mm",
+    "peso": "1.8000g AGW: 0.0578oz",
+    "valor_metal": "$250.31 (9/11/2026)"
+   },
+   "filas": [
+    {
+     "anio": "2019",
+     "denominacion": "10 Pounds",
+     "mintage": "",
+     "precios": {}
+    },
+    {
+     "anio": "2019 Proof",
+     "denominacion": "10 Pounds",
+     "mintage": "",
+     "precios": {}
+    },
+    {
+     "anio": "2020",
+     "denominacion": "10 Pounds",
+     "mintage": "",
+     "precios": {}
+    },
+    {
+     "anio": "2020 Proof",
+     "denominacion": "10 Pounds",
+     "mintage": "",
+     "precios": {}
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/great-britain-10-pounds-km-1512-2018-2020-cuid-1848665-duid-1848666",
+   "via": "world-html"
+  }
+ },
+ "world:ICELAND 1980 10 Kronur": {
+  "consultado": "2026-09-11T01:29:47.677484+00:00",
+  "tabla": {
+   "descripcion": "Iceland 10 Krónur KM 15 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel",
+    "diametro": "25mm",
+    "peso": "6.5200g"
+   },
+   "filas": [
+    {
+     "anio": "1967",
+     "denominacion": "10 Krónur",
+     "mintage": "1,000,000",
+     "precios": {
+      "60": 1.0,
+      "63": 1.8,
+      "65": 3.0,
+      "F": 0.2,
+      "VF": 0.3,
+      "XF": 0.6
+     }
+    },
+    {
+     "anio": "1969",
+     "denominacion": "10 Krónur",
+     "mintage": "500,000",
+     "precios": {
+      "60": 1.5,
+      "63": 3.0,
+      "65": 5.0,
+      "F": 0.2,
+      "VF": 0.4,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1970",
+     "denominacion": "10 Krónur",
+     "mintage": "1,500,000",
+     "precios": {
+      "60": 0.8,
+      "63": 1.3,
+      "65": 2.5,
+      "VF": 0.2,
+      "XF": 0.4
+     }
+    },
+    {
+     "anio": "1971",
+     "denominacion": "10 Krónur",
+     "mintage": "1,500,000",
+     "precios": {
+      "60": 0.8,
+      "63": 1.3,
+      "65": 2.5,
+      "VF": 0.2,
+      "XF": 0.4
+     }
+    },
+    {
+     "anio": "1973",
+     "denominacion": "10 Krónur",
+     "mintage": "1,500,000",
+     "precios": {
+      "60": 0.8,
+      "63": 1.3,
+      "65": 2.5,
+      "VF": 0.2,
+      "XF": 0.4
+     }
+    },
+    {
+     "anio": "1974",
+     "denominacion": "10 Krónur",
+     "mintage": "2,000,000",
+     "precios": {
+      "60": 0.4,
+      "63": 0.7,
+      "65": 1.0,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1975",
+     "denominacion": "10 Krónur",
+     "mintage": "2,500,000",
+     "precios": {
+      "60": 0.4,
+      "63": 0.7,
+      "65": 1.0,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1976",
+     "denominacion": "10 Krónur",
+     "mintage": "2,500,000",
+     "precios": {
+      "60": 0.4,
+      "63": 0.7,
+      "65": 1.0,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1977",
+     "denominacion": "10 Krónur",
+     "mintage": "2,000,000",
+     "precios": {
+      "60": 0.4,
+      "63": 0.7,
+      "65": 1.0,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1978",
+     "denominacion": "10 Krónur",
+     "mintage": "10,500,000",
+     "precios": {
+      "60": 0.4,
+      "63": 0.7,
+      "65": 1.0,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1980",
+     "denominacion": "10 Krónur",
+     "mintage": "4,600,000",
+     "precios": {
+      "60": 0.4,
+      "63": 0.7,
+      "65": 1.0,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1980 Proof",
+     "denominacion": "10 Krónur",
+     "mintage": "15,000",
+     "precios": {
+      "63": 3.25
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/3nur-km-15-1967-1980-cuid-1121951-duid-1469699",
+   "via": "world-html"
+  }
+ },
+ "world:INDIA 1963 Naya Paisa": {
+  "consultado": "2026-09-11T01:29:55.398814+00:00",
+  "tabla": {
+   "descripcion": "India-Republic Naya Paisa KM 8a Prices & Values",
+   "especificaciones": {
+    "composicion": "Nickel-Brass",
+    "diametro": "16mm",
+    "peso": "1.5100g"
+   },
+   "filas": [
+    {
+     "anio": "1962(B)",
+     "denominacion": "Naya Paisa",
+     "mintage": "235,103,000",
+     "precios": {
+      "60": 2.0,
+      "63": 4.0,
+      "VF": 0.6,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1962(B) Proof",
+     "denominacion": "Naya Paisa",
+     "mintage": "",
+     "precios": {
+      "63": 200.0
+     }
+    },
+    {
+     "anio": "1962(C)",
+     "denominacion": "Naya Paisa",
+     "mintage": "",
+     "precios": {
+      "60": 2.0,
+      "63": 4.0,
+      "VF": 0.6,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1962(Hy)",
+     "denominacion": "Naya Paisa",
+     "mintage": "",
+     "precios": {
+      "60": 2.0,
+      "63": 4.0,
+      "VF": 0.6,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1963(B)",
+     "denominacion": "Naya Paisa",
+     "mintage": "343,313,000",
+     "precios": {
+      "60": 2.0,
+      "63": 4.0,
+      "VF": 0.6,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1963(B) Proof",
+     "denominacion": "Naya Paisa",
+     "mintage": "",
+     "precios": {
+      "63": 200.0
+     }
+    },
+    {
+     "anio": "1963(C)",
+     "denominacion": "Naya Paisa",
+     "mintage": "",
+     "precios": {
+      "60": 2.0,
+      "63": 4.0,
+      "VF": 0.6,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1963(H)",
+     "denominacion": "Naya Paisa",
+     "mintage": "",
+     "precios": {
+      "60": 2.0,
+      "63": 4.0,
+      "VF": 0.6,
+      "XF": 1.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/india-republic-naya-paisa-km-8a-1962-1963-cuid-1131309-duid-1474353",
+   "via": "world-html"
+  }
+ },
+ "world:ITALY 1930 10 Centesimi": {
+  "consultado": "2026-09-11T01:31:17.629476+00:00",
+  "tabla": {
+   "descripcion": "Italy 10 Centesimi KM 60 Prices & Values",
+   "especificaciones": {
+    "composicion": "Bronze",
+    "diametro": "23mm",
+    "peso": "5.3400g"
+   },
+   "filas": [
+    {
+     "anio": "1919R",
+     "denominacion": "10 Centesimi",
+     "mintage": "986,000",
+     "precios": {
+      "60": 295.0,
+      "63": 600.0,
+      "F": 12.0,
+      "VF": 25.0,
+      "XF": 85.0
+     }
+    },
+    {
+     "anio": "1920R",
+     "denominacion": "10 Centesimi",
+     "mintage": "37,995,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1921R",
+     "denominacion": "10 Centesimi",
+     "mintage": "66,510,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1922R",
+     "denominacion": "10 Centesimi",
+     "mintage": "45,217,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1923R",
+     "denominacion": "10 Centesimi",
+     "mintage": "31,529,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1924R",
+     "denominacion": "10 Centesimi",
+     "mintage": "35,312,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1925R",
+     "denominacion": "10 Centesimi",
+     "mintage": "22,370,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1926R",
+     "denominacion": "10 Centesimi",
+     "mintage": "25,190,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1927R",
+     "denominacion": "10 Centesimi",
+     "mintage": "22,673,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1928R",
+     "denominacion": "10 Centesimi",
+     "mintage": "15,680,000",
+     "precios": {
+      "60": 20.0,
+      "63": 60.0,
+      "VF": 0.1,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1929R",
+     "denominacion": "10 Centesimi",
+     "mintage": "15,593,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1930R",
+     "denominacion": "10 Centesimi",
+     "mintage": "17,115,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1931R",
+     "denominacion": "10 Centesimi",
+     "mintage": "10,750,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1932R",
+     "denominacion": "10 Centesimi",
+     "mintage": "5,678,000",
+     "precios": {
+      "60": 50.0,
+      "63": 100.0,
+      "VF": 0.1,
+      "XF": 5.0
+     }
+    },
+    {
+     "anio": "1933R",
+     "denominacion": "10 Centesimi",
+     "mintage": "10,250,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1934R",
+     "denominacion": "10 Centesimi",
+     "mintage": "18,300,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1935R",
+     "denominacion": "10 Centesimi",
+     "mintage": "10,500,000",
+     "precios": {
+      "60": 4.0,
+      "63": 12.0,
+      "65": 20.0,
+      "VF": 0.1,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1936R",
+     "denominacion": "10 Centesimi",
+     "mintage": "8,770,000",
+     "precios": {
+      "60": 40.0,
+      "63": 100.0,
+      "VF": 0.1,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "1937R",
+     "denominacion": "10 Centesimi",
+     "mintage": "5,500,000",
+     "precios": {
+      "60": 40.0,
+      "63": 100.0,
+      "VF": 0.1,
+      "XF": 3.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/italy-10-centesimi-km-60-1919-1937-cuid-1125593-duid-1471439",
+   "via": "world-html"
+  }
+ },
+ "world:ITALY 1941 20 Centesimi": {
+  "consultado": "2026-09-11T01:31:11.884236+00:00",
+  "tabla": {
+   "descripcion": "Italy 20 Centesimi KM 75b Prices & Values",
+   "especificaciones": {
+    "composicion": "Stainless Steel",
+    "diametro": "21.8mm",
+    "peso": "4.0400g"
+   },
+   "filas": [
+    {
+     "anio": "1939R Yr. XVII",
+     "denominacion": "20 Centesimi",
+     "mintage": "10,462,000",
+     "precios": {
+      "60": 1.0,
+      "63": 2.0,
+      "65": 4.0,
+      "VF": 0.1,
+      "XF": 0.4
+     }
+    },
+    {
+     "anio": "1939R Yr. XVIII",
+     "denominacion": "20 Centesimi",
+     "mintage": "",
+     "precios": {
+      "60": 1.0,
+      "63": 2.0,
+      "65": 4.0,
+      "VF": 0.1,
+      "XF": 0.4
+     }
+    },
+    {
+     "anio": "1940R Yr. XVIII",
+     "denominacion": "20 Centesimi",
+     "mintage": "35,350,000",
+     "precios": {
+      "60": 1.0,
+      "63": 2.0,
+      "65": 4.0,
+      "VF": 0.1,
+      "XF": 0.4
+     }
+    },
+    {
+     "anio": "1941R Yr. XIX",
+     "denominacion": "20 Centesimi",
+     "mintage": "97,300,000",
+     "precios": {
+      "60": 1.0,
+      "63": 2.0,
+      "65": 4.0,
+      "VF": 0.1,
+      "XF": 0.4
+     }
+    },
+    {
+     "anio": "1942R Yr. XX",
+     "denominacion": "20 Centesimi",
+     "mintage": "48,500,000",
+     "precios": {
+      "60": 1.0,
+      "63": 2.0,
+      "65": 4.0,
+      "VF": 0.1,
+      "XF": 0.4
+     }
+    },
+    {
+     "anio": "1943R Yr. XXI All known plain edge examples of KM#75 types are considered to be doctored coins, altered from their original state of strike.",
+     "denominacion": "20 Centesimi",
+     "mintage": "18,453,000",
+     "precios": {
+      "60": 1.0,
+      "63": 2.0,
+      "65": 4.0,
+      "VF": 0.1,
+      "XF": 0.4
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/italy-20-centesimi-km-75b-1939-1943-cuid-1125698-duid-1478460",
+   "via": "world-html"
+  }
+ },
+ "world:LIBERIA 2000 5 Cents": {
+  "consultado": "2026-09-11T01:29:41.859144+00:00",
+  "tabla": {
+   "descripcion": "Liberia 5 Cents KM 474 Prices & Values",
+   "especificaciones": {
+    "composicion": "Aluminum",
+    "diametro": "26.9mm",
+    "peso": "2.2500g"
+   },
+   "filas": [
+    {
+     "anio": "2000",
+     "denominacion": "5 Cents",
+     "mintage": "",
+     "precios": {
+      "60": 1.0,
+      "63": 1.3,
+      "65": 1.8
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/liberia-5-cents-km-474-2000-cuid-1133850-duid-1465486",
+   "via": "world-html"
+  }
+ },
+ "world:MEXICO 1962 1 Peso": {
+  "consultado": "2026-09-11T01:32:05.923903+00:00",
+  "tabla": {
+   "descripcion": "Mexico ESTADOS UNIDOS MEXICANOS Peso KM 459 Prices & Values",
+   "especificaciones": {
+    "asw": "0.0514oz",
+    "composicion": "Silver Fineness: 0.1000",
+    "diametro": "34.5mm",
+    "peso": "16.0000g",
+    "valor_metal": "$3.27 (9/11/2026)"
+   },
+   "filas": [
+    {
+     "anio": "1957",
+     "denominacion": "Peso",
+     "mintage": "28,273,000",
+     "precios": {
+      "63": 10.0
+     }
+    },
+    {
+     "anio": "1958",
+     "denominacion": "Peso",
+     "mintage": "41,899,000",
+     "precios": {}
+    },
+    {
+     "anio": "1959",
+     "denominacion": "Peso",
+     "mintage": "27,369,000",
+     "precios": {
+      "60": 5.5,
+      "63": 8.0
+     }
+    },
+    {
+     "anio": "1960",
+     "denominacion": "Peso",
+     "mintage": "26,259,000",
+     "precios": {
+      "60": 3.5,
+      "63": 6.0
+     }
+    },
+    {
+     "anio": "1961",
+     "denominacion": "Peso",
+     "mintage": "52,601,000",
+     "precios": {
+      "63": 5.0
+     }
+    },
+    {
+     "anio": "1962",
+     "denominacion": "Peso",
+     "mintage": "61,094,000",
+     "precios": {
+      "63": 4.0
+     }
+    },
+    {
+     "anio": "1963",
+     "denominacion": "Peso",
+     "mintage": "26,394,000",
+     "precios": {}
+    },
+    {
+     "anio": "1964",
+     "denominacion": "Peso",
+     "mintage": "15,615,000",
+     "precios": {
+      "68": 250.0
+     }
+    },
+    {
+     "anio": "1965",
+     "denominacion": "Peso",
+     "mintage": "5,004,000",
+     "precios": {}
+    },
+    {
+     "anio": "1966",
+     "denominacion": "Peso",
+     "mintage": "30,998,000",
+     "precios": {}
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1967",
+     "denominacion": "Peso",
+     "mintage": "9,308,000",
+     "precios": {
+      "63": 4.5
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/mexico-estados-unidos-mexicanos-peso-km-459-1957-1967-cuid-1116542-duid-1418349",
+   "via": "world-html"
+  }
+ },
+ "world:MONACO 1945 5 Francs": {
+  "consultado": "2026-09-11T01:31:27.700177+00:00",
+  "tabla": {
+   "descripcion": "Monaco 5 Francs KM 122 Prices & Values",
+   "especificaciones": {
+    "composicion": "Aluminum"
+   },
+   "filas": [
+    {
+     "anio": "1945 (a)",
+     "denominacion": "5 Francs",
+     "mintage": "1,000,000",
+     "precios": {
+      "60": 15.0,
+      "63": 20.0,
+      "65": 45.0,
+      "F": 1.5,
+      "VF": 3.0,
+      "XF": 7.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/monaco-5-francs-km-122-1945-cuid-1117184-duid-1419853",
+   "via": "world-html"
+  }
+ },
+ "world:NETHERLANDS 1878 Cent": {
+  "consultado": "2026-09-11T01:29:53.017081+00:00",
+  "tabla": {
+   "descripcion": "Netherlands Cent KM 107.1 Prices & Values",
+   "especificaciones": {
+    "composicion": "Bronze",
+    "diametro": "19mm",
+    "peso": "2.5000g"
+   },
+   "filas": [
+    {
+     "anio": "1877",
+     "denominacion": "Cent",
+     "mintage": "6,100,000",
+     "precios": {
+      "60": 110.0,
+      "63": 150.0,
+      "F": 3.5,
+      "VF": 8.0,
+      "XF": 25.0
+     }
+    },
+    {
+     "anio": "1878",
+     "denominacion": "Cent",
+     "mintage": "53,900,000",
+     "precios": {
+      "60": 15.0,
+      "63": 20.0,
+      "F": 0.5,
+      "VF": 2.0,
+      "XF": 6.0
+     }
+    },
+    {
+     "anio": "1880",
+     "denominacion": "Cent",
+     "mintage": "20,000,000",
+     "precios": {
+      "60": 30.0,
+      "63": 35.0,
+      "F": 1.5,
+      "VF": 4.0,
+      "XF": 10.0
+     }
+    },
+    {
+     "anio": "1881",
+     "denominacion": "Cent",
+     "mintage": "10,000,000",
+     "precios": {
+      "60": 30.0,
+      "63": 35.0,
+      "F": 1.5,
+      "VF": 4.0,
+      "XF": 10.0
+     }
+    },
+    {
+     "anio": "1882",
+     "denominacion": "Cent",
+     "mintage": "5,000,000",
+     "precios": {
+      "60": 45.0,
+      "63": 65.0,
+      "F": 3.0,
+      "VF": 6.0,
+      "XF": 15.0
+     }
+    },
+    {
+     "anio": "1883",
+     "denominacion": "Cent",
+     "mintage": "15,000,000",
+     "precios": {
+      "60": 30.0,
+      "63": 35.0,
+      "F": 1.5,
+      "VF": 4.0,
+      "XF": 10.0
+     }
+    },
+    {
+     "anio": "1884",
+     "denominacion": "Cent",
+     "mintage": "10,000,000",
+     "precios": {
+      "60": 30.0,
+      "63": 35.0,
+      "F": 1.5,
+      "VF": 4.0,
+      "XF": 10.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/netherlands-cent-km-107.1-1877-1884-cuid-1083490-duid-1430033",
+   "via": "world-html"
+  }
+ },
+ "world:NETHERLANDS ANTILLES 1963 Cent": {
+  "consultado": "2026-09-11T01:29:33.617929+00:00",
+  "tabla": {
+   "descripcion": "Netherlands Antilles Cent KM 1 Prices & Values",
+   "especificaciones": {
+    "composicion": "Bronze",
+    "diametro": "19mm",
+    "peso": "2.5000g"
+   },
+   "filas": [
+    {
+     "anio": "1952",
+     "denominacion": "Cent",
+     "mintage": "1,000,000",
+     "precios": {
+      "50": 6.0,
+      "60": 8.0,
+      "63": 12.0,
+      "65": 20.0,
+      "F": 1.3,
+      "VF": 2.5,
+      "VG": 0.6,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "1952 Proof",
+     "denominacion": "Cent",
+     "mintage": "100",
+     "precios": {
+      "63": 150.0
+     }
+    },
+    {
+     "anio": "1954",
+     "denominacion": "Cent",
+     "mintage": "1,000,000",
+     "precios": {
+      "50": 5.0,
+      "60": 7.0,
+      "63": 10.0,
+      "65": 18.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "VG": 0.5,
+      "XF": 3.5
+     }
+    },
+    {
+     "anio": "1954 Proof",
+     "denominacion": "Cent",
+     "mintage": "200",
+     "precios": {
+      "63": 150.0
+     }
+    },
+    {
+     "anio": "1957",
+     "denominacion": "Cent",
+     "mintage": "1,000,000",
+     "precios": {
+      "50": 1.5,
+      "60": 2.0,
+      "63": 6.0,
+      "65": 14.0,
+      "F": 0.5,
+      "VF": 0.8,
+      "XF": 1.3
+     }
+    },
+    {
+     "anio": "1957 Proof",
+     "denominacion": "Cent",
+     "mintage": "250",
+     "precios": {
+      "63": 150.0
+     }
+    },
+    {
+     "anio": "1959",
+     "denominacion": "Cent",
+     "mintage": "1,000,000",
+     "precios": {
+      "50": 1.5,
+      "60": 2.0,
+      "63": 5.0,
+      "65": 10.0,
+      "F": 0.5,
+      "VF": 0.8,
+      "XF": 1.3
+     }
+    },
+    {
+     "anio": "1959 Proof",
+     "denominacion": "Cent",
+     "mintage": "250",
+     "precios": {
+      "63": 150.0
+     }
+    },
+    {
+     "anio": "1961",
+     "denominacion": "Cent",
+     "mintage": "1,000,000",
+     "precios": {
+      "50": 1.3,
+      "60": 1.8,
+      "63": 2.5,
+      "65": 4.5,
+      "F": 0.3,
+      "VF": 0.6,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1961 Proof",
+     "denominacion": "Cent",
+     "mintage": "",
+     "precios": {
+      "63": 100.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1963",
+     "denominacion": "Cent",
+     "mintage": "1,000,000",
+     "precios": {
+      "50": 1.3,
+      "60": 1.8,
+      "63": 2.5,
+      "65": 4.5,
+      "F": 0.3,
+      "VF": 0.6,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1963 Proof",
+     "denominacion": "Cent",
+     "mintage": "",
+     "precios": {
+      "63": 100.0
+     }
+    },
+    {
+     "anio": "1965",
+     "denominacion": "Cent",
+     "mintage": "1,200,000",
+     "precios": {
+      "50": 1.3,
+      "60": 1.8,
+      "63": 2.5,
+      "65": 4.5,
+      "F": 0.3,
+      "VF": 0.6,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1965 Proof",
+     "denominacion": "Cent",
+     "mintage": "",
+     "precios": {
+      "63": 100.0
+     }
+    },
+    {
+     "anio": "1967",
+     "denominacion": "Cent",
+     "mintage": "850,000",
+     "precios": {
+      "50": 1.3,
+      "60": 1.8,
+      "63": 2.5,
+      "65": 5.0,
+      "F": 0.3,
+      "VF": 0.6,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1967 Proof",
+     "denominacion": "Cent",
+     "mintage": "",
+     "precios": {
+      "63": 100.0
+     }
+    },
+    {
+     "anio": "1968 fish",
+     "denominacion": "Cent",
+     "mintage": "900,000",
+     "precios": {
+      "50": 1.3,
+      "60": 1.8,
+      "63": 2.5,
+      "65": 5.0,
+      "F": 0.3,
+      "VF": 0.6,
+      "XF": 1.0
+     }
+    },
+    {
+     "anio": "1968 star and fish Struck in 1969",
+     "denominacion": "Cent",
+     "mintage": "700,000",
+     "precios": {
+      "50": 7.0,
+      "60": 9.0,
+      "63": 15.0,
+      "65": 22.0,
+      "F": 1.5,
+      "VF": 2.5,
+      "XF": 5.0
+     }
+    },
+    {
+     "anio": "1970",
+     "denominacion": "Cent",
+     "mintage": "200,000",
+     "precios": {
+      "50": 3.0,
+      "60": 5.0,
+      "63": 8.0,
+      "65": 14.0,
+      "F": 1.0,
+      "VF": 1.5,
+      "XF": 2.0
+     }
+    },
+    {
+     "anio": "1970 Proof",
+     "denominacion": "Cent",
+     "mintage": "",
+     "precios": {
+      "63": 60.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/netherlands-antilles-cent-km-1-1952-1970-cuid-1084705-duid-1431288",
+   "via": "world-html"
+  }
+ },
+ "world:NETHERLANDS EAST INDIES 1856 Cent": {
+  "consultado": "2026-09-11T01:31:02.943560+00:00",
+  "tabla": {
+   "descripcion": "Netherlands East Indies 2-1/2 Cents KM 308.1 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper",
+    "diametro": "31mm",
+    "peso": "12.5000g"
+   },
+   "filas": [
+    {
+     "anio": "1856",
+     "denominacion": "2-1/2 Cents",
+     "mintage": "2,480,000",
+     "precios": {
+      "60": 200.0,
+      "63": 250.0,
+      "F": 25.0,
+      "VF": 50.0,
+      "XF": 100.0
+     }
+    },
+    {
+     "anio": "1857",
+     "denominacion": "2-1/2 Cents",
+     "mintage": "36,560,000",
+     "precios": {
+      "60": 60.0,
+      "63": 85.0,
+      "F": 7.5,
+      "VF": 15.0,
+      "XF": 30.0
+     }
+    },
+    {
+     "anio": "1858",
+     "denominacion": "2-1/2 Cents",
+     "mintage": "40,989,806",
+     "precios": {
+      "60": 60.0,
+      "63": 85.0,
+      "F": 7.5,
+      "VF": 15.0,
+      "XF": 30.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/netherlands-east-indies-2-1-2-cents-km-308.1-1856-1858-cuid-1828013-duid-1828014",
+   "via": "world-html"
+  }
+ },
+ "world:PARAGUAY 1938 2 Pesos": {
+  "consultado": "2026-09-11T01:30:22.380581+00:00",
+  "tabla": {
+   "descripcion": "Paraguay 2 Pesos KM 17 Prices & Values",
+   "especificaciones": {
+    "composicion": "Aluminum",
+    "diametro": "22.5mm",
+    "peso": "1.7600g"
+   },
+   "filas": [
+    {
+     "anio": "1938",
+     "denominacion": "2 Pesos",
+     "mintage": "",
+     "precios": {
+      "50": 4.0,
+      "60": 6.0,
+      "63": 10.0,
+      "65": 15.0,
+      "F": 1.0,
+      "VF": 1.5,
+      "XF": 3.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/paraguay-2-pesos-km-17-1938-cuid-1080145-duid-1510952",
+   "via": "world-html"
+  }
+ },
+ "world:PERU 1961 1 Sol": {
+  "consultado": "2026-09-11T01:29:50.242716+00:00",
+  "tabla": {
+   "descripcion": "Peru 1/2 Sol KM 220.5 Prices & Values",
+   "especificaciones": {
+    "composicion": "Brass",
+    "diametro": "27.1mm",
+    "peso": "7.4000g"
+   },
+   "filas": [
+    {
+     "anio": "1942 Long-top 2",
+     "denominacion": "1/2 Sol",
+     "mintage": "",
+     "precios": {
+      "60": 7.0,
+      "63": 15.0,
+      "65": 25.0,
+      "F": 1.5,
+      "VF": 2.5,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "1944",
+     "denominacion": "1/2 Sol",
+     "mintage": "",
+     "precios": {
+      "60": 5.0,
+      "63": 10.0,
+      "65": 18.0,
+      "F": 0.8,
+      "VF": 1.5,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "1944 AP",
+     "denominacion": "1/2 Sol",
+     "mintage": "",
+     "precios": {
+      "60": 4.0,
+      "63": 7.0,
+      "65": 12.0,
+      "F": 0.5,
+      "VF": 1.0,
+      "XF": 2.0
+     }
+    },
+    {
+     "anio": "1945",
+     "denominacion": "1/2 Sol",
+     "mintage": "",
+     "precios": {
+      "60": 5.0,
+      "63": 10.0,
+      "65": 15.0,
+      "F": 0.8,
+      "VF": 1.5,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "1945 AP",
+     "denominacion": "1/2 Sol",
+     "mintage": "",
+     "precios": {
+      "60": 5.0,
+      "63": 10.0,
+      "65": 15.0,
+      "F": 0.8,
+      "VF": 1.5,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "1946 AP",
+     "denominacion": "1/2 Sol",
+     "mintage": "",
+     "precios": {
+      "60": 3.5,
+      "63": 7.0,
+      "65": 12.0,
+      "F": 0.4,
+      "VF": 0.8,
+      "XF": 1.3
+     }
+    },
+    {
+     "anio": "1946/5 AP",
+     "denominacion": "1/2 Sol",
+     "mintage": "3,744,000",
+     "precios": {
+      "60": 9.0,
+      "63": 17.5,
+      "65": 28.0,
+      "F": 2.0,
+      "VF": 3.5,
+      "XF": 6.5
+     }
+    },
+    {
+     "anio": "1947",
+     "denominacion": "1/2 Sol",
+     "mintage": "",
+     "precios": {
+      "60": 3.5,
+      "63": 7.0,
+      "65": 12.0,
+      "F": 0.4,
+      "VF": 0.8,
+      "XF": 1.3
+     }
+    },
+    {
+     "anio": "1947 AP",
+     "denominacion": "1/2 Sol",
+     "mintage": "6,066,000",
+     "precios": {
+      "60": 3.5,
+      "63": 7.0,
+      "65": 12.0,
+      "F": 0.4,
+      "VF": 0.8,
+      "XF": 1.3
+     }
+    },
+    {
+     "anio": "1948",
+     "denominacion": "1/2 Sol",
+     "mintage": "3,324,000",
+     "precios": {
+      "60": 3.5,
+      "63": 7.0,
+      "65": 12.0,
+      "F": 0.4,
+      "VF": 0.8,
+      "XF": 1.3
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1949",
+     "denominacion": "1/2 Sol",
+     "mintage": "",
+     "precios": {
+      "60": 9.0,
+      "63": 18.0,
+      "65": 28.0,
+      "F": 1.5,
+      "VF": 3.0,
+      "XF": 6.0
+     }
+    },
+    {
+     "anio": "1949/8",
+     "denominacion": "1/2 Sol",
+     "mintage": "420,000",
+     "precios": {
+      "60": 6.0,
+      "63": 12.0,
+      "65": 16.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "1950",
+     "denominacion": "1/2 Sol",
+     "mintage": "91,000",
+     "precios": {
+      "60": 7.0,
+      "63": 15.0,
+      "65": 25.0,
+      "F": 1.3,
+      "VF": 2.25,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "1951",
+     "denominacion": "1/2 Sol",
+     "mintage": "",
+     "precios": {
+      "60": 4.0,
+      "63": 7.0,
+      "65": 10.0,
+      "F": 0.5,
+      "VF": 1.0,
+      "XF": 2.0
+     }
+    },
+    {
+     "anio": "1951/8",
+     "denominacion": "1/2 Sol",
+     "mintage": "930,000",
+     "precios": {
+      "60": 4.0,
+      "63": 7.0,
+      "65": 10.0,
+      "F": 0.5,
+      "VF": 1.0,
+      "XF": 2.0
+     }
+    },
+    {
+     "anio": "1952",
+     "denominacion": "1/2 Sol",
+     "mintage": "935,000",
+     "precios": {
+      "60": 5.0,
+      "63": 10.0,
+      "65": 15.0,
+      "F": 0.8,
+      "VF": 1.5,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "1953",
+     "denominacion": "1/2 Sol",
+     "mintage": "817,000",
+     "precios": {
+      "60": 4.0,
+      "63": 7.0,
+      "65": 10.0,
+      "F": 0.5,
+      "VF": 1.0,
+      "XF": 2.0
+     }
+    },
+    {
+     "anio": "1954",
+     "denominacion": "1/2 Sol",
+     "mintage": "637,000",
+     "precios": {
+      "60": 5.0,
+      "63": 10.0,
+      "65": 15.0,
+      "F": 0.8,
+      "VF": 1.5,
+      "XF": 3.0
+     }
+    },
+    {
+     "anio": "1955",
+     "denominacion": "1/2 Sol",
+     "mintage": "1,383,000",
+     "precios": {
+      "60": 2.0,
+      "63": 4.0,
+      "65": 8.0,
+      "F": 0.2,
+      "VF": 0.3,
+      "XF": 0.8
+     }
+    },
+    {
+     "anio": "1956",
+     "denominacion": "1/2 Sol",
+     "mintage": "2,309,000",
+     "precios": {
+      "60": 0.8,
+      "63": 1.5,
+      "65": 3.0,
+      "F": 0.1,
+      "VF": 0.3,
+      "XF": 0.4
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1957",
+     "denominacion": "1/2 Sol",
+     "mintage": "2,700,000",
+     "precios": {
+      "60": 1.0,
+      "63": 2.0,
+      "65": 4.0,
+      "F": 0.1,
+      "VF": 0.3,
+      "XF": 0.5
+     }
+    },
+    {
+     "anio": "1958",
+     "denominacion": "1/2 Sol",
+     "mintage": "2,691,000",
+     "precios": {
+      "60": 0.8,
+      "63": 1.5,
+      "65": 3.0,
+      "F": 0.1,
+      "VF": 0.3,
+      "XF": 0.4
+     }
+    },
+    {
+     "anio": "1959",
+     "denominacion": "1/2 Sol",
+     "mintage": "3,609,000",
+     "precios": {
+      "60": 0.8,
+      "63": 1.5,
+      "65": 3.0,
+      "F": 0.1,
+      "VF": 0.3,
+      "XF": 0.4
+     }
+    },
+    {
+     "anio": "1960",
+     "denominacion": "1/2 Sol",
+     "mintage": "5,600,000",
+     "precios": {
+      "60": 0.5,
+      "63": 0.8,
+      "65": 1.5,
+      "F": 0.1,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1961 Narrow date",
+     "denominacion": "1/2 Sol",
+     "mintage": "4,400,000",
+     "precios": {
+      "60": 0.5,
+      "63": 0.8,
+      "65": 1.5,
+      "F": 0.1,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1961 Wide date",
+     "denominacion": "1/2 Sol",
+     "mintage": "",
+     "precios": {
+      "60": 0.5,
+      "63": 0.8,
+      "65": 1.5,
+      "F": 0.1,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1962",
+     "denominacion": "1/2 Sol",
+     "mintage": "3,540,000",
+     "precios": {
+      "60": 0.7,
+      "63": 1.0,
+      "65": 2.0,
+      "F": 0.1,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1963",
+     "denominacion": "1/2 Sol",
+     "mintage": "4,345,000",
+     "precios": {
+      "60": 0.5,
+      "63": 0.8,
+      "65": 1.5,
+      "F": 0.1,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1964",
+     "denominacion": "1/2 Sol",
+     "mintage": "5,315,000",
+     "precios": {
+      "60": 0.5,
+      "63": 0.8,
+      "65": 1.5,
+      "F": 0.1,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "1965",
+     "denominacion": "1/2 Sol",
+     "mintage": "7,090,000",
+     "precios": {
+      "60": 0.5,
+      "63": 0.8,
+      "65": 1.5,
+      "F": 0.1,
+      "VF": 0.2,
+      "XF": 0.3
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1965 Proof",
+     "denominacion": "1/2 Sol",
+     "mintage": "",
+     "precios": {
+      "63": 75.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/peru-1-2-sol-km-220.5-1942-1965-cuid-1094983-duid-1546695",
+   "via": "world-html"
+  }
+ },
+ "world:PERU 1978 10 Soles": {
+  "consultado": "2026-09-11T01:30:12.041738+00:00",
+  "tabla": {
+   "descripcion": "Peru 10 Soles KM 272.1 Prices & Values",
+   "especificaciones": {
+    "composicion": "Brass"
+   },
+   "filas": [
+    {
+     "anio": "1978",
+     "denominacion": "10 Soles",
+     "mintage": "46,970,000",
+     "precios": {
+      "60": 0.5,
+      "63": 0.9,
+      "65": 1.5,
+      "VF": 0.1,
+      "XF": 0.3
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/peru-10-soles-km-272.1-1978-cuid-1099364-duid-1546744",
+   "via": "world-html"
+  }
+ },
+ "world:PERU 2024 1 Sol": {
+  "consultado": "2026-09-11T01:30:00.096380+00:00",
+  "tabla": {
+   "descripcion": "Peru Sol KM 395 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel-Zinc",
+    "diametro": "25.5mm",
+    "peso": "7.3200g"
+   },
+   "filas": [
+    {
+     "anio": "2016LIMA",
+     "denominacion": "Sol",
+     "mintage": "46,000,000",
+     "precios": {
+      "50": 0.8,
+      "60": 1.0,
+      "63": 1.3,
+      "65": 2.0,
+      "XF": 0.5
+     }
+    },
+    {
+     "anio": "2017LIMA",
+     "denominacion": "Sol",
+     "mintage": "",
+     "precios": {
+      "50": 0.8,
+      "60": 1.0,
+      "63": 1.3,
+      "65": 2.0,
+      "XF": 0.5
+     }
+    },
+    {
+     "anio": "2018LIMA",
+     "denominacion": "Sol",
+     "mintage": "20,300,000",
+     "precios": {
+      "50": 0.8,
+      "60": 1.0,
+      "63": 1.3,
+      "65": 2.0,
+      "XF": 0.5
+     }
+    },
+    {
+     "anio": "2019LIMA",
+     "denominacion": "Sol",
+     "mintage": "65,000,000",
+     "precios": {
+      "50": 0.8,
+      "60": 1.0,
+      "63": 1.3,
+      "65": 2.0,
+      "XF": 0.5
+     }
+    },
+    {
+     "anio": "2020Lima",
+     "denominacion": "Sol",
+     "mintage": "9,000,000",
+     "precios": {
+      "50": 0.8,
+      "60": 1.0,
+      "63": 1.3,
+      "65": 2.0,
+      "XF": 0.5
+     }
+    },
+    {
+     "anio": "2021LIMA",
+     "denominacion": "Sol",
+     "mintage": "",
+     "precios": {
+      "50": 0.8,
+      "60": 1.0,
+      "63": 1.3,
+      "65": 2.0,
+      "XF": 0.5
+     }
+    },
+    {
+     "anio": "2022LIMA",
+     "denominacion": "Sol",
+     "mintage": "",
+     "precios": {
+      "50": 0.8,
+      "60": 1.0,
+      "63": 1.3,
+      "65": 2.0,
+      "XF": 0.5
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/peru-sol-km-395-2016-2024-cuid-1836278-duid-1929427",
+   "via": "world-html"
+  }
+ },
+ "world:PORTUGAL 1900 100 Reis": {
+  "consultado": "2026-09-11T01:31:01.149430+00:00",
+  "tabla": {
+   "descripcion": "Portugal 100 Reis KM 546 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel",
+    "peso": "2.5000g"
+   },
+   "filas": [
+    {
+     "anio": "1900",
+     "denominacion": "100 Reis",
+     "mintage": "16,000,000",
+     "precios": {
+      "60": 25.0,
+      "F": 0.3,
+      "VF": 1.5,
+      "XF": 10.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/portugal-100-reis-km-546-1900-cuid-1080845-duid-1512380",
+   "via": "world-html"
+  }
+ },
+ "world:PORTUGAL 1927 5 Centavos": {
+  "consultado": "2026-09-11T01:29:35.981158+00:00",
+  "tabla": {
+   "descripcion": "Portugal 5 Centavos KM 572 Prices & Values",
+   "especificaciones": {
+    "composicion": "Bronze"
+   },
+   "filas": [
+    {
+     "anio": "1924",
+     "denominacion": "5 Centavos",
+     "mintage": "6,480,000",
+     "precios": {
+      "60": 10.0,
+      "F": 0.5,
+      "VF": 1.5,
+      "XF": 4.5
+     }
+    },
+    {
+     "anio": "1925",
+     "denominacion": "5 Centavos",
+     "mintage": "7,260,000",
+     "precios": {
+      "60": 40.0,
+      "F": 3.5,
+      "VF": 7.5,
+      "XF": 22.0
+     }
+    },
+    {
+     "anio": "1927",
+     "denominacion": "5 Centavos",
+     "mintage": "26,320,000",
+     "precios": {
+      "60": 5.0,
+      "63": 10.0,
+      "F": 0.3,
+      "VF": 0.8,
+      "XF": 1.5
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/portugal-5-centavos-km-572-1924-1927-cuid-1080944-duid-1513263",
+   "via": "world-html"
+  }
+ },
+ "world:RUSSIA 2014 10 Rublos": {
+  "consultado": "2026-09-11T01:29:31.627073+00:00",
+  "tabla": {
+   "descripcion": "Russia 10 Roubles Y 1514 Prices & Values",
+   "especificaciones": {
+    "composicion": "Brass",
+    "diametro": "75mm",
+    "peso": "292.0000g"
+   },
+   "filas": [
+    {
+     "anio": "2014 Proof",
+     "denominacion": "10 Roubles",
+     "mintage": "500",
+     "precios": {
+      "63": 250.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/russia-10-roubles-y-1514-2014-cuid-1824815-duid-1824816",
+   "via": "world-html"
+  }
+ },
+ "world:SLOVAKIA 2017 2 Euro": {
+  "consultado": "2026-09-11T01:32:08.042715+00:00",
+  "tabla": {
+   "descripcion": "Slovakia 2 Euro KM 102 Prices & Values",
+   "especificaciones": {
+    "composicion": "Bi-Metallic",
+    "diametro": "25.75mm",
+    "peso": "8.5000g"
+   },
+   "filas": [
+    {
+     "anio": "2009",
+     "denominacion": "2 Euro",
+     "mintage": "39,250,000",
+     "precios": {
+      "60": 4.0,
+      "63": 5.0,
+      "65": 6.0
+     }
+    },
+    {
+     "anio": "2009 Proof",
+     "denominacion": "2 Euro",
+     "mintage": "13,300",
+     "precios": {
+      "63": 25.0
+     }
+    },
+    {
+     "anio": "2010 Proof",
+     "denominacion": "2 Euro",
+     "mintage": "5,000",
+     "precios": {
+      "63": 20.0
+     }
+    },
+    {
+     "anio": "2010 Prooflike",
+     "denominacion": "2 Euro",
+     "mintage": "5,000",
+     "precios": {
+      "65": 7.5
+     }
+    },
+    {
+     "anio": "2010 Sets only",
+     "denominacion": "2 Euro",
+     "mintage": "70,000",
+     "precios": {
+      "60": 5.0,
+      "63": 6.0,
+      "65": 6.5
+     }
+    },
+    {
+     "anio": "2011",
+     "denominacion": "2 Euro",
+     "mintage": "5,049,000",
+     "precios": {
+      "60": 4.0,
+      "63": 5.0,
+      "65": 6.0
+     }
+    },
+    {
+     "anio": "2011 Proof",
+     "denominacion": "2 Euro",
+     "mintage": "1,000",
+     "precios": {
+      "63": 15.0
+     }
+    },
+    {
+     "anio": "2011 Prooflike",
+     "denominacion": "2 Euro",
+     "mintage": "5,000",
+     "precios": {
+      "65": 7.5
+     }
+    },
+    {
+     "anio": "2012 Proof",
+     "denominacion": "2 Euro",
+     "mintage": "1,000",
+     "precios": {
+      "63": 15.0
+     }
+    },
+    {
+     "anio": "2012 Prooflike",
+     "denominacion": "2 Euro",
+     "mintage": "5,000",
+     "precios": {
+      "65": 7.5
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "2012 Sets only",
+     "denominacion": "2 Euro",
+     "mintage": "45,000",
+     "precios": {
+      "60": 5.0,
+      "63": 6.0,
+      "65": 6.5
+     }
+    },
+    {
+     "anio": "2013 Proof",
+     "denominacion": "2 Euro",
+     "mintage": "1,500",
+     "precios": {
+      "63": 15.0
+     }
+    },
+    {
+     "anio": "2013 Prooflike",
+     "denominacion": "2 Euro",
+     "mintage": "3,500",
+     "precios": {
+      "65": 7.5
+     }
+    },
+    {
+     "anio": "2013 Sets only",
+     "denominacion": "2 Euro",
+     "mintage": "28,000",
+     "precios": {
+      "65": 6.5
+     }
+    },
+    {
+     "anio": "2014 Proof",
+     "denominacion": "2 Euro",
+     "mintage": "3,500",
+     "precios": {
+      "63": 15.0
+     }
+    },
+    {
+     "anio": "2014 Prooflike",
+     "denominacion": "2 Euro",
+     "mintage": "25,000",
+     "precios": {
+      "65": 7.5
+     }
+    },
+    {
+     "anio": "2015",
+     "denominacion": "2 Euro",
+     "mintage": "9,350,000",
+     "precios": {
+      "60": 4.0,
+      "63": 5.0,
+      "65": 6.0
+     }
+    },
+    {
+     "anio": "2015 Proof",
+     "denominacion": "2 Euro",
+     "mintage": "3,500",
+     "precios": {
+      "63": 15.0
+     }
+    },
+    {
+     "anio": "2015 Prooflike",
+     "denominacion": "2 Euro",
+     "mintage": "21,500",
+     "precios": {
+      "65": 7.5
+     }
+    },
+    {
+     "anio": "2016",
+     "denominacion": "2 Euro",
+     "mintage": "3,026,000",
+     "precios": {
+      "60": 4.0,
+      "63": 5.0,
+      "65": 6.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "2016 Proof",
+     "denominacion": "2 Euro",
+     "mintage": "3,000",
+     "precios": {
+      "63": 15.0
+     }
+    },
+    {
+     "anio": "2016 Prooflike",
+     "denominacion": "2 Euro",
+     "mintage": "23,000",
+     "precios": {
+      "65": 7.5
+     }
+    },
+    {
+     "anio": "2017",
+     "denominacion": "2 Euro",
+     "mintage": "3,118,000",
+     "precios": {
+      "60": 4.0,
+      "63": 5.0,
+      "65": 6.0
+     }
+    },
+    {
+     "anio": "2017 Proof",
+     "denominacion": "2 Euro",
+     "mintage": "3,000",
+     "precios": {
+      "63": 15.0
+     }
+    },
+    {
+     "anio": "2017 Prooflike",
+     "denominacion": "2 Euro",
+     "mintage": "8,000",
+     "precios": {
+      "65": 7.5
+     }
+    },
+    {
+     "anio": "2018",
+     "denominacion": "2 Euro",
+     "mintage": "1,026,000",
+     "precios": {
+      "60": 4.0,
+      "63": 5.0,
+      "65": 6.0
+     }
+    },
+    {
+     "anio": "2018 Proof",
+     "denominacion": "2 Euro",
+     "mintage": "800",
+     "precios": {
+      "63": 15.0
+     }
+    },
+    {
+     "anio": "2018 Prooflike",
+     "denominacion": "2 Euro",
+     "mintage": "3,000",
+     "precios": {
+      "65": 7.5
+     }
+    },
+    {
+     "anio": "2019",
+     "denominacion": "2 Euro",
+     "mintage": "1,022,000",
+     "precios": {
+      "60": 4.0,
+      "63": 5.0,
+      "65": 6.0
+     }
+    },
+    {
+     "anio": "2019 Proof",
+     "denominacion": "2 Euro",
+     "mintage": "",
+     "precios": {
+      "63": 15.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "2019 Prooflike",
+     "denominacion": "2 Euro",
+     "mintage": "6,000",
+     "precios": {
+      "65": 7.5
+     }
+    },
+    {
+     "anio": "2020",
+     "denominacion": "2 Euro",
+     "mintage": "4,134,000",
+     "precios": {
+      "60": 4.0,
+      "63": 5.0,
+      "65": 6.0
+     }
+    },
+    {
+     "anio": "2020 Proof",
+     "denominacion": "2 Euro",
+     "mintage": "",
+     "precios": {
+      "63": 15.0
+     }
+    },
+    {
+     "anio": "2020 Prooflike",
+     "denominacion": "2 Euro",
+     "mintage": "5,000",
+     "precios": {
+      "65": 7.5
+     }
+    },
+    {
+     "anio": "2021",
+     "denominacion": "2 Euro",
+     "mintage": "1,019,000",
+     "precios": {
+      "60": 4.0,
+      "63": 5.0,
+      "65": 6.0
+     }
+    },
+    {
+     "anio": "2021 Proof",
+     "denominacion": "2 Euro",
+     "mintage": "",
+     "precios": {
+      "63": 15.0
+     }
+    },
+    {
+     "anio": "2021 Prooflike",
+     "denominacion": "2 Euro",
+     "mintage": "5,000",
+     "precios": {
+      "65": 7.5
+     }
+    },
+    {
+     "anio": "2022",
+     "denominacion": "2 Euro",
+     "mintage": "5,015,000",
+     "precios": {
+      "60": 4.0,
+      "63": 5.0,
+      "65": 6.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/slovakia-2-euro-km-102-2009-2025-cuid-1108633-duid-1853863",
+   "via": "world-html"
+  }
+ },
+ "world:SRI LANKA 2020 20 Rupees Facultad De Medicina": {
+  "consultado": "2026-09-11T01:31:45.615327+00:00",
+  "tabla": {
+   "descripcion": "Sri Lanka 20 Rupees KM 226 Prices & Values",
+   "especificaciones": {
+    "composicion": "Nickel Plated Steel",
+    "diametro": "28mm",
+    "peso": "8.2000g"
+   },
+   "filas": [
+    {
+     "anio": "2020",
+     "denominacion": "20 Rupees",
+     "mintage": "5,000,000",
+     "precios": {
+      "60": 2.0,
+      "63": 3.0,
+      "65": 5.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/sri-lanka-20-rupees-km-226-2020-cuid-1863385-duid-1863387",
+   "via": "world-html"
+  }
+ },
+ "world:SWEDEN 1942 5 Ore": {
+  "consultado": "2026-09-11T01:31:10.207706+00:00",
+  "tabla": {
+   "descripcion": "Sweden 10 Öre KM 780 Prices & Values",
+   "especificaciones": {
+    "asw": "0.0186oz",
+    "composicion": "Silver Fineness: 0.4000",
+    "diametro": "15mm",
+    "peso": "1.4500g",
+    "valor_metal": "$1.19 (9/11/2026)"
+   },
+   "filas": [
+    {
+     "anio": "1909 W",
+     "denominacion": "10 Öre",
+     "mintage": "1,610,400",
+     "precios": {
+      "60": 110.0,
+      "VF": 8.0,
+      "XF": 22.5
+     }
+    },
+    {
+     "anio": "1911 W",
+     "denominacion": "10 Öre",
+     "mintage": "3,180,650",
+     "precios": {
+      "60": 50.0,
+      "VF": 4.0,
+      "XF": 14.0
+     }
+    },
+    {
+     "anio": "1913 W",
+     "denominacion": "10 Öre",
+     "mintage": "1,580,910",
+     "precios": {
+      "60": 80.0,
+      "VF": 5.0,
+      "XF": 18.0
+     }
+    },
+    {
+     "anio": "1914 Serif 4",
+     "denominacion": "10 Öre",
+     "mintage": "",
+     "precios": {
+      "60": 80.0,
+      "VF": 5.0,
+      "XF": 16.0
+     }
+    },
+    {
+     "anio": "1914 W",
+     "denominacion": "10 Öre",
+     "mintage": "1,571,330",
+     "precios": {
+      "60": 50.0,
+      "VF": 6.0,
+      "XF": 14.0
+     }
+    },
+    {
+     "anio": "1915 W",
+     "denominacion": "10 Öre",
+     "mintage": "1,546,950",
+     "precios": {
+      "60": 75.0,
+      "VF": 5.0,
+      "XF": 13.0
+     }
+    },
+    {
+     "anio": "1916 W",
+     "denominacion": "10 Öre",
+     "mintage": "",
+     "precios": {
+      "60": 50.0,
+      "VF": 4.0,
+      "XF": 10.0
+     }
+    },
+    {
+     "anio": "1916/5 W",
+     "denominacion": "10 Öre",
+     "mintage": "3,034,880",
+     "precios": {
+      "60": 175.0,
+      "VF": 14.0,
+      "XF": 36.0
+     }
+    },
+    {
+     "anio": "1917 W",
+     "denominacion": "10 Öre",
+     "mintage": "4,996,139",
+     "precios": {
+      "60": 30.0,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "1918 W",
+     "denominacion": "10 Öre",
+     "mintage": "4,114,180",
+     "precios": {
+      "60": 30.0,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1919 W",
+     "denominacion": "10 Öre",
+     "mintage": "5,737,020",
+     "precios": {
+      "60": 30.0,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "1927 W",
+     "denominacion": "10 Öre",
+     "mintage": "2,509,590",
+     "precios": {
+      "60": 36.0,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "1928 G",
+     "denominacion": "10 Öre",
+     "mintage": "2,901,150",
+     "precios": {
+      "60": 36.0,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "1929 G",
+     "denominacion": "10 Öre",
+     "mintage": "5,505,200",
+     "precios": {
+      "60": 18.0,
+      "XF": 2.75
+     }
+    },
+    {
+     "anio": "1930 G",
+     "denominacion": "10 Öre",
+     "mintage": "3,222,710",
+     "precios": {
+      "60": 18.0,
+      "XF": 2.75
+     }
+    },
+    {
+     "anio": "1931 G",
+     "denominacion": "10 Öre",
+     "mintage": "4,272,073",
+     "precios": {
+      "60": 18.0,
+      "XF": 2.75
+     }
+    },
+    {
+     "anio": "1933 G",
+     "denominacion": "10 Öre",
+     "mintage": "1,948,090",
+     "precios": {
+      "60": 40.0,
+      "VF": 4.0,
+      "XF": 5.0
+     }
+    },
+    {
+     "anio": "1934 G",
+     "denominacion": "10 Öre",
+     "mintage": "4,059,293",
+     "precios": {
+      "60": 10.0,
+      "XF": 2.0
+     }
+    },
+    {
+     "anio": "1935 G",
+     "denominacion": "10 Öre",
+     "mintage": "2,426,283",
+     "precios": {
+      "60": 10.0,
+      "XF": 2.0
+     }
+    },
+    {
+     "anio": "1936 G Long 6",
+     "denominacion": "10 Öre",
+     "mintage": "",
+     "precios": {
+      "60": 14.0,
+      "XF": 2.5
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1936 G Short 6",
+     "denominacion": "10 Öre",
+     "mintage": "5,099,270",
+     "precios": {
+      "60": 95.0,
+      "VF": 9.0,
+      "XF": 32.0
+     }
+    },
+    {
+     "anio": "1937 G",
+     "denominacion": "10 Öre",
+     "mintage": "5,116,920",
+     "precios": {
+      "60": 10.0,
+      "XF": 1.5
+     }
+    },
+    {
+     "anio": "1938 G",
+     "denominacion": "10 Öre",
+     "mintage": "7,428,140",
+     "precios": {
+      "60": 10.0,
+      "XF": 1.5
+     }
+    },
+    {
+     "anio": "1938 G Proof",
+     "denominacion": "10 Öre",
+     "mintage": "",
+     "precios": {
+      "63": 12.5
+     }
+    },
+    {
+     "anio": "1939 G",
+     "denominacion": "10 Öre",
+     "mintage": "",
+     "precios": {
+      "60": 22.5,
+      "XF": 4.0
+     }
+    },
+    {
+     "anio": "1939 G Proof",
+     "denominacion": "10 Öre",
+     "mintage": "",
+     "precios": {
+      "63": 17.5
+     }
+    },
+    {
+     "anio": "1939/29 G",
+     "denominacion": "10 Öre",
+     "mintage": "2,020,670",
+     "precios": {
+      "60": 90.0,
+      "VF": 16.0,
+      "VG": 1.65,
+      "XF": 35.25
+     }
+    },
+    {
+     "anio": "1940 G",
+     "denominacion": "10 Öre",
+     "mintage": "3,017,320",
+     "precios": {
+      "60": 10.0,
+      "XF": 2.0
+     }
+    },
+    {
+     "anio": "1941 G",
+     "denominacion": "10 Öre",
+     "mintage": "9,106,380",
+     "precios": {
+      "60": 10.0,
+      "XF": 2.0
+     }
+    },
+    {
+     "anio": "1942 G",
+     "denominacion": "10 Öre",
+     "mintage": "3,691,640",
+     "precios": {
+      "60": 10.0,
+      "XF": 2.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/6re-km-780-1909-1942-cuid-1091618-duid-1531586",
+   "via": "world-html"
+  }
+ },
+ "world:SWITZERLAND 1893 2 Rappen": {
+  "consultado": "2026-09-11T01:31:57.135607+00:00",
+  "tabla": {
+   "descripcion": "Switzerland 2 Rappen KM 4.2 Prices & Values",
+   "especificaciones": {
+    "composicion": "Bronze",
+    "diametro": "20mm",
+    "peso": "2.5000g"
+   },
+   "filas": [
+    {
+     "anio": "1893B",
+     "denominacion": "2 Rappen",
+     "mintage": "2,000,000",
+     "precios": {
+      "60": 12.0,
+      "63": 16.0,
+      "65": 35.0,
+      "F": 1.0,
+      "VF": 5.0,
+      "XF": 9.0
+     }
+    },
+    {
+     "anio": "1896B Rare",
+     "denominacion": "2 Rappen",
+     "mintage": "20",
+     "precios": {
+      "60": 12500.0,
+      "63": 15000.0,
+      "65": 17500.0,
+      "XF": 9000.0
+     }
+    },
+    {
+     "anio": "1897B",
+     "denominacion": "2 Rappen",
+     "mintage": "487,000",
+     "precios": {
+      "60": 75.0,
+      "63": 100.0,
+      "65": 200.0,
+      "F": 20.0,
+      "VF": 45.0,
+      "XF": 60.0
+     }
+    },
+    {
+     "anio": "1898B",
+     "denominacion": "2 Rappen",
+     "mintage": "500,000",
+     "precios": {
+      "60": 55.0,
+      "63": 75.0,
+      "65": 145.0,
+      "F": 15.0,
+      "VF": 30.0,
+      "XF": 45.0
+     }
+    },
+    {
+     "anio": "1899B",
+     "denominacion": "2 Rappen",
+     "mintage": "1,000,000",
+     "precios": {
+      "60": 24.0,
+      "63": 32.0,
+      "65": 60.0,
+      "F": 6.0,
+      "VF": 12.0,
+      "XF": 18.0
+     }
+    },
+    {
+     "anio": "1900B",
+     "denominacion": "2 Rappen",
+     "mintage": "1,000,000",
+     "precios": {
+      "60": 34.0,
+      "63": 45.0,
+      "65": 60.0,
+      "F": 6.0,
+      "VF": 12.5,
+      "XF": 22.5
+     }
+    },
+    {
+     "anio": "1902B",
+     "denominacion": "2 Rappen",
+     "mintage": "500,000",
+     "precios": {
+      "60": 160.0,
+      "63": 225.0,
+      "65": 400.0,
+      "F": 21.0,
+      "VF": 45.0,
+      "XF": 85.0
+     }
+    },
+    {
+     "anio": "1903B",
+     "denominacion": "2 Rappen",
+     "mintage": "500,000",
+     "precios": {
+      "60": 140.0,
+      "63": 225.0,
+      "65": 275.0,
+      "F": 18.0,
+      "VF": 40.0,
+      "XF": 65.0
+     }
+    },
+    {
+     "anio": "1904B",
+     "denominacion": "2 Rappen",
+     "mintage": "500,000",
+     "precios": {
+      "60": 90.0,
+      "63": 110.0,
+      "65": 150.0,
+      "F": 16.0,
+      "VF": 35.0,
+      "XF": 50.0
+     }
+    },
+    {
+     "anio": "1906B",
+     "denominacion": "2 Rappen",
+     "mintage": "500,000",
+     "precios": {
+      "60": 100.0,
+      "63": 150.0,
+      "65": 200.0,
+      "F": 16.0,
+      "VF": 35.0,
+      "XF": 50.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1907B",
+     "denominacion": "2 Rappen",
+     "mintage": "1,000,000",
+     "precios": {
+      "60": 30.0,
+      "63": 50.0,
+      "65": 75.0,
+      "F": 2.5,
+      "VF": 12.0,
+      "XF": 16.0
+     }
+    },
+    {
+     "anio": "1908B",
+     "denominacion": "2 Rappen",
+     "mintage": "1,000,000",
+     "precios": {
+      "60": 21.0,
+      "63": 35.0,
+      "65": 50.0,
+      "F": 2.5,
+      "VF": 9.5,
+      "XF": 13.0
+     }
+    },
+    {
+     "anio": "1909B",
+     "denominacion": "2 Rappen",
+     "mintage": "1,000,000",
+     "precios": {
+      "60": 18.0,
+      "63": 30.0,
+      "65": 45.0,
+      "F": 2.5,
+      "VF": 6.0,
+      "XF": 13.0
+     }
+    },
+    {
+     "anio": "1910B",
+     "denominacion": "2 Rappen",
+     "mintage": "500,000",
+     "precios": {
+      "60": 80.0,
+      "63": 100.0,
+      "65": 120.0,
+      "F": 18.0,
+      "VF": 35.0,
+      "XF": 45.0
+     }
+    },
+    {
+     "anio": "1912B",
+     "denominacion": "2 Rappen",
+     "mintage": "1,000,000",
+     "precios": {
+      "60": 35.0,
+      "63": 45.0,
+      "65": 70.0,
+      "F": 6.5,
+      "VF": 11.0,
+      "XF": 17.0
+     }
+    },
+    {
+     "anio": "1913B",
+     "denominacion": "2 Rappen",
+     "mintage": "1,000,000",
+     "precios": {
+      "60": 40.0,
+      "63": 52.0,
+      "65": 90.0,
+      "F": 6.5,
+      "VF": 16.0,
+      "XF": 21.0
+     }
+    },
+    {
+     "anio": "1914B",
+     "denominacion": "2 Rappen",
+     "mintage": "1,000,000",
+     "precios": {
+      "60": 45.0,
+      "63": 70.0,
+      "65": 100.0,
+      "F": 6.5,
+      "VF": 16.0,
+      "XF": 21.0
+     }
+    },
+    {
+     "anio": "1915B",
+     "denominacion": "2 Rappen",
+     "mintage": "1,000,000",
+     "precios": {
+      "60": 30.0,
+      "63": 45.0,
+      "65": 75.0,
+      "F": 5.0,
+      "VF": 12.5,
+      "XF": 18.0
+     }
+    },
+    {
+     "anio": "1918B",
+     "denominacion": "2 Rappen",
+     "mintage": "1,000,000",
+     "precios": {
+      "60": 25.0,
+      "63": 32.0,
+      "65": 45.0,
+      "F": 5.0,
+      "VF": 9.5,
+      "XF": 13.0
+     }
+    },
+    {
+     "anio": "1919B",
+     "denominacion": "2 Rappen",
+     "mintage": "2,000,000",
+     "precios": {
+      "60": 18.0,
+      "63": 25.0,
+      "65": 30.0,
+      "F": 1.8,
+      "VF": 3.5,
+      "XF": 5.0
+     }
+    },
+    {
+     "anio": "Year/Mint",
+     "denominacion": "Denom",
+     "mintage": "Mintage",
+     "precios": {
+      "50": 50.0,
+      "53": 53.0,
+      "55": 55.0,
+      "58": 58.0,
+      "60": 60.0,
+      "61": 61.0,
+      "62": 62.0,
+      "63": 63.0,
+      "64": 64.0,
+      "65": 65.0,
+      "66": 66.0,
+      "67": 67.0,
+      "68": 68.0,
+      "69": 69.0,
+      "70": 70.0
+     }
+    },
+    {
+     "anio": "1920B",
+     "denominacion": "2 Rappen",
+     "mintage": "500,000",
+     "precios": {
+      "60": 90.0,
+      "63": 140.0,
+      "65": 200.0,
+      "F": 23.0,
+      "VF": 45.0,
+      "XF": 70.0
+     }
+    },
+    {
+     "anio": "1925B",
+     "denominacion": "2 Rappen",
+     "mintage": "1,250,000",
+     "precios": {
+      "60": 12.0,
+      "63": 18.0,
+      "65": 30.0,
+      "F": 1.0,
+      "VF": 2.5,
+      "XF": 5.0
+     }
+    },
+    {
+     "anio": "1926B",
+     "denominacion": "2 Rappen",
+     "mintage": "750,000",
+     "precios": {
+      "60": 70.0,
+      "63": 95.0,
+      "65": 125.0,
+      "F": 12.5,
+      "VF": 35.0,
+      "XF": 50.0
+     }
+    },
+    {
+     "anio": "1927B",
+     "denominacion": "2 Rappen",
+     "mintage": "500,000",
+     "precios": {
+      "60": 70.0,
+      "63": 90.0,
+      "65": 150.0,
+      "F": 20.0,
+      "VF": 40.0,
+      "XF": 55.0
+     }
+    },
+    {
+     "anio": "1928B",
+     "denominacion": "2 Rappen",
+     "mintage": "500,000",
+     "precios": {
+      "60": 75.0,
+      "63": 100.0,
+      "65": 120.0,
+      "F": 18.0,
+      "VF": 35.0,
+      "XF": 60.0
+     }
+    },
+    {
+     "anio": "1929B",
+     "denominacion": "2 Rappen",
+     "mintage": "750,000",
+     "precios": {
+      "60": 25.0,
+      "63": 40.0,
+      "65": 60.0,
+      "F": 5.0,
+      "VF": 11.0,
+      "XF": 16.0
+     }
+    },
+    {
+     "anio": "1930B",
+     "denominacion": "2 Rappen",
+     "mintage": "1,000,000",
+     "precios": {
+      "60": 22.0,
+      "63": 28.0,
+      "65": 40.0,
+      "F": 5.0,
+      "VF": 11.0,
+      "XF": 16.0
+     }
+    },
+    {
+     "anio": "1931B",
+     "denominacion": "2 Rappen",
+     "mintage": "1,288,000",
+     "precios": {
+      "60": 22.0,
+      "63": 30.0,
+      "65": 55.0,
+      "F": 3.5,
+      "VF": 9.0,
+      "XF": 13.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/switzerland-2-rappen-km-4.2-1893-1931-cuid-1090175-duid-1575969",
+   "via": "world-html"
+  }
+ },
+ "world:SYRIA 2003 25 Libras": {
+  "consultado": "2026-09-11T01:31:49.008442+00:00",
+  "tabla": {
+   "descripcion": "Syria 25 Pounds KM 131 Prices & Values",
+   "especificaciones": {
+    "composicion": "Bi-Metallic",
+    "diametro": "25mm",
+    "peso": "8.4000g"
+   },
+   "filas": [
+    {
+     "anio": "1424-2003",
+     "denominacion": "25 Pounds",
+     "mintage": "",
+     "precios": {
+      "50": 2.0,
+      "60": 2.75,
+      "63": 3.75,
+      "65": 5.0,
+      "XF": 1.5
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/syria-25-pounds-km-131-1424-2003-cuid-1106218-duid-1564147",
+   "via": "world-html"
+  }
+ },
+ "world:TRISTAN DA CUNHA 1980 25 Pence": {
+  "consultado": "2026-09-11T01:31:35.864538+00:00",
+  "tabla": {
+   "descripcion": "Tristan Da Cunha 25 Pence KM 3 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel",
+    "diametro": "38.5mm"
+   },
+   "filas": [
+    {
+     "anio": "-1980",
+     "denominacion": "25 Pence",
+     "mintage": "65,000",
+     "precios": {
+      "60": 1.5,
+      "63": 2.5,
+      "65": 3.5,
+      "VF": 1.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/tristan-da-cunha-25-pence-km-3-1980-cuid-1086809-duid-1519415",
+   "via": "world-html"
+  }
+ },
+ "world:TURKEY 2023 10 Kurus": {
+  "consultado": "2026-09-11T01:31:52.986425+00:00",
+  "tabla": {
+   "descripcion": "Turkey 2.5 Lira KM 1577 Prices & Values",
+   "especificaciones": {
+    "composicion": "Bronze",
+    "diametro": "38.61mm",
+    "peso": "23.3300g"
+   },
+   "filas": [
+    {
+     "anio": "2023 Antique Finish",
+     "denominacion": "2.5 Lira",
+     "mintage": "1,905",
+     "precios": {
+      "50": 0.0,
+      "60": 0.0,
+      "63": 0.0,
+      "65": 0.0,
+      "F": 0.0,
+      "G": 0.0,
+      "PrAg": 0.0,
+      "VF": 0.0,
+      "VG": 0.0,
+      "XF": 0.0
+     }
+    },
+    {
+     "anio": "2023 Antique Finish Proof",
+     "denominacion": "2.5 Lira",
+     "mintage": "",
+     "precios": {
+      "63": 0.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/turkey-2.5-lira-km-1577-2023-cuid-1906777-duid-1906956",
+   "via": "world-html"
+  }
+ },
+ "world:URUGUAY 1909 2 Centesimos": {
+  "consultado": "2026-09-11T01:30:18.759618+00:00",
+  "tabla": {
+   "descripcion": "Uruguay 2 Centesimos KM 20 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel",
+    "diametro": "20mm",
+    "peso": "3.5000g"
+   },
+   "filas": [
+    {
+     "anio": "1901A",
+     "denominacion": "2 Centesimos",
+     "mintage": "7,500,000",
+     "precios": {
+      "60": 30.0,
+      "63": 75.0,
+      "F": 1.0,
+      "VF": 4.0,
+      "XF": 12.0
+     }
+    },
+    {
+     "anio": "1909A",
+     "denominacion": "2 Centesimos",
+     "mintage": "10,000,000",
+     "precios": {
+      "60": 20.0,
+      "63": 35.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "XF": 9.0
+     }
+    },
+    {
+     "anio": "1924(p)",
+     "denominacion": "2 Centesimos",
+     "mintage": "11,000,000",
+     "precios": {
+      "60": 15.0,
+      "63": 25.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "XF": 7.0
+     }
+    },
+    {
+     "anio": "1936A",
+     "denominacion": "2 Centesimos",
+     "mintage": "6,500,000",
+     "precios": {
+      "60": 15.0,
+      "63": 25.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "XF": 7.0
+     }
+    },
+    {
+     "anio": "1941So",
+     "denominacion": "2 Centesimos",
+     "mintage": "10,000,000",
+     "precios": {
+      "60": 15.0,
+      "63": 25.0,
+      "F": 1.0,
+      "VF": 2.0,
+      "XF": 7.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/uruguay-2-centesimos-km-20-1901-1941-cuid-1071765-duid-1511723",
+   "via": "world-html"
+  }
+ },
+ "world:URUGUAY 1991 50.000 nuevos Pesos": {
+  "consultado": "2026-09-11T01:31:25.487615+00:00",
+  "tabla": {
+   "descripcion": "Uruguay 50000 Nuevos Pesos KM 100 Prices & Values",
+   "especificaciones": {
+    "asw": "0.803oz",
+    "composicion": "Silver Fineness: 0.9250",
+    "diametro": "40mm",
+    "peso": "27.0000g",
+    "valor_metal": "$51.11 (9/11/2026)"
+   },
+   "filas": [
+    {
+     "anio": "1991(So) Proof",
+     "denominacion": "50000 Nuevos Pesos",
+     "mintage": "40,000",
+     "precios": {}
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/uruguay-50000-nuevos-pesos-km-100-1991-cuid-1071703-duid-1511845",
+   "via": "world-html"
+  }
+ },
+ "world:URUGUAY 2005 Pesos": {
+  "consultado": "2026-09-11T01:30:02.157827+00:00",
+  "tabla": {
+   "descripcion": "Uruguay 1000 Pesos Uruguayos KM 124 Prices & Values",
+   "especificaciones": {
+    "asw": "0.803oz",
+    "composicion": "Silver Fineness: 0.9250",
+    "diametro": "40mm",
+    "peso": "27.0000g",
+    "valor_metal": "$51.03 (9/11/2026)"
+   },
+   "filas": [
+    {
+     "anio": "2005(m) Proof",
+     "denominacion": "1000 Pesos Uruguayos",
+     "mintage": "",
+     "precios": {}
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/uruguay-1000-pesos-uruguayos-km-124-2005-cuid-1078275-duid-1563082",
+   "via": "world-html"
+  }
+ },
+ "world:VANUATU 2009 10 Vatu": {
+  "consultado": "2026-09-11T01:31:50.765718+00:00",
+  "tabla": {
+   "descripcion": "Vanuatu 10 Vatu KM 51 Prices & Values",
+   "especificaciones": {
+    "composicion": "Copper-Nickel",
+    "diametro": "38.61mm"
+   },
+   "filas": [
+    {
+     "anio": "2009",
+     "denominacion": "10 Vatu",
+     "mintage": "",
+     "precios": {
+      "63": 14.0,
+      "65": 14.0
+     }
+    }
+   ],
+   "motivo": "",
+   "ok": true,
+   "url": "https://www.ngccoin.in/price-guide/world/vanuatu-10-vatu-km-51-2009-cuid-1078571-duid-1600652",
+   "via": "world-html"
+  }
+ }
+}
