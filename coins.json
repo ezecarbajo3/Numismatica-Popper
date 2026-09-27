@@ -1895,7 +1895,8 @@
     "peso": 4.0,
     "diametro": 21.0,
     "description": "Año único.",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 281,
@@ -1935,7 +1936,8 @@
     "peso": 4.0,
     "diametro": 21.75,
     "description": "Rama IX.",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 285,
