@@ -3745,7 +3745,7 @@
     "description": "West Virginia P",
     "group_id": "us-quarters-parques",
     "group_label": "Quarters Parques",
-    "hidden": true,
+    "cantidad": 2,
     "reference": "KM# 637",
     "costo": 0
   },
@@ -3791,7 +3791,7 @@
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
     "year": 2011,
-    "price": "2.5 USD",
+    "price": "1.5 USD",
     "images": [
       "images/485A.jpeg",
       "images/485B.jpeg"
@@ -3799,7 +3799,6 @@
     "description": "Oklahoma P",
     "group_id": "us-quarters-parques",
     "group_label": "Quarters Parques",
-    "hidden": true,
     "reference": "KM# 498",
     "costo": 0
   },
