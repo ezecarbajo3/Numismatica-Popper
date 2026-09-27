@@ -2587,7 +2587,8 @@
     "reference": "KM# 402",
     "grade": "Excelente",
     "grade_short": "EX",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 377,
