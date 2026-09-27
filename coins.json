@@ -2606,7 +2606,8 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "reference": "KM# 310",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 3
   },
   {
     "id": 382,
