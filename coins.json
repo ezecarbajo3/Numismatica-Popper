@@ -3872,6 +3872,7 @@
     "description": "Pride",
     "group_id": "ca-25cents-2000-millennium",
     "group_label": "Entrada al Tercer Milenio",
+    "cantidad": 2,
     "reference": "KM# 384.2",
     "costo": 0
   },
@@ -3948,6 +3949,7 @@
     "description": "Harmony",
     "group_id": "ca-25cents-2000-millennium",
     "group_label": "Entrada al Tercer Milenio",
+    "cantidad": 2,
     "reference": "KM# 377",
     "costo": 0
   },
@@ -3967,6 +3969,7 @@
     "description": "Natural Legacy",
     "group_id": "ca-25cents-2000-millennium",
     "group_label": "Entrada al Tercer Milenio",
+    "cantidad": 2,
     "reference": "KM# 382",
     "costo": 0
   },
