@@ -2627,6 +2627,21 @@
     "cantidad": 4
   },
   {
+    "id": 383,
+    "title": "1/2 Dollar 1974 D",
+    "country": "Estados Unidos",
+    "year": 1974,
+    "price": "2 USD",
+    "images": [
+      "images/383A.jpeg",
+      "images/383B.jpeg"
+    ],
+    "group_id": "us-half-dollar-variants",
+    "group_label": "1/2 Dólar Kennedy",
+    "reference": "KM# 202b",
+    "costo": 0
+  },
+  {
     "id": 384,
     "title": "1/2 Dollar 1974",
     "country": "Estados Unidos",
