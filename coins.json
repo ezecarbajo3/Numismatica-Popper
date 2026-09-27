@@ -16265,5 +16265,29 @@
     "description": "Acuñada en París bajo el Mandato Francés de Siria y Líbano tras la disolución del Imperio Otomano luego de la Primera Guerra Mundial. Esta pieza forma parte de las primeras emisiones monetarias fiduciarias administradas por el Banco de Siria para reemplazar el circulante otomano e instaurar la nueva libra siria ligada al franco francés, constituyendo un testimonio clave de la reorganización colonial de Oriente Medio.",
     "publishedAt": "2026-09-18T22:42:05.734901+00:00",
     "costo": 12.9
+  },
+  {
+    "id": 508,
+    "title": "50 Centavos 1997",
+    "country": "Argentina",
+    "metal": "Bronce de aluminio",
+    "year": 1997,
+    "price": "2.5 USD",
+    "images": [
+      "images/508A.jpeg",
+      "images/508B.jpeg"
+    ],
+    "reference": "CJ# 5.5.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Evita",
+    "publishedAt": "2026-09-27T22:42:55.787154+00:00",
+    "group_id": "ar-50cents-conmemorativas",
+    "group_label": "50 Centavos Conmemorativas",
+    "cantidad": 5,
+    "commemorates": "50º Aniversario del Voto Femenino (Evita)"
   }
 ]
