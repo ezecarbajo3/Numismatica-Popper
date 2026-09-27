@@ -2953,7 +2953,8 @@
     "group_id": "pe-sol-ceramicos",
     "group_label": "Cerámicos Precolombinos",
     "reference": "KM# 449",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 3
   },
   {
     "id": 403,
@@ -2971,7 +2972,8 @@
     "group_id": "pe-sol-ceramicos",
     "group_label": "Cerámicos Precolombinos",
     "reference": "KM# 450",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 404,
