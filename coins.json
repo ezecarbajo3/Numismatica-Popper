@@ -1228,7 +1228,7 @@
     "mintage": "",
     "description": "",
     "costo": 0,
-    "cantidad": 3
+    "cantidad": 2
   },
   {
     "id": 186,
@@ -4884,7 +4884,7 @@
     "grade_short": "SC",
     "description": "30 Aniversario",
     "costo": 0,
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 594,
@@ -11564,7 +11564,9 @@
     "description": "Centenario de la creación de la provincia de Manitoba (1870-1970). Flor azafrán de las praderas (Prairie Crocus) y busto de la reina Isabel II.",
     "publishedAt": "2026-08-30T02:31:10.888065+00:00",
     "costo": 3.0,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-09-28T23:07:06.521447+00:00"
   },
   {
     "id": 1246,
