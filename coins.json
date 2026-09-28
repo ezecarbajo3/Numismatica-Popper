@@ -16462,7 +16462,9 @@
     "diametro": "24",
     "description": "Jorge III",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
-    "costo": 6.39
+    "costo": 6.39,
+    "status": "sold",
+    "soldAt": "2026-09-28T22:48:40.773225+00:00"
   },
   {
     "id": 1449,
