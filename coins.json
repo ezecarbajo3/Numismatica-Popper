@@ -16530,5 +16530,154 @@
     "diametro": "37",
     "description": "Única en el mundo por su estado de conservación!",
     "publishedAt": "2026-09-28T17:36:02.984556+00:00"
+  },
+  {
+    "id": 1452,
+    "title": "5 Balboas 1970",
+    "country": "Panamá",
+    "metal": "Plata .925",
+    "year": 1970,
+    "price": "80 USD",
+    "images": [
+      "images/1452A.jpeg",
+      "images/1452B.jpeg"
+    ],
+    "reference": "KM# 28",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 1647000,
+    "peso": "35.7",
+    "diametro": "38.5",
+    "description": "11 aniversario de los juegos deportivos de centro America y del Caribe",
+    "publishedAt": "2026-09-28T23:48:07.353625+00:00",
+    "costo": 0.0,
+    "commemorates": "11 aniversario de los juegos deportivos de centro America y del Caribe"
+  },
+  {
+    "id": 1453,
+    "title": "100 Intis 1986",
+    "country": "Perú",
+    "metal": "Plata .925",
+    "year": 1986,
+    "price": "40 USD",
+    "images": [
+      "images/1453A.jpeg",
+      "images/1453B.jpeg"
+    ],
+    "reference": "KM# 298",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 50000,
+    "peso": "11.11",
+    "diametro": "28",
+    "description": "150 aniversario del Nacimiento del mariscal Cáceres",
+    "publishedAt": "2026-09-28T23:48:07.353625+00:00",
+    "costo": 0.0,
+    "commemorates": "150 aniversario del Nacimiento del mariscal Cáceres"
+  },
+  {
+    "id": 1454,
+    "title": "1/5 Sol 1866",
+    "country": "Perú",
+    "metal": "Plata .900",
+    "year": 1866,
+    "price": "9 USD",
+    "images": [
+      "images/1454A.jpeg",
+      "images/1454B.jpeg"
+    ],
+    "reference": "KM# 191",
+    "grade": "Muy Buena -",
+    "grade_short": "MB-",
+    "mintage": "",
+    "peso": "5",
+    "diametro": "23",
+    "description": "",
+    "publishedAt": "2026-09-28T23:48:07.353625+00:00",
+    "costo": 0.0
+  },
+  {
+    "id": 1455,
+    "title": "20 Céntimos 1941",
+    "country": "Perú",
+    "metal": "Cuproníquel",
+    "year": 1941,
+    "price": "4.5 USD",
+    "images": [
+      "images/1455A.jpeg",
+      "images/1455B.jpeg"
+    ],
+    "reference": "KM# 215.2",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "mintage": 1000000,
+    "peso": "7",
+    "diametro": "24",
+    "description": "",
+    "publishedAt": "2026-09-28T23:48:07.353625+00:00",
+    "costo": 0.0
+  },
+  {
+    "id": 1456,
+    "title": "10 Céntimos 1940",
+    "country": "Perú",
+    "metal": "Cuproníquel",
+    "year": 1940,
+    "price": "4 USD",
+    "images": [
+      "images/1456A.jpeg",
+      "images/1456B.jpeg"
+    ],
+    "reference": "KM# 214.2",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 2000000,
+    "peso": "3.86",
+    "diametro": "20.0",
+    "description": "",
+    "publishedAt": "2026-09-28T23:48:07.353625+00:00",
+    "costo": 0.0
+  },
+  {
+    "id": 1457,
+    "title": "5 Céntimos 1941",
+    "country": "Perú",
+    "metal": "Cuproníquel",
+    "year": 1941,
+    "price": "4 USD",
+    "images": [
+      "images/1457A.jpeg",
+      "images/1457B.jpeg"
+    ],
+    "reference": "KM# 213.2",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 2000000,
+    "peso": "",
+    "diametro": "",
+    "description": "",
+    "publishedAt": "2026-09-28T23:48:07.353625+00:00",
+    "costo": 0.0
+  },
+  {
+    "id": 1458,
+    "title": "1 Céntimo 1957",
+    "country": "Perú",
+    "metal": "Zinc",
+    "year": 1957,
+    "price": "4 USD",
+    "images": [
+      "images/1458A.jpeg",
+      "images/1458B.jpeg"
+    ],
+    "reference": "KM# 227",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 4400000,
+    "peso": "1.02",
+    "diametro": "15",
+    "description": "",
+    "publishedAt": "2026-09-28T23:48:07.353625+00:00",
+    "costo": 0.0
   }
 ]
