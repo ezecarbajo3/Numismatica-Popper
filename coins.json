@@ -16505,5 +16505,26 @@
     "description": "Barber Quarter",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
     "costo": 9.9
+  },
+  {
+    "id": 1451,
+    "title": "1 Peso 1882 \"Patacón\"",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "650 USD",
+    "images": [
+      "images/1451A.jpeg",
+      "images/1451B.jpeg",
+      "images/1451C.mp4"
+    ],
+    "reference": "CJ# 13",
+    "grade": "Sin Circular -",
+    "grade_short": "SC-",
+    "mintage": "413.711",
+    "peso": "25",
+    "diametro": "37",
+    "description": "Única en el mundo por su estado de conservación!",
+    "publishedAt": "2026-09-28T17:36:02.984556+00:00"
   }
 ]
