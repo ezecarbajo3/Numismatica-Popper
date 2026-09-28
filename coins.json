@@ -16277,7 +16277,7 @@
   },
   {
     "id": 1440,
-    "title": "¼ Dollar \"Standing Liberty Quarter\" (Stars Below Eagle) 1921",
+    "title": "1/4 Dólar Standing Liberty 1921",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1921,
@@ -16287,14 +16287,14 @@
       "images/1440B.jpeg"
     ],
     "reference": "KM# 145",
-    "grade": "b**",
-    "grade_short": "b**",
+    "grade": "Bueno",
+    "grade_short": "B",
     "mintage": 1916000,
     "peso": "6.25",
     "diametro": "24.3",
     "description": "Sin Fecha",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
-    "costo": 10000.0
+    "costo": 6.39
   },
   {
     "id": 1441,
@@ -16302,7 +16302,7 @@
     "country": "Reino Unido",
     "metal": "Plata .925",
     "year": 1896,
-    "price": "25000 USD",
+    "price": "25 USD",
     "images": [
       "images/1441A.jpeg",
       "images/1441B.jpeg"
@@ -16310,16 +16310,16 @@
     "reference": "KM# 780",
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
-    "mintage": "",
+    "mintage": 12028000,
     "peso": "5.66",
     "diametro": "23.5",
-    "description": "Pequeño puntito de soldadura",
+    "description": "Victoria (Old Head). Pequeño puntito de soldadura",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
-    "costo": 10000.0
+    "costo": 6.39
   },
   {
     "id": 1442,
-    "title": "½ Real - Charles IV 1802",
+    "title": "1/2 Real 1802",
     "country": "Bolivia",
     "metal": "Plata .896",
     "year": 1802,
@@ -16334,15 +16334,15 @@
     "mintage": 98000,
     "peso": "1.69",
     "diametro": "15.57",
-    "description": "Carlos IIII, escasa",
+    "description": "Carlos IIII, Potosí. Escasa",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
     "costo": 0.0
   },
   {
     "id": 1443,
-    "title": "½ Mark (type 2 - small shield) 1918",
-    "country": "Alemania (1871-1948)",
-    "metal": "plata .900",
+    "title": "1/2 Marco 1918",
+    "country": "Alemania",
+    "metal": "Plata .900",
     "year": 1918,
     "price": "14 USD",
     "images": [
@@ -16353,18 +16353,18 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "mintage": 4010000,
-    "peso": "2,777",
+    "peso": "2.77",
     "diametro": "20",
-    "description": "",
+    "description": "Imperio Alemán",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
-    "costo": 11000.0
+    "costo": 7.03
   },
   {
     "id": 1444,
-    "title": "¼ Gros of Provence - Charles VIII (gothic K) 1870",
+    "title": "1/4 Gros 1489",
     "country": "Francia",
     "metal": "Vellón",
-    "year": 1870,
+    "year": 1489,
     "price": "35 USD",
     "images": [
       "images/1444A.jpeg",
@@ -16376,34 +16376,34 @@
     "mintage": "",
     "peso": "0.64",
     "diametro": "19",
-    "description": "Escasa, alto valor de catalogo",
+    "description": "Carlos VIII (letra K gótica), Provenza. Escasa, alto valor de catálogo",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
-    "costo": 10000.0
+    "costo": 6.39
   },
   {
     "id": 1445,
-    "title": "2 francos 1869",
+    "title": "2 Francos 1869",
     "country": "Francia",
-    "metal": "Cuproníquel",
+    "metal": "Plata .835",
     "year": 1869,
     "price": "25 USD",
     "images": [
       "images/1445A.jpeg",
       "images/1445B.jpeg"
     ],
-    "reference": "",
+    "reference": "KM# 807",
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Hermosa pátina",
+    "mintage": 4728564,
+    "peso": "10",
+    "diametro": "27",
+    "description": "Napoleón III (laureada). Hermosa pátina",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
-    "costo": 15000.0
+    "costo": 9.58
   },
   {
     "id": 1446,
-    "title": "1 Shilling - George V (2nd type) 1922",
+    "title": "1 Shilling 1922",
     "country": "Reino Unido",
     "metal": "Plata .500",
     "year": 1922,
@@ -16415,37 +16415,37 @@
     "reference": "KM# 816a",
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
-    "mintage": "",
+    "mintage": 19859000,
     "peso": "5.66",
     "diametro": "23.5",
     "description": "Jorge V",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
-    "costo": 5000.0
+    "costo": 3.19
   },
   {
     "id": 1447,
-    "title": "straits settlements cent 1862",
-    "country": "Numismática Popper",
-    "metal": "Varios",
+    "title": "1 Cent 1862",
+    "country": "Straits Settlements",
+    "metal": "Cobre",
     "year": 1862,
     "price": "35 USD",
     "images": [
       "images/1447A.jpeg",
       "images/1447B.jpeg"
     ],
-    "reference": "",
+    "reference": "KM# 6",
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "mintage": "",
-    "peso": "",
-    "diametro": "",
+    "peso": "9.33",
+    "diametro": "29",
     "description": "Reina Victoria",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
-    "costo": 34000.0
+    "costo": 21.73
   },
   {
     "id": 1448,
-    "title": "1 Shilling - George III (New coinage) 1819",
+    "title": "1 Shilling 1819",
     "country": "Reino Unido",
     "metal": "Plata .925",
     "year": 1819,
@@ -16457,53 +16457,53 @@
     "reference": "KM# 666",
     "grade": "Bueno",
     "grade_short": "B",
-    "mintage": "",
+    "mintage": 15408000,
     "peso": "5.66",
     "diametro": "24",
     "description": "Jorge III",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
-    "costo": 10000.0
+    "costo": 6.39
   },
   {
     "id": 1449,
-    "title": "1/2 dolar S 1864",
+    "title": "1/2 Dólar 1864 S",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Plata .900",
     "year": 1864,
     "price": "200 USD",
     "images": [
       "images/1449A.jpeg",
       "images/1449B.jpeg"
     ],
-    "reference": "",
+    "reference": "KM# 68",
     "grade": "Excelente -",
     "grade_short": "EX-",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Increible pátina, muy uniforme",
+    "mintage": 658000,
+    "peso": "12.44",
+    "diametro": "30.6",
+    "description": "Seated Liberty, Ceca San Francisco (S). Increíble pátina, muy uniforme",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
-    "costo": 210000.0
+    "costo": 134.19
   },
   {
     "id": 1450,
-    "title": "1/4 dolar 1898",
+    "title": "1/4 Dólar 1898",
     "country": "Estados Unidos",
-    "metal": "Cuproníquel",
+    "metal": "Plata .900",
     "year": 1898,
     "price": "25 USD",
     "images": [
       "images/1450A.jpeg",
       "images/1450B.jpeg"
     ],
-    "reference": "",
-    "grade": "",
-    "grade_short": "",
-    "mintage": "",
-    "peso": "",
-    "diametro": "",
-    "description": "Barber Dime",
+    "reference": "KM# 114",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 10214000,
+    "peso": "6.25",
+    "diametro": "24.3",
+    "description": "Barber Quarter",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
-    "costo": 15500.0
+    "costo": 9.9
   }
 ]
