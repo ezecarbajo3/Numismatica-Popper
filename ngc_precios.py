@@ -80,36 +80,61 @@ _ESCALA = ["PrAg", "G", "VG", "F", "VF", "XF", "50", "55", "58", "60", "61",
 
 # Denominaciones: coins.json las escribe en espaniol, NGC busca en ingles.
 DENOM_EN = {
-    "centavo": "Centavo", "centavos": "Centavos", "centesimo": "Centesimo",
-    "centimo": "Centimo", "centimos": "Centimos", "cent": "Cent",
-    "penique": "Penny", "peniques": "Pence", "chelin": "Shilling",
-    "corona": "Crown", "media corona": "1/2 Crown", "florin": "Florin",
-    "libra": "Pound", "soberano": "Sovereign", "peso": "Peso",
-    "pesos": "Pesos", "real": "Real", "reales": "Reales",
+    "centavo": "Centavo", "centavos": "Centavos", "centesimo": "Centesimo", "centesimos": "Centesimos",
+    "centimo": "Centimo", "centimos": "Centimos", "cent": "Cent", "cents": "Cents",
+    "penique": "Penny", "peniques": "Pence", "penny": "Penny", "pence": "Pence",
+    "chelin": "Shilling", "chelines": "Shillings", "shilling": "Shilling", "shillings": "Shillings", "shillingi": "Shillings",
+    "corona": "Crown", "coronas": "Crowns", "crown": "Crown", "crowns": "Crowns",
+    "media corona": "1/2 Crown", "1/2 corona": "1/2 Crown", "half crown": "1/2 Crown",
+    "florin": "Florin", "florines": "Florin", "florín": "Florin", "gulden": "Gulden", "guilder": "Guilder",
+    "libra": "Pound", "libras": "Pounds", "pound": "Pound", "pounds": "Pounds",
+    "soberano": "Sovereign", "peso": "Peso", "pesos": "Pesos", "real": "Real", "reales": "Reales",
     "escudo": "Escudo", "escudos": "Escudos", "sol": "Sol", "soles": "Soles",
-    "franco": "Franc", "francos": "Francs", "marco": "Mark", "marcos": "Mark",
-    "lira": "Lira", "liras": "Lire", "corona sueca": "Krona",
-    "ore": "Ore", "oere": "Ore", "dolar": "Dollar", "dolares": "Dollars",
-    "medio dolar": "1/2 Dollar", "cuarto": "1/4", "patacon": "Patacon",
-    "guarani": "Guarani", "bolivar": "Bolivar", "sucre": "Sucre",
+    "franco": "Franc", "francos": "Francs", "franc": "Franc", "francs": "Francs",
+    "marco": "Mark", "marcos": "Mark", "mark": "Mark", "marks": "Marks",
+    "lira": "Lira", "liras": "Lire", "lire": "Lire", "corona sueca": "Krona",
+    "ore": "Ore", "oere": "Ore", "dolar": "Dollar", "dolares": "Dollars", "dollar": "Dollar", "dollars": "Dollars",
+    "medio dolar": "1/2 Dollar", "1/2 dolar": "1/2 Dollar", "half dollar": "1/2 Dollar",
+    "cuarto de dolar": "1/4 Dollar", "cuarto dolar": "1/4 Dollar", "1/4 dolar": "1/4 Dollar", "cuarto": "1/4", "quarter": "1/4 Dollar",
+    "patacon": "Patacon", "guarani": "Guarani", "bolivar": "Bolivar", "sucre": "Sucre",
     "quetzal": "Quetzal", "colon": "Colon", "balboa": "Balboa",
     "cruzeiro": "Cruzeiro", "cruzado": "Cruzado", "reis": "Reis",
-    "yen": "Yen", "yuan": "Yuan", "rupia": "Rupee", "rublo": "Ruble",
-    "zloty": "Zloty", "florín": "Florin", "ducado": "Ducat",
+    "yen": "Yen", "yuan": "Yuan", "rupia": "Rupee", "rublo": "Ruble", "rublos": "Rubles", "ruble": "Ruble", "rubles": "Rubles",
+    "kopek": "Kopeck", "kopeks": "Kopecks", "kopeck": "Kopeck", "kopecks": "Kopecks",
+    "peseta": "Peseta", "pesetas": "Pesetas",
+    "zloty": "Zloty", "ducado": "Ducat", "dracma": "Drachma", "dracmas": "Drachmas", "dinar": "Dinar", "dinares": "Dinars",
 }
+
+def _denominacion_ngc(valor):
+    if not valor:
+        return ""
+    v = _sin_tildes(valor).strip()
+    if v in DENOM_EN:
+        return DENOM_EN[v]
+    m = re.match(r'^([\d\/\.\,\s]+)\s*(.*)$', v)
+    if m:
+        num = m.group(1).strip()
+        unit = m.group(2).strip()
+        combo = f"{num} {unit}".strip()
+        if combo in DENOM_EN:
+            return DENOM_EN[combo]
+        if unit in DENOM_EN:
+            return f"{num} {DENOM_EN[unit]}".strip()
+    return valor
 
 # El Coin Explorer de EEUU no entiende "1/2 Dollar": busca por el nombre
 # corriente de la pieza. La clave es el titulo sin el anio y sin tildes.
 DENOM_US = {
-    "cent": "cent", "centavo": "cent", "1 centavo": "cent",
-    "2 centavos": "two cent", "3 centavos": "three cent",
-    "5 centavos": "nickel", "nickel": "nickel",
-    "10 centavos": "dime", "dime": "dime",
-    "1/4 dolar": "quarter", "cuarto de dolar": "quarter", "quarter": "quarter",
-    "1/2 dolar": "half dollar", "medio dolar": "half dollar",
-    "half dollar": "half dollar",
-    "dolar": "dollar", "1 dolar": "dollar", "dollar": "dollar",
-    "1/2 centavo": "half cent", "20 centavos": "twenty cent",
+    "cent": "cent", "centavo": "cent", "1 centavo": "cent", "1 cent": "cent", "penny": "cent",
+    "2 centavos": "two cent", "2 cents": "two cent", "two cent": "two cent",
+    "3 centavos": "three cent", "3 cents": "three cent", "three cent": "three cent",
+    "5 centavos": "nickel", "5 cents": "nickel", "nickel": "nickel",
+    "10 centavos": "dime", "10 cents": "dime", "dime": "dime",
+    "1/4 dolar": "quarter", "cuarto de dolar": "quarter", "cuarto dolar": "quarter", "1/4 dollar": "quarter", "quarter": "quarter", "25 centavos": "quarter", "25 cents": "quarter",
+    "1/2 dolar": "half dollar", "medio dolar": "half dollar", "1/2 dollar": "half dollar", "half dollar": "half dollar", "50 centavos": "half dollar", "50 cents": "half dollar",
+    "dolar": "dollar", "1 dolar": "dollar", "dollar": "dollar", "1 dollar": "dollar",
+    "1/2 centavo": "half cent", "half cent": "half cent",
+    "20 centavos": "twenty cent", "20 cents": "twenty cent", "twenty cent": "twenty cent",
     "2 1/2 dolares": "quarter eagle", "5 dolares": "half eagle",
     "10 dolares": "eagle", "20 dolares": "double eagle",
 }
@@ -121,18 +146,20 @@ PAIS_EN = {
     "peru": "PERU", "brasil": "BRAZIL", "bolivia": "BOLIVIA",
     "paraguay": "PARAGUAY", "colombia": "COLOMBIA", "ecuador": "ECUADOR",
     "venezuela": "VENEZUELA", "mexico": "MEXICO", "cuba": "CUBA",
-    "estados unidos": "UNITED STATES", "reino unido": "GREAT BRITAIN",
-    "gran bretana": "GREAT BRITAIN", "inglaterra": "GREAT BRITAIN",
+    "estados unidos": "UNITED STATES", "usa": "UNITED STATES", "eeuu": "UNITED STATES", "ee.uu.": "UNITED STATES", "us": "UNITED STATES", "america": "UNITED STATES",
+    "reino unido": "GREAT BRITAIN", "uk": "GREAT BRITAIN", "gb": "GREAT BRITAIN", "great britain": "GREAT BRITAIN",
+    "gran bretana": "GREAT BRITAIN", "gran bretaña": "GREAT BRITAIN", "inglaterra": "GREAT BRITAIN", "england": "GREAT BRITAIN",
     "escocia": "SCOTLAND", "irlanda": "IRELAND", "canada": "CANADA",
-    "francia": "FRANCE", "alemania": "GERMANY", "italia": "ITALY",
-    "espana": "SPAIN", "portugal": "PORTUGAL", "suecia": "SWEDEN",
+    "francia": "FRANCE", "alemania": "GERMANY", "alemania federal": "GERMANY", "deutschland": "GERMANY", "italia": "ITALY",
+    "espana": "SPAIN", "españa": "SPAIN", "portugal": "PORTUGAL", "suecia": "SWEDEN",
     "noruega": "NORWAY", "dinamarca": "DENMARK", "finlandia": "FINLAND",
-    "holanda": "NETHERLANDS", "paises bajos": "NETHERLANDS",
-    "belgica": "BELGIUM", "suiza": "SWITZERLAND", "austria": "AUSTRIA",
-    "rusia": "RUSSIA", "polonia": "POLAND", "hungria": "HUNGARY",
-    "grecia": "GREECE", "turquia": "TURKEY", "japon": "JAPAN",
+    "holanda": "NETHERLANDS", "paises bajos": "NETHERLANDS", "países bajos": "NETHERLANDS",
+    "belgica": "BELGIUM", "bélgica": "BELGIUM", "suiza": "SWITZERLAND", "austria": "AUSTRIA",
+    "rusia": "RUSSIA", "urss": "RUSSIA", "ussr": "RUSSIA", "union sovietica": "RUSSIA", "unión soviética": "RUSSIA",
+    "polonia": "POLAND", "hungria": "HUNGARY", "hungría": "HUNGARY",
+    "grecia": "GREECE", "turquia": "TURKEY", "turquía": "TURKEY", "japon": "JAPAN", "japón": "JAPAN",
     "china": "CHINA", "india": "INDIA", "australia": "AUSTRALIA",
-    "nueva zelanda": "NEW ZEALAND", "sudafrica": "SOUTH AFRICA",
+    "nueva zelanda": "NEW ZEALAND", "sudafrica": "SOUTH AFRICA", "sudáfrica": "SOUTH AFRICA",
     "israel": "ISRAEL", "egipto": "EGYPT", "marruecos": "MOROCCO",
     "vaticano": "VATICAN CITY", "checoslovaquia": "CZECHOSLOVAKIA",
     "yugoslavia": "YUGOSLAVIA", "rumania": "ROMANIA",
@@ -176,13 +203,14 @@ PAIS_EN = {
     "singapur": "SINGAPORE", "corea del sur": "KOREA-SOUTH",
     "iran": "IRAN", "irak": "IRAQ", "jordania": "JORDAN",
     "tunez": "TUNISIA", "argelia": "ALGERIA", "libia": "LIBYA",
-    "kenia": "KENYA", "tanzania": "TANZANIA", "ghana": "GHANA",
+    "kenia": "KENYA", "kenya": "KENYA", "tanzania": "TANZANIA", "ghana": "GHANA",
     "nigeria": "NIGERIA", "etiopia": "ETHIOPIA", "zimbabue": "ZIMBABWE",
     "botsuana": "BOTSWANA", "mozambique": "MOZAMBIQUE", "angola": "ANGOLA",
     "fiyi": "FIJI", "tonga": "TONGA", "papua nueva guinea": "PAPUA NEW GUINEA",
     "islas salomon": "SOLOMON ISLANDS", "bermudas": "BERMUDA",
     "bahamas": "BAHAMAS", "barbados": "BARBADOS", "trinidad y tobago": "TRINIDAD & TOBAGO",
     "isla de man": "ISLE OF MAN", "malta": "MALTA", "albania": "ALBANIA",
+    "straits settlements": "STRAITS SETTLEMENTS",
 }
 
 
@@ -538,7 +566,7 @@ def listar_variantes_mundial(pais, valor, anio, limite=None):
     Ademas la misma ficha aparece varias veces en el listado, una por cada fila
     (mismo cuid, distinto duid), asi que se deduplica por tipo de moneda.
     """
-    consulta = " ".join(str(x) for x in (_pais_ngc(pais), anio, valor) if x).strip()
+    consulta = " ".join(str(x) for x in (_pais_ngc(pais), anio, _denominacion_ngc(valor)) if x).strip()
     url = ("%s/resources/services/coin-search/price-guide/world/search/?keywords=%s"
            % (HOST_US, urllib.parse.quote(consulta)))
     try:
@@ -704,7 +732,9 @@ DENOM_CODE_US = {
 
 
 def _codigos_us(valor):
-    return DENOM_CODE_US.get(_sin_tildes(valor or "").strip(), [])
+    v = _sin_tildes(valor or "").strip()
+    v_us = DENOM_US.get(v, v)
+    return DENOM_CODE_US.get(v_us, DENOM_CODE_US.get(v, []))
 
 
 # Las designaciones de color de EEUU (Brown, Red Brown, Red) son CoinIDs
@@ -715,7 +745,8 @@ _RE_DESIGNACION = re.compile(r"\s+(MS|PF|SP)\b.*$")
 
 def listar_variantes_us(valor, anio, limite=None):
     """Variantes de NGC Estados Unidos para un valor facial y anio."""
-    consulta = " ".join(str(x) for x in (anio, valor) if x).strip()
+    v_norm = DENOM_US.get(_sin_tildes(valor or "").strip(), valor)
+    consulta = " ".join(str(x) for x in (anio, v_norm) if x).strip()
     url = "%s/coin-explorer/data/coins/search/%s/" % (
         HOST_US, urllib.parse.quote(consulta.replace("/", " "), safe=""))
     try:

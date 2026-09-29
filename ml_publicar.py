@@ -27,6 +27,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ml_api
 import ml_bulk
 import ml_mapeos as mp
+import ml_precios
 import ml_stock
 
 # Antiguedades y Colecciones > Monedas y Billetes > Monedas.
@@ -128,7 +129,17 @@ def _subir_fotos(coin):
     return fotos, None
 
 
-def publicar(coin, cotizacion=None, dry_run=False):
+def precio_neto_igual(usd, cotizacion, margen=0.0):
+    """Precio ML con el que, descontada la comision (16% + fijo por tramo), queda
+    en mano lo mismo que vendiendo por la pagina (USD x blue), mas `margen`."""
+    web = usd * cotizacion
+    p = ml_precios.precio_para(web * (1 + margen))
+    return {"precio_web_ars": round(web, 2), "precio_ml": p,
+            "envio_gratis": usd >= ml_bulk.UMBRAL_ENVIO_GRATIS_USD,
+            "neto": round(ml_precios.neto(p), 2)}
+
+
+def publicar(coin, cotizacion=None, dry_run=False, margen=0.0):
     """Crea la publicacion de una moneda. Devuelve {'ok', 'motivo', 'item_id'}.
 
     Nunca levanta: la moneda ya esta publicada en el sitio propio cuando esto
@@ -165,7 +176,7 @@ def publicar(coin, cotizacion=None, dry_run=False):
         except Exception as e:
             return {"ok": False, "id": cid, "motivo": f"no se pudo cotizar el blue: {e}"}
     try:
-        precio = ml_bulk.calcular_precio(usd, cotizacion)
+        precio = precio_neto_igual(usd, cotizacion, margen)
     except Exception as e:
         return {"ok": False, "id": cid, "motivo": f"no se pudo calcular el precio: {e}"}
 
