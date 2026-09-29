@@ -10613,9 +10613,11 @@
     "diametro": "",
     "description": "",
     "costo": 6.0,
-    "cantidad": 1,
+    "cantidad": 0,
     "publishedAt": "2026-08-26T23:55:34.420385+00:00",
-    "commemorates": "Almirante Lord Nelson"
+    "commemorates": "Almirante Lord Nelson",
+    "status": "sold",
+    "soldAt": "2026-09-29T13:50:06.532864+00:00"
   },
   {
     "id": 1185,
