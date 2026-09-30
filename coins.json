@@ -16680,7 +16680,9 @@
     "diametro": "25",
     "description": "",
     "publishedAt": "2026-09-29T15:51:50.301485+00:00",
-    "costo": 1.93
+    "costo": 1.93,
+    "status": "sold",
+    "soldAt": "2026-09-30T00:29:28.453376+00:00"
   },
   {
     "id": 1460,
@@ -16722,7 +16724,9 @@
     "diametro": "27",
     "description": "Ciudades Antiguas de Rusia - Kem",
     "publishedAt": "2026-09-29T15:51:50.301485+00:00",
-    "costo": 1.93
+    "costo": 1.93,
+    "status": "sold",
+    "soldAt": "2026-09-30T00:29:28.453376+00:00"
   },
   {
     "id": 1462,
