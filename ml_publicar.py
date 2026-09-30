@@ -27,6 +27,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ml_api
 import ml_bulk
 import ml_mapeos as mp
+import ml_placa
 import ml_precios
 import ml_stock
 
@@ -126,17 +127,30 @@ def _subir_fotos(coin):
             fotos.append({"id": pid})
     if len(fotos) < 2:
         return None, "no se pudieron subir las dos fotos"
+    # Placa de marca como ultima foto: mismo picture id para todas las publicaciones.
+    try:
+        fotos.append({"id": ml_placa.picture_id_placa(ml_placa.cargar_estado())})
+    except Exception as e:
+        return None, f"no se pudo obtener la placa de marca: {e}"
     return fotos, None
+
+
+# Costo de envio gratis que absorbe el vendedor (ARS por venta). La API de ML no lo
+# expone (403 en shipping_options/shipments), asi que se carga a mano. None = pendiente.
+COSTO_ENVIO_GRATIS = None
 
 
 def precio_neto_igual(usd, cotizacion, margen=0.0):
     """Precio ML con el que, descontada la comision (16% + fijo por tramo), queda
     en mano lo mismo que vendiendo por la pagina (USD x blue), mas `margen`."""
     web = usd * cotizacion
-    p = ml_precios.precio_para(web * (1 + margen))
-    return {"precio_web_ars": round(web, 2), "precio_ml": p,
-            "envio_gratis": usd >= ml_bulk.UMBRAL_ENVIO_GRATIS_USD,
-            "neto": round(ml_precios.neto(p), 2)}
+    gratis = usd >= ml_bulk.UMBRAL_ENVIO_GRATIS_USD
+    if gratis and COSTO_ENVIO_GRATIS is None:
+        raise RuntimeError("falta COSTO_ENVIO_GRATIS: el envio gratis se suma al precio")
+    extra = COSTO_ENVIO_GRATIS if gratis else 0
+    p = ml_precios.precio_para(web * (1 + margen), extra)
+    return {"precio_web_ars": round(web, 2), "precio_ml": p, "envio_gratis": gratis,
+            "extra": extra, "neto": round(ml_precios.neto(p, extra), 2)}
 
 
 def publicar(coin, cotizacion=None, dry_run=False, margen=0.0):

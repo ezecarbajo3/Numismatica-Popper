@@ -49,16 +49,19 @@ def costo_fijo(precio):
     return fijo
 
 
-def neto(precio):
-    return precio - precio * COMISION_ML - costo_fijo(precio)
+def neto(precio, extra=0):
+    return precio - precio * COMISION_ML - costo_fijo(precio) - extra
 
 
 def techo(x, paso=REDONDEO):
     return int(math.ceil(x / float(paso))) * paso
 
 
-def precio_para(objetivo):
-    """Menor precio (multiplo de REDONDEO) cuyo neto llega al objetivo."""
+def precio_para(objetivo, extra=0):
+    """Menor precio (multiplo de REDONDEO) cuyo neto llega al objetivo.
+
+    `extra` es cualquier cargo adicional por venta (ej. envio gratis) que se suma al bruto."""
+    objetivo = objetivo + extra
     candidatos = []
     for desde, fijo in TRAMOS_FIJO:
         p = techo((objetivo + fijo) / (1 - COMISION_ML))
