@@ -106,8 +106,7 @@
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón",
     "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-09-30T22:26:32.134872+00:00"
+    "cantidad": 1
   },
   {
     "id": 17,
