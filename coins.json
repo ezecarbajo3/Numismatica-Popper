@@ -1412,7 +1412,9 @@
     "mintage": "",
     "peso": 10.0,
     "diametro": 30.0,
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-01T12:44:32.734764+00:00"
   },
   {
     "id": 202,
@@ -11521,7 +11523,9 @@
     "description": "50° Aniversario de la emblemática Torre CN de Toronto (1976-2026) con aplicación de color y efigie del rey Carlos III.",
     "publishedAt": "2026-08-28T23:32:35.616834+00:00",
     "costo": 4.5,
-    "cantidad": 2
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-01T12:44:32.734764+00:00"
   },
   {
     "id": 1244,
@@ -16769,7 +16773,9 @@
     "diametro": "27.13",
     "description": "Jubileo de Oro de Isabel II",
     "publishedAt": "2026-09-29T15:51:50.301485+00:00",
-    "costo": 1.93
+    "costo": 1.93,
+    "status": "sold",
+    "soldAt": "2026-10-01T12:44:32.734764+00:00"
   },
   {
     "id": 1464,
@@ -17187,7 +17193,9 @@
     "description": "Reverso Medalla (alineación ↑↑)",
     "commemorates": "Reverso Medalla",
     "publishedAt": "2026-09-30T01:27:02.928494+00:00",
-    "costo": 5.13
+    "costo": 5.13,
+    "status": "sold",
+    "soldAt": "2026-10-01T12:44:32.734764+00:00"
   },
   {
     "id": 1483,
@@ -17230,7 +17238,9 @@
     "diametro": "23.3",
     "description": "",
     "publishedAt": "2026-09-30T01:27:02.928494+00:00",
-    "costo": 10.9
+    "costo": 10.9,
+    "status": "sold",
+    "soldAt": "2026-10-01T12:44:32.734764+00:00"
   },
   {
     "id": 1485,
@@ -17253,7 +17263,9 @@
     "publishedAt": "2026-09-30T01:27:02.928494+00:00",
     "group_id": "ar-10centavos-patacon",
     "group_label": "10 Centavos Patacón",
-    "costo": 9.62
+    "costo": 9.62,
+    "status": "sold",
+    "soldAt": "2026-10-01T12:44:32.734764+00:00"
   },
   {
     "id": 1486,
