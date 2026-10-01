@@ -17353,7 +17353,8 @@
     "diametro": "",
     "description": "Ideal para su fotografía o exposición.\nAcrílico transparente de buena calidad.",
     "publishedAt": "2026-10-01T14:33:22.442823+00:00",
-    "costo": 0.31
+    "costo": 0.31,
+    "cantidad": 999
   },
   {
     "id": 1490,
@@ -17373,7 +17374,8 @@
     "diametro": "",
     "description": "Acrílico de buena calidad.\nAnillo de goma blanco.\nIdeal para conservar monedas.",
     "publishedAt": "2026-10-01T14:33:22.442823+00:00",
-    "costo": 0.25
+    "costo": 0.25,
+    "cantidad": 999
   },
   {
     "id": 1491,
@@ -17393,6 +17395,7 @@
     "diametro": "",
     "description": "Acrílico de buena calidad.\nAnillo de goma blanco.\nIdeal para conservar monedas.",
     "publishedAt": "2026-10-01T14:33:22.442823+00:00",
-    "costo": 0.25
+    "costo": 0.25,
+    "cantidad": 999
   }
 ]
