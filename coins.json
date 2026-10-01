@@ -4389,7 +4389,8 @@
     "mintage": "1.300.000",
     "group_id": "ar-2centavos-patacon",
     "group_label": "2 Centavos Patacón",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 1
   },
   {
     "id": 549,
