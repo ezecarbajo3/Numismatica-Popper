@@ -4540,7 +4540,7 @@
     "grade_short": "EX",
     "mintage": "6.000.000",
     "costo": 0,
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 559,
@@ -4557,7 +4557,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "mintage": "12.000.000",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-01T15:10:38.000118+00:00"
   },
   {
     "id": 560,
@@ -8335,7 +8337,7 @@
       "images/898B.jpeg"
     ],
     "reference": "KM# 76b",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 899,
@@ -10572,8 +10574,10 @@
     "description": "Conmemorativa del 80° aniversario de la Reina Madre (1900-1980).",
     "publishedAt": "2026-08-26T23:47:29.444774+00:00",
     "costo": 6.0,
-    "cantidad": 1,
-    "commemorates": "80° Aniversario de la Reina Madre (1900-1980)."
+    "cantidad": 0,
+    "commemorates": "80° Aniversario de la Reina Madre (1900-1980).",
+    "status": "sold",
+    "soldAt": "2026-10-01T15:10:38.000118+00:00"
   },
   {
     "id": 1183,
