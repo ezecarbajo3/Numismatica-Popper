@@ -17334,5 +17334,65 @@
     "costo": 2.56,
     "status": "sold",
     "soldAt": "2026-09-30T01:28:45.870919+00:00"
+  },
+  {
+    "id": 1489,
+    "title": "Atriles para presentar monedas",
+    "country": "Insumos",
+    "metal": "Acrílico",
+    "year": null,
+    "price": "1 USD",
+    "images": [
+      "images/1489A.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Ideal para su fotografía o exposición.\nAcrílico transparente de buena calidad.",
+    "publishedAt": "2026-10-01T14:33:22.442823+00:00",
+    "costo": 0.31
+  },
+  {
+    "id": 1490,
+    "title": "Cápsulas para monedas 30 mm",
+    "country": "Insumos",
+    "metal": "Acrílico",
+    "year": null,
+    "price": "1 USD",
+    "images": [
+      "images/1490A.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Acrílico de buena calidad.\nAnillo de goma blanco.\nIdeal para conservar monedas.",
+    "publishedAt": "2026-10-01T14:33:22.442823+00:00",
+    "costo": 0.25
+  },
+  {
+    "id": 1491,
+    "title": "Cápsulas para monedas 31 mm",
+    "country": "Insumos",
+    "metal": "Acrílico",
+    "year": null,
+    "price": "1 USD",
+    "images": [
+      "images/1491A.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Acrílico de buena calidad.\nAnillo de goma blanco.\nIdeal para conservar monedas.",
+    "publishedAt": "2026-10-01T14:33:22.442823+00:00",
+    "costo": 0.25
   }
 ]
