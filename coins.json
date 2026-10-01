@@ -17334,5 +17334,26 @@
     "costo": 2.56,
     "status": "sold",
     "soldAt": "2026-09-30T01:28:45.870919+00:00"
+  },
+  {
+    "id": 1489,
+    "title": "Atriles",
+    "country": "Numismática Popper",
+    "metal": "Cuproníquel",
+    "year": null,
+    "price": "1000 USD",
+    "images": [
+      "images/1489A.jpeg",
+      "images/1489B.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "mintage": "",
+    "peso": "",
+    "diametro": "",
+    "description": "Ideal para fotografia o exposición de monedas. Acrilico de buena calidad",
+    "publishedAt": "2026-10-01T14:26:48.446466+00:00",
+    "costo": 490.0
   }
 ]
