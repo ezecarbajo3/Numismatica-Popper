@@ -1448,7 +1448,7 @@
       orderData.parqueSchedule = orderData.deliveryType === 'parque' ? getNextParqueSchedule() : null;
       recomputeTotals();
       if (!orderData.paymentMethodTouched) {
-        orderData.paymentMethod = getCurrentCurrency() === 'USD' ? 'usd' : 'pesos';
+        orderData.paymentMethod = 'pesos';
       }
       currentStep = 'payment-select';
       renderDrawerContent();
@@ -1887,6 +1887,8 @@
     cartItems = [];
     saveCartToStorage();
     orderData.orderId = '';
+    orderData.paymentMethod = 'pesos';
+    orderData.paymentMethodTouched = false;
     clearDiscount();
     discountDraft = '';
     discountMessage = '';
