@@ -21,7 +21,7 @@ const COINS_FILE   = path.join(__dirname, 'coins.json');
 // Estaba en 7 días mientras el sitio mostraba 30: corrido tal cual, --purge
 // borraba de coins.json y del disco 168 monedas, 112 de ellas todavía visibles
 // en el catálogo, sin vuelta atrás.
-const RETENTION_DAYS = 30;
+const RETENTION_DAYS = 14;
 const RETENTION_MS   = RETENTION_DAYS * 24 * 60 * 60 * 1000;
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────

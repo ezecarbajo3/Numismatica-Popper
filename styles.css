@@ -5315,39 +5315,31 @@ body:not([data-view="landing"]) .news-modal-backdrop {
   line-height: 1.22;
 }
 
-/* Lista de novedades: tarjetas rectangulares y limpias */
+/* Lista de novedades: limpia, sobria, sin recuadros interiores */
 .news-modal-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 16px;
 }
 
 .news-modal-item {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 13px 18px;
-  background: #141414;
-  border: 1px solid rgba(var(--accent-rgb), 0.16);
-  border-radius: 0;
-  transition: border-color 180ms ease, background-color 180ms ease;
-}
-
-.news-modal-item:hover {
-  border-color: rgba(var(--accent-rgb), 0.36);
-  background: #181818;
+  padding: 2px 0;
+  background: transparent;
+  border: none;
 }
 
 .news-modal-icon-wrap {
   flex-shrink: 0;
-  width: 38px;
-  height: 38px;
-  border-radius: 0;
-  border: 1px solid rgba(var(--accent-rgb), 0.28);
-  background: rgba(var(--accent-rgb), 0.08);
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5355,8 +5347,8 @@ body:not([data-view="landing"]) .news-modal-backdrop {
 }
 
 .news-modal-icon-wrap svg {
-  width: 19px;
-  height: 19px;
+  width: 22px;
+  height: 22px;
 }
 
 .news-modal-text {
@@ -5388,7 +5380,7 @@ body:not([data-view="landing"]) .news-modal-backdrop {
 .news-modal-dismiss-btn {
   display: block;
   width: 100%;
-  margin-top: 16px;
+  margin-top: 22px;
   padding: 12px 18px;
   background: rgba(var(--accent-rgb), 0.08);
   border: 1px solid rgba(var(--accent-rgb), 0.38);
@@ -5454,22 +5446,22 @@ body:not([data-view="landing"]) .news-modal-backdrop {
   }
 
   .news-modal-list {
-    gap: 8px;
+    gap: 13px;
   }
 
   .news-modal-item {
-    padding: 9px 11px;
-    gap: 11px;
+    padding: 2px 0;
+    gap: 12px;
   }
 
   .news-modal-icon-wrap {
-    width: 32px;
-    height: 32px;
+    width: 26px;
+    height: 26px;
   }
 
   .news-modal-icon-wrap svg {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
   }
 
   .news-modal-text strong {
@@ -5485,7 +5477,7 @@ body:not([data-view="landing"]) .news-modal-backdrop {
   }
 
   .news-modal-dismiss-btn {
-    margin-top: 12px;
+    margin-top: 18px;
     padding: 11px 14px;
     font-size: 0.8rem;
   }

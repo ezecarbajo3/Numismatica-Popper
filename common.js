@@ -29,7 +29,7 @@ function prefersReducedMotion() {
 // Una moneda vendida sigue visible este tiempo antes de desaparecer del sitio.
 // `mark_sold.js --purge` usa la misma ventana: si divergen, el script borra
 // monedas que el sitio todavía muestra.
-const SOLD_RETENTION_DAYS = 30;
+const SOLD_RETENTION_DAYS = 14;
 const SOLD_RETENTION_MS   = SOLD_RETENTION_DAYS * 24 * 60 * 60 * 1000;
 
 // Días que dura el cartelito "NUEVO" desde publishedAt.

@@ -29,7 +29,7 @@ https://numismaticapopper.com
 - `mark_sold.js`           — marca vendidas y gestiona el ciclo de vida.
                              `--purge` SIMULA la limpieza de vendidas vencidas;
                              borra de verdad solo con `--purge --confirm`.
-                             La ventana de retención (30 días) tiene que coincidir
+                             La ventana de retención (14 días) tiene que coincidir
                              con SOLD_RETENTION_DAYS de common.js.
 - `mark_sold.py`           — alternativa mínima: marca vendidas por id.
 - `stamp_published.py`     — sella la fecha de alta (publishedAt) para el badge "NUEVO".
