@@ -14368,7 +14368,9 @@
     "description": "Barber Quarter",
     "publishedAt": "2026-09-28T16:13:38.905023+00:00",
     "costo": 9.9,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-02T22:02:49.426655+00:00"
   },
   {
     "id": 1451,
