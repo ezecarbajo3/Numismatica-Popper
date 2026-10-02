@@ -2,30 +2,59 @@
  * Numismática Popper — Carrito y Checkout
  *
  * Persistencia en localStorage sin dependencias externas.
- * Cotización Dólar Blue Venta (dolarapi.com) con respaldo.
- * Despacho automático de pedidos a numismaticapopper@gmail.com vía FormSubmit.
- * Diseño sobrio, profesional, editorial y minimalista.
+ * Cotización Dólar Blue Venta (dolarapi.com) con caché y respaldo.
+ * Despacho de pedidos y consultas a numismaticapopper@gmail.com vía FormSubmit
+ * (con autorespuesta al cliente).
+ *
+ * Piezas con id numérico → checkout normal. Piezas con id de texto (F/P/R…)
+ * → "a consultar": no entran en el total ni en el pago, viajan en el mismo
+ * mail al dueño para confirmar stock.
  */
 
 (function () {
   'use strict';
 
   const STORAGE_KEY = 'popper_cart_items_v1';
+  const LAST_ORDER_KEY = 'popper_last_order_v1';
+  const RATE_CACHE_KEY = 'popper_blue_rate_v1';
   const DOLAR_API_URL = 'https://dolarapi.com/v1/dolares/blue';
   const DOLAR_FALLBACK_VENTA = 1495;
   const SHIPPING_PARQUE_ARS = 500;
   const SHIPPING_SUCURSAL_ARS = 8500;
   const SHIPPING_DOMICILIO_ARS = 11500;
   const WHATSAPP_NUMBER = '5492235429132';
+  const WHATSAPP_DISPLAY = '+54 9 223 542-9132';
   const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/numismaticapopper@gmail.com';
+  const DISCOUNTS_URL = 'discounts.json';
+  const MAX_QTY = 99;
+  const ORDER_TIMEOUT_MS = 15000;
+  const LAST_ORDER_TTL_MS = 48 * 60 * 60 * 1000;
+
+  const BANK = {
+    holder: 'Ezequiel Carbajo',
+    usd: { alias: 'ATADO.ESPUMA.LOGRO', cbu: '1430001714004473420025' },
+    ars: { alias: 'numismatica.popper.1', cvu: '0000003100081217918159' },
+    mp: { code: '97148 98714' },
+  };
+
+  const WPP_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23a8.2 8.2 0 018.23 8.24c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>';
 
   // ─── Estado interno ────────────────────────────────────────────────────────
   let cartItems = [];
   let blueRate = DOLAR_FALLBACK_VENTA;
-  let isRateLoaded = false;
-  let currentStep = 'cart'; // 'cart' | 'checkout' | 'payment-select' | 'payment-instructions'
+  let rateSource = 'fallback'; // 'live' | 'cache' | 'fallback'
+  let currentStep = 'cart'; // 'cart' | 'checkout' | 'payment-select' | 'payment-instructions' | 'inquiry-sent'
+  let isSubmitting = false;
+  let cartNotice = '';
+  let lastFocusEl = null;
+  let clearArmedTimer = null;
+  let elementsReady = false;
+  let viewportBound = false;
+  let discountDraft = '';
+  let discountMessage = '';
 
   let orderData = {
+    orderId: '',
     fullName: '',
     phone: '',
     dni: '',
@@ -37,6 +66,13 @@
     pickupPerson: '',
     deliveryNotes: '',
     paymentMethod: 'pesos', // 'pesos' | 'usd' | 'deposito_mp'
+    parqueSchedule: null,
+    discountCode: '',
+    discountRule: null,
+    discountUSD: 0,
+    discountARS: 0,
+    subtotalUSD: 0,
+    subtotalARS: 0,
     totalUSD: 0,
     totalARS: 0,
     shippingCostARS: 0,
@@ -44,28 +80,55 @@
   };
   let lastPurchasedOrder = null;
 
-  // ─── Carga y persistencia ──────────────────────────────────────────────────
-  function loadCartFromStorage() {
+  // ─── Storage seguro ────────────────────────────────────────────────────────
+  function lsGetJSON(key) {
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) {
-        const parsed = JSON.parse(raw);
-        if (Array.isArray(parsed)) {
-          cartItems = parsed.filter(it => it && it.id != null && Number.isFinite(it.priceUSD) && it.priceUSD > 0);
-        }
-      }
-    } catch (e) {
-      console.warn('PopperCart: Error leyendo storage', e);
-      cartItems = [];
+      const raw = localStorage.getItem(key);
+      return raw ? JSON.parse(raw) : null;
+    } catch (_) {
+      return null;
     }
   }
 
-  function saveCartToStorage() {
+  function lsSetJSON(key, value) {
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(cartItems));
+      localStorage.setItem(key, JSON.stringify(value));
+      return true;
     } catch (e) {
-      console.warn('PopperCart: Error guardando storage', e);
+      console.warn('PopperCart: no se pudo guardar en el navegador', key);
+      return false;
     }
+  }
+
+  function lsRemove(key) {
+    try { localStorage.removeItem(key); } catch (_) {}
+  }
+
+  // ─── Carga y persistencia ──────────────────────────────────────────────────
+  function normalizeStoredItem(it) {
+    if (!it || it.id == null || !Number.isFinite(it.priceUSD) || it.priceUSD <= 0) return null;
+    const maxQty = Math.min(Math.max(1, Math.floor(Number(it.maxQty) || 1)), MAX_QTY);
+    const qty = Math.min(Math.max(1, Math.floor(Number(it.qty) || 1)), maxQty);
+    return { ...it, qty, maxQty };
+  }
+
+  function loadCartFromStorage() {
+    const parsed = lsGetJSON(STORAGE_KEY);
+    const seen = new Set();
+    const items = [];
+    if (Array.isArray(parsed)) {
+      for (const raw of parsed) {
+        const it = normalizeStoredItem(raw);
+        if (!it || seen.has(String(it.id))) continue;
+        seen.add(String(it.id));
+        items.push(it);
+      }
+    }
+    cartItems = items;
+  }
+
+  function saveCartToStorage() {
+    lsSetJSON(STORAGE_KEY, cartItems);
     emitCartUpdated();
   }
 
@@ -74,18 +137,43 @@
     updateBadge();
   }
 
+  function loadLastOrder() {
+    const saved = lsGetJSON(LAST_ORDER_KEY);
+    if (saved && saved.orderId && saved.date && (Date.now() - new Date(saved.date).getTime()) < LAST_ORDER_TTL_MS) {
+      lastPurchasedOrder = saved;
+    } else {
+      lastPurchasedOrder = null;
+      if (saved) lsRemove(LAST_ORDER_KEY);
+    }
+  }
+
   // ─── Cotización Dólar Blue Venta ───────────────────────────────────────────
+  function loadCachedRate() {
+    const cached = lsGetJSON(RATE_CACHE_KEY);
+    if (cached && Number.isFinite(cached.rate) && cached.rate > 0) {
+      blueRate = cached.rate;
+      rateSource = 'cache';
+    }
+  }
+
   async function fetchBlueRate() {
+    const cached = lsGetJSON(RATE_CACHE_KEY);
+    const refRate = cached && Number.isFinite(cached.rate) && cached.rate > 0 ? cached.rate : 0;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 5000);
     try {
-      const res = await fetch(DOLAR_API_URL);
+      const res = await fetch(DOLAR_API_URL, { signal: controller.signal });
       if (res.ok) {
         const data = await res.json();
         const venta = Number(data && (data.venta ?? data.value_sell));
-        if (Number.isFinite(venta) && venta > 0) {
+        const sane = Number.isFinite(venta) && venta >= 100 && venta <= 100000;
+        const plausible = !refRate || Math.abs(venta / refRate - 1) <= 0.3;
+        if (sane && plausible) {
           const oldRate = blueRate;
           blueRate = venta;
-          isRateLoaded = true;
-          renderDrawerContent();
+          rateSource = 'live';
+          lsSetJSON(RATE_CACHE_KEY, { rate: venta, at: Date.now() });
+          softRender();
           if (oldRate !== venta && getCurrentCurrency() === 'ARS') {
             window.dispatchEvent(new CustomEvent('popper:currency-changed', {
               detail: { currency: 'ARS', rate: blueRate }
@@ -93,70 +181,132 @@
           }
           return;
         }
+        console.warn('PopperCart: cotización descartada por inconsistente', venta);
       }
     } catch (err) {
-      console.info('PopperCart: Cotización de respaldo ($' + DOLAR_FALLBACK_VENTA + ')');
+      console.info('PopperCart: cotización de respaldo ($' + blueRate + ', ' + rateSource + ')');
+    } finally {
+      clearTimeout(timeoutId);
     }
-    blueRate = DOLAR_FALLBACK_VENTA;
-    isRateLoaded = true;
+    softRender();
   }
 
-  // ─── Verificación de inventario ───────────────────────────────────────────
+  // ─── Disponibilidad y verificación de inventario ──────────────────────────
+  function parsePrice(priceStr) {
+    if (!priceStr) return 0;
+    const n = typeof parsePriceUSD === 'function'
+      ? parsePriceUSD(priceStr)
+      : parseFloat(String(priceStr).replace(/,/g, '.').replace(/[^\d.]/g, ''));
+    return Number.isFinite(n) ? n : 0;
+  }
+
+  function hasFixedPrice(coin) {
+    return !!(coin && coin.price && !/consultar/i.test(String(coin.price)) && parsePrice(coin.price) > 0);
+  }
+
+  function isAvailable(coin) {
+    if (!coin) return false;
+    if (coin.status === 'sold' || coin.hidden) return false;
+    if (typeof coin.cantidad === 'number' && coin.cantidad <= 0) return false;
+    return hasFixedPrice(coin);
+  }
+
+  function maxQtyFor(coin) {
+    const c = coin && coin.cantidad;
+    return (typeof c === 'number' && c > 1) ? Math.min(Math.floor(c), MAX_QTY) : 1;
+  }
+
   function validateSoldItems(allCoinsList) {
-    if (!Array.isArray(allCoinsList) || !cartItems.length) return;
+    const report = { removed: [], priceChanged: [], qtyAdjusted: [] };
+    if (!Array.isArray(allCoinsList) || !cartItems.length) return report;
     const coinsMap = new Map(allCoinsList.map(c => [String(c.id), c]));
-    const validItems = [];
-    let removedCount = 0;
+    const kept = [];
 
     for (const item of cartItems) {
       const live = coinsMap.get(String(item.id));
-      if (!live || live.status === 'sold' || live.hidden || !live.price || String(live.price).trim().toLowerCase() === 'consultar' || parsePrice(live.price) <= 0) {
-        removedCount++;
-      } else {
-        item.title = live.title || item.title;
-        item.priceUSD = parsePrice(live.price);
-        item.priceStr = live.price;
-        item.country = live.country || item.country;
-        validItems.push(item);
+      if (!isAvailable(live)) {
+        report.removed.push(item);
+        continue;
       }
+      const newPrice = parsePrice(live.price);
+      if (newPrice !== item.priceUSD) {
+        report.priceChanged.push({ title: live.title || item.title, from: item.priceUSD, to: newPrice });
+      }
+      item.title = live.title || item.title;
+      item.priceUSD = newPrice;
+      item.priceStr = live.price;
+      item.country = live.country || item.country;
+      const mq = maxQtyFor(live);
+      item.maxQty = mq;
+      if (item.qty > mq) {
+        report.qtyAdjusted.push({ title: item.title, from: item.qty, to: mq });
+        item.qty = mq;
+      }
+      kept.push(item);
     }
 
-    if (removedCount > 0) {
-      cartItems = validItems;
+    if (report.removed.length || report.priceChanged.length || report.qtyAdjusted.length) {
+      cartItems = kept;
       saveCartToStorage();
-      showToast(`Se removieron ${removedCount} pieza(s) no disponibles.`);
-      renderDrawerContent();
+      const parts = [];
+      if (report.removed.length) {
+        parts.push(report.removed.length === 1
+          ? 'Se quitó 1 pieza que ya no está disponible.'
+          : `Se quitaron ${report.removed.length} piezas que ya no están disponibles.`);
+      }
+      report.priceChanged.forEach(c => {
+        parts.push(`Cambió el precio de ${c.title}: ${formatUSD(c.from)} → ${formatUSD(c.to)}.`);
+      });
+      report.qtyAdjusted.forEach(c => {
+        parts.push(`Ajustamos la cantidad de ${c.title} al stock disponible (${c.to}).`);
+      });
+      setNotice(parts.join(' '));
+      softRender(true);
+    }
+    return report;
+  }
+
+  // Trae coins.json fresco y revalida el carrito. Devuelve null si no pudo.
+  async function revalidateStock() {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000);
+    try {
+      const res = await fetch('coins.json?t=' + Date.now(), { cache: 'no-store', signal: controller.signal });
+      if (!res.ok) return null;
+      const data = await res.json();
+      if (!Array.isArray(data)) return null;
+      return validateSoldItems(data);
+    } catch (_) {
+      return null;
+    } finally {
+      clearTimeout(timeoutId);
     }
   }
 
   // ─── Operaciones del carrito ───────────────────────────────────────────────
-  function parsePrice(priceStr) {
-    if (!priceStr) return 0;
-    const n = parseFloat(String(priceStr).replace(/,/g, '.').replace(/[^\d.]/g, ''));
-    return isNaN(n) ? 0 : n;
-  }
-
   function has(coinId) {
     const sId = String(coinId);
     return cartItems.some(item => String(item.id) === sId);
   }
 
-  function add(coin, triggerEl) {
-    if (!coin || coin.status === 'sold') return;
-    const sId = String(coin.id);
-    if (has(sId)) return;
+  function add(coin, triggerEl, opts) {
+    const silent = !!(opts && opts.silent);
+    if (!coin) return false;
+    if (coin.status === 'sold' || coin.hidden || (typeof coin.cantidad === 'number' && coin.cantidad <= 0)) {
+      showToast('Esta pieza ya no está disponible.');
+      return false;
+    }
+    if (has(coin.id)) return false;
 
     const priceNum = parsePrice(coin.price);
-    if (priceNum <= 0 || !coin.price || String(coin.price).trim().toLowerCase() === 'consultar') {
+    if (!hasFixedPrice(coin)) {
       showToast('Esta pieza no tiene precio fijado. Consultanos por WhatsApp.');
-      return;
+      return false;
     }
 
-    let imageSrc = '';
-    if (Array.isArray(coin.images) && coin.images.length > 0) {
-      const imgA = coin.images.find(img => String(img).toUpperCase().includes('A.'));
-      imageSrc = imgA || coin.images[0];
-    }
+    const imageSrc = typeof getPrimaryImage === 'function'
+      ? getPrimaryImage(coin)
+      : (Array.isArray(coin.images) && coin.images[0]) || '';
 
     cartItems.push({
       id: coin.id,
@@ -170,13 +320,16 @@
       grade: coin.grade || '',
       metal: coin.metal || '',
       reference: coin.reference || '',
+      qty: 1,
+      maxQty: maxQtyFor(coin),
     });
 
     saveCartToStorage();
     animateFlyToCart(triggerEl);
     renderDrawerContent();
 
-    showToast('Pieza agregada al carrito', 'VER CARRITO', openDrawer);
+    if (!silent) showToast('Pieza agregada al carrito', 'VER CARRITO', openDrawer);
+    return true;
   }
 
   function remove(coinId) {
@@ -185,6 +338,20 @@
     saveCartToStorage();
     renderDrawerContent();
     showToast('Pieza quitada del carrito');
+  }
+
+  function setQty(coinId, qty) {
+    const sId = String(coinId);
+    const item = cartItems.find(it => String(it.id) === sId);
+    if (!item) return;
+    const next = Math.min(Math.max(1, Math.floor(Number(qty) || 1)), item.maxQty || 1);
+    if (next === item.qty) {
+      if (qty > next) setNotice(`Stock máximo disponible: ${item.maxQty}.`);
+      return;
+    }
+    item.qty = next;
+    saveCartToStorage();
+    renderDrawerContent();
   }
 
   function clear() {
@@ -204,6 +371,24 @@
     }
   }
 
+  // ─── Clasificación: pagables vs a consultar (ids F/P/R…) ───────────────────
+  function isNonNumericId(id) {
+    if (id == null || id === '') return false;
+    return !/^\d+$/.test(String(id).trim());
+  }
+
+  function hasNonNumericItems() {
+    return cartItems.some(item => isNonNumericId(item.id));
+  }
+
+  function payableItems() {
+    return cartItems.filter(it => !isNonNumericId(it.id));
+  }
+
+  function consultItems() {
+    return cartItems.filter(it => isNonNumericId(it.id));
+  }
+
   // ─── Cálculos ──────────────────────────────────────────────────────────────
   function roundARS(amount) {
     if (window.PopperCurrency && typeof window.PopperCurrency.roundARS === 'function') {
@@ -216,16 +401,28 @@
     return Math.round(val / 1000) * 1000;
   }
 
-  function getSubtotalUSD() {
-    return cartItems.reduce((acc, it) => acc + (it.priceUSD || 0), 0);
+  const qtyOf = it => Math.max(1, it.qty || 1);
+  const unitARS = it => roundARS((it.priceUSD || 0) * blueRate);
+  const lineUSD = it => (it.priceUSD || 0) * qtyOf(it);
+  const lineARS = it => unitARS(it) * qtyOf(it);
+
+  function sumUSD(list) {
+    return Number(list.reduce((acc, it) => acc + lineUSD(it), 0).toFixed(2));
   }
 
-  function getSubtotalARS() {
-    return roundARS(getSubtotalUSD() * blueRate);
+  // El subtotal ARS es la suma de las líneas ya redondeadas, así lo que se ve
+  // en cada renglón siempre suma el total.
+  function sumARS(list) {
+    return list.reduce((acc, it) => acc + lineARS(it), 0);
   }
+
+  function getSubtotalUSD() { return sumUSD(payableItems()); }
+  function getSubtotalARS() { return sumARS(payableItems()); }
+  function totalUnits() { return cartItems.reduce((acc, it) => acc + qtyOf(it), 0); }
 
   function formatARS(amount) {
-    return '$' + roundARS(amount).toLocaleString('es-AR');
+    // Los montos llegan ya redondeados (por pieza); redondear la suma de nuevo la desfasaba.
+    return '$' + Math.round(Number(amount) || 0).toLocaleString('es-AR');
   }
 
   function formatUSD(amount) {
@@ -234,9 +431,6 @@
 
   function getCurrentCurrency() {
     if (typeof getCurrency === 'function') return getCurrency();
-    if (window.PopperCurrency && typeof window.PopperCurrency.get === 'function') {
-      return window.PopperCurrency.get();
-    }
     try {
       const saved = localStorage.getItem('popper_currency_pref');
       if (saved === 'ARS' || saved === 'USD') return saved;
@@ -246,18 +440,120 @@
 
   function formatDualPrice(valUSD, valARS) {
     const isARS = getCurrentCurrency() === 'ARS';
-    const primary = isARS ? formatARS(valARS) : formatUSD(valUSD);
-    const secondary = isARS ? formatUSD(valUSD) : formatARS(valARS);
     return {
-      primary,
-      secondary,
-      text: `${primary} (${secondary})`,
+      primary: isARS ? formatARS(valARS) : formatUSD(valUSD),
+      secondary: isARS ? formatUSD(valUSD) : formatARS(valARS),
     };
+  }
+
+  function rateLabel() {
+    return `Cotización Dólar Blue: $${blueRate.toLocaleString('es-AR')}${rateSource === 'live' ? '' : ' (referencial)'}`;
+  }
+
+  function recomputeShipping() {
+    const map = {
+      parque: SHIPPING_PARQUE_ARS,
+      sucursal: SHIPPING_SUCURSAL_ARS,
+      domicilio: SHIPPING_DOMICILIO_ARS,
+    };
+    const ars = map[orderData.deliveryType] || 0;
+    orderData.shippingCostARS = ars;
+    orderData.shippingCostUSD = ars ? Number((ars / blueRate).toFixed(1)) : 0;
+  }
+
+  // ─── Códigos de descuento (discounts.json) ─────────────────────────────────
+  function normalizeCode(raw) {
+    return String(raw || '').normalize('NFKC').replace(/\s+/g, '').toUpperCase();
+  }
+
+  // Devuelve la regla normalizada o null si el código no existe / está apagado / venció.
+  function parseDiscountRule(code, raw) {
+    if (!raw || typeof raw !== 'object' || raw.active === false) return null;
+    const percent = Number(raw.percent);
+    if (!Number.isFinite(percent) || percent <= 0 || percent > 100) return null;
+    if (raw.expires) {
+      const end = new Date(`${raw.expires}T23:59:59-03:00`);
+      if (!isNaN(end.getTime()) && Date.now() > end.getTime()) return null;
+    }
+    const rule = { code, label: String(raw.label || '').trim(), percent, highPrice: null };
+    const hp = raw.highPrice;
+    if (hp && Number(hp.overUSD) > 0 && Number.isFinite(Number(hp.percent)) && Number(hp.percent) >= 0) {
+      rule.highPrice = { overUSD: Number(hp.overUSD), percent: Number(hp.percent) };
+    }
+    return rule;
+  }
+
+  // 'ok' → {rule} · 'invalid' → código inexistente/vencido · 'network' → no se pudo consultar.
+  async function fetchDiscountRule(rawCode) {
+    const code = normalizeCode(rawCode);
+    if (!/^[A-Z0-9_-]{3,24}$/.test(code)) return { status: 'invalid' };
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000);
+    try {
+      const res = await fetch(`${DISCOUNTS_URL}?t=${Date.now()}`, { cache: 'no-store', signal: controller.signal });
+      if (!res.ok) return { status: 'network' };
+      const data = await res.json();
+      const key = Object.keys(data || {}).find(k => !k.startsWith('_') && normalizeCode(k) === code);
+      const rule = key ? parseDiscountRule(code, data[key]) : null;
+      return rule ? { status: 'ok', rule } : { status: 'invalid' };
+    } catch (_) {
+      return { status: 'network' };
+    } finally {
+      clearTimeout(timeoutId);
+    }
+  }
+
+  // % que le toca a una pieza: el general, o el reducido si su precio unitario supera el umbral.
+  function discountPctFor(item, rule) {
+    if (!rule) return 0;
+    if (rule.highPrice && (item.priceUSD || 0) > rule.highPrice.overUSD) return rule.highPrice.percent;
+    return rule.percent;
+  }
+
+  function computeDiscount(items, rule) {
+    if (!rule) return { usd: 0, ars: 0 };
+    let usd = 0;
+    let ars = 0;
+    items.forEach(it => {
+      const pct = discountPctFor(it, rule);
+      usd += lineUSD(it) * pct / 100;
+      ars += lineARS(it) * pct / 100;
+    });
+    return { usd: Number(usd.toFixed(2)), ars: Math.round(ars / 100) * 100 };
+  }
+
+  function describeRule(rule) {
+    const hp = rule.highPrice;
+    return `${rule.percent}% off` +
+      (hp ? ` · ${hp.percent}% si la pieza supera ${hp.overUSD} USD` : '') +
+      ' · sin envío';
+  }
+
+  function clearDiscount() {
+    orderData.discountCode = '';
+    orderData.discountRule = null;
+    orderData.discountUSD = 0;
+    orderData.discountARS = 0;
+  }
+
+  function recomputeTotals() {
+    recomputeShipping();
+    const pay = payableItems();
+    const subUSD = sumUSD(pay);
+    const subARS = sumARS(pay);
+    const disc = computeDiscount(pay, orderData.discountRule);
+    orderData.discountUSD = Math.min(disc.usd, subUSD);
+    orderData.discountARS = Math.min(disc.ars, subARS);
+    orderData.subtotalUSD = subUSD;
+    orderData.subtotalARS = subARS;
+    orderData.totalUSD = Number((subUSD - orderData.discountUSD + orderData.shippingCostUSD).toFixed(2));
+    orderData.totalARS = subARS - orderData.discountARS + orderData.shippingCostARS;
   }
 
   // ─── Próximo envío al Parque Rivadavia ────────────────────────────────────
   // Se despacha el miércoles previo al 2º domingo del mes (la semana de la
   // segunda feria del mes), para entregarse a partir de ese domingo en adelante.
+  // Todo se calcula con la hora de Buenos Aires, no la del navegador.
   function getNextParqueSchedule(refDate = new Date()) {
     function getDatesForMonth(year, monthIndex) {
       let sundayCount = 0;
@@ -280,7 +576,13 @@
       return { dispatchDate, deliveryDate };
     }
 
-    const now = new Date(refDate);
+    let now;
+    try {
+      now = new Date(new Date(refDate).toLocaleString('en-US', { timeZone: 'America/Argentina/Buenos_Aires' }));
+      if (isNaN(now.getTime())) now = new Date(refDate);
+    } catch (_) {
+      now = new Date(refDate);
+    }
     const currentYear = now.getFullYear();
     const currentMonth = now.getMonth();
 
@@ -298,88 +600,70 @@
       target = getDatesForMonth(nextMonthDate.getFullYear(), nextMonthDate.getMonth());
     }
 
-    const months = [
-      'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
-      'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
-    ];
-
     const dDate = target.dispatchDate;
     const sDate = target.deliveryDate;
-
-    const dispatchDDMM = `${String(dDate.getDate()).padStart(2, '0')}/${String(dDate.getMonth() + 1).padStart(2, '0')}`;
-    const deliveryDDMM = `${String(sDate.getDate()).padStart(2, '0')}/${String(sDate.getMonth() + 1).padStart(2, '0')}`;
+    const pad = n => String(n).padStart(2, '0');
 
     return {
-      dispatchDate: dDate,
-      deliveryDate: sDate,
-      dispatchDDMM,
-      deliveryDDMM,
-      dispatchDayName: 'miércoles',
-      dispatchDayNum: dDate.getDate(),
-      dispatchMonthName: months[dDate.getMonth()],
-      dispatchText: `miércoles ${dDate.getDate()} de ${months[dDate.getMonth()]}`,
-      deliveryText: `domingo ${sDate.getDate()} de ${months[sDate.getMonth()]}`,
-      deliveryDayNum: sDate.getDate(),
-      deliveryMonthName: months[sDate.getMonth()],
+      dispatchDDMM: `${pad(dDate.getDate())}/${pad(dDate.getMonth() + 1)}`,
+      deliveryDDMM: `${pad(sDate.getDate())}/${pad(sDate.getMonth() + 1)}`,
     };
   }
 
-  // ─── Verificación de ejemplares con ID no numérico (F, P, R, etc.) ─────────
-  function isNonNumericId(id) {
-    if (!id) return false;
-    return !/^\d+$/.test(String(id).trim());
-  }
-
-  function hasNonNumericItems() {
-    return cartItems.some(item => isNonNumericId(item.id));
-  }
-
-  // ─── Formato de línea para WhatsApp ────────────────────────────────────────
-  function formatCoinLineForMessage(item) {
-    const country = item.country ? String(item.country).trim() : 'País no informado';
+  // ─── Líneas de texto de cada pieza (WhatsApp y mail) ───────────────────────
+  function facialOf(item) {
     const year = String(item.year || '').trim();
     let facial = String(item.title || '').trim();
-
     if (year && facial.includes(year)) {
       facial = facial.replace(new RegExp('\\b' + year + '\\b', 'g'), '').trim();
       facial = facial.replace(/\s+/g, ' ').replace(/^[, -]+|[, -]+$/g, '');
     }
+    return facial || String(item.title || '').trim();
+  }
 
-    const monto = item.priceStr ? item.priceStr.trim() : `${item.priceUSD || 0} USD`;
+  function formatCoinLineForMessage(item) {
+    const country = item.country ? String(item.country).trim() : 'País no informado';
+    const year = String(item.year || '').trim();
+    const monto = item.priceStr ? String(item.priceStr).trim() : `${item.priceUSD || 0} USD`;
+    const qtyPart = qtyOf(item) > 1 ? ` x${qtyOf(item)}` : '';
     const idRef = item.id != null ? ` (ID: ${item.id})` : '';
-    return `${country}, ${facial || item.title}, ${year || 'S/A'}, ${monto}${idRef}`;
+    return `${country}, ${facialOf(item)}, ${year || 'S/A'}, ${monto}${qtyPart}${idRef}`;
   }
 
   function buildPrivateInquiryWhatsAppURL(isStockCheck = false) {
     if (!cartItems.length) return '';
     const lines = cartItems.map(formatCoinLineForMessage).join('\n');
-    const totUSD = getSubtotalUSD();
-    const totARS = getSubtotalARS();
+    const totUSD = sumUSD(cartItems);
+    const totARS = sumARS(cartItems);
 
     let header;
     if (isStockCheck) {
-      const isSingular = cartItems.length === 1;
-      header = isSingular
+      header = cartItems.length === 1
         ? 'Hola Numismatica Popper, quisiera hacer una consulta de compra y verificar stock del siguiente ejemplar:'
         : 'Hola Numismatica Popper, quisiera hacer una consulta de compra y verificar stock de los siguientes ejemplares:';
     } else {
       header = 'Hola Numismatica Popper, estoy interesado en:';
     }
 
-    const isARS = getCurrentCurrency() === 'ARS';
-    const totalLine = isARS
-      ? `Total: ${formatARS(totARS)} (${totUSD} USD)`
-      : `Total: ${totUSD} USD (${formatARS(totARS)})`;
+    const totalLine = getCurrentCurrency() === 'ARS'
+      ? `Total: ${formatARS(totARS)} (${formatUSD(totUSD)})`
+      : `Total: ${formatUSD(totUSD)} (${formatARS(totARS)})`;
 
-    const text =
-      `${header}\n` +
-      `${lines}\n\n` +
-      totalLine;
-
-    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`${header}\n${lines}\n\n${totalLine}`)}`;
   }
 
-  // ─── Animaciones y Notificaciones ──────────────────────────────────────────
+  // ─── Avisos ────────────────────────────────────────────────────────────────
+  function isDrawerOpen() {
+    const drawer = document.getElementById('cartDrawer');
+    return !!(drawer && drawer.classList.contains('is-open'));
+  }
+
+  // Aviso persistente dentro del drawer (y toast si está cerrado).
+  function setNotice(msg) {
+    cartNotice = msg || '';
+    if (cartNotice && !isDrawerOpen()) showToast(cartNotice, 'VER CARRITO', openDrawer);
+  }
+
   function animateFlyToCart() {
     const floatingBtn = document.getElementById('floatingCartBtn');
     if (floatingBtn) {
@@ -390,11 +674,15 @@
   }
 
   function showToast(message, actionText, actionCallback) {
+    // Con el drawer abierto el toast taparía sus botones: la lista ya muestra el cambio.
+    if (isDrawerOpen()) return;
     let toast = document.getElementById('popperToast');
     if (!toast) {
       toast = document.createElement('div');
       toast.id = 'popperToast';
       toast.className = 'popper-toast';
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
       document.body.appendChild(toast);
     }
     toast.innerHTML = `
@@ -417,11 +705,29 @@
     clearTimeout(toast._timeout);
     toast._timeout = setTimeout(() => {
       toast.classList.remove('is-visible');
-    }, 3200);
+    }, 4200);
   }
 
   // ─── Elementos UI Base ─────────────────────────────────────────────────────
+  function syncCurrencyBtn() {
+    const currBtn = document.getElementById('currencyToggleBtn');
+    if (!currBtn) return;
+    if (getCurrentCurrency() === 'ARS') {
+      currBtn.textContent = 'ARS';
+      currBtn.className = 'currency-toggle-btn is-ars';
+      currBtn.setAttribute('aria-label', 'Moneda activa: Pesos (ARS). Clic para cambiar a dólares (USD)');
+      currBtn.setAttribute('title', 'Moneda activa: Pesos (ARS) · Clic para cambiar a dólares (USD)');
+    } else {
+      currBtn.textContent = 'USD';
+      currBtn.className = 'currency-toggle-btn is-usd';
+      currBtn.setAttribute('aria-label', 'Moneda activa: Dólares (USD). Clic para cambiar a pesos (ARS)');
+      currBtn.setAttribute('title', 'Moneda activa: Dólares (USD) · Clic para cambiar a pesos (ARS)');
+    }
+  }
+
   function ensureElements() {
+    if (elementsReady && document.getElementById('cartDrawer')) return;
+
     let actionsWrap = document.getElementById('siteFloatingActions');
     if (!actionsWrap) {
       actionsWrap = document.createElement('div');
@@ -438,34 +744,11 @@
       currBtn.className = 'currency-toggle-btn';
       actionsWrap.appendChild(currBtn);
     }
-
-    function renderCurrencyBtnState() {
-      const c = getCurrentCurrency();
-      if (c === 'ARS') {
-        currBtn.textContent = 'ARS';
-        currBtn.className = 'currency-toggle-btn is-ars';
-        currBtn.setAttribute('aria-label', 'Moneda activa: Pesos (ARS). Clic para cambiar a dólares (USD)');
-        currBtn.setAttribute('title', 'Moneda activa: Pesos (ARS) · Clic para cambiar a dólares (USD)');
-      } else {
-        currBtn.textContent = 'USD';
-        currBtn.className = 'currency-toggle-btn is-usd';
-        currBtn.setAttribute('aria-label', 'Moneda activa: Dólares (USD). Clic para cambiar a pesos (ARS)');
-        currBtn.setAttribute('title', 'Moneda activa: Dólares (USD) · Clic para cambiar a pesos (ARS)');
-      }
-    }
-
     currBtn.onclick = () => {
-      if (typeof toggleCurrency === 'function') {
-        toggleCurrency();
-      }
-      renderCurrencyBtnState();
+      if (typeof toggleCurrency === 'function') toggleCurrency();
+      syncCurrencyBtn();
     };
-
-    renderCurrencyBtnState();
-    window.addEventListener('popper:currency-changed', () => {
-      renderCurrencyBtnState();
-      renderDrawerContent();
-    });
+    syncCurrencyBtn();
 
     let btn = document.getElementById('floatingCartBtn');
     if (!btn) {
@@ -499,24 +782,29 @@
       const overlay = document.createElement('div');
       overlay.id = 'cartDrawerOverlay';
       overlay.className = 'cart-drawer-overlay';
+      overlay.setAttribute('aria-hidden', 'true');
       overlay.addEventListener('click', closeDrawer);
       document.body.appendChild(overlay);
 
       const drawer = document.createElement('aside');
       drawer.id = 'cartDrawer';
       drawer.className = 'cart-drawer';
+      drawer.tabIndex = -1;
       drawer.setAttribute('role', 'dialog');
       drawer.setAttribute('aria-modal', 'true');
       drawer.setAttribute('aria-label', 'Carrito de compras');
+      drawer.setAttribute('aria-hidden', 'true');
       document.body.appendChild(drawer);
     }
+    elementsReady = true;
   }
 
   function updateBadge() {
+    const units = totalUnits();
     const badge = document.getElementById('floatingCartBadge');
     if (badge) {
-      badge.textContent = String(cartItems.length);
-      badge.classList.toggle('has-items', cartItems.length > 0);
+      badge.textContent = String(units);
+      badge.classList.toggle('has-items', units > 0);
     }
 
     // Sincronizar botones de tarjeta en catálogo
@@ -529,34 +817,87 @@
         btn.setAttribute('title', inCart ? 'En tu carrito · Clic para quitar' : 'Agregar al carrito');
       }
     });
+    // El botón de la ficha lo repinta detalle.js al recibir popper:cart-updated.
+  }
 
-    // Sincronizar botón en ficha de detalle
-    const detailBtn = document.getElementById('detailAddToCart');
-    if (detailBtn && detailBtn.dataset.coinId) {
-      const inCart = has(detailBtn.dataset.coinId);
-      detailBtn.classList.toggle('is-in-cart', inCart);
-      detailBtn.innerHTML = inCart
-        ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> <span>En tu Carrito · <strong>Ver Carrito</strong></span>`
-        : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> <span>Agregar al Carrito</span>`;
-      detailBtn.setAttribute('title', inCart ? 'Pieza en tu carrito · Clic para ver carrito' : 'Agregar al carrito');
-    }
+  // Con el teclado virtual abierto, el drawer se acota al viewport visual.
+  function syncViewport() {
+    const drawer = document.getElementById('cartDrawer');
+    const vv = window.visualViewport;
+    if (!drawer || !vv || !drawer.classList.contains('is-open')) return;
+    drawer.style.setProperty('--vvh', vv.height + 'px');
+    drawer.style.setProperty('--vvtop', vv.offsetTop + 'px');
+  }
+
+  function bindViewport() {
+    if (viewportBound || !window.visualViewport) return;
+    viewportBound = true;
+    window.visualViewport.addEventListener('resize', syncViewport);
+    window.visualViewport.addEventListener('scroll', syncViewport);
+  }
+
+  // Con el drawer abierto, el resto de la página no recibe foco ni toques.
+  function setBackgroundInert(flag) {
+    const keep = new Set(['cartDrawer', 'cartDrawerOverlay', 'popperToast']);
+    Array.from(document.body.children).forEach(el => {
+      if (keep.has(el.id) || /^(SCRIPT|STYLE|TEMPLATE)$/.test(el.tagName)) return;
+      if (flag) {
+        if (!el.hasAttribute('inert')) {
+          el.setAttribute('inert', '');
+          el.setAttribute('data-cart-inert', '');
+        }
+      } else if (el.hasAttribute('data-cart-inert')) {
+        el.removeAttribute('inert');
+        el.removeAttribute('data-cart-inert');
+      }
+    });
   }
 
   function openDrawer() {
     ensureElements();
+    const drawer = document.getElementById('cartDrawer');
+    if (!isDrawerOpen()) lastFocusEl = document.activeElement;
     currentStep = 'cart';
+    const toast = document.getElementById('popperToast');
+    if (toast) toast.classList.remove('is-visible');
     renderDrawerContent();
     document.getElementById('cartDrawerOverlay').classList.add('is-open');
-    document.getElementById('cartDrawer').classList.add('is-open');
-    document.body.classList.add('cart-drawer-lock');
+    drawer.classList.add('is-open');
+    drawer.setAttribute('aria-hidden', 'false');
+    document.documentElement.classList.add('cart-drawer-lock');
+    setBackgroundInert(true);
+    bindViewport();
+    syncViewport();
+    try { drawer.focus({ preventScroll: true }); } catch (_) {}
   }
 
   function closeDrawer() {
+    // Mientras se envía el pedido no se puede cerrar: se perdería la confirmación.
+    if (isSubmitting) return;
     const overlay = document.getElementById('cartDrawerOverlay');
     const drawer = document.getElementById('cartDrawer');
     if (overlay) overlay.classList.remove('is-open');
-    if (drawer) drawer.classList.remove('is-open');
-    document.body.classList.remove('cart-drawer-lock');
+    if (drawer) {
+      drawer.classList.remove('is-open');
+      drawer.setAttribute('aria-hidden', 'true');
+    }
+    document.documentElement.classList.remove('cart-drawer-lock');
+    setBackgroundInert(false);
+    if (lastFocusEl && lastFocusEl.isConnected && typeof lastFocusEl.focus === 'function') {
+      try { lastFocusEl.focus({ preventScroll: true }); } catch (_) {}
+    }
+    lastFocusEl = null;
+  }
+
+  function setSubmitting(flag) {
+    isSubmitting = flag;
+    const drawer = document.getElementById('cartDrawer');
+    if (!drawer) return;
+    drawer.classList.toggle('is-submitting', flag);
+    drawer.setAttribute('aria-busy', flag ? 'true' : 'false');
+    drawer.querySelectorAll('.cart-back-btn, .cart-close-btn, .checkout-submit-btn, input[type="radio"], .discount-apply, .discount-remove, #inputDiscount').forEach(el => {
+      el.disabled = flag;
+    });
   }
 
   // ─── Renderizado del Drawer ────────────────────────────────────────────────
@@ -564,10 +905,16 @@
     const drawer = document.getElementById('cartDrawer');
     if (!drawer) return;
 
-    // Si el carrito contiene piezas con ID no numérico, no permitir avanzar a checkout/pago
-    if (hasNonNumericItems() && currentStep !== 'cart') {
-      currentStep = 'cart';
-    }
+    // Sin piezas no hay checkout; sin piezas pagables no hay paso de pago.
+    if ((currentStep === 'checkout' || currentStep === 'payment-select') && !cartItems.length) currentStep = 'cart';
+    if (currentStep === 'payment-select' && !payableItems().length) currentStep = 'cart';
+    if (currentStep === 'payment-instructions' && !lastPurchasedOrder) currentStep = 'cart';
+
+    if (currentStep === 'checkout') saveCurrentForm(drawer);
+
+    const prevBody = drawer.querySelector('.cart-drawer__body');
+    const prevScroll = prevBody ? prevBody.scrollTop : 0;
+    const prevStep = drawer.dataset.step;
 
     if (currentStep === 'cart') {
       renderStepCart(drawer);
@@ -577,22 +924,117 @@
       renderStepPaymentSelect(drawer);
     } else if (currentStep === 'payment-instructions') {
       renderStepPaymentInstructions(drawer);
+    } else if (currentStep === 'inquiry-sent') {
+      renderStepInquirySent(drawer);
     }
+
+    drawer.dataset.step = currentStep;
+    const body = drawer.querySelector('.cart-drawer__body');
+    if (body) body.scrollTop = prevStep === currentStep ? prevScroll : 0;
+    if (isSubmitting) setSubmitting(true);
+  }
+
+  // Re-render sin pisar lo que el usuario está escribiendo.
+  function softRender(force) {
+    const drawer = document.getElementById('cartDrawer');
+    if (!drawer || !drawer.classList.contains('is-open')) {
+      renderDrawerContent();
+      return;
+    }
+    if (isSubmitting) return;
+    const ae = document.activeElement;
+    const typing = ae && drawer.contains(ae) && /^(INPUT|TEXTAREA|SELECT)$/.test(ae.tagName) && ae.type !== 'radio';
+    if (!force && currentStep === 'checkout' && typing) return;
+    renderDrawerContent();
+  }
+
+  function refocus(selector) {
+    const drawer = document.getElementById('cartDrawer');
+    const el = drawer && drawer.querySelector(selector);
+    if (el && !el.disabled) {
+      try { el.focus({ preventScroll: true }); } catch (_) {}
+    }
+  }
+
+  function noticeHTML() {
+    if (!cartNotice) return '';
+    return `
+      <div class="cart-notice" role="status">
+        <span class="cart-notice__text">${escapeHTML(cartNotice)}</span>
+        <button type="button" class="cart-notice__close" data-dismiss-notice aria-label="Descartar aviso">✕</button>
+      </div>
+    `;
+  }
+
+  function bindNotice(drawer) {
+    drawer.querySelectorAll('[data-dismiss-notice]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        cartNotice = '';
+        renderDrawerContent();
+      });
+    });
+  }
+
+  function cartItemHTML(item, isConsult) {
+    const thumb = (item.image && typeof thumbFor === 'function') ? thumbFor(item.image) : (item.image || '');
+    const qty = qtyOf(item);
+    const dual = formatDualPrice(lineUSD(item), lineARS(item));
+    const unit = formatDualPrice(item.priceUSD, unitARS(item));
+    const idAttr = escapeHTML(item.id);
+    const qtyControl = (item.maxQty || 1) > 1 ? `
+      <div class="cart-qty" role="group" aria-label="Cantidad de ${escapeHTML(item.title)}">
+        <button type="button" class="cart-qty__btn" data-qty-dec="${idAttr}" aria-label="Quitar una unidad" ${qty <= 1 ? 'disabled' : ''}>−</button>
+        <span class="cart-qty__val">${qty}</span>
+        <button type="button" class="cart-qty__btn" data-qty-inc="${idAttr}" aria-label="Sumar una unidad" ${qty >= item.maxQty ? 'disabled' : ''}>+</button>
+        <span class="cart-qty__max">máx. ${item.maxQty}</span>
+      </div>
+    ` : '';
+    return `
+      <li class="cart-item${isConsult ? ' cart-item--consult' : ''}" data-id="${idAttr}">
+        <div class="cart-item__thumb">
+          ${thumb ? `<img src="${escapeHTML(thumb)}" alt="${escapeHTML(item.title)}" width="52" height="52" loading="lazy" />` : `<div class="cart-item__no-thumb">NP</div>`}
+        </div>
+        <div class="cart-item__details">
+          <div class="cart-item__head">
+            <h3 class="cart-item__title">${escapeHTML(item.title)}</h3>
+            <button type="button" class="cart-item__remove" data-remove-id="${idAttr}" title="Quitar pieza" aria-label="Quitar ${escapeHTML(item.title)}">✕</button>
+          </div>
+          <div class="cart-item__meta">
+            ${item.country ? `<span class="cart-item__country">${escapeHTML(item.country)}</span>` : ''}
+            ${item.year ? `<span>• ${escapeHTML(item.year)}</span>` : ''}
+            ${item.grade_short ? `<span class="cart-grade-badge">${escapeHTML(item.grade_short)}</span>` : ''}
+            ${isConsult ? `<span class="cart-consult-tag">A CONSULTAR</span>` : ''}
+          </div>
+          ${qtyControl}
+          <div class="cart-item__pricing">
+            <strong class="cart-price-primary cart-price-usd">${escapeHTML(dual.primary)}</strong>
+            <span class="cart-price-secondary cart-price-ars">(${escapeHTML(dual.secondary)})</span>
+            ${qty > 1 ? `<span class="cart-item__unit">${qty} × ${escapeHTML(unit.primary)}</span>` : ''}
+          </div>
+        </div>
+      </li>
+    `;
   }
 
   // ─── PASO 1: Lista del Carrito (Tu Selección) ──────────────────────────────
   function renderStepCart(drawer) {
+    const pay = payableItems();
+    const consult = consultItems();
     const count = cartItems.length;
+    const units = totalUnits();
     const subUSD = getSubtotalUSD();
     const subARS = getSubtotalARS();
-    const nonNumericCount = cartItems.filter(item => isNonNumericId(item.id)).length;
-    const requiresVerification = nonNumericCount > 0;
-    const verificationMessage = nonNumericCount === 1
-      ? 'Tenemos que verificar si dicho ejemplar lo tenemos en stock'
-      : 'Tenemos que verificar si dichos ejemplares los tenemos en stock';
+    const sub = formatDualPrice(subUSD, subARS);
+    const inquiryOnly = pay.length === 0 && consult.length > 0;
+    const consultMessage = inquiryOnly
+      ? 'Verificamos el stock y te confirmamos por WhatsApp.'
+      : (consult.length === 1
+        ? 'Esta pieza no entra en el total: te confirmamos si hay stock. El resto lo podés comprar ya.'
+        : 'Estas piezas no entran en el total: te confirmamos si hay stock. El resto lo podés comprar ya.');
 
     let itemsHtml = '';
     if (count === 0) {
+      const lo = lastPurchasedOrder;
       itemsHtml = `
         <div class="cart-empty-state">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" class="cart-empty-icon" aria-hidden="true">
@@ -603,52 +1045,35 @@
           <p class="cart-empty-title">Tu carrito está vacío</p>
           <p class="cart-empty-subtitle">Explorá el catálogo para sumar piezas a tu colección.</p>
         </div>
+        ${lo ? `
+          <div class="cart-last-order">
+            <span class="cart-last-order__label">TU ÚLTIMO PEDIDO · ${escapeHTML(lo.orderId)}</span>
+            <button type="button" class="cart-btn cart-btn--secondary" id="cartLastOrderBtn">VER INSTRUCCIONES DE PAGO</button>
+          </div>
+        ` : ''}
       `;
     } else {
       itemsHtml = `
-        <ul class="cart-items-list">
-          ${cartItems.map(item => {
-            const thumb = (item.image && typeof thumbFor === 'function') ? thumbFor(item.image) : (item.image || '');
-            const itemARS = roundARS((item.priceUSD || 0) * blueRate);
-            const isARS = getCurrentCurrency() === 'ARS';
-            const itemPrimary = isARS ? formatARS(itemARS) : formatUSD(item.priceUSD);
-            const itemSecondary = isARS ? formatUSD(item.priceUSD) : formatARS(itemARS);
-            return `
-              <li class="cart-item" data-id="${escapeHTML(item.id)}">
-                <div class="cart-item__thumb">
-                  ${thumb ? `<img src="${escapeHTML(thumb)}" alt="${escapeHTML(item.title)}" loading="lazy" />` : `<div class="cart-item__no-thumb">NP</div>`}
-                </div>
-                <div class="cart-item__details">
-                  <div class="cart-item__head">
-                    <h4 class="cart-item__title">${escapeHTML(item.title)}</h4>
-                    <button type="button" class="cart-item__remove" data-remove-id="${escapeHTML(item.id)}" title="Quitar pieza" aria-label="Quitar pieza">✕</button>
-                  </div>
-                  <div class="cart-item__meta">
-                    ${item.country ? `<span>${escapeHTML(item.country)}</span>` : ''}
-                    ${item.year ? `<span>• ${escapeHTML(item.year)}</span>` : ''}
-                    ${item.grade_short ? `<span class="cart-grade-badge">${escapeHTML(item.grade_short)}</span>` : ''}
-                  </div>
-                  <div class="cart-item__pricing">
-                    <strong class="cart-price-primary cart-price-usd">${escapeHTML(itemPrimary)}</strong>
-                    <span class="cart-price-secondary cart-price-ars">(${escapeHTML(itemSecondary)})</span>
-                  </div>
-                </div>
-              </li>
-            `;
-          }).join('')}
-        </ul>
+        ${pay.length ? `<ul class="cart-items-list">${pay.map(it => cartItemHTML(it, false)).join('')}</ul>` : ''}
+        ${consult.length ? `
+          <div class="cart-subhead">A CONSULTAR STOCK</div>
+          <ul class="cart-items-list">${consult.map(it => cartItemHTML(it, true)).join('')}</ul>
+            <div class="cart-stock-notice">
+              <svg class="cart-stock-notice__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span class="cart-stock-notice__text">${escapeHTML(consultMessage)}</span>
+            </div>
+        ` : ''}
       `;
     }
-
-    const isARS = getCurrentCurrency() === 'ARS';
-    const subPrimary = isARS ? formatARS(subARS) : formatUSD(subUSD);
-    const subSecondary = isARS ? formatUSD(subUSD) : formatARS(subARS);
 
     drawer.innerHTML = `
       <div class="cart-drawer__header">
         <div class="cart-drawer__header-left">
           <span class="cart-drawer__tag">CARRITO</span>
-          <span class="cart-drawer__count">[ ${count} ]</span>
+          <span class="cart-drawer__count">[ ${units} ]</span>
         </div>
         <div class="cart-drawer__header-actions">
           ${count > 0 ? `<button type="button" class="cart-clear-btn" id="cartClearBtn">Vaciar</button>` : ''}
@@ -657,60 +1082,80 @@
       </div>
 
       <div class="cart-drawer__body">
+        ${noticeHTML()}
         ${itemsHtml}
       </div>
 
       ${count > 0 ? `
         <div class="cart-drawer__footer">
-          <div class="cart-totals-table">
-            <div class="cart-totals-row">
-              <span>Subtotal</span>
-              <strong class="cart-totals-val">${escapeHTML(subPrimary)} <span class="cart-totals-usd cart-totals-secondary">(${escapeHTML(subSecondary)})</span></strong>
-            </div>
-            <div class="cart-rate-line">
-              <span>Cotización Dólar Blue: $${blueRate.toLocaleString('es-AR')}</span>
-            </div>
-          </div>
-
-          ${requiresVerification ? `
-            <div class="cart-stock-notice">
-              <svg class="cart-stock-notice__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-              </svg>
-              <span class="cart-stock-notice__text">${verificationMessage}</span>
+          ${pay.length ? `
+            <div class="cart-totals-table">
+              <div class="cart-totals-row">
+                <span>Subtotal</span>
+                <strong class="cart-totals-val">${escapeHTML(sub.primary)} <span class="cart-totals-usd cart-totals-secondary">(${escapeHTML(sub.secondary)})</span></strong>
+              </div>
+              <div class="cart-rate-line">
+                <span>${escapeHTML(rateLabel())}</span>
+              </div>
             </div>
           ` : ''}
 
+
           <div class="cart-actions-stack">
-            ${requiresVerification ? `
-              <a href="${escapeHTML(buildPrivateInquiryWhatsAppURL(true))}" target="_blank" rel="noopener noreferrer" class="cart-btn cart-btn--wpp" id="cartInquiryWppBtn">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23a8.2 8.2 0 018.23 8.24c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
-                CONSULTAR POR WHATSAPP
-              </a>
-            ` : `
-              <button type="button" class="cart-btn cart-btn--primary" id="cartStartCheckoutBtn">
-                CONTINUAR CON LA COMPRA →
-              </button>
-              <a href="${escapeHTML(buildPrivateInquiryWhatsAppURL(false))}" target="_blank" rel="noopener noreferrer" class="cart-btn cart-btn--secondary" id="cartConsultBtn">
-                CONSULTAR POR WHATSAPP
-              </a>
-            `}
+            <button type="button" class="cart-btn cart-btn--primary" id="cartStartCheckoutBtn">
+              ${inquiryOnly ? 'ENVIAR CONSULTA DE STOCK →' : 'CONTINUAR CON LA COMPRA →'}
+            </button>
+            <a href="${escapeHTML(buildPrivateInquiryWhatsAppURL(inquiryOnly))}" target="_blank" rel="noopener noreferrer" class="cart-btn ${inquiryOnly ? 'cart-btn--wpp' : 'cart-btn--secondary'}" id="cartConsultBtn">
+              ${inquiryOnly ? WPP_ICON : ''}CONSULTAR POR WHATSAPP
+            </a>
           </div>
         </div>
       ` : ''}
     `;
 
+    bindNotice(drawer);
+
     const closeBtn = drawer.querySelector('#cartCloseBtn');
     if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
 
+    // "Vaciar" pide un segundo toque (sin diálogos nativos: bloquean en móvil).
     const clearBtn = drawer.querySelector('#cartClearBtn');
-    if (clearBtn) clearBtn.addEventListener('click', clear);
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        if (clearBtn.dataset.armed === '1') {
+          clearTimeout(clearArmedTimer);
+          clear();
+          return;
+        }
+        clearBtn.dataset.armed = '1';
+        clearBtn.textContent = '¿Seguro?';
+        clearBtn.classList.add('is-armed');
+        clearTimeout(clearArmedTimer);
+        clearArmedTimer = setTimeout(() => {
+          if (clearBtn.isConnected) {
+            clearBtn.dataset.armed = '0';
+            clearBtn.textContent = 'Vaciar';
+            clearBtn.classList.remove('is-armed');
+          }
+        }, 3000);
+      });
+    }
 
     const startCheckoutBtn = drawer.querySelector('#cartStartCheckoutBtn');
     if (startCheckoutBtn) {
       startCheckoutBtn.addEventListener('click', () => {
+        cartNotice = '';
         currentStep = 'checkout';
+        renderDrawerContent();
+        const body = drawer.querySelector('.cart-drawer__body');
+        if (body) body.scrollTop = 0;
+      });
+    }
+
+    const lastOrderBtn = drawer.querySelector('#cartLastOrderBtn');
+    if (lastOrderBtn) {
+      lastOrderBtn.addEventListener('click', () => {
+        currentStep = 'payment-instructions';
         renderDrawerContent();
       });
     }
@@ -721,93 +1166,190 @@
         remove(btn.dataset.removeId);
       });
     });
+
+    drawer.querySelectorAll('[data-qty-inc], [data-qty-dec]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const inc = btn.hasAttribute('data-qty-inc');
+        const id = inc ? btn.dataset.qtyInc : btn.dataset.qtyDec;
+        const item = cartItems.find(it => String(it.id) === String(id));
+        if (!item) return;
+        setQty(id, qtyOf(item) + (inc ? 1 : -1));
+        const sel = id.replace(/["\\]/g, '\\$&');
+        refocus(`[data-qty-${inc ? 'inc' : 'dec'}="${sel}"]`);
+        if (!document.activeElement || !document.getElementById('cartDrawer').contains(document.activeElement)) {
+          refocus(`[data-qty-${inc ? 'dec' : 'inc'}="${sel}"]`);
+        }
+      });
+    });
   }
 
   // ─── PASO 2: Entrega y Datos del Comprador ────────────────────────────────
   function renderStepCheckout(drawer) {
+    const consult = consultItems();
+    const inquiryOnly = payableItems().length === 0;
     const isAcumular = orderData.deliveryType === 'acumular';
     const isParque = orderData.deliveryType === 'parque';
     const isSucursal = orderData.deliveryType === 'sucursal';
     const isDomicilio = orderData.deliveryType === 'domicilio';
+    const needsShippingData = !inquiryOnly && (isSucursal || isDomicilio);
     const parqueSchedule = getNextParqueSchedule();
 
-    const parqueUSD = Number((SHIPPING_PARQUE_ARS / blueRate).toFixed(1));
-    const sucursalUSD = Number((SHIPPING_SUCURSAL_ARS / blueRate).toFixed(1));
-    const domicilioUSD = Number((SHIPPING_DOMICILIO_ARS / blueRate).toFixed(1));
+    const parqueDual = formatDualPrice(Number((SHIPPING_PARQUE_ARS / blueRate).toFixed(1)), SHIPPING_PARQUE_ARS);
+    const sucursalDual = formatDualPrice(Number((SHIPPING_SUCURSAL_ARS / blueRate).toFixed(1)), SHIPPING_SUCURSAL_ARS);
+    const domicilioDual = formatDualPrice(Number((SHIPPING_DOMICILIO_ARS / blueRate).toFixed(1)), SHIPPING_DOMICILIO_ARS);
 
-    const parquePriceDual = formatDualPrice(parqueUSD, SHIPPING_PARQUE_ARS);
-    const sucursalPriceDual = formatDualPrice(sucursalUSD, SHIPPING_SUCURSAL_ARS);
-    const domicilioPriceDual = formatDualPrice(domicilioUSD, SHIPPING_DOMICILIO_ARS);
+    const consultAlert = consult.length ? `
+      <div class="checkout-consult-alert" role="note">
+        <strong>${inquiryOnly ? 'Consulta de stock' : 'Atención'}</strong>
+        <span>${inquiryOnly
+          ? 'Te escribimos para confirmar el stock. Todavía no hay nada para pagar.'
+          : `${escapeHTML(consult.map(it => it.title).join(', '))}: se consulta aparte, fuera del total. El resto sigue normal.`}</span>
+      </div>
+    ` : '';
+
+    const deliverySection = inquiryOnly ? '' : `
+      <div class="checkout-section">
+        <span class="section-label">MODALIDAD DE ENTREGA</span>
+        <div class="delivery-list">
+          <label class="delivery-row ${isAcumular ? 'is-selected' : ''}">
+            <input type="radio" name="deliveryChoice" value="acumular" ${isAcumular ? 'checked' : ''} />
+            <span class="radio-custom"></span>
+            <div class="delivery-row__info">
+              <span class="delivery-row__name">Acumular compras</span>
+              <span class="delivery-row__sub">Guardalas para un futuro envío</span>
+            </div>
+            <span class="delivery-row__price">GRATIS</span>
+          </label>
+
+          <label class="delivery-row ${isParque ? 'is-selected' : ''}">
+            <input type="radio" name="deliveryChoice" value="parque" ${isParque ? 'checked' : ''} />
+            <span class="radio-custom"></span>
+            <div class="delivery-row__info">
+              <span class="delivery-row__name">Envío al Parque Rivadavia</span>
+              <span class="delivery-row__sub">Próximo envío ${parqueSchedule.dispatchDDMM}</span>
+            </div>
+            <span class="delivery-row__price">${escapeHTML(parqueDual.primary)} <span class="delivery-price-secondary">(${escapeHTML(parqueDual.secondary)})</span></span>
+          </label>
+
+          <label class="delivery-row ${isSucursal ? 'is-selected' : ''}">
+            <input type="radio" name="deliveryChoice" value="sucursal" ${isSucursal ? 'checked' : ''} />
+            <span class="radio-custom"></span>
+            <div class="delivery-row__info">
+              <span class="delivery-row__name">Envío a Sucursal</span>
+              <span class="delivery-row__sub">A través de Andreani</span>
+            </div>
+            <span class="delivery-row__price">${escapeHTML(sucursalDual.primary)} <span class="delivery-price-secondary">(${escapeHTML(sucursalDual.secondary)})</span></span>
+          </label>
+
+          <label class="delivery-row ${isDomicilio ? 'is-selected' : ''}">
+            <input type="radio" name="deliveryChoice" value="domicilio" ${isDomicilio ? 'checked' : ''} />
+            <span class="radio-custom"></span>
+            <div class="delivery-row__info">
+              <span class="delivery-row__name">Envío a Domicilio</span>
+              <span class="delivery-row__sub">A través de Andreani</span>
+            </div>
+            <span class="delivery-row__price">${escapeHTML(domicilioDual.primary)} <span class="delivery-price-secondary">(${escapeHTML(domicilioDual.secondary)})</span></span>
+          </label>
+        </div>
+      </div>
+    `;
+
+    let detailsSection = '';
+    if (!inquiryOnly) {
+      detailsSection = `
+        <div class="checkout-section" style="margin-top: 18px;">
+          <span class="section-label">DETALLES DE ENTREGA</span>
+
+          ${isParque ? `
+            <div class="delivery-parque-card" style="margin-top: 4px; margin-bottom: 14px;">
+              <div class="delivery-parque-card__title">
+                PUNTO DE RETIRO: FERIA DE PARQUE RIVADAVIA (CABA)
+              </div>
+              <div class="delivery-parque-card__desc">
+                Despacho: <strong>miércoles ${parqueSchedule.dispatchDDMM}</strong>. Retiro desde el <strong>domingo ${parqueSchedule.deliveryDDMM}</strong>, por la mañana. Entrega Diego Cepeda (Dac Monedas): <a href="https://wa.me/5491154028935" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: underline;">+54 9 11 5402-8935</a>.
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputPickupPerson">¿QUIÉN RETIRA EN EL PARQUE? (OPCIONAL)</label>
+              <input type="text" id="inputPickupPerson" class="form-input" maxlength="80" autocomplete="off" placeholder="Dejar en blanco si retira el titular" value="${escapeHTML(orderData.pickupPerson || '')}" />
+            </div>
+          ` : isAcumular ? `
+            <div class="delivery-parque-card" style="margin-top: 4px; margin-bottom: 14px; border-color: rgba(var(--accent-rgb), 0.25);">
+              <div class="delivery-parque-card__title">
+                MODALIDAD: ACUMULAR COMPRAS
+              </div>
+              <div class="delivery-parque-card__desc">
+                Guardamos tus piezas a tu nombre una vez confirmado el pago. Pedí el despacho cuando quieras.
+              </div>
+            </div>
+          ` : `
+            <div class="form-row" style="margin-top: 4px;">
+              <div class="form-group" style="flex: 1.4;">
+                <label for="inputCity">CIUDAD Y PROVINCIA *</label>
+                <input type="text" id="inputCity" class="form-input" maxlength="80" autocomplete="address-level2" placeholder="Ej: Mar del Plata, Bs As" value="${escapeHTML(orderData.city)}" required />
+              </div>
+              <div class="form-group" style="flex: 0.8;">
+                <label for="inputCp">CÓDIGO POSTAL *</label>
+                <input type="text" id="inputCp" class="form-input" maxlength="8" autocomplete="postal-code" inputmode="numeric" placeholder="Ej: 7600" value="${escapeHTML(orderData.postalCode)}" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputBranchOrAddress">
+                ${isSucursal ? 'SUCURSAL DE CORREO DESEADA *' : 'DIRECCIÓN COMPLETA *'}
+              </label>
+              <input
+                type="text"
+                id="inputBranchOrAddress"
+                class="form-input"
+                maxlength="140"
+                autocomplete="${isSucursal ? 'off' : 'street-address'}"
+                placeholder="${isSucursal ? 'Ej: Andreani Centro o dirección de la sucursal' : 'Ej: San Martín 1234, 3º B'}"
+                value="${escapeHTML(orderData.branchOrAddress)}"
+                required
+              />
+            </div>
+
+            ${isDomicilio ? `
+              <div class="form-group">
+                <label for="inputDeliveryNotes">ACLARACIONES O REFERENCIAS (OPCIONAL)</label>
+                <input type="text" id="inputDeliveryNotes" class="form-input" maxlength="140" autocomplete="off" placeholder="Ej: Timbre A, entrecalles o dejar en recepción" value="${escapeHTML(orderData.deliveryNotes || '')}" />
+              </div>
+            ` : ''}
+          `}
+        </div>
+      `;
+    }
 
     drawer.innerHTML = `
       <div class="cart-drawer__header">
         <button type="button" class="cart-back-btn" id="checkoutBackBtn">← CARRITO</button>
-        <span class="cart-step-pill">01 / ENTREGA</span>
+        <span class="cart-step-pill">${inquiryOnly ? 'CONSULTA' : '01 / ENTREGA'}</span>
         <button type="button" class="cart-close-btn" id="checkoutCloseBtn" aria-label="Cerrar">✕</button>
       </div>
 
       <div class="cart-drawer__body">
-        <div class="checkout-section">
-          <span class="section-label">MODALIDAD DE ENTREGA</span>
-          <div class="delivery-list">
-            <label class="delivery-row ${isAcumular ? 'is-selected' : ''}">
-              <input type="radio" name="deliveryChoice" value="acumular" ${isAcumular ? 'checked' : ''} />
-              <span class="radio-custom"></span>
-              <div class="delivery-row__info">
-                <span class="delivery-row__name">Acumular compras</span>
-                <span class="delivery-row__sub">Guardalas para un futuro envío</span>
-              </div>
-              <span class="delivery-row__price">GRATIS</span>
-            </label>
+        ${consultAlert}
+        ${deliverySection}
 
-            <label class="delivery-row ${isParque ? 'is-selected' : ''}">
-              <input type="radio" name="deliveryChoice" value="parque" ${isParque ? 'checked' : ''} />
-              <span class="radio-custom"></span>
-              <div class="delivery-row__info">
-                <span class="delivery-row__name">Envío al Parque Rivadavia</span>
-                <span class="delivery-row__sub">Próximo envío ${parqueSchedule.dispatchDDMM}</span>
-              </div>
-              <span class="delivery-row__price">${escapeHTML(parquePriceDual.primary)} <span class="delivery-price-secondary">(${escapeHTML(parquePriceDual.secondary)})</span></span>
-            </label>
-
-            <label class="delivery-row ${isSucursal ? 'is-selected' : ''}">
-              <input type="radio" name="deliveryChoice" value="sucursal" ${isSucursal ? 'checked' : ''} />
-              <span class="radio-custom"></span>
-              <div class="delivery-row__info">
-                <span class="delivery-row__name">Envío a Sucursal</span>
-                <span class="delivery-row__sub">A través de Andreani</span>
-              </div>
-              <span class="delivery-row__price">${escapeHTML(sucursalPriceDual.primary)} <span class="delivery-price-secondary">(${escapeHTML(sucursalPriceDual.secondary)})</span></span>
-            </label>
-
-            <label class="delivery-row ${isDomicilio ? 'is-selected' : ''}">
-              <input type="radio" name="deliveryChoice" value="domicilio" ${isDomicilio ? 'checked' : ''} />
-              <span class="radio-custom"></span>
-              <div class="delivery-row__info">
-                <span class="delivery-row__name">Envío a Domicilio</span>
-                <span class="delivery-row__sub">A través de Andreani</span>
-              </div>
-              <span class="delivery-row__price">${escapeHTML(domicilioPriceDual.primary)} <span class="delivery-price-secondary">(${escapeHTML(domicilioPriceDual.secondary)})</span></span>
-            </label>
-          </div>
-        </div>
-
-        <form id="checkoutForm" class="checkout-form" novalidate style="margin-top: 24px;">
+        <form id="checkoutForm" class="checkout-form" novalidate style="margin-top: ${inquiryOnly ? '8' : '24'}px;">
           <div class="checkout-section">
             <div class="form-group">
               <label for="inputFullName">NOMBRE Y APELLIDO *</label>
-              <input type="text" id="inputFullName" class="form-input" placeholder="Ej: Juan Pérez" value="${escapeHTML(orderData.fullName)}" required />
+              <input type="text" id="inputFullName" class="form-input" maxlength="80" autocomplete="name" autocapitalize="words" placeholder="Ej: Juan Pérez" value="${escapeHTML(orderData.fullName)}" required />
             </div>
 
             <div class="form-row">
               <div class="form-group" style="flex: 1;">
                 <label for="inputWhatsApp">WHATSAPP / TEL *</label>
-                <input type="tel" id="inputWhatsApp" class="form-input" placeholder="Ej: 11 2345 6789" value="${escapeHTML(orderData.phone)}" required />
+                <input type="tel" id="inputWhatsApp" class="form-input" maxlength="24" autocomplete="tel" inputmode="tel" placeholder="Ej: 11 2345 6789" value="${escapeHTML(orderData.phone)}" required />
               </div>
+              ${inquiryOnly ? '' : `
               <div class="form-group" style="flex: 1;">
-                <label for="inputDni">DNI ${isSucursal || isDomicilio ? '*' : '(OPCIONAL)'}</label>
-                <input type="text" id="inputDni" class="form-input" placeholder="Ej: 38123456" value="${escapeHTML(orderData.dni)}" ${isSucursal || isDomicilio ? 'required' : ''} />
-              </div>
+                <label for="inputDni">DNI ${needsShippingData ? '*' : '(OPCIONAL)'}</label>
+                <input type="text" id="inputDni" class="form-input" maxlength="10" autocomplete="off" inputmode="numeric" placeholder="Ej: 38123456" value="${escapeHTML(orderData.dni)}" ${needsShippingData ? 'required' : ''} />
+              </div>`}
             </div>
 
             <div class="form-group">
@@ -816,10 +1358,12 @@
                 type="email"
                 id="inputEmail"
                 class="form-input"
+                maxlength="120"
                 placeholder="correo@ejemplo.com"
                 value="${escapeHTML(orderData.email)}"
                 required
                 autocomplete="email"
+                inputmode="email"
                 autocapitalize="none"
                 autocorrect="off"
                 spellcheck="false"
@@ -827,89 +1371,19 @@
             </div>
           </div>
 
-          <div class="checkout-section" style="margin-top: 18px;">
-            <span class="section-label">DETALLES DE ENTREGA</span>
+          ${detailsSection}
 
-            ${isParque ? `
-              <div class="delivery-parque-card" style="margin-top: 4px; margin-bottom: 14px;">
-                <div class="delivery-parque-card__title">
-                  PUNTO DE RETIRO: FERIA DE PARQUE RIVADAVIA (CABA)
-                </div>
-                <div class="delivery-parque-card__desc">
-                  Despacho: <strong>miércoles ${parqueSchedule.dispatchDDMM}</strong>. Podés retirar tu pedido a partir del <strong>domingo ${parqueSchedule.deliveryDDMM}</strong> por la mañana, o cualquier domingo posterior. Entrega Diego Cepeda de Dac Monedas. Te dejo su número para combinar la entrega: <a href="https://wa.me/5491154028935" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: underline;">+54 9 11 5402-8935</a>.
-                </div>
-              </div>
+          <div class="checkout-error" id="checkoutError" role="alert" style="display: none;"></div>
 
-              <div class="form-group">
-                <label for="inputPickupPerson">¿QUIÉN RETIRA EN EL PARQUE? (OPCIONAL)</label>
-                <input
-                  type="text"
-                  id="inputPickupPerson"
-                  class="form-input"
-                  placeholder="Dejar en blanco si retira el titular"
-                  value="${escapeHTML(orderData.pickupPerson || '')}"
-                />
-              </div>
-            ` : isAcumular ? `
-              <div class="delivery-parque-card" style="margin-top: 4px; margin-bottom: 14px; border-color: rgba(var(--accent-rgb), 0.25);">
-                <div class="delivery-parque-card__title">
-                  MODALIDAD: ACUMULAR COMPRAS
-                </div>
-                <div class="delivery-parque-card__desc">
-                  Tus piezas quedan <strong>guardadas y reservadas a tu nombre</strong>. Podés seguir sumando piezas en futuras compras y solicitar el despacho cuando quieras.
-                </div>
-              </div>
-            ` : `
-              <div class="form-row" style="margin-top: 4px;">
-                <div class="form-group" style="flex: 1.4;">
-                  <label for="inputCity">CIUDAD Y PROVINCIA *</label>
-                  <input type="text" id="inputCity" class="form-input" placeholder="Ej: Mar del Plata, Bs As" value="${escapeHTML(orderData.city)}" required />
-                </div>
-                <div class="form-group" style="flex: 0.8;">
-                  <label for="inputCp">CÓDIGO POSTAL *</label>
-                  <input type="text" id="inputCp" class="form-input" placeholder="Ej: 7600" value="${escapeHTML(orderData.postalCode)}" required />
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="inputBranchOrAddress">
-                  ${isSucursal ? 'SUCURSAL DE CORREO DESEADA *' : 'DIRECCIÓN COMPLETA *'}
-                </label>
-                <input
-                  type="text"
-                  id="inputBranchOrAddress"
-                  class="form-input"
-                  placeholder="${isSucursal ? 'Ej: Andreani Centro o dirección de la sucursal' : 'Ej: San Martín 1234, 3º B'}"
-                  value="${escapeHTML(orderData.branchOrAddress)}"
-                  required
-                />
-              </div>
-
-              ${isDomicilio ? `
-                <div class="form-group">
-                  <label for="inputDeliveryNotes">ACLARACIONES O REFERENCIAS (OPCIONAL)</label>
-                  <input
-                    type="text"
-                    id="inputDeliveryNotes"
-                    class="form-input"
-                    placeholder="Ej: Timbre A, entrecalles o dejar en recepción"
-                    value="${escapeHTML(orderData.deliveryNotes || '')}"
-                  />
-                </div>
-              ` : ''}
-            `}
-          </div>
-
-          <div class="checkout-error" id="checkoutError" style="display: none;"></div>
-
-          <button type="submit" class="cart-btn cart-btn--primary checkout-submit-btn">
-            CONTINUAR AL PAGO →
+          <button type="submit" class="cart-btn cart-btn--primary checkout-submit-btn" id="checkoutSubmitBtn">
+            ${inquiryOnly ? 'ENVIAR CONSULTA →' : 'CONTINUAR AL PAGO →'}
           </button>
         </form>
       </div>
     `;
 
     drawer.querySelector('#checkoutBackBtn').addEventListener('click', () => {
+      if (isSubmitting) return;
       saveCurrentForm(drawer);
       currentStep = 'cart';
       renderDrawerContent();
@@ -921,75 +1395,128 @@
         orderData.deliveryType = e.target.value;
         saveCurrentForm(drawer);
         renderStepCheckout(drawer);
+        refocus('input[name="deliveryChoice"]:checked');
       });
     });
 
-    drawer.querySelectorAll('.form-input').forEach(input => {
+    const inputs = drawer.querySelectorAll('.form-input');
+    inputs.forEach((input, idx) => {
+      input.setAttribute('enterkeyhint', idx === inputs.length - 1 ? 'go' : 'next');
       input.addEventListener('input', () => {
-        const err = drawer.querySelector('#checkoutError');
-        if (err && err.style.display !== 'none') {
-          err.style.display = 'none';
+        if (input.hasAttribute('aria-invalid')) {
+          input.removeAttribute('aria-invalid');
+          input.removeAttribute('aria-describedby');
+          const note = input.closest('.form-group') && input.closest('.form-group').querySelector('.field-error');
+          if (note) note.remove();
         }
+        const err = drawer.querySelector('#checkoutError');
+        if (err && err.style.display !== 'none') err.style.display = 'none';
+      });
+      // Con el teclado virtual abierto, centrar el campo para que no quede tapado.
+      input.addEventListener('focus', () => {
+        setTimeout(() => {
+          if (document.activeElement === input && typeof input.scrollIntoView === 'function') {
+            input.scrollIntoView({ block: 'center', behavior: 'smooth' });
+          }
+        }, 320);
       });
     });
 
     const form = drawer.querySelector('#checkoutForm');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+      if (isSubmitting) return;
       saveCurrentForm(drawer);
-      const errEl = drawer.querySelector('#checkoutError');
 
-      if (!orderData.fullName || !orderData.phone || !orderData.email) {
-        errEl.textContent = 'Por favor completá Nombre, WhatsApp y Correo electrónico.';
-        errEl.style.display = 'block';
+      const problem = validateCheckoutForm(inquiryOnly);
+      if (problem) {
+        showFieldError(drawer, problem.msg, problem.field);
+        return;
+      }
+      // Reflejar en pantalla el email ya normalizado.
+      const em = drawer.querySelector('#inputEmail');
+      if (em) em.value = orderData.email;
+
+      if (inquiryOnly) {
+        submitInquiry(drawer);
         return;
       }
 
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/i;
-      if (!emailRegex.test(orderData.email)) {
-        errEl.textContent = 'Por favor ingresá un correo electrónico válido.';
-        errEl.style.display = 'block';
-        return;
-      }
-
-      if (orderData.deliveryType === 'sucursal' || orderData.deliveryType === 'domicilio') {
-        if (!orderData.dni) {
-          errEl.textContent = 'El DNI es obligatorio para la guía de despacho por correo.';
-          errEl.style.display = 'block';
-          return;
-        }
-        if (!orderData.city || !orderData.postalCode || !orderData.branchOrAddress) {
-          errEl.textContent = orderData.deliveryType === 'sucursal'
-            ? 'Por favor indicá ciudad, código postal y sucursal de correo deseada.'
-            : 'Por favor indicá ciudad, código postal y dirección completa para el envío.';
-          errEl.style.display = 'block';
-          return;
-        }
-      }
-
-      // Costos finales de envío
-      if (orderData.deliveryType === 'parque') {
-        orderData.shippingCostARS = SHIPPING_PARQUE_ARS;
-        orderData.shippingCostUSD = Number((SHIPPING_PARQUE_ARS / blueRate).toFixed(1));
-      } else if (orderData.deliveryType === 'sucursal') {
-        orderData.shippingCostARS = SHIPPING_SUCURSAL_ARS;
-        orderData.shippingCostUSD = Number((SHIPPING_SUCURSAL_ARS / blueRate).toFixed(1));
-      } else if (orderData.deliveryType === 'domicilio') {
-        orderData.shippingCostARS = SHIPPING_DOMICILIO_ARS;
-        orderData.shippingCostUSD = Number((SHIPPING_DOMICILIO_ARS / blueRate).toFixed(1));
-      } else {
-        orderData.shippingCostARS = 0;
-        orderData.shippingCostUSD = 0;
-      }
-
-      const subUSD = getSubtotalUSD();
-      const subARS = getSubtotalARS();
-      orderData.totalUSD = Number((subUSD + orderData.shippingCostUSD).toFixed(1));
-      orderData.totalARS = subARS + orderData.shippingCostARS;
-
+      orderData.parqueSchedule = orderData.deliveryType === 'parque' ? getNextParqueSchedule() : null;
+      recomputeTotals();
       currentStep = 'payment-select';
       renderDrawerContent();
     });
+  }
+
+  function validateCheckoutForm(inquiryOnly) {
+    const d = orderData;
+    if (!d.fullName || d.fullName.length < 3) {
+      return { msg: 'Ingresá tu nombre y apellido.', field: '#inputFullName' };
+    }
+    const phoneDigits = d.phone.replace(/\D/g, '');
+    if (!/^[+\d\s()\-.]+$/.test(d.phone) || phoneDigits.length < 8 || phoneDigits.length > 15) {
+      return { msg: 'Ingresá un teléfono válido (solo números, mín. 8 dígitos).', field: '#inputWhatsApp' };
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(d.email)) {
+      return { msg: 'Ingresá un correo electrónico válido para recibir la confirmación.', field: '#inputEmail' };
+    }
+    if (inquiryOnly) return null;
+
+    const shipping = d.deliveryType === 'sucursal' || d.deliveryType === 'domicilio';
+    if ((shipping && !d.dni) || (d.dni && !/^\d{7,8}$/.test(d.dni))) {
+      return {
+        msg: shipping && !d.dni
+          ? 'El DNI es obligatorio para la guía de despacho por correo.'
+          : 'El DNI debe tener 7 u 8 números, sin puntos.',
+        field: '#inputDni',
+      };
+    }
+    if (shipping) {
+      if (!d.city) return { msg: 'Indicá tu ciudad y provincia.', field: '#inputCity' };
+      if (!/^(\d{4}|[A-Za-z]\d{4}[A-Za-z]{3})$/.test(d.postalCode)) {
+        return { msg: 'Ingresá un código postal válido (4 números).', field: '#inputCp' };
+      }
+      if (!d.branchOrAddress) {
+        return {
+          msg: d.deliveryType === 'sucursal'
+            ? 'Indicá la sucursal de correo deseada.'
+            : 'Indicá la dirección completa para el envío.',
+          field: '#inputBranchOrAddress',
+        };
+      }
+    }
+    return null;
+  }
+
+  // El mensaje va pegado al campo con problema (el botón de enviar queda lejos y
+  // en el celular el error quedaría fuera de pantalla).
+  function clearFieldErrors(drawer) {
+    drawer.querySelectorAll('.field-error').forEach(el => el.remove());
+    drawer.querySelectorAll('.form-input[aria-invalid]').forEach(i => i.removeAttribute('aria-invalid'));
+  }
+
+  function showFieldError(drawer, msg, fieldSel) {
+    clearFieldErrors(drawer);
+    const field = fieldSel && drawer.querySelector(fieldSel);
+    const group = field && field.closest('.form-group');
+    if (field && group) {
+      const note = document.createElement('div');
+      note.className = 'field-error';
+      note.id = 'fieldError';
+      note.setAttribute('role', 'alert');
+      note.textContent = msg;
+      group.appendChild(note);
+      field.setAttribute('aria-invalid', 'true');
+      field.setAttribute('aria-describedby', 'fieldError');
+      field.focus();
+      return;
+    }
+    const err = drawer.querySelector('#checkoutError');
+    if (err) {
+      err.textContent = msg;
+      err.style.display = 'block';
+    }
   }
 
   function saveCurrentForm(drawer) {
@@ -1003,9 +1530,9 @@
     const pp = drawer.querySelector('#inputPickupPerson');
     const notes = drawer.querySelector('#inputDeliveryNotes');
 
-    if (fn) orderData.fullName = fn.value.trim();
+    if (fn) orderData.fullName = fn.value.replace(/\s+/g, ' ').trim();
     if (ph) orderData.phone = ph.value.trim();
-    if (dni) orderData.dni = dni.value.trim();
+    if (dni) orderData.dni = dni.value.replace(/[.\s]/g, '');
     if (em) {
       let rawEmail = String(em.value || '');
       try { rawEmail = rawEmail.normalize('NFKC'); } catch (_) {}
@@ -1013,22 +1540,395 @@
       orderData.email = rawEmail.toLowerCase();
     }
     if (city) orderData.city = city.value.trim();
-    if (cp) orderData.postalCode = cp.value.trim();
+    if (cp) orderData.postalCode = cp.value.replace(/\s+/g, '').toUpperCase();
     if (addr) orderData.branchOrAddress = addr.value.trim();
     if (pp) orderData.pickupPerson = pp.value.trim();
     if (notes) orderData.deliveryNotes = notes.value.trim();
   }
 
+  // ─── Pedido: ids, líneas y resumen ─────────────────────────────────────────
+  function generateOrderId() {
+    const d = new Date();
+    const pad = n => String(n).padStart(2, '0');
+    const rand = Math.random().toString(36).slice(2, 6).toUpperCase().padEnd(4, 'X');
+    return `POP-${String(d.getFullYear()).slice(2)}${pad(d.getMonth() + 1)}${pad(d.getDate())}-${rand}`;
+  }
+
+  function deliveryLabel(type) {
+    return type === 'acumular' ? 'Acumular compras'
+      : type === 'parque' ? 'Envío a Parque Rivadavia'
+      : type === 'sucursal' ? 'Envío a Sucursal (Andreani)'
+      : 'Envío a Domicilio (Andreani)';
+  }
+
+  function paymentLabel(method) {
+    return method === 'usd' ? 'Transferencia en Dólares'
+      : method === 'pesos' ? 'Transferencia en Pesos'
+      : 'Depósito en Efectivo (Rapipago / Pago Fácil)';
+  }
+
+  // Formato de una pieza para el mail: ID · país · facial · año (grado) — precio
+  function formatCoinLineClean(item) {
+    const qty = qtyOf(item);
+    const parts = [];
+    if (item.id != null) parts.push(`ID #${item.id}`);
+    if (item.country) parts.push(String(item.country).trim());
+    const facial = facialOf(item);
+    if (facial) parts.push(facial);
+    const year = String(item.year || '').trim();
+    if (year) parts.push(year);
+    const grade = item.grade_short || item.grade || '';
+    const gradePart = grade ? ` (${grade})` : '';
+    const price = qty > 1
+      ? `${qty} × ${formatUSD(item.priceUSD || 0)} = ${formatUSD(lineUSD(item))} / ${formatARS(lineARS(item))}`
+      : `${formatUSD(item.priceUSD || 0)} / ${formatARS(lineARS(item))}`;
+    return `${parts.join(' · ')}${gradePart} — ${price}`;
+  }
+
+  function buildSnapshot(type) {
+    const d = orderData;
+    return {
+      type, // 'order' | 'inquiry'
+      orderId: d.orderId,
+      date: new Date().toISOString(),
+      items: payableItems().map(it => ({ ...it })),
+      consult: consultItems().map(it => ({ ...it })),
+      rate: blueRate,
+      rateSource,
+      data: {
+        fullName: d.fullName,
+        phone: d.phone,
+        dni: d.dni,
+        email: d.email,
+        deliveryType: d.deliveryType,
+        city: d.city,
+        postalCode: d.postalCode,
+        branchOrAddress: d.branchOrAddress,
+        pickupPerson: d.pickupPerson,
+        deliveryNotes: d.deliveryNotes,
+        paymentMethod: d.paymentMethod,
+        parqueSchedule: d.parqueSchedule,
+        shippingCostARS: d.shippingCostARS,
+        shippingCostUSD: d.shippingCostUSD,
+        discountCode: d.discountCode,
+        discountUSD: d.discountUSD,
+        discountARS: d.discountARS,
+        subtotalUSD: d.subtotalUSD,
+        subtotalARS: d.subtotalARS,
+        totalUSD: d.totalUSD,
+        totalARS: d.totalARS,
+      },
+      discountRule: d.discountRule,
+    };
+  }
+
+  function bankLinesFor(method) {
+    if (method === 'usd') {
+      return [
+        'DATOS PARA TRANSFERIR EN DÓLARES',
+        `Titular: ${BANK.holder}`,
+        `Alias: ${BANK.usd.alias}`,
+        `CBU: ${BANK.usd.cbu}`,
+      ];
+    }
+    if (method === 'pesos') {
+      return [
+        'DATOS PARA TRANSFERIR EN PESOS',
+        `Titular: ${BANK.holder}`,
+        `Alias: ${BANK.ars.alias}`,
+        `CVU: ${BANK.ars.cvu}`,
+      ];
+    }
+    return [
+      'DEPÓSITO EN EFECTIVO',
+      'En cualquier Rapipago o Pago Fácil',
+      `Código: ${BANK.mp.code}`,
+    ];
+  }
+
+  function totalTextFor(snap) {
+    const d = snap.data;
+    return d.paymentMethod === 'usd' ? formatUSD(d.totalUSD) : formatARS(d.totalARS);
+  }
+
+  function buildAutoresponse(snap) {
+    const d = snap.data;
+    const lines = [];
+    const consult = snap.consult || [];
+    if (snap.type === 'inquiry') {
+      lines.push(`Hola ${d.fullName}, recibimos tu consulta (${snap.orderId}).`);
+      lines.push('Vamos a verificar si estas piezas siguen en stock y te escribimos por WhatsApp.');
+      lines.push('');
+      lines.push('PIEZAS CONSULTADAS');
+      consult.forEach(it => lines.push(`- ${formatCoinLineClean(it)}`));
+    } else {
+      lines.push(`Hola ${d.fullName}, recibimos tu pedido ${snap.orderId}. ¡Gracias por tu compra!`);
+      lines.push('Lo confirmamos por WhatsApp cuando se acredite el pago.');
+      lines.push('');
+      lines.push('TU PEDIDO');
+      snap.items.forEach(it => lines.push(`- ${formatCoinLineClean(it)}`));
+      lines.push('');
+      if (d.discountCode && d.discountARS > 0) {
+        lines.push(`Descuento ${d.discountCode}: −${formatARS(d.discountARS)} (−${formatUSD(d.discountUSD)})`);
+      }
+      lines.push(`Envío: ${deliveryLabel(d.deliveryType)}${d.shippingCostARS > 0 ? ' — ' + formatARS(d.shippingCostARS) : ' — Gratis'}`);
+      lines.push(`TOTAL A PAGAR: ${totalTextFor(snap)}`);
+      lines.push('');
+      lines.push(...bankLinesFor(d.paymentMethod));
+      lines.push('Una vez realizado el pago, enviá el comprobante por WhatsApp.');
+      if (consult.length) {
+        lines.push('');
+        lines.push('A CONSULTAR (no incluidas en el total; te confirmamos si siguen en stock)');
+        consult.forEach(it => lines.push(`- ${formatCoinLineClean(it)}`));
+      }
+    }
+    lines.push('');
+    lines.push(`WhatsApp Numismática Popper: ${WHATSAPP_DISPLAY}`);
+    lines.push('numismaticapopper.com');
+    return lines.join('\n');
+  }
+
+  function buildOrderPayload(snap) {
+    const d = snap.data;
+    const isInquiry = snap.type === 'inquiry';
+    const isTest = /^\s*prueba/i.test(d.fullName || '');
+    const testTag = isTest ? '[PRUEBA] ' : '';
+
+    const subject = isInquiry
+      ? `❓ ${testTag}[${snap.orderId}] Consulta de stock: ${d.fullName}`
+      : `🪙 ${testTag}[${snap.orderId}] Pedido Popper: ${d.fullName} — ${totalTextFor(snap)}`;
+
+    const payload = {
+      _subject: subject,
+      _template: 'table',
+      _captcha: 'false',
+      _honey: '',
+      _replyto: d.email,
+      _autoresponse: buildAutoresponse(snap),
+      email: d.email,
+      'Pedido N°': snap.orderId,
+      'Tipo': isInquiry ? 'CONSULTA DE STOCK (sin pago)' : 'PEDIDO',
+      'Nombre': d.fullName,
+      'WhatsApp': d.phone,
+    };
+
+    if (!isInquiry) {
+      if (snap.items.length === 1) {
+        payload['Moneda'] = formatCoinLineClean(snap.items[0]);
+      } else {
+        snap.items.forEach((it, idx) => { payload[`Moneda ${idx + 1}`] = formatCoinLineClean(it); });
+      }
+    }
+    snap.consult.forEach((it, idx) => {
+      payload[snap.consult.length === 1 ? 'CONSULTAR STOCK' : `CONSULTAR STOCK ${idx + 1}`] = formatCoinLineClean(it);
+    });
+
+    if (!isInquiry) {
+      payload['Método de envío'] = deliveryLabel(d.deliveryType);
+      if (d.dni) payload['DNI'] = d.dni;
+
+      if (d.deliveryType === 'parque') {
+        const sch = d.parqueSchedule || getNextParqueSchedule();
+        payload['Quién retira'] = d.pickupPerson || d.fullName;
+        payload['Cronograma'] = `Despacho: miércoles ${sch.dispatchDDMM} · Retiro a partir de: domingo ${sch.deliveryDDMM}`;
+        payload['Entrega'] = 'Diego Cepeda de Dac Monedas (+54 9 11 5402-8935)';
+      } else if (d.deliveryType === 'acumular') {
+        payload['Aclaración'] = 'Guardar piezas a nombre del cliente para futuros envíos';
+      } else if (d.deliveryType === 'sucursal') {
+        payload['Sucursal deseada'] = d.branchOrAddress;
+        payload['Localidad y CP'] = `${d.city} (CP ${d.postalCode})`;
+      } else {
+        payload['Dirección de entrega'] = d.branchOrAddress + (d.deliveryNotes ? ` (${d.deliveryNotes})` : '');
+        payload['Localidad y CP'] = `${d.city} (CP ${d.postalCode})`;
+      }
+
+      const subUSD = sumUSD(snap.items);
+      const subARS = sumARS(snap.items);
+      payload['Medio de pago'] = paymentLabel(d.paymentMethod);
+      payload['Subtotal piezas'] = `${formatUSD(subUSD)} (${formatARS(subARS)})`;
+      if (d.discountCode && d.discountARS > 0) {
+        const detail = snap.items.map(it => `ID #${it.id}: ${discountPctFor(it, snap.discountRule)}%`).join(' · ');
+        payload['Código de descuento'] = `${d.discountCode} — −${formatARS(d.discountARS)} (−${formatUSD(d.discountUSD)}) · ${detail}`;
+      }
+      payload['Costo de envío'] = d.shippingCostARS > 0
+        ? `${formatARS(d.shippingCostARS)} (${formatUSD(d.shippingCostUSD)})`
+        : 'Gratis ($0)';
+      payload['TOTAL A PAGAR'] = `${formatARS(d.totalARS)} / ${formatUSD(d.totalUSD)}`;
+    }
+
+    payload['Cotización usada'] = `$${snap.rate.toLocaleString('es-AR')} por USD${snap.rateSource === 'live' ? '' : ' (REFERENCIAL: no se pudo leer la cotización en vivo)'}`;
+    payload['Fecha'] = new Date(snap.date).toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires' });
+    return payload;
+  }
+
+  // ─── Envío por correo vía FormSubmit ───────────────────────────────────────
+  async function dispatchOrderEmail(snap) {
+    const hasPieces = (snap.items && snap.items.length) || (snap.consult && snap.consult.length);
+    if (!snap || !hasPieces) {
+      console.warn('PopperCart: no hay piezas para despachar.');
+      return false;
+    }
+
+    const payload = buildOrderPayload(snap);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), ORDER_TIMEOUT_MS);
+
+    try {
+      const res = await fetch(FORMSUBMIT_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(payload),
+        signal: controller.signal,
+      });
+      const json = await res.json().catch(() => null);
+      if (json && (json.success === 'true' || json.success === true)) return true;
+      console.warn('PopperCart: FormSubmit no confirmó el envío', res.status, json && json.message);
+      return false;
+    } catch (err) {
+      console.warn('PopperCart: error despachando pedido vía FormSubmit', err && err.name);
+      return false;
+    } finally {
+      clearTimeout(timeoutId);
+    }
+  }
+
+  // Mensaje de WhatsApp con el pedido completo, por si el mail no sale.
+  function buildFallbackWhatsAppURL(snap) {
+    const d = snap.data;
+    const lines = [];
+    lines.push(`Hola Numismatica Popper, quise ${snap.type === 'inquiry' ? 'consultar stock' : 'hacer el pedido'} ${snap.orderId} desde la web pero no se pudo enviar. Te paso los datos:`);
+    lines.push(`Nombre: ${d.fullName}`);
+    lines.push(`WhatsApp: ${d.phone}`);
+    lines.push(`Email: ${d.email}`);
+    if (snap.items.length) {
+      lines.push('', 'Piezas:');
+      snap.items.forEach(it => lines.push(`- ${formatCoinLineForMessage(it)}`));
+    }
+    if (snap.consult.length) {
+      lines.push('', 'A consultar stock:');
+      snap.consult.forEach(it => lines.push(`- ${formatCoinLineForMessage(it)}`));
+    }
+    if (snap.type !== 'inquiry') {
+      lines.push('', `Envío: ${deliveryLabel(d.deliveryType)}`);
+      if (d.deliveryType === 'sucursal' || d.deliveryType === 'domicilio') {
+        lines.push(`${d.branchOrAddress} · ${d.city} (CP ${d.postalCode}) · DNI ${d.dni}`);
+      }
+      lines.push(`Pago: ${paymentLabel(d.paymentMethod)}`, `Total: ${totalTextFor(snap)}`);
+    }
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`;
+  }
+
+  function showSubmitError(drawer, snap) {
+    const slot = drawer.querySelector('#submitErrorSlot');
+    if (!slot) return;
+    slot.innerHTML = `
+      <div class="checkout-error submit-error" role="alert">
+        <strong>No pudimos enviar tu pedido.</strong>
+        <span>Revisá tu conexión y reintentá: tu carrito sigue intacto. O mandanos el pedido por WhatsApp.</span>
+        <a href="${escapeHTML(buildFallbackWhatsAppURL(snap))}" target="_blank" rel="noopener noreferrer" class="cart-btn cart-btn--wpp" id="fallbackWppBtn">${WPP_ICON}ENVIAR PEDIDO POR WHATSAPP</a>
+      </div>
+    `;
+  }
+
+  // Finaliza un envío exitoso: guarda el pedido, vacía el carrito y avanza.
+  function finishOrder(snap) {
+    lastPurchasedOrder = {
+      orderId: snap.orderId,
+      type: snap.type,
+      date: snap.date,
+      items: snap.items.map(it => ({ id: it.id, title: it.title, qty: qtyOf(it) })),
+      consult: snap.consult.map(it => ({ id: it.id, title: it.title, qty: qtyOf(it) })),
+      data: {
+        discountCode: snap.data.discountCode,
+        fullName: snap.data.fullName,
+        phone: snap.data.phone,
+        email: snap.data.email,
+        deliveryType: snap.data.deliveryType,
+        paymentMethod: snap.data.paymentMethod,
+        totalUSD: snap.data.totalUSD,
+        totalARS: snap.data.totalARS,
+      },
+    };
+    lsSetJSON(LAST_ORDER_KEY, lastPurchasedOrder);
+    cartItems = [];
+    saveCartToStorage();
+    orderData.orderId = '';
+    clearDiscount();
+    discountDraft = '';
+    discountMessage = '';
+    cartNotice = '';
+    currentStep = snap.type === 'inquiry' ? 'inquiry-sent' : 'payment-instructions';
+  }
+
+  // Revalida stock contra coins.json fresco. Devuelve true si algo cambió.
+  async function stockChanged() {
+    const report = await revalidateStock();
+    if (!report) return false;
+    return !!(report.removed.length || report.priceChanged.length || report.qtyAdjusted.length);
+  }
+
+  async function submitInquiry(drawer) {
+    if (isSubmitting) return;
+    const btn = drawer.querySelector('#checkoutSubmitBtn');
+    setSubmitting(true);
+    if (btn) btn.textContent = 'ENVIANDO CONSULTA...';
+
+    if (await stockChanged()) {
+      setSubmitting(false);
+      currentStep = 'cart';
+      renderDrawerContent();
+      return;
+    }
+
+    if (!orderData.orderId) orderData.orderId = generateOrderId();
+    const snap = buildSnapshot('inquiry');
+    const ok = await dispatchOrderEmail(snap);
+    const live = document.getElementById('cartDrawer');
+    if (ok) {
+      setSubmitting(false);
+      finishOrder(snap);
+      renderDrawerContent();
+      return;
+    }
+    setSubmitting(false);
+    if (live) {
+      const b = live.querySelector('#checkoutSubmitBtn');
+      if (b) b.textContent = 'REINTENTAR ENVÍO →';
+      showSubmitError(live, snap);
+    }
+  }
+
   // ─── PASO 3: Medio de Pago y Confirmación ──────────────────────────────────
   function renderStepPaymentSelect(drawer) {
-    const subUSD = getSubtotalUSD();
-    const subARS = getSubtotalARS();
+    const pay = payableItems();
+    const consult = consultItems();
+    recomputeTotals();
     const shipARS = orderData.shippingCostARS;
     const shipUSD = orderData.shippingCostUSD;
-    const totUSD = orderData.totalUSD;
-    const totARS = orderData.totalARS;
-    const totDual = formatDualPrice(totUSD, totARS);
+    const totDual = formatDualPrice(orderData.totalUSD, orderData.totalARS);
     const shipDual = formatDualPrice(shipUSD, shipARS);
+    const rule = orderData.discountRule;
+    const hasDiscount = !!(rule && orderData.discountARS > 0);
+    const subDual = formatDualPrice(orderData.subtotalUSD, orderData.subtotalARS);
+    const discDual = formatDualPrice(orderData.discountUSD, orderData.discountARS);
+
+    const discountBox = rule ? `
+      <div class="discount-applied">
+        <div class="discount-applied__info">
+          <strong class="discount-applied__code">${escapeHTML(rule.code)} aplicado</strong>
+          <span class="discount-applied__desc">${escapeHTML(describeRule(rule))}</span>
+        </div>
+        <button type="button" class="discount-remove" id="discountRemoveBtn">QUITAR</button>
+      </div>
+    ` : `
+      <form class="discount-row" id="discountForm" novalidate>
+        <input type="text" id="inputDiscount" class="form-input" maxlength="24" placeholder="Ej: POPPER10" value="${escapeHTML(discountDraft)}" autocomplete="off" autocapitalize="characters" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="Código de descuento" />
+        <button type="submit" class="cart-btn cart-btn--secondary discount-apply">APLICAR</button>
+      </form>
+    `;
 
     drawer.innerHTML = `
       <div class="cart-drawer__header">
@@ -1038,30 +1938,41 @@
       </div>
 
       <div class="cart-drawer__body">
-        <div class="checkout-section">
+        ${noticeHTML()}
+        <div class="checkout-section discount-box">
+          <span class="section-label">CÓDIGO DE DESCUENTO</span>
+          ${discountBox}
+          <p class="discount-msg" id="discountMsg" role="status" ${discountMessage ? '' : 'hidden'}>${escapeHTML(discountMessage)}</p>
+        </div>
+
+        <div class="checkout-section" style="margin-top: 24px;">
           <span class="section-label">RESUMEN DEL PEDIDO</span>
           <div class="order-spec-table">
             <div class="order-spec-items">
-              ${cartItems.map(item => {
-                const itemARS = roundARS((item.priceUSD || 0) * blueRate);
-                const dual = formatDualPrice(item.priceUSD, itemARS);
+              ${pay.map(item => {
+                const dual = formatDualPrice(lineUSD(item), lineARS(item));
+                const qty = qtyOf(item);
+                const pct = discountPctFor(item, orderData.discountRule);
                 return `
                 <div class="order-spec-row order-spec-row--item">
-                  <span class="order-spec-item-title">${escapeHTML(item.title)}</span>
+                  <span class="order-spec-item-title">${qty > 1 ? `${qty} × ` : ''}${escapeHTML(item.title)}${pct ? ` <span class="discount-pct-tag">${pct}% OFF</span>` : ''}</span>
                   <span class="order-spec-item-price">${escapeHTML(dual.primary)} <span class="price-alt">(${escapeHTML(dual.secondary)})</span></span>
                 </div>
               `;}).join('')}
             </div>
+            ${hasDiscount ? `
+              <div class="order-spec-row">
+                <span>Subtotal</span>
+                <span>${escapeHTML(subDual.primary)} <span class="price-alt">(${escapeHTML(subDual.secondary)})</span></span>
+              </div>
+              <div class="order-spec-row order-spec-row--discount">
+                <span>Descuento ${escapeHTML(orderData.discountCode)}</span>
+                <span>−${escapeHTML(discDual.primary)} <span class="price-alt">(−${escapeHTML(discDual.secondary)})</span></span>
+              </div>
+            ` : ''}
             <div class="order-spec-row">
-              <span>${
-                orderData.deliveryType === 'acumular' ? 'Acumular compras' :
-                orderData.deliveryType === 'parque' ? 'Envío a Parque Rivadavia' :
-                orderData.deliveryType === 'sucursal' ? 'Envío a Sucursal (Andreani)' :
-                'Envío a Domicilio (Andreani)'
-              }</span>
-              <span>${
-                orderData.deliveryType === 'acumular' || shipARS === 0 ? 'GRATIS' : `${escapeHTML(shipDual.primary)} <span class="price-alt">(${escapeHTML(shipDual.secondary)})</span>`
-              }</span>
+              <span>${escapeHTML(deliveryLabel(orderData.deliveryType))}</span>
+              <span>${shipARS === 0 ? 'GRATIS' : `${escapeHTML(shipDual.primary)} <span class="price-alt">(${escapeHTML(shipDual.secondary)})</span>`}</span>
             </div>
             <div class="order-spec-divider"></div>
             <div class="order-spec-row order-spec-row--total">
@@ -1072,6 +1983,12 @@
               </div>
             </div>
           </div>
+          ${consult.length ? `
+            <div class="checkout-consult-alert" role="note">
+              <strong>A consultar · fuera del total</strong>
+              <span>${escapeHTML(consult.map(it => it.title).join(', '))}</span>
+            </div>
+          ` : ''}
         </div>
 
         <div class="checkout-section" style="margin-top: 24px;">
@@ -1097,13 +2014,18 @@
           </div>
         </div>
 
+        <div id="submitErrorSlot"></div>
+
         <button type="button" class="cart-btn cart-btn--primary checkout-submit-btn" id="confirmAndPayBtn" style="margin-top: 24px;">
           CONFIRMAR PEDIDO →
         </button>
       </div>
     `;
 
+    bindNotice(drawer);
+
     drawer.querySelector('#paymentBackBtn').addEventListener('click', () => {
+      if (isSubmitting) return;
       currentStep = 'checkout';
       renderDrawerContent();
     });
@@ -1117,187 +2039,156 @@
       });
     });
 
+    const discountForm = drawer.querySelector('#discountForm');
+    if (discountForm) {
+      const input = discountForm.querySelector('#inputDiscount');
+      input.addEventListener('focus', () => {
+        setTimeout(() => {
+          if (document.activeElement === input) input.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        }, 320);
+      });
+      discountForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (isSubmitting) return;
+        discountDraft = normalizeCode(input.value);
+        if (!discountDraft) {
+          discountMessage = 'Ingresá un código de descuento.';
+          renderStepPaymentSelect(drawer);
+          refocus('#inputDiscount');
+          return;
+        }
+        const btn = discountForm.querySelector('.discount-apply');
+        btn.disabled = true;
+        btn.textContent = 'VERIFICANDO...';
+        const result = await fetchDiscountRule(discountDraft);
+        if (currentStep !== 'payment-select') return;
+        const live = document.getElementById('cartDrawer');
+        if (result.status === 'ok') {
+          orderData.discountCode = result.rule.code;
+          orderData.discountRule = result.rule;
+          discountDraft = '';
+          discountMessage = '';
+          recomputeTotals();
+          if (!(orderData.discountARS > 0)) {
+            clearDiscount();
+            discountMessage = 'Este código no aplica a las piezas de tu carrito.';
+          }
+        } else {
+          discountMessage = result.status === 'network'
+            ? 'No pudimos verificar el código ahora. Probá de nuevo en unos segundos.'
+            : 'El código no es válido o ya venció.';
+        }
+        renderStepPaymentSelect(live);
+        if (!orderData.discountRule) refocus('#inputDiscount');
+      });
+    }
+    const removeBtn = drawer.querySelector('#discountRemoveBtn');
+    if (removeBtn) {
+      removeBtn.addEventListener('click', () => {
+        if (isSubmitting) return;
+        clearDiscount();
+        discountMessage = '';
+        renderStepPaymentSelect(drawer);
+        refocus('#inputDiscount');
+      });
+    }
+
     const confirmBtn = drawer.querySelector('#confirmAndPayBtn');
     confirmBtn.addEventListener('click', async () => {
-      confirmBtn.disabled = true;
+      if (isSubmitting) return;
+      setSubmitting(true);
       confirmBtn.textContent = 'REGISTRANDO Y ENVIANDO...';
+      const slot = drawer.querySelector('#submitErrorSlot');
+      if (slot) slot.innerHTML = '';
 
-      const purchasedSnapshot = [...cartItems];
-      lastPurchasedOrder = {
-        items: purchasedSnapshot,
-        orderData: { ...orderData },
-        date: new Date().toISOString(),
-      };
-
-      try {
-        await dispatchOrderEmail(purchasedSnapshot);
-      } catch (e) {
-        console.warn('PopperCart: Excepción al despachar pedido:', e);
+      // 1) Stock y precios frescos: si algo cambió, se avisa y NO se envía.
+      if (await stockChanged()) {
+        setSubmitting(false);
+        renderDrawerContent();
+        return;
       }
 
-      cartItems = [];
-      saveCartToStorage();
-      currentStep = 'payment-instructions';
-      renderDrawerContent();
+      // 2) El código sigue siendo válido (y con las mismas condiciones) o se avisa.
+      if (orderData.discountRule) {
+        const before = orderData.discountARS;
+        const res = await fetchDiscountRule(orderData.discountCode);
+        if (res.status === 'invalid') {
+          clearDiscount();
+          setSubmitting(false);
+          setNotice('El código de descuento ya no es válido. Revisá el nuevo total antes de confirmar.');
+          renderDrawerContent();
+          return;
+        }
+        if (res.status === 'ok') {
+          orderData.discountRule = res.rule;
+          recomputeTotals();
+          if (orderData.discountARS !== before) {
+            setSubmitting(false);
+            setNotice('Cambiaron las condiciones del descuento. Revisá el nuevo total antes de confirmar.');
+            renderDrawerContent();
+            return;
+          }
+        }
+      }
+
+      // 3) Totales recalculados con la cotización vigente.
+      recomputeTotals();
+      if (!orderData.orderId) orderData.orderId = generateOrderId();
+      const snap = buildSnapshot('order');
+
+      // 4) Envío: solo se vacía el carrito si el mail salió.
+      const ok = await dispatchOrderEmail(snap);
+      setSubmitting(false);
+      if (ok) {
+        finishOrder(snap);
+        renderDrawerContent();
+        return;
+      }
+      const live = document.getElementById('cartDrawer');
+      if (live) {
+        const b = live.querySelector('#confirmAndPayBtn');
+        if (b) b.textContent = 'REINTENTAR ENVÍO →';
+        showSubmitError(live, snap);
+      }
     });
   }
 
-  // ─── Formato limpio de moneda para email ────────────────────────────────────
-  function formatCoinLineClean(item) {
-    const id = item.id != null ? `ID #${item.id}` : '';
-    const country = item.country ? String(item.country).trim() : '';
-    const year = String(item.year || '').trim();
-    let facial = String(item.title || '').trim();
-
-    if (year && facial.includes(year)) {
-      facial = facial.replace(new RegExp('\\b' + year + '\\b', 'g'), '').trim();
-      facial = facial.replace(/\s+/g, ' ').replace(/^[, -]+|[, -]+$/g, '');
-    }
-
-    const grade = item.grade_short || item.grade || '';
-    const gradePart = grade ? ` (${grade})` : '';
-
-    const coinUSD = item.priceUSD || 0;
-    const coinARS = roundARS(coinUSD * blueRate);
-    const pricePart = `${coinUSD} USD / ${formatARS(coinARS)}`;
-
-    const parts = [];
-    if (id) parts.push(id);
-    if (country) parts.push(country);
-    if (facial) parts.push(facial);
-    if (year) parts.push(year);
-
-    return `${parts.join(' · ')}${gradePart} — ${pricePart}`;
-  }
-
-  // ─── Despacho de pedido por correo vía FormSubmit ─────────────────────────
-  async function dispatchOrderEmail(purchasedItems) {
-    if (!Array.isArray(purchasedItems) || !purchasedItems.length) {
-      console.warn('PopperCart: No hay piezas para despachar en el email.');
-      return false;
-    }
-
-    const parqueInfo = getNextParqueSchedule();
-    const retiraQuien = orderData.pickupPerson || orderData.fullName;
-    const subUSD = purchasedItems.reduce((acc, it) => acc + (it.priceUSD || 0), 0);
-    const subARS = roundARS(subUSD * blueRate);
-    const isUSD = orderData.paymentMethod === 'usd';
-    const totalDisplay = isUSD ? formatUSD(orderData.totalUSD) : formatARS(orderData.totalARS);
-
-    const monedasObj = {};
-    if (purchasedItems.length === 1) {
-      monedasObj['Moneda'] = formatCoinLineClean(purchasedItems[0]);
-    } else {
-      purchasedItems.forEach((it, idx) => {
-        monedasObj[`Moneda ${idx + 1}`] = formatCoinLineClean(it);
-      });
-    }
-
-    let metodoEnvio = '';
-    const envioDetalleObj = {};
-
-    if (orderData.deliveryType === 'parque') {
-      metodoEnvio = 'Feria Parque Rivadavia (CABA)';
-      envioDetalleObj['Quién retira'] = retiraQuien;
-      envioDetalleObj['Cronograma'] = `Despacho: miércoles ${parqueInfo.dispatchDDMM} · Retiro a partir de: domingo ${parqueInfo.deliveryDDMM}`;
-      envioDetalleObj['Entrega'] = 'Diego Cepeda de Dac Monedas (+54 9 11 5402-8935)';
-      if (orderData.dni) envioDetalleObj['DNI'] = orderData.dni;
-      envioDetalleObj['WhatsApp'] = orderData.phone;
-      if (orderData.email) envioDetalleObj['Email'] = orderData.email;
-    } else if (orderData.deliveryType === 'acumular') {
-      metodoEnvio = 'Acumular compras (Sin despacho)';
-      envioDetalleObj['Aclaración'] = 'Guardar piezas a nombre del cliente para futuros envíos';
-      if (orderData.dni) envioDetalleObj['DNI'] = orderData.dni;
-      envioDetalleObj['WhatsApp'] = orderData.phone;
-      if (orderData.email) envioDetalleObj['Email'] = orderData.email;
-    } else if (orderData.deliveryType === 'sucursal') {
-      metodoEnvio = 'Envío a Sucursal de Correo (Andreani)';
-      envioDetalleObj['Sucursal deseada'] = orderData.branchOrAddress;
-      envioDetalleObj['Localidad y CP'] = `${orderData.city} (CP ${orderData.postalCode})`;
-      envioDetalleObj['DNI'] = orderData.dni;
-      envioDetalleObj['WhatsApp'] = orderData.phone;
-      envioDetalleObj['Email'] = orderData.email;
-    } else {
-      metodoEnvio = 'Envío a Domicilio (Andreani)';
-      envioDetalleObj['Dirección de entrega'] = orderData.branchOrAddress + (orderData.deliveryNotes ? ` (${orderData.deliveryNotes})` : '');
-      envioDetalleObj['Localidad y CP'] = `${orderData.city} (CP ${orderData.postalCode})`;
-      envioDetalleObj['DNI'] = orderData.dni;
-      envioDetalleObj['WhatsApp'] = orderData.phone;
-      envioDetalleObj['Email'] = orderData.email;
-    }
-
-    let formaPagoTexto = '';
-    if (orderData.paymentMethod === 'usd') {
-      formaPagoTexto = 'Transferencia en Dólares';
-    } else if (orderData.paymentMethod === 'pesos') {
-      formaPagoTexto = 'Transferencia en Pesos';
-    } else {
-      formaPagoTexto = 'Depósito en Efectivo (Rapipago / Pago Fácil)';
-    }
-
-    const payload = {
-      _subject: `🪙 Pedido Popper: ${orderData.fullName} — ${totalDisplay}`,
-      _template: 'table',
-      _captcha: 'false',
-      _replyto: orderData.email || 'numismaticapopper@gmail.com',
-
-      "Nombre": orderData.fullName,
-      ...monedasObj,
-      "Método de envío": metodoEnvio,
-      ...envioDetalleObj,
-      "Medio de pago": formaPagoTexto,
-      "Subtotal piezas": `${formatUSD(subUSD)} (${formatARS(subARS)})`,
-      "Costo de envío": orderData.shippingCostARS > 0 ? formatARS(orderData.shippingCostARS) : 'Gratis ($0)',
-      "TOTAL A PAGAR": `${formatARS(orderData.totalARS)} / ${formatUSD(orderData.totalUSD)}`,
-      "Fecha": new Date().toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires' }),
-    };
-
-    console.info('PopperCart: Despachando notificación de pedido a FormSubmit...', payload);
-
-    try {
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 7000);
-
-      const res = await fetch(FORMSUBMIT_ENDPOINT, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-        },
-        body: JSON.stringify(payload),
-        signal: controller.signal,
-      });
-
-      clearTimeout(timeoutId);
-      const json = await res.json().catch(() => null);
-      console.info('PopperCart: Respuesta de FormSubmit:', json);
-
-      if (json && (json.success === 'true' || json.success === true)) {
-        return true;
-      }
-      if (json && json.message) {
-        console.warn('PopperCart: FormSubmit respondió:', json.message);
-      }
-      return false;
-    } catch (err) {
-      console.warn('PopperCart: Error despachando pedido vía FormSubmit:', err);
-      return false;
-    }
+  // ─── Consulta enviada (carrito solo con piezas a consultar) ────────────────
+  function renderStepInquirySent(drawer) {
+    const lo = lastPurchasedOrder;
+    drawer.innerHTML = `
+      <div class="cart-drawer__header">
+        <span class="cart-drawer__tag">CONSULTA ENVIADA</span>
+        <button type="button" class="cart-close-btn" id="finishCloseBtn" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="cart-drawer__body">
+        <div class="order-confirmed-banner">
+          <span class="confirmed-check">✓</span>
+          <h3 class="confirmed-title">CONSULTA RECIBIDA</h3>
+          <p class="confirmed-desc">${lo ? `Número de consulta <strong>${escapeHTML(lo.orderId)}</strong>. ` : ''}Verificamos el stock y te escribimos por WhatsApp. Todavía no hay nada para pagar.</p>
+        </div>
+        <div class="order-final-actions">
+          <button type="button" class="cart-btn cart-btn--secondary" id="backToCatalogBtn">VOLVER AL CATÁLOGO</button>
+        </div>
+      </div>
+    `;
+    drawer.querySelector('#finishCloseBtn').addEventListener('click', closeDrawer);
+    drawer.querySelector('#backToCatalogBtn').addEventListener('click', closeDrawer);
   }
 
   // ─── PASO 4: Instrucciones de Pago ─────────────────────────────────────────
   function renderStepPaymentInstructions(drawer) {
-    const isUSD = orderData.paymentMethod === 'usd';
-    const isPesos = orderData.paymentMethod === 'pesos';
-    const isMP = orderData.paymentMethod === 'deposito_mp';
-    const totFormatted = isUSD ? formatUSD(orderData.totalUSD) : formatARS(orderData.totalARS);
-    const totAlt = isUSD ? formatARS(orderData.totalARS) : formatUSD(orderData.totalUSD);
+    const lo = lastPurchasedOrder;
+    if (!lo) { currentStep = 'cart'; renderStepCart(drawer); return; }
+    const d = lo.data;
+    const isUSD = d.paymentMethod === 'usd';
+    const isPesos = d.paymentMethod === 'pesos';
+    const isMP = d.paymentMethod === 'deposito_mp';
+    const totFormatted = isUSD ? formatUSD(d.totalUSD) : formatARS(d.totalARS);
+    const totAlt = isUSD ? formatARS(d.totalARS) : formatUSD(d.totalUSD);
 
-    const purchasedShortIds = (lastPurchasedOrder && lastPurchasedOrder.items && lastPurchasedOrder.items.length)
-      ? lastPurchasedOrder.items.map(it => `#${it.id}`).join(', ')
-      : '';
-    const itemsWppText = purchasedShortIds ? ` (Piezas: ${purchasedShortIds})` : '';
-    const wppMsg = `Hola Numismatica Popper, ya realicé el pago de mi pedido a nombre de ${orderData.fullName} por un monto de ${totFormatted}${itemsWppText}. Te adjunto el comprobante.`;
+    const ids = lo.items.map(it => `#${it.id}${it.qty > 1 ? ` x${it.qty}` : ''}`).join(', ');
+    const wppMsg = `Hola Numismatica Popper, ya realicé el pago del pedido ${lo.orderId} a nombre de ${d.fullName} por un monto de ${totFormatted}${ids ? ` (Piezas: ${ids})` : ''}. Te adjunto el comprobante.`;
 
     drawer.innerHTML = `
       <div class="cart-drawer__header">
@@ -1308,8 +2199,9 @@
       <div class="cart-drawer__body">
         <div class="order-confirmed-banner">
           <span class="confirmed-check">✓</span>
-          <h3 class="confirmed-title">PEDIDO REGISTRADO</h3>
-          <p class="confirmed-desc">Tus piezas quedaron reservadas. Realizá la transferencia por el importe exacto para completar la compra.</p>
+          <h3 class="confirmed-title">PEDIDO RECIBIDO</h3>
+          <p class="confirmed-order-id">N° ${escapeHTML(lo.orderId)}</p>
+          <p class="confirmed-desc">Te enviamos el resumen a <strong>${escapeHTML(d.email)}</strong> (mirá también en spam). Transferí el importe exacto y mandanos el comprobante por WhatsApp.</p>
         </div>
 
         <div class="payment-total-callout">
@@ -1322,16 +2214,16 @@
             <span class="section-label">DATOS BANCARIOS — DÓLARES</span>
             <div class="spec-row">
               <span class="spec-label">TITULAR</span>
-              <span class="spec-val">Ezequiel Carbajo</span>
+              <span class="spec-val">${escapeHTML(BANK.holder)}</span>
             </div>
             <div class="spec-row">
               <span class="spec-label">ALIAS</span>
-              <span class="spec-val spec-val--copy" id="valAliasUSD">ATADO.ESPUMA.LOGRO</span>
+              <span class="spec-val spec-val--copy" id="valAliasUSD">${escapeHTML(BANK.usd.alias)}</span>
               <button type="button" class="spec-copy-btn" data-copy="valAliasUSD">COPIAR</button>
             </div>
             <div class="spec-row">
               <span class="spec-label">CBU</span>
-              <span class="spec-val spec-val--copy" id="valCbuUSD">1430001714004473420025</span>
+              <span class="spec-val spec-val--copy" id="valCbuUSD">${escapeHTML(BANK.usd.cbu)}</span>
               <button type="button" class="spec-copy-btn" data-copy="valCbuUSD">COPIAR</button>
             </div>
           </div>
@@ -1342,16 +2234,16 @@
             <span class="section-label">DATOS BANCARIOS — PESOS</span>
             <div class="spec-row">
               <span class="spec-label">TITULAR</span>
-              <span class="spec-val">Ezequiel Carbajo</span>
+              <span class="spec-val">${escapeHTML(BANK.holder)}</span>
             </div>
             <div class="spec-row">
               <span class="spec-label">ALIAS</span>
-              <span class="spec-val spec-val--copy" id="valAliasARS">numismatica.popper.1</span>
+              <span class="spec-val spec-val--copy" id="valAliasARS">${escapeHTML(BANK.ars.alias)}</span>
               <button type="button" class="spec-copy-btn" data-copy="valAliasARS">COPIAR</button>
             </div>
             <div class="spec-row">
               <span class="spec-label">CVU</span>
-              <span class="spec-val spec-val--copy" id="valCvuARS">0000003100081217918159</span>
+              <span class="spec-val spec-val--copy" id="valCvuARS">${escapeHTML(BANK.ars.cvu)}</span>
               <button type="button" class="spec-copy-btn" data-copy="valCvuARS">COPIAR</button>
             </div>
           </div>
@@ -1366,13 +2258,20 @@
             </div>
             <div class="spec-row">
               <span class="spec-label">CÓDIGO</span>
-              <span class="spec-val spec-val--copy" id="valMpCode">97148 98714</span>
+              <span class="spec-val spec-val--copy" id="valMpCode">${escapeHTML(BANK.mp.code)}</span>
               <button type="button" class="spec-copy-btn" data-copy="valMpCode">COPIAR</button>
             </div>
             <div class="spec-row">
               <span class="spec-label">MONTO</span>
               <span class="spec-val">${escapeHTML(totFormatted)} <span class="spec-val-secondary">(${escapeHTML(totAlt)})</span></span>
             </div>
+          </div>
+        ` : ''}
+
+        ${lo.consult && lo.consult.length ? `
+          <div class="checkout-consult-alert" role="note">
+            <strong>A consultar · fuera del importe</strong>
+            <span>${escapeHTML(lo.consult.map(it => it.title).join(', '))}. Te confirmamos el stock por WhatsApp.</span>
           </div>
         ` : ''}
 
@@ -1383,7 +2282,7 @@
             rel="noopener noreferrer"
             class="cart-btn cart-btn--wpp"
           >
-            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23a8.2 8.2 0 018.23 8.24c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+            ${WPP_ICON}
             ENVIAR COMPROBANTE POR WHATSAPP →
           </a>
 
@@ -1401,44 +2300,44 @@
       btn.addEventListener('click', async () => {
         const targetId = btn.dataset.copy;
         const targetEl = drawer.querySelector('#' + targetId);
-        if (targetEl) {
-          const text = targetEl.textContent.trim().replace(/\s+/g, (targetId === 'valMpCode' ? ' ' : ''));
-          let success = false;
-          if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
-            try {
-              await navigator.clipboard.writeText(text);
-              success = true;
-            } catch (_) {}
+        if (!targetEl) return;
+        const text = targetEl.textContent.trim();
+        let success = false;
+        if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+          try {
+            await navigator.clipboard.writeText(text);
+            success = true;
+          } catch (_) {}
+        }
+        if (!success) {
+          try {
+            const temp = document.createElement('textarea');
+            temp.value = text;
+            temp.setAttribute('readonly', '');
+            temp.style.position = 'fixed';
+            temp.style.opacity = '0';
+            temp.style.left = '-9999px';
+            document.body.appendChild(temp);
+            temp.focus();
+            temp.select();
+            success = !!document.execCommand('copy');
+            document.body.removeChild(temp);
+          } catch (_) {
+            success = false;
           }
-          if (!success) {
-            try {
-              const temp = document.createElement('textarea');
-              temp.value = text;
-              temp.setAttribute('readonly', '');
-              temp.style.position = 'fixed';
-              temp.style.opacity = '0';
-              temp.style.left = '-9999px';
-              document.body.appendChild(temp);
-              temp.focus();
-              temp.select();
-              success = !!document.execCommand('copy');
-              document.body.removeChild(temp);
-            } catch (_) {
-              success = false;
-            }
-          }
+        }
 
-          if (success) {
-            const original = btn.textContent;
-            btn.textContent = 'COPIADO ✓';
-            btn.classList.add('is-copied');
-            setTimeout(() => {
-              btn.textContent = original;
-              btn.classList.remove('is-copied');
-            }, 1800);
-          } else {
-            showToast('No se pudo copiar automáticamente');
-          }
+        if (success) {
+          const original = btn.textContent;
+          btn.textContent = 'COPIADO ✓';
+          btn.classList.add('is-copied');
+          setTimeout(() => {
+            btn.textContent = original;
+            btn.classList.remove('is-copied');
+          }, 1800);
+        } else {
+          btn.textContent = 'COPIÁ A MANO';
+          setTimeout(() => { btn.textContent = 'COPIAR'; }, 2200);
         }
       });
     });
@@ -1464,18 +2363,85 @@
     }
   });
 
+  function focusableIn(root) {
+    return Array.from(root.querySelectorAll(
+      'a[href], button:not([disabled]), input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    )).filter(el => el.offsetParent !== null || el === document.activeElement);
+  }
+
   document.addEventListener('keydown', (e) => {
+    const drawer = document.getElementById('cartDrawer');
+    if (!drawer || !drawer.classList.contains('is-open')) return;
+
     if (e.key === 'Escape') {
-      const drawer = document.getElementById('cartDrawer');
-      if (drawer && drawer.classList.contains('is-open')) {
-        closeDrawer();
+      closeDrawer();
+      return;
+    }
+
+    // Trampa de foco: Tab no sale del drawer mientras está abierto.
+    if (e.key === 'Tab') {
+      const els = focusableIn(drawer);
+      if (!els.length) {
+        e.preventDefault();
+        drawer.focus();
+        return;
+      }
+      const first = els[0];
+      const last = els[els.length - 1];
+      const active = document.activeElement;
+      if (!drawer.contains(active)) {
+        e.preventDefault();
+        first.focus();
+      } else if (e.shiftKey && (active === first || active === drawer)) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && active === last) {
+        e.preventDefault();
+        first.focus();
       }
     }
+  });
+
+  // ─── Sincronización entre pestañas ─────────────────────────────────────────
+  window.addEventListener('storage', (e) => {
+    if (e.key === STORAGE_KEY || e.key === null) {
+      loadCartFromStorage();
+      emitCartUpdated();
+      softRender();
+    }
+    if (e.key === LAST_ORDER_KEY || e.key === null) {
+      loadLastOrder();
+      softRender();
+    }
+    if (e.key === RATE_CACHE_KEY) {
+      const cached = lsGetJSON(RATE_CACHE_KEY);
+      if (cached && Number.isFinite(cached.rate) && cached.rate > 0 && cached.rate !== blueRate) {
+        blueRate = cached.rate;
+        rateSource = rateSource === 'live' ? 'live' : 'cache';
+        softRender();
+      }
+    }
+  });
+
+  // Volver con "atrás" (bfcache) o desde otra pestaña: releer el carrito.
+  window.addEventListener('pageshow', (e) => {
+    if (e.persisted) {
+      loadCartFromStorage();
+      emitCartUpdated();
+      softRender();
+    }
+  });
+
+  window.addEventListener('popper:currency-changed', () => {
+    syncCurrencyBtn();
+    softRender();
   });
 
   // ─── Inicialización ────────────────────────────────────────────────────────
   function init() {
     loadCartFromStorage();
+    loadLastOrder();
+    loadCachedRate();
     ensureElements();
     updateBadge();
     fetchBlueRate();
@@ -1487,73 +2453,21 @@
     init();
   }
 
-  // ─── Función de prueba de email ──────────────────────────────────────────
-  async function sendTestEmail() {
-    console.info('PopperCart: Ejecutando prueba de despacho de correo...');
-    const testItems = [
-      {
-        id: 1493,
-        title: '1 Centavo 1940',
-        country: 'Comisionados de la Moneda de Malaya',
-        year: 1940,
-        priceUSD: 15,
-        priceStr: '15 USD',
-        grade_short: 'SC',
-        grade: 'Sin Circular',
-      },
-      {
-        id: 1490,
-        title: 'Cápsula 31 mm',
-        country: 'Insumos',
-        year: '',
-        priceUSD: 1,
-        priceStr: '1 USD',
-        grade_short: 'NUEVO',
-        grade: 'Nuevo',
-      }
-    ];
-
-    const prevOrder = { ...orderData };
-    orderData.fullName = 'Prueba Numismática Popper';
-    orderData.phone = '+54 9 11 2345-6789';
-    orderData.email = 'numismaticapopper@gmail.com';
-    orderData.dni = '30123456';
-    orderData.deliveryType = 'domicilio';
-    orderData.city = 'Buenos Aires';
-    orderData.postalCode = '1405';
-    orderData.branchOrAddress = 'Av. Rivadavia 4900, Piso 3 Depto B';
-    orderData.deliveryNotes = 'Prueba técnica de vinculación y formato';
-    orderData.paymentMethod = 'pesos';
-    orderData.shippingCostARS = SHIPPING_DOMICILIO_ARS;
-    orderData.shippingCostUSD = Number((SHIPPING_DOMICILIO_ARS / blueRate).toFixed(1));
-    orderData.totalUSD = 16 + orderData.shippingCostUSD;
-    orderData.totalARS = roundARS(16 * blueRate) + SHIPPING_DOMICILIO_ARS;
-
-    const ok = await dispatchOrderEmail(testItems);
-    orderData = prevOrder;
-    if (ok) {
-      showToast('¡Prueba enviada con éxito por email!');
-    } else {
-      showToast('Aviso: FormSubmit requiere abrir vía servidor web');
-    }
-    return ok;
-  }
-
   // ─── API pública ───────────────────────────────────────────────────────────
   window.PopperCart = {
     has,
     add,
     remove,
+    setQty,
     clear,
     toggle,
     open: openDrawer,
     close: closeDrawer,
     validateSoldItems,
-    getItems: () => [...cartItems],
+    getItems: () => cartItems.map(it => ({ ...it })),
     getBlueRate: () => blueRate,
     isNonNumericId,
     hasNonNumericItems,
-    sendTestEmail,
   };
 
 })();

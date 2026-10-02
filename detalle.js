@@ -444,8 +444,7 @@ function renderCoinDetail(coin, groupMembers) {
         const inCart = window.PopperCart.has(activeCoin.id);
         if (inCart) {
           window.PopperCart.open();
-        } else {
-          window.PopperCart.add(activeCoin, cartBtn);
+        } else if (window.PopperCart.add(activeCoin, cartBtn, { silent: true })) {
           updateDetailCartBtn(activeCoin);
           window.PopperCart.open();
         }
@@ -628,11 +627,15 @@ async function loadCoinDetail() {
             return scoreB - scoreA;
           }
           // 3. Desempate estable por id
-          return a.id - b.id;
+          return String(a.id).localeCompare(String(b.id), 'es', { numeric: true });
         });
     }
 
     renderCoinDetail(coin, groupMembers);
+    // Mismo chequeo que el catálogo: quita del carrito lo vendido o sin stock.
+    if (window.PopperCart && typeof window.PopperCart.validateSoldItems === 'function') {
+      window.PopperCart.validateSoldItems(allCoins);
+    }
     return true;
   } catch (error) {
     console.error(error);

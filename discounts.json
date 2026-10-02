@@ -1,0 +1,10 @@
+{
+  "_ayuda": "Códigos de descuento del carrito. Clave = código (se compara sin importar mayúsculas). Campos: percent = % general; highPrice = {overUSD, percent} para piezas cuyo precio unitario SUPERA overUSD (opcional); active = false lo apaga; expires = 'AAAA-MM-DD' último día válido (opcional, hora Argentina); label = texto que ve el cliente. Nunca descuenta el envío ni las piezas 'a consultar'.",
+  "POPPER10": {
+    "label": "10% off en tu compra",
+    "percent": 10,
+    "highPrice": { "overUSD": 50, "percent": 5 },
+    "active": true,
+    "expires": null
+  }
+}

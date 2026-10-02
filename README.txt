@@ -94,3 +94,10 @@ Notas:
   fecha actual y nunca pisa un publishedAt existente.
 - El badge dura NEW_BADGE_DAYS días (7, definido en common.js) y después desaparece
   solo: no hay que sacarlo a mano. Las monedas sin `publishedAt` nunca lo muestran.
+- Códigos de descuento del carrito: `discounts.json` (clave = código, sin importar
+  mayúsculas). Campos: `percent` (% general), `highPrice: {overUSD, percent}`
+  (% reducido para piezas cuyo precio unitario SUPERA overUSD), `active`, `expires`
+  ('AAAA-MM-DD'), `label`. Se aplican en el paso de pago; nunca sobre el envío ni
+  sobre piezas "a consultar". POPPER10 = 10% (5% en piezas de más de 50 USD).
+  Es un control del lado del cliente: el pedido llega por mail con el código y el
+  detalle, y el dueño confirma el monto antes de cobrar.
