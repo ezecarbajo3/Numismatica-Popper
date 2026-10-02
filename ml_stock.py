@@ -64,25 +64,38 @@ def buscar(sku):
     if not resultados:
         return {"ok": False, "motivo": f"la moneda {sku} no tiene publicacion en Mercado Libre"}
 
-    item_id = resultados[0]
-    st, item = ml_api.pedir("GET", f"/items/{item_id}?attributes={ATTRS}")
-    if st != 200:
-        return {"ok": False, "motivo": f"no se pudo leer {item_id} ({st}): {str(item)[:120]}"}
-
-    variaciones = item.get("variations") or []
-    if variaciones:
-        for v in variaciones:
-            if _sku_de(v) == sku:
-                return {"ok": True, "item_id": item_id, "variation_id": v.get("id"),
+    candidatos = []
+    for item_id in resultados:
+        st, item = ml_api.pedir("GET", f"/items/{item_id}?attributes={ATTRS}")
+        if st != 200:
+            continue
+        variaciones = item.get("variations") or []
+        if variaciones:
+            for v in variaciones:
+                if _sku_de(v) == sku:
+                    candidatos.append({
+                        "ok": True, "item_id": item_id, "variation_id": v.get("id"),
                         "available_quantity": v.get("available_quantity") or 0,
                         "status": item.get("status"), "title": item.get("title"),
-                        "variaciones": variaciones}
-        return {"ok": False, "motivo": f"{item_id} tiene variaciones pero ninguna con SKU {sku}"}
+                        "variaciones": variaciones
+                    })
+                    break
+        else:
+            candidatos.append({
+                "ok": True, "item_id": item_id, "variation_id": None,
+                "available_quantity": item.get("available_quantity") or 0,
+                "status": item.get("status"), "title": item.get("title"),
+                "variaciones": []
+            })
 
-    return {"ok": True, "item_id": item_id, "variation_id": None,
-            "available_quantity": item.get("available_quantity") or 0,
-            "status": item.get("status"), "title": item.get("title"),
-            "variaciones": []}
+    if not candidatos:
+        return {"ok": False, "motivo": f"no se pudo leer la publicacion con SKU {sku}"}
+
+    # Preferir la publicacion activa o pausada sobre una cerrada
+    for c in candidatos:
+        if c.get("status") != "closed":
+            return c
+    return candidatos[0]
 
 
 def _put_variacion(pub, nuevo):

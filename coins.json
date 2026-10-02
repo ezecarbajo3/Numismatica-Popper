@@ -4810,8 +4810,7 @@
     "mintage": "",
     "description": "no se consigue ni en estados unidos. MS70 es el maximo grado de conservacion. Certificada por ANACS (empresa mas respetada que ngc o pcgs). Solo 24.205 unidades certificadas MS70.",
     "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-10-02T18:37:35.516338+00:00"
+    "cantidad": 5
   },
   {
     "id": 606,

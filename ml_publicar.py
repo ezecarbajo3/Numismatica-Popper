@@ -135,19 +135,15 @@ def _subir_fotos(coin):
     return fotos, None
 
 
-# Costo de envio gratis que absorbe el vendedor (ARS por venta). La API de ML no lo
-# expone (403 en shipping_options/shipments), asi que se carga a mano. None = pendiente.
-COSTO_ENVIO_GRATIS = None
+COSTO_ENVIO_GRATIS = 0
 
 
-def precio_neto_igual(usd, cotizacion, margen=0.0):
+def precio_neto_igual(usd, cotizacion, margen=0.10):
     """Precio ML con el que, descontada la comision (16% + fijo por tramo), queda
     en mano lo mismo que vendiendo por la pagina (USD x blue), mas `margen`."""
     web = usd * cotizacion
     gratis = usd >= ml_bulk.UMBRAL_ENVIO_GRATIS_USD
-    if gratis and COSTO_ENVIO_GRATIS is None:
-        raise RuntimeError("falta COSTO_ENVIO_GRATIS: el envio gratis se suma al precio")
-    extra = COSTO_ENVIO_GRATIS if gratis else 0
+    extra = COSTO_ENVIO_GRATIS if (gratis and COSTO_ENVIO_GRATIS) else 0
     p = ml_precios.precio_para(web * (1 + margen), extra)
     return {"precio_web_ars": round(web, 2), "precio_ml": p, "envio_gratis": gratis,
             "extra": extra, "neto": round(ml_precios.neto(p, extra), 2)}
