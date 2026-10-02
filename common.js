@@ -56,6 +56,104 @@ function parsePriceUSD(priceStr) {
   return isNaN(n) ? Infinity : n;
 }
 
+// ─── Moneda y Conversión (USD / ARS) ──────────────────────────────────────────
+const CURRENCY_STORAGE_KEY = 'popper_currency_pref';
+const DOLAR_FALLBACK_VENTA = 1495;
+
+let activeCurrency = 'USD';
+try {
+  const saved = localStorage.getItem(CURRENCY_STORAGE_KEY);
+  if (saved === 'ARS' || saved === 'USD') {
+    activeCurrency = saved;
+  }
+} catch (_) {}
+
+function getCurrency() {
+  return activeCurrency;
+}
+
+function getBlueRate() {
+  if (window.PopperCart && typeof window.PopperCart.getBlueRate === 'function') {
+    const rate = window.PopperCart.getBlueRate();
+    if (Number.isFinite(rate) && rate > 0) return rate;
+  }
+  return DOLAR_FALLBACK_VENTA;
+}
+
+function setCurrency(curr) {
+  if (curr !== 'ARS' && curr !== 'USD') return;
+  activeCurrency = curr;
+  try {
+    localStorage.setItem(CURRENCY_STORAGE_KEY, curr);
+  } catch (_) {}
+  window.dispatchEvent(new CustomEvent('popper:currency-changed', {
+    detail: { currency: curr, rate: getBlueRate() }
+  }));
+}
+
+function toggleCurrency() {
+  const next = (activeCurrency === 'USD') ? 'ARS' : 'USD';
+  setCurrency(next);
+  return next;
+}
+
+function roundPriceARS(amount) {
+  const val = Number(amount);
+  if (!Number.isFinite(val) || val <= 0) return 0;
+  if (val <= 10000) {
+    return Math.max(100, Math.round(val / 100) * 100);
+  }
+  if (val <= 50000) {
+    return Math.round(val / 500) * 500;
+  }
+  return Math.round(val / 1000) * 1000;
+}
+
+function formatPriceARS(amount) {
+  return '$' + roundPriceARS(amount).toLocaleString('es-AR');
+}
+
+function formatCoinPrice(coin, currency = getCurrency(), rate = getBlueRate()) {
+  if (!coin) return '';
+  if (coin.status === 'sold') return 'VENDIDO';
+  if (!coin.price || String(coin.price).trim().toLowerCase() === 'consultar') {
+    return 'Consultar';
+  }
+
+  if (currency === 'ARS') {
+    const curUSD = parsePriceUSD(coin.price);
+    if (!Number.isFinite(curUSD) || curUSD <= 0) {
+      return escapeHTML(coin.price);
+    }
+    const curARS = formatPriceARS(curUSD * rate);
+
+    if (coin.original_price) {
+      const origUSD = parsePriceUSD(coin.original_price);
+      if (Number.isFinite(origUSD) && origUSD > 0) {
+        const origARS = formatPriceARS(origUSD * rate);
+        return `<span class="price-original">${origARS}</span> <span class="price-current">${curARS}</span>`;
+      }
+    }
+    return curARS;
+  }
+
+  // USD (por defecto)
+  if (coin.original_price) {
+    return `<span class="price-original">${escapeHTML(coin.original_price)}</span> <span class="price-current">${escapeHTML(coin.price)}</span>`;
+  }
+  return escapeHTML(coin.price);
+}
+
+window.PopperCurrency = {
+  get: getCurrency,
+  set: setCurrency,
+  toggle: toggleCurrency,
+  getRate: getBlueRate,
+  formatPrice: formatCoinPrice,
+  formatARS: formatPriceARS,
+  roundARS: roundPriceARS,
+};
+
 // ─── Estado de conservación ──────────────────────────────────────────────────
 
 const GRADE_RANK_MAP = {
@@ -239,3 +337,15 @@ function escapeHTML(value) {
 
 const SVG_CHEVRON_LEFT  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>`;
 const SVG_CHEVRON_RIGHT = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>`;
+
+// ─── Desplazamiento instantáneo (cross-browser / Firefox) ──────────────────────
+// Firefox no siempre anula `html { scroll-behavior: smooth }` con `behavior: 'instant'`.
+// Deshabilitar temporalmente el scroll suave en el elemento raíz asegura un salto
+// inmediato sin animar miles de píxeles al restaurar la posición de la grilla.
+function instantScrollTo(top = 0) {
+  const html = document.documentElement;
+  const prev = html.style.scrollBehavior;
+  html.style.scrollBehavior = 'auto';
+  window.scrollTo({ top, behavior: 'instant' });
+  html.style.scrollBehavior = prev;
+}

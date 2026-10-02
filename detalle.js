@@ -1,5 +1,29 @@
 const detailContainer = document.getElementById("coinDetail");
 const WHATSAPP_NUMBER = "5492235429132";
+let activeCoin = null;
+let allCoins = [];
+
+function updateDetailCartBtn(coin) {
+  const cartBtn = document.getElementById("detailAddToCart");
+  if (!cartBtn || !coin) return;
+  cartBtn.dataset.coinId = coin.id;
+  const isConsultar = !coin.price || String(coin.price).toLowerCase().includes('consultar') || (typeof parsePriceUSD === 'function' && parsePriceUSD(coin.price) <= 0);
+  if (coin.status === "sold" || isConsultar) {
+    cartBtn.style.display = "none";
+    return;
+  }
+  cartBtn.style.display = "";
+  const inCart = window.PopperCart && window.PopperCart.has(coin.id);
+  cartBtn.classList.toggle("is-in-cart", inCart);
+  cartBtn.innerHTML = inCart
+    ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="17" height="17" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> <span>En tu Carrito · <strong>Ver Carrito</strong></span>`
+    : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="17" height="17" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> <span>Agregar al Carrito</span>`;
+  cartBtn.setAttribute("title", inCart ? "Pieza en tu carrito · Clic para ver carrito" : "Agregar al carrito");
+}
+
+window.addEventListener("popper:cart-updated", () => {
+  if (activeCoin) updateDetailCartBtn(activeCoin);
+});
 
 function getQueryParam(name) {
   const params = new URLSearchParams(window.location.search);
@@ -70,7 +94,14 @@ function formatMedida(value) {
 function buildWhatsAppLink(coin) {
   const title   = coin.title   || "Sin título";
   const country = coin.country || "País no informado";
-  const price   = coin.price   || "precio no informado";
+  let price     = coin.price   || "precio no informado";
+  if (typeof getCurrency === 'function' && getCurrency() === 'ARS' && coin.price) {
+    const curUSD = parsePriceUSD(coin.price);
+    if (Number.isFinite(curUSD) && curUSD > 0) {
+      const rate = (typeof getBlueRate === 'function') ? getBlueRate() : 1495;
+      price = `${formatPriceARS(curUSD * rate)} (${coin.price})`;
+    }
+  }
   const id      = coin.id      || "sin id";
   const descLine = coin.description ? `\n*${coin.description}*` : "";
   const message = `Hola Numismatica Popper!\nEstoy interesado en:\n*${title}*\n*${country}*${descLine}\n*${price}*\n*${id}*\nMuchas gracias!`;
@@ -249,9 +280,13 @@ function updateCoinContent(coin) {
 
   const priceEl = document.getElementById("detailPrice");
   if (priceEl) {
-    if (coin.original_price) {
-      // `.price-current` es la clase que el catálogo aplica al precio nuevo;
-      // acá faltaba, así que el precio rebajado se veía sin su estilo.
+    if (coin.status === 'sold') {
+      priceEl.textContent = 'VENDIDO';
+      priceEl.classList.add('is-sold-price');
+    } else if (typeof formatCoinPrice === 'function') {
+      priceEl.innerHTML = formatCoinPrice(coin);
+      priceEl.classList.remove('is-sold-price');
+    } else if (coin.original_price) {
       priceEl.innerHTML =
         `<span class="price-original">${escapeHTML(coin.original_price)}</span> ` +
         `<span class="price-current">${escapeHTML(coin.price || "Consultar")}</span>`;
@@ -262,6 +297,9 @@ function updateCoinContent(coin) {
 
   const waEl = document.getElementById("detailWhatsapp");
   if (waEl) waEl.href = buildWhatsAppLink(coin);
+
+  activeCoin = coin;
+  updateDetailCartBtn(coin);
 
   const shareEl = document.getElementById("detailShare");
   if (shareEl) shareEl.dataset.shareUrl = `https://numismaticapopper.com/moneda/${coin.id}.html`;
@@ -355,36 +393,66 @@ function renderCoinDetail(coin, groupMembers) {
         </div>
       </div>
 
-      <p class="detail-price" id="detailPrice">${coin.original_price
+      <p class="detail-price" id="detailPrice">${coin.status === 'sold' ? 'VENDIDO' : (typeof formatCoinPrice === 'function' ? formatCoinPrice(coin) : (coin.original_price
         ? `<span class="price-original">${escapeHTML(coin.original_price)}</span> <span class="price-current">${escapeHTML(coin.price || "Consultar")}</span>`
-        : escapeHTML(coin.price || "Consultar")}</p>
+        : escapeHTML(coin.price || "Consultar")))}</p>
 
-      <a
-        class="detail-whatsapp"
-        id="detailWhatsapp"
-        href="${escapeHTML(buildWhatsAppLink(coin))}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true" style="flex-shrink:0">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-        </svg>
-        Consultar por WhatsApp
-      </a>
+      <div class="detail-actions">
+        <button
+          type="button"
+          class="detail-cart-btn"
+          id="detailAddToCart"
+          data-coin-id="${coin.id}"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Agregar al Carrito
+        </button>
 
-      <button
-        type="button"
-        class="detail-share"
-        id="detailShare"
-        data-share-url="https://numismaticapopper.com/moneda/${coin.id}.html"
-      >
-        Copiar link para compartir
-      </button>
+        <a
+          class="detail-whatsapp"
+          id="detailWhatsapp"
+          href="${escapeHTML(buildWhatsAppLink(coin))}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true" style="flex-shrink:0">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Consultar por WhatsApp
+        </a>
+
+        <button
+          type="button"
+          class="detail-share"
+          id="detailShare"
+          data-share-url="https://numismaticapopper.com/moneda/${coin.id}.html"
+        >
+          Copiar link para compartir
+        </button>
+      </div>
     </div>
     </div>
   `;
 
+  activeCoin = coin;
   applyCoinTitle(document.getElementById("detailTitle"), coin.title || "Sin título");
+
+  const cartBtn = document.getElementById("detailAddToCart");
+  if (cartBtn) {
+    cartBtn.addEventListener("click", () => {
+      if (window.PopperCart && activeCoin) {
+        const inCart = window.PopperCart.has(activeCoin.id);
+        if (inCart) {
+          window.PopperCart.open();
+        } else {
+          window.PopperCart.add(activeCoin, cartBtn);
+          updateDetailCartBtn(activeCoin);
+          window.PopperCart.open();
+        }
+      }
+    });
+    updateDetailCartBtn(coin);
+  }
 
   const shareBtn = document.getElementById("detailShare");
   if (shareBtn) {
@@ -457,7 +525,7 @@ function renderCoinDetail(coin, groupMembers) {
 
       const priceEl = document.createElement("span");
       priceEl.className   = "variant-price";
-      priceEl.textContent = member.status === "sold" ? "Vendido" : (member.price || "?");
+      priceEl.innerHTML   = member.status === "sold" ? "Vendido" : (typeof formatCoinPrice === 'function' ? formatCoinPrice(member) : (member.price || "?"));
 
       info.appendChild(labelEl);
       info.appendChild(priceEl);
@@ -518,8 +586,8 @@ async function loadCoinDetail() {
     const response = await fetch("coins.json");
     if (!response.ok) throw new Error("No se pudo cargar coins.json");
 
-    const allCoins = await response.json();
-    const coin     = allCoins.find(c => String(c.id).toLowerCase() === cleanId);
+    allCoins   = await response.json();
+    const coin = allCoins.find(c => String(c.id).toLowerCase() === cleanId);
 
     if (!coin) {
       detailContainer.innerHTML = '<p class="detail-error">No se encontró la moneda.</p>';
@@ -606,3 +674,26 @@ if (backLink) {
     }
   });
 }
+
+// ─── Sincronización de moneda ───────────────────────────────────────────────
+window.addEventListener('popper:currency-changed', () => {
+  if (activeCoin) {
+    const priceEl = document.getElementById("detailPrice");
+    if (priceEl && activeCoin.status !== 'sold' && typeof formatCoinPrice === 'function') {
+      priceEl.innerHTML = formatCoinPrice(activeCoin);
+    }
+    const waEl = document.getElementById("detailWhatsapp");
+    if (waEl) waEl.href = buildWhatsAppLink(activeCoin);
+  }
+
+  document.querySelectorAll('#detailVariants .variant-thumb').forEach(btn => {
+    const vPrice = btn.querySelector('.variant-price');
+    const vId = btn.dataset.coinId;
+    if (vPrice && vId && Array.isArray(allCoins)) {
+      const member = allCoins.find(c => String(c.id) === String(vId));
+      if (member && member.status !== 'sold' && typeof formatCoinPrice === 'function') {
+        vPrice.innerHTML = formatCoinPrice(member);
+      }
+    }
+  });
+});

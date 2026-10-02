@@ -24,6 +24,7 @@ const sortMenu           = document.getElementById('sortMenu');
 
 // ─── State ────────────────────────────────────────────────────────────────────
 let allCoins        = [];
+let coinsMap        = new Map();
 // group_id → { minVal, minStr, count, isNew }. Se arma una sola vez al cargar el
 // catálogo: antes cada tarjeta de grupo recorría las 874 monedas dos veces para
 // saber su cantidad de variantes y si era nueva (~178.000 iteraciones por render).
@@ -645,7 +646,7 @@ function goToLanding() {
     try { sessionStorage.removeItem(STATE_KEY); } catch (_) {}
     showLanding();
     stopHeaderMuteObserver();
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    instantScrollTo(0);
   });
 }
 
@@ -666,7 +667,7 @@ function enterCatalog(categoryKey) {
     saveState(0);
     renderCoins(getFilteredCoins());
     initRevealEffects();
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    instantScrollTo(0);
     scheduleHeaderMuteObserver();
   });
 }
@@ -756,8 +757,12 @@ async function loadCoins() {
     if (!response.ok) throw new Error('No se pudo cargar coins.json');
     const data = await response.json();
     allCoins = Array.isArray(data) ? data : [];
+    coinsMap = new Map(allCoins.map(c => [String(c.id), c]));
     prepareCoins();
     buildGroupIndex();
+    if (window.PopperCart && typeof window.PopperCart.validateSoldItems === 'function') {
+      window.PopperCart.validateSoldItems(allCoins);
+    }
     return true;
   } catch (error) {
     console.error(error);
@@ -1077,7 +1082,9 @@ function buildCoinCard(coin, idx, skipAnimation) {
     applyCoinTitle(title, coin.title || 'Sin título');
     yearTag.textContent = coin.year || '';
     price.style.display = 'block';
-    if (coin.original_price) {
+    if (typeof formatCoinPrice === 'function') {
+      price.innerHTML = formatCoinPrice(coin);
+    } else if (coin.original_price) {
       price.innerHTML = `<span class="price-original">${escapeHTML(coin.original_price)}</span><span class="price-current">${escapeHTML(coin.price)}</span>`;
     } else {
       price.textContent = coin.price || 'Consultar';
@@ -1100,6 +1107,20 @@ function buildCoinCard(coin, idx, skipAnimation) {
     price.textContent = 'VENDIDO';
     price.classList.add('is-sold-price');
     price.style.display = 'block';
+  }
+
+  // ── Botón Carrito ──────────────────────────────────────────────────────────
+  const cartBtn = card.querySelector('.card-cart-btn');
+  if (cartBtn) {
+    const isConsultar = !coin.price || String(coin.price).toLowerCase().includes('consultar') || parsePriceUSD(coin.price) <= 0;
+    if (coin.group_id || coin.status === 'sold' || isConsultar) {
+      cartBtn.remove();
+    } else {
+      const inCart = window.PopperCart && window.PopperCart.has(coin.id);
+      cartBtn.classList.toggle('is-in-cart', !!inCart);
+      cartBtn.setAttribute('title', inCart ? 'En tu carrito · Clic para quitar' : 'Agregar al carrito');
+      cartBtn.setAttribute('aria-label', inCart ? 'En tu carrito · Clic para quitar' : 'Agregar al carrito');
+    }
   }
 
   // ── Badge "NUEVO" ──────────────────────────────────────────────────────────
@@ -1144,6 +1165,23 @@ function buildCoinCard(coin, idx, skipAnimation) {
 
   return card;
 }
+
+function updateAllPricesInGrid() {
+  if (!coinsGrid) return;
+  const cards = coinsGrid.querySelectorAll('.coin-card:not(.is-group):not(.is-sold)');
+  cards.forEach(card => {
+    const id = card.dataset.coinId;
+    if (!id) return;
+    const coin = (coinsMap && coinsMap.get(String(id))) || (renderedCoinsById && renderedCoinsById.get(String(id)));
+    if (!coin) return;
+    const priceEl = card.querySelector('.coin-price');
+    if (priceEl && typeof formatCoinPrice === 'function') {
+      priceEl.innerHTML = formatCoinPrice(coin);
+    }
+  });
+}
+
+window.addEventListener('popper:currency-changed', updateAllPricesInGrid);
 
 // ── Carrusel: operaciones sueltas, sin closures por tarjeta ──────────────────
 //
@@ -1304,6 +1342,18 @@ function initGridDelegation() {
   }, true);
 
   coinsGrid.addEventListener('click', (event) => {
+    const cartBtn = event.target.closest('.card-cart-btn');
+    if (cartBtn) {
+      event.stopPropagation();
+      event.preventDefault();
+      const article = cartBtn.closest('.coin-card');
+      if (article && window.PopperCart) {
+        const coin = (coinsMap && coinsMap.get(String(article.dataset.coinId))) || (renderedCoinsById && renderedCoinsById.get(String(article.dataset.coinId)));
+        if (coin) window.PopperCart.toggle(coin, cartBtn);
+      }
+      return;
+    }
+
     const arrow = event.target.closest('.card-arrow');
     if (arrow) {
       event.stopPropagation();
@@ -1321,6 +1371,7 @@ function initGridDelegation() {
 
   coinsGrid.addEventListener('keydown', (event) => {
     if (event.key !== 'Enter' && event.key !== ' ') return;
+    if (event.target.closest && (event.target.closest('.card-cart-btn') || event.target.closest('.card-arrow'))) return;
     const article = event.target.closest('.coin-card');
     if (!article || article.classList.contains('is-sold')) return;
     event.preventDefault();
@@ -1664,7 +1715,7 @@ loadCoins().then((ok) => {
     renderCoins(getFilteredCoins(), true);
     initRevealEffects();
     scheduleHeaderMuteObserver();
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    instantScrollTo(0);
     return;
   }
 
@@ -1699,7 +1750,7 @@ loadCoins().then((ok) => {
       // página todavía no mide lo suficiente y el navegador recorta el salto.
       if (state.scrollY) {
         requestAnimationFrame(() => requestAnimationFrame(() => {
-          window.scrollTo({ top: state.scrollY, behavior: 'instant' });
+          instantScrollTo(state.scrollY);
         }));
       }
       // El scroll guardado apuntaba a la grilla con búsqueda: ya no vale.
@@ -1722,7 +1773,7 @@ window.addEventListener('pageshow', (event) => {
   const state = loadSavedState();
   if (state && state.view === 'catalog' && state.scrollY) {
     requestAnimationFrame(() => requestAnimationFrame(() => {
-      window.scrollTo({ top: state.scrollY, behavior: 'instant' });
+      instantScrollTo(state.scrollY);
     }));
   }
 

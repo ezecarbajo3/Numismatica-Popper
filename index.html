@@ -21,12 +21,23 @@
        Allura la frase de Insumos: son las tres únicas familias que el CSS usa.
        detalle.html no pide Allura porque esa página no la usa. -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@400;500;600;700&family=Lora:wght@400&display=swap" />
-  <link rel="stylesheet" href="styles.css?v=20260827a" />
+  <link rel="stylesheet" href="styles.css?v=20261002b" />
   <!-- El catálogo es lo primero que necesita script.js. Sin esto no empieza a
        bajar hasta que el script se ejecuta, o sea después del CSS y las fuentes. -->
-  <link rel="preload" href="coins.json" as="fetch" />
+  <link rel="preload" href="coins.json" as="fetch" crossorigin />
 </head>
 <body data-view="landing">
+  <div class="site-floating-actions" id="siteFloatingActions">
+    <button type="button" id="currencyToggleBtn" class="currency-toggle-btn is-usd" aria-label="Moneda activa: Dólares (USD). Clic para cambiar a pesos (ARS)" title="Moneda activa: Dólares (USD) · Clic para cambiar a pesos (ARS)">USD</button>
+    <button type="button" id="floatingCartBtn" class="cart-floating-btn" aria-label="Ver carrito" title="Ver carrito">
+      <svg class="cart-floating-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="20" cy="21" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+      </svg>
+      <span class="cart-floating-badge" id="floatingCartBadge">0</span>
+    </button>
+  </div>
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="site-logo-link" aria-label="Numismática Popper — volver a la portada">
@@ -280,6 +291,16 @@
   <template id="coinCardTemplate">
     <article class="coin-card reveal" tabindex="0" role="button">
       <div class="coin-image-wrap">
+        <button type="button" class="card-cart-btn" aria-label="Agregar al carrito" title="Agregar al carrito">
+          <svg class="cart-icon-add" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <svg class="cart-icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </button>
         <img class="coin-image" src="" alt="" width="400" height="400" decoding="async" loading="lazy" />
       </div>
 
@@ -299,9 +320,10 @@
     </article>
   </template>
 
-  <script src="common.js?v=20260827a" defer></script>
-  <script src="glow.js?v=20260827a" defer></script>
-  <script src="script.js?v=20260827a" defer></script>
+  <script src="common.js?v=20261002b" defer></script>
+  <script src="cart.js?v=20261002b" defer></script>
+  <script src="glow.js?v=20261002b" defer></script>
+  <script src="script.js?v=20261002b" defer></script>
 
   <footer class="site-footer" aria-label="Pie de página">
     <div class="footer-inner">
