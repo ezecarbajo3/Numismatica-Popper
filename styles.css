@@ -4126,6 +4126,18 @@ html.cart-drawer-lock {
   margin-bottom: 16px;
 }
 
+.order-mail-copy {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.order-mail-copy__hint {
+  margin: 8px 0 0;
+  font-size: 0.72rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
 .confirmed-check {
   display: inline-block;
   font-size: 1.2rem;

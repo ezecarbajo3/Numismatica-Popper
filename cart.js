@@ -4,7 +4,7 @@
  * Persistencia en localStorage sin dependencias externas.
  * Cotización Dólar Blue Venta (dolarapi.com) con caché y respaldo.
  * Despacho de pedidos y consultas a numismaticapopper@gmail.com vía FormSubmit
- * (con autorespuesta al cliente).
+ * (aviso al cliente por envío nativo con captcha; el detalle lo manda el dueño con el link de Gmail del mail del pedido).
  *
  * Piezas con id numérico → checkout normal. Piezas con id de texto (F/P/R…)
  * → "a consultar": no entran en el total ni en el pago, viajan en el mismo
@@ -25,6 +25,7 @@
   const WHATSAPP_NUMBER = '5492235429132';
   const WHATSAPP_DISPLAY = '+54 9 223 542-9132';
   const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/numismaticapopper@gmail.com';
+  const FORMSUBMIT_NATIVE_ENDPOINT = 'https://formsubmit.co/numismaticapopper@gmail.com';
   const DISCOUNTS_URL = 'discounts.json';
   const MAX_QTY = 99;
   const ORDER_TIMEOUT_MS = 15000;
@@ -1656,41 +1657,65 @@
     return d.paymentMethod === 'usd' ? formatUSD(d.totalUSD) : formatARS(d.totalARS);
   }
 
-  function buildAutoresponse(snap) {
+  // Mail 1 al cliente: solo agradecimiento + "estamos procesando tu pedido".
+  // FormSubmit solo manda el autorespondedor con envío nativo (no AJAX).
+  function buildProcessingNotice(snap) {
+    return {
+      email: snap.data.email,
+      subject: 'Gracias por su compra — Numismática Popper',
+      message: 'Muchas gracias por su compra. Estamos procesando tu pedido.',
+      orderId: snap.orderId,
+    };
+  }
+
+  // Mail 2 al cliente: lo envía el dueño desde su Gmail con el link de confirmación
+  // que trae el mail del pedido. Solo nombre, monedas, método de envío y total.
+  function buildDetailMail(snap) {
     const d = snap.data;
-    const lines = [];
-    const consult = snap.consult || [];
-    if (snap.type === 'inquiry') {
-      lines.push(`Hola ${d.fullName}, recibimos tu consulta (${snap.orderId}).`);
-      lines.push('Vamos a verificar si estas piezas siguen en stock y te escribimos por WhatsApp.');
-      lines.push('');
-      lines.push('PIEZAS CONSULTADAS');
-      consult.forEach(it => lines.push(`- ${formatCoinLineClean(it)}`));
-    } else {
-      lines.push(`Hola ${d.fullName}, recibimos tu pedido ${snap.orderId}. ¡Gracias por tu compra!`);
-      lines.push('Lo confirmamos por WhatsApp cuando se acredite el pago.');
-      lines.push('');
-      lines.push('TU PEDIDO');
-      snap.items.forEach(it => lines.push(`- ${formatCoinLineClean(it)}`));
-      lines.push('');
-      if (d.discountCode && d.discountARS > 0) {
-        lines.push(`Descuento ${d.discountCode}: −${formatARS(d.discountARS)} (−${formatUSD(d.discountUSD)})`);
-      }
-      lines.push(`Envío: ${deliveryLabel(d.deliveryType)}${d.shippingCostARS > 0 ? ' — ' + formatARS(d.shippingCostARS) : ' — Gratis'}`);
-      lines.push(`TOTAL A PAGAR: ${totalTextFor(snap)}`);
-      lines.push('');
-      lines.push(...bankLinesFor(d.paymentMethod));
-      lines.push('Una vez realizado el pago, enviá el comprobante por WhatsApp.');
-      if (consult.length) {
-        lines.push('');
-        lines.push('A CONSULTAR (no incluidas en el total; te confirmamos si siguen en stock)');
-        consult.forEach(it => lines.push(`- ${formatCoinLineClean(it)}`));
-      }
-    }
-    lines.push('');
-    lines.push(`WhatsApp Numismática Popper: ${WHATSAPP_DISPLAY}`);
-    lines.push('numismaticapopper.com');
-    return lines.join('\n');
+    const lines = ['Gracias por su compra.', '', `Nombre: ${d.fullName}`];
+    snap.items.forEach((it, idx) => lines.push(`Moneda ${idx + 1}: ${formatCoinLineClean(it)}`));
+    lines.push(`Método de envío: ${deliveryLabel(d.deliveryType)}`);
+    lines.push(`Total: ${totalTextFor(snap)}`);
+    return {
+      subject: 'Gracias por su compra — Numismática Popper',
+      body: lines.join('\n'),
+    };
+  }
+
+  // Link que abre Gmail (cuenta de la tienda) con el mail 2 ya redactado.
+  function confirmComposeURL(snap) {
+    const m = buildDetailMail(snap);
+    const q = new URLSearchParams({
+      view: 'cm', fs: '1', authuser: 'numismaticapopper@gmail.com',
+      to: snap.data.email, su: m.subject, body: m.body,
+    });
+    return `https://mail.google.com/mail/?${q.toString().replace(/\+/g, '%20')}`;
+  }
+
+  // Envío nativo en pestaña nueva (lo llama un click del cliente, así no lo bloquea el navegador).
+  function sendCustomerCopy(copy) {
+    if (!copy || !copy.email) return;
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = FORMSUBMIT_NATIVE_ENDPOINT;
+    form.target = '_blank';
+    form.style.display = 'none';
+    const add = (name, value) => {
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = name;
+      input.value = value;
+      form.appendChild(input);
+    };
+    add('email', copy.email);
+    add('_subject', `Aviso enviado al cliente — N° ${copy.orderId} (solo informativo)`);
+    add('_autoresponse', copy.message);
+    add('_template', 'table');
+    add('_replyto', copy.email);
+    add('_next', `${location.origin}/gracias.html`);
+    document.body.appendChild(form);
+    form.submit();
+    setTimeout(() => form.remove(), 1000);
   }
 
   function buildOrderPayload(snap) {
@@ -1709,7 +1734,6 @@
       _captcha: 'false',
       _honey: '',
       _replyto: d.email,
-      _autoresponse: buildAutoresponse(snap),
       email: d.email,
       'Pedido N°': snap.orderId,
       'Tipo': isInquiry ? 'CONSULTA DE STOCK (sin pago)' : 'PEDIDO',
@@ -1759,6 +1783,7 @@
         ? `${formatARS(d.shippingCostARS)} (${formatUSD(d.shippingCostUSD)})`
         : 'Gratis ($0)';
       payload['TOTAL A PAGAR'] = `${formatARS(d.totalARS)} / ${formatUSD(d.totalUSD)}`;
+      payload['✅ CONFIRMAR COMPRA (abre Gmail con el mail al cliente listo; tocá Enviar)'] = confirmComposeURL(snap);
     }
 
     payload['Cotización usada'] = `$${snap.rate.toLocaleString('es-AR')} por USD${snap.rateSource === 'live' ? '' : ' (REFERENCIAL: no se pudo leer la cotización en vivo)'}`;
@@ -1856,6 +1881,7 @@
         totalUSD: snap.data.totalUSD,
         totalARS: snap.data.totalARS,
       },
+      mailCopy: snap.type === 'order' ? buildProcessingNotice(snap) : null,
     };
     lsSetJSON(LAST_ORDER_KEY, lastPurchasedOrder);
     cartItems = [];
@@ -2209,8 +2235,15 @@
           <span class="confirmed-check">✓</span>
           <h3 class="confirmed-title">PEDIDO RECIBIDO</h3>
           <p class="confirmed-order-id">N° ${escapeHTML(lo.orderId)}</p>
-          <p class="confirmed-desc">Te enviamos el resumen a <strong>${escapeHTML(d.email)}</strong> (mirá también en spam). Transferí el importe exacto y mandanos el comprobante por WhatsApp.</p>
+          <p class="confirmed-desc">Transferí el importe exacto y mandanos el comprobante por WhatsApp.</p>
         </div>
+
+        ${lo.mailCopy ? `
+        <div class="order-mail-copy">
+          <button type="button" class="cart-btn cart-btn--secondary" id="sendMailCopyBtn">AVISARME POR MAIL</button>
+          <p class="order-mail-copy__hint">Se abre una pestaña para confirmar que no sos un robot y te llega un aviso a <strong>${escapeHTML(d.email)}</strong> (mirá también en spam). Cuando confirmemos tu compra, te mandamos el detalle por el mismo mail.</p>
+        </div>
+        ` : ''}
 
         <div class="payment-total-callout">
           <span class="callout-label">IMPORTE A TRANSFERIR</span>
@@ -2296,6 +2329,8 @@
 
     drawer.querySelector('#finishCloseBtn').addEventListener('click', closeDrawer);
     drawer.querySelector('#backToCatalogBtn').addEventListener('click', closeDrawer);
+    const mailBtn = drawer.querySelector('#sendMailCopyBtn');
+    if (mailBtn) mailBtn.addEventListener('click', () => sendCustomerCopy(lo.mailCopy));
 
     drawer.querySelectorAll('.spec-copy-btn').forEach(btn => {
       btn.addEventListener('click', async () => {
