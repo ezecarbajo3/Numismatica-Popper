@@ -17401,5 +17401,260 @@
     "publishedAt": "2026-10-01T14:33:22.442823+00:00",
     "costo": 0.25,
     "cantidad": 999
+  },
+  {
+    "id": 1492,
+    "title": "10 Cents 1961",
+    "country": "Malaya y Borneo",
+    "metal": "Cuproníquel",
+    "year": 1961,
+    "price": "5.5 USD",
+    "images": [
+      "images/1492A.jpeg",
+      "images/1492B.jpeg"
+    ],
+    "reference": "KM# 2",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "2.83",
+    "diametro": "19.5",
+    "description": "Elizabeth II",
+    "publishedAt": "2026-10-02T02:00:24.441489+00:00",
+    "costo": 1.5,
+    "cantidad": 3
+  },
+  {
+    "id": 1493,
+    "title": "10 Cents 1949",
+    "country": "Malaya",
+    "metal": "Cuproníquel",
+    "year": 1949,
+    "price": "8 USD",
+    "images": [
+      "images/1493A.jpeg",
+      "images/1493B.jpeg"
+    ],
+    "reference": "KM# 8",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": "",
+    "peso": "2.83",
+    "diametro": "19.5",
+    "description": "George VI - Commissioners of Currency Malaya",
+    "publishedAt": "2026-10-02T02:00:24.441489+00:00",
+    "costo": 1.5,
+    "cantidad": 3
+  },
+  {
+    "id": 1494,
+    "title": "1 Chon 2002",
+    "country": "Corea del Norte",
+    "metal": "Latón",
+    "year": 2002,
+    "price": "5.5 USD",
+    "images": [
+      "images/1494A.jpeg",
+      "images/1494B.jpeg"
+    ],
+    "reference": "KM# 195",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "4.63",
+    "diametro": "21.7",
+    "description": "FAO",
+    "publishedAt": "2026-10-02T02:00:24.441489+00:00",
+    "costo": 1.5
+  },
+  {
+    "id": 1495,
+    "title": "10 Sen 1945",
+    "country": "Japón",
+    "metal": "Porcelana",
+    "year": 1945,
+    "price": "4.5 USD",
+    "images": [
+      "images/1495A.jpeg",
+      "images/1495B.jpeg"
+    ],
+    "reference": "KM# Pn79",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "",
+    "diametro": "21.9",
+    "description": "Shōwa - Emisión de emergencia en porcelana",
+    "publishedAt": "2026-10-02T02:00:24.441489+00:00",
+    "costo": 1.5
+  },
+  {
+    "id": 1496,
+    "title": "Medalla 30 Años de Malvinas 2012",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 2012,
+    "price": "3.5 USD",
+    "images": [
+      "images/1496A.jpeg",
+      "images/1496B.jpeg"
+    ],
+    "reference": "N# 452528",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "13",
+    "diametro": "30",
+    "description": "Medalla conmemorativa del 30° Aniversario de la Gesta de Malvinas (1982-2012)",
+    "publishedAt": "2026-10-02T02:00:24.441489+00:00",
+    "costo": 1.67,
+    "cantidad": 5
+  },
+  {
+    "id": 1497,
+    "title": "5 Cents 1972",
+    "country": "Malta",
+    "metal": "Cuproníquel",
+    "year": 1972,
+    "price": "4.5 USD",
+    "images": [
+      "images/1497A.jpeg",
+      "images/1497B.jpeg"
+    ],
+    "reference": "KM# 10",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 5353000,
+    "peso": "5.65",
+    "diametro": "23.6",
+    "description": "",
+    "publishedAt": "2026-10-02T02:00:24.441489+00:00",
+    "costo": 1.5
+  },
+  {
+    "id": 1498,
+    "title": "2 Pence 1971",
+    "country": "Jersey",
+    "metal": "Bronce",
+    "year": 1971,
+    "price": "4.5 USD",
+    "images": [
+      "images/1498A.jpeg",
+      "images/1498B.jpeg"
+    ],
+    "reference": "KM# 31",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 2225000,
+    "peso": "7.21",
+    "diametro": "25.91",
+    "description": "Elizabeth II (2nd portrait)",
+    "publishedAt": "2026-10-02T02:00:24.441489+00:00",
+    "costo": 1.5
+  },
+  {
+    "id": 1499,
+    "title": "500 Lira 1989",
+    "country": "San Marino",
+    "metal": "Bimetálica",
+    "year": 1989,
+    "price": "5.5 USD",
+    "images": [
+      "images/1499A.jpeg",
+      "images/1499B.jpeg"
+    ],
+    "reference": "KM# 239",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 3108000,
+    "peso": "6.8",
+    "diametro": "25.8",
+    "description": "",
+    "publishedAt": "2026-10-02T02:00:24.441489+00:00",
+    "costo": 3.86
+  },
+  {
+    "id": 1500,
+    "title": "5 Kronor 2016",
+    "country": "Suecia",
+    "metal": "Oro Nórdico (Latón)",
+    "year": 2016,
+    "price": "3.5 USD",
+    "images": [
+      "images/1500A.jpeg",
+      "images/1500B.jpeg"
+    ],
+    "reference": "KM# 930",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "6.1",
+    "diametro": "23.75",
+    "description": "Carl XVI Gustaf",
+    "publishedAt": "2026-10-02T02:00:24.441489+00:00",
+    "costo": 1.93
+  },
+  {
+    "id": 1501,
+    "title": "10 Rublos 2014 Tikhvin",
+    "country": "Rusia",
+    "metal": "Acero chapado en latón",
+    "year": 2014,
+    "price": "3.5 USD",
+    "images": [
+      "images/1501A.jpeg",
+      "images/1501B.jpeg"
+    ],
+    "reference": "Y# 1575",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "5.63",
+    "diametro": "22",
+    "description": "Ciudades de Gloria Militar - Tikhvin",
+    "publishedAt": "2026-10-02T02:00:24.441489+00:00",
+    "costo": 2.0
+  },
+  {
+    "id": 1502,
+    "title": "10 Rublos 2014 Tver",
+    "country": "Rusia",
+    "metal": "Acero chapado en latón",
+    "year": 2014,
+    "price": "3.5 USD",
+    "images": [
+      "images/1502A.jpeg",
+      "images/1502B.jpeg"
+    ],
+    "reference": "Y# 1576",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "5.63",
+    "diametro": "22",
+    "description": "Ciudades de Gloria Militar - Tver",
+    "publishedAt": "2026-10-02T02:00:24.441489+00:00",
+    "costo": 2.0
+  },
+  {
+    "id": 1503,
+    "title": "2 Pence 1980",
+    "country": "Islas Malvinas",
+    "metal": "Bronce",
+    "year": 1980,
+    "price": "3 USD",
+    "images": [
+      "images/1503A.jpeg",
+      "images/1503B.jpeg"
+    ],
+    "reference": "KM# 3",
+    "grade": "Muy Bueno+",
+    "grade_short": "MB+",
+    "mintage": "",
+    "peso": "7.12",
+    "diametro": "25.9",
+    "description": "Elizabeth II (2nd portrait)",
+    "publishedAt": "2026-10-02T02:00:24.441489+00:00",
+    "costo": 1.5
   }
 ]
