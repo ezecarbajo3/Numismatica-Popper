@@ -66,6 +66,7 @@
     pickupPerson: '',
     deliveryNotes: '',
     paymentMethod: 'pesos', // 'pesos' | 'usd' | 'deposito_mp'
+    paymentMethodTouched: false,
     parqueSchedule: null,
     discountCode: '',
     discountRule: null,
@@ -1194,16 +1195,15 @@
     const needsShippingData = !inquiryOnly && (isSucursal || isDomicilio);
     const parqueSchedule = getNextParqueSchedule();
 
-    const parqueDual = formatDualPrice(Number((SHIPPING_PARQUE_ARS / blueRate).toFixed(1)), SHIPPING_PARQUE_ARS);
-    const sucursalDual = formatDualPrice(Number((SHIPPING_SUCURSAL_ARS / blueRate).toFixed(1)), SHIPPING_SUCURSAL_ARS);
-    const domicilioDual = formatDualPrice(Number((SHIPPING_DOMICILIO_ARS / blueRate).toFixed(1)), SHIPPING_DOMICILIO_ARS);
+    const isARS = getCurrentCurrency() === 'ARS';
+    const parquePrice = isARS ? formatARS(SHIPPING_PARQUE_ARS) : formatUSD(Number((SHIPPING_PARQUE_ARS / blueRate).toFixed(1)));
+    const sucursalPrice = isARS ? formatARS(SHIPPING_SUCURSAL_ARS) : formatUSD(Number((SHIPPING_SUCURSAL_ARS / blueRate).toFixed(1)));
+    const domicilioPrice = isARS ? formatARS(SHIPPING_DOMICILIO_ARS) : formatUSD(Number((SHIPPING_DOMICILIO_ARS / blueRate).toFixed(1)));
 
-    const consultAlert = consult.length ? `
+    const consultAlert = inquiryOnly ? `
       <div class="checkout-consult-alert" role="note">
-        <strong>${inquiryOnly ? 'Consulta de stock' : 'Atención'}</strong>
-        <span>${inquiryOnly
-          ? 'Te escribimos para confirmar el stock. Todavía no hay nada para pagar.'
-          : `${escapeHTML(consult.map(it => it.title).join(', '))}: se consulta aparte, fuera del total. El resto sigue normal.`}</span>
+        <strong>Consulta de stock</strong>
+        <span>Te escribimos para confirmar el stock. Todavía no hay nada para pagar.</span>
       </div>
     ` : '';
 
@@ -1228,7 +1228,7 @@
               <span class="delivery-row__name">Envío al Parque Rivadavia</span>
               <span class="delivery-row__sub">Próximo envío ${parqueSchedule.dispatchDDMM}</span>
             </div>
-            <span class="delivery-row__price">${escapeHTML(parqueDual.primary)} <span class="delivery-price-secondary">(${escapeHTML(parqueDual.secondary)})</span></span>
+            <span class="delivery-row__price">${escapeHTML(parquePrice)}</span>
           </label>
 
           <label class="delivery-row ${isSucursal ? 'is-selected' : ''}">
@@ -1238,7 +1238,7 @@
               <span class="delivery-row__name">Envío a Sucursal</span>
               <span class="delivery-row__sub">A través de Andreani</span>
             </div>
-            <span class="delivery-row__price">${escapeHTML(sucursalDual.primary)} <span class="delivery-price-secondary">(${escapeHTML(sucursalDual.secondary)})</span></span>
+            <span class="delivery-row__price">${escapeHTML(sucursalPrice)}</span>
           </label>
 
           <label class="delivery-row ${isDomicilio ? 'is-selected' : ''}">
@@ -1248,7 +1248,7 @@
               <span class="delivery-row__name">Envío a Domicilio</span>
               <span class="delivery-row__sub">A través de Andreani</span>
             </div>
-            <span class="delivery-row__price">${escapeHTML(domicilioDual.primary)} <span class="delivery-price-secondary">(${escapeHTML(domicilioDual.secondary)})</span></span>
+            <span class="delivery-row__price">${escapeHTML(domicilioPrice)}</span>
           </label>
         </div>
       </div>
@@ -1444,6 +1444,9 @@
 
       orderData.parqueSchedule = orderData.deliveryType === 'parque' ? getNextParqueSchedule() : null;
       recomputeTotals();
+      if (!orderData.paymentMethodTouched) {
+        orderData.paymentMethod = getCurrentCurrency() === 'USD' ? 'usd' : 'pesos';
+      }
       currentStep = 'payment-select';
       renderDrawerContent();
     });
@@ -1904,28 +1907,26 @@
   // ─── PASO 3: Medio de Pago y Confirmación ──────────────────────────────────
   function renderStepPaymentSelect(drawer) {
     const pay = payableItems();
-    const consult = consultItems();
     recomputeTotals();
+    const isUSD = orderData.paymentMethod === 'usd';
     const shipARS = orderData.shippingCostARS;
     const shipUSD = orderData.shippingCostUSD;
-    const totDual = formatDualPrice(orderData.totalUSD, orderData.totalARS);
-    const shipDual = formatDualPrice(shipUSD, shipARS);
     const rule = orderData.discountRule;
     const hasDiscount = !!(rule && orderData.discountARS > 0);
-    const subDual = formatDualPrice(orderData.subtotalUSD, orderData.subtotalARS);
-    const discDual = formatDualPrice(orderData.discountUSD, orderData.discountARS);
+
+    const subFormatted = isUSD ? formatUSD(orderData.subtotalUSD) : formatARS(orderData.subtotalARS);
+    const shipFormatted = shipARS === 0 ? 'GRATIS' : (isUSD ? formatUSD(shipUSD) : formatARS(shipARS));
+    const discFormatted = isUSD ? formatUSD(orderData.discountUSD) : formatARS(orderData.discountARS);
+    const totFormatted = isUSD ? formatUSD(orderData.totalUSD) : formatARS(orderData.totalARS);
 
     const discountBox = rule ? `
       <div class="discount-applied">
-        <div class="discount-applied__info">
-          <strong class="discount-applied__code">${escapeHTML(rule.code)} aplicado</strong>
-          <span class="discount-applied__desc">${escapeHTML(describeRule(rule))}</span>
-        </div>
+        <strong class="discount-applied__label">DESCUENTO APLICADO</strong>
         <button type="button" class="discount-remove" id="discountRemoveBtn">QUITAR</button>
       </div>
     ` : `
       <form class="discount-row" id="discountForm" novalidate>
-        <input type="text" id="inputDiscount" class="form-input" maxlength="24" placeholder="Ej: POPPER10" value="${escapeHTML(discountDraft)}" autocomplete="off" autocapitalize="characters" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="Código de descuento" />
+        <input type="text" id="inputDiscount" class="form-input" maxlength="24" placeholder="Ingresá tu código" value="${escapeHTML(discountDraft)}" autocomplete="off" autocapitalize="characters" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="Código de descuento" />
         <button type="submit" class="cart-btn cart-btn--secondary discount-apply">APLICAR</button>
       </form>
     `;
@@ -1939,56 +1940,49 @@
 
       <div class="cart-drawer__body">
         ${noticeHTML()}
-        <div class="checkout-section discount-box">
-          <span class="section-label">CÓDIGO DE DESCUENTO</span>
-          ${discountBox}
-          <p class="discount-msg" id="discountMsg" role="status" ${discountMessage ? '' : 'hidden'}>${escapeHTML(discountMessage)}</p>
-        </div>
 
-        <div class="checkout-section" style="margin-top: 24px;">
+        <div class="checkout-section">
           <span class="section-label">RESUMEN DEL PEDIDO</span>
           <div class="order-spec-table">
             <div class="order-spec-items">
               ${pay.map(item => {
-                const dual = formatDualPrice(lineUSD(item), lineARS(item));
+                const priceFormatted = isUSD ? formatUSD(lineUSD(item)) : formatARS(lineARS(item));
                 const qty = qtyOf(item);
-                const pct = discountPctFor(item, orderData.discountRule);
                 return `
                 <div class="order-spec-row order-spec-row--item">
-                  <span class="order-spec-item-title">${qty > 1 ? `${qty} × ` : ''}${escapeHTML(item.title)}${pct ? ` <span class="discount-pct-tag">${pct}% OFF</span>` : ''}</span>
-                  <span class="order-spec-item-price">${escapeHTML(dual.primary)} <span class="price-alt">(${escapeHTML(dual.secondary)})</span></span>
+                  <span class="order-spec-item-title">${qty > 1 ? `${qty} × ` : ''}${escapeHTML(item.title)}</span>
+                  <span class="order-spec-item-price">${escapeHTML(priceFormatted)}</span>
                 </div>
               `;}).join('')}
             </div>
-            ${hasDiscount ? `
-              <div class="order-spec-row">
-                <span>Subtotal</span>
-                <span>${escapeHTML(subDual.primary)} <span class="price-alt">(${escapeHTML(subDual.secondary)})</span></span>
-              </div>
-              <div class="order-spec-row order-spec-row--discount">
-                <span>Descuento ${escapeHTML(orderData.discountCode)}</span>
-                <span>−${escapeHTML(discDual.primary)} <span class="price-alt">(−${escapeHTML(discDual.secondary)})</span></span>
-              </div>
-            ` : ''}
+            <div class="order-spec-row">
+              <span>Subtotal</span>
+              <span>${escapeHTML(subFormatted)}</span>
+            </div>
             <div class="order-spec-row">
               <span>${escapeHTML(deliveryLabel(orderData.deliveryType))}</span>
-              <span>${shipARS === 0 ? 'GRATIS' : `${escapeHTML(shipDual.primary)} <span class="price-alt">(${escapeHTML(shipDual.secondary)})</span>`}</span>
+              <span>${escapeHTML(shipFormatted)}</span>
             </div>
+            ${hasDiscount ? `
+              <div class="order-spec-row order-spec-row--discount">
+                <span>Descuento (${escapeHTML(orderData.discountCode)})</span>
+                <span>−${escapeHTML(discFormatted)}</span>
+              </div>
+            ` : ''}
             <div class="order-spec-divider"></div>
             <div class="order-spec-row order-spec-row--total">
               <span>TOTAL A ABONAR</span>
               <div class="order-spec-total-val">
-                <strong>${escapeHTML(totDual.primary)}</strong>
-                <small>(${escapeHTML(totDual.secondary)})</small>
+                <strong>${escapeHTML(totFormatted)}</strong>
               </div>
             </div>
           </div>
-          ${consult.length ? `
-            <div class="checkout-consult-alert" role="note">
-              <strong>A consultar · fuera del total</strong>
-              <span>${escapeHTML(consult.map(it => it.title).join(', '))}</span>
-            </div>
-          ` : ''}
+        </div>
+
+        <div class="checkout-section discount-box" style="margin-top: 24px;">
+          <span class="section-label">CÓDIGO DE DESCUENTO</span>
+          ${discountBox}
+          <p class="discount-msg" id="discountMsg" role="status" ${discountMessage ? '' : 'hidden'}>${escapeHTML(discountMessage)}</p>
         </div>
 
         <div class="checkout-section" style="margin-top: 24px;">
@@ -2033,15 +2027,22 @@
 
     drawer.querySelectorAll('input[name="paymentChoice"]').forEach(r => {
       r.addEventListener('change', (e) => {
+        orderData.paymentMethodTouched = true;
         orderData.paymentMethod = e.target.value;
-        drawer.querySelectorAll('.payment-row').forEach(c => c.classList.remove('is-selected'));
-        e.target.closest('.payment-row').classList.add('is-selected');
+        const prevBody = drawer.querySelector('.cart-drawer__body');
+        const prevScroll = prevBody ? prevBody.scrollTop : 0;
+        renderStepPaymentSelect(drawer);
+        const newBody = drawer.querySelector('.cart-drawer__body');
+        if (newBody && prevScroll) newBody.scrollTop = prevScroll;
       });
     });
 
     const discountForm = drawer.querySelector('#discountForm');
     if (discountForm) {
       const input = discountForm.querySelector('#inputDiscount');
+      input.addEventListener('input', () => {
+        discountDraft = input.value;
+      });
       input.addEventListener('focus', () => {
         setTimeout(() => {
           if (document.activeElement === input) input.scrollIntoView({ block: 'center', behavior: 'smooth' });
@@ -2088,6 +2089,7 @@
         if (isSubmitting) return;
         clearDiscount();
         discountMessage = '';
+        recomputeTotals();
         renderStepPaymentSelect(drawer);
         refocus('#inputDiscount');
       });
@@ -2206,7 +2208,7 @@
 
         <div class="payment-total-callout">
           <span class="callout-label">IMPORTE A TRANSFERIR</span>
-          <strong class="callout-val">${escapeHTML(totFormatted)} <span class="callout-val-secondary">(${escapeHTML(totAlt)})</span></strong>
+          <strong class="callout-val">${escapeHTML(totFormatted)}</strong>
         </div>
 
         ${isUSD ? `
@@ -2263,15 +2265,8 @@
             </div>
             <div class="spec-row">
               <span class="spec-label">MONTO</span>
-              <span class="spec-val">${escapeHTML(totFormatted)} <span class="spec-val-secondary">(${escapeHTML(totAlt)})</span></span>
+              <span class="spec-val">${escapeHTML(totFormatted)}</span>
             </div>
-          </div>
-        ` : ''}
-
-        ${lo.consult && lo.consult.length ? `
-          <div class="checkout-consult-alert" role="note">
-            <strong>A consultar · fuera del importe</strong>
-            <span>${escapeHTML(lo.consult.map(it => it.title).join(', '))}. Te confirmamos el stock por WhatsApp.</span>
           </div>
         ` : ''}
 
