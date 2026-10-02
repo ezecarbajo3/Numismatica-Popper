@@ -5,6 +5,6 @@
     "percent": 10,
     "highPrice": { "overUSD": 50, "percent": 5 },
     "active": true,
-    "expires": null
+    "expires": "2026-10-02"
   }
 }

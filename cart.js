@@ -467,24 +467,26 @@
     return String(raw || '').normalize('NFKC').replace(/\s+/g, '').toUpperCase();
   }
 
-  // Devuelve la regla normalizada o null si el código no existe / está apagado / venció.
-  function parseDiscountRule(code, raw) {
-    if (!raw || typeof raw !== 'object' || raw.active === false) return null;
-    const percent = Number(raw.percent);
-    if (!Number.isFinite(percent) || percent <= 0 || percent > 100) return null;
+  // Devuelve { status: 'ok', rule }, { status: 'expired' } o { status: 'invalid' }
+  function evaluateDiscountRule(code, raw) {
+    if (!raw || typeof raw !== 'object' || raw.active === false) return { status: 'invalid' };
     if (raw.expires) {
       const end = new Date(`${raw.expires}T23:59:59-03:00`);
-      if (!isNaN(end.getTime()) && Date.now() > end.getTime()) return null;
+      if (!isNaN(end.getTime()) && Date.now() > end.getTime()) {
+        return { status: 'expired' };
+      }
     }
+    const percent = Number(raw.percent);
+    if (!Number.isFinite(percent) || percent <= 0 || percent > 100) return { status: 'invalid' };
     const rule = { code, label: String(raw.label || '').trim(), percent, highPrice: null };
     const hp = raw.highPrice;
     if (hp && Number(hp.overUSD) > 0 && Number.isFinite(Number(hp.percent)) && Number(hp.percent) >= 0) {
       rule.highPrice = { overUSD: Number(hp.overUSD), percent: Number(hp.percent) };
     }
-    return rule;
+    return { status: 'ok', rule };
   }
 
-  // 'ok' → {rule} · 'invalid' → código inexistente/vencido · 'network' → no se pudo consultar.
+  // 'ok' → {rule} · 'expired' → vencido · 'invalid' → no existe/inactivo · 'network' → no se pudo consultar.
   async function fetchDiscountRule(rawCode) {
     const code = normalizeCode(rawCode);
     if (!/^[A-Z0-9_-]{3,24}$/.test(code)) return { status: 'invalid' };
@@ -495,8 +497,8 @@
       if (!res.ok) return { status: 'network' };
       const data = await res.json();
       const key = Object.keys(data || {}).find(k => !k.startsWith('_') && normalizeCode(k) === code);
-      const rule = key ? parseDiscountRule(code, data[key]) : null;
-      return rule ? { status: 'ok', rule } : { status: 'invalid' };
+      if (!key) return { status: 'invalid' };
+      return evaluateDiscountRule(code, data[key]);
     } catch (_) {
       return { status: 'network' };
     } finally {
@@ -2074,10 +2076,12 @@
             clearDiscount();
             discountMessage = 'Este código no aplica a las piezas de tu carrito.';
           }
+        } else if (result.status === 'expired') {
+          discountMessage = 'El código ingresado ya venció.';
+        } else if (result.status === 'network') {
+          discountMessage = 'No pudimos verificar el código ahora. Probá de nuevo en unos segundos.';
         } else {
-          discountMessage = result.status === 'network'
-            ? 'No pudimos verificar el código ahora. Probá de nuevo en unos segundos.'
-            : 'El código no es válido o ya venció.';
+          discountMessage = 'El código ingresado no es válido.';
         }
         renderStepPaymentSelect(live);
         if (!orderData.discountRule) refocus('#inputDiscount');
@@ -2114,10 +2118,12 @@
       if (orderData.discountRule) {
         const before = orderData.discountARS;
         const res = await fetchDiscountRule(orderData.discountCode);
-        if (res.status === 'invalid') {
+        if (res.status === 'invalid' || res.status === 'expired') {
           clearDiscount();
           setSubmitting(false);
-          setNotice('El código de descuento ya no es válido. Revisá el nuevo total antes de confirmar.');
+          setNotice(res.status === 'expired'
+            ? 'El código de descuento ya venció. Revisá el nuevo total antes de confirmar.'
+            : 'El código de descuento ya no es válido. Revisá el nuevo total antes de confirmar.');
           renderDrawerContent();
           return;
         }
