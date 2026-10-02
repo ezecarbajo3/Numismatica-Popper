@@ -389,7 +389,9 @@
     "description": "",
     "group_id": "ar-5centavos-cuproniquel",
     "group_label": "5 Centavos cuproníquel",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
     "id": 50,
@@ -957,7 +959,9 @@
     "peso": 5.0,
     "diametro": 25.0,
     "description": "Agujero centrado.",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
     "id": 157,
@@ -1750,7 +1754,9 @@
     "description": "",
     "group_id": "ch-10rappen-km27",
     "group_label": "10 Rappen",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
     "id": 263,
@@ -4855,7 +4861,9 @@
     "group_label": "Cent 1878-1884",
     "peso": 2.5,
     "diametro": 19.0,
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
     "id": 589,
@@ -9658,7 +9666,7 @@
     "description": "",
     "publishedAt": "2026-08-08T19:21:22.539465+00:00",
     "costo": 2.41,
-    "cantidad": 5
+    "cantidad": 4
   },
   {
     "id": 1057,
@@ -11958,7 +11966,9 @@
     "description": "Emisión con orificio central. Barco fenicio de vela y Cedro del Líbano.",
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
     "costo": 2.5,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
     "id": 1264,
@@ -11980,7 +11990,9 @@
     "description": "Patrimonio Mundial de la UNESCO - Monte Taishan (Monte Tai). Moneda de forma cuadrada con bordes redondeados.",
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
     "costo": 4.0,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
     "id": 1265,
@@ -12818,7 +12830,9 @@
     "description": "",
     "publishedAt": "2026-09-04T19:05:07.645274+00:00",
     "costo": 4.21,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
     "id": 1297,
@@ -12885,7 +12899,9 @@
     "description": "",
     "publishedAt": "2026-09-04T19:05:07.645274+00:00",
     "costo": 4.22,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
     "id": 1300,
@@ -12975,8 +12991,10 @@
     "group_id": "sa-100-liras",
     "group_label": "100 Liras",
     "costo": 3.57,
-    "cantidad": 1,
-    "commemorates": "F.A.O."
+    "cantidad": 0,
+    "commemorates": "F.A.O.",
+    "status": "sold",
+    "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
     "id": 1304,
@@ -14006,7 +14024,9 @@
     "publishedAt": "2026-09-09T19:39:13.699367+00:00",
     "group_id": "mx-1peso-morelos",
     "group_label": "1 Peso Morelos",
-    "costo": 4.35
+    "costo": 4.35,
+    "status": "sold",
+    "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
     "id": 1348,
