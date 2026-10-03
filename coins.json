@@ -1581,7 +1581,9 @@
     "description": "",
     "group_id": "ch-10rappen-km27",
     "group_label": "10 Rappen",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-03T22:05:01.079312+00:00"
   },
   {
     "id": 262,
@@ -2755,7 +2757,9 @@
       "images/400B.jpeg"
     ],
     "reference": "KM# 374",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-03T22:05:01.079312+00:00"
   },
   {
     "id": 401,
@@ -5474,7 +5478,9 @@
       "images/671A.jpeg",
       "images/671B.jpeg"
     ],
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-03T22:05:01.079312+00:00"
   },
   {
     "id": 675,
@@ -5507,7 +5513,9 @@
       "images/676B.jpeg"
     ],
     "reference": "KM# 647",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-03T22:05:01.079312+00:00"
   },
   {
     "id": 678,
@@ -5540,7 +5548,9 @@
     "group_id": "uk-penny-bronze",
     "group_label": "Penny",
     "reference": "KM# 755",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-03T22:05:01.079312+00:00"
   },
   {
     "id": 683,
