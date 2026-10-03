@@ -15506,7 +15506,9 @@
     "diametro": "22",
     "description": "Ciudades de Gloria Militar - Tikhvin",
     "publishedAt": "2026-10-02T02:00:24.441489+00:00",
-    "costo": 2
+    "costo": 2,
+    "status": "sold",
+    "soldAt": "2026-10-03T00:05:21.032421+00:00"
   },
   {
     "id": 1502,
