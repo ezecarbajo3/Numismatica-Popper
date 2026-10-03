@@ -5783,7 +5783,9 @@
     "mintage": "6.000.000",
     "group_id": "py-10centimos",
     "group_label": "10 Centimos",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-03T23:10:47.878096+00:00"
   },
   {
     "id": 697,
@@ -5856,7 +5858,7 @@
     "mintage": "20.000.000",
     "group_id": "cr-5centimos",
     "group_label": "5 Centimos",
-    "cantidad": 2,
+    "cantidad": 1,
     "costo": 0
   },
   {
@@ -6123,7 +6125,9 @@
     "grade_short": "EX",
     "group_id": "cl-2centesimos",
     "group_label": "2 Centesimos",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-03T23:10:47.878096+00:00"
   },
   {
     "id": 723,
@@ -6141,7 +6145,9 @@
     "grade_short": "EX",
     "group_id": "cl-2centesimos",
     "group_label": "2 Centesimos",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-03T23:10:47.878096+00:00"
   },
   {
     "id": 725,
@@ -7609,7 +7615,7 @@
     "grade_short": "EX",
     "group_id": "dk-1krone",
     "group_label": "1 Krone",
-    "cantidad": 6
+    "cantidad": 4
   },
   {
     "id": 863,
@@ -7866,7 +7872,7 @@
     "reference": "KM# 852",
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 7,
+    "cantidad": 6,
     "peso": 7,
     "diametro": 25,
     "costo": 0
@@ -9635,7 +9641,9 @@
     "publishedAt": "2026-08-22T01:12:55.339717+00:00",
     "group_id": "de-1-deutsche-mark",
     "group_label": "1 Deutsche Mark",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-03T23:10:47.878096+00:00"
   },
   {
     "id": 1138,
@@ -11078,7 +11086,9 @@
     "description": "Príncipe Diponegoro, héroe nacional de Indonesia, y escudo de armas con el águila Garuda Pancasila.",
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
     "costo": 0.5,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-03T23:10:47.878096+00:00"
   },
   {
     "id": 1261,
@@ -13726,7 +13736,7 @@
     "description": "Año Aleatorio",
     "publishedAt": "2026-09-18T18:46:07.758513+00:00",
     "costo": 0.39,
-    "cantidad": 4
+    "cantidad": 2
   },
   {
     "id": 1428,
@@ -13814,7 +13824,7 @@
     "description": "Año Aleatorio",
     "publishedAt": "2026-09-18T18:46:07.758513+00:00",
     "costo": 0.39,
-    "cantidad": 13
+    "cantidad": 12
   },
   {
     "id": 1432,
@@ -13836,7 +13846,7 @@
     "description": "Año Aleatorio",
     "publishedAt": "2026-09-18T18:46:07.758513+00:00",
     "costo": 0.39,
-    "cantidad": 5
+    "cantidad": 4
   },
   {
     "id": 1433,
