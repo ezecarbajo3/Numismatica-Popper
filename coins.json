@@ -13367,7 +13367,9 @@
     "diametro": "25",
     "description": "Acuñada en 1939 en la ceca de Múnich, esta pieza pertenece al último año en que el Tercer Reich emitió plata para circulación general antes de que estallara la Segunda Guerra Mundial y los metales nobles fueran destinados íntegramente al complejo bélico. Con el avance de la contienda, la población atesoró masivamente estas monedas y el Estado fundió gran parte de las reservas, convirtiéndola en un testimonio numismático directo del preludio del mayor conflicto del siglo XX.",
     "publishedAt": "2026-09-11T22:07:41.318290+00:00",
-    "costo": 20
+    "costo": 20,
+    "status": "sold",
+    "soldAt": "2026-10-03T15:32:12.874114+00:00"
   },
   {
     "id": 1405,
