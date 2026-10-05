@@ -5509,7 +5509,9 @@
       "images/675A.jpeg",
       "images/675B.jpeg"
     ],
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-05T14:02:19.296090+00:00"
   },
   {
     "id": 676,
@@ -7519,10 +7521,12 @@
     "group_label": "Kurus 2022",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 1,
+    "cantidad": 0,
     "description": "Plutón",
     "reference": "KM# 1540",
-    "metal": "Aluminio"
+    "metal": "Aluminio",
+    "status": "sold",
+    "soldAt": "2026-10-05T14:02:19.296090+00:00"
   },
   {
     "id": 855,
@@ -9641,7 +9645,9 @@
     "grade_short": "MB",
     "description": "Ocupación Alemana (Segunda Guerra Mundial) - Tres tulipanes.",
     "publishedAt": "2026-08-21T16:59:56.406985+00:00",
-    "costo": 1.29
+    "costo": 1.29,
+    "status": "sold",
+    "soldAt": "2026-10-05T14:02:19.296090+00:00"
   },
   {
     "id": 1137,
