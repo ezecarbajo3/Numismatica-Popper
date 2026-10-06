@@ -1205,7 +1205,7 @@
     "group_id": "be-25cents-wwii",
     "group_label": "25 Cents WWII",
     "costo": 0,
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 192,
@@ -1392,7 +1392,9 @@
     "reference": "KM# 132",
     "group_id": "be-25cents-wwii",
     "group_label": "25 Cents WWII",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-06T17:06:04.280661+00:00"
   },
   {
     "id": 232,
@@ -4559,7 +4561,9 @@
     "metal": "Cuproníquel",
     "reference": "KM# 66",
     "description": "Variante belgique",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-06T17:06:04.280661+00:00"
   },
   {
     "id": 579,
@@ -4697,7 +4701,9 @@
     "metal": "Cuproníquel",
     "reference": "KM# 52",
     "description": "Belgique",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-06T17:06:04.280661+00:00"
   },
   {
     "id": 597,
@@ -9122,9 +9128,11 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "mintage": 15000000,
-    "cantidad": 1,
+    "cantidad": 0,
     "description": "",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-06T17:06:04.280661+00:00"
   },
   {
     "id": 1032,
@@ -9163,7 +9171,9 @@
     "grade_short": "MB-",
     "mintage": 20000000,
     "description": "",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-06T17:06:04.280661+00:00"
   },
   {
     "id": 1050,
@@ -9707,7 +9717,9 @@
     "grade_short": "MB",
     "description": "Moneda colonial de 5 Francos con palmera africana y escudo coronado de Bélgica.",
     "publishedAt": "2026-08-22T01:12:55.339717+00:00",
-    "costo": 1.19
+    "costo": 1.19,
+    "status": "sold",
+    "soldAt": "2026-10-06T17:06:04.280661+00:00"
   },
   {
     "id": 1140,
