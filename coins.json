@@ -16082,5 +16082,93 @@
     "cantidad": 0,
     "status": "sold",
     "soldAt": "2026-10-02T22:18:59.525327+00:00"
+  },
+  {
+    "id": 1523,
+    "title": "2 Centavos 1894",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1894,
+    "price": "10 USD",
+    "images": [
+      "images/1523A.jpeg",
+      "images/1523B.jpeg"
+    ],
+    "reference": "KM# 33",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 2233000,
+    "peso": "10",
+    "diametro": "30",
+    "description": "",
+    "publishedAt": "2026-10-07T22:58:17.159910+00:00",
+    "group_id": "ar-2centavos-patacon",
+    "group_label": "2 Centavos Patacón",
+    "costo": 1.93
+  },
+  {
+    "id": 1524,
+    "title": "2 Reales 1860",
+    "country": "Buenos Aires",
+    "metal": "Cobre",
+    "year": 1860,
+    "price": "19.5 USD",
+    "images": [
+      "images/1524A.jpeg",
+      "images/1524B.jpeg"
+    ],
+    "reference": "KM# 11",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": "",
+    "peso": "7.6",
+    "diametro": "32",
+    "description": "",
+    "publishedAt": "2026-10-07T22:58:17.159910+00:00",
+    "costo": 16.01
+  },
+  {
+    "id": 1525,
+    "title": "20 Centavos 1961",
+    "country": "Argentina",
+    "metal": "Níquel",
+    "year": 1961,
+    "price": "10 USD",
+    "images": [
+      "images/1525A.jpeg",
+      "images/1525B.jpeg"
+    ],
+    "reference": "CJ# 263-267",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 2082803,
+    "peso": "4",
+    "diametro": "21",
+    "description": "",
+    "publishedAt": "2026-10-07T22:58:17.159910+00:00",
+    "costo": 6.37
+  },
+  {
+    "id": 1526,
+    "title": "2 Centavos 1944",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1944,
+    "price": "10.5 USD",
+    "images": [
+      "images/1526A.jpeg",
+      "images/1526B.jpeg"
+    ],
+    "reference": "CJ# 174-181",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 387072,
+    "peso": "3.4",
+    "diametro": "20",
+    "description": "",
+    "publishedAt": "2026-10-07T22:58:17.159910+00:00",
+    "group_id": "ar-2centavos-bronce",
+    "group_label": "2 Centavos Bronce",
+    "costo": 7.72
   }
 ]
