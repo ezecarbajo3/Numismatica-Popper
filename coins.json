@@ -16173,6 +16173,8 @@
     "group_id": "ar-2centavos-bronce",
     "group_label": "2 Centavos Bronce",
     "costo": 7.72,
-    "cantidad": 2
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-07T23:49:31.518015+00:00"
   }
 ]
