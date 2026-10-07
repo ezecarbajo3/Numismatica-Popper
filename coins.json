@@ -16146,7 +16146,8 @@
     "diametro": "21",
     "description": "",
     "publishedAt": "2026-10-07T22:58:17.159910+00:00",
-    "costo": 6.37
+    "costo": 6.37,
+    "cantidad": 5
   },
   {
     "id": 1526,
@@ -16169,6 +16170,7 @@
     "publishedAt": "2026-10-07T22:58:17.159910+00:00",
     "group_id": "ar-2centavos-bronce",
     "group_label": "2 Centavos Bronce",
-    "costo": 7.72
+    "costo": 7.72,
+    "cantidad": 2
   }
 ]
