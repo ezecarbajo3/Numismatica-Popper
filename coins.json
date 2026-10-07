@@ -15122,7 +15122,9 @@
     "publishedAt": "2026-09-30T01:27:02.928494+00:00",
     "group_id": "ar-1centavo-patacon",
     "group_label": "1 Centavo Patacón",
-    "costo": 19.23
+    "costo": 19.23,
+    "status": "sold",
+    "soldAt": "2026-10-07T19:37:51.365485+00:00"
   },
   {
     "id": 1481,
