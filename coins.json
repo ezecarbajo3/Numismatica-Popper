@@ -5890,8 +5890,10 @@
     "mintage": "20.000.000",
     "group_id": "cr-5centimos",
     "group_label": "5 Centimos",
-    "cantidad": 1,
-    "costo": 0
+    "cantidad": 0,
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-07T19:26:04.378339+00:00"
   },
   {
     "id": 702,
@@ -5909,7 +5911,7 @@
     "grade_short": "MB",
     "group_id": "cr-5centimos",
     "group_label": "5 Centimos",
-    "cantidad": 2,
+    "cantidad": 1,
     "costo": 0
   },
   {
