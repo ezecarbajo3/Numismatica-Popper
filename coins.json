@@ -212,7 +212,9 @@
     "description": "Indian Head.",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-07T19:07:45.325322+00:00"
   },
   {
     "id": 29,
@@ -281,7 +283,9 @@
     "original_price": "22 USD",
     "group_id": "us-cent-km90",
     "group_label": "Indian Head Cent",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-07T19:07:45.325322+00:00"
   },
   {
     "id": 34,
