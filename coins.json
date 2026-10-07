@@ -7210,7 +7210,9 @@
     ],
     "reference": "KM# 166.1",
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "status": "sold",
+    "soldAt": "2026-10-07T23:48:43.366483+00:00"
   },
   {
     "id": 823,
@@ -8712,7 +8714,7 @@
   {
     "id": 973,
     "costo": 6.47,
-    "cantidad": 2,
+    "cantidad": 1,
     "title": "Blister 1 y 10 Dinar 1976 FAO",
     "country": "Yugoslavia",
     "metal": "Cuproníquel",
