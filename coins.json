@@ -4306,7 +4306,9 @@
     "description": "Jorge.",
     "group_id": "uk-penny-bronze",
     "group_label": "Penny",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-07T19:30:32.459194+00:00"
   },
   {
     "id": 557,
