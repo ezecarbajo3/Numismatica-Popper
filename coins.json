@@ -14577,7 +14577,9 @@
     "diametro": "24",
     "description": "",
     "publishedAt": "2026-09-28T23:48:07.353625+00:00",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-07T22:35:13.330549+00:00"
   },
   {
     "id": 1456,
@@ -14619,7 +14621,9 @@
     "diametro": "",
     "description": "",
     "publishedAt": "2026-09-28T23:48:07.353625+00:00",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-07T22:35:13.330549+00:00"
   },
   {
     "id": 1458,
