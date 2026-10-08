@@ -7529,10 +7529,12 @@
     "group_label": "Kurus 2022",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 1,
+    "cantidad": 0,
     "description": "Neptuno",
     "reference": "KM# 1539",
-    "metal": "Aluminio"
+    "metal": "Aluminio",
+    "status": "sold",
+    "soldAt": "2026-10-07T22:04:25.704568-03:00"
   },
   {
     "id": 854,
