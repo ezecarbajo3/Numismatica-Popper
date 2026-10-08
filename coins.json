@@ -1089,7 +1089,9 @@
     "peso": 12,
     "diametro": 30,
     "description": "Carlos I.",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-07T22:04:07.792186-03:00"
   },
   {
     "id": 183,
