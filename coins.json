@@ -8641,28 +8641,24 @@
     "reference": "KM# 910",
     "commemorates": "Sir Winston Churchill",
     "description": "Conmemora a Sir Winston Churchill.",
-    "group_id": "uk-1crown-1965",
-    "group_label": "1 Crown 1965 - Churchill",
     "costo": 1.31
   },
   {
     "id": 992,
-    "title": "1 Crown 1965",
+    "title": "1 Crown 1953",
     "country": "Reino Unido",
     "metal": "Cuproníquel",
-    "year": 1965,
-    "price": "6.5 USD",
+    "year": 1953,
+    "price": "13 USD",
     "images": [
       "images/992A.jpeg",
       "images/992B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "reference": "KM# 910",
-    "commemorates": "Sir Winston Churchill",
-    "description": "Conmemora a Sir Winston Churchill.",
-    "group_id": "uk-1crown-1965",
-    "group_label": "1 Crown 1965 - Churchill",
+    "reference": "KM# 894",
+    "commemorates": "Coronación de la reina Isabel II, 1953",
+    "description": "Coronación de la reina Isabel II, 1953.",
     "costo": 1.31
   },
   {
