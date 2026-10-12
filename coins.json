@@ -12680,7 +12680,9 @@
     "diametro": "38.1",
     "description": "Dólar Morgan",
     "publishedAt": "2026-09-09T21:32:20.624900+00:00",
-    "costo": 57.79
+    "costo": 57.79,
+    "status": "sold",
+    "soldAt": "2026-10-12T20:23:45.410522+00:00"
   },
   {
     "id": 1387,
