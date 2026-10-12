@@ -2318,7 +2318,9 @@
     "grade_short": "SC-",
     "group_id": "ar-20centavos-1882",
     "group_label": "20 Centavos 1882",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-12T23:43:25.578935+00:00"
   },
   {
     "id": 368,
@@ -11876,9 +11878,11 @@
     "description": "",
     "publishedAt": "2026-09-04T21:53:04.537068+00:00",
     "costo": 16.83,
-    "cantidad": 1,
+    "cantidad": 0,
     "group_id": "ar-10centavos-1883",
-    "group_label": "10 Centavos 1883"
+    "group_label": "10 Centavos 1883",
+    "status": "sold",
+    "soldAt": "2026-10-12T23:43:25.578935+00:00"
   },
   {
     "id": 1317,
@@ -12273,7 +12277,9 @@
     "description": "",
     "publishedAt": "2026-09-07T14:44:12.993856+00:00",
     "group_id": "ar-10centavos-1882",
-    "group_label": "10 Centavos 1882"
+    "group_label": "10 Centavos 1882",
+    "status": "sold",
+    "soldAt": "2026-10-12T23:43:25.578935+00:00"
   },
   {
     "id": 1345,
