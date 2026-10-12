@@ -1124,7 +1124,9 @@
     "grade_short": "EX",
     "mintage": "",
     "description": "Argentina",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-12T20:42:05.020564+00:00"
   },
   {
     "id": 189,
@@ -4560,7 +4562,9 @@
     "metal": "Cobre",
     "reference": "KM# 47",
     "mintage": "5.202.040",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-12T20:42:05.020564+00:00"
   },
   {
     "id": 590,
@@ -8000,7 +8004,9 @@
     "grade_short": "MB",
     "description": "El régimen de Vichy fue el gobierno francés que colaboró con la Alemania nazi entre 1940 y 1944, tras la derrota de Francia en la Segunda Guerra Mundial. Con sede en la ciudad de Vichy y liderado por el mariscal Philippe Pétain, controló la llamada \"Francia libre\" (zona sur no ocupada) mientras el norte quedaba bajo ocupación alemana directa.",
     "reference": "KM# 903",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-12T20:42:05.020564+00:00"
   },
   {
     "id": 927,
@@ -8957,7 +8963,9 @@
     "description": "Alemania Nazi",
     "publishedAt": "2026-08-08T19:21:22.539465+00:00",
     "costo": 2.41,
-    "cantidad": 3
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-12T20:42:05.020564+00:00"
   },
   {
     "id": 1055,
@@ -12442,8 +12450,10 @@
     "description": "Mercury Dime",
     "publishedAt": "2026-09-09T20:41:29.872932+00:00",
     "costo": 3.9,
-    "cantidad": 1,
-    "commemorates": "Mercury Dime"
+    "cantidad": 0,
+    "commemorates": "Mercury Dime",
+    "status": "sold",
+    "soldAt": "2026-10-12T20:42:05.020564+00:00"
   },
   {
     "id": 1364,
@@ -13754,7 +13764,7 @@
     "description": "",
     "publishedAt": "2026-09-18T18:46:07.758513+00:00",
     "costo": 2.58,
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": "R18",
@@ -14246,7 +14256,9 @@
     "diametro": "23",
     "description": "",
     "publishedAt": "2026-09-28T23:48:07.353625+00:00",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-12T20:42:05.020564+00:00"
   },
   {
     "id": 1455,
@@ -15796,7 +15808,9 @@
     "publishedAt": "2026-10-07T22:58:17.159910+00:00",
     "group_id": "ar-2centavos-1894",
     "group_label": "2 Centavos 1894",
-    "costo": 1.93
+    "costo": 1.93,
+    "status": "sold",
+    "soldAt": "2026-10-12T20:42:05.020564+00:00"
   },
   {
     "id": 1524,
