@@ -11906,7 +11906,9 @@
     "description": "Acuñada en la ceca de Constantinopla bajo el sultán Abdul Hamid II (1876–1909), último gobernante autocrático del Imperio Otomano. Lleva el año de entronización AH 1293 y año regnal 26 (1900 d.C.) en vellón de plata. En el anverso luce la tughra caligráfica con el título 'El-Ghazi' (El Victorioso), reflejando la era hamidiana previa a la Revolución de los Jóvenes Turcos.",
     "publishedAt": "2026-09-04T21:53:04.537068+00:00",
     "costo": 7.32,
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-15T00:29:55.895187+00:00"
   },
   {
     "id": 1318,
