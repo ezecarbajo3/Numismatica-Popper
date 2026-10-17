@@ -5076,22 +5076,6 @@
     "costo": 0
   },
   {
-    "id": 652,
-    "title": "Centavo 1948 (Descentrada)",
-    "country": "Argentina",
-    "year": 1948,
-    "price": "4 USD",
-    "images": [
-      "images/652A.jpeg",
-      "images/652B.jpeg"
-    ],
-    "reference": "CJ# 195",
-    "metal": "Cobre",
-    "grade": "Excelente -",
-    "grade_short": "EX-",
-    "costo": 0
-  },
-  {
     "id": 655,
     "title": "5 Centavos 1934",
     "country": "Perú",
@@ -5275,7 +5259,8 @@
     "group_id": "uk-1penny-1921",
     "group_label": "1 Penny 1921",
     "reference": "KM# 810",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 668,
@@ -5448,8 +5433,7 @@
       "images/685B.jpeg"
     ],
     "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-10-03T22:08:10.278464+00:00"
+    "cantidad": 1
   },
   {
     "id": 686,
@@ -5485,7 +5469,8 @@
     ],
     "group_id": "uy-2centesimos-1924",
     "group_label": "2 Centésimos 1924",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 7
   },
   {
     "id": 688,
@@ -5504,7 +5489,8 @@
     ],
     "group_id": "uy-2centesimos-1936",
     "group_label": "2 Centésimos 1936",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 3
   },
   {
     "id": 690,
@@ -5538,7 +5524,8 @@
       "images/691A.jpeg",
       "images/691B.jpeg"
     ],
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 692,
@@ -5573,8 +5560,7 @@
       "images/693B.jpeg"
     ],
     "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-10-03T22:08:10.278464+00:00"
+    "cantidad": 1
   },
   {
     "id": 695,
@@ -5610,8 +5596,7 @@
     "grade_short": "EX",
     "mintage": "6.000.000",
     "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-10-03T23:10:47.878096+00:00"
+    "cantidad": 2
   },
   {
     "id": 697,
@@ -5644,7 +5629,8 @@
     "reference": "KM# 21",
     "grade": "Sin Circular -",
     "grade_short": "SC-",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 699,
@@ -5714,7 +5700,10 @@
     "reference": "KM# 184.2",
     "grade": "Excelente",
     "grade_short": "EX",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00",
+    "cantidad": 0
   },
   {
     "id": 704,
@@ -5732,7 +5721,7 @@
     "grade_short": "SC",
     "mintage": "3.060.000",
     "description": "Año único",
-    "cantidad": 5,
+    "cantidad": 7,
     "costo": 0
   },
   {
@@ -5748,7 +5737,8 @@
     "reference": "KM# 188.3",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 710,
@@ -5764,7 +5754,8 @@
     "grade": "Excelente +",
     "grade_short": "EX+",
     "description": "Año único",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 711,
@@ -5818,7 +5809,7 @@
   },
   {
     "id": 715,
-    "title": "20 Centavos 1938",
+    "title": "50 Centavos 1938",
     "country": "Paraguay",
     "metal": "Aluminio",
     "year": 1938,
@@ -5851,7 +5842,8 @@
     "description": "Año único",
     "costo": 0,
     "group_id": "py-2pesos-1938",
-    "group_label": "2 Pesos 1938"
+    "group_label": "2 Pesos 1938",
+    "cantidad": 3
   },
   {
     "id": 718,
@@ -5967,7 +5959,10 @@
     "reference": "KM# 191",
     "grade": "Excelente",
     "grade_short": "EX",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00",
+    "cantidad": 0
   },
   {
     "id": 727,
@@ -6680,7 +6675,10 @@
     "commemorates": "Bicentenario de la Independencia de Bolivia (1825-2025)",
     "reference": "KM# 225",
     "group_id": "bo-2bolivianos-2025",
-    "group_label": "2 Bolivianos 2025"
+    "group_label": "2 Bolivianos 2025",
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00",
+    "cantidad": 0
   },
   {
     "id": 783,
@@ -6785,8 +6783,10 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 1,
-    "reference": "KM# 33"
+    "cantidad": 0,
+    "reference": "KM# 33",
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00"
   },
   {
     "id": 800,
@@ -6801,7 +6801,7 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "cantidad": 2,
+    "cantidad": 1,
     "reference": "KM# 43"
   },
   {
@@ -7089,7 +7089,10 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia.",
-    "reference": "KM# 307.1"
+    "reference": "KM# 307.1",
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00",
+    "cantidad": 0
   },
   {
     "id": 837,
@@ -7105,7 +7108,10 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia.",
-    "reference": "KM# 307.1"
+    "reference": "KM# 307.1",
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00",
+    "cantidad": 0
   },
   {
     "id": 838,
@@ -7121,7 +7127,10 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia.",
-    "reference": "KM# 306"
+    "reference": "KM# 306",
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00",
+    "cantidad": 0
   },
   {
     "id": 839,
@@ -7137,7 +7146,10 @@
     "grade": "Regular +",
     "grade_short": "R+",
     "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia.",
-    "reference": "KM# 306"
+    "reference": "KM# 306",
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00",
+    "cantidad": 0
   },
   {
     "id": 841,
@@ -7152,8 +7164,10 @@
     ],
     "grade": "Regular",
     "grade_short": "R",
-    "cantidad": 2,
-    "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia."
+    "cantidad": 0,
+    "description": "Las Indias Orientales Neerlandesas fueron la colonia que los Países Bajos administraron en el sudeste asiático entre los siglos XVII y XX. Abarcaban la mayor parte del actual territorio de Indonesia y eran una de las principales fuentes de especias, caucho, petróleo y otros recursos. Tras la Segunda Guerra Mundial, lograron su independencia y dieron origen a la República de Indonesia.",
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00"
   },
   {
     "id": 845,
@@ -7393,10 +7407,10 @@
   {
     "id": 864,
     "costo": 0,
-    "title": "2 Ore 1961",
+    "title": "2 Ore 1970",
     "country": "Dinamarca",
     "metal": "Zinc",
-    "year": 1961,
+    "year": 1970,
     "price": "2.5 USD",
     "images": [
       "images/864A.jpeg",
@@ -7404,7 +7418,8 @@
     ],
     "reference": "KM# 840",
     "grade": "Muy Bueno +",
-    "grade_short": "MB+"
+    "grade_short": "MB+",
+    "cantidad": 2
   },
   {
     "id": 866,
@@ -7455,7 +7470,10 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "mintage": 4600000,
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00",
+    "cantidad": 0
   },
   {
     "id": 870,
@@ -7492,7 +7510,10 @@
     "reference": "KM# 17",
     "grade": "Bueno +",
     "grade_short": "B+",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00",
+    "cantidad": 0
   },
   {
     "id": 873,
@@ -7595,8 +7616,10 @@
     "reference": "Schön# 75",
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 1,
-    "costo": 0
+    "cantidad": 0,
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00"
   },
   {
     "id": 884,
@@ -7612,7 +7635,10 @@
     "reference": "KM# 778",
     "grade": "Excelente",
     "grade_short": "EX",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00",
+    "cantidad": 0
   },
   {
     "id": 885,
@@ -7697,7 +7723,8 @@
     ],
     "reference": "Y# 219",
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "cantidad": 3
   },
   {
     "id": 893,
@@ -7780,7 +7807,9 @@
     "grade": "Bueno -",
     "grade_short": "B-",
     "description": "Ceca Milán (M)",
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-17T15:54:58.340817+00:00"
   },
   {
     "id": 901,
@@ -7899,7 +7928,8 @@
     "grade_short": "EX",
     "reference": "KM# 73.2",
     "description": "Muestra el famoso Salón del Fénix del templo Byōdō-in en Uji en el anverso.",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 5
   },
   {
     "id": 918,
@@ -7957,8 +7987,7 @@
     "description": "El régimen de Vichy fue el gobierno francés que colaboró con la Alemania nazi entre 1940 y 1944, tras la derrota de Francia en la Segunda Guerra Mundial. Con sede en la ciudad de Vichy y liderado por el mariscal Philippe Pétain, controló la llamada \"Francia libre\" (zona sur no ocupada) mientras el norte quedaba bajo ocupación alemana directa.",
     "reference": "KM# 903",
     "costo": 0,
-    "status": "sold",
-    "soldAt": "2026-10-12T20:42:05.020564+00:00"
+    "cantidad": 1
   },
   {
     "id": 927,
@@ -8044,7 +8073,7 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 3,
+    "cantidad": 6,
     "reference": "KM# 1211",
     "description": "Pertenece a la serie floral de la quinta serie del Yuan RMB, mostrando la flor de Orquídea.",
     "costo": 0
