@@ -5044,38 +5044,6 @@
     "costo": 0
   },
   {
-    "id": 647,
-    "title": "2 Centavos 1948",
-    "country": "Argentina",
-    "year": 1948,
-    "price": "2 USD",
-    "images": [
-      "images/647A.jpeg",
-      "images/647B.jpeg"
-    ],
-    "description": "limpiada",
-    "group_id": "ar-2centavos-1948",
-    "group_label": "2 Centavos 1948",
-    "reference": "CJ# 182",
-    "costo": 0
-  },
-  {
-    "id": 648,
-    "title": "2 Centavos 1948",
-    "country": "Argentina",
-    "year": 1948,
-    "price": "2 USD",
-    "images": [
-      "images/648A.jpeg",
-      "images/648B.jpeg"
-    ],
-    "description": "marron",
-    "group_id": "ar-2centavos-1948",
-    "group_label": "2 Centavos 1948",
-    "reference": "CJ# 182",
-    "costo": 0
-  },
-  {
     "id": 650,
     "title": "2 Centavos 1949",
     "country": "Argentina",
