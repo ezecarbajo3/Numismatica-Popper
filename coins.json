@@ -4371,25 +4371,6 @@
     "costo": 0
   },
   {
-    "id": 570,
-    "title": "2 Centavos 1883",
-    "country": "Argentina",
-    "metal": "Bronce",
-    "year": 1883,
-    "price": "15 USD",
-    "images": [
-      "images/570A.jpeg",
-      "images/570B.jpeg"
-    ],
-    "reference": "CJ# 25",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "mintage": "1.300.000",
-    "group_id": "ar-2centavos-1883",
-    "group_label": "2 Centavos 1883",
-    "costo": 0
-  },
-  {
     "id": 572,
     "costo": 15.7,
     "title": "50 Centavos 1902",
@@ -4442,7 +4423,8 @@
     "metal": "Cuproníquel",
     "reference": "KM# 14",
     "mintage": "5.867.000",
-    "costo": 0
+    "costo": 0,
+    "cantidad": 2
   },
   {
     "id": 578,
