@@ -6044,7 +6044,9 @@
       "images/734A.jpeg",
       "images/734B.jpeg"
     ],
-    "reference": "CJ# 130"
+    "reference": "CJ# 130",
+    "status": "sold",
+    "soldAt": "2026-10-18T23:43:44.267091+00:00"
   },
   {
     "id": 735,
@@ -6356,7 +6358,9 @@
       "images/758A.jpeg",
       "images/758B.jpeg"
     ],
-    "reference": "CJ# 90"
+    "reference": "CJ# 90",
+    "status": "sold",
+    "soldAt": "2026-10-18T23:43:44.267091+00:00"
   },
   {
     "id": 759,
@@ -6512,7 +6516,9 @@
     ],
     "reference": "CJ# 62",
     "group_id": "ar-20centavos-1911",
-    "group_label": "20 Centavos 1911"
+    "group_label": "20 Centavos 1911",
+    "status": "sold",
+    "soldAt": "2026-10-18T23:43:44.267091+00:00"
   },
   {
     "id": 769,
@@ -6622,7 +6628,9 @@
     ],
     "reference": "CJ# 52",
     "group_id": "ar-20centavos-1896",
-    "group_label": "20 Centavos 1896"
+    "group_label": "20 Centavos 1896",
+    "status": "sold",
+    "soldAt": "2026-10-18T23:43:44.267091+00:00"
   },
   {
     "id": 776,
