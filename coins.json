@@ -335,7 +335,9 @@
     "peso": 2,
     "diametro": 17,
     "description": "La cuarta más difícil",
-    "costo": 0
+    "costo": 0,
+    "status": "sold",
+    "soldAt": "2026-10-18T23:48:28.538961+00:00"
   },
   {
     "id": 43,
@@ -576,7 +578,7 @@
     "diametro": 17,
     "description": "",
     "costo": 0,
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 105,
@@ -6060,7 +6062,9 @@
       "images/735A.jpeg",
       "images/735B.jpeg"
     ],
-    "reference": "CJ# 133"
+    "reference": "CJ# 133",
+    "status": "sold",
+    "soldAt": "2026-10-18T23:48:28.538961+00:00"
   },
   {
     "id": 736,
@@ -6074,7 +6078,9 @@
       "images/736A.jpeg",
       "images/736B.jpeg"
     ],
-    "reference": "CJ# 134"
+    "reference": "CJ# 134",
+    "status": "sold",
+    "soldAt": "2026-10-18T23:48:28.538961+00:00"
   },
   {
     "id": 737,
@@ -6090,7 +6096,9 @@
     ],
     "reference": "CJ# 135",
     "group_id": "ar-5centavos-1904",
-    "group_label": "5 Centavos 1904"
+    "group_label": "5 Centavos 1904",
+    "status": "sold",
+    "soldAt": "2026-10-18T23:48:28.538961+00:00"
   },
   {
     "id": 738,
@@ -6120,7 +6128,9 @@
       "images/739A.jpeg",
       "images/739B.jpeg"
     ],
-    "reference": "CJ# 136"
+    "reference": "CJ# 136",
+    "status": "sold",
+    "soldAt": "2026-10-18T23:48:28.538961+00:00"
   },
   {
     "id": 740,
@@ -6136,7 +6146,9 @@
     ],
     "reference": "CJ# 138",
     "group_id": "ar-5centavos-1907",
-    "group_label": "5 Centavos 1907"
+    "group_label": "5 Centavos 1907",
+    "status": "sold",
+    "soldAt": "2026-10-18T23:48:28.538961+00:00"
   },
   {
     "id": 741,
@@ -6180,7 +6192,9 @@
       "images/743A.jpeg",
       "images/743B.jpeg"
     ],
-    "reference": "CJ# 142"
+    "reference": "CJ# 142",
+    "status": "sold",
+    "soldAt": "2026-10-18T23:48:28.538961+00:00"
   },
   {
     "id": 744,
@@ -6194,7 +6208,9 @@
       "images/744A.jpeg",
       "images/744B.jpeg"
     ],
-    "reference": "CJ# 143"
+    "reference": "CJ# 143",
+    "status": "sold",
+    "soldAt": "2026-10-18T23:48:28.538961+00:00"
   },
   {
     "id": 745,
@@ -6208,7 +6224,9 @@
       "images/745A.jpeg",
       "images/745B.jpeg"
     ],
-    "reference": "CJ# 171"
+    "reference": "CJ# 171",
+    "status": "sold",
+    "soldAt": "2026-10-18T23:48:28.538961+00:00"
   },
   {
     "id": 746,
@@ -7049,7 +7067,9 @@
     ],
     "reference": "CJ# 166",
     "grade": "Sin Circular",
-    "grade_short": "SC"
+    "grade_short": "SC",
+    "status": "sold",
+    "soldAt": "2026-10-18T23:48:28.538961+00:00"
   },
   {
     "id": 833,
