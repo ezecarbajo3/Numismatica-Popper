@@ -5495,3 +5495,147 @@ body:not([data-view="landing"]) .news-modal-backdrop {
   }
 }
 
+
+/* ─── Links legales del pie (envíos, términos, privacidad, arrepentimiento) ───
+   El Botón de arrepentimiento tiene que verse en la portada (Res. SCI 424/2020):
+   por eso este bloque NO se oculta en data-view="landing". */
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 18px;
+  max-width: 720px;
+  margin-top: 14px;
+  padding: 0 16px;
+}
+
+.footer-legal a {
+  font-family: "Lora", Georgia, serif;
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-legal a:hover,
+.footer-legal a:focus-visible {
+  color: var(--accent-light);
+  border-bottom-color: rgba(var(--accent-rgb), 0.5);
+}
+
+.footer-legal a.footer-legal__arrepentimiento {
+  color: var(--accent);
+  border: 1px solid rgba(var(--accent-rgb), 0.45);
+  border-radius: 999px;
+  padding: 3px 12px;
+}
+
+/* ─── Páginas legales ─────────────────────────────────────────────────────── */
+.legal-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 16px 64px;
+  color: var(--text);
+  font-family: "Lora", Georgia, serif;
+  line-height: 1.7;
+}
+
+.legal-page h1 {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+  letter-spacing: 0.06em;
+  color: var(--accent-light);
+  margin: 18px 0 6px;
+}
+
+.legal-page .legal-updated {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0 0 28px;
+}
+
+.legal-page h2 {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin: 34px 0 10px;
+}
+
+.legal-page p,
+.legal-page li {
+  font-size: 0.98rem;
+}
+
+.legal-page ul {
+  padding-left: 1.2em;
+}
+
+.legal-page li + li {
+  margin-top: 6px;
+}
+
+.legal-page a {
+  color: var(--accent-light);
+}
+
+.legal-page .legal-callout {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  padding: 18px 20px;
+  margin: 22px 0;
+}
+
+.legal-form {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.legal-form label {
+  display: grid;
+  gap: 6px;
+  font-family: "Cinzel", serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.legal-form input,
+.legal-form textarea {
+  font: inherit;
+  font-family: "Lora", Georgia, serif;
+  font-size: 1rem;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--text);
+  background: var(--bg-card-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 11px 13px;
+}
+
+.legal-form input:focus,
+.legal-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.legal-form button {
+  justify-self: start;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  color: #0a0a0a;
+  background: linear-gradient(135deg, var(--accent-light), var(--accent) 55%, var(--accent-dark));
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 26px;
+  cursor: pointer;
+}
