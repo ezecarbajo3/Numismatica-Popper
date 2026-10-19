@@ -571,7 +571,9 @@
     "diametro": 21,
     "description": "Escasa.",
     "group_id": "ar-20centavos-1899",
-    "group_label": "20 Centavos 1899"
+    "group_label": "20 Centavos 1899",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:25:18.058221+00:00"
   },
   {
     "id": 107,
@@ -613,7 +615,9 @@
     "diametro": 21,
     "description": "Escasa.",
     "group_id": "ar-20centavos-1936",
-    "group_label": "20 Centavos 1936"
+    "group_label": "20 Centavos 1936",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:25:18.058221+00:00"
   },
   {
     "id": 112,
@@ -5779,7 +5783,9 @@
     ],
     "reference": "CJ# 135",
     "group_id": "ar-5centavos-1904",
-    "group_label": "5 Centavos 1904"
+    "group_label": "5 Centavos 1904",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:25:18.058221+00:00"
   },
   {
     "id": 739,
@@ -5839,7 +5845,9 @@
       "images/742A.jpeg",
       "images/742B.jpeg"
     ],
-    "reference": "CJ# 139"
+    "reference": "CJ# 139",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:25:18.058221+00:00"
   },
   {
     "id": 743,
@@ -5927,7 +5935,9 @@
       "images/749A.jpeg",
       "images/749B.jpeg"
     ],
-    "reference": "CJ# 107"
+    "reference": "CJ# 107",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:25:18.058221+00:00"
   },
   {
     "id": 750,
@@ -5942,7 +5952,9 @@
     ],
     "reference": "CJ# 105",
     "mintage": "835.059",
-    "description": "ESCASA"
+    "description": "ESCASA",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:25:18.058221+00:00"
   },
   {
     "id": 751,
@@ -5983,7 +5995,9 @@
       "images/755A.jpeg",
       "images/755B.jpeg"
     ],
-    "reference": "CJ# 96"
+    "reference": "CJ# 96",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:25:18.058221+00:00"
   },
   {
     "id": 756,
@@ -5998,7 +6012,9 @@
     ],
     "reference": "CJ# 91",
     "group_id": "ar-10centavos-1897",
-    "group_label": "10 Centavos 1897"
+    "group_label": "10 Centavos 1897",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:25:18.058221+00:00"
   },
   {
     "id": 757,
@@ -6062,7 +6078,9 @@
     "mintage": "892.873",
     "peso": 3,
     "diametro": 19,
-    "description": "ESCASA"
+    "description": "ESCASA",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:25:18.058221+00:00"
   },
   {
     "id": 761,
@@ -6098,7 +6116,9 @@
     "group_id": "ar-20centavos-1916",
     "group_label": "20 Centavos 1916",
     "mintage": "984.634",
-    "description": "ESCASA"
+    "description": "ESCASA",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:25:18.058221+00:00"
   },
   {
     "id": 764,
@@ -6147,7 +6167,9 @@
     ],
     "reference": "CJ# 63",
     "group_id": "ar-20centavos-1912",
-    "group_label": "20 Centavos 1912"
+    "group_label": "20 Centavos 1912",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:25:18.058221+00:00"
   },
   {
     "id": 767,
@@ -6211,7 +6233,9 @@
     ],
     "reference": "CJ# 60",
     "group_id": "ar-20centavos-1909",
-    "group_label": "20 Centavos 1909"
+    "group_label": "20 Centavos 1909",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:25:18.058221+00:00"
   },
   {
     "id": 771,
@@ -6496,7 +6520,9 @@
     "reference": "CJ# 59",
     "grade": "Bueno",
     "grade_short": "B",
-    "mintage": "719.000"
+    "mintage": "719.000",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:25:18.058221+00:00"
   },
   {
     "id": 809,
@@ -6718,7 +6744,7 @@
     "reference": "CJ# 162",
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 8,
+    "cantidad": 7,
     "mintage": "506.361"
   },
   {
