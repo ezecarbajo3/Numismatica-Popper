@@ -1,0 +1,53 @@
+# Regenera las fichas de moneda (moneda/<id>.html), sitemap.xml y robots.txt
+# cada vez que cambia coins.json o el diseño de la ficha. Así la versión que lee
+# Google queda al día sola cuando se publica, se vende o se cambia un precio.
+#
+# Solo toca archivos generados; si tu push local es rechazado después de esto,
+# alcanza con `git pull --rebase` (no puede haber conflicto con lo que editás).
+name: Fichas SEO
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - coins.json
+      - detalle.html
+      - generate_coin_pages.py
+  schedule:
+    # Una vez por día (06:00 Argentina): saca del sitemap las vendidas cuya
+    # ventana de 14 días venció aunque no haya habido cambios.
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fichas-seo
+  cancel-in-progress: false
+
+jobs:
+  regenerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generar fichas, sitemap y robots
+        run: python3 generate_coin_pages.py
+      - name: Subir cambios (si hay)
+        run: |
+          git add moneda sitemap.xml robots.txt
+          if git diff --cached --quiet; then
+            echo "Sin cambios."
+            exit 0
+          fi
+          git config user.name "popper-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Fichas SEO regeneradas automáticamente [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1
