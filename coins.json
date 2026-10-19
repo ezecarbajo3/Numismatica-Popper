@@ -1331,7 +1331,9 @@
     "peso": 2.79,
     "diametro": 20.9,
     "reference": "KM# 8",
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-19T18:35:23.923101+00:00"
   },
   {
     "id": 242,
@@ -1650,7 +1652,7 @@
     "peso": 4,
     "diametro": 21,
     "description": "Año único.",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 281,
@@ -7928,7 +7930,9 @@
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
     "reference": "KM# 29",
-    "description": "Acuñación con el escudo de armas de la FNRJ de Yugoslavia."
+    "description": "Acuñación con el escudo de armas de la FNRJ de Yugoslavia.",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:35:23.923101+00:00"
   },
   {
     "id": 959,
@@ -13610,7 +13614,9 @@
     "peso": "3.5",
     "diametro": "22",
     "description": "Birendra Bir Bikram",
-    "publishedAt": "2026-09-29T15:51:50.301485+00:00"
+    "publishedAt": "2026-09-29T15:51:50.301485+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:35:23.923101+00:00"
   },
   {
     "id": 1476,
@@ -13630,7 +13636,9 @@
     "peso": "0.65",
     "diametro": "16",
     "description": "Shōwa (tipo pesado)",
-    "publishedAt": "2026-09-29T15:51:50.301485+00:00"
+    "publishedAt": "2026-09-29T15:51:50.301485+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-19T18:35:23.923101+00:00"
   },
   {
     "id": 1477,
@@ -14534,7 +14542,9 @@
     "diametro": "",
     "description": "",
     "publishedAt": "2026-10-02T18:08:47.280756+00:00",
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-19T18:35:23.923101+00:00"
   },
   {
     "id": 1519,
