@@ -6302,7 +6302,9 @@
       "images/751A.jpeg",
       "images/751B.jpeg"
     ],
-    "reference": "CJ# 104"
+    "reference": "CJ# 104",
+    "status": "sold",
+    "soldAt": "2026-10-19T00:02:24.353941+00:00"
   },
   {
     "id": 754,
@@ -6470,7 +6472,9 @@
     "group_id": "ar-20centavos-1916",
     "group_label": "20 Centavos 1916",
     "mintage": "984.634",
-    "description": "ESCASA"
+    "description": "ESCASA",
+    "status": "sold",
+    "soldAt": "2026-10-19T00:02:24.353941+00:00"
   },
   {
     "id": 765,
@@ -6518,7 +6522,9 @@
     ],
     "reference": "CJ# 63",
     "group_id": "ar-20centavos-1912",
-    "group_label": "20 Centavos 1912"
+    "group_label": "20 Centavos 1912",
+    "status": "sold",
+    "soldAt": "2026-10-19T00:02:24.353941+00:00"
   },
   {
     "id": 768,
@@ -6600,7 +6606,9 @@
     ],
     "reference": "CJ# 56",
     "group_id": "ar-20centavos-1905",
-    "group_label": "20 Centavos 1905"
+    "group_label": "20 Centavos 1905",
+    "status": "sold",
+    "soldAt": "2026-10-19T00:02:24.353941+00:00"
   },
   {
     "id": 773,
@@ -6630,7 +6638,9 @@
       "images/774A.jpeg",
       "images/774B.jpeg"
     ],
-    "reference": "CJ# 54"
+    "reference": "CJ# 54",
+    "status": "sold",
+    "soldAt": "2026-10-19T00:02:24.353941+00:00"
   },
   {
     "id": 775,
