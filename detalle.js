@@ -570,7 +570,9 @@ function initDetailRevealEffects() {
 // ─── Bootstrap ────────────────────────────────────────────────────────────────
 
 async function loadCoinDetail() {
-  const rawId = getQueryParam("id");
+  // moneda/<id>.html no lleva ?id= en la URL: trae el id en window.POPPER_COIN_ID
+  // (lo escribe generate_coin_pages.py).
+  const rawId = getQueryParam("id") || window.POPPER_COIN_ID;
 
   if (!rawId || !rawId.trim()) {
     detailContainer.innerHTML = '<p class="detail-error">No se indicó ninguna moneda.</p>';
