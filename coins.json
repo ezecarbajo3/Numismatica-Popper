@@ -12119,7 +12119,9 @@
     "description": "",
     "publishedAt": "2026-09-10T13:18:23.680759+00:00",
     "group_id": "uk-5pence-1991",
-    "group_label": "5 Pence 1991"
+    "group_label": "5 Pence 1991",
+    "status": "sold",
+    "soldAt": "2026-10-20T10:49:42.588922-03:00"
   },
   {
     "id": 1396,
