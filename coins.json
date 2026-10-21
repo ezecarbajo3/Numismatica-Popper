@@ -550,7 +550,9 @@
     "peso": 2,
     "diametro": 17,
     "description": "",
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-21T12:43:07.594870+00:00"
   },
   {
     "id": 105,
@@ -638,7 +640,9 @@
     "diametro": 21,
     "description": "Escasa.",
     "group_id": "ar-20centavos-1936",
-    "group_label": "20 Centavos 1936"
+    "group_label": "20 Centavos 1936",
+    "status": "sold",
+    "soldAt": "2026-10-21T12:43:07.594870+00:00"
   },
   {
     "id": 113,
@@ -4497,7 +4501,9 @@
       "images/612B.jpeg"
     ],
     "description": "limpiada",
-    "reference": "CJ# 187"
+    "reference": "CJ# 187",
+    "status": "sold",
+    "soldAt": "2026-10-21T12:43:07.594870+00:00"
   },
   {
     "id": 616,
@@ -5834,7 +5840,9 @@
     ],
     "reference": "CJ# 138",
     "group_id": "ar-5centavos-1907",
-    "group_label": "5 Centavos 1907"
+    "group_label": "5 Centavos 1907",
+    "status": "sold",
+    "soldAt": "2026-10-21T12:43:07.594870+00:00"
   },
   {
     "id": 742,
@@ -6101,7 +6109,9 @@
     "mintage": "892.873",
     "peso": 3,
     "diametro": 19,
-    "description": "ESCASA"
+    "description": "ESCASA",
+    "status": "sold",
+    "soldAt": "2026-10-21T12:43:07.594870+00:00"
   },
   {
     "id": 763,
