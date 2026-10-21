@@ -19,7 +19,7 @@
   const RATE_CACHE_KEY = 'popper_blue_rate_v1';
   const DOLAR_API_URL = 'https://dolarapi.com/v1/dolares/blue';
   const DOLAR_FALLBACK_VENTA = 1495;
-  const SHIPPING_PARQUE_ARS = 500;
+  const SHIPPING_PARQUE_ARS = 1000;
   const SHIPPING_SUCURSAL_ARS = 8500;
   const SHIPPING_DOMICILIO_ARS = 11500;
   const WHATSAPP_NUMBER = '5492235429132';
