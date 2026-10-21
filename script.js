@@ -651,7 +651,6 @@ function goToLanding() {
 }
 
 function enterCatalog(categoryKey) {
-  closeNewsModal();
   switchView(() => {
     showCatalog();
     activeCategory  = categoryKey || null;
@@ -806,7 +805,7 @@ function prepareCoins() {
     const idTokens = coin.id != null ? `${coin.id} #${coin.id}` : '';
     coin._searchText = normalizeSearch([
       idTokens,
-      coin.title, getCountryDisplayLabel(coin.country), coin.country,
+      coin.title, coin.group_label, getCountryDisplayLabel(coin.country), coin.country,
       coin.metal, coin.year, coin.price, coin.description,
       coin.reference, coin.grade, coin.grade_short, coin.mintage,
     ].filter(Boolean).join(' '));
@@ -1072,7 +1071,7 @@ function buildCoinCard(coin, idx, skipAnimation) {
   if (coin.group_id) {
     article.classList.add('is-group');
     applyCoinTitle(title, coin.group_label || coin.title);
-    yearTag.textContent = '';
+    yearTag.textContent = coin.year || '';
     const count = getGroupMemberCount(coin.group_id);
     price.style.display = 'none'; // se oculta para que badgeRow quede centrado
     badgeRow.innerHTML = count > 1
@@ -1688,68 +1687,9 @@ if (logoLink) {
   });
 }
 
-// ─── Pop-up de Novedades (Portada) ──────────────────────────────────────────
-
-function openNewsModal() {
-  const backdrop = document.getElementById('newsModalBackdrop');
-  if (!backdrop) return;
-  if (document.body.dataset.view !== 'landing') return;
-
-  backdrop.setAttribute('aria-hidden', 'false');
-  document.documentElement.classList.add('news-modal-lock');
-  backdrop.classList.add('is-open');
-}
-
-function closeNewsModal() {
-  const backdrop = document.getElementById('newsModalBackdrop');
-  if (!backdrop) return;
-
-  backdrop.classList.remove('is-open');
-  backdrop.setAttribute('aria-hidden', 'true');
-  document.documentElement.classList.remove('news-modal-lock');
-}
-
-function initNewsModalEvents() {
-  const backdrop = document.getElementById('newsModalBackdrop');
-  if (!backdrop) return;
-
-  const closeBtn = document.getElementById('newsModalClose');
-  if (closeBtn) {
-    closeBtn.addEventListener('click', closeNewsModal);
-  }
-
-  const dismissBtn = document.getElementById('newsModalDismissBtn');
-  if (dismissBtn) {
-    dismissBtn.addEventListener('click', closeNewsModal);
-  }
-
-  backdrop.addEventListener('click', (e) => {
-    if (e.target === backdrop) {
-      closeNewsModal();
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && backdrop.classList.contains('is-open')) {
-      closeNewsModal();
-    }
-  });
-}
-
 // ─── Bootstrap ────────────────────────────────────────────────────────────────
 
-initNewsModalEvents();
 initGridDelegation();
-
-// En la portada se abre el modal de novedades inmediatamente al cargar/actualizar la página
-const initialUrlParams = new URLSearchParams(window.location.search);
-const hasCatalogParams = initialUrlParams.has('buscar') || initialUrlParams.has('q') || initialUrlParams.has('search') || initialUrlParams.has('cat') || initialUrlParams.has('categoria');
-const initialSavedState = loadSavedState();
-const isRestoringCatalog = (isBackForwardNavigation() || isReloadNavigation()) && initialSavedState && initialSavedState.view === 'catalog';
-
-if (!hasCatalogParams && !isRestoringCatalog && document.body.dataset.view === 'landing') {
-  openNewsModal();
-}
 
 loadCoins().then((ok) => {
   if (!ok) return;
@@ -1821,7 +1761,6 @@ loadCoins().then((ok) => {
 
   // Carga nueva → portada.
   showLanding();
-  openNewsModal();
 });
 
 // ─── Restauración desde el bfcache ────────────────────────────────────────────

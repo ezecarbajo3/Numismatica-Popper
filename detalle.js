@@ -507,6 +507,7 @@ function renderCoinDetail(coin, groupMembers) {
       const isQuarters = member.group_id && member.group_id.includes("quarters");
       const isMillennium = member.group_id === "ca-25cents-2000-millennium";
       const isCommemorative = member.group_id && member.group_id.includes("conmemorativas");
+      const isSpecialSeries = member.group_id && (member.group_id.includes("fauna") || member.group_id.includes("ceramicos"));
 
       const descLabel = String(member.description || "").trim() || "–";
       const gradeLabel = String(member.grade_short || "").trim() || "–";
@@ -515,10 +516,11 @@ function renderCoinDetail(coin, groupMembers) {
       const labelEl = document.createElement("span");
       labelEl.className   = "variant-year"; // Reusing class for consistency
 
-      if ((isQuarters || isMillennium || isCommemorative) && descLabel !== "–") {
+      if ((isQuarters || isMillennium || isCommemorative || isSpecialSeries) && descLabel !== "–") {
         labelEl.textContent = descLabel;
       } else {
-        const parts = [yearLabel, gradeLabel].filter(p => p && p !== "–" && p !== "-");
+        const { extra } = typeof splitCoinTitle === 'function' ? splitCoinTitle(member.title) : { extra: '' };
+        const parts = [yearLabel, extra, gradeLabel].filter(p => p && p !== "–" && p !== "-");
         labelEl.textContent = parts.length ? parts.join(" ") : "–";
       }
 
