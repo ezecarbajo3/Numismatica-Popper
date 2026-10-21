@@ -14740,5 +14740,65 @@
     "cantidad": 0,
     "status": "sold",
     "soldAt": "2026-10-07T23:49:31.518015+00:00"
+  },
+  {
+    "id": 1527,
+    "title": "4 Centesimos 1870",
+    "country": "Paraguay",
+    "metal": "Cobre",
+    "year": 1870,
+    "price": "30 USD",
+    "images": [
+      "images/1527A.jpeg",
+      "images/1527B.jpeg"
+    ],
+    "reference": "KM# 4.1",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": "",
+    "peso": "19.74",
+    "diametro": "35",
+    "description": "",
+    "publishedAt": "2026-10-21T14:08:35.815888+00:00"
+  },
+  {
+    "id": 1528,
+    "title": "2 Reales 1860",
+    "country": "Argentina - Buenos Aires",
+    "metal": "Cobre",
+    "year": 1860,
+    "price": "5 USD",
+    "images": [
+      "images/1528A.jpeg",
+      "images/1528B.jpeg"
+    ],
+    "reference": "CJ# 23",
+    "grade": "Regular +",
+    "grade_short": "R+",
+    "mintage": "",
+    "peso": "7.6",
+    "diametro": "32.0",
+    "description": "",
+    "publishedAt": "2026-10-21T14:08:35.815888+00:00"
+  },
+  {
+    "id": 1529,
+    "title": "2 Reales 1853",
+    "country": "Argentina - Buenos Aires",
+    "metal": "Cobre",
+    "year": 1853,
+    "price": "12 USD",
+    "images": [
+      "images/1529A.jpeg",
+      "images/1529B.jpeg"
+    ],
+    "reference": "CJ# 18",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "mintage": "",
+    "peso": "7.4",
+    "diametro": "31.9",
+    "description": "",
+    "publishedAt": "2026-10-21T14:08:35.815888+00:00"
   }
 ]
