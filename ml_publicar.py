@@ -135,10 +135,10 @@ def _subir_fotos(coin):
     return fotos, None
 
 
-COSTO_ENVIO_GRATIS = 0
+COSTO_ENVIO_GRATIS = ml_precios.COSTO_ENVIO_GRATIS
 
 
-def precio_neto_igual(usd, cotizacion, margen=0.10):
+def precio_neto_igual(usd, cotizacion, margen=0.0):
     """Precio ML con el que, descontada la comision (16% + fijo por tramo), queda
     en mano lo mismo que vendiendo por la pagina (USD x blue), mas `margen`."""
     web = usd * cotizacion
@@ -239,6 +239,47 @@ def publicar_varias(coins, cotizacion=None, dry_run=False):
         except Exception:
             cotizacion = None
     return [publicar(c, cotizacion=cotizacion, dry_run=dry_run) for c in coins]
+
+
+def publicar_nuevas(coins):
+    """Replica en ML las monedas recien subidas al catalogo web.
+
+    Es el punto unico que usan los dos caminos de alta: la skill `pp`
+    (publish_page.py) y el boton Publicar del widget (pp_helper). Devuelve
+    (publicadas, texto_para_el_panel). Las que ML no acepta se saltean con su
+    motivo (ID con letra, "Consultar", menos de dos fotos, lote, sin anio): van al
+    sitio igual. Nunca levanta; el precio sale de precio_neto_igual().
+    """
+    if not coins:
+        return [], None
+    if os.environ.get("POPPER_NO_PUSH", "").strip() in ("1", "true", "yes"):
+        ids = ", ".join(f"#{c.get('id')}" for c in coins)
+        return [], f"🧪 Modo prueba: no se publicó nada en Mercado Libre ({ids})."
+    try:
+        resultados = publicar_varias(coins)
+    except (Exception, SystemExit) as e:   # SystemExit: ml_api sin credenciales
+        return [], f"⚠️ Mercado Libre falló: {e}"
+
+    publicadas, salteadas, avisos = [], [], []
+    for r in resultados:
+        if r.get("ok"):
+            publicadas.append({"id": r["id"], "item_id": r.get("item_id"),
+                               "permalink": r.get("permalink"),
+                               "precio": r.get("precio")})
+            if r.get("motivo"):
+                avisos.append(f"#{r['id']}: {r['motivo']}")
+        else:
+            salteadas.append(f"#{r.get('id')}: {r.get('motivo')}")
+
+    partes = []
+    if publicadas:
+        partes.append("🛒 Publicadas en Mercado Libre: "
+                      + ", ".join(f"#{p['id']} → {p['item_id']}" for p in publicadas))
+    if salteadas:
+        partes.append("ℹ️ No fueron a Mercado Libre: " + " · ".join(salteadas))
+    if avisos:
+        partes.append("⚠️ " + " · ".join(avisos))
+    return publicadas, ("\n".join(partes) or None)
 
 
 if __name__ == "__main__":

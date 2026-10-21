@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Repricia las publicaciones de Mercado Libre para que el neto sea 110% del precio web.
+"""Repricia las publicaciones de Mercado Libre para que el neto sea igual al precio web.
 
-Regla: la plata que queda despues de la comision de ML tiene que ser un 10% mas
-que el precio de venta de la pagina pasado a pesos (USD de coins.json por el
-dolar blue venta del dia).
+Regla: la plata que queda despues de todos los cargos de ML tiene que ser igual al
+precio de venta de la pagina pasado a pesos (USD de coins.json por el dolar blue
+venta del dia).
 
-Comision relevada de /sites/MLA/listing_prices para MLA2061 / gold_special:
-16% + un costo fijo por venta que depende del tramo de precio (10/9/2026).
+Cargos: comision relevada de /sites/MLA/listing_prices para MLA2061 / gold_special:
+16% + un costo fijo por venta que depende del tramo de precio (10/9/2026), y
+COSTO_ENVIO_GRATIS en las publicaciones que ofrecen envio gratis.
 
 Uso:
     python3 ml_precios.py                    # simulacion, no toca nada
@@ -31,8 +32,9 @@ import ml_bulk
 COINS_JSON = "/Users/ezecarbajo/popper-site/coins.json"
 DIR_SALIDA = "/Users/ezecarbajo/popper-site/salidas_ml"
 
-MARGEN_OBJETIVO = 0.10        # el neto tiene que superar en 10% al precio web
+MARGEN_OBJETIVO = 0.0         # el neto tiene que igualar al precio web
 COMISION_ML = 0.16
+COSTO_ENVIO_GRATIS = 12000    # cargo aprox. por venta en las publicaciones con envio gratis
 # (precio_desde, costo_fijo_por_venta). Tramos verificados con la API.
 TRAMOS_FIJO = [(0, 1330), (15000, 2740), (24000, 3320), (33000, 0)]
 REDONDEO = 100                # el precio final siempre sube al multiplo de $100
@@ -87,7 +89,7 @@ def sku_de(item):
     return None
 
 
-def traer_items():
+def traer_items(campos="id,title,status,price,attributes,variations,shipping"):
     uid = ml_api.user_id()
     ids, off = [], 0
     while True:
@@ -98,7 +100,6 @@ def traer_items():
         off += 100
         if off >= r["paging"]["total"]:
             break
-    campos = "id,title,status,price,attributes,variations,shipping"
     items = []
     for i in range(0, len(ids), 20):
         st, r = ml_api.pedir("GET", "/items?ids=" + ",".join(ids[i:i + 20]) + "&attributes=" + campos)
@@ -142,12 +143,15 @@ def main():
             saltadas.append((it["id"], sku, "precio a consultar en la pagina")); continue
         web = usd * cotiz
         objetivo = web * (1 + MARGEN_OBJETIVO)
-        nuevo = precio_para(objetivo)
+        gratis = bool((it.get("shipping") or {}).get("free_shipping"))
+        extra = COSTO_ENVIO_GRATIS if gratis else 0
+        nuevo = precio_para(objetivo, extra)
         plan.append({"item_id": it["id"], "sku": sku, "titulo": it.get("title", ""),
                      "usd": usd, "web_ars": round(web, 2), "objetivo_neto": round(objetivo, 2),
+                     "envio_gratis": "si" if gratis else "no", "extra": extra,
                      "precio_viejo": it.get("price"), "precio_nuevo": nuevo,
-                     "neto_nuevo": round(neto(nuevo), 2),
-                     "margen_real": round(neto(nuevo) / web - 1, 4)})
+                     "neto_nuevo": round(neto(nuevo, extra), 2),
+                     "margen_real": round(neto(nuevo, extra) / web - 1, 4)})
 
     cambian = [p for p in plan if p["precio_nuevo"] != p["precio_viejo"]]
     os.makedirs(DIR_SALIDA, exist_ok=True)
