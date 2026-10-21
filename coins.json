@@ -14820,5 +14820,113 @@
     "diametro": "17",
     "description": "Slapati Deva\nCeca Kabúl\n2,85 grs - Ø 17 mm",
     "publishedAt": "2026-10-21T14:10:31.721710+00:00"
+  },
+  {
+    "id": 1531,
+    "title": "5 Liras 2023",
+    "country": "Turquía",
+    "metal": "Bimetálica",
+    "year": 2023,
+    "price": "5 USD",
+    "images": [
+      "images/1531A.jpeg",
+      "images/1531B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "8.25",
+    "diametro": "28.15",
+    "description": "Centenario de la República de Turquía",
+    "publishedAt": "2026-10-21T14:52:52.981251+00:00"
+  },
+  {
+    "id": 1532,
+    "title": "10 Rublos 2014 Sebastopol",
+    "country": "Rusia",
+    "metal": "Acero chapado en latón",
+    "year": 2014,
+    "price": "3 USD",
+    "images": [
+      "images/1532A.jpeg",
+      "images/1532B.jpeg"
+    ],
+    "reference": "Y# 1524",
+    "grade": "Excelente+",
+    "grade_short": "EX+",
+    "mintage": "",
+    "peso": "5.63",
+    "diametro": "22",
+    "description": "Integración de Crimea a la Federación Rusa - Sebastopol",
+    "publishedAt": "2026-10-21T14:52:52.981251+00:00",
+    "group_id": "ru-10rublos-2014",
+    "group_label": "10 Rublos 2014"
+  },
+  {
+    "id": 1533,
+    "title": "10 Rublos 2014 Vyborg",
+    "country": "Rusia",
+    "metal": "Acero chapado en latón",
+    "year": 2014,
+    "price": "3.5 USD",
+    "images": [
+      "images/1533A.jpeg",
+      "images/1533B.jpeg"
+    ],
+    "reference": "Y# 1572",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "5.63",
+    "diametro": "22",
+    "description": "Ciudades de Gloria Militar - Vyborg",
+    "publishedAt": "2026-10-21T14:52:52.981251+00:00",
+    "group_id": "ru-10rublos-2014",
+    "group_label": "10 Rublos 2014"
+  },
+  {
+    "id": 1534,
+    "title": "10 Rublos 2014 Nalchik",
+    "country": "Rusia",
+    "metal": "Acero chapado en latón",
+    "year": 2014,
+    "price": "3.5 USD",
+    "images": [
+      "images/1534A.jpeg",
+      "images/1534B.jpeg"
+    ],
+    "reference": "Y# 1571",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "5.63",
+    "diametro": "22",
+    "description": "Ciudades de Gloria Militar - Nalchik",
+    "publishedAt": "2026-10-21T14:52:52.981251+00:00",
+    "group_id": "ru-10rublos-2014",
+    "group_label": "10 Rublos 2014"
+  },
+  {
+    "id": 1535,
+    "title": "10 Rublos 2014 Kolpino",
+    "country": "Rusia",
+    "metal": "Acero chapado en latón",
+    "year": 2014,
+    "price": "3.5 USD",
+    "images": [
+      "images/1535A.jpeg",
+      "images/1535B.jpeg"
+    ],
+    "reference": "Y# 1592",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "",
+    "peso": "5.63",
+    "diametro": "22",
+    "description": "Ciudades de Gloria Militar - Kolpino",
+    "publishedAt": "2026-10-21T14:52:52.981251+00:00",
+    "group_id": "ru-10rublos-2014",
+    "group_label": "10 Rublos 2014"
   }
 ]
