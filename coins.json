@@ -14800,5 +14800,25 @@
     "diametro": "31.9",
     "description": "",
     "publishedAt": "2026-10-21T14:08:35.815888+00:00"
+  },
+  {
+    "id": 1530,
+    "title": "1 Jital 900 d.C.",
+    "country": "Reino Shahi",
+    "metal": "Plata",
+    "year": 900,
+    "price": "20 USD",
+    "images": [
+      "images/1530A.jpeg",
+      "images/1530B.jpeg"
+    ],
+    "reference": "Élie Mon# 10.2",
+    "grade": "Bueno+",
+    "grade_short": "B+",
+    "mintage": "",
+    "peso": "2.85",
+    "diametro": "17",
+    "description": "Slapati Deva\nCeca Kabúl\n2,85 grs - Ø 17 mm",
+    "publishedAt": "2026-10-21T14:10:31.721710+00:00"
   }
 ]
