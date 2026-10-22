@@ -122,7 +122,9 @@
     "diametro": 30,
     "description": "",
     "group_id": "ar-2centavos-1885",
-    "group_label": "2 Centavos 1885"
+    "group_label": "2 Centavos 1885",
+    "status": "sold",
+    "soldAt": "2026-10-22T01:27:27.575966+00:00"
   },
   {
     "id": 18,
