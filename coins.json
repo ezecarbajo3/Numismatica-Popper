@@ -1261,7 +1261,9 @@
     "mintage": "",
     "peso": 4,
     "diametro": 21,
-    "reference": "KM# 28"
+    "reference": "KM# 28",
+    "status": "sold",
+    "soldAt": "2026-10-22T00:37:27.870444+00:00"
   },
   {
     "id": 210,
@@ -1619,7 +1621,9 @@
     "mintage": "500.000",
     "peso": 2,
     "diametro": 17.15,
-    "description": "Muy escasa."
+    "description": "Muy escasa.",
+    "status": "sold",
+    "soldAt": "2026-10-22T00:37:27.870444+00:00"
   },
   {
     "id": 271,
@@ -2323,7 +2327,7 @@
       "images/382B.jpeg"
     ],
     "reference": "KM# 205",
-    "cantidad": 4
+    "cantidad": 3
   },
   {
     "id": 383,
@@ -2416,7 +2420,9 @@
       "images/389B.jpeg"
     ],
     "reference": "KM# 202b",
-    "cantidad": 2
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-22T00:37:27.870444+00:00"
   },
   {
     "id": 390,
@@ -8605,7 +8611,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Centenario del Comité Olímpico Internacional (Pierre de Coubertin)",
-    "publishedAt": "2026-08-08T20:08:32.734540+00:00"
+    "publishedAt": "2026-08-08T20:08:32.734540+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-22T00:37:27.870444+00:00"
   },
   {
     "id": 1067,
