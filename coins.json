@@ -9097,7 +9097,9 @@
     "description": "Acuñada por la Casa de Moneda de Viena para conmemorar los 800 años de la Basílica de Mariazell, el santuario espiritual más importante de Europa Central. Emitida apenas dos años después de que Austria recuperara su soberanía tras una década de ocupación aliada de posguerra, esta moneda simbolizó la reunificación moral e identidad nacional del país a través de la venerada Magna Mater Austriae, inaugurando la prestigiosa serie conmemorativa de la Segunda República.",
     "publishedAt": "2026-08-22T22:27:19.165116+00:00",
     "mintage": "4.999.000",
-    "commemorates": "800 Años de la Basílica de Mariazell"
+    "commemorates": "800 Años de la Basílica de Mariazell",
+    "status": "sold",
+    "soldAt": "2026-10-23T15:38:05.564576+00:00"
   },
   {
     "id": 1175,
