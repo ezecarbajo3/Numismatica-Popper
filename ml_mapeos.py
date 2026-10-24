@@ -165,6 +165,20 @@ ORIGEN = {
     "Tailandia": "China",
     "Liberia": "Estados Unidos",
 
+    # Antes caian en el fallback "Argentina" (24/10/2026): Terranova salia de origen
+    # argentino. Mismo criterio: vinculo historico/colonial o cercania.
+    "Terranova": "Canadá",
+    "Unión Soviética": "Rusia",
+    "Kenia": "Inglaterra",
+    "Sudáfrica": "Inglaterra",
+    "Straits Settlements": "Inglaterra",
+    "Malaya": "Inglaterra",
+    "Comisionados de la Moneda de Malaya": "Inglaterra",
+    "Malaya y Borneo": "Inglaterra",
+    "Malaya y Borneo Británico": "Inglaterra",
+    "Andorra": "España",
+    "Panamá": "México",
+
     # Sin pais real: son piezas argentinas (medallas, tokens, insumos)
     "Token": "Argentina",
     "Medalla": "Argentina",
