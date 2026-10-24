@@ -7658,7 +7658,7 @@
     ],
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 6,
+    "cantidad": 5,
     "reference": "KM# 1211",
     "description": "Pertenece a la serie floral de la quinta serie del Yuan RMB, mostrando la flor de Orquídea."
   },
@@ -7967,7 +7967,7 @@
   },
   {
     "id": 970,
-    "cantidad": 8,
+    "cantidad": 7,
     "title": "1 Jiao 2009",
     "country": "China",
     "metal": "Acero niquelado",
@@ -9727,7 +9727,9 @@
     "peso": "9.2",
     "diametro": "27",
     "description": "Zodíaco Chino - Año del Perro. Bimetálica con centro de cuproníquel y anillo de latón.",
-    "publishedAt": "2026-08-28T23:32:35.616834+00:00"
+    "publishedAt": "2026-08-28T23:32:35.616834+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-24T19:05:09.384245+00:00"
   },
   {
     "id": 1231,
