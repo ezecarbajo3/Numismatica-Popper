@@ -41,6 +41,14 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
+# Traductor único de valores faciales (lo comparten el widget y las skills). Si no
+# está (otra máquina), se usa la tabla local DENOM_EN de más abajo.
+try:
+    sys.path.insert(0, os.path.expanduser("~/.gemini/skills/_shared"))
+    import denominaciones as _denominaciones
+except ImportError:
+    _denominaciones = None
+
 _REPO_DIR = os.path.dirname(os.path.abspath(__file__))
 # POPPER_COINS_JSON permite apuntar a una copia para testear sin tocar el catalogo real
 COINS_JSON = os.environ.get("POPPER_COINS_JSON") or os.path.join(_REPO_DIR, "coins.json")
@@ -105,9 +113,14 @@ DENOM_EN = {
     "zloty": "Zloty", "ducado": "Ducat", "dracma": "Drachma", "dracmas": "Drachmas", "dinar": "Dinar", "dinares": "Dinars",
 }
 
-def _denominacion_ngc(valor):
+def _denominacion_ngc(valor, pais=""):
+    """Valor facial como lo busca NGC: '10 rublos' -> '10 Roubles' (con 'Rubles' no encuentra nada)."""
     if not valor:
         return ""
+    if _denominaciones is not None:
+        traducido = _denominaciones.a_ingles(valor, pais)
+        if traducido:
+            return traducido
     v = _sin_tildes(valor).strip()
     if v in DENOM_EN:
         return DENOM_EN[v]
@@ -551,7 +564,8 @@ def _specs(h):
 # Martin en cuproniquel. Estas funciones devuelven la lista con el dato que las
 # distingue, para elegir y recien despues cotizar.
 
-_RE_KM = re.compile(r"-km-([a-z]*[0-9][0-9a-z\.]*)-")
+# Referencia en la URL de la ficha: KM y también Y (Rusia, URSS, China...).
+_RE_KM = re.compile(r"-(km|y)-([a-z]*[0-9][0-9a-z\.]*)-")
 
 
 def listar_variantes_mundial(pais, valor, anio, limite=None):
@@ -566,7 +580,7 @@ def listar_variantes_mundial(pais, valor, anio, limite=None):
     Ademas la misma ficha aparece varias veces en el listado, una por cada fila
     (mismo cuid, distinto duid), asi que se deduplica por tipo de moneda.
     """
-    consulta = " ".join(str(x) for x in (_pais_ngc(pais), anio, _denominacion_ngc(valor)) if x).strip()
+    consulta = " ".join(str(x) for x in (_pais_ngc(pais), anio, _denominacion_ngc(valor, pais)) if x).strip()
     url = ("%s/resources/services/coin-search/price-guide/world/search/?keywords=%s"
            % (HOST_US, urllib.parse.quote(consulta)))
     try:
@@ -599,7 +613,7 @@ def listar_variantes_mundial(pais, valor, anio, limite=None):
         if not tabla["ok"]:
             continue
         km = _RE_KM.search(f)
-        referencia = ("KM# " + km.group(1).upper()) if km else ""
+        referencia = ("%s# %s" % (km.group(1).upper(), km.group(2).upper())) if km else ""
         metal = _metal_es((tabla.get("especificaciones") or {}).get("composicion"))
         for fila in tabla["filas"]:
             if anio and not _es_del_anio(fila.get("anio", ""), anio):
