@@ -14653,7 +14653,7 @@
   },
   {
     "id": 1541,
-    "title": "1/4 de Dólar 1954",
+    "title": "1/4 Dólar 1954",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1954,
@@ -14691,7 +14691,7 @@
   },
   {
     "id": 1543,
-    "title": "¼ Dólar 1945",
+    "title": "1/4 Dólar 1945",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1945,
@@ -14710,7 +14710,7 @@
   },
   {
     "id": 1544,
-    "title": "¼ Dólar 1953",
+    "title": "1/4 Dólar 1953",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1953,
@@ -14748,7 +14748,7 @@
   },
   {
     "id": 1546,
-    "title": "1/4 de Dólar 1941",
+    "title": "1/4 Dólar 1941",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1941,
@@ -14767,7 +14767,7 @@
   },
   {
     "id": 1547,
-    "title": "1/4 de Dólar 1943",
+    "title": "1/4 Dólar 1943",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1943,
@@ -14924,8 +14924,8 @@
       "images/1554B.jpeg"
     ],
     "reference": "KM# 24",
-    "grade": "r+",
-    "grade_short": "r+",
+    "grade": "Regular +",
+    "grade_short": "R+",
     "peso": "10",
     "diametro": "29.77",
     "description": "",
