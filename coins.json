@@ -15281,5 +15281,85 @@
     "description": "",
     "publishedAt": "2026-10-24T22:55:20.024196+00:00",
     "cantidad": 2
+  },
+  {
+    "id": 1572,
+    "title": "2 Kurus 1912",
+    "country": "Imperio Otomano",
+    "metal": "Plata .830",
+    "year": 1912,
+    "price": "12 USD",
+    "images": [
+      "images/1572A.jpeg",
+      "images/1572B.jpeg"
+    ],
+    "reference": "KM# 749",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 4031000,
+    "peso": "2.4055",
+    "diametro": "18",
+    "description": "Mehmed V - Ceca Constantinopla",
+    "publishedAt": "2026-10-24T23:15:08.718680+00:00"
+  },
+  {
+    "id": 1573,
+    "title": "10 Centavos 1979",
+    "country": "Barbados",
+    "metal": "Cuproníquel",
+    "year": 1979,
+    "price": "2 USD",
+    "images": [
+      "images/1573A.jpeg",
+      "images/1573B.jpeg"
+    ],
+    "reference": "KM# 12",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 2500000,
+    "peso": "2.26",
+    "diametro": "17.78",
+    "description": "",
+    "publishedAt": "2026-10-24T23:15:08.718680+00:00"
+  },
+  {
+    "id": 1574,
+    "title": "5 Centavos de Euro 2024",
+    "country": "Lituania",
+    "metal": "Cobre",
+    "year": 2024,
+    "price": "2 USD",
+    "images": [
+      "images/1574A.jpeg",
+      "images/1574B.jpeg"
+    ],
+    "reference": "KM# 207",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "3.92",
+    "diametro": "21.25",
+    "description": "Ceca Vilna",
+    "publishedAt": "2026-10-24T23:15:08.718680+00:00"
+  },
+  {
+    "id": 1575,
+    "title": "3 Kreuzers - Charles II Louis Frederick 1818",
+    "country": "Baden",
+    "metal": "Plata .313",
+    "year": 1818,
+    "price": "15 USD",
+    "images": [
+      "images/1575A.jpeg",
+      "images/1575B.jpeg"
+    ],
+    "reference": "KM# 172",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "mintage": 592910,
+    "peso": "1.2",
+    "diametro": "17",
+    "description": "baden - Carlos II",
+    "publishedAt": "2026-10-24T23:15:08.718680+00:00",
+    "commemorates": "baden - Carlos II"
   }
 ]
