@@ -15480,5 +15480,64 @@
     "diametro": "21",
     "description": "Olaf V",
     "publishedAt": "2026-10-24T23:17:28.013330+00:00"
+  },
+  {
+    "id": 1582,
+    "title": "5 Centésimos de Escudo 1965",
+    "country": "Chile",
+    "metal": "Bronce",
+    "year": 1965,
+    "price": "2 USD",
+    "images": [
+      "images/1582A.jpeg",
+      "images/1582B.jpeg"
+    ],
+    "reference": "KM# 190",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "4",
+    "diametro": "23",
+    "description": "Ceca So",
+    "publishedAt": "2026-10-24T23:19:26.498984+00:00"
+  },
+  {
+    "id": 1583,
+    "title": "1 Centavo 1966",
+    "country": "Australia",
+    "metal": "Bronce",
+    "year": 1966,
+    "price": "1.5 USD",
+    "images": [
+      "images/1583A.jpeg",
+      "images/1583B.jpeg"
+    ],
+    "reference": "KM# 62",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "2.59",
+    "diametro": "17.53",
+    "description": "Isabel II",
+    "publishedAt": "2026-10-24T23:19:26.498984+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1584,
+    "title": "1 Centavo 1981",
+    "country": "Australia",
+    "metal": "Bronce",
+    "year": 1981,
+    "price": "2 USD",
+    "images": [
+      "images/1584A.jpeg",
+      "images/1584B.jpeg"
+    ],
+    "reference": "KM# 62",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "2.59",
+    "diametro": "17.53",
+    "description": "Isabel II",
+    "publishedAt": "2026-10-24T23:19:26.498984+00:00",
+    "commemorates": "Isabel II"
   }
 ]
