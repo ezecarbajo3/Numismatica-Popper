@@ -15038,5 +15038,25 @@
     "description": "Jorge V",
     "publishedAt": "2026-10-24T15:14:36.168994+00:00",
     "commemorates": "Jorge V"
+  },
+  {
+    "id": 1560,
+    "title": "1 Peso 1861",
+    "country": "Chile",
+    "metal": "Oro",
+    "year": 1861,
+    "price": "250 USD",
+    "images": [
+      "images/1560A.jpeg",
+      "images/1560B.jpeg"
+    ],
+    "reference": "KM# 133",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 176000,
+    "peso": "1.5235",
+    "diametro": "14",
+    "description": "Ceca So",
+    "publishedAt": "2026-10-24T18:17:53.474744+00:00"
   }
 ]
