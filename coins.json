@@ -15361,5 +15361,124 @@
     "description": "baden - Carlos II",
     "publishedAt": "2026-10-24T23:15:08.718680+00:00",
     "commemorates": "baden - Carlos II"
+  },
+  {
+    "id": 1576,
+    "title": "1 Halala 2016",
+    "country": "Arabia Saudita",
+    "metal": "Níquel",
+    "year": 2016,
+    "price": "2.5 USD",
+    "images": [
+      "images/1576A.jpeg",
+      "images/1576B.jpeg"
+    ],
+    "reference": "KM# 73",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "2",
+    "diametro": "16",
+    "description": "Salmán bin Abdulaziz",
+    "publishedAt": "2026-10-24T23:17:28.013330+00:00",
+    "cantidad": 2
+  },
+  {
+    "id": 1577,
+    "title": "10 Centavos 1984",
+    "country": "Países Bajos",
+    "metal": "Níquel",
+    "year": 1984,
+    "price": "2 USD",
+    "images": [
+      "images/1577A.jpeg",
+      "images/1577B.jpeg"
+    ],
+    "reference": "KM# 203",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "peso": "1.5",
+    "diametro": "15",
+    "description": "Beatriz",
+    "publishedAt": "2026-10-24T23:17:28.013330+00:00",
+    "cantidad": 2
+  },
+  {
+    "id": 1578,
+    "title": "5 Centavos 1908",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1908,
+    "price": "6 USD",
+    "images": [
+      "images/1578A.jpeg",
+      "images/1578B.jpeg"
+    ],
+    "reference": "CJ# 130-172",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 1693000,
+    "peso": "2",
+    "diametro": "17",
+    "description": "",
+    "publishedAt": "2026-10-24T23:17:28.013330+00:00"
+  },
+  {
+    "id": 1579,
+    "title": "50 Céntimos 1953",
+    "country": "Paraguay",
+    "metal": "Níquel",
+    "year": 1953,
+    "price": "2.5 USD",
+    "images": [
+      "images/1579A.jpeg",
+      "images/1579B.jpeg"
+    ],
+    "reference": "KM# 28",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 2000000,
+    "peso": "6.8",
+    "diametro": "25.1",
+    "description": "borde festoneado (12 ondas)",
+    "publishedAt": "2026-10-24T23:17:28.013330+00:00",
+    "cantidad": 2
+  },
+  {
+    "id": 1580,
+    "title": "1 Dime 1947",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1947,
+    "price": "5 USD",
+    "images": [
+      "images/1580A.jpeg",
+      "images/1580B.jpeg"
+    ],
+    "reference": "KM# 195",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "2.5",
+    "diametro": "17.9",
+    "description": "",
+    "publishedAt": "2026-10-24T23:17:28.013330+00:00"
+  },
+  {
+    "id": 1581,
+    "title": "2 Ore 1966",
+    "country": "Noruega",
+    "metal": "Bronce",
+    "year": 1966,
+    "price": "4 USD",
+    "images": [
+      "images/1581A.jpeg",
+      "images/1581B.jpeg"
+    ],
+    "reference": "KM# 410",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "4",
+    "diametro": "21",
+    "description": "Olaf V",
+    "publishedAt": "2026-10-24T23:17:28.013330+00:00"
   }
 ]
