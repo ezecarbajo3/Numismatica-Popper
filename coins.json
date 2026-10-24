@@ -15222,5 +15222,64 @@
     "diametro": "16",
     "description": "",
     "publishedAt": "2026-10-24T18:42:00.067921+00:00"
+  },
+  {
+    "id": 1569,
+    "title": "1 Centavo 1992",
+    "country": "Kiribati",
+    "metal": "Acero recubierto de cobre",
+    "year": 1992,
+    "price": "3 USD",
+    "images": [
+      "images/1569A.jpeg",
+      "images/1569B.jpeg"
+    ],
+    "reference": "KM# 1a",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "2.6",
+    "diametro": "17.5",
+    "description": "",
+    "publishedAt": "2026-10-24T22:55:20.024196+00:00"
+  },
+  {
+    "id": 1570,
+    "title": "1 Centavo 1989",
+    "country": "El Salvador",
+    "metal": "Latón",
+    "year": 1989,
+    "price": "2.5 USD",
+    "images": [
+      "images/1570A.jpeg",
+      "images/1570B.jpeg"
+    ],
+    "reference": "KM# 135.1a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "1.3",
+    "diametro": "15",
+    "description": "",
+    "publishedAt": "2026-10-24T22:55:20.024196+00:00",
+    "cantidad": 3
+  },
+  {
+    "id": 1571,
+    "title": "1 Stotinka 1988",
+    "country": "Bulgaria",
+    "metal": "Latón",
+    "year": 1988,
+    "price": "2.5 USD",
+    "images": [
+      "images/1571A.jpeg",
+      "images/1571B.jpeg"
+    ],
+    "reference": "KM# 84",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "1",
+    "diametro": "15",
+    "description": "",
+    "publishedAt": "2026-10-24T22:55:20.024196+00:00",
+    "cantidad": 2
   }
 ]
