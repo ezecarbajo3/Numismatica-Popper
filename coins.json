@@ -14911,5 +14911,130 @@
     "publishedAt": "2026-10-24T15:03:28.538401+00:00",
     "group_id": "ar-20-centavos-1908",
     "group_label": "20 Centavos 1908"
+  },
+  {
+    "id": 1554,
+    "title": "2 Centavos 1854",
+    "country": "Argentina - Confed. Arg.",
+    "metal": "Cobre",
+    "year": 1854,
+    "price": "7 USD",
+    "images": [
+      "images/1554A.jpeg",
+      "images/1554B.jpeg"
+    ],
+    "reference": "KM# 24",
+    "grade": "r+",
+    "grade_short": "r+",
+    "peso": "10",
+    "diametro": "29.77",
+    "description": "",
+    "publishedAt": "2026-10-24T15:14:36.168994+00:00",
+    "group_id": "ar-2-centavos-1854",
+    "group_label": "2 Centavos 1854"
+  },
+  {
+    "id": 1555,
+    "title": "2 Centavos 1884",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1884,
+    "price": "5 USD",
+    "images": [
+      "images/1555A.jpeg",
+      "images/1555B.jpeg"
+    ],
+    "reference": "KM# 33",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": 5667000,
+    "peso": "10",
+    "diametro": "30",
+    "description": "",
+    "publishedAt": "2026-10-24T15:14:36.168994+00:00",
+    "group_id": "ar-2centavos-1884",
+    "group_label": "2 Centavos 1884"
+  },
+  {
+    "id": 1556,
+    "title": "2 Centavos 1854",
+    "country": "Argentina - Confed. Arg.",
+    "metal": "Cobre",
+    "year": 1854,
+    "price": "20 USD",
+    "images": [
+      "images/1556A.jpeg",
+      "images/1556B.jpeg"
+    ],
+    "reference": "KM# 24",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "peso": "10",
+    "diametro": "29.77",
+    "description": "",
+    "publishedAt": "2026-10-24T15:14:36.168994+00:00",
+    "group_id": "ar-2-centavos-1854",
+    "group_label": "2 Centavos 1854"
+  },
+  {
+    "id": 1557,
+    "title": "1 Dólar 2011 James Garfield",
+    "country": "Estados Unidos",
+    "metal": "Latón",
+    "year": 2011,
+    "price": "3 USD",
+    "images": [
+      "images/1557A.jpeg",
+      "images/1557B.jpeg"
+    ],
+    "reference": "KM# 502",
+    "grade": "Sin Circular -",
+    "grade_short": "SC-",
+    "peso": "8.1",
+    "diametro": "26.5",
+    "description": "James Garfield",
+    "publishedAt": "2026-10-24T15:14:36.168994+00:00",
+    "commemorates": "James Garfield"
+  },
+  {
+    "id": 1558,
+    "title": "1 Franco 1946",
+    "country": "Bélgica",
+    "metal": "Zinc",
+    "year": 1946,
+    "price": "3.5 USD",
+    "images": [
+      "images/1558A.jpeg",
+      "images/1558B.jpeg"
+    ],
+    "reference": "KM# 128",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "4.25",
+    "diametro": "21.5",
+    "description": "Francisco Franco - Leopoldo III",
+    "publishedAt": "2026-10-24T15:14:36.168994+00:00",
+    "commemorates": "Francisco Franco"
+  },
+  {
+    "id": 1559,
+    "title": "5 Centavos 1929",
+    "country": "Terranova",
+    "metal": "Plata .925",
+    "year": 1929,
+    "price": "23 USD",
+    "images": [
+      "images/1559A.jpeg",
+      "images/1559B.jpeg"
+    ],
+    "reference": "KM# 13",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 300000,
+    "peso": "1.17",
+    "diametro": "15.59",
+    "description": "Jorge V",
+    "publishedAt": "2026-10-24T15:14:36.168994+00:00",
+    "commemorates": "Jorge V"
   }
 ]
