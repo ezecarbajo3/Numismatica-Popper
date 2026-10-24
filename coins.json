@@ -14552,5 +14552,103 @@
     "publishedAt": "2026-10-21T14:52:52.981251+00:00",
     "group_id": "ru-10rublos-2014",
     "group_label": "10 Rublos 2014"
+  },
+  {
+    "id": 1536,
+    "title": "2 1/2 Gulden 1960",
+    "country": "Países Bajos",
+    "metal": "Plata .720",
+    "year": 1960,
+    "price": "20 USD",
+    "images": [
+      "images/1536A.jpeg",
+      "images/1536B.jpeg"
+    ],
+    "reference": "KM# 185",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "15",
+    "diametro": "33",
+    "description": "",
+    "publishedAt": "2026-10-24T04:52:54.833015+00:00"
+  },
+  {
+    "id": 1537,
+    "title": "1/2 Dollar 1964",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1964,
+    "price": "20 USD",
+    "images": [
+      "images/1537A.jpeg",
+      "images/1537B.jpeg"
+    ],
+    "reference": "KM# 202",
+    "grade": "Bueno -",
+    "grade_short": "B-",
+    "peso": "12.5",
+    "diametro": "30.61",
+    "description": "",
+    "publishedAt": "2026-10-24T04:52:54.833015+00:00"
+  },
+  {
+    "id": 1538,
+    "title": "República Federal de Alemania 2 Deutsche Marco G 1967",
+    "country": "Alemania, República Federal de",
+    "metal": "Cuproníquel",
+    "year": 1967,
+    "price": "3 USD",
+    "images": [
+      "images/1538A.jpeg",
+      "images/1538B.jpeg"
+    ],
+    "reference": "KM# 116",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "7",
+    "diametro": "26.75",
+    "description": "Ceca J",
+    "publishedAt": "2026-10-24T04:52:54.833015+00:00"
+  },
+  {
+    "id": 1539,
+    "title": "Cent 1919",
+    "country": "Terranova",
+    "metal": "Bronce",
+    "year": 1919,
+    "price": "26 USD",
+    "images": [
+      "images/1539A.jpeg",
+      "images/1539B.jpeg"
+    ],
+    "reference": "KM# 16",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 20000,
+    "peso": "5,67",
+    "diametro": "25.47",
+    "description": "terranova - Jorge V - Ceca Ottawa",
+    "publishedAt": "2026-10-24T04:52:54.833015+00:00",
+    "commemorates": "terranova - Jorge V"
+  },
+  {
+    "id": 1540,
+    "title": "10 Centesimi 1894",
+    "country": "Italia",
+    "metal": "Cobre",
+    "year": 1894,
+    "price": "4.5 USD",
+    "images": [
+      "images/1540A.jpeg",
+      "images/1540B.jpeg"
+    ],
+    "reference": "KM# 27",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "10",
+    "diametro": "30",
+    "description": "Humberto I",
+    "publishedAt": "2026-10-24T04:52:54.833015+00:00",
+    "commemorates": "Humberto I"
   }
 ]
