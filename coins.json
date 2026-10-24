@@ -15109,5 +15109,103 @@
     "description": "Versión Proof. Conmemorativa del 80º aniversario del Banco Central de la República Argentina (1935-2015), recreando la clásica Libertad de Oudine de 1881. Incluye sobre de pana, certificado de autenticidad oficial y factura original de compra.",
     "publishedAt": "2026-10-24T18:28:47.032139+00:00",
     "commemorates": "80º Aniversario del Banco Central de la República Argentina (BCRA)"
+  },
+  {
+    "id": 1564,
+    "title": "25 Centavos 2006",
+    "country": "Canadá",
+    "metal": "Níquel",
+    "year": 2006,
+    "price": "3.5 USD",
+    "images": [
+      "images/1564A.jpeg",
+      "images/1564B.jpeg"
+    ],
+    "reference": "KM# 635",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "4.43",
+    "diametro": "23.88",
+    "description": "Cáncer de mama - Isabel II - Lazo rosa coloreado, marca P",
+    "publishedAt": "2026-10-24T18:42:00.067921+00:00",
+    "commemorates": "Cáncer de mama - Isabel II"
+  },
+  {
+    "id": 1565,
+    "title": "3 Pesos 1995 Che Guevara",
+    "country": "Cuba",
+    "metal": "Níquel",
+    "year": 1995,
+    "price": "3 USD",
+    "images": [
+      "images/1565A.jpeg",
+      "images/1565B.jpeg"
+    ],
+    "reference": "KM# 346a",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "8",
+    "diametro": "26.5",
+    "description": "Che Guevara",
+    "publishedAt": "2026-10-24T18:42:00.067921+00:00",
+    "commemorates": "Che Guevara"
+  },
+  {
+    "id": 1566,
+    "title": "Yirmilik 1837",
+    "country": "Imperio Otomano",
+    "metal": "Plata .170",
+    "year": 1837,
+    "price": "14 USD",
+    "images": [
+      "images/1566A.jpeg",
+      "images/1566B.jpeg"
+    ],
+    "reference": "KM# 596",
+    "grade": "mb**",
+    "grade_short": "mb**",
+    "peso": "1.75",
+    "diametro": "21",
+    "description": "Mahmud II - Ceca Kostantiniyye - perforada",
+    "publishedAt": "2026-10-24T18:42:00.067921+00:00"
+  },
+  {
+    "id": 1567,
+    "title": "10 Céntimos 1947",
+    "country": "Paraguay",
+    "metal": "Bronce",
+    "year": 1947,
+    "price": "2.5 USD",
+    "images": [
+      "images/1567A.jpeg",
+      "images/1567B.jpeg"
+    ],
+    "reference": "KM# 22",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "4",
+    "diametro": "21.45",
+    "description": "",
+    "publishedAt": "2026-10-24T18:42:00.067921+00:00"
+  },
+  {
+    "id": 1568,
+    "title": "10 Centavos 1975",
+    "country": "Antillas Neerlandesas",
+    "metal": "Níquel",
+    "year": 1975,
+    "price": "2.5 USD",
+    "images": [
+      "images/1568A.jpeg",
+      "images/1568B.jpeg"
+    ],
+    "reference": "KM# 10",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "mintage": 1500000,
+    "peso": "2",
+    "diametro": "16",
+    "description": "",
+    "publishedAt": "2026-10-24T18:42:00.067921+00:00"
   }
 ]
