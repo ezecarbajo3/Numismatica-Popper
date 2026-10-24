@@ -14783,5 +14783,133 @@
     "diametro": "24.26",
     "description": "Ceca S",
     "publishedAt": "2026-10-24T14:40:41.778842+00:00"
+  },
+  {
+    "id": 1548,
+    "title": "Farthing 1736",
+    "country": "Reino Unido",
+    "metal": "Cobre",
+    "year": 1736,
+    "price": "14 USD",
+    "images": [
+      "images/1548A.jpeg",
+      "images/1548B.jpeg"
+    ],
+    "reference": "KM# 572",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "peso": "4.93",
+    "diametro": "23",
+    "description": "Jorge II",
+    "publishedAt": "2026-10-24T15:03:28.538401+00:00",
+    "commemorates": "Jorge II"
+  },
+  {
+    "id": 1549,
+    "title": "5 Centésimos 1857",
+    "country": "Uruguay",
+    "metal": "Cobre",
+    "year": 1857,
+    "price": "14 USD",
+    "images": [
+      "images/1549A.jpeg",
+      "images/1549B.jpeg"
+    ],
+    "reference": "KM# 8",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "mintage": 576000,
+    "peso": "4.5",
+    "diametro": "23.2",
+    "description": "",
+    "publishedAt": "2026-10-24T15:03:28.538401+00:00"
+  },
+  {
+    "id": 1550,
+    "title": "20 Centavos 1908",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1908,
+    "price": "50 USD",
+    "images": [
+      "images/1550A.jpeg",
+      "images/1550B.jpeg"
+    ],
+    "reference": "CJ# 52-89",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 719128,
+    "peso": "4",
+    "diametro": "21",
+    "description": "",
+    "publishedAt": "2026-10-24T15:03:28.538401+00:00",
+    "group_id": "ar-20-centavos-1908",
+    "group_label": "20 Centavos 1908"
+  },
+  {
+    "id": 1551,
+    "title": "20 Centavos 1908",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1908,
+    "price": "30 USD",
+    "images": [
+      "images/1551A.jpeg",
+      "images/1551B.jpeg"
+    ],
+    "reference": "CJ# 52-89",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "mintage": 719128,
+    "peso": "4",
+    "diametro": "21",
+    "description": "",
+    "publishedAt": "2026-10-24T15:03:28.538401+00:00",
+    "group_id": "ar-20-centavos-1908",
+    "group_label": "20 Centavos 1908"
+  },
+  {
+    "id": 1552,
+    "title": "20 Centavos 1908",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1908,
+    "price": "80 USD",
+    "images": [
+      "images/1552A.jpeg",
+      "images/1552B.jpeg"
+    ],
+    "reference": "CJ# 52-89",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 719128,
+    "peso": "4",
+    "diametro": "21",
+    "description": "",
+    "publishedAt": "2026-10-24T15:03:28.538401+00:00",
+    "group_id": "ar-20-centavos-1908",
+    "group_label": "20 Centavos 1908"
+  },
+  {
+    "id": 1553,
+    "title": "20 Centavos 1908",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1908,
+    "price": "120 USD",
+    "images": [
+      "images/1553A.jpeg",
+      "images/1553B.jpeg"
+    ],
+    "reference": "CJ# 52-89",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": 719128,
+    "peso": "4",
+    "diametro": "21",
+    "description": "",
+    "publishedAt": "2026-10-24T15:03:28.538401+00:00",
+    "group_id": "ar-20-centavos-1908",
+    "group_label": "20 Centavos 1908"
   }
 ]
