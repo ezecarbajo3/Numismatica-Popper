@@ -15539,5 +15539,43 @@
     "description": "Isabel II",
     "publishedAt": "2026-10-24T23:19:26.498984+00:00",
     "commemorates": "Isabel II"
+  },
+  {
+    "id": 1585,
+    "title": "1/2 Céntimo de Escudo 1866",
+    "country": "España",
+    "metal": "Bronce",
+    "year": 1866,
+    "price": "8 USD",
+    "images": [
+      "images/1585A.jpeg",
+      "images/1585B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Bueno -",
+    "grade_short": "B-",
+    "peso": "1.25",
+    "diametro": "16",
+    "description": "Isabel II",
+    "publishedAt": "2026-10-24T23:29:15.178428+00:00"
+  },
+  {
+    "id": 1586,
+    "title": "1/2 Dólar 1945",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1945,
+    "price": "25 USD",
+    "images": [
+      "images/1586A.jpeg",
+      "images/1586B.jpeg"
+    ],
+    "reference": "KM# 142",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "12.5",
+    "diametro": "30.6",
+    "description": "Ceca S",
+    "publishedAt": "2026-10-24T23:29:15.178428+00:00"
   }
 ]
