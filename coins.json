@@ -15066,12 +15066,17 @@
     "metal": "Plata .925",
     "year": 2007,
     "price": "102.5 USD",
-    "images": [],
+    "images": [
+      "images/1561A.jpeg",
+      "images/1561B.jpeg",
+      "images/1561C.jpeg",
+      "images/1561D.jpeg"
+    ],
     "reference": "CJ# 10.6",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "peso": "27 g",
-    "diametro": "40 mm",
+    "peso": "27",
+    "diametro": "40",
     "description": "Versión Proof. VII Serie Iberoamericana (Juegos Olímpicos / Encuentro de Dos Mundos - Medalla de Oro 2004). Sellada en su cápsula conmemorativa original.",
     "publishedAt": "2026-10-24T18:28:47.032139+00:00",
     "commemorates": "VII Serie Iberoamericana - Juegos Olímpicos"
@@ -15083,12 +15088,16 @@
     "metal": "Plata .900",
     "year": 1999,
     "price": "147 USD",
-    "images": [],
+    "images": [
+      "images/1562A.jpeg",
+      "images/1562B.jpeg",
+      "images/1562C.jpeg"
+    ],
     "reference": "CJ# 6.6",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "peso": "25 g",
-    "diametro": "37 mm",
+    "peso": "25",
+    "diametro": "37",
     "description": "Versión Proof. Conmemorativa del centenario del nacimiento de Jorge Luis Borges (1899-1999). Incluye cápsula y estuche original de pana azul.",
     "publishedAt": "2026-10-24T18:28:47.032139+00:00",
     "commemorates": "Centenario del nacimiento de Jorge Luis Borges"
@@ -15100,12 +15109,16 @@
     "metal": "Plata .900",
     "year": 2015,
     "price": "166.5 USD",
-    "images": [],
+    "images": [
+      "images/1563A.jpeg",
+      "images/1563B.jpeg",
+      "images/1563C.jpeg"
+    ],
     "reference": "CJ# 6.30",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "peso": "25 g",
-    "diametro": "37 mm",
+    "peso": "25",
+    "diametro": "37",
     "description": "Versión Proof. Conmemorativa del 80º aniversario del Banco Central de la República Argentina (1935-2015), recreando la clásica Libertad de Oudine de 1881. Incluye sobre de pana, certificado de autenticidad oficial y factura original de compra.",
     "publishedAt": "2026-10-24T18:28:47.032139+00:00",
     "commemorates": "80º Aniversario del Banco Central de la República Argentina (BCRA)"
