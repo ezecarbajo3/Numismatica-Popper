@@ -15577,5 +15577,263 @@
     "diametro": "30.6",
     "description": "Ceca S",
     "publishedAt": "2026-10-24T23:29:15.178428+00:00"
+  },
+  {
+    "id": 1587,
+    "title": "50 Centavos 1883",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1883,
+    "price": "55 USD",
+    "images": [
+      "images/1587A.jpeg",
+      "images/1587B.jpeg"
+    ],
+    "reference": "CJ# 15-17",
+    "grade": "Muy Bueno **",
+    "grade_short": "MB**",
+    "mintage": 2273000,
+    "peso": "12.5",
+    "diametro": "30.1",
+    "description": "Poquito de pegamento",
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00"
+  },
+  {
+    "id": 1588,
+    "title": "Media Corona 1921",
+    "country": "Reino Unido",
+    "metal": "Plata .500",
+    "year": 1921,
+    "price": "17 USD",
+    "images": [
+      "images/1588A.jpeg",
+      "images/1588B.jpeg"
+    ],
+    "reference": "KM# 818.1a",
+    "grade": "Bueno +",
+    "grade_short": "B+",
+    "peso": "14.14",
+    "diametro": "32.3",
+    "description": "Jorge V - 2do tipo",
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00",
+    "commemorates": "Jorge V - 2do tipo"
+  },
+  {
+    "id": 1589,
+    "title": "1 Peseta 1900",
+    "country": "España",
+    "metal": "Plata .835",
+    "year": 1900,
+    "price": "16 USD",
+    "images": [
+      "images/1589A.jpeg",
+      "images/1589B.jpeg"
+    ],
+    "reference": "KM# 706",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "peso": "5",
+    "diametro": "23",
+    "description": "Alfonso XIII",
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00",
+    "commemorates": "Alfonso XIII"
+  },
+  {
+    "id": 1590,
+    "title": "5 Centavos 1945",
+    "country": "Estados Unidos",
+    "metal": "Plata .350",
+    "year": 1945,
+    "price": "5 USD",
+    "images": [
+      "images/1590A.jpeg",
+      "images/1590B.jpeg"
+    ],
+    "reference": "KM# 192a",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "peso": "5",
+    "diametro": "21.2",
+    "description": "Ceca P",
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00",
+    "group_id": "us-5-centavos-1945",
+    "group_label": "5 Centavos 1945"
+  },
+  {
+    "id": 1591,
+    "title": "5 Centavos 1945",
+    "country": "Estados Unidos",
+    "metal": "Plata .350",
+    "year": 1945,
+    "price": "6 USD",
+    "images": [
+      "images/1591A.jpeg",
+      "images/1591B.jpeg"
+    ],
+    "reference": "KM# 192a",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "5",
+    "diametro": "21.2",
+    "description": "Ceca San Francisco - War nickel (ceca S grande sobre Monticello)",
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00",
+    "group_id": "us-5-centavos-1945",
+    "group_label": "5 Centavos 1945"
+  },
+  {
+    "id": 1592,
+    "title": "1 Dime 1958",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1958,
+    "price": "5 USD",
+    "images": [
+      "images/1592A.jpeg",
+      "images/1592B.jpeg"
+    ],
+    "reference": "KM# 195",
+    "grade": "",
+    "grade_short": "",
+    "peso": "2.5",
+    "diametro": "17.9",
+    "description": "Ceca D",
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00"
+  },
+  {
+    "id": 1593,
+    "title": "1 Dime 1942",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1942,
+    "price": "5 USD",
+    "images": [
+      "images/1593A.jpeg",
+      "images/1593B.jpeg"
+    ],
+    "reference": "KM# 140",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "2.5",
+    "diametro": "17.9",
+    "description": "",
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00"
+  },
+  {
+    "id": 1594,
+    "title": "1 Dime 1962",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1962,
+    "price": "5 USD",
+    "images": [
+      "images/1594A.jpeg",
+      "images/1594B.jpeg"
+    ],
+    "reference": "KM# 195",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "2.5",
+    "diametro": "17.9",
+    "description": "Ceca D",
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00"
+  },
+  {
+    "id": 1595,
+    "title": "1 Dime 1954",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1954,
+    "price": "5 USD",
+    "images": [
+      "images/1595A.jpeg",
+      "images/1595B.jpeg"
+    ],
+    "reference": "KM# 195",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "2.5",
+    "diametro": "17.9",
+    "description": "Ceca D",
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00"
+  },
+  {
+    "id": 1596,
+    "title": "1 Dime 1960",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1960,
+    "price": "5 USD",
+    "images": [
+      "images/1596A.jpeg",
+      "images/1596B.jpeg"
+    ],
+    "reference": "KM# 195",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "2.5",
+    "diametro": "17.9",
+    "description": "Ceca D",
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00"
+  },
+  {
+    "id": 1597,
+    "title": "1 Dime 1957",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1957,
+    "price": "5 USD",
+    "images": [
+      "images/1597A.jpeg",
+      "images/1597B.jpeg"
+    ],
+    "reference": "KM# 195",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "2.5",
+    "diametro": "17.9",
+    "description": "Ceca D",
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00"
+  },
+  {
+    "id": 1598,
+    "title": "10 Centavos 1882",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1882,
+    "price": "8.5 USD",
+    "images": [
+      "images/1598A.jpeg",
+      "images/1598B.jpeg"
+    ],
+    "reference": "CJ# 21-23",
+    "grade": "Bueno **",
+    "grade_short": "B**",
+    "mintage": 778000,
+    "peso": "2.5",
+    "diametro": "18.3",
+    "description": "Restito de soldadura",
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00",
+    "group_id": "ar-10centavos-1882",
+    "group_label": "10 Centavos 1882"
+  },
+  {
+    "id": 1599,
+    "title": "20 Fils 1931",
+    "country": "Irak",
+    "metal": "Plata .500",
+    "year": 1931,
+    "price": "20 USD",
+    "images": [
+      "images/1599A.jpeg",
+      "images/1599B.jpeg"
+    ],
+    "reference": "KM# 99",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "mintage": 1500000,
+    "peso": "3.6",
+    "diametro": "20.5",
+    "description": "Faisal I - ALTO valor de catalogo",
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00"
   }
 ]
