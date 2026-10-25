@@ -16289,5 +16289,382 @@
     "description": "Isabel II",
     "publishedAt": "2026-10-25T19:33:32.752447+00:00",
     "commemorates": "Isabel II"
+  },
+  {
+    "id": 1623,
+    "title": "1 Rublo 1967",
+    "country": "Unión Soviética",
+    "metal": "Níquel",
+    "year": 1967,
+    "price": "6.5 USD",
+    "images": [
+      "images/1623A.jpeg",
+      "images/1623B.jpeg"
+    ],
+    "reference": "Y# 140.1-2",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "11.25",
+    "diametro": "31",
+    "description": "50 años de poder soviético - Lenin",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "commemorates": "50 años de poder soviético"
+  },
+  {
+    "id": 1624,
+    "title": "5 Chelines 2002",
+    "country": "Somalia",
+    "metal": "Aluminio",
+    "year": 2002,
+    "price": "3 USD",
+    "images": [
+      "images/1624A.jpeg",
+      "images/1624B.jpeg"
+    ],
+    "reference": "KM# 45",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "1.3",
+    "diametro": "21",
+    "description": "FAO - Food Security - Elefante",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "commemorates": "FAO - Food Security"
+  },
+  {
+    "id": 1625,
+    "title": "1 Pfennig 1953",
+    "country": "Alemana, República Democrática",
+    "metal": "Aluminio",
+    "year": 1953,
+    "price": "3 USD",
+    "images": [
+      "images/1625A.jpeg",
+      "images/1625B.jpeg"
+    ],
+    "reference": "KM# 5",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "0.7",
+    "diametro": "17",
+    "description": "Ceca A",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+  },
+  {
+    "id": 1626,
+    "title": "1 Chelín 2010",
+    "country": "Kenia",
+    "metal": "Níquel",
+    "year": 2010,
+    "price": "3 USD",
+    "images": [
+      "images/1626A.jpeg",
+      "images/1626B.jpeg"
+    ],
+    "reference": "KM# 34",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "5.5",
+    "diametro": "23.9",
+    "description": "",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+  },
+  {
+    "id": 1627,
+    "title": "2 Centavos 1892",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1892,
+    "price": "2 USD",
+    "images": [
+      "images/1627A.jpeg",
+      "images/1627B.jpeg"
+    ],
+    "reference": "KM# 33",
+    "grade": "Muy Bueno **",
+    "grade_short": "MB**",
+    "mintage": 3497000,
+    "peso": "10",
+    "diametro": "30",
+    "description": "Golpecito en escudo",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+  },
+  {
+    "id": 1628,
+    "title": "1 Florín 1921",
+    "country": "Reino Unido",
+    "metal": "Plata .500",
+    "year": 1921,
+    "price": "20 USD",
+    "images": [
+      "images/1628A.jpeg",
+      "images/1628B.jpeg"
+    ],
+    "reference": "KM# 817a",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "11.31",
+    "diametro": "28.5",
+    "description": "Jorge V",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "commemorates": "Jorge V"
+  },
+  {
+    "id": 1629,
+    "title": "10 Pfennig 1973",
+    "country": "Alemana, República Democrática",
+    "metal": "Aluminio",
+    "year": 1973,
+    "price": "3 USD",
+    "images": [
+      "images/1629A.jpeg",
+      "images/1629B.jpeg"
+    ],
+    "reference": "KM# 10",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "1.5",
+    "diametro": "21",
+    "description": "Ceca A",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+  },
+  {
+    "id": 1630,
+    "title": "2 Centavos 1893",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1893,
+    "price": "4 USD",
+    "images": [
+      "images/1630A.jpeg",
+      "images/1630B.jpeg"
+    ],
+    "reference": "KM# 33",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 5473000,
+    "peso": "10",
+    "diametro": "30",
+    "description": "",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+  },
+  {
+    "id": 1631,
+    "title": "2 Chelines 1950",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1950,
+    "price": "3 USD",
+    "images": [
+      "images/1631A.jpeg",
+      "images/1631B.jpeg"
+    ],
+    "reference": "KM# 878",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "11.31",
+    "diametro": "28.5",
+    "description": "Jorge VI",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1632,
+    "title": "1 Duit 1790",
+    "country": "Utrecht, City of",
+    "metal": "Cobre",
+    "year": 1790,
+    "price": "4.5 USD",
+    "images": [
+      "images/1632A.jpeg",
+      "images/1632B.jpeg"
+    ],
+    "reference": "KM# 91",
+    "grade": "Bueno -",
+    "grade_short": "B-",
+    "peso": "3.1",
+    "diametro": "21.5",
+    "description": "",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+  },
+  {
+    "id": 1633,
+    "title": "1 Centavo 1885",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1885,
+    "price": "12 USD",
+    "images": [
+      "images/1633A.jpeg",
+      "images/1633B.jpeg"
+    ],
+    "reference": "KM# 32",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 1314000,
+    "peso": "5",
+    "diametro": "25",
+    "description": "Increible relieve",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+  },
+  {
+    "id": 1634,
+    "title": "1 Rublo 2020 Handball",
+    "country": "Transnistria",
+    "metal": "Níquel",
+    "year": 2020,
+    "price": "5 USD",
+    "images": [
+      "images/1634A.jpeg",
+      "images/1634B.jpeg"
+    ],
+    "reference": "KM# 376",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 50000,
+    "peso": "4.65",
+    "diametro": "22",
+    "description": "Handball",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "commemorates": "Handball"
+  },
+  {
+    "id": 1635,
+    "title": "500 Liras 1986",
+    "country": "San Marino",
+    "metal": "Bimetálica",
+    "year": 1986,
+    "price": "4.5 USD",
+    "images": [
+      "images/1635A.jpeg",
+      "images/1635B.jpeg"
+    ],
+    "reference": "KM# 195",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 3061000,
+    "peso": "6.8",
+    "diametro": "25.8",
+    "description": "Ceca R",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+  },
+  {
+    "id": 1636,
+    "title": "10 Céntimos 1901",
+    "country": "Suiza",
+    "metal": "Cuproníquel",
+    "year": 1901,
+    "price": "3.5 USD",
+    "images": [
+      "images/1636A.jpeg",
+      "images/1636B.jpeg"
+    ],
+    "reference": "KM# 27",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 1000000,
+    "peso": "3",
+    "diametro": "19.15",
+    "description": "Ceca B",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+  },
+  {
+    "id": 1637,
+    "title": "10 Peniques 1948",
+    "country": "Alemana, República Democrática",
+    "metal": "Aluminio",
+    "year": 1948,
+    "price": "3 USD",
+    "images": [
+      "images/1637A.jpeg",
+      "images/1637B.jpeg"
+    ],
+    "reference": "KM# 3",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "1.5",
+    "diametro": "21",
+    "description": "Ceca A",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+  },
+  {
+    "id": 1638,
+    "title": "10 Rublos 2015 Kovrov",
+    "country": "Rusia",
+    "metal": "Latón",
+    "year": 2015,
+    "price": "3 USD",
+    "images": [
+      "images/1638A.jpeg",
+      "images/1638B.jpeg"
+    ],
+    "reference": "Y# 1643",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "5.63",
+    "diametro": "22",
+    "description": "Kovrov - Ceca SPMD",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "commemorates": "Kovrov"
+  },
+  {
+    "id": 1639,
+    "title": "10 Rublos 2015 Kalach-na-Donu",
+    "country": "Rusia",
+    "metal": "Latón",
+    "year": 2015,
+    "price": "3 USD",
+    "images": [
+      "images/1639A.jpeg",
+      "images/1639B.jpeg"
+    ],
+    "reference": "Y# 1641",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "5.63",
+    "diametro": "22",
+    "description": "Kalach-na-Donu - Ceca СПМД",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "commemorates": "Kalach-na-Donu"
+  },
+  {
+    "id": 1640,
+    "title": "5 Pesos 1994",
+    "country": "Argentina",
+    "metal": "Níquel",
+    "year": 1994,
+    "price": "5.5 USD",
+    "images": [
+      "images/1640A.jpeg",
+      "images/1640B.jpeg"
+    ],
+    "reference": "KM# 115",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "mintage": 1000000,
+    "peso": "21.5",
+    "diametro": "35",
+    "description": "Convención Nacional Constituyente",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "commemorates": "Convención Nacional Constituyente"
+  },
+  {
+    "id": 1641,
+    "title": "1 Céntimo 1906",
+    "country": "España",
+    "metal": "Bronce",
+    "year": 1906,
+    "price": "9 USD",
+    "images": [
+      "images/1641A.jpeg",
+      "images/1641B.jpeg"
+    ],
+    "reference": "KM# 726",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "1",
+    "diametro": "15",
+    "description": "Alfonso XIII",
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "commemorates": "Alfonso XIII"
   }
 ]
