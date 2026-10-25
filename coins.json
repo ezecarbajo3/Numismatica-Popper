@@ -15835,5 +15835,241 @@
     "diametro": "20.5",
     "description": "Faisal I - ALTO valor de catalogo",
     "publishedAt": "2026-10-25T15:20:38.079058+00:00"
+  },
+  {
+    "id": 1600,
+    "title": "20 Céntimos 1975",
+    "country": "Argelia",
+    "metal": "Níquel",
+    "year": 1975,
+    "price": "4.5 USD",
+    "images": [
+      "images/1600A.jpeg",
+      "images/1600B.jpeg"
+    ],
+    "reference": "KM# 107.1",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "4",
+    "diametro": "22",
+    "description": "",
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00"
+  },
+  {
+    "id": 1601,
+    "title": "50 Centavos 1978",
+    "country": "Australia",
+    "metal": "Cuproníquel",
+    "year": 1978,
+    "price": "3 USD",
+    "images": [
+      "images/1601A.jpeg",
+      "images/1601B.jpeg"
+    ],
+    "reference": "KM# 68",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "15.55",
+    "diametro": "31.51",
+    "description": "Isabel II",
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1602,
+    "title": "5 Chelines 1987",
+    "country": "Uganda",
+    "metal": "Níquel",
+    "year": 1987,
+    "price": "2.5 USD",
+    "images": [
+      "images/1602A.jpeg",
+      "images/1602B.jpeg"
+    ],
+    "reference": "KM# 29",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "3.5",
+    "diametro": "22",
+    "description": "",
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00",
+    "group_id": "ug-5-chelines-1987",
+    "group_label": "5 Chelines 1987"
+  },
+  {
+    "id": 1603,
+    "title": "2 Chelines 1987",
+    "country": "Uganda",
+    "metal": "Cobre",
+    "year": 1987,
+    "price": "2.5 USD",
+    "images": [
+      "images/1603A.jpeg",
+      "images/1603B.jpeg"
+    ],
+    "reference": "KM# 28",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "8",
+    "diametro": "24",
+    "description": "",
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00"
+  },
+  {
+    "id": 1604,
+    "title": "5 Chelines 1987",
+    "country": "Uganda",
+    "metal": "Níquel",
+    "year": 1987,
+    "price": "3 USD",
+    "images": [
+      "images/1604A.jpeg",
+      "images/1604B.jpeg"
+    ],
+    "reference": "KM# 29",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "3.5",
+    "diametro": "22",
+    "description": "",
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00",
+    "group_id": "ug-5-chelines-1987",
+    "group_label": "5 Chelines 1987"
+  },
+  {
+    "id": 1605,
+    "title": "500 Chelines 1998",
+    "country": "Uganda",
+    "metal": "Latón",
+    "year": 1998,
+    "price": "4 USD",
+    "images": [
+      "images/1605A.jpeg",
+      "images/1605B.jpeg"
+    ],
+    "reference": "KM# 69",
+    "grade": "Bueno +",
+    "grade_short": "B+",
+    "peso": "9",
+    "diametro": "23.5",
+    "description": "",
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00"
+  },
+  {
+    "id": 1606,
+    "title": "50 Centavos 1982",
+    "country": "Australia",
+    "metal": "Cuproníquel",
+    "year": 1982,
+    "price": "5 USD",
+    "images": [
+      "images/1606A.jpeg",
+      "images/1606B.jpeg"
+    ],
+    "reference": "KM# 74",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "15.55",
+    "diametro": "31.51",
+    "description": "Commonwealth Games Brisbane - Isabel II",
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00",
+    "commemorates": "Commonwealth Games Brisbane - Isabel II"
+  },
+  {
+    "id": 1607,
+    "title": "1 Centavo 1903",
+    "country": "Estados Unidos",
+    "metal": "Bronce",
+    "year": 1903,
+    "price": "6.5 USD",
+    "images": [
+      "images/1607A.jpeg",
+      "images/1607B.jpeg"
+    ],
+    "reference": "KM# 90a",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "3.11",
+    "diametro": "19",
+    "description": "",
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00"
+  },
+  {
+    "id": 1608,
+    "title": "2 Centavos 1997",
+    "country": "Sudáfrica",
+    "metal": "Cobre",
+    "year": 1997,
+    "price": "2.5 USD",
+    "images": [
+      "images/1608A.jpeg",
+      "images/1608B.jpeg"
+    ],
+    "reference": "KM# 159",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "3",
+    "diametro": "18",
+    "description": "",
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00"
+  },
+  {
+    "id": 1609,
+    "title": "2500 Liras 1991",
+    "country": "Turquía",
+    "metal": "Níquel",
+    "year": 1991,
+    "price": "3 USD",
+    "images": [
+      "images/1609A.jpeg",
+      "images/1609B.jpeg"
+    ],
+    "reference": "KM# 1015",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "9.3",
+    "diametro": "27.25",
+    "description": "",
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00"
+  },
+  {
+    "id": 1610,
+    "title": "1 Gulden 1991",
+    "country": "Antillas Neerlandesas",
+    "metal": "Bronce",
+    "year": 1991,
+    "price": "4.5 USD",
+    "images": [
+      "images/1610A.jpeg",
+      "images/1610B.jpeg"
+    ],
+    "reference": "KM# 37",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 2013000,
+    "peso": "6",
+    "diametro": "24",
+    "description": "Beatriz",
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00"
+  },
+  {
+    "id": 1611,
+    "title": "5 Centavos 2006",
+    "country": "Belice",
+    "metal": "Aluminio",
+    "year": 2006,
+    "price": "3 USD",
+    "images": [
+      "images/1611A.jpeg",
+      "images/1611B.jpeg"
+    ],
+    "reference": "KM# 34a",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "1.04",
+    "diametro": "20.2",
+    "description": "Isabel II",
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00",
+    "commemorates": "Isabel II"
   }
 ]
