@@ -15636,7 +15636,9 @@
     "diametro": "23",
     "description": "Alfonso XIII",
     "publishedAt": "2026-10-25T15:20:38.079058+00:00",
-    "commemorates": "Alfonso XIII"
+    "commemorates": "Alfonso XIII",
+    "status": "sold",
+    "soldAt": "2026-10-25T23:41:03.110061+00:00"
   },
   {
     "id": 1590,
@@ -15814,7 +15816,9 @@
     "description": "Restito de soldadura",
     "publishedAt": "2026-10-25T15:20:38.079058+00:00",
     "group_id": "ar-10centavos-1882",
-    "group_label": "10 Centavos 1882"
+    "group_label": "10 Centavos 1882",
+    "status": "sold",
+    "soldAt": "2026-10-25T23:41:03.110061+00:00"
   },
   {
     "id": 1599,
@@ -15873,7 +15877,9 @@
     "diametro": "31.51",
     "description": "Isabel II",
     "publishedAt": "2026-10-25T16:36:39.532094+00:00",
-    "commemorates": "Isabel II"
+    "commemorates": "Isabel II",
+    "status": "sold",
+    "soldAt": "2026-10-25T23:41:03.110061+00:00"
   },
   {
     "id": 1602,
@@ -15894,7 +15900,9 @@
     "description": "",
     "publishedAt": "2026-10-25T16:36:39.532094+00:00",
     "group_id": "ug-5-chelines-1987",
-    "group_label": "5 Chelines 1987"
+    "group_label": "5 Chelines 1987",
+    "status": "sold",
+    "soldAt": "2026-10-25T23:41:03.110061+00:00"
   },
   {
     "id": 1603,
@@ -15934,7 +15942,9 @@
     "description": "",
     "publishedAt": "2026-10-25T16:36:39.532094+00:00",
     "group_id": "ug-5-chelines-1987",
-    "group_label": "5 Chelines 1987"
+    "group_label": "5 Chelines 1987",
+    "status": "sold",
+    "soldAt": "2026-10-25T23:41:03.110061+00:00"
   },
   {
     "id": 1605,
@@ -16011,7 +16021,9 @@
     "peso": "3",
     "diametro": "18",
     "description": "",
-    "publishedAt": "2026-10-25T16:36:39.532094+00:00"
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-25T23:41:03.110061+00:00"
   },
   {
     "id": 1609,
@@ -16030,7 +16042,9 @@
     "peso": "9.3",
     "diametro": "27.25",
     "description": "",
-    "publishedAt": "2026-10-25T16:36:39.532094+00:00"
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-25T23:41:03.110061+00:00"
   },
   {
     "id": 1610,
@@ -16070,7 +16084,9 @@
     "diametro": "20.2",
     "description": "Isabel II",
     "publishedAt": "2026-10-25T16:36:39.532094+00:00",
-    "commemorates": "Isabel II"
+    "commemorates": "Isabel II",
+    "status": "sold",
+    "soldAt": "2026-10-25T23:41:03.110061+00:00"
   },
   {
     "id": 1612,
@@ -16308,7 +16324,9 @@
     "diametro": "31",
     "description": "50 años de poder soviético - Lenin",
     "publishedAt": "2026-10-25T23:14:46.276369+00:00",
-    "commemorates": "50 años de poder soviético"
+    "commemorates": "50 años de poder soviético",
+    "status": "sold",
+    "soldAt": "2026-10-25T23:41:03.110061+00:00"
   },
   {
     "id": 1624,
@@ -16504,7 +16522,9 @@
     "peso": "5",
     "diametro": "25",
     "description": "Increible relieve",
-    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-25T23:41:03.110061+00:00"
   },
   {
     "id": 1634,
