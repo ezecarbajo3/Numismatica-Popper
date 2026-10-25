@@ -114,6 +114,39 @@ def poner_precio(item_id, precio):
     return (True, None) if st == 200 else (False, f"{st}: {str(r)[:160]}")
 
 
+def repreciar(sku, usd, cotiz):
+    """Repricia la publicacion de UNA moneda con la misma regla que main().
+
+    La usa el widget cuando se cambia el precio en la tabla Stock: el precio web
+    (usd) ya quedo escrito en coins.json y ML se lleva al que le corresponde.
+    Nunca levanta: devuelve {'ok', 'motivo', 'item_id', 'anterior', 'nuevo', 'sin_cambios'}.
+    """
+    import ml_stock
+    pub = ml_stock.buscar(sku)
+    if not pub.get("ok"):
+        return pub
+    item_id = pub["item_id"]
+    if pub.get("status") not in ESTADOS_EDITABLES:
+        return {"ok": False, "item_id": item_id,
+                "motivo": f"la publicacion {item_id} esta en estado {pub.get('status')}"}
+    if pub.get("variation_id"):
+        return {"ok": False, "item_id": item_id,
+                "motivo": f"la publicacion {item_id} tiene variaciones, se maneja a mano"}
+    st, it = ml_api.pedir("GET", f"/items/{item_id}?attributes=price,shipping")
+    if st != 200:
+        return {"ok": False, "item_id": item_id, "motivo": f"no se pudo leer {item_id} ({st})"}
+    gratis = bool((it.get("shipping") or {}).get("free_shipping"))
+    nuevo = precio_para(usd * cotiz, COSTO_ENVIO_GRATIS if gratis else 0)
+    anterior = it.get("price")
+    if anterior == nuevo:
+        return {"ok": True, "sin_cambios": True, "item_id": item_id,
+                "anterior": anterior, "nuevo": nuevo}
+    ok, err = poner_precio(item_id, nuevo)
+    if not ok:
+        return {"ok": False, "item_id": item_id, "motivo": f"PUT del precio fallo ({err})"}
+    return {"ok": True, "item_id": item_id, "anterior": anterior, "nuevo": nuevo}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--aplicar", action="store_true")
