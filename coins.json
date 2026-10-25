@@ -16071,5 +16071,223 @@
     "description": "Isabel II",
     "publishedAt": "2026-10-25T16:36:39.532094+00:00",
     "commemorates": "Isabel II"
+  },
+  {
+    "id": 1612,
+    "title": "25 Paisas 1981",
+    "country": "Pakistán",
+    "metal": "Cuproníquel",
+    "year": 1981,
+    "price": "4.5 USD",
+    "images": [
+      "images/1612A.jpeg",
+      "images/1612B.jpeg"
+    ],
+    "reference": "KM# 37",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "4",
+    "diametro": "20",
+    "description": "",
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+  },
+  {
+    "id": 1613,
+    "title": "6 Peniques 1947",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1947,
+    "price": "2.5 USD",
+    "images": [
+      "images/1613A.jpeg",
+      "images/1613B.jpeg"
+    ],
+    "reference": "KM# 862",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "2.83",
+    "diametro": "19.3",
+    "description": "Jorge VI",
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00",
+    "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1614,
+    "title": "50 Liras 1977",
+    "country": "Vaticano, Ciudad del",
+    "metal": "Acero inoxidable",
+    "year": 1977,
+    "price": "4.5 USD",
+    "images": [
+      "images/1614A.jpeg",
+      "images/1614B.jpeg"
+    ],
+    "reference": "KM# A121",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 600000,
+    "peso": "6.2",
+    "diametro": "24.8",
+    "description": "Pablo VI",
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+  },
+  {
+    "id": 1615,
+    "title": "1 Rupia 1996",
+    "country": "Nepal",
+    "metal": "Latón",
+    "year": 1996,
+    "price": "4 USD",
+    "images": [
+      "images/1615A.jpeg",
+      "images/1615B.jpeg"
+    ],
+    "reference": "KM# 1073a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "4",
+    "diametro": "20",
+    "description": "Birendra Bir Bikram",
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+  },
+  {
+    "id": 1616,
+    "title": "10 Sentimo 2004",
+    "country": "Filipinas",
+    "metal": "Cobre",
+    "year": 2004,
+    "price": "2.5 USD",
+    "images": [
+      "images/1616A.jpeg",
+      "images/1616B.jpeg"
+    ],
+    "reference": "KM# 270.1",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "2.5",
+    "diametro": "17",
+    "description": "",
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+  },
+  {
+    "id": 1617,
+    "title": "5 Escudos 1994",
+    "country": "Cabo Verde",
+    "metal": "Cobre",
+    "year": 1994,
+    "price": "4.5 USD",
+    "images": [
+      "images/1617A.jpeg",
+      "images/1617B.jpeg"
+    ],
+    "reference": "KM# 36",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "4",
+    "diametro": "21",
+    "description": "",
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+  },
+  {
+    "id": 1618,
+    "title": "10 Centavos 1966",
+    "country": "Filipinas",
+    "metal": "Níquel",
+    "year": 1966,
+    "price": "3 USD",
+    "images": [
+      "images/1618A.jpeg",
+      "images/1618B.jpeg"
+    ],
+    "reference": "KM# 188",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "2.04",
+    "diametro": "17.9",
+    "description": "",
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+  },
+  {
+    "id": 1619,
+    "title": "5 Centavos 1997",
+    "country": "Zimbabue",
+    "metal": "Cuproníquel",
+    "year": 1997,
+    "price": "3 USD",
+    "images": [
+      "images/1619A.jpeg",
+      "images/1619B.jpeg"
+    ],
+    "reference": "KM# 2",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 5500,
+    "peso": "2.5",
+    "diametro": "17",
+    "description": "",
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+  },
+  {
+    "id": 1620,
+    "title": "2 Peniques 1990",
+    "country": "Jersey",
+    "metal": "Bronce",
+    "year": 1990,
+    "price": "2.5 USD",
+    "images": [
+      "images/1620A.jpeg",
+      "images/1620B.jpeg"
+    ],
+    "reference": "KM# 55",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 2600000,
+    "peso": "7.1",
+    "diametro": "25.91",
+    "description": "Isabel II",
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1621,
+    "title": "1 Penique 1994",
+    "country": "Jersey",
+    "metal": "Cobre",
+    "year": 1994,
+    "price": "2.5 USD",
+    "images": [
+      "images/1621A.jpeg",
+      "images/1621B.jpeg"
+    ],
+    "reference": "KM# 54b",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 2000000,
+    "peso": "3.55",
+    "diametro": "20.32",
+    "description": "Isabel II",
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1622,
+    "title": "5 Peniques 1993",
+    "country": "Jersey",
+    "metal": "Cuproníquel",
+    "year": 1993,
+    "price": "2.5 USD",
+    "images": [
+      "images/1622A.jpeg",
+      "images/1622B.jpeg"
+    ],
+    "reference": "KM# 56.2",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 2000000,
+    "peso": "3.25",
+    "diametro": "18",
+    "description": "Isabel II",
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00",
+    "commemorates": "Isabel II"
   }
 ]
