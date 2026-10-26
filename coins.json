@@ -16730,5 +16730,27 @@
     "publishedAt": "2026-10-26T13:03:05.848300+00:00",
     "group_id": "ar-10centavos-1883",
     "group_label": "10 Centavos 1883"
+  },
+  {
+    "id": 1643,
+    "title": "10 Centavos 1883",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1883,
+    "price": "14 USD",
+    "images": [
+      "images/1643A.jpeg",
+      "images/1643B.jpeg"
+    ],
+    "reference": "CJ# 23",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 2786000,
+    "peso": "2.5",
+    "diametro": "18.3",
+    "description": "",
+    "publishedAt": "2026-10-26T22:39:11.070712+00:00",
+    "group_id": "ar-10centavos-1883",
+    "group_label": "10 Centavos 1883"
   }
 ]
