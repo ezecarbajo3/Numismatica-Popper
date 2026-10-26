@@ -16125,7 +16125,9 @@
     "diametro": "19.3",
     "description": "Jorge VI",
     "publishedAt": "2026-10-25T19:33:32.752447+00:00",
-    "commemorates": "Jorge VI"
+    "commemorates": "Jorge VI",
+    "status": "sold",
+    "soldAt": "2026-10-26T00:01:05.847010+00:00"
   },
   {
     "id": 1614,
@@ -16365,7 +16367,9 @@
     "peso": "0.7",
     "diametro": "17",
     "description": "Ceca A",
-    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T00:01:05.847010+00:00"
   },
   {
     "id": 1626,
@@ -16443,7 +16447,9 @@
     "peso": "1.5",
     "diametro": "21",
     "description": "Ceca A",
-    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T00:01:05.847010+00:00"
   },
   {
     "id": 1630,
@@ -16483,7 +16489,9 @@
     "diametro": "28.5",
     "description": "Jorge VI",
     "publishedAt": "2026-10-25T23:14:46.276369+00:00",
-    "commemorates": "Jorge VI"
+    "commemorates": "Jorge VI",
+    "status": "sold",
+    "soldAt": "2026-10-26T00:01:05.847010+00:00"
   },
   {
     "id": 1632,
@@ -16604,7 +16612,9 @@
     "peso": "1.5",
     "diametro": "21",
     "description": "Ceca A",
-    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T00:01:05.847010+00:00"
   },
   {
     "id": 1638,
