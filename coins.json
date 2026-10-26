@@ -16113,7 +16113,9 @@
     "peso": "4",
     "diametro": "20",
     "description": "",
-    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T23:53:52.263199+00:00"
   },
   {
     "id": 1613,
@@ -16155,7 +16157,9 @@
     "peso": "6.2",
     "diametro": "24.8",
     "description": "Pablo VI",
-    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T23:53:52.263199+00:00"
   },
   {
     "id": 1615,
@@ -16174,7 +16178,9 @@
     "peso": "4",
     "diametro": "20",
     "description": "Birendra Bir Bikram",
-    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T23:53:52.263199+00:00"
   },
   {
     "id": 1616,
@@ -16193,7 +16199,9 @@
     "peso": "2.5",
     "diametro": "17",
     "description": "",
-    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T23:53:52.263199+00:00"
   },
   {
     "id": 1617,
@@ -16212,7 +16220,9 @@
     "peso": "4",
     "diametro": "21",
     "description": "",
-    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T23:53:52.263199+00:00"
   },
   {
     "id": 1618,
@@ -16231,7 +16241,9 @@
     "peso": "2.04",
     "diametro": "17.9",
     "description": "",
-    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T23:53:52.263199+00:00"
   },
   {
     "id": 1619,
@@ -16251,7 +16263,9 @@
     "peso": "2.5",
     "diametro": "17",
     "description": "",
-    "publishedAt": "2026-10-25T19:33:32.752447+00:00"
+    "publishedAt": "2026-10-25T19:33:32.752447+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T23:53:52.263199+00:00"
   },
   {
     "id": 1620,
@@ -16356,7 +16370,9 @@
     "diametro": "21",
     "description": "FAO - Food Security - Elefante",
     "publishedAt": "2026-10-25T23:14:46.276369+00:00",
-    "commemorates": "FAO - Food Security"
+    "commemorates": "FAO - Food Security",
+    "status": "sold",
+    "soldAt": "2026-10-26T23:53:52.263199+00:00"
   },
   {
     "id": 1625,
@@ -16396,7 +16412,9 @@
     "peso": "5.5",
     "diametro": "23.9",
     "description": "",
-    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T23:53:52.263199+00:00"
   },
   {
     "id": 1627,
