@@ -15081,7 +15081,9 @@
     "diametro": "40",
     "description": "Versión Proof. VII Serie Iberoamericana (Juegos Olímpicos / Encuentro de Dos Mundos - Medalla de Oro 2004). Sellada en su cápsula conmemorativa original.",
     "publishedAt": "2026-10-24T18:28:47.032139+00:00",
-    "commemorates": "VII Serie Iberoamericana - Juegos Olímpicos"
+    "commemorates": "VII Serie Iberoamericana - Juegos Olímpicos",
+    "status": "sold",
+    "soldAt": "2026-10-26T19:18:25.349518+00:00"
   },
   {
     "id": 1562,
