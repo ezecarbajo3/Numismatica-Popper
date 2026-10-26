@@ -15840,7 +15840,9 @@
     "peso": "3.6",
     "diametro": "20.5",
     "description": "Faisal I - ALTO valor de catalogo",
-    "publishedAt": "2026-10-25T15:20:38.079058+00:00"
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T23:34:45.141301+00:00"
   },
   {
     "id": 1600,
@@ -15859,7 +15861,9 @@
     "peso": "4",
     "diametro": "22",
     "description": "",
-    "publishedAt": "2026-10-25T16:36:39.532094+00:00"
+    "publishedAt": "2026-10-25T16:36:39.532094+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T23:34:45.141301+00:00"
   },
   {
     "id": 1601,
@@ -16557,7 +16561,9 @@
     "diametro": "22",
     "description": "Handball",
     "publishedAt": "2026-10-25T23:14:46.276369+00:00",
-    "commemorates": "Handball"
+    "commemorates": "Handball",
+    "status": "sold",
+    "soldAt": "2026-10-26T23:34:45.141301+00:00"
   },
   {
     "id": 1635,
@@ -16707,7 +16713,9 @@
     "diametro": "15",
     "description": "Alfonso XIII",
     "publishedAt": "2026-10-25T23:14:46.276369+00:00",
-    "commemorates": "Alfonso XIII"
+    "commemorates": "Alfonso XIII",
+    "status": "sold",
+    "soldAt": "2026-10-26T23:34:45.141301+00:00"
   },
   {
     "id": 1642,
