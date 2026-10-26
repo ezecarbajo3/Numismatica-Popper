@@ -16469,7 +16469,9 @@
     "peso": "10",
     "diametro": "30",
     "description": "",
-    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T00:05:49.144644+00:00"
   },
   {
     "id": 1631,
@@ -16573,7 +16575,9 @@
     "peso": "6.8",
     "diametro": "25.8",
     "description": "Ceca R",
-    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T00:05:49.144644+00:00"
   },
   {
     "id": 1636,
@@ -16593,7 +16597,9 @@
     "peso": "3",
     "diametro": "19.15",
     "description": "Ceca B",
-    "publishedAt": "2026-10-25T23:14:46.276369+00:00"
+    "publishedAt": "2026-10-25T23:14:46.276369+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-26T00:05:49.144644+00:00"
   },
   {
     "id": 1637,
@@ -16634,7 +16640,9 @@
     "diametro": "22",
     "description": "Kovrov - Ceca SPMD",
     "publishedAt": "2026-10-25T23:14:46.276369+00:00",
-    "commemorates": "Kovrov"
+    "commemorates": "Kovrov",
+    "status": "sold",
+    "soldAt": "2026-10-26T00:05:49.144644+00:00"
   },
   {
     "id": 1639,
@@ -16654,7 +16662,9 @@
     "diametro": "22",
     "description": "Kalach-na-Donu - Ceca СПМД",
     "publishedAt": "2026-10-25T23:14:46.276369+00:00",
-    "commemorates": "Kalach-na-Donu"
+    "commemorates": "Kalach-na-Donu",
+    "status": "sold",
+    "soldAt": "2026-10-26T00:05:49.144644+00:00"
   },
   {
     "id": 1640,
