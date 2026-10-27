@@ -229,8 +229,6 @@
     "peso": 4.67,
     "diametro": 19,
     "description": "Indian Head.",
-    "group_id": "us-1cent-1864",
-    "group_label": "1 Cent 1864",
     "status": "sold",
     "soldAt": "2026-10-07T19:03:20.966749+00:00"
   },
@@ -2952,21 +2950,6 @@
     "reference": "CJ# 8.2"
   },
   {
-    "id": "F11",
-    "title": "1 Dime 1829",
-    "country": "Estados Unidos",
-    "metal": "Plata .892",
-    "year": 1829,
-    "price": "71.5 USD",
-    "images": [
-      "images/422A.jpeg",
-      "images/422B.jpeg"
-    ],
-    "grade": "Regular +",
-    "grade_short": "R+",
-    "reference": "KM# 48"
-  },
-  {
     "id": 439,
     "title": "5 Cents 1888",
     "country": "Estados Unidos",
@@ -2982,109 +2965,6 @@
     "reference": "KM# 112",
     "peso": 5,
     "diametro": 21.2
-  },
-  {
-    "id": "F1",
-    "title": "1 Centavo 1854",
-    "country": "Argentina",
-    "metal": "Cobre",
-    "year": 1854,
-    "price": "33 USD",
-    "images": [
-      "images/453A.jpeg",
-      "images/453B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "reference": "CJ# 1"
-  },
-  {
-    "id": "F3",
-    "title": "20 Centavos 1972",
-    "country": "Argentina",
-    "metal": "Bronce de aluminio",
-    "year": 1972,
-    "price": "33 USD",
-    "images": [
-      "images/456A.jpeg",
-      "images/456B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Rara pieza",
-    "reference": "CJ# 49",
-    "status": "sold",
-    "soldAt": "2026-09-25T11:57:46.179268+00:00"
-  },
-  {
-    "id": "F5",
-    "title": "1000 Pesos 2003",
-    "country": "Uruguay",
-    "metal": "Plata .925",
-    "year": 2003,
-    "price": "120 USD",
-    "images": [
-      "images/459A.jpeg",
-      "images/459B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Moneda conmemorativa de la Copa Mundial de Fútbol 2006 (Alemania).",
-    "reference": "KM# 122",
-    "mintage": 900,
-    "commemorates": "Copa Mundial de Fútbol 2006 (Alemania)"
-  },
-  {
-    "id": "F6",
-    "title": "1000 Pesos 2004",
-    "country": "Uruguay",
-    "metal": "Plata .925",
-    "year": 2004,
-    "price": "120 USD",
-    "images": [
-      "images/460A.jpeg",
-      "images/460B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Moneda conmemorativa de la Copa Mundial de Fútbol 2006 (Alemania).",
-    "reference": "KM# 123",
-    "mintage": 900,
-    "commemorates": "Copa Mundial de Fútbol 2006 (Alemania)"
-  },
-  {
-    "id": "F7",
-    "title": "1000 Pesos 2005",
-    "country": "Uruguay",
-    "metal": "Plata .925",
-    "year": 2005,
-    "price": "120 USD",
-    "images": [
-      "images/461A.jpeg",
-      "images/461B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Moneda conmemorativa de la Copa Mundial de Fútbol 2006 (Alemania).",
-    "reference": "KM# 124",
-    "mintage": 900,
-    "commemorates": "Copa Mundial de Fútbol 2006 (Alemania)"
-  },
-  {
-    "id": "F4",
-    "title": "5 Pesos 2013",
-    "country": "Argentina",
-    "metal": "Plata .925",
-    "year": 2013,
-    "price": "198 USD",
-    "images": [
-      "images/465A.jpeg",
-      "images/465B.jpeg",
-      "images/465C.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "CJ# 8.19"
   },
   {
     "id": 463,
@@ -3104,127 +2984,6 @@
     "mintage": "200.000",
     "description": "Dólar de la Paz (Peace Dollar) en conmemoración del centenario de su primer diseño de 1921. Diseñado por Anthony de Francisci.",
     "commemorates": "Centenario del Peace Dollar (1921-2021)"
-  },
-  {
-    "id": "F12",
-    "title": "1 Cent 1862",
-    "country": "Estados Unidos",
-    "metal": "Cuproníquel",
-    "year": 1862,
-    "price": "60.5 USD",
-    "images": [
-      "images/470A.jpeg",
-      "images/470B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "reference": "KM# 90",
-    "peso": 4.67,
-    "diametro": 19
-  },
-  {
-    "id": "F13",
-    "title": "1 Cent 1864",
-    "country": "Estados Unidos",
-    "metal": "Cobre",
-    "year": 1864,
-    "price": "22 USD",
-    "images": [
-      "images/472A.jpeg",
-      "images/472B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B",
-    "group_id": "us-1cent-1864",
-    "group_label": "1 Cent 1864",
-    "reference": "KM# 90a",
-    "peso": 3.11,
-    "diametro": 19
-  },
-  {
-    "id": "F14",
-    "title": "1 Cent 1865",
-    "country": "Estados Unidos",
-    "metal": "Cobre",
-    "year": 1865,
-    "price": "22 USD",
-    "images": [
-      "images/473A.jpeg",
-      "images/473B.jpeg"
-    ],
-    "grade": "Bueno -",
-    "grade_short": "B-",
-    "reference": "KM# 90a",
-    "peso": 3.11,
-    "diametro": 19
-  },
-  {
-    "id": "F15",
-    "title": "1 Cent 1874",
-    "country": "Estados Unidos",
-    "metal": "Cobre",
-    "year": 1874,
-    "price": "27.5 USD",
-    "images": [
-      "images/477A.jpeg",
-      "images/477B.jpeg"
-    ],
-    "grade": "Regular +",
-    "grade_short": "R+",
-    "reference": "KM# 90a",
-    "peso": 3.11,
-    "diametro": 19
-  },
-  {
-    "id": "F16",
-    "title": "1 Cent 1875",
-    "country": "Estados Unidos",
-    "metal": "Cobre",
-    "year": 1875,
-    "price": "46.5 USD",
-    "images": [
-      "images/478A.jpeg",
-      "images/478B.jpeg"
-    ],
-    "grade": "Bueno -",
-    "grade_short": "B-",
-    "reference": "KM# 90a",
-    "peso": 3.11,
-    "diametro": 19
-  },
-  {
-    "id": "F17",
-    "title": "1 Cent 1876",
-    "country": "Estados Unidos",
-    "metal": "Cobre",
-    "year": 1876,
-    "price": "77 USD",
-    "images": [
-      "images/479A.jpeg",
-      "images/479B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B",
-    "reference": "KM# 90a",
-    "peso": 3.11,
-    "diametro": 19
-  },
-  {
-    "id": "F18",
-    "title": "1 Cent 1880",
-    "country": "Estados Unidos",
-    "metal": "Cobre",
-    "year": 1880,
-    "price": "22 USD",
-    "images": [
-      "images/481A.jpeg",
-      "images/481B.jpeg"
-    ],
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "reference": "KM# 90a",
-    "peso": 3.11,
-    "diametro": 19
   },
   {
     "id": 479,
@@ -7665,19 +7424,6 @@
     "description": "Pertenece a la serie floral de la quinta serie del Yuan RMB, mostrando la flor de Orquídea."
   },
   {
-    "id": 935,
-    "title": "2 Pesos 2012",
-    "country": "Argentina",
-    "metal": "Bimetálica",
-    "year": 2012,
-    "price": "1.5 USD",
-    "reference": "CJ# 341",
-    "grade": "Excelente",
-    "grade_short": "EX",
-    "commemorates": "30° Aniversario de la Gesta de Malvinas",
-    "description": "Emisión conmemorativa por el 30° Aniversario de la Gesta de Malvinas (1982-2012)."
-  },
-  {
     "id": 936,
     "title": "25 Rublos 2011",
     "country": "Rusia",
@@ -7776,57 +7522,6 @@
     "grade_short": "SC",
     "reference": "KM# 12",
     "description": "Muestra una rama de olivo (\"Maslina\") en el reverso."
-  },
-  {
-    "id": "F8",
-    "title": "1/2 Dólar 1960",
-    "country": "Estados Unidos",
-    "metal": "Plata .900",
-    "year": 1960,
-    "price": "45 USD",
-    "images": [
-      "images/945A.jpeg",
-      "images/945B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Versión Proof.",
-    "reference": "KM# 199",
-    "mintage": "1.691.602"
-  },
-  {
-    "id": "F9",
-    "title": "1/2 Dólar 1962",
-    "country": "Estados Unidos",
-    "metal": "Plata .900",
-    "year": 1962,
-    "price": "45 USD",
-    "images": [
-      "images/947A.jpeg",
-      "images/947B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Versión Proof.",
-    "reference": "KM# 199",
-    "mintage": "3.218.019"
-  },
-  {
-    "id": "F10",
-    "title": "1/2 Dólar 1963",
-    "country": "Estados Unidos",
-    "metal": "Plata .900",
-    "year": 1963,
-    "price": "45 USD",
-    "images": [
-      "images/948A.jpeg",
-      "images/948B.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Versión Proof.",
-    "reference": "KM# 199",
-    "mintage": "3.075.645"
   },
   {
     "id": 950,
@@ -8758,25 +8453,6 @@
     "group_label": "100 Pesos 2025"
   },
   {
-    "id": 1089,
-    "title": "25 y 50 Centavos 2013",
-    "country": "Argentina",
-    "metal": "Cuproníquel y Latón",
-    "year": 2013,
-    "price": "12 USD",
-    "cantidad": 1,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "CJ# 343 / CJ# 344",
-    "description": "Set de monedas de 25 y 50 Centavos 2013 no emitidas + 2 cospeles monetarios vírgenes.",
-    "images": [
-      "images/1089A.jpeg",
-      "images/1089B.jpeg",
-      "images/1089C.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
     "id": 1098,
     "title": "1 Dólar 2025",
     "country": "Canadá",
@@ -8831,26 +8507,6 @@
       "images/1103B.jpeg"
     ],
     "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
-    "id": 1111,
-    "title": "1 Piastra 1955",
-    "country": "Líbano",
-    "metal": "Aluminio",
-    "year": 1955,
-    "price": "4.5 USD",
-    "cantidad": 1,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 19",
-    "description": "Emblemática galera fenicia navegando y Cedro del Líbano.",
-    "images": [
-      "images/1111A.jpeg",
-      "images/1111B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "group_id": "lb-1piastra-1955",
-    "group_label": "1 Piastra 1955"
   },
   {
     "id": 1128,
@@ -10214,9 +9870,7 @@
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
     "cantidad": 0,
     "status": "sold",
-    "soldAt": "2026-10-02T02:09:04.482010+00:00",
-    "group_id": "lb-1piastra-1955",
-    "group_label": "1 Piastra 1955"
+    "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
     "id": 1264,
