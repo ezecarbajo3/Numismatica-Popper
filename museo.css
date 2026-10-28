@@ -610,7 +610,8 @@ html.diapos .mf { scroll-snap-align: end; }
   margin-bottom: clamp(16px, 3svh, 28px);
 }
 
-.hero__copy .lede { max-width: 28em; color: var(--text); }
+/* La frase de bienvenida: dos oraciones, una por renglón (nunca se parten). */
+.hero__copy .lede { max-width: none; white-space: nowrap; color: var(--text); }
 .hero__copy .lede b { font-weight: inherit; color: var(--gold); }
 
 .hero__actions {
@@ -701,7 +702,8 @@ html.diapos .mf { scroll-snap-align: end; }
   .hero__coin { flex: 1 1 0; min-height: 0; width: 100%; height: auto; max-width: 420px; aspect-ratio: auto; object-fit: contain; }
   .hero__caption { flex: none; z-index: 1; margin-top: 6px; font-size: 16px; }
   .hero__caption b { display: inline; margin: 0 8px 0 0; font-size: 16px; letter-spacing: 0.08em; }
-  .hero__copy .lede { order: 4; margin: 0; max-width: 24em; font-size: clamp(18px, 2.8svh, 21px); line-height: 1.5; }
+  /* El tamaño se achica con el ancho para que cada oración entre en su renglón. */
+  .hero__copy .lede { order: 4; margin: 0; font-size: min(clamp(18px, 2.8svh, 21px), 5.2vw); line-height: 1.5; }
   .hero__actions { order: 5; margin: 0; flex-direction: column; justify-content: center; gap: 8px; }
 }
 
