@@ -131,6 +131,15 @@ function renderColecciones(coins) {
   });
 }
 
+// Al recargar, la portada arranca en la primera diapositiva ("Desde 2020"),
+// no donde quedó el scroll ni en el #ancla que dejó el indicador.
+const IS_RELOAD = performance.getEntriesByType('navigation')[0]?.type === 'reload';
+if (IS_RELOAD) {
+  history.scrollRestoration = 'manual';
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  instantScrollTo(0);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   Promise.all([loadAllCoins(), loadFondos()])
     .then(([coins, fondos]) => {
@@ -141,6 +150,8 @@ document.addEventListener('DOMContentLoaded', () => {
       renderColecciones(coins);
       setupDiapositivas();
       observeAparece();
+      // La Sala y los ingresos se arman tarde y mueven el layout.
+      if (IS_RELOAD) instantScrollTo(0);
     })
     .catch(err => {
       console.error(err);
