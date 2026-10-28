@@ -14172,7 +14172,9 @@
     "peso": "7",
     "diametro": "26.75",
     "description": "Max Planck - Ceca G",
-    "publishedAt": "2026-10-24T04:52:54.833015+00:00"
+    "publishedAt": "2026-10-24T04:52:54.833015+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1539,
@@ -14942,7 +14944,7 @@
     "diametro": "16",
     "description": "Salmán bin Abdulaziz",
     "publishedAt": "2026-10-24T23:17:28.013330+00:00",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 1577,
@@ -16518,7 +16520,9 @@
     "peso": "4.6",
     "diametro": "22.34",
     "description": "Ceca PTS",
-    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1653,
@@ -16537,7 +16541,9 @@
     "peso": "6.2",
     "diametro": "26.5",
     "description": "Ceca Potosí",
-    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1654,
@@ -16598,7 +16604,9 @@
     "diametro": "18.03",
     "description": "Jorge VI",
     "publishedAt": "2026-10-28T22:26:52.892657+00:00",
-    "commemorates": "Jorge VI"
+    "commemorates": "Jorge VI",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1657,
@@ -16617,7 +16625,9 @@
     "peso": "3",
     "diametro": "18.5",
     "description": "Ceca So",
-    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1658,
@@ -16637,7 +16647,9 @@
     "peso": "1",
     "diametro": "14.5",
     "description": "Ceca Santiago",
-    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1659,
@@ -16676,7 +16688,9 @@
     "peso": "2.5",
     "diametro": "18.2",
     "description": "",
-    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1661,
@@ -16695,7 +16709,9 @@
     "peso": "2.5",
     "diametro": "18.2",
     "description": "",
-    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1662,
@@ -16734,7 +16750,9 @@
     "peso": "8.6",
     "diametro": "26",
     "description": "",
-    "publishedAt": "2026-10-28T22:41:20.547533+00:00"
+    "publishedAt": "2026-10-28T22:41:20.547533+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1664,
@@ -16774,7 +16792,9 @@
     "diametro": "31",
     "description": "Jorge VI - 1er tipo",
     "publishedAt": "2026-10-28T22:41:20.547533+00:00",
-    "commemorates": "Jorge VI - 1er tipo"
+    "commemorates": "Jorge VI - 1er tipo",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1666,
@@ -16794,7 +16814,9 @@
     "diametro": "30.8",
     "description": "Jorge VI",
     "publishedAt": "2026-10-28T22:41:20.547533+00:00",
-    "commemorates": "Jorge VI"
+    "commemorates": "Jorge VI",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1667,
@@ -16814,7 +16836,9 @@
     "diametro": "30.8",
     "description": "Isabel II",
     "publishedAt": "2026-10-28T22:41:20.547533+00:00",
-    "commemorates": "Isabel II"
+    "commemorates": "Isabel II",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1668,
@@ -16834,8 +16858,10 @@
     "diametro": "25.41",
     "description": "Isabel II",
     "publishedAt": "2026-10-28T22:41:20.547533+00:00",
-    "cantidad": 2,
-    "commemorates": "Isabel II"
+    "cantidad": 0,
+    "commemorates": "Isabel II",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1669,
@@ -16874,7 +16900,9 @@
     "peso": "5.67",
     "diametro": "26",
     "description": "",
-    "publishedAt": "2026-10-28T22:41:20.547533+00:00"
+    "publishedAt": "2026-10-28T22:41:20.547533+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1671,
@@ -16893,7 +16921,9 @@
     "peso": "3.6",
     "diametro": "18",
     "description": "Segunda Guerra, cuadrada",
-    "publishedAt": "2026-10-28T22:53:53.913447+00:00"
+    "publishedAt": "2026-10-28T22:53:53.913447+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1672,
@@ -16912,7 +16942,9 @@
     "peso": "9",
     "diametro": "25",
     "description": "",
-    "publishedAt": "2026-10-28T22:53:53.913447+00:00"
+    "publishedAt": "2026-10-28T22:53:53.913447+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1673,
@@ -16933,7 +16965,9 @@
     "diametro": "20",
     "description": "Régimen de los Coroneles",
     "publishedAt": "2026-10-28T22:53:53.913447+00:00",
-    "commemorates": "Régimen de los Coroneles"
+    "commemorates": "Régimen de los Coroneles",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1674,
@@ -16952,7 +16986,9 @@
     "peso": "7.5",
     "diametro": "27",
     "description": "",
-    "publishedAt": "2026-10-28T22:53:53.913447+00:00"
+    "publishedAt": "2026-10-28T22:53:53.913447+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
     "id": 1675,
