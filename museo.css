@@ -2150,14 +2150,25 @@ video.detail-main-image { cursor: auto; }
 /* ─── Movimiento ──────────────────────────────────────────────────────────── */
 /* Fundido entre páginas: View Transitions entre documentos (Chrome y Safari
    recientes). Donde no existe, la página simplemente aparece; los textos
-   sueltos igual entran con .aparece. */
+   sueltos igual entran con .aparece.
+   Solo se apaga la página vieja: la nueva queda quieta debajo y sus textos y
+   fotos entran con su propio fundido (.aparece, img.fundido). Si la nueva
+   también se fundiera, se verían dos golpes: primero la página vacía y
+   después el contenido. mix-blend-mode normal: el plus-lighter de fábrica
+   aclara la mezcla cuando una de las dos capas no se anima. */
 @view-transition { navigation: auto; }
 
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 0.45s;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+::view-transition-old(root) {
+  animation: vt-salida 0.32s cubic-bezier(0.4, 0, 0.2, 1) both;
+  mix-blend-mode: normal;
 }
+
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+@keyframes vt-salida { to { opacity: 0; } }
 
 /* La cabecera no parpadea al cambiar de página: es la misma en todas. */
 .mh { view-transition-name: cabecera; }
