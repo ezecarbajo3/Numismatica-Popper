@@ -1338,19 +1338,104 @@ html.diapos .mf { scroll-snap-align: end; }
 }
 
 .opcion--radio .opcion__box { border-radius: 50%; }
+.opcion__box svg, .opcion__box::after { grid-area: 1 / 1; }
 .opcion__box svg { width: 13px; height: 13px; opacity: 0; color: var(--ink); }
+/* Continente con solo algunos de sus países elegidos: una raya dorada. */
+.opcion[aria-checked="mixed"] .opcion__box { border-color: var(--gold); }
+.opcion[aria-checked="mixed"] .opcion__box::after { content: ""; width: 8px; height: 1.5px; background: var(--gold); }
 .opcion[aria-checked="true"] .opcion__box { background: var(--gold); border-color: var(--gold); }
 .opcion--radio[aria-checked="true"] .opcion__box { background: var(--ink); box-shadow: inset 0 0 0 4px var(--ink), inset 0 0 0 10px var(--gold); }
 .opcion[aria-checked="true"]:not(.opcion--radio) .opcion__box svg { opacity: 1; }
 .opcion__label { flex: 1; min-width: 0; }
 .opcion__count { font-size: 16px; color: var(--faint); font-variant-numeric: lining-nums tabular-nums; }
 
-.opciones--largas { max-height: 320px; overflow-y: auto; padding-right: 4px; }
+/* Desplegables: Continente y cada continente dentro del bloque Colección, y
+   el título de Metal. La flecha gira cuando está abierto. */
+.chev { display: grid; place-items: center; width: 16px; height: 16px; flex-shrink: 0; color: var(--faint); }
+.chev svg { width: 16px; height: 16px; transition: transform 0.2s ease; }
+[aria-expanded="true"] .chev svg { transform: rotate(90deg); }
 
-.filtro__buscar {
+.desplegable {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: calc(100% + 16px);
+  min-height: 40px;
+  padding: 4px 8px;
+  margin: 0 -8px;
+  border-radius: var(--radius);
+  font-size: 17px;
+  text-align: left;
+  color: var(--muted);
+  transition: color 0.2s ease, background 0.2s ease;
+}
+/* Sin casilla: la flecha ocupa su lugar para que el nombre quede alineado. */
+.desplegable .chev { order: -1; width: 18px; }
+.desplegable:hover, .desplegable[aria-expanded="true"] { color: var(--text); }
+.desplegable:hover { background: rgba(255, 255, 255, 0.03); }
+.desplegable__label { flex-shrink: 0; }
+.desplegable__resumen, .filtro__toggle__resumen {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--gold);
+}
+
+.filtro__toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   width: 100%;
+  min-height: 32px;
+  text-align: left;
+}
+.filtro__toggle__label {
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text);
+}
+.filtro__toggle__resumen { text-transform: none; letter-spacing: 0; }
+.filtro__toggle + .opciones { margin-top: 10px; }
+
+/* Un continente: casilla + nombre + conteo, y aparte la flecha que abre sus
+   países. Los países van con sangría y una línea fina a la izquierda. */
+.rama__fila { display: flex; align-items: center; }
+.rama__fila .opcion { flex: 1; width: auto; min-width: 0; margin-right: 0; }
+.rama__abrir {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: -8px;
+  border-radius: var(--radius);
+}
+.rama__abrir:hover { background: rgba(255, 255, 255, 0.03); }
+.rama__abrir:hover .chev { color: var(--text); }
+
+.subopciones {
+  margin: 2px 0 8px 8px;
+  padding-left: 16px;
+  border-left: 1px solid var(--line);
+}
+
+.precio-hasta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 17px;
+  color: var(--muted);
+}
+.precio-hasta input {
+  width: 120px;
   height: 42px;
-  margin-bottom: 10px;
   padding: 0 12px;
   border: 1px solid var(--line-strong);
   border-radius: var(--radius);
@@ -1358,9 +1443,10 @@ html.diapos .mf { scroll-snap-align: end; }
   color: var(--text);
   font: inherit;
   font-size: 17px;
+  font-variant-numeric: lining-nums tabular-nums;
 }
-
-.filtro__buscar:focus { outline: none; border-color: var(--gold); }
+.precio-hasta input::placeholder { color: var(--faint); font-style: italic; }
+.precio-hasta input:focus { outline: none; border-color: var(--gold); }
 
 /* Barra sobre la grilla: buscador, orden y filtros aplicados. */
 .cat-barra {
@@ -1676,8 +1762,9 @@ html.diapos .mf { scroll-snap-align: end; }
     background: rgba(0, 0, 0, 0.6);
     animation: velo 0.4s ease;
   }
-  .opcion { min-height: 46px; }
-  .opciones--largas { max-height: none; }
+  .opcion, .desplegable { min-height: 46px; }
+  .rama__abrir { width: 46px; height: 46px; }
+  .precio-hasta input { font-size: 18px; }
   .cat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 16px; }
   .ficha__title { font-size: 17px; }
   .ficha .price { font-size: 18px; }

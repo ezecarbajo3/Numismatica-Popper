@@ -53,6 +53,73 @@ function getCountryDisplayLabel(country) {
   }
 }
 
+// ─── Continentes ──────────────────────────────────────────────────────────────
+
+// El Caribe va con Centroamérica; Rusia y la URSS con Europa; Turquía y el
+// Imperio Otomano con Asia. Un país que no está acá no aparece en el filtro de
+// continentes (la moneda se sigue viendo en "Todas"): al dar de alta uno
+// nuevo, sumarlo a su lista.
+const CONTINENTS = [
+  { key: 'Sudamérica', countries: [
+    'Argentina', 'Bolivia', 'Brasil', 'Chile', 'Colombia', 'Ecuador', 'Guayana Francesa', 'Guyana',
+    'Isla de Pascua', 'Islas Malvinas', 'Paraguay', 'Perú', 'Surinam', 'Uruguay', 'Venezuela',
+  ] },
+  { key: 'Centroamérica', countries: [
+    'Antillas Holandesas', 'Antillas Neerlandesas', 'Aruba', 'Bahamas', 'Barbados', 'Belice', 'Caribe Oriental',
+    'Costa Rica', 'Cuba', 'Curazao', 'El Salvador', 'Guadalupe', 'Guatemala', 'Haití', 'Honduras',
+    'Islas Caimán', 'Islas Vírgenes Británicas', 'Jamaica', 'Martinica', 'Nicaragua', 'Panamá',
+    'Puerto Rico', 'República Dominicana', 'San Martín', 'Trinidad y Tobago',
+  ] },
+  { key: 'Norteamérica', countries: [
+    'Bermudas', 'Canadá', 'Chihuahua', 'Estados Unidos', 'Groenlandia', 'México', 'San Pedro y Miquelón', 'Terranova',
+  ] },
+  { key: 'África', countries: [
+    'Angola', 'Argelia', 'Botsuana', 'Burundi', 'Cabo Verde', 'Camerún', 'Congo', 'Congo Belga',
+    'Congo Belga y Ruanda-Urundi', 'Costa de Marfil', 'Egipto', 'Etiopía', 'Ghana', 'Kenia', 'Liberia',
+    'Libia', 'Madagascar', 'Marruecos', 'Mauricio', 'Mozambique', 'Namibia', 'Nigeria', 'Rodesia',
+    'Ruanda', 'Ruanda-Urundi', 'Santa Elena', 'Seychelles', 'Sierra Leona', 'Somalia', 'Sudáfrica',
+    'Sudán', 'Swazilandia', 'Tanzania', 'Tristán de Acuña', 'Túnez', 'Uganda', 'Yibuti', 'Zaire',
+    'Zambia', 'Zimbabue',
+  ] },
+  { key: 'Europa', countries: [
+    'Alemana, República Democrática', 'Alemania', 'Alemania Federal', 'Alemania Oriental', 'Andorra',
+    'Austria', 'Baden', 'Baviera', 'Bielorrusia', 'Bosnia y Herzegovina', 'Bulgaria', 'Bélgica',
+    'Checoslovaquia', 'Chipre', 'Croacia', 'Dinamarca', 'Eslovaquia', 'Eslovenia', 'España', 'Estonia',
+    'Finlandia', 'Francia', 'Francia - Régimen de Vichy', 'Gibraltar', 'Grecia', 'Guernsey', 'Hungría',
+    'Irlanda', 'Isla de Man', 'Islandia', 'Islas Feroe', 'Italia', 'Italia - Estados Preunitarios',
+    'Jersey', 'Letonia', 'Liechtenstein', 'Lituania', 'Luxemburgo', 'Malta', 'Mónaco', 'Noruega',
+    'Países Bajos', 'Países Bajos - Overijssel', 'Polonia', 'Portugal', 'Prusia', 'Reino Unido',
+    'República Checa', 'Rumania', 'Rusia', 'Ruso, Imperio', 'San Marino', 'Serbia', 'Suecia', 'Suiza',
+    'Transnistria', 'Ucrania', 'Unión Soviética', 'Utrecht, City of', 'Vaticano, Ciudad del', 'Yugoslavia',
+  ] },
+  { key: 'Asia', countries: [
+    'Afganistán', 'Arabia Saudita', 'Armenia', 'Azerbaiyán', 'Bangladés', 'Baréin', 'Birmania', 'Camboya',
+    'China', 'Comisionados de la Moneda de Malaya', 'Corea del Norte', 'Corea del Sur',
+    'Emiratos Árabes Unidos', 'Filipinas', 'Georgia', 'Hong Kong', 'Imperio Otomano', 'India',
+    'Indias Orientales Neerlandesas', 'Indonesia', 'Irak', 'Irán', 'Israel', 'Japón', 'Jordania',
+    'Kazajistán', 'Kirguistán', 'Kuwait', 'Laos', 'Líbano', 'Macao', 'Malasia', 'Malaya', 'Malaya y Borneo',
+    'Malaya y Borneo Británico', 'Maldivas', 'Mongolia', 'Nepal', 'Omán', 'Pakistán', 'Qatar',
+    'Reino Shahi', 'Singapur', 'Siria', 'Sri Lanka', 'Straits Settlements', 'Tailandia', 'Taiwán',
+    'Tayikistán', 'Turquía', 'Uzbekistán', 'Vietnam', 'Yemen',
+  ] },
+  { key: 'Oceanía', countries: [
+    'Australia', 'Fiyi', 'Islas Cook', 'Islas Salomón', 'Kiribati', 'Nueva Caledonia', 'Nueva Zelanda',
+    'Papúa Nueva Guinea', 'Polinesia Francesa', 'Samoa', 'Tonga', 'Tuvalu', 'Vanuatu',
+  ] },
+];
+
+const CONTINENT_OF = new Map(CONTINENTS.flatMap(c => c.countries.map(p => [p, c.key])));
+
+// El país con el que se filtra: Patria, Buenos Aires, Confederación y las
+// provincias quedan todas bajo "Argentina".
+function filterCountryOf(coin) {
+  return isArgentinaCoin(coin) ? 'Argentina' : normalizeCountryValue(coin.country);
+}
+
+function continentOf(coin) {
+  return CONTINENT_OF.get(filterCountryOf(coin)) || '';
+}
+
 // ─── Category predicates ──────────────────────────────────────────────────────
 
 function isArgentinaCoin(coin) {
