@@ -16875,5 +16875,163 @@
     "diametro": "26",
     "description": "",
     "publishedAt": "2026-10-28T22:41:20.547533+00:00"
+  },
+  {
+    "id": 1671,
+    "title": "5 Cents 1942",
+    "country": "Países Bajos",
+    "metal": "Zinc",
+    "year": 1942,
+    "price": "5.5 USD",
+    "images": [
+      "images/1671A.jpeg",
+      "images/1671B.jpeg"
+    ],
+    "reference": "KM# 172",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "3.6",
+    "diametro": "18",
+    "description": "Segunda Guerra, cuadrada",
+    "publishedAt": "2026-10-28T22:53:53.913447+00:00"
+  },
+  {
+    "id": 1672,
+    "title": "5 Dracmas 1973",
+    "country": "Grecia",
+    "metal": "Cuproníquel",
+    "year": 1973,
+    "price": "4.5 USD",
+    "images": [
+      "images/1672A.jpeg",
+      "images/1672B.jpeg"
+    ],
+    "reference": "KM# 109",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "9",
+    "diametro": "25",
+    "description": "",
+    "publishedAt": "2026-10-28T22:53:53.913447+00:00"
+  },
+  {
+    "id": 1673,
+    "title": "10 Lepta 1973",
+    "country": "Grecia",
+    "metal": "Aluminio",
+    "year": 1973,
+    "price": "4.5 USD",
+    "images": [
+      "images/1673A.jpeg",
+      "images/1673B.jpeg"
+    ],
+    "reference": "KM# 102",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 2742000,
+    "peso": "1.1",
+    "diametro": "20",
+    "description": "Régimen de los Coroneles",
+    "publishedAt": "2026-10-28T22:53:53.913447+00:00",
+    "commemorates": "Régimen de los Coroneles"
+  },
+  {
+    "id": 1674,
+    "title": "10 Dracmas 1973",
+    "country": "Grecia",
+    "metal": "Cuproníquel",
+    "year": 1973,
+    "price": "4 USD",
+    "images": [
+      "images/1674A.jpeg",
+      "images/1674B.jpeg"
+    ],
+    "reference": "KM# 110",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "7.5",
+    "diametro": "27",
+    "description": "",
+    "publishedAt": "2026-10-28T22:53:53.913447+00:00"
+  },
+  {
+    "id": 1675,
+    "title": "100 Rupias 1978",
+    "country": "Indonesia",
+    "metal": "Cuproníquel",
+    "year": 1978,
+    "price": "3.5 USD",
+    "images": [
+      "images/1675A.jpeg",
+      "images/1675B.jpeg"
+    ],
+    "reference": "KM# 42",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "7",
+    "diametro": "28.5",
+    "description": "Hutan Untuk Kesejahteraan",
+    "publishedAt": "2026-10-28T22:53:53.913447+00:00",
+    "commemorates": "Hutan Untuk Kesejahteraan"
+  },
+  {
+    "id": 1676,
+    "title": "10 Centavos 1966",
+    "country": "Uganda",
+    "metal": "Bronce",
+    "year": 1966,
+    "price": "5.5 USD",
+    "images": [
+      "images/1676A.jpeg",
+      "images/1676B.jpeg"
+    ],
+    "reference": "KM# 2",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "5.05",
+    "diametro": "24",
+    "description": "",
+    "publishedAt": "2026-10-28T22:53:53.913447+00:00"
+  },
+  {
+    "id": 1677,
+    "title": "1/4 Rupia 1964",
+    "country": "Mauricio",
+    "metal": "Cuproníquel",
+    "year": 1964,
+    "price": "8 USD",
+    "images": [
+      "images/1677A.jpeg",
+      "images/1677B.jpeg"
+    ],
+    "reference": "KM# 36",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 400000,
+    "peso": "2.95",
+    "diametro": "19",
+    "description": "Isabel II - ESCASA",
+    "publishedAt": "2026-10-28T22:53:53.913447+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1678,
+    "title": "1 Rupia 1985",
+    "country": "Pakistán",
+    "metal": "Cuproníquel",
+    "year": 1985,
+    "price": "4 USD",
+    "images": [
+      "images/1678A.jpeg",
+      "images/1678B.jpeg"
+    ],
+    "reference": "KM# 57.2",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 4934000,
+    "peso": "6",
+    "diametro": "25",
+    "description": "",
+    "publishedAt": "2026-10-28T22:53:53.913447+00:00"
   }
 ]
