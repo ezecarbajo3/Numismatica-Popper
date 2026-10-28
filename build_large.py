@@ -5,7 +5,8 @@ La Sala muestra cada pieza a pantalla completa: la miniatura de 500px se ve
 blanda y el original de ~2800px pesa demasiado para un celular. Estas versiones
 viven en images-large/<base>.webp, fuera de images/ a propósito.
 
-Misma regla que isSalaCoin() de common.js. Solo genera lo que falta.
+Misma regla que isSalaCoin() de common.js. Solo genera lo que falta o quedó
+más viejo que el original (si se cambia una foto, se rehace).
 
 También escribe images-large/fondos.json: qué fotos tienen fondo negro (las
 cuatro esquinas oscuras). El hero de la portada elige solo entre esas; una
@@ -71,7 +72,8 @@ def main():
                 continue
             path = ROOT / src
             dest = OUT / (Path(src).stem + ".webp")
-            if not path.exists() or (dest.exists() and not force):
+            if not path.exists() or (dest.exists() and not force
+                                     and dest.stat().st_mtime >= path.stat().st_mtime):
                 skipped += 1
                 continue
             with Image.open(path) as im:
