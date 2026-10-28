@@ -17033,5 +17033,25 @@
     "diametro": "25",
     "description": "",
     "publishedAt": "2026-10-28T22:53:53.913447+00:00"
+  },
+  {
+    "id": 1679,
+    "title": "25 Centavos 1940",
+    "country": "Canadá",
+    "metal": "Plata .800",
+    "year": 1940,
+    "price": "1 USD",
+    "images": [
+      "images/1679A.jpeg",
+      "images/1679B.jpeg"
+    ],
+    "reference": "KM# 35",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "5.83",
+    "diametro": "23.62",
+    "description": "Jorge VI",
+    "publishedAt": "2026-10-28T23:30:35.680931+00:00",
+    "commemorates": "Jorge VI"
   }
 ]
