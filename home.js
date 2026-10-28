@@ -126,7 +126,6 @@ function renderColecciones(coins) {
       img,
       el('span', 'coleccion__label', col.label),
       el('span', 'coleccion__desc', col.desc),
-      el('span', 'coleccion__count', `${pool.length.toLocaleString('es-AR')} ${pool.length === 1 ? 'pieza' : 'piezas'}`),
     );
     wrap.appendChild(link);
   });
@@ -137,8 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(([coins, fondos]) => {
       const sala = getSalaCoins(coins).filter(isAvailable);
       renderHero(sala, fondos);
-      document.querySelector('[data-fact="piezas"]').textContent =
-        coins.filter(isAvailable).length.toLocaleString('es-AR');
       renderVitrina(sala);
       renderIngresos(coins);
       renderColecciones(coins);

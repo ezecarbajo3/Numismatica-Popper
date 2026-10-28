@@ -620,14 +620,6 @@ html.diapos .mf { scroll-snap-align: end; }
   margin-top: clamp(22px, 4.5svh, 44px);
 }
 
-.hero__piezas {
-  font-size: 17px;
-  color: var(--faint);
-  font-variant-numeric: lining-nums tabular-nums;
-}
-
-.hero__piezas b { font-weight: 500; color: var(--muted); }
-
 /* La moneda: un foco de luz quieto detrás y la foto fundida con el fondo. Su
    tamaño sale del alto de la pantalla, para que la diapositiva siempre entre. */
 .hero__stage {
@@ -702,14 +694,14 @@ html.diapos .mf { scroll-snap-align: end; }
     grid-template-rows: minmax(0, 1fr) auto;
     justify-items: center;
   }
-  .hero__coin { height: 100%; width: auto; max-width: min(100%, 420px); }
-  .hero__caption { margin-top: 6px; font-size: 16px; }
+  /* La foto llena su fila y se achica adentro (contain): con width:auto,
+     Safari del iPhone no resolvía el 100% de alto y la moneda quedaba a su
+     tamaño natural, pisando el pie. */
+  .hero__coin { width: 100%; height: 100%; min-height: 0; max-width: 420px; aspect-ratio: auto; object-fit: contain; }
+  .hero__caption { z-index: 1; margin-top: 6px; font-size: 16px; }
   .hero__caption b { display: inline; margin: 0 8px 0 0; font-size: 16px; letter-spacing: 0.08em; }
   .hero__copy .lede { order: 4; margin: 0; max-width: 24em; font-size: clamp(18px, 2.8svh, 21px); line-height: 1.5; }
-  /* El botón y, debajo, la cantidad: al lado quedaba tapada por el botón
-     flotante de WhatsApp. */
   .hero__actions { order: 5; margin: 0; flex-direction: column; justify-content: center; gap: 8px; }
-  .hero__piezas { font-size: 18px; }
 }
 
 /* ─── Tarjetas (vitrina de la Sala, ingresos, archivo) ────────────────────── */
@@ -863,21 +855,12 @@ html.diapos .mf { scroll-snap-align: end; }
   color: var(--muted);
 }
 
-.coleccion__count {
-  position: relative;
-  margin-top: auto;
-  font-size: 17px;
-  font-variant-numeric: lining-nums;
-  color: var(--gold);
-}
-
 @media (max-width: 860px) {
   .colecciones { grid-template-columns: repeat(2, minmax(0, 1fr)); max-height: none; }
   .coleccion { justify-content: flex-end; padding: 14px; }
   .coleccion__img { height: 78%; max-width: 70%; right: -16%; top: 40%; }
   .coleccion__label { font-size: 18px; letter-spacing: 0.1em; }
   .coleccion__desc { display: none; }
-  .coleccion__count { margin-top: 0; font-size: 16px; }
 }
 
 /* En pantallas bajas de compu la línea de descripción no entra. */
