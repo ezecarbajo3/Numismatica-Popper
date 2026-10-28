@@ -585,12 +585,12 @@ html.diapos .mf { scroll-snap-align: end; }
     top: calc(var(--mh-h) + 16px);
     right: 14px;
     transform: none;
-    opacity: 0.75;
+    opacity: 0.85;
     pointer-events: none;
   }
-  .diapo-indice a { width: 22px; height: 10px; }
-  .diapo-indice a::after { width: 8px; }
-  .diapo-indice a.is-active::after { width: 18px; }
+  .diapo-indice a { width: 28px; height: 13px; }
+  .diapo-indice a::after { width: 11px; }
+  .diapo-indice a.is-active::after { width: 24px; }
   .diapo-indice a span { display: none; }
 }
 
