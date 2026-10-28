@@ -37,8 +37,8 @@ function renderHero(sala, fondos) {
   const candidates = sala.filter(c => !isBlister(c) && hasBlackBackground(c, fondos));
   const pool = candidates.length ? candidates : sala;
   const coin = pool[Math.floor(Math.random() * pool.length)];
-  stage.href = `sala.html#p-${encodeURIComponent(coin.id)}`;
-  stage.setAttribute('aria-label', `${coin.title}: verla en la Sala de Rarezas`);
+  stage.href = `detalle.html?id=${encodeURIComponent(coin.id)}`;
+  stage.setAttribute('aria-label', `${coin.title}: ver la ficha`);
   img.src = largeFor(getPrimaryImage(coin));
   img.dataset.fullSrc = getPrimaryImage(coin);
   img.alt = `${coin.title}, ${countryLabel(coin)}`;
