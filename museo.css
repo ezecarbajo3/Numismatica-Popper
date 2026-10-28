@@ -1,0 +1,2176 @@
+/* ═════════════════════════════════════════════════════════════════════════════
+   Numismática Popper — "Museo nocturno".
+
+   Hoja del rediseño: portada (index.html), Sala de Rarezas (sala.html) y
+   catálogo (catalogo.html). La ficha y el carrito la toman en sus etapas.
+
+   PARA QUIÉN: mucho público grande, y una casa que tiene que verse de lujo.
+     - Texto base de 18px (EB Garamond tiene el ojo chico: 18px se lee como
+       un 16px de palo seco) y nada importante por debajo de 15px.
+     - Contraste alto: el gris de apoyo (--muted) supera 8:1 sobre el fondo.
+     - Nada escondido: ni scroll lateral sin pista ni gestos sin botón.
+
+   TIPOGRAFÍA (Garamond clásica, una sola familia de tono):
+     - Cormorant Garamond para títulos y encabezados: MAYÚSCULAS, peso medio,
+       tracking amplio. También el nombre de la pieza en la ficha y la cédula.
+     - EB Garamond para todo lo demás: texto, datos, precios, botones, campos.
+       Precios con cifras alineadas (lining + tabular).
+     - Cinzel SOLO en el logotipo y el monograma. Inter ya no se usa.
+
+   COLOR: negro y un solo dorado, #cdac6c (el de "N° 04"). Va casi solo en
+     precios, el botón principal y detalles finos (filetes, foco, activo). El
+     hover es una variación mínima del mismo tono; no hay dorado claro.
+
+   BOTONES: uno principal por pantalla (dorado, proporcionado, nunca de ancho
+     completo en la compu). Lo demás son links finos con ícono.
+
+   DIAPOSITIVAS: la portada y la Sala son secciones de pantalla completa con
+     scroll-snap en html (`html.diapos`). Cada `.diapo` mide 100svh menos la
+     cabecera y su contenido TIENE que entrar entero: si no entra, se recorta
+     contenido, nunca se deja crecer la sección. Catálogo, ficha, checkout y
+     legales van con scroll normal.
+
+   Reglas de rendimiento:
+     - Las fotos vienen sobre negro puro. En la Sala y el hero se funden con el
+       fondo con `mix-blend-mode: lighten`. En la grilla del catálogo NO: son
+       cientos de capas de composición.
+     - Movimiento solo en elementos chicos. Nunca opacidad/transform/
+       backdrop-filter sobre un contenedor que envuelva una grilla (Safari).
+       Por eso las diapositivas no se animan: se anima lo de adentro.
+     - `overflow-x: clip` va en html, no en body (rompe position: sticky).
+
+   DÓNDE ESTÁ CADA COSA: Tokens · Base · Cabecera · Botones · Diapositivas ·
+   Secciones · Hero · Tarjetas · Colecciones · Cómo comprar · WhatsApp ·
+   Footer · Sala de Rarezas · Catálogo · Ficha · Carrito · Legales ·
+   Movimiento.
+   ═════════════════════════════════════════════════════════════════════════════ */
+
+/* ─── Tokens ──────────────────────────────────────────────────────────────── */
+:root {
+  color-scheme: dark;
+  --ink: #0a0a0a;
+  --ink-deep: #050505;
+  --surface: #141414;
+  --surface-2: #1c1c1c;
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.2);
+  --text: #f2ede3;
+  --muted: #bdb4a5;
+  --faint: #8f8778;
+  /* El único dorado. --gold-hover es el mismo tono apenas más luminoso. */
+  --gold: #cdac6c;
+  --gold-hover: #d6b87c;
+  --gold-rgb: 205, 172, 108;
+
+  --display: "Cormorant Garamond", "EB Garamond", Garamond, Georgia, serif;
+  --text-font: "EB Garamond", Garamond, Georgia, "Times New Roman", serif;
+  --logo: "Cinzel", Georgia, serif;
+  /* Nombres viejos: cart.css usa var(--sans) en todo el carrito y la ficha
+     usaba var(--serif) para títulos. Apuntan a las Garamond. */
+  --serif: var(--display);
+  --sans: var(--text-font);
+
+  --radius: 2px;
+  --container: 1240px;
+  --gutter: clamp(18px, 4vw, 48px);
+  --section: clamp(64px, 9vw, 120px);
+  --header-h: 72px;
+  /* Alto real de la cabecera, lo mide museo.js (en el celular son dos renglones). */
+  --mh-h: var(--header-h);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  /* Para lo que se desliza (carrito, filtros): arranca decidido y se posa. */
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+  /* Alias para cart.css, que todavía habla el idioma de la hoja vieja. */
+  --bg: var(--ink);
+  --bg-card: var(--surface);
+  --bg-card-alt: var(--surface-2);
+  --border: var(--line-strong);
+  --accent: var(--gold);
+  --accent-rgb: var(--gold-rgb);
+  --accent-light: var(--gold);
+  --accent-dark: #a8844a;
+  --success: var(--gold);
+  --success-dark: var(--gold);
+  --shadow: 0 18px 42px rgba(0, 0, 0, 0.65);
+}
+
+/* ─── Base ────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+html {
+  overflow-x: clip;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.22) var(--ink);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--text-font);
+  font-size: 18px;
+  line-height: 1.6;
+  font-variant-numeric: lining-nums;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input, select, textarea { font-family: var(--text-font); }
+
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+::selection { background: rgba(var(--gold-rgb), 0.3); }
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Rótulo corto sobre un título. Es decorativo: lo importante va en el título. */
+.eyebrow {
+  margin: 0 0 14px;
+  font-family: var(--text-font);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* Títulos: Cormorant en mayúsculas. El peso medio evita que el trazo fino
+   se pierda sobre negro; el tracking amplio es lo que le da el aire clásico. */
+.display {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.12;
+  color: var(--text);
+  text-wrap: balance;
+}
+
+.lede {
+  margin: 0;
+  max-width: 34em;
+  font-size: clamp(18px, 1.5vw, 20px);
+  line-height: 1.6;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+
+.price {
+  font-weight: 500;
+  font-variant-numeric: lining-nums tabular-nums;
+  letter-spacing: 0.01em;
+  color: var(--gold);
+}
+
+/* ─── Cabecera ────────────────────────────────────────────────────────────── */
+/* Fondo opaco, sin backdrop-filter: desenfocar lo que pasa por detrás obliga
+   a Safari a recomponer la página entera en cada frame de scroll. */
+.mh {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+.mh__row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  height: var(--header-h);
+}
+
+.mh__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.mh__mono { width: 40px; height: 40px; flex-shrink: 0; }
+
+.mh__word {
+  font-family: var(--logo);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+  color: var(--text);
+}
+
+.mh__nav {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+}
+
+.mh__link {
+  position: relative;
+  padding: 6px 0;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  opacity: 0.8;
+  transition: opacity 0.25s ease;
+}
+
+.mh__link:hover, .mh__link[aria-current="page"] { opacity: 1; }
+
+/* Filete fino que crece desde el centro: marca la página actual y el hover. */
+.mh__link::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.35s var(--ease);
+}
+
+.mh__link:hover::after, .mh__link[aria-current="page"]::after { transform: none; }
+
+.mh__tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Precios en dólares o en pesos: las dos opciones a la vista. El botón de
+   cart.js (#currencyToggleBtn) queda oculto; este control llama a
+   setCurrency() y cart.js se entera por el evento popper:currency-changed. */
+/* Sin cápsula blanca: la opción elegida se marca con un filete dorado debajo,
+   como el link de la página actual. */
+.moneda-switch {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.moneda-switch button {
+  position: relative;
+  min-width: 44px;
+  height: 38px;
+  padding: 0 10px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--faint);
+  transition: color 0.25s ease;
+}
+
+.moneda-switch button:hover { color: var(--text); }
+.moneda-switch button[aria-pressed="true"] { color: var(--text); }
+
+.moneda-switch button::after {
+  content: "";
+  position: absolute;
+  left: 10px; right: 10px; bottom: 5px;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.35s var(--ease);
+}
+
+.moneda-switch button[aria-pressed="true"]::after { transform: none; }
+
+.mh .moneda-switch button + button::before {
+  content: "";
+  position: absolute;
+  left: -1px; top: 12px; bottom: 12px;
+  width: 1px;
+  background: var(--line-strong);
+}
+
+.moneda-switch .solo-celu { display: none; }
+
+/* cart.js mete este botón en #siteFloatingActions; acá vive en la cabecera. */
+.mh .site-floating-actions {
+  position: static;
+  display: flex;
+  z-index: auto;
+}
+
+.carrito-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 4px 0 8px;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  transition: color 0.25s ease;
+}
+
+.carrito-btn:hover { color: var(--gold); }
+.carrito-btn svg { width: 19px; height: 19px; pointer-events: none; }
+
+.mh .carrito-btn .cart-floating-badge {
+  position: static;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 999px;
+  font-family: var(--text-font);
+  font-size: 14px;
+  font-weight: 500;
+  font-variant-numeric: lining-nums tabular-nums;
+  line-height: 22px;
+  background: var(--gold);
+  color: var(--ink);
+  transform: none;
+}
+
+/* Sin piezas el número no se muestra, pero no deja hueco. */
+.mh .carrito-btn .cart-floating-badge:not(.has-items) { display: none; }
+
+@media (max-width: 960px) {
+  .mh__row { flex-wrap: wrap; gap: 0 12px; height: auto; padding-top: 4px; }
+  .mh__brand { height: 44px; }
+  .mh__word { font-size: 16px; letter-spacing: 0.1em; }
+  .mh__mono { width: 34px; height: 34px; }
+  .mh__tools { margin-left: auto; gap: 4px; }
+  /* La navegación baja a una segunda línea, completa y centrada. */
+  .mh__nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 26px;
+    margin: 0;
+    padding: 0 0 2px;
+    border-top: 1px solid var(--line);
+  }
+  .mh__link { font-size: 16px; }
+  .carrito-btn { padding: 0 4px; }
+  .carrito-btn__label { display: none; }
+  .moneda-switch .solo-compu { display: none; }
+  .moneda-switch .solo-celu { display: inline; }
+  /* Un solo botón: muestra la moneda actual y al tocarlo cambia a la otra. */
+  .mh .moneda-switch button[aria-pressed="false"] { display: none; }
+  .mh .moneda-switch button {
+    min-width: 46px;
+    height: 32px;
+    padding: 0 10px;
+    border: 1px solid rgba(var(--gold-rgb), 0.45);
+    border-radius: 999px;
+    font-size: 16px;
+    color: var(--gold);
+  }
+  .mh .moneda-switch button::after,
+  .mh .moneda-switch button + button::before { display: none; }
+}
+
+@media (max-width: 400px) {
+  /* Logo, nombre, moneda y carrito en un solo renglón. */
+  .mh__row { gap: 0 6px; }
+  .mh__word { font-size: 13.5px; letter-spacing: 0.05em; white-space: nowrap; }
+  .carrito-btn { gap: 4px; padding: 0 2px; }
+  .mh__mono { width: 28px; height: 28px; }
+  .mh__brand { gap: 7px; min-width: 0; }
+  .mh__nav { gap: 18px; }
+  .mh .moneda-switch button { min-width: 40px; padding: 0 7px; }
+}
+
+/* ─── Botones ─────────────────────────────────────────────────────────────── */
+/* Proporcionados y finos: alto de 48px (fácil de tocar), borde de 1px, sin
+   ancho completo en la compu. El texto en minúscula normal, como una frase. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 30px;
+  border: 1px solid var(--gold);
+  border-radius: var(--radius);
+  font-family: var(--text-font);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  text-align: center;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* El principal: uno por pantalla. */
+.btn--solid { background: var(--gold); color: #17120a; }
+.btn--solid:hover { background: var(--gold-hover); border-color: var(--gold-hover); }
+/* El secundario: solo un filete, el texto en blanco. */
+.btn--ghost, .btn--quiet { border-color: var(--line-strong); color: var(--text); }
+.btn--ghost:hover, .btn--quiet:hover { border-color: var(--gold); }
+
+.btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+/* Acciones terciarias (WhatsApp, Compartir, Ver la ficha): texto con un
+   ícono fino, sin caja. */
+.link-icono {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  font-size: 17px;
+  color: var(--muted);
+  transition: color 0.25s ease;
+}
+
+.link-icono svg { width: 17px; height: 17px; flex-shrink: 0; color: var(--gold); }
+.link-icono:hover { color: var(--text); }
+.link-icono span { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 5px; transition: text-decoration-color 0.25s ease; }
+.link-icono:hover span { text-decoration-color: rgba(var(--gold-rgb), 0.6); }
+
+/* Link con flecha. Subrayado fino para que se lea como link sin dudas. */
+.arrow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
+  color: var(--text);
+  white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(var(--gold-rgb), 0.55);
+  text-underline-offset: 6px;
+  transition: text-decoration-color 0.25s ease;
+}
+
+.arrow-link:hover { text-decoration-color: var(--gold); }
+.arrow-link svg { width: 18px; height: 18px; transition: transform 0.3s var(--ease); }
+.arrow-link:hover svg { transform: translateX(3px); }
+
+/* ─── Diapositivas ────────────────────────────────────────────────────────── */
+/* Portada y Sala: cada sección es una pantalla y el scroll se posa en la
+   siguiente. El snap va en html (el scroll de la página, el que mejor anda en
+   Safari) y solo en las páginas que lo piden con <html class="diapos">.
+   scroll-padding-top descuenta la cabecera fija, que en el celular tiene dos
+   renglones: museo.js mide su alto real en --mh-h. */
+html.diapos {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: var(--mh-h);
+}
+
+.diapo {
+  position: relative;
+  height: calc(100svh - var(--mh-h));
+  min-height: 360px;
+  overflow: clip;
+  scroll-snap-align: start;
+  padding: clamp(16px, 4svh, 56px) 0;
+}
+
+/* El contenido se centra en la pantalla y se reparte con aire proporcional
+   al alto: en una pantalla baja todo se acerca, nunca se sale. */
+.diapo__in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(14px, 3.6svh, 44px);
+  height: 100%;
+}
+
+.diapo__head { text-align: center; }
+.diapo__head .eyebrow { margin-bottom: clamp(6px, 1.4svh, 14px); }
+.diapo__head .display { font-size: clamp(28px, 3vw, 40px); }
+.diapo__head .lede { margin: clamp(6px, 1.4svh, 14px) auto 0; }
+.diapo__foot { display: flex; justify-content: center; }
+
+@media (max-width: 600px) {
+  /* Títulos más juntos y botones más chicos: en el teléfono el espacio va
+     para las piezas. */
+  .display { letter-spacing: 0.06em; }
+  .eyebrow { letter-spacing: 0.16em; }
+  .diapo__head .eyebrow { margin-bottom: 4px; }
+  .diapo .btn { min-height: 42px; padding: 0 22px; font-size: 17px; }
+}
+
+/* En el celular el margen de cada diapositiva es fijo y chico: cada píxel de
+   alto va para las piezas. */
+@media (max-width: 860px) {
+  .diapo { padding: 14px 0 18px; }
+  /* Safari del iPhone: al esconderse la barra la pantalla crece (de svh a
+     lvh) y asomaba la diapositiva siguiente. Cada una mide la pantalla grande
+     y deja abajo, vacío, lo que tapa la barra cuando está a la vista: el
+     contenido siempre entra y nunca se ve la pieza que sigue. */
+  @supports (height: 100lvh) {
+    .diapo {
+      height: calc(100lvh - var(--mh-h));
+      padding-bottom: calc(100lvh - 100svh + 18px);
+    }
+  }
+}
+
+/* El pie de página es la última parada: se posa abajo, no arriba. */
+html.diapos .mf { scroll-snap-align: end; }
+
+/* Indicador de posición: un filete por diapositiva al costado derecho. El
+   activo se alarga y se vuelve dorado; al pasar el mouse dice su nombre.
+   En el celular no hace falta: se pasa con el dedo. */
+.diapo-indice {
+  position: fixed;
+  right: 18px;
+  top: 50%;
+  z-index: 800;
+  display: grid;
+  justify-items: end;
+  transform: translateY(-50%);
+}
+
+.diapo-indice a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 36px;
+  height: 18px;
+}
+
+.diapo-indice a::after {
+  content: "";
+  width: 12px;
+  height: 1px;
+  background: var(--faint);
+  transition: width 0.45s var(--ease), background 0.3s ease;
+}
+
+.diapo-indice a:hover::after { width: 20px; background: var(--text); }
+.diapo-indice a.is-active::after { width: 30px; background: var(--gold); }
+
+.diapo-indice a span {
+  position: absolute;
+  right: 44px;
+  padding: 2px 10px;
+  border-radius: var(--radius);
+  background: var(--ink);
+  font-size: 16px;
+  white-space: nowrap;
+  color: var(--text);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(6px);
+  transition: opacity 0.25s ease, transform 0.35s var(--ease);
+}
+
+.diapo-indice a:hover span,
+.diapo-indice a:focus-visible span { opacity: 1; transform: none; }
+
+@media (max-width: 860px) { .diapo-indice { display: none; } }
+
+/* ─── Secciones ───────────────────────────────────────────────────────────── */
+/* Secciones de scroll normal (la ficha: piezas parecidas). */
+.section { padding: var(--section) 0; }
+.section + .section { border-top: 1px solid var(--line); }
+
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px 48px;
+  flex-wrap: wrap;
+  margin-bottom: clamp(32px, 4vw, 52px);
+}
+
+.section-head .display { font-size: clamp(26px, 3vw, 36px); }
+.section-head .lede { margin-top: 12px; }
+
+/* ─── Hero ────────────────────────────────────────────────────────────────── */
+.hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 96px);
+  height: 100%;
+}
+
+.hero__title {
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.08;
+  margin-bottom: clamp(16px, 3svh, 28px);
+}
+
+.hero__copy .lede { max-width: 28em; }
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin-top: clamp(22px, 4.5svh, 44px);
+}
+
+.hero__piezas {
+  font-size: 17px;
+  color: var(--faint);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.hero__piezas b { font-weight: 500; color: var(--muted); }
+
+/* La moneda: un foco de luz quieto detrás y la foto fundida con el fondo. Su
+   tamaño sale del alto de la pantalla, para que la diapositiva siempre entre. */
+.hero__stage {
+  position: relative;
+  display: block;
+  justify-self: center;
+  width: min(100%, 540px, calc(100svh - var(--mh-h) - 190px));
+}
+
+.hero__stage::before {
+  content: "";
+  position: absolute;
+  inset: -12%;
+  background: radial-gradient(circle at 50% 46%, rgba(var(--gold-rgb), 0.11), transparent 62%);
+  pointer-events: none;
+}
+
+.hero__coin {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  mix-blend-mode: lighten;
+}
+
+.hero__caption {
+  position: relative;
+  margin: 14px 0 0;
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--faint);
+  text-align: center;
+}
+
+.hero__caption b {
+  display: block;
+  margin-bottom: 2px;
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text);
+}
+
+@media (max-width: 860px) {
+  /* Una columna centrada: el título, la moneda (ocupa todo el alto que
+     queda, con el ancho como tope), el texto y el botón. .hero__copy se
+     disuelve para que sus partes se ordenen alrededor de la moneda. */
+  .hero__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(10px, 2.2svh, 22px);
+    text-align: center;
+  }
+  .hero__copy { display: contents; }
+  .hero__copy .eyebrow { order: 1; margin: 0 0 calc(-1 * clamp(4px, 1.2svh, 12px)); }
+  .hero__title {
+    order: 2;
+    margin: 0;
+    font-size: clamp(26px, 7.6vw, 36px);
+    letter-spacing: 0.05em;
+  }
+  .hero__stage {
+    order: 3;
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    justify-items: center;
+  }
+  .hero__coin { height: 100%; width: auto; max-width: min(100%, 420px); }
+  .hero__caption { margin-top: 6px; font-size: 16px; }
+  .hero__caption b { display: inline; margin: 0 8px 0 0; font-size: 16px; letter-spacing: 0.08em; }
+  .hero__copy .lede { order: 4; margin: 0; max-width: 24em; font-size: clamp(18px, 2.8svh, 21px); line-height: 1.5; }
+  /* El botón y, debajo, la cantidad: al lado quedaba tapada por el botón
+     flotante de WhatsApp. */
+  .hero__actions { order: 5; margin: 0; flex-direction: column; justify-content: center; gap: 8px; }
+  .hero__piezas { font-size: 18px; }
+}
+
+/* ─── Tarjetas (vitrina de la Sala, ingresos, archivo) ────────────────────── */
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(28px, 3vw, 44px) clamp(16px, 2.4vw, 32px);
+}
+
+@media (max-width: 860px) {
+  .grilla { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.tarjeta { display: flex; flex-direction: column; }
+
+.tarjeta__img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #000;
+  border-radius: var(--radius);
+  transition: transform 0.8s var(--ease), opacity 0.7s ease;
+}
+
+/* En la vitrina de la Sala la foto se funde con el fondo, sin recuadro. */
+.tarjeta--sala .tarjeta__img, .archivada .tarjeta__img { background: none; mix-blend-mode: lighten; }
+.tarjeta:hover .tarjeta__img { transform: scale(1.02); }
+
+.tarjeta__num {
+  margin-top: 14px;
+  font-size: 15px;
+  letter-spacing: 0.16em;
+  color: var(--gold);
+}
+
+.tarjeta__title {
+  margin: 12px 0 2px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--text);
+  transition: color 0.25s ease;
+}
+
+.tarjeta:hover .tarjeta__title { color: #fff; }
+.tarjeta--sala .tarjeta__num + .tarjeta__title { margin-top: 4px; }
+.tarjeta__title .coin-title-extra { color: var(--muted); font-style: italic; }
+.tarjeta__meta { font-size: 16px; color: var(--faint); }
+.tarjeta__pie { display: flex; align-items: center; gap: 10px; margin-top: 4px; }
+.tarjeta .price { font-size: 18px; }
+
+/* En una diapositiva la foto toma su tamaño del alto disponible (--foto) y
+   la tarjeta se centra como una cédula de museo. Título en dos renglones
+   como mucho. */
+.diapo .grilla { --foto: clamp(110px, calc(100svh - var(--mh-h) - 430px), 270px); row-gap: clamp(14px, 3svh, 32px); }
+.diapo .tarjeta { align-items: center; text-align: center; }
+.diapo .tarjeta__pie { justify-content: center; }
+.diapo .tarjeta__img { width: min(100%, var(--foto)); }
+.diapo .tarjeta__title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/* En el teléfono, dos piezas grandes en lugar de cuatro chicas: la foto ocupa
+   todo el ancho de la columna (o lo que deje el alto de la pantalla). */
+@media (max-width: 600px) {
+  .diapo--vitrina .grilla > :nth-child(n+3) { display: none; }
+  .diapo.diapo--vitrina .grilla { --foto: max(120px, calc(100svh - var(--mh-h) - 300px)); column-gap: 10px; }
+  /* Las fotos ya llegan al ancho de su columna: lo que sobra de alto va a la
+     letra y al aire entre bloques, repartido parejo. */
+  .diapo--vitrina .diapo__in { justify-content: space-evenly; gap: 0; }
+  .diapo--vitrina .diapo__head .display { font-size: clamp(30px, 5svh, 40px); }
+  .diapo--vitrina .grilla .tarjeta__num { margin-top: 10px; font-size: 16px; }
+  .diapo--vitrina .grilla .tarjeta__title { margin-top: 4px; font-size: 18px; }
+  .diapo--vitrina .grilla .tarjeta .price { font-size: 19px; }
+  .diapo--vitrina .grilla .tarjeta__pie { margin-top: 6px; }
+}
+
+@media (max-width: 860px) {
+  /* En el celular la vitrina habla sola: el título y las piezas. */
+  .diapo--vitrina .diapo__head .lede { display: none; }
+  .diapo .grilla { --foto: clamp(96px, calc((100svh - var(--mh-h) - 430px) / 2), 170px); column-gap: 14px; row-gap: clamp(10px, 2svh, 20px); }
+  .diapo .tarjeta__num { margin-top: 8px; font-size: 14px; }
+  .diapo .tarjeta__title { margin-top: 6px; font-size: 16px; }
+  .diapo .tarjeta--sala .tarjeta__num + .tarjeta__title { margin-top: 2px; }
+  .diapo .tarjeta__meta { display: none; }
+  .diapo .tarjeta .price { margin-top: 0; font-size: 17px; }
+}
+
+/* ─── Colecciones ─────────────────────────────────────────────────────────── */
+/* Seis colecciones en una grilla que llena el alto que queda: 3×2 en la
+   compu, 2×3 en el celular. Filetes de 1px entre celdas, sin cajas. */
+.colecciones {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: 520px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border-block: 1px solid var(--line);
+}
+
+.coleccion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 0;
+  padding: clamp(16px, 2.6svh, 30px) clamp(18px, 2.4vw, 32px);
+  overflow: hidden;
+  background: var(--ink);
+  transition: background 0.5s ease;
+}
+
+.coleccion:hover { background: #101010; }
+
+.coleccion__img {
+  position: absolute;
+  right: -4%;
+  top: 50%;
+  height: 84%;
+  max-width: 52%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  opacity: 0.38;
+  mix-blend-mode: lighten;
+  transform: translateY(-50%);
+  transition: opacity 0.6s ease, transform 1s var(--ease);
+}
+
+.coleccion:hover .coleccion__img { opacity: 0.7; transform: translateY(-50%) rotate(-5deg) scale(1.03); }
+
+.coleccion__label {
+  position: relative;
+  font-family: var(--display);
+  font-size: clamp(21px, 1.9vw, 26px);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.coleccion__desc {
+  position: relative;
+  max-width: 15em;
+  font-size: 17px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.coleccion__count {
+  position: relative;
+  margin-top: auto;
+  font-size: 17px;
+  font-variant-numeric: lining-nums;
+  color: var(--gold);
+}
+
+@media (max-width: 860px) {
+  .colecciones { grid-template-columns: repeat(2, minmax(0, 1fr)); max-height: none; }
+  .coleccion { justify-content: flex-end; padding: 14px; }
+  .coleccion__img { height: 78%; max-width: 70%; right: -16%; top: 40%; }
+  .coleccion__label { font-size: 18px; letter-spacing: 0.1em; }
+  .coleccion__desc { display: none; }
+  .coleccion__count { margin-top: 0; font-size: 16px; }
+}
+
+/* En pantallas bajas de compu la línea de descripción no entra. */
+@media (min-width: 861px) and (max-height: 760px) {
+  .coleccion__desc { display: none; }
+}
+
+/* ─── Cómo comprar ────────────────────────────────────────────────────────── */
+.pilares {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(28px, 5vw, 72px);
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.pilar svg { width: 30px; height: 30px; margin: 0 auto; color: var(--gold); }
+
+.pilar h3 {
+  margin: 14px 0 6px;
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.pilar p { margin: 0 auto; max-width: 19em; font-size: 18px; line-height: 1.5; color: var(--muted); }
+
+/* El grupo de WhatsApp: una línea con su botón, separada por un filete. */
+.grupo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-top: clamp(18px, 4svh, 40px);
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+.grupo p { margin: 0; font-size: 19px; color: var(--muted); }
+.grupo p b { font-weight: 500; color: var(--text); }
+
+@media (max-width: 860px) {
+  .pilares { grid-template-columns: 1fr; gap: 10px; max-width: 30em; text-align: left; }
+  .pilar { display: grid; grid-template-columns: 34px 1fr; column-gap: 14px; align-items: start; }
+  .pilar svg { grid-row: span 2; width: 26px; height: 26px; margin: 2px 0 0; }
+  .pilar h3 { margin: 0 0 2px; font-size: 17px; }
+  .pilar p { margin: 0; font-size: 17px; line-height: 1.4; }
+  .grupo { flex-direction: column; gap: 12px; }
+  .grupo p { font-size: 17px; }
+}
+
+/* Botón de WhatsApp: oscuro, filete dorado e ícono. Nada de verde. */
+.btn--wa { border-color: rgba(var(--gold-rgb), 0.7); color: var(--text); }
+.btn--wa svg { color: var(--gold); }
+.btn--wa:hover { border-color: var(--gold); }
+
+/* Botón fijo de consultas: chico y en la paleta del sitio. Por debajo del
+   cajón del carrito (z-index 1000) para no taparlo. */
+.wa-fijo {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 850;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 18px 0 14px;
+  border: 1px solid rgba(var(--gold-rgb), 0.55);
+  border-radius: 999px;
+  background: rgba(10, 10, 10, 0.92);
+  color: var(--text);
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  transition: border-color 0.3s ease, transform 0.4s var(--ease);
+}
+
+.wa-fijo:hover { border-color: var(--gold); transform: translateY(-2px); }
+.wa-fijo svg { width: 19px; height: 19px; color: var(--gold); }
+
+@media (max-width: 860px) {
+  .wa-fijo { right: 14px; bottom: 14px; width: 44px; padding: 0; justify-content: center; }
+  .wa-fijo span { display: none; }
+}
+
+/* ─── Footer ──────────────────────────────────────────────────────────────── */
+.mf {
+  padding: 56px 0 36px;
+  border-top: 1px solid var(--line);
+  font-size: 17px;
+  color: var(--muted);
+}
+
+.mf__grid {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+  gap: 36px;
+}
+
+.mf__brand .mh__mono { width: 44px; height: 44px; margin-bottom: 14px; }
+.mf__brand p { margin: 0; max-width: 20em; line-height: 1.5; }
+
+.mf h4 {
+  margin: 0 0 12px;
+  font-family: var(--display);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text);
+}
+
+.mf ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+.mf a { transition: color 0.25s ease; }
+.mf a:hover { color: var(--text); }
+
+.mf__base {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 16px;
+  color: var(--faint);
+}
+
+/* En el celular: compacto, para que entre en una pantalla (es la última
+   diapositiva de la portada y de la Sala). */
+@media (max-width: 760px) {
+  .mf { padding: 32px 0 76px; font-size: 16px; }
+  .mf__grid { grid-template-columns: 1fr 1fr; gap: 22px 20px; }
+  .mf__brand { grid-column: 1 / -1; display: flex; align-items: center; gap: 14px; }
+  .mf__brand .mh__mono { width: 38px; height: 38px; margin: 0; }
+  .mf__brand p { font-size: 16px; }
+  .mf__grid > div:last-child { grid-column: 1 / -1; }
+  .mf__grid > div:last-child ul { grid-template-columns: repeat(3, auto); justify-content: start; gap: 6px 22px; }
+  .mf__grid > div:last-child li:last-child { grid-column: 1 / -1; }
+  .mf h4 { margin-bottom: 6px; font-size: 15px; }
+  .mf ul { gap: 2px; }
+  .mf__base { margin-top: 22px; padding-top: 15px; font-size: 14px; }
+}
+
+/* ─── Sala de Rarezas ─────────────────────────────────────────────────────── */
+.sala-body { background: var(--ink-deep); }
+.sala-body .mh, .sala-body .diapo-indice a span { background: var(--ink-deep); }
+
+.sala-intro { display: grid; place-items: center; padding-inline: var(--gutter); text-align: center; }
+
+.sala-intro__title {
+  font-size: clamp(36px, 5.6vw, 72px);
+  letter-spacing: 0.12em;
+  margin-bottom: clamp(14px, 3svh, 26px);
+}
+
+.sala-intro .lede { margin: 0 auto; }
+
+.sala-intro__stats {
+  margin: clamp(14px, 3svh, 26px) 0 0;
+  font-size: 17px;
+  color: var(--faint);
+  font-variant-numeric: lining-nums;
+}
+
+.sala-intro__stats b { color: var(--muted); font-weight: 500; }
+.sala-intro .btn { margin-top: clamp(20px, 4.5svh, 40px); }
+.sala-intro .btn svg { width: 17px; height: 17px; }
+
+/* Cada pieza es una diapositiva: moneda y cédula enteras en una pantalla. En
+   la compu, la moneda a un lado y, al otro, el encabezado y el texto juntos,
+   centrados en el alto. Las piezas pares cambian de lado. */
+.pieza {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  grid-template-rows: 1fr auto auto 1fr;
+  grid-template-areas:
+    "stage ."
+    "stage head"
+    "stage cedula"
+    "stage .";
+  gap: 0 clamp(32px, 6vw, 96px);
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-inline: var(--gutter);
+}
+
+.pieza:nth-of-type(even) {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  grid-template-areas:
+    ". stage"
+    "head stage"
+    "cedula stage"
+    ". stage";
+}
+
+.pieza__stage { grid-area: stage; align-self: center; }
+.pieza__head { grid-area: head; }
+.cedula { grid-area: cedula; }
+
+/* La moneda toma el alto que deja la pantalla menos los botones de cara. */
+.pieza__stage {
+  justify-self: center;
+  width: min(100%, 560px, calc(100svh - var(--mh-h) - 150px));
+}
+
+.pieza__coin {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* La moneda en 3D: dos caras espalda con espalda. sala.js escribe --giro con
+   el scroll (sin transición, sigue al dedo) o con los botones y al tocarla
+   (.is-animando: giro lento). Es un elemento chico por pieza: no compromete el
+   scroll. El blend va en .moneda3d y no en cada cara: en Safari, blend +
+   backface-visibility en el mismo elemento deja ver la cara oculta. */
+.moneda3d { perspective: 2000px; mix-blend-mode: lighten; }
+
+.moneda3d__inner {
+  position: relative;
+  aspect-ratio: 1;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--giro, 0) * 1deg));
+}
+
+/* Un giro lento, como una moneda que se da vuelta en la mano. */
+.moneda3d__inner.is-animando { transition: transform 1.3s cubic-bezier(0.45, 0, 0.15, 1); }
+
+.moneda3d__face {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.moneda3d__face--back { transform: rotateY(180deg); }
+
+/* Anverso / Reverso: el giro también tiene botones, que dicen qué cara se ve. */
+.caras {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(8px, 2svh, 18px);
+}
+
+.caras .moneda-switch button { min-width: 96px; font-size: 17px; }
+.caras .moneda-switch button + button::before {
+  content: "";
+  position: absolute;
+  left: -1px; top: 12px; bottom: 12px;
+  width: 1px;
+  background: var(--line-strong);
+}
+
+.cedula__top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 clamp(8px, 2svh, 16px);
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.cedula__num {
+  font-size: 15px;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.cedula__num::after { content: ""; display: inline-block; width: 36px; height: 1px; margin: 0 0 4px 14px; vertical-align: middle; background: rgba(var(--gold-rgb), 0.5); }
+
+.cedula__title {
+  font-size: clamp(26px, 2.8vw, 36px);
+  letter-spacing: 0.08em;
+  margin-bottom: clamp(12px, 2.6svh, 24px);
+}
+
+.cedula__title .coin-title-extra { color: var(--muted); }
+
+.cedula__nota {
+  margin: 0 0 clamp(14px, 3svh, 26px);
+  max-width: 30em;
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+
+.cedula__specs { color: var(--muted); }
+.cedula__specs:hover { color: var(--gold); }
+
+/* Archivo: las que pasaron por la Sala, sin precio y en gris. */
+.archivo { max-width: var(--container); margin: 0 auto; padding-inline: var(--gutter); }
+
+.archivada .tarjeta__img { filter: grayscale(0.6) brightness(0.75); }
+
+.archivada__estado {
+  margin-top: 2px;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--faint);
+}
+
+@media (max-width: 860px) {
+  /* Una columna: arriba el número y el nombre, en el medio la moneda (ocupa
+     todo el alto libre, con el ancho como tope) y abajo el texto. */
+  .pieza {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 2svh, 20px);
+  }
+  .pieza__stage {
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    justify-items: center;
+  }
+  .pieza__coin { height: 100%; max-width: 100%; aspect-ratio: 1; width: auto; }
+  .pieza__coin .moneda3d, .pieza__coin .moneda3d__inner { height: 100%; }
+  .caras { margin-top: 6px; }
+  .caras .moneda-switch button { min-width: 84px; height: 34px; font-size: 16px; }
+  /* Arriba el número y el nombre; en el medio la moneda; abajo el texto. */
+  .pieza__head, .cedula { flex: none; }
+  .cedula__top { margin-bottom: 4px; font-size: 16px; }
+  .cedula__num { font-size: 15px; }
+  .cedula__title { font-size: clamp(23px, 6.6vw, 30px); margin-bottom: 0; }
+  .cedula__nota { font-size: 17px; line-height: 1.5; margin-bottom: 12px; }
+  .cedula__specs { min-height: 36px; font-size: 17px; }
+}
+
+/* Teléfonos bajos (iPhone SE con las barras de Safari): la moneda puede
+   achicarse un poco más y la cédula se aprieta para que la pieza entre. */
+@media (max-width: 600px) and (max-height: 660px) {
+  #como-comprar .diapo__head .lede { display: none; }
+  .pieza { gap: 6px; }
+  .caras .moneda-switch button { height: 30px; }
+  .cedula__top { margin-bottom: 2px; }
+  .cedula__nota { font-size: 16px; margin-bottom: 8px; }
+  .pilar p { line-height: 1.3; }
+  .pilares { gap: 6px; }
+}
+
+/* ─── Catálogo ────────────────────────────────────────────────────────────── */
+.cat-head { padding: clamp(32px, 4vw, 56px) 0 clamp(20px, 2.4vw, 32px); }
+.cat-head .display { font-size: clamp(30px, 3.6vw, 44px); }
+/* Sin título visible (todas las monedas): queda para lectores de pantalla y
+   el catálogo arranca en el buscador. */
+.cat-head.is-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.cat-head.is-oculto + .cat-layout { padding-top: clamp(24px, 3vw, 40px); }
+
+.cat-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 64px);
+  align-items: start;
+  padding-bottom: var(--section);
+}
+
+/* Panel de filtros: columna fija en la compu, hoja desde abajo en el celular. */
+.filtros {
+  position: sticky;
+  top: calc(var(--header-h) + 20px);
+  max-height: calc(100vh - var(--header-h) - 40px);
+  overflow-y: auto;
+  padding-right: 6px;
+  scrollbar-width: thin;
+}
+
+.filtros__head { display: none; }
+
+.filtro {
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+}
+
+.filtro:first-of-type { border-top: 0; padding-top: 0; }
+
+.filtro h3 {
+  margin: 0 0 10px;
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text);
+}
+
+.opciones { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+
+/* Cada opción es un renglón fácil de tocar: casilla + nombre + conteo. */
+.opcion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: calc(100% + 16px);
+  min-height: 40px;
+  padding: 4px 8px;
+  margin: 0 -8px;
+  border-radius: var(--radius);
+  font-size: 17px;
+  text-align: left;
+  color: var(--muted);
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.opcion:hover { color: var(--text); background: rgba(255, 255, 255, 0.03); }
+.opcion[aria-checked="true"] { color: var(--text); }
+
+.opcion__box {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border: 1px solid var(--faint);
+  border-radius: 2px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.opcion--radio .opcion__box { border-radius: 50%; }
+.opcion__box svg { width: 13px; height: 13px; opacity: 0; color: var(--ink); }
+.opcion[aria-checked="true"] .opcion__box { background: var(--gold); border-color: var(--gold); }
+.opcion--radio[aria-checked="true"] .opcion__box { background: var(--ink); box-shadow: inset 0 0 0 4px var(--ink), inset 0 0 0 10px var(--gold); }
+.opcion[aria-checked="true"]:not(.opcion--radio) .opcion__box svg { opacity: 1; }
+.opcion__label { flex: 1; min-width: 0; }
+.opcion__count { font-size: 16px; color: var(--faint); font-variant-numeric: lining-nums tabular-nums; }
+
+.opciones--largas { max-height: 320px; overflow-y: auto; padding-right: 4px; }
+
+.filtro__buscar {
+  width: 100%;
+  height: 42px;
+  margin-bottom: 10px;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: var(--text);
+  font: inherit;
+  font-size: 17px;
+}
+
+.filtro__buscar:focus { outline: none; border-color: var(--gold); }
+
+/* Barra sobre la grilla: buscador, orden y filtros aplicados. */
+.cat-barra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  margin-bottom: 14px;
+}
+
+.buscador {
+  position: relative;
+  flex: 1 1 320px;
+}
+
+.buscador > svg {
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  width: 19px;
+  height: 19px;
+  color: var(--faint);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* El buscador es una línea, no una caja: el filete se vuelve dorado al
+   escribir. */
+.buscador input {
+  width: 100%;
+  height: 50px;
+  padding: 0 44px 0 32px;
+  border: 0;
+  border-bottom: 1px solid var(--line-strong);
+  border-radius: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 19px;
+  transition: border-color 0.3s ease;
+}
+
+.buscador input::placeholder { color: var(--faint); }
+.buscador input:focus { outline: none; border-color: var(--gold); }
+.buscador input::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+.buscador__limpiar {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  transform: translateY(-50%);
+  color: var(--muted);
+}
+
+.buscador__limpiar svg { width: 17px; height: 17px; }
+
+.orden {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
+  color: var(--faint);
+}
+
+.orden select {
+  height: 50px;
+  padding: 0 30px 0 4px;
+  border: 0;
+  border-bottom: 1px solid var(--line-strong);
+  border-radius: 0;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23cdac6c' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6.5L8 10.5l4-4'/%3E%3C/svg%3E") no-repeat right 4px center / 14px;
+  color: var(--text);
+  font: inherit;
+  font-size: 17px;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.orden select:focus { outline: none; border-color: var(--gold); }
+.orden select option { background: var(--surface); }
+
+.btn-filtrar { display: none; }
+
+.cat-estado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  min-height: 36px;
+  margin-bottom: 28px;
+  font-size: 17px;
+  color: var(--faint);
+}
+
+.cat-estado strong { color: var(--muted); font-weight: 500; font-variant-numeric: lining-nums; }
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 10px 0 14px;
+  border: 1px solid rgba(var(--gold-rgb), 0.45);
+  border-radius: 999px;
+  font-size: 16px;
+  color: var(--text);
+  transition: border-color 0.25s ease;
+}
+
+.chip svg { width: 14px; height: 14px; color: var(--gold); }
+.chip:hover { border-color: var(--gold); }
+
+.chip--limpiar {
+  border: 0;
+  padding: 0 4px;
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--gold-rgb), 0.5);
+  text-underline-offset: 5px;
+}
+
+/* La grilla del catálogo: tarjetas simples, sin blend ni animación por tarjeta.
+   Pueden ser 600: el costo por tarjeta tiene que ser mínimo. */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 48px 28px;
+}
+
+.ficha {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.ficha__foto {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: #000;
+}
+
+.ficha__foto-link { display: block; width: 100%; height: 100%; }
+.ficha__foto img { width: 100%; height: 100%; object-fit: contain; }
+
+/* Marcas sobre la foto: rótulos chicos en mayúsculas, sin cápsulas llenas. */
+.ficha__marca {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 2px 9px;
+  border: 1px solid rgba(var(--gold-rgb), 0.6);
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--gold);
+  pointer-events: none;
+}
+
+.ficha__marca--sala { color: var(--gold); }
+.ficha__marca { white-space: nowrap; }
+@media (max-width: 600px) {
+  .ficha__marca { top: 8px; left: 8px; padding: 1px 7px; letter-spacing: 0.1em; }
+  .ficha__marca .solo-compu { display: none; }
+}
+.ficha__marca--vendida { border-color: var(--line-strong); color: var(--text); }
+
+.ficha__body { display: flex; flex-direction: column; flex: 1; padding-top: 14px; }
+
+.ficha__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.ficha__title a { transition: color 0.2s ease; }
+.ficha__title a:hover { color: #fff; }
+.ficha__title .coin-title-extra { color: var(--muted); font-style: italic; }
+.ficha__meta { margin: 2px 0 0; font-size: 16px; color: var(--faint); }
+
+/* Precio a la izquierda y la cápsula del estado a la derecha, en una fila. */
+.ficha__pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.ficha .price { font-size: 19px; white-space: nowrap; min-width: 0; }
+
+/* Cápsula del estado (MB, EX+, SC…): un filete dorado fino, sin relleno. */
+.capsula {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  height: 24px;
+  padding: 0 9px;
+  border: 1px solid rgba(var(--gold-rgb), 0.45);
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  font-variant-numeric: lining-nums;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+/* Carrito: un botón chico en la esquina de abajo a la derecha de la foto. */
+.ficha__agregar {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(var(--gold-rgb), 0.35);
+  border-radius: var(--radius);
+  background: rgba(11, 11, 11, 0.85);
+  color: var(--muted);
+  transition: color 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.ficha__agregar:hover { color: var(--gold); border-color: var(--gold); }
+.ficha__agregar svg { width: 16px; height: 16px; pointer-events: none; }
+.ficha__agregar.is-in-cart { background: var(--gold); border-color: var(--gold); color: var(--ink); }
+
+.ficha--vendida .ficha__foto img { filter: grayscale(0.7) brightness(0.6); }
+.ficha--vendida .price { color: var(--muted); }
+
+.cat-vacio {
+  padding: 72px 24px;
+  border-block: 1px solid var(--line);
+  text-align: center;
+  font-size: 19px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.cat-vacio .btn { margin-top: 22px; font-style: normal; }
+
+.cat-mas { display: flex; flex-direction: column; align-items: center; gap: 14px; margin-top: 64px; font-size: 16px; color: var(--faint); }
+
+@media (max-width: 960px) {
+  .cat-layout { grid-template-columns: 1fr; }
+  /* Filtrar y Ordenar comparten renglón, mitad y mitad. */
+  .cat-barra .buscador { flex-basis: 100%; }
+  .btn-filtrar { display: inline-flex; flex: 1 1 0; min-width: 0; min-height: 44px; padding: 0 12px; }
+  .orden { flex: 1 1 0; min-width: 0; }
+  .orden span { display: none; }
+  .orden select { width: 100%; height: 44px; }
+
+  /* La hoja de filtros: ocupa casi toda la pantalla y se cierra con un botón
+     que dice cuántas piezas quedan. */
+  .filtros {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    z-index: 950;
+    max-height: 88svh;
+    padding: 0 var(--gutter) 100px;
+    border-radius: 10px 10px 0 0;
+    background: var(--surface);
+    box-shadow: 0 -20px 60px rgba(0, 0, 0, 0.6);
+    transform: translateY(105%);
+    transition: transform 0.5s var(--ease-drawer), visibility 0s linear 0.5s;
+    visibility: hidden;
+  }
+  .filtros.is-open { transform: none; visibility: visible; transition: transform 0.5s var(--ease-drawer); }
+  .filtros__head {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 calc(var(--gutter) * -1) 16px;
+    padding: 12px var(--gutter);
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+  }
+  .filtros__head h2 { margin: 0; font-family: var(--display); font-size: 20px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.14em; }
+  .filtros__cerrar { width: 44px; height: 44px; display: grid; place-items: center; }
+  .filtros__cerrar svg { width: 20px; height: 20px; }
+  .filtros__ver {
+    position: fixed;
+    left: var(--gutter);
+    right: var(--gutter);
+    bottom: 20px;
+    z-index: 2;
+  }
+  .filtros-velo {
+    position: fixed;
+    inset: 0;
+    z-index: 940;
+    background: rgba(0, 0, 0, 0.6);
+    animation: velo 0.4s ease;
+  }
+  .opcion { min-height: 46px; }
+  .opciones--largas { max-height: none; }
+  .cat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 16px; }
+  .ficha__title { font-size: 17px; }
+  .ficha .price { font-size: 18px; }
+}
+
+@media (min-width: 961px) {
+  .filtros__ver, .filtros-velo { display: none !important; }
+}
+
+/* ─── Ficha de una moneda ─────────────────────────────────────────────────── */
+.ficha-page { padding-top: 20px; }
+
+/* En la ficha ya está "Consultar por WhatsApp" junto al botón de compra. */
+body:has(.ficha-page) .wa-fijo { display: none; }
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-size: 17px;
+  color: var(--faint);
+  transition: color 0.25s ease;
+}
+
+.back-link svg { width: 18px; height: 18px; transition: transform 0.35s var(--ease); }
+.back-link:hover { color: var(--text); }
+.back-link:hover svg { transform: translateX(-3px); }
+
+.detail-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: start;
+  padding: 16px 0 var(--section);
+}
+
+/* La foto queda fija mientras se lee la ficha técnica al lado. */
+.detail-gallery { position: sticky; top: calc(var(--header-h) + 24px); }
+
+.detail-main-image-wrap {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: #000;
+}
+
+.detail-main-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: zoom-in;
+}
+
+video.detail-main-image { cursor: auto; }
+
+.detail-gallery__bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.detail-thumbs { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.detail-thumb {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: #000;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.detail-thumb img, .detail-thumb video { width: 100%; height: 100%; object-fit: cover; }
+.detail-thumb:hover { opacity: 1; }
+.detail-thumb.is-active { border-color: var(--gold); opacity: 1; }
+
+.detail-thumb__tag {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 2px 0;
+  font-size: 14px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.detail-zoom {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  min-height: 44px;
+  font-size: 16px;
+  color: var(--faint);
+  transition: color 0.25s ease;
+}
+
+.detail-zoom svg { width: 18px; height: 18px; }
+.detail-zoom:hover { color: var(--text); }
+
+.sold-ribbon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 3px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--text);
+}
+
+.is-sold-detail .detail-main-image { filter: grayscale(0.6) brightness(0.7); }
+
+/* La columna de datos se lee como una cédula: todo centrado sobre un eje. */
+.detail-info { text-align: center; padding-top: clamp(0px, 2vw, 24px); }
+
+.detail-sala {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.detail-sala::before, .detail-sala::after { content: ""; width: 24px; height: 1px; background: rgba(var(--gold-rgb), 0.5); }
+.detail-sala:hover { color: var(--gold-hover); }
+
+.detail-country {
+  margin: 0 0 10px;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.detail-title { font-size: clamp(28px, 3vw, 40px); letter-spacing: 0.08em; }
+.detail-title .coin-title-extra { color: var(--muted); }
+
+.detail-price {
+  margin: 20px 0 26px;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.detail-price.is-sold-price { color: var(--muted); font-style: italic; }
+.detail-price .price-original { margin-right: 12px; font-size: 22px; color: var(--faint); text-decoration: line-through; text-decoration-thickness: 1px; }
+
+.detail-vendida { margin: -10px 0 22px; }
+.detail-vendida p { margin: 0 0 8px; font-size: 18px; color: var(--muted); }
+
+/* Un solo botón principal, proporcionado; debajo, las otras dos acciones
+   como links finos. */
+.detail-actions { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.detail-cart { min-width: 280px; }
+.detail-cart.is-in-cart { background: transparent; color: var(--gold); }
+.detail-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 28px; }
+
+.detail-subtitle,
+.detail-nota h2,
+.variants-heading {
+  margin: 48px 0 16px;
+  font-family: var(--display);
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text);
+}
+
+.variants-heading { font-family: var(--text-font); font-size: 17px; font-weight: 400; text-transform: none; letter-spacing: 0; color: var(--muted); }
+
+/* Las variantes van arriba de la foto: se elige la pieza y después se mira. */
+.detail-gallery .variants-section { margin-bottom: 18px; text-align: center; }
+.detail-gallery .variants-heading { margin: 0 0 10px; }
+/* Con variantes la columna de la foto puede ser más alta que la pantalla: deja
+   de quedar fija. */
+.detail-gallery:has(.variants-section) { position: static; }
+
+.detail-nota { margin-top: 44px; }
+.detail-nota h2 { margin-top: 0; }
+.detail-nota p { margin: 0 auto; max-width: 30em; font-size: 19px; line-height: 1.65; font-style: italic; }
+
+/* Ficha técnica compacta: el nombre del dato a la derecha y su valor a la
+   izquierda, pegados sobre el eje central. Filas bajas, letra más chica y
+   solo dos filetes, arriba y abajo. */
+.detail-specs {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: center;
+  gap: 0 18px;
+  margin: 0 auto;
+  padding: 10px 0;
+  border-block: 1px solid var(--line);
+  text-align: left;
+}
+
+.detail-spec-row { display: contents; }
+
+.detail-spec-label,
+.detail-spec-value { padding: 5px 0; line-height: 1.4; }
+
+.detail-spec-label {
+  justify-self: end;
+  font-size: 15px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--faint);
+  align-self: baseline;
+}
+
+.detail-spec-value {
+  margin: 0;
+  font-size: 17px;
+  color: var(--text);
+  font-variant-numeric: lining-nums tabular-nums;
+  align-self: baseline;
+}
+
+.detail-spec-unit { color: var(--faint); }
+
+.detail-description {
+  margin: 0 auto;
+  max-width: 32em;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--muted);
+  text-align: left;
+  text-wrap: pretty;
+}
+
+/* Variantes: una grilla que se ve entera, sin scroll lateral. */
+.variants-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  text-align: left;
+}
+
+.variant-thumb {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-align: left;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.variant-thumb:hover { border-color: var(--line-strong); }
+.variant-thumb.is-active { border-color: var(--gold); }
+.variant-thumb.is-sold { opacity: 0.45; cursor: default; }
+.variant-thumb img { width: 50px; height: 50px; object-fit: cover; border-radius: 2px; background: #000; }
+.variant-info { display: grid; gap: 0; min-width: 0; }
+.variant-year { font-size: 16px; font-weight: 500; line-height: 1.3; font-variant-numeric: lining-nums; }
+.variant-grade { font-size: 15px; color: var(--faint); line-height: 1.3; }
+.variant-price { font-size: 16px; color: var(--gold); font-variant-numeric: lining-nums tabular-nums; }
+
+.detail-loading, .detail-error {
+  padding: 96px 0;
+  font-size: 19px;
+  font-style: italic;
+  text-align: center;
+  color: var(--muted);
+}
+
+.detail-error p { margin: 0 0 24px; }
+
+.relacionadas { border-top: 1px solid var(--line); }
+
+/* Visor de foto ampliada. */
+.visor {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.94);
+  cursor: zoom-out;
+  animation: velo 0.35s ease;
+}
+
+.visor__img { max-width: 100%; max-height: calc(100svh - 120px); object-fit: contain; }
+.visor__cerrar { position: absolute; top: 20px; right: 20px; background: var(--ink); }
+
+@media (max-width: 860px) {
+  .detail-row { grid-template-columns: 1fr; gap: 24px; padding-top: 4px; }
+  .detail-gallery { position: static; }
+  .detail-thumb { width: 60px; height: 60px; }
+  .detail-price { font-size: 28px; margin: 16px 0 22px; }
+  .detail-actions { align-items: stretch; }
+  .detail-cart { min-width: 0; }
+  .detail-specs { gap: 0 14px; }
+}
+
+/* ─── Carrito y checkout ──────────────────────────────────────────────────── */
+/* cart.css trae la estructura del cajón (cart.js arma su HTML); acá se ajusta
+   al sistema: Garamond, el dorado único y campos de línea fina. */
+.cart-drawer {
+  max-width: 460px;
+  background: var(--ink);
+  border-left-color: var(--line);
+  transition: transform 0.5s var(--ease-drawer), visibility 0s linear 0.5s;
+}
+
+.cart-drawer.is-open { transition: transform 0.5s var(--ease-drawer), visibility 0s; }
+.cart-drawer__tag { font-family: var(--display); font-size: 20px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.14em; color: var(--text); }
+.cart-drawer__count { font-size: 16px; color: var(--faint); }
+.cart-step-pill { font-size: 16px; color: var(--gold); }
+.cart-item__title { font-size: 17px; line-height: 1.3; }
+.cart-item__meta { font-size: 16px; }
+.section-label { font-family: var(--display); font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text); }
+
+.cart-btn {
+  min-height: 48px;
+  border-radius: var(--radius);
+  font-family: var(--text-font);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.cart-btn--primary { background: var(--gold); border-color: var(--gold); color: #17120a; }
+.cart-btn--primary:hover { background: var(--gold-hover); border-color: var(--gold-hover); }
+
+/* Secundario y WhatsApp: filete fino y texto claro, sin verde ni dorado lleno. */
+.cart-btn--secondary,
+.cart-btn--wpp { background: transparent; border: 1px solid var(--line-strong); color: var(--text); }
+.cart-btn--secondary:hover,
+.cart-btn--wpp:hover { background: transparent; border-color: var(--gold); color: var(--text); }
+.cart-btn--wpp svg { color: var(--gold); }
+
+.form-group label { font-size: 16px; color: var(--text); }
+
+/* 16px o más en los campos: con menos, el iPhone hace zoom al tocarlos. */
+.form-input,
+.form-group input,
+.form-group select,
+.form-group textarea {
+  min-height: 48px;
+  font-family: var(--text-font);
+  font-size: 17px;
+  border-radius: var(--radius);
+}
+
+.form-input:focus,
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: var(--gold); }
+
+.delivery-row, .payment-row { min-height: 56px; }
+.popper-toast { font-family: var(--text-font); font-size: 16px; }
+
+/* ─── Páginas legales y de ayuda ──────────────────────────────────────────── */
+.legal-page {
+  max-width: 760px;
+  padding-top: 24px;
+  padding-bottom: var(--section);
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.legal-page h1 {
+  margin: 28px 0 8px;
+  font-family: var(--display);
+  font-size: clamp(28px, 3.2vw, 38px);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.15;
+}
+
+.legal-updated { margin: 0 0 36px; font-size: 16px; font-style: italic; color: var(--faint); }
+
+.legal-page h2 {
+  margin: 48px 0 12px;
+  font-family: var(--display);
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.legal-page p, .legal-page li { color: var(--muted); }
+.legal-page strong { color: var(--text); font-weight: 500; }
+.legal-page ul { padding-left: 22px; }
+.legal-page li { margin-bottom: 8px; }
+.legal-page li::marker { color: var(--gold); }
+.legal-page a:not(.back-link):not(.btn) { color: var(--text); text-decoration: underline; text-decoration-color: rgba(var(--gold-rgb), 0.6); text-underline-offset: 4px; }
+
+.legal-callout {
+  margin: 36px 0;
+  padding: clamp(20px, 4vw, 32px) 0;
+  border-block: 1px solid var(--line);
+}
+
+.legal-form { display: grid; gap: 18px; }
+.legal-form label { display: grid; gap: 6px; font-size: 17px; color: var(--text); }
+
+.legal-form input,
+.legal-form textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: var(--text);
+  font: inherit;
+  font-size: 17px;
+}
+
+.legal-form input:focus, .legal-form textarea:focus { outline: none; border-color: var(--gold); }
+
+.legal-form button {
+  justify-self: start;
+  min-height: 48px;
+  padding: 0 30px;
+  border-radius: var(--radius);
+  background: var(--gold);
+  color: #17120a;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: background 0.3s ease;
+}
+
+.legal-form button:hover { background: var(--gold-hover); }
+
+/* Página de "detalle enviado" (gracias.html). */
+.gracias {
+  display: grid;
+  place-items: center;
+  min-height: 70vh;
+  padding: 48px var(--gutter);
+  text-align: center;
+}
+
+.gracias__check {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 22px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  color: var(--gold);
+}
+
+.gracias__check svg { width: 26px; height: 26px; }
+.gracias h1 { margin-bottom: 16px; font-size: clamp(28px, 3.6vw, 38px); }
+.gracias p { margin: 0 auto 10px; max-width: 30em; font-size: 18px; color: var(--muted); }
+.gracias .btn { margin-top: 24px; }
+
+/* ─── Movimiento ──────────────────────────────────────────────────────────── */
+/* Fundido entre páginas: View Transitions entre documentos (Chrome y Safari
+   recientes). Donde no existe, la página simplemente aparece; los textos
+   sueltos igual entran con .aparece. */
+@view-transition { navigation: auto; }
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.45s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* La cabecera no parpadea al cambiar de página: es la misma en todas. */
+.mh { view-transition-name: cabecera; }
+::view-transition-group(cabecera) { animation-duration: 0s; }
+
+/* Aparición: solo elementos chicos (textos, una foto), nunca una grilla. */
+.aparece {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 1s var(--ease), transform 1s var(--ease);
+}
+
+.aparece.is-visible { opacity: 1; transform: none; }
+.aparece.is-visible:nth-child(2) { transition-delay: 0.08s; }
+.aparece.is-visible:nth-child(3) { transition-delay: 0.16s; }
+.aparece.is-visible:nth-child(4) { transition-delay: 0.24s; }
+
+/* Fotos que llegan con un fundido en vez de pintarse de golpe. Solo fotos
+   sueltas (hero, Sala, vitrinas, foto principal de la ficha); la grilla del
+   catálogo no lo usa. museo.js pone .is-cargada al terminar de bajar. */
+img.fundido { opacity: 0; transition: opacity 0.7s ease, transform 0.8s var(--ease); }
+img.fundido.is-cargada { opacity: 1; }
+
+@keyframes velo { from { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+  .aparece { opacity: 1; transform: none; transition: none; }
+  img.fundido { opacity: 1; transition: none; }
+  .moneda3d__inner { transition: none; }
+  .arrow-link svg, .coleccion__img, .tarjeta__img, .filtros, .cart-drawer,
+  .mh__link::after, .moneda-switch button::after, .diapo-indice a::after { transition: none; }
+}

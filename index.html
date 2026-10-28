@@ -1,380 +1,232 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="diapos">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content" />
   <title>Numismática Popper | Monedas de colección argentinas y del mundo</title>
-  <meta name="description" content="Monedas de colección e inversión, argentinas y del mundo. Fichas con estado, referencia y fotos reales. Comprá online con envío a todo el país." />
+  <meta name="description" content="Monedas de colección e inversión, argentinas y del mundo. Fotos reales, estado de conservación y precio en cada pieza. Envíos a todo el país." />
   <link rel="canonical" href="https://numismaticapopper.com/" />
   <meta property="og:title" content="Numismática Popper" />
   <meta property="og:description" content="Aumentando tu colección desde 2020" />
   <meta property="og:image" content="https://numismaticapopper.com/images/og-image.png" />
   <meta property="og:url" content="https://numismaticapopper.com/" />
   <meta property="og:type" content="website" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
+  <meta name="theme-color" content="#0a0a0a" />
   <link rel="icon" type="image/png" href="images/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- Las fuentes van acá y NO como @import dentro de styles.css: un @import no
-       se descubre hasta parsear el CSS, así que la cadena era
-       HTML → styles.css (75 KB) → CSS de Google → .woff2, cuatro saltos
-       serializados y bloqueantes. Desde el <head> el navegador los pide en
-       paralelo con el CSS, y recién ahí sirven los preconnect de arriba.
-       Cinzel es la fuente del sitio, Lora la prosa de la ficha de detalle y
-       Allura la frase de Insumos: son las tres únicas familias que el CSS usa.
-       detalle.html no pide Allura porque esa página no la usa. -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@400;500;600;700&family=Lora:wght@400&display=swap" />
-  <link rel="stylesheet" href="styles.css?v=20261018a" />
-  <!-- El catálogo es lo primero que necesita script.js. Sin esto no empieza a
-       bajar hasta que el script se ejecuta, o sea después del CSS y las fuentes. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" />
+  <!-- Cinzel solo para el logotipo: se pide recortada a sus letras. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&text=Numism%C3%A1ticaPoper&display=swap" />
+  <link rel="stylesheet" href="cart.css" />
+  <link rel="stylesheet" href="museo.css" />
   <link rel="preload" href="coins.json" as="fetch" crossorigin />
+  <!-- Links viejos al catálogo (?cat=argentina, ?buscar=peso…) apuntaban a la
+       portada, que antes era también el catálogo. Ahora el catálogo es
+       catalogo.html: se los manda ahí con los mismos parámetros. -->
+  <script>
+    if (/[?&](cat|categoria|category|buscar|q|search)=/.test(location.search)) {
+      location.replace('catalogo.html' + location.search);
+    }
+  </script>
 </head>
-<body data-view="landing">
+<body>
 
-  <div class="site-floating-actions" id="siteFloatingActions">
-    <button type="button" id="currencyToggleBtn" class="currency-toggle-btn is-usd" aria-label="Moneda activa: Dólares (USD). Clic para cambiar a pesos (ARS)" title="Moneda activa: Dólares (USD) · Clic para cambiar a pesos (ARS)">USD</button>
-    <button type="button" id="floatingCartBtn" class="cart-floating-btn" aria-label="Ver carrito" title="Ver carrito">
-      <svg class="cart-floating-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <circle cx="9" cy="21" r="1"></circle>
-        <circle cx="20" cy="21" r="1"></circle>
-        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-      </svg>
-      <span class="cart-floating-badge" id="floatingCartBadge">0</span>
-    </button>
-  </div>
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="site-logo-link" aria-label="Numismática Popper — volver a la portada">
-        <svg class="np-monogram" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="np-gold" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#efd9a2"/>
-              <stop offset="48%" stop-color="#cfac6b"/>
-              <stop offset="100%" stop-color="#a8844a"/>
-            </linearGradient>
-          </defs>
-          <circle cx="40" cy="40" r="37" fill="none" stroke="url(#np-gold)" stroke-width="1.2"/>
-          <circle cx="40" cy="40" r="31" fill="none" stroke="url(#np-gold)" stroke-width="0.5" stroke-dasharray="2.5 3.5" opacity="0.6"/>
-          <text x="40" y="48" text-anchor="middle" fill="url(#np-gold)" font-family="Cinzel, Georgia, serif" font-size="24" font-weight="600" letter-spacing="3">NP</text>
+  <!-- @cabecera -->
+  <header class="mh" id="mh">
+    <div class="container mh__row">
+      <a href="index.html" class="mh__brand" aria-label="Numismática Popper, ir al inicio">
+        <svg class="mh__mono" viewBox="0 0 80 80" aria-hidden="true">
+          <circle cx="40" cy="40" r="37" fill="none" stroke="#cdac6c" stroke-width="1.6"/>
+          <circle cx="40" cy="40" r="31" fill="none" stroke="#cdac6c" stroke-width="0.7" stroke-dasharray="2.5 3.5" opacity="0.6"/>
+          <text x="40" y="48" text-anchor="middle" fill="#cdac6c" font-family="Cinzel, Georgia, serif" font-size="24" font-weight="500" letter-spacing="3">NP</text>
         </svg>
-        <h1><span class="h1-numismatica">Numismática</span>&nbsp;<span class="h1-popper">Popper</span></h1>
+        <span class="mh__word"><span>Numismática</span> <span>Popper</span></span>
       </a>
-      <!-- Fuera del enlace a propósito: el logo y el logotipo llevan a la
-           portada, esta flecha sube al principio del catálogo. -->
-      <button type="button" class="to-top" id="toTop" aria-label="Ir al principio">
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M3.5 10.25L8 5.75l4.5 4.5"/>
-        </svg>
-      </button>
-      <p class="subtitle">Aumentando tu colección desde 2020</p>
+      <nav class="mh__nav" aria-label="Principal">
+        <a class="mh__link" href="sala.html">Sala de Rarezas</a>
+        <a class="mh__link" href="catalogo.html">Catálogo</a>
+        <a class="mh__link" href="index.html#como-comprar">Cómo comprar</a>
+      </nav>
+      <div class="mh__tools">
+        <div class="moneda-switch" role="group" aria-label="Ver los precios en">
+          <button type="button" data-moneda="USD" aria-pressed="true"><span class="solo-compu">Dólares</span><span class="solo-celu">US$</span></button>
+          <button type="button" data-moneda="ARS" aria-pressed="false"><span class="solo-compu">Pesos</span><span class="solo-celu">$</span></button>
+        </div>
+        <!-- cart.js usa estos tres ids. Su botón de moneda queda oculto: lo
+             reemplaza el selector de arriba. -->
+        <div class="site-floating-actions" id="siteFloatingActions">
+          <button type="button" id="currencyToggleBtn" hidden></button>
+          <button type="button" id="floatingCartBtn" class="carrito-btn" aria-label="Ver carrito">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span class="carrito-btn__label">Carrito</span>
+            <span class="cart-floating-badge" id="floatingCartBadge">0</span>
+          </button>
+        </div>
+      </div>
     </div>
   </header>
+  <!-- /@cabecera -->
 
-  <div class="ticker-bar" aria-hidden="true">
-    <div class="ticker-track">
-      <span class="ticker-text">Publicaciones diarias en nuestro grupo de WhatsApp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      <span class="ticker-text" aria-hidden="true">Publicaciones diarias en nuestro grupo de WhatsApp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-    </div>
-  </div>
-
-  <!-- ─── Landing screen ──────────────────────────────────────────────────── -->
-  <section id="landing" class="landing-screen">
-    <div class="landing-inner">
-
-      <div class="hero-ornament" aria-hidden="true">
-        <span class="hero-ornament__rule"></span>
-        <span class="hero-ornament__gem"></span>
-        <span class="hero-ornament__rule"></span>
-      </div>
-
-      <h2 class="landing-heading">¿Qué estás buscando?</h2>
-
-      <!-- Acción principal -->
-      <button type="button" class="landing-btn landing-btn--all" data-landing-category="todas">
-        <span class="landing-btn__label">Ver todas las monedas</span>
-      </button>
-
-      <!-- Ingresos: divisor con filetes. Se oculta si esta semana no entró nada. -->
-      <button type="button" class="landing-divider" id="landingIngresos" data-landing-category="ingresos" hidden>
-        <span class="landing-divider__rule" aria-hidden="true"></span>
-        <span class="landing-chip">
-          <span class="landing-chip__label">Ingresos semanales</span>
-          <svg class="landing-chip__arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 8h9M8.5 4.5L12 8l-3.5 3.5"/>
-          </svg>
-        </span>
-        <span class="landing-divider__rule" aria-hidden="true"></span>
-      </button>
-
-      <nav class="landing-nav" aria-label="Categorías principales">
-        <button type="button" class="landing-btn" data-landing-category="plata">
-          <svg class="landing-btn__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="4"  y="18" width="11" height="7" rx="1.2"/>
-            <rect x="17" y="18" width="11" height="7" rx="1.2"/>
-            <rect x="10.5" y="9" width="11" height="7" rx="1.2"/>
-          </svg>
-          <span class="landing-btn__label">Inversión</span>
-        </button>
-
-        <button type="button" class="landing-btn" data-landing-category="argentina">
-          <svg class="landing-btn__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="16" cy="16" r="5.5"/>
-            <path d="M16 3.5v3.5M16 25v3.5M3.5 16h3.5M25 16h3.5M7.2 7.2l2.5 2.5M22.3 22.3l2.5 2.5M24.8 7.2l-2.5 2.5M9.7 22.3l-2.5 2.5"/>
-          </svg>
-          <span class="landing-btn__label">Argentinas</span>
-        </button>
-
-        <button type="button" class="landing-btn" data-landing-category="internacional">
-          <svg class="landing-btn__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="16" cy="16" r="12"/>
-            <path d="M4 16h24"/>
-            <ellipse cx="16" cy="16" rx="5.2" ry="12"/>
-          </svg>
-          <span class="landing-btn__label">Mundiales</span>
-        </button>
-
-        <button type="button" class="landing-btn" data-landing-category="economicas">
-          <svg class="landing-btn__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <ellipse cx="16" cy="9" rx="9.5" ry="3.8"/>
-            <path d="M6.5 9v6.5c0 2.1 4.25 3.8 9.5 3.8s9.5-1.7 9.5-3.8V9"/>
-            <path d="M6.5 15.5V22c0 2.1 4.25 3.8 9.5 3.8s9.5-1.7 9.5-3.8v-6.5"/>
-          </svg>
-          <span class="landing-btn__label">Económicas</span>
-        </button>
-
-        <!-- Insumos: carpeta de anillas con un folio de monedas adentro. Las dos
-             cosas juntas porque la carpeta sola se confunde con el libro que
-             ahora vive en el ícono de Varios. -->
-        <button type="button" class="landing-btn" data-landing-category="insumos">
-          <svg class="landing-btn__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="4.5" y="4.5" width="23" height="23" rx="1.9"/>
-            <path d="M11.2 4.5v23"/>
-            <circle cx="7.85" cy="12" r="1.15"/>
-            <circle cx="7.85" cy="20" r="1.15"/>
-            <circle cx="16.6" cy="12.2" r="2.05"/>
-            <circle cx="22.9" cy="12.2" r="2.05"/>
-            <circle cx="16.6" cy="19.8" r="2.05"/>
-            <circle cx="22.9" cy="19.8" r="2.05"/>
-          </svg>
-          <span class="landing-btn__label">Insumos</span>
-        </button>
-
-        <!-- Varios: cuatro siluetas distintas en 2x2 (moneda, blíster, libro y
-             medalla con cinta). Dice "surtido" sin dibujar las cuatro cosas
-             de forma literal, que a 29px se empasta. -->
-        <button type="button" class="landing-btn" data-landing-category="varios">
-          <svg class="landing-btn__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="10.5" cy="10.5" r="4.8"/>
-            <rect x="16.9" y="5.9" width="9.4" height="9.4" rx="1.5"/>
-            <rect x="5.8" y="18" width="9.4" height="7.4" rx="1"/>
-            <path d="M19.5 17.4l2 3.1M23.5 17.4l-2 3.1"/>
-            <circle cx="21.5" cy="23.1" r="3.4"/>
-          </svg>
-          <span class="landing-btn__label">Varios</span>
-        </button>
-      </nav>
-
-      <div class="landing-social">
-        <span class="landing-social__label">Seguinos</span>
-        <div class="social-row">
-          <a class="social-btn" href="https://wa.me/5492235429132" target="_blank" rel="noopener" aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23a8.2 8.2 0 018.23 8.24c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/>
-            </svg>
-          </a>
-          <a class="social-btn" href="https://www.instagram.com/numismaticapopper/" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="3" y="3" width="18" height="18" rx="5"/>
-              <circle cx="12" cy="12" r="4"/>
-              <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/>
-            </svg>
-          </a>
-          <a class="social-btn" href="https://www.facebook.com/numismatica.popper/" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/>
-            </svg>
-          </a>
+  <!-- La portada son cinco diapositivas que cuentan una historia, cada una
+       con un solo llamado principal: quiénes somos → lo mejor (la Sala) → lo
+       nuevo → explorar por colección → cómo comprar. El pie es la última
+       parada. museo.js arma el indicador lateral y el paso con el teclado. -->
+  <main>
+    <!-- ─── 1. Quiénes somos: una pieza de la Sala al azar ─────────────────── -->
+    <section class="diapo hero" id="inicio" data-diapo="Inicio">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow aparece">Desde 2020</p>
+          <h1 class="display hero__title aparece">Monedas de colección e inversión</h1>
+          <p class="lede aparece">Piezas argentinas y del mundo, fotografiadas una por una, con su estado y su precio a la vista.</p>
+          <div class="hero__actions aparece">
+            <a class="btn btn--solid" href="catalogo.html">Ver el catálogo</a>
+            <span class="hero__piezas"><b data-fact="piezas">—</b> piezas disponibles</span>
+          </div>
         </div>
+
+        <a class="hero__stage" id="heroStage" href="sala.html">
+          <img class="hero__coin fundido" id="heroCoin" alt="" width="540" height="540" fetchpriority="high" />
+          <p class="hero__caption" id="heroCaption"></p>
+        </a>
       </div>
-    </div>
-  </section>
-
-  <!-- ─── Catalog (hidden until landing button is clicked) ────────────────── -->
-  <div id="catalog">
-    <div class="category-bar">
-      <nav class="category-nav container" aria-label="Categorías">
-        <button type="button" class="cat-btn" data-category="plata">Inversión</button>
-        <button type="button" class="cat-btn" data-category="argentina">Argentinas</button>
-        <button type="button" class="cat-btn" data-category="internacional">Mundiales</button>
-        <button type="button" class="cat-btn" data-category="economicas">Económicas</button>
-        <button type="button" class="cat-btn" data-category="insumos">Insumos</button>
-        <button type="button" class="cat-btn" data-category="varios">Varios</button>
-      </nav>
-
-      <div class="sub-filter-bar" id="subFilterBar">
-        <div class="sub-filter-list container" id="subFilterList" role="group" aria-label="Sub-filtros"></div>
-      </div>
-    </div>
-
-    <div class="search-outer">
-      <div class="search-wrap">
-        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="11" cy="11" r="7"/><line x1="17" y1="17" x2="22" y2="22"/>
-        </svg>
-        <input
-          id="searchInput"
-          type="text"
-          placeholder="Buscar por título, país, año..."
-          autocomplete="off"
-          spellcheck="false"
-        />
-        <button type="button" id="clearSearch" class="search-clear" aria-label="Limpiar búsqueda">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-          </svg>
-        </button>
-      </div>
-      <!-- Orden: ocupa el lugar que tenía "Limpiar filtros". Los filtros se
-           quitan tocando de nuevo el botón de categoría, que queda latiendo. -->
-      <div class="sort-wrap" id="sortWrap">
-        <button type="button" id="sortButton" class="sort-btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="sortMenu">
-          <span class="sort-btn__label">Orden</span>
-          <svg class="sort-btn__caret" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M4 6.5L8 10.5l4-4"/>
-          </svg>
-        </button>
-
-        <div class="sort-menu" id="sortMenu" role="listbox" aria-label="Ordenar por">
-          <button type="button" class="sort-option" role="option" aria-selected="false" data-sort="alfabetico">
-            <span class="sort-option__label">Alfabético</span>
-            <svg class="sort-option__arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M8 12.5V3.5M4.5 7L8 3.5 11.5 7"/>
-            </svg>
-          </button>
-          <button type="button" class="sort-option" role="option" aria-selected="false" data-sort="precio">
-            <span class="sort-option__label">Precio</span>
-            <svg class="sort-option__arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M8 12.5V3.5M4.5 7L8 3.5 11.5 7"/>
-            </svg>
-          </button>
-          <button type="button" class="sort-option" role="option" aria-selected="false" data-sort="antiguedad">
-            <span class="sort-option__label">Antigüedad</span>
-            <svg class="sort-option__arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M8 12.5V3.5M4.5 7L8 3.5 11.5 7"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Va fuera del .container a propósito: ocupa el ancho entero de la
-         pantalla, con su propio respiro lateral. Solo se muestra con la
-         categoría Insumos activa; la enciende y apaga syncInsumosIntro(). -->
-    <section id="insumosIntro" class="insumos-intro" hidden>
-      <p class="insumos-intro__text">
-        Parte de coleccionar es saber cuidar y almacenar tus monedas,
-        hacelo de la mano de Numismática&nbsp;Popper.
-      </p>
     </section>
 
-    <main class="container">
-      <section class="results-bar reveal">
-        <p id="resultsCount">Cargando monedas...</p>
-      </section>
-
-      <!-- Marca dónde arrancan las monedas. La grilla mide >80.000px y por eso
-           nunca deja de cruzarse con la pantalla: el observador necesita algo
-           chico justo en su borde de arriba. Alto 1px anulado con margen
-           negativo, así no corre nada. -->
-      <div id="gridTop" class="grid-sentinel" aria-hidden="true"></div>
-
-      <section id="coinsGrid" class="coins-grid"></section>
-    </main>
-  </div>
-
-  <template id="coinCardTemplate">
-    <article class="coin-card reveal" tabindex="0" role="button">
-      <div class="coin-image-wrap">
-        <button type="button" class="card-cart-btn" aria-label="Agregar al carrito" title="Agregar al carrito">
-          <svg class="cart-icon-add" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="9" cy="21" r="1"></circle>
-            <circle cx="20" cy="21" r="1"></circle>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-          </svg>
-          <svg class="cart-icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <polyline points="20 6 9 17 4 12"></polyline>
-          </svg>
-        </button>
-        <img class="coin-image" src="" alt="" width="400" height="400" decoding="async" loading="lazy" />
-      </div>
-
-      <div class="coin-content">
-        <div class="coin-top">
-          <h2 class="coin-title"></h2>
-          <span class="coin-year-tag"></span>
-        </div>
-
-        <p class="coin-meta"></p>
-
-        <div class="coin-footer">
-          <strong class="coin-price"></strong>
-          <div class="coin-badge-row"></div>
+    <!-- ─── 2. Lo mejor: adelanto de la Sala ───────────────────────────────── -->
+    <section class="diapo diapo--vitrina" id="sala" data-diapo="Sala de Rarezas" aria-labelledby="salaTitle">
+      <div class="container diapo__in">
+        <header class="diapo__head">
+          <p class="eyebrow">Exhibición permanente</p>
+          <h2 class="display" id="salaTitle">Sala de Rarezas</h2>
+          <p class="lede">Oro, plata y nuestras piezas de mayor valor, cada una en su vitrina.</p>
+        </header>
+        <div class="grilla" id="vitrina"></div>
+        <div class="diapo__foot">
+          <a class="btn btn--solid" href="sala.html" id="salaCount">Entrar a la Sala</a>
         </div>
       </div>
-    </article>
-  </template>
+    </section>
 
-  <script src="common.js?v=20261002i" defer></script>
-  <script src="cart.js?v=20261002j" defer></script>
-  <script src="glow.js?v=20261002i" defer></script>
-  <script src="script.js?v=20261002i" defer></script>
-
-  <footer class="site-footer" aria-label="Pie de página">
-    <div class="footer-inner">
-      <svg class="np-monogram np-monogram--small" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <defs>
-          <linearGradient id="np-gold-footer" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#efd9a2"/>
-            <stop offset="48%" stop-color="#cfac6b"/>
-            <stop offset="100%" stop-color="#a8844a"/>
-          </linearGradient>
-        </defs>
-        <circle cx="40" cy="40" r="37" fill="none" stroke="url(#np-gold-footer)" stroke-width="1.2"/>
-        <circle cx="40" cy="40" r="31" fill="none" stroke="url(#np-gold-footer)" stroke-width="0.5" stroke-dasharray="2.5 3.5" opacity="0.6"/>
-        <text x="40" y="48" text-anchor="middle" fill="url(#np-gold-footer)" font-family="Cinzel, Georgia, serif" font-size="24" font-weight="600" letter-spacing="3">NP</text>
-      </svg>
-      <p class="footer-est">Est. MMXX</p>
-      <p class="footer-tagline">Monedas de Colección e Inversión</p>
-
-      <div class="social-row social-row--footer">
-        <a class="social-btn" href="https://wa.me/5492235429132" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23a8.2 8.2 0 018.23 8.24c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/>
-          </svg>
-        </a>
-        <a class="social-btn" href="https://www.instagram.com/numismaticapopper/" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="3" y="3" width="18" height="18" rx="5"/>
-            <circle cx="12" cy="12" r="4"/>
-            <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/>
-          </svg>
-        </a>
-        <a class="social-btn" href="https://www.facebook.com/numismatica.popper/" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/>
-          </svg>
-        </a>
+    <!-- ─── 3. Lo nuevo (se oculta si no entró nada) ───────────────────────── -->
+    <section class="diapo diapo--vitrina" id="ingresos" data-diapo="Ingresos" aria-labelledby="ingresosTitle" hidden>
+      <div class="container diapo__in">
+        <header class="diapo__head">
+          <p class="eyebrow">Recién llegadas</p>
+          <h2 class="display" id="ingresosTitle">Ingresos de la semana</h2>
+          <p class="lede" id="ingresosLede"></p>
+        </header>
+        <div class="grilla" id="franja"></div>
+        <div class="diapo__foot">
+          <a class="btn btn--solid" href="catalogo.html?nuevos=1" id="ingresosTodos">Ver los ingresos</a>
+        </div>
       </div>
-      <nav class="footer-legal" aria-label="Información para compradores">
-        <a href="envios-y-devoluciones.html">Envíos y devoluciones</a>
-        <a href="terminos.html">Términos y condiciones</a>
-        <a href="privacidad.html">Privacidad</a>
-        <a href="mailto:numismaticapopper@gmail.com">numismaticapopper@gmail.com</a>
-        <a href="arrepentimiento.html" class="footer-legal__arrepentimiento">Botón de arrepentimiento</a>
-      </nav>
+    </section>
+
+    <!-- ─── 4. Explorar: las colecciones son los botones ───────────────────── -->
+    <section class="diapo" id="colecciones-diapo" data-diapo="Colecciones" aria-labelledby="coleccionesTitle">
+      <div class="container diapo__in">
+        <header class="diapo__head">
+          <p class="eyebrow">El catálogo</p>
+          <h2 class="display" id="coleccionesTitle">Colecciones</h2>
+        </header>
+        <div class="colecciones" id="colecciones"></div>
+      </div>
+    </section>
+
+    <!-- ─── 5. Cómo comprar y el grupo de WhatsApp ─────────────────────────── -->
+    <section class="diapo" id="como-comprar" data-diapo="Cómo comprar" aria-labelledby="comprarTitle">
+      <div class="container diapo__in">
+        <header class="diapo__head">
+          <p class="eyebrow">Cómo comprar</p>
+          <h2 class="display" id="comprarTitle">En confianza</h2>
+          <p class="lede">Elegís tus piezas, nos dejás tus datos y te escribimos para coordinar el pago y la entrega.</p>
+        </header>
+        <ul class="pilares">
+          <li class="pilar">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="8" width="25" height="18" rx="2"/><circle cx="16" cy="17" r="5.5"/><path d="M11 8l2-3.5h6L21 8"/></svg>
+            <h3>Fotos propias</h3>
+            <p>Cada pieza, fotografiada de los dos lados. La que ves es la que recibís.</p>
+          </li>
+          <li class="pilar">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 9.5h15v13h-15z"/><path d="M18.5 13.5h5.5l4 4.5v4.5h-9.5"/><circle cx="9" cy="24" r="2.3"/><circle cx="23" cy="24" r="2.3"/></svg>
+            <h3>Entregas</h3>
+            <p>En Parque Rivadavia, o por correo a todo el país.</p>
+          </li>
+          <li class="pilar">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="8" width="25" height="16" rx="2"/><path d="M3.5 13h25M8 19h5"/></svg>
+            <h3>Pagos</h3>
+            <p>Transferencia o Mercado Pago, en dólares o en pesos al blue del día.</p>
+          </li>
+        </ul>
+        <div class="grupo">
+          <p><b>Grupo de WhatsApp.</b> Ahí publicamos las piezas nuevas todos los días.</p>
+          <a class="btn btn--wa" href="https://wa.me/5492235429132?text=Hola!%20Quiero%20sumarme%20al%20grupo%20de%20WhatsApp." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23a8.2 8.2 0 018.23 8.24c0 4.54-3.7 8.23-8.24 8.23z"/></svg>
+            Sumarme al grupo
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @pie -->
+  <footer class="mf">
+    <div class="container">
+      <div class="mf__grid">
+        <div class="mf__brand">
+          <svg class="mh__mono" viewBox="0 0 80 80" aria-hidden="true">
+            <circle cx="40" cy="40" r="37" fill="none" stroke="#cdac6c" stroke-width="1.6"/>
+            <circle cx="40" cy="40" r="31" fill="none" stroke="#cdac6c" stroke-width="0.7" stroke-dasharray="2.5 3.5" opacity="0.6"/>
+            <text x="40" y="48" text-anchor="middle" fill="#cdac6c" font-family="Cinzel, Georgia, serif" font-size="24" font-weight="500" letter-spacing="3">NP</text>
+          </svg>
+          <p>Monedas de colección e inversión. Aumentando tu colección desde 2020.</p>
+        </div>
+        <div>
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="sala.html">Sala de Rarezas</a></li>
+            <li><a href="catalogo.html">Catálogo completo</a></li>
+            <li><a href="catalogo.html?nuevos=1">Ingresos de la semana</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="index.html#como-comprar">Cómo comprar</a></li>
+            <li><a href="envios-y-devoluciones.html">Envíos y devoluciones</a></li>
+            <li><a href="terminos.html">Términos y condiciones</a></li>
+            <li><a href="privacidad.html">Privacidad</a></li>
+            <li><a href="arrepentimiento.html">Botón de arrepentimiento</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="https://wa.me/5492235429132" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/numismaticapopper/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/numismatica.popper/" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="mailto:numismaticapopper@gmail.com">numismaticapopper@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mf__base">
+        <span>© Numismática Popper · Desde 2020</span>
+        <span>Entregas en Parque Rivadavia y envíos a todo el país</span>
+      </div>
     </div>
   </footer>
+
+  <a class="wa-fijo" href="https://wa.me/5492235429132?text=Hola!%20Tengo%20una%20consulta." target="_blank" rel="noopener" aria-label="Consultas por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23a8.2 8.2 0 018.23 8.24c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+    <span>Consultas</span>
+  </a>
+  <!-- /@pie -->
+
+  <script src="common.js" defer></script>
+  <script src="categorias.js" defer></script>
+  <script src="cart.js" defer></script>
+  <script src="museo.js" defer></script>
+  <script src="home.js" defer></script>
 </body>
 </html>

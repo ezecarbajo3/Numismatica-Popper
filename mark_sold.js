@@ -94,11 +94,23 @@ function markSold(searchTerm) {
 // apuntando a una ficha inexistente.
 //
 // Es irreversible y sin --confirm solo muestra qué haría.
+// Sala de Rarezas: misma regla que isSalaCoin() de common.js. Sus vendidas no
+// se purgan nunca: son el archivo "Pasaron por la Sala" (fotos y ficha incluidas).
+const SALA_MIN_USD = 100;
+
+function isSalaCoin(c) {
+  if (!c || c.hidden || c.sala === false) return false;
+  const metal = String(c.metal || '').toLowerCase();
+  if (c.sala === true || (metal.startsWith('oro') && !metal.includes('nórdico'))) return true;
+  const usd = parseFloat(String(c.price || '').replace(/,/g, '.').replace(/[^\d.]/g, ''));
+  return Number.isFinite(usd) && usd >= SALA_MIN_USD;
+}
+
 function purgeExpired(confirmed) {
   const coins    = readCoins();
   const now      = Date.now();
   const expired  = coins.filter(c =>
-    c.status === 'sold' && c.soldAt &&
+    c.status === 'sold' && c.soldAt && !isSalaCoin(c) &&
     (now - new Date(c.soldAt).getTime() > RETENTION_MS)
   );
 

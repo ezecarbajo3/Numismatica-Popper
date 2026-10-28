@@ -330,7 +330,7 @@
     animateFlyToCart(triggerEl);
     renderDrawerContent();
 
-    if (!silent) showToast('Pieza agregada al carrito', 'VER CARRITO', openDrawer);
+    if (!silent) showToast('Pieza agregada al carrito', 'Ver carrito', openDrawer);
     return true;
   }
 
@@ -665,7 +665,7 @@
   // Aviso persistente dentro del drawer (y toast si está cerrado).
   function setNotice(msg) {
     cartNotice = msg || '';
-    if (cartNotice && !isDrawerOpen()) showToast(cartNotice, 'VER CARRITO', openDrawer);
+    if (cartNotice && !isDrawerOpen()) showToast(cartNotice, 'Ver carrito', openDrawer);
   }
 
   function animateFlyToCart() {
@@ -1007,7 +1007,7 @@
             ${item.country ? `<span class="cart-item__country">${escapeHTML(item.country)}</span>` : ''}
             ${item.year ? `<span>• ${escapeHTML(item.year)}</span>` : ''}
             ${item.grade_short ? `<span class="cart-grade-badge">${escapeHTML(item.grade_short)}</span>` : ''}
-            ${isConsult ? `<span class="cart-consult-tag">A CONSULTAR</span>` : ''}
+            ${isConsult ? `<span class="cart-consult-tag">A consultar</span>` : ''}
           </div>
           ${qtyControl}
           <div class="cart-item__pricing">
@@ -1051,8 +1051,8 @@
         </div>
         ${lo ? `
           <div class="cart-last-order">
-            <span class="cart-last-order__label">TU ÚLTIMO PEDIDO · ${escapeHTML(lo.orderId)}</span>
-            <button type="button" class="cart-btn cart-btn--secondary" id="cartLastOrderBtn">VER INSTRUCCIONES DE PAGO</button>
+            <span class="cart-last-order__label">Tu último pedido · ${escapeHTML(lo.orderId)}</span>
+            <button type="button" class="cart-btn cart-btn--secondary" id="cartLastOrderBtn">Ver instrucciones de pago</button>
           </div>
         ` : ''}
       `;
@@ -1060,7 +1060,7 @@
       itemsHtml = `
         ${pay.length ? `<ul class="cart-items-list">${pay.map(it => cartItemHTML(it, false)).join('')}</ul>` : ''}
         ${consult.length ? `
-          <div class="cart-subhead">A CONSULTAR STOCK</div>
+          <div class="cart-subhead">A consultar stock</div>
           <ul class="cart-items-list">${consult.map(it => cartItemHTML(it, true)).join('')}</ul>
             <div class="cart-stock-notice">
               <svg class="cart-stock-notice__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1076,8 +1076,8 @@
     drawer.innerHTML = `
       <div class="cart-drawer__header">
         <div class="cart-drawer__header-left">
-          <span class="cart-drawer__tag">CARRITO</span>
-          <span class="cart-drawer__count">[ ${units} ]</span>
+          <span class="cart-drawer__tag">Tu carrito</span>
+          <span class="cart-drawer__count">(${units})</span>
         </div>
         <div class="cart-drawer__header-actions">
           ${count > 0 ? `<button type="button" class="cart-clear-btn" id="cartClearBtn">Vaciar</button>` : ''}
@@ -1107,10 +1107,10 @@
 
           <div class="cart-actions-stack">
             <button type="button" class="cart-btn cart-btn--primary" id="cartStartCheckoutBtn">
-              ${inquiryOnly ? 'ENVIAR CONSULTA DE STOCK →' : 'CONTINUAR CON LA COMPRA →'}
+              ${inquiryOnly ? 'Enviar consulta de stock' : 'Continuar con la compra'}
             </button>
             <a href="${escapeHTML(buildPrivateInquiryWhatsAppURL(inquiryOnly))}" target="_blank" rel="noopener noreferrer" class="cart-btn ${inquiryOnly ? 'cart-btn--wpp' : 'cart-btn--secondary'}" id="cartConsultBtn">
-              ${inquiryOnly ? WPP_ICON : ''}CONSULTAR POR WHATSAPP
+              ${inquiryOnly ? WPP_ICON : ''}Consultar por WhatsApp
             </a>
           </div>
         </div>
@@ -1212,7 +1212,7 @@
 
     const deliverySection = inquiryOnly ? '' : `
       <div class="checkout-section">
-        <span class="section-label">MODALIDAD DE ENTREGA</span>
+        <span class="section-label">Forma de entrega</span>
         <div class="delivery-list">
           <label class="delivery-row ${isAcumular ? 'is-selected' : ''}">
             <input type="radio" name="deliveryChoice" value="acumular" ${isAcumular ? 'checked' : ''} />
@@ -1221,7 +1221,7 @@
               <span class="delivery-row__name">Acumular compras</span>
               <span class="delivery-row__sub">Guardalas para un futuro envío</span>
             </div>
-            <span class="delivery-row__price">GRATIS</span>
+            <span class="delivery-row__price">Gratis</span>
           </label>
 
           <label class="delivery-row ${isParque ? 'is-selected' : ''}">
@@ -1261,12 +1261,12 @@
     if (!inquiryOnly) {
       detailsSection = `
         <div class="checkout-section" style="margin-top: 18px;">
-          <span class="section-label">DETALLES DE ENTREGA</span>
+          <span class="section-label">Datos para la entrega</span>
 
           ${isParque ? `
             <div class="delivery-parque-card" style="margin-top: 4px; margin-bottom: 14px;">
               <div class="delivery-parque-card__title">
-                PUNTO DE RETIRO: FERIA DE PARQUE RIVADAVIA (CABA)
+                Punto de retiro: Feria de Parque Rivadavia (CABA)
               </div>
               <div class="delivery-parque-card__desc">
                 Despacho: <strong>miércoles ${parqueSchedule.dispatchDDMM}</strong>. Retiro desde el <strong>domingo ${parqueSchedule.deliveryDDMM}</strong>, por la mañana. Entrega Diego Cepeda (Dac Monedas): <a href="https://wa.me/5491154028935" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: underline;">+54 9 11 5402-8935</a>.
@@ -1274,13 +1274,13 @@
             </div>
 
             <div class="form-group">
-              <label for="inputPickupPerson">¿QUIÉN RETIRA EN EL PARQUE? (OPCIONAL)</label>
+              <label for="inputPickupPerson">¿Quién retira en el parque? (opcional)</label>
               <input type="text" id="inputPickupPerson" class="form-input" maxlength="80" autocomplete="off" placeholder="Dejar en blanco si retira el titular" value="${escapeHTML(orderData.pickupPerson || '')}" />
             </div>
           ` : isAcumular ? `
             <div class="delivery-parque-card" style="margin-top: 4px; margin-bottom: 14px; border-color: rgba(var(--accent-rgb), 0.25);">
               <div class="delivery-parque-card__title">
-                MODALIDAD: ACUMULAR COMPRAS
+                Modalidad: acumular compras
               </div>
               <div class="delivery-parque-card__desc">
                 Guardamos tus piezas a tu nombre una vez confirmado el pago. Pedí el despacho cuando quieras.
@@ -1289,18 +1289,18 @@
           ` : `
             <div class="form-row" style="margin-top: 4px;">
               <div class="form-group" style="flex: 1.4;">
-                <label for="inputCity">CIUDAD Y PROVINCIA *</label>
+                <label for="inputCity">Ciudad y provincia *</label>
                 <input type="text" id="inputCity" class="form-input" maxlength="80" autocomplete="address-level2" placeholder="Ej: Mar del Plata, Bs As" value="${escapeHTML(orderData.city)}" required />
               </div>
               <div class="form-group" style="flex: 0.8;">
-                <label for="inputCp">CÓDIGO POSTAL *</label>
+                <label for="inputCp">Código postal *</label>
                 <input type="text" id="inputCp" class="form-input" maxlength="8" autocomplete="postal-code" inputmode="numeric" placeholder="Ej: 7600" value="${escapeHTML(orderData.postalCode)}" required />
               </div>
             </div>
 
             <div class="form-group">
               <label for="inputBranchOrAddress">
-                ${isSucursal ? 'SUCURSAL DE CORREO DESEADA *' : 'DIRECCIÓN COMPLETA *'}
+                ${isSucursal ? 'Sucursal de correo *' : 'Dirección completa *'}
               </label>
               <input
                 type="text"
@@ -1316,7 +1316,7 @@
 
             ${isDomicilio ? `
               <div class="form-group">
-                <label for="inputDeliveryNotes">ACLARACIONES O REFERENCIAS (OPCIONAL)</label>
+                <label for="inputDeliveryNotes">Aclaraciones o referencias (opcional)</label>
                 <input type="text" id="inputDeliveryNotes" class="form-input" maxlength="140" autocomplete="off" placeholder="Ej: Timbre A, entrecalles o dejar en recepción" value="${escapeHTML(orderData.deliveryNotes || '')}" />
               </div>
             ` : ''}
@@ -1327,8 +1327,8 @@
 
     drawer.innerHTML = `
       <div class="cart-drawer__header">
-        <button type="button" class="cart-back-btn" id="checkoutBackBtn">← CARRITO</button>
-        <span class="cart-step-pill">${inquiryOnly ? 'CONSULTA' : '01 / ENTREGA'}</span>
+        <button type="button" class="cart-back-btn" id="checkoutBackBtn">← Volver al carrito</button>
+        <span class="cart-step-pill">${inquiryOnly ? 'Consulta' : 'Paso 1 de 2 · Entrega'}</span>
         <button type="button" class="cart-close-btn" id="checkoutCloseBtn" aria-label="Cerrar">✕</button>
       </div>
 
@@ -1339,24 +1339,24 @@
         <form id="checkoutForm" class="checkout-form" novalidate style="margin-top: ${inquiryOnly ? '8' : '24'}px;">
           <div class="checkout-section">
             <div class="form-group">
-              <label for="inputFullName">NOMBRE Y APELLIDO *</label>
+              <label for="inputFullName">Nombre y apellido *</label>
               <input type="text" id="inputFullName" class="form-input" maxlength="80" autocomplete="name" autocapitalize="words" placeholder="Ej: Juan Pérez" value="${escapeHTML(orderData.fullName)}" required />
             </div>
 
             <div class="form-row">
               <div class="form-group" style="flex: 1;">
-                <label for="inputWhatsApp">WHATSAPP / TEL *</label>
+                <label for="inputWhatsApp">WhatsApp o teléfono *</label>
                 <input type="tel" id="inputWhatsApp" class="form-input" maxlength="24" autocomplete="tel" inputmode="tel" placeholder="Ej: 11 2345 6789" value="${escapeHTML(orderData.phone)}" required />
               </div>
               ${inquiryOnly ? '' : `
               <div class="form-group" style="flex: 1;">
-                <label for="inputDni">DNI ${needsShippingData ? '*' : '(OPCIONAL)'}</label>
+                <label for="inputDni">DNI ${needsShippingData ? '*' : '(opcional)'}</label>
                 <input type="text" id="inputDni" class="form-input" maxlength="10" autocomplete="off" inputmode="numeric" placeholder="Ej: 38123456" value="${escapeHTML(orderData.dni)}" ${needsShippingData ? 'required' : ''} />
               </div>`}
             </div>
 
             <div class="form-group">
-              <label for="inputEmail">CORREO ELECTRÓNICO *</label>
+              <label for="inputEmail">Correo electrónico *</label>
               <input
                 type="email"
                 id="inputEmail"
@@ -1379,7 +1379,7 @@
           <div class="checkout-error" id="checkoutError" role="alert" style="display: none;"></div>
 
           <button type="submit" class="cart-btn cart-btn--primary checkout-submit-btn" id="checkoutSubmitBtn">
-            ${inquiryOnly ? 'ENVIAR CONSULTA →' : 'CONTINUAR AL PAGO →'}
+            ${inquiryOnly ? 'Enviar consulta' : 'Continuar al pago'}
           </button>
         </form>
       </div>
@@ -1858,7 +1858,7 @@
       <div class="checkout-error submit-error" role="alert">
         <strong>No pudimos enviar tu pedido.</strong>
         <span>Revisá tu conexión y reintentá: tu carrito sigue intacto. O mandanos el pedido por WhatsApp.</span>
-        <a href="${escapeHTML(buildFallbackWhatsAppURL(snap))}" target="_blank" rel="noopener noreferrer" class="cart-btn cart-btn--wpp" id="fallbackWppBtn">${WPP_ICON}ENVIAR PEDIDO POR WHATSAPP</a>
+        <a href="${escapeHTML(buildFallbackWhatsAppURL(snap))}" target="_blank" rel="noopener noreferrer" class="cart-btn cart-btn--wpp" id="fallbackWppBtn">${WPP_ICON}Enviar pedido por WhatsApp</a>
       </div>
     `;
   }
@@ -1907,7 +1907,7 @@
     if (isSubmitting) return;
     const btn = drawer.querySelector('#checkoutSubmitBtn');
     setSubmitting(true);
-    if (btn) btn.textContent = 'ENVIANDO CONSULTA...';
+    if (btn) btn.textContent = 'Enviando consulta…';
 
     if (await stockChanged()) {
       setSubmitting(false);
@@ -1929,7 +1929,7 @@
     setSubmitting(false);
     if (live) {
       const b = live.querySelector('#checkoutSubmitBtn');
-      if (b) b.textContent = 'REINTENTAR ENVÍO →';
+      if (b) b.textContent = 'Reintentar el envío';
       showSubmitError(live, snap);
     }
   }
@@ -1951,20 +1951,20 @@
 
     const discountBox = rule ? `
       <div class="discount-applied">
-        <strong class="discount-applied__label">DESCUENTO APLICADO</strong>
-        <button type="button" class="discount-remove" id="discountRemoveBtn">QUITAR</button>
+        <strong class="discount-applied__label">Descuento aplicado</strong>
+        <button type="button" class="discount-remove" id="discountRemoveBtn">Quitar</button>
       </div>
     ` : `
       <form class="discount-row" id="discountForm" novalidate>
         <input type="text" id="inputDiscount" class="form-input" maxlength="24" placeholder="Ingresá tu código" value="${escapeHTML(discountDraft)}" autocomplete="off" autocapitalize="characters" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="Código de descuento" />
-        <button type="submit" class="cart-btn cart-btn--secondary discount-apply">APLICAR</button>
+        <button type="submit" class="cart-btn cart-btn--secondary discount-apply">Aplicar</button>
       </form>
     `;
 
     drawer.innerHTML = `
       <div class="cart-drawer__header">
-        <button type="button" class="cart-back-btn" id="paymentBackBtn">← ENTREGA</button>
-        <span class="cart-step-pill">02 / PAGO</span>
+        <button type="button" class="cart-back-btn" id="paymentBackBtn">← Volver a la entrega</button>
+        <span class="cart-step-pill">Paso 2 de 2 · Pago</span>
         <button type="button" class="cart-close-btn" id="paymentCloseBtn" aria-label="Cerrar">✕</button>
       </div>
 
@@ -1972,7 +1972,7 @@
         ${noticeHTML()}
 
         <div class="checkout-section">
-          <span class="section-label">RESUMEN DEL PEDIDO</span>
+          <span class="section-label">Resumen del pedido</span>
           <div class="order-spec-table">
             <div class="order-spec-items">
               ${pay.map(item => {
@@ -2001,7 +2001,7 @@
             ` : ''}
             <div class="order-spec-divider"></div>
             <div class="order-spec-row order-spec-row--total">
-              <span>TOTAL A ABONAR</span>
+              <span>Total a pagar</span>
               <div class="order-spec-total-val">
                 <strong>${escapeHTML(totFormatted)}</strong>
               </div>
@@ -2010,13 +2010,13 @@
         </div>
 
         <div class="checkout-section discount-box" style="margin-top: 24px;">
-          <span class="section-label">CÓDIGO DE DESCUENTO</span>
+          <span class="section-label">Código de descuento</span>
           ${discountBox}
           <p class="discount-msg" id="discountMsg" role="status" ${discountMessage ? '' : 'hidden'}>${escapeHTML(discountMessage)}</p>
         </div>
 
         <div class="checkout-section" style="margin-top: 24px;">
-          <span class="section-label">ELEGÍ EL MEDIO DE PAGO</span>
+          <span class="section-label">Elegí cómo pagar</span>
           <div class="payment-list">
             <label class="payment-row ${orderData.paymentMethod === 'pesos' ? 'is-selected' : ''}">
               <input type="radio" name="paymentChoice" value="pesos" ${orderData.paymentMethod === 'pesos' ? 'checked' : ''} />
@@ -2041,7 +2041,7 @@
         <div id="submitErrorSlot"></div>
 
         <button type="button" class="cart-btn cart-btn--primary checkout-submit-btn" id="confirmAndPayBtn" style="margin-top: 24px;">
-          CONFIRMAR PEDIDO →
+          Confirmar pedido
         </button>
       </div>
     `;
@@ -2090,7 +2090,7 @@
         }
         const btn = discountForm.querySelector('.discount-apply');
         btn.disabled = true;
-        btn.textContent = 'VERIFICANDO...';
+        btn.textContent = 'Verificando…';
         const result = await fetchDiscountRule(discountDraft);
         if (currentStep !== 'payment-select') return;
         const live = document.getElementById('cartDrawer');
@@ -2131,7 +2131,7 @@
     confirmBtn.addEventListener('click', async () => {
       if (isSubmitting) return;
       setSubmitting(true);
-      confirmBtn.textContent = 'REGISTRANDO Y ENVIANDO...';
+      confirmBtn.textContent = 'Enviando tu pedido…';
       const slot = drawer.querySelector('#submitErrorSlot');
       if (slot) slot.innerHTML = '';
 
@@ -2183,7 +2183,7 @@
       const live = document.getElementById('cartDrawer');
       if (live) {
         const b = live.querySelector('#confirmAndPayBtn');
-        if (b) b.textContent = 'REINTENTAR ENVÍO →';
+        if (b) b.textContent = 'Reintentar el envío';
         showSubmitError(live, snap);
       }
     });
@@ -2194,17 +2194,17 @@
     const lo = lastPurchasedOrder;
     drawer.innerHTML = `
       <div class="cart-drawer__header">
-        <span class="cart-drawer__tag">CONSULTA ENVIADA</span>
+        <span class="cart-drawer__tag">Consulta enviada</span>
         <button type="button" class="cart-close-btn" id="finishCloseBtn" aria-label="Cerrar">✕</button>
       </div>
       <div class="cart-drawer__body">
         <div class="order-confirmed-banner">
           <span class="confirmed-check">✓</span>
-          <h3 class="confirmed-title">CONSULTA RECIBIDA</h3>
+          <h3 class="confirmed-title">Recibimos tu consulta</h3>
           <p class="confirmed-desc">${lo ? `Número de consulta <strong>${escapeHTML(lo.orderId)}</strong>. ` : ''}Verificamos el stock y te escribimos por WhatsApp. Todavía no hay nada para pagar.</p>
         </div>
         <div class="order-final-actions">
-          <button type="button" class="cart-btn cart-btn--secondary" id="backToCatalogBtn">VOLVER AL CATÁLOGO</button>
+          <button type="button" class="cart-btn cart-btn--secondary" id="backToCatalogBtn">Volver al catálogo</button>
         </div>
       </div>
     `;
@@ -2228,84 +2228,84 @@
 
     drawer.innerHTML = `
       <div class="cart-drawer__header">
-        <span class="cart-drawer__tag">CONFIRMACIÓN</span>
+        <span class="cart-drawer__tag">Confirmación</span>
         <button type="button" class="cart-close-btn" id="finishCloseBtn" aria-label="Cerrar">✕</button>
       </div>
 
       <div class="cart-drawer__body">
         <div class="order-confirmed-banner">
           <span class="confirmed-check">✓</span>
-          <h3 class="confirmed-title">PEDIDO RECIBIDO</h3>
+          <h3 class="confirmed-title">Recibimos tu pedido</h3>
           <p class="confirmed-order-id">N° ${escapeHTML(lo.orderId)}</p>
           <p class="confirmed-desc">Transferí el importe exacto y mandanos el comprobante por WhatsApp.</p>
         </div>
 
         ${lo.mailCopy ? `
         <div class="order-mail-copy">
-          <button type="button" class="cart-btn cart-btn--secondary" id="sendMailCopyBtn">AVISARME POR MAIL</button>
+          <button type="button" class="cart-btn cart-btn--secondary" id="sendMailCopyBtn">Avisarme por mail</button>
           <p class="order-mail-copy__hint">Se abre una pestaña para confirmar que no sos un robot y te llega un aviso a <strong>${escapeHTML(d.email)}</strong> (mirá también en spam). Cuando confirmemos tu compra, te mandamos el detalle por el mismo mail.</p>
         </div>
         ` : ''}
 
         <div class="payment-total-callout">
-          <span class="callout-label">IMPORTE A TRANSFERIR</span>
+          <span class="callout-label">Importe a transferir</span>
           <strong class="callout-val">${escapeHTML(totFormatted)}</strong>
         </div>
 
         ${isUSD ? `
           <div class="bank-spec">
-            <span class="section-label">DATOS BANCARIOS — DÓLARES</span>
+            <span class="section-label">Datos bancarios en dólares</span>
             <div class="spec-row">
-              <span class="spec-label">TITULAR</span>
+              <span class="spec-label">Titular</span>
               <span class="spec-val">${escapeHTML(BANK.holder)}</span>
             </div>
             <div class="spec-row">
-              <span class="spec-label">ALIAS</span>
+              <span class="spec-label">Alias</span>
               <span class="spec-val spec-val--copy" id="valAliasUSD">${escapeHTML(BANK.usd.alias)}</span>
-              <button type="button" class="spec-copy-btn" data-copy="valAliasUSD">COPIAR</button>
+              <button type="button" class="spec-copy-btn" data-copy="valAliasUSD">Copiar</button>
             </div>
             <div class="spec-row">
               <span class="spec-label">CBU</span>
               <span class="spec-val spec-val--copy" id="valCbuUSD">${escapeHTML(BANK.usd.cbu)}</span>
-              <button type="button" class="spec-copy-btn" data-copy="valCbuUSD">COPIAR</button>
+              <button type="button" class="spec-copy-btn" data-copy="valCbuUSD">Copiar</button>
             </div>
           </div>
         ` : ''}
 
         ${isPesos ? `
           <div class="bank-spec">
-            <span class="section-label">DATOS BANCARIOS — PESOS</span>
+            <span class="section-label">Datos bancarios en pesos</span>
             <div class="spec-row">
-              <span class="spec-label">TITULAR</span>
+              <span class="spec-label">Titular</span>
               <span class="spec-val">${escapeHTML(BANK.holder)}</span>
             </div>
             <div class="spec-row">
-              <span class="spec-label">ALIAS</span>
+              <span class="spec-label">Alias</span>
               <span class="spec-val spec-val--copy" id="valAliasARS">${escapeHTML(BANK.ars.alias)}</span>
-              <button type="button" class="spec-copy-btn" data-copy="valAliasARS">COPIAR</button>
+              <button type="button" class="spec-copy-btn" data-copy="valAliasARS">Copiar</button>
             </div>
             <div class="spec-row">
               <span class="spec-label">CVU</span>
               <span class="spec-val spec-val--copy" id="valCvuARS">${escapeHTML(BANK.ars.cvu)}</span>
-              <button type="button" class="spec-copy-btn" data-copy="valCvuARS">COPIAR</button>
+              <button type="button" class="spec-copy-btn" data-copy="valCvuARS">Copiar</button>
             </div>
           </div>
         ` : ''}
 
         ${isMP ? `
           <div class="bank-spec">
-            <span class="section-label">DEPÓSITO EN EFECTIVO</span>
+            <span class="section-label">Depósito en efectivo</span>
             <div class="spec-row">
-              <span class="spec-label">SUCURSAL</span>
+              <span class="spec-label">Sucursal</span>
               <span class="spec-val">Cualquier Rapipago o Pago Fácil</span>
             </div>
             <div class="spec-row">
-              <span class="spec-label">CÓDIGO</span>
+              <span class="spec-label">Código</span>
               <span class="spec-val spec-val--copy" id="valMpCode">${escapeHTML(BANK.mp.code)}</span>
-              <button type="button" class="spec-copy-btn" data-copy="valMpCode">COPIAR</button>
+              <button type="button" class="spec-copy-btn" data-copy="valMpCode">Copiar</button>
             </div>
             <div class="spec-row">
-              <span class="spec-label">MONTO</span>
+              <span class="spec-label">Monto</span>
               <span class="spec-val">${escapeHTML(totFormatted)}</span>
             </div>
           </div>
@@ -2319,11 +2319,11 @@
             class="cart-btn cart-btn--wpp"
           >
             ${WPP_ICON}
-            ENVIAR COMPROBANTE POR WHATSAPP →
+            Enviar comprobante por WhatsApp
           </a>
 
           <button type="button" class="cart-btn cart-btn--secondary" id="backToCatalogBtn">
-            FINALIZAR Y VOLVER AL CATÁLOGO
+            Finalizar y volver al catálogo
           </button>
         </div>
       </div>
@@ -2374,7 +2374,7 @@
             btn.classList.remove('is-copied');
           }, 1800);
         } else {
-          btn.textContent = 'COPIÁ A MANO';
+          btn.textContent = 'Copiá a mano';
           setTimeout(() => { btn.textContent = 'COPIAR'; }, 2200);
         }
       });

@@ -39,7 +39,8 @@ SITE_NAME = "Numismática Popper"
 META_DESC_MAX = 155
 
 # Páginas fijas que van al sitemap además de las monedas.
-STATIC_PAGES = ["", "insumos.html", "envios-y-devoluciones.html", "terminos.html",
+# insumos.html ya no va: redirige al catálogo filtrado.
+STATIC_PAGES = ["", "sala.html", "catalogo.html", "envios-y-devoluciones.html", "terminos.html",
                 "privacidad.html", "arrepentimiento.html"]
 
 
@@ -83,10 +84,28 @@ def is_sold(coin):
     return coin.get("status") == "sold"
 
 
+# Sala de Rarezas: misma regla que isSalaCoin() en common.js.
+SALA_MIN_USD = 100
+
+
+def is_sala(coin):
+    if coin.get("hidden") or coin.get("sala") is False:
+        return False
+    metal = str(coin.get("metal") or "").lower()
+    if coin.get("sala") is True or (metal.startswith("oro") and "nórdico" not in metal):
+        return True
+    price = parse_price_usd(coin.get("price"))
+    return price is not None and price >= SALA_MIN_USD
+
+
 def is_publicly_visible(coin, now):
-    """Mismo criterio que isCoinPubliclyVisible() en common.js."""
+    """Mismo criterio que la ficha (detalle.js): oculta lo oculto a mano y las
+    vendidas vencidas, salvo las de la Sala de Rarezas, que siguen visibles
+    como parte de su archivo (sin indexar, porque están vendidas)."""
     if coin.get("hidden"):
         return False
+    if is_sold(coin) and is_sala(coin):
+        return True
     if is_sold(coin):
         sold_at = parse_iso(coin.get("soldAt"))
         if sold_at and now - sold_at > timedelta(days=SOLD_RETENTION_DAYS):
@@ -236,13 +255,12 @@ def json_ld(coin, page_url, sold):
 
 # ─── HTML ─────────────────────────────────────────────────────────────────────
 
-def spec_row(label, value, unit=None):
-    unit_html = f' <span class="detail-spec-unit">({esc(unit)})</span>' if unit else ""
+def spec_row(label, value):
     return (
-        '        <div class="detail-spec-row">\n'
-        f'          <div class="detail-spec-label">{esc(label)}{unit_html}</div>\n'
-        f'          <div class="detail-spec-value">{esc(value)}</div>\n'
-        '        </div>\n'
+        '          <div class="detail-spec-row">\n'
+        f'            <dt class="detail-spec-label">{esc(label)}</dt>\n'
+        f'            <dd class="detail-spec-value">{esc(value)}</dd>\n'
+        '          </div>\n'
     )
 
 
@@ -251,8 +269,8 @@ def prerendered_detail(coin, visible, sold):
     para Google y para quien tenga JavaScript apagado. Usa las mismas clases
     que renderCoinDetail() para que el cambio no se note."""
     if not visible:
-        return ('<p class="detail-error">Esta moneda ya no está disponible. '
-                '<a href="index.html">Ver el catálogo</a></p>')
+        return ('<div class="detail-error"><p>Esta moneda ya no está disponible.</p>'
+                '<a class="btn btn--solid" href="catalogo.html">Ver el catálogo</a></div>')
 
     title = coin.get("title") or "Moneda"
     images = [img for img in (coin.get("images") or []) if not is_video(img)]
@@ -261,51 +279,55 @@ def prerendered_detail(coin, visible, sold):
     gallery = ""
     if main:
         gallery = (
-            '    <div class="detail-gallery">\n'
-            '      <div class="detail-main-image-wrap">\n'
-            f'        <img class="detail-main-image" src="{esc(main)}" alt="{esc(title)}" decoding="async" />\n'
+            '      <div class="detail-gallery">\n'
+            '        <div class="detail-main-image-wrap">\n'
+            f'          <img class="detail-main-image" src="{esc(main)}" alt="{esc(title)}" decoding="async" />\n'
+            '        </div>\n'
             '      </div>\n'
-            '    </div>\n'
         )
 
     specs = ""
-    if coin.get("reference"):
-        specs += spec_row("Referencia", coin["reference"])
     if coin.get("grade"):
         specs += spec_row("Estado de conservación", coin["grade"])
-    if coin.get("metal"):
-        specs += spec_row("Material", coin["metal"])
-    if coin.get("year"):
+    # El año casi siempre ya está en el nombre ("2 Centavos 1896"): no se repite.
+    if coin.get("year") and str(coin["year"]) not in str(coin.get("title", "")):
         specs += spec_row("Año", coin["year"])
+    if coin.get("metal"):
+        specs += spec_row("Metal", coin["metal"])
+    if coin.get("peso"):
+        specs += spec_row("Peso", f'{format_medida(coin["peso"])} g')
+    if coin.get("diametro"):
+        specs += spec_row("Diámetro", f'{format_medida(coin["diametro"])} mm')
     mintage = format_mintage(coin.get("mintage"))
     if mintage:
-        specs += spec_row("Acuñación", mintage)
-    if coin.get("peso"):
-        specs += spec_row("Peso", format_medida(coin["peso"]), "g")
-    if coin.get("diametro"):
-        specs += spec_row("Diámetro", format_medida(coin["diametro"]), "mm")
-    specs += spec_row("Referencia interna", coin["id"])
+        specs += spec_row("Acuñación", f"{mintage} piezas")
+    if coin.get("reference"):
+        specs += spec_row("Referencia de catálogo", coin["reference"])
+    specs += spec_row("Código de la pieza", coin["id"])
 
     description = ""
     if coin.get("description"):
         body = esc(coin["description"]).replace("\n", "<br>")
-        description = f'      <p class="detail-description">{body}</p>\n'
+        description = (
+            '        <h2 class="detail-subtitle">Descripción</h2>\n'
+            f'        <p class="detail-description">{body}</p>\n'
+        )
 
-    price = "VENDIDO" if sold else esc(coin.get("price") or "Consultar")
+    price = "Vendida" if sold else esc(coin.get("price") or "Consultar")
 
     return (
         '<div class="detail-row">\n'
         f'{gallery}'
-        '    <div class="detail-info">\n'
-        f'      <p class="detail-country">{esc(coin.get("country") or "")}</p>\n'
-        f'      <h1 class="detail-title">{esc(title)}</h1>\n'
-        f'{description}'
-        '      <div class="detail-divider"></div>\n'
-        '      <div class="detail-specs">\n'
+        '      <div class="detail-info">\n'
+        f'        <p class="detail-country">{esc(coin.get("country") or "")}</p>\n'
+        f'        <h1 class="display detail-title">{esc(title)}</h1>\n'
+        f'        <p class="detail-price price">{price}</p>\n'
+        '        <h2 class="detail-subtitle">Ficha técnica</h2>\n'
+        '        <dl class="detail-specs">\n'
         f'{specs}'
+        '        </dl>\n'
+        f'{description}'
         '      </div>\n'
-        f'      <p class="detail-price">{price}</p>\n'
-        '    </div>\n'
         '    </div>'
     )
 

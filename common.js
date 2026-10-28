@@ -56,6 +56,53 @@ function parsePriceUSD(priceStr) {
   return isNaN(n) ? Infinity : n;
 }
 
+// ─── Sala de Rarezas ─────────────────────────────────────────────────────────
+
+// Entra sola todo el oro y toda pieza de SALA_MIN_USD o más. `sala: true` la
+// fuerza y `sala: false` la saca, para curar a mano lo que la regla no ve (un
+// blíster caro no es una rareza). build_large.py repite esta misma regla.
+const SALA_MIN_USD = 100;
+
+function isGoldCoin(coin) {
+  const metal = String(coin && coin.metal || '').toLowerCase();
+  return metal.startsWith('oro') && !metal.includes('nórdico');
+}
+
+function isSalaCoin(coin) {
+  if (!coin || coin.hidden || coin.sala === false) return false;
+  if (coin.sala === true || isGoldCoin(coin)) return true;
+  const usd = parsePriceUSD(coin.price);
+  return Number.isFinite(usd) && usd >= SALA_MIN_USD;
+}
+
+// Las piezas en exhibición: a la venta, de la más valiosa a la menos.
+function getSalaCoins(coins) {
+  return coins
+    .filter(c => isSalaCoin(c) && c.status !== 'sold')
+    .sort((a, b) => parsePriceUSD(b.price) - parsePriceUSD(a.price));
+}
+
+// "Pasaron por la Sala": las vendidas no vencen acá, a diferencia del catálogo.
+function getSalaArchive(coins) {
+  return coins
+    .filter(c => isSalaCoin(c) && c.status === 'sold')
+    .sort((a, b) => String(b.soldAt || '').localeCompare(String(a.soldAt || '')));
+}
+
+// Foto de ~1400px para la Sala (images-large/, generada por build_large.py).
+function largeFor(src) {
+  if (!src || !src.startsWith('images/') || /\.mp4$/i.test(src)) return src;
+  const base = src.split('/').pop().replace(/\.[^.]+$/, '');
+  return `images-large/${base}.webp`;
+}
+
+// La foto del reverso: la que termina en "B", o la segunda que no sea video.
+function getReverseImage(coin) {
+  const images = getImagesArray(coin).filter(img => !/\.mp4$/i.test(img));
+  const imageB = images.find(img => /B\.[a-z]+$/i.test(img.split('/').pop() || ''));
+  return imageB || images.find(img => img !== getPrimaryImage(coin)) || '';
+}
+
 // ─── Moneda y Conversión (USD / ARS) ──────────────────────────────────────────
 const CURRENCY_STORAGE_KEY = 'popper_currency_pref';
 const DOLAR_FALLBACK_VENTA = 1495;
@@ -228,9 +275,9 @@ function thumbFor(src) {
 // tarjeta. `attachImgRetry` sigue existiendo para la ficha, que tiene pocas.
 function handleImgError(img, maxTries = 2) {
   const current = img.src.split('?')[0];
-  // Si falló una miniatura WebP (ej. moneda nueva aún sin thumb generado),
-  // caer al original una sola vez antes de reintentar con cache-buster.
-  if (img.dataset.triedOriginal !== '1' && img.dataset.fullSrc && current.includes('/thumbs/')) {
+  // Si falló una miniatura WebP o una foto grande de la Sala (ej. moneda nueva
+  // aún sin generar), caer al original una sola vez antes de reintentar con cache-buster.
+  if (img.dataset.triedOriginal !== '1' && img.dataset.fullSrc && (current.includes('/thumbs/') || current.includes('/images-large/'))) {
     img.dataset.triedOriginal = '1';
     img.src = img.dataset.fullSrc;
     return;
