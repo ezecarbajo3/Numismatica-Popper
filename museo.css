@@ -574,7 +574,25 @@ html.diapos .mf { scroll-snap-align: end; }
 .diapo-indice a:hover span,
 .diapo-indice a:focus-visible span { opacity: 1; transform: none; }
 
-@media (max-width: 860px) { .diapo-indice { display: none; } }
+/* En el celular: chico y tenue, arriba a la derecha debajo de la cabecera.
+   No se toca (se pasa con el dedo); solo avisa que hay más para abajo. La
+   Sala tiene una diapositiva por pieza: ahí sería una columna larga, así que
+   solo se muestra con pocas (museo.js marca --corto). */
+@media (max-width: 860px) {
+  .diapo-indice { display: none; }
+  .diapo-indice.diapo-indice--corto {
+    display: grid;
+    top: calc(var(--mh-h) + 16px);
+    right: 14px;
+    transform: none;
+    opacity: 0.75;
+    pointer-events: none;
+  }
+  .diapo-indice a { width: 22px; height: 10px; }
+  .diapo-indice a::after { width: 8px; }
+  .diapo-indice a.is-active::after { width: 18px; }
+  .diapo-indice a span { display: none; }
+}
 
 /* ─── Secciones ───────────────────────────────────────────────────────────── */
 /* Secciones de scroll normal (la ficha: piezas parecidas). */

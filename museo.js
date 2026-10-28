@@ -100,6 +100,7 @@ function setupDiapositivas() {
     nav.appendChild(a);
     links.set(slide, a);
   });
+  nav.classList.toggle('diapo-indice--corto', slides.length <= 8);
   document.body.appendChild(nav);
 
   // Activa: la que cruza la línea media de la pantalla.
