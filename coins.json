@@ -845,51 +845,6 @@
     "soldAt": "2026-10-12T20:16:21.770818+00:00"
   },
   {
-    "id": 165,
-    "title": "Album Bicentennial 1776-1976",
-    "country": "Estados Unidos",
-    "year": 1976,
-    "price": "10 USD",
-    "images": [
-      "images/165A.jpeg",
-      "images/165B.jpeg"
-    ],
-    "reference": "",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Editorial: AlbumsCoins"
-  },
-  {
-    "id": 166,
-    "title": "Album Commemorative Cents 2009",
-    "country": "Estados Unidos",
-    "year": 2009,
-    "price": "10 USD",
-    "images": [
-      "images/166A.jpeg",
-      "images/166B.jpeg"
-    ],
-    "reference": "",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Editorial: AlbumsCoins"
-  },
-  {
-    "id": 167,
-    "title": "Album Commemorative Nickels 2004-2005",
-    "country": "Estados Unidos",
-    "year": 2005,
-    "price": "10 USD",
-    "images": [
-      "images/167A.jpeg",
-      "images/167B.jpeg"
-    ],
-    "reference": "",
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "description": "Editorial: AlbumsCoins"
-  },
-  {
     "id": 170,
     "title": "Catalogo Carlos Janson 1881-2001",
     "country": "Argentina",
@@ -2948,42 +2903,6 @@
     "description": "Emisión oficial del Banco Central de la República Argentina en conmemoración del 50º aniversario de las Naciones Unidas (1945–1995), recordando el histórico rol del país como uno de los 51 miembros fundadores que firmaron la Carta de San Francisco. Acuñada en acabado Proof dentro del programa numismático global coordinado por la ONU, es una de las piezas modernas argentinas más exclusivas y buscadas por su baja tirada y relevancia diplomática.",
     "commemorates": "50º Aniversario de las Naciones Unidas (ONU)",
     "reference": "CJ# 8.2"
-  },
-  {
-    "id": 439,
-    "title": "5 Cents 1888",
-    "country": "Estados Unidos",
-    "metal": "Cuproníquel",
-    "year": 1888,
-    "price": "33 USD",
-    "images": [
-      "images/435A.jpeg",
-      "images/435B.jpeg"
-    ],
-    "grade": "Bueno",
-    "grade_short": "B",
-    "reference": "KM# 112",
-    "peso": 5,
-    "diametro": 21.2
-  },
-  {
-    "id": 463,
-    "title": "1 Dollar 2021 \"Peace Dollar\"",
-    "country": "Estados Unidos",
-    "metal": "Plata .999",
-    "year": 2021,
-    "price": "275 USD",
-    "images": [
-      "images/466A.jpeg",
-      "images/466B.jpeg",
-      "images/466C.jpeg"
-    ],
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 150a",
-    "mintage": "200.000",
-    "description": "Dólar de la Paz (Peace Dollar) en conmemoración del centenario de su primer diseño de 1921. Diseñado por Anthony de Francisci.",
-    "commemorates": "Centenario del Peace Dollar (1921-2021)"
   },
   {
     "id": 479,
