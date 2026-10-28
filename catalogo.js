@@ -25,11 +25,30 @@ const PAGE = 48;
 const SCROLL_KEY = 'popper_catalogo_scroll';
 
 // Las colecciones del panel. Argentinas, Mundiales y Económicas ya no son
-// colecciones: se llega por continente, país o precio máximo.
+// colecciones: se llega por continente, país o precio máximo. Cada una se
+// abre en sus tipos (`tipo`): Inversión por ley, Varios por clase de pieza.
 const CATS = [
-  { key: 'plata',  label: 'Inversión', match: isInvestment },
-  { key: 'varios', label: 'Varios',    match: (c) => isMedalOrToken(c) || isBook(c) || isBlister(c) || isInsumo(c) },
+  { key: 'plata',  label: 'Inversión', todas: 'Toda la inversión',
+    match: (c) => isInvestment(c) || metalKey(c) === 'Oro', tipo: investKey },
+  { key: 'varios', label: 'Varios',    todas: 'Todo lo de Varios',
+    match: (c) => isMedalOrToken(c) || isBook(c) || isBlister(c) || isInsumo(c), tipo: variosKey },
 ];
+
+const VARIOS_TIPOS = ['Blísteres', 'Insumos', 'Libros', 'Lotes', 'Medallas', 'Fichas'];
+
+function investKey(coin) {
+  return isLotePlata(coin) ? 'Lotes de plata' : metalKey(coin);
+}
+
+function variosKey(coin) {
+  if (isInsumo(coin)) return 'Insumos';
+  if (isBook(coin)) return 'Libros';
+  if (isBlisterOnly(coin)) return 'Blísteres';
+  if (isLoteVario(coin)) return 'Lotes';
+  if (isToken(coin)) return 'Fichas';
+  if (isMedal(coin)) return 'Medallas';
+  return '';
+}
 
 // Los rangos fijos de antes (?precio=5-20) se leen como su tope.
 const LEGACY_PRECIO = { '0-5': 5, '5-20': 20, '20-50': 50, '50-100': 100 };
@@ -84,6 +103,7 @@ const abiertos = new Set();
 
 const state = {
   cat: '',
+  tipos: new Set(),
   q: '',
   continentes: new Set(),
   paises: new Set(),
@@ -241,7 +261,7 @@ function collectionOf(key) {
 const MATCHERS = {
   cat(coin) {
     const col = collectionOf(state.cat);
-    if (col) return col.match(coin);
+    if (col) return col.match(coin) && (!state.tipos.size || state.tipos.has(col.tipo(coin)));
     // "Todas": sin búsqueda, solo monedas (ni libros, ni medallas, ni insumos).
     if (searchTerm()) return true;
     return !(isBook(coin) || isMedalOrToken(coin) || isInsumo(coin));
@@ -297,9 +317,11 @@ function yearOf(coin) {
 }
 
 // El orden de siempre: país A→Z (Argentina por secciones), año, valor facial.
-// En Inversión manda la ley de la plata.
+// En Inversión va primero el oro y después manda la ley de la plata.
 function compareDefault(a, b) {
   if (state.cat === 'plata') {
+    const oro = (metalKey(a) === 'Oro' ? 0 : 1) - (metalKey(b) === 'Oro' ? 0 : 1);
+    if (oro) return oro;
     const lot = (isLotePlata(a) ? 0 : 1) - (isLotePlata(b) ? 0 : 1);
     if (lot) return lot;
     const pur = getSilverPurity(b) - getSilverPurity(a);
@@ -369,6 +391,7 @@ function readUrl() {
   if (cat === 'economicas') state.precioMax = 5;
   if (!collectionOf(cat)) cat = '';
   state.cat = cat;
+  state.tipos = new Set(cat ? p.getAll('tipo') : []);
   state.q = p.get('q') || p.get('buscar') || p.get('search') || '';
   state.metales = new Set(p.getAll('metal'));
   state.estados = new Set(p.getAll('estado').filter(k => GRADES.some(g => g.key === k)));
@@ -378,6 +401,7 @@ function readUrl() {
 function writeUrl() {
   const p = new URLSearchParams();
   if (state.cat) p.set('cat', state.cat);
+  state.tipos.forEach(v => p.append('tipo', v));
   if (state.q.trim()) p.set('q', state.q.trim());
   state.continentes.forEach(v => p.append('continente', v));
   state.paises.forEach(v => p.append('pais', v));
@@ -391,7 +415,7 @@ function writeUrl() {
 }
 
 function activeFilterCount() {
-  return (state.cat ? 1 : 0) + state.continentes.size + state.paises.size + state.metales.size +
+  return (state.cat ? Math.max(1, state.tipos.size) : 0) + state.continentes.size + state.paises.size + state.metales.size +
     (state.precioMax != null ? 1 : 0) + state.estados.size + (state.nuevos ? 1 : 0);
 }
 
@@ -413,14 +437,16 @@ function opcion({ label, count, checked, radio, onToggle }) {
   return li;
 }
 
-// Renglón que abre y cierra lo que tiene abajo. `resumen` es lo elegido
-// adentro, para que se lea aunque esté cerrado.
-function desplegable(key, label, resumen, className = 'desplegable') {
-  const btn = el('button', className);
+// Una sección del panel: un renglón con el nombre y la flecha que despliega lo
+// de abajo. Todas son iguales (Continente, Metal, Estado, Precio); `resumen`
+// es lo elegido adentro, para que se lea aunque esté cerrada.
+function seccion(key, label, resumen, fill, activo = !!resumen) {
+  const box = el('div', 'filtro');
+  const btn = el('button', `filtro__toggle${activo ? ' is-activo' : ''}`);
   btn.type = 'button';
   btn.setAttribute('aria-expanded', String(abiertos.has(key)));
-  btn.appendChild(el('span', `${className}__label`, label));
-  if (resumen) btn.appendChild(el('span', `${className}__resumen`, resumen));
+  btn.appendChild(el('span', 'filtro__toggle__label', label));
+  if (resumen) btn.appendChild(el('span', 'filtro__toggle__resumen', resumen));
   const chev = el('span', 'chev');
   chev.innerHTML = ICON_CHEV;
   btn.appendChild(chev);
@@ -428,16 +454,53 @@ function desplegable(key, label, resumen, className = 'desplegable') {
     toggleIn(abiertos, key);
     renderFiltros(currentPool);
   });
-  return btn;
+  box.appendChild(btn);
+  if (abiertos.has(key)) {
+    const content = el('div', 'filtro__contenido');
+    fill(content);
+    box.appendChild(content);
+  }
+  return box;
 }
 
-function filtro(title, items) {
+// Un renglón igual a los de las secciones pero que no despliega nada (Todas
+// las monedas, Ingresos de la semana): en el lugar de la flecha, su marca.
+function fila({ label, activo, radio, onClick }) {
   const box = el('div', 'filtro');
-  box.appendChild(el('h3', '', title));
+  const btn = el('button', `filtro__toggle${activo ? ' is-activo' : ''}`);
+  btn.type = 'button';
+  btn.setAttribute('role', radio ? 'radio' : 'checkbox');
+  btn.setAttribute('aria-checked', String(!!activo));
+  btn.appendChild(el('span', 'filtro__toggle__label', label));
+  const marca = el('span', `marca${radio ? ' marca--radio' : ''}`);
+  if (!radio) marca.innerHTML = ICON_CHECK;
+  btn.appendChild(marca);
+  btn.addEventListener('click', onClick);
+  box.appendChild(btn);
+  return box;
+}
+
+// "Toda la inversión" (o todo Varios): elegirla de nuevo la apaga.
+function toggleCat(key) {
+  if (state.cat === key && !state.tipos.size) update({ cat: '', tipos: new Set() });
+  else update({ cat: key, tipos: new Set() });
+}
+
+// Un tipo dentro de una colección; se pueden sumar varios de la misma.
+function toggleTipo(key, tipo) {
+  if (state.cat !== key) {
+    state.cat = key;
+    state.tipos = new Set([tipo]);
+  } else {
+    toggleIn(state.tipos, tipo);
+  }
+  update();
+}
+
+function lista(items) {
   const list = el('ul', 'opciones');
   items.forEach(item => list.appendChild(item));
-  box.appendChild(list);
-  return box;
+  return list;
 }
 
 function toggleIn(set, value) {
@@ -449,12 +512,19 @@ function resumenDe(values) {
   return list.length > 2 ? `${list.slice(0, 2).join(', ')} y ${list.length - 2} más` : list.join(', ');
 }
 
-// Los desplegables arrancan abiertos si adentro hay algo elegido.
+function formatHasta(usd) {
+  return `Hasta ${String(usd).replace('.', ',')} dólares`;
+}
+
+// Las secciones arrancan abiertas si adentro hay algo elegido.
 function abrirLoElegido() {
   if (state.continentes.size || state.paises.size) abiertos.add('continente');
   state.continentes.forEach(k => abiertos.add(`cont:${k}`));
   state.paises.forEach(k => { const c = CONTINENT_OF.get(k); if (c) abiertos.add(`cont:${c}`); });
   if (state.metales.size) abiertos.add('metal');
+  if (state.estados.size) abiertos.add('estado');
+  if (state.cat) abiertos.add(`cat:${state.cat}`);
+  if (state.precioMax != null) abiertos.add('precio');
 }
 
 // Un continente entero (se puede sumar más de uno). Elegirlo borra los países
@@ -514,9 +584,7 @@ function ramaContinente(key, count, paisCounts) {
   return li;
 }
 
-function filtroPrecio() {
-  const box = el('div', 'filtro');
-  box.appendChild(el('h3', '', 'Precio'));
+function campoPrecio() {
   const label = el('label', 'precio-hasta');
   label.appendChild(el('span', '', 'Hasta'));
   const input = el('input');
@@ -539,8 +607,7 @@ function filtroPrecio() {
   });
   input.addEventListener('keydown', e => { if (e.key === 'Enter') { aplicar(); input.blur(); } });
   label.append(input, el('span', '', 'dólares'));
-  box.appendChild(label);
-  return box;
+  return label;
 }
 
 function renderFiltros(pool) {
@@ -553,18 +620,9 @@ function renderFiltros(pool) {
     ? { value: act.value, start: act.selectionStart, end: act.selectionEnd } : null;
   body.replaceChildren();
 
-  // Colección: Todas, Inversión, Continente y Varios. Continente no es una
-  // colección más: se combina con cualquiera de las otras.
-  const sinCat = collapseGroups(filterExcept(pool, 'cat'));
-  const catItem = (key, label, n) => opcion({
-    label, count: n, radio: true, checked: state.cat === key,
-    onToggle: () => update({ cat: key }),
-  });
-  const colItems = [catItem('', 'Todas las monedas', null)];
-  const plata = CATS[0], varios = CATS[1];
-  const plataN = sinCat.filter(plata.match).length;
-  if (plataN || state.cat === plata.key) colItems.push(catItem(plata.key, plata.label, plataN));
-
+  // Continente, lo primero: despliega los continentes y, dentro de cada uno,
+  // sus países. El orden de abajo: colecciones, metal, ingresos, precio y
+  // conservación.
   const geoPool = collapseGroups(filterExcept(pool, 'geo'));
   const porContinente = new Map();
   for (const coin of geoPool) {
@@ -585,25 +643,50 @@ function renderFiltros(pool) {
   });
   const conts = CONTINENTS.filter(c => porContinente.has(c.key) || state.continentes.has(c.key));
   if (conts.length) {
-    const li = el('li', 'rama rama--raiz');
-    li.appendChild(desplegable('continente', 'Continente',
-      resumenDe(state.paises.size ? state.paises : state.continentes)));
-    if (abiertos.has('continente')) {
-      const sub = el('ul', 'opciones subopciones');
-      conts.forEach(c => {
-        const info = porContinente.get(c.key) || { n: 0, paises: new Map() };
-        sub.appendChild(ramaContinente(c.key, info.n, info.paises));
-      });
-      li.appendChild(sub);
-    }
-    colItems.push(li);
+    body.appendChild(seccion('continente', 'Continente',
+      resumenDe(state.paises.size ? state.paises : state.continentes), content => {
+        content.appendChild(lista(conts.map(c => {
+          const info = porContinente.get(c.key) || { n: 0, paises: new Map() };
+          return ramaContinente(c.key, info.n, info.paises);
+        })));
+      }));
   }
 
-  const variosN = sinCat.filter(varios.match).length;
-  if (variosN || state.cat === varios.key) colItems.push(catItem(varios.key, varios.label, variosN));
-  body.appendChild(filtro('Colección', colItems));
+  // Todas las monedas, Inversión y Varios: mismos renglones que el resto.
+  // Inversión y Varios se abren en sus tipos.
+  body.appendChild(fila({
+    label: 'Todas las monedas', radio: true, activo: !state.cat,
+    onClick: () => update({ cat: '', tipos: new Set() }),
+  }));
+  const sinCat = collapseGroups(filterExcept(pool, 'cat'));
+  CATS.forEach(col => {
+    const enCol = sinCat.filter(col.match);
+    const activa = state.cat === col.key;
+    if (!enCol.length && !activa) return;
+    const tipoCounts = new Map();
+    enCol.forEach(c => { const k = col.tipo(c); if (k) tipoCounts.set(k, (tipoCounts.get(k) || 0) + 1); });
+    if (activa) state.tipos.forEach(k => { if (!tipoCounts.has(k)) tipoCounts.set(k, 0); });
+    const tipos = col.key === 'varios'
+      ? VARIOS_TIPOS.filter(k => tipoCounts.has(k))
+      : [...tipoCounts.keys()].sort((x, y) => {
+        const [ga, sa] = metalOrder(x), [gb, sb] = metalOrder(y);
+        return ga - gb || sa - sb || COLLATOR.compare(x, y);
+      });
+    body.appendChild(seccion(`cat:${col.key}`, col.label, activa ? resumenDe(state.tipos) : '', content => {
+      content.appendChild(lista([
+        opcion({
+          label: col.todas, count: enCol.length, radio: true, checked: activa && !state.tipos.size,
+          onToggle: () => toggleCat(col.key),
+        }),
+        ...tipos.map(k => opcion({
+          label: k, count: tipoCounts.get(k), checked: activa && state.tipos.has(k),
+          onToggle: () => toggleTipo(col.key, k),
+        })),
+      ]));
+    }, activa));
+  });
 
-  // Metal, desplegable.
+  // Metal.
   const metalCounts = countBy(pool, 'metales', metalKey);
   state.metales.forEach(k => { if (!metalCounts.has(k)) metalCounts.set(k, 0); });
   const metales = [...metalCounts.entries()].sort((a, b) => {
@@ -611,39 +694,39 @@ function renderFiltros(pool) {
     return ga - gb || sa - sb || COLLATOR.compare(a[0], b[0]);
   });
   if (metales.length > 1 || state.metales.size) {
-    const box = el('div', 'filtro');
-    box.appendChild(desplegable('metal', 'Metal', resumenDe(state.metales), 'filtro__toggle'));
-    if (abiertos.has('metal')) {
-      const list = el('ul', 'opciones');
-      metales.forEach(([k, n]) => list.appendChild(opcion({
+    body.appendChild(seccion('metal', 'Metal', resumenDe(state.metales), content => {
+      content.appendChild(lista(metales.map(([k, n]) => opcion({
         label: k, count: n, checked: state.metales.has(k),
         onToggle: () => { toggleIn(state.metales, k); update(); },
-      })));
-      box.appendChild(list);
-    }
-    body.appendChild(box);
+      }))));
+    }));
   }
 
   // Ingresos de la semana.
   const nuevosN = collapseGroups(filterExcept(pool, 'nuevos')).filter(isNewCard).length;
   if (nuevosN || state.nuevos) {
-    body.appendChild(filtro('Novedades', [opcion({
-      label: 'Solo ingresos de la semana', count: nuevosN, checked: state.nuevos,
-      onToggle: () => update({ nuevos: !state.nuevos }),
-    })]));
+    body.appendChild(fila({
+      label: 'Ingresos de la semana', activo: state.nuevos,
+      onClick: () => update({ nuevos: !state.nuevos }),
+    }));
   }
 
   // Precio: solo un tope.
-  body.appendChild(filtroPrecio());
+  body.appendChild(seccion('precio', 'Precio',
+    state.precioMax != null ? formatHasta(state.precioMax) : '',
+    content => content.appendChild(campoPrecio())));
 
   // Estado de conservación.
   const gradeCounts = countBy(pool, 'estados', gradeKey);
   const grades = GRADES.filter(g => gradeCounts.get(g.key) || state.estados.has(g.key));
   if (grades.length > 1 || state.estados.size) {
-    body.appendChild(filtro('Estado de conservación', grades.map(g => opcion({
-      label: g.label, count: gradeCounts.get(g.key) || 0, checked: state.estados.has(g.key),
-      onToggle: () => { toggleIn(state.estados, g.key); update(); },
-    }))));
+    const elegidos = GRADES.filter(g => state.estados.has(g.key)).map(g => g.label);
+    body.appendChild(seccion('estado', 'Conservación', resumenDe(elegidos), content => {
+      content.appendChild(lista(grades.map(g => opcion({
+        label: g.label, count: gradeCounts.get(g.key) || 0, checked: state.estados.has(g.key),
+        onToggle: () => { toggleIn(state.estados, g.key); update(); },
+      }))));
+    }));
   }
 
   document.getElementById('filtros').scrollTop = keepScroll;
@@ -668,7 +751,7 @@ function chip(label, onRemove) {
 }
 
 function clearAll() {
-  update({ cat: '', q: '', precioMax: null, nuevos: false, continentes: new Set(), paises: new Set(), metales: new Set(), estados: new Set() });
+  update({ cat: '', tipos: new Set(), q: '', precioMax: null, nuevos: false, continentes: new Set(), paises: new Set(), metales: new Set(), estados: new Set() });
   document.getElementById('buscar').value = '';
 }
 
@@ -677,13 +760,18 @@ function renderEstado(total) {
   box.replaceChildren(el('strong', '', `${total.toLocaleString('es-AR')} ${total === 1 ? 'pieza' : 'piezas'}`));
   const chips = [];
   if (state.q.trim()) chips.push(chip(`"${state.q.trim()}"`, () => { document.getElementById('buscar').value = ''; update({ q: '' }); }));
-  if (state.cat) chips.push(chip(collectionOf(state.cat).label, () => update({ cat: '' })));
+  if (state.cat && !state.tipos.size) chips.push(chip(collectionOf(state.cat).label, () => update({ cat: '' })));
+  state.tipos.forEach(k => chips.push(chip(k, () => {
+    state.tipos.delete(k);
+    if (!state.tipos.size) state.cat = '';
+    update();
+  })));
   if (state.nuevos) chips.push(chip('Ingresos de la semana', () => update({ nuevos: false })));
   state.continentes.forEach(k => chips.push(chip(k, () => { state.continentes.delete(k); update(); })));
   state.paises.forEach(k => chips.push(chip(k, () => { state.paises.delete(k); update(); })));
   state.metales.forEach(k => chips.push(chip(k, () => { state.metales.delete(k); update(); })));
   if (state.precioMax != null) {
-    chips.push(chip(`Hasta ${String(state.precioMax).replace('.', ',')} dólares`, () => update({ precioMax: null })));
+    chips.push(chip(formatHasta(state.precioMax), () => update({ precioMax: null })));
   }
   state.estados.forEach(k => chips.push(chip(GRADES.find(g => g.key === k).label, () => { state.estados.delete(k); update(); })));
   chips.forEach(c => box.appendChild(c));
@@ -702,6 +790,7 @@ function renderEstado(total) {
 function renderTitulo() {
   const col = collectionOf(state.cat);
   let titulo = col ? col.label : 'Todas las monedas';
+  if (col && state.tipos.size === 1) titulo = [...state.tipos][0];
   if (!col) {
     if (state.paises.size === 1) titulo = [...state.paises][0];
     else if (!state.paises.size && state.continentes.size === 1) titulo = [...state.continentes][0];

@@ -1288,22 +1288,11 @@ html.diapos .mf { scroll-snap-align: end; }
 
 .filtros__head { display: none; }
 
-.filtro {
-  padding: 20px 0;
-  border-top: 1px solid var(--line);
-}
-
-.filtro:first-of-type { border-top: 0; padding-top: 0; }
-
-.filtro h3 {
-  margin: 0 0 10px;
-  font-family: var(--display);
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: var(--text);
-}
+/* El panel es una sola lista de renglones iguales: los que se despliegan
+   (Continente, Inversión, Varios, Metal, Precio, Conservación) y los que no
+   (Todas las monedas, Ingresos de la semana). Sin líneas: separa el aire. */
+.filtro { padding: 2px 0; }
+.filtro__contenido { padding: 2px 0 14px; }
 
 .opciones { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
 
@@ -1349,32 +1338,39 @@ html.diapos .mf { scroll-snap-align: end; }
 .opcion__label { flex: 1; min-width: 0; }
 .opcion__count { font-size: 16px; color: var(--faint); font-variant-numeric: lining-nums tabular-nums; }
 
-/* Desplegables: Continente y cada continente dentro del bloque Colección, y
-   el título de Metal. La flecha gira cuando está abierto. */
+/* La flecha de cada desplegable gira cuando está abierto. */
 .chev { display: grid; place-items: center; width: 16px; height: 16px; flex-shrink: 0; color: var(--faint); }
 .chev svg { width: 16px; height: 16px; transition: transform 0.2s ease; }
 [aria-expanded="true"] .chev svg { transform: rotate(90deg); }
 
-.desplegable {
+/* El renglón de cada sección: mismo alto, misma letra y mismo hover que las
+   opciones, con la flecha dorada siempre en el mismo lugar a la derecha. */
+.filtro__toggle {
   display: flex;
   align-items: center;
   gap: 12px;
   width: calc(100% + 16px);
-  min-height: 40px;
+  min-height: 48px;
   padding: 4px 8px;
   margin: 0 -8px;
   border-radius: var(--radius);
-  font-size: 17px;
   text-align: left;
-  color: var(--muted);
-  transition: color 0.2s ease, background 0.2s ease;
+  transition: background 0.2s ease;
 }
-/* Sin casilla: la flecha ocupa su lugar para que el nombre quede alineado. */
-.desplegable .chev { order: -1; width: 18px; }
-.desplegable:hover, .desplegable[aria-expanded="true"] { color: var(--text); }
-.desplegable:hover { background: rgba(255, 255, 255, 0.03); }
-.desplegable__label { flex-shrink: 0; }
-.desplegable__resumen, .filtro__toggle__resumen {
+.filtro__toggle:hover { background: rgba(255, 255, 255, 0.03); }
+.filtro__toggle__label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text);
+}
+.filtro__toggle__resumen {
   flex: 1;
   min-width: 0;
   overflow: hidden;
@@ -1385,25 +1381,29 @@ html.diapos .mf { scroll-snap-align: end; }
   font-style: italic;
   color: var(--gold);
 }
+.filtro__toggle .chev { margin-left: auto; color: var(--gold); }
+/* Lo que está filtrando se lee en dorado. */
+.filtro__toggle.is-activo .filtro__toggle__label { color: var(--gold); }
 
-.filtro__toggle {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: 100%;
-  min-height: 32px;
-  text-align: left;
+/* La marca de los renglones que no despliegan: círculo (Todas las monedas)
+   o casilla (Ingresos), en el lugar de la flecha. */
+.marca {
+  display: grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  flex-shrink: 0;
+  border: 1px solid var(--faint);
+  border-radius: 2px;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
-.filtro__toggle__label {
-  font-family: var(--display);
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: var(--text);
-}
-.filtro__toggle__resumen { text-transform: none; letter-spacing: 0; }
-.filtro__toggle + .opciones { margin-top: 10px; }
+.marca svg { width: 12px; height: 12px; opacity: 0; color: var(--ink); }
+.marca--radio { border-radius: 50%; }
+.is-activo .marca { background: var(--gold); border-color: var(--gold); }
+.is-activo .marca svg { opacity: 1; }
+.is-activo .marca--radio { background: var(--ink); box-shadow: inset 0 0 0 3px var(--ink), inset 0 0 0 8px var(--gold); }
+.filtro__toggle__resumen + .chev { margin-left: 0; }
 
 /* Un continente: casilla + nombre + conteo, y aparte la flecha que abre sus
    países. Los países van con sangría y una línea fina a la izquierda. */
@@ -1414,11 +1414,12 @@ html.diapos .mf { scroll-snap-align: end; }
   place-items: center;
   width: 40px;
   height: 40px;
-  margin-right: -8px;
+  margin-right: -12px;
   border-radius: var(--radius);
 }
+.rama__abrir .chev { color: var(--muted); }
 .rama__abrir:hover { background: rgba(255, 255, 255, 0.03); }
-.rama__abrir:hover .chev { color: var(--text); }
+.rama__abrir:hover .chev, .rama__abrir[aria-expanded="true"] .chev { color: var(--gold); }
 
 .subopciones {
   margin: 2px 0 8px 8px;
@@ -1762,8 +1763,9 @@ html.diapos .mf { scroll-snap-align: end; }
     background: rgba(0, 0, 0, 0.6);
     animation: velo 0.4s ease;
   }
-  .opcion, .desplegable { min-height: 46px; }
-  .rama__abrir { width: 46px; height: 46px; }
+  .opcion { min-height: 46px; }
+  .filtro__toggle { min-height: 52px; }
+  .rama__abrir { width: 46px; height: 46px; margin-right: -15px; }
   .precio-hasta input { font-size: 18px; }
   .cat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 16px; }
   .ficha__title { font-size: 17px; }
