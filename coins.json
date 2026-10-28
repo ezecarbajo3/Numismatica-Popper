@@ -8412,24 +8412,6 @@
     "group_label": "25 Cents 2004"
   },
   {
-    "id": 1103,
-    "title": "5 Cents 1967",
-    "country": "Canadá",
-    "metal": "Níquel",
-    "year": 1967,
-    "price": "2.5 USD",
-    "cantidad": 2,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 66",
-    "description": "Centenario de la Confederación de Canadá (1867-1967). Motivo de liebre de las nieves / conejo.",
-    "images": [
-      "images/1103A.jpeg",
-      "images/1103B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
-  },
-  {
     "id": 1128,
     "title": "10 Cents 1942",
     "country": "Países Bajos",
