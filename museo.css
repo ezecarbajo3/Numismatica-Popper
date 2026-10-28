@@ -610,7 +610,8 @@ html.diapos .mf { scroll-snap-align: end; }
   margin-bottom: clamp(16px, 3svh, 28px);
 }
 
-.hero__copy .lede { max-width: 28em; }
+.hero__copy .lede { max-width: 28em; color: var(--text); }
+.hero__copy .lede b { font-weight: inherit; color: var(--gold); }
 
 .hero__actions {
   display: flex;
