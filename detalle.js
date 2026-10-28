@@ -586,6 +586,7 @@ async function loadCoinDetail() {
 
     renderCoinDetail(coin, groupMembers);
     renderRelacionadas(coin);
+    arrancarArriba();
   } catch (error) {
     console.error(error);
     showError("Hubo un error al cargar la moneda. Probá recargar la página.");

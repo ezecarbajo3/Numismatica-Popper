@@ -857,6 +857,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (saved && saved.shown > PAGE) shown = saved.shown;
       render();
       if (saved) requestAnimationFrame(() => requestAnimationFrame(() => instantScrollTo(saved.y)));
+      else arrancarArriba();
     })
     .catch(err => {
       console.error(err);

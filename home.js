@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setupDiapositivas();
       observeAparece();
       // La Sala y los ingresos se arman tarde y mueven el layout.
-      if (IS_RELOAD) instantScrollTo(0);
+      if (IS_RELOAD) instantScrollTo(0); else arrancarArriba();
     })
     .catch(err => {
       console.error(err);

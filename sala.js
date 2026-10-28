@@ -224,6 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setupGiro(piezas);
       renderArchivo(archive);
       setupDiapositivas();
+      arrancarArriba();
 
       // Las piezas se arman después de cargar: el salto a #p-<id> (desde el
       // hero o la vitrina de la portada) hay que hacerlo a mano. Instantáneo:

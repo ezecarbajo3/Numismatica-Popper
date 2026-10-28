@@ -396,3 +396,21 @@ function instantScrollTo(top = 0) {
   window.scrollTo({ top, behavior: 'instant' });
   html.style.scrollBehavior = prev;
 }
+
+// ─── Arrancar arriba ─────────────────────────────────────────────────────────
+// Al entrar a una página con un link (no con "atrás" ni a un #ancla) se
+// arranca arriba de todo. Safari a veces abría la página nueva a la altura que
+// tenía la anterior (fundido entre páginas + scroll-snap de las diapositivas),
+// y como cada página se arma después de cargar, cada una lo vuelve a pedir al
+// terminar. Si la persona ya empezó a moverse, no se la toca.
+const ENTRADA_NUEVA = performance.getEntriesByType('navigation')[0]?.type === 'navigate' && !location.hash;
+let yaSeMovio = false;
+if (ENTRADA_NUEVA) {
+  ['wheel', 'touchstart', 'keydown'].forEach(t =>
+    window.addEventListener(t, () => { yaSeMovio = true; }, { once: true, passive: true }));
+  window.addEventListener('load', () => arrancarArriba());
+}
+
+function arrancarArriba() {
+  if (ENTRADA_NUEVA && !yaSeMovio && window.scrollY) instantScrollTo(0);
+}
