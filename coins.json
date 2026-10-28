@@ -16461,5 +16461,240 @@
     "publishedAt": "2026-10-27T18:04:46.192212+00:00",
     "status": "sold",
     "soldAt": "2026-10-28T02:43:41.097693+00:00"
+  },
+  {
+    "id": 1650,
+    "title": "1 Peso 1986",
+    "country": "Cuba",
+    "metal": "Latón",
+    "year": 1986,
+    "price": "16 USD",
+    "images": [
+      "images/1650A.jpeg",
+      "images/1650B.jpeg"
+    ],
+    "reference": "KM# 105",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "6",
+    "diametro": "24.5",
+    "description": "Mundial México 86",
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00",
+    "commemorates": "Mundial México 86"
+  },
+  {
+    "id": 1651,
+    "title": "Réis 1924",
+    "country": "Brasil",
+    "metal": "Plata .500",
+    "year": 1924,
+    "price": "9 USD",
+    "images": [
+      "images/1651A.jpeg",
+      "images/1651B.jpeg"
+    ],
+    "reference": "KM# 526",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "8",
+    "diametro": "26",
+    "description": "",
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+  },
+  {
+    "id": 1652,
+    "title": "20 Centavos 1888",
+    "country": "Bolivia",
+    "metal": "Plata .900",
+    "year": 1888,
+    "price": "10 USD",
+    "images": [
+      "images/1652A.jpeg",
+      "images/1652B.jpeg"
+    ],
+    "reference": "KM# 159",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "4.6",
+    "diametro": "22.34",
+    "description": "Ceca PTS",
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+  },
+  {
+    "id": 1653,
+    "title": "2 Soles 1830",
+    "country": "Bolivia",
+    "metal": "Plata .667",
+    "year": 1830,
+    "price": "6.5 USD",
+    "images": [
+      "images/1653A.jpeg",
+      "images/1653B.jpeg"
+    ],
+    "reference": "KM# 95a",
+    "grade": "Regular +",
+    "grade_short": "R+",
+    "peso": "6.2",
+    "diametro": "26.5",
+    "description": "Ceca Potosí",
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+  },
+  {
+    "id": 1654,
+    "title": "10 Centavos 1961",
+    "country": "Canadá",
+    "metal": "Plata .800",
+    "year": 1961,
+    "price": "4 USD",
+    "images": [
+      "images/1654A.jpeg",
+      "images/1654B.jpeg"
+    ],
+    "reference": "KM# 51",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "2.33",
+    "diametro": "18.034",
+    "description": "Isabel II",
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1655,
+    "title": "10 Centavos 1966",
+    "country": "Canadá",
+    "metal": "Plata .800",
+    "year": 1966,
+    "price": "4.5 USD",
+    "images": [
+      "images/1655A.jpeg",
+      "images/1655B.jpeg"
+    ],
+    "reference": "KM# 61",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "2.33",
+    "diametro": "18.034",
+    "description": "Isabel II",
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1656,
+    "title": "10 Centavos 1943",
+    "country": "Terranova",
+    "metal": "Plata .925",
+    "year": 1943,
+    "price": "3 USD",
+    "images": [
+      "images/1656A.jpeg",
+      "images/1656B.jpeg"
+    ],
+    "reference": "KM# 20",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "mintage": 104706,
+    "peso": "2.3564",
+    "diametro": "18.03",
+    "description": "Jorge VI",
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00",
+    "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1657,
+    "title": "20 Centésimos 1942",
+    "country": "Uruguay",
+    "metal": "Plata .720",
+    "year": 1942,
+    "price": "3.5 USD",
+    "images": [
+      "images/1657A.jpeg",
+      "images/1657B.jpeg"
+    ],
+    "reference": "KM# 29",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "3",
+    "diametro": "18.5",
+    "description": "Ceca So",
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+  },
+  {
+    "id": 1658,
+    "title": "5 Centavos 1916",
+    "country": "Chile",
+    "metal": "Plata .450",
+    "year": 1916,
+    "price": "5 USD",
+    "images": [
+      "images/1658A.jpeg",
+      "images/1658B.jpeg"
+    ],
+    "reference": "KM# 155.3",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 4337000,
+    "peso": "1",
+    "diametro": "14.5",
+    "description": "Ceca Santiago",
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+  },
+  {
+    "id": 1659,
+    "title": "10 Centavos 1907",
+    "country": "Chile",
+    "metal": "Plata .500",
+    "year": 1907,
+    "price": "5 USD",
+    "images": [
+      "images/1659A.jpeg",
+      "images/1659B.jpeg"
+    ],
+    "reference": "KM# 156.2",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "mintage": 3151000,
+    "peso": "2",
+    "diametro": "17",
+    "description": "Ceca Santiago - Rotura de cospel",
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+  },
+  {
+    "id": 1660,
+    "title": "50 Céntimos 1918",
+    "country": "Francia",
+    "metal": "Plata .835",
+    "year": 1918,
+    "price": "4.5 USD",
+    "images": [
+      "images/1660A.jpeg",
+      "images/1660B.jpeg"
+    ],
+    "reference": "KM# 854",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "2.5",
+    "diametro": "18.2",
+    "description": "",
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+  },
+  {
+    "id": 1661,
+    "title": "50 Céntimos 1908",
+    "country": "Francia",
+    "metal": "Plata .835",
+    "year": 1908,
+    "price": "4.5 USD",
+    "images": [
+      "images/1661A.jpeg",
+      "images/1661B.jpeg"
+    ],
+    "reference": "KM# 854",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "2.5",
+    "diametro": "18.2",
+    "description": "",
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
   }
 ]
