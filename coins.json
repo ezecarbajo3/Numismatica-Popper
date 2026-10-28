@@ -16696,5 +16696,184 @@
     "diametro": "18.2",
     "description": "",
     "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+  },
+  {
+    "id": 1662,
+    "title": "25 Céntimos 1960",
+    "country": "Luxemburgo",
+    "metal": "Aluminio",
+    "year": 1960,
+    "price": "3 USD",
+    "images": [
+      "images/1662A.jpeg",
+      "images/1662B.jpeg"
+    ],
+    "reference": "KM# 45a",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 3020000,
+    "peso": "0.76",
+    "diametro": "19",
+    "description": "",
+    "publishedAt": "2026-10-28T22:41:20.547533+00:00"
+  },
+  {
+    "id": 1663,
+    "title": "1000 Rupias 1996",
+    "country": "Indonesia",
+    "metal": "Bimetálica",
+    "year": 1996,
+    "price": "4 USD",
+    "images": [
+      "images/1663A.jpeg",
+      "images/1663B.jpeg"
+    ],
+    "reference": "KM# 56",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "8.6",
+    "diametro": "26",
+    "description": "",
+    "publishedAt": "2026-10-28T22:41:20.547533+00:00"
+  },
+  {
+    "id": 1664,
+    "title": "2 Chelines 1946",
+    "country": "Austria",
+    "metal": "Aluminio",
+    "year": 1946,
+    "price": "3 USD",
+    "images": [
+      "images/1664A.jpeg",
+      "images/1664B.jpeg"
+    ],
+    "reference": "KM# 2872",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "2.8",
+    "diametro": "28",
+    "description": "",
+    "publishedAt": "2026-10-28T22:41:20.547533+00:00"
+  },
+  {
+    "id": 1665,
+    "title": "1 Penique 1945",
+    "country": "Nueva Zelanda",
+    "metal": "Bronce",
+    "year": 1945,
+    "price": "4.5 USD",
+    "images": [
+      "images/1665A.jpeg",
+      "images/1665B.jpeg"
+    ],
+    "reference": "KM# 13",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 4764000,
+    "peso": "9.56",
+    "diametro": "31",
+    "description": "Jorge VI - 1er tipo",
+    "publishedAt": "2026-10-28T22:41:20.547533+00:00",
+    "commemorates": "Jorge VI - 1er tipo"
+  },
+  {
+    "id": 1666,
+    "title": "1 Penique 1952",
+    "country": "Australia",
+    "metal": "Bronce",
+    "year": 1952,
+    "price": "4 USD",
+    "images": [
+      "images/1666A.jpeg",
+      "images/1666B.jpeg"
+    ],
+    "reference": "KM# 43",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "9.45",
+    "diametro": "30.8",
+    "description": "Jorge VI",
+    "publishedAt": "2026-10-28T22:41:20.547533+00:00",
+    "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1667,
+    "title": "1 Penique 1957",
+    "country": "Australia",
+    "metal": "Bronce",
+    "year": 1957,
+    "price": "4 USD",
+    "images": [
+      "images/1667A.jpeg",
+      "images/1667B.jpeg"
+    ],
+    "reference": "KM# 56",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "9.45",
+    "diametro": "30.8",
+    "description": "Isabel II",
+    "publishedAt": "2026-10-28T22:41:20.547533+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1668,
+    "title": "5 Mils 1955",
+    "country": "Chipre",
+    "metal": "Bronce",
+    "year": 1955,
+    "price": "5.5 USD",
+    "images": [
+      "images/1668A.jpeg",
+      "images/1668B.jpeg"
+    ],
+    "reference": "KM# 34",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "5.64",
+    "diametro": "25.41",
+    "description": "Isabel II",
+    "publishedAt": "2026-10-28T22:41:20.547533+00:00",
+    "cantidad": 2,
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1669,
+    "title": "5 Mils 1971",
+    "country": "Chipre",
+    "metal": "Bronce",
+    "year": 1971,
+    "price": "5.5 USD",
+    "images": [
+      "images/1669A.jpeg",
+      "images/1669B.jpeg"
+    ],
+    "reference": "KM# 39",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 2500000,
+    "peso": "5.67",
+    "diametro": "26",
+    "description": "",
+    "publishedAt": "2026-10-28T22:41:20.547533+00:00"
+  },
+  {
+    "id": 1670,
+    "title": "5 Mils 1963",
+    "country": "Chipre",
+    "metal": "Bronce",
+    "year": 1963,
+    "price": "5 USD",
+    "images": [
+      "images/1670A.jpeg",
+      "images/1670B.jpeg"
+    ],
+    "reference": "KM# 39",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "5.67",
+    "diametro": "26",
+    "description": "",
+    "publishedAt": "2026-10-28T22:41:20.547533+00:00"
   }
 ]
