@@ -226,9 +226,10 @@ function el(tag, className, text) {
 // ─── Tarjeta ─────────────────────────────────────────────────────────────────
 
 // Foto, número opcional, nombre (ya trae el año), país y, en una fila, el
-// precio con la cápsula del estado. Lleva a la ficha salvo que se pase otro
+// precio con la cápsula del estado (salvo precio: false, como en la Sala, que
+// los deja para la publicación). Lleva a la ficha salvo que se pase otro
 // destino.
-function tarjeta(coin, { href, src, num } = {}) {
+function tarjeta(coin, { href, src, num, precio = true } = {}) {
   const link = el('a', 'tarjeta');
   link.href = href || `detalle.html?id=${encodeURIComponent(coin.id)}`;
 
@@ -246,6 +247,8 @@ function tarjeta(coin, { href, src, num } = {}) {
   if (num) link.appendChild(el('span', 'tarjeta__num', num));
   const title = el('h3', 'tarjeta__title');
   applyCoinTitle(title, coin.title);
+  link.append(title, el('span', 'tarjeta__meta', countryLabel(coin)));
+  if (!precio) return link;
   const pie = el('span', 'tarjeta__pie');
   const price = el('span', 'price');
   paintPrice(price, coin);
@@ -256,6 +259,6 @@ function tarjeta(coin, { href, src, num } = {}) {
     if (coin.grade) cap.title = coin.grade;
     pie.appendChild(cap);
   }
-  link.append(title, el('span', 'tarjeta__meta', countryLabel(coin)), pie);
+  link.appendChild(pie);
   return link;
 }

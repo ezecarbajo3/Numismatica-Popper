@@ -56,6 +56,8 @@ function renderVitrina(sala) {
       href: `sala.html#p-${encodeURIComponent(coin.id)}`,
       src: largeFor(getPrimaryImage(coin)),
       num: `N° ${String(i + 1).padStart(2, '0')}`,
+      // Como en la Sala: precio y estado se ven en la publicación.
+      precio: false,
     });
     card.classList.add('tarjeta--sala', 'aparece');
     wrap.appendChild(card);

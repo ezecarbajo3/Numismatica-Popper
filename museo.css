@@ -1045,16 +1045,17 @@ html.diapos .mf { scroll-snap-align: end; }
 
 .sala-intro .lede { margin: 0 auto; }
 
-.sala-intro__stats {
-  margin: clamp(14px, 3svh, 26px) 0 0;
-  font-size: 17px;
-  color: var(--faint);
-  font-variant-numeric: lining-nums;
-}
-
-.sala-intro__stats b { color: var(--muted); font-weight: 500; }
-.sala-intro .btn { margin-top: clamp(20px, 4.5svh, 40px); }
+.sala-intro .btn { margin-top: clamp(24px, 5svh, 48px); }
 .sala-intro .btn svg { width: 17px; height: 17px; }
+
+/* En la compu la entrada acompaña al título enorme: rótulo, bajada y botón
+   más grandes. */
+@media (min-width: 861px) {
+  .sala-intro .eyebrow { font-size: 19px; }
+  .sala-intro .lede { max-width: 34em; font-size: clamp(22px, 1.8vw, 27px); }
+  .sala-intro .btn { min-height: 58px; padding: 0 38px; font-size: 21px; }
+  .sala-intro .btn svg { width: 20px; height: 20px; }
+}
 
 /* Cada pieza es una diapositiva: moneda y cédula enteras en una pantalla. En
    la compu, la moneda a un lado y, al otro, el encabezado y el texto juntos,

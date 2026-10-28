@@ -197,10 +197,9 @@ function renderArchivo(archive) {
   document.getElementById('archivo').hidden = false;
   const grid = document.getElementById('archivoGrid');
   archive.slice(0, ARCHIVO_MAX).forEach(coin => {
-    const card = tarjeta(coin);
+    // En el archivo no hay precio ni estado: en su lugar, cuándo se vendió.
+    const card = tarjeta(coin, { precio: false });
     card.classList.add('archivada');
-    // En el archivo no hay precio: en su lugar, cuándo se vendió.
-    card.querySelector('.price').remove();
     const sold = coin.soldAt ? new Date(coin.soldAt) : null;
     const when = sold && !Number.isNaN(sold.getTime())
       ? `Vendida en ${MONTHS[sold.getMonth()]} de ${sold.getFullYear()}`
@@ -217,12 +216,6 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(([coins, notas]) => {
       const sala = getSalaCoins(coins).filter(isAvailable);
       const archive = getSalaArchive(coins).filter(c => getImagesArray(c).length > 0);
-
-      const stats = document.getElementById('salaStats');
-      stats.replaceChildren(
-        el('b', '', `${sala.length} piezas en exhibición`),
-        document.createTextNode(archive.length ? ` · ${archive.length} ya vendidas en el archivo` : ''),
-      );
 
       const wrap = document.getElementById('piezas');
       const piezas = sala.map((coin, i) => buildPieza(coin, i, sala.length, notas));
