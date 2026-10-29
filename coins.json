@@ -16673,7 +16673,9 @@
     "peso": "2",
     "diametro": "17",
     "description": "Ceca Santiago - Rotura de cospel",
-    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-29T15:28:36.706911+00:00"
   },
   {
     "id": 1660,
