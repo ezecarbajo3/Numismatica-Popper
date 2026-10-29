@@ -8354,26 +8354,6 @@
     "mintage": 2000000
   },
   {
-    "id": 1087,
-    "title": "100 Pesos 2025",
-    "country": "Chile",
-    "metal": "Bimetálica",
-    "year": 2025,
-    "price": "3.5 USD",
-    "cantidad": 3,
-    "grade": "Sin Circular",
-    "grade_short": "SC",
-    "reference": "KM# 241",
-    "description": "Bicentenario de la República de Chile (1810-2010 / 2025). Centro de cuproníquel con anillo de bronce de aluminio.",
-    "images": [
-      "images/1087A.jpeg",
-      "images/1087B.jpeg"
-    ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
-    "group_id": "cl-100pesos-2025",
-    "group_label": "100 Pesos 2025"
-  },
-  {
     "id": 1098,
     "title": "1 Dólar 2025",
     "country": "Canadá",
@@ -9380,7 +9360,7 @@
     "country": "Chile",
     "metal": "Bimetálica",
     "year": 2025,
-    "price": "3 USD",
+    "price": "4 USD",
     "images": [
       "images/1240A.jpeg",
       "images/1240B.jpeg"
@@ -9392,9 +9372,7 @@
     "diametro": "23.5",
     "description": "Moneda bimetálica con mujer mapuche ('Pueblos Originarios') en el anverso y escudo nacional de Chile en el reverso.",
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
-    "cantidad": 2,
-    "group_id": "cl-100pesos-2025",
-    "group_label": "100 Pesos 2025"
+    "cantidad": 2
   },
   {
     "id": 1241,
