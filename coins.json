@@ -17079,5 +17079,64 @@
     "description": "Jorge VI",
     "publishedAt": "2026-10-28T23:30:35.680931+00:00",
     "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1680,
+    "title": "50 Francos 1975",
+    "country": "Francia",
+    "metal": "Plata .900",
+    "year": 1975,
+    "price": "70 USD",
+    "images": [
+      "images/1680A.jpeg",
+      "images/1680B.jpeg"
+    ],
+    "reference": "KM# 941",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": 4552011,
+    "peso": "30",
+    "diametro": "41",
+    "description": "",
+    "publishedAt": "2026-10-30T03:24:31.299134+00:00"
+  },
+  {
+    "id": 1681,
+    "title": "50 Francos 1978",
+    "country": "Francia",
+    "metal": "Plata .900",
+    "year": 1978,
+    "price": "80 USD",
+    "images": [
+      "images/1681A.jpeg",
+      "images/1681B.jpeg"
+    ],
+    "reference": "KM# 941",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "30",
+    "diametro": "41",
+    "description": "",
+    "publishedAt": "2026-10-30T03:24:31.299134+00:00"
+  },
+  {
+    "id": 1682,
+    "title": "5 Pesetas 1897",
+    "country": "España",
+    "metal": "Plata .900",
+    "year": 1897,
+    "price": "70 USD",
+    "images": [
+      "images/1682A.jpeg",
+      "images/1682B.jpeg"
+    ],
+    "reference": "KM# 707",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "25",
+    "diametro": "37",
+    "description": "Alfonso XIII - Pátina original",
+    "publishedAt": "2026-10-30T03:24:31.299134+00:00",
+    "commemorates": "Alfonso XIII"
   }
 ]
