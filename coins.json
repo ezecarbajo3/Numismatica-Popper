@@ -2902,7 +2902,9 @@
     "grade_short": "SC",
     "description": "Emisión oficial del Banco Central de la República Argentina en conmemoración del 50º aniversario de las Naciones Unidas (1945–1995), recordando el histórico rol del país como uno de los 51 miembros fundadores que firmaron la Carta de San Francisco. Acuñada en acabado Proof dentro del programa numismático global coordinado por la ONU, es una de las piezas modernas argentinas más exclusivas y buscadas por su baja tirada y relevancia diplomática.",
     "commemorates": "50º Aniversario de las Naciones Unidas (ONU)",
-    "reference": "CJ# 8.2"
+    "reference": "CJ# 8.2",
+    "status": "sold",
+    "soldAt": "2026-10-30T03:41:15.198162+00:00"
   },
   {
     "id": 479,
@@ -5110,7 +5112,9 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "mintage": "1.200.000",
-    "description": "Escasa"
+    "description": "Escasa",
+    "status": "sold",
+    "soldAt": "2026-10-30T03:41:15.198162+00:00"
   },
   {
     "id": 712,
@@ -7357,7 +7361,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "commemorates": "Juegos Olímpicos de Invierno Sochi 2014",
-    "description": "Emisión conmemorativa por los Juegos Olímpicos de Invierno Sochi 2014."
+    "description": "Emisión conmemorativa por los Juegos Olímpicos de Invierno Sochi 2014.",
+    "status": "sold",
+    "soldAt": "2026-10-30T03:41:15.198162+00:00"
   },
   {
     "id": 939,
@@ -17058,7 +17064,9 @@
     "peso": "6",
     "diametro": "25",
     "description": "",
-    "publishedAt": "2026-10-28T22:53:53.913447+00:00"
+    "publishedAt": "2026-10-28T22:53:53.913447+00:00",
+    "status": "sold",
+    "soldAt": "2026-10-30T03:41:15.198162+00:00"
   },
   {
     "id": 1679,
