@@ -17087,7 +17087,9 @@
     "description": "Jorge VI",
     "publishedAt": "2026-10-28T23:30:35.680931+00:00",
     "commemorates": "Jorge VI",
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-10-31T08:48:46.472480-03:00"
   },
   {
     "id": 1680,
