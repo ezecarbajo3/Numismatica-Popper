@@ -2875,7 +2875,9 @@
     "group_id": "us-quarters-2005",
     "group_label": "Quarters 2005",
     "reference": "KM# 374",
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-11-02T18:49:14.875184+00:00"
   },
   {
     "id": 424,
@@ -3045,7 +3047,9 @@
       "images/485B.jpeg"
     ],
     "description": "Oklahoma P",
-    "reference": "KM# 498"
+    "reference": "KM# 498",
+    "status": "sold",
+    "soldAt": "2026-11-02T18:49:14.875184+00:00"
   },
   {
     "id": 486,
