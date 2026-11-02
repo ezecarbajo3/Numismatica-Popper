@@ -2267,7 +2267,9 @@
       "images/385A.jpeg",
       "images/385B.jpeg"
     ],
-    "reference": "KM# 202b"
+    "reference": "KM# 202b",
+    "status": "sold",
+    "soldAt": "2026-11-02T19:29:34.264659+00:00"
   },
   {
     "id": 386,
@@ -2305,7 +2307,9 @@
       "images/388A.jpeg",
       "images/388B.jpeg"
     ],
-    "reference": "KM# 202b"
+    "reference": "KM# 202b",
+    "status": "sold",
+    "soldAt": "2026-11-02T19:29:34.264659+00:00"
   },
   {
     "id": 389,
