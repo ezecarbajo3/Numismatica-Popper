@@ -7826,7 +7826,9 @@
     "commemorates": "Jubileo de Plata de la Reina Isabel II",
     "description": "Conmemora el Jubileo de Plata de la Reina Isabel II.",
     "group_id": "uk-25newpence-1977",
-    "group_label": "25 New Pence 1977 - Jubileo de Plata"
+    "group_label": "25 New Pence 1977 - Jubileo de Plata",
+    "status": "sold",
+    "soldAt": "2026-11-02T19:40:52.687150+00:00"
   },
   {
     "id": 991,
@@ -10468,7 +10470,9 @@
     "diametro": "19.2",
     "description": "",
     "publishedAt": "2026-09-04T21:53:04.537068+00:00",
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-11-02T19:40:52.687150+00:00"
   },
   {
     "id": 1310,
@@ -10548,7 +10552,9 @@
     "diametro": "25.5",
     "description": "",
     "publishedAt": "2026-09-04T21:53:04.537068+00:00",
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-11-02T19:40:52.687150+00:00"
   },
   {
     "id": 1314,
@@ -12145,7 +12151,9 @@
     "diametro": "23",
     "description": "",
     "publishedAt": "2026-09-18T18:46:07.758513+00:00",
-    "cantidad": 2
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-11-02T19:40:52.687150+00:00"
   },
   {
     "id": 1439,
@@ -13416,7 +13424,9 @@
     "peso": "6.8",
     "diametro": "25.8",
     "description": "",
-    "publishedAt": "2026-10-02T02:00:24.441489+00:00"
+    "publishedAt": "2026-10-02T02:00:24.441489+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-02T19:40:52.687150+00:00"
   },
   {
     "id": 1500,
@@ -13558,7 +13568,9 @@
     "grade_short": "EX+",
     "description": "",
     "publishedAt": "2026-10-02T18:08:47.280756+00:00",
-    "cantidad": 4
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-11-02T19:40:52.687150+00:00"
   },
   {
     "id": 1507,
@@ -15587,7 +15599,9 @@
     "diametro": "31.51",
     "description": "Commonwealth Games Brisbane - Isabel II",
     "publishedAt": "2026-10-25T16:36:39.532094+00:00",
-    "commemorates": "Commonwealth Games Brisbane - Isabel II"
+    "commemorates": "Commonwealth Games Brisbane - Isabel II",
+    "status": "sold",
+    "soldAt": "2026-11-02T19:40:52.687150+00:00"
   },
   {
     "id": 1607,
