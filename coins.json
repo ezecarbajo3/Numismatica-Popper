@@ -889,7 +889,9 @@
     "grade": "Excelente -",
     "grade_short": "EX-",
     "mintage": "496.000",
-    "description": "Escasa, solo 496k acuñadas."
+    "description": "Escasa, solo 496k acuñadas.",
+    "status": "sold",
+    "soldAt": "2026-11-02T19:43:36.152210+00:00"
   },
   {
     "id": 177,
@@ -6295,7 +6297,9 @@
     ],
     "reference": "KM# 788",
     "grade": "Muy Bueno",
-    "grade_short": "MB"
+    "grade_short": "MB",
+    "status": "sold",
+    "soldAt": "2026-11-02T19:43:36.152210+00:00"
   },
   {
     "id": 822,
@@ -11680,7 +11684,9 @@
     "grade": "Excelente",
     "grade_short": "EX",
     "description": "",
-    "publishedAt": "2026-09-16T18:08:43.498110+00:00"
+    "publishedAt": "2026-09-16T18:08:43.498110+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-02T19:43:36.152210+00:00"
   },
   {
     "id": 1412,
@@ -12252,7 +12258,9 @@
     "peso": "1.69",
     "diametro": "15.57",
     "description": "Carlos IIII, Potosí. Escasa",
-    "publishedAt": "2026-09-28T16:13:38.905023+00:00"
+    "publishedAt": "2026-09-28T16:13:38.905023+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-02T19:43:36.152210+00:00"
   },
   {
     "id": 1443,
@@ -12768,7 +12776,9 @@
     "peso": "10",
     "diametro": "27",
     "description": "",
-    "publishedAt": "2026-09-29T15:51:50.301485+00:00"
+    "publishedAt": "2026-09-29T15:51:50.301485+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-02T19:43:36.152210+00:00"
   },
   {
     "id": 1468,
@@ -15349,7 +15359,9 @@
     "peso": "2.5",
     "diametro": "17.9",
     "description": "Ceca D",
-    "publishedAt": "2026-10-25T15:20:38.079058+00:00"
+    "publishedAt": "2026-10-25T15:20:38.079058+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-02T19:43:36.152210+00:00"
   },
   {
     "id": 1595,
@@ -16551,7 +16563,9 @@
     "peso": "8",
     "diametro": "26",
     "description": "",
-    "publishedAt": "2026-10-28T22:26:52.892657+00:00"
+    "publishedAt": "2026-10-28T22:26:52.892657+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-02T19:43:36.152210+00:00"
   },
   {
     "id": 1652,
