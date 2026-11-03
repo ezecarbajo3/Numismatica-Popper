@@ -16429,7 +16429,9 @@
     "peso": "13.88",
     "diametro": "29",
     "description": "Ceca B - Tercer Reich",
-    "publishedAt": "2026-10-27T18:04:46.192212+00:00"
+    "publishedAt": "2026-10-27T18:04:46.192212+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-03T19:00:11.665542+00:00"
   },
   {
     "id": 1645,
