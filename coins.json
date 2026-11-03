@@ -17223,5 +17223,26 @@
     "description": "Alfonso XIII - Pátina original",
     "publishedAt": "2026-10-30T03:24:31.299134+00:00",
     "commemorates": "Alfonso XIII"
+  },
+  {
+    "id": 1683,
+    "title": "200 Pesos Uruguayos 1999 Año 2000",
+    "country": "Uruguay",
+    "metal": "Plata .900",
+    "year": 1999,
+    "price": "90 USD",
+    "images": [
+      "images/1683A.jpeg",
+      "images/1683B.jpeg"
+    ],
+    "reference": "KM# 115",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 50000,
+    "peso": "25",
+    "diametro": "37",
+    "description": "Año 2000 - Incluye cápsula",
+    "publishedAt": "2026-11-03T16:37:52.281362+00:00",
+    "commemorates": "Año 2000"
   }
 ]
