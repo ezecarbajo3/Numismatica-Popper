@@ -17250,5 +17250,110 @@
     "description": "Año 2000 - Incluye cápsula",
     "publishedAt": "2026-11-03T16:37:52.281362+00:00",
     "commemorates": "Año 2000"
+  },
+  {
+    "id": 1684,
+    "title": "1 Franco 1955",
+    "country": "Luxemburgo",
+    "metal": "Cuproníquel",
+    "year": 1955,
+    "price": "4 USD",
+    "images": [
+      "images/1684A.jpeg",
+      "images/1684B.jpeg"
+    ],
+    "reference": "KM# 46.2",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 1000000,
+    "peso": "4",
+    "diametro": "21",
+    "description": "Francisco Franco - Carlota",
+    "publishedAt": "2026-11-03T19:06:52.987955+00:00",
+    "commemorates": "Francisco Franco"
+  },
+  {
+    "id": 1685,
+    "title": "1 Franco 1952",
+    "country": "Luxemburgo",
+    "metal": "Cuproníquel",
+    "year": 1952,
+    "price": "4 USD",
+    "images": [
+      "images/1685A.jpeg",
+      "images/1685B.jpeg"
+    ],
+    "reference": "KM# 46.2",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 5000000,
+    "peso": "4",
+    "diametro": "21",
+    "description": "Francisco Franco - Carlota",
+    "publishedAt": "2026-11-03T19:06:52.987955+00:00",
+    "commemorates": "Francisco Franco"
+  },
+  {
+    "id": 1686,
+    "title": "1 Franco 1922",
+    "country": "Bélgica",
+    "metal": "Níquel",
+    "year": 1922,
+    "price": "4 USD",
+    "images": [
+      "images/1686A.jpeg",
+      "images/1686B.jpeg"
+    ],
+    "reference": "KM# 89",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "5",
+    "diametro": "23",
+    "description": "Francisco Franco",
+    "publishedAt": "2026-11-03T19:06:52.987955+00:00",
+    "group_id": "be-1-franco-1922",
+    "group_label": "1 Franco 1922",
+    "commemorates": "Francisco Franco"
+  },
+  {
+    "id": 1687,
+    "title": "1 Franco 1922",
+    "country": "Bélgica",
+    "metal": "Níquel",
+    "year": 1922,
+    "price": "4 USD",
+    "images": [
+      "images/1687A.jpeg",
+      "images/1687B.jpeg"
+    ],
+    "reference": "KM# 89",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "5",
+    "diametro": "23",
+    "description": "Francisco Franco",
+    "publishedAt": "2026-11-03T19:06:52.987955+00:00",
+    "group_id": "be-1-franco-1922",
+    "group_label": "1 Franco 1922",
+    "commemorates": "Francisco Franco"
+  },
+  {
+    "id": 1688,
+    "title": "2 Francos 1944",
+    "country": "Bélgica",
+    "metal": "Zinc",
+    "year": 1944,
+    "price": "6.5 USD",
+    "images": [
+      "images/1688A.jpeg",
+      "images/1688B.jpeg"
+    ],
+    "reference": "KM# 133",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "2.75",
+    "diametro": "19",
+    "description": "",
+    "publishedAt": "2026-11-03T19:06:52.987955+00:00"
   }
 ]
