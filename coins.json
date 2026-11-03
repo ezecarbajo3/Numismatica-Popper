@@ -12299,7 +12299,9 @@
     "peso": "0.64",
     "diametro": "19",
     "description": "Carlos VIII (letra K gótica), Provenza. Escasa, alto valor de catálogo",
-    "publishedAt": "2026-09-28T16:13:38.905023+00:00"
+    "publishedAt": "2026-09-28T16:13:38.905023+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-03T13:48:21.517946-03:00"
   },
   {
     "id": 1445,
