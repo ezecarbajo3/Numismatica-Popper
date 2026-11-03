@@ -14920,7 +14920,9 @@
     "peso": "2.4055",
     "diametro": "18",
     "description": "Mehmed V - Ceca Constantinopla",
-    "publishedAt": "2026-10-24T23:15:08.718680+00:00"
+    "publishedAt": "2026-10-24T23:15:08.718680+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-03T01:09:07.074883+00:00"
   },
   {
     "id": 1573,
@@ -14980,7 +14982,9 @@
     "diametro": "17",
     "description": "baden - Carlos II",
     "publishedAt": "2026-10-24T23:15:08.718680+00:00",
-    "commemorates": "baden - Carlos II"
+    "commemorates": "baden - Carlos II",
+    "status": "sold",
+    "soldAt": "2026-11-03T01:09:07.074883+00:00"
   },
   {
     "id": 1576,
