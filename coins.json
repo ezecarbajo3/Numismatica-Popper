@@ -15,7 +15,9 @@
     "grade_short": "MB**",
     "peso": 1.692,
     "diametro": 15.8,
-    "description": ""
+    "description": "",
+    "status": "sold",
+    "soldAt": "2026-11-03T22:10:48.835365+00:00"
   },
   {
     "id": 7,
