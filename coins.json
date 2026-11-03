@@ -17335,7 +17335,9 @@
     "publishedAt": "2026-11-03T19:06:52.987955+00:00",
     "group_id": "be-1-franco-1922",
     "group_label": "1 Franco 1922",
-    "commemorates": "Francisco Franco"
+    "commemorates": "Francisco Franco",
+    "status": "sold",
+    "soldAt": "2026-11-03T19:15:22.794019+00:00"
   },
   {
     "id": 1688,
@@ -17354,6 +17356,8 @@
     "peso": "2.75",
     "diametro": "19",
     "description": "",
-    "publishedAt": "2026-11-03T19:06:52.987955+00:00"
+    "publishedAt": "2026-11-03T19:06:52.987955+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-03T19:15:22.794019+00:00"
   }
 ]
