@@ -17479,5 +17479,323 @@
     "diametro": "29",
     "description": "",
     "publishedAt": "2026-11-04T13:42:59.738673+00:00"
+  },
+  {
+    "id": 1695,
+    "title": "3000 Riels 2023 Asian Elephant",
+    "country": "Camboya",
+    "metal": "Plata .999",
+    "year": 2023,
+    "price": "100 USD",
+    "images": [
+      "images/1695A.jpeg",
+      "images/1695B.jpeg"
+    ],
+    "reference": "KM# 168",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 10000,
+    "peso": "31.1",
+    "diametro": "40.7",
+    "description": "Asian Elephant - Incluye cápsula sellada, ideal inversión",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00",
+    "commemorates": "Asian Elephant"
+  },
+  {
+    "id": 1696,
+    "title": "Medio Décimo 1893",
+    "country": "Chile",
+    "metal": "Plata .500",
+    "year": 1893,
+    "price": "15 USD",
+    "images": [
+      "images/1696A.jpeg",
+      "images/1696B.jpeg"
+    ],
+    "reference": "KM# 137.3",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": 850000,
+    "peso": "1.25",
+    "diametro": "15.5",
+    "description": "Ceca Santiago",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00"
+  },
+  {
+    "id": 1697,
+    "title": "1 Cent - George 1926 V",
+    "country": "Colonias del Estrecho",
+    "metal": "Bronce",
+    "year": 1926,
+    "price": "12 USD",
+    "images": [
+      "images/1697A.jpeg",
+      "images/1697B.jpeg"
+    ],
+    "reference": "KM# 32",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 5000000,
+    "peso": "5.85",
+    "diametro": "21.5",
+    "description": "Jorge V - Para nada vista, cuadrada",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00",
+    "commemorates": "Jorge V"
+  },
+  {
+    "id": 1698,
+    "title": "1 Rupia 1987",
+    "country": "Mauricio",
+    "metal": "Cuproníquel",
+    "year": 1987,
+    "price": "4 USD",
+    "images": [
+      "images/1698A.jpeg",
+      "images/1698B.jpeg"
+    ],
+    "reference": "KM# 55",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 2500,
+    "peso": "7.45",
+    "diametro": "26.5",
+    "description": "",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00"
+  },
+  {
+    "id": 1699,
+    "title": "20 Centavos 1994",
+    "country": "Mauricio",
+    "metal": "Níquel",
+    "year": 1994,
+    "price": "3 USD",
+    "images": [
+      "images/1699A.jpeg",
+      "images/1699B.jpeg"
+    ],
+    "reference": "KM# 53",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "3",
+    "diametro": "19",
+    "description": "",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00",
+    "cantidad": 2
+  },
+  {
+    "id": 1700,
+    "title": "25 Mils 1977",
+    "country": "Chipre",
+    "metal": "Cuproníquel",
+    "year": 1977,
+    "price": "5 USD",
+    "images": [
+      "images/1700A.jpeg",
+      "images/1700B.jpeg"
+    ],
+    "reference": "KM# 40",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 500000,
+    "peso": "2.83",
+    "diametro": "19.41",
+    "description": "",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00"
+  },
+  {
+    "id": 1701,
+    "title": "20 Dólares 2000 Marcus Garvey",
+    "country": "Jamaica",
+    "metal": "Bimetálica",
+    "year": 2000,
+    "price": "4.5 USD",
+    "images": [
+      "images/1701A.jpeg",
+      "images/1701B.jpeg"
+    ],
+    "reference": "KM# 182",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "7.8",
+    "diametro": "23",
+    "description": "Marcus Garvey",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00",
+    "commemorates": "Marcus Garvey"
+  },
+  {
+    "id": 1702,
+    "title": "100 Mils 1955",
+    "country": "Chipre",
+    "metal": "Cuproníquel",
+    "year": 1955,
+    "price": "8 USD",
+    "images": [
+      "images/1702A.jpeg",
+      "images/1702B.jpeg"
+    ],
+    "reference": "KM# 37",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 2500000,
+    "peso": "11.31",
+    "diametro": "28.5",
+    "description": "Isabel II",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1703,
+    "title": "50 Paisa 1972",
+    "country": "Pakistán",
+    "metal": "Cuproníquel",
+    "year": 1972,
+    "price": "5 USD",
+    "images": [
+      "images/1703A.jpeg",
+      "images/1703B.jpeg"
+    ],
+    "reference": "KM# 32",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": 4900000,
+    "peso": "5",
+    "diametro": "22",
+    "description": "",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00"
+  },
+  {
+    "id": 1704,
+    "title": "100 Fils 1995",
+    "country": "Bahrein",
+    "metal": "Bimetálica",
+    "year": 1995,
+    "price": "4 USD",
+    "images": [
+      "images/1704A.jpeg",
+      "images/1704B.jpeg"
+    ],
+    "reference": "KM# 20",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "6",
+    "diametro": "24",
+    "description": "",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00"
+  },
+  {
+    "id": 1705,
+    "title": "10 Paisas 1964",
+    "country": "Pakistán",
+    "metal": "Cuproníquel",
+    "year": 1964,
+    "price": "5.5 USD",
+    "images": [
+      "images/1705A.jpeg",
+      "images/1705B.jpeg"
+    ],
+    "reference": "KM# 27",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "4.75",
+    "diametro": "23",
+    "description": "",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00"
+  },
+  {
+    "id": 1706,
+    "title": "1 Dólar 1879",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1879,
+    "price": "70.5 USD",
+    "images": [
+      "images/1706A.jpeg",
+      "images/1706B.jpeg"
+    ],
+    "reference": "KM# 108",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 1541,
+    "peso": "27.22",
+    "diametro": "38.1",
+    "description": "",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00"
+  },
+  {
+    "id": 1707,
+    "title": "2 Euros 2002",
+    "country": "Grecia",
+    "metal": "Bimetálica (centro de níquel-latón en anillo de cuproníquel)",
+    "year": 2002,
+    "price": "4 USD",
+    "images": [
+      "images/1707A.jpeg",
+      "images/1707B.jpeg"
+    ],
+    "reference": "KM# 188",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "8.5",
+    "diametro": "25.75",
+    "description": "Ceca S - ceca S en estrella de 2002",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00"
+  },
+  {
+    "id": 1708,
+    "title": "1/2 Dirham 2022",
+    "country": "Marruecos",
+    "metal": "Níquel",
+    "year": 2022,
+    "price": "3 USD",
+    "images": [
+      "images/1708A.jpeg",
+      "images/1708B.jpeg"
+    ],
+    "reference": "Y# 138",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "3.95",
+    "diametro": "20.97",
+    "description": "",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00"
+  },
+  {
+    "id": 1709,
+    "title": "5 Centavos 1977",
+    "country": "Canadá",
+    "metal": "Níquel",
+    "year": 1977,
+    "price": "2.5 USD",
+    "images": [
+      "images/1709A.jpeg",
+      "images/1709B.jpeg"
+    ],
+    "reference": "KM# 60.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "4.54",
+    "diametro": "21.21",
+    "description": "Isabel II",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1710,
+    "title": "1/2 Chon 2002",
+    "country": "Corea del Norte",
+    "metal": "Aluminio",
+    "year": 2002,
+    "price": "4.5 USD",
+    "images": [
+      "images/1710A.jpeg",
+      "images/1710B.jpeg"
+    ],
+    "reference": "KM# 184",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "2.16",
+    "diametro": "27.02",
+    "description": "",
+    "publishedAt": "2026-11-04T14:05:58.857606+00:00"
   }
 ]
