@@ -17361,5 +17361,123 @@
     "publishedAt": "2026-11-03T19:06:52.987955+00:00",
     "status": "sold",
     "soldAt": "2026-11-03T19:15:22.794019+00:00"
+  },
+  {
+    "id": 1689,
+    "title": "1 Kopek 1915",
+    "country": "Ruso, Imperio",
+    "metal": "Cobre",
+    "year": 1915,
+    "price": "5.5 USD",
+    "images": [
+      "images/1689A.jpeg",
+      "images/1689B.jpeg"
+    ],
+    "reference": "Y# 9.3",
+    "grade": "Bueno +",
+    "grade_short": "B+",
+    "peso": "3.28",
+    "diametro": "21.6",
+    "description": "Nicolás II",
+    "publishedAt": "2026-11-04T13:42:59.738673+00:00",
+    "commemorates": "Nicolás II"
+  },
+  {
+    "id": 1690,
+    "title": "1/12 Real 1845",
+    "country": "Paraguay",
+    "metal": "Cobre",
+    "year": 1845,
+    "price": "25 USD",
+    "images": [
+      "images/1690A.jpeg",
+      "images/1690B.jpeg"
+    ],
+    "reference": "KM# 1",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 2880000,
+    "peso": "6",
+    "diametro": "24",
+    "description": "",
+    "publishedAt": "2026-11-04T13:42:59.738673+00:00"
+  },
+  {
+    "id": 1691,
+    "title": "10 Reis 1884",
+    "country": "Portugal",
+    "metal": "Bronce",
+    "year": 1884,
+    "price": "6 USD",
+    "images": [
+      "images/1691A.jpeg",
+      "images/1691B.jpeg"
+    ],
+    "reference": "KM# 526",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "5.8",
+    "diametro": "25",
+    "description": "Luis I",
+    "publishedAt": "2026-11-04T13:42:59.738673+00:00"
+  },
+  {
+    "id": 1692,
+    "title": "1 Centavo 1910",
+    "country": "Canadá",
+    "metal": "Bronce",
+    "year": 1910,
+    "price": "12 USD",
+    "images": [
+      "images/1692A.jpeg",
+      "images/1692B.jpeg"
+    ],
+    "reference": "KM# 8",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 5146487,
+    "peso": "5.67",
+    "diametro": "25.4",
+    "description": "Eduardo VII",
+    "publishedAt": "2026-11-04T13:42:59.738673+00:00",
+    "commemorates": "Eduardo VII"
+  },
+  {
+    "id": 1693,
+    "title": "20 Céntimos 1991",
+    "country": "Haití",
+    "metal": "Cuproníquel",
+    "year": 1991,
+    "price": "3 USD",
+    "images": [
+      "images/1693A.jpeg",
+      "images/1693B.jpeg"
+    ],
+    "reference": "KM# 152",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "7.54",
+    "diametro": "26.2",
+    "description": "",
+    "publishedAt": "2026-11-04T13:42:59.738673+00:00"
+  },
+  {
+    "id": 1694,
+    "title": "50 Céntimos 1991",
+    "country": "Haití",
+    "metal": "Cuproníquel",
+    "year": 1991,
+    "price": "3 USD",
+    "images": [
+      "images/1694A.jpeg",
+      "images/1694B.jpeg"
+    ],
+    "reference": "KM# 153",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "10",
+    "diametro": "29",
+    "description": "",
+    "publishedAt": "2026-11-04T13:42:59.738673+00:00"
   }
 ]
