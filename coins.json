@@ -17799,5 +17799,165 @@
     "diametro": "27.02",
     "description": "",
     "publishedAt": "2026-11-04T14:05:58.857606+00:00"
+  },
+  {
+    "id": 1711,
+    "title": "6 Peniques 1949",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1949,
+    "price": "3.5 USD",
+    "images": [
+      "images/1711A.jpeg",
+      "images/1711B.jpeg"
+    ],
+    "reference": "KM# 875",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "2.83",
+    "diametro": "19.3",
+    "description": "Jorge VI",
+    "publishedAt": "2026-11-04T20:42:48.292308+00:00",
+    "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1712,
+    "title": "6 Peniques 1940",
+    "country": "Reino Unido",
+    "metal": "Plata .500",
+    "year": 1940,
+    "price": "5.5 USD",
+    "images": [
+      "images/1712A.jpeg",
+      "images/1712B.jpeg"
+    ],
+    "reference": "KM# 852",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "2.83",
+    "diametro": "19.3",
+    "description": "Jorge VI - Hermosa pátina original",
+    "publishedAt": "2026-11-04T20:42:48.292308+00:00",
+    "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1713,
+    "title": "6 Peniques 1947",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1947,
+    "price": "3 USD",
+    "images": [
+      "images/1713A.jpeg",
+      "images/1713B.jpeg"
+    ],
+    "reference": "KM# 862",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "2.83",
+    "diametro": "19.3",
+    "description": "Jorge VI",
+    "publishedAt": "2026-11-04T20:42:48.292308+00:00",
+    "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1714,
+    "title": "1 Chelín 1940",
+    "country": "Reino Unido",
+    "metal": "Plata .500",
+    "year": 1940,
+    "price": "6 USD",
+    "images": [
+      "images/1714A.jpeg",
+      "images/1714B.jpeg"
+    ],
+    "reference": "KM# 853",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "5.66",
+    "diametro": "23.5",
+    "description": "Jorge VI - Tipo inglés",
+    "publishedAt": "2026-11-04T20:42:48.292308+00:00",
+    "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1715,
+    "title": "6 Peniques 1948",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1948,
+    "price": "3 USD",
+    "images": [
+      "images/1715A.jpeg",
+      "images/1715B.jpeg"
+    ],
+    "reference": "KM# 862",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "2.83",
+    "diametro": "19.3",
+    "description": "Jorge VI",
+    "publishedAt": "2026-11-04T20:42:48.292308+00:00",
+    "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1716,
+    "title": "6 Peniques 1931",
+    "country": "Reino Unido",
+    "metal": "Plata .500",
+    "year": 1931,
+    "price": "5 USD",
+    "images": [
+      "images/1716A.jpeg",
+      "images/1716B.jpeg"
+    ],
+    "reference": "KM# 832",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "2.83",
+    "diametro": "19.3",
+    "description": "Jorge V",
+    "publishedAt": "2026-11-04T20:42:48.292308+00:00",
+    "commemorates": "Jorge V"
+  },
+  {
+    "id": 1717,
+    "title": "1 Chelín 1951",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1951,
+    "price": "3 USD",
+    "images": [
+      "images/1717A.jpeg",
+      "images/1717B.jpeg"
+    ],
+    "reference": "KM# 877",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "5.66",
+    "diametro": "23.5",
+    "description": "Jorge VI - Tipo escocés",
+    "publishedAt": "2026-11-04T20:42:48.292308+00:00",
+    "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1718,
+    "title": "2 Chelines 1951",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1951,
+    "price": "3.5 USD",
+    "images": [
+      "images/1718A.jpeg",
+      "images/1718B.jpeg"
+    ],
+    "reference": "KM# 878",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "11.31",
+    "diametro": "28.5",
+    "description": "Jorge VI",
+    "publishedAt": "2026-11-04T20:42:48.292308+00:00",
+    "commemorates": "Jorge VI"
   }
 ]
