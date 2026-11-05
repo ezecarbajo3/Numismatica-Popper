@@ -17836,7 +17836,9 @@
     "diametro": "19.3",
     "description": "Jorge VI",
     "publishedAt": "2026-11-04T20:42:48.292308+00:00",
-    "commemorates": "Jorge VI"
+    "commemorates": "Jorge VI",
+    "status": "sold",
+    "soldAt": "2026-11-05T03:31:54.214673+00:00"
   },
   {
     "id": 1712,
@@ -17920,7 +17922,9 @@
     "diametro": "19.3",
     "description": "Jorge VI",
     "publishedAt": "2026-11-04T20:42:48.292308+00:00",
-    "commemorates": "Jorge VI"
+    "commemorates": "Jorge VI",
+    "status": "sold",
+    "soldAt": "2026-11-05T03:31:54.214673+00:00"
   },
   {
     "id": 1716,
@@ -17962,7 +17966,9 @@
     "diametro": "23.5",
     "description": "Jorge VI - Tipo escocés",
     "publishedAt": "2026-11-04T20:42:48.292308+00:00",
-    "commemorates": "Jorge VI"
+    "commemorates": "Jorge VI",
+    "status": "sold",
+    "soldAt": "2026-11-05T03:31:54.214673+00:00"
   },
   {
     "id": 1718,
