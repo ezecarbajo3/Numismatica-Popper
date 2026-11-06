@@ -4674,7 +4674,7 @@
     "group_id": "uk-1penny-1921",
     "group_label": "1 Penny 1921",
     "reference": "KM# 810",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 668,
@@ -8025,7 +8025,9 @@
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
     "description": "",
-    "publishedAt": "2026-08-05T22:52:23.735711+00:00"
+    "publishedAt": "2026-08-05T22:52:23.735711+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-06T20:54:44.110095+00:00"
   },
   {
     "id": 1026,
@@ -17507,7 +17509,9 @@
     "diametro": "40.7",
     "description": "Asian Elephant - Incluye cápsula sellada, ideal inversión",
     "publishedAt": "2026-11-04T14:05:58.857606+00:00",
-    "commemorates": "Asian Elephant"
+    "commemorates": "Asian Elephant",
+    "status": "sold",
+    "soldAt": "2026-11-06T20:54:44.110095+00:00"
   },
   {
     "id": 1696,
