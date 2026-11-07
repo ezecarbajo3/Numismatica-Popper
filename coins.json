@@ -18409,5 +18409,167 @@
     "description": "Malvinas Argentinas",
     "publishedAt": "2026-11-07T12:32:59.594274+00:00",
     "commemorates": "Malvinas Argentinas"
+  },
+  {
+    "id": 1739,
+    "title": "Réis 1907",
+    "country": "Brasil",
+    "metal": "Plata .900",
+    "year": 1907,
+    "price": "60 USD",
+    "images": [
+      "images/1739A.jpeg",
+      "images/1739B.jpeg"
+    ],
+    "reference": "KM# 508",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 2683000,
+    "peso": "20",
+    "diametro": "33",
+    "description": "",
+    "publishedAt": "2026-11-07T14:09:47.290319+00:00"
+  },
+  {
+    "id": 1740,
+    "title": "400 Réis 1926",
+    "country": "Brasil",
+    "metal": "Cuproníquel",
+    "year": 1926,
+    "price": "6 USD",
+    "images": [
+      "images/1740A.jpeg",
+      "images/1740B.jpeg"
+    ],
+    "reference": "KM# 520",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 1033500,
+    "peso": "12",
+    "diametro": "30",
+    "description": "",
+    "publishedAt": "2026-11-07T14:09:47.290319+00:00"
+  },
+  {
+    "id": 1741,
+    "title": "1/2 Dólar 1967",
+    "country": "Estados Unidos",
+    "metal": "Plata .400",
+    "year": 1967,
+    "price": "10 USD",
+    "images": [
+      "images/1741A.jpeg",
+      "images/1741B.jpeg"
+    ],
+    "reference": "KM# 202a",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "11.5",
+    "diametro": "30.61",
+    "description": "",
+    "publishedAt": "2026-11-07T14:09:47.290319+00:00",
+    "group_id": "us-half-dollar-1967",
+    "group_label": "1/2 Dólar 1967"
+  },
+  {
+    "id": 1742,
+    "title": "10 Rublos 2015",
+    "country": "Rusia",
+    "metal": "Bimetálica",
+    "year": 2015,
+    "price": "4.5 USD",
+    "images": [
+      "images/1742A.jpeg",
+      "images/1742B.jpeg"
+    ],
+    "reference": "Y# 1649",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 5000000,
+    "peso": "8.6",
+    "diametro": "27",
+    "description": "70 años de la Victoria - Reina Victoria - Ceca San Petersburgo",
+    "publishedAt": "2026-11-07T14:09:47.290319+00:00",
+    "commemorates": "70 años de la Victoria - Reina Victoria"
+  },
+  {
+    "id": 1743,
+    "title": "10 Rublos 2009",
+    "country": "Rusia",
+    "metal": "Bimetálica",
+    "year": 2009,
+    "price": "3.5 USD",
+    "images": [
+      "images/1743A.jpeg",
+      "images/1743B.jpeg"
+    ],
+    "reference": "Y# 989",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 5000000,
+    "peso": "8.4",
+    "diametro": "27",
+    "description": "Óblast Autónomo Hebreo - Ceca SPMD",
+    "publishedAt": "2026-11-07T14:09:47.290319+00:00",
+    "commemorates": "Óblast Autónomo Hebreo"
+  },
+  {
+    "id": 1744,
+    "title": "20 Fillér 1894",
+    "country": "Hungría",
+    "metal": "Níquel",
+    "year": 1894,
+    "price": "3 USD",
+    "images": [
+      "images/1744A.jpeg",
+      "images/1744B.jpeg"
+    ],
+    "reference": "KM# 483",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "4",
+    "diametro": "21.1",
+    "description": "Ceca K·B",
+    "publishedAt": "2026-11-07T14:09:47.290319+00:00"
+  },
+  {
+    "id": 1745,
+    "title": "1 Lira 1940",
+    "country": "Italia",
+    "metal": "Acmonital (austenitic)",
+    "year": 1940,
+    "price": "4 USD",
+    "images": [
+      "images/1745A.jpeg",
+      "images/1745B.jpeg"
+    ],
+    "reference": "KM# 77a",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "8",
+    "diametro": "26.7",
+    "description": "Víctor Manuel III",
+    "publishedAt": "2026-11-07T14:09:47.290319+00:00",
+    "commemorates": "Víctor Manuel III"
+  },
+  {
+    "id": 1746,
+    "title": "50 Centésimos 1925",
+    "country": "Italia",
+    "metal": "Níquel",
+    "year": 1925,
+    "price": "5.5 USD",
+    "images": [
+      "images/1746A.jpeg",
+      "images/1746B.jpeg"
+    ],
+    "reference": "KM# 61",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "6",
+    "diametro": "23.9",
+    "description": "Víctor Manuel III - Canto liso",
+    "publishedAt": "2026-11-07T14:09:47.290319+00:00",
+    "commemorates": "Víctor Manuel III"
   }
 ]
