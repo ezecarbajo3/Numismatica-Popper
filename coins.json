@@ -3358,7 +3358,7 @@
     "description": "San Martín",
     "group_id": "ar-50cents-conmemorativas-2000",
     "group_label": "50 Centavos Conmemorativas 2000",
-    "cantidad": 3,
+    "cantidad": 4,
     "reference": "CJ# 5.8.1"
   },
   {
@@ -14789,7 +14789,8 @@
     "diametro": "23.88",
     "description": "Cáncer de mama - Isabel II - Lazo rosa coloreado, marca P",
     "publishedAt": "2026-10-24T18:42:00.067921+00:00",
-    "commemorates": "Cáncer de mama - Isabel II"
+    "commemorates": "Cáncer de mama - Isabel II",
+    "cantidad": 2
   },
   {
     "id": 1565,
