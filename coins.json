@@ -18009,5 +18009,404 @@
     "description": "Jorge VI",
     "publishedAt": "2026-11-04T20:42:48.292308+00:00",
     "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1719,
+    "title": "5 Centavos 1908",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1908,
+    "price": "4 USD",
+    "images": [
+      "images/1719A.jpeg",
+      "images/1719B.jpeg"
+    ],
+    "reference": "CJ# 139",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "mintage": 1693000,
+    "peso": "2",
+    "diametro": "17",
+    "description": "",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00"
+  },
+  {
+    "id": 1720,
+    "title": "1000 Sucres 1996",
+    "country": "Ecuador",
+    "metal": "Bimetálica",
+    "year": 1996,
+    "price": "4 USD",
+    "images": [
+      "images/1720A.jpeg",
+      "images/1720B.jpeg"
+    ],
+    "reference": "KM# 99",
+    "grade": "Sin Circular -",
+    "grade_short": "SC-",
+    "peso": "6.7",
+    "diametro": "23.5",
+    "description": "Año único",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00"
+  },
+  {
+    "id": 1721,
+    "title": "2 Libras 1998",
+    "country": "Reino Unido",
+    "metal": "Bimetálica",
+    "year": 1998,
+    "price": "3.5 USD",
+    "images": [
+      "images/1721A.jpeg",
+      "images/1721B.jpeg"
+    ],
+    "reference": "KM# 994",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "12",
+    "diametro": "28.4",
+    "description": "Isabel II",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1722,
+    "title": "1 Peso 1998 Mercosur",
+    "country": "Argentina",
+    "metal": "Bimetálica",
+    "year": 1998,
+    "price": "5.5 USD",
+    "images": [
+      "images/1722A.jpeg",
+      "images/1722B.jpeg"
+    ],
+    "reference": "CJ# 6",
+    "grade": "",
+    "grade_short": "",
+    "mintage": 496715,
+    "peso": "6.35",
+    "diametro": "23",
+    "description": "Mercosur - Escasa",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "commemorates": "Mercosur"
+  },
+  {
+    "id": 1723,
+    "title": "2 Euros 2010",
+    "country": "Grecia",
+    "metal": "Bimetálica (centro de níquel-latón en anillo de cuproníquel)",
+    "year": 2010,
+    "price": "5 USD",
+    "images": [
+      "images/1723A.jpeg",
+      "images/1723B.jpeg"
+    ],
+    "reference": "KM# 236",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 2492500,
+    "peso": "8.5",
+    "diametro": "25.75",
+    "description": "Batalla de Maratón - Año único, escasa",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "commemorates": "Batalla de Maratón"
+  },
+  {
+    "id": 1724,
+    "title": "1 Libra 2002",
+    "country": "Reino Unido",
+    "metal": "Níquel",
+    "year": 2002,
+    "price": "3 USD",
+    "images": [
+      "images/1724A.jpeg",
+      "images/1724B.jpeg"
+    ],
+    "reference": "KM# 1030",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "9.5",
+    "diametro": "22.5",
+    "description": "Isabel II",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1725,
+    "title": "1 Libra 1989 Cardo escocés",
+    "country": "Reino Unido",
+    "metal": "Níquel",
+    "year": 1989,
+    "price": "3 USD",
+    "images": [
+      "images/1725A.jpeg",
+      "images/1725B.jpeg"
+    ],
+    "reference": "KM# 959",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "9.5",
+    "diametro": "22.5",
+    "description": "Cardo escocés - Isabel II",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "commemorates": "Cardo escocés - Isabel II"
+  },
+  {
+    "id": 1726,
+    "title": "10 Centavos 1900",
+    "country": "Paraguay",
+    "metal": "Cuproníquel",
+    "year": 1900,
+    "price": "8 USD",
+    "images": [
+      "images/1726A.jpeg",
+      "images/1726B.jpeg"
+    ],
+    "reference": "KM# 7",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "mintage": 500000,
+    "peso": "3",
+    "diametro": "19.35",
+    "description": "Una pátina única, estado de museo",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00"
+  },
+  {
+    "id": 1727,
+    "title": "2 Céntimos 1905",
+    "country": "España",
+    "metal": "Bronce",
+    "year": 1905,
+    "price": "8 USD",
+    "images": [
+      "images/1727A.jpeg",
+      "images/1727B.jpeg"
+    ],
+    "reference": "KM# 722",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 5000000,
+    "peso": "2",
+    "diametro": "20",
+    "description": "Alfonso XIII - Ceca Madrid",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "commemorates": "Alfonso XIII"
+  },
+  {
+    "id": 1728,
+    "title": "1 Libra 2000",
+    "country": "Reino Unido",
+    "metal": "Níquel",
+    "year": 2000,
+    "price": "3 USD",
+    "images": [
+      "images/1728A.jpeg",
+      "images/1728B.jpeg"
+    ],
+    "reference": "KM# 1005",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "9.5",
+    "diametro": "22.5",
+    "description": "Dragón de Gales - Isabel II",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "commemorates": "Dragón de Gales - Isabel II"
+  },
+  {
+    "id": 1729,
+    "title": "200 Réis 1929",
+    "country": "Brasil",
+    "metal": "Cuproníquel",
+    "year": 1929,
+    "price": "4 USD",
+    "images": [
+      "images/1729A.jpeg",
+      "images/1729B.jpeg"
+    ],
+    "reference": "KM# 519",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 2440000,
+    "peso": "7.8",
+    "diametro": "25",
+    "description": "",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00"
+  },
+  {
+    "id": 1730,
+    "title": "1 Libra 1983",
+    "country": "Reino Unido",
+    "metal": "Níquel",
+    "year": 1983,
+    "price": "3 USD",
+    "images": [
+      "images/1730A.jpeg",
+      "images/1730B.jpeg"
+    ],
+    "reference": "KM# 933",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "9.5",
+    "diametro": "22.5",
+    "description": "Isabel II",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1731,
+    "title": "200 Réis 1901",
+    "country": "Brasil",
+    "metal": "Cuproníquel",
+    "year": 1901,
+    "price": "3 USD",
+    "images": [
+      "images/1731A.jpeg",
+      "images/1731B.jpeg"
+    ],
+    "reference": "KM# 504",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "8",
+    "diametro": "25",
+    "description": "",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00"
+  },
+  {
+    "id": 1732,
+    "title": "1 Centavo 1898",
+    "country": "Estados Unidos",
+    "metal": "Bronce",
+    "year": 1898,
+    "price": "7 USD",
+    "images": [
+      "images/1732A.jpeg",
+      "images/1732B.jpeg"
+    ],
+    "reference": "KM# 90a",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "3.11",
+    "diametro": "19",
+    "description": "",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00"
+  },
+  {
+    "id": 1733,
+    "title": "2 Francos 1968",
+    "country": "Suiza",
+    "metal": "Cuproníquel",
+    "year": 1968,
+    "price": "3.5 USD",
+    "images": [
+      "images/1733A.jpeg",
+      "images/1733B.jpeg"
+    ],
+    "reference": "KM# 21a",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "8.8",
+    "diametro": "27.4",
+    "description": "Ceca B",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00"
+  },
+  {
+    "id": 1734,
+    "title": "5 Liras 1927",
+    "country": "Italia",
+    "metal": "Plata .835",
+    "year": 1927,
+    "price": "12 USD",
+    "images": [
+      "images/1734A.jpeg",
+      "images/1734B.jpeg"
+    ],
+    "reference": "KM# 67",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "5",
+    "diametro": "23",
+    "description": "Víctor Manuel III - Pátina original",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "commemorates": "Víctor Manuel III"
+  },
+  {
+    "id": 1735,
+    "title": "2 Pesos 2002 Evita",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 2002,
+    "price": "2.5 USD",
+    "images": [
+      "images/1735A.jpeg",
+      "images/1735B.jpeg"
+    ],
+    "reference": "CJ# 7",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 1995000,
+    "peso": "10.4",
+    "diametro": "30",
+    "description": "Evita - Heterogeneidad del material en la cara de Evita",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "commemorates": "Evita"
+  },
+  {
+    "id": 1736,
+    "title": "2 Euros 2002",
+    "country": "Grecia",
+    "metal": "Bimetálica (centro de níquel-latón en anillo de cuproníquel)",
+    "year": 2002,
+    "price": "4 USD",
+    "images": [
+      "images/1736A.jpeg",
+      "images/1736B.jpeg"
+    ],
+    "reference": "KM# 188",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "8.5",
+    "diametro": "25.75",
+    "description": "Ceca S - ceca S en estrella inferior",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00"
+  },
+  {
+    "id": 1737,
+    "title": "1 Dinar 1925",
+    "country": "Yugoslavia",
+    "metal": "Cuproníquel",
+    "year": 1925,
+    "price": "5 USD",
+    "images": [
+      "images/1737A.jpeg",
+      "images/1737B.jpeg"
+    ],
+    "reference": "KM# 5",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "4.92",
+    "diametro": "23",
+    "description": "Alejandro I",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00"
+  },
+  {
+    "id": 1738,
+    "title": "2 Pesos 2007 Malvinas Argentinas",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 2007,
+    "price": "2.5 USD",
+    "images": [
+      "images/1738A.jpeg",
+      "images/1738B.jpeg"
+    ],
+    "reference": "CJ# 7",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 1995000,
+    "peso": "10.4",
+    "diametro": "30.2",
+    "description": "Malvinas Argentinas",
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "commemorates": "Malvinas Argentinas"
   }
 ]
