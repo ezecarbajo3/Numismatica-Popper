@@ -18871,5 +18871,220 @@
     "description": "Escudo chico - Ceca A",
     "publishedAt": "2026-11-07T14:46:13.855152+00:00",
     "commemorates": "Escudo chico"
+  },
+  {
+    "id": 1761,
+    "title": "1 Peso 1997 Voto femenino",
+    "country": "Argentina",
+    "metal": "Bimetálica",
+    "year": 1997,
+    "price": "3 USD",
+    "images": [
+      "images/1761A.jpeg",
+      "images/1761B.jpeg"
+    ],
+    "reference": "CJ# 6",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "mintage": 1000000,
+    "peso": "6.35",
+    "diametro": "23",
+    "description": "Voto femenino",
+    "publishedAt": "2026-11-07T23:58:20.722520+00:00",
+    "commemorates": "Voto femenino"
+  },
+  {
+    "id": 1762,
+    "title": "10 Libras 1996",
+    "country": "Siria",
+    "metal": "Cuproníquel",
+    "year": 1996,
+    "price": "4.5 USD",
+    "images": [
+      "images/1762A.jpeg",
+      "images/1762B.jpeg"
+    ],
+    "reference": "KM# 124",
+    "grade": "",
+    "grade_short": "",
+    "peso": "7",
+    "diametro": "26.4",
+    "description": "",
+    "publishedAt": "2026-11-07T23:58:20.722520+00:00"
+  },
+  {
+    "id": 1763,
+    "title": "10 Pfennig 1875",
+    "country": "Alemania",
+    "metal": "Cuproníquel",
+    "year": 1875,
+    "price": "4 USD",
+    "images": [
+      "images/1763A.jpeg",
+      "images/1763B.jpeg"
+    ],
+    "reference": "KM# 4",
+    "grade": "",
+    "grade_short": "",
+    "peso": "3.8",
+    "diametro": "21",
+    "description": "Escudo grande",
+    "publishedAt": "2026-11-07T23:58:20.722520+00:00",
+    "commemorates": "Escudo grande"
+  },
+  {
+    "id": 1764,
+    "title": "20 Centésimos 1941",
+    "country": "Italia",
+    "metal": "Acmonital (ferritic)",
+    "year": 1941,
+    "price": "2 USD",
+    "images": [
+      "images/1764A.jpeg",
+      "images/1764B.jpeg"
+    ],
+    "reference": "KM# 75b",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "4",
+    "diametro": "21.7",
+    "description": "Víctor Manuel III - Canto estriado - Ceca R (Roma)",
+    "publishedAt": "2026-11-07T23:58:20.722520+00:00",
+    "commemorates": "Víctor Manuel III - Canto estriado"
+  },
+  {
+    "id": 1765,
+    "title": "20 Centesimi 1920",
+    "country": "Italia",
+    "metal": "Níquel",
+    "year": 1920,
+    "price": "2.5 USD",
+    "images": [
+      "images/1765A.jpeg",
+      "images/1765B.jpeg"
+    ],
+    "reference": "KM# 44",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "4",
+    "diametro": "21.5",
+    "description": "Ceca R (Roma)",
+    "publishedAt": "2026-11-07T23:58:20.722520+00:00"
+  },
+  {
+    "id": 1766,
+    "title": "10 Eslotis 1975 Bolesław Prus",
+    "country": "Polonia",
+    "metal": "Cuproníquel",
+    "year": 1975,
+    "price": "3 USD",
+    "images": [
+      "images/1766A.jpeg",
+      "images/1766B.jpeg"
+    ],
+    "reference": "Y# 73",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "7.7",
+    "diametro": "25",
+    "description": "Bolesław Prus",
+    "publishedAt": "2026-11-07T23:58:20.722520+00:00",
+    "commemorates": "Bolesław Prus"
+  },
+  {
+    "id": 1767,
+    "title": "5 Centavos 1940",
+    "country": "México",
+    "metal": "Cuproníquel",
+    "year": 1940,
+    "price": "3 USD",
+    "images": [
+      "images/1767A.jpeg",
+      "images/1767B.jpeg"
+    ],
+    "reference": "KM# 423",
+    "grade": "",
+    "grade_short": "",
+    "peso": "4",
+    "diametro": "20.5",
+    "description": "Ceca Mo",
+    "publishedAt": "2026-11-07T23:58:20.722520+00:00"
+  },
+  {
+    "id": 1768,
+    "title": "20 Fillér 1894",
+    "country": "Hungría",
+    "metal": "Níquel",
+    "year": 1894,
+    "price": "4.5 USD",
+    "images": [
+      "images/1768A.jpeg",
+      "images/1768B.jpeg"
+    ],
+    "reference": "KM# 483",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "4",
+    "diametro": "21.1",
+    "description": "Ceca KB",
+    "publishedAt": "2026-11-07T23:58:20.722520+00:00"
+  },
+  {
+    "id": 1769,
+    "title": "1 Centavo 1906",
+    "country": "Países Bajos",
+    "metal": "Bronce",
+    "year": 1906,
+    "price": "5 USD",
+    "images": [
+      "images/1769A.jpeg",
+      "images/1769B.jpeg"
+    ],
+    "reference": "KM# 133",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "1.25",
+    "diametro": "14",
+    "description": "",
+    "publishedAt": "2026-11-07T23:58:20.722520+00:00"
+  },
+  {
+    "id": 1770,
+    "title": "25 Paise 1998",
+    "country": "India",
+    "metal": "Acero inoxidable",
+    "year": 1998,
+    "price": "2.5 USD",
+    "images": [
+      "images/1770A.jpeg",
+      "images/1770B.jpeg"
+    ],
+    "reference": "KM# 54",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "2.83",
+    "diametro": "19",
+    "description": "Ceca Mumbai",
+    "publishedAt": "2026-11-07T23:58:20.722520+00:00"
+  },
+  {
+    "id": 1771,
+    "title": "50 Centavos 1925",
+    "country": "Paraguay",
+    "metal": "Cuproníquel",
+    "year": 1925,
+    "price": "2.5 USD",
+    "images": [
+      "images/1771A.jpeg",
+      "images/1771B.jpeg"
+    ],
+    "reference": "KM# 12",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 4000000,
+    "peso": "2",
+    "diametro": "17.2",
+    "description": "",
+    "publishedAt": "2026-11-07T23:58:20.722520+00:00"
   }
 ]
