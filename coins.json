@@ -3459,7 +3459,9 @@
     ],
     "reference": "Y# 10a",
     "grade": "Excelente",
-    "grade_short": "EX"
+    "grade_short": "EX",
+    "status": "sold",
+    "soldAt": "2026-11-07T00:00:12.179420+00:00"
   },
   {
     "id": 516,
@@ -6046,7 +6048,9 @@
     "group_id": "ar-2centavos-1890",
     "group_label": "2 Centavos 1890",
     "peso": 10,
-    "diametro": 30
+    "diametro": 30,
+    "status": "sold",
+    "soldAt": "2026-11-07T00:00:12.179420+00:00"
   },
   {
     "id": 781,
@@ -7748,7 +7752,9 @@
     "commemorates": "Boda Real del Príncipe Carlos y Lady Diana Spencer",
     "description": "Conmemora la Boda Real del Príncipe Carlos y Lady Diana Spencer.",
     "group_id": "uk-25newpence-1981",
-    "group_label": "25 New Pence 1981 - Carlos y Diana"
+    "group_label": "25 New Pence 1981 - Carlos y Diana",
+    "status": "sold",
+    "soldAt": "2026-11-07T00:00:12.179420+00:00"
   },
   {
     "id": 985,
@@ -8539,7 +8545,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Lote de 3 monedas de Serbia del año 2023: 1 Dinar (Banco Nacional), 2 Dinara (Monasterio Gračanica) y 5 Dinara (Monasterio Krušedol).",
-    "publishedAt": "2026-08-22T01:12:55.339717+00:00"
+    "publishedAt": "2026-08-22T01:12:55.339717+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-07T00:00:12.179420+00:00"
   },
   {
     "id": 1142,
@@ -9893,7 +9901,9 @@
     "grade_short": "SC",
     "description": "",
     "publishedAt": "2026-09-02T20:37:19.124704+00:00",
-    "cantidad": 2
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-11-07T00:00:12.179420+00:00"
   },
   {
     "id": 1270,
@@ -12930,7 +12940,9 @@
     "peso": "7",
     "diametro": "26.75",
     "description": "Dr. Kurt Schumacher",
-    "publishedAt": "2026-09-29T15:51:50.301485+00:00"
+    "publishedAt": "2026-09-29T15:51:50.301485+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-07T00:00:12.179420+00:00"
   },
   {
     "id": 1475,
