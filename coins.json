@@ -12509,7 +12509,11 @@
     "diametro": "28",
     "description": "150 aniversario del Nacimiento del mariscal Cáceres",
     "publishedAt": "2026-09-28T23:48:07.353625+00:00",
-    "commemorates": "150 aniversario del Nacimiento del mariscal Cáceres"
+    "commemorates": "150 aniversario del Nacimiento del mariscal Cáceres",
+    "subasta": {
+      "hasta": "2026-11-08T22:00:00-03:00",
+      "url": "https://www.facebook.com/groups/1671498109775960"
+    }
   },
   {
     "id": 1454,
