@@ -19086,5 +19086,219 @@
     "diametro": "17.2",
     "description": "",
     "publishedAt": "2026-11-07T23:58:20.722520+00:00"
+  },
+  {
+    "id": 1772,
+    "title": "100 Liras 1979 FAO",
+    "country": "Italia",
+    "metal": "Acmonital",
+    "year": 1979,
+    "price": "3 USD",
+    "images": [
+      "images/1772A.jpeg",
+      "images/1772B.jpeg"
+    ],
+    "reference": "KM# 106",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "8",
+    "diametro": "27.8",
+    "description": "FAO",
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00",
+    "commemorates": "FAO"
+  },
+  {
+    "id": 1773,
+    "title": "10 Céntimos 1935",
+    "country": "Francia",
+    "metal": "Cuproníquel",
+    "year": 1935,
+    "price": "3 USD",
+    "images": [
+      "images/1773A.jpeg",
+      "images/1773B.jpeg"
+    ],
+    "reference": "KM# 866a",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "4",
+    "diametro": "21",
+    "description": "",
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00"
+  },
+  {
+    "id": 1774,
+    "title": "2 Euros 2002",
+    "country": "Austria",
+    "metal": "Bimetálica (centro de níquel-latón en anillo de cuproníquel)",
+    "year": 2002,
+    "price": "4 USD",
+    "images": [
+      "images/1774A.jpeg",
+      "images/1774B.jpeg"
+    ],
+    "reference": "KM# 3089",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "8.5",
+    "diametro": "25.75",
+    "description": "",
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00"
+  },
+  {
+    "id": 1775,
+    "title": "1 Euro 2002",
+    "country": "Grecia",
+    "metal": "Bimetálica (centro de cuproníquel en anillo de níquel-latón)",
+    "year": 2002,
+    "price": "4 USD",
+    "images": [
+      "images/1775A.jpeg",
+      "images/1775B.jpeg"
+    ],
+    "reference": "KM# 187",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "7.5",
+    "diametro": "23.25",
+    "description": "",
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00"
+  },
+  {
+    "id": 1776,
+    "title": "10 Centavos 1908",
+    "country": "Bolivia",
+    "metal": "Cuproníquel",
+    "year": 1908,
+    "price": "3 USD",
+    "images": [
+      "images/1776A.jpeg",
+      "images/1776B.jpeg"
+    ],
+    "reference": "KM# 174",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "5",
+    "diametro": "25.15",
+    "description": "",
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00"
+  },
+  {
+    "id": 1777,
+    "title": "10 Céntimos 1947",
+    "country": "Paraguay",
+    "metal": "Bronce",
+    "year": 1947,
+    "price": "2.5 USD",
+    "images": [
+      "images/1777A.jpeg",
+      "images/1777B.jpeg"
+    ],
+    "reference": "KM# 22",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "4",
+    "diametro": "21.45",
+    "description": "",
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00"
+  },
+  {
+    "id": 1778,
+    "title": "1/2 Centavo 1985",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1985,
+    "price": "2 USD",
+    "images": [
+      "images/1778A.jpeg",
+      "images/1778B.jpeg"
+    ],
+    "reference": "CJ# 396",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "3.6",
+    "diametro": "19.6",
+    "description": "",
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00"
+  },
+  {
+    "id": 1779,
+    "title": "50 Céntimos 1944",
+    "country": "Paraguay",
+    "metal": "Bronce",
+    "year": 1944,
+    "price": "2.5 USD",
+    "images": [
+      "images/1779A.jpeg",
+      "images/1779B.jpeg"
+    ],
+    "reference": "KM# 24",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 2485000,
+    "peso": "6",
+    "diametro": "25.4",
+    "description": "",
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00"
+  },
+  {
+    "id": 1780,
+    "title": "1 Euro 2002",
+    "country": "Austria",
+    "metal": "Bimetálica (centro de cuproníquel en anillo de níquel-latón)",
+    "year": 2002,
+    "price": "2 USD",
+    "images": [
+      "images/1780A.jpeg",
+      "images/1780B.jpeg"
+    ],
+    "reference": "KM# 3088",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "7.5",
+    "diametro": "23.25",
+    "description": "",
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00",
+    "cantidad": 4
+  },
+  {
+    "id": 1781,
+    "title": "50 Centavos de Euro 2002",
+    "country": "Austria",
+    "metal": "Oro",
+    "year": 2002,
+    "price": "1.5 USD",
+    "images": [
+      "images/1781A.jpeg",
+      "images/1781B.jpeg"
+    ],
+    "reference": "KM# 3087",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "7.8",
+    "diametro": "24.25",
+    "description": "",
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00",
+    "cantidad": 2
+  },
+  {
+    "id": 1782,
+    "title": "20 Céntimos de Euro 2002",
+    "country": "Austria",
+    "metal": "Oro",
+    "year": 2002,
+    "price": "1 USD",
+    "images": [
+      "images/1782A.jpeg",
+      "images/1782B.jpeg"
+    ],
+    "reference": "KM# 3086",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "5.74",
+    "diametro": "22.25",
+    "description": "",
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00",
+    "cantidad": 3
   }
 ]
