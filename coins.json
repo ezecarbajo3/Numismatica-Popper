@@ -3565,7 +3565,11 @@
     "mintage": "762.027",
     "description": "Escasa.",
     "group_id": "ar-20centavos-1882",
-    "group_label": "20 Centavos 1882"
+    "group_label": "20 Centavos 1882",
+    "subasta": {
+      "hasta": "2026-11-08T22:10:00-03:00",
+      "url": "https://www.facebook.com/groups/1671498109775960"
+    }
   },
   {
     "id": 548,
