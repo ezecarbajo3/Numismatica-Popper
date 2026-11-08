@@ -19368,5 +19368,183 @@
     "grade_short": "",
     "description": "AMONEDACIÓN DE CÓRDOBA — Jorge N. Ferrari y Román F. Pardo (Buenos Aires, 1951)\nInstituto Bonaerense de Numismática y Antigüedades · Serie Numismática V\n\nEs la obra clásica sobre la historia monetaria cordobesa. Recorre desde la primera Casa de Moneda del país, fundada en Córdoba en 1815, hasta las acuñaciones concesionadas y la segunda Casa de Moneda de la época de la Confederación. Los autores describen cuño por cuño, con fotografías, láminas y tablas. Por eso, más de 70 años después, coleccionistas e investigadores la siguen citando página por página para identificar variantes.\n\nMás de 440 páginas, con prólogo de Humberto F. Burzio. Incluye un índice de reales cédulas, leyes y decretos de 1772 a 1944, bibliografía e índice onomástico. Está presente en las bibliotecas de la UBA y del Banco Central.\n\nEjemplar de la edición original de 1951, en su cubierta original de editorial, con la viñeta de la moneda cordobesa en tapa. Muchos de los ejemplares que circulan fueron reencuadernados, así que conservar la presentación original le suma valor. Tiene el desgaste propio de sus 75 años en lomo y bordes, con el texto completo.\n\nEs una pieza de biblioteca para quien colecciona provinciales argentinas, y en especial Córdoba.",
     "publishedAt": "2026-11-08T00:17:32.279664+00:00"
+  },
+  {
+    "id": 1787,
+    "title": "20 Rappen 1985",
+    "country": "Suiza",
+    "metal": "Cuproníquel",
+    "year": 1985,
+    "price": "1.5 USD",
+    "images": [
+      "images/1787A.jpeg",
+      "images/1787B.jpeg"
+    ],
+    "reference": "KM# 29a",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "4",
+    "diametro": "21.05",
+    "description": "",
+    "publishedAt": "2026-11-08T00:24:54.899100+00:00"
+  },
+  {
+    "id": 1788,
+    "title": "200 Liras 1990",
+    "country": "Italia",
+    "metal": "Níquel",
+    "year": 1990,
+    "price": "3 USD",
+    "images": [
+      "images/1788A.jpeg",
+      "images/1788B.jpeg"
+    ],
+    "reference": "KM# 135",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "5",
+    "diametro": "24",
+    "description": "Consejo de Estado - Ceca R",
+    "publishedAt": "2026-11-08T00:24:54.899100+00:00",
+    "commemorates": "Consejo de Estado"
+  },
+  {
+    "id": 1789,
+    "title": "200 Liras 1994",
+    "country": "Italia",
+    "metal": "Bronzital",
+    "year": 1994,
+    "price": "3 USD",
+    "images": [
+      "images/1789A.jpeg",
+      "images/1789B.jpeg"
+    ],
+    "reference": "KM# 164",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "5",
+    "diametro": "24",
+    "description": "Arma dei Carabinieri",
+    "publishedAt": "2026-11-08T00:24:54.899100+00:00",
+    "commemorates": "Arma dei Carabinieri"
+  },
+  {
+    "id": 1790,
+    "title": "50 Céntimos de Euro 2002",
+    "country": "Grecia",
+    "metal": "Oro",
+    "year": 2002,
+    "price": "1.5 USD",
+    "images": [
+      "images/1790A.jpeg",
+      "images/1790B.jpeg"
+    ],
+    "reference": "KM# 186",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "7.8",
+    "diametro": "24.25",
+    "description": "",
+    "publishedAt": "2026-11-08T00:24:54.899100+00:00"
+  },
+  {
+    "id": 1791,
+    "title": "10 Céntimos 1862",
+    "country": "Francia",
+    "metal": "Bronce",
+    "year": 1862,
+    "price": "3 USD",
+    "images": [
+      "images/1791A.jpeg",
+      "images/1791B.jpeg"
+    ],
+    "reference": "KM# 798",
+    "grade": "Bueno +",
+    "grade_short": "B+",
+    "mintage": 5463211,
+    "peso": "10",
+    "diametro": "30",
+    "description": "Napoleón III - Ceca A (París)",
+    "publishedAt": "2026-11-08T00:24:54.899100+00:00",
+    "commemorates": "Napoleón III"
+  },
+  {
+    "id": 1792,
+    "title": "500 Liras 1996",
+    "country": "Italia",
+    "metal": "Bimetálica",
+    "year": 1996,
+    "price": "3.5 USD",
+    "images": [
+      "images/1792A.jpeg",
+      "images/1792B.jpeg"
+    ],
+    "reference": "KM# 181",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "6.8",
+    "diametro": "25.75",
+    "description": "ISTAT 70 años",
+    "publishedAt": "2026-11-08T00:24:54.899100+00:00",
+    "commemorates": "ISTAT 70 años"
+  },
+  {
+    "id": 1793,
+    "title": "50 Centavos 1997 Voto femenino",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1997,
+    "price": "2.5 USD",
+    "images": [
+      "images/1793A.jpeg",
+      "images/1793B.jpeg"
+    ],
+    "reference": "CJ# 5",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 2000000,
+    "peso": "5.8",
+    "diametro": "25.2",
+    "description": "Voto femenino",
+    "publishedAt": "2026-11-08T00:24:54.899100+00:00",
+    "commemorates": "Voto femenino"
+  },
+  {
+    "id": 1794,
+    "title": "10 Céntimos de Euro 2008",
+    "country": "Grecia",
+    "metal": "Oro",
+    "year": 2008,
+    "price": "1 USD",
+    "images": [
+      "images/1794A.jpeg",
+      "images/1794B.jpeg"
+    ],
+    "reference": "KM# 211",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "4.1",
+    "diametro": "19.75",
+    "description": "",
+    "publishedAt": "2026-11-08T00:24:54.899100+00:00"
+  },
+  {
+    "id": 1795,
+    "title": "10 Centavos de Euro 2002",
+    "country": "Austria",
+    "metal": "Oro",
+    "year": 2002,
+    "price": "1 USD",
+    "images": [
+      "images/1795A.jpeg",
+      "images/1795B.jpeg"
+    ],
+    "reference": "KM# 3085",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "4.1",
+    "diametro": "19.75",
+    "description": "",
+    "publishedAt": "2026-11-08T00:24:54.899100+00:00"
   }
 ]
