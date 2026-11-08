@@ -19546,5 +19546,27 @@
     "diametro": "19.75",
     "description": "",
     "publishedAt": "2026-11-08T00:24:54.899100+00:00"
+  },
+  {
+    "id": 1796,
+    "title": "Blister x6 Serie Mundial 1978",
+    "country": "Argentina",
+    "year": 1978,
+    "price": "120 USD",
+    "images": [
+      "images/1796A.jpeg",
+      "images/1796B.jpeg",
+      "images/1796C.jpeg",
+      "images/1796D.jpeg",
+      "images/1796E.jpeg",
+      "images/1796F.jpeg",
+      "images/1796G.jpeg",
+      "images/1796H.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Versión de acrílico. Contiene 3 monedas de plata y 3 de bronce. Se encuentra en excelente estado. La mejor presentación!",
+    "publishedAt": "2026-11-08T00:29:15.108176+00:00"
   }
 ]
