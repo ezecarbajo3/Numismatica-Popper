@@ -19300,5 +19300,72 @@
     "description": "",
     "publishedAt": "2026-11-08T00:06:45.117776+00:00",
     "cantidad": 3
+  },
+  {
+    "id": 1783,
+    "title": "Medalla Saavedra",
+    "country": "Argentina",
+    "year": null,
+    "price": "3 USD",
+    "images": [
+      "images/1783A.jpeg",
+      "images/1783B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "",
+    "publishedAt": "2026-11-08T00:17:32.279664+00:00"
+  },
+  {
+    "id": 1784,
+    "title": "Token Hannover 1902",
+    "country": "Reino Unido",
+    "year": 1902,
+    "price": "2 USD",
+    "images": [
+      "images/1784A.jpeg",
+      "images/1784B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "Reina Victoria",
+    "publishedAt": "2026-11-08T00:17:32.279664+00:00"
+  },
+  {
+    "id": 1785,
+    "title": "Lote x8 Euros",
+    "country": "Europa",
+    "year": null,
+    "price": "8 USD",
+    "images": [
+      "images/1785A.jpeg",
+      "images/1785B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "description": "",
+    "publishedAt": "2026-11-08T00:17:32.279664+00:00"
+  },
+  {
+    "id": 1786,
+    "title": "Libro Amonedación de Córdoba 1951",
+    "country": "Argentina",
+    "year": 1951,
+    "price": "40 USD",
+    "images": [
+      "images/1786A.jpeg",
+      "images/1786B.jpeg",
+      "images/1786C.jpeg",
+      "images/1786D.jpeg",
+      "images/1786E.jpeg"
+    ],
+    "reference": "",
+    "grade": "",
+    "grade_short": "",
+    "description": "AMONEDACIÓN DE CÓRDOBA — Jorge N. Ferrari y Román F. Pardo (Buenos Aires, 1951)\nInstituto Bonaerense de Numismática y Antigüedades · Serie Numismática V\n\nEs la obra clásica sobre la historia monetaria cordobesa. Recorre desde la primera Casa de Moneda del país, fundada en Córdoba en 1815, hasta las acuñaciones concesionadas y la segunda Casa de Moneda de la época de la Confederación. Los autores describen cuño por cuño, con fotografías, láminas y tablas. Por eso, más de 70 años después, coleccionistas e investigadores la siguen citando página por página para identificar variantes.\n\nMás de 440 páginas, con prólogo de Humberto F. Burzio. Incluye un índice de reales cédulas, leyes y decretos de 1772 a 1944, bibliografía e índice onomástico. Está presente en las bibliotecas de la UBA y del Banco Central.\n\nEjemplar de la edición original de 1951, en su cubierta original de editorial, con la viñeta de la moneda cordobesa en tapa. Muchos de los ejemplares que circulan fueron reencuadernados, así que conservar la presentación original le suma valor. Tiene el desgaste propio de sus 75 años en lomo y bordes, con el texto completo.\n\nEs una pieza de biblioteca para quien colecciona provinciales argentinas, y en especial Córdoba.",
+    "publishedAt": "2026-11-08T00:17:32.279664+00:00"
   }
 ]
