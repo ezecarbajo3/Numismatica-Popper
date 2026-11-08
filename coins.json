@@ -19588,6 +19588,10 @@
     "grade_short": "SC",
     "description": "Versión de acrílico. Contiene 3 monedas de plata y 3 de bronce. Se encuentra en excelente estado. La mejor presentación!",
     "publishedAt": "2026-11-08T00:29:15.108176+00:00",
-    "cantidad": 1
+    "cantidad": 1,
+    "subasta": {
+      "hasta": "2026-11-08T22:15:00-03:00",
+      "url": "https://www.facebook.com/groups/1671498109775960"
+    }
   }
 ]
