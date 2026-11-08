@@ -18090,7 +18090,9 @@
     "diametro": "23",
     "description": "Mercosur - Escasa",
     "publishedAt": "2026-11-07T12:32:59.594274+00:00",
-    "commemorates": "Mercosur"
+    "commemorates": "Mercosur",
+    "status": "sold",
+    "soldAt": "2026-11-08T11:40:28.999283+00:00"
   },
   {
     "id": 1723,
@@ -18151,7 +18153,9 @@
     "diametro": "22.5",
     "description": "Cardo escocés - Isabel II",
     "publishedAt": "2026-11-07T12:32:59.594274+00:00",
-    "commemorates": "Cardo escocés - Isabel II"
+    "commemorates": "Cardo escocés - Isabel II",
+    "status": "sold",
+    "soldAt": "2026-11-08T11:40:28.999283+00:00"
   },
   {
     "id": 1726,
@@ -18171,7 +18175,9 @@
     "peso": "3",
     "diametro": "19.35",
     "description": "Una pátina única, estado de museo",
-    "publishedAt": "2026-11-07T12:32:59.594274+00:00"
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-08T11:40:28.999283+00:00"
   },
   {
     "id": 1727,
@@ -18330,7 +18336,9 @@
     "diametro": "23",
     "description": "Víctor Manuel III - Pátina original",
     "publishedAt": "2026-11-07T12:32:59.594274+00:00",
-    "commemorates": "Víctor Manuel III"
+    "commemorates": "Víctor Manuel III",
+    "status": "sold",
+    "soldAt": "2026-11-08T11:40:28.999283+00:00"
   },
   {
     "id": 1735,
@@ -19567,6 +19575,8 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Versión de acrílico. Contiene 3 monedas de plata y 3 de bronce. Se encuentra en excelente estado. La mejor presentación!",
-    "publishedAt": "2026-11-08T00:29:15.108176+00:00"
+    "publishedAt": "2026-11-08T00:29:15.108176+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-08T11:40:28.999283+00:00"
   }
 ]
