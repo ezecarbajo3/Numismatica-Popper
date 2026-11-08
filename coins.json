@@ -14688,7 +14688,11 @@
     "diametro": "15.59",
     "description": "Jorge V",
     "publishedAt": "2026-10-24T15:14:36.168994+00:00",
-    "commemorates": "Jorge V"
+    "commemorates": "Jorge V",
+    "subasta": {
+      "hasta": "2026-11-08T22:05:00-03:00",
+      "url": "https://www.facebook.com/groups/1671498109775960"
+    }
   },
   {
     "id": 1560,
