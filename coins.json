@@ -18046,7 +18046,9 @@
     "peso": "2",
     "diametro": "17",
     "description": "",
-    "publishedAt": "2026-11-07T12:32:59.594274+00:00"
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-09T03:21:46.554201+00:00"
   },
   {
     "id": 1720,
@@ -18396,7 +18398,9 @@
     "peso": "8.5",
     "diametro": "25.75",
     "description": "Ceca S - ceca S en estrella inferior",
-    "publishedAt": "2026-11-07T12:32:59.594274+00:00"
+    "publishedAt": "2026-11-07T12:32:59.594274+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-09T03:21:46.554201+00:00"
   },
   {
     "id": 1737,
@@ -18436,7 +18440,9 @@
     "diametro": "30.2",
     "description": "Malvinas Argentinas",
     "publishedAt": "2026-11-07T12:32:59.594274+00:00",
-    "commemorates": "Malvinas Argentinas"
+    "commemorates": "Malvinas Argentinas",
+    "status": "sold",
+    "soldAt": "2026-11-09T03:21:46.554201+00:00"
   },
   {
     "id": 1739,
@@ -18543,7 +18549,9 @@
     "diametro": "27",
     "description": "Óblast Autónomo Hebreo - Ceca SPMD",
     "publishedAt": "2026-11-07T14:09:47.290319+00:00",
-    "commemorates": "Óblast Autónomo Hebreo"
+    "commemorates": "Óblast Autónomo Hebreo",
+    "status": "sold",
+    "soldAt": "2026-11-09T03:21:46.554201+00:00"
   },
   {
     "id": 1744,
@@ -19116,7 +19124,9 @@
     "peso": "2",
     "diametro": "17.2",
     "description": "",
-    "publishedAt": "2026-11-07T23:58:20.722520+00:00"
+    "publishedAt": "2026-11-07T23:58:20.722520+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-09T03:21:46.554201+00:00"
   },
   {
     "id": 1772,
@@ -19193,7 +19203,9 @@
     "peso": "7.5",
     "diametro": "23.25",
     "description": "",
-    "publishedAt": "2026-11-08T00:06:45.117776+00:00"
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-09T03:21:46.554201+00:00"
   },
   {
     "id": 1776,
@@ -19250,7 +19262,9 @@
     "peso": "3.6",
     "diametro": "19.6",
     "description": "",
-    "publishedAt": "2026-11-08T00:06:45.117776+00:00"
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-09T03:21:46.554201+00:00"
   },
   {
     "id": 1779,
@@ -19270,7 +19284,9 @@
     "peso": "6",
     "diametro": "25.4",
     "description": "",
-    "publishedAt": "2026-11-08T00:06:45.117776+00:00"
+    "publishedAt": "2026-11-08T00:06:45.117776+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-09T03:21:46.554201+00:00"
   },
   {
     "id": 1780,
@@ -19290,7 +19306,7 @@
     "diametro": "23.25",
     "description": "",
     "publishedAt": "2026-11-08T00:06:45.117776+00:00",
-    "cantidad": 4
+    "cantidad": 3
   },
   {
     "id": 1781,
@@ -19436,7 +19452,9 @@
     "diametro": "24",
     "description": "Consejo de Estado - Ceca R",
     "publishedAt": "2026-11-08T00:24:54.899100+00:00",
-    "commemorates": "Consejo de Estado"
+    "commemorates": "Consejo de Estado",
+    "status": "sold",
+    "soldAt": "2026-11-09T03:21:46.554201+00:00"
   },
   {
     "id": 1789,
@@ -19516,7 +19534,9 @@
     "diametro": "25.75",
     "description": "ISTAT 70 años",
     "publishedAt": "2026-11-08T00:24:54.899100+00:00",
-    "commemorates": "ISTAT 70 años"
+    "commemorates": "ISTAT 70 años",
+    "status": "sold",
+    "soldAt": "2026-11-09T03:21:46.554201+00:00"
   },
   {
     "id": 1793,
