@@ -18590,7 +18590,9 @@
     "diametro": "26.7",
     "description": "Víctor Manuel III",
     "publishedAt": "2026-11-07T14:09:47.290319+00:00",
-    "commemorates": "Víctor Manuel III"
+    "commemorates": "Víctor Manuel III",
+    "status": "sold",
+    "soldAt": "2026-11-09T03:25:39.634180+00:00"
   },
   {
     "id": 1746,
