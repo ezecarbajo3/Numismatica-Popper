@@ -2348,7 +2348,7 @@
     "group_id": "pe-sol-fauna-2018",
     "group_label": "Fauna 2018",
     "reference": "KM# 410",
-    "cantidad": 3
+    "cantidad": 2
   },
   {
     "id": 391,
@@ -2364,7 +2364,7 @@
     "group_id": "pe-sol-fauna-2017",
     "group_label": "Fauna 2017",
     "reference": "KM# 404",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 392,
@@ -2380,7 +2380,7 @@
     "group_id": "pe-sol-fauna-2019",
     "group_label": "Fauna 2019",
     "reference": "KM# 415",
-    "cantidad": 3
+    "cantidad": 2
   },
   {
     "id": 393,
@@ -2395,7 +2395,9 @@
     ],
     "group_id": "pe-sol-fauna-2017",
     "group_label": "Fauna 2017",
-    "reference": "KM# 403"
+    "reference": "KM# 403",
+    "status": "sold",
+    "soldAt": "2026-11-10T18:54:11.427338+00:00"
   },
   {
     "id": 394,
@@ -2411,7 +2413,7 @@
     "group_id": "pe-sol-fauna-2019",
     "group_label": "Fauna 2019",
     "reference": "KM# 417",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 395,
@@ -2426,7 +2428,9 @@
     ],
     "group_id": "pe-sol-fauna-2018",
     "group_label": "Fauna 2018",
-    "reference": "KM# 409"
+    "reference": "KM# 409",
+    "status": "sold",
+    "soldAt": "2026-11-10T18:54:11.427338+00:00"
   },
   {
     "id": 396,
@@ -2442,7 +2446,7 @@
     "group_id": "pe-sol-fauna-2018",
     "group_label": "Fauna 2018",
     "reference": "KM# 412",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 397,
@@ -2457,7 +2461,9 @@
     ],
     "group_id": "pe-sol-fauna-2017",
     "group_label": "Fauna 2017",
-    "reference": "KM# 405"
+    "reference": "KM# 405",
+    "status": "sold",
+    "soldAt": "2026-11-10T18:54:11.427338+00:00"
   },
   {
     "id": 398,
@@ -2473,7 +2479,7 @@
     "group_id": "pe-sol-fauna-2018",
     "group_label": "Fauna 2018",
     "reference": "KM# 411",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 399,
@@ -2488,7 +2494,9 @@
     ],
     "group_id": "pe-sol-fauna-2019",
     "group_label": "Fauna 2019",
-    "reference": "KM# 419"
+    "reference": "KM# 419",
+    "status": "sold",
+    "soldAt": "2026-11-10T18:54:11.427338+00:00"
   },
   {
     "id": 400,
@@ -2521,7 +2529,7 @@
     "group_id": "pe-sol-ceramicos-2024",
     "group_label": "Cerámicos Precolombinos 2024",
     "reference": "KM# 447",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 402,
@@ -2539,7 +2547,7 @@
     "group_id": "pe-sol-ceramicos-2024",
     "group_label": "Cerámicos Precolombinos 2024",
     "reference": "KM# 449",
-    "cantidad": 3
+    "cantidad": 2
   },
   {
     "id": 403,
@@ -6127,7 +6135,9 @@
     "description": "Limón",
     "group_id": "cr-25colones-2023",
     "group_label": "25 Colones 2023",
-    "reference": "KM# 250"
+    "reference": "KM# 250",
+    "status": "sold",
+    "soldAt": "2026-11-10T18:54:11.427338+00:00"
   },
   {
     "id": 787,
@@ -6144,7 +6154,9 @@
     "description": "Puntarenas",
     "group_id": "cr-25colones-2023",
     "group_label": "25 Colones 2023",
-    "reference": "KM# 248"
+    "reference": "KM# 248",
+    "status": "sold",
+    "soldAt": "2026-11-10T18:54:11.427338+00:00"
   },
   {
     "id": 788,
@@ -6161,7 +6173,9 @@
     "description": "Guanacaste",
     "group_id": "cr-25colones-2023",
     "group_label": "25 Colones 2023",
-    "reference": "KM# 247"
+    "reference": "KM# 247",
+    "status": "sold",
+    "soldAt": "2026-11-10T18:54:11.427338+00:00"
   },
   {
     "id": 789,
@@ -11954,7 +11968,7 @@
     "diametro": "22",
     "description": "Año Aleatorio",
     "publishedAt": "2026-09-18T18:46:07.758513+00:00",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 1428,
@@ -11974,7 +11988,7 @@
     "diametro": "21.8",
     "description": "Año Aleatorio",
     "publishedAt": "2026-09-18T18:46:07.758513+00:00",
-    "cantidad": 6
+    "cantidad": 5
   },
   {
     "id": 1429,
@@ -11994,7 +12008,7 @@
     "diametro": "19.56",
     "description": "Año Aleatorio",
     "publishedAt": "2026-09-18T18:46:07.758513+00:00",
-    "cantidad": 12
+    "cantidad": 11
   },
   {
     "id": 1430,
@@ -12014,7 +12028,7 @@
     "diametro": "17.27",
     "description": "Año Aleatorio",
     "publishedAt": "2026-09-18T18:46:07.758513+00:00",
-    "cantidad": 10
+    "cantidad": 9
   },
   {
     "id": 1431,
@@ -12034,7 +12048,7 @@
     "diametro": "15",
     "description": "Año Aleatorio",
     "publishedAt": "2026-09-18T18:46:07.758513+00:00",
-    "cantidad": 12
+    "cantidad": 11
   },
   {
     "id": 1432,
@@ -12054,7 +12068,7 @@
     "diametro": "18",
     "description": "Año Aleatorio",
     "publishedAt": "2026-09-18T18:46:07.758513+00:00",
-    "cantidad": 4
+    "cantidad": 3
   },
   {
     "id": 1433,
