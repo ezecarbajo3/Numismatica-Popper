@@ -6811,7 +6811,11 @@
     "reference": "KM# 794",
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
-    "description": "ESCASA"
+    "description": "ESCASA",
+    "subasta": {
+      "hasta": "2026-11-11T22:00:00-03:00",
+      "url": "https://www.facebook.com/groups/1671498109775960"
+    }
   },
   {
     "id": 867,
