@@ -8172,7 +8172,11 @@
     "grade_short": "EX",
     "description": "Post Guerra, Escasa",
     "publishedAt": "2026-08-06T20:46:25.046353+00:00",
-    "mintage": 500
+    "mintage": 500,
+    "subasta": {
+      "hasta": "2026-11-11T22:20:00-03:00",
+      "url": "https://www.facebook.com/groups/1671498109775960"
+    }
   },
   {
     "id": 1054,
