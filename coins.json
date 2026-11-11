@@ -3349,7 +3349,7 @@
     "grade_short": "EX+",
     "description": "Unicef",
     "reference": "CJ# 5.4",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 503,
@@ -3367,7 +3367,7 @@
     "description": "San Martín",
     "group_id": "ar-50cents-conmemorativas-2000",
     "group_label": "50 Centavos Conmemorativas 2000",
-    "cantidad": 4,
+    "cantidad": 3,
     "reference": "CJ# 5.8.1"
   },
   {
@@ -3403,7 +3403,7 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Mercosur",
-    "cantidad": 2,
+    "cantidad": 1,
     "reference": "CJ# 5.6"
   },
   {
@@ -3420,7 +3420,7 @@
     "grade": "Excelente +",
     "grade_short": "EX+",
     "description": "Urquiza",
-    "cantidad": 2,
+    "cantidad": 1,
     "reference": "CJ# 6.7.1"
   },
   {
