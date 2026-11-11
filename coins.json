@@ -3668,7 +3668,9 @@
     "reference": "KM# 14",
     "grade": "Muy Bueno",
     "grade_short": "MB",
-    "mintage": "3.000.000"
+    "mintage": "3.000.000",
+    "status": "sold",
+    "soldAt": "2026-11-11T11:56:22.613109+00:00"
   },
   {
     "id": 556,
@@ -15314,7 +15316,9 @@
     "diametro": "32.3",
     "description": "Jorge V - 2do tipo",
     "publishedAt": "2026-10-25T15:20:38.079058+00:00",
-    "commemorates": "Jorge V - 2do tipo"
+    "commemorates": "Jorge V - 2do tipo",
+    "status": "sold",
+    "soldAt": "2026-11-11T11:56:22.613109+00:00"
   },
   {
     "id": 1589,
