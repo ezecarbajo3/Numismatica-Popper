@@ -14615,7 +14615,11 @@
     "description": "",
     "publishedAt": "2026-10-24T15:03:28.538401+00:00",
     "group_id": "ar-20-centavos-1908",
-    "group_label": "20 Centavos 1908"
+    "group_label": "20 Centavos 1908",
+    "subasta": {
+      "hasta": "2026-11-11T22:15:00-03:00",
+      "url": "https://www.facebook.com/groups/1671498109775960"
+    }
   },
   {
     "id": 1554,
