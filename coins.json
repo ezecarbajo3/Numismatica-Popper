@@ -19687,5 +19687,449 @@
       "hasta": "2026-11-08T22:15:00-03:00",
       "url": "https://www.facebook.com/groups/1671498109775960"
     }
+  },
+  {
+    "id": 1797,
+    "title": "6 Peniques 1930",
+    "country": "Reino Unido",
+    "metal": "Plata .500",
+    "year": 1930,
+    "price": "5 USD",
+    "images": [
+      "images/1797A.jpeg",
+      "images/1797B.jpeg"
+    ],
+    "reference": "KM# 832",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "2.83",
+    "diametro": "19.3",
+    "description": "Jorge V - canto estriado",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "commemorates": "Jorge V"
+  },
+  {
+    "id": 1798,
+    "title": "6 Peniques 1945",
+    "country": "Reino Unido",
+    "metal": "Plata .500",
+    "year": 1945,
+    "price": "5 USD",
+    "images": [
+      "images/1798A.jpeg",
+      "images/1798B.jpeg"
+    ],
+    "reference": "KM# 852",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "2.83",
+    "diametro": "19.3",
+    "description": "Jorge VI",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1799,
+    "title": "1 Chelín 1923",
+    "country": "Reino Unido",
+    "metal": "Plata .500",
+    "year": 1923,
+    "price": "10 USD",
+    "images": [
+      "images/1799A.jpeg",
+      "images/1799B.jpeg"
+    ],
+    "reference": "KM# 816a",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "5.66",
+    "diametro": "23.5",
+    "description": "Jorge V - 2do tipo - Increible pátina",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "commemorates": "Jorge V - 2do tipo"
+  },
+  {
+    "id": 1800,
+    "title": "1/2 Franco 1962",
+    "country": "Suiza",
+    "metal": "Plata .835",
+    "year": 1962,
+    "price": "5 USD",
+    "images": [
+      "images/1800A.jpeg",
+      "images/1800B.jpeg"
+    ],
+    "reference": "KM# 24",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "5",
+    "diametro": "23.3",
+    "description": "Francisco Franco",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "commemorates": "Francisco Franco"
+  },
+  {
+    "id": 1801,
+    "title": "3 Peniques 1919",
+    "country": "Reino Unido",
+    "metal": "Plata .925",
+    "year": 1919,
+    "price": "4.5 USD",
+    "images": [
+      "images/1801A.jpeg",
+      "images/1801B.jpeg"
+    ],
+    "reference": "KM# 813",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "1.41",
+    "diametro": "16",
+    "description": "Jorge V",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "commemorates": "Jorge V"
+  },
+  {
+    "id": 1802,
+    "title": "2 Libras 1996",
+    "country": "Siria",
+    "metal": "Acero niquelado",
+    "year": 1996,
+    "price": "4.5 USD",
+    "images": [
+      "images/1802A.jpeg",
+      "images/1802B.jpeg"
+    ],
+    "reference": "KM# 125",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "6",
+    "diametro": "23",
+    "description": "Año único",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00"
+  },
+  {
+    "id": 1803,
+    "title": "5 Chelines 2010",
+    "country": "Kenia",
+    "metal": "Bimetálica",
+    "year": 2010,
+    "price": "4 USD",
+    "images": [
+      "images/1803A.jpeg",
+      "images/1803B.jpeg"
+    ],
+    "reference": "KM# 37.2",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "3.75",
+    "diametro": "19.5",
+    "description": "",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00"
+  },
+  {
+    "id": 1804,
+    "title": "2 (unidad No Legible) 1854",
+    "country": "Argentina - Buenos Aires",
+    "metal": "Cobre",
+    "year": 1854,
+    "price": "5.5 USD",
+    "images": [
+      "images/1804A.jpeg",
+      "images/1804B.jpeg"
+    ],
+    "reference": "CJ# 18",
+    "grade": "Regular +",
+    "grade_short": "R+",
+    "peso": "7.4",
+    "diametro": "31.9",
+    "description": "",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00"
+  },
+  {
+    "id": 1805,
+    "title": "100 Liras 1984",
+    "country": "Vaticano, Ciudad del",
+    "metal": "Acmonital",
+    "year": 1984,
+    "price": "5.5 USD",
+    "images": [
+      "images/1805A.jpeg",
+      "images/1805B.jpeg"
+    ],
+    "reference": "KM# 180",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 342000,
+    "peso": "8",
+    "diametro": "27.75",
+    "description": "Juan Pablo II - Ceca R - Escasa, año único",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00"
+  },
+  {
+    "id": 1806,
+    "title": "500 Liras 1994",
+    "country": "San Marino",
+    "metal": "Bimetálica",
+    "year": 1994,
+    "price": "10.5 USD",
+    "images": [
+      "images/1806A.jpeg",
+      "images/1806B.jpeg"
+    ],
+    "reference": "KM# 314",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 40000,
+    "peso": "6.8",
+    "diametro": "25.8",
+    "description": "Ceca R - RARA",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00"
+  },
+  {
+    "id": 1807,
+    "title": "1 Centavo de Lempira 1957",
+    "country": "Honduras",
+    "metal": "Bronce",
+    "year": 1957,
+    "price": "3.5 USD",
+    "images": [
+      "images/1807A.jpeg",
+      "images/1807B.jpeg"
+    ],
+    "reference": "KM# 77.2",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "1.5",
+    "diametro": "15",
+    "description": "",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00"
+  },
+  {
+    "id": 1808,
+    "title": "2 Centavos 1894",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1894,
+    "price": "4 USD",
+    "images": [
+      "images/1808A.jpeg",
+      "images/1808B.jpeg"
+    ],
+    "reference": "KM# 33",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 2233000,
+    "peso": "10",
+    "diametro": "30",
+    "description": "",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "group_id": "ar-2centavos-1894",
+    "group_label": "2 Centavos 1894"
+  },
+  {
+    "id": 1809,
+    "title": "2 Centavos 1893",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1893,
+    "price": "3.5 USD",
+    "images": [
+      "images/1809A.jpeg",
+      "images/1809B.jpeg"
+    ],
+    "reference": "KM# 33",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 5473000,
+    "peso": "10",
+    "diametro": "30",
+    "description": "",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00"
+  },
+  {
+    "id": 1810,
+    "title": "10 Centavos 1980",
+    "country": "Zimbabue",
+    "metal": "Cuproníquel",
+    "year": 1980,
+    "price": "4 USD",
+    "images": [
+      "images/1810A.jpeg",
+      "images/1810B.jpeg"
+    ],
+    "reference": "KM# 3",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 15000,
+    "peso": "3.82",
+    "diametro": "19.98",
+    "description": "",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00"
+  },
+  {
+    "id": 1811,
+    "title": "20 Centavos 1908",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1908,
+    "price": "8 USD",
+    "images": [
+      "images/1811A.jpeg",
+      "images/1811B.jpeg"
+    ],
+    "reference": "CJ# 59",
+    "grade": "Bueno -",
+    "grade_short": "B-",
+    "mintage": 719128,
+    "peso": "4",
+    "diametro": "21",
+    "description": "RARA",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "group_id": "ar-20-centavos-1908",
+    "group_label": "20 Centavos 1908"
+  },
+  {
+    "id": 1812,
+    "title": "20 Centavos 1899",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1899,
+    "price": "6.5 USD",
+    "images": [
+      "images/1812A.jpeg",
+      "images/1812B.jpeg"
+    ],
+    "reference": "CJ# 55",
+    "grade": "Regular +",
+    "grade_short": "R+",
+    "mintage": 840108,
+    "peso": "4",
+    "diametro": "21",
+    "description": "RARA",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "group_id": "ar-20centavos-1899",
+    "group_label": "20 Centavos 1899"
+  },
+  {
+    "id": 1813,
+    "title": "20 Centavos 1899",
+    "country": "Argentina",
+    "metal": "Cuproníquel",
+    "year": 1899,
+    "price": "4.5 USD",
+    "images": [
+      "images/1813A.jpeg",
+      "images/1813B.jpeg"
+    ],
+    "reference": "CJ# 55",
+    "grade": "Regular",
+    "grade_short": "R",
+    "mintage": 840108,
+    "peso": "4",
+    "diametro": "21",
+    "description": "RARA",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "group_id": "ar-20centavos-1899",
+    "group_label": "20 Centavos 1899"
+  },
+  {
+    "id": 1814,
+    "title": "1 Rappen 1950",
+    "country": "Suiza",
+    "metal": "Bronce",
+    "year": 1950,
+    "price": "2.5 USD",
+    "images": [
+      "images/1814A.jpeg",
+      "images/1814B.jpeg"
+    ],
+    "reference": "KM# 46",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "mintage": 3610000,
+    "peso": "1.5",
+    "diametro": "16",
+    "description": "Ceca B",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00"
+  },
+  {
+    "id": 1815,
+    "title": "10 Rublos 2014 Stary Oskol",
+    "country": "Rusia",
+    "metal": "Latón",
+    "year": 2014,
+    "price": "3.5 USD",
+    "images": [
+      "images/1815A.jpeg",
+      "images/1815B.jpeg"
+    ],
+    "reference": "Y# 1573",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "5.63",
+    "diametro": "22",
+    "description": "Stary Oskol",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "commemorates": "Stary Oskol"
+  },
+  {
+    "id": 1816,
+    "title": "10 Rublos 2016 Petrozavodsk",
+    "country": "Rusia",
+    "metal": "Latón",
+    "year": 2016,
+    "price": "3.5 USD",
+    "images": [
+      "images/1816A.jpeg",
+      "images/1816B.jpeg"
+    ],
+    "reference": "Y# 1725",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "5.63",
+    "diametro": "22",
+    "description": "Petrozavodsk - Ceca СПМД (San Petersburgo)",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "commemorates": "Petrozavodsk"
+  },
+  {
+    "id": 1817,
+    "title": "10 Rublos 2016 Staraya Russa",
+    "country": "Rusia",
+    "metal": "Latón",
+    "year": 2016,
+    "price": "3.5 USD",
+    "images": [
+      "images/1817A.jpeg",
+      "images/1817B.jpeg"
+    ],
+    "reference": "Y# 1726",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "5.63",
+    "diametro": "22",
+    "description": "Staraya Russa",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "commemorates": "Staraya Russa"
+  },
+  {
+    "id": 1818,
+    "title": "10 Rublos 2016 Gátchina",
+    "country": "Rusia",
+    "metal": "Latón",
+    "year": 2016,
+    "price": "3.5 USD",
+    "images": [
+      "images/1818A.jpeg",
+      "images/1818B.jpeg"
+    ],
+    "reference": "Y# 1724",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "5.63",
+    "diametro": "22",
+    "description": "Gátchina - Ceca СПМД",
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "commemorates": "Gátchina"
   }
 ]
