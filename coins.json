@@ -12333,7 +12333,9 @@
     "peso": "2.77",
     "diametro": "20",
     "description": "Imperio Alemán",
-    "publishedAt": "2026-09-28T16:13:38.905023+00:00"
+    "publishedAt": "2026-09-28T16:13:38.905023+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-11T11:58:26.186776+00:00"
   },
   {
     "id": 1444,
