@@ -14324,7 +14324,11 @@
     "diametro": "25.47",
     "description": "terranova - Jorge V - Ceca Ottawa",
     "publishedAt": "2026-10-24T04:52:54.833015+00:00",
-    "commemorates": "terranova - Jorge V"
+    "commemorates": "terranova - Jorge V",
+    "subasta": {
+      "hasta": "2026-11-11T22:05:00-03:00",
+      "url": "https://www.facebook.com/groups/1671498109775960"
+    }
   },
   {
     "id": 1540,
