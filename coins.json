@@ -14219,7 +14219,9 @@
     "description": "Ciudades de Gloria Militar - Nalchik",
     "publishedAt": "2026-10-21T14:52:52.981251+00:00",
     "group_id": "ru-10rublos-2014",
-    "group_label": "10 Rublos 2014"
+    "group_label": "10 Rublos 2014",
+    "status": "sold",
+    "soldAt": "2026-11-11T12:21:07.841653+00:00"
   },
   {
     "id": 1535,
@@ -14240,7 +14242,9 @@
     "description": "Ciudades de Gloria Militar - Kolpino",
     "publishedAt": "2026-10-21T14:52:52.981251+00:00",
     "group_id": "ru-10rublos-2014",
-    "group_label": "10 Rublos 2014"
+    "group_label": "10 Rublos 2014",
+    "status": "sold",
+    "soldAt": "2026-11-11T12:21:07.841653+00:00"
   },
   {
     "id": 1536,
@@ -16713,7 +16717,9 @@
     "diametro": "18.034",
     "description": "Isabel II",
     "publishedAt": "2026-10-28T22:26:52.892657+00:00",
-    "commemorates": "Isabel II"
+    "commemorates": "Isabel II",
+    "status": "sold",
+    "soldAt": "2026-11-11T12:21:07.841653+00:00"
   },
   {
     "id": 1655,
@@ -19388,7 +19394,7 @@
     "diametro": "22.25",
     "description": "",
     "publishedAt": "2026-11-08T00:06:45.117776+00:00",
-    "cantidad": 3
+    "cantidad": 2
   },
   {
     "id": 1783,
