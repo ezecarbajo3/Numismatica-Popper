@@ -12376,7 +12376,11 @@
     "peso": "10",
     "diametro": "27",
     "description": "Napoleón III (laureada). Hermosa pátina",
-    "publishedAt": "2026-09-28T16:13:38.905023+00:00"
+    "publishedAt": "2026-09-28T16:13:38.905023+00:00",
+    "subasta": {
+      "hasta": "2026-11-11T22:10:00-03:00",
+      "url": "https://www.facebook.com/groups/1671498109775960"
+    }
   },
   {
     "id": 1446,
