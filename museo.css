@@ -665,29 +665,6 @@ html.diapos .mf { scroll-snap-align: end; }
   pointer-events: none;
 }
 
-.hero__stage::before {
-  background: radial-gradient(circle at 50% 46%, rgba(var(--gold-rgb), 0.14), transparent 60%);
-}
-
-/* Dos anillos de grabador alrededor de la pieza; el punteado gira muy lento. */
-.hero__orbita {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 112%;
-  aspect-ratio: 1;
-  translate: -50% -50%;
-  margin-top: -6%;
-  color: rgba(var(--gold-rgb), 0.42);
-  pointer-events: none;
-  overflow: visible;
-}
-/* En el celular la moneda comparte la pantalla con el título: sin anillos. */
-@media (max-width: 860px) { .hero__orbita { display: none; } }
-@media (prefers-reduced-motion: no-preference) {
-  .hero__orbita-giro { transform-origin: 200px 200px; animation: sello-gira 140s linear infinite; }
-}
-
 /* home.js escribe --ix / --iy con el puntero: la moneda se inclina apenas. */
 .hero__coin {
   position: relative;
@@ -886,16 +863,6 @@ img.hero__coin.fundido { transition: opacity 0.7s ease, transform 0.9s var(--eas
 }
 
 .coleccion:hover { background: #101010; }
-/* Un marco de filete que aparece al pasar, como en las tarjetas. */
-.coleccion::after {
-  content: "";
-  position: absolute;
-  inset: 8px;
-  border: 1px solid rgba(var(--gold-rgb), 0);
-  pointer-events: none;
-  transition: border-color 0.5s ease;
-}
-.coleccion:hover::after, .coleccion:focus-visible::after { border-color: rgba(var(--gold-rgb), 0.4); }
 .coleccion__label, .coleccion__desc { text-shadow: 0 0 14px var(--ink), 0 0 4px var(--ink); }
 
 .coleccion__img {
@@ -2650,23 +2617,6 @@ body {
   height: 6px;
   border: 1px solid var(--gold);
   transform: rotate(45deg);
-}
-
-/* Tarjetas del catálogo: al pasar, un marco de filete dorado y la moneda se
-   acerca apenas, como al levantarla de la bandeja. Solo con mouse. */
-@media (hover: hover) {
-  .ficha__foto::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border: 1px solid rgba(var(--gold-rgb), 0);
-    border-radius: var(--radius);
-    pointer-events: none;
-    transition: border-color 0.5s ease, inset 0.5s var(--ease);
-  }
-  .ficha:hover .ficha__foto::after { inset: 6px; border-color: rgba(var(--gold-rgb), 0.55); }
-  .ficha__foto img { transition: transform 0.9s var(--ease); }
-  .ficha:hover .ficha__foto img { transform: scale(1.045); }
 }
 
 /* ─── Páginas editoriales (Sobre mí, Cómo comprar, Conservación) ──────────── */
