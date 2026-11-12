@@ -20307,5 +20307,240 @@
     "diametro": "23",
     "description": "",
     "publishedAt": "2026-11-12T17:10:13.031039+00:00"
+  },
+  {
+    "id": 1828,
+    "title": "5 Piastras 1984",
+    "country": "Egipto",
+    "metal": "Bronce",
+    "year": 1984,
+    "price": "3.5 USD",
+    "images": [
+      "images/1828A.jpeg",
+      "images/1828B.jpeg"
+    ],
+    "reference": "KM# 622",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "4.9",
+    "diametro": "23",
+    "description": "",
+    "publishedAt": "2026-11-12T17:37:13.048715+00:00"
+  },
+  {
+    "id": 1829,
+    "title": "50 Xu 1963",
+    "country": "Vietnam del Sur",
+    "metal": "Aluminio",
+    "year": 1963,
+    "price": "10.5 USD",
+    "images": [
+      "images/1829A.jpeg",
+      "images/1829B.jpeg"
+    ],
+    "reference": "KM# 6",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "3.1",
+    "diametro": "30",
+    "description": "",
+    "publishedAt": "2026-11-12T17:37:13.048715+00:00"
+  },
+  {
+    "id": 1830,
+    "title": "1 Centavo 2009 Bicentenario Lincoln",
+    "country": "Estados Unidos",
+    "metal": "Cobre",
+    "year": 2009,
+    "price": "1.5 USD",
+    "images": [
+      "images/1830A.jpeg",
+      "images/1830B.jpeg"
+    ],
+    "reference": "KM# 442",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "2.5",
+    "diametro": "19.05",
+    "description": "Bicentenario Lincoln - Ceca D",
+    "publishedAt": "2026-11-12T17:37:13.048715+00:00",
+    "group_id": "us-1-centavo-2009-bicentenario-lincoln",
+    "group_label": "1 Centavo 2009 Bicentenario Lincoln",
+    "commemorates": "Bicentenario Lincoln"
+  },
+  {
+    "id": 1831,
+    "title": "1 Centavo 2009 Bicentenario Lincoln",
+    "country": "Estados Unidos",
+    "metal": "Cobre",
+    "year": 2009,
+    "price": "1.5 USD",
+    "images": [
+      "images/1831A.jpeg",
+      "images/1831B.jpeg"
+    ],
+    "reference": "KM# 441",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "2.5",
+    "diametro": "19.05",
+    "description": "Bicentenario Lincoln",
+    "publishedAt": "2026-11-12T17:37:13.048715+00:00",
+    "group_id": "us-1-centavo-2009-bicentenario-lincoln",
+    "group_label": "1 Centavo 2009 Bicentenario Lincoln",
+    "commemorates": "Bicentenario Lincoln"
+  },
+  {
+    "id": 1832,
+    "title": "1 Centavo 2009",
+    "country": "Estados Unidos",
+    "metal": "Cobre",
+    "year": 2009,
+    "price": "1.5 USD",
+    "images": [
+      "images/1832A.jpeg",
+      "images/1832B.jpeg"
+    ],
+    "reference": "KM# 443",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "2.5",
+    "diametro": "19.05",
+    "description": "Vida profesional de Lincoln",
+    "publishedAt": "2026-11-12T17:37:13.048715+00:00",
+    "commemorates": "Vida profesional de Lincoln"
+  },
+  {
+    "id": 1833,
+    "title": "1 Dinar 2013",
+    "country": "Túnez",
+    "metal": "Cuproníquel",
+    "year": 2013,
+    "price": "5.5 USD",
+    "images": [
+      "images/1833A.jpeg",
+      "images/1833B.jpeg"
+    ],
+    "reference": "KM# 347",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "10.1",
+    "diametro": "28",
+    "description": "",
+    "publishedAt": "2026-11-12T17:37:13.048715+00:00"
+  },
+  {
+    "id": 1834,
+    "title": "2 Libras 1996",
+    "country": "Siria",
+    "metal": "Acero niquelado",
+    "year": 1996,
+    "price": "4 USD",
+    "images": [
+      "images/1834A.jpeg",
+      "images/1834B.jpeg"
+    ],
+    "reference": "KM# 125",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "6",
+    "diametro": "23",
+    "description": "",
+    "publishedAt": "2026-11-12T17:37:13.048715+00:00"
+  },
+  {
+    "id": 1835,
+    "title": "10 Piastras 1992",
+    "country": "Egipto",
+    "metal": "Bronce",
+    "year": 1992,
+    "price": "3.5 USD",
+    "images": [
+      "images/1835A.jpeg",
+      "images/1835B.jpeg"
+    ],
+    "reference": "KM# 732",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "4.9",
+    "diametro": "23",
+    "description": "",
+    "publishedAt": "2026-11-12T17:37:13.048715+00:00"
+  },
+  {
+    "id": 1836,
+    "title": "5 Bahts 2018",
+    "country": "Tailandia",
+    "metal": "Cuproníquel",
+    "year": 2018,
+    "price": "3 USD",
+    "images": [
+      "images/1836A.jpeg",
+      "images/1836B.jpeg"
+    ],
+    "reference": "Y# 576",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "6",
+    "diametro": "24",
+    "description": "Rama X (Vajiralongkorn)",
+    "publishedAt": "2026-11-12T17:37:13.048715+00:00"
+  },
+  {
+    "id": 1837,
+    "title": "1/2 Dinar 2009",
+    "country": "Túnez",
+    "metal": "Cuproníquel",
+    "year": 2009,
+    "price": "3 USD",
+    "images": [
+      "images/1837A.jpeg",
+      "images/1837B.jpeg"
+    ],
+    "reference": "KM# 346",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "8",
+    "diametro": "23.9",
+    "description": "",
+    "publishedAt": "2026-11-12T17:37:13.048715+00:00"
+  },
+  {
+    "id": 1838,
+    "title": "1 Baht 2018",
+    "country": "Tailandia",
+    "metal": "Níquel",
+    "year": 2018,
+    "price": "2.5 USD",
+    "images": [
+      "images/1838A.jpeg",
+      "images/1838B.jpeg"
+    ],
+    "reference": "Y# 574",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "3",
+    "diametro": "20",
+    "description": "Rama X",
+    "publishedAt": "2026-11-12T17:37:13.048715+00:00"
+  },
+  {
+    "id": 1839,
+    "title": "10 Piastras 2008",
+    "country": "Egipto",
+    "metal": "Níquel",
+    "year": 2008,
+    "price": "4 USD",
+    "images": [
+      "images/1839A.jpeg",
+      "images/1839B.jpeg"
+    ],
+    "reference": "KM# 990",
+    "grade": "",
+    "grade_short": "",
+    "peso": "3.4",
+    "diametro": "19",
+    "description": "",
+    "publishedAt": "2026-11-12T17:37:13.048715+00:00"
   }
 ]
