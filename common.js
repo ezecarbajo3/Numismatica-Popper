@@ -1,19 +1,11 @@
 /**
- * Numismática Popper — helpers compartidos entre el catálogo y la ficha.
+ * Numismática Popper — helpers compartidos por todas las páginas.
  *
- * Estas funciones vivían duplicadas en script.js y detalle.js, y dos de ellas ya
- * habían divergido en silencio:
+ * Constantes de negocio (retención de vendidas, cartel "NUEVO", regla de la
+ * Sala de Rarezas), precios y moneda (USD / ARS), estados de conservación,
+ * imágenes (foto "A", miniaturas, reintentos), títulos y escapeo.
  *
- *   - `getPrimaryImage`: el catálogo prefería la foto que termina en "A", la
- *     ficha tomaba `images[0]` a secas. La moneda 1018 tiene
- *     ["1018C","1018A","1018B"], así que la grilla mostraba una foto y la ficha
- *     otra distinta.
- *   - `attachImgRetry`: la copia de la ficha había perdido el fallback de
- *     miniatura WebP → JPEG original.
- *
- * Se conservó en ambos casos la versión del catálogo, que era la correcta.
- *
- * Se carga con `defer` ANTES de script.js / detalle.js en las dos páginas.
+ * Se carga con `defer` ANTES que el resto de los scripts de cada página.
  */
 
 // ─── Preferencias del sistema ────────────────────────────────────────────────
@@ -184,11 +176,13 @@ function formatCoinPrice(coin, currency = getCurrency(), rate = getBlueRate()) {
     return curARS;
   }
 
-  // USD (por defecto)
+  // USD (por defecto). El dato trae punto decimal ("2.5 USD"); se muestra
+  // con coma, como se escribe acá.
+  const usd = value => escapeHTML(String(value).replace(/(\d)\.(\d)/, '$1,$2'));
   if (coin.original_price) {
-    return `<span class="price-original">${escapeHTML(coin.original_price)}</span> <span class="price-current">${escapeHTML(coin.price)}</span>`;
+    return `<span class="price-original">${usd(coin.original_price)}</span> <span class="price-current">${usd(coin.price)}</span>`;
   }
-  return escapeHTML(coin.price);
+  return usd(coin.price);
 }
 
 window.PopperCurrency = {

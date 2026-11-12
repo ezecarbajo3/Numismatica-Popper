@@ -1,7 +1,7 @@
 """Sella la fecha de alta (publishedAt) de las monedas indicadas.
 
 El badge "NUEVO" de la grilla se muestra durante los primeros días desde
-publishedAt (ver NEW_BADGE_DAYS en script.js). Las monedas sin el campo no
+publishedAt (ver NEW_BADGE_DAYS en common.js). Las monedas sin el campo no
 llevan badge, así que solo hay que sellar las que se acaban de publicar.
 
 Uso:

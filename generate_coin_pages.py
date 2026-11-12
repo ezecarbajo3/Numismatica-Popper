@@ -40,7 +40,8 @@ META_DESC_MAX = 155
 
 # Páginas fijas que van al sitemap además de las monedas.
 # insumos.html ya no va: redirige al catálogo filtrado.
-STATIC_PAGES = ["", "sala.html", "catalogo.html", "envios-y-devoluciones.html", "terminos.html",
+STATIC_PAGES = ["", "sala.html", "catalogo.html", "sobre-mi.html", "como-comprar.html", "conservacion.html",
+                "envios-y-devoluciones.html", "terminos.html",
                 "privacidad.html", "arrepentimiento.html"]
 
 

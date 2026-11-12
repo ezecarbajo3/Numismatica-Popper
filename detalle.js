@@ -149,7 +149,9 @@ function buildThumbStrip(coin) {
     const button = document.createElement("button");
     button.type = "button";
     button.className = `detail-thumb${src === primary ? " is-active" : ""}`;
-    button.setAttribute("aria-label", isVideoSrc(src) ? "Ver video" : `Ver foto ${index + 1}`);
+    const fotosSolo = images.filter(f => !isVideoSrc(f));
+    button.setAttribute("aria-label", isVideoSrc(src) ? "Ver video" : `Ver ${nombreFoto(fotosSolo.indexOf(src), fotosSolo.length).toLowerCase()}`);
+    button.setAttribute("aria-pressed", String(src === primary));
 
     if (isVideoSrc(src)) {
       const video = document.createElement("video");
@@ -175,35 +177,206 @@ function buildThumbStrip(coin) {
         const mainVideo = document.getElementById("detailMainVideo");
         if (mainVideo) mainVideo.play().catch(() => {});
       }
-      thumbsContainer.querySelectorAll(".detail-thumb")
-        .forEach(t => t.classList.toggle("is-active", t === button));
+      thumbsContainer.querySelectorAll(".detail-thumb").forEach(t => {
+        t.classList.toggle("is-active", t === button);
+        t.setAttribute("aria-pressed", String(t === button));
+      });
     });
 
     thumbsContainer.appendChild(button);
   });
 }
 
-// Foto ampliada: la original de ~2800px, entera en pantalla.
+// Foto ampliada con zoom: la original de ~2800px. Se acerca con los botones,
+// la rueda, doble toque o pellizcando, y se arrastra para recorrerla. Abajo se
+// pasa de una foto a otra (anverso, reverso) sin salir.
 function setupVisor() {
   const visor = document.getElementById("visor");
-  const img = document.getElementById("visorImg");
   if (!visor) return;
-  const close = () => {
+  visor.setAttribute("role", "dialog");
+  visor.setAttribute("aria-modal", "true");
+  visor.setAttribute("aria-label", "Foto ampliada");
+  visor.innerHTML = `
+    <div class="visor__escena" id="visorEscena"><img class="visor__img" id="visorImg" alt="" draggable="false" /></div>
+    <div class="visor__barra">
+      <div class="visor__zoom" role="group" aria-label="Zoom">
+        <button type="button" id="visorMenos" aria-label="Alejar">−</button>
+        <button type="button" id="visorMas" aria-label="Acercar">+</button>
+      </div>
+      <div class="moneda-switch visor__caras" id="visorCaras" role="group" aria-label="Foto"></div>
+      <button type="button" class="visor__cerrar" id="visorCerrar" aria-label="Cerrar la foto ampliada">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <p class="visor__pista" id="visorPista">Pellizcá o tocá dos veces para acercar</p>`;
+  const escena = document.getElementById("visorEscena");
+  const img = document.getElementById("visorImg");
+  const caras = document.getElementById("visorCaras");
+  const MAX = 6;
+  let scale = 1, tx = 0, ty = 0, fotos = [], actual = 0, opener = null;
+  const pointers = new Map();
+  let pinch = null, lastTap = 0, moved = false;
+
+  // La foto no se va de la pantalla: como mucho, su borde llega al centro.
+  function clamp() {
+    const r = escena.getBoundingClientRect();
+    const maxX = Math.max(0, (img.offsetWidth * scale - r.width) / 2 + r.width * 0.25 * (scale > 1 ? 1 : 0));
+    const maxY = Math.max(0, (img.offsetHeight * scale - r.height) / 2 + r.height * 0.25 * (scale > 1 ? 1 : 0));
+    tx = Math.min(maxX, Math.max(-maxX, tx));
+    ty = Math.min(maxY, Math.max(-maxY, ty));
+  }
+
+  function paint(animar) {
+    clamp();
+    img.classList.toggle("is-animando", !!animar && !prefersReducedMotion());
+    img.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(${scale})`;
+    escena.classList.toggle("is-acercada", scale > 1.01);
+    document.getElementById("visorMenos").disabled = scale <= 1.01;
+    document.getElementById("visorMas").disabled = scale >= MAX - 0.01;
+    if (scale > 1.01) document.getElementById("visorPista").hidden = true;
+  }
+
+  // Acercar manteniendo fijo el punto (x, y) de la pantalla.
+  function zoomTo(next, x, y, animar) {
+    const r = escena.getBoundingClientRect();
+    const cx = (x ?? r.left + r.width / 2) - (r.left + r.width / 2);
+    const cy = (y ?? r.top + r.height / 2) - (r.top + r.height / 2);
+    next = Math.min(MAX, Math.max(1, next));
+    const k = next / scale;
+    tx = cx - (cx - tx) * k;
+    ty = cy - (cy - ty) * k;
+    scale = next;
+    if (scale === 1) { tx = 0; ty = 0; }
+    paint(animar);
+  }
+
+  function show(index) {
+    actual = index;
+    scale = 1; tx = 0; ty = 0;
+    const src = fotos[index];
+    const token = String(Math.random());
+    img.dataset.token = token;
+    // Primero la que ya está en caché, y la original al llegar.
+    img.src = thumbFor(src);
+    const full = new Image();
+    full.onload = () => { if (img.dataset.token === token && !visor.hidden) img.src = src; };
+    full.src = src;
+    img.alt = `${activeCoin ? activeCoin.title : "Moneda"}: ${nombreFoto(index, fotos.length).toLowerCase()}`;
+    caras.querySelectorAll("button").forEach((b, i) => b.setAttribute("aria-pressed", String(i === index)));
+    paint(false);
+  }
+
+  function open(src) {
+    fotos = getImagesArray(activeCoin).filter(f => !isVideoSrc(f));
+    if (!fotos.length) return;
+    caras.replaceChildren(...fotos.map((_, i) => {
+      const b = el("button", "", nombreFoto(i, fotos.length));
+      b.type = "button";
+      b.addEventListener("click", () => show(i));
+      return b;
+    }));
+    caras.hidden = fotos.length < 2;
+    opener = document.activeElement;
+    visor.hidden = false;
+    document.documentElement.style.overflow = "hidden";
+    document.getElementById("visorPista").hidden = !matchMedia("(pointer: coarse)").matches;
+    show(Math.max(0, fotos.indexOf(src)));
+    document.getElementById("visorCerrar").focus({ preventScroll: true });
+  }
+
+  function close() {
     visor.hidden = true;
     img.removeAttribute("src");
+    pointers.clear();
     document.documentElement.style.overflow = "";
-  };
+    if (opener && opener.focus) opener.focus({ preventScroll: true });
+  }
+
   document.addEventListener("click", (e) => {
     if (!e.target.closest("#detailZoom, #detailMainImage")) return;
     const main = document.getElementById("detailMainImage");
     if (!main || !main.src || main.hidden) return;
-    img.src = main.dataset.fullSrc || main.src;
-    img.alt = main.alt;
-    visor.hidden = false;
-    document.documentElement.style.overflow = "hidden";
+    open(main.dataset.fullSrc || main.src);
   });
-  visor.addEventListener("click", close);
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !visor.hidden) close(); });
+
+  document.getElementById("visorCerrar").addEventListener("click", close);
+  document.getElementById("visorMas").addEventListener("click", () => zoomTo(scale * 1.6, null, null, true));
+  document.getElementById("visorMenos").addEventListener("click", () => zoomTo(scale / 1.6, null, null, true));
+
+  escena.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    zoomTo(scale * (e.deltaY < 0 ? 1.18 : 1 / 1.18), e.clientX, e.clientY, false);
+  }, { passive: false });
+
+  escena.addEventListener("pointerdown", (e) => {
+    escena.setPointerCapture(e.pointerId);
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    moved = false;
+    if (pointers.size === 2) {
+      const [a, b] = [...pointers.values()];
+      pinch = { dist: Math.hypot(a.x - b.x, a.y - b.y), scale };
+    }
+  });
+
+  escena.addEventListener("pointermove", (e) => {
+    const prev = pointers.get(e.pointerId);
+    if (!prev) return;
+    const cur = { x: e.clientX, y: e.clientY };
+    pointers.set(e.pointerId, cur);
+    if (pointers.size === 2 && pinch) {
+      const [a, b] = [...pointers.values()];
+      const dist = Math.hypot(a.x - b.x, a.y - b.y);
+      zoomTo(pinch.scale * dist / pinch.dist, (a.x + b.x) / 2, (a.y + b.y) / 2, false);
+      moved = true;
+    } else if (pointers.size === 1 && scale > 1.01) {
+      tx += cur.x - prev.x;
+      ty += cur.y - prev.y;
+      if (Math.abs(cur.x - prev.x) + Math.abs(cur.y - prev.y) > 2) moved = true;
+      paint(false);
+    }
+  });
+
+  const up = (e) => {
+    if (!pointers.has(e.pointerId)) return;
+    pointers.delete(e.pointerId);
+    if (pointers.size < 2) pinch = null;
+    if (pointers.size || moved) return;
+    // Doble toque (o doble clic): acerca a ese punto, o vuelve a entera.
+    const now = Date.now();
+    if (now - lastTap < 320) {
+      lastTap = 0;
+      zoomTo(scale > 1.01 ? 1 : 2.8, e.clientX, e.clientY, true);
+    } else {
+      lastTap = now;
+      // Un toque sobre el negro, con la foto entera, cierra.
+      if (e.target === escena && scale <= 1.01) close();
+    }
+  };
+  escena.addEventListener("pointerup", up);
+  escena.addEventListener("pointercancel", (e) => { pointers.delete(e.pointerId); pinch = null; });
+
+  document.addEventListener("keydown", (e) => {
+    if (visor.hidden) return;
+    if (e.key === "Escape") close();
+    else if (e.key === "+" || e.key === "=") zoomTo(scale * 1.6, null, null, true);
+    else if (e.key === "-") zoomTo(scale / 1.6, null, null, true);
+    else if (e.key === "ArrowRight" && fotos.length > 1) show((actual + 1) % fotos.length);
+    else if (e.key === "ArrowLeft" && fotos.length > 1) show((actual - 1 + fotos.length) % fotos.length);
+    else if (e.key === "Tab") {
+      // El foco da la vuelta adentro del visor.
+      const items = [...visor.querySelectorAll("button:not([disabled])")].filter(n => n.offsetParent !== null);
+      const first = items[0], last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  window.addEventListener("resize", () => { if (!visor.hidden) paint(false); });
+}
+
+// Con dos fotos son anverso y reverso; con más, se numeran.
+function nombreFoto(index, total) {
+  if (total === 2) return index === 0 ? "Anverso" : "Reverso";
+  return `Foto ${index + 1}`;
 }
 
 // ─── Ficha técnica ───────────────────────────────────────────────────────────
@@ -215,21 +388,33 @@ function renderSpecs(coin) {
   const mintage = coin.mintage
     ? Number(String(coin.mintage).replace(/[.,]/g, "")).toLocaleString("es-AR")
     : "";
+  // De lo que identifica la pieza a lo que la mide. El estado lleva a la guía.
   const rows = [
-    ["Estado", coin.grade],
-    // El año casi siempre ya está en el nombre ("2 Centavos 1896"): no se repite.
-    ["Año", String(coin.title || "").includes(String(coin.year || "")) ? "" : coin.year],
+    ["País", coin.country],
+    ["Año", coin.year],
     ["Metal", coin.metal],
+    ["Estado", coin.grade ? `${coin.grade}${coin.grade_short ? ` (${coin.grade_short})` : ""}` : "", "conservacion.html"],
+    ["Catálogo", coin.reference],
+    ["Tirada", mintage && mintage !== "NaN" ? `${mintage} piezas` : ""],
     ["Peso", coin.peso ? `${formatMedida(coin.peso)} g` : ""],
     ["Diámetro", coin.diametro ? `${formatMedida(coin.diametro)} mm` : ""],
-    ["Tirada", mintage && mintage !== "NaN" ? `${mintage} piezas` : ""],
-    ["Referencia", coin.reference],
-    ["Código", coin.id != null ? String(coin.id) : ""],
+    ["Conmemora", coin.commemorates],
+    ["Código", coin.id != null ? `#${coin.id}` : ""],
   ];
   box.replaceChildren();
-  rows.filter(([, v]) => v != null && String(v).trim() !== "").forEach(([k, v]) => {
+  const sinDato = v => v == null || /^(|s\/f|n\/a|na)$/i.test(String(v).trim());
+  rows.filter(([, v]) => !sinDato(v)).forEach(([k, v, href]) => {
     const row = el("div", "detail-spec-row");
-    row.append(el("dt", "detail-spec-label", k), el("dd", "detail-spec-value", String(v)));
+    const dd = el("dd", "detail-spec-value");
+    if (href) {
+      const a = el("a", "detail-spec-link", String(v));
+      a.href = href;
+      a.title = "Qué significa cada estado de conservación";
+      dd.appendChild(a);
+    } else {
+      dd.textContent = String(v);
+    }
+    row.append(el("dt", "detail-spec-label", k), dd);
     box.appendChild(row);
   });
 }
@@ -251,6 +436,8 @@ function applySoldState(coin) {
 
   const waEl = document.getElementById("detailWhatsapp");
   if (waEl) waEl.hidden = isSold;
+  const garantias = document.getElementById("detailGarantias");
+  if (garantias) garantias.hidden = isSold;
 
   const aviso = document.getElementById("detailVendida");
   if (aviso) {
@@ -285,7 +472,7 @@ function updateCoinContent(coin, { replaceUrl = true } = {}) {
   applyCoinTitle(document.getElementById("detailTitle"), coin.title || "Sin título");
 
   const main = document.getElementById("detailMainImage");
-  if (main) main.alt = coin.title || "Moneda";
+  if (main) main.alt = [coin.title || "Moneda", coin.country].filter(Boolean).join(", ");
 
   const descEl = document.getElementById("detailDescription");
   if (descEl) {
@@ -423,14 +610,19 @@ function renderCoinDetail(coin, groupMembers) {
           <a class="arrow-link" href="#relacionadas">Ver piezas parecidas</a>
         </div>
 
-        <!-- Un solo botón principal; consultar y compartir, como links. -->
+        <!-- Dos botones claros: comprar (el principal) y consultar. Compartir
+             queda como link. -->
         <div class="detail-actions">
           <button type="button" class="btn btn--solid detail-cart" id="detailAddToCart" hidden></button>
-          <div class="detail-links">
-            <a class="link-icono" id="detailWhatsapp" href="#" target="_blank" rel="noopener noreferrer">${ICON_WA}<span>Consultar por WhatsApp</span></a>
-            <button type="button" class="link-icono" id="detailShare">${ICON_SHARE}<span>Compartir</span></button>
-          </div>
+          <a class="btn btn--quiet detail-wa" id="detailWhatsapp" href="#" target="_blank" rel="noopener noreferrer">${ICON_WA}<span>Consultar por WhatsApp</span></a>
+          <button type="button" class="link-icono" id="detailShare">${ICON_SHARE}<span>Compartir</span></button>
         </div>
+
+        <ul class="detail-garantias" id="detailGarantias">
+          <li>La pieza de la foto es la que recibís.</li>
+          <li>Entrega en Parque Rivadavia o envío a todo el país.</li>
+          <li>Pagás recién al coordinar: transferencia o Mercado Pago.</li>
+        </ul>
 
         <div class="detail-nota" id="detailNota" hidden>
           <h2>Nota</h2>
@@ -468,6 +660,8 @@ function renderCoinDetail(coin, groupMembers) {
     }
   });
 
+  setupCompraFija();
+
   // En el celular, el menú de compartir del teléfono (WhatsApp, etc.); en la
   // compu, copiar el link.
   const shareBtn = document.getElementById("detailShare");
@@ -493,6 +687,51 @@ function renderCoinDetail(coin, groupMembers) {
     label.textContent = "Link copiado";
     setTimeout(() => { label.textContent = "Compartir"; }, 2000);
   });
+}
+
+// ─── Compra fija (celular) ───────────────────────────────────────────────────
+
+// En el celular, cuando el botón de comprar quedó arriba (se está leyendo la
+// ficha técnica o mirando piezas parecidas), una barra al pie lo trae de
+// vuelta: nombre, precio y agregar. Mientras se ve, el botón flotante de
+// WhatsApp se corre para no taparla.
+function setupCompraFija() {
+  const boton = document.getElementById("detailAddToCart");
+  if (!boton || !("IntersectionObserver" in window)) return;
+  const barra = el("div", "compra-fija");
+  barra.hidden = true;
+  const info = el("div", "compra-fija__info");
+  const nombre = el("span", "compra-fija__nombre");
+  const precio = el("span", "price compra-fija__precio");
+  info.append(nombre, precio);
+  const btn = el("button", "btn btn--solid compra-fija__btn");
+  btn.type = "button";
+  barra.append(info, btn);
+  document.body.appendChild(barra);
+
+  let fuera = false;
+  const sync = () => {
+    const coin = activeCoin;
+    const comprable = coin && coin.status !== "sold" && hasFixedPrice(coin);
+    const visible = fuera && comprable;
+    barra.hidden = !visible;
+    document.body.classList.toggle("con-compra-fija", !!visible);
+    if (!comprable) return;
+    nombre.textContent = coin.title || "";
+    precio.innerHTML = formatCoinPrice(coin);
+    const inCart = !!(window.PopperCart && window.PopperCart.has(coin.id));
+    btn.textContent = inCart ? "Ver carrito" : "Agregar";
+    btn.setAttribute("aria-label", inCart ? "Ver el carrito" : `Agregar ${coin.title} al carrito`);
+  };
+  btn.addEventListener("click", () => boton.click());
+  new IntersectionObserver(([entry]) => {
+    // Solo cuando el botón quedó ARRIBA de la pantalla, no antes de llegar a él.
+    fuera = !entry.isIntersecting && entry.boundingClientRect.bottom < 0;
+    sync();
+  }).observe(boton);
+  window.addEventListener("popper:cart-updated", sync);
+  window.addEventListener("popper:currency-changed", sync);
+  new MutationObserver(sync).observe(document.getElementById("detailTitle"), { childList: true, subtree: true });
 }
 
 // ─── Piezas parecidas ────────────────────────────────────────────────────────
@@ -528,7 +767,7 @@ function renderRelacionadas(coin) {
   const link = document.getElementById("relacionadasLink");
   link.firstChild.textContent = `Ver todas las de ${country} `;
   link.href = country === "Argentina"
-    ? "catalogo.html?cat=argentina"
+    ? "catalogo.html?origen=argentina"
     : `catalogo.html?pais=${encodeURIComponent(String(coin.country || "").trim())}`;
   section.hidden = false;
 }

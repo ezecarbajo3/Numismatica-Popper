@@ -1,21 +1,32 @@
 /**
  * Numismática Popper — catálogo.
  *
- * Grilla con filtros que se combinan (colección, continente o países de un
- * continente, metal, ingresos de la semana, precio máximo, estado), buscador y
- * orden. Todo el estado vive en la URL (?continente=Europa&metal=Oro&hasta=20):
- * se puede compartir un link filtrado y "volver" desde una ficha deja todo
- * como estaba.
+ * Grilla con filtros que se combinan, buscador y orden. El panel va de lo más
+ * amplio a lo más fino, en el orden en que piensa quien compra:
  *
- * Reglas que vienen del catálogo anterior (script.js) y se conservan:
- *   - Sin búsqueda ni colección, "todas" no muestra libros, medallas, fichas
- *     ni insumos (no son monedas); buscándolos por nombre sí aparecen.
- *   - Las variantes de un mismo grupo (group_id) van en UNA tarjeta, con la
- *     de mejor estado como representante y el precio más bajo como "Desde".
- *   - Las vendidas se ven SOLD_RETENTION_DAYS días y después desaparecen.
- *   - El orden por defecto es el de siempre: país, año, valor facial.
- *   - Nunca se ofrece un filtro que lleva a una grilla vacía: las opciones
- *     sin piezas no se muestran.
+ *   1. Qué buscás   (monedas, inversión, medallas, lotes, libros, insumos)
+ *   2. Origen       (Argentina y sus secciones · resto del mundo por
+ *                    continente y país)
+ *   3. Metal        (familias; en Inversión, la ley de la plata)
+ *   4. Época
+ *   5. Estado de conservación
+ *   6. Precio       (desde / hasta, en la moneda que se está viendo)
+ *   7. Novedades    (ingresos de la semana)
+ *
+ * Reglas:
+ *   - Dentro de un filtro las opciones se SUMAN (Francia o Italia); entre
+ *     filtros se CRUZAN (Francia y plata). Nunca se pisan entre sí.
+ *   - Cada opción dice cuántas piezas tiene con el resto de los filtros
+ *     aplicados. Las que quedan en cero se ven apagadas y no se pueden tocar:
+ *     desde el panel no se llega a una grilla vacía.
+ *   - Todo el estado vive en la URL. Cada cambio suma un paso al historial:
+ *     "atrás" deshace el último filtro y un link filtrado se puede compartir.
+ *     Lo que viene en la URL y no existe (un país sin piezas, un metal mal
+ *     escrito) se descarta en vez de dejar la grilla vacía.
+ *   - Sin búsqueda, se ven solo monedas (ni libros, ni medallas, ni insumos):
+ *     "Qué buscás" lo dice a la vista. Buscando, se busca en todo.
+ *   - Las variantes de un mismo grupo (group_id) van en UNA tarjeta.
+ *   - Las vendidas se ven SOLD_RETENTION_DAYS días, al final.
  *
  * Rendimiento: se dibujan de a PAGE tarjetas ("Mostrar más"), sin blend ni
  * animación por tarjeta. Depende de common.js, categorias.js y museo.js.
@@ -24,34 +35,31 @@
 const PAGE = 48;
 const SCROLL_KEY = 'popper_catalogo_scroll';
 
-// Las colecciones del panel. Argentinas, Mundiales y Económicas ya no son
-// colecciones: se llega por continente, país o precio máximo. Cada una se
-// abre en sus tipos (`tipo`): Inversión por ley, Varios por clase de pieza.
-const CATS = [
-  { key: 'plata',  label: 'Inversión', todas: 'Toda la inversión',
-    match: (c) => isInvestment(c) || metalKey(c) === 'Oro', tipo: investKey },
-  { key: 'varios', label: 'Varios',    todas: 'Todo lo de Varios',
-    match: (c) => isMedalOrToken(c) || isBook(c) || isBlister(c) || isInsumo(c), tipo: variosKey },
+// ─── Definición de los filtros ───────────────────────────────────────────────
+
+const esMoneda = (c) => !(isBook(c) || isMedalOrToken(c) || isInsumo(c));
+const esInversion = (c) => isInvestment(c) || isGoldCoin(c);
+
+// "Qué buscás". `oculto` son claves que solo llegan por links viejos.
+const TIPOS = [
+  { key: 'monedas',   label: 'Monedas',                titulo: 'Monedas',             match: esMoneda },
+  { key: 'inversion', label: 'Inversión: oro y plata', titulo: 'Inversión',           match: esInversion },
+  { key: 'medallas',  label: 'Medallas y fichas',      titulo: 'Medallas y fichas',   match: isMedalOrToken },
+  { key: 'lotes',     label: 'Lotes y blísteres',      titulo: 'Lotes y blísteres',   match: isBlister },
+  { key: 'libros',    label: 'Libros y catálogos',     titulo: 'Libros y catálogos',  match: isBook },
+  { key: 'insumos',   label: 'Insumos',                titulo: 'Insumos',             match: isInsumo },
+  { key: 'todo',      label: 'Todo',                   titulo: 'Todo el catálogo',    match: () => true },
+  { key: 'varios',    label: 'Medallas, fichas, lotes y libros', titulo: 'Varios', oculto: true,
+    match: (c) => isMedalOrToken(c) || isBook(c) || isBlister(c) },
 ];
+const TIPO_DE = new Map(TIPOS.map(t => [t.key, t]));
 
-const VARIOS_TIPOS = ['Blísteres', 'Insumos', 'Libros', 'Lotes', 'Medallas', 'Fichas'];
-
-function investKey(coin) {
-  return isLotePlata(coin) ? 'Lotes de plata' : metalKey(coin);
-}
-
-function variosKey(coin) {
-  if (isInsumo(coin)) return 'Insumos';
-  if (isBook(coin)) return 'Libros';
-  if (isBlisterOnly(coin)) return 'Blísteres';
-  if (isLoteVario(coin)) return 'Lotes';
-  if (isToken(coin)) return 'Fichas';
-  if (isMedal(coin)) return 'Medallas';
-  return '';
-}
-
-// Los rangos fijos de antes (?precio=5-20) se leen como su tope.
-const LEGACY_PRECIO = { '0-5': 5, '5-20': 20, '20-50': 50, '50-100': 100 };
+const EPOCAS = [
+  { key: 'antes-1900', label: 'Hasta 1899',        match: y => y <= 1899 },
+  { key: '1900-1949',  label: '1900 a 1949',       match: y => y >= 1900 && y <= 1949 },
+  { key: '1950-1999',  label: '1950 a 1999',       match: y => y >= 1950 && y <= 1999 },
+  { key: '2000',       label: '2000 en adelante',  match: y => y >= 2000 },
+];
 
 const GRADES = [
   { key: 'SC', label: 'Sin circular' },
@@ -61,6 +69,8 @@ const GRADES = [
   { key: 'R',  label: 'Regular' },
 ];
 
+const METALES = ['Oro', 'Plata', 'Cobre, bronce y latón', 'Níquel y cuproníquel', 'Bimetálicas', 'Aluminio', 'Acero y hierro', 'Otros'];
+
 const SORTS = [
   { key: '',            label: 'País y año' },
   { key: 'nuevas',      label: 'Recién llegadas' },
@@ -68,19 +78,46 @@ const SORTS = [
   { key: 'precio-desc', label: 'Precio: de mayor a menor' },
   { key: 'antiguas',    label: 'Las más antiguas primero' },
   { key: 'modernas',    label: 'Las más modernas primero' },
+  { key: 'estado',      label: 'Mejor conservadas primero' },
 ];
 
-// Claves viejas de ?cat= que pueden venir de links compartidos.
-const CAT_ALIASES = { inversion: 'plata', blisters: 'varios', 'medallas-libros': 'varios', insumos: 'varios' };
+// Atajos de precio, según la moneda en la que se están viendo los precios.
+const ATAJOS_PRECIO = { USD: [5, 20, 50, 100], ARS: [10000, 30000, 75000, 150000] };
+
+// ─── Links viejos ────────────────────────────────────────────────────────────
+
+// ?cat= era la colección. Cada clave vieja se traduce a los filtros de ahora.
+const CAT_LEGACY = {
+  argentina:         { arg: true },
+  internacional:     { mundo: true },
+  plata:             { ver: 'inversion' },
+  inversion:         { ver: 'inversion' },
+  economicas:        { mundo: true, precioMax: 5 },
+  varios:            { ver: 'varios' },
+  'medallas-libros': { ver: 'varios' },
+  blisters:          { ver: 'lotes' },
+  insumos:           { ver: 'insumos' },
+  ingresos:          { nuevos: true },
+  todas:             { ver: 'todo' },
+};
+
+// ?tipo= era el tipo dentro de Varios o de Inversión.
+const TIPO_LEGACY = {
+  'Blísteres': 'lotes', 'Lotes': 'lotes', 'Insumos': 'insumos', 'Libros': 'libros',
+  'Medallas': 'medallas', 'Fichas': 'medallas',
+};
+
+const LEGACY_PRECIO = { '0-5': 5, '5-20': 20, '20-50': 50, '50-100': 100 };
 
 const SEARCH_ALIASES = {
   usa: 'estados unidos', eeuu: 'estados unidos', uk: 'reino unido', urss: 'union sovietica',
+  inglaterra: 'reino unido', holanda: 'paises bajos',
   insumo: 'insumos', sobres: 'sobre', carpetas: 'carpeta', folios: 'folio',
   carton: 'cartoncito', cartones: 'cartoncito',
 };
 
 const ARGENTINA_ORDER = {
-  'Argentina - Patria': 1, 'Argentina - Confed. Arg.': 2, 'Argentina - Buenos Aires': 3, 'Argentina': 4,
+  'Argentina - Patria': 1, 'Argentina - Confed. Arg.': 2, 'Argentina - Buenos Aires': 3, 'Argentina': 5,
 };
 
 const COLLATOR = new Intl.Collator('es');
@@ -96,20 +133,26 @@ let groupInfo = new Map();
 let shown = PAGE;
 let currentPool = [];
 let precioTimer;
+let listo = false;
 
-// Qué desplegables están abiertos ('continente', 'metal', 'cont:Europa'). No
-// va a la URL: es cómo quedó el panel, no qué se está filtrando.
-const abiertos = new Set();
+// Qué desplegables están abiertos. No va a la URL: es cómo quedó el panel, no
+// qué se está filtrando. Los dos primeros arrancan abiertos: son por donde se
+// empieza.
+const abiertos = new Set(['ver', 'origen']);
 
 const state = {
-  cat: '',
-  tipos: new Set(),
+  ver: '',                  // '' = automático: monedas, o todo si se está buscando
   q: '',
+  arg: false,               // toda Argentina
+  secciones: new Set(),     // secciones de Argentina sueltas (Patria, Buenos Aires…)
+  mundo: false,             // todo lo que no es Argentina
   continentes: new Set(),
-  paises: new Set(),
+  paises: new Set(),        // países sueltos (nunca Argentina)
   metales: new Set(),
-  precioMax: null,
+  epocas: new Set(),
   estados: new Set(),
+  precioMin: null,          // siempre en dólares
+  precioMax: null,
   nuevos: false,
   orden: '',
 };
@@ -126,33 +169,67 @@ function countryName(key) {
     case 'Argentina - Patria':       return 'Argentina · Patria';
     case 'Argentina - Buenos Aires': return 'Argentina · Buenos Aires';
     case 'Argentina - Confed. Arg.': return 'Argentina · Confederación';
-    default: return key;
+    default: return key.startsWith('Argentina - ') ? `Argentina · ${key.slice(12)}` : key;
   }
 }
 
-// Metales agrupados en familias que un cliente reconoce. La plata se separa
-// por ley porque para quien invierte es lo primero que mira.
-function metalKey(coin) {
+// Cómo se llama cada sección de Argentina dentro del filtro de origen.
+function seccionName(key) {
+  switch (key) {
+    case 'Argentina':                return 'República';
+    case 'Argentina - Patria':       return 'Patria';
+    case 'Argentina - Buenos Aires': return 'Buenos Aires';
+    case 'Argentina - Confed. Arg.': return 'Confederación';
+    default: return key.replace(/^Argentina - /, '');
+  }
+}
+
+function tipoActual() {
+  return state.ver || (searchTokens().length ? 'todo' : 'monedas');
+}
+
+// Un país sin continente cargado en categorias.js no queda afuera del filtro:
+// va a "Otros".
+function contOf(coin) {
+  return continentOf(coin) || 'Otros';
+}
+
+// Metales en familias que un cliente reconoce.
+function metalFamily(coin) {
   const m = String(coin.metal || '').toLowerCase();
   if (!m) return '';
-  if (m.startsWith('oro') && !m.includes('nórdico')) return 'Oro';
+  if (isGoldCoin(coin)) return 'Oro';
+  if (m.includes('plata')) return 'Plata';
+  if (m.includes('bimet')) return 'Bimetálicas';
+  if (m.includes('níquel') || m.includes('niquel') || m.includes('acmonital')) return 'Níquel y cuproníquel';
+  if (m.includes('bronce') || m.includes('cobre') || m.includes('latón') || m.includes('nórdico') || m.includes('bronzital')) return 'Cobre, bronce y latón';
+  if (m.includes('aluminio')) return 'Aluminio';
+  if (m.includes('acero') || m.includes('hierro')) return 'Acero y hierro';
+  return 'Otros';
+}
+
+// En Inversión el metal se abre por ley: para quien invierte es lo primero.
+function metalFino(coin) {
+  if (isLotePlata(coin)) return 'Lotes de plata';
+  if (isGoldCoin(coin)) return 'Oro';
+  const m = String(coin.metal || '').toLowerCase();
   if (m.includes('plata')) {
     const purity = getSilverPurity(coin);
-    return purity ? `Plata .${purity}` : 'Plata';
+    return purity ? `Plata .${purity}` : 'Plata sin ley indicada';
   }
-  if (m.includes('bimet')) return 'Bimetálica';
-  if (m.includes('níquel') || m.includes('niquel')) return 'Níquel y cuproníquel';
-  if (m.includes('bronce') || m.includes('cobre') || m.includes('latón') || m.includes('nórdico')) return 'Bronce, cobre y latón';
-  if (m.includes('aluminio')) return 'Aluminio';
-  if (m.includes('acero') || m.includes('hierro')) return 'Acero';
-  return 'Otros metales';
+  return metalFamily(coin);
+}
+
+function metalOptionKey(coin) {
+  return tipoActual() === 'inversion' ? metalFino(coin) : metalFamily(coin);
 }
 
 function metalOrder(key) {
-  if (key === 'Oro') return [0, 0];
+  const i = METALES.indexOf(key);
+  if (i >= 0) return [i, 0];
   if (key.startsWith('Plata')) return [1, -(parseInt(key.replace(/\D/g, ''), 10) || 0)];
-  if (key === 'Otros metales') return [3, 0];
-  return [2, 0];
+  if (key === 'Lotes de plata') return [1, 1];
+  return [METALES.length, 0];
 }
 
 function gradeKey(coin) {
@@ -163,6 +240,18 @@ function gradeKey(coin) {
   if (rank >= 7) return 'B';
   if (rank >= 4) return 'R';
   return '';
+}
+
+function yearOf(coin) {
+  const y = Number(coin.year);
+  return Number.isFinite(y) && y > 0 ? y : null;
+}
+
+function epocaKey(coin) {
+  const y = yearOf(coin);
+  if (y == null) return '';
+  const e = EPOCAS.find(x => x.match(y));
+  return e ? e.key : '';
 }
 
 // ─── Grupos de variantes ─────────────────────────────────────────────────────
@@ -229,59 +318,104 @@ function publishTs(coin) {
 
 // ─── Búsqueda ────────────────────────────────────────────────────────────────
 
+// Minúsculas, sin acentos y sin signos: "CJ# 19" y "cj 19" son lo mismo.
 function normalizeSearch(str) {
-  return String(str || '').trim().toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '');
+  return String(str || '').toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '')
+    .replace(/[#"'’“”().,;:\/\-–]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
 // El texto de búsqueda de cada pieza se arma una vez al cargar.
 function prepareCoins() {
   for (const coin of allCoins) {
-    coin._searchText = normalizeSearch([
-      coin.id != null ? `${coin.id} #${coin.id}` : '',
-      coin.title, coin.group_label, countryName(countryKey(coin)), coin.country,
-      coin.metal, coin.year, coin.price, coin.description,
-      coin.reference, coin.grade, coin.grade_short, coin.mintage,
-    ].filter(Boolean).join(' '));
+    coin._ref = normalizeSearch(coin.reference);
+    coin._searchText = ` ${normalizeSearch([
+      coin.id, coin.title, coin.group_label, countryName(countryKey(coin)), coin.country,
+      continentOf(coin), coin.metal, coin.year, coin.description, coin.commemorates,
+      coin.reference, coin.grade, coin.grade_short,
+      isBook(coin) ? 'libro catalogo' : '', isInsumo(coin) ? 'insumos' : '',
+      isMedal(coin) ? 'medalla' : '', isToken(coin) ? 'ficha token' : '',
+    ].filter(Boolean).join(' '))} `;
   }
 }
 
-function searchTerm() {
-  const raw = normalizeSearch(state.q);
-  return SEARCH_ALIASES[raw] || raw;
+// La búsqueda se parte en palabras y cada una tiene que estar, en cualquier
+// orden: "argentina 1882" y "1882 argentina" dan lo mismo. Se cachea por texto.
+// Prefijos de los catálogos de referencia (Janson, Krause, Yeoman…).
+const REF_RE = /^(cj|km|y|x|n|pn|tn|sch|kr|jm|c) ?\d+[a-z]?(\.\d+)?$/;
+
+let tokensCache = { q: null, tokens: [], ref: '', frase: '' };
+
+function searchInfo() {
+  if (tokensCache.q === state.q) return tokensCache;
+  const frase = normalizeSearch(state.q);
+  const tokens = frase ? frase.split(' ').map(t => SEARCH_ALIASES[t] || t) : [];
+  // "cj 19", "km 172a": es una referencia de catálogo y se busca exacta, no
+  // como dos palabras sueltas (19 está en todos los 19xx).
+  const ref = REF_RE.test(frase) ? frase.replace(/^([a-z]+) ?/, '$1 ') : '';
+  tokensCache = { q: state.q, tokens, ref, frase };
+  return tokensCache;
+}
+
+function searchTokens() {
+  return searchInfo().tokens;
+}
+
+// Una palabra coincide si alguna del texto EMPIEZA con ella ("peso" encuentra
+// "pesos", pero "oro" no encuentra "tesoro"), o sin su plural ("pesos"
+// encuentra "peso").
+function tokenMatches(text, token) {
+  if (text.includes(` ${token}`)) return true;
+  if (token.length > 4 && token.endsWith('es') && text.includes(` ${token.slice(0, -2)}`)) return true;
+  if (token.length > 3 && token.endsWith('s') && text.includes(` ${token.slice(0, -1)}`)) return true;
+  return false;
+}
+
+function matchesSearch(coin) {
+  const info = searchInfo();
+  if (!info.tokens.length) return true;
+  if (info.ref) {
+    const r = ` ${coin._ref || ''} `;
+    return r.includes(` ${info.ref} `);
+  }
+  const text = coin._searchText || '';
+  return info.tokens.every(t => tokenMatches(text, t));
+}
+
+// Para ordenar: primero lo que tiene la frase tal cual o la referencia exacta.
+function searchScore(coin) {
+  const info = searchInfo();
+  if (!info.frase) return 0;
+  return (coin._searchText || '').includes(` ${info.frase}`) ? 1 : 0;
 }
 
 // ─── Filtrado ────────────────────────────────────────────────────────────────
 
-function collectionOf(key) {
-  return CATS.find(c => c.key === key) || null;
+function geoActivo() {
+  return state.arg || state.mundo || state.secciones.size || state.continentes.size || state.paises.size;
 }
 
 // Cada filtro por separado, para poder contar las opciones de uno aplicando
 // todos los demás (así los números de cada opción son siempre ciertos).
 const MATCHERS = {
-  cat(coin) {
-    const col = collectionOf(state.cat);
-    if (col) return col.match(coin) && (!state.tipos.size || state.tipos.has(col.tipo(coin)));
-    // "Todas": sin búsqueda, solo monedas (ni libros, ni medallas, ni insumos).
-    if (searchTerm()) return true;
-    return !(isBook(coin) || isMedalOrToken(coin) || isInsumo(coin));
-  },
-  q(coin) {
-    const term = searchTerm();
-    return !term || (coin._searchText || '').includes(term);
-  },
-  // Países (todos de un mismo continente) o, si no hay, continentes enteros.
+  ver(coin) { return TIPO_DE.get(tipoActual()).match(coin); },
+  q: matchesSearch,
+  // Origen: todo lo elegido se suma.
   geo(coin) {
-    if (state.paises.size) return state.paises.has(filterCountryOf(coin));
-    return !state.continentes.size || state.continentes.has(continentOf(coin));
+    if (!geoActivo()) return true;
+    if (isArgentinaCoin(coin)) return state.arg || state.secciones.has(countryKey(coin));
+    return state.mundo || state.paises.has(filterCountryOf(coin)) || state.continentes.has(contOf(coin));
   },
-  metales(coin) { return !state.metales.size || state.metales.has(metalKey(coin)); },
-  precio(coin) {
-    if (state.precioMax == null) return true;
-    const p = groupPrice(coin);
-    return Number.isFinite(p) && p <= state.precioMax;
+  metales(coin) {
+    return !state.metales.size || state.metales.has(metalFamily(coin)) || state.metales.has(metalFino(coin));
   },
+  epocas(coin) { return !state.epocas.size || state.epocas.has(epocaKey(coin)); },
   estados(coin) { return !state.estados.size || state.estados.has(gradeKey(coin)); },
+  precio(coin) {
+    if (state.precioMin == null && state.precioMax == null) return true;
+    const p = groupPrice(coin);
+    if (!Number.isFinite(p)) return false;
+    return (state.precioMin == null || p >= state.precioMin) && (state.precioMax == null || p <= state.precioMax);
+  },
   nuevos(coin) { return !state.nuevos || isNewCard(coin); },
 };
 
@@ -293,15 +427,29 @@ function filterExcept(pool, skip) {
   return pool.filter(coin => Object.entries(MATCHERS).every(([k, fn]) => k === skip || fn(coin)));
 }
 
-// Cuántas tarjetas (no monedas sueltas) hay por cada valor de un filtro.
+// Una tarjeta es una pieza suelta o un grupo entero de variantes.
+function cardId(coin) {
+  return coin.group_id ? `g:${coin.group_id}` : `c:${coin.id}`;
+}
+
+// Cuántas tarjetas distintas hay en una lista de monedas.
+function cardCount(coins) {
+  return new Set(coins.map(cardId)).size;
+}
+
+// Cuántas tarjetas (no monedas sueltas) hay por cada valor de un filtro. Se
+// cuenta sobre las monedas, no sobre la que representa a cada grupo: si un
+// grupo tiene una variante de aluminio, suma en aluminio aunque su tapa no lo
+// sea. Así el número de la opción es exactamente lo que se ve al elegirla.
 function countBy(pool, skip, keyFn) {
-  const counts = new Map();
-  for (const coin of collapseGroups(filterExcept(pool, skip))) {
+  const sets = new Map();
+  for (const coin of filterExcept(pool, skip)) {
     const key = keyFn(coin);
     if (!key) continue;
-    counts.set(key, (counts.get(key) || 0) + 1);
+    if (!sets.has(key)) sets.set(key, new Set());
+    sets.get(key).add(cardId(coin));
   }
-  return counts;
+  return new Map([...sets].map(([k, v]) => [k, v.size]));
 }
 
 // ─── Orden ───────────────────────────────────────────────────────────────────
@@ -311,16 +459,20 @@ function faceValue(title) {
   return m ? parseFloat(m[1]) : 1;
 }
 
-function yearOf(coin) {
-  const y = Number(coin.year);
-  return Number.isFinite(y) && y > 0 ? y : null;
+// Lo que no es moneda va después de las monedas en el orden de siempre.
+function claseOrden(coin) {
+  if (isInsumo(coin)) return 4;
+  if (isBook(coin)) return 3;
+  if (isMedalOrToken(coin)) return 2;
+  if (isBlister(coin)) return 1;
+  return 0;
 }
 
 // El orden de siempre: país A→Z (Argentina por secciones), año, valor facial.
 // En Inversión va primero el oro y después manda la ley de la plata.
 function compareDefault(a, b) {
-  if (state.cat === 'plata') {
-    const oro = (metalKey(a) === 'Oro' ? 0 : 1) - (metalKey(b) === 'Oro' ? 0 : 1);
+  if (tipoActual() === 'inversion') {
+    const oro = (isGoldCoin(a) ? 0 : 1) - (isGoldCoin(b) ? 0 : 1);
     if (oro) return oro;
     const lot = (isLotePlata(a) ? 0 : 1) - (isLotePlata(b) ? 0 : 1);
     if (lot) return lot;
@@ -328,6 +480,8 @@ function compareDefault(a, b) {
     if (pur) return pur;
     return (Number(a.year) || 0) - (Number(b.year) || 0);
   }
+  const clase = claseOrden(a) - claseOrden(b);
+  if (clase) return clase;
   const na = countryKey(a), nb = countryKey(b);
   const ga = na.startsWith('Argentina') ? 'Argentina' : na;
   const gb = nb.startsWith('Argentina') ? 'Argentina' : nb;
@@ -342,7 +496,7 @@ function compareDefault(a, b) {
   return faceValue(a.title) - faceValue(b.title);
 }
 
-// Lo que no tiene dato (sin precio, sin año) va siempre al final.
+// Lo que no tiene dato (sin precio, sin año, sin estado) va siempre al final.
 function compareNullable(va, vb, dir) {
   const aOk = va != null && Number.isFinite(va), bOk = vb != null && Number.isFinite(vb);
   if (aOk && !bOk) return -1;
@@ -353,18 +507,25 @@ function compareNullable(va, vb, dir) {
 
 function sortCards(cards) {
   const list = cards.slice();
+  const rank = c => gradeRank(c) || null;
   const by = {
     nuevas: (a, b) => publishTs(b) - publishTs(a),
     precio: (a, b) => compareNullable(groupPrice(a), groupPrice(b), 1),
     'precio-desc': (a, b) => compareNullable(groupPrice(a), groupPrice(b), -1),
     antiguas: (a, b) => compareNullable(yearOf(a), yearOf(b), 1),
     modernas: (a, b) => compareNullable(yearOf(a), yearOf(b), -1),
+    estado: (a, b) => compareNullable(rank(a), rank(b), -1),
   }[state.orden];
+  const buscando = !by && searchTokens().length > 0;
   list.sort((a, b) => {
     // Las vendidas, al final: se muestran para que se vea movimiento, pero no
     // le ganan lugar a lo que se puede comprar.
     const sold = (a.status === 'sold') - (b.status === 'sold');
     if (sold) return sold;
+    if (buscando) {
+      const s = searchScore(b) - searchScore(a);
+      if (s) return s;
+    }
     return (by && by(a, b)) || compareDefault(a, b);
   });
   return list;
@@ -372,56 +533,125 @@ function sortCards(cards) {
 
 // ─── URL ─────────────────────────────────────────────────────────────────────
 
-function readUrl() {
-  const p = new URLSearchParams(location.search);
-  let cat = p.get('cat') || p.get('categoria') || p.get('category') || '';
-  cat = CAT_ALIASES[cat] || cat;
-  // Los links viejos usaban ?cat=ingresos y ?cat=todas, y la portada sigue
-  // mandando a Argentinas, Mundiales y Económicas.
-  state.nuevos = p.get('nuevos') === '1' || cat === 'ingresos';
-  state.paises = new Set(p.getAll('pais').map(v => {
-    const n = normalizeCountryValue(v);
-    return n.startsWith('Argentina') ? 'Argentina' : n;
-  }));
-  if (cat === 'argentina') state.paises.add('Argentina');
-  state.continentes = state.paises.size ? new Set()
-    : new Set(p.getAll('continente').filter(k => CONTINENTS.some(c => c.key === k)));
-  const hasta = parseFloat(String(p.get('hasta') || '').replace(',', '.'));
-  state.precioMax = hasta > 0 ? hasta : (LEGACY_PRECIO[p.get('precio')] || null);
-  if (cat === 'economicas') state.precioMax = 5;
-  if (!collectionOf(cat)) cat = '';
-  state.cat = cat;
-  state.tipos = new Set(cat ? p.getAll('tipo') : []);
-  state.q = p.get('q') || p.get('buscar') || p.get('search') || '';
-  state.metales = new Set(p.getAll('metal'));
-  state.estados = new Set(p.getAll('estado').filter(k => GRADES.some(g => g.key === k)));
-  state.orden = SORTS.some(s => s.key === p.get('orden')) ? p.get('orden') : '';
+function num(value) {
+  const n = parseFloat(String(value || '').replace(',', '.'));
+  return n > 0 ? n : null;
 }
 
-function writeUrl() {
+function readUrl() {
+  const p = new URLSearchParams(location.search);
+  const legacy = CAT_LEGACY[p.get('cat') || p.get('categoria') || p.get('category') || ''] || {};
+
+  const ver = p.get('ver') || legacy.ver || '';
+  state.ver = TIPO_DE.has(ver) ? ver : '';
+  state.q = p.get('q') || p.get('buscar') || p.get('search') || '';
+
+  const origen = p.getAll('origen');
+  state.arg = origen.includes('argentina') || !!legacy.arg;
+  state.mundo = origen.includes('mundo') || !!legacy.mundo;
+  state.secciones = new Set(p.getAll('seccion').map(v => normalizeCountryValue(v.startsWith('Argentina') ? v : `Argentina - ${v}`))
+    .map(v => (v === 'Argentina - República' ? 'Argentina' : v)));
+  state.continentes = new Set(p.getAll('continente'));
+  state.paises = new Set();
+  p.getAll('pais').forEach(v => {
+    const n = normalizeCountryValue(v);
+    if (n === 'Argentina') state.arg = true;
+    else if (n.startsWith('Argentina')) state.secciones.add(n);
+    else state.paises.add(n);
+  });
+
+  state.metales = new Set(p.getAll('metal'));
+  // ?tipo= viejo: un tipo de Varios pasa a "Qué buscás"; uno de Inversión, a metal.
+  p.getAll('tipo').forEach(v => {
+    if (TIPO_LEGACY[v]) state.ver = TIPO_LEGACY[v];
+    else state.metales.add(v);
+  });
+  state.epocas = new Set(p.getAll('epoca').filter(k => EPOCAS.some(e => e.key === k)));
+  state.estados = new Set(p.getAll('estado').filter(k => GRADES.some(g => g.key === k)));
+  state.precioMin = num(p.get('desde'));
+  state.precioMax = num(p.get('hasta')) || LEGACY_PRECIO[p.get('precio')] || legacy.precioMax || null;
+  if (state.precioMin != null && state.precioMax != null && state.precioMin > state.precioMax) {
+    [state.precioMin, state.precioMax] = [state.precioMax, state.precioMin];
+  }
+  state.nuevos = p.get('nuevos') === '1' || !!legacy.nuevos;
+  state.orden = SORTS.some(s => s.key === p.get('orden')) ? p.get('orden') : '';
+  normalizeGeo();
+}
+
+// Lo elegido adentro de algo que ya está elegido entero sobra.
+function normalizeGeo() {
+  if (state.arg) state.secciones.clear();
+  if (state.mundo) { state.continentes.clear(); state.paises.clear(); }
+}
+
+// Con las monedas ya cargadas: lo que vino en la URL y no existe en el
+// catálogo se descarta, así un link viejo o mal escrito no deja la grilla
+// vacía con un filtro fantasma.
+function sanitizeState(pool) {
+  const paises = new Set(), conts = new Set(), secciones = new Set(), metales = new Set(['Lotes de plata']);
+  pool.forEach(c => {
+    if (isArgentinaCoin(c)) secciones.add(countryKey(c));
+    else { paises.add(filterCountryOf(c)); conts.add(contOf(c)); }
+    metales.add(metalFamily(c));
+    metales.add(metalFino(c));
+  });
+  const keep = (set, valid) => [...set].forEach(v => { if (!valid.has(v)) set.delete(v); });
+  keep(state.paises, paises);
+  keep(state.continentes, conts);
+  keep(state.secciones, secciones);
+  keep(state.metales, metales);
+  // Un país suelto de un continente que ya está entero sobra.
+  [...state.paises].forEach(k => { if (state.continentes.has(continenteDePais(k))) state.paises.delete(k); });
+}
+
+let contDePais = new Map();
+
+function continenteDePais(pais) {
+  return contDePais.get(pais) || CONTINENT_OF.get(pais) || 'Otros';
+}
+
+function buildQuery() {
   const p = new URLSearchParams();
-  if (state.cat) p.set('cat', state.cat);
-  state.tipos.forEach(v => p.append('tipo', v));
+  if (state.ver) p.set('ver', state.ver);
   if (state.q.trim()) p.set('q', state.q.trim());
+  if (state.arg) p.append('origen', 'argentina');
+  if (state.mundo) p.append('origen', 'mundo');
+  state.secciones.forEach(v => p.append('seccion', seccionName(v)));
   state.continentes.forEach(v => p.append('continente', v));
   state.paises.forEach(v => p.append('pais', v));
   state.metales.forEach(v => p.append('metal', v));
-  if (state.precioMax != null) p.set('hasta', String(state.precioMax));
+  state.epocas.forEach(v => p.append('epoca', v));
   state.estados.forEach(v => p.append('estado', v));
+  if (state.precioMin != null) p.set('desde', String(state.precioMin));
+  if (state.precioMax != null) p.set('hasta', String(state.precioMax));
   if (state.nuevos) p.set('nuevos', '1');
   if (state.orden) p.set('orden', state.orden);
   const qs = p.toString();
-  history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+  return qs ? `?${qs}` : '';
+}
+
+// `replace` para lo que se va escribiendo (buscador, precio): si cada letra
+// fuera un paso, "atrás" no serviría.
+function writeUrl(replace) {
+  const qs = buildQuery();
+  if (qs === location.search) return;
+  const url = qs || location.pathname;
+  if (replace) history.replaceState(null, '', url);
+  else history.pushState(null, '', url);
 }
 
 function activeFilterCount() {
-  return (state.cat ? Math.max(1, state.tipos.size) : 0) + state.continentes.size + state.paises.size + state.metales.size +
-    (state.precioMax != null ? 1 : 0) + state.estados.size + (state.nuevos ? 1 : 0);
+  return (state.ver && state.ver !== 'monedas' ? 1 : 0) + (state.arg ? 1 : 0) + (state.mundo ? 1 : 0) +
+    state.secciones.size + state.continentes.size + state.paises.size + state.metales.size +
+    state.epocas.size + state.estados.size +
+    (state.precioMin != null || state.precioMax != null ? 1 : 0) + (state.nuevos ? 1 : 0);
 }
 
 // ─── Panel de filtros ────────────────────────────────────────────────────────
 
-// `checked` puede ser 'mixed': un continente con algunos de sus países elegidos.
+// `checked` puede ser 'mixed': algo con solo una parte de lo de adentro elegido.
+// Una opción sin piezas se ve apagada y no se puede tocar (salvo que esté
+// elegida: tiene que poder sacarse).
 function opcion({ label, count, checked, radio, onToggle }) {
   const li = el('li');
   const btn = el('button', `opcion${radio ? ' opcion--radio' : ''}`);
@@ -431,18 +661,25 @@ function opcion({ label, count, checked, radio, onToggle }) {
   const box = el('span', 'opcion__box');
   box.innerHTML = ICON_CHECK;
   btn.append(box, el('span', 'opcion__label', label));
-  if (count != null) btn.appendChild(el('span', 'opcion__count', String(count)));
+  if (count != null) {
+    const n = el('span', 'opcion__count', String(count));
+    n.setAttribute('aria-label', count === 1 ? '1 pieza' : `${count} piezas`);
+    btn.appendChild(n);
+    if (!count && !checked) {
+      btn.disabled = true;
+      btn.classList.add('is-vacia');
+    }
+  }
   btn.addEventListener('click', onToggle);
   li.appendChild(btn);
   return li;
 }
 
 // Una sección del panel: un renglón con el nombre y la flecha que despliega lo
-// de abajo. Todas son iguales (Continente, Metal, Estado, Precio); `resumen`
-// es lo elegido adentro, para que se lea aunque esté cerrada.
-function seccion(key, label, resumen, fill, activo = !!resumen) {
+// de abajo. `resumen` es lo elegido adentro, para que se lea aunque esté cerrada.
+function seccion(key, label, resumen, fill) {
   const box = el('div', 'filtro');
-  const btn = el('button', `filtro__toggle${activo ? ' is-activo' : ''}`);
+  const btn = el('button', `filtro__toggle${resumen ? ' is-activo' : ''}`);
   btn.type = 'button';
   btn.setAttribute('aria-expanded', String(abiertos.has(key)));
   btn.appendChild(el('span', 'filtro__toggle__label', label));
@@ -453,6 +690,7 @@ function seccion(key, label, resumen, fill, activo = !!resumen) {
   btn.addEventListener('click', () => {
     toggleIn(abiertos, key);
     renderFiltros(currentPool);
+    focusToggle(label);
   });
   box.appendChild(btn);
   if (abiertos.has(key)) {
@@ -463,38 +701,11 @@ function seccion(key, label, resumen, fill, activo = !!resumen) {
   return box;
 }
 
-// Un renglón igual a los de las secciones pero que no despliega nada (Todas
-// las monedas, Ingresos de la semana): en el lugar de la flecha, su marca.
-function fila({ label, activo, radio, onClick }) {
-  const box = el('div', 'filtro');
-  const btn = el('button', `filtro__toggle${activo ? ' is-activo' : ''}`);
-  btn.type = 'button';
-  btn.setAttribute('role', radio ? 'radio' : 'checkbox');
-  btn.setAttribute('aria-checked', String(!!activo));
-  btn.appendChild(el('span', 'filtro__toggle__label', label));
-  const marca = el('span', `marca${radio ? ' marca--radio' : ''}`);
-  if (!radio) marca.innerHTML = ICON_CHECK;
-  btn.appendChild(marca);
-  btn.addEventListener('click', onClick);
-  box.appendChild(btn);
-  return box;
-}
-
-// "Toda la inversión" (o todo Varios): elegirla de nuevo la apaga.
-function toggleCat(key) {
-  if (state.cat === key && !state.tipos.size) update({ cat: '', tipos: new Set() });
-  else update({ cat: key, tipos: new Set() });
-}
-
-// Un tipo dentro de una colección; se pueden sumar varios de la misma.
-function toggleTipo(key, tipo) {
-  if (state.cat !== key) {
-    state.cat = key;
-    state.tipos = new Set([tipo]);
-  } else {
-    toggleIn(state.tipos, tipo);
-  }
-  update();
+// El panel se rearma entero en cada cambio: el foco vuelve a donde estaba.
+function focusToggle(label) {
+  const btn = [...document.querySelectorAll('#filtrosCuerpo .filtro__toggle')]
+    .find(b => b.firstChild && b.firstChild.textContent === label);
+  if (btn) btn.focus({ preventScroll: true });
 }
 
 function lista(items) {
@@ -512,229 +723,377 @@ function resumenDe(values) {
   return list.length > 2 ? `${list.slice(0, 2).join(', ')} y ${list.length - 2} más` : list.join(', ');
 }
 
-function formatHasta(usd) {
-  return `Hasta ${String(usd).replace('.', ',')} dólares`;
-}
-
 // Las secciones arrancan abiertas si adentro hay algo elegido.
 function abrirLoElegido() {
-  if (state.continentes.size || state.paises.size) abiertos.add('continente');
+  if (state.secciones.size) abiertos.add('arg');
   state.continentes.forEach(k => abiertos.add(`cont:${k}`));
-  state.paises.forEach(k => { const c = CONTINENT_OF.get(k); if (c) abiertos.add(`cont:${c}`); });
+  state.paises.forEach(k => abiertos.add(`cont:${continenteDePais(k)}`));
+  if (geoActivo()) abiertos.add('origen');
   if (state.metales.size) abiertos.add('metal');
+  if (state.epocas.size) abiertos.add('epoca');
   if (state.estados.size) abiertos.add('estado');
-  if (state.cat) abiertos.add(`cat:${state.cat}`);
-  if (state.precioMax != null) abiertos.add('precio');
+  if (state.precioMin != null || state.precioMax != null) abiertos.add('precio');
 }
 
-// Un continente entero (se puede sumar más de uno). Elegirlo borra los países
-// sueltos y lo abre para que se vean sus países.
+// ─── Origen ──────────────────────────────────────────────────────────────────
+//
+// Un árbol: Argentina → secciones; Resto del mundo → continentes → países.
+// Elegir algo entero limpia lo suelto de adentro; tocar algo de adentro de un
+// entero lo cambia por "todo menos eso". Nada se pisa con otra rama.
+
+let geoInfo = { secciones: new Map(), conts: new Map() };
+
+function toggleArg() {
+  state.arg = !state.arg;
+  state.secciones.clear();
+  update();
+}
+
+function toggleSeccion(key) {
+  if (state.arg) {
+    state.arg = false;
+    state.secciones = new Set([...geoInfo.secciones.keys()].filter(k => k !== key));
+  } else {
+    toggleIn(state.secciones, key);
+    // Con todas las secciones elegidas, es Argentina entera.
+    if (geoInfo.secciones.size > 1 && [...geoInfo.secciones.keys()].every(k => state.secciones.has(k))) {
+      state.arg = true;
+      state.secciones.clear();
+    }
+  }
+  update();
+}
+
+function toggleMundo() {
+  state.mundo = !state.mundo;
+  state.continentes.clear();
+  state.paises.clear();
+  update();
+}
+
 function toggleContinente(key) {
-  if (state.continentes.has(key)) {
+  if (state.mundo) {
+    state.mundo = false;
+    state.continentes = new Set([...geoInfo.conts.keys()].filter(k => k !== key));
+  } else if (state.continentes.has(key)) {
     state.continentes.delete(key);
   } else {
-    state.paises.clear();
     state.continentes.add(key);
-    abiertos.add(`cont:${key}`);
+    [...state.paises].forEach(p => { if (continenteDePais(p) === key) state.paises.delete(p); });
   }
   update();
 }
 
-// Países sueltos, siempre de un mismo continente: elegir uno de otro
-// continente empieza de nuevo.
 function togglePais(key, continente) {
-  state.continentes.clear();
-  if (state.paises.has(key)) {
-    state.paises.delete(key);
+  const hermanos = [...(geoInfo.conts.get(continente)?.paises.keys() || [])];
+  if (state.mundo) {
+    state.mundo = false;
+    state.continentes = new Set([...geoInfo.conts.keys()].filter(k => k !== continente));
+    hermanos.forEach(p => { if (p !== key) state.paises.add(p); });
+  } else if (state.continentes.has(continente)) {
+    state.continentes.delete(continente);
+    hermanos.forEach(p => { if (p !== key) state.paises.add(p); });
   } else {
-    if ([...state.paises].some(k => CONTINENT_OF.get(k) !== continente)) state.paises.clear();
-    state.paises.add(key);
+    toggleIn(state.paises, key);
   }
   update();
 }
 
-function ramaContinente(key, count, paisCounts) {
+// Una rama: casilla + nombre + conteo y, aparte, la flecha que abre lo de adentro.
+function rama({ key, label, count, checked, onToggle, hijos, abrirLabel }) {
   const li = el('li', 'rama');
   const fila = el('div', 'rama__fila');
-  const elegidos = [...state.paises].filter(k => CONTINENT_OF.get(k) === key).length;
-  const checked = state.continentes.has(key) ? true : (elegidos ? 'mixed' : false);
-  const op = opcion({ label: key, count, checked, onToggle: () => toggleContinente(key) });
-  fila.appendChild(op.firstChild);
-  const abrir = el('button', 'rama__abrir');
-  abrir.type = 'button';
-  abrir.setAttribute('aria-expanded', String(abiertos.has(`cont:${key}`)));
-  abrir.setAttribute('aria-label', `Ver países de ${key}`);
-  abrir.innerHTML = `<span class="chev">${ICON_CHEV}</span>`;
-  abrir.addEventListener('click', () => {
-    toggleIn(abiertos, `cont:${key}`);
-    renderFiltros(currentPool);
-  });
-  fila.appendChild(abrir);
+  fila.appendChild(opcion({ label, count, checked, onToggle }).firstChild);
+  if (hijos && hijos.length) {
+    const abrir = el('button', 'rama__abrir');
+    abrir.type = 'button';
+    abrir.setAttribute('aria-expanded', String(abiertos.has(key)));
+    abrir.setAttribute('aria-label', abrirLabel);
+    abrir.innerHTML = `<span class="chev">${ICON_CHEV}</span>`;
+    abrir.addEventListener('click', () => {
+      toggleIn(abiertos, key);
+      renderFiltros(currentPool);
+      const again = document.querySelector(`#filtrosCuerpo .rama__abrir[aria-label="${abrirLabel}"]`);
+      if (again) again.focus({ preventScroll: true });
+    });
+    fila.appendChild(abrir);
+  }
   li.appendChild(fila);
-
-  if (abiertos.has(`cont:${key}`)) {
-    const paises = [...paisCounts.entries()].sort((a, b) => COLLATOR.compare(a[0], b[0]));
+  if (hijos && hijos.length && abiertos.has(key)) {
     const sub = el('ul', 'opciones subopciones');
-    paises.forEach(([k, n]) => sub.appendChild(opcion({
-      label: k, count: n, checked: state.paises.has(k),
-      onToggle: () => togglePais(k, key),
-    })));
+    hijos.forEach(h => sub.appendChild(h));
     li.appendChild(sub);
   }
   return li;
 }
 
-function campoPrecio() {
-  const label = el('label', 'precio-hasta');
-  label.appendChild(el('span', '', 'Hasta'));
-  const input = el('input');
-  input.id = 'precioHasta';
-  input.type = 'text';
-  input.inputMode = 'decimal';
-  input.autocomplete = 'off';
-  input.placeholder = 'sin límite';
-  input.setAttribute('aria-label', 'Precio máximo en dólares');
-  input.value = state.precioMax != null ? String(state.precioMax).replace('.', ',') : '';
-  const aplicar = () => {
-    clearTimeout(precioTimer);
-    const v = parseFloat(input.value.replace(',', '.'));
-    const max = v > 0 ? v : null;
-    if (max !== state.precioMax) update({ precioMax: max });
-  };
-  input.addEventListener('input', () => {
-    clearTimeout(precioTimer);
-    precioTimer = setTimeout(aplicar, 450);
+function renderOrigen(pool) {
+  // Qué hay en el catálogo (para saber qué países existen) y cuántas piezas
+  // tiene cada cosa con el resto de los filtros puestos.
+  const secciones = new Map(), conts = new Map();
+  pool.forEach(c => {
+    if (!TIPO_DE.get(tipoActual()).match(c)) return;
+    if (isArgentinaCoin(c)) { secciones.set(countryKey(c), 0); return; }
+    const cont = contOf(c);
+    if (!conts.has(cont)) conts.set(cont, { n: 0, paises: new Map() });
+    conts.get(cont).paises.set(filterCountryOf(c), 0);
   });
-  input.addEventListener('keydown', e => { if (e.key === 'Enter') { aplicar(); input.blur(); } });
-  label.append(input, el('span', '', 'dólares'));
-  return label;
+  const sinGeo = filterExcept(pool, 'geo');
+  const nArg = cardCount(sinGeo.filter(isArgentinaCoin));
+  const nMundo = cardCount(sinGeo.filter(c => !isArgentinaCoin(c)));
+  countBy(pool, 'geo', c => (isArgentinaCoin(c) ? countryKey(c) : '')).forEach((n, k) => secciones.set(k, n));
+  countBy(pool, 'geo', c => (isArgentinaCoin(c) ? '' : contOf(c))).forEach((n, k) => { if (conts.has(k)) conts.get(k).n = n; });
+  countBy(pool, 'geo', c => (isArgentinaCoin(c) ? '' : filterCountryOf(c))).forEach((n, k) => {
+    const info = conts.get(continenteDePais(k));
+    if (info) info.paises.set(k, n);
+  });
+  geoInfo = { secciones, conts };
+
+  const items = [];
+  if (secciones.size || state.arg) {
+    const orden = [...secciones.keys()].sort((a, b) =>
+      (ARGENTINA_ORDER[a] || 4) - (ARGENTINA_ORDER[b] || 4) || COLLATOR.compare(a, b));
+    items.push(rama({
+      key: 'arg', label: 'Argentina', count: nArg, abrirLabel: 'Ver secciones de Argentina',
+      checked: state.arg ? true : (state.secciones.size ? 'mixed' : false),
+      onToggle: toggleArg,
+      hijos: orden.length > 1 ? orden.map(k => opcion({
+        label: seccionName(k), count: secciones.get(k),
+        checked: state.arg || state.secciones.has(k),
+        onToggle: () => toggleSeccion(k),
+      })) : null,
+    }));
+  }
+
+  if (conts.size || state.mundo) {
+    const algo = state.continentes.size || state.paises.size;
+    items.push(opcion({
+      label: 'Resto del mundo', count: nMundo,
+      checked: state.mundo ? true : (algo ? 'mixed' : false),
+      onToggle: toggleMundo,
+    }));
+    const ordenConts = [...CONTINENTS.map(c => c.key), 'Otros'].filter(k => conts.has(k));
+    const subs = ordenConts.map(k => {
+      const info = conts.get(k);
+      const sueltos = [...state.paises].filter(p => continenteDePais(p) === k).length;
+      const entero = state.mundo || state.continentes.has(k);
+      const paises = [...info.paises.entries()]
+        // Los países sin piezas con estos filtros no se listan (serían decenas
+        // de renglones apagados); los elegidos se ven siempre.
+        .filter(([p, n]) => n > 0 || state.paises.has(p))
+        .sort((a, b) => COLLATOR.compare(a[0], b[0]));
+      return rama({
+        key: `cont:${k}`, label: k, count: info.n, abrirLabel: `Ver países de ${k}`,
+        checked: entero ? true : (sueltos ? 'mixed' : false),
+        onToggle: () => toggleContinente(k),
+        hijos: paises.map(([p, n]) => opcion({
+          label: p, count: n, checked: entero || state.paises.has(p),
+          onToggle: () => togglePais(p, k),
+        })),
+      });
+    });
+    const sub = el('li');
+    const ul = el('ul', 'opciones subopciones');
+    subs.forEach(s => ul.appendChild(s));
+    sub.appendChild(ul);
+    items.push(sub);
+  }
+  return lista(items);
 }
+
+function origenResumen() {
+  const partes = [];
+  if (state.arg) partes.push('Argentina');
+  state.secciones.forEach(k => partes.push(seccionName(k)));
+  if (state.mundo) partes.push('Resto del mundo');
+  state.continentes.forEach(k => partes.push(k));
+  state.paises.forEach(k => partes.push(k));
+  return resumenDe(partes);
+}
+
+// ─── Precio ──────────────────────────────────────────────────────────────────
+
+// El filtro guarda dólares; el campo se muestra y se escribe en la moneda en
+// la que se están viendo los precios.
+function precioAVista(usd) {
+  if (usd == null) return '';
+  if (getCurrency() === 'ARS') return String(Math.round(usd * getBlueRate() / 100) * 100);
+  return String(Math.round(usd * 100) / 100).replace('.', ',');
+}
+
+function precioDeVista(text) {
+  const n = parseFloat(String(text).replace(/\./g, getCurrency() === 'ARS' ? '' : '.').replace(',', '.'));
+  if (!(n > 0)) return null;
+  return getCurrency() === 'ARS' ? Math.round(n / getBlueRate() * 100) / 100 : n;
+}
+
+function formatMonto(usd) {
+  if (getCurrency() === 'ARS') return formatPriceARS(usd * getBlueRate());
+  return `${String(Math.round(usd * 100) / 100).replace('.', ',')} USD`;
+}
+
+function precioResumen() {
+  const a = state.precioMin, b = state.precioMax;
+  if (a != null && b != null) return `De ${formatMonto(a)} a ${formatMonto(b)}`;
+  if (a != null) return `Desde ${formatMonto(a)}`;
+  if (b != null) return `Hasta ${formatMonto(b)}`;
+  return '';
+}
+
+function campoPrecio() {
+  const wrap = el('div', 'precio');
+  const ars = getCurrency() === 'ARS';
+  const fila = el('div', 'precio__campos');
+  const campo = (id, texto, value, key) => {
+    const label = el('label', 'precio__campo');
+    label.appendChild(el('span', '', texto));
+    const input = el('input');
+    input.id = id;
+    input.type = 'text';
+    input.inputMode = 'decimal';
+    input.autocomplete = 'off';
+    input.placeholder = ars ? '$' : 'USD';
+    input.setAttribute('aria-label', `Precio ${texto.toLowerCase()}, en ${ars ? 'pesos' : 'dólares'}`);
+    input.value = precioAVista(value);
+    const aplicar = () => {
+      clearTimeout(precioTimer);
+      const v = precioDeVista(input.value);
+      if (v === state[key]) return;
+      state[key] = v;
+      if (state.precioMin != null && state.precioMax != null && state.precioMin > state.precioMax) {
+        // Al revés: se acomoda solo en vez de dejar la grilla vacía.
+        [state.precioMin, state.precioMax] = [state.precioMax, state.precioMin];
+      }
+      update(null, { replace: true });
+    };
+    input.addEventListener('input', () => {
+      clearTimeout(precioTimer);
+      precioTimer = setTimeout(aplicar, 600);
+    });
+    input.addEventListener('change', aplicar);
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') { aplicar(); input.blur(); } });
+    label.appendChild(input);
+    return label;
+  };
+  fila.append(
+    campo('precioDesde', 'Desde', state.precioMin, 'precioMin'),
+    campo('precioHasta', 'Hasta', state.precioMax, 'precioMax'),
+  );
+  wrap.appendChild(fila);
+
+  // Atajos: un toque y listo.
+  const atajos = el('div', 'precio__atajos');
+  ATAJOS_PRECIO[ars ? 'ARS' : 'USD'].forEach(monto => {
+    const usd = ars ? Math.round(monto / getBlueRate() * 100) / 100 : monto;
+    const activo = state.precioMin == null && state.precioMax != null && Math.abs(state.precioMax - usd) < 0.005;
+    const b = el('button', `atajo${activo ? ' is-activo' : ''}`,
+      `Hasta ${ars ? `$${monto.toLocaleString('es-AR')}` : `${monto} USD`}`);
+    b.type = 'button';
+    b.setAttribute('aria-pressed', String(activo));
+    b.addEventListener('click', () => update(activo ? { precioMax: null } : { precioMin: null, precioMax: usd }));
+    atajos.appendChild(b);
+  });
+  wrap.appendChild(atajos);
+  wrap.appendChild(el('p', 'precio__nota', ars
+    ? 'En pesos, al dólar blue del día.'
+    : 'En dólares. Podés ver todo en pesos desde el menú de arriba.'));
+  return wrap;
+}
+
+// ─── Render del panel ────────────────────────────────────────────────────────
 
 function renderFiltros(pool) {
   const body = document.getElementById('filtrosCuerpo');
-  const keepScroll = document.getElementById('filtros').scrollTop;
-  // El campo de precio se rearma con cada filtro: si se estaba escribiendo
-  // ahí, se le devuelve el foco y el cursor.
+  const scroller = document.getElementById('filtrosScroll');
+  const keepScroll = scroller.scrollTop;
+  // El panel se rearma con cada filtro: si se estaba escribiendo un precio, se
+  // le devuelve el foco y el cursor.
   const act = document.activeElement;
-  const escribiendo = act && act.id === 'precioHasta'
-    ? { value: act.value, start: act.selectionStart, end: act.selectionEnd } : null;
+  const escribiendo = act && (act.id === 'precioHasta' || act.id === 'precioDesde')
+    ? { id: act.id, value: act.value, start: act.selectionStart, end: act.selectionEnd } : null;
   body.replaceChildren();
 
-  // Continente, lo primero: despliega los continentes y, dentro de cada uno,
-  // sus países. El orden de abajo: colecciones, metal, ingresos, precio y
-  // conservación.
-  const geoPool = collapseGroups(filterExcept(pool, 'geo'));
-  const porContinente = new Map();
-  for (const coin of geoPool) {
-    const cont = continentOf(coin);
-    if (!cont) continue;
-    if (!porContinente.has(cont)) porContinente.set(cont, { n: 0, paises: new Map() });
-    const c = porContinente.get(cont);
-    c.n += 1;
-    const pais = filterCountryOf(coin);
-    c.paises.set(pais, (c.paises.get(pais) || 0) + 1);
-  }
-  state.paises.forEach(k => {
-    const cont = CONTINENT_OF.get(k);
-    if (!cont) return;
-    if (!porContinente.has(cont)) porContinente.set(cont, { n: 0, paises: new Map() });
-    const c = porContinente.get(cont);
-    if (!c.paises.has(k)) c.paises.set(k, 0);
-  });
-  const conts = CONTINENTS.filter(c => porContinente.has(c.key) || state.continentes.has(c.key));
-  if (conts.length) {
-    body.appendChild(seccion('continente', 'Continente',
-      resumenDe(state.paises.size ? state.paises : state.continentes), content => {
-        content.appendChild(lista(conts.map(c => {
-          const info = porContinente.get(c.key) || { n: 0, paises: new Map() };
-          return ramaContinente(c.key, info.n, info.paises);
-        })));
-      }));
-  }
-
-  // Todas las monedas, Inversión y Varios: mismos renglones que el resto.
-  // Inversión y Varios se abren en sus tipos.
-  body.appendChild(fila({
-    label: 'Todas las monedas', radio: true, activo: !state.cat,
-    onClick: () => update({ cat: '', tipos: new Set() }),
-  }));
-  const sinCat = collapseGroups(filterExcept(pool, 'cat'));
-  CATS.forEach(col => {
-    const enCol = sinCat.filter(col.match);
-    const activa = state.cat === col.key;
-    if (!enCol.length && !activa) return;
-    const tipoCounts = new Map();
-    enCol.forEach(c => { const k = col.tipo(c); if (k) tipoCounts.set(k, (tipoCounts.get(k) || 0) + 1); });
-    if (activa) state.tipos.forEach(k => { if (!tipoCounts.has(k)) tipoCounts.set(k, 0); });
-    const tipos = col.key === 'varios'
-      ? VARIOS_TIPOS.filter(k => tipoCounts.has(k))
-      : [...tipoCounts.keys()].sort((x, y) => {
-        const [ga, sa] = metalOrder(x), [gb, sb] = metalOrder(y);
-        return ga - gb || sa - sb || COLLATOR.compare(x, y);
-      });
-    body.appendChild(seccion(`cat:${col.key}`, col.label, activa ? resumenDe(state.tipos) : '', content => {
-      content.appendChild(lista([
-        opcion({
-          label: col.todas, count: enCol.length, radio: true, checked: activa && !state.tipos.size,
-          onToggle: () => toggleCat(col.key),
-        }),
-        ...tipos.map(k => opcion({
-          label: k, count: tipoCounts.get(k), checked: activa && state.tipos.has(k),
-          onToggle: () => toggleTipo(col.key, k),
-        })),
-      ]));
-    }, activa));
-  });
-
-  // Metal.
-  const metalCounts = countBy(pool, 'metales', metalKey);
-  state.metales.forEach(k => { if (!metalCounts.has(k)) metalCounts.set(k, 0); });
-  const metales = [...metalCounts.entries()].sort((a, b) => {
-    const [ga, sa] = metalOrder(a[0]), [gb, sb] = metalOrder(b[0]);
-    return ga - gb || sa - sb || COLLATOR.compare(a[0], b[0]);
-  });
-  if (metales.length > 1 || state.metales.size) {
-    body.appendChild(seccion('metal', 'Metal', resumenDe(state.metales), content => {
-      content.appendChild(lista(metales.map(([k, n]) => opcion({
-        label: k, count: n, checked: state.metales.has(k),
-        onToggle: () => { toggleIn(state.metales, k); update(); },
+  // 1. Qué buscás.
+  const tipo = tipoActual();
+  const sinTipo = filterExcept(pool, 'ver');
+  body.appendChild(seccion('ver', 'Qué buscás',
+    tipo !== 'monedas' ? TIPO_DE.get(tipo).titulo : '', content => {
+      content.appendChild(lista(TIPOS.filter(t => !t.oculto || t.key === tipo).map(t => opcion({
+        label: t.label, count: cardCount(sinTipo.filter(t.match)), radio: true, checked: t.key === tipo,
+        // "Monedas" sin buscar es lo de siempre y no ensucia la URL.
+        onToggle: () => update({ ver: t.key === 'monedas' && !searchTokens().length ? '' : t.key }),
       }))));
     }));
+
+  // 2. Origen.
+  const origen = renderOrigen(pool);
+  if (origen.children.length) {
+    body.appendChild(seccion('origen', 'Origen', origenResumen(), content => content.appendChild(origen)));
   }
 
-  // Ingresos de la semana.
-  const nuevosN = collapseGroups(filterExcept(pool, 'nuevos')).filter(isNewCard).length;
-  if (nuevosN || state.nuevos) {
-    body.appendChild(fila({
-      label: 'Ingresos de la semana', activo: state.nuevos,
-      onClick: () => update({ nuevos: !state.nuevos }),
+  // 3. Metal.
+  const metalCounts = countBy(pool, 'metales', metalOptionKey);
+  const metalKeys = tipo === 'inversion'
+    ? [...new Set([...metalCounts.keys(), ...state.metales])]
+    : [...new Set([...METALES, ...state.metales])];
+  metalKeys.sort((a, b) => {
+    const [ga, sa] = metalOrder(a), [gb, sb] = metalOrder(b);
+    return ga - gb || sa - sb || COLLATOR.compare(a, b);
+  });
+  // Un metal elegido que no es de esta lista (una ley fina fuera de
+  // Inversión) se cuenta con su propia clave.
+  const conteoMetal = k => metalCounts.get(k) ??
+    cardCount(filterExcept(pool, 'metales').filter(c => metalFino(c) === k || metalFamily(c) === k));
+  body.appendChild(seccion('metal', 'Metal', resumenDe(state.metales), content => {
+    content.appendChild(lista(metalKeys.map(k => opcion({
+      label: k, count: conteoMetal(k), checked: state.metales.has(k),
+      onToggle: () => { toggleIn(state.metales, k); update(); },
+    }))));
+  }));
+
+  // 4. Época.
+  const epocaCounts = countBy(pool, 'epocas', epocaKey);
+  body.appendChild(seccion('epoca', 'Época',
+    resumenDe(EPOCAS.filter(e => state.epocas.has(e.key)).map(e => e.label)), content => {
+      content.appendChild(lista(EPOCAS.map(e => opcion({
+        label: e.label, count: epocaCounts.get(e.key) || 0, checked: state.epocas.has(e.key),
+        onToggle: () => { toggleIn(state.epocas, e.key); update(); },
+      }))));
     }));
-  }
 
-  // Precio: solo un tope.
-  body.appendChild(seccion('precio', 'Precio',
-    state.precioMax != null ? formatHasta(state.precioMax) : '',
-    content => content.appendChild(campoPrecio())));
-
-  // Estado de conservación.
+  // 5. Estado de conservación.
   const gradeCounts = countBy(pool, 'estados', gradeKey);
-  const grades = GRADES.filter(g => gradeCounts.get(g.key) || state.estados.has(g.key));
-  if (grades.length > 1 || state.estados.size) {
-    const elegidos = GRADES.filter(g => state.estados.has(g.key)).map(g => g.label);
-    body.appendChild(seccion('estado', 'Conservación', resumenDe(elegidos), content => {
-      content.appendChild(lista(grades.map(g => opcion({
-        label: g.label, count: gradeCounts.get(g.key) || 0, checked: state.estados.has(g.key),
+  body.appendChild(seccion('estado', 'Estado',
+    resumenDe(GRADES.filter(g => state.estados.has(g.key)).map(g => g.label)), content => {
+      content.appendChild(lista(GRADES.map(g => opcion({
+        label: `${g.label} (${g.key})`, count: gradeCounts.get(g.key) || 0, checked: state.estados.has(g.key),
         onToggle: () => { toggleIn(state.estados, g.key); update(); },
       }))));
+      const guia = el('a', 'filtro__ayuda', '¿Qué significa cada estado?');
+      guia.href = 'conservacion.html';
+      content.appendChild(guia);
     }));
-  }
 
-  document.getElementById('filtros').scrollTop = keepScroll;
+  // 6. Precio.
+  body.appendChild(seccion('precio', 'Precio', precioResumen(), content => content.appendChild(campoPrecio())));
+
+  // 7. Novedades: un renglón con su casilla, sin desplegar.
+  const nuevosN = cardCount(filterExcept(pool, 'nuevos').filter(isNewCard));
+  const nov = el('div', 'filtro filtro--suelto');
+  nov.appendChild(lista([opcion({
+    label: 'Solo ingresos de la semana', count: nuevosN, checked: state.nuevos,
+    onToggle: () => update({ nuevos: !state.nuevos }),
+  })]));
+  body.appendChild(nov);
+
+  scroller.scrollTop = keepScroll;
   if (escribiendo) {
-    const input = document.getElementById('precioHasta');
-    input.value = escribiendo.value;
-    input.focus({ preventScroll: true });
-    input.setSelectionRange(escribiendo.start, escribiendo.end);
+    const input = document.getElementById(escribiendo.id);
+    if (input) {
+      input.value = escribiendo.value;
+      input.focus({ preventScroll: true });
+      input.setSelectionRange(escribiendo.start, escribiendo.end);
+    }
   }
 }
 
@@ -751,32 +1110,37 @@ function chip(label, onRemove) {
 }
 
 function clearAll() {
-  update({ cat: '', tipos: new Set(), q: '', precioMax: null, nuevos: false, continentes: new Set(), paises: new Set(), metales: new Set(), estados: new Set() });
-  document.getElementById('buscar').value = '';
+  update({
+    ver: '', q: '', arg: false, mundo: false, secciones: new Set(), continentes: new Set(), paises: new Set(),
+    metales: new Set(), epocas: new Set(), estados: new Set(), precioMin: null, precioMax: null, nuevos: false,
+  });
+  syncControls();
+}
+
+function plural(n) {
+  return `${n.toLocaleString('es-AR')} ${n === 1 ? 'pieza' : 'piezas'}`;
 }
 
 function renderEstado(total) {
   const box = document.getElementById('catEstado');
-  box.replaceChildren(el('strong', '', `${total.toLocaleString('es-AR')} ${total === 1 ? 'pieza' : 'piezas'}`));
+  box.replaceChildren(el('strong', '', plural(total)));
   const chips = [];
-  if (state.q.trim()) chips.push(chip(`"${state.q.trim()}"`, () => { document.getElementById('buscar').value = ''; update({ q: '' }); }));
-  if (state.cat && !state.tipos.size) chips.push(chip(collectionOf(state.cat).label, () => update({ cat: '' })));
-  state.tipos.forEach(k => chips.push(chip(k, () => {
-    state.tipos.delete(k);
-    if (!state.tipos.size) state.cat = '';
-    update();
-  })));
+  const del = (set, k) => () => { set.delete(k); update(); };
+  if (state.q.trim()) chips.push(chip(`“${state.q.trim()}”`, () => { update({ q: '' }); syncControls(); }));
+  if (state.ver && state.ver !== 'monedas') chips.push(chip(TIPO_DE.get(state.ver).titulo, () => update({ ver: '' })));
+  if (state.arg) chips.push(chip('Argentina', () => update({ arg: false })));
+  state.secciones.forEach(k => chips.push(chip(`Argentina · ${seccionName(k)}`, del(state.secciones, k))));
+  if (state.mundo) chips.push(chip('Resto del mundo', () => update({ mundo: false })));
+  state.continentes.forEach(k => chips.push(chip(k, del(state.continentes, k))));
+  state.paises.forEach(k => chips.push(chip(k, del(state.paises, k))));
+  state.metales.forEach(k => chips.push(chip(k, del(state.metales, k))));
+  EPOCAS.forEach(e => { if (state.epocas.has(e.key)) chips.push(chip(e.label, del(state.epocas, e.key))); });
+  GRADES.forEach(g => { if (state.estados.has(g.key)) chips.push(chip(g.label, del(state.estados, g.key))); });
+  if (precioResumen()) chips.push(chip(precioResumen(), () => update({ precioMin: null, precioMax: null })));
   if (state.nuevos) chips.push(chip('Ingresos de la semana', () => update({ nuevos: false })));
-  state.continentes.forEach(k => chips.push(chip(k, () => { state.continentes.delete(k); update(); })));
-  state.paises.forEach(k => chips.push(chip(k, () => { state.paises.delete(k); update(); })));
-  state.metales.forEach(k => chips.push(chip(k, () => { state.metales.delete(k); update(); })));
-  if (state.precioMax != null) {
-    chips.push(chip(formatHasta(state.precioMax), () => update({ precioMax: null })));
-  }
-  state.estados.forEach(k => chips.push(chip(GRADES.find(g => g.key === k).label, () => { state.estados.delete(k); update(); })));
   chips.forEach(c => box.appendChild(c));
-  if (chips.length > 1) {
-    const all = el('button', 'chip chip--limpiar', 'Quitar todos');
+  if (chips.length) {
+    const all = el('button', 'chip chip--limpiar', 'Limpiar todo');
     all.type = 'button';
     all.addEventListener('click', clearAll);
     box.appendChild(all);
@@ -784,24 +1148,41 @@ function renderEstado(total) {
 
   const n = activeFilterCount();
   document.getElementById('abrirFiltrosTexto').textContent = n ? `Filtrar (${n})` : 'Filtrar';
-  document.getElementById('filtrosVer').textContent = `Ver ${total.toLocaleString('es-AR')} ${total === 1 ? 'pieza' : 'piezas'}`;
+  document.getElementById('filtrosVer').textContent = `Ver ${plural(total)}`;
+  document.getElementById('filtrosLimpiar').hidden = !chips.length;
 }
 
-function renderTitulo() {
-  const col = collectionOf(state.cat);
-  let titulo = col ? col.label : 'Todas las monedas';
-  if (col && state.tipos.size === 1) titulo = [...state.tipos][0];
-  if (!col) {
-    if (state.paises.size === 1) titulo = [...state.paises][0];
-    else if (!state.paises.size && state.continentes.size === 1) titulo = [...state.continentes][0];
-    else if (state.nuevos) titulo = 'Ingresos de la semana';
-  }
+function tituloActual() {
+  const tipo = tipoActual();
+  const base = tipo === 'todo' ? 'Catálogo' : TIPO_DE.get(tipo).titulo;
+  const lugares = [];
+  if (state.arg) lugares.push('Argentina');
+  else if (state.secciones.size === 1) lugares.push(`Argentina · ${seccionName([...state.secciones][0])}`);
+  else if (state.secciones.size) lugares.push('Argentina');
+  if (state.mundo) lugares.push('todo el mundo');
+  state.continentes.forEach(k => lugares.push(k));
+  state.paises.forEach(k => lugares.push(k));
+  if (lugares.length === 1) return `${base} de ${lugares[0]}`;
+  if (state.nuevos && !lugares.length) return tipo === 'monedas' ? 'Ingresos de la semana' : `${base}: ingresos de la semana`;
+  if (tipo === 'monedas' && !lugares.length) return state.q.trim() ? `Resultados para “${state.q.trim()}”` : 'Todas las monedas';
+  return base;
+}
+
+function renderTitulo(total) {
+  const titulo = tituloActual();
   const head = document.getElementById('catTitulo');
   head.textContent = titulo;
   // Con todas las monedas el catálogo arranca directo en el buscador; el
-  // título solo se ve al entrar a una colección o a los ingresos.
-  head.parentElement.classList.toggle('is-oculto', titulo === 'Todas las monedas');
-  document.title = `${titulo} | Numismática Popper`;
+  // título solo se ve al filtrar.
+  const simple = titulo === 'Todas las monedas';
+  head.parentElement.classList.toggle('is-oculto', simple);
+  document.title = `${simple ? 'Catálogo' : titulo} | Numismática Popper`;
+  const desc = document.querySelector('meta[name="description"]');
+  if (desc) {
+    if (!desc.dataset.base) desc.dataset.base = desc.content;
+    desc.content = simple ? desc.dataset.base
+      : `${titulo}: ${plural(total)} en Numismática Popper. Fotos reales, estado de conservación y precio en cada una.`;
+  }
 }
 
 // ─── Tarjetas ────────────────────────────────────────────────────────────────
@@ -811,9 +1192,10 @@ function syncCartButtons() {
     const inCart = !!(window.PopperCart && window.PopperCart.has(btn.dataset.coinId));
     btn.classList.toggle('is-in-cart', inCart);
     btn.innerHTML = inCart ? ICON_CHECK : ICON_CART;
-    const label = inCart ? 'Está en tu carrito. Tocá para quitarla' : 'Agregar al carrito';
-    btn.setAttribute('aria-label', label);
-    btn.title = label;
+    const nombre = btn.dataset.nombre || 'esta pieza';
+    btn.setAttribute('aria-label', inCart ? `${nombre} está en tu carrito. Tocá para quitarla` : `Agregar ${nombre} al carrito`);
+    btn.setAttribute('aria-pressed', String(inCart));
+    btn.title = inCart ? 'Está en tu carrito. Tocá para quitarla' : 'Agregar al carrito';
   });
 }
 
@@ -852,15 +1234,16 @@ function paintCardPrice(node, coin) {
   paintPrice(node, coin);
 }
 
-// Como en la página original: nombre (ya trae el año), país abajo y, en la
-// fila del precio, la cápsula con el estado. El carrito es un botón chico en
-// la esquina de abajo a la derecha de la foto.
+// Nombre (ya trae el año), país abajo y, en la fila del precio, la cápsula con
+// el estado. El carrito es un botón en la esquina de la foto; una tarjeta con
+// variantes lleva en su lugar el rótulo que dice cuántas hay.
 function ficha(coin) {
   const g = groupOf(coin);
   const isGroup = !!(g && g.count > 1);
   const sold = coin.status === 'sold';
   const href = `detalle.html?id=${encodeURIComponent(coin.id)}`;
   const title = isGroup ? (coin.group_label || coin.title) : coin.title;
+  const pais = countryName(countryKey(coin));
 
   const art = el('article', `ficha${sold ? ' ficha--vendida' : ''}`);
 
@@ -874,12 +1257,14 @@ function ficha(coin) {
     const img = el('img');
     img.src = thumbFor(src);
     img.dataset.fullSrc = src;
-    img.alt = '';
+    img.alt = `${title}, ${pais}`;
     img.loading = 'lazy';
     img.decoding = 'async';
     img.width = 300;
     img.height = 300;
     fotoLink.appendChild(img);
+  } else {
+    fotoLink.appendChild(el('span', 'ficha__sin-foto', 'Sin foto'));
   }
   foto.appendChild(fotoLink);
   if (sold) foto.appendChild(el('span', 'ficha__marca ficha__marca--vendida', 'Vendida'));
@@ -897,7 +1282,14 @@ function ficha(coin) {
     const btn = el('button', 'ficha__agregar');
     btn.type = 'button';
     btn.dataset.coinId = String(coin.id);
+    btn.dataset.nombre = title;
     foto.appendChild(btn);
+  } else if (isGroup && !sold) {
+    const variantes = el('a', 'ficha__variantes', `${g.count} variantes`);
+    variantes.href = href;
+    variantes.tabIndex = -1;
+    variantes.setAttribute('aria-hidden', 'true');
+    foto.appendChild(variantes);
   }
   art.appendChild(foto);
 
@@ -908,7 +1300,7 @@ function ficha(coin) {
   applyCoinTitle(a, title);
   h.appendChild(a);
   body.appendChild(h);
-  const meta = [countryName(countryKey(coin)), isGroup ? `${g.count} variantes` : null].filter(Boolean).join(' · ');
+  const meta = [pais, isGroup ? `${g.count} variantes para elegir` : null].filter(Boolean).join(' · ');
   body.appendChild(el('p', 'ficha__meta', meta));
 
   const pie = el('div', 'ficha__pie');
@@ -919,7 +1311,10 @@ function ficha(coin) {
   const grade = isGroup ? '' : getGradeShort(coin);
   if (grade) {
     const cap = el('span', 'capsula', grade);
-    if (coin.grade) cap.title = coin.grade;
+    if (coin.grade) {
+      cap.title = coin.grade;
+      cap.setAttribute('aria-label', `Estado: ${coin.grade}`);
+    }
     pie.appendChild(cap);
   }
   body.appendChild(pie);
@@ -931,19 +1326,44 @@ function ficha(coin) {
 
 let currentCards = [];
 
+// Sin resultados: se dice por qué y se ofrece la salida más corta. Desde el
+// panel no se llega acá (las opciones en cero están apagadas); sí buscando o
+// con un precio a mano.
+function renderVacio(grid) {
+  const vacio = el('div', 'cat-vacio');
+  const q = state.q.trim();
+  vacio.appendChild(el('p', 'cat-vacio__titulo', q
+    ? `No encontramos nada para “${q}”${activeFilterCount() ? ' con estos filtros' : ''}.`
+    : 'No hay piezas con esta combinación de filtros.'));
+  const acciones = el('div', 'cat-vacio__acciones');
+  if (q && activeFilterCount()) {
+    const sinFiltros = el('button', 'btn btn--quiet', `Buscar “${q}” en todo el catálogo`);
+    sinFiltros.type = 'button';
+    sinFiltros.addEventListener('click', () => { const keep = state.q; clearAll(); update({ q: keep }); syncControls(); });
+    acciones.appendChild(sinFiltros);
+  }
+  const btn = el('button', 'btn btn--quiet', q && !activeFilterCount() ? 'Ver todo el catálogo' : 'Limpiar todo');
+  btn.type = 'button';
+  btn.addEventListener('click', clearAll);
+  acciones.appendChild(btn);
+  vacio.appendChild(acciones);
+  const wa = el('p', 'cat-vacio__wa');
+  wa.append('¿Buscás una pieza en particular? ');
+  const link = el('a', '', 'Escribime por WhatsApp');
+  link.href = `https://wa.me/5492235429132?text=${encodeURIComponent(q ? `Hola! Estoy buscando: ${q}` : 'Hola! Estoy buscando una pieza en particular.')}`;
+  link.target = '_blank';
+  link.rel = 'noopener';
+  wa.append(link, ' y la busco.');
+  vacio.appendChild(wa);
+  grid.appendChild(vacio);
+}
+
 function renderGrid() {
   const grid = document.getElementById('catGrid');
   grid.replaceChildren();
 
   if (!currentCards.length) {
-    const vacio = el('div', 'cat-vacio');
-    vacio.appendChild(el('p', '', 'No encontramos monedas con estos filtros.'));
-    const btn = el('button', 'btn btn--quiet', 'Quitar todos los filtros');
-    btn.type = 'button';
-    btn.addEventListener('click', clearAll);
-    vacio.appendChild(btn);
-    vacio.appendChild(el('p', '', '¿Buscás una pieza en particular? Escribinos por WhatsApp.'));
-    grid.appendChild(vacio);
+    renderVacio(grid);
     document.getElementById('catMas').hidden = true;
     return;
   }
@@ -967,18 +1387,20 @@ function renderMas() {
   }
 }
 
-function update(patch) {
+function update(patch, { replace = false } = {}) {
   if (patch) Object.assign(state, patch);
+  normalizeGeo();
   shown = PAGE;
-  writeUrl();
+  writeUrl(replace);
   render();
 }
 
 function render() {
+  if (!listo) return;
   const pool = baseCoins();
   currentPool = pool;
   currentCards = sortCards(collapseGroups(filterExcept(pool, null)));
-  renderTitulo();
+  renderTitulo(currentCards.length);
   renderFiltros(pool);
   renderEstado(currentCards.length);
   renderGrid();
@@ -989,24 +1411,45 @@ function render() {
 function setupSheet() {
   const panel = document.getElementById('filtros');
   const velo = document.getElementById('filtrosVelo');
+  const trigger = document.getElementById('abrirFiltros');
+  const isOpen = () => panel.classList.contains('is-open');
   const open = () => {
     panel.classList.add('is-open');
     velo.hidden = false;
     document.documentElement.style.overflow = 'hidden';
+    trigger.setAttribute('aria-expanded', 'true');
+    document.getElementById('filtrosCerrar').focus({ preventScroll: true });
   };
   const close = () => {
+    if (!isOpen()) return;
     panel.classList.remove('is-open');
     velo.hidden = true;
     document.documentElement.style.overflow = '';
+    trigger.setAttribute('aria-expanded', 'false');
+    trigger.focus({ preventScroll: true });
   };
-  document.getElementById('abrirFiltros').addEventListener('click', open);
+  trigger.addEventListener('click', open);
   document.getElementById('filtrosCerrar').addEventListener('click', close);
+  document.getElementById('filtrosLimpiar').addEventListener('click', clearAll);
   document.getElementById('filtrosVer').addEventListener('click', () => {
     close();
     document.querySelector('.cat-layout').scrollIntoView({ behavior: 'instant' });
   });
   velo.addEventListener('click', close);
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  document.addEventListener('keydown', e => {
+    if (!isOpen()) return;
+    if (e.key === 'Escape') { close(); return; }
+    // Con la hoja abierta, el Tab da la vuelta adentro.
+    if (e.key !== 'Tab') return;
+    const items = [...panel.querySelectorAll('button:not([disabled]), a[href], input')]
+      .filter(n => n.offsetParent !== null);
+    if (!items.length) return;
+    const first = items[0], last = items[items.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+  // Si se agranda la ventana con la hoja abierta, se suelta el scroll.
+  window.matchMedia('(min-width: 961px)').addEventListener('change', e => { if (e.matches) close(); });
 }
 
 // ─── Volver desde una ficha ──────────────────────────────────────────────────
@@ -1032,16 +1475,29 @@ function restoreScroll() {
 
 // ─── Arranque ────────────────────────────────────────────────────────────────
 
+// Buscador y orden reflejan el estado (al limpiar todo, al volver atrás).
+function syncControls() {
+  const input = document.getElementById('buscar');
+  if (document.activeElement !== input || !state.q) input.value = state.q;
+  document.getElementById('buscarLimpiar').hidden = !input.value;
+  document.getElementById('orden').value = state.orden;
+}
+
 function setupControls() {
   const input = document.getElementById('buscar');
   const limpiar = document.getElementById('buscarLimpiar');
-  input.value = state.q;
-  limpiar.hidden = !state.q;
   let timer;
   input.addEventListener('input', () => {
     limpiar.hidden = !input.value;
     clearTimeout(timer);
-    timer = setTimeout(() => update({ q: input.value }), 220);
+    timer = setTimeout(() => update({ q: input.value }, { replace: true }), 220);
+  });
+  // Enter cierra el teclado del celular y deja ver los resultados.
+  input.addEventListener('keydown', e => {
+    if (e.key !== 'Enter') return;
+    clearTimeout(timer);
+    update({ q: input.value }, { replace: true });
+    input.blur();
   });
   limpiar.addEventListener('click', () => {
     input.value = '';
@@ -1056,8 +1512,8 @@ function setupControls() {
     o.value = s.key;
     orden.appendChild(o);
   });
-  orden.value = state.orden;
   orden.addEventListener('change', () => update({ orden: orden.value }));
+  syncControls();
 
   document.getElementById('catMasBtn').addEventListener('click', () => {
     const from = shown;
@@ -1068,6 +1524,10 @@ function setupControls() {
     grid.appendChild(frag);
     syncCartButtons();
     renderMas();
+    // El foco sigue en la primera tarjeta nueva, no se pierde en el botón.
+    const nueva = grid.children[from];
+    const link = nueva && nueva.querySelector('.ficha__title a');
+    if (link) link.focus({ preventScroll: true });
   });
 
   // Un solo listener para todas las tarjetas.
@@ -1086,16 +1546,31 @@ function setupControls() {
   }, true);
 
   window.addEventListener('popper:cart-updated', syncCartButtons);
+  // Al pasar de dólares a pesos cambian los rangos de las tarjetas y también
+  // el campo de precio, sus atajos y su chip.
   window.addEventListener('popper:currency-changed', () => {
     document.querySelectorAll('.ficha .price[data-rango]').forEach(n => {
       n.textContent = formatRango(groupInfo.get(n.dataset.rango));
     });
+    if (listo) {
+      renderFiltros(currentPool);
+      renderEstado(currentCards.length);
+    }
+  });
+
+  // "Atrás" y "adelante" entre filtros.
+  window.addEventListener('popstate', () => {
+    readUrl();
+    sanitizeState(currentPool);
+    abrirLoElegido();
+    shown = PAGE;
+    syncControls();
+    render();
   });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   readUrl();
-  abrirLoElegido();
   setupControls();
   setupSheet();
   loadAllCoins()
@@ -1104,6 +1579,13 @@ document.addEventListener('DOMContentLoaded', () => {
       coinsById = new Map(coins.map(c => [String(c.id), c]));
       prepareCoins();
       buildGroupInfo();
+      const pool = baseCoins();
+      contDePais = new Map(pool.filter(c => !isArgentinaCoin(c)).map(c => [filterCountryOf(c), contOf(c)]));
+      sanitizeState(pool);
+      abrirLoElegido();
+      // La URL queda con la forma de ahora (links viejos, valores descartados).
+      writeUrl(true);
+      listo = true;
       const saved = restoreScroll();
       if (saved && saved.shown > PAGE) shown = saved.shown;
       render();

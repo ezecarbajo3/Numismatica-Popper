@@ -10,6 +10,8 @@
 // la diapositiva no entra en una pantalla.
 const VITRINA_SIZE = 4;
 const INGRESOS_SIZE = 4;
+// Entre cuántas de las piezas más valiosas se elige la del hero.
+const HERO_TOP = 5;
 
 // Qué fotos grandes tienen fondo negro (lo escribe build_large.py). Si el
 // archivo no está, no se filtra nada.
@@ -34,7 +36,9 @@ function renderHero(sala, fondos) {
   }
   // El hero es una moneda suelta sobre negro: un blíster, un lote o una foto
   // con fondo de color no lucen a ese tamaño.
-  const candidates = sala.filter(c => !isBlister(c) && hasBlackBackground(c, fondos));
+  // Se elige entre las HERO_TOP más valiosas (la Sala viene ordenada por
+  // precio): la tapa de la casa tiene que ser una de sus mejores piezas.
+  const candidates = sala.filter(c => !isBlister(c) && hasBlackBackground(c, fondos)).slice(0, HERO_TOP);
   const pool = candidates.length ? candidates : sala;
   const coin = pool[Math.floor(Math.random() * pool.length)];
   stage.href = `detalle.html?id=${encodeURIComponent(coin.id)}`;
@@ -112,7 +116,7 @@ function renderColecciones(coins) {
     usedCovers.add(cover.id);
 
     const link = el('a', 'coleccion');
-    link.href = `catalogo.html?cat=${col.key}`;
+    link.href = col.href;
 
     const img = el('img', 'coleccion__img');
     img.src = thumbFor(getPrimaryImage(cover));
@@ -158,3 +162,29 @@ document.addEventListener('DOMContentLoaded', () => {
       setupDiapositivas();
     });
 });
+
+// ─── La moneda del hero acompaña al puntero ──────────────────────────────────
+// Solo con mouse y sin "reducir movimiento": la moneda se inclina unos grados
+// hacia donde está el puntero, como una pieza que se mira en la mano. Un
+// transform sobre un solo elemento, con un frame de animación por movimiento.
+(function () {
+  const stage = document.getElementById('heroStage');
+  if (!stage || prefersReducedMotion() || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  const hero = stage.closest('.hero');
+  let frame = 0;
+  hero.addEventListener('pointermove', e => {
+    if (frame) return;
+    frame = requestAnimationFrame(() => {
+      frame = 0;
+      const r = stage.getBoundingClientRect();
+      const x = Math.max(-1, Math.min(1, (e.clientX - (r.left + r.width / 2)) / r.width));
+      const y = Math.max(-1, Math.min(1, (e.clientY - (r.top + r.height / 2)) / r.height));
+      stage.style.setProperty('--ix', (x * 9).toFixed(2));
+      stage.style.setProperty('--iy', (-y * 7).toFixed(2));
+    });
+  });
+  hero.addEventListener('pointerleave', () => {
+    stage.style.setProperty('--ix', 0);
+    stage.style.setProperty('--iy', 0);
+  });
+})();

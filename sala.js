@@ -24,11 +24,11 @@ function pad2(n) {
   return String(n).padStart(2, '0');
 }
 
-function coinImage(src, className, eager) {
+function coinImage(src, className, eager, alt = '') {
   const img = el('img', `${className} fundido`);
   img.src = largeFor(src);
   img.dataset.fullSrc = src;
-  img.alt = '';
+  img.alt = alt;
   img.decoding = 'async';
   img.loading = eager ? 'eager' : 'lazy';
   img.width = 580;
@@ -60,8 +60,8 @@ function buildPieza(coin, index, total, notas) {
   const coinBox = el(back ? 'button' : 'div', 'pieza__coin');
   const coin3d = el('div', 'moneda3d');
   const inner = el('div', 'moneda3d__inner');
-  inner.appendChild(coinImage(front, 'moneda3d__face', index < 2));
-  if (back) inner.appendChild(coinImage(back, 'moneda3d__face moneda3d__face--back', index < 2));
+  inner.appendChild(coinImage(front, 'moneda3d__face', index < 2, `${coin.title}, ${countryLabel(coin)}: anverso`));
+  if (back) inner.appendChild(coinImage(back, 'moneda3d__face moneda3d__face--back', index < 2, `${coin.title}: reverso`));
   coin3d.appendChild(inner);
   coinBox.appendChild(coin3d);
   stage.appendChild(coinBox);
@@ -220,6 +220,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const wrap = document.getElementById('piezas');
       const piezas = sala.map((coin, i) => buildPieza(coin, i, sala.length, notas));
       piezas.forEach(p => wrap.appendChild(p.article));
+
+      const cuenta = document.getElementById('salaCuenta');
+      if (cuenta && sala.length) {
+        cuenta.textContent = sala.length === 1 ? 'Una pieza en exhibición' : `${sala.length} piezas en exhibición`;
+        cuenta.hidden = false;
+      }
 
       setupGiro(piezas);
       renderArchivo(archive);

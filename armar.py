@@ -20,6 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 PAGES = [
     "index.html", "sala.html", "catalogo.html", "detalle.html",
+    "sobre-mi.html", "como-comprar.html", "conservacion.html",
     "envios-y-devoluciones.html", "terminos.html", "privacidad.html", "arrepentimiento.html",
     "gracias.html",
 ]

@@ -1,9 +1,9 @@
 /**
  * Numismática Popper — qué colección es cada pieza.
  *
- * Predicados de categoría compartidos entre la portada y el catálogo. Salieron
- * tal cual de script.js: la portada los necesita para contar piezas y elegir
- * la foto de cada colección sin cargar el catálogo entero.
+ * Predicados de categoría compartidos entre la portada y el catálogo: la
+ * portada los necesita para contar piezas y elegir la foto de cada colección
+ * sin cargar el catálogo entero.
  *
  * Depende de common.js (parsePriceUSD, NEW_BADGE_DAYS).
  */
@@ -84,7 +84,7 @@ const CONTINENTS = [
   { key: 'Europa', countries: [
     'Alemana, República Democrática', 'Alemania', 'Alemania Federal', 'Alemania Oriental', 'Andorra',
     'Austria', 'Baden', 'Baviera', 'Bielorrusia', 'Bosnia y Herzegovina', 'Bulgaria', 'Bélgica',
-    'Checoslovaquia', 'Chipre', 'Croacia', 'Dinamarca', 'Eslovaquia', 'Eslovenia', 'España', 'Estonia',
+    'Checoslovaquia', 'Chipre', 'Croacia', 'Dinamarca', 'Eslovaquia', 'Eslovenia', 'España', 'Estonia', 'Europa',
     'Finlandia', 'Francia', 'Francia - Régimen de Vichy', 'Gibraltar', 'Grecia', 'Guernsey', 'Hungría',
     'Irlanda', 'Isla de Man', 'Islandia', 'Islas Feroe', 'Italia', 'Italia - Estados Preunitarios',
     'Jersey', 'Letonia', 'Liechtenstein', 'Lituania', 'Luxemburgo', 'Malta', 'Mónaco', 'Noruega',
@@ -93,7 +93,8 @@ const CONTINENTS = [
     'Transnistria', 'Ucrania', 'Unión Soviética', 'Utrecht, City of', 'Vaticano, Ciudad del', 'Yugoslavia',
   ] },
   { key: 'Asia', countries: [
-    'Afganistán', 'Arabia Saudita', 'Armenia', 'Azerbaiyán', 'Bangladés', 'Baréin', 'Birmania', 'Camboya',
+    'Afganistán', 'Arabia Saudita', 'Armenia', 'Azerbaiyán', 'Bahrein', 'Bangladés', 'Baréin', 'Birmania', 'Camboya',
+    'Colonias del Estrecho',
     'China', 'Comisionados de la Moneda de Malaya', 'Corea del Norte', 'Corea del Sur',
     'Emiratos Árabes Unidos', 'Filipinas', 'Georgia', 'Hong Kong', 'Imperio Otomano', 'India',
     'Indias Orientales Neerlandesas', 'Indonesia', 'Irak', 'Irán', 'Israel', 'Japón', 'Jordania',
@@ -216,12 +217,13 @@ function isNewCoin(coin) {
 }
 
 // Las seis colecciones, en el orden de la portada. `key` es el ?cat= del
-// catálogo; `desc` es la línea que explica qué hay adentro.
+// catálogo viejo (se sigue entendiendo) y `href` el link con los filtros de
+// ahora; `desc` es la línea que explica qué hay adentro.
 const COLLECTIONS = [
-  { key: 'argentina',     label: 'Argentinas', desc: 'República, Patria, Confederación y Buenos Aires.', match: isArgentinaCoin },
-  { key: 'internacional', label: 'Mundiales',  desc: 'Monedas de todo el mundo.', match: (c) => !isArgentinaCoin(c) && !isMedalOrToken(c) && !isBlister(c) && !isBook(c) && !isInsumo(c) },
-  { key: 'plata',         label: 'Inversión',  desc: 'Plata de ley .900 o superior.', match: isInvestment },
-  { key: 'economicas',    label: 'Económicas', desc: 'Monedas del mundo a menos de 5 dólares.', match: isEconomica },
-  { key: 'varios',        label: 'Varios',     desc: 'Medallas, fichas, blísteres, lotes y libros.', match: (c) => isMedalOrToken(c) || isBook(c) || isBlister(c) },
-  { key: 'insumos',       label: 'Insumos',    desc: 'Carpetas, folios y accesorios para tu colección.', match: isInsumo },
+  { key: 'argentina',     href: 'catalogo.html?origen=argentina', label: 'Argentinas', desc: 'República, Patria, Confederación y Buenos Aires.', match: isArgentinaCoin },
+  { key: 'internacional', href: 'catalogo.html?origen=mundo',     label: 'Mundiales',  desc: 'Monedas de todo el mundo.', match: (c) => !isArgentinaCoin(c) && !isMedalOrToken(c) && !isBlister(c) && !isBook(c) && !isInsumo(c) },
+  { key: 'plata',         href: 'catalogo.html?ver=inversion',    label: 'Inversión',  desc: 'Oro y plata de ley .900 o superior.', match: (c) => isInvestment(c) || isGoldCoin(c) },
+  { key: 'economicas',    href: 'catalogo.html?origen=mundo&hasta=5', label: 'Económicas', desc: 'Monedas del mundo hasta 5 dólares.', match: isEconomica },
+  { key: 'varios',        href: 'catalogo.html?ver=varios',       label: 'Varios',     desc: 'Medallas, fichas, blísteres, lotes y libros.', match: (c) => isMedalOrToken(c) || isBook(c) || isBlister(c) },
+  { key: 'insumos',       href: 'catalogo.html?ver=insumos',      label: 'Insumos',    desc: 'Carpetas, folios y accesorios para tu colección.', match: isInsumo },
 ];

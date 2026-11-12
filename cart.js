@@ -60,7 +60,7 @@
     phone: '',
     dni: '',
     email: '',
-    deliveryType: 'acumular', // 'acumular' | 'parque' | 'sucursal' | 'domicilio'
+    deliveryType: '', // '' (sin elegir) | 'parque' | 'sucursal' | 'domicilio' | 'acumular'
     city: '',
     postalCode: '',
     branchOrAddress: '',
@@ -428,7 +428,7 @@
   }
 
   function formatUSD(amount) {
-    return Number(amount).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 2 }) + ' USD';
+    return Number(amount).toLocaleString('es-AR', { minimumFractionDigits: 0, maximumFractionDigits: 2 }) + ' USD';
   }
 
   function getCurrentCurrency() {
@@ -1047,7 +1047,8 @@
             <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
           </svg>
           <p class="cart-empty-title">Tu carrito está vacío</p>
-          <p class="cart-empty-subtitle">Explorá el catálogo para sumar piezas a tu colección.</p>
+          <p class="cart-empty-subtitle">Sumá piezas con el ícono del carrito de cada moneda. Quedan guardadas aunque cierres la página.</p>
+          <a class="cart-btn cart-btn--primary cart-empty-cta" href="catalogo.html">Ver el catálogo</a>
         </div>
         ${lo ? `
           <div class="cart-last-order">
@@ -1104,6 +1105,8 @@
             </div>
           ` : ''}
 
+
+          ${inquiryOnly ? '' : '<p class="cart-sin-cobro">Acá no se cobra nada: dejás tus datos, confirmás el pedido y te escribimos por WhatsApp para coordinar el pago y la entrega.</p>'}
 
           <div class="cart-actions-stack">
             <button type="button" class="cart-btn cart-btn--primary" id="cartStartCheckoutBtn">
@@ -1212,24 +1215,14 @@
 
     const deliverySection = inquiryOnly ? '' : `
       <div class="checkout-section">
-        <span class="section-label">Forma de entrega</span>
-        <div class="delivery-list">
-          <label class="delivery-row ${isAcumular ? 'is-selected' : ''}">
-            <input type="radio" name="deliveryChoice" value="acumular" ${isAcumular ? 'checked' : ''} />
-            <span class="radio-custom"></span>
-            <div class="delivery-row__info">
-              <span class="delivery-row__name">Acumular compras</span>
-              <span class="delivery-row__sub">Guardalas para un futuro envío</span>
-            </div>
-            <span class="delivery-row__price">Gratis</span>
-          </label>
-
+        <span class="section-label" id="deliveryLabel">¿Cómo querés recibirlas?</span>
+        <div class="delivery-list" id="deliveryList" role="radiogroup" aria-labelledby="deliveryLabel">
           <label class="delivery-row ${isParque ? 'is-selected' : ''}">
             <input type="radio" name="deliveryChoice" value="parque" ${isParque ? 'checked' : ''} />
             <span class="radio-custom"></span>
             <div class="delivery-row__info">
-              <span class="delivery-row__name">Envío al Parque Rivadavia</span>
-              <span class="delivery-row__sub">Próximo envío ${parqueSchedule.dispatchDDMM}</span>
+              <span class="delivery-row__name">Retiro en Parque Rivadavia</span>
+              <span class="delivery-row__sub">CABA · desde el domingo ${parqueSchedule.deliveryDDMM}</span>
             </div>
             <span class="delivery-row__price">${escapeHTML(parquePrice)}</span>
           </label>
@@ -1238,8 +1231,8 @@
             <input type="radio" name="deliveryChoice" value="sucursal" ${isSucursal ? 'checked' : ''} />
             <span class="radio-custom"></span>
             <div class="delivery-row__info">
-              <span class="delivery-row__name">Envío a Sucursal</span>
-              <span class="delivery-row__sub">A través de Andreani</span>
+              <span class="delivery-row__name">Envío a sucursal de correo</span>
+              <span class="delivery-row__sub">Andreani · a todo el país</span>
             </div>
             <span class="delivery-row__price">${escapeHTML(sucursalPrice)}</span>
           </label>
@@ -1248,17 +1241,27 @@
             <input type="radio" name="deliveryChoice" value="domicilio" ${isDomicilio ? 'checked' : ''} />
             <span class="radio-custom"></span>
             <div class="delivery-row__info">
-              <span class="delivery-row__name">Envío a Domicilio</span>
-              <span class="delivery-row__sub">A través de Andreani</span>
+              <span class="delivery-row__name">Envío a domicilio</span>
+              <span class="delivery-row__sub">Andreani · a todo el país</span>
             </div>
             <span class="delivery-row__price">${escapeHTML(domicilioPrice)}</span>
+          </label>
+
+          <label class="delivery-row ${isAcumular ? 'is-selected' : ''}">
+            <input type="radio" name="deliveryChoice" value="acumular" ${isAcumular ? 'checked' : ''} />
+            <span class="radio-custom"></span>
+            <div class="delivery-row__info">
+              <span class="delivery-row__name">Acumular compras</span>
+              <span class="delivery-row__sub">Las guardamos y las mandamos todas juntas cuando quieras</span>
+            </div>
+            <span class="delivery-row__price">Gratis</span>
           </label>
         </div>
       </div>
     `;
 
     let detailsSection = '';
-    if (!inquiryOnly) {
+    if (!inquiryOnly && orderData.deliveryType) {
       detailsSection = `
         <div class="checkout-section" style="margin-top: 18px;">
           <span class="section-label">Datos para la entrega</span>
@@ -1283,7 +1286,7 @@
                 Modalidad: acumular compras
               </div>
               <div class="delivery-parque-card__desc">
-                Guardamos tus piezas a tu nombre una vez confirmado el pago. Pedí el despacho cuando quieras.
+                Con el pago confirmado, guardamos tus piezas a tu nombre. Podés seguir sumando compras y pedir el envío cuando quieras: pagás un solo envío por todo.
               </div>
             </div>
           ` : `
@@ -1379,8 +1382,9 @@
           <div class="checkout-error" id="checkoutError" role="alert" style="display: none;"></div>
 
           <button type="submit" class="cart-btn cart-btn--primary checkout-submit-btn" id="checkoutSubmitBtn">
-            ${inquiryOnly ? 'Enviar consulta' : 'Continuar al pago'}
+            ${inquiryOnly ? 'Enviar consulta' : 'Continuar: elegir cómo pagar'}
           </button>
+          ${inquiryOnly ? '' : '<p class="checkout-nota">Todavía no se confirma nada: en el paso siguiente ves el total y elegís el medio de pago.</p>'}
         </form>
       </div>
     `;
@@ -1469,6 +1473,10 @@
     }
     if (inquiryOnly) return null;
 
+    if (!d.deliveryType) {
+      return { msg: 'Elegí cómo querés recibir tus piezas.', field: '#deliveryList' };
+    }
+
     const shipping = d.deliveryType === 'sucursal' || d.deliveryType === 'domicilio';
     if ((shipping && !d.dni) || (d.dni && !/^\d{7,8}$/.test(d.dni))) {
       return {
@@ -1516,6 +1524,20 @@
       field.setAttribute('aria-invalid', 'true');
       field.setAttribute('aria-describedby', 'fieldError');
       field.focus();
+      return;
+    }
+    // Lo que falta no es un campo de texto (la forma de entrega): el aviso va
+    // pegado a la lista y se lleva la vista ahí.
+    if (field) {
+      const note = document.createElement('div');
+      note.className = 'field-error';
+      note.id = 'fieldError';
+      note.setAttribute('role', 'alert');
+      note.textContent = msg;
+      field.after(note);
+      field.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      const first = field.querySelector('input');
+      if (first) first.focus({ preventScroll: true });
       return;
     }
     const err = drawer.querySelector('#checkoutError');
@@ -2043,6 +2065,7 @@
         <button type="button" class="cart-btn cart-btn--primary checkout-submit-btn" id="confirmAndPayBtn" style="margin-top: 24px;">
           Confirmar pedido
         </button>
+        <p class="checkout-nota">Al confirmar no se cobra nada. Te mostramos los datos para pagar, reservamos tus piezas y te escribimos por WhatsApp para coordinar la entrega.</p>
       </div>
     `;
 
@@ -2237,15 +2260,14 @@
           <span class="confirmed-check">✓</span>
           <h3 class="confirmed-title">Recibimos tu pedido</h3>
           <p class="confirmed-order-id">N° ${escapeHTML(lo.orderId)}</p>
-          <p class="confirmed-desc">Transferí el importe exacto y mandanos el comprobante por WhatsApp.</p>
+          <p class="confirmed-desc">Tus piezas quedan reservadas. Ahora falta el pago:</p>
         </div>
 
-        ${lo.mailCopy ? `
-        <div class="order-mail-copy">
-          <button type="button" class="cart-btn cart-btn--secondary" id="sendMailCopyBtn">Avisarme por mail</button>
-          <p class="order-mail-copy__hint">Se abre una pestaña para confirmar que no sos un robot y te llega un aviso a <strong>${escapeHTML(d.email)}</strong> (mirá también en spam). Cuando confirmemos tu compra, te mandamos el detalle por el mismo mail.</p>
-        </div>
-        ` : ''}
+        <ol class="cart-como-sigue cart-como-sigue--final" aria-label="Qué pasa ahora">
+          <li><b>Transferí el importe exacto</b> con los datos de abajo.</li>
+          <li><b>Mandanos el comprobante</b> por WhatsApp con el botón del final.</li>
+          <li><b>Te confirmamos</b> y coordinamos la entrega que elegiste.</li>
+        </ol>
 
         <div class="payment-total-callout">
           <span class="callout-label">Importe a transferir</span>
@@ -2326,6 +2348,13 @@
             Finalizar y volver al catálogo
           </button>
         </div>
+
+        ${lo.mailCopy ? `
+        <div class="order-mail-copy">
+          <button type="button" class="cart-btn cart-btn--secondary" id="sendMailCopyBtn">Avisarme por mail</button>
+          <p class="order-mail-copy__hint">Se abre una pestaña para confirmar que no sos un robot y te llega un aviso a <strong>${escapeHTML(d.email)}</strong> (mirá también en spam). Cuando confirmemos tu compra, te mandamos el detalle por el mismo mail.</p>
+        </div>
+        ` : ''}
       </div>
     `;
 
@@ -2504,6 +2533,7 @@
     validateSoldItems,
     getItems: () => cartItems.map(it => ({ ...it })),
     getBlueRate: () => blueRate,
+    getNextParqueSchedule,
     isNonNumericId,
     hasNonNumericItems,
   };

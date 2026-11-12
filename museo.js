@@ -237,7 +237,8 @@ function tarjeta(coin, { href, src, num, precio = true } = {}) {
   const img = el('img', 'tarjeta__img fundido');
   img.src = src || thumbFor(getPrimaryImage(coin));
   img.dataset.fullSrc = getPrimaryImage(coin);
-  img.alt = '';
+  // El nombre ya está escrito debajo: el alt suma lo que el texto no dice.
+  img.alt = `Foto de ${coin.title}`;
   img.loading = 'lazy';
   img.decoding = 'async';
   img.width = 400;
