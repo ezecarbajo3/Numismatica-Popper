@@ -6833,7 +6833,9 @@
     "reference": "KM# 820",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Copa Mundial España 1982"
+    "description": "Copa Mundial España 1982",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 869,
@@ -12295,7 +12297,9 @@
     "peso": "5.66",
     "diametro": "23.5",
     "description": "Victoria (Old Head). Pequeño puntito de soldadura",
-    "publishedAt": "2026-09-28T16:13:38.905023+00:00"
+    "publishedAt": "2026-09-28T16:13:38.905023+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1442,
@@ -14531,7 +14535,9 @@
     "peso": "4.5",
     "diametro": "23.2",
     "description": "",
-    "publishedAt": "2026-10-24T15:03:28.538401+00:00"
+    "publishedAt": "2026-10-24T15:03:28.538401+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1550,
@@ -15277,7 +15283,9 @@
     "peso": "1.25",
     "diametro": "16",
     "description": "Isabel II",
-    "publishedAt": "2026-10-24T23:29:15.178428+00:00"
+    "publishedAt": "2026-10-24T23:29:15.178428+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1586,
@@ -17326,7 +17334,9 @@
     "diametro": "37",
     "description": "Alfonso XIII - Pátina original",
     "publishedAt": "2026-10-30T03:24:31.299134+00:00",
-    "commemorates": "Alfonso XIII"
+    "commemorates": "Alfonso XIII",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1683,
@@ -19726,7 +19736,9 @@
     "diametro": "19.3",
     "description": "Jorge VI",
     "publishedAt": "2026-11-11T23:05:25.212186+00:00",
-    "commemorates": "Jorge VI"
+    "commemorates": "Jorge VI",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1799,
@@ -19786,7 +19798,9 @@
     "diametro": "16",
     "description": "Jorge V",
     "publishedAt": "2026-11-11T23:05:25.212186+00:00",
-    "commemorates": "Jorge V"
+    "commemorates": "Jorge V",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1802,
@@ -19843,7 +19857,9 @@
     "peso": "7.4",
     "diametro": "31.9",
     "description": "",
-    "publishedAt": "2026-11-11T23:05:25.212186+00:00"
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1805,
@@ -19863,7 +19879,9 @@
     "peso": "8",
     "diametro": "27.75",
     "description": "Juan Pablo II - Ceca R - Escasa, año único",
-    "publishedAt": "2026-11-11T23:05:25.212186+00:00"
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1806,
@@ -19944,7 +19962,9 @@
     "peso": "10",
     "diametro": "30",
     "description": "",
-    "publishedAt": "2026-11-11T23:05:25.212186+00:00"
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1810,
@@ -19964,7 +19984,9 @@
     "peso": "3.82",
     "diametro": "19.98",
     "description": "",
-    "publishedAt": "2026-11-11T23:05:25.212186+00:00"
+    "publishedAt": "2026-11-11T23:05:25.212186+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1811,
@@ -20189,7 +20211,9 @@
     "peso": "2.5",
     "diametro": "19.5",
     "description": "Gazi I - Marca I, solo 3M acuñadas",
-    "publishedAt": "2026-11-12T17:10:13.031039+00:00"
+    "publishedAt": "2026-11-12T17:10:13.031039+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1822,
@@ -20248,7 +20272,9 @@
     "diametro": "19",
     "description": "Francisco Franco - Protectorado Francés",
     "publishedAt": "2026-11-12T17:10:13.031039+00:00",
-    "commemorates": "Francisco Franco"
+    "commemorates": "Francisco Franco",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1825,
@@ -20366,7 +20392,9 @@
     "publishedAt": "2026-11-12T17:37:13.048715+00:00",
     "group_id": "us-1-centavo-2009-bicentenario-lincoln",
     "group_label": "1 Centavo 2009 Bicentenario Lincoln",
-    "commemorates": "Bicentenario Lincoln"
+    "commemorates": "Bicentenario Lincoln",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1831,
@@ -20388,7 +20416,9 @@
     "publishedAt": "2026-11-12T17:37:13.048715+00:00",
     "group_id": "us-1-centavo-2009-bicentenario-lincoln",
     "group_label": "1 Centavo 2009 Bicentenario Lincoln",
-    "commemorates": "Bicentenario Lincoln"
+    "commemorates": "Bicentenario Lincoln",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1832,
@@ -20408,7 +20438,9 @@
     "diametro": "19.05",
     "description": "Vida profesional de Lincoln",
     "publishedAt": "2026-11-12T17:37:13.048715+00:00",
-    "commemorates": "Vida profesional de Lincoln"
+    "commemorates": "Vida profesional de Lincoln",
+    "status": "sold",
+    "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
     "id": 1833,
