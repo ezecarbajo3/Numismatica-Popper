@@ -20149,5 +20149,161 @@
     "peso": 55.2,
     "description": "Inversión. Lote de 55.2 g de plata .900: variedad de ejemplares de Estados Unidos (half dollars 1945 y 1964, quarters 1941, 1943 y 1945, dimes 1942, 1947, 1954, 1957 y 1960). Se vende al valor de la plata.",
     "publishedAt": "2026-11-12T15:56:40.225208+00:00"
+  },
+  {
+    "id": 1820,
+    "title": "1 Centavo 1937",
+    "country": "Sarawak",
+    "metal": "Bronce",
+    "year": 1937,
+    "price": "29 USD",
+    "images": [
+      "images/1820A.jpeg",
+      "images/1820B.jpeg"
+    ],
+    "reference": "KM# 18",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": 3000000,
+    "peso": "5.48",
+    "diametro": "24",
+    "description": "Charles Vyner Brooke - En la década de 1930, Sarawak era un reino independiente situado en el noroeste de la isla de Borneo, gobernado como un protectorado británico por la dinastía de los \"Rajás Blancos\" de la familia Brooke. En ese momento, el tercer rajá, Charles Vyner Brooke, estaba al mando de este próspero territorio rico en caucho, petróleo y pimienta, el cual emitía su propia moneda oficial (el dólar de Sarawak) con su retrato acuñado",
+    "publishedAt": "2026-11-12T17:10:13.031039+00:00"
+  },
+  {
+    "id": 1821,
+    "title": "1 Fils 1938",
+    "country": "Irak",
+    "metal": "Bronce",
+    "year": 1938,
+    "price": "8 USD",
+    "images": [
+      "images/1821A.jpeg",
+      "images/1821B.jpeg"
+    ],
+    "reference": "KM# 102",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "2.5",
+    "diametro": "19.5",
+    "description": "Gazi I - Marca I, solo 3M acuñadas",
+    "publishedAt": "2026-11-12T17:10:13.031039+00:00"
+  },
+  {
+    "id": 1822,
+    "title": "5 Australes 1989",
+    "country": "Argentina",
+    "metal": "Aluminio",
+    "year": 1989,
+    "price": "8 USD",
+    "images": [
+      "images/1822A.jpeg",
+      "images/1822B.jpeg"
+    ],
+    "reference": "CJ# 379",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "1.8",
+    "diametro": "21.6",
+    "description": "Reverso Medalla",
+    "publishedAt": "2026-11-12T17:10:13.031039+00:00"
+  },
+  {
+    "id": 1823,
+    "title": "2 Piastras 1939",
+    "country": "Egipto",
+    "metal": "Plata .833",
+    "year": 1939,
+    "price": "25 USD",
+    "images": [
+      "images/1823A.jpeg",
+      "images/1823B.jpeg"
+    ],
+    "reference": "KM# 365",
+    "grade": "Sin Circular -",
+    "grade_short": "SC-",
+    "mintage": 500000,
+    "peso": "2.8",
+    "diametro": "19",
+    "description": "Faruk I - RARA",
+    "publishedAt": "2026-11-12T17:10:13.031039+00:00"
+  },
+  {
+    "id": 1824,
+    "title": "1 Franco 1951",
+    "country": "Marruecos",
+    "metal": "Aluminio",
+    "year": 1951,
+    "price": "4.5 USD",
+    "images": [
+      "images/1824A.jpeg",
+      "images/1824B.jpeg"
+    ],
+    "reference": "Y# 46",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "0.8",
+    "diametro": "19",
+    "description": "Francisco Franco - Protectorado Francés",
+    "publishedAt": "2026-11-12T17:10:13.031039+00:00",
+    "commemorates": "Francisco Franco"
+  },
+  {
+    "id": 1825,
+    "title": "2 Cedis 2019",
+    "country": "Ghana",
+    "metal": "Bimetálica",
+    "year": 2019,
+    "price": "8 USD",
+    "images": [
+      "images/1825A.jpeg",
+      "images/1825B.jpeg"
+    ],
+    "reference": "KM# 82",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "10",
+    "diametro": "27.6",
+    "description": "Año único",
+    "publishedAt": "2026-11-12T17:10:13.031039+00:00"
+  },
+  {
+    "id": 1826,
+    "title": "1 Lira Turca 2022 Gran Ofensiva",
+    "country": "Turquía",
+    "metal": "Bimetálica",
+    "year": 2022,
+    "price": "4 USD",
+    "images": [
+      "images/1826A.jpeg",
+      "images/1826B.jpeg"
+    ],
+    "reference": "KM# 1547",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "8.2",
+    "diametro": "26.15",
+    "description": "Gran Ofensiva - Año único",
+    "publishedAt": "2026-11-12T17:10:13.031039+00:00",
+    "commemorates": "Gran Ofensiva"
+  },
+  {
+    "id": 1827,
+    "title": "50 Céntimos 1937",
+    "country": "España",
+    "metal": "Latón",
+    "year": 1937,
+    "price": "8 USD",
+    "images": [
+      "images/1827A.jpeg",
+      "images/1827B.jpeg"
+    ],
+    "reference": "KM# 754.1",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "5.9",
+    "diametro": "23",
+    "description": "",
+    "publishedAt": "2026-11-12T17:10:13.031039+00:00"
   }
 ]
