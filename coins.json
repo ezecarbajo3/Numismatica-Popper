@@ -20649,7 +20649,9 @@
     "peso": "6.25",
     "diametro": "24.26",
     "description": "Brilla mucho",
-    "publishedAt": "2026-11-13T12:58:57.768529+00:00"
+    "publishedAt": "2026-11-13T12:58:57.768529+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-13T22:14:01.777714+00:00"
   },
   {
     "id": 1844,
