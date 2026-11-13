@@ -20600,5 +20600,83 @@
     "publishedAt": "2026-11-12T17:37:13.048715+00:00",
     "status": "sold",
     "soldAt": "2026-11-12T19:36:02.485178+00:00"
+  },
+  {
+    "id": 1840,
+    "title": "⅙ Thaler - Frederick William IV 1842",
+    "country": "Prusia, Reino de",
+    "metal": "Plata .521",
+    "year": 1842,
+    "price": "30 USD",
+    "images": [
+      "images/1840A.jpeg",
+      "images/1840B.jpeg"
+    ],
+    "reference": "KM# 436",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 2950455,
+    "peso": "5.345",
+    "diametro": "23",
+    "description": "Federico Guillermo IV - Ceca A (Berlín) - Ceca A, pátina original, 50 usd de catalogo",
+    "publishedAt": "2026-11-13T12:58:57.768529+00:00"
+  },
+  {
+    "id": 1841,
+    "title": "1 Florín 1921",
+    "country": "Reino Unido",
+    "metal": "Plata .500",
+    "year": 1921,
+    "price": "16 USD",
+    "images": [
+      "images/1841A.jpeg",
+      "images/1841B.jpeg"
+    ],
+    "reference": "KM# 817a",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "11.31",
+    "diametro": "28.5",
+    "description": "Jorge V",
+    "publishedAt": "2026-11-13T12:58:57.768529+00:00",
+    "commemorates": "Jorge V"
+  },
+  {
+    "id": 1842,
+    "title": "1/4 Dólar 1960",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1960,
+    "price": "12 USD",
+    "images": [
+      "images/1842A.jpeg",
+      "images/1842B.jpeg"
+    ],
+    "reference": "KM# 164",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "6.25",
+    "diametro": "24.26",
+    "description": "Brilla mucho",
+    "publishedAt": "2026-11-13T12:58:57.768529+00:00"
+  },
+  {
+    "id": 1843,
+    "title": "1/4 Dólar 1964",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1964,
+    "price": "12 USD",
+    "images": [
+      "images/1843A.jpeg",
+      "images/1843B.jpeg"
+    ],
+    "reference": "KM# 164",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "6.25",
+    "diametro": "24.26",
+    "description": "Brilla mucho",
+    "publishedAt": "2026-11-13T12:58:57.768529+00:00"
   }
 ]
