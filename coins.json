@@ -10355,7 +10355,9 @@
     "grade_short": "B+",
     "description": "",
     "publishedAt": "2026-09-04T19:05:07.645274+00:00",
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-11-13T15:21:23.532376+00:00"
   },
   {
     "id": 1302,
