@@ -20092,7 +20092,9 @@
     "diametro": "22",
     "description": "Stary Oskol",
     "publishedAt": "2026-11-11T23:05:25.212186+00:00",
-    "commemorates": "Stary Oskol"
+    "commemorates": "Stary Oskol",
+    "status": "sold",
+    "soldAt": "2026-11-13T00:19:51.808696+00:00"
   },
   {
     "id": 1816,
@@ -20112,7 +20114,9 @@
     "diametro": "22",
     "description": "Petrozavodsk - Ceca СПМД (San Petersburgo)",
     "publishedAt": "2026-11-11T23:05:25.212186+00:00",
-    "commemorates": "Petrozavodsk"
+    "commemorates": "Petrozavodsk",
+    "status": "sold",
+    "soldAt": "2026-11-13T00:19:51.808696+00:00"
   },
   {
     "id": 1817,
