@@ -20666,5 +20666,80 @@
     "diametro": "24.26",
     "description": "Brilla mucho",
     "publishedAt": "2026-11-13T12:58:57.768529+00:00"
+  },
+  {
+    "id": 1844,
+    "title": "1/4 Real 1853",
+    "country": "Argentina - Córdoba",
+    "metal": "Plata",
+    "year": 1853,
+    "price": "200 USD",
+    "images": [
+      "images/1844A.jpeg",
+      "images/1844B.jpeg"
+    ],
+    "reference": "CJ# 68.1.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "0.8",
+    "diametro": "11",
+    "description": "Ceca de Córdoba.\n\nAcuñada por la Casa de Moneda de Córdoba, la primera ceca patria del territorio (1815), en los meses en que se sancionaba la Constitución de 1853. Tras Caseros, la Confederación no tenía ceca nacional y Córdoba siguió sellando su propia plata para abastecer el comercio del interior. El cuartillo era la fracción más chica del sistema de reales, la moneda del cambio diario: de tan pequeña, se perdía y se gastaba, y hoy cuesta encontrarla con este nivel de detalle. Una de las últimas emisiones de plata cordobesa.",
+    "publishedAt": "2026-11-13T18:54:04.419107+00:00"
+  },
+  {
+    "id": 1845,
+    "title": "1/2 Real 1853",
+    "country": "Argentina - Córdoba",
+    "metal": "Plata",
+    "year": 1853,
+    "price": "120 USD",
+    "images": [
+      "images/1845A.jpeg",
+      "images/1845B.jpeg"
+    ],
+    "reference": "CJ# 67.1.1",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "1.43",
+    "diametro": "14.6",
+    "description": "Casa de Moneda de Córdoba. Variante con sol de 8 puntas (A1 - R1).\n\nMedio real cordobés de 1853, año de la Constitución Nacional, sellado cuando la plata provincial todavía era la moneda real del interior frente a la falta de una ceca de la Confederación. La Casa de Moneda de Córdoba, heredera de la primera ceca patria de 1815, trabajaba con cuños grabados a mano, y por eso cada combinación de anverso y reverso es identificable: esta lleva el sol de ocho puntas, una de las variantes que buscan los especialistas en amonedación cordobesa.",
+    "publishedAt": "2026-11-13T18:54:04.419107+00:00"
+  },
+  {
+    "id": 1846,
+    "title": "1/2 Real 1854",
+    "country": "Argentina - La Rioja",
+    "metal": "Plata",
+    "year": 1854,
+    "price": "200 USD",
+    "images": [
+      "images/1846A.jpeg",
+      "images/1846B.jpeg"
+    ],
+    "reference": "CJ# 73.2",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "description": "Confederación Argentina.\n\nLa Rioja tuvo una de las cecas más activas del interior, alimentada por la plata y el oro del Famatina, y sus piezas circularon mucho más allá de la provincia. Este medio real de 1854 pertenece a la etapa de la Confederación Argentina, cuando, sin moneda nacional, las provincias seguían acuñando bajo el nuevo orden constitucional. Piezas chicas y muy circuladas, rara vez aparecen con esta conservación.",
+    "publishedAt": "2026-11-13T18:54:04.419107+00:00"
+  },
+  {
+    "id": 1847,
+    "title": "2 1/2 Pesos 1884",
+    "country": "Argentina",
+    "metal": "Oro .900",
+    "year": 1884,
+    "price": "11000 USD",
+    "images": [
+      "images/1847A.jpeg",
+      "images/1847B.jpeg"
+    ],
+    "reference": "CJ# 11.1",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": "421",
+    "peso": "4.0322",
+    "diametro": "19",
+    "description": "Medio Argentino. Ley 1130 de 1881. Grabador: Eugène-André Oudiné. Canto estriado.\n\nPieza de exclusividad: el Medio Argentino es la moneda de oro más escasa del primer cono monetario nacional. La Ley 1130 de 1881 lo creó como mitad del Argentino, pero la Casa de Moneda solo selló 9 piezas en 1881, destinadas a autoridades, y 421 en 1884, frente a más de 1,6 millones de Argentinos: según Ariel Dabbah, la tolerancia de fino exigida por la ley era demasiado estrecha para un cospel tan chico y la acuñación se abandonó. Ejemplares con pedigrí como el de la colección Clapp–Eliasberg se disputan en subastas internacionales; el Museo del BCRA conserva uno de 1884.",
+    "publishedAt": "2026-11-13T18:54:04.419107+00:00"
   }
 ]
