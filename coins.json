@@ -20914,5 +20914,128 @@
     "publishedAt": "2026-11-14T22:59:53.970281+00:00",
     "cantidad": 2,
     "commemorates": "Centenario de la Confederación - Isabel II"
+  },
+  {
+    "id": 1857,
+    "title": "3 Peniques 1950",
+    "country": "Australia",
+    "metal": "Plata .500",
+    "year": 1950,
+    "price": "5 USD",
+    "images": [
+      "images/1857A.jpeg",
+      "images/1857B.jpeg"
+    ],
+    "reference": "KM# 44",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "1.41",
+    "diametro": "16",
+    "description": "Jorge VI",
+    "publishedAt": "2026-11-14T23:13:46.496869+00:00",
+    "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1858,
+    "title": "3 Peniques 1960",
+    "country": "Australia",
+    "metal": "Plata .500",
+    "year": 1960,
+    "price": "5 USD",
+    "images": [
+      "images/1858A.jpeg",
+      "images/1858B.jpeg"
+    ],
+    "reference": "KM# 57",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "1.41",
+    "diametro": "16",
+    "description": "Isabel II",
+    "publishedAt": "2026-11-14T23:13:46.496869+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1859,
+    "title": "6 Peniques 1918",
+    "country": "Reino Unido",
+    "metal": "Plata .925",
+    "year": 1918,
+    "price": "9 USD",
+    "images": [
+      "images/1859A.jpeg",
+      "images/1859B.jpeg"
+    ],
+    "reference": "KM# 815",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "2.83",
+    "diametro": "19.3",
+    "description": "Jorge V",
+    "publishedAt": "2026-11-14T23:13:46.496869+00:00",
+    "commemorates": "Jorge V"
+  },
+  {
+    "id": 1860,
+    "title": "1/2 Franco 1903",
+    "country": "Suiza",
+    "metal": "Plata .835",
+    "year": 1903,
+    "price": "8 USD",
+    "images": [
+      "images/1860A.jpeg",
+      "images/1860B.jpeg"
+    ],
+    "reference": "KM# 23",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 800000,
+    "peso": "2.5",
+    "diametro": "18.2",
+    "description": "Francisco Franco - Ceca B - Escasa",
+    "publishedAt": "2026-11-14T23:13:46.496869+00:00",
+    "commemorates": "Francisco Franco"
+  },
+  {
+    "id": 1861,
+    "title": "1/2 Franco 1882",
+    "country": "Suiza",
+    "metal": "Plata .835",
+    "year": 1882,
+    "price": "10 USD",
+    "images": [
+      "images/1861A.jpeg",
+      "images/1861B.jpeg"
+    ],
+    "reference": "KM# 23",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 1000000,
+    "peso": "2.5",
+    "diametro": "18.2",
+    "description": "Francisco Franco - Ceca B - 65 usd de catalogo",
+    "publishedAt": "2026-11-14T23:13:46.496869+00:00",
+    "commemorates": "Francisco Franco"
+  },
+  {
+    "id": 1862,
+    "title": "1/2 Franco 1881",
+    "country": "Suiza",
+    "metal": "Plata .835",
+    "year": 1881,
+    "price": "10 USD",
+    "images": [
+      "images/1862A.jpeg",
+      "images/1862B.jpeg"
+    ],
+    "reference": "KM# 23",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 1000000,
+    "peso": "2.5",
+    "diametro": "18.2",
+    "description": "Francisco Franco - Ceca B - 35 usd de catalogo",
+    "publishedAt": "2026-11-14T23:13:46.496869+00:00",
+    "commemorates": "Francisco Franco"
   }
 ]
