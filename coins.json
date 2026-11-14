@@ -20852,5 +20852,67 @@
     "description": "FAO - Ensayo nacional",
     "publishedAt": "2026-11-14T22:47:17.551573+00:00",
     "commemorates": "FAO"
+  },
+  {
+    "id": 1854,
+    "title": "50 Céntimos 1904",
+    "country": "España",
+    "metal": "Plata .835",
+    "year": 1904,
+    "price": "10 USD",
+    "images": [
+      "images/1854A.jpeg",
+      "images/1854B.jpeg"
+    ],
+    "reference": "KM# 723",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 4851000,
+    "peso": "2.5",
+    "diametro": "18",
+    "description": "Alfonso XIII - Ceca Madrid - Estrella 04",
+    "publishedAt": "2026-11-14T22:59:53.970281+00:00",
+    "commemorates": "Alfonso XIII"
+  },
+  {
+    "id": 1855,
+    "title": "50 Céntimos 1885",
+    "country": "España",
+    "metal": "Plata .835",
+    "year": 1885,
+    "price": "14 USD",
+    "images": [
+      "images/1855A.jpeg",
+      "images/1855B.jpeg"
+    ],
+    "reference": "KM# 685",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "2.5",
+    "diametro": "18",
+    "description": "Alfonso XII - Estrella (86), 20 usd de catalogo",
+    "publishedAt": "2026-11-14T22:59:53.970281+00:00",
+    "commemorates": "Alfonso XII"
+  },
+  {
+    "id": 1856,
+    "title": "10 Centavos 1967",
+    "country": "Canadá",
+    "metal": "Plata .800",
+    "year": 1967,
+    "price": "8 USD",
+    "images": [
+      "images/1856A.jpeg",
+      "images/1856B.jpeg"
+    ],
+    "reference": "KM# 67",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "2.33",
+    "diametro": "18.034",
+    "description": "Centenario de la Confederación - Isabel II",
+    "publishedAt": "2026-11-14T22:59:53.970281+00:00",
+    "cantidad": 2,
+    "commemorates": "Centenario de la Confederación - Isabel II"
   }
 ]
