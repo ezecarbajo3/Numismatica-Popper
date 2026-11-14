@@ -21037,5 +21037,47 @@
     "description": "Francisco Franco - Ceca B - 35 usd de catalogo",
     "publishedAt": "2026-11-14T23:13:46.496869+00:00",
     "commemorates": "Francisco Franco"
+  },
+  {
+    "id": 1863,
+    "title": "1 Peso 2007",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 2007,
+    "price": "146.5 USD",
+    "images": [
+      "images/1863A.jpeg",
+      "images/1863B.jpeg"
+    ],
+    "reference": "CJ# 6",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 2000,
+    "peso": "25",
+    "diametro": "37",
+    "description": "Descubrimiento del Petróleo",
+    "publishedAt": "2026-11-14T23:20:37.852877+00:00",
+    "commemorates": "Descubrimiento del Petróleo"
+  },
+  {
+    "id": 1864,
+    "title": "5 Pesos 2021 Catar 2022",
+    "country": "Argentina",
+    "metal": "Plata .925",
+    "year": 2021,
+    "price": "159 USD",
+    "images": [
+      "images/1864A.jpeg",
+      "images/1864B.jpeg"
+    ],
+    "reference": "KM# 192",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 7500,
+    "peso": "27",
+    "diametro": "40",
+    "description": "Catar 2022",
+    "publishedAt": "2026-11-14T23:20:37.852877+00:00",
+    "commemorates": "Catar 2022"
   }
 ]
