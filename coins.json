@@ -14523,7 +14523,9 @@
     "diametro": "23",
     "description": "Jorge II",
     "publishedAt": "2026-10-24T15:03:28.538401+00:00",
-    "commemorates": "Jorge II"
+    "commemorates": "Jorge II",
+    "status": "sold",
+    "soldAt": "2026-11-14T11:30:02.827844+00:00"
   },
   {
     "id": 1549,
