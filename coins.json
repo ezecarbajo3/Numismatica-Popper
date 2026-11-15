@@ -20790,7 +20790,9 @@
     "diametro": "29",
     "description": "Paul von Hindenburg",
     "publishedAt": "2026-11-14T22:47:17.551573+00:00",
-    "commemorates": "Paul von Hindenburg"
+    "commemorates": "Paul von Hindenburg",
+    "status": "sold",
+    "soldAt": "2026-11-15T13:28:11.420914+00:00"
   },
   {
     "id": 1851,
@@ -20973,7 +20975,9 @@
     "diametro": "19.3",
     "description": "Jorge V",
     "publishedAt": "2026-11-14T23:13:46.496869+00:00",
-    "commemorates": "Jorge V"
+    "commemorates": "Jorge V",
+    "status": "sold",
+    "soldAt": "2026-11-15T13:28:11.420914+00:00"
   },
   {
     "id": 1860,
@@ -21015,7 +21019,9 @@
     "diametro": "18.2",
     "description": "Francisco Franco - Ceca B - 65 usd de catalogo",
     "publishedAt": "2026-11-14T23:13:46.496869+00:00",
-    "commemorates": "Francisco Franco"
+    "commemorates": "Francisco Franco",
+    "status": "sold",
+    "soldAt": "2026-11-15T13:28:11.420914+00:00"
   },
   {
     "id": 1862,
@@ -21036,7 +21042,9 @@
     "diametro": "18.2",
     "description": "Francisco Franco - Ceca B - 35 usd de catalogo",
     "publishedAt": "2026-11-14T23:13:46.496869+00:00",
-    "commemorates": "Francisco Franco"
+    "commemorates": "Francisco Franco",
+    "status": "sold",
+    "soldAt": "2026-11-15T13:28:11.420914+00:00"
   },
   {
     "id": 1863,
@@ -21059,7 +21067,9 @@
     "diametro": "37",
     "description": "Descubrimiento del Petróleo",
     "publishedAt": "2026-11-14T23:20:37.852877+00:00",
-    "commemorates": "Descubrimiento del Petróleo"
+    "commemorates": "Descubrimiento del Petróleo",
+    "status": "sold",
+    "soldAt": "2026-11-15T13:28:11.420914+00:00"
   },
   {
     "id": 1864,
@@ -21082,6 +21092,8 @@
     "diametro": "40",
     "description": "Catar 2022",
     "publishedAt": "2026-11-14T23:20:37.852877+00:00",
-    "commemorates": "Catar 2022"
+    "commemorates": "Catar 2022",
+    "status": "sold",
+    "soldAt": "2026-11-15T13:28:11.420914+00:00"
   }
 ]
