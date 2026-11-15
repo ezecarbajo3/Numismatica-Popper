@@ -21095,5 +21095,182 @@
     "commemorates": "Catar 2022",
     "status": "sold",
     "soldAt": "2026-11-15T13:28:11.420914+00:00"
+  },
+  {
+    "id": 1865,
+    "title": "5 Forintos 2021",
+    "country": "Hungría",
+    "metal": "Níquel",
+    "year": 2021,
+    "price": "18.5 USD",
+    "images": [
+      "images/1865A.jpeg",
+      "images/1865B.jpeg"
+    ],
+    "reference": "KM# 1014",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 1996000,
+    "peso": "4.2",
+    "diametro": "21.2",
+    "description": "75 éves a forint - Ceca BP. - Set de 6 monedas (F-O-R-I-N-T) - Lote x9, forman un edificio",
+    "publishedAt": "2026-11-15T22:30:36.855193+00:00",
+    "commemorates": "75 éves a forint"
+  },
+  {
+    "id": 1866,
+    "title": "2 Centavos 1919",
+    "country": "Chile",
+    "metal": "Cobre",
+    "year": 1919,
+    "price": "18 USD",
+    "images": [
+      "images/1866A.jpeg",
+      "images/1866B.jpeg"
+    ],
+    "reference": "KM# 164",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": 147000,
+    "peso": "5",
+    "diametro": "22.5",
+    "description": "Ceca Santiago",
+    "publishedAt": "2026-11-15T22:30:36.855193+00:00"
+  },
+  {
+    "id": 1867,
+    "title": "100 Escudos 1999 UNICEF",
+    "country": "Portugal",
+    "metal": "Bimetálica",
+    "year": 1999,
+    "price": "14 USD",
+    "images": [
+      "images/1867A.jpeg",
+      "images/1867B.jpeg"
+    ],
+    "reference": "KM# 722.2",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 180000,
+    "peso": "8.3",
+    "diametro": "25",
+    "description": "UNICEF - Ceca INCM - Error \"PORTUGUSA\", RARA",
+    "publishedAt": "2026-11-15T22:30:36.855193+00:00",
+    "commemorates": "UNICEF"
+  },
+  {
+    "id": 1868,
+    "title": "10 Francos 1954",
+    "country": "Sarre",
+    "metal": "Bronce",
+    "year": 1954,
+    "price": "11.5 USD",
+    "images": [
+      "images/1868A.jpeg",
+      "images/1868B.jpeg"
+    ],
+    "reference": "KM# 1",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "3",
+    "diametro": "20",
+    "description": "La región del Sarre (Saarland) es uno de los dieciséis estados federados de Alemania, ubicado en el suroeste del país, en la frontera con Francia y Luxemburgo, con capital en Saarbrücken. Históricamente fue un territorio muy disputado entre Francia y Alemania debido a sus ricos yacimientos de carbón y su potente industria siderúrgica, llegando a estar bajo administración internacional tras ambas guerras mundiales antes de reincorporarse definitivamente a Alemania en 1957",
+    "publishedAt": "2026-11-15T22:30:36.855193+00:00"
+  },
+  {
+    "id": 1869,
+    "title": "1 Dinar 1938",
+    "country": "Yugoslavia",
+    "metal": "Bronce",
+    "year": 1938,
+    "price": "5.5 USD",
+    "images": [
+      "images/1869A.jpeg",
+      "images/1869B.jpeg"
+    ],
+    "reference": "KM# 19",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "3.5",
+    "diametro": "21",
+    "description": "",
+    "publishedAt": "2026-11-15T22:30:36.855193+00:00"
+  },
+  {
+    "id": 1870,
+    "title": "5 Rublos 2014",
+    "country": "Transnistria",
+    "metal": "Plástico (Plameth composite material)",
+    "year": 2014,
+    "price": "8 USD",
+    "images": [
+      "images/1870A.jpeg",
+      "images/1870B.jpeg"
+    ],
+    "reference": "KM# 206",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "1",
+    "diametro": "28.6",
+    "description": "pentagonal - Pentagano de plástico",
+    "publishedAt": "2026-11-15T22:30:36.855193+00:00"
+  },
+  {
+    "id": 1871,
+    "title": "50 Peniques 2002",
+    "country": "Islas Malvinas",
+    "metal": "Cuproníquel",
+    "year": 2002,
+    "price": "22.5 USD",
+    "images": [
+      "images/1871A.jpeg",
+      "images/1871B.jpeg"
+    ],
+    "reference": "KM# 73.1",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "28.13",
+    "diametro": "38.6",
+    "description": "Jubileo de oro - Isabel II",
+    "publishedAt": "2026-11-15T22:30:36.855193+00:00",
+    "commemorates": "Jubileo de oro - Isabel II"
+  },
+  {
+    "id": 1872,
+    "title": "1 Dólar 1921",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1921,
+    "price": "55 USD",
+    "images": [
+      "images/1872A.jpeg",
+      "images/1872B.jpeg"
+    ],
+    "reference": "KM# 110",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "26.73",
+    "diametro": "38.1",
+    "description": "",
+    "publishedAt": "2026-11-15T22:30:36.855193+00:00"
+  },
+  {
+    "id": 1873,
+    "title": "1 Peso 1959",
+    "country": "Argentina",
+    "metal": "Acero niquelado",
+    "year": 1959,
+    "price": "19.5 USD",
+    "images": [
+      "images/1873A.jpeg",
+      "images/1873B.jpeg"
+    ],
+    "reference": "CJ# 254",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "6.5",
+    "diametro": "26",
+    "description": "reverso cruzado - Girada -45 grados, rara",
+    "publishedAt": "2026-11-15T22:30:36.855193+00:00"
   }
 ]
