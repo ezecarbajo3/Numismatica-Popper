@@ -21115,7 +21115,9 @@
     "diametro": "21.2",
     "description": "75 éves a forint - Ceca BP. - Set de 6 monedas (F-O-R-I-N-T) - Lote x9, forman un edificio",
     "publishedAt": "2026-11-15T22:30:36.855193+00:00",
-    "commemorates": "75 éves a forint"
+    "commemorates": "75 éves a forint",
+    "status": "sold",
+    "soldAt": "2026-11-16T14:26:23.148837+00:00"
   },
   {
     "id": 1866,
@@ -21194,7 +21196,9 @@
     "peso": "3.5",
     "diametro": "21",
     "description": "",
-    "publishedAt": "2026-11-15T22:30:36.855193+00:00"
+    "publishedAt": "2026-11-15T22:30:36.855193+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-16T14:26:23.148837+00:00"
   },
   {
     "id": 1870,
@@ -21213,7 +21217,9 @@
     "peso": "1",
     "diametro": "28.6",
     "description": "pentagonal - Pentagano de plástico",
-    "publishedAt": "2026-11-15T22:30:36.855193+00:00"
+    "publishedAt": "2026-11-15T22:30:36.855193+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-16T14:26:23.148837+00:00"
   },
   {
     "id": 1871,
@@ -21252,7 +21258,9 @@
     "peso": "26.73",
     "diametro": "38.1",
     "description": "",
-    "publishedAt": "2026-11-15T22:30:36.855193+00:00"
+    "publishedAt": "2026-11-15T22:30:36.855193+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-16T14:26:23.148837+00:00"
   },
   {
     "id": 1873,
