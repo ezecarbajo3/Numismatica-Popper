@@ -575,6 +575,9 @@ function readUrl() {
   }
   state.nuevos = p.get('nuevos') === '1' || !!legacy.nuevos;
   state.orden = SORTS.some(s => s.key === p.get('orden')) ? p.get('orden') : '';
+  // Los ingresos de la semana se ven de lo último que entró a lo más viejo,
+  // salvo que se haya elegido otro orden.
+  if (state.nuevos && !p.has('orden')) state.orden = 'nuevas';
   normalizeGeo();
 }
 
@@ -1082,7 +1085,8 @@ function renderFiltros(pool) {
   const nov = el('div', 'filtro filtro--suelto');
   nov.appendChild(lista([opcion({
     label: 'Solo ingresos de la semana', count: nuevosN, checked: state.nuevos,
-    onToggle: () => update({ nuevos: !state.nuevos }),
+    onToggle: () => update(!state.nuevos && !state.orden
+      ? { nuevos: true, orden: 'nuevas' } : { nuevos: !state.nuevos }),
   })]));
   body.appendChild(nov);
 

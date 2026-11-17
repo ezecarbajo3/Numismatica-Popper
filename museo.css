@@ -470,12 +470,6 @@ html.diapos {
   scroll-padding-top: var(--mh-h);
 }
 
-/* Con el dedo, el imán es suave: se posa en cada pantalla si quedás cerca,
-   pero no te arrastra ni te frena a mitad de un gesto largo. */
-@media (pointer: coarse) {
-  html.diapos { scroll-snap-type: y proximity; }
-}
-
 .diapo {
   position: relative;
   height: calc(100svh - var(--mh-h));
