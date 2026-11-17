@@ -8455,7 +8455,9 @@
     "grade_short": "MB+",
     "description": "Efigie de José Gervasio Artigas en uniforme militar y Escudo Nacional de Uruguay. Acuñada en Plata .900 (25 g, 37 mm).",
     "publishedAt": "2026-08-19T16:41:29.963296+00:00",
-    "mintage": 2000000
+    "mintage": 2000000,
+    "status": "sold",
+    "soldAt": "2026-11-16T22:27:52.615538-03:00"
   },
   {
     "id": 1098,
