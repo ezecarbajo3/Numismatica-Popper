@@ -7344,7 +7344,9 @@
     "grade_short": "MB",
     "description": "El régimen de Vichy fue el gobierno francés que colaboró con la Alemania nazi entre 1940 y 1944, tras la derrota de Francia en la Segunda Guerra Mundial. Con sede en la ciudad de Vichy y liderado por el mariscal Philippe Pétain, controló la llamada \"Francia libre\" (zona sur no ocupada) mientras el norte quedaba bajo ocupación alemana directa.",
     "reference": "KM# 903",
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-11-16T21:56:10.943172-03:00"
   },
   {
     "id": 927,
