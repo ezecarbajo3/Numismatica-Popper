@@ -8466,7 +8466,7 @@
     "metal": "Acero chapado en latón",
     "year": 2025,
     "price": "3.5 USD",
-    "cantidad": 1,
+    "cantidad": 0,
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "",
@@ -8475,7 +8475,9 @@
       "images/1098A.jpeg",
       "images/1098B.jpeg"
     ],
-    "publishedAt": "2026-08-19T22:53:10.802456+00:00"
+    "publishedAt": "2026-08-19T22:53:10.802456+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-16T22:30:00.610458-03:00"
   },
   {
     "id": 1102,
