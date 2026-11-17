@@ -7925,7 +7925,9 @@
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "En blister original. Contiene la serie completa del primer cono monetario decimal."
+    "description": "En blister original. Contiene la serie completa del primer cono monetario decimal.",
+    "status": "sold",
+    "soldAt": "2026-11-16T22:22:02.906742-03:00"
   },
   {
     "id": 996,
