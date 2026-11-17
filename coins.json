@@ -22072,5 +22072,243 @@
     "description": "No tán común",
     "publishedAt": "2026-11-17T19:03:18.890194+00:00",
     "cantidad": 2
+  },
+  {
+    "id": 1913,
+    "title": "3 Mils 1955",
+    "country": "Chipre",
+    "metal": "Bronce",
+    "year": 1955,
+    "price": "5.5 USD",
+    "images": [
+      "images/1913A.jpeg",
+      "images/1913B.jpeg"
+    ],
+    "reference": "KM# 33",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "2.83",
+    "diametro": "20",
+    "description": "Isabel II",
+    "publishedAt": "2026-11-17T19:53:40.147287+00:00",
+    "commemorates": "Isabel II"
+  },
+  {
+    "id": 1914,
+    "title": "1 Real 1842",
+    "country": "Córdoba, Provincia de",
+    "metal": "Plata",
+    "year": 1842,
+    "price": "90 USD",
+    "images": [
+      "images/1914A.jpeg",
+      "images/1914B.jpeg"
+    ],
+    "reference": "KM# 38.1",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "3.2",
+    "diametro": "20",
+    "description": "Ceca Córdoba",
+    "publishedAt": "2026-11-17T19:53:40.147287+00:00"
+  },
+  {
+    "id": 1915,
+    "title": "10 Hwan 1961",
+    "country": "Corea del Sur",
+    "metal": "Latón",
+    "year": 1961,
+    "price": "8 USD",
+    "images": [
+      "images/1915A.jpeg",
+      "images/1915B.jpeg"
+    ],
+    "reference": "KM# 1",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "2.46",
+    "diametro": "19.1",
+    "description": "",
+    "publishedAt": "2026-11-17T19:53:40.147287+00:00"
+  },
+  {
+    "id": 1916,
+    "title": "1 Centesimo 1850",
+    "country": "Lombardo-véneto",
+    "metal": "Cobre",
+    "year": 1850,
+    "price": "12 USD",
+    "images": [
+      "images/1916A.jpeg",
+      "images/1916B.jpeg"
+    ],
+    "reference": "MI# 534",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "1,75",
+    "diametro": "18",
+    "description": "Ceca M",
+    "publishedAt": "2026-11-17T19:53:40.147287+00:00"
+  },
+  {
+    "id": 1917,
+    "title": "4 Centésimos 1869",
+    "country": "Uruguay",
+    "metal": "Bronce",
+    "year": 1869,
+    "price": "10 USD",
+    "images": [
+      "images/1917A.jpeg",
+      "images/1917B.jpeg"
+    ],
+    "reference": "KM# 13",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "20",
+    "diametro": "35",
+    "description": "",
+    "publishedAt": "2026-11-17T19:53:40.147287+00:00"
+  },
+  {
+    "id": 1918,
+    "title": "4 Centésimos 1870",
+    "country": "Paraguay",
+    "metal": "Cobre",
+    "year": 1870,
+    "price": "16 USD",
+    "images": [
+      "images/1918A.jpeg",
+      "images/1918B.jpeg"
+    ],
+    "reference": "KM# 4",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "19.74",
+    "diametro": "35",
+    "description": "",
+    "publishedAt": "2026-11-17T19:53:40.147287+00:00",
+    "group_id": "pa-4-centesimos-1870",
+    "group_label": "4 Centésimos 1870"
+  },
+  {
+    "id": 1919,
+    "title": "50 Yuanes 2014",
+    "country": "Taiwán",
+    "metal": "Bronce",
+    "year": 2014,
+    "price": "4.5 USD",
+    "images": [
+      "images/1919A.jpeg",
+      "images/1919B.jpeg"
+    ],
+    "reference": "Y# 568",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "10",
+    "diametro": "28",
+    "description": "",
+    "publishedAt": "2026-11-17T19:53:40.147287+00:00"
+  },
+  {
+    "id": 1920,
+    "title": "2 Centavos 1888",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1888,
+    "price": "23 USD",
+    "images": [
+      "images/1920A.jpeg",
+      "images/1920B.jpeg"
+    ],
+    "reference": "KM# 33",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 659000,
+    "peso": "10",
+    "diametro": "30",
+    "description": "",
+    "publishedAt": "2026-11-17T19:53:40.147287+00:00"
+  },
+  {
+    "id": 1921,
+    "title": "4 Centésimos 1870",
+    "country": "Paraguay",
+    "metal": "Cobre",
+    "year": 1870,
+    "price": "18 USD",
+    "images": [
+      "images/1921A.jpeg",
+      "images/1921B.jpeg"
+    ],
+    "reference": "KM# 4",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "19.74",
+    "diametro": "35",
+    "description": "",
+    "publishedAt": "2026-11-17T19:53:40.147287+00:00",
+    "group_id": "pa-4-centesimos-1870",
+    "group_label": "4 Centésimos 1870"
+  },
+  {
+    "id": 1922,
+    "title": "1 Centavo 1905",
+    "country": "Países Bajos",
+    "metal": "Bronce",
+    "year": 1905,
+    "price": "4 USD",
+    "images": [
+      "images/1922A.jpeg",
+      "images/1922B.jpeg"
+    ],
+    "reference": "KM# 132",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "2.5",
+    "diametro": "19",
+    "description": "",
+    "publishedAt": "2026-11-17T19:53:40.147287+00:00"
+  },
+  {
+    "id": 1923,
+    "title": "50 Centavos 1993",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1993,
+    "price": "5 USD",
+    "images": [
+      "images/1923A.jpeg",
+      "images/1923B.jpeg"
+    ],
+    "reference": "CJ# 5",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "5.8",
+    "diametro": "25.2",
+    "description": "FALSA",
+    "publishedAt": "2026-11-17T19:53:40.147287+00:00",
+    "group_id": "ar-50-centavos-1993",
+    "group_label": "50 Centavos 1993"
+  },
+  {
+    "id": 1924,
+    "title": "50 Centavos 1993",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1993,
+    "price": "5 USD",
+    "images": [
+      "images/1924A.jpeg",
+      "images/1924B.jpeg"
+    ],
+    "reference": "CJ# 5",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "5.8",
+    "diametro": "25.2",
+    "description": "FALSA",
+    "publishedAt": "2026-11-17T19:53:40.147287+00:00",
+    "group_id": "ar-50-centavos-1993",
+    "group_label": "50 Centavos 1993"
   }
 ]
