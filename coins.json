@@ -8486,7 +8486,7 @@
     "metal": "Acero niquelado",
     "year": 2004,
     "price": "2.5 USD",
-    "cantidad": 1,
+    "cantidad": 0,
     "grade": "Sin Circular",
     "grade_short": "SC",
     "reference": "KM# 492",
@@ -8497,7 +8497,9 @@
     ],
     "publishedAt": "2026-08-19T22:53:10.802456+00:00",
     "group_id": "ca-25cents-2004",
-    "group_label": "25 Cents 2004"
+    "group_label": "25 Cents 2004",
+    "status": "sold",
+    "soldAt": "2026-11-16T22:30:46.660316-03:00"
   },
   {
     "id": 1128,
