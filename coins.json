@@ -4663,7 +4663,9 @@
     ],
     "metal": "Bronce",
     "description": "Bañada en plata",
-    "reference": "KM# 810"
+    "reference": "KM# 810",
+    "status": "sold",
+    "soldAt": "2026-11-16T21:08:03.139027-03:00"
   },
   {
     "id": 666,
