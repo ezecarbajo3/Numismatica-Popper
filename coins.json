@@ -21480,5 +21480,224 @@
     "description": "Isabel II - BU in Plastic Case. Solo 30.000 en todo el mundo",
     "publishedAt": "2026-11-17T17:52:43.626424+00:00",
     "commemorates": "Isabel II"
+  },
+  {
+    "id": 1883,
+    "title": "50 Ouguiya 2014",
+    "country": "Mauritania",
+    "metal": "Bimetálica",
+    "year": 2014,
+    "price": "4.5 USD",
+    "images": [
+      "images/1883A.jpeg",
+      "images/1883B.jpeg"
+    ],
+    "reference": "KM# 9",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "8.3",
+    "diametro": "28",
+    "description": "",
+    "publishedAt": "2026-11-17T18:06:31.890977+00:00"
+  },
+  {
+    "id": 1884,
+    "title": "Media Corona 1948",
+    "country": "Reino Unido",
+    "metal": "Cuproníquel",
+    "year": 1948,
+    "price": "4.5 USD",
+    "images": [
+      "images/1884A.jpeg",
+      "images/1884B.jpeg"
+    ],
+    "reference": "KM# 866",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "14.14",
+    "diametro": "32.3",
+    "description": "Jorge VI - 2do tipo",
+    "publishedAt": "2026-11-17T18:06:31.890977+00:00",
+    "commemorates": "Jorge VI - 2do tipo"
+  },
+  {
+    "id": 1885,
+    "title": "200 Dram 2003",
+    "country": "Armenia",
+    "metal": "Bronce",
+    "year": 2003,
+    "price": "3.5 USD",
+    "images": [
+      "images/1885A.jpeg",
+      "images/1885B.jpeg"
+    ],
+    "reference": "KM# 96",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "4.5",
+    "diametro": "24",
+    "description": "",
+    "publishedAt": "2026-11-17T18:06:31.890977+00:00",
+    "cantidad": 2
+  },
+  {
+    "id": 1886,
+    "title": "50 Dram 2003",
+    "country": "Armenia",
+    "metal": "Latón",
+    "year": 2003,
+    "price": "3.5 USD",
+    "images": [
+      "images/1886A.jpeg",
+      "images/1886B.jpeg"
+    ],
+    "reference": "KM# 94",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "3.45",
+    "diametro": "21.5",
+    "description": "",
+    "publishedAt": "2026-11-17T18:06:31.890977+00:00",
+    "cantidad": 3
+  },
+  {
+    "id": 1887,
+    "title": "2 Tolarja 1998",
+    "country": "Eslovenia",
+    "metal": "Níquel",
+    "year": 1998,
+    "price": "2.5 USD",
+    "images": [
+      "images/1887A.jpeg",
+      "images/1887B.jpeg"
+    ],
+    "reference": "KM# 5",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 5001000,
+    "peso": "5.4",
+    "diametro": "24",
+    "description": "",
+    "publishedAt": "2026-11-17T18:06:31.890977+00:00",
+    "cantidad": 3
+  },
+  {
+    "id": 1888,
+    "title": "1 Franco 2008",
+    "country": "Polinesia Francesa",
+    "metal": "Aluminio",
+    "year": 2008,
+    "price": "3 USD",
+    "images": [
+      "images/1888A.jpeg",
+      "images/1888B.jpeg"
+    ],
+    "reference": "KM# 11",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 4800000,
+    "peso": "1.3",
+    "diametro": "23",
+    "description": "Francisco Franco",
+    "publishedAt": "2026-11-17T18:06:31.890977+00:00",
+    "cantidad": 2,
+    "commemorates": "Francisco Franco"
+  },
+  {
+    "id": 1889,
+    "title": "1 Penique 2002",
+    "country": "Man, Isla de",
+    "metal": "Cobre",
+    "year": 2002,
+    "price": "2.5 USD",
+    "images": [
+      "images/1889A.jpeg",
+      "images/1889B.jpeg"
+    ],
+    "reference": "KM# 1036",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "3.56",
+    "diametro": "20.32",
+    "description": "Ancient Keeills of Mann - Isabel II",
+    "publishedAt": "2026-11-17T18:06:31.890977+00:00",
+    "cantidad": 2,
+    "commemorates": "Ancient Keeills of Mann - Isabel II"
+  },
+  {
+    "id": 1890,
+    "title": "50 Luma 2004",
+    "country": "Artsaj",
+    "metal": "Aluminio",
+    "year": 2004,
+    "price": "3 USD",
+    "images": [
+      "images/1890A.jpeg",
+      "images/1890B.jpeg"
+    ],
+    "reference": "KM# 23",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "0.95",
+    "diametro": "20",
+    "description": "",
+    "publishedAt": "2026-11-17T18:06:31.890977+00:00",
+    "cantidad": 2
+  },
+  {
+    "id": 1891,
+    "title": "1 Libra 2008",
+    "country": "Egipto",
+    "metal": "Bimetálica",
+    "year": 2008,
+    "price": "3 USD",
+    "images": [
+      "images/1891A.jpeg",
+      "images/1891B.jpeg"
+    ],
+    "reference": "KM# 940a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "8.5",
+    "diametro": "25",
+    "description": "Máscara de Tutankamón",
+    "publishedAt": "2026-11-17T18:06:31.890977+00:00"
+  },
+  {
+    "id": 1892,
+    "title": "1 Penny 1997",
+    "country": "Santa Elena y Ascensión",
+    "metal": "Acero chapado en cobre",
+    "year": 1997,
+    "price": "2.5 USD",
+    "images": [
+      "images/1892A.jpeg",
+      "images/1892B.jpeg"
+    ],
+    "reference": "KM# 13a",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "description": "Isabel II",
+    "publishedAt": "2026-11-17T18:06:31.890977+00:00"
+  },
+  {
+    "id": 1893,
+    "title": "1 Franco 2003",
+    "country": "Burundi",
+    "metal": "Aluminio",
+    "year": 2003,
+    "price": "3.5 USD",
+    "images": [
+      "images/1893A.jpeg",
+      "images/1893B.jpeg"
+    ],
+    "reference": "KM# 19",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "0.87",
+    "diametro": "19",
+    "description": "Francisco Franco",
+    "publishedAt": "2026-11-17T18:06:31.890977+00:00",
+    "commemorates": "Francisco Franco"
   }
 ]
