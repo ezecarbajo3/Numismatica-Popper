@@ -21459,5 +21459,26 @@
     "description": "Jorge VI",
     "publishedAt": "2026-11-17T17:44:04.068004+00:00",
     "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1882,
+    "title": "1 Dólar 1971",
+    "country": "Nueva Zelanda",
+    "metal": "Cuproníquel",
+    "year": 1971,
+    "price": "14 USD",
+    "images": [
+      "images/1882A.jpeg",
+      "images/1882B.jpeg"
+    ],
+    "reference": "KM# 38.2",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 30000,
+    "peso": "27.22",
+    "diametro": "38.61",
+    "description": "Isabel II - BU in Plastic Case. Solo 30.000 en todo el mundo",
+    "publishedAt": "2026-11-17T17:52:43.626424+00:00",
+    "commemorates": "Isabel II"
   }
 ]
