@@ -8700,7 +8700,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "description": "",
-    "publishedAt": "2026-08-22T16:12:28.212471+00:00"
+    "publishedAt": "2026-08-22T16:12:28.212471+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-16T22:42:28.405728-03:00"
   },
   {
     "id": 1156,
