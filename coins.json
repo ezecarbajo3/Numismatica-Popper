@@ -21297,5 +21297,167 @@
     "diametro": "26",
     "description": "reverso cruzado - Girada -45 grados, rara",
     "publishedAt": "2026-11-15T22:30:36.855193+00:00"
+  },
+  {
+    "id": 1874,
+    "title": "20 Centésimos 1857",
+    "country": "Uruguay",
+    "metal": "Cobre",
+    "year": 1857,
+    "price": "20 USD",
+    "images": [
+      "images/1874A.jpeg",
+      "images/1874B.jpeg"
+    ],
+    "reference": "KM# 9",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 576000,
+    "peso": "17",
+    "diametro": "34",
+    "description": "",
+    "publishedAt": "2026-11-17T17:44:04.068004+00:00"
+  },
+  {
+    "id": 1875,
+    "title": "40 Centésimos 1857",
+    "country": "Uruguay",
+    "metal": "Cobre",
+    "year": 1857,
+    "price": "18 USD",
+    "images": [
+      "images/1875A.jpeg",
+      "images/1875B.jpeg"
+    ],
+    "reference": "KM# 10",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "mintage": 1080000,
+    "peso": "35",
+    "diametro": "38",
+    "description": "Ceca D",
+    "publishedAt": "2026-11-17T17:44:04.068004+00:00"
+  },
+  {
+    "id": 1876,
+    "title": "2 Centésimos 1869",
+    "country": "Uruguay",
+    "metal": "Bronce",
+    "year": 1869,
+    "price": "8 USD",
+    "images": [
+      "images/1876A.jpeg",
+      "images/1876B.jpeg"
+    ],
+    "reference": "KM# 12",
+    "grade": "",
+    "grade_short": "",
+    "mintage": 3000000,
+    "peso": "10",
+    "diametro": "30",
+    "description": "",
+    "publishedAt": "2026-11-17T17:44:04.068004+00:00",
+    "group_id": "uy-2centesimos-1869",
+    "group_label": "2 Centésimos 1869"
+  },
+  {
+    "id": 1877,
+    "title": "5 Yuanes 2020 Monte Wuyi",
+    "country": "China",
+    "metal": "Latón",
+    "year": 2020,
+    "price": "5 USD",
+    "images": [
+      "images/1877A.jpeg",
+      "images/1877B.jpeg"
+    ],
+    "reference": "KM# 2523",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "11.49",
+    "diametro": "27.19",
+    "description": "Monte Wuyi",
+    "publishedAt": "2026-11-17T17:44:04.068004+00:00",
+    "commemorates": "Monte Wuyi"
+  },
+  {
+    "id": 1878,
+    "title": "5 Yuanes 2022",
+    "country": "China",
+    "metal": "Latón",
+    "year": 2022,
+    "price": "5 USD",
+    "images": [
+      "images/1878A.jpeg",
+      "images/1878B.jpeg"
+    ],
+    "reference": "Sun# J125",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "11.49",
+    "diametro": "27.19",
+    "description": "Monte Emei y Buda Gigante de Leshan",
+    "publishedAt": "2026-11-17T17:44:04.068004+00:00",
+    "commemorates": "Monte Emei y Buda Gigante de Leshan"
+  },
+  {
+    "id": 1879,
+    "title": "50 Centavos 1957",
+    "country": "Mozambique",
+    "metal": "Bronce",
+    "year": 1957,
+    "price": "4.5 USD",
+    "images": [
+      "images/1879A.jpeg",
+      "images/1879B.jpeg"
+    ],
+    "reference": "KM# 81",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "4",
+    "diametro": "20",
+    "description": "",
+    "publishedAt": "2026-11-17T17:44:04.068004+00:00"
+  },
+  {
+    "id": 1880,
+    "title": "5 Centésimos 1854",
+    "country": "Uruguay",
+    "metal": "Cobre",
+    "year": 1854,
+    "price": "50 USD",
+    "images": [
+      "images/1880A.jpeg",
+      "images/1880B.jpeg"
+    ],
+    "reference": "KM# 1",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 120000,
+    "peso": "6.8",
+    "diametro": "24",
+    "description": "La pieza presenta un empaste de cuño, que se explica por cómo se fabricó: en un taller casi artesanal se usaron cuños viejos, gastados y retocados, y con el uso los huecos del grabado se llenaban de grasa y limaduras de cobre, así que el relieve salía blando y sin detalle. Se acuñó en la Casa de Moneda instalada en 1854 en el Fuerte de Gobierno de Montevideo, en una emisión de 120.000 piezas. Para ahorrar tiempo y costos se reutilizaron cuños de emisiones anteriores y se forzó la fecha a la vista: por eso no está \"acuñada sobre 1940\", sino que es una sobrefecha en el cuño, catalogada como 1854/40, con el \"40\" original visible debajo del \"54\". El origen exacto de esos cuños sigue siendo un misterio, porque la fecha apunta a los de 1840 o 1844, pero estos no tienen las mismas características. Además, este ejemplar no está perforado, algo poco común en este tipo, que suele aparecer con el agujerito",
+    "publishedAt": "2026-11-17T17:44:04.068004+00:00"
+  },
+  {
+    "id": 1881,
+    "title": "1 Centavo 1942",
+    "country": "Terranova",
+    "metal": "Bronce",
+    "year": 1942,
+    "price": "16.5 USD",
+    "images": [
+      "images/1881A.jpeg",
+      "images/1881B.jpeg"
+    ],
+    "reference": "KM# 18",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 1996889,
+    "peso": "3.24",
+    "diametro": "19.05",
+    "description": "Jorge VI",
+    "publishedAt": "2026-11-17T17:44:04.068004+00:00",
+    "commemorates": "Jorge VI"
   }
 ]
