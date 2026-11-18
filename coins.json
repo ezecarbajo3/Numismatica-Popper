@@ -17,7 +17,8 @@
     "diametro": 15.8,
     "description": "",
     "status": "sold",
-    "soldAt": "2026-11-03T22:10:48.835365+00:00"
+    "soldAt": "2026-11-03T22:10:48.835365+00:00",
+    "sala_nota": "Acuñada en Potosí por las Provincias Unidas, cuando la ceca estaba en manos patriotas. Desde 1813 las monedas cambiaron el busto de Fernando VII por el sol y el escudo. Con la vuelta de los realistas, muchas terminaron fundidas."
   },
   {
     "id": 7,
@@ -174,7 +175,8 @@
     "reference": "KM# M49b",
     "grade": "Sin Circular",
     "grade_short": "SC",
-    "description": "Ideal inversión"
+    "description": "Ideal inversión",
+    "sala_nota": "La onza de la balanza salió de la Casa de Moneda de México a fines de los años 70, pensada para el ahorro. En el reverso, una balanza y una prensa de volante: las herramientas del viejo oficio de acuñar."
   },
   {
     "id": 28,
@@ -2950,7 +2952,8 @@
     "commemorates": "50º Aniversario de las Naciones Unidas (ONU)",
     "reference": "CJ# 8.2",
     "status": "sold",
-    "soldAt": "2026-10-30T03:41:15.198162+00:00"
+    "soldAt": "2026-10-30T03:41:15.198162+00:00",
+    "sala_nota": "Argentina fue uno de los 51 países que fundaron las Naciones Unidas en 1945. Para el 50° aniversario, la ONU coordinó monedas con 36 países; la nuestra dice «Argentina por la paz en el mundo» y se acuñaron apenas 500."
   },
   {
     "id": 479,
@@ -3554,7 +3557,8 @@
     "grade_short": "EX",
     "mintage": "690.000",
     "description": "IMPORTANTE GIRO: unos -45 grados",
-    "reference": "KM# 175"
+    "reference": "KM# 175",
+    "sala_nota": "Medio boliviano de la Casa de Moneda de Potosí, que acuñaba desde 1573. Según los catálogos, 1903 es la fecha más escasa del tipo. Esta pieza suma un cuño girado unos 45 grados, un error que pocas veces se ve."
   },
   {
     "id": 544,
@@ -8301,7 +8305,8 @@
     "description": "Escasa. Conmemorativa de los XXIII Juegos Olímpicos de Los Ángeles 1984. Ceca Denver (D).",
     "publishedAt": "2026-08-12T12:07:51.795918+00:00",
     "mintage": 116675,
-    "commemorates": "XXIII Juegos Olímpicos Los Ángeles 1984"
+    "commemorates": "XXIII Juegos Olímpicos Los Ángeles 1984",
+    "sala_nota": "Para los Juegos de Los Ángeles 1984, Estados Unidos volvió a emitir dólares conmemorativos después de más de ochenta años. Este muestra la entrada del Coliseo con dos torsos sin cabeza del escultor Robert Graham, que dieron que hablar."
   },
   {
     "id": 1068,
@@ -8320,7 +8325,8 @@
     "description": "Escasa. Conmemorativa de los XXIII Juegos Olímpicos de Los Ángeles 1984 (Lanzador de disco). Ceca San Francisco (S).",
     "publishedAt": "2026-08-12T12:07:51.795918+00:00",
     "mintage": 174014,
-    "commemorates": "XXIII Juegos Olímpicos Los Ángeles 1984"
+    "commemorates": "XXIII Juegos Olímpicos Los Ángeles 1984",
+    "sala_nota": "Fue el primer dólar conmemorativo de Estados Unidos desde 1900. Salió un año antes de los Juegos de Los Ángeles 1984, para juntar fondos para los atletas. El lanzador de disco lo diseñó Elizabeth Jones, grabadora jefe de la Casa de Moneda."
   },
   {
     "id": 1070,
@@ -12492,7 +12498,8 @@
     "peso": "12.44",
     "diametro": "30.6",
     "description": "Seated Liberty, Ceca San Francisco (S). Increíble pátina, muy uniforme",
-    "publishedAt": "2026-09-28T16:13:38.905023+00:00"
+    "publishedAt": "2026-09-28T16:13:38.905023+00:00",
+    "sala_nota": "Acuñada en San Francisco en plena Guerra Civil. Mientras en el este la plata desaparecía de los bolsillos, en la costa del Pacífico se seguía pagando en metal. Casi todas se gastaron en el comercio y hoy cuesta verlas así."
   },
   {
     "id": 1450,
@@ -12536,7 +12543,8 @@
     "peso": "25",
     "diametro": "37",
     "description": "Única en el mundo por su estado de conservación!",
-    "publishedAt": "2026-09-28T17:36:02.984556+00:00"
+    "publishedAt": "2026-09-28T17:36:02.984556+00:00",
+    "sala_nota": "El patacón nació con la Ley 1130 de 1881, que creó el peso nacional y ordenó un país donde circulaban monedas provinciales y extranjeras. Se acuñó solo entre 1881 y 1883, en la nueva Casa de Moneda de Buenos Aires."
   },
   {
     "id": 1452,
@@ -13122,7 +13130,8 @@
     "description": "",
     "publishedAt": "2026-09-30T01:27:02.928494+00:00",
     "status": "sold",
-    "soldAt": "2026-11-04T16:01:15.692346+00:00"
+    "soldAt": "2026-11-04T16:01:15.692346+00:00",
+    "sala_nota": "El centavo de cobre era la moneda de todos los días en la Argentina de fines del siglo XIX, con la Libertad de gorro frigio de Eugène Oudiné. 1892 es una de las fechas escasas de la serie, y casi todas circularon hasta gastarse."
   },
   {
     "id": 1480,
@@ -14658,7 +14667,8 @@
     "subasta": {
       "hasta": "2026-11-11T22:15:00-03:00",
       "url": "https://www.facebook.com/groups/1671498109775960"
-    }
+    },
+    "sala_nota": "Los níqueles con la cabeza de la Libertad circularon en la Argentina de 1896 a 1942 y pasaron por millones de manos. 1908 es una de las fechas más buscadas de la serie, y encontrarla en buen estado no es fácil."
   },
   {
     "id": 1554,
@@ -14807,7 +14817,8 @@
     "peso": "1.5235",
     "diametro": "14",
     "description": "Ceca So",
-    "publishedAt": "2026-10-24T18:17:53.474744+00:00"
+    "publishedAt": "2026-10-24T18:17:53.474744+00:00",
+    "sala_nota": "Chile acuñó estos pesos en Santiago entre 1860 y 1864, con la Libertad de pie y el lema «Igualdad ante la lei», escrito con la ortografía de la época. Circulaban junto a la plata, en un sistema que admitía los dos metales."
   },
   {
     "id": 1561,
@@ -14852,7 +14863,8 @@
     "diametro": "37",
     "description": "Versión Proof. Conmemorativa del centenario del nacimiento de Jorge Luis Borges (1899-1999). Incluye cápsula y estuche original de pana azul.",
     "publishedAt": "2026-10-24T18:28:47.032139+00:00",
-    "commemorates": "Centenario del nacimiento de Jorge Luis Borges"
+    "commemorates": "Centenario del nacimiento de Jorge Luis Borges",
+    "sala_nota": "Borges nació en Buenos Aires en 1899. Un siglo después, el Banco Central lo homenajeó con esta emisión de colección, que conserva su cápsula y su estuche original de pana azul."
   },
   {
     "id": 1563,
@@ -14873,7 +14885,8 @@
     "diametro": "37",
     "description": "Versión Proof. Conmemorativa del 80º aniversario del Banco Central de la República Argentina (1935-2015), recreando la clásica Libertad de Oudine de 1881. Incluye sobre de pana, certificado de autenticidad oficial y factura original de compra.",
     "publishedAt": "2026-10-24T18:28:47.032139+00:00",
-    "commemorates": "80º Aniversario del Banco Central de la República Argentina (BCRA)"
+    "commemorates": "80º Aniversario del Banco Central de la República Argentina (BCRA)",
+    "sala_nota": "El Banco Central se fundó en 1935. Para sus 80 años eligió mirar atrás: la moneda recrea la Libertad que Eugène Oudiné grabó para el patacón de 1881, el peso que ordenó el sistema monetario del país."
   },
   {
     "id": 1564,
@@ -16623,7 +16636,8 @@
     "diametro": "19",
     "description": "Convención Nacional Constituyente - Incluye certificado, factura de compra y bolsita del B.C.R.A",
     "publishedAt": "2026-10-27T18:04:46.192212+00:00",
-    "commemorates": "Convención Nacional Constituyente"
+    "commemorates": "Convención Nacional Constituyente",
+    "sala_nota": "Recuerda la Convención que reformó la Constitución en 1994. La fecha del reverso, 25 de mayo de 1994, es el día en que los convencionales se reunieron por primera vez, en Paraná. Se acuñaron solo 5.000."
   },
   {
     "id": 1649,
@@ -17366,7 +17380,8 @@
     "diametro": "37",
     "description": "Año 2000 - Incluye cápsula",
     "publishedAt": "2026-11-03T16:37:52.281362+00:00",
-    "commemorates": "Año 2000"
+    "commemorates": "Año 2000",
+    "sala_nota": "Uruguay despidió el siglo XX con esta moneda de plata 900 para el Año 2000. En el anverso, la Cruz del Sur, la constelación que orienta el cielo austral; en el reverso, un mosaico de símbolos del país con la fecha 1999. Se acuñaron 50.000."
   },
   {
     "id": 1684,
@@ -19395,7 +19410,7 @@
     "id": 1781,
     "title": "50 Centavos de Euro 2002",
     "country": "Austria",
-    "metal": "Oro",
+    "metal": "Oro nórdico",
     "year": 2002,
     "price": "1.5 USD",
     "images": [
@@ -19415,7 +19430,7 @@
     "id": 1782,
     "title": "20 Céntimos de Euro 2002",
     "country": "Austria",
-    "metal": "Oro",
+    "metal": "Oro nórdico",
     "year": 2002,
     "price": "1 USD",
     "images": [
@@ -19563,7 +19578,7 @@
     "id": 1790,
     "title": "50 Céntimos de Euro 2002",
     "country": "Grecia",
-    "metal": "Oro",
+    "metal": "Oro nórdico",
     "year": 2002,
     "price": "1.5 USD",
     "images": [
@@ -19646,7 +19661,7 @@
     "id": 1794,
     "title": "10 Céntimos de Euro 2008",
     "country": "Grecia",
-    "metal": "Oro",
+    "metal": "Oro nórdico",
     "year": 2008,
     "price": "1 USD",
     "images": [
@@ -19665,7 +19680,7 @@
     "id": 1795,
     "title": "10 Centavos de Euro 2002",
     "country": "Austria",
-    "metal": "Oro",
+    "metal": "Oro nórdico",
     "year": 2002,
     "price": "1 USD",
     "images": [
@@ -19705,7 +19720,8 @@
     "subasta": {
       "hasta": "2026-11-08T22:15:00-03:00",
       "url": "https://www.facebook.com/groups/1671498109775960"
-    }
+    },
+    "sala_nota": "Argentina organizó el Mundial de 1978, el que la Selección ganó por primera vez, y el Banco Central lo acompañó con seis monedas conmemorativas. Tres son de plata 900, con una emisión de 175.000 series, y tres de cobre-aluminio-níquel, de 2.000.000 de series. Juntas en su acrílico original, como se vendían en la época."
   },
   {
     "id": 1797,
@@ -20690,8 +20706,9 @@
     "grade_short": "EX",
     "peso": "0.8",
     "diametro": "11",
-    "description": "Ceca de Córdoba.\n\nAcuñada por la Casa de Moneda de Córdoba, la primera ceca patria del territorio (1815), en los meses en que se sancionaba la Constitución de 1853. Tras Caseros, la Confederación no tenía ceca nacional y Córdoba siguió sellando su propia plata para abastecer el comercio del interior. El cuartillo era la fracción más chica del sistema de reales, la moneda del cambio diario: de tan pequeña, se perdía y se gastaba, y hoy cuesta encontrarla con este nivel de detalle. Una de las últimas emisiones de plata cordobesa.",
-    "publishedAt": "2026-11-13T18:54:04.419107+00:00"
+    "description": "Ceca de Córdoba.",
+    "publishedAt": "2026-11-13T18:54:04.419107+00:00",
+    "sala_nota": "Acuñada por la Casa de Moneda de Córdoba en los meses en que se sancionaba la Constitución de 1853. Tras Caseros, la Confederación no tenía ceca nacional y Córdoba siguió sellando su propia plata para el comercio del interior. El cuartillo era la fracción más chica de los reales: se perdía y se gastaba, y hoy cuesta encontrarlo con este detalle."
   },
   {
     "id": 1845,
@@ -20709,8 +20726,9 @@
     "grade_short": "MB",
     "peso": "1.43",
     "diametro": "14.6",
-    "description": "Casa de Moneda de Córdoba. Variante con sol de 8 puntas (A1 - R1).\n\nMedio real cordobés de 1853, año de la Constitución Nacional, sellado cuando la plata provincial todavía era la moneda real del interior frente a la falta de una ceca de la Confederación. La Casa de Moneda de Córdoba, heredera de la primera ceca patria de 1815, trabajaba con cuños grabados a mano, y por eso cada combinación de anverso y reverso es identificable: esta lleva el sol de ocho puntas, una de las variantes que buscan los especialistas en amonedación cordobesa.",
-    "publishedAt": "2026-11-13T18:54:04.419107+00:00"
+    "description": "Casa de Moneda de Córdoba. Variante con sol de 8 puntas (A1 - R1).",
+    "publishedAt": "2026-11-13T18:54:04.419107+00:00",
+    "sala_nota": "Medio real cordobés de 1853, el año de la Constitución Nacional, cuando la plata provincial todavía era la moneda del interior. La ceca de Córdoba trabajaba con cuños grabados a mano, y por eso cada combinación de anverso y reverso se puede identificar: esta lleva el sol de ocho puntas, una variante que buscan los especialistas."
   },
   {
     "id": 1846,
@@ -20726,8 +20744,9 @@
     "reference": "CJ# 73.2",
     "grade": "Excelente",
     "grade_short": "EX",
-    "description": "Confederación Argentina.\n\nLa Rioja tuvo una de las cecas más activas del interior, alimentada por la plata y el oro del Famatina, y sus piezas circularon mucho más allá de la provincia. Este medio real de 1854 pertenece a la etapa de la Confederación Argentina, cuando, sin moneda nacional, las provincias seguían acuñando bajo el nuevo orden constitucional. Piezas chicas y muy circuladas, rara vez aparecen con esta conservación.",
-    "publishedAt": "2026-11-13T18:54:04.419107+00:00"
+    "description": "Confederación Argentina.",
+    "publishedAt": "2026-11-13T18:54:04.419107+00:00",
+    "sala_nota": "La Rioja tuvo una de las cecas más activas del interior, alimentada por la plata y el oro del Famatina, y sus piezas circularon mucho más allá de la provincia. Este medio real es de los años de la Confederación Argentina, cuando, sin moneda nacional, las provincias seguían acuñando. Piezas chicas y muy gastadas: rara vez aparecen así."
   },
   {
     "id": 1847,
@@ -20746,8 +20765,9 @@
     "mintage": "421",
     "peso": "4.0322",
     "diametro": "19",
-    "description": "Medio Argentino. Ley 1130 de 1881. Grabador: Eugène-André Oudiné. Canto estriado.\n\nPieza de exclusividad: el Medio Argentino es la moneda de oro más escasa del primer cono monetario nacional. La Ley 1130 de 1881 lo creó como mitad del Argentino, pero la Casa de Moneda solo selló 9 piezas en 1881, destinadas a autoridades, y 421 en 1884, frente a más de 1,6 millones de Argentinos: según Ariel Dabbah, la tolerancia de fino exigida por la ley era demasiado estrecha para un cospel tan chico y la acuñación se abandonó. Ejemplares con pedigrí como el de la colección Clapp–Eliasberg se disputan en subastas internacionales; el Museo del BCRA conserva uno de 1884.",
-    "publishedAt": "2026-11-13T18:54:04.419107+00:00"
+    "description": "Medio Argentino. Ley 1130 de 1881. Grabador: Eugène-André Oudiné. Canto estriado.",
+    "publishedAt": "2026-11-13T18:54:04.419107+00:00",
+    "sala_nota": "El Medio Argentino es la moneda de oro más escasa del primer sistema monetario nacional. La Ley 1130 de 1881 lo creó como mitad del Argentino, pero la Casa de Moneda selló apenas 9 piezas en 1881 y 421 en 1884, contra más de 1,6 millones de Argentinos. La ley le exigía la misma tolerancia de fino, un milésimo, demasiado estrecha para un cospel de 4 gramos, y la acuñación se abandonó."
   },
   {
     "id": 1848,
@@ -20768,7 +20788,8 @@
     "diametro": "45.1",
     "description": "Año del Buey - Isabel II - Ceca P",
     "publishedAt": "2026-11-14T22:47:17.551573+00:00",
-    "commemorates": "Año del Buey - Isabel II"
+    "commemorates": "Año del Buey - Isabel II",
+    "sala_nota": "En 2008 la Casa de Moneda de Perth empezó su segunda serie lunar: doce años, un animal del zodíaco chino por año. 2009 fue el año del Buey, que aparece con su cría frente a un paisaje de montañas, junto al carácter chino del animal. Una onza de plata .999, con Isabel II en el anverso y una tirada limitada a 300.000."
   },
   {
     "id": 1849,
@@ -22122,7 +22143,8 @@
     "peso": "3.2",
     "diametro": "20",
     "description": "Ceca Córdoba",
-    "publishedAt": "2026-11-17T19:53:40.147287+00:00"
+    "publishedAt": "2026-11-17T19:53:40.147287+00:00",
+    "sala_nota": "En 1842 Córdoba estaba gobernada por Manuel «Quebracho» López, aliado de Rosas, y el país no tenía moneda nacional: cada provincia resolvía su circulante. Córdoba sellaba su propia plata, con su nombre de un lado y del otro el sol con la palabra «Confederada», como se llamaba entonces a una Argentina que era un pacto entre provincias. Casi todas circularon hasta gastarse."
   },
   {
     "id": 1915,

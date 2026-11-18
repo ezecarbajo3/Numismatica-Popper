@@ -39,15 +39,7 @@ function coinImage(src, className, eager, alt = '') {
 
 // ─── Cédula ──────────────────────────────────────────────────────────────────
 
-// Textos de la Sala (época, contexto, curiosidades). Viven en sala-notas.json
-// hasta que se publiquen como sala_nota en coins.json, que tiene prioridad.
-function loadNotas() {
-  return fetch('sala-notas.json')
-    .then(r => (r.ok ? r.json() : {}))
-    .catch(() => ({}));
-}
-
-function buildPieza(coin, index, total, notas) {
+function buildPieza(coin, index, total) {
   const article = el('article', 'pieza diapo');
   article.id = `p-${coin.id}`;
   article.dataset.diapo = coin.title;
@@ -97,8 +89,9 @@ function buildPieza(coin, index, total, notas) {
   // Cédula: el texto y el camino a la publicación, que es donde están el
   // precio, el estado, la ficha técnica y el carrito.
   const cedula = el('div', 'cedula');
-  const nota = coin.sala_nota || notas[String(coin.id)];
-  if (nota) cedula.appendChild(el('p', 'cedula__nota', nota));
+  // El texto de la pieza (época, contexto, curiosidades): sala_nota de coins.json,
+  // el mismo que muestra la ficha.
+  if (coin.sala_nota) cedula.appendChild(el('p', 'cedula__nota', coin.sala_nota));
   const ficha = el('a', 'link-icono cedula__specs');
   ficha.innerHTML = `<span>Ver especificaciones</span>${ICON_FICHA}`;
   ficha.href = `detalle.html?id=${encodeURIComponent(coin.id)}`;
@@ -212,13 +205,13 @@ function renderArchivo(archive) {
 // ─── Arranque ────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
-  Promise.all([loadAllCoins(), loadNotas()])
-    .then(([coins, notas]) => {
+  loadAllCoins()
+    .then(coins => {
       const sala = getSalaCoins(coins).filter(isAvailable);
       const archive = getSalaArchive(coins).filter(c => getImagesArray(c).length > 0);
 
       const wrap = document.getElementById('piezas');
-      const piezas = sala.map((coin, i) => buildPieza(coin, i, sala.length, notas));
+      const piezas = sala.map((coin, i) => buildPieza(coin, i, sala.length));
       piezas.forEach(p => wrap.appendChild(p.article));
 
       const cuenta = document.getElementById('salaCuenta');

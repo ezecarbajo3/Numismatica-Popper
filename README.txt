@@ -39,7 +39,7 @@ https://numismaticapopper.com
 - `images/`        — fotos originales (~2800px). `images/thumbs/` — miniaturas WebP
                      (grilla y galería). `images-large/` — fotos de ~1400px para la
                      Sala y el hero.
-- `sala-notas.json` — textos de la Sala. `discounts.json` — códigos de descuento.
+- Textos de la Sala: campo `sala_nota` de cada moneda en coins.json (también los muestra la ficha). `discounts.json` — códigos de descuento.
 
 ## Filtros del catálogo (catalogo.js)
 Orden del panel, de lo amplio a lo fino: Qué buscás → Origen → Metal → Época →
