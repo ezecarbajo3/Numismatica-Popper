@@ -21540,7 +21540,7 @@
     "diametro": "24",
     "description": "",
     "publishedAt": "2026-11-17T18:06:31.890977+00:00",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 1886,
@@ -21560,7 +21560,7 @@
     "diametro": "21.5",
     "description": "",
     "publishedAt": "2026-11-17T18:06:31.890977+00:00",
-    "cantidad": 3
+    "cantidad": 2
   },
   {
     "id": 1887,
@@ -21602,7 +21602,7 @@
     "diametro": "23",
     "description": "Francisco Franco",
     "publishedAt": "2026-11-17T18:06:31.890977+00:00",
-    "cantidad": 2,
+    "cantidad": 1,
     "commemorates": "Francisco Franco"
   },
   {
@@ -21644,7 +21644,7 @@
     "diametro": "20",
     "description": "",
     "publishedAt": "2026-11-17T18:06:31.890977+00:00",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 1891,
@@ -21680,7 +21680,9 @@
     "grade": "Sin Circular",
     "grade_short": "SC",
     "description": "Isabel II",
-    "publishedAt": "2026-11-17T18:06:31.890977+00:00"
+    "publishedAt": "2026-11-17T18:06:31.890977+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-18T02:45:19.425947+00:00"
   },
   {
     "id": 1893,
@@ -21700,7 +21702,9 @@
     "diametro": "19",
     "description": "Francisco Franco",
     "publishedAt": "2026-11-17T18:06:31.890977+00:00",
-    "commemorates": "Francisco Franco"
+    "commemorates": "Francisco Franco",
+    "status": "sold",
+    "soldAt": "2026-11-18T02:45:19.425947+00:00"
   },
   {
     "id": 1894,
@@ -21719,7 +21723,9 @@
     "peso": "4.5",
     "diametro": "23.5",
     "description": "Birendra Bir Bikram",
-    "publishedAt": "2026-11-17T18:54:25.546878+00:00"
+    "publishedAt": "2026-11-17T18:54:25.546878+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-18T02:45:19.425947+00:00"
   },
   {
     "id": 1895,
@@ -21738,7 +21744,9 @@
     "peso": "7.5",
     "diametro": "26",
     "description": "",
-    "publishedAt": "2026-11-17T18:54:25.546878+00:00"
+    "publishedAt": "2026-11-17T18:54:25.546878+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-18T02:45:19.425947+00:00"
   },
   {
     "id": 1896,
@@ -21814,7 +21822,9 @@
     "peso": "1.65",
     "diametro": "24",
     "description": "",
-    "publishedAt": "2026-11-17T18:54:25.546878+00:00"
+    "publishedAt": "2026-11-17T18:54:25.546878+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-18T02:45:19.425947+00:00"
   },
   {
     "id": 1900,
@@ -22429,7 +22439,9 @@
     "peso": "8.69",
     "diametro": "26.6",
     "description": "Francisco I",
-    "publishedAt": "2026-11-18T02:08:37.598053+00:00"
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-18T02:45:19.425947+00:00"
   },
   {
     "id": 1931,
