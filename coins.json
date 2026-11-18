@@ -22709,5 +22709,282 @@
     "diametro": "26",
     "description": "",
     "publishedAt": "2026-11-18T02:08:37.598053+00:00"
+  },
+  {
+    "id": 1943,
+    "title": "10 Soles de Oro 1971 Sesquicentenario",
+    "country": "Perú",
+    "metal": "Plata .800",
+    "year": 1971,
+    "price": "3 USD",
+    "images": [
+      "images/1943A.jpeg",
+      "images/1943B.jpeg"
+    ],
+    "reference": "KM# 256",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 100000,
+    "peso": "21.45",
+    "diametro": "37",
+    "description": "Sesquicentenario - Ceca Lima",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00",
+    "commemorates": "Sesquicentenario"
+  },
+  {
+    "id": 1944,
+    "title": "2 Centavos 1896",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1896,
+    "price": "18 USD",
+    "images": [
+      "images/1944A.jpeg",
+      "images/1944B.jpeg"
+    ],
+    "reference": "KM# 33",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": 596000,
+    "peso": "10",
+    "diametro": "30",
+    "description": "",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00",
+    "group_id": "ar-2centavos-1896",
+    "group_label": "2 Centavos 1896"
+  },
+  {
+    "id": 1945,
+    "title": "1 Centavo 1896",
+    "country": "Estados Unidos",
+    "metal": "Bronce",
+    "year": 1896,
+    "price": "8 USD",
+    "images": [
+      "images/1945A.jpeg",
+      "images/1945B.jpeg"
+    ],
+    "reference": "KM# 90a",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "3.11",
+    "diametro": "19",
+    "description": "",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00"
+  },
+  {
+    "id": 1946,
+    "title": "1 Centavo 1898",
+    "country": "Estados Unidos",
+    "metal": "Bronce",
+    "year": 1898,
+    "price": "8 USD",
+    "images": [
+      "images/1946A.jpeg",
+      "images/1946B.jpeg"
+    ],
+    "reference": "KM# 90a",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "3.11",
+    "diametro": "19",
+    "description": "",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00"
+  },
+  {
+    "id": 1947,
+    "title": "1 Centavo 1891",
+    "country": "Estados Unidos",
+    "metal": "Bronce",
+    "year": 1891,
+    "price": "10 USD",
+    "images": [
+      "images/1947A.jpeg",
+      "images/1947B.jpeg"
+    ],
+    "reference": "KM# 90a",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "3.11",
+    "diametro": "19",
+    "description": "",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00"
+  },
+  {
+    "id": 1948,
+    "title": "1 Centavo 1895",
+    "country": "Estados Unidos",
+    "metal": "Bronce",
+    "year": 1895,
+    "price": "8 USD",
+    "images": [
+      "images/1948A.jpeg",
+      "images/1948B.jpeg"
+    ],
+    "reference": "KM# 90a",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "3.11",
+    "diametro": "19",
+    "description": "",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00"
+  },
+  {
+    "id": 1949,
+    "title": "25 Rublos 2014 Sochi 2014",
+    "country": "Rusia",
+    "metal": "Cuproníquel",
+    "year": 2014,
+    "price": "5 USD",
+    "images": [
+      "images/1949A.jpeg",
+      "images/1949B.jpeg"
+    ],
+    "reference": "Y# 1472",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "10",
+    "diametro": "27",
+    "description": "Sochi 2014 - Ceca SPMD",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00",
+    "cantidad": 2,
+    "commemorates": "Sochi 2014"
+  },
+  {
+    "id": 1950,
+    "title": "20 Tögrög 1994",
+    "country": "Mongolia",
+    "metal": "Aluminio",
+    "year": 1994,
+    "price": "3.5 USD",
+    "images": [
+      "images/1950A.jpeg",
+      "images/1950B.jpeg"
+    ],
+    "reference": "KM# 122",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "0.78",
+    "diametro": "17.5",
+    "description": "",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00"
+  },
+  {
+    "id": 1951,
+    "title": "50 Tögrög 1997",
+    "country": "Mongolia",
+    "metal": "Cuproníquel",
+    "year": 1997,
+    "price": "4.5 USD",
+    "images": [
+      "images/1951A.jpeg",
+      "images/1951B.jpeg"
+    ],
+    "reference": "KM# 123",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 25000,
+    "description": "",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00"
+  },
+  {
+    "id": 1952,
+    "title": "1 Pitis Teboh 1788",
+    "country": "Palembang, Sultanate of",
+    "metal": "Estaño",
+    "year": 1788,
+    "price": "4.5 USD",
+    "images": [
+      "images/1952A.jpeg",
+      "images/1952B.jpeg"
+    ],
+    "reference": "HCM# 191",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "1.1",
+    "diametro": "19",
+    "description": "",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00",
+    "cantidad": 3
+  },
+  {
+    "id": 1953,
+    "title": "20 Réis 1869",
+    "country": "Brasil",
+    "metal": "Bronce",
+    "year": 1869,
+    "price": "6 USD",
+    "images": [
+      "images/1953A.jpeg",
+      "images/1953B.jpeg"
+    ],
+    "reference": "KM# 474",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "7",
+    "diametro": "25",
+    "description": "Pedro II",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00",
+    "commemorates": "Pedro II"
+  },
+  {
+    "id": 1954,
+    "title": "200 Liras 1980 FAO",
+    "country": "Italia",
+    "metal": "Bronzital",
+    "year": 1980,
+    "price": "3 USD",
+    "images": [
+      "images/1954A.jpeg",
+      "images/1954B.jpeg"
+    ],
+    "reference": "KM# 107",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "5",
+    "diametro": "24",
+    "description": "FAO - Ceca R",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00",
+    "commemorates": "FAO"
+  },
+  {
+    "id": 1955,
+    "title": "500 Colones 2021",
+    "country": "Costa Rica",
+    "metal": "Bimetálica",
+    "year": 2021,
+    "price": "4.5 USD",
+    "images": [
+      "images/1955A.jpeg",
+      "images/1955B.jpeg"
+    ],
+    "reference": "KM# 241",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "peso": "10.5",
+    "diametro": "28",
+    "description": "Bicentenario de la Independencia",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00",
+    "commemorates": "Bicentenario de la Independencia"
+  },
+  {
+    "id": 1956,
+    "title": "1 Dólar 1903",
+    "country": "Estados Unidos",
+    "metal": "Plata .900",
+    "year": 1903,
+    "price": "70 USD",
+    "images": [
+      "images/1956A.jpeg",
+      "images/1956B.jpeg"
+    ],
+    "reference": "KM# 110",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "mintage": 4652000,
+    "peso": "26.73",
+    "diametro": "38.1",
+    "description": "",
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00"
   }
 ]
