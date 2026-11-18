@@ -22310,5 +22310,364 @@
     "publishedAt": "2026-11-17T19:53:40.147287+00:00",
     "group_id": "ar-50-centavos-1993",
     "group_label": "50 Centavos 1993"
+  },
+  {
+    "id": 1925,
+    "title": "2 Centésimos 1869",
+    "country": "Uruguay",
+    "metal": "Bronce",
+    "year": 1869,
+    "price": "14 USD",
+    "images": [
+      "images/1925A.jpeg",
+      "images/1925B.jpeg"
+    ],
+    "reference": "KM# 12",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 3000000,
+    "peso": "10",
+    "diametro": "30",
+    "description": "Ceca A",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00",
+    "group_id": "uy-2centesimos-1869",
+    "group_label": "2 Centésimos 1869"
+  },
+  {
+    "id": 1926,
+    "title": "1/4 Kreuzer 1816",
+    "country": "Imperio austríaco",
+    "metal": "Cobre",
+    "year": 1816,
+    "price": "14 USD",
+    "images": [
+      "images/1926A.jpeg",
+      "images/1926B.jpeg"
+    ],
+    "reference": "KM# 2107",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "2.19",
+    "diametro": "19.4",
+    "description": "Ceca A",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00"
+  },
+  {
+    "id": 1927,
+    "title": "3 Kópeks 1911",
+    "country": "Ruso, Imperio",
+    "metal": "Cobre",
+    "year": 1911,
+    "price": "18 USD",
+    "images": [
+      "images/1927A.jpeg",
+      "images/1927B.jpeg"
+    ],
+    "reference": "Y# 11.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "9.83",
+    "diametro": "28.36",
+    "description": "Nicolás II - Ceca C.П.Б. - Alto grado de conservación",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00",
+    "commemorates": "Nicolás II"
+  },
+  {
+    "id": 1928,
+    "title": "1 Centavo 1884",
+    "country": "Países Bajos",
+    "metal": "Bronce",
+    "year": 1884,
+    "price": "5.5 USD",
+    "images": [
+      "images/1928A.jpeg",
+      "images/1928B.jpeg"
+    ],
+    "reference": "KM# 109",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "1.25",
+    "diametro": "14",
+    "description": "",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00"
+  },
+  {
+    "id": 1929,
+    "title": "10 Fils 1978",
+    "country": "Jordania",
+    "metal": "Bronce",
+    "year": 1978,
+    "price": "5 USD",
+    "images": [
+      "images/1929A.jpeg",
+      "images/1929B.jpeg"
+    ],
+    "reference": "KM# 37",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "5.9",
+    "diametro": "25",
+    "description": "Huséin I",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00"
+  },
+  {
+    "id": 1930,
+    "title": "1 Kreuzer 1816",
+    "country": "Imperio austríaco",
+    "metal": "Cobre",
+    "year": 1816,
+    "price": "7.5 USD",
+    "images": [
+      "images/1930A.jpeg",
+      "images/1930B.jpeg"
+    ],
+    "reference": "KM# 2113",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "8.69",
+    "diametro": "26.6",
+    "description": "Francisco I",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00"
+  },
+  {
+    "id": 1931,
+    "title": "2 Centésimos 1869",
+    "country": "Uruguay",
+    "metal": "Bronce",
+    "year": 1869,
+    "price": "14 USD",
+    "images": [
+      "images/1931A.jpeg",
+      "images/1931B.jpeg"
+    ],
+    "reference": "KM# 12",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 3000000,
+    "peso": "10",
+    "diametro": "30",
+    "description": "Ceca H",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00",
+    "group_id": "uy-2centesimos-1869",
+    "group_label": "2 Centésimos 1869"
+  },
+  {
+    "id": 1932,
+    "title": "1 Quattrino 1835",
+    "country": "Estados Pontificios",
+    "metal": "Cobre",
+    "year": 1835,
+    "price": "25 USD",
+    "images": [
+      "images/1932A.jpeg",
+      "images/1932B.jpeg"
+    ],
+    "reference": "KM# 1318",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "mintage": 36500,
+    "peso": "2.03",
+    "diametro": "18",
+    "description": "Gregorio XVI",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00"
+  },
+  {
+    "id": 1933,
+    "title": "5 Reis 1906",
+    "country": "Portugal",
+    "metal": "Bronce",
+    "year": 1906,
+    "price": "12 USD",
+    "images": [
+      "images/1933A.jpeg",
+      "images/1933B.jpeg"
+    ],
+    "reference": "KM# 530",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 5670000,
+    "peso": "3",
+    "diametro": "21",
+    "description": "Carlos I",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00",
+    "commemorates": "Carlos I"
+  },
+  {
+    "id": 1934,
+    "title": "2 Centésimos 1869",
+    "country": "Uruguay",
+    "metal": "Bronce",
+    "year": 1869,
+    "price": "16 USD",
+    "images": [
+      "images/1934A.jpeg",
+      "images/1934B.jpeg"
+    ],
+    "reference": "KM# 12",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "mintage": 3000000,
+    "peso": "10",
+    "diametro": "30",
+    "description": "Ceca H",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00",
+    "group_id": "uy-2centesimos-1869",
+    "group_label": "2 Centésimos 1869"
+  },
+  {
+    "id": 1935,
+    "title": "1 Céntimo 1906",
+    "country": "España",
+    "metal": "Bronce",
+    "year": 1906,
+    "price": "9 USD",
+    "images": [
+      "images/1935A.jpeg",
+      "images/1935B.jpeg"
+    ],
+    "reference": "KM# 726",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "1",
+    "diametro": "15",
+    "description": "Alfonso XIII - Ceca SL-V",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00",
+    "commemorates": "Alfonso XIII"
+  },
+  {
+    "id": 1936,
+    "title": "2 Centavos 1854",
+    "country": "Argentina - Confed. Arg.",
+    "metal": "Cobre",
+    "year": 1854,
+    "price": "28 USD",
+    "images": [
+      "images/1936A.jpeg",
+      "images/1936B.jpeg"
+    ],
+    "reference": "KM# 24",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "peso": "10",
+    "diametro": "29.77",
+    "description": "",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00",
+    "group_id": "ar-2-centavos-1854",
+    "group_label": "2 Centavos 1854"
+  },
+  {
+    "id": 1937,
+    "title": "1/2 Centavo 1962",
+    "country": "Sudáfrica",
+    "metal": "Latón",
+    "year": 1962,
+    "price": "4 USD",
+    "images": [
+      "images/1937A.jpeg",
+      "images/1937B.jpeg"
+    ],
+    "reference": "KM# 56",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "5.6",
+    "diametro": "25.6",
+    "description": "",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00"
+  },
+  {
+    "id": 1938,
+    "title": "1 Centavo 1901",
+    "country": "Países Bajos",
+    "metal": "Bronce",
+    "year": 1901,
+    "price": "8 USD",
+    "images": [
+      "images/1938A.jpeg",
+      "images/1938B.jpeg"
+    ],
+    "reference": "KM# 109",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "1.25",
+    "diametro": "14",
+    "description": "",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00"
+  },
+  {
+    "id": 1939,
+    "title": "2 Reales 1854",
+    "country": "Argentina - Buenos Aires",
+    "metal": "Cobre",
+    "year": 1854,
+    "price": "15 USD",
+    "images": [
+      "images/1939A.jpeg",
+      "images/1939B.jpeg"
+    ],
+    "reference": "KM# 19",
+    "grade": "Bueno",
+    "grade_short": "B",
+    "peso": "7.4",
+    "diametro": "31.9",
+    "description": "",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00"
+  },
+  {
+    "id": 1940,
+    "title": "4 Centésimos 1869",
+    "country": "Uruguay",
+    "metal": "Bronce",
+    "year": 1869,
+    "price": "15 USD",
+    "images": [
+      "images/1940A.jpeg",
+      "images/1940B.jpeg"
+    ],
+    "reference": "KM# 13",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "20",
+    "diametro": "35",
+    "description": "Ceca H",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00"
+  },
+  {
+    "id": 1941,
+    "title": "1/4 Anna 1936",
+    "country": "India",
+    "metal": "Bronce",
+    "year": 1936,
+    "price": "8 USD",
+    "images": [
+      "images/1941A.jpeg",
+      "images/1941B.jpeg"
+    ],
+    "reference": "KM# 512",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "4.85",
+    "diametro": "25.4",
+    "description": "Jorge V",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00",
+    "commemorates": "Jorge V"
+  },
+  {
+    "id": 1942,
+    "title": "20 Coronas 1998",
+    "country": "República Checa",
+    "metal": "Latón",
+    "year": 1998,
+    "price": "3 USD",
+    "images": [
+      "images/1942A.jpeg",
+      "images/1942B.jpeg"
+    ],
+    "reference": "KM# 5",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "peso": "8.49",
+    "diametro": "26",
+    "description": "",
+    "publishedAt": "2026-11-18T02:08:37.598053+00:00"
   }
 ]
