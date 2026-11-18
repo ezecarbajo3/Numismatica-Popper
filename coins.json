@@ -20757,7 +20757,9 @@
     "price": "11000 USD",
     "images": [
       "images/1847A.jpeg",
-      "images/1847B.jpeg"
+      "images/1847B.jpeg",
+      "images/1847C.jpeg",
+      "images/1847D.jpeg"
     ],
     "reference": "CJ# 11.1",
     "grade": "Sin Circular",
@@ -20767,7 +20769,8 @@
     "diametro": "19",
     "description": "Medio Argentino. Ley 1130 de 1881. Grabador: Eugène-André Oudiné. Canto estriado.",
     "publishedAt": "2026-11-13T18:54:04.419107+00:00",
-    "sala_nota": "El Medio Argentino es la moneda de oro más escasa del primer sistema monetario nacional. La Ley 1130 de 1881 lo creó como mitad del Argentino, pero la Casa de Moneda selló apenas 9 piezas en 1881 y 421 en 1884, contra más de 1,6 millones de Argentinos. La ley le exigía la misma tolerancia de fino, un milésimo, demasiado estrecha para un cospel de 4 gramos, y la acuñación se abandonó."
+    "sala_nota": "El Medio Argentino es la moneda de oro más escasa del primer sistema monetario nacional. La Ley 1130 de 1881 lo creó como mitad del Argentino, pero la Casa de Moneda selló apenas 9 piezas en 1881 y 421 en 1884, contra más de 1,6 millones de Argentinos. La ley le exigía la misma tolerancia de fino, un milésimo, demasiado estrecha para un cospel de 4 gramos, y la acuñación se abandonó.",
+    "ml": false
   },
   {
     "id": 1848,

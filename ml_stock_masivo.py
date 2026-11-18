@@ -106,7 +106,8 @@ def main():
 
     publicados = {s for s in por_sku if s}
     sin_publicar = sorted((k for k, c in coins.items()
-                           if k.isdigit() and stock_web(c) > 0 and not c.get("hidden") and k not in publicados),
+                           if k.isdigit() and stock_web(c) > 0 and not c.get("hidden")
+                           and c.get("ml") is not False and k not in publicados),
                           key=int)
 
     def aplicar(a):

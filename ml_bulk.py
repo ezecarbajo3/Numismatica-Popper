@@ -110,6 +110,8 @@ def filtrar(coins):
             excluidas.append((cid, "es un lote")); continue
         if anio(c) is None:
             excluidas.append((cid, "sin ano de emision valido")); continue
+        if c.get("ml") is False:   # "ml": false en coins.json = nunca va a ML
+            excluidas.append((cid, "fuera de Mercado Libre")); continue
         incluidas.append(c)
     return incluidas, excluidas
 
