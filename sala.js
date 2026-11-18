@@ -120,24 +120,44 @@ function setupGiro(piezas) {
   const visible = new Set();
   let ticking = false;
 
+  // Rendimiento: esto corre en cada frame del scroll. Solo se escribe lo que
+  // cambió (el mismo --giro o el mismo aria-pressed no se vuelven a tocar) y
+  // los botones se buscan una sola vez por pieza.
   function paint(p, giro) {
+    if (p.giro === giro) return;
+    p.giro = giro;
     p.inner.style.setProperty('--giro', giro);
     const showsBack = Math.abs(giro) >= 90;
-    p.caras.querySelectorAll('button').forEach(b => {
+    if (p.showsBack === showsBack) return;
+    p.showsBack = showsBack;
+    if (!p.botones) p.botones = Array.from(p.caras.querySelectorAll('button'));
+    p.botones.forEach(b => {
       b.setAttribute('aria-pressed', String((b.dataset.cara === 'reverso') === showsBack));
     });
+  }
+
+  // --mh-h lo escribe museo.js como estilo en línea de <html>: se lee de ahí,
+  // sin getComputedStyle (que obliga a recalcular estilos en cada frame).
+  function headHeight() {
+    const root = document.documentElement;
+    return parseFloat(root.style.getPropertyValue('--mh-h')) ||
+      parseFloat(getComputedStyle(root).getPropertyValue('--mh-h')) || 0;
   }
 
   function update() {
     ticking = false;
     // Asentada, la diapositiva queda debajo de la cabecera fija (--mh-h).
-    const head = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--mh-h')) || 0;
+    const head = headHeight();
     const span = window.innerHeight - head;
+    // Primero todas las lecturas, después todas las escrituras: intercaladas,
+    // cada lectura después de una escritura fuerza un layout sincrónico.
+    const giros = [];
     visible.forEach(p => {
       if (p.manual != null) return;
       const offset = (p.article.getBoundingClientRect().top - head) / span;
-      paint(p, reduced ? 0 : Math.min(Math.max(-offset, -1), 1) * 180);
+      giros.push([p, reduced ? 0 : Math.min(Math.max(-offset, -1), 1) * 180]);
     });
+    giros.forEach(([p, giro]) => paint(p, giro));
   }
 
   function requestUpdate() {

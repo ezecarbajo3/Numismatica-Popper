@@ -17,6 +17,8 @@
   const STORAGE_KEY = 'popper_cart_items_v1';
   const LAST_ORDER_KEY = 'popper_last_order_v1';
   const RATE_CACHE_KEY = 'popper_blue_rate_v1';
+  // Cuánto dura la cotización guardada antes de volver a pedirla (10 min).
+  const RATE_FRESH_MS = 10 * 60 * 1000;
   const DOLAR_API_URL = 'https://dolarapi.com/v1/dolares/blue';
   const DOLAR_FALLBACK_VENTA = 1495;
   const SHIPPING_PARQUE_ARS = 1000;
@@ -161,6 +163,13 @@
   async function fetchBlueRate() {
     const cached = lsGetJSON(RATE_CACHE_KEY);
     const refRate = cached && Number.isFinite(cached.rate) && cached.rate > 0 ? cached.rate : 0;
+    // Cotización fresca (de hace menos de RATE_FRESH_MS): se usa la guardada y
+    // no se vuelve a pedir en cada página que se abre.
+    if (refRate && Number.isFinite(cached.at) && Date.now() - cached.at >= 0 && Date.now() - cached.at < RATE_FRESH_MS) {
+      // Se leyó en vivo hace minutos: para el pedido cuenta como en vivo.
+      rateSource = 'live';
+      return;
+    }
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 5000);
     try {
@@ -941,10 +950,10 @@
   // Re-render sin pisar lo que el usuario está escribiendo.
   function softRender(force) {
     const drawer = document.getElementById('cartDrawer');
-    if (!drawer || !drawer.classList.contains('is-open')) {
-      renderDrawerContent();
-      return;
-    }
+    // Cerrado no se ve: no se rearma (cada página lo pedía al cargar y con
+    // cada cotización, bajando hasta las fotos del carrito). openDrawer() lo
+    // arma completo al abrirse.
+    if (!drawer || !drawer.classList.contains('is-open')) return;
     if (isSubmitting) return;
     const ae = document.activeElement;
     const typing = ae && drawer.contains(ae) && /^(INPUT|TEXTAREA|SELECT)$/.test(ae.tagName) && ae.type !== 'radio';
