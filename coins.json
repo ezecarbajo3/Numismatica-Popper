@@ -786,7 +786,9 @@
     "diametro": 30,
     "description": "Escasa.",
     "group_id": "ar-2centavos-1896",
-    "group_label": "2 Centavos 1896"
+    "group_label": "2 Centavos 1896",
+    "status": "sold",
+    "soldAt": "2026-11-19T02:08:05.727109+00:00"
   },
   {
     "id": 151,
