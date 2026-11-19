@@ -10190,8 +10190,10 @@
     "publishedAt": "2026-09-02T20:37:19.124704+00:00",
     "group_id": "ca-10-cents-bluenose-2021",
     "group_label": "10 Cents Centenario del Bluenose 2021",
-    "cantidad": 1,
-    "commemorates": "Centenario del Bluenose"
+    "cantidad": 0,
+    "commemorates": "Centenario del Bluenose",
+    "status": "sold",
+    "soldAt": "2026-11-19T14:14:00.183254-03:00"
   },
   {
     "id": 1289,
