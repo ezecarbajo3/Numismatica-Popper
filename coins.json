@@ -14717,7 +14717,9 @@
     "description": "",
     "publishedAt": "2026-10-24T15:14:36.168994+00:00",
     "group_id": "ar-2centavos-1884",
-    "group_label": "2 Centavos 1884"
+    "group_label": "2 Centavos 1884",
+    "status": "sold",
+    "soldAt": "2026-11-19T15:37:06.928090-03:00"
   },
   {
     "id": 1556,
