@@ -10511,9 +10511,11 @@
     "diametro": "30",
     "description": "Ceca París (A)",
     "publishedAt": "2026-09-04T21:53:04.537068+00:00",
-    "cantidad": 1,
+    "cantidad": 0,
     "group_id": "uy-2centesimos-1869",
-    "group_label": "2 Centésimos 1869"
+    "group_label": "2 Centésimos 1869",
+    "status": "sold",
+    "soldAt": "2026-11-19T14:16:40.005962-03:00"
   },
   {
     "id": 1308,
