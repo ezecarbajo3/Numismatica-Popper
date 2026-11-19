@@ -22988,5 +22988,105 @@
     "diametro": "38.1",
     "description": "",
     "publishedAt": "2026-11-18T14:22:39.948590+00:00"
+  },
+  {
+    "id": 1957,
+    "title": "5 Chelines 1951",
+    "country": "Sudáfrica",
+    "metal": "Plata .500",
+    "year": 1951,
+    "price": "55 USD",
+    "images": [
+      "images/1957A.jpeg",
+      "images/1957B.jpeg"
+    ],
+    "reference": "KM# 40.2",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 363119,
+    "peso": "28.28",
+    "diametro": "38.61",
+    "description": "Jorge VI - Escasa",
+    "publishedAt": "2026-11-19T02:26:49.874257+00:00",
+    "commemorates": "Jorge VI"
+  },
+  {
+    "id": 1958,
+    "title": "1 Pfenning - William 1872 I",
+    "country": "Prusia, Reino de",
+    "metal": "Cobre",
+    "year": 1872,
+    "price": "14 USD",
+    "images": [
+      "images/1958A.jpeg",
+      "images/1958B.jpeg"
+    ],
+    "reference": "KM# 480",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "1.5",
+    "diametro": "17.75",
+    "description": "Ceca A",
+    "publishedAt": "2026-11-19T02:26:49.874257+00:00"
+  },
+  {
+    "id": 1959,
+    "title": "50 Céntimos 1911",
+    "country": "Bélgica",
+    "metal": "Plata .835",
+    "year": 1911,
+    "price": "16 USD",
+    "images": [
+      "images/1959A.jpeg",
+      "images/1959B.jpeg"
+    ],
+    "reference": "KM# 71",
+    "grade": "",
+    "grade_short": "",
+    "mintage": 2063000,
+    "peso": "2.5",
+    "diametro": "18",
+    "description": "Alberto I",
+    "publishedAt": "2026-11-19T02:26:49.874257+00:00"
+  },
+  {
+    "id": 1960,
+    "title": "5 Céntimos 1916",
+    "country": "Bélgica",
+    "metal": "Zinc",
+    "year": 1916,
+    "price": "6 USD",
+    "images": [
+      "images/1960A.jpeg",
+      "images/1960B.jpeg"
+    ],
+    "reference": "KM# 80",
+    "grade": "",
+    "grade_short": "",
+    "peso": "2.5",
+    "diametro": "19",
+    "description": "Primera Guerra Mundial",
+    "publishedAt": "2026-11-19T02:26:49.874257+00:00"
+  },
+  {
+    "id": 1961,
+    "title": "1 Peso 1957 Centenario Constitución",
+    "country": "México",
+    "metal": "Plata .100",
+    "year": 1957,
+    "price": "14 USD",
+    "images": [
+      "images/1961A.jpeg",
+      "images/1961B.jpeg"
+    ],
+    "reference": "KM# 458",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "mintage": 500000,
+    "peso": "16",
+    "diametro": "34.5",
+    "description": "Centenario Constitución - Ceca Mo - Año único, escasa",
+    "publishedAt": "2026-11-19T02:26:49.874257+00:00",
+    "commemorates": "Centenario Constitución"
   }
 ]
