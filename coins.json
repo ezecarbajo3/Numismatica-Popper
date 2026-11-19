@@ -9856,7 +9856,9 @@
     "diametro": "19.5",
     "description": "La Sembradora (La Semeuse) de Louis-Oscar Roty y rama de olivo.",
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
-    "cantidad": 1
+    "cantidad": 0,
+    "status": "sold",
+    "soldAt": "2026-11-19T14:05:16.820478-03:00"
   },
   {
     "id": 1263,
