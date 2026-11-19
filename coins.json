@@ -11103,7 +11103,9 @@
     "peso": "4",
     "diametro": "21",
     "description": "Fecha Chica",
-    "publishedAt": "2026-09-09T19:39:13.699367+00:00"
+    "publishedAt": "2026-09-09T19:39:13.699367+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-19T14:53:18.101404-03:00"
   },
   {
     "id": 1355,
