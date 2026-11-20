@@ -19502,7 +19502,9 @@
     "grade": "Muy Bueno",
     "grade_short": "MB",
     "description": "",
-    "publishedAt": "2026-11-08T00:17:32.279664+00:00"
+    "publishedAt": "2026-11-08T00:17:32.279664+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-20T18:39:11.618304-03:00"
   },
   {
     "id": 1786,
