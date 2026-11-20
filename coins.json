@@ -16069,7 +16069,9 @@
     "diametro": "25.91",
     "description": "Isabel II",
     "publishedAt": "2026-10-25T19:33:32.752447+00:00",
-    "commemorates": "Isabel II"
+    "commemorates": "Isabel II",
+    "status": "sold",
+    "soldAt": "2026-11-20T17:55:01.926461-03:00"
   },
   {
     "id": 1621,
