@@ -20724,7 +20724,9 @@
     "diametro": "11",
     "description": "Ceca de Córdoba.",
     "publishedAt": "2026-11-13T18:54:04.419107+00:00",
-    "sala_nota": "Acuñada por la Casa de Moneda de Córdoba en los meses en que se sancionaba la Constitución de 1853. Tras Caseros, la Confederación no tenía ceca nacional y Córdoba siguió sellando su propia plata para el comercio del interior. El cuartillo era la fracción más chica de los reales: se perdía y se gastaba, y hoy cuesta encontrarlo con este detalle."
+    "sala_nota": "Acuñada por la Casa de Moneda de Córdoba en los meses en que se sancionaba la Constitución de 1853. Tras Caseros, la Confederación no tenía ceca nacional y Córdoba siguió sellando su propia plata para el comercio del interior. El cuartillo era la fracción más chica de los reales: se perdía y se gastaba, y hoy cuesta encontrarlo con este detalle.",
+    "status": "sold",
+    "soldAt": "2026-11-20T18:48:46.360931-03:00"
   },
   {
     "id": 1845,
