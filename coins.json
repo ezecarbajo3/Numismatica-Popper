@@ -20169,7 +20169,9 @@
     "diametro": "22",
     "description": "Staraya Russa",
     "publishedAt": "2026-11-11T23:05:25.212186+00:00",
-    "commemorates": "Staraya Russa"
+    "commemorates": "Staraya Russa",
+    "status": "sold",
+    "soldAt": "2026-11-20T21:21:50.000053+00:00"
   },
   {
     "id": 1818,
@@ -20189,7 +20191,9 @@
     "diametro": "22",
     "description": "Gátchina - Ceca СПМД",
     "publishedAt": "2026-11-11T23:05:25.212186+00:00",
-    "commemorates": "Gátchina"
+    "commemorates": "Gátchina",
+    "status": "sold",
+    "soldAt": "2026-11-20T21:21:50.000053+00:00"
   },
   {
     "id": 1820,
@@ -22856,7 +22860,7 @@
     "diametro": "27",
     "description": "Sochi 2014 - Ceca SPMD",
     "publishedAt": "2026-11-18T14:22:39.948590+00:00",
-    "cantidad": 2,
+    "cantidad": 1,
     "commemorates": "Sochi 2014"
   },
   {
