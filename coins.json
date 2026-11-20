@@ -18628,7 +18628,9 @@
     "diametro": "27",
     "description": "70 años de la Victoria - Reina Victoria - Ceca San Petersburgo",
     "publishedAt": "2026-11-07T14:09:47.290319+00:00",
-    "commemorates": "70 años de la Victoria - Reina Victoria"
+    "commemorates": "70 años de la Victoria - Reina Victoria",
+    "status": "sold",
+    "soldAt": "2026-11-20T18:24:46.755456-03:00"
   },
   {
     "id": 1743,
