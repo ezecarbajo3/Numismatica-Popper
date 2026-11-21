@@ -8428,7 +8428,9 @@
     "price": "Consultar",
     "images": [
       "images/1080A.jpeg"
-    ]
+    ],
+    "status": "sold",
+    "soldAt": "2026-11-21T05:32:48.556190-03:00"
   },
   {
     "id": 1081,
