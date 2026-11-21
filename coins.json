@@ -8345,7 +8345,9 @@
     "images": [
       "images/1071A.jpeg"
     ],
-    "country": "Insumos"
+    "country": "Insumos",
+    "status": "sold",
+    "soldAt": "2026-11-21T05:35:26.553697-03:00"
   },
   {
     "id": 1072,
