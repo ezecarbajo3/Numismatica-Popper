@@ -8392,7 +8392,9 @@
     "price": "Consultar",
     "images": [
       "images/1076A.jpeg"
-    ]
+    ],
+    "status": "sold",
+    "soldAt": "2026-11-21T05:35:30.354509-03:00"
   },
   {
     "id": 1077,
