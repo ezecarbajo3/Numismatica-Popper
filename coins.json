@@ -22181,7 +22181,9 @@
     "diametro": "20",
     "description": "Ceca Córdoba",
     "publishedAt": "2026-11-17T19:53:40.147287+00:00",
-    "sala_nota": "En 1842 Córdoba estaba gobernada por Manuel «Quebracho» López, aliado de Rosas, y el país no tenía moneda nacional: cada provincia resolvía su circulante. Córdoba sellaba su propia plata, con su nombre de un lado y del otro el sol con la palabra «Confederada», como se llamaba entonces a una Argentina que era un pacto entre provincias. Casi todas circularon hasta gastarse."
+    "sala_nota": "En 1842 Córdoba estaba gobernada por Manuel «Quebracho» López, aliado de Rosas, y el país no tenía moneda nacional: cada provincia resolvía su circulante. Córdoba sellaba su propia plata, con su nombre de un lado y del otro el sol con la palabra «Confederada», como se llamaba entonces a una Argentina que era un pacto entre provincias. Casi todas circularon hasta gastarse.",
+    "status": "sold",
+    "soldAt": "2026-11-22T19:07:35.848311+00:00"
   },
   {
     "id": 1915,
