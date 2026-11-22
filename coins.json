@@ -22882,8 +22882,10 @@
     "diametro": "27",
     "description": "Sochi 2014 - Ceca SPMD",
     "publishedAt": "2026-11-18T14:22:39.948590+00:00",
-    "cantidad": 1,
-    "commemorates": "Sochi 2014"
+    "cantidad": 0,
+    "commemorates": "Sochi 2014",
+    "status": "sold",
+    "soldAt": "2026-11-22T19:08:06.898292+00:00"
   },
   {
     "id": 1950,
