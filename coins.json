@@ -23126,7 +23126,9 @@
     "diametro": "34.5",
     "description": "Centenario Constitución - Ceca Mo - Año único, escasa",
     "publishedAt": "2026-11-19T02:26:49.874257+00:00",
-    "commemorates": "Centenario Constitución"
+    "commemorates": "Centenario Constitución",
+    "status": "sold",
+    "soldAt": "2026-11-22T23:21:37.850263+00:00"
   },
   {
     "id": 1962,
