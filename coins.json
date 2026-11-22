@@ -23119,5 +23119,88 @@
     "description": "Centenario Constitución - Ceca Mo - Año único, escasa",
     "publishedAt": "2026-11-19T02:26:49.874257+00:00",
     "commemorates": "Centenario Constitución"
+  },
+  {
+    "id": 1962,
+    "title": "5 Nuevos Pesos 1976",
+    "country": "Uruguay",
+    "metal": "Bronce",
+    "year": 1976,
+    "price": "7 USD",
+    "images": [
+      "images/1962A.jpeg",
+      "images/1962B.jpeg"
+    ],
+    "reference": "KM# 70",
+    "grade": "Excelente +",
+    "grade_short": "EX+",
+    "mintage": 300000,
+    "peso": "14.5",
+    "diametro": "33",
+    "description": "Fundación de Montevideo - Ceca So",
+    "publishedAt": "2026-11-22T16:14:47.368234+00:00",
+    "commemorates": "Fundación de Montevideo"
+  },
+  {
+    "id": 1963,
+    "title": "1 Real 1842",
+    "country": "Córdoba, Provincia de",
+    "metal": "Plata",
+    "year": 1842,
+    "price": "150 USD",
+    "images": [
+      "images/1963A.jpeg",
+      "images/1963B.jpeg"
+    ],
+    "reference": "KM# 38",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "3.2",
+    "diametro": "20",
+    "description": "Alto grado de conservación, conserva brillo original",
+    "publishedAt": "2026-11-22T16:14:47.368234+00:00",
+    "sala_nota": "En 1842 no existía una moneda nacional argentina: las provincias eran autónomas y varias, entre ellas Córdoba, acuñaban su propia plata. Este real sigue el sistema heredado de la época colonial española, en el que el peso se dividía en ocho reales. Esa diversidad de monedas terminó con la Ley 1130 de 1881, que creó el peso nacional."
+  },
+  {
+    "id": 1964,
+    "title": "2 Pesetas 1870",
+    "country": "España",
+    "metal": "Plata .835",
+    "year": 1870,
+    "price": "17 USD",
+    "images": [
+      "images/1964A.jpeg",
+      "images/1964B.jpeg"
+    ],
+    "reference": "KM# 654",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 1503872,
+    "peso": "10",
+    "diametro": "27",
+    "description": "",
+    "publishedAt": "2026-11-22T16:14:47.368234+00:00"
+  },
+  {
+    "id": 1965,
+    "title": "Pesos Uruguayos 2024 Colombes 1924",
+    "country": "Uruguay",
+    "metal": "Plata .900",
+    "year": 2024,
+    "price": "90 USD",
+    "images": [
+      "images/1965A.jpeg",
+      "images/1965B.jpeg"
+    ],
+    "reference": "",
+    "grade": "Sin Circular",
+    "grade_short": "SC",
+    "mintage": 1500,
+    "peso": "12.5",
+    "diametro": "33",
+    "description": "Colombes 1924 - Incluye certificado y cápsula",
+    "publishedAt": "2026-11-22T16:14:47.368234+00:00",
+    "commemorates": "Colombes 1924",
+    "sala_nota": "El Banco Central del Uruguay acuñó esta moneda en 2024 para celebrar el centenario de la medalla de oro obtenida por la selección uruguaya de fútbol en los Juegos Olímpicos de París 1924, disputados en el estadio de Colombes. La conquista consagró al equipo celeste como el primer campeón olímpico del continente y dio origen a la llamada vuelta olímpica. Solo se emitieron 1500 piezas en plata."
   }
 ]
