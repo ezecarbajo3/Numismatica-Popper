@@ -22445,7 +22445,9 @@
     "diametro": "28.36",
     "description": "Nicolás II - Ceca C.П.Б. - Alto grado de conservación",
     "publishedAt": "2026-11-18T02:08:37.598053+00:00",
-    "commemorates": "Nicolás II"
+    "commemorates": "Nicolás II",
+    "status": "sold",
+    "soldAt": "2026-11-23T00:11:29.771575+00:00"
   },
   {
     "id": 1928,
@@ -22766,7 +22768,9 @@
     "diametro": "37",
     "description": "Sesquicentenario - Ceca Lima",
     "publishedAt": "2026-11-18T14:22:39.948590+00:00",
-    "commemorates": "Sesquicentenario"
+    "commemorates": "Sesquicentenario",
+    "status": "sold",
+    "soldAt": "2026-11-23T00:11:29.771575+00:00"
   },
   {
     "id": 1944,
@@ -22906,7 +22910,9 @@
     "peso": "0.78",
     "diametro": "17.5",
     "description": "",
-    "publishedAt": "2026-11-18T14:22:39.948590+00:00"
+    "publishedAt": "2026-11-18T14:22:39.948590+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-23T00:11:29.771575+00:00"
   },
   {
     "id": 1951,
@@ -22984,7 +22990,9 @@
     "diametro": "24",
     "description": "FAO - Ceca R",
     "publishedAt": "2026-11-18T14:22:39.948590+00:00",
-    "commemorates": "FAO"
+    "commemorates": "FAO",
+    "status": "sold",
+    "soldAt": "2026-11-23T00:11:29.771575+00:00"
   },
   {
     "id": 1955,
@@ -23105,7 +23113,9 @@
     "peso": "2.5",
     "diametro": "19",
     "description": "Primera Guerra Mundial",
-    "publishedAt": "2026-11-19T02:26:49.874257+00:00"
+    "publishedAt": "2026-11-19T02:26:49.874257+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-23T00:11:29.771575+00:00"
   },
   {
     "id": 1961,
