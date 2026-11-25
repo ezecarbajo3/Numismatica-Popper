@@ -6,9 +6,9 @@
  * Despacho de pedidos y consultas a numismaticapopper@gmail.com vía FormSubmit
  * (aviso al cliente por envío nativo con captcha; el detalle lo manda el dueño con el link de Gmail del mail del pedido).
  *
- * Piezas con id numérico → checkout normal. Piezas con id de texto (F/P/R…)
- * → "a consultar": no entran en el total ni en el pago, viajan en el mismo
- * mail al dueño para confirmar stock.
+ * Todas las piezas van al checkout normal. Desde el 25/11/2026 los ids son
+ * letra del país + número (D15) y ya no hay piezas de terceros, así que la
+ * rama "a consultar" (que antes tomaba los ids F/P/R) queda sin uso.
  */
 
 (function () {
@@ -373,10 +373,11 @@
     }
   }
 
-  // ─── Clasificación: pagables vs a consultar (ids F/P/R…) ───────────────────
+  // ─── Clasificación: pagables vs a consultar ────────────────────────────────
+  // Antes un id con letras (F/P/R) era de terceros y se consultaba. Ahora los ids
+  // propios llevan la letra del país (D15): nada se manda a consultar por el id.
   function isNonNumericId(id) {
-    if (id == null || id === '') return false;
-    return !/^\d+$/.test(String(id).trim());
+    return false;
   }
 
   function hasNonNumericItems() {

@@ -453,15 +453,15 @@
     "description": "Token oficial del calendario Christophorus Porsche 2001 - Acuñado para acompañar los calendarios anuales numerados de la fábrica Porsche"
   },
   {
-    "id": 89,
+    "id": "B3",
     "title": "1000 Réis 1910",
     "country": "Brasil",
     "metal": "Plata .900",
     "year": 1910,
     "price": "22 USD",
     "images": [
-      "images/89A.jpeg",
-      "images/89B.jpeg"
+      "images/B3A.jpeg",
+      "images/B3B.jpeg"
     ],
     "reference": "KM# 507",
     "grade": "Bueno +",
@@ -717,15 +717,15 @@
     "description": ""
   },
   {
-    "id": 138,
+    "id": "B10",
     "title": "10 Centavos 1883",
     "country": "Bolivia",
     "metal": "Cuproníquel",
     "year": 1883,
     "price": "8 USD",
     "images": [
-      "images/138A.jpeg",
-      "images/138B.jpeg"
+      "images/B10A.jpeg",
+      "images/B10B.jpeg"
     ],
     "reference": "KM# 170.2",
     "grade": "Bueno",
@@ -1033,15 +1033,15 @@
     "description": "Reina Victoria.\nTercer retrato."
   },
   {
-    "id": 190,
+    "id": "C4",
     "title": "20 Centavos 1879",
     "country": "Chile",
     "metal": "Plata",
     "year": 1879,
     "price": "22 USD",
     "images": [
-      "images/190A.jpeg",
-      "images/190B.jpeg"
+      "images/C4A.jpeg",
+      "images/C4B.jpeg"
     ],
     "reference": "KM# 138.2",
     "grade": "Muy Bueno",
@@ -1051,15 +1051,15 @@
     "description": "Variante con pureza de la Plata"
   },
   {
-    "id": 191,
+    "id": "B7",
     "title": "25 Cents 1942",
     "country": "Bélgica",
     "metal": "Zinc",
     "year": 1942,
     "price": "4 USD",
     "images": [
-      "images/191A.jpeg",
-      "images/191B.jpeg"
+      "images/B7A.jpeg",
+      "images/B7B.jpeg"
     ],
     "reference": "KM# 132",
     "grade": "Excelente",
@@ -1071,15 +1071,15 @@
     "cantidad": 1
   },
   {
-    "id": 192,
+    "id": "E2",
     "title": "5 Cents 1902",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
     "year": 1902,
     "price": "4 USD",
     "images": [
-      "images/192A.jpeg",
-      "images/192B.jpeg"
+      "images/E2A.jpeg",
+      "images/E2B.jpeg"
     ],
     "reference": "KM# 112",
     "grade": "Bueno **",
@@ -1202,15 +1202,15 @@
     "reference": ""
   },
   {
-    "id": 211,
+    "id": "E7",
     "title": "2 Euro 2013",
     "country": "España",
     "metal": "Bimetálica",
     "year": 2013,
     "price": "9 USD",
     "images": [
-      "images/211A.jpeg",
-      "images/211B.jpeg"
+      "images/E7A.jpeg",
+      "images/E7B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -1617,15 +1617,15 @@
     "cantidad": 2
   },
   {
-    "id": 287,
+    "id": "A7",
     "title": "2 Euro 2016",
     "country": "Austria",
     "metal": "Bimetálica",
     "year": 2016,
     "price": "5 USD",
     "images": [
-      "images/287A.jpeg",
-      "images/287B.jpeg"
+      "images/A7A.jpeg",
+      "images/A7B.jpeg"
     ],
     "reference": "KM# 3248",
     "grade": "Excelente +",
@@ -2139,7 +2139,7 @@
     "soldAt": "2026-10-12T23:43:25.578935+00:00"
   },
   {
-    "id": 368,
+    "id": "E10",
     "title": "Cent 1904",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
@@ -2147,8 +2147,8 @@
     "price": "7 USD",
     "reference": "KM# 90",
     "images": [
-      "images/368A.jpeg",
-      "images/368B.jpeg"
+      "images/E10A.jpeg",
+      "images/E10B.jpeg"
     ],
     "grade": "",
     "grade_short": "",
@@ -2157,7 +2157,7 @@
     "description": "Indian Head"
   },
   {
-    "id": 370,
+    "id": "E37",
     "title": "Cent 1907",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
@@ -2165,8 +2165,8 @@
     "price": "9 USD",
     "reference": "KM# 90",
     "images": [
-      "images/370A.jpeg",
-      "images/370B.jpeg"
+      "images/E37A.jpeg",
+      "images/E37B.jpeg"
     ],
     "grade": "",
     "grade_short": "",
@@ -2175,7 +2175,7 @@
     "description": "Indian Head"
   },
   {
-    "id": 371,
+    "id": "E38",
     "title": "Cent 1905",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
@@ -2183,8 +2183,8 @@
     "price": "7 USD",
     "reference": "KM# 90",
     "images": [
-      "images/371A.jpeg",
-      "images/371B.jpeg"
+      "images/E38A.jpeg",
+      "images/E38B.jpeg"
     ],
     "grade": "",
     "grade_short": "",
@@ -2193,15 +2193,15 @@
     "description": "Indian Head"
   },
   {
-    "id": 376,
+    "id": "E46",
     "title": "1 Dollar 2007 P",
     "country": "Estados Unidos",
     "year": 2007,
     "price": "2 USD",
     "description": "Adams",
     "images": [
-      "images/376A.jpeg",
-      "images/376B.jpeg"
+      "images/E46A.jpeg",
+      "images/E46B.jpeg"
     ],
     "metal": "Latón de manganeso sobre cobre",
     "reference": "KM# 402",
@@ -2210,15 +2210,15 @@
     "cantidad": 2
   },
   {
-    "id": 377,
+    "id": "E45",
     "title": "1 Dollar 2000 P",
     "country": "Estados Unidos",
     "year": 2000,
     "price": "2 USD",
     "description": "Sacagawea",
     "images": [
-      "images/377A.jpeg",
-      "images/377B.jpeg"
+      "images/E45A.jpeg",
+      "images/E45B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -2226,42 +2226,42 @@
     "cantidad": 2
   },
   {
-    "id": 382,
+    "id": "E25",
     "title": "1/2 Dollar 1976 D",
     "country": "Estados Unidos",
     "year": 1976,
     "price": "2.5 USD",
     "description": "Bicentenario",
     "images": [
-      "images/382A.jpeg",
-      "images/382B.jpeg"
+      "images/E25A.jpeg",
+      "images/E25B.jpeg"
     ],
     "reference": "KM# 205",
     "cantidad": 2
   },
   {
-    "id": 383,
+    "id": "E28",
     "title": "1/2 Dollar 1974 D",
     "country": "Estados Unidos",
     "year": 1974,
     "price": "2 USD",
     "images": [
-      "images/383A.jpeg",
-      "images/383B.jpeg"
+      "images/E28A.jpeg",
+      "images/E28B.jpeg"
     ],
     "group_id": "us-half-dollar-1974",
     "group_label": "1/2 Dólar 1974",
     "reference": "KM# 202b"
   },
   {
-    "id": 384,
+    "id": "E34",
     "title": "1/2 Dollar 1974",
     "country": "Estados Unidos",
     "year": 1974,
     "price": "2 USD",
     "images": [
-      "images/384A.jpeg",
-      "images/384B.jpeg"
+      "images/E34A.jpeg",
+      "images/E34B.jpeg"
     ],
     "group_id": "us-half-dollar-1974",
     "group_label": "1/2 Dólar 1974",
@@ -2282,26 +2282,26 @@
     "soldAt": "2026-11-02T19:29:34.264659+00:00"
   },
   {
-    "id": 386,
+    "id": "E24",
     "title": "1/2 Dollar 1971",
     "country": "Estados Unidos",
     "year": 1971,
     "price": "2 USD",
     "images": [
-      "images/386A.jpeg",
-      "images/386B.jpeg"
+      "images/E24A.jpeg",
+      "images/E24B.jpeg"
     ],
     "reference": "KM# 202b"
   },
   {
-    "id": 387,
+    "id": "E31",
     "title": "1/2 Dollar 1972 D",
     "country": "Estados Unidos",
     "year": 1972,
     "price": "2 USD",
     "images": [
-      "images/387A.jpeg",
-      "images/387B.jpeg"
+      "images/E31A.jpeg",
+      "images/E31B.jpeg"
     ],
     "reference": "KM# 202b"
   },
@@ -3122,15 +3122,15 @@
     "reference": "KM# 638"
   },
   {
-    "id": 489,
+    "id": "C25",
     "title": "25 Cents 2000",
     "country": "Canadá",
     "metal": "Níquel",
     "year": 2000,
     "price": "2.5 USD",
     "images": [
-      "images/502A.jpeg",
-      "images/502B.jpeg"
+      "images/C25A.jpeg",
+      "images/C25B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -3495,15 +3495,15 @@
     "grade_short": "EX"
   },
   {
-    "id": 522,
+    "id": "E13",
     "title": "25 Céntimos 1937",
     "country": "España",
     "metal": "Cuproníquel",
     "year": 1937,
     "price": "3.5 USD",
     "images": [
-      "images/535A.jpeg",
-      "images/535B.jpeg"
+      "images/E13A.jpeg",
+      "images/E13B.jpeg"
     ],
     "reference": "KM# 753",
     "grade": "Excelente",
@@ -3511,32 +3511,32 @@
     "cantidad": 2
   },
   {
-    "id": 523,
+    "id": "E11",
     "title": "25 Céntimos 1925",
     "country": "España",
     "metal": "Cuproníquel",
     "year": 1925,
     "price": "5 USD",
     "images": [
-      "images/536A.jpeg",
-      "images/536B.jpeg"
+      "images/E11A.jpeg",
+      "images/E11B.jpeg"
     ],
     "reference": "KM# 740",
     "grade": "Muy Bueno +",
     "grade_short": "MB+"
   },
   {
-    "id": 525,
+    "id": "E41",
     "title": "1/4 Dólar 1999 (DESCENTRADA)",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
     "year": 1999,
     "price": "3 USD",
     "images": [
-      "images/538A.jpeg",
-      "images/538B.jpeg",
-      "images/538C.jpeg",
-      "images/538D.jpeg"
+      "images/E41A.jpeg",
+      "images/E41B.jpeg",
+      "images/E41C.jpeg",
+      "images/E41D.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -3546,16 +3546,16 @@
     "group_label": "Quarters 1999"
   },
   {
-    "id": 526,
+    "id": "B9",
     "title": "50 Centavos 1903 (GIRADA)",
     "country": "Bolivia",
     "metal": "Plata .900",
     "year": 1903,
     "price": "100 USD",
     "images": [
-      "images/539A.jpeg",
-      "images/539B.jpeg",
-      "images/539C.mp4"
+      "images/B9A.jpeg",
+      "images/B9B.jpeg",
+      "images/B9C.mp4"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -3647,15 +3647,15 @@
     "soldAt": "2026-09-20T00:22:55.515977+00:00"
   },
   {
-    "id": 553,
+    "id": "E32",
     "title": "1/4 Dólar 2016 (patina)",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
     "year": 2016,
     "price": "3 USD",
     "images": [
-      "images/553A.jpeg",
-      "images/553B.jpeg"
+      "images/E32A.jpeg",
+      "images/E32B.jpeg"
     ],
     "description": "Kentucky.",
     "reference": "KM# 636",
@@ -3847,28 +3847,28 @@
     "soldAt": "2026-10-06T17:41:15.339676+00:00"
   },
   {
-    "id": 569,
+    "id": "E9",
     "title": "25 Céntimos 1927",
     "country": "España",
     "metal": "Cuproníquel",
     "year": 1927,
     "price": "4 USD",
     "images": [
-      "images/569A.jpeg",
-      "images/569B.jpeg"
+      "images/E9A.jpeg",
+      "images/E9B.jpeg"
     ],
     "reference": "KM# 742",
     "mintage": "12.000.000"
   },
   {
-    "id": 572,
+    "id": "B1",
     "title": "50 Centavos 1902",
     "country": "Bolivia",
     "year": 1902,
     "price": "26 USD",
     "images": [
-      "images/572A.jpeg",
-      "images/572B.jpeg"
+      "images/B1A.jpeg",
+      "images/B1B.jpeg"
     ],
     "grade": "Muy Bueno +",
     "grade_short": "MB+",
@@ -3879,14 +3879,14 @@
     "group_label": "50 Centavos 1902"
   },
   {
-    "id": 573,
+    "id": "B6",
     "title": "50 Centavos 1902",
     "country": "Bolivia",
     "year": 1902,
     "price": "23 USD",
     "images": [
-      "images/573A.jpeg",
-      "images/573B.jpeg"
+      "images/B6A.jpeg",
+      "images/B6B.jpeg"
     ],
     "grade": "Muy Bueno",
     "grade_short": "MB",
@@ -3948,14 +3948,14 @@
     "cantidad": 1
   },
   {
-    "id": 581,
+    "id": "A9",
     "title": "5 Pfennig 1906",
     "country": "Alemania",
     "year": 1906,
     "price": "3.5 USD",
     "images": [
-      "images/581A.jpeg",
-      "images/581B.jpeg"
+      "images/A9A.jpeg",
+      "images/A9B.jpeg"
     ],
     "grade": "Excelente **",
     "grade_short": "EX**",
@@ -3963,14 +3963,14 @@
     "reference": "KM# 11"
   },
   {
-    "id": 585,
+    "id": "E6",
     "title": "10 Milliemes 1935",
     "country": "Egipto",
     "year": 1935,
     "price": "4.5 USD",
     "images": [
-      "images/585A.jpeg",
-      "images/585B.jpeg"
+      "images/E6A.jpeg",
+      "images/E6B.jpeg"
     ],
     "grade": "Bueno +",
     "grade_short": "B+",
@@ -4079,14 +4079,14 @@
     "reference": "KM# 21a"
   },
   {
-    "id": 598,
+    "id": "A2",
     "title": "1 Gulden 1971",
     "country": "Antillas Holandesas",
     "year": 1971,
     "price": "3.5 USD",
     "images": [
-      "images/598A.jpeg",
-      "images/598B.jpeg"
+      "images/A2A.jpeg",
+      "images/A2B.jpeg"
     ],
     "grade": "Excelente +",
     "grade_short": "EX+",
@@ -4718,7 +4718,7 @@
     "reference": "KM# 794.2"
   },
   {
-    "id": 669,
+    "id": "B8",
     "title": "100 Reis 1901",
     "country": "Brasil",
     "year": 1901,
@@ -4729,8 +4729,8 @@
     "grade_short": "MB-",
     "price": "3 USD",
     "images": [
-      "images/669A.jpeg",
-      "images/669B.jpeg"
+      "images/B8A.jpeg",
+      "images/B8B.jpeg"
     ]
   },
   {
@@ -5089,15 +5089,15 @@
     "soldAt": "2026-10-07T19:27:36.558229+00:00"
   },
   {
-    "id": 702,
+    "id": "C13",
     "title": "5 Céntimos 1976",
     "country": "Costa Rica",
     "metal": "Cuproníquel",
     "year": 1976,
     "price": "2 USD",
     "images": [
-      "images/702A.jpeg",
-      "images/702B.jpeg"
+      "images/C13A.jpeg",
+      "images/C13B.jpeg"
     ],
     "reference": "KM# 184.2",
     "grade": "Muy Bueno",
@@ -5123,15 +5123,15 @@
     "cantidad": 0
   },
   {
-    "id": 704,
+    "id": "C19",
     "title": "5 Céntimos 1979",
     "country": "Costa Rica",
     "metal": "Latón",
     "year": 1979,
     "price": "3 USD",
     "images": [
-      "images/704A.jpeg",
-      "images/704B.jpeg"
+      "images/C19A.jpeg",
+      "images/C19B.jpeg"
     ],
     "reference": "KM# 184.3a",
     "grade": "Sin Circular",
@@ -5141,14 +5141,14 @@
     "cantidad": 7
   },
   {
-    "id": 709,
+    "id": "C21",
     "title": "25 Céntimos 1983",
     "country": "Costa Rica",
     "metal": "Aluminio",
     "year": 1983,
     "price": "2 USD",
     "images": [
-      "images/709A.jpeg"
+      "images/C21A.jpeg"
     ],
     "reference": "KM# 188.3",
     "grade": "Sin Circular",
@@ -5156,14 +5156,14 @@
     "cantidad": 2
   },
   {
-    "id": 710,
+    "id": "C16",
     "title": "25 Céntimos 1980",
     "country": "Costa Rica",
     "metal": "Acero niquelado",
     "year": 1980,
     "price": "2 USD",
     "images": [
-      "images/710A.jpeg"
+      "images/C16A.jpeg"
     ],
     "reference": "KM# 188.1a",
     "grade": "Excelente +",
@@ -6100,14 +6100,14 @@
     "cantidad": 0
   },
   {
-    "id": 783,
+    "id": "C6",
     "title": "25 Cents 2011",
     "country": "Canadá",
     "year": 2011,
     "price": "4.5 USD",
     "images": [
-      "images/783A.jpeg",
-      "images/783B.jpeg"
+      "images/C6A.jpeg",
+      "images/C6B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -6117,14 +6117,14 @@
     "reference": "KM# 1162"
   },
   {
-    "id": 784,
+    "id": "C7",
     "title": "25 Cents 2011",
     "country": "Canadá",
     "year": 2011,
     "price": "4.5 USD",
     "images": [
-      "images/784A.jpeg",
-      "images/784B.jpeg"
+      "images/C7A.jpeg",
+      "images/C7B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -6290,15 +6290,15 @@
     "grade_short": "MB+"
   },
   {
-    "id": 819,
+    "id": "C10",
     "title": "1 Peso 1924",
     "country": "Chile",
     "metal": "Plata .500",
     "year": 1924,
     "price": "5 USD",
     "images": [
-      "images/819A.jpeg",
-      "images/819B.jpeg"
+      "images/C10A.jpeg",
+      "images/C10B.jpeg"
     ],
     "reference": "KM# 152.6",
     "grade": "Muy Bueno **",
@@ -6306,15 +6306,15 @@
     "description": "Con detalles"
   },
   {
-    "id": 820,
+    "id": "E26",
     "title": "1/2 Dollar 1967",
     "country": "Estados Unidos",
     "metal": "Plata .400",
     "year": 1967,
     "price": "9 USD",
     "images": [
-      "images/820A.jpeg",
-      "images/820B.jpeg"
+      "images/E26A.jpeg",
+      "images/E26B.jpeg"
     ],
     "reference": "KM# 202a",
     "grade": "Excelente",
@@ -6357,15 +6357,15 @@
     "soldAt": "2026-10-07T23:48:43.366483+00:00"
   },
   {
-    "id": 823,
+    "id": "E27",
     "title": "1/2 Dollar 1967",
     "country": "Estados Unidos",
     "metal": "Plata .400",
     "year": 1967,
     "price": "10 USD",
     "images": [
-      "images/823A.jpeg",
-      "images/823B.jpeg"
+      "images/E27A.jpeg",
+      "images/E27B.jpeg"
     ],
     "reference": "KM# 202a",
     "grade": "Sin Circular **",
@@ -6701,15 +6701,15 @@
     "soldAt": "2026-10-07T22:04:38.306679-03:00"
   },
   {
-    "id": 858,
+    "id": "D5",
     "title": "10 Kroner 1979",
     "country": "Dinamarca",
     "metal": "Cuproníquel",
     "year": 1979,
     "price": "3.5 USD",
     "images": [
-      "images/858A.jpeg",
-      "images/858B.jpeg"
+      "images/D5A.jpeg",
+      "images/D5B.jpeg"
     ],
     "reference": "KM# 864",
     "grade": "Excelente +",
@@ -6717,45 +6717,45 @@
     "cantidad": 2
   },
   {
-    "id": 859,
+    "id": "D7",
     "title": "2 Kroner 1994",
     "country": "Dinamarca",
     "metal": "Cuproníquel",
     "year": 1994,
     "price": "2.5 USD",
     "images": [
-      "images/859A.jpeg",
-      "images/859B.jpeg"
+      "images/D7A.jpeg",
+      "images/D7B.jpeg"
     ],
     "reference": "KM# 874",
     "grade": "Excelente",
     "grade_short": "EX"
   },
   {
-    "id": 860,
+    "id": "D3",
     "title": "5 Kroner 1990",
     "country": "Dinamarca",
     "metal": "Cuproníquel",
     "year": 1990,
     "price": "3 USD",
     "images": [
-      "images/860A.jpeg",
-      "images/860B.jpeg"
+      "images/D3A.jpeg",
+      "images/D3B.jpeg"
     ],
     "reference": "KM# 869",
     "grade": "Excelente",
     "grade_short": "EX"
   },
   {
-    "id": 861,
+    "id": "D1",
     "title": "1 Krone 1980",
     "country": "Dinamarca",
     "metal": "Cuproníquel",
     "year": 1980,
     "price": "2 USD",
     "images": [
-      "images/861A.jpeg",
-      "images/861B.jpeg"
+      "images/D1A.jpeg",
+      "images/D1B.jpeg"
     ],
     "reference": "KM# 862",
     "grade": "Excelente",
@@ -6763,15 +6763,15 @@
     "cantidad": 7
   },
   {
-    "id": 862,
+    "id": "D12",
     "title": "1 Krone 1969",
     "country": "Dinamarca",
     "metal": "Cuproníquel",
     "year": 1969,
     "price": "2 USD",
     "images": [
-      "images/862A.jpeg",
-      "images/862B.jpeg"
+      "images/D12A.jpeg",
+      "images/D12B.jpeg"
     ],
     "reference": "KM# 851",
     "grade": "Excelente",
@@ -6779,15 +6779,15 @@
     "cantidad": 4
   },
   {
-    "id": 863,
+    "id": "D14",
     "title": "5 Ore 1970",
     "country": "Dinamarca",
     "metal": "Bronce",
     "year": 1970,
     "price": "2.5 USD",
     "images": [
-      "images/863A.jpeg",
-      "images/863B.jpeg"
+      "images/D14A.jpeg",
+      "images/D14B.jpeg"
     ],
     "reference": "KM# 848",
     "grade": "Excelente +",
@@ -6795,15 +6795,15 @@
     "cantidad": 4
   },
   {
-    "id": 864,
+    "id": "D4",
     "title": "2 Ore 1970",
     "country": "Dinamarca",
     "metal": "Zinc",
     "year": 1970,
     "price": "2.5 USD",
     "images": [
-      "images/864A.jpeg",
-      "images/864B.jpeg"
+      "images/D4A.jpeg",
+      "images/D4B.jpeg"
     ],
     "reference": "KM# 840",
     "grade": "Muy Bueno +",
@@ -6922,15 +6922,15 @@
     "cantidad": 2
   },
   {
-    "id": 876,
+    "id": "D2",
     "title": "20 Kroner 1991",
     "country": "Dinamarca",
     "metal": "Bronce de aluminio",
     "year": 1991,
     "price": "4.5 USD",
     "images": [
-      "images/876A.jpeg",
-      "images/876B.jpeg"
+      "images/D2A.jpeg",
+      "images/D2B.jpeg"
     ],
     "reference": "KM# 871",
     "grade": "Muy Bueno +",
@@ -6939,15 +6939,15 @@
     "cantidad": 2
   },
   {
-    "id": 878,
+    "id": "D6",
     "title": "10 Ore 1937",
     "country": "Dinamarca",
     "metal": "Cuproníquel",
     "year": 1937,
     "price": "2.5 USD",
     "images": [
-      "images/878A.jpeg",
-      "images/878B.jpeg"
+      "images/D6A.jpeg",
+      "images/D6B.jpeg"
     ],
     "reference": "KM# 822",
     "grade": "Muy Bueno +",
@@ -7300,15 +7300,15 @@
     "cantidad": 5
   },
   {
-    "id": 918,
+    "id": "E54",
     "title": "5 Cents 2005 P",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
     "year": 2005,
     "price": "1.5 USD",
     "images": [
-      "images/918A.jpeg",
-      "images/918B.jpeg"
+      "images/E54A.jpeg",
+      "images/E54B.jpeg"
     ],
     "reference": "KM# 369",
     "grade": "Sin Circular",
@@ -7319,15 +7319,15 @@
     "commemorates": "Serie Westward Journey (Búfalo Americano)"
   },
   {
-    "id": 919,
+    "id": "E43",
     "title": "5 Cents 2005 D",
     "country": "Estados Unidos",
     "metal": "Cuproníquel",
     "year": 2005,
     "price": "1.5 USD",
     "images": [
-      "images/919A.jpeg",
-      "images/919B.jpeg"
+      "images/E43A.jpeg",
+      "images/E43B.jpeg"
     ],
     "reference": "KM# 368",
     "grade": "Sin Circular",
@@ -7460,15 +7460,15 @@
     "soldAt": "2026-10-30T03:41:15.198162+00:00"
   },
   {
-    "id": 939,
+    "id": "C23",
     "title": "5 Centavos 1935",
     "country": "Colombia",
     "metal": "Cuproníquel",
     "year": 1935,
     "price": "4 USD",
     "images": [
-      "images/939A.jpeg",
-      "images/939B.jpeg"
+      "images/C23A.jpeg",
+      "images/C23B.jpeg"
     ],
     "grade": "Muy Bueno -",
     "grade_short": "MB-",
@@ -7699,15 +7699,15 @@
     "description": "Emisión de la República Popular China. Flor de Orquídea (magnética)."
   },
   {
-    "id": 971,
+    "id": "B13",
     "title": "10 Francos 2011",
     "country": "Burundi",
     "metal": "Acero niquelado",
     "year": 2011,
     "price": "4.5 USD",
     "images": [
-      "images/971A.jpeg",
-      "images/971B.jpeg"
+      "images/B13A.jpeg",
+      "images/B13B.jpeg"
     ],
     "grade": "Sin Circular",
     "grade_short": "SC",
@@ -8043,15 +8043,15 @@
     "publishedAt": "2026-08-05T22:52:23.735711+00:00"
   },
   {
-    "id": 1023,
+    "id": "A6",
     "title": "2 Reichspfennig 1924 A",
     "country": "Alemania",
     "metal": "Bronce",
     "year": 1924,
     "price": "4 USD",
     "images": [
-      "images/1023A.jpeg",
-      "images/1023B.jpeg"
+      "images/A6A.jpeg",
+      "images/A6B.jpeg"
     ],
     "reference": "KM# 37",
     "grade": "Excelente -",
@@ -8080,15 +8080,15 @@
     "soldAt": "2026-11-06T20:54:44.110095+00:00"
   },
   {
-    "id": 1026,
+    "id": "A10",
     "title": "5 Euro 2019 G",
     "country": "Alemania",
     "metal": "Cuproníquel (con polímero)",
     "year": 2019,
     "price": "25 USD",
     "images": [
-      "images/1026A.jpeg",
-      "images/1026B.jpeg"
+      "images/A10A.jpeg",
+      "images/A10B.jpeg"
     ],
     "reference": "KM# 380",
     "grade": "Sin Circular",
@@ -8235,15 +8235,15 @@
     "soldAt": "2026-10-13T23:49:50.147942+00:00"
   },
   {
-    "id": 1056,
+    "id": "A3",
     "title": "10 Reichspfennig 1940",
     "country": "Alemania",
     "metal": "Zinc",
     "year": 1940,
     "price": "6 USD",
     "images": [
-      "images/1056A.jpeg",
-      "images/1056B.jpeg"
+      "images/A3A.jpeg",
+      "images/A3B.jpeg"
     ],
     "reference": "KM# 101",
     "grade": "Muy Bueno",
@@ -8253,15 +8253,15 @@
     "cantidad": 4
   },
   {
-    "id": 1057,
+    "id": "A4",
     "title": "1 Reichspfennig 1937",
     "country": "Alemania",
     "metal": "Bronce",
     "year": 1937,
     "price": "8 USD",
     "images": [
-      "images/1057A.jpeg",
-      "images/1057B.jpeg"
+      "images/A4A.jpeg",
+      "images/A4B.jpeg"
     ],
     "reference": "KM# 89",
     "grade": "Muy Bueno +",
@@ -8746,15 +8746,15 @@
     "soldAt": "2026-11-10T23:31:13.652042+00:00"
   },
   {
-    "id": 1159,
+    "id": "E35",
     "title": "1/2 Dólar 1958 Franklin",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1958,
     "price": "30 USD",
     "images": [
-      "images/1159A.jpeg",
-      "images/1159B.jpeg"
+      "images/E35A.jpeg",
+      "images/E35B.jpeg"
     ],
     "reference": "KM# 199",
     "grade": "Excelente -",
@@ -8784,15 +8784,15 @@
     "soldAt": "2026-10-23T15:38:05.564576+00:00"
   },
   {
-    "id": 1175,
+    "id": "D11",
     "title": "4 Skilling 1854",
     "country": "Dinamarca",
     "metal": "Vellón (Plata .250)",
     "year": 1854,
     "price": "25 USD",
     "images": [
-      "images/1175A.jpeg",
-      "images/1175B.jpeg"
+      "images/D11A.jpeg",
+      "images/D11B.jpeg"
     ],
     "reference": "KM# 758",
     "grade": "Muy Bueno",
@@ -9435,15 +9435,15 @@
     "cantidad": 1
   },
   {
-    "id": 1234,
+    "id": "C18",
     "title": "5 Yuan 2023 Ópera de Pekín",
     "country": "China",
     "metal": "Latón",
     "year": 2023,
     "price": "5.5 USD",
     "images": [
-      "images/1234A.jpeg",
-      "images/1234B.jpeg"
+      "images/C18A.jpeg",
+      "images/C18B.jpeg"
     ],
     "reference": "KM# 2841",
     "grade": "Sin Circular",
@@ -9496,15 +9496,15 @@
     "cantidad": 1
   },
   {
-    "id": 1240,
+    "id": "C15",
     "title": "100 Pesos 2025",
     "country": "Chile",
     "metal": "Bimetálica",
     "year": 2025,
     "price": "4 USD",
     "images": [
-      "images/1240A.jpeg",
-      "images/1240B.jpeg"
+      "images/C15A.jpeg",
+      "images/C15B.jpeg"
     ],
     "reference": "KM# 236",
     "grade": "Sin Circular",
@@ -9606,15 +9606,15 @@
     "soldAt": "2026-09-28T23:07:06.521447+00:00"
   },
   {
-    "id": 1246,
+    "id": "C9",
     "title": "1 Dólar 1971 Centenario de Columbia Británica",
     "country": "Canadá",
     "metal": "Níquel",
     "year": 1971,
     "price": "4 USD",
     "images": [
-      "images/1246A.jpeg",
-      "images/1246B.jpeg"
+      "images/C9A.jpeg",
+      "images/C9B.jpeg"
     ],
     "reference": "KM# 79",
     "grade": "Excelente +",
@@ -9646,15 +9646,15 @@
     "cantidad": 1
   },
   {
-    "id": 1250,
+    "id": "E1",
     "title": "25 Centavos 2023 Alberto Spencer",
     "country": "Ecuador",
     "metal": "Acero inoxidable",
     "year": 2023,
     "price": "3 USD",
     "images": [
-      "images/1250A.jpeg",
-      "images/1250B.jpeg"
+      "images/E1A.jpeg",
+      "images/E1B.jpeg"
     ],
     "reference": "KM# 134",
     "grade": "Sin Circular",
@@ -10056,15 +10056,15 @@
     "commemorates": "Tributo a los Héroes de la Pandemia COVID-19"
   },
   {
-    "id": 1277,
+    "id": "C8",
     "title": "1 Dólar 1973",
     "country": "Canadá",
     "metal": "Níquel",
     "year": 1973,
     "price": "4 USD",
     "images": [
-      "images/1277A.jpeg",
-      "images/1277B.jpeg"
+      "images/C8A.jpeg",
+      "images/C8B.jpeg"
     ],
     "reference": "KM# 82",
     "grade": "Sin Circular",
@@ -10111,15 +10111,15 @@
     "cantidad": 1
   },
   {
-    "id": 1281,
+    "id": "B11",
     "title": "1 Dólar 2021",
     "country": "Belice",
     "metal": "Latón de níquel",
     "year": 2021,
     "price": "4 USD",
     "images": [
-      "images/1281A.jpeg",
-      "images/1281B.jpeg"
+      "images/B11A.jpeg",
+      "images/B11B.jpeg"
     ],
     "reference": "KM# 119",
     "grade": "Sin Circular",
@@ -10234,15 +10234,15 @@
     "soldAt": "2026-10-21T20:38:01.785260+00:00"
   },
   {
-    "id": 1294,
+    "id": "E29",
     "title": "1/2 Dólar Kennedy 1967",
     "country": "Estados Unidos",
     "metal": "Plata .400",
     "year": 1967,
     "price": "10 USD",
     "images": [
-      "images/1294A.jpeg",
-      "images/1294B.jpeg"
+      "images/E29A.jpeg",
+      "images/E29B.jpeg"
     ],
     "reference": "KM# 202a",
     "grade": "Excelente -",
@@ -10256,15 +10256,15 @@
     "cantidad": 2
   },
   {
-    "id": 1295,
+    "id": "D10",
     "title": "1 Øre 1918",
     "country": "Dinamarca",
     "metal": "Hierro",
     "year": 1918,
     "price": "8 USD",
     "images": [
-      "images/1295A.jpeg",
-      "images/1295B.jpeg"
+      "images/D10A.jpeg",
+      "images/D10B.jpeg"
     ],
     "reference": "KM# 812.1a",
     "grade": "Muy Bueno",
@@ -10298,15 +10298,15 @@
     "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
-    "id": 1297,
+    "id": "D9",
     "title": "5 Øre 1894",
     "country": "Dinamarca",
     "metal": "Bronce",
     "year": 1894,
     "price": "7 USD",
     "images": [
-      "images/1297A.jpeg",
-      "images/1297B.jpeg"
+      "images/D9A.jpeg",
+      "images/D9B.jpeg"
     ],
     "reference": "KM# 794.2",
     "grade": "Muy Bueno -",
@@ -10616,15 +10616,15 @@
     "cantidad": 1
   },
   {
-    "id": 1312,
+    "id": "E33",
     "title": "1/2 Dólar Kennedy 1968",
     "country": "Estados Unidos",
     "metal": "Plata .400",
     "year": 1968,
     "price": "10 USD",
     "images": [
-      "images/1312A.jpeg",
-      "images/1312B.jpeg"
+      "images/E33A.jpeg",
+      "images/E33B.jpeg"
     ],
     "reference": "KM# 202a",
     "grade": "Excelente",
@@ -10801,15 +10801,15 @@
     "publishedAt": "2026-09-04T22:41:19.721383+00:00"
   },
   {
-    "id": 1324,
+    "id": "B4",
     "title": "1/2 Melgarejo 1865",
     "country": "Bolivia",
     "metal": "Plata .667",
     "year": 1865,
     "price": "20 USD",
     "images": [
-      "images/1324A.jpeg",
-      "images/1324B.jpeg"
+      "images/B4A.jpeg",
+      "images/B4B.jpeg"
     ],
     "reference": "KM# 142",
     "grade": "Muy Bueno **",
@@ -10820,15 +10820,15 @@
     "publishedAt": "2026-09-04T22:41:19.721383+00:00"
   },
   {
-    "id": 1325,
+    "id": "E3",
     "title": "1 Dólar Peace 1922",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1922,
     "price": "55 USD",
     "images": [
-      "images/1325A.jpeg",
-      "images/1325B.jpeg"
+      "images/E3A.jpeg",
+      "images/E3B.jpeg"
     ],
     "reference": "KM# 150",
     "grade": "Muy Bueno +",
@@ -10929,15 +10929,15 @@
     "publishedAt": "2026-09-07T13:57:48.788113+00:00"
   },
   {
-    "id": 1332,
+    "id": "C24",
     "title": "25 Cents 1902",
     "country": "Canadá",
     "metal": "Plata .925",
     "year": 1902,
     "price": "40 USD",
     "images": [
-      "images/1332A.jpeg",
-      "images/1332B.jpeg"
+      "images/C24A.jpeg",
+      "images/C24B.jpeg"
     ],
     "reference": "KM# 11",
     "grade": "Muy Bueno",
@@ -11389,15 +11389,15 @@
     "commemorates": "Centenario de la Real Policía Montada del Canadá"
   },
   {
-    "id": 1383,
+    "id": "D8",
     "title": "2 Øre 1899",
     "country": "Dinamarca",
     "metal": "Bronce",
     "year": 1899,
     "price": "10 USD",
     "images": [
-      "images/1383A.jpeg",
-      "images/1383B.jpeg"
+      "images/D8A.jpeg",
+      "images/D8B.jpeg"
     ],
     "reference": "KM# 793",
     "grade": "Excelente-",
@@ -11814,15 +11814,15 @@
     "group_label": "2 Centavos 1889"
   },
   {
-    "id": 1413,
+    "id": "B2",
     "title": "2 Bolivianos (Independence) 2025",
     "country": "Bolivia",
     "metal": "Acero inoxidable",
     "year": 2025,
     "price": "2.5 USD",
     "images": [
-      "images/1413A.jpeg",
-      "images/1413B.jpeg"
+      "images/B2A.jpeg",
+      "images/B2B.jpeg"
     ],
     "reference": "KM# 225",
     "grade": "Sin Circular",
@@ -12506,15 +12506,15 @@
     "soldAt": "2026-09-28T22:48:40.773225+00:00"
   },
   {
-    "id": 1449,
+    "id": "E53",
     "title": "1/2 Dólar 1864 S",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1864,
     "price": "180 USD",
     "images": [
-      "images/1449A.jpeg",
-      "images/1449B.jpeg"
+      "images/E53A.jpeg",
+      "images/E53B.jpeg"
     ],
     "reference": "KM# 68",
     "grade": "Excelente -",
@@ -12866,15 +12866,15 @@
     "soldAt": "2026-09-29T16:21:03.775502+00:00"
   },
   {
-    "id": 1466,
+    "id": "E8",
     "title": "1000 Sucres 1997",
     "country": "Ecuador",
     "metal": "Bimetálica",
     "year": 1997,
     "price": "4.5 USD",
     "images": [
-      "images/1466A.jpeg",
-      "images/1466B.jpeg"
+      "images/E8A.jpeg",
+      "images/E8B.jpeg"
     ],
     "reference": "KM# 103",
     "grade": "Sin Circular",
@@ -13114,15 +13114,15 @@
     "publishedAt": "2026-09-29T15:51:50.301485+00:00"
   },
   {
-    "id": 1478,
+    "id": "E12",
     "title": "25 Piastres 1993",
     "country": "Egipto",
     "metal": "Cuproníquel",
     "year": 1993,
     "price": "3.5 USD",
     "images": [
-      "images/1478A.jpeg",
-      "images/1478B.jpeg"
+      "images/E12A.jpeg",
+      "images/E12B.jpeg"
     ],
     "reference": "KM# 734",
     "grade": "Excelente -",
@@ -13423,15 +13423,15 @@
     "cantidad": 2
   },
   {
-    "id": 1493,
+    "id": "C17",
     "title": "10 Cents 1949",
     "country": "Comisionados de la Moneda de Malaya",
     "metal": "Cuproníquel",
     "year": 1949,
     "price": "8 USD",
     "images": [
-      "images/1493A.jpeg",
-      "images/1493B.jpeg"
+      "images/C17A.jpeg",
+      "images/C17B.jpeg"
     ],
     "reference": "KM# 8",
     "grade": "Excelente",
@@ -13675,15 +13675,15 @@
     "soldAt": "2026-10-02T22:18:59.525327+00:00"
   },
   {
-    "id": 1505,
+    "id": "C1",
     "title": "5 Cents 1928",
     "country": "Canadá",
     "metal": "Níquel",
     "year": 1928,
     "price": "4 USD",
     "images": [
-      "images/1505A.jpeg",
-      "images/1505B.jpeg"
+      "images/C1A.jpeg",
+      "images/C1B.jpeg"
     ],
     "reference": "KM# 29",
     "grade": "Muy Bueno",
@@ -13714,15 +13714,15 @@
     "soldAt": "2026-11-02T19:40:52.687150+00:00"
   },
   {
-    "id": 1507,
+    "id": "C12",
     "title": "5 Cents 1950",
     "country": "Comisionados de la Moneda de Malaya",
     "metal": "Cuproníquel",
     "year": 1950,
     "price": "8 USD",
     "images": [
-      "images/1507A.jpeg",
-      "images/1507B.jpeg"
+      "images/C12A.jpeg",
+      "images/C12B.jpeg"
     ],
     "reference": "KM# 7",
     "grade": "Excelente",
@@ -13949,15 +13949,15 @@
     "soldAt": "2026-10-19T18:35:23.923101+00:00"
   },
   {
-    "id": 1519,
+    "id": "A5",
     "title": "1 Cèntim 1999",
     "country": "Andorra",
     "metal": "Aluminio",
     "year": 1999,
     "price": "5.5 USD",
     "images": [
-      "images/1519A.jpeg",
-      "images/1519B.jpeg"
+      "images/A5A.jpeg",
+      "images/A5B.jpeg"
     ],
     "reference": "KM# 171",
     "grade": "Sin Circular",
@@ -14417,15 +14417,15 @@
     "commemorates": "Humberto I"
   },
   {
-    "id": 1541,
+    "id": "E15",
     "title": "1/4 Dólar 1954",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1954,
     "price": "14 USD",
     "images": [
-      "images/1541A.jpeg",
-      "images/1541B.jpeg"
+      "images/E15A.jpeg",
+      "images/E15B.jpeg"
     ],
     "reference": "KM# 164",
     "grade": "Excelente",
@@ -14457,15 +14457,15 @@
     "soldAt": "2026-11-09T02:31:52.524526+00:00"
   },
   {
-    "id": 1543,
+    "id": "E5",
     "title": "1/4 Dólar 1945",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1945,
     "price": "12 USD",
     "images": [
-      "images/1543A.jpeg",
-      "images/1543B.jpeg"
+      "images/E5A.jpeg",
+      "images/E5B.jpeg"
     ],
     "reference": "KM# 164",
     "grade": "Muy Bueno -",
@@ -14476,15 +14476,15 @@
     "publishedAt": "2026-10-24T14:40:41.778842+00:00"
   },
   {
-    "id": 1544,
+    "id": "E17",
     "title": "1/4 Dólar 1953",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1953,
     "price": "14 USD",
     "images": [
-      "images/1544A.jpeg",
-      "images/1544B.jpeg"
+      "images/E17A.jpeg",
+      "images/E17B.jpeg"
     ],
     "reference": "KM# 164",
     "grade": "Excelente",
@@ -14516,15 +14516,15 @@
     "soldAt": "2026-11-13T16:00:32.841096+00:00"
   },
   {
-    "id": 1546,
+    "id": "E21",
     "title": "1/4 Dólar 1941",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1941,
     "price": "12 USD",
     "images": [
-      "images/1546A.jpeg",
-      "images/1546B.jpeg"
+      "images/E21A.jpeg",
+      "images/E21B.jpeg"
     ],
     "reference": "KM# 164",
     "grade": "Bueno",
@@ -14759,15 +14759,15 @@
     "group_label": "2 Centavos 1854"
   },
   {
-    "id": 1557,
+    "id": "E40",
     "title": "1 Dólar 2011 James Garfield",
     "country": "Estados Unidos",
     "metal": "Latón",
     "year": 2011,
     "price": "3 USD",
     "images": [
-      "images/1557A.jpeg",
-      "images/1557B.jpeg"
+      "images/E40A.jpeg",
+      "images/E40B.jpeg"
     ],
     "reference": "KM# 502",
     "grade": "Sin Circular -",
@@ -14913,15 +14913,15 @@
     "sala_nota": "El Banco Central se fundó en 1935. Para sus 80 años eligió mirar atrás: la moneda recrea la Libertad que Eugène Oudiné grabó para el patacón de 1881, el peso que ordenó el sistema monetario del país."
   },
   {
-    "id": 1564,
+    "id": "C11",
     "title": "25 Centavos 2006",
     "country": "Canadá",
     "metal": "Níquel",
     "year": 2006,
     "price": "3.5 USD",
     "images": [
-      "images/1564A.jpeg",
-      "images/1564B.jpeg"
+      "images/C11A.jpeg",
+      "images/C11B.jpeg"
     ],
     "reference": "KM# 635",
     "grade": "Sin Circular",
@@ -15236,15 +15236,15 @@
     "cantidad": 1
   },
   {
-    "id": 1580,
+    "id": "E20",
     "title": "1 Dime 1947",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1947,
     "price": "5 USD",
     "images": [
-      "images/1580A.jpeg",
-      "images/1580B.jpeg"
+      "images/E20A.jpeg",
+      "images/E20B.jpeg"
     ],
     "reference": "KM# 195",
     "grade": "Excelente",
@@ -15355,15 +15355,15 @@
     "soldAt": "2026-11-12T19:33:37.565930+00:00"
   },
   {
-    "id": 1586,
+    "id": "E4",
     "title": "1/2 Dólar 1945",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1945,
     "price": "25 USD",
     "images": [
-      "images/1586A.jpeg",
-      "images/1586B.jpeg"
+      "images/E4A.jpeg",
+      "images/E4B.jpeg"
     ],
     "reference": "KM# 142",
     "grade": "Muy Bueno +",
@@ -15440,15 +15440,15 @@
     "soldAt": "2026-10-25T23:41:03.110061+00:00"
   },
   {
-    "id": 1590,
+    "id": "E30",
     "title": "5 Centavos 1945",
     "country": "Estados Unidos",
     "metal": "Plata .350",
     "year": 1945,
     "price": "5 USD",
     "images": [
-      "images/1590A.jpeg",
-      "images/1590B.jpeg"
+      "images/E30A.jpeg",
+      "images/E30B.jpeg"
     ],
     "reference": "KM# 192a",
     "grade": "Muy Bueno -",
@@ -15461,15 +15461,15 @@
     "group_label": "5 Centavos 1945"
   },
   {
-    "id": 1591,
+    "id": "E42",
     "title": "5 Centavos 1945",
     "country": "Estados Unidos",
     "metal": "Plata .350",
     "year": 1945,
     "price": "6 USD",
     "images": [
-      "images/1591A.jpeg",
-      "images/1591B.jpeg"
+      "images/E42A.jpeg",
+      "images/E42B.jpeg"
     ],
     "reference": "KM# 192a",
     "grade": "Muy Bueno",
@@ -15482,15 +15482,15 @@
     "group_label": "5 Centavos 1945"
   },
   {
-    "id": 1592,
+    "id": "E18",
     "title": "1 Dime 1958",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1958,
     "price": "5 USD",
     "images": [
-      "images/1592A.jpeg",
-      "images/1592B.jpeg"
+      "images/E18A.jpeg",
+      "images/E18B.jpeg"
     ],
     "reference": "KM# 195",
     "grade": "",
@@ -15541,15 +15541,15 @@
     "soldAt": "2026-11-02T19:43:36.152210+00:00"
   },
   {
-    "id": 1595,
+    "id": "E23",
     "title": "1 Dime 1954",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1954,
     "price": "5 USD",
     "images": [
-      "images/1595A.jpeg",
-      "images/1595B.jpeg"
+      "images/E23A.jpeg",
+      "images/E23B.jpeg"
     ],
     "reference": "KM# 195",
     "grade": "Muy Bueno +",
@@ -15581,15 +15581,15 @@
     "soldAt": "2026-11-25T17:58:39.402885-03:00"
   },
   {
-    "id": 1597,
+    "id": "E16",
     "title": "1 Dime 1957",
     "country": "Estados Unidos",
     "metal": "Plata .900",
     "year": 1957,
     "price": "5 USD",
     "images": [
-      "images/1597A.jpeg",
-      "images/1597B.jpeg"
+      "images/E16A.jpeg",
+      "images/E16B.jpeg"
     ],
     "reference": "KM# 195",
     "grade": "Muy Bueno +",
@@ -15795,15 +15795,15 @@
     "soldAt": "2026-11-02T19:40:52.687150+00:00"
   },
   {
-    "id": 1607,
+    "id": "E14",
     "title": "1 Centavo 1903",
     "country": "Estados Unidos",
     "metal": "Bronce",
     "year": 1903,
     "price": "6.5 USD",
     "images": [
-      "images/1607A.jpeg",
-      "images/1607B.jpeg"
+      "images/E14A.jpeg",
+      "images/E14B.jpeg"
     ],
     "reference": "KM# 90a",
     "grade": "Muy Bueno",
@@ -16609,15 +16609,15 @@
     "publishedAt": "2026-10-27T18:04:46.192212+00:00"
   },
   {
-    "id": 1646,
+    "id": "C2",
     "title": "5 Centavos 1915 Ejército Constitucionalista",
     "country": "Chihuahua",
     "metal": "Cobre",
     "year": 1915,
     "price": "25 USD",
     "images": [
-      "images/1646A.jpeg",
-      "images/1646B.jpeg"
+      "images/C2A.jpeg",
+      "images/C2B.jpeg"
     ],
     "reference": "KM# 613",
     "grade": "Muy Bueno +",
@@ -16799,15 +16799,15 @@
     "soldAt": "2026-11-11T12:21:07.841653+00:00"
   },
   {
-    "id": 1655,
+    "id": "C5",
     "title": "10 Centavos 1966",
     "country": "Canadá",
     "metal": "Plata .800",
     "year": 1966,
     "price": "4.5 USD",
     "images": [
-      "images/1655A.jpeg",
-      "images/1655B.jpeg"
+      "images/C5A.jpeg",
+      "images/C5B.jpeg"
     ],
     "reference": "KM# 61",
     "grade": "Excelente",
@@ -17099,15 +17099,15 @@
     "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
-    "id": 1669,
+    "id": "C20",
     "title": "5 Mils 1971",
     "country": "Chipre",
     "metal": "Bronce",
     "year": 1971,
     "price": "5.5 USD",
     "images": [
-      "images/1669A.jpeg",
-      "images/1669B.jpeg"
+      "images/C20A.jpeg",
+      "images/C20B.jpeg"
     ],
     "reference": "KM# 39",
     "grade": "Excelente",
@@ -17586,15 +17586,15 @@
     "publishedAt": "2026-11-04T13:42:59.738673+00:00"
   },
   {
-    "id": 1692,
+    "id": "C3",
     "title": "1 Centavo 1910",
     "country": "Canadá",
     "metal": "Bronce",
     "year": 1910,
     "price": "12 USD",
     "images": [
-      "images/1692A.jpeg",
-      "images/1692B.jpeg"
+      "images/C3A.jpeg",
+      "images/C3B.jpeg"
     ],
     "reference": "KM# 8",
     "grade": "Muy Bueno",
@@ -17753,15 +17753,15 @@
     "cantidad": 2
   },
   {
-    "id": 1700,
+    "id": "C14",
     "title": "25 Mils 1977",
     "country": "Chipre",
     "metal": "Cuproníquel",
     "year": 1977,
     "price": "5 USD",
     "images": [
-      "images/1700A.jpeg",
-      "images/1700B.jpeg"
+      "images/C14A.jpeg",
+      "images/C14B.jpeg"
     ],
     "reference": "KM# 40",
     "grade": "Excelente",
@@ -17836,15 +17836,15 @@
     "soldAt": "2026-11-05T00:16:42.799438+00:00"
   },
   {
-    "id": 1704,
+    "id": "B5",
     "title": "100 Fils 1995",
     "country": "Bahrein",
     "metal": "Bimetálica",
     "year": 1995,
     "price": "4 USD",
     "images": [
-      "images/1704A.jpeg",
-      "images/1704B.jpeg"
+      "images/B5A.jpeg",
+      "images/B5B.jpeg"
     ],
     "reference": "KM# 20",
     "grade": "Sin Circular",
@@ -18361,15 +18361,15 @@
     "commemorates": "Dragón de Gales - Isabel II"
   },
   {
-    "id": 1729,
+    "id": "B15",
     "title": "200 Réis 1929",
     "country": "Brasil",
     "metal": "Cuproníquel",
     "year": 1929,
     "price": "4 USD",
     "images": [
-      "images/1729A.jpeg",
-      "images/1729B.jpeg"
+      "images/B15A.jpeg",
+      "images/B15B.jpeg"
     ],
     "reference": "KM# 519",
     "grade": "Muy Bueno",
@@ -18567,15 +18567,15 @@
     "soldAt": "2026-11-09T03:21:46.554201+00:00"
   },
   {
-    "id": 1739,
+    "id": "B12",
     "title": "Réis 1907",
     "country": "Brasil",
     "metal": "Plata .900",
     "year": 1907,
     "price": "60 USD",
     "images": [
-      "images/1739A.jpeg",
-      "images/1739B.jpeg"
+      "images/B12A.jpeg",
+      "images/B12B.jpeg"
     ],
     "reference": "KM# 508",
     "grade": "Muy Bueno +",
@@ -18588,15 +18588,15 @@
     "cantidad": 1
   },
   {
-    "id": 1740,
+    "id": "B14",
     "title": "400 Réis 1926",
     "country": "Brasil",
     "metal": "Cuproníquel",
     "year": 1926,
     "price": "6 USD",
     "images": [
-      "images/1740A.jpeg",
-      "images/1740B.jpeg"
+      "images/B14A.jpeg",
+      "images/B14B.jpeg"
     ],
     "reference": "KM# 520",
     "grade": "Muy Bueno",
@@ -18608,15 +18608,15 @@
     "publishedAt": "2026-11-07T14:09:47.290319+00:00"
   },
   {
-    "id": 1741,
+    "id": "E58",
     "title": "1/2 Dólar 1967",
     "country": "Estados Unidos",
     "metal": "Plata .400",
     "year": 1967,
     "price": "10 USD",
     "images": [
-      "images/1741A.jpeg",
-      "images/1741B.jpeg"
+      "images/E58A.jpeg",
+      "images/E58B.jpeg"
     ],
     "reference": "KM# 202a",
     "grade": "Excelente",
@@ -18736,15 +18736,15 @@
     "commemorates": "Víctor Manuel III"
   },
   {
-    "id": 1747,
+    "id": "A1",
     "title": "5 Pfennig 1899",
     "country": "Alemania",
     "metal": "Cuproníquel",
     "year": 1899,
     "price": "4 USD",
     "images": [
-      "images/1747A.jpeg",
-      "images/1747B.jpeg"
+      "images/A1A.jpeg",
+      "images/A1B.jpeg"
     ],
     "reference": "KM# 11",
     "grade": "Muy Bueno +",
@@ -18756,15 +18756,15 @@
     "commemorates": "Escudo chico"
   },
   {
-    "id": 1748,
+    "id": "A23",
     "title": "5 Pfennig 1913",
     "country": "Alemania",
     "metal": "Cuproníquel",
     "year": 1913,
     "price": "5 USD",
     "images": [
-      "images/1748A.jpeg",
-      "images/1748B.jpeg"
+      "images/A23A.jpeg",
+      "images/A23B.jpeg"
     ],
     "reference": "KM# 11",
     "grade": "Muy Bueno",
@@ -18778,15 +18778,15 @@
     "commemorates": "Escudo chico"
   },
   {
-    "id": 1749,
+    "id": "A22",
     "title": "5 Pfennig 1906",
     "country": "Alemania",
     "metal": "Cuproníquel",
     "year": 1906,
     "price": "7 USD",
     "images": [
-      "images/1749A.jpeg",
-      "images/1749B.jpeg"
+      "images/A22A.jpeg",
+      "images/A22B.jpeg"
     ],
     "reference": "KM# 11",
     "grade": "Excelente",
@@ -18800,15 +18800,15 @@
     "commemorates": "Escudo chico"
   },
   {
-    "id": 1750,
+    "id": "A18",
     "title": "5 Pfennig 1913",
     "country": "Alemania",
     "metal": "Cuproníquel",
     "year": 1913,
     "price": "3 USD",
     "images": [
-      "images/1750A.jpeg",
-      "images/1750B.jpeg"
+      "images/A18A.jpeg",
+      "images/A18B.jpeg"
     ],
     "reference": "KM# 11",
     "grade": "Excelente",
@@ -18907,15 +18907,15 @@
     "commemorates": "Escudo chico"
   },
   {
-    "id": 1755,
+    "id": "A16",
     "title": "10 Pfennig 1908",
     "country": "Alemania",
     "metal": "Cuproníquel",
     "year": 1908,
     "price": "3 USD",
     "images": [
-      "images/1755A.jpeg",
-      "images/1755B.jpeg"
+      "images/A16A.jpeg",
+      "images/A16B.jpeg"
     ],
     "reference": "KM# 12",
     "grade": "Excelente",
@@ -18993,15 +18993,15 @@
     "commemorates": "Escudo chico"
   },
   {
-    "id": 1759,
+    "id": "A12",
     "title": "10 Pfennig 1900",
     "country": "Alemania",
     "metal": "Cuproníquel",
     "year": 1900,
     "price": "3 USD",
     "images": [
-      "images/1759A.jpeg",
-      "images/1759B.jpeg"
+      "images/A12A.jpeg",
+      "images/A12B.jpeg"
     ],
     "reference": "KM# 12",
     "grade": "Muy Bueno -",
@@ -19075,15 +19075,15 @@
     "publishedAt": "2026-11-07T23:58:20.722520+00:00"
   },
   {
-    "id": 1763,
+    "id": "A15",
     "title": "10 Pfennig 1875",
     "country": "Alemania",
     "metal": "Cuproníquel",
     "year": 1875,
     "price": "4 USD",
     "images": [
-      "images/1763A.jpeg",
-      "images/1763B.jpeg"
+      "images/A15A.jpeg",
+      "images/A15B.jpeg"
     ],
     "reference": "KM# 4",
     "grade": "",
@@ -19291,15 +19291,15 @@
     "publishedAt": "2026-11-08T00:06:45.117776+00:00"
   },
   {
-    "id": 1774,
+    "id": "A13",
     "title": "2 Euros 2002",
     "country": "Austria",
     "metal": "Bimetálica (centro de níquel-latón en anillo de cuproníquel)",
     "year": 2002,
     "price": "3.5 USD",
     "images": [
-      "images/1774A.jpeg",
-      "images/1774B.jpeg"
+      "images/A13A.jpeg",
+      "images/A13B.jpeg"
     ],
     "reference": "KM# 3089",
     "grade": "Excelente",
@@ -20283,15 +20283,15 @@
     "soldAt": "2026-11-13T00:29:22.879448+00:00"
   },
   {
-    "id": 1823,
+    "id": "E48",
     "title": "2 Piastras 1939",
     "country": "Egipto",
     "metal": "Plata .833",
     "year": 1939,
     "price": "25 USD",
     "images": [
-      "images/1823A.jpeg",
-      "images/1823B.jpeg"
+      "images/E48A.jpeg",
+      "images/E48B.jpeg"
     ],
     "reference": "KM# 365",
     "grade": "Sin Circular -",
@@ -20366,15 +20366,15 @@
     "commemorates": "Gran Ofensiva"
   },
   {
-    "id": 1827,
+    "id": "E56",
     "title": "50 Céntimos 1937",
     "country": "España",
     "metal": "Latón",
     "year": 1937,
     "price": "8 USD",
     "images": [
-      "images/1827A.jpeg",
-      "images/1827B.jpeg"
+      "images/E56A.jpeg",
+      "images/E56B.jpeg"
     ],
     "reference": "KM# 754.1",
     "grade": "Muy Bueno +",
@@ -20936,15 +20936,15 @@
     "commemorates": "FAO"
   },
   {
-    "id": 1854,
+    "id": "E50",
     "title": "50 Céntimos 1904",
     "country": "España",
     "metal": "Plata .835",
     "year": 1904,
     "price": "10 USD",
     "images": [
-      "images/1854A.jpeg",
-      "images/1854B.jpeg"
+      "images/E50A.jpeg",
+      "images/E50B.jpeg"
     ],
     "reference": "KM# 723",
     "grade": "Sin Circular",
@@ -20957,15 +20957,15 @@
     "commemorates": "Alfonso XIII"
   },
   {
-    "id": 1855,
+    "id": "E49",
     "title": "50 Céntimos 1885",
     "country": "España",
     "metal": "Plata .835",
     "year": 1885,
     "price": "14 USD",
     "images": [
-      "images/1855A.jpeg",
-      "images/1855B.jpeg"
+      "images/E49A.jpeg",
+      "images/E49B.jpeg"
     ],
     "reference": "KM# 685",
     "grade": "Excelente",
@@ -20977,15 +20977,15 @@
     "commemorates": "Alfonso XII"
   },
   {
-    "id": 1856,
+    "id": "C22",
     "title": "10 Centavos 1967",
     "country": "Canadá",
     "metal": "Plata .800",
     "year": 1967,
     "price": "8 USD",
     "images": [
-      "images/1856A.jpeg",
-      "images/1856B.jpeg"
+      "images/C22A.jpeg",
+      "images/C22B.jpeg"
     ],
     "reference": "KM# 67",
     "grade": "Sin Circular",
@@ -20998,15 +20998,15 @@
     "commemorates": "Centenario de la Confederación - Isabel II"
   },
   {
-    "id": 1857,
+    "id": "A24",
     "title": "3 Peniques 1950",
     "country": "Australia",
     "metal": "Plata .500",
     "year": 1950,
     "price": "5 USD",
     "images": [
-      "images/1857A.jpeg",
-      "images/1857B.jpeg"
+      "images/A24A.jpeg",
+      "images/A24B.jpeg"
     ],
     "reference": "KM# 44",
     "grade": "Sin Circular",
@@ -21018,15 +21018,15 @@
     "commemorates": "Jorge VI"
   },
   {
-    "id": 1858,
+    "id": "A25",
     "title": "3 Peniques 1960",
     "country": "Australia",
     "metal": "Plata .500",
     "year": 1960,
     "price": "5 USD",
     "images": [
-      "images/1858A.jpeg",
-      "images/1858B.jpeg"
+      "images/A25A.jpeg",
+      "images/A25B.jpeg"
     ],
     "reference": "KM# 57",
     "grade": "Sin Circular",
@@ -21200,15 +21200,15 @@
     "soldAt": "2026-11-16T14:26:23.148837+00:00"
   },
   {
-    "id": 1866,
+    "id": "C27",
     "title": "2 Centavos 1919",
     "country": "Chile",
     "metal": "Cobre",
     "year": 1919,
     "price": "18 USD",
     "images": [
-      "images/1866A.jpeg",
-      "images/1866B.jpeg"
+      "images/C27A.jpeg",
+      "images/C27B.jpeg"
     ],
     "reference": "KM# 164",
     "grade": "Excelente -",
@@ -21426,15 +21426,15 @@
     "group_label": "2 Centésimos 1869"
   },
   {
-    "id": 1877,
+    "id": "C26",
     "title": "5 Yuanes 2020 Monte Wuyi",
     "country": "China",
     "metal": "Latón",
     "year": 2020,
     "price": "5 USD",
     "images": [
-      "images/1877A.jpeg",
-      "images/1877B.jpeg"
+      "images/C26A.jpeg",
+      "images/C26B.jpeg"
     ],
     "reference": "KM# 2523",
     "grade": "Sin Circular",
@@ -21446,15 +21446,15 @@
     "commemorates": "Monte Wuyi"
   },
   {
-    "id": 1878,
+    "id": "C29",
     "title": "5 Yuanes 2022",
     "country": "China",
     "metal": "Latón",
     "year": 2022,
     "price": "5 USD",
     "images": [
-      "images/1878A.jpeg",
-      "images/1878B.jpeg"
+      "images/C29A.jpeg",
+      "images/C29B.jpeg"
     ],
     "reference": "Sun# J125",
     "grade": "Sin Circular",
@@ -21710,15 +21710,15 @@
     "cantidad": 1
   },
   {
-    "id": 1891,
+    "id": "E51",
     "title": "1 Libra 2008",
     "country": "Egipto",
     "metal": "Bimetálica",
     "year": 2008,
     "price": "3 USD",
     "images": [
-      "images/1891A.jpeg",
-      "images/1891B.jpeg"
+      "images/E51A.jpeg",
+      "images/E51B.jpeg"
     ],
     "reference": "KM# 940a",
     "grade": "Sin Circular",
@@ -21971,15 +21971,15 @@
     "commemorates": "Asentamiento Campesino"
   },
   {
-    "id": 1904,
+    "id": "A17",
     "title": "25 Halalas 2016",
     "country": "Arabia Saudita",
     "metal": "Latón",
     "year": 2016,
     "price": "3 USD",
     "images": [
-      "images/1904A.jpeg",
-      "images/1904B.jpeg"
+      "images/A17A.jpeg",
+      "images/A17B.jpeg"
     ],
     "reference": "KM# 76",
     "grade": "Sin Circular",
@@ -22149,15 +22149,15 @@
     "cantidad": 2
   },
   {
-    "id": 1913,
+    "id": "C31",
     "title": "3 Mils 1955",
     "country": "Chipre",
     "metal": "Bronce",
     "year": 1955,
     "price": "5.5 USD",
     "images": [
-      "images/1913A.jpeg",
-      "images/1913B.jpeg"
+      "images/C31A.jpeg",
+      "images/C31B.jpeg"
     ],
     "reference": "KM# 33",
     "grade": "Sin Circular",
@@ -22191,15 +22191,15 @@
     "soldAt": "2026-11-22T19:07:35.848311+00:00"
   },
   {
-    "id": 1915,
+    "id": "C28",
     "title": "10 Hwan 1961",
     "country": "Corea del Sur",
     "metal": "Latón",
     "year": 1961,
     "price": "8 USD",
     "images": [
-      "images/1915A.jpeg",
-      "images/1915B.jpeg"
+      "images/C28A.jpeg",
+      "images/C28B.jpeg"
     ],
     "reference": "KM# 1",
     "grade": "Sin Circular",
@@ -22534,15 +22534,15 @@
     "group_label": "2 Centésimos 1869"
   },
   {
-    "id": 1932,
+    "id": "E39",
     "title": "1 Quattrino 1835",
     "country": "Estados Pontificios",
     "metal": "Cobre",
     "year": 1835,
     "price": "25 USD",
     "images": [
-      "images/1932A.jpeg",
-      "images/1932B.jpeg"
+      "images/E39A.jpeg",
+      "images/E39B.jpeg"
     ],
     "reference": "KM# 1318",
     "grade": "Muy Bueno -",
@@ -22597,15 +22597,15 @@
     "group_label": "2 Centésimos 1869"
   },
   {
-    "id": 1935,
+    "id": "E57",
     "title": "1 Céntimo 1906",
     "country": "España",
     "metal": "Bronce",
     "year": 1906,
     "price": "9 USD",
     "images": [
-      "images/1935A.jpeg",
-      "images/1935B.jpeg"
+      "images/E57A.jpeg",
+      "images/E57B.jpeg"
     ],
     "reference": "KM# 726",
     "grade": "Sin Circular",
@@ -22800,15 +22800,15 @@
     "group_label": "2 Centavos 1896"
   },
   {
-    "id": 1945,
+    "id": "E36",
     "title": "1 Centavo 1896",
     "country": "Estados Unidos",
     "metal": "Bronce",
     "year": 1896,
     "price": "8 USD",
     "images": [
-      "images/1945A.jpeg",
-      "images/1945B.jpeg"
+      "images/E36A.jpeg",
+      "images/E36B.jpeg"
     ],
     "reference": "KM# 90a",
     "grade": "Muy Bueno +",
@@ -22819,15 +22819,15 @@
     "publishedAt": "2026-11-18T14:22:39.948590+00:00"
   },
   {
-    "id": 1946,
+    "id": "E44",
     "title": "1 Centavo 1898",
     "country": "Estados Unidos",
     "metal": "Bronce",
     "year": 1898,
     "price": "8 USD",
     "images": [
-      "images/1946A.jpeg",
-      "images/1946B.jpeg"
+      "images/E44A.jpeg",
+      "images/E44B.jpeg"
     ],
     "reference": "KM# 90a",
     "grade": "Muy Bueno +",
@@ -22838,15 +22838,15 @@
     "publishedAt": "2026-11-18T14:22:39.948590+00:00"
   },
   {
-    "id": 1947,
+    "id": "E52",
     "title": "1 Centavo 1891",
     "country": "Estados Unidos",
     "metal": "Bronce",
     "year": 1891,
     "price": "10 USD",
     "images": [
-      "images/1947A.jpeg",
-      "images/1947B.jpeg"
+      "images/E52A.jpeg",
+      "images/E52B.jpeg"
     ],
     "reference": "KM# 90a",
     "grade": "Muy Bueno +",
@@ -22857,15 +22857,15 @@
     "publishedAt": "2026-11-18T14:22:39.948590+00:00"
   },
   {
-    "id": 1948,
+    "id": "E47",
     "title": "1 Centavo 1895",
     "country": "Estados Unidos",
     "metal": "Bronce",
     "year": 1895,
     "price": "8 USD",
     "images": [
-      "images/1948A.jpeg",
-      "images/1948B.jpeg"
+      "images/E47A.jpeg",
+      "images/E47B.jpeg"
     ],
     "reference": "KM# 90a",
     "grade": "Muy Bueno +",
@@ -23002,15 +23002,15 @@
     "soldAt": "2026-11-23T00:11:29.771575+00:00"
   },
   {
-    "id": 1955,
+    "id": "C30",
     "title": "500 Colones 2021",
     "country": "Costa Rica",
     "metal": "Bimetálica",
     "year": 2021,
     "price": "4.5 USD",
     "images": [
-      "images/1955A.jpeg",
-      "images/1955B.jpeg"
+      "images/C30A.jpeg",
+      "images/C30B.jpeg"
     ],
     "reference": "KM# 241",
     "grade": "Excelente +",
@@ -23084,15 +23084,15 @@
     "publishedAt": "2026-11-19T02:26:49.874257+00:00"
   },
   {
-    "id": 1959,
+    "id": "B16",
     "title": "50 Céntimos 1911",
     "country": "Bélgica",
     "metal": "Plata .835",
     "year": 1911,
     "price": "16 USD",
     "images": [
-      "images/1959A.jpeg",
-      "images/1959B.jpeg"
+      "images/B16A.jpeg",
+      "images/B16B.jpeg"
     ],
     "reference": "KM# 71",
     "grade": "",
