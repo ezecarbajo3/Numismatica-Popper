@@ -61,15 +61,15 @@
     "soldAt": "2026-09-22T20:33:27.133620+00:00"
   },
   {
-    "id": 9,
+    "id": "F2",
     "title": "10 Francos 1965",
     "country": "Francia",
     "metal": "Plata .900",
     "year": 1965,
     "price": "70 USD",
     "images": [
-      "images/9A.jpeg",
-      "images/9B.jpeg"
+      "images/F2A.jpeg",
+      "images/F2B.jpeg"
     ],
     "reference": "KM# 932",
     "grade": "Sin Circular",
@@ -162,15 +162,15 @@
     "description": ""
   },
   {
-    "id": 26,
+    "id": "M10",
     "title": "Troy Ounce",
     "country": "México",
     "metal": "Plata .999",
     "year": "S/F",
     "price": "100 USD",
     "images": [
-      "images/26A.jpeg",
-      "images/26B.jpeg"
+      "images/M10A.jpeg",
+      "images/M10B.jpeg"
     ],
     "reference": "KM# M49b",
     "grade": "Sin Circular",
@@ -699,15 +699,15 @@
     "soldAt": "2026-10-03T23:17:30.150240+00:00"
   },
   {
-    "id": 136,
+    "id": "I3",
     "title": "Rupia 2008",
     "country": "India",
     "metal": "Acero inoxidable",
     "year": 2008,
     "price": "4 USD",
     "images": [
-      "images/136A.jpeg",
-      "images/136B.jpeg"
+      "images/I3A.jpeg",
+      "images/I3B.jpeg"
     ],
     "reference": "KM# 331",
     "grade": "Muy Bueno",
@@ -735,15 +735,15 @@
     "description": "Agujero centrado."
   },
   {
-    "id": 144,
+    "id": "G1",
     "title": "25 Centavos 1960",
     "country": "Guatemala",
     "metal": "Plata .720",
     "year": 1960,
     "price": "15 USD",
     "images": [
-      "images/144A.jpeg",
-      "images/144B.jpeg"
+      "images/G1A.jpeg",
+      "images/G1B.jpeg"
     ],
     "reference": "KM# 263",
     "grade": "Excelente -",
@@ -2038,7 +2038,7 @@
     "grade_short": "B-"
   },
   {
-    "id": 347,
+    "id": "F3",
     "title": "10 Francos 1949",
     "country": "Francia",
     "metal": "Cuproníquel",
@@ -2047,8 +2047,8 @@
     "reference": "K. 1909",
     "description": "cabeza chica",
     "images": [
-      "images/347A.jpeg",
-      "images/347B.jpeg"
+      "images/F3A.jpeg",
+      "images/F3B.jpeg"
     ],
     "grade": "Excelente +",
     "grade_short": "EX+"
@@ -3797,15 +3797,15 @@
     "grade_short": "SC"
   },
   {
-    "id": 566,
+    "id": "I5",
     "title": "20 Centesimi 1918",
     "country": "Italia",
     "metal": "Cuproníquel",
     "year": 1918,
     "price": "3.5 USD",
     "images": [
-      "images/566A.jpeg",
-      "images/566B.jpeg"
+      "images/I5A.jpeg",
+      "images/I5B.jpeg"
     ],
     "reference": "KM# 58",
     "grade": "Excelente -",
@@ -7152,15 +7152,15 @@
     "cantidad": 1
   },
   {
-    "id": 899,
+    "id": "I8",
     "title": "20 Centesimi 1919",
     "country": "Italia",
     "metal": "Cuproníquel",
     "year": 1919,
     "price": "4 USD",
     "images": [
-      "images/899A.jpeg",
-      "images/899B.jpeg"
+      "images/I8A.jpeg",
+      "images/I8B.jpeg"
     ],
     "reference": "KM# 58",
     "grade": "Excelente",
@@ -7187,15 +7187,15 @@
     "soldAt": "2026-10-17T15:54:58.340817+00:00"
   },
   {
-    "id": 901,
+    "id": "I10",
     "title": "10 Centesimi 1866",
     "country": "Italia",
     "metal": "Bronce",
     "year": 1866,
     "price": "4.5 USD",
     "images": [
-      "images/901A.jpeg",
-      "images/901B.jpeg"
+      "images/I10A.jpeg",
+      "images/I10B.jpeg"
     ],
     "reference": "KM# 11",
     "grade": "Muy Bueno",
@@ -7218,15 +7218,15 @@
     "grade_short": "MB"
   },
   {
-    "id": 904,
+    "id": "I1",
     "title": "5 Centesimi 1938",
     "country": "Italia",
     "metal": "Bronce",
     "year": 1938,
     "price": "5 USD",
     "images": [
-      "images/904A.jpeg",
-      "images/904B.jpeg"
+      "images/I1A.jpeg",
+      "images/I1B.jpeg"
     ],
     "reference": "KM# 73",
     "grade": "Excelente",
@@ -7373,15 +7373,15 @@
     "description": "Diseño perforado tipo Lindauer de la Primera Guerra Mundial."
   },
   {
-    "id": 928,
+    "id": "F6",
     "title": "10 Centimes 1929",
     "country": "Francia",
     "metal": "Cuproníquel",
     "year": 1929,
     "price": "3.5 USD",
     "images": [
-      "images/928A.jpeg",
-      "images/928B.jpeg"
+      "images/F6A.jpeg",
+      "images/F6B.jpeg"
     ],
     "grade": "Excelente",
     "grade_short": "EX",
@@ -8176,15 +8176,15 @@
     "soldAt": "2026-10-06T17:06:04.280661+00:00"
   },
   {
-    "id": 1050,
+    "id": "L1",
     "title": "25 Centimes 1946",
     "country": "Luxemburgo",
     "metal": "Bronce",
     "year": 1946,
     "price": "15 USD",
     "images": [
-      "images/1050A.jpeg",
-      "images/1050B.jpeg"
+      "images/L1A.jpeg",
+      "images/L1B.jpeg"
     ],
     "reference": "KM# E43",
     "grade": "Excelente",
@@ -8866,15 +8866,15 @@
     "soldAt": "2026-10-01T15:10:38.000118+00:00"
   },
   {
-    "id": 1183,
+    "id": "G6",
     "title": "25 New Pence 1972",
     "country": "Gibraltar",
     "metal": "Cuproníquel",
     "year": 1972,
     "price": "14 USD",
     "images": [
-      "images/1183A.jpeg",
-      "images/1183B.jpeg"
+      "images/G6A.jpeg",
+      "images/G6B.jpeg"
     ],
     "reference": "KM# 6",
     "grade": "Sin Circular",
@@ -8906,15 +8906,15 @@
     "soldAt": "2026-09-29T13:50:06.532864+00:00"
   },
   {
-    "id": 1185,
+    "id": "G3",
     "title": "1 Crown 1980",
     "country": "Gibraltar",
     "metal": "Cuproníquel",
     "year": 1980,
     "price": "14 USD",
     "images": [
-      "images/1185A.jpeg",
-      "images/1185B.jpeg"
+      "images/G3A.jpeg",
+      "images/G3B.jpeg"
     ],
     "reference": "KM# 11",
     "grade": "Sin Circular",
@@ -8945,15 +8945,15 @@
     "soldAt": "2026-10-12T20:16:21.770818+00:00"
   },
   {
-    "id": 1187,
+    "id": "G8",
     "title": "1 Crown 1967",
     "country": "Gibraltar",
     "metal": "Cuproníquel",
     "year": 1967,
     "price": "14 USD",
     "images": [
-      "images/1187A.jpeg",
-      "images/1187B.jpeg"
+      "images/G8A.jpeg",
+      "images/G8B.jpeg"
     ],
     "reference": "KM# 4",
     "grade": "Sin Circular",
@@ -8963,15 +8963,15 @@
     "publishedAt": "2026-08-26T23:55:34.420385+00:00"
   },
   {
-    "id": 1188,
+    "id": "G5",
     "title": "1 Crown 1970",
     "country": "Gibraltar",
     "metal": "Cuproníquel",
     "year": 1970,
     "price": "18 USD",
     "images": [
-      "images/1188A.jpeg",
-      "images/1188B.jpeg"
+      "images/G5A.jpeg",
+      "images/G5B.jpeg"
     ],
     "reference": "KM# 4",
     "grade": "Sin Circular",
@@ -9002,15 +9002,15 @@
     "soldAt": "2026-11-10T23:31:13.652042+00:00"
   },
   {
-    "id": 1191,
+    "id": "G2",
     "title": "25 New Pence 1980",
     "country": "Guernsey",
     "metal": "Cuproníquel",
     "year": 1980,
     "price": "14 USD",
     "images": [
-      "images/1191A.jpeg",
-      "images/1191B.jpeg"
+      "images/G2A.jpeg",
+      "images/G2B.jpeg"
     ],
     "reference": "KM# 35",
     "grade": "Sin Circular",
@@ -9475,15 +9475,15 @@
     "cantidad": 4
   },
   {
-    "id": 1238,
+    "id": "F4",
     "title": "5 Francs 1992 Pierre Mendès France",
     "country": "Francia",
     "metal": "Cuproníquel bañado en níquel",
     "year": 1992,
     "price": "4 USD",
     "images": [
-      "images/1238A.jpeg",
-      "images/1238B.jpeg"
+      "images/F4A.jpeg",
+      "images/F4B.jpeg"
     ],
     "reference": "KM# 1006",
     "grade": "Sin Circular",
@@ -9539,15 +9539,15 @@
     "group_label": "25 Cents 2004"
   },
   {
-    "id": 1242,
+    "id": "I2",
     "title": "1 Peso 2021 Moai",
     "country": "Isla de Pascua",
     "metal": "Cuproníquel",
     "year": 2021,
     "price": "3 USD",
     "images": [
-      "images/1242A.jpeg",
-      "images/1242B.jpeg"
+      "images/I2A.jpeg",
+      "images/I2B.jpeg"
     ],
     "reference": "",
     "grade": "Sin Circular",
@@ -9666,15 +9666,15 @@
     "cantidad": 2
   },
   {
-    "id": 1253,
+    "id": "F7",
     "title": "2 Francos 1995 Louis Pasteur",
     "country": "Francia",
     "metal": "Níquel",
     "year": 1995,
     "price": "4 USD",
     "images": [
-      "images/1253A.jpeg",
-      "images/1253B.jpeg"
+      "images/F7A.jpeg",
+      "images/F7B.jpeg"
     ],
     "reference": "KM# 1119",
     "grade": "Sin Circular",
@@ -9686,15 +9686,15 @@
     "diametro": "26.5"
   },
   {
-    "id": 1254,
+    "id": "F5",
     "title": "2 Francos 1993 Jean Moulin",
     "country": "Francia",
     "metal": "Níquel",
     "year": 1993,
     "price": "4 USD",
     "images": [
-      "images/1254A.jpeg",
-      "images/1254B.jpeg"
+      "images/F5A.jpeg",
+      "images/F5B.jpeg"
     ],
     "reference": "KM# 1062",
     "grade": "Sin Circular",
@@ -9919,15 +9919,15 @@
     "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
-    "id": 1265,
+    "id": "I7",
     "title": "1 Peso 2021 Moai (Aluminio)",
     "country": "Isla de Pascua",
     "metal": "Aluminio",
     "year": 2021,
     "price": "3 USD",
     "images": [
-      "images/1265A.jpeg",
-      "images/1265B.jpeg"
+      "images/I7A.jpeg",
+      "images/I7B.jpeg"
     ],
     "reference": "",
     "grade": "Sin Circular",
@@ -10037,15 +10037,15 @@
     "cantidad": 1
   },
   {
-    "id": 1276,
+    "id": "H2",
     "title": "10 Forint 2020",
     "country": "Hungría",
     "metal": "Cuproníquel",
     "year": 2020,
     "price": "3 USD",
     "images": [
-      "images/1276A.jpeg",
-      "images/1276B.jpeg"
+      "images/H2A.jpeg",
+      "images/H2B.jpeg"
     ],
     "reference": "KM# 848",
     "grade": "Sin Circular",
@@ -10319,15 +10319,15 @@
     "cantidad": 1
   },
   {
-    "id": 1298,
+    "id": "F9",
     "title": "10 Francos 1987",
     "country": "Francia",
     "metal": "Bronce de aluminio",
     "year": 1987,
     "price": "4.5 USD",
     "images": [
-      "images/1298A.jpeg",
-      "images/1298B.jpeg"
+      "images/F9A.jpeg",
+      "images/F9B.jpeg"
     ],
     "reference": "KM# 961d",
     "grade": "Muy Bueno",
@@ -10534,15 +10534,15 @@
     "soldAt": "2026-11-19T14:16:40.005962-03:00"
   },
   {
-    "id": 1308,
+    "id": "M11",
     "title": "1 Centavo 1946",
     "country": "México",
     "metal": "Bronce",
     "year": 1946,
     "price": "4 USD",
     "images": [
-      "images/1308A.jpeg",
-      "images/1308B.jpeg"
+      "images/M11A.jpeg",
+      "images/M11B.jpeg"
     ],
     "reference": "KM# 415",
     "grade": "Excelente -",
@@ -10782,15 +10782,15 @@
     "publishedAt": "2026-09-04T22:41:19.721383+00:00"
   },
   {
-    "id": 1321,
+    "id": "M2",
     "title": "1 Centavo 1945",
     "country": "México",
     "metal": "Bronce",
     "year": 1945,
     "price": "4 USD",
     "images": [
-      "images/1321A.jpeg",
-      "images/1321B.jpeg"
+      "images/M2A.jpeg",
+      "images/M2B.jpeg"
     ],
     "reference": "KM# 415",
     "grade": "Excelente",
@@ -10910,15 +10910,15 @@
     "soldAt": "2026-10-12T20:25:55.089685+00:00"
   },
   {
-    "id": 1331,
+    "id": "I6",
     "title": "500 Liras 1966",
     "country": "Italia",
     "metal": "Plata .835",
     "year": 1966,
     "price": "22 USD",
     "images": [
-      "images/1331A.jpeg",
-      "images/1331B.jpeg"
+      "images/I6A.jpeg",
+      "images/I6B.jpeg"
     ],
     "reference": "KM# 98",
     "grade": "Muy Bueno -",
@@ -11083,15 +11083,15 @@
     "soldAt": "2026-10-02T02:09:04.482010+00:00"
   },
   {
-    "id": 1348,
+    "id": "M3",
     "title": "1 Peso 1961",
     "country": "México",
     "metal": "Plata .100",
     "year": 1961,
     "price": "6 USD",
     "images": [
-      "images/1348A.jpeg",
-      "images/1348B.jpeg"
+      "images/M3A.jpeg",
+      "images/M3B.jpeg"
     ],
     "reference": "KM# 459",
     "grade": "Excelente+",
@@ -11144,15 +11144,15 @@
     "cantidad": 2
   },
   {
-    "id": 1360,
+    "id": "M9",
     "title": "1 Peso 1962",
     "country": "México",
     "metal": "Plata .100",
     "year": 1962,
     "price": "8 USD",
     "images": [
-      "images/1360A.jpeg",
-      "images/1360B.jpeg"
+      "images/M9A.jpeg",
+      "images/M9B.jpeg"
     ],
     "reference": "KM# 459",
     "grade": "Sin Circular -",
@@ -12227,15 +12227,15 @@
     "cantidad": 2
   },
   {
-    "id": 1437,
+    "id": "K1",
     "title": "5 Shillingi 2018",
     "country": "Kenia",
     "metal": "Bimetálica",
     "year": 2018,
     "price": "4.5 USD",
     "images": [
-      "images/1437A.jpeg",
-      "images/1437B.jpeg"
+      "images/K1A.jpeg",
+      "images/K1B.jpeg"
     ],
     "reference": "KM# 46",
     "grade": "",
@@ -13403,15 +13403,15 @@
     "cantidad": 989
   },
   {
-    "id": 1492,
+    "id": "M8",
     "title": "10 Cents 1961",
     "country": "Malaya y Borneo",
     "metal": "Cuproníquel",
     "year": 1961,
     "price": "5.5 USD",
     "images": [
-      "images/1492A.jpeg",
-      "images/1492B.jpeg"
+      "images/M8A.jpeg",
+      "images/M8B.jpeg"
     ],
     "reference": "KM# 2",
     "grade": "Excelente",
@@ -14397,15 +14397,15 @@
     }
   },
   {
-    "id": 1540,
+    "id": "I4",
     "title": "10 Centesimi 1894",
     "country": "Italia",
     "metal": "Cobre",
     "year": 1894,
     "price": "4.5 USD",
     "images": [
-      "images/1540A.jpeg",
-      "images/1540B.jpeg"
+      "images/I4A.jpeg",
+      "images/I4B.jpeg"
     ],
     "reference": "KM# 27",
     "grade": "Muy Bueno",
@@ -14954,15 +14954,15 @@
     "commemorates": "Che Guevara"
   },
   {
-    "id": 1566,
+    "id": "I11",
     "title": "Yirmilik 1837",
     "country": "Imperio Otomano",
     "metal": "Plata .170",
     "year": 1837,
     "price": "14 USD",
     "images": [
-      "images/1566A.jpeg",
-      "images/1566B.jpeg"
+      "images/I11A.jpeg",
+      "images/I11B.jpeg"
     ],
     "reference": "KM# 596",
     "grade": "Muy Bueno **",
@@ -17226,15 +17226,15 @@
     "soldAt": "2026-10-28T23:49:04.170278+00:00"
   },
   {
-    "id": 1675,
+    "id": "I9",
     "title": "100 Rupias 1978",
     "country": "Indonesia",
     "metal": "Cuproníquel",
     "year": 1978,
     "price": "3.5 USD",
     "images": [
-      "images/1675A.jpeg",
-      "images/1675B.jpeg"
+      "images/I9A.jpeg",
+      "images/I9B.jpeg"
     ],
     "reference": "KM# 42",
     "grade": "Excelente",
@@ -17265,15 +17265,15 @@
     "publishedAt": "2026-10-28T22:53:53.913447+00:00"
   },
   {
-    "id": 1677,
+    "id": "M4",
     "title": "1/4 Rupia 1964",
     "country": "Mauricio",
     "metal": "Cuproníquel",
     "year": 1964,
     "price": "8 USD",
     "images": [
-      "images/1677A.jpeg",
-      "images/1677B.jpeg"
+      "images/M4A.jpeg",
+      "images/M4B.jpeg"
     ],
     "reference": "KM# 36",
     "grade": "Muy Bueno +",
@@ -17331,15 +17331,15 @@
     "soldAt": "2026-10-31T08:48:46.472480-03:00"
   },
   {
-    "id": 1680,
+    "id": "F8",
     "title": "50 Francos 1975",
     "country": "Francia",
     "metal": "Plata .900",
     "year": 1975,
     "price": "70 USD",
     "images": [
-      "images/1680A.jpeg",
-      "images/1680B.jpeg"
+      "images/F8A.jpeg",
+      "images/F8B.jpeg"
     ],
     "reference": "KM# 941",
     "grade": "Excelente -",
@@ -17435,15 +17435,15 @@
     "commemorates": "Francisco Franco"
   },
   {
-    "id": 1685,
+    "id": "L2",
     "title": "1 Franco 1952",
     "country": "Luxemburgo",
     "metal": "Cuproníquel",
     "year": 1952,
     "price": "4 USD",
     "images": [
-      "images/1685A.jpeg",
-      "images/1685B.jpeg"
+      "images/L2A.jpeg",
+      "images/L2B.jpeg"
     ],
     "reference": "KM# 46.2",
     "grade": "Muy Bueno +",
@@ -17713,15 +17713,15 @@
     "soldAt": "2026-11-05T00:16:42.799438+00:00"
   },
   {
-    "id": 1698,
+    "id": "M5",
     "title": "1 Rupia 1987",
     "country": "Mauricio",
     "metal": "Cuproníquel",
     "year": 1987,
     "price": "4 USD",
     "images": [
-      "images/1698A.jpeg",
-      "images/1698B.jpeg"
+      "images/M5A.jpeg",
+      "images/M5B.jpeg"
     ],
     "reference": "KM# 55",
     "grade": "Muy Bueno +",
@@ -17773,15 +17773,15 @@
     "publishedAt": "2026-11-04T14:05:58.857606+00:00"
   },
   {
-    "id": 1701,
+    "id": "J1",
     "title": "20 Dólares 2000 Marcus Garvey",
     "country": "Jamaica",
     "metal": "Bimetálica",
     "year": 2000,
     "price": "4.5 USD",
     "images": [
-      "images/1701A.jpeg",
-      "images/1701B.jpeg"
+      "images/J1A.jpeg",
+      "images/J1B.jpeg"
     ],
     "reference": "KM# 182",
     "grade": "Excelente +",
@@ -18235,15 +18235,15 @@
     "soldAt": "2026-11-08T11:40:28.999283+00:00"
   },
   {
-    "id": 1723,
+    "id": "G4",
     "title": "2 Euros 2010",
     "country": "Grecia",
     "metal": "Bimetálica (centro de níquel-latón en anillo de cuproníquel)",
     "year": 2010,
     "price": "5 USD",
     "images": [
-      "images/1723A.jpeg",
-      "images/1723B.jpeg"
+      "images/G4A.jpeg",
+      "images/G4B.jpeg"
     ],
     "reference": "KM# 236",
     "grade": "Excelente",
@@ -18716,15 +18716,15 @@
     "soldAt": "2026-11-09T03:25:39.634180+00:00"
   },
   {
-    "id": 1746,
+    "id": "I13",
     "title": "50 Centésimos 1925",
     "country": "Italia",
     "metal": "Níquel",
     "year": 1925,
     "price": "5.5 USD",
     "images": [
-      "images/1746A.jpeg",
-      "images/1746B.jpeg"
+      "images/I13A.jpeg",
+      "images/I13B.jpeg"
     ],
     "reference": "KM# 61",
     "grade": "Excelente",
@@ -19173,15 +19173,15 @@
     "publishedAt": "2026-11-07T23:58:20.722520+00:00"
   },
   {
-    "id": 1768,
+    "id": "H3",
     "title": "20 Fillér 1894",
     "country": "Hungría",
     "metal": "Níquel",
     "year": 1894,
     "price": "4.5 USD",
     "images": [
-      "images/1768A.jpeg",
-      "images/1768B.jpeg"
+      "images/H3A.jpeg",
+      "images/H3B.jpeg"
     ],
     "reference": "KM# 483",
     "grade": "Excelente",
@@ -19878,15 +19878,15 @@
     "publishedAt": "2026-11-11T23:05:25.212186+00:00"
   },
   {
-    "id": 1803,
+    "id": "K2",
     "title": "5 Chelines 2010",
     "country": "Kenia",
     "metal": "Bimetálica",
     "year": 2010,
     "price": "4 USD",
     "images": [
-      "images/1803A.jpeg",
-      "images/1803B.jpeg"
+      "images/K2A.jpeg",
+      "images/K2B.jpeg"
     ],
     "reference": "KM# 37.2",
     "grade": "Sin Circular",
@@ -21547,15 +21547,15 @@
     "commemorates": "Isabel II"
   },
   {
-    "id": 1883,
+    "id": "M7",
     "title": "50 Ouguiya 2014",
     "country": "Mauritania",
     "metal": "Bimetálica",
     "year": 2014,
     "price": "4.5 USD",
     "images": [
-      "images/1883A.jpeg",
-      "images/1883B.jpeg"
+      "images/M7A.jpeg",
+      "images/M7B.jpeg"
     ],
     "reference": "KM# 9",
     "grade": "Sin Circular",
@@ -22472,15 +22472,15 @@
     "publishedAt": "2026-11-18T02:08:37.598053+00:00"
   },
   {
-    "id": 1929,
+    "id": "J2",
     "title": "10 Fils 1978",
     "country": "Jordania",
     "metal": "Bronce",
     "year": 1978,
     "price": "5 USD",
     "images": [
-      "images/1929A.jpeg",
-      "images/1929B.jpeg"
+      "images/J2A.jpeg",
+      "images/J2B.jpeg"
     ],
     "reference": "KM# 37",
     "grade": "Muy Bueno +",
@@ -22716,15 +22716,15 @@
     "publishedAt": "2026-11-18T02:08:37.598053+00:00"
   },
   {
-    "id": 1941,
+    "id": "I12",
     "title": "1/4 Anna 1936",
     "country": "India",
     "metal": "Bronce",
     "year": 1936,
     "price": "8 USD",
     "images": [
-      "images/1941A.jpeg",
-      "images/1941B.jpeg"
+      "images/I12A.jpeg",
+      "images/I12B.jpeg"
     ],
     "reference": "KM# 512",
     "grade": "Sin Circular",
