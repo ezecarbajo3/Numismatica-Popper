@@ -23,6 +23,7 @@ porque Mercado Libre falle.
 """
 import json
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -51,10 +52,9 @@ def buscar(sku):
     sku = str(sku).strip().upper()
     if not sku:
         return {"ok": False, "motivo": "SKU vacio"}
-    # Las monedas de terceros (P3, R4, F11) nunca se publicaron en ML:
-    # ml_bulk.filtrar() las excluye por tener el id con letra.
-    if not sku.isdigit():
-        return {"ok": False, "motivo": f"la moneda {sku} es de un tercero y no esta en Mercado Libre"}
+    # SKU = id de la pagina: 1088 o, desde el 25/11/2026, letra del pais + numero (D15).
+    if not re.fullmatch(r"[A-Z]?\d+", sku):
+        return {"ok": False, "motivo": f"{sku} no es un id de la pagina"}
 
     uid = ml_api.user_id()
     st, r = ml_api.pedir("GET", f"/users/{uid}/items/search?seller_sku={sku}")

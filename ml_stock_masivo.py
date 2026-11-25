@@ -23,6 +23,7 @@ import argparse
 import csv
 import json
 import os
+import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
@@ -87,7 +88,7 @@ def main():
         if sku is None:
             info += [(i["id"], sku, i["status"], "sin SKU") for i in vivas]
             continue
-        if not sku.isdigit():
+        if not re.fullmatch(r"[A-Za-z]?\d+", sku):
             continue
         coin = coins.get(sku)
         objetivo = stock_web(coin) if coin else 0
@@ -106,9 +107,9 @@ def main():
 
     publicados = {s for s in por_sku if s}
     sin_publicar = sorted((k for k, c in coins.items()
-                           if k.isdigit() and stock_web(c) > 0 and not c.get("hidden")
+                           if re.fullmatch(r"[A-Za-z]?\d+", k) and stock_web(c) > 0 and not c.get("hidden")
                            and c.get("ml") is not False and k not in publicados),
-                          key=int)
+                          key=lambda k: (re.sub(r"\d", "", k), int(re.sub(r"\D", "", k))))
 
     def aplicar(a):
         accion, it, sku, objetivo, motivo = a

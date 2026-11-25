@@ -98,8 +98,8 @@ def filtrar(coins):
         cid = str(c.get("id"))
         if c.get("status") == "sold":
             excluidas.append((cid, "vendida")); continue
-        if not cid.isdigit():
-            excluidas.append((cid, "ID con letra (moneda de tercero)")); continue
+        if not re.fullmatch(r"[A-Za-z]?\d+", cid):   # 1088 o D15 (desde 25/11 ya no hay de terceros)
+            excluidas.append((cid, "ID inválido")); continue
         if c.get("hidden"):
             excluidas.append((cid, "oculta en el sitio")); continue
         if precio_usd(c) is None:
