@@ -23234,5 +23234,361 @@
     "publishedAt": "2026-11-22T16:14:47.368234+00:00",
     "commemorates": "Colombes 1924",
     "sala_nota": "El Banco Central del Uruguay acuñó esta moneda en 2024 para celebrar el centenario de la medalla de oro obtenida por la selección uruguaya de fútbol en los Juegos Olímpicos de París 1924, disputados en el estadio de Colombes. La conquista consagró al equipo celeste como el primer campeón olímpico del continente y dio origen a la llamada vuelta olímpica. Solo se emitieron 1500 piezas en plata."
+  },
+  {
+    "id": "S1",
+    "title": "1 Céntimo 1942",
+    "country": "Suiza",
+    "metal": "Zinc",
+    "year": 1942,
+    "price": "9.5 USD",
+    "images": [
+      "images/S1A.jpeg",
+      "images/S1B.jpeg"
+    ],
+    "reference": "KM# 3a",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "1.2",
+    "diametro": "16",
+    "description": "Ceca B",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00"
+  },
+  {
+    "id": "A26",
+    "title": "2 Reales 1860",
+    "country": "Argentina - Buenos Aires",
+    "metal": "Cobre",
+    "year": 1860,
+    "price": "15 USD",
+    "images": [
+      "images/A26A.jpeg",
+      "images/A26B.jpeg"
+    ],
+    "reference": "CJ# 23",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "peso": "7.6",
+    "diametro": "32",
+    "description": "Ceca Buenos Aires",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00"
+  },
+  {
+    "id": "U1",
+    "title": "5 Rublos 1990",
+    "country": "Unión Soviética",
+    "metal": "Cuproníquel",
+    "year": 1990,
+    "price": "15 USD",
+    "images": [
+      "images/U1A.jpeg",
+      "images/U1B.jpeg"
+    ],
+    "reference": "Y# 246",
+    "grade": "",
+    "grade_short": "",
+    "mintage": 2600000,
+    "peso": "19.8",
+    "diametro": "35",
+    "description": "Catedral de la Asunción",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00",
+    "commemorates": "Catedral de la Asunción"
+  },
+  {
+    "id": "U2",
+    "title": "50 Centésimos 1916",
+    "country": "Uruguay",
+    "metal": "Plata .900",
+    "year": 1916,
+    "price": "50 USD",
+    "images": [
+      "images/U2A.jpeg",
+      "images/U2B.jpeg"
+    ],
+    "reference": "KM# 22",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 400000,
+    "peso": "12.5",
+    "diametro": "30.4",
+    "description": "",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00"
+  },
+  {
+    "id": "H1",
+    "title": "1 Pfennig - Ernest August 1838",
+    "country": "Hannover, Reino de",
+    "metal": "Cobre",
+    "year": 1838,
+    "price": "16 USD",
+    "images": [
+      "images/H1A.jpeg",
+      "images/H1B.jpeg"
+    ],
+    "reference": "KM# 173.1",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "2.34",
+    "diametro": "19",
+    "description": "Federico Augusto II",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00"
+  },
+  {
+    "id": "M1",
+    "title": "10 Francos 1953",
+    "country": "Madagascar",
+    "metal": "Bronce",
+    "year": 1953,
+    "price": "12 USD",
+    "images": [
+      "images/M1A.jpeg",
+      "images/M1B.jpeg"
+    ],
+    "reference": "KM# 6",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "3",
+    "diametro": "20",
+    "description": "Año único",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00"
+  },
+  {
+    "id": "Z1",
+    "title": "1 Duit 1790",
+    "country": "Zelanda, Provincia de",
+    "metal": "Cobre",
+    "year": 1790,
+    "price": "15 USD",
+    "images": [
+      "images/Z1A.jpeg",
+      "images/Z1B.jpeg"
+    ],
+    "reference": "KM# 101.1",
+    "grade": "Muy Bueno -",
+    "grade_short": "MB-",
+    "peso": "3.84",
+    "diametro": "21",
+    "description": "",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00"
+  },
+  {
+    "id": "Z2",
+    "title": "1 Duit 1793",
+    "country": "Zelanda, Provincia de",
+    "metal": "Cobre",
+    "year": 1793,
+    "price": "16 USD",
+    "images": [
+      "images/Z2A.jpeg",
+      "images/Z2B.jpeg"
+    ],
+    "reference": "KM# 105",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "3.4",
+    "diametro": "22",
+    "description": "",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00"
+  },
+  {
+    "id": "Y1",
+    "title": "50 Para 1925",
+    "country": "Yugoslavia",
+    "metal": "Cuproníquel",
+    "year": 1925,
+    "price": "4 USD",
+    "images": [
+      "images/Y1A.jpeg",
+      "images/Y1B.jpeg"
+    ],
+    "reference": "KM# 4",
+    "grade": "Excelente -",
+    "grade_short": "EX-",
+    "peso": "2.5",
+    "diametro": "18",
+    "description": "Alejandro I - Año único",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00"
+  },
+  {
+    "id": "R1",
+    "title": "1/2 Kopeck 1909",
+    "country": "Ruso, Imperio",
+    "metal": "Cobre",
+    "year": 1909,
+    "price": "20 USD",
+    "images": [
+      "images/R1A.jpeg",
+      "images/R1B.jpeg"
+    ],
+    "reference": "Y# 48.1",
+    "grade": "Excelente",
+    "grade_short": "EX",
+    "peso": "1.64",
+    "diametro": "16.24",
+    "description": "Nicolás II - Ceca San Petersburgo",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00",
+    "commemorates": "Nicolás II"
+  },
+  {
+    "id": "A27",
+    "title": "Pesos 1977",
+    "country": "Argentina",
+    "metal": "Plata .900",
+    "year": 1977,
+    "price": "26.5 USD",
+    "images": [
+      "images/A27A.jpeg",
+      "images/A27B.jpeg"
+    ],
+    "reference": "CJ# 299,300",
+    "grade": "",
+    "grade_short": "",
+    "mintage": 98837,
+    "peso": "15",
+    "diametro": "33",
+    "description": "Mundial de Fútbol 1978 - Increíble pátina",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00",
+    "commemorates": "Mundial de Fútbol 1978"
+  },
+  {
+    "id": "F1",
+    "title": "10 Céntimos 1943",
+    "country": "Francia",
+    "metal": "Zinc",
+    "year": 1943,
+    "price": "9.5 USD",
+    "images": [
+      "images/F1A.jpeg",
+      "images/F1B.jpeg"
+    ],
+    "reference": "KM# 903",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "1.5",
+    "diametro": "17.3",
+    "description": "Régimen de Vichy",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00",
+    "commemorates": "Régimen de Vichy"
+  },
+  {
+    "id": "D15",
+    "title": "25 Ore 1943",
+    "country": "Dinamarca",
+    "metal": "Zinc",
+    "year": 1943,
+    "price": "8.5 USD",
+    "images": [
+      "images/D15A.jpeg",
+      "images/D15B.jpeg"
+    ],
+    "reference": "KM# 823.2a",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 5784000,
+    "peso": "3.6",
+    "diametro": "23",
+    "description": "Cristián X",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00"
+  },
+  {
+    "id": "D16",
+    "title": "25 Ore 1944",
+    "country": "Dinamarca",
+    "metal": "Zinc",
+    "year": 1944,
+    "price": "8.5 USD",
+    "images": [
+      "images/D16A.jpeg",
+      "images/D16B.jpeg"
+    ],
+    "reference": "KM# 823.2a",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "3.6",
+    "diametro": "23",
+    "description": "Christian X",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00"
+  },
+  {
+    "id": "D17",
+    "title": "10 Ore 1941",
+    "country": "Dinamarca",
+    "metal": "Zinc",
+    "year": 1941,
+    "price": "7.5 USD",
+    "images": [
+      "images/D17A.jpeg",
+      "images/D17B.jpeg"
+    ],
+    "reference": "KM# 822.2a",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "peso": "2.4",
+    "diametro": "18",
+    "description": "Cristian X",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00",
+    "cantidad": 2
+  },
+  {
+    "id": "D18",
+    "title": "10 Ore 1943",
+    "country": "Dinamarca",
+    "metal": "Zinc",
+    "year": 1943,
+    "price": "7.5 USD",
+    "images": [
+      "images/D18A.jpeg",
+      "images/D18B.jpeg"
+    ],
+    "reference": "KM# 822.2a",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 2181000,
+    "peso": "2.4",
+    "diametro": "18",
+    "description": "Christian X",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00",
+    "cantidad": 2
+  },
+  {
+    "id": "A28",
+    "title": "2 Centavos 1896",
+    "country": "Argentina",
+    "metal": "Bronce",
+    "year": 1896,
+    "price": "15 USD",
+    "images": [
+      "images/A28A.jpeg",
+      "images/A28B.jpeg"
+    ],
+    "reference": "KM# 33",
+    "grade": "Muy Bueno",
+    "grade_short": "MB",
+    "mintage": 596000,
+    "peso": "10",
+    "diametro": "30",
+    "description": "",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00",
+    "group_id": "ar-2centavos-1896",
+    "group_label": "2 Centavos 1896"
+  },
+  {
+    "id": "S2",
+    "title": "50 Dinares 2002",
+    "country": "Sudán",
+    "metal": "Cuproníquel",
+    "year": 2002,
+    "price": "10 USD",
+    "images": [
+      "images/S2A.jpeg",
+      "images/S2B.jpeg"
+    ],
+    "reference": "KM# 121",
+    "grade": "",
+    "grade_short": "",
+    "peso": "5.6",
+    "diametro": "24",
+    "description": "",
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00"
   }
 ]
