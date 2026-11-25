@@ -22632,7 +22632,9 @@
     "description": "",
     "publishedAt": "2026-11-18T02:08:37.598053+00:00",
     "group_id": "ar-2-centavos-1854",
-    "group_label": "2 Centavos 1854"
+    "group_label": "2 Centavos 1854",
+    "status": "sold",
+    "soldAt": "2026-11-25T15:40:18.428743+00:00"
   },
   {
     "id": 1937,
@@ -22970,7 +22972,9 @@
     "diametro": "25",
     "description": "Pedro II",
     "publishedAt": "2026-11-18T14:22:39.948590+00:00",
-    "commemorates": "Pedro II"
+    "commemorates": "Pedro II",
+    "status": "sold",
+    "soldAt": "2026-11-25T15:40:18.428743+00:00"
   },
   {
     "id": 1954,
@@ -23199,7 +23203,9 @@
     "peso": "10",
     "diametro": "27",
     "description": "",
-    "publishedAt": "2026-11-22T16:14:47.368234+00:00"
+    "publishedAt": "2026-11-22T16:14:47.368234+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-25T15:40:18.428743+00:00"
   },
   {
     "id": 1965,
