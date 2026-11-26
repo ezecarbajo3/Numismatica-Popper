@@ -7316,7 +7316,9 @@
     "group_id": "us-5cents-2005",
     "group_label": "5 Cents 2005",
     "description": "Edición conmemorativa \"Westward Journey\" con la figura del Búfalo (American Bison).",
-    "commemorates": "Serie Westward Journey (Búfalo Americano)"
+    "commemorates": "Serie Westward Journey (Búfalo Americano)",
+    "status": "sold",
+    "soldAt": "2026-11-26T00:06:11.922138+00:00"
   },
   {
     "id": "E43",
@@ -7335,7 +7337,9 @@
     "group_id": "us-5cents-2005",
     "group_label": "5 Cents 2005",
     "description": "Edición conmemorativa \"Westward Journey\" con la figura del Búfalo en el reverso, ceca Denver (D).",
-    "commemorates": "Serie Westward Journey (Búfalo Americano)"
+    "commemorates": "Serie Westward Journey (Búfalo Americano)",
+    "status": "sold",
+    "soldAt": "2026-11-26T00:06:11.922138+00:00"
   },
   {
     "id": 925,
@@ -14776,7 +14780,9 @@
     "diametro": "26.5",
     "description": "James Garfield",
     "publishedAt": "2026-10-24T15:14:36.168994+00:00",
-    "commemorates": "James Garfield"
+    "commemorates": "James Garfield",
+    "status": "sold",
+    "soldAt": "2026-11-26T00:06:11.922138+00:00"
   },
   {
     "id": 1558,
@@ -17453,7 +17459,9 @@
     "diametro": "21",
     "description": "Francisco Franco - Carlota",
     "publishedAt": "2026-11-03T19:06:52.987955+00:00",
-    "commemorates": "Francisco Franco"
+    "commemorates": "Francisco Franco",
+    "status": "sold",
+    "soldAt": "2026-11-26T00:06:11.922138+00:00"
   },
   {
     "id": 1686,
@@ -21443,7 +21451,9 @@
     "diametro": "27.19",
     "description": "Monte Wuyi",
     "publishedAt": "2026-11-17T17:44:04.068004+00:00",
-    "commemorates": "Monte Wuyi"
+    "commemorates": "Monte Wuyi",
+    "status": "sold",
+    "soldAt": "2026-11-26T00:06:11.922138+00:00"
   },
   {
     "id": "C29",
@@ -23388,7 +23398,9 @@
     "peso": "3.4",
     "diametro": "22",
     "description": "",
-    "publishedAt": "2026-11-25T21:53:32.891565+00:00"
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-26T00:06:11.922138+00:00"
   },
   {
     "id": "Y1",
