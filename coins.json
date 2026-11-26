@@ -2207,7 +2207,7 @@
     "reference": "KM# 402",
     "grade": "Excelente",
     "grade_short": "EX",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": "E45",
@@ -9456,7 +9456,7 @@
     "diametro": "30",
     "description": "Arte de la Ópera Tradicional China de Pekín - Personaje emblemático Sheng (rol masculino).",
     "publishedAt": "2026-08-28T23:32:35.616834+00:00",
-    "cantidad": 2
+    "cantidad": 1
   },
   {
     "id": 1235,
@@ -9560,7 +9560,7 @@
     "diametro": "14",
     "description": "Moneda de Isla de Pascua (Rapa Nui). Escultura Moai en el reverso y mapa de la isla con la leyenda 'RAPANUI CHILE 2021' en el anverso.",
     "publishedAt": "2026-08-29T20:36:29.307537+00:00",
-    "cantidad": 7,
+    "cantidad": 6,
     "group_id": "ip-1peso-2021",
     "group_label": "1 Peso 2021"
   },
@@ -9938,7 +9938,7 @@
     "grade_short": "SC",
     "description": "Moneda de Isla de Pascua (Rapa Nui) acuñada en aluminio. Escultura Moai en el reverso y mapa de la isla con la leyenda 'RAPANUI CHILE 2021' en el anverso.",
     "publishedAt": "2026-08-30T03:03:02.044991+00:00",
-    "cantidad": 8,
+    "cantidad": 7,
     "group_id": "ip-1peso-2021",
     "group_label": "1 Peso 2021"
   },
@@ -10802,7 +10802,9 @@
     "peso": "3",
     "diametro": "19.5",
     "description": "",
-    "publishedAt": "2026-09-04T22:41:19.721383+00:00"
+    "publishedAt": "2026-09-04T22:41:19.721383+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-26T12:41:58.935407+00:00"
   },
   {
     "id": "B4",
@@ -21473,7 +21475,9 @@
     "diametro": "27.19",
     "description": "Monte Emei y Buda Gigante de Leshan",
     "publishedAt": "2026-11-17T17:44:04.068004+00:00",
-    "commemorates": "Monte Emei y Buda Gigante de Leshan"
+    "commemorates": "Monte Emei y Buda Gigante de Leshan",
+    "status": "sold",
+    "soldAt": "2026-11-26T12:41:58.935407+00:00"
   },
   {
     "id": 1879,
@@ -23519,7 +23523,9 @@
     "peso": "3.6",
     "diametro": "23",
     "description": "Christian X",
-    "publishedAt": "2026-11-25T21:53:32.891565+00:00"
+    "publishedAt": "2026-11-25T21:53:32.891565+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-26T12:41:58.935407+00:00"
   },
   {
     "id": "D17",
