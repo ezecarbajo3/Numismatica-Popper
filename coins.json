@@ -23610,5 +23610,45 @@
     "diametro": "24",
     "description": "",
     "publishedAt": "2026-11-25T21:53:32.891565+00:00"
+  },
+  {
+    "id": "B17",
+    "title": "1 Franco 1880",
+    "country": "Bélgica",
+    "metal": "Plata .835",
+    "year": 1880,
+    "price": "30 USD",
+    "images": [
+      "images/B17A.jpeg",
+      "images/B17B.jpeg"
+    ],
+    "reference": "KM# 38",
+    "grade": "Bueno +",
+    "grade_short": "B+",
+    "mintage": 545222,
+    "peso": "5",
+    "diametro": "23",
+    "description": "50 Aniversario del Reino de Bélgica - Leopoldo II - Leopoldo I, Leopoldo II - Cincuenta años de independencia belga",
+    "publishedAt": "2026-11-27T15:21:45.739176+00:00",
+    "commemorates": "50 Aniversario del Reino de Bélgica - Leopoldo II"
+  },
+  {
+    "id": "L3",
+    "title": "4 Liards - Jean-Théodore Of Bavaria 1752",
+    "country": "Lieja, Principado de",
+    "metal": "Cobre",
+    "year": 1752,
+    "price": "50 USD",
+    "images": [
+      "images/L3A.jpeg",
+      "images/L3B.jpeg"
+    ],
+    "reference": "KM# 159",
+    "grade": "Muy Bueno +",
+    "grade_short": "MB+",
+    "peso": "14.5",
+    "diametro": "30",
+    "description": "Carlos Teodoro - Episcopado de Lieja (Hoy Bélgica) - Jean-Théodore de Baviera (príncipe cardenal)",
+    "publishedAt": "2026-11-27T15:21:45.739176+00:00"
   }
 ]
