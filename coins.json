@@ -23445,7 +23445,9 @@
     "diametro": "16.24",
     "description": "Nicolás II - Ceca San Petersburgo",
     "publishedAt": "2026-11-25T21:53:32.891565+00:00",
-    "commemorates": "Nicolás II"
+    "commemorates": "Nicolás II",
+    "status": "sold",
+    "soldAt": "2026-11-27T20:03:51.510233+00:00"
   },
   {
     "id": "A27",
@@ -23590,7 +23592,9 @@
     "description": "",
     "publishedAt": "2026-11-25T21:53:32.891565+00:00",
     "group_id": "ar-2centavos-1896",
-    "group_label": "2 Centavos 1896"
+    "group_label": "2 Centavos 1896",
+    "status": "sold",
+    "soldAt": "2026-11-27T20:03:51.510233+00:00"
   },
   {
     "id": "S2",
