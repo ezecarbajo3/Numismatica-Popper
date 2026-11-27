@@ -23630,7 +23630,9 @@
     "diametro": "23",
     "description": "50 Aniversario del Reino de Bélgica - Leopoldo II - Leopoldo I, Leopoldo II - Cincuenta años de independencia belga",
     "publishedAt": "2026-11-27T15:21:45.739176+00:00",
-    "commemorates": "50 Aniversario del Reino de Bélgica - Leopoldo II"
+    "commemorates": "50 Aniversario del Reino de Bélgica - Leopoldo II",
+    "status": "sold",
+    "soldAt": "2026-11-27T20:03:02.225537+00:00"
   },
   {
     "id": "L3",
@@ -23649,6 +23651,8 @@
     "peso": "14.5",
     "diametro": "30",
     "description": "Carlos Teodoro - Episcopado de Lieja (Hoy Bélgica) - Jean-Théodore de Baviera (príncipe cardenal)",
-    "publishedAt": "2026-11-27T15:21:45.739176+00:00"
+    "publishedAt": "2026-11-27T15:21:45.739176+00:00",
+    "status": "sold",
+    "soldAt": "2026-11-27T20:03:02.225537+00:00"
   }
 ]
